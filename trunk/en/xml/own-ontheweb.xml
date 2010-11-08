@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+  <!-- 
+      Announcements
+      Call for participation
+      Reports
+      Reviews and Essays
+      Warning!
+    -->
+  <blockquote>
+    <title><ulink
+        url="http://mozillalabs.com/chromeless/2010/10/21/chromeless-build-your-own-browser-ui-using-html-css-js/"
+        >Chromeless: Build your own Browser UI using HTML, CSS and
+        JS</ulink></title>
+    <para>The <quote>Chromeless</quote> project experiments with the
+      idea of removing the current browser user interface and replacing
+      it with a flexible platform which allows for the creation of new
+      browser UI using standard Web technologies such as HTML, CSS and
+      JavaScript.</para>
+  </blockquote>
+</sect1>
