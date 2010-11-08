@@ -1,9 +1,13 @@
 #!/bin/sh
 
 XML=xml/OWN.xml
+BASEXML=${XML#*/}
+FO=${BASEXML%.xml}.fo
+PDF=${BASEXML%.xml}.pdf
 FOPCONF=fop-config.xml
 XSLTFO=xslt/fo/docbook.xsl
 
 ./validown.sh || exit $!
-xsltproc --xinclude --output ${XML%.xml}.fo ${XSLTFO} ${XML} && fop -c ${FOPCONF} ${XML%.xml}.fo ${XML%.xml}.pdf
+echo "Validation successful. Creating PDF..."
+xsltproc --xinclude --output ${FO} ${XSLTFO} ${XML} && fop -c ${FOPCONF} ${FO} ${PDF}
 
