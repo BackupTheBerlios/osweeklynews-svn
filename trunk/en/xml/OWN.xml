@@ -1,74 +1,185 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC 
-  "-//OASIS//DTD DocBook XML V4.5//EN" 
-  "http://www.docbook.org/xml/4.5/docbookx.dtd"
-[
-  <!ENTITY % myentities SYSTEM "entities.ent">
-  %myentities;
-]>
-<article class="journalarticle">
-  <title>openSUSE Weekly News</title>
-  <articleinfo>
-    <!-- Maybe date and/or pubdate might be useful: -->
-    <date>2010-</date>
-    <!-- When it's written -->
-    <pubdate>2010-10-28</pubdate>
-    <!-- When it's published -->
-    <edition>146</edition>
-    <authorgroup>
-      <author>
-        <firstname>Sascha</firstname>
-        <surname>Manns</surname>
-        <contrib>editor in chief</contrib>
-      </author>
-      <author>
-        <firstname>Sebastian</firstname>
-        <surname>Schöbinger</surname>
-        <contrib>Tips and tricks</contrib>
-      </author>
-      <author>
-        <firstname>Satoru</firstname>
-        <surname>Matsumoto</surname>
-        <contrib>Editorial office</contrib>
-      </author>
-      <author>
-        <firstname>Carl</firstname>
-        <surname>Fletcher</surname>
-        <contrib>Main newsletter, forums section</contrib>
-      </author>
-      <author>
-        <firstname>Thomas</firstname>
-        <surname>Hofstätter</surname>
-        <contrib>Events &amp; meetings</contrib>
-      </author>
-      <!-- The english version don't have othercredit for
-           translators as there is none.
-           Translators just put there name
-      -->
-      <!--<othercredit class="translator">
-        <firstname></firstname>
-        <surname></surname>
-      </othercredit>-->
-    </authorgroup>
-  </articleinfo>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="generator" content="WebSVN 2.3.1" /> <!-- leave this for stats -->
+  <link rel="shortcut icon" type="image/x-icon" href="/websvn/templates/calm/images/favicon.ico" />
+  <link type="text/css" href="/websvn/templates/calm/styles.css" rel="stylesheet" media="screen" />
+  <link rel='alternate' type='application/rss+xml' title='WebSVN RSS' href='/wsvn/osweeklynews/trunk/en/xml/OWN.xml?op=rss&amp;' />
+  <!--[if gte IE 5.5000]>
+  <script type="text/javascript" src="/websvn/templates/calm/png.js"></script>
+  <style type="text/css" media="screen">
+  tbody tr td { padding:1px 0 }
+  #wrap h2 { padding:10px 5px 0 5px; margin-bottom:-8px }
+  </style>
+  <![endif]-->
+  <title>
+       WebSVN
+          - osweeklynews
+               - Revision 1
+            - /trunk/en/xml/OWN.xml
+  </title>
+  <script type="text/javascript">
+  //<![CDATA[
+       function getPath()
+       {
+         return '/websvn';
+       }
+       
+       function checkCB(chBox)
+       {
+          count = 0
+          first = null
+          f = chBox.form
+          for (i = 0 ; i < f.elements.length ; i++)
+          if (f.elements[i].type == 'checkbox' && f.elements[i].checked)
+          {
+             if (first == null && f.elements[i] != chBox)
+                first = f.elements[i]
+             count += 1
+          }
+          
+          if (count > 2) 
+          {
+             first.checked = false
+             count -= 1
+          }
+       }
+  //]]>
+  </script>
+  <script type="text/javascript" src="/websvn/templates/calm/collapse.js"></script>
+</head>
+<body id="file">
+<div id="container">
+	<div id="select">
+		<form method="get" action="" id="template"><select name="template" onchange="javascript:this.form.submit();"><option value="BlueGrey">BlueGrey</option><option value="calm" selected="selected">calm</option><option value="Elegant">Elegant</option></select><noscript><input type="submit" value="Los" /></noscript></form>
+		<form method="get" action="" id="language"><select name="language" onchange="javascript:this.form.submit();"><option value="ca">Catal&agrave;-Valenci&agrave; - Catalan</option><option value="zh-CN">&#20013;&#25991; - Chinese (Simplified)</option><option value="zh-TW">&#20013;&#25991; - Chinese (Traditional)</option><option value="cs">&#268;esky - Czech</option><option value="da">Dansk - Danish</option><option value="nl">Nederlands - Dutch</option><option value="en">English - English</option><option value="fi">Suomi - Finnish</option><option value="fr">Fran&ccedil;ais - French</option><option value="de" selected="selected">Deutsch - German</option><option value="he-IL">&#1506;&#1489;&#1512;&#1497;&#1514; - Hebrew</option><option value="hin">&#2361;&#2367;&#2306;&#2342;&#2368; - Hindi</option><option value="hu">Magyar - Hungarian</option><option value="id">Bahasa Indonesia - Indonesian</option><option value="it">Italiano - Italian</option><option value="ja">&#26085;&#26412;&#35486; - Japanese</option><option value="ko">&#54620;&#44397;&#50612; - Korean</option><option value="mr">&#2350;&#2352;&#2366;&#2336;&#2368; - Marathi</option><option value="no">Norsk - Norwegian</option><option value="pl">Polski - Polish</option><option value="pt">Portugu&ecirc;s - Portuguese</option><option value="pt-BR">Portugu&ecirc;s - Portuguese (Brazil)</option><option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; - Russian</option><option value="sk">Sloven&#269;ina - Slovak</option><option value="sl">Sloven&#353;&#269;ina - Slovenian</option><option value="es">Espa&ntilde;ol - Spanish</option><option value="sv">Svenska - Swedish</option><option value="tr">T&uuml;rk&ccedil;e - Turkish</option><option value="uz">O&euml;zbekcha - Uzbek</option></select><noscript><input type="submit" value="Los" /></noscript></form>
+	</div>
+	<h1><a href='http://www.berlios.de/'><img src='/images/berliOS_logo.png' alt='BerliOS'/></a> <a href="/wsvn/?" title="Subversion-Projekte">Subversion-Projekte</a>
+		<span><a href="/wsvn/osweeklynews?">osweeklynews</a></span>
+	</h1>
+<p><center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4255082498533526";
+google_ad_width = 728;
+google_ad_height = 15;
+google_ad_format = "728x15_0ads_al";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_text = "333333";
+google_color_url = "666666";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
 
-  <abstract>
-    <para>We are pleased to announce our 146 issue of the openSUSE Weekly News. We hope
-      that you will enjoy reading. </para>
-  </abstract>
-
-  <xi:include href="own-osc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-announcements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-status-updates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-community.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-updates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-security.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-kernel.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-tipsandtricks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-planetsuse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-forums.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-ontheweb.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="own-translations.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-</article>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4255082498533526";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center><br /></p>
+  <h2 id="pathlinks"><a href="/wsvn/osweeklynews/?" class="root"><span>(root)</span></a>/<a href="/wsvn/osweeklynews/trunk/?#a0b40758157c8f16fa703ca3be466fa8a">trunk</a>/<a href="/wsvn/osweeklynews/trunk/en/?#aef79a8a3cf48305e5dfeecc41768b3cd">en</a>/<a href="/wsvn/osweeklynews/trunk/en/xml/?#ab6988f17af593c6e2cfb4d147c746e7d">xml</a>/<span class="file">OWN.xml</span> - Revision 1</h2>
+  <div id="revjump"><form method="get" action="" id="revision"><input type="hidden" name="repname" value="osweeklynews" /><input type="hidden" name="path" value="/trunk/en/xml/OWN.xml" /><input type="hidden" name="peg" value="0" />Revision <input type="text" size="5" name="rev" value="HEAD" /><span class="submit"><input type="submit" value="Los" /></span></form></div>
+  <p>
+    <span class="blame"><a href="/wsvn/osweeklynews/trunk/en/xml/OWN.xml?op=blame&amp;">Blame</a></span> &#124;
+    <span class="changes"><a href="/wsvn/osweeklynews/trunk/en/xml/OWN.xml?op=revision&amp;">Letzte Änderung</a></span> &#124;
+    <span class="log"><a href="/wsvn/osweeklynews/trunk/en/xml/OWN.xml?op=log&amp;">Log anzeigen</a></span>
+    &#124; <span class="feed"><a href="/wsvn/osweeklynews/trunk/en/xml/OWN.xml?op=rss&amp;">RSS feed</a></span>
+  </p>
+  <div class="listing">
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;?xml</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span> <span style="color: #000066;">encoding</span>=<span style="color: #ff0000;">&quot;UTF-8&quot;</span><span style="color: #000000; font-weight: bold;">?&gt;</span></span><br />
+<span style="color: #00bbdd;">&lt;!DOCTYPE article PUBLIC </span><br />
+<span style="color: #00bbdd;"> &nbsp;&quot;-//OASIS//DTD DocBook XML V4.5//EN&quot; </span><br />
+<span style="color: #00bbdd;"> &nbsp;&quot;http://www.docbook.org/xml/4.5/docbookx.dtd&quot;</span><br />
+<span style="color: #00bbdd;">[</span><br />
+<span style="color: #00bbdd;"> &nbsp;&lt;!ENTITY % myentities SYSTEM &quot;entities.ent&quot;&gt;</span><br />
+&nbsp; %myentities;<br />
+]&gt;<br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;article</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;journalarticle&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>openSUSE Weekly News<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;articleinfo<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; <span style="color: #808080; font-style: italic;">&lt;!-- Maybe date and/or pubdate might be useful: --&gt;</span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;date<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>2010-<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/date<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; <span style="color: #808080; font-style: italic;">&lt;!-- When it's written --&gt;</span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;pubdate<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>2010-10-28<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/pubdate<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; <span style="color: #808080; font-style: italic;">&lt;!-- When it's published --&gt;</span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;edition<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>146<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/edition<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;authorgroup<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Sascha<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Manns<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>editor in chief<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Sebastian<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Schöbinger<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Tips and tricks<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Satoru<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Matsumoto<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Editorial office<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Carl<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Fletcher<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Main newsletter, forums section<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Thomas<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/firstname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Hofstätter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/surname<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Events <span style="color: #ddbb00;">&amp;amp;</span> meetings<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/contrib<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/author<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #808080; font-style: italic;">&lt;!-- The english version don't have othercredit for</span><br />
+<span style="color: #808080; font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; translators as there is none.</span><br />
+<span style="color: #808080; font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Translators just put there name</span><br />
+<span style="color: #808080; font-style: italic;"> &nbsp; &nbsp; &nbsp;--&gt;</span><br />
+&nbsp; &nbsp; &nbsp; <span style="color: #808080; font-style: italic;">&lt;!--&lt;othercredit class=&quot;translator&quot;&gt;</span><br />
+<span style="color: #808080; font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;firstname&gt;&lt;/firstname&gt;</span><br />
+<span style="color: #808080; font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;surname&gt;&lt;/surname&gt;</span><br />
+<span style="color: #808080; font-style: italic;"> &nbsp; &nbsp; &nbsp;&lt;/othercredit&gt;--&gt;</span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/authorgroup<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/articleinfo<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+<br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;abstract<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;para<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>We are pleased to announce our 146 issue of the openSUSE Weekly News. We hope<br />
+&nbsp; &nbsp; &nbsp; that you will enjoy reading. <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/para<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/abstract<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+<br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-osc.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-announcements.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-status-updates.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-community.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-updates.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-security.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-kernel.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-tipsandtricks.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-planetsuse.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-forums.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-ontheweb.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-feedback.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;xi:include</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">&quot;own-translations.xml&quot;</span> <span style="color: #000066;">xmlns:xi</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2001/XInclude&quot;</span><span style="color: #000000; font-weight: bold;">/&gt;</span></span><br />
+<br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/article<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br />
+&nbsp;  </div>
+</div>
+<div id="footer">
+  <p style="padding:0; margin:0"><small>Powered by <a href="http://www.websvn.info/">WebSVN</a> 2.3.1 und <a href="http://subversion.tigris.org">Subversion</a> 1.6.6 &nbsp; &nbsp; &#x2713; <a href="http://validator.w3.org/check?uri=https://svn.berlios.de/wsvn.php?template=%26language=de">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://svn.berlios.de/wsvn.php?template=%26language=de">CSS</a></small></p>
+</div>
+</body>
+</html>
