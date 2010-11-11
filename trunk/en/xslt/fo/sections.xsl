@@ -10,6 +10,7 @@
 
 -->
 <table xmlns="urn:x-suse:toms:image-table">
+  <entry role="status-updates">OWN-oxygen-Board.png</entry>	
   <entry role="board">OWN-oxygen-Board.png</entry>	
   <entry role="distribution">Suse_Box.png</entry>
   <entry role="susestudio">Built-with-web-big.png</entry>
