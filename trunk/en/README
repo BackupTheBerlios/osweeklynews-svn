@@ -1,13 +1,107 @@
 ====================================================
 ##  Readme File for the                           ##
 ##             openSUSE Weekly News Project       ##
+##  Sascha Manns <saigkill@opensuse.org>          ##
+##  Thomas Schraitle <toms@suse.de>               ##
 ####################################################
 
 As you maybe know, this is a SVN Repository. There you find all 
 needed Stuff for building the new Weekly News.
 
-Some things has changed since the last Wiki Issues. Sadly for me 
-was the Workload very full. After the Proofreadingsession with Satoru 
-i have copied the whole wiki content and pasted it to google docs.
-Then in google docs must fix any things so that the Output goes to HTML.
-That Code i must copy and paste it into news.opensuse.org 
+Some things has changed since the last Wiki Issues.
+
+We have now the following Repositorycontent:
+
+branches/
+tags/
+trunk/ (This is the place for working)
+    en/ (All stuff for the english newsletter)
+        We can add everytime a new folder for other Languages.
+     .  README, Makefiles
+     logos/ (This folder contains pictures)
+     xml/   (That folder contains the to editing content)
+     xslt/  (This folder contains no editable content. Just
+             Stylesheets.)
+        fo/  (Stylesheets).
+        
+If you would like to add a Languagefolder so just send a mail
+to: saigkill@opensuse.org
+
+First Step (Editing)
+====================
+
+Your needed stuff is located in trunk/en/xml.
+
+To edit this XML Files you need a XML Editor. I'm using 2 different
+Editors, because both has plusses and minus. The both i propose are:
+* Serna free (http://www.syntext.com/downloads/serna/)
+* XML Mind (http://www.xmlmind.com/xmleditor/)
+You can download it for free.
+
+In my case i have all xml files in my editor open in a tab. The new
+thing now is, that all Sections are splitted in a own XML-File. So you
+can open all files you need in a tab.
+
+So i invite you for a crash course. Please open own-status-updates.xml
+with your preffered editor. In my case i'm using atm XML-Mind.
+If you go to View (after search in the Menubar). Then choose
+"No Stylesheet". There you see the Documentstructure.
+In "Build Service Team" you see, that the Article is marked as "blockquote".
+The ulink Contains in the first Line the URL. Under that Line we can write
+the Summary of the Link. Under blockquote we can see "para". That stands
+for Paragraph. There you can place the paragraphs.
+
+If you like to create a list, you can go to the begin of the document. 
+There you read Statusupdates/Distribution. There i've created a Part
+called "itemizedlist". Under that i created a title "Important Links".
+Then the FO Processor knows, that he should create a list. 
+Every point in the List is called as "listitem". Under listitem you
+can create ulinks for URL.
+
+For special questions you can ask: saigkill@opensuse.org or 
+toms@suse.de (our Docbook Consultant).
+
+If all Subcorners are ready, then starts the proofreading process. 
+For that the proofreader can use the OWN.xml. That file is the
+Root-File for the whole subcontent. in that file the proofreader can
+see all subcontents in one view.
+
+If all is ready the next Step comes.
+
+Second Step (Formatting and PDF Processing)
+===========================================
+
+For this step we need two special package from the Build Service.
+You need the packages "susedoc" & "susedoc-buildbook". Both packages
+have depencies to other needed packages like fop. That's ok. We 
+need all of this.
+
+Then we have prepared a Script for exporting XML to PDF through FO.
+Just run "xml2pdf.sh" in the shell. The next steps should run 
+automaticly through the Script. The result is a PDF File called OWN.pdf.
+
+That file you can distribute on every place.
+
+Third Step (Next Issue)
+=======================
+
+For the next issue we use the same files. But we have to be careful.
+We can overwrite the old Content, but now we place on the last edited
+part the string "EDITMARK". Then the next Editor knows, that he can
+go forward under this mark in the next para.
+
+TODO every issue
+================
+
+After the issue is published, we go to xml/entities.ent and replace
+the old issuenumber with the new.
+If we would like to place a Editors Note, just go to xml/OWN.xml.
+Under the Authorlist  we have a range called <abstract><para> There
+we can make a Editors Note.
+
+Linklist
+========
+* http://svnbook.red-bean.com/nightly/de/svn.tour.importing.html
+
+
+
