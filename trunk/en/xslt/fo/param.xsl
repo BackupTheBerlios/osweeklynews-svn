@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format" >
+  xmlns:img="urn:x-suse:toms:image-table"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  exclude-result-prefixes="img">
 
 <!-- ==== The Parameters === -->
   
 <!-- The start-indent for the body text:                 -->
-<xsl:param name="body.start.indent">0em</xsl:param>
+<xsl:param name="body.start.indent">3em</xsl:param>
 
 <xsl:param name="column.count.body" select="1"/>
 
@@ -14,9 +16,15 @@
 <xsl:param name="draft.mode" select="'no'"/>
 <!-- This is going to be a book, so we print doublesided -->
 <xsl:param name="double.sided">1</xsl:param>
+
+<!-- Contains a table mapping between @role and image filename -->
+<xsl:param name="imgtable" select="document('imagetable.xml')//img:*"/>
+
 <!-- Use FOP 1.x extensions                              -->
 <xsl:param name="fop1.extensions" select="1"/>
 <xsl:param name="xep.extensions" select="0"/>
+
+<!--<xsl:param name="header.column.widths">0 4 0</xsl:param>-->
 
 <xsl:param name="logos.src.path">logos/</xsl:param>
 <!-- Use blocks for variable lists:                      -->
