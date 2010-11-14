@@ -6,7 +6,7 @@
   exclude-result-prefixes="img">
 
 <!-- ==== The Parameters === -->
-  
+
 <!-- The start-indent for the body text:                 -->
 <xsl:param name="body.start.indent">3em</xsl:param>
 
@@ -18,7 +18,9 @@
 <xsl:param name="double.sided">1</xsl:param>
 
 <!-- Contains a table mapping between @role and image filename -->
-<xsl:param name="imgtable" select="document('imagetable.xml')//img:*"/>
+<xsl:param name="own.imgtable" select="document('imagetable.xml')//img:*"/>
+
+<xsl:param name="own.section.background-color">#E5E5E6</xsl:param>
 
 <!-- Use FOP 1.x extensions                              -->
 <xsl:param name="fop1.extensions" select="1"/>
