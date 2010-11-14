@@ -23,7 +23,7 @@
   <xsl:variable name="img" select="$own.imgtable[@role=$node/@role]"/>
  
  <xsl:variable name="content">
-   <fo:block vertical-align="middle" padding-start="0.25em">
+   <fo:block vertical-align="middle">
     <xsl:choose>
       <xsl:when test="$level=1">
         <fo:block xsl:use-attribute-sets="section.title.level1.properties">
@@ -62,6 +62,7 @@
  <fo:block xsl:use-attribute-sets="section.title.properties"
    padding-before="0.25em" padding-after="0.25em">
    <xsl:if test="$level = 1">
+     <!-- Only set background for level 1 sections -->
      <xsl:attribute name="background-color">
        <xsl:value-of select="$own.section.background-color"/>
      </xsl:attribute>
@@ -75,7 +76,7 @@
         <xsl:when test="$node/@role and $img != ''">
           <fo:table table-layout="fixed" width="100%">
             <fo:table-column column-width="proportional-column-width(1)"/>
-            <fo:table-column column-width="proportional-column-width(9)"/>
+            <fo:table-column column-width="proportional-column-width(11)"/>
             <fo:table-body>
               <fo:table-cell padding-start="0.5em">
                 <fo:block vertical-align="middle">
@@ -100,7 +101,7 @@
           </fo:table>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:copy-of select="$content"/>
+            <xsl:copy-of select="$content"/>
         </xsl:otherwise>
       </xsl:choose>
  </fo:block>
