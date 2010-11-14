@@ -27,6 +27,7 @@
 <xsl:param name="xep.extensions" select="0"/>
 
 <!--<xsl:param name="header.column.widths">0 4 0</xsl:param>-->
+<xsl:param name="headers.on.blank.pages" select="0"/>
 
 <xsl:param name="logos.src.path">logos/</xsl:param>
 <!-- Use blocks for variable lists:                      -->
@@ -35,7 +36,10 @@
 <xsl:param name="glossary.as.blocks" select="1"/>
 <!-- The used paper type                                 -->
 <xsl:param name="paper.type">A4</xsl:param>
-  
+
+<xsl:param name="page.margin.inner">2em</xsl:param>
+<xsl:param name="page.margin.outer">2em</xsl:param>
+
 <xsl:param name="ulink.footnotes" select="1"/>
 
 <xsl:param name="ulink.hyphenate" select="'&#x200B;'"/>
