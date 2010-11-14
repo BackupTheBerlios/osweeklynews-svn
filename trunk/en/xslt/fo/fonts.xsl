@@ -11,7 +11,7 @@
   <xsl:text>,</xsl:text>
   <xsl:value-of select="$title.font.family"/>
   <xsl:text>,</xsl:text>
-  <xsl:text>Symbol</xsl:text>
+  <!--<xsl:text>Symbol</xsl:text>-->
 </xsl:param>
 
 </xsl:stylesheet>
