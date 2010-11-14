@@ -15,7 +15,7 @@
 <!-- Do we use draft mode:                               -->  
 <xsl:param name="draft.mode" select="'no'"/>
 <!-- This is going to be a book, so we print doublesided -->
-<xsl:param name="double.sided">1</xsl:param>
+<xsl:param name="double.sided">0</xsl:param>
 
 <!-- Contains a table mapping between @role and image filename -->
 <xsl:param name="own.imgtable" select="document('imagetable.xml')//img:*"/>
