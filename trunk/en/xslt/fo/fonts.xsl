@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
-<xsl:param name="body.font.family">'Charis SIL'</xsl:param>
+<xsl:param name="body.font.family">'DejaVu Sans Condensed'</xsl:param><!-- 'Charis SIL' -->
 <xsl:param name="title.font.family">'DejaVu Sans Condensed'</xsl:param>
 <xsl:param name="monospace.font.family">'DejaVu Sans Mono'</xsl:param>
 <xsl:param name="sans.font.family"><xsl:value-of select="$title.font.family"/></xsl:param>
