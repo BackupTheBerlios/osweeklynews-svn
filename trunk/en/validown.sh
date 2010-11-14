@@ -1,2 +1,2 @@
 #!/bin/bash
-xmllint --xinclude --postvalid --noout xml/OWN.xml
+xmllint --xinclude --postvalid --output xml/.OWN.xml xml/OWN.xml
