@@ -1,17 +1,16 @@
-====================================================
-##  Readme File for the                           ##
-##             openSUSE Weekly News Project       ##
-##                                                ##
-##  Sascha Manns <saigkill@opensuse.org>          ##
-##  Thomas Schraitle <toms@suse.de>               ##
-####################################################
+#################################################################################
+##                                                                             ##
+## Readme File for the                                                         ##
+##                      openSUSE Weekly News Project                           ##
+##                                                                             ##
+## Sascha Manns <saigkill@opensuse.org>                                        ##
+## Thomas Schraitle <toms@suse.de>                                             ##
+##                                                                             ##
+#################################################################################
 
-This README file explains how to build the openSUSE
-Weekly News (OWN).
 
-Some things has changed since the last Wiki Issues.
-
-The structure of the SVN repository looks like this:
+Warm welcome in our Weekly News Repository. 
+First of all i'll introduce you to our SVN Repository. Actually it looks like:
 
 * branches/
 * tags/     Contain the snapshots for each edition
@@ -24,91 +23,21 @@ The structure of the SVN repository looks like this:
      xslt/  Contains no editable content, only stylesheets
         fo/  Stylesheets for the FO output
 
-If you would like to add a language folder, send a mail
-to: saigkill@opensuse.org
+If you want to add your Languagefolder there, just write an Email 
+to: saigkill@opensuse.org.
 
-Before you start editing, make a "svn up", to get the lastest files.
-If you haven't an user account on BerliOS, register there:
-  http://developer.berlios.de/account/register.php
-After registering, please send your user account to saigkill@opensue.org,
-to get commit access for our SVN repository.
+For getting commitrights please register yourself at http://developer.berlios.de/account/register.php. 
+After that, please send saigkill@opensuse.org your Accountdetails. So he can add you to the Project.
 
-First Step (Editing)
-====================
+After this short introducion we go forward to explore the World.
 
-Find the XML sources in trunk/en/xml.
+In this Repository we have written different Documents with different goals.
 
-Edit the XML files with a XML editor. I use 2 different
-editors, because both has pros and cons:
+TUTORIAL     - Is a Step by Step Guideline, who explains, how we can get the wished output.
+DEVEL        - Contains Informations about the Process.
+BUILD        - Explains how we can compile our XML/XSLT Files to get a Outputfile
+TODO         - Place for Plans, Enhencements, Errors in a Stylesheet or a Layoutproblem.
 
- * Serna free (http://www.syntext.com/downloads/serna/)
- * XML Mind (http://www.xmlmind.com/xmleditor/)
-
-You can download both for free.
-
-As each sections are splitted in separate XML files, all XML files
-can be opened in a tab.
-
-So i invite you for a crash course. Please open own-status-updates.xml
-with your preffered editor. In my case i'm using atm XML-Mind.
-If you go to View (after search in the Menubar). Then choose
-"No Stylesheet". There you see the Documentstructure.
-In "Build Service Team" you see, that the Article is marked as "blockquote".
-The ulink Contains in the first Line the URL. Under that Line we can write
-the Summary of the Link. Under blockquote we can see "para". That stands
-for Paragraph. There you can place the paragraphs.
-
-If you like to create a list, you can go to the begin of the document.
-There you read Statusupdates/Distribution. There i've created a Part
-called "itemizedlist". Under that i created a title "Important Links".
-Then the FO Processor knows, that he should create a list.
-Every point in the List is called as "listitem". Under listitem you
-can create ulinks for URL.
-
-For special questions you can ask: saigkill@opensuse.org or
-toms@suse.de (our Docbook Consultant).
-
-If all Subcorners are ready, then starts the proofreading process.
-For that the proofreader can use the OWN.xml. That file is the
-Root-File for the whole subcontent. in that file the proofreader can
-see all subcontents in one view.
-
-If all is ready the next Step comes.
-
-Second Step (Formatting and PDF Processing)
-===========================================
-
-For this step we need two special package from the Build Service.
-You need the packages "susedoc" & "susedoc-buildbook". Both packages
-have depencies to other needed packages like fop. That's ok. We
-need all of this.
-
-Then we have prepared a Script for exporting XML to PDF through FO.
-Just run "xml2pdf.sh" in the shell. The next steps should run
-automaticly through the Script. The result is a PDF File called OWN.pdf.
-
-That file you can distribute on every place.
-
-Third Step (Next Issue)
-=======================
-
-For the next issue we use the same files. But we have to be careful.
-We can overwrite the old Content, but now we place on the last edited
-part the string "EDITMARK". Then the next Editor knows, that he can
-go forward under this mark in the next para.
-
-TODO every issue
-================
-
-After the issue is published, we go to xml/entities.ent and replace
-the old issuenumber with the new.
-If we would like to place a Editors Note, just go to xml/OWN.xml.
-Under the Authorlist  we have a range called <abstract><para> There
-we can make a Editors Note.
-
-Linklist
-========
-* http://svnbook.red-bean.com/nightly/de/svn.tour.importing.html
-
+@ 18.11.10 Last edit
 
 
