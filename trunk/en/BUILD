@@ -1,11 +1,14 @@
-####################################################
-##                                                ##
-##  Build File for the                            ##
-##             openSUSE Weekly News Project       ##
-##                                                ##
-##  Sascha Manns <saigkill@opensuse.org>          ##
-##  Thomas Schraitle <toms@suse.de>               ##
-####################################################
+#################################################################################
+##                                                                             ##
+## BUILD File for the                                                          ##
+##                      openSUSE Weekly News Project                           ##
+##                                                                             ##
+## Sascha Manns <saigkill@opensuse.org>                                        ##
+## Thomas Schraitle <toms@suse.de>                                             ##
+##                                                                             ##
+## Last edit: $Date: 2010-11-18 21:37:48 +0100 (Do, 18. Nov 2010) $            ##
+##                                                                             ##
+#################################################################################
 
 For this step we need two special package from the Build Service.
 You need the packages "susedoc" & "susedoc-buildbook". Both packages
