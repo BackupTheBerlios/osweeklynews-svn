@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-18 21:37:48 +0100 (Do, 18. Nov 2010) $            ##
+## Last edit: $Date: 2010-11-20 00:15:25 +0100 (Fr, 20. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -15,10 +15,26 @@ You need the packages "susedoc" & "susedoc-buildbook". Both packages
 have depencies to other needed packages like fop. That's ok. We
 need all of this.
 
-Then we have prepared a Script for exporting XML to PDF through FO.
-Just run "xml2pdf.sh" in the shell. The next steps should run
-automaticly through the Script. The result is a PDF File called OWN.pdf.
+In the next Step you can start chooser.py with:
+
+$ python chooser.py
+
+If you select "PDF" the Program runs a Script called "own2pdf". In case of 
+selection "HTML" the Program uses the Script "own2xhtml-single".
+
+The next lines are a example of using "PDF".
+If i select PDF the script starts. First of all the parser checks, if the
+XML-File is valid. If the result is "not valid" you have to check the XML File.
+Most are little errors like a unclosed tag like </html>.
+By getting "valid" all is ok.
+
+Then starting some subprograms like FOP and they trying to read all settings
+from /xslt/fo. Now the Programm read all XML Files under /xml. Then the 
+Program applies the Layout from xslt to the xml Files, and generates a Output.
+
+In this case we have a Output called "OWN.pdf". Using other Parameter like
+HTML you get a "OWN.html".
 
 That file you can distribute on every place.
 
-ATM we are working on more Outputformats.
+

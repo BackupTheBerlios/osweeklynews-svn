@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-18 21:40:31 +0100 (Do, 18. Nov 2010) $            ##
+## Last edit: $Date: 2010-11-20 00:21:45 +0100 (Fr, 20. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -21,13 +21,19 @@ editors, because both has pros and cons:
 You can download both for free.
 
 As each sections are splitted in separate XML files, all XML files
-can be opened in a tab.
+can be opened in a tab. As example we have a own-statusupdates.xml,
+own-credits.xml and so far.
 
-So i invite you for a crash course. Please open own-status-updates.xml
-with your preffered editor. In my case i'm using atm XML-Mind.
-If you go to View (after search in the Menubar). Then choose
-"No Stylesheet". There you see the Documentstructure.
-In "Build Service Team" you see, that the Article is marked as "blockquote".
+So i invite you for a crash course. Please make a local Copy of the
+next Files. Please do not edit the Raw Files. As option you can request
+a Language Folder for you. Then you can edit all. 
+
+Please open own-status-updates.xml with your XML-Mind editor. If you 
+go to View (after search in the Menubar). Then choose "No Stylesheet". 
+
+There you see the Documentstructure. In "Build Service Team" you see, 
+that the Article is marked as "blockquote".
+
 The ulink Contains in the first Line the URL. Under that Line we can write
 the Summary of the Link. Under blockquote we can see "para". That stands
 for Paragraph. There you can place the paragraphs.
