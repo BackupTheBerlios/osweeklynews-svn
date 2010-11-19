@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Include common variables and functions
-source .common.sh
+source ./.common.sh
 
 # The FO output filename:
 HTML=${BASEXML%.xml}.html

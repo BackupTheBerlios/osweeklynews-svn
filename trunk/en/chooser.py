@@ -27,7 +27,7 @@ while 1:
 			d.msgbox("execute: %s" % "./own2pdf.sh")
 			ret = subprocess.call("./own2pdf.sh", shell=True)
 		if tag == "HTML":
-			d.msgbox("execute: %s" % "./own2pdf.sh")
+			d.msgbox("execute: %s" % "./own2xhtml-single.sh")
 			ret = subprocess.call("./own2xhtml-single.sh",
 					      shell=True)
 		break
