@@ -5,7 +5,14 @@
 # Version: 0.0.1
 # (c) 2010 by Sascha Manns <saigkill@opensuse.org>
 #
-import dialog, sys, subprocess
+import sys
+import subprocess
+
+try:
+	import dialog
+except ImportError, e:
+	print >> sys.stderr, "ERROR: %s\nSolution: Install the python-dialog package" % e
+	sys.exit(10)
 
 # Dialogbox initialisieren
 d = dialog.Dialog(dialog="dialog")
