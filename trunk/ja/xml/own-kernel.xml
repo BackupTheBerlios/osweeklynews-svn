@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title><ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1051573">Linus
+        Torvalds: Linux 2.6.36</ulink></title>
+    <para>So it's a week later than I wanted (plus all the days that
+      added up from me having a few 8-day weeks during this release
+      window), but it's out there now. </para>
+    <para> The delay means that the merge window that opens now would
+      cover the upcoming kernel summit. However, I really hope that
+      everybody sends me their patches and pull requests _before_ KS
+      even starts. And if you're affected by the kernel summit you
+      probably won't have time during it to finalize anything that week
+      anyway, especially for those staying for plumbers afterwards,
+      and... (...)</para>
+  </blockquote>
+</sect1>
