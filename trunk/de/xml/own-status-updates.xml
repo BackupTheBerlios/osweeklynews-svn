@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<sect1 role="status-updates">
+  <title>Status Updates</title>
+
+  <sect2 role="board">
+    <title>Board</title>
+
+<!--Put here news from the board * meeting minutes * board topics  As needed. -->
+
+    <blockquote>
+      <para>...</para>
+    </blockquote>
+  </sect2>
+
+  <sect2 role="distribution">
+    <title>Distribution</title>
+
+<!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
+
+    <blockquote>
+      <title>Schedules for the next week</title>
+
+      <para>...</para>
+    </blockquote>
+
+    <itemizedlist>
+      <title>Important Links</title>
+
+      <listitem>
+        <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla
+        Report</ulink></para>
+      </listitem>
+
+      <listitem>
+        <para><ulink
+        url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting
+        Bug Reports</ulink></para>
+      </listitem>
+
+      <listitem>
+        <para><ulink
+        url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+        FAQ</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 role="susestudio">
+    <title>SUSE Studio</title>
+
+    <blockquote>
+      <title>Interesting article</title>
+
+      <para>blah laber</para>
+    </blockquote>
+  </sect2>
+
+  <sect2>
+    <title>Team Report</title>
+
+    <sect3 role="artteam">
+      <title>Art Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="boosters">
+      <title>Boosters Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>
+
+     <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
+
+      <blockquote>
+        <title><ulink
+        url="http://nowwhatthe.blogspot.com/2010/10/notes-on-obs.html">Jos
+        Poortvliet: Notes on OBS</ulink></title>
+
+        <para>Having an awesome time here at the conference - esp last night
+        with the Movie Night, the Movies were cool. As was the beer during and
+        afterwards…</para>
+
+        <para>During the day I followed talk by Lubos Lunak about the Build
+        Service as I wanted to learn more about it. As I made notes I decided
+        to share them :D</para>
+
+        <para>In the introduction Lubos shared that apparently you have to
+        package each application by hand - however, automatic downloading of
+        random tarballs from the internet and turning them into packages for
+        all linux distributions on distrowatch.org is planned for OBS 3.0!
+        (…)</para>
+      </blockquote>
+
+      <blockquote>
+        <title><ulink
+        url="http://lizards.opensuse.org/2010/10/24/obs-2-1-status-of-superh-sh4-support-with-qemu/">Martin
+        Mohring: OBS 2.1: Status of SuperH (sh4) support with
+        QEMU</ulink></title>
+
+        <para>With established ARM support in OBS the as well as emulated MIPS
+        and PowerPC is getting more mature, the last big embedded architecture
+        not working in OBS with QEMU user mode was SH4. QEMU developers
+        community had done a lot of work in improving QEMU user mode during
+        the last months, so I can proudly present with currently only a few
+        patches to QEMU git master OBS builds working with the SH4 port of
+        Debian Sid. The new QEMU 0.13 released recently is a big milestone for
+        this. (…)</para>
+      </blockquote>
+
+      <formalpara>
+        <title>Build Service Statistics</title>
+
+        <para>Statistics can found at <ulink
+        url="http://build.opensuse.org"></ulink></para>
+      </formalpara>
+    </sect3>
+
+    <sect3 role="education">
+      <title>Education Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="forums">
+      <title>Forums Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="gnometeam">
+      <title>GNOME Team</title>
+
+      <blockquote>
+        <title><ulink
+        url="http://www.vuntz.net/journal/post/2010/10/21/JDLL-2010">Vincent
+        Untz: JDLL 2010</ulink></title>
+
+        <para>Last Friday, I headed to Lyon for the JDLL 2010. It's an event
+        that feels always a bit special for me since the JDLL was the first
+        event I attended a long while ago. Even though it's not the biggest
+        event in France, for some reason, all the usual suspects from the
+        french-speaking free software community is coming. So a good place to
+        be to catch up with various people (Alexandre, Didier, FrédéricP,
+        Michael from the GNOME-FR conspiracycommunity, as well as our friends
+        from Mageia, and more). (…)</para>
+      </blockquote>
+    </sect3>
+
+    <sect3 role="kdeteam">
+      <title>KDE Team</title>
+
+      <blockquote>
+        <title><ulink url="">Andreas Demmer: Dashboard
+        animation</ulink></title>
+
+        <para>Yesterday evening, I added the first animation to the KWin
+        dashboard effect: Saturation and brightness of the background do now
+        change over a configurable time span when the dashboard appears. The
+        smooth fade of the background adds some eye candy without being to
+        obstrusive (hopefully).</para>
+
+        <para>I posted the <ulink
+        url="http://reviewboard.kde.org/r/5658/">according patch</ulink> to
+        the KDE review board. If everything works out fine, the patch will be
+        in trunk for KDE SC 4.6 before code freeze.</para>
+      </blockquote>
+    </sect3>
+
+    <sect3 role="marketingteam">
+      <title>Marketing Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="medical">
+      <title>Medical Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="monoteam">
+      <title>Mono Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="openfateteam">
+      <title>openFATE Team</title>
+
+      <para>...</para>
+
+      <itemizedlist>
+        <para>Feature Statistics</para>
+
+        <listitem>
+          <para>Statistics for openSUSE 11.4 <ulink
+          url="https://features.opensuse.org/statistic/product/22236">in
+          openFATE</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+
+    <sect3 role="oooteam">
+      <title>OpenOffice Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="testing">
+      <title>Testing Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="translationteam">
+      <title>Translation Team</title>
+
+      <itemizedlist>
+        <listitem>
+          <para>Daily updated translation statistics are available on the
+          <ulink url="http://i18n.opensuse.org/">openSUSE Localization
+          Portal</ulink>.</para>
+        </listitem>
+
+        <listitem>
+          <para><ulink
+          url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk
+          Top-List</ulink> – <ulink
+          url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+          Guide</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+
+    <sect3 role="wiki">
+      <title>Wiki Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="yast">
+      <title>YaST Team</title>
+
+      <para>...</para>
+    </sect3>
+  </sect2>
+</sect1>
