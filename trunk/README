@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date$            ##
+## Last edit: $Date: 2010-11-21 13:47:32 +0100 (So, 21. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -17,13 +17,19 @@ First of all i'll introduce you to our SVN Repository. Actually it looks like:
 * branches/
 * tags/     Contain the snapshots for each edition
 * trunk/    Your working directory
+    docs/   All Documentation about Weekly News @ DocBook
     en/     All stuff for the English newsletter
             Other languages can be added, if needed
      .      README, Makefiles, chooser.py
      logos/ This folder contains pictures)
      xml/   Contains the XML sources
      xslt/  Contains no editable content, only stylesheets
-        fo/  Stylesheets for the FO output
+        fo/ Stylesheets for the FO output
+    
+    de/     All stuff for the German newsletter
+            same subcontent like en/
+    ja/     All stuff for the Japanese newsletter
+            same subcontent like en/
 
 If you want to add your Languagefolder there, just write an Email 
 to: saigkill@opensuse.org.
@@ -35,7 +41,7 @@ add you to the Project.
 
 After this short introducion we go forward to explore the World.
 
-In this Repository we have written different Documents with different goals.
+In the "docs"  Repository we have written different Documents with different goals.
 
 TUTORIAL     - Is a Step by Step Guideline, who explains, how we can get the 
                wished output.
