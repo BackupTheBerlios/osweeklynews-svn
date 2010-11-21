@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-21 00:13:45 +0100 (Sa, 21. Nov 2010) $            ##
+## Last edit: $Date: 2010-11-21 13:05:40 +0100 (So, 21. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -69,6 +69,9 @@ If all Subcorners are ready, then starts the proofreading process.
 For that the proofreader can use the OWN.xml. That file is the
 Root-File for the whole subcontent. in that file the proofreader can
 see all subcontents in one view.
+
+Important: Unneeded Sections or paragraphs do not delete. Just go to the
+sourcecode and comment it out: <!-- paragraph -->
 
 If all is ready the next Step comes.
 
