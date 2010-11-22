@@ -1,7 +1,7 @@
 #################################################################################
 ##                                                                             ##
 ## Readme File for the                                                         ##
-##                      openSUSE Weekly News Project                           ##
+##                   openSUSE Weekly News Project (OWN)                        ##
 ##                                                                             ##
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
@@ -10,44 +10,42 @@
 ##                                                                             ##
 #################################################################################
 
+               Welcome to our openSUSE Weekly News Repository
 
-Warm welcome in our Weekly News Repository. 
-First of all i'll introduce you to our SVN Repository. Actually it looks like:
+First of all we would like to introduce you to our SVN repository. The structure
+looks like this:
 
 * branches/
-* tags/     Contain the snapshots for each edition
-* trunk/    Your working directory
-    docs/   All Documentation about Weekly News @ DocBook
-    en/     All stuff for the English newsletter
-            Other languages can be added, if needed
-     .      README, Makefiles, chooser.py
-     logos/ This folder contains pictures)
-     xml/   Contains the XML sources
-     xslt/  Contains no editable content, only stylesheets
-        fo/ Stylesheets for the FO output
+* tags/        Contain snapshots for each edition
+* trunk/       Everything about OWN
+    docs/      All Documentation about OWN @ DocBook
+    en/        The English newsletter.
+     .         README, Makefiles, chooser.py
+     logos/    Contain pictures
+     xml/      Contain the XML sources
+     xslt/     Contain no editable content, only stylesheets
+        fo/    Stylesheets for the FO output
+        html/  Stylesheets for the HTML output
     
-    de/     All stuff for the German newsletter
-            same subcontent like en/
-    ja/     All stuff for the Japanese newsletter
-            same subcontent like en/
+    de/        The German newsletter, same content as en/
+    ja/        The Japanese newsletter, same content like en/
 
-If you want to add your Languagefolder there, just write an Email 
-to: saigkill@opensuse.org.
 
-For getting commitrights please register yourself at 
-http://developer.berlios.de/account/register.php. 
-After that, please send saigkill@opensuse.org your Accountdetails. So he can 
-add you to the Project.
+The "docs" directory contain different documents for the several target groups:
 
-After this short introducion we go forward to explore the World.
+TUTORIAL     - Is a step-by-step explanation. It explains how you create the 
+               wanted output
+DEVEL        - Contains information about the process
+BUILD        - Explains how you can compile our XML files with the help of XSLT
+               stylesheet to get your output
+TODO         - Place for plans, enhencements, errors in a stylesheet or 
+               a layout problem
 
-In the "docs"  Repository we have written different Documents with different goals.
 
-TUTORIAL     - Is a Step by Step Guideline, who explains, how we can get the 
-               wished output.
-DEVEL        - Contains Informations about the Process.
-BUILD        - Explains how we can compile our XML/XSLT Files to get a 
-               Outputfile
-TODO         - Place for Plans, Enhencements, Errors in a Stylesheet or 
-               a Layoutproblem.
+If you want to add your language, proceed as follows:
+
+1. Register yourself at <http://developer.berlios.de/account/register.php>.
+2. Write an e-mail to <saigkill@opensuse.org> and insert your account details.
+3. Check out our repository and have fun! :-)
+
 
