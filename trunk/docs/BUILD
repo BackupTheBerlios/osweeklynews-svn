@@ -12,47 +12,49 @@
 
 1.) Introduction / Whats this project all about?
 ================================================
-This file tries to introduce you for the Buildprocess from our XML Files.
-As already written in the TUTORIAL we using XML Files for making the 
-openSUSE Weekly News. This experiences you learn in this Process you can use
-later for making own Documentations or Books. Or you can rework present openSUSE
-Documentations.
+This file introduce you to the build process. As already written in the TUTORIAL
+we use XML files for creating the openSUSE Weekly News. You learn in this process 
+how you can use the XML files for creating your own book.
 
 2.) Prequisites / What do I need?
 =================================
-For the Building process we use the following packages:
+For building the book, all you need to do is install the following packages
+via zypper or YaST:
 * susedoc
 * susedoc-buildbook
 
-In normal cases these two packages are putting other packages to your Install list.
-This is no problem, we need all of them.
+## Maybe we should add how to find it? A URL? I'm not sure about susedoc-buildbook
+## as this is primarily Karl's baby. :)
+The susedoc package contains lots of dependencies to other packages. Usually we
+need all of them. The installer take care of resolving all dependencies.
 
-If all is installed you need no more and you can go to the next step.
 
 3.) Build / How do I build a book?
 ==================================
-In your Languagefolder (like trunk/en) you find a File called "chooser.py".
-Please start this via:
+Go to your language folder (trunk/en) and start the file "chooser.py":
 
 $ python chooser.py
 
-Then comes a little GUI who asks you which Outputformat you want. At the 
-Moment just "PDF" works. The rest is WIP. In case you choose "PDF" the chooser
-starts the Script "own2pdf.sh". And then you get a File called "OWN.pdf".
-If you have selected "HTML" then the chooser calls the script "own2xhtml.sh" and then
-you get the Output "OWN.html".
+This command displays a list of possible output formats. Depending what
+output have been selected, the chooser.py script runs other scripts for
+the actual transformation task. For example, if you have selected "PDF",
+chooser.py executes "own2pdf.sh" to build the PDF. Similar for the 
+other output formats.
 
-Than you're ready.
+To create output formats from DocBook involves usually the following steps,
+which are implemented in the several "own2*.sh" scripts:
+1. The XML validator "xmllint" looks for errors. This step is called "validation".
+   If everything is ok, "valid" is printed. However, if you accidently 
+   inserted a syntax  error in your file, the complete process stops here.
+   Only valid files can be transformed. Fix your errors to make your 
+   validator happy. :)
+2. The XSLT processor "xsltproc" or "Saxon" collects all XML files and
+   transforms it into the output format. This is done with the help of the 
+   DocBook XSL stylesheets.  
+3. The last step depens on the output format. In case of (X)HTML, you can read
+   it directly in your browser. If you have selected PDF, a further step 
+   formats the intermediate FO file into PDF.
 
-If you want to know what happens behind the Wall, i'd like to introduce you a little
-bit.
-The first thing what happens is, that a program called "xmllint" looks for Errors in
-the XML file. If that are ok, the Program says "valid". Otherwise we get an Error.
-The next called Program is "xsltproc". That Program collects all XML Files and put it 
-in one File. This File now are formatted with our Stylesheets in our xslt Folder (like 
-trunk/en/xslt/fo). The Outputfile is in XSLT-FO Format. The last Process calls "fo" 
-The FO Processor now generates our wished Outputformat (like PDF) and we're getting
-"OWN.pdf" or "OWN.html".
 
 4.) Participate / How to participate?
 =====================================
