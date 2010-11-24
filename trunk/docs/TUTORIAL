@@ -12,23 +12,25 @@
 
 1.) What are this project?
 ==========================
-This is a project who supports the Code for the openSUSE Weely News.
+This is a project who supports the code for the openSUSE Weely News.
 We are working with XML (DocBook) Files, and using FOP for formatting and
-exporting into different Outputformats.
-The great plus for this way is that we writing one File, and can
-get Outputs for HTML, PDF and others.
+exporting into different output formats.
+The great advantage of this method is: write once, publish it in lots of formats!
+For example, you can get HTML, PDF and others output formats.
 
-2.) Which are the prequisites for me as reader?
+2.) Which are the prequisites for me as writer?
 ===============================================
-It is not bad to have a little basic knowledge of XML Files. If not, its
-no a tragedy. Because we can use XML Editors, that simplifys the handling
-of the XML Files. But keep in mind: What you see in the Editors is partly
-not really what we get. We have a special formatting Process, that uses 
-own Stylesheets.
+It's recommended to have some basic XML knowledge. If not, its not a tragedy. 
+XML Editors simplifies the writing process a lot. But keep in mind: 
+What you see in your editor is not really what you get. Usually you do not
+have to care about the layout. Writing in XML is almost similar to writing in
+(X)HTML: you write tags with a special meaning. The only "obstacle" between
+DocBook and (X)HTML is that tag names are different. 
+We have a special formatting process, that uses our own stylesheets.
 
-3.) What needs my PC for working in this Project?
+3.) What needs my PC for working in this project?
 =================================================
-We now list a short List for important Sources.
+We now list a short list for important sources.
 
 External:
 * Serna free (http://www.syntext.com/downloads/serna/)
@@ -39,17 +41,19 @@ Internal (from OBS):
 * susedoc-buildbook
 * docbook
 * fop
-Normal if you choose that packages, the Packagemanager will add new Packages
-to the List. Thats ok. All of this Packages are needed.
 
-4.) What is the Projects Workaround?
+Normally, if you choose the above packages, the package manager will add new packages
+to the list. Thats ok. All of these packages are needed.
+
+
+4.) What are the projects workaround?
 ====================================
-If you have your BerliOS Account (as written in README), you can go to the Site:
-http://developer.berlios.de/svn/?group_id=12095 and checkout the Source via
+If you have your BerliOS account (as written in README), you can go to the site:
+http://developer.berlios.de/svn/?group_id=12095 and checkout the source via
 the described "Developer SVN Access". 
-The structure of the Repository is written in the README. 
+The structure of the repository is written in the README. 
 
-In the following lines i write from a view of a Editor in "trunk/en".
+In the following lines write from a view of a editor in "trunk/en".
 All files to edit are placed in "trunk/en/xml". The whole Weekly News are
 splitted into sections. So the Section "Status Updates" are in the File
 "own-status-updates.xml". 
