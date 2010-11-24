@@ -6,48 +6,53 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-24 16:08:51 +0100 (Mi, 24. Nov 2010) $            ##
+## Last edit: $Date: 2010-11-24 20:30:55 +0100 (Mi, 24. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
-For this step we need two special package from the Build Service.
-You need the packages "susedoc" & "susedoc-buildbook". Both packages
-have depencies to other needed packages like fop. That's ok. We
-need all of this.
-
-In the next Step you can start chooser.py with:
-
-$ python chooser.py
-
-If you select "PDF" the Program runs a Script called "own2pdf". In case of 
-selection "HTML" the Program uses the Script "own2xhtml-single".
-
-The next lines are a example of using "PDF".
-If i select PDF the script starts. First of all the parser checks, if the
-XML-File is valid. If the result is "not valid" you have to check the XML File.
-Most are little errors like a unclosed tag like </html>.
-By getting "valid" all is ok.
-
-Then starting some subprograms like FOP and they trying to read all settings
-from /xslt/fo. Now the Programm read all XML Files under /xml. Then the 
-Program applies the Layout from xslt to the xml Files, and generates a Output.
-
-In this case we have a Output called "OWN.pdf". Using other Parameter like
-HTML you get a "OWN.html".
-
-That file you can distribute on every place.
-
-#### Rework ####
 1.) Introduction / Whats this project all about?
 ================================================
-
+This file tries to introduce you for the Buildprocess from our XML Files.
+As already written in the TUTORIAL we using XML Files for making the 
+openSUSE Weekly News. This experiences you learn in this Process you can use
+later for making own Documentations or Books. Or you can rework present openSUSE
+Documentations.
 
 2.) Prequisites / What do I need?
 =================================
+For the Building process we use the following packages:
+* susedoc
+* susedoc-buildbook
 
+In normal cases these two packages are putting other packages to your Install list.
+This is no problem, we need all of them.
+
+If all is installed you need no more and you can go to the next step.
 
 3.) Build / How do I build a book?
 ==================================
+In your Languagefolder (like trunk/en) you find a File called "chooser.py".
+Please start this via:
+
+$ python chooser.py
+
+Then comes a little GUI who asks you which Outputformat you want. At the 
+Moment just "PDF" works. The rest is WIP. In case you choose "PDF" the chooser
+starts the Script "own2pdf.sh". And then you get a File called "OWN.pdf".
+If you have selected "HTML" then the chooser calls the script "own2xhtml.sh" and then
+you get the Output "OWN.html".
+
+Than you're ready.
+
+If you want to know what happens behind the Wall, i'd like to introduce you a little
+bit.
+The first thing what happens is, that a program called "xmllint" looks for Errors in
+the XML file. If that are ok, the Program says "valid". Otherwise we get an Error.
+The next called Program is "xsltproc". That Program collects all XML Files and put it 
+in one File. This File now are formatted with our Stylesheets in our xslt Folder (like 
+trunk/en/xslt/fo). The Outputfile is in XSLT-FO Format. The last Process calls "fo" 
+The FO Processor now generates our wished Outputformat (like PDF) and we're getting
+"OWN.pdf" or "OWN.html".
 
 4.) Participate / How to participate?
 =====================================
