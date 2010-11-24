@@ -6,96 +6,127 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-24 16:09:49 +0100 (Mi, 24. Nov 2010) $            ##
+## Last edit: $Date: 2010-11-24 17:20:52 +0100 (Mi, 24. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
-Find the XML sources in trunk/en/xml.
+1.) What are this project?
+==========================
+This is a project who supports the Code for the openSUSE Weely News.
+We are working with XML (DocBook) Files, and using FOP for formatting and
+exporting into different Outputformats.
+The great plus for this way is that we writing one File, and can
+get Outputs for HTML, PDF and others.
 
-Edit the XML files with a XML editor. I use 2 different
-editors, because both has pros and cons:
+2.) Which are the prequisites for me as reader?
+===============================================
+It is not bad to have a little basic knowledge of XML Files. If not, its
+no a tragedy. Because we can use XML Editors, that simplifys the handling
+of the XML Files. But keep in mind: What you see in the Editors is partly
+not really what we get. We have a special formatting Process, that uses 
+own Stylesheets.
 
- * Serna free (http://www.syntext.com/downloads/serna/)
- * XML Mind (http://www.xmlmind.com/xmleditor/)
+3.) What needs my PC for working in this Project?
+=================================================
+We now list a short List for important Sources.
 
-You can download both for free.
+External:
+* Serna free (http://www.syntext.com/downloads/serna/)
+* XML Mind (http://www.xmlmind.com/xmleditor/)
 
-As each sections are splitted in separate XML files, all XML files
-can be opened in a tab. As example we have a own-statusupdates.xml,
-own-credits.xml and so far.
+Internal (from OBS):
+* susedoc
+* susedoc-buildbook
+* docbook
+* fop
+Normal if you choose that packages, the Packagemanager will add new Packages
+to the List. Thats ok. All of this Packages are needed.
 
-It is essencial and important, to know, that the File who i'm working on, could 
-be modified by another Teammate. 
-Please make everytime before you start to edit a 
+4.) What is the Projects Workaround?
+====================================
+If you have your BerliOS Account (as written in README), you can go to the Site:
+http://developer.berlios.de/svn/?group_id=12095 and checkout the Source via
+the described "Developer SVN Access". 
+The structure of the Repository is written in the README. 
 
-$ svn up
+In the following lines i write from a view of a Editor in "trunk/en".
+All files to edit are placed in "trunk/en/xml". The whole Weekly News are
+splitted into sections. So the Section "Status Updates" are in the File
+"own-status-updates.xml". 
 
-So you get the last edited files. 
+In the case that you are need to edit this File, you can open it with one
+of the proposed XML Editors. Both, Serna free and XML Mind have plusses and
+minusses. If you want to create one or more paragraphs, or you want to move
+Paragraphs, then Serna is a good choice. If you want just to write things,
+i propose XML Mind. But you have to test both and make experiences, than
+you know, what you like. 
 
-For checkin your own stuff you can use:
-
-$ svn ci
-
-Please make checkins so often as possible. 
-
-Now i invite you for a crash course. Please make a local Copy of the
-next Files. Please do not edit the Raw Files. As option you can request
-a Language Folder for you. Then you can edit all. 
-
-Please open own-status-updates.xml with your XML-Mind editor. If you 
-go to View (after search in the Menubar). Then choose "No Stylesheet". 
-
-There you see the Documentstructure. In "Build Service Team" you see, 
+There you see the Documentstructure. In "Build Service Team" you see,
 that the Article is marked as "blockquote".
 
 The ulink Contains in the first Line the URL. Under that Line we can write
 the Summary of the Link. Under blockquote we can see "para". That stands
 for Paragraph. There you can place the paragraphs.
 
-If you like to create a list, you can go to the begin of the document.
-There you read Statusupdates/Distribution. There i've created a Part
+If you like to create a list (maybe if you are the Eventeditor), you 
+can go to the begin of the document. There i've created a Part
 called "itemizedlist". Under that i created a title "Important Links".
 Then the FO Processor knows, that he should create a list.
 Every point in the List is called as "listitem". Under listitem you
 can create ulinks for URL.
 
-So our Eventeditor just must use Itemizedlist and listitem. Other 
+So our Eventeditor just must use Itemizedlist and listitem. Other
 Fields of the Newsletter needs blockquote and para.
 
-For special questions you can ask: saigkill@opensuse.org or
-toms@suse.de (our Docbook Consultant).
+If we have finished editing of one of the own-* Files, we have to 
+checkin our stuff to the SVN. So others can use your copy. For checkin use:
 
-If all Subcorners are ready, then starts the proofreading process.
-For that the proofreader can use the OWN.xml. That file is the
-Root-File for the whole subcontent. in that file the proofreader can
-see all subcontents in one view.
+$ svn ci
 
-Important: Unneeded Sections or paragraphs do not delete. Just go to the
-sourcecode and comment it out: <!-- paragraph -->
+Then svn gives you a Overview about the changes. Now you have to review it and
+if its okay, drop a short note about the changes, and close the editor.
+Then BerliOS asks for the Password. After passing this, the changes go up
+to the SVN.
 
-If all is ready the next Step comes.
+Please keep in mind, that you have to make a
 
-#### Rework ####
-1.) What are this project?
-==========================
+$ svn up
 
+so often, as possible. Then we have'nt korruptions.
 
-2.) Which are the prequisites for me as reader?
-===============================================
+If all Sections are ready, then starts the proofreaders work. The proofreader
+can open the file "trunk/en/xml/OWN.xml". If the XML Editor reads this in, all 
+subfiles who starts with "own-*" are readed in and included into it. So
+the proofreader can see all Documents in one view.
 
+The Editor in chief makes the finishing. We don't delete any sections or paragraphs.
+If a paragraph in a section is not needed, we comment it out via:
 
-3.) What needs my PC for working in this Project?
-=================================================
+<!-- View out -->
 
+Maybe we have a whole section who is unneeded, we open OWN.xml just in a editor like vim.
+Now i write about the cause, that we don't need own-statusupdates.xml. Then we search
+in the OWN.xml the line: 
 
-4.) What is the Projects Workaround?
-====================================
+:include href="own-status-updates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+and we comment it out like:
+
+<!--
+<xi:include href="own-status-updates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+-->
+
+Then the Processor outcluded it.
+
+Now follows the next Document "BUILD".
 
 5.) Where i can get more informations?
 ======================================
 
+* http://en.wikipedia.org/wiki/Apache_Subversion (About SVN)
+* http://en.wikipedia.org/wiki/XML (About XML)
+* http://en.wikipedia.org/wiki/DocBook (About DocBook)
+* http://www.docbook.org/ (About DocBook Homepage)
+* http://en.wikipedia.org/wiki/XSL-FO (About XSL Markup Language)
 
-
-=================================================
-
-4.) 
+*
