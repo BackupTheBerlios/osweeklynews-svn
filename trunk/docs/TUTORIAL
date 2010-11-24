@@ -118,6 +118,23 @@ and we comment it out like:
 
 Then the Processor outcluded it.
 
+Every Issue we must change ~/xml/entities.ent. That File contains:
+<!ENTITY own "openSUSE Weekly News">
+<!ENTITY edition "146">
+
+There the Editor in Chief set up the Issuenumber up. These entries are used in the whole Document and 
+must just set one per Issue.
+
+If the Issue is ready we set a Tag under ~/tags/own146. Then we don't clean the trunk. We working inside
+the trunk. Then we overwrite the old content. But we have the Situation that we have new content on the
+top and old content on the foot. So we must clarify what we have done. So we use this Workaround:
+1.) Overwrite old content. 
+2.) Place on the End of your Change that string (EDITMARK).
+Then the next can delete your (EDITMARK) can overwrite the next paragraph and he can set the 
+(EDITMARK) for the next.
+In the old days, who we worked in the Wiki, i placed every new issue a blank template in the Workplace.
+Now we don' use templates. We are working every time inside the trunk.
+
 Now follows the next Document "BUILD".
 
 5.) Where i can get more informations?
@@ -128,5 +145,3 @@ Now follows the next Document "BUILD".
 * http://en.wikipedia.org/wiki/DocBook (About DocBook)
 * http://www.docbook.org/ (About DocBook Homepage)
 * http://en.wikipedia.org/wiki/XSL-FO (About XSL Markup Language)
-
-*
