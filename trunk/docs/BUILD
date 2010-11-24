@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-20 00:15:25 +0100 (Fr, 20. Nov 2010) $            ##
+## Last edit: $Date: 2010-11-24 16:08:51 +0100 (Mi, 24. Nov 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -36,5 +36,20 @@ In this case we have a Output called "OWN.pdf". Using other Parameter like
 HTML you get a "OWN.html".
 
 That file you can distribute on every place.
+
+#### Rework ####
+1.) Introduction / Whats this project all about?
+================================================
+
+
+2.) Prequisites / What do I need?
+=================================
+
+
+3.) Build / How do I build a book?
+==================================
+
+4.) Participate / How to participate?
+=====================================
 
 
