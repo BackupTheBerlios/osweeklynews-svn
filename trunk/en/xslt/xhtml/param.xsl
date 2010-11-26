@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
   xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns:img="urn:x-suse:toms:image-table"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  exclude-result-prefixes="img">
   
   <!--Make HTML conform to modern coding standards -->
   <xsl:param name="make.clean.html" select="1"/>
@@ -17,4 +19,5 @@
   -->
   <xsl:param name="own.imgtable" select="document('../fo/imagetable.xml')//img:*"/>
 
+  <xsl:param name="logos.src.path">common/logos/</xsl:param>
 </xsl:stylesheet>
