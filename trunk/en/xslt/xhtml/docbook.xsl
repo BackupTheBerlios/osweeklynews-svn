@@ -5,6 +5,6 @@
   version="1.0">
   
  <xsl:import href="http://docbook.sourceforge.net/release/xsl/current/xhtml/docbook.xsl"/>
- 
+ <xsl:import href="param.xsl"/>
   
 </xsl:stylesheet>
