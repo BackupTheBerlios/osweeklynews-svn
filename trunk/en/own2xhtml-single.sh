@@ -8,7 +8,7 @@ HTMLDIR=xhtml/
 # The HTML output filename:
 HTML=${HTMLDIR}${BASEXML%.xml}.html
 # The XSLT stylesheet to create single HTML file:
-XSLTHTML=xslt/xhtml/docbook.xsl
+XSLTHTML=${XSLTDIR}/xhtml/docbook.xsl
 
 validate
 transform xml/.${BASEXML} ${XSLTHTML} ${HTML}
