@@ -12,5 +12,9 @@
   <!--Name of the stylesheet(s) to use in the generated HTML--> 
   <xsl:param name="html.stylesheet">susebooks.css</xsl:param>
 
+  <!-- Contains a table mapping between @role and image filename
+       taken from the fo/ directory
+  -->
+  <xsl:param name="own.imgtable" select="document('../fo/imagetable.xml')//img:*"/>
 
 </xsl:stylesheet>
