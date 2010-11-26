@@ -29,7 +29,7 @@
 <!--<xsl:param name="header.column.widths">0 4 0</xsl:param>-->
 <xsl:param name="headers.on.blank.pages" select="0"/>
 
-<xsl:param name="logos.src.path">logos/</xsl:param>
+<xsl:param name="logos.src.path">common/logos/</xsl:param>
 <!-- Use blocks for variable lists:                      -->
 <xsl:param name="variablelist.as.blocks" select="'1'"/>  
 <!-- Present glossarys using blocks instead of lists?    -->
