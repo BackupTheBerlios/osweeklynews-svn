@@ -23,8 +23,10 @@ via zypper or YaST:
 * susedoc
 * susedoc-buildbook
 
-## Maybe we should add how to find it? A URL? I'm not sure about susedoc-buildbook
-## as this is primarily Karl's baby. :)
+For doing that you have to add the following Repositories:
+* https://build.opensuse.org/project/packages?project=home:/thomas-schraitle/openSUSE_11.3
+* Standard 11.3 Repository
+
 The susedoc package contains lots of dependencies to other packages. Usually we
 need all of them. The installer take care of resolving all dependencies.
 
