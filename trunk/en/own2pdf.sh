@@ -12,14 +12,14 @@ PDF=${PDFDIR}${BASEXML%.xml}.pdf
 # The FOP configuration filename:
 FOPCONF=fop-config.xml
 # The XSLT stylesheet to create FO file:
-XSLTFO=xslt/fo/docbook.xsl
+XSLTFO=${XSLTDIR}/fo/docbook.xsl
 
 validate
 [ -d ${PDFDIR} ] || mkdir -p ${PDFDIR}
 # HACK: This will change:
-pushd ${PDFDIR}
+pushd ${PDFDIR} 2>/dev/null
 ln -sf ../xslt/common .
-popd
+popd 2>/dev/null
 
 transform xml/.${BASEXML} ${XSLTFO} ${FO}
 fop -c ${FOPCONF} ${FO} ${PDF}
