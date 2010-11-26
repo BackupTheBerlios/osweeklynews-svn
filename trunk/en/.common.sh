@@ -9,7 +9,10 @@ XML=xml/OWN.xml
 BASEXML=${XML#*/}
 # Used XSLT processor:
 XSLT=${XSLT:-"xsltproc"}
-# 
+# The default XSLT stylesheet directory
+XSLTDIR=xslt/
+
+
 
 ## Outputs error messages
 error() {
