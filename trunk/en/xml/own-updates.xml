@@ -14,17 +14,31 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <title>
       <ulink url="http://hermes.opensuse.org/messages/6195364">OBS openSUSE:11.3:Update/clamav r2
         commited </ulink></title>
-    <para>Updated to  clamav-0.96.4. (EDITMARK)</para>
+    <para>Updated to clamav-0.96.4. </para>
   </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2010/11/30/smb-traffic-analyzer-1-2-1-released/">Holger
+        Hetterich: SMB Traffic Analyzer 1.2.1 released</ulink></title>
+    <para>The team is happy to announce the release of SMB Traffic Analyzer (SMBTA in the following)
+      version 1.2.1. This is a very important release, as many fixes have been done for the build,
+      making both smbtad and smbtatools much more portable. Also, the build has been adapted to work
+      with libraries that are not installed at the usual places on the system (bnc#654930). On the
+      feature side, we have two really cool things to say. First off, we are introducing rrddriver
+      with this release. It is an interface to rrdtool, and allows to build a round robin database
+      from the data smbtad is receiving, in real time. Having data in a rrdtool database allows you
+      to create all the fancy graphics SMBTA was missing until today (bnc#655149). (...)
+      (EDITMARK)</para>
+  </blockquote>
+  <blockquote/>
   <itemizedlist>
     <title>You can find other interesting Packages at:</title>
     <listitem>
-      <para>http://packman.links2linux.de/rdf/packman_en.rdf<ulink
-          url="http://packman.links2linux.de/rdf/packman_en.rdf">Packman</ulink></para>
+      <para><ulink url="http://packman.links2linux.de/rdf/packman_en.rdf">Packman</ulink></para>
     </listitem>
     <listitem>
-      <para>https://hermes.opensuse.org/feeds/66367.rdf<ulink
-          url="https://hermes.opensuse.org/feeds/66367.rdf">OBS</ulink></para>
+      <para><ulink url="https://hermes.opensuse.org/feeds/66367.rdf">openSUSE Build
+        Service</ulink></para>
     </listitem>
   </itemizedlist>
 </sect1>
