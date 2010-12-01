@@ -10,17 +10,59 @@
   <title>Kernel Review</title>
   <blockquote>
     <title><ulink
-        url="http://thread.gmane.org/gmane.linux.kernel/1051573">Linus
-        Torvalds: Linux 2.6.36</ulink></title>
-    <para>So it's a week later than I wanted (plus all the days that
-      added up from me having a few 8-day weeks during this release
-      window), but it's out there now. </para>
-    <para> The delay means that the merge window that opens now would
-      cover the upcoming kernel summit. However, I really hope that
-      everybody sends me their patches and pull requests _before_ KS
-      even starts. And if you're affected by the kernel summit you
-      probably won't have time during it to finalize anything that week
-      anyway, especially for those staying for plumbers afterwards,
-      and... (...)</para>
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-1-Graphics-1144218.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.37 (Part 1) -
+      Graphics</ulink></title>
+    <para><emphasis role="bold">The Nouveau driver now supports power management and can address the
+        GeForce 320M, and the code for Intel graphics cores now supports the video units on Sandy
+        Bridge processors, which are due to be released shortly. A number of changes to the Radeon
+        KMS driver should improve its performance. </emphasis></para>
+    <para>Linus Torvalds <ulink url="http://thread.gmane.org/gmane.linux.kernel/1066261"
+        >released</ulink> the third pre-release version of Linux 2.6.37 ten days ago and then
+      despite Thanksgiving and a <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel.pci/9946/focus%3D9947">trip to
+      Tokyo</ulink>, he kept to his usual tempo and the fourth pre-release version was released two
+      days ago. </para>
+    <para>The final release of 2.6.37 will probably be in late December or early January next year.
+      The current developer version already resembles the final version pretty closely, since kernel
+      hackers have, as ever, used the merge window which opens the development cycle, to merge all
+      major changes into the main development tree. The current stabilisation phase is reserved
+      primarily for bug-fixes rather than major changes, to avoid introducing further bugs. (...)
+      (EDITMARK)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.linux.com/news/featured-blogs/amanda-mcpherson/386194:our-annual-kernel-development-report-new-and-old-faces"
+        >Linux.com/Amanda McPherson: Our Annual Kernel Development Report: New (and Old) Faces
+      </ulink></title>
+    <para>Today we are pleased to publish <ulink
+        url="http://www.linuxfoundation.org/docs/lf_linux_kernel_development_2010.pdf">annual report
+        on Linux kernel development</ulink>, detailing who does the work, who sponsors it and how
+      fast the Linux kernel is growing. </para>
+    <para>The paper documents how hard at work the Linux community has been. There have been 1.5
+      million lines of code added to the kernel since the 2009 update. Since that last paper,
+      additions and changes translate to an amazing 9,058 lines added, 4,495 lines removed, and
+      1,978 lines changed every day, ­ weekends and holidays included. </para>
+    <para>The other good news is that in the list of sponsoring entities we see more mobile and
+      embedded companies participating in Linux kernel development. We see companies such as Nokia,
+      Texas Instruments and Renasas moving up the list of companies who sponsor Linux development.
+      This certainly should not be a surprise given the rise of Linux usage in devices over the last
+      few years. This is great to see, even though the traditional Linux supporters are still at the
+      top of the list: Red Hat, Intel, Novell and IBM. </para>
+    <para>This paper documents a bit less frenzied development than the last one, which was expected
+      given all the new features of 2.6.30 (ext4, ftrace, btrfs, perf etc) as well as the peak of
+      merged drivers from Linux stable tree. Regardless, this report continues to paint a picture of
+      a very strong and vibrant development community. </para>
+    <para>I’d like to congratulate Paul Mundt who had the most individual contributions to the
+      kernel, equally 1.3%, since our paper last year, and give my heartfelt thanks to Jon Corbet
+      and Greg Kroah-Hartman, kernel developers and members of our Technical Advisory Board, who
+      really do all the work on this paper. This publication is an important one as it gives a rare
+      glimpse into the world of kernel development. Without their knowledge of the participants and
+      their technical tools to analyze the code, this analysis would not be possible. If you’re
+      interested in kernel development and want to support the work of Jon, please consider buying a
+      subscription at <ulink url="http://www.lwn.net/">lwn.net</ulink>. </para>
+    <para>Read more at <ulink
+        url="http://www.linux-foundation.org/weblogs/amanda/2010/12/01/our-annual-kernel-development-report-new-and-old-faces/"
+        >News and Thoughts from Inside the Linux Foundation</ulink>.</para>
   </blockquote>
 </sect1>

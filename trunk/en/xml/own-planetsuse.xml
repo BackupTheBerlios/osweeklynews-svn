@@ -102,6 +102,43 @@
       that regardless of what happens at the corporate level, there is energy in our community.
       There’s reason to believe that energy can sustain this distribution for a long time. Got any
       thoughts about the future of openSUSE, and other community distributions with a major
-      corporate sponsor? Add a comment here. (EDITMARK)</para>
+      corporate sponsor? Add a comment here.</para>
     </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/01/hermes-work/">Klaas Freitag: Hermes
+        Work</ulink></title>
+    <para>Not every day is a sunshine day, also not in software development. This is my credo about
+      the last few days which I spent debugging <ulink url="http://en.opensuse.org/openSUSE:Hermes"
+        >Hermes</ulink> a bit, motivated by a <ulink
+        url="https://bugzilla.novell.com/show_bug.cgi?id=630725">kind bug</ulink> report saying
+      basically that the digest mails suck. Well, I had to kind of agree on that, so I revisited
+      that topic. </para>
+    <para>Do you remember what Hermes is? We use Hermes in the openSUSE infrastructure to handle
+      notifications. Since we do not want to send people emails they do not explicitly agree that
+      they want it (otherwise it would be spamming, right?), we invented a system that recognizes
+      all kinds of events that happen in the openSUSE world, than check if a certain user wants to
+      know about it and finally send it to these users. The benefit the user of the system is that
+      he can pick from a huge variety of events and control if and how he gets informed about.
+      Hermes does not only serve users with email but also maintains RSS feeds, it Twitters and does
+      even more. And as another bonus, it can collect similar events for you and later send a digest
+      with a collection. That way, you for example can get a mail with a list of failed package
+      builds in OBS each hour instead a mail every fife seconds for each and every failing package. </para>
+    <para>But back to my debugging fun: I was mainly fixing the appearance of the digest messages:
+      They now in the subject tell you how many events are digested and how frequently the digest
+      comes, such as hourly, minutely etc. In the mail body, you now find a numbered “table of
+      contents” of the mail and the individual events nicely listed. So much more useful. </para>
+    <para>Unfortunately it wasn’t the most time efficient debugging session I ever had, I stumbled
+      over some things that weren’t optimal now in an environment where Hermes processes between
+      40,000 and 70,000 events a day for more than 25,000 users. Some of the problems are ugly to
+      identify. I got lost a bit which is not good for the overall mood, so I decided to cry at
+      Susanne, one of our colleagues. She asked me quite a few questions and than she left home for
+      dinner. Ten minutes later I could nail the bug. </para>
+    <para>So this is my strong suggestion: If in debugging trouble, talk to your friends. Tell about
+      the problem, share your misfortune. A few question can guide you to the right path which you
+      did not see before. Not new? Well, yes, of course we knew that already from other topics in
+      live, talking helps ;-) </para>
+    <para>The other suggestion I wanted to make: Check Hermes digests! Go to the <ulink
+        url="http://hermes.opensuse.org">Hermes Subscription Page</ulink> and change one of your
+      subscriptions to digest mode, will be fun. Let me know what you think. (EDITMARK)</para>
+  </blockquote>
 </sect1>
