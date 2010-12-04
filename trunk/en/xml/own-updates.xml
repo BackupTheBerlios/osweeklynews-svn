@@ -92,6 +92,67 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
         openSUSE:11.3:Update/java-1_6_0-openjdk r3 commited</ulink></title>
     <para>Updated to icedtea6-1.9.2 (EDITMARK)</para>
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/03/libreoffice-3_3_0_/">Petr Mladek:
+        LibreOffice 3.3 rc1 available for openSUSE</ulink></title>
+    <para>I’m happy to announce LibreOffice 3.3 rc1 packages for openSUSE. They are available in the
+      Build Service<ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">
+        LibreOffice:Unstable</ulink> project. They are based on the <ulink
+        url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=LIBREOFFICE_3_3_0_1"
+        >libreoffice-3.3.0.1 release</ulink>. Please, look for more details about the openSUSE
+      LibreOffice build on the <ulink url="http://en.opensuse.org/OpenOffice.org">wiki page</ulink>. </para>
+    <para>The packages are based on release candidate sources but they have not passed full QA round
+      yet and might include even serious bugs. Therefore they are not intended for data-critical
+      usage. A good practice is to archive any important data before an use, … </para>
+    <para>As usual, we kindly ask any interested beta testers to try the package and<ulink
+        url="http://en.opensuse.org/openSUSE:Bugreport_OOo"> report bugs</ulink> against the product
+      LibreOffice . </para>
+    <para><emphasis role="bold">Known Bugs:</emphasis></para>
+    <itemizedlist>
+      <listitem>
+        <para>unopkg crashes (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=655912">bug
+            #655912</ulink>)</para>
+      </listitem>
+      <listitem>
+        <para>shell wrappers are still ooffice, oowriter, …; we need to discuss the new wrapper
+          names with other distros first</para>
+      </listitem>
+      <listitem>
+        <para>some packages were not renamed, .e.g. OpenOffice_org-thesaurus, …; they are not built
+          from the main LibO sources; we will do it later</para>
+      </listitem>
+      <listitem>
+        <para>user configuration is stored into ~/.libreoffice/3-suse; we might try to share the
+          directory ~/.libreoffice/3 after we fix the incompatible BerkleyDB; Well, we are not sure
+          if it is enough and it is a good idea, so it will need some more testing</para>
+      </listitem>
+      <listitem>
+        <para>GNOME quickstarter is started by default; you might disable it in
+          Tools/Options/OpenOffice.org/Memory/Enable systray Quickstarter</para>
+      </listitem>
+      <listitem>
+        <para>SLED10 build is not available; need more love</para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">More known Bugs:</emphasis></para>
+    <itemizedlist>
+      <listitem>
+        <para><ulink url="http://alturl.com/dmqve">Free Desktop bugzilla</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://alturl.com/qaq5">Novell bugzilla</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://qa.openoffice.org/issues/query.cgi">OOo issuezilla</ulink></para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">Other informations and plans:</emphasis></para>
+    <para>The package are based on LibreOffice-3.3-rc1 sources. There are still some
+      openSUSE-specific bugs that needed to be fixed. I hope that they do not break the base
+      function, though.</para>
+    <para>We expect that rc2 will be needed within next two weeks. We will try to fix more
+      openSUSE-specific bugs in the meantime…</para>
+  </blockquote>
   
   <itemizedlist>
     <title>You can find other interesting Packages at:</title>
