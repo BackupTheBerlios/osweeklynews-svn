@@ -13,12 +13,31 @@ XSLT=${XSLT:-"xsltproc"}
 XSLTDIR=$PWD/xslt/
 # Default debugging value is no:
 DEBUG=${DEBUG:-no}
+
+##
+## HTML Parameters
+##
 # The HTML output directory:
 HTMLDIR=xhtml/
 # The single HTML output filename:
 HTML=${HTMLDIR}${BASEXML%.xml}.html
 # The XSLT stylesheet to create single XHTML file:
 XSLTHTML=${XSLTDIR}/xhtml/docbook.xsl
+
+##
+## FO Parameters
+##
+# The PDF output directory:
+PDFDIR=pdf/
+# The FO output filename:
+FO=${PDFDIR}${BASEXML%.xml}.fo
+# The PDF output filename
+PDF=${PDFDIR}${BASEXML%.xml}.pdf
+# The FOP configuration filename:
+FOPCONF=fop-config.xml
+# The XSLT stylesheet to create FO file:
+XSLTFO=${XSLTDIR}/fo/docbook.xsl
+
 
 
 ## Outputs error messages
