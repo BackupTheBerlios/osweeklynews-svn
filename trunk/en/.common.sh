@@ -11,8 +11,14 @@ BASEXML=${XML#*/}
 XSLT=${XSLT:-"xsltproc"}
 # The default absolute XSLT stylesheet directory
 XSLTDIR=$PWD/xslt/
-# Default Debugging value is no, if nothing is set:
+# Default debugging value is no:
 DEBUG=${DEBUG:-no}
+# The HTML output directory:
+HTMLDIR=xhtml/
+# The single HTML output filename:
+HTML=${HTMLDIR}${BASEXML%.xml}.html
+# The XSLT stylesheet to create single XHTML file:
+XSLTHTML=${XSLTDIR}/xhtml/docbook.xsl
 
 
 ## Outputs error messages
@@ -113,4 +119,5 @@ transform() {
   else
     error "ERROR: Unsupported XSLT processor $XSLT"
   fi
+  info "Transformation successful."
 }
