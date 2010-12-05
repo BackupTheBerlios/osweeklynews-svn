@@ -17,7 +17,7 @@ while true
 do
    case $1 in
     -h|--help)
-      printf "${0#*/} [--xml | --xslt | --output ]\n\n"
+      printf "${0#*/} [--xml XMLFILE] [--xslt STYLESHEET] [--output HTMLFILE] [PARAM=VALUE]*\n\n"
       printf "Transform an OWN XML file to a single XHTML.\n"
       exit 0
       ;;
