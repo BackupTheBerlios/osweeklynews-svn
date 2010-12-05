@@ -11,12 +11,10 @@ HTML=${HTMLDIR}${BASEXML%.xml}.html
 XSLTHTML=${XSLTDIR}/xhtml/docbook.xsl
 
 validate
-transform xml/.${BASEXML} ${XSLTHTML} ${HTML}
+transform xml/.${BASEXML} ${XSLTHTML} -o "${HTML}"
 #
 cp xslt/xhtml/*.css ${HTMLDIR}
-pushd ${HTMLDIR}
+(cd ${HTMLDIR}
 ln -sf ${XSLTDIR}/common .
-popd
+)
 
-
-# ln -s ${XSLTDIR}

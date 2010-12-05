@@ -16,11 +16,11 @@ XSLTFO=${XSLTDIR}/fo/docbook.xsl
 
 validate
 [ -d ${PDFDIR} ] || mkdir -p ${PDFDIR}
-# HACK: This will change:
-pushd ${PDFDIR} 2>/dev/null
-ln -sf ../xslt/common .
-popd 2>/dev/null
 
-transform xml/.${BASEXML} ${XSLTFO} ${FO}
+(cd ${PDFDIR}
+ln -sf ../xslt/common .
+)
+
+transform xml/.${BASEXML} ${XSLTFO} -o "${FO}"
 fop -c ${FOPCONF} ${FO} ${PDF}
 
