@@ -1,18 +1,64 @@
 #!/bin/sh
-
+#
+#
+#
 # Include common variables and functions
 source ./.common.sh
 
-# The PDF output directory:
-PDFDIR=pdf/
-# The FO output filename:
-FO=${PDFDIR}${BASEXML%.xml}.fo
-# The PDF output filename
-PDF=${PDFDIR}${BASEXML%.xml}.pdf
-# The FOP configuration filename:
-FOPCONF=fop-config.xml
-# The XSLT stylesheet to create FO file:
-XSLTFO=${XSLTDIR}/fo/docbook.xsl
+# Our default values
+_XML="xml/.${BASEXML}"
+_XSLT="${XSLTFO}"
+_FO="${FO}"
+_PDF="${PDF}"
+
+#export LC_ALL=C
+TEMP=$(getopt -o h -l "help,xml:,xslt:,pdf:fop-config:" -n "$0" -- "$@")
+eval set -- "$TEMP"
+
+while true
+do
+   case $1 in
+    -h|--help)
+      printf "${0#*/} [--xml XMLFILE] [--xslt STYLESHEET] [--pdf PDFFILE] [--fop-config FOPCONFIG] [PARAM=VALUE]*\n\n"
+      printf "Transform an OWN XML file into PDF.\n"
+      exit 0
+      ;;
+    --xml)
+      if [ ! -f "$2" ]; then
+        error "XML file '$2' not found."
+        exit 10
+      fi
+      _XML=$2
+      _FO=${_XML%.xml}.fo
+      shift
+      ;;
+    --xslt)
+      if [ ! -f "$2" ]; then
+        error "XSLT stylesheet '$2' not found."
+        exit 20
+      fi
+      _XSLT=$2
+      shift
+      ;;
+    --pdf)
+      _PDF=$2
+      shift
+      ;;
+    --fop-config)
+      # Change our FOP config variable directly:
+      FOPCONF=$2
+      shift
+      ;;
+    --) shift ; break ;;
+    *)
+      printf "Unknown option $1\n"
+      exit 100
+      ;;
+   esac
+   shift
+done
+
+debug "XML=$_XML, XSLT=$_XSLT, FO=$_FO, FOPCONF=$FOPCONF, PDF=$_PDF"
 
 validate
 [ -d ${PDFDIR} ] || mkdir -p ${PDFDIR}
@@ -21,6 +67,6 @@ validate
 ln -sf ../xslt/common .
 )
 
-transform xml/.${BASEXML} ${XSLTFO} -o "${FO}"
-fop -c ${FOPCONF} ${FO} ${PDF}
+transform "${_XML}" "${_XSLT}" -o "${_FO}" $@
+fop -c "${FOPCONF}" "${_FO}" "${_PDF}"
 
