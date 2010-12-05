@@ -22,12 +22,18 @@ do
       exit 0
       ;;
     --xml)
-      [ -a "$2" ] || error "XML file '$2' not found."; exit 10
+      if [ ! -f "$2" ]; then
+        error "XML file '$2' not found."
+        exit 10
+      fi
       _XML=$2
       shift
       ;;
     --xslt)
-      [ -a "$2" ] || error "XSLT stylesheet '$2' not found."; exit 20
+      if [ ! -f "$2" ]; then
+        error "XSLT stylesheet '$2' not found."
+        exit 20
+      fi
       _XSLT=$2
       shift
       ;;
