@@ -154,6 +154,12 @@ div.abstract p
   margin-top:.25em;
 }
 
+div.blockquote {
+  border-left: 1pt #6a9d00 solid;
+  margin-top:1.5em;
+  margin-bottom:1.5em;
+}
+
 div.sect1 div.titlepage .title,div.sect2 div.titlepage .title,div.sect3 div.titlepage .title
 {
   color:#6a9d00;
@@ -557,6 +563,15 @@ img
   -webkit-box-shadow:0 2px 8px rgba(0,0,0,0.2);
   border:1px solid rgba(0,0,0,0.2)!important;
   padding:8px;
+}
+
+span.headerimage img
+{
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border:none;
+  padding:4px;
+  margin-right:0.75em;
 }
 
 table img
