@@ -9,5 +9,6 @@
  <xsl:import href="param.xsl"/>
  
  <xsl:include href="sections.xsl"/>
+ <xsl:include href="titlepage.templates.xsl"/>
   
 </xsl:stylesheet>
