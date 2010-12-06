@@ -4,7 +4,8 @@
 # Weekly News Output Chooser
 # Version: 0.0.1
 # (c) 2010 by Sascha Manns <saigkill@opensuse.org>
-#
+# released under the terms of CC-BY-SA
+
 import sys
 import subprocess
 

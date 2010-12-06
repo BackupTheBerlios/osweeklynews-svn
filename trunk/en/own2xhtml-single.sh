@@ -1,4 +1,5 @@
 #!/bin/sh
+# This document licensed under CC-BY-SA by Sascha Manns <saigkill@opensuse.org> and Thomas Schraitle <toms@suse.de>
 
 # Include common variables and functions
 source ./.common.sh

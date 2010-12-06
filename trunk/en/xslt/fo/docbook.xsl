@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--  This document licensed under CC-BY-SA by Sascha Manns <saigkill@opensuse.org> and Thomas Schraitle <toms@suse.de>-->
 <xsl:stylesheet version="1.0"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:exsl="http://exslt.org/common"
