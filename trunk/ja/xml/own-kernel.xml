@@ -7,20 +7,48 @@
   %myentities;
 ]>
 <sect1 role="kernel">
+  <!--
+    
+    This work is licensed under the
+    Creative Commons Attribution-ShareAlike 3.0 Unported License
+    by Sascha Manns. To view a copy of this license, visit
+    http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+    Creative Commons
+    171 Second Street
+    Suite 300
+    San Francisco California 94105
+    USA.
+    
+  -->
   <title>Kernel Review</title>
   <blockquote>
     <title><ulink
-        url="http://thread.gmane.org/gmane.linux.kernel/1051573">Linus
-        Torvalds: Linux 2.6.36</ulink></title>
-    <para>So it's a week later than I wanted (plus all the days that
-      added up from me having a few 8-day weeks during this release
-      window), but it's out there now. </para>
-    <para> The delay means that the merge window that opens now would
-      cover the upcoming kernel summit. However, I really hope that
-      everybody sends me their patches and pull requests _before_ KS
-      even starts. And if you're affected by the kernel summit you
-      probably won't have time during it to finalize anything that week
-      anyway, especially for those staying for plumbers afterwards,
-      and... (...)</para>
+        url="http://www.h-online.com/open/features/Kernel-Log-An-analysis-of-Linux-kernel-development-1147619.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: An analysis of Linux kernel development</ulink>
+    </title>
+    <para><emphasis role="bold">A new edition of a study by the Linux Foundation explains the Linux
+        kernel development process and includes various statistics that demonstrate the kernel's
+        growth rate. It also analyses how much is contributed to the kernel's development by which
+        developers and companies. </emphasis></para>
+    <para>The Linux Foundation has released an updated edition of its "Who Writes Linux and Who
+      Supports It" study which offers insights into the development of the Linux kernel. The <ulink
+        url="http://www.linuxfoundation.org/docs/lf_linux_kernel_development_2010.pdf">new
+        edition</ulink> is called "Linux Kernel Development – How Fast it is Going, Who is Doing It,
+      What They are Doing, and Who is Sponsoring It" and, like the <ulink
+        url="http://www.h-online.com/news/item/Linux-Foundation-study-goes-behind-the-scenes-of-kernel-development-734755.html"
+        >first</ulink> and <ulink
+        url="http://www.h-online.com/news/item/Linux-Foundation-updates-Kernel-Development-study-743009.html"
+        >second</ulink> edition, it analyses such aspects as which companies sponsor the kernel's
+      development, how many programmers contribute changes, and how fast the kernel is growing. </para>
+    <para>The study was written by kernel developer and chief editor of LWN.net, Jonathan Corbet, by
+      kernel developer Greg Kroah-Hartman, who works on SUSE products at Novell, and by the Linux
+      Foundation's Amanda McPherson. Like the first two studies, the current edition is based on
+      kernel version 2.6.11 – immediately after this version, Linus Torvalds migrated the kernel
+      sources to the Git source code management system he had started at that time. In some areas,
+      however, the authors of the study focused on the changes the kernel developers made between
+      version 2.6.30 and version 2.6.35 – which covers the period between the study's second edition
+      and the time of writing of the now released third edition. As before, the three authors used
+      the "Git Data Miner" (<ulink url="git://git.lwn.net/gitdm.git%0D">gitdm</ulink>) for their
+      evaluations (access to this link requires the installation of a Git handler). (...)</para>
   </blockquote>
 </sect1>

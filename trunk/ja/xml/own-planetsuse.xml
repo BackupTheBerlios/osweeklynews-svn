@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
 <!DOCTYPE sect1 PUBLIC 
   "-//OASIS//DTD DocBook XML V4.5//EN" 
   "http://www.docbook.org/xml/4.5/docbookx.dtd"
@@ -9,15 +22,40 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink
-        url="http://nmarques.digitalwhores.net/2010/10/18/openoffice-org-and-libre-office/"
-        >Nelson Marques: openoffice.org and Libre
-      Office…</ulink></title>
-    <para>Yesterday I’ve found an interesting piece on /., a bit
-      sensationalist and maybe misleading, but nevertheless interesting
-      with a flashy title. I’ve closely look at the source of such
-      article looking for a possible justification for the title, though
-      unable to find one that could justify it. But this is not
-      important…</para>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/05/unity-maybe-on-fedora/">Nelson
+        Marques: Unity (maybe) on Fedora</ulink></title>
+    <para>According to this <ulink
+        url="http://www.happyassassin.net/2010/12/03/unity-on-fedora-possibly/">post</ulink> by
+        <ulink url="http://www.happyassassin.net/2010/12/03/unity-on-fedora-possibly/">Adam
+        Williams</ulink> (Fedora QA), Unity might actually land on Fedora. </para>
+    <para>Some time ago, I’ve dropped into openSUSE-GNOME mailing list an email regarding this
+      topic, and the need that we openSUSE have regarding to protect a possible risk of having our
+      users migrating to Ubuntu to check out Unity. The downside of openSUSE is the fact that we
+      might be limited by manpower. </para>
+    <para>To me, this sounds the most sane strategy to promote a vertical defense of our community.
+      Adam Williams and Fedora seem to have acknowledged that it is important to provide users with
+      software so that they do not feel the rush or need to change vendor to check out a new piece
+      of software, specially when it’s something already strong in name as Unity. </para>
+    <para>From my side… I’ve started to work on building a test repository for Ubuntu stuff…
+      currently I’ve got most dependencies already ready for Factory, including a gtk+ version with
+      the patches to enable some functionality required for the Ubuntu Indicators. </para>
+    <para>If ‘openSUSE IBERIA’ happens to happen… it’s GNOME version will be very close to Ubuntu
+      (and in some cases even featuring extended functionality, like GDM Configuration tool,
+      Notify-OSD skinning, amongst other small goodies). Why to build something close to Ubuntu?
+      EASY ANSWER! PORTUGAL AND SPAIN are dominated by Ubuntu… by providing something very close to
+      the Ubuntu experience we might become more attractive to those users and establish positive
+      synergies to attack their user base! YES, we, proud Portuguese and Spanish are packing out
+      stuff to take the fight to the streets! Which reminds me of an old English saying: </para>
+    <para>“Españoles en la mar quiero. Y si es en tierra, San Jorge nos proteja…” (The spanish we
+      want on the sea. If in land we find them, Saint George protect us…”</para>
   </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://blog.cornelius-schumacher.de/2010/12/week-in-life-of-kde-ev-board-member.html"
+        >Cornelius Schumacher: A week in the life of a KDE e.V. board member</ulink></title>
+    <para>Did you ever want to know how life as a KDE e.V. board member is? From the questions I get
+      I know that at least some of you do. So here you go. I took some notes last week to give you a
+      brief impression of what I did in my role as board member of KDE e.V. (...)</para>
+  </blockquote>
+  
 </sect1>

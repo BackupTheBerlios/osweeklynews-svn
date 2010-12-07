@@ -4,7 +4,19 @@
 # Weekly News Output Chooser
 # Version: 0.0.1
 # (c) 2010 by Sascha Manns <saigkill@opensuse.org>
-# released under the terms of CC-BY-SA
+# 
+#
+#  Common Entities for all OWN articles
+  
+#  This work is licensed under the
+#  Creative Commons Attribution-ShareAlike 3.0 Unported License
+#  by Sascha Manns. To view a copy of this license, visit
+#  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+#  Creative Commons
+#  171 Second Street
+#  Suite 300
+#  San Francisco California 94105
+#  USA.  
 
 import sys
 import subprocess

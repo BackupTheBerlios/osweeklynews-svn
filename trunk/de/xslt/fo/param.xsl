@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Common Entities for all OWN articles
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:img="urn:x-suse:toms:image-table"
@@ -29,7 +43,7 @@
 <!--<xsl:param name="header.column.widths">0 4 0</xsl:param>-->
 <xsl:param name="headers.on.blank.pages" select="0"/>
 
-<xsl:param name="logos.src.path">logos/</xsl:param>
+<xsl:param name="logos.src.path">common/logos/</xsl:param>
 <!-- Use blocks for variable lists:                      -->
 <xsl:param name="variablelist.as.blocks" select="'1'"/>  
 <!-- Present glossarys using blocks instead of lists?    -->

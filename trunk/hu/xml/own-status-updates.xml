@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  This document licensed under CC-BY-SA by Sascha Manns -->
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
@@ -122,39 +134,10 @@
      <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
 
       <blockquote>
-        <title><ulink
-        url="http://nowwhatthe.blogspot.com/2010/10/notes-on-obs.html">Jos
-        Poortvliet: Notes on OBS</ulink></title>
-
-        <para>Having an awesome time here at the conference - esp last night
-        with the Movie Night, the Movies were cool. As was the beer during and
-        afterwards…</para>
-
-        <para>During the day I followed talk by Lubos Lunak about the Build
-        Service as I wanted to learn more about it. As I made notes I decided
-        to share them :D</para>
-
-        <para>In the introduction Lubos shared that apparently you have to
-        package each application by hand - however, automatic downloading of
-        random tarballs from the internet and turning them into packages for
-        all linux distributions on distrowatch.org is planned for OBS 3.0!
-        (…)</para>
-      </blockquote>
-
-      <blockquote>
-        <title><ulink
-        url="http://lizards.opensuse.org/2010/10/24/obs-2-1-status-of-superh-sh4-support-with-qemu/">Martin
-        Mohring: OBS 2.1: Status of SuperH (sh4) support with
-        QEMU</ulink></title>
-
-        <para>With established ARM support in OBS the as well as emulated MIPS
-        and PowerPC is getting more mature, the last big embedded architecture
-        not working in OBS with QEMU user mode was SH4. QEMU developers
-        community had done a lot of work in improving QEMU user mode during
-        the last months, so I can proudly present with currently only a few
-        patches to QEMU git master OBS builds working with the SH4 port of
-        Debian Sid. The new QEMU 0.13 released recently is a big milestone for
-        this. (…)</para>
+        <title><ulink url="http://lists.opensuse.org/opensuse-buildservice/2010-12/msg00058.html"
+            >osc 0.130 release</ulink></title>
+        <para>Now just released a new osc version: 0.130. The whole Article can be viewed with
+          clicking on the Title.</para>   
       </blockquote>
 
       <formalpara>
