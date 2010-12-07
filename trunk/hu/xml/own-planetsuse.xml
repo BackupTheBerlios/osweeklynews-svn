@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<sect1 role="planetsuse">
+  <!--  This document licensed under CC-BY-SA by Sascha Manns -->
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2010/11/catching-up.html">Jos Poortvliet:
+        catching up</ulink></title>
+    <para>Hi! It feels like ages since I blogged, so here goes. A lot has happened since my last
+      blog - Latinoware is over (and was frickin' awesome), I had a week off which I enjoyed in
+      Brazil and now I'm at the Nuremberg offices due to Michl who just left. We had some catching
+      up to do before he went - same with AJ who has decided to enjoy some parental leave. And
+      Jaqueline who will have to fill the shoes of these two fine gentlemen. Meanwhile I am trying
+      to catch up to mail and news - there is a lot of both. Mail catching up has been limited quite
+      a bit by the KDE Factory OBS repository for 11.3 upgrading to KDE's 4.6 release of platform
+      (Akonadi!), apps (KMail2) and desktop workspace. The two I mentioned (Akonadi &amp; kmail2)
+      have been a royal pain in the ass, to be honest. The migration of my old accounts took a night
+      (>100.000 mails) but didn't actually import those mails. Hence they had to be downloaded from
+      gmail. With the VERY frequent disconnections and regular hanging of the Akonadi resource this
+      has taken a while to say the least - lots of babysitting (restarting Akonadi etc) required. I
+      hope the KDE Pim* dudes and dudettes can get this stable (and faster!) before the release...
+      Oh, and Virtuoso-t keeps hogging 100% CPU untill I decide to just kill it - after which I
+      don't notice any bad or strange behavior. Maybe I should auto-kill it on login ;-) but in the
+      end, it's all working reasonably well now, albeit a bit slower than KMail1.x. Yay yay.
+      (...)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.rosenauer.org/blog/2010/11/30/community-powered-long-term-support-for-opensuse/"
+        >Wolfgang Rosenauer: community powered long term support for openSUSE?</ulink></title>
+    <para>Just recently I found again that openSUSE is not really positioned for some usecases. In
+      my personal case that is especially the usage as a web/mail/dns/etc server on hosted
+      environments. IMHO it just doesn’t make sense to roll out a distribution which is supported
+      for only 18 months to a hosted system with limited access to it. I still have been doing that
+      with previous openSUSE releases but it’s so annoying that I really regret it. Also the
+      possibility to zypper dup doesn’t really fix that issue for different reasons. Anyway this
+      post is not about whining about that fact or to explain why I don’t like to update these type
+      of systems remotely every &lt;= 18 months. </para>
+    <para><emphasis role="bold">A possible solution?</emphasis> Sometime last year there was a
+      discussion about options for something like an “openSLE” or “openSUSE LTS” distribution. There
+      is an external page where some outcome was documented here. The dicussions stopped mainly
+      because of health issues of the main initiator. There was done some planning and voting on the
+      different options but no real results ever happened (as far as I know). So I’m trying to
+      resurrect that topic a bit once again: The amount of work related to such a project is the
+      critical part and therefore my proposal is to try to start off with a “lightweight” approach.
+      (...) </para>
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://metaverse.wordpress.com/2010/11/30/the-future-of-opensuse-looks-pretty-bright-to-me/"
+          >Mike McCallister: The Future of openSUSE: Looks pretty bright to me</ulink></title>
+      <para>I’ll be the first to tell you I am close to clueless about business trends. Anyone who’s
+        ever read <ulink
+          url="http://metaverse.wordpress.com/2006/11/02/suse-windows-dual-booting-to-get-easier/"
+          >my reaction to the Novell-Microsoft agreement</ulink> can figure that out pretty quickly.
+        That said, it’s been a week since Attachmate “agreed to acquire” (amazing phrase, that)
+        Novell, the parent company of the SUSE Linux products, and unquestionably a major sponsor of
+        the <ulink url="http://www.opensuse.org">openSUSE community</ulink>. </para>
+      <para>Since then, there’s been a fair amount of activity among the openSUSE faithful: <itemizedlist>
+        <listitem>
+          <para>The community board <ulink
+              url="http://news.opensuse.org/2010/11/22/novell-agrees-to-be-acquired-by-attachmate-corporation/"
+              >released this statement</ulink> declaring (among other things) that “it’s business as
+            usual and we are continuing to work on, rather than predicting, the future of this
+            project and have a lot of fun!“</para>
+        </listitem>
+        <listitem>
+          <para> Last Saturday was <ulink
+              url="http://news.opensuse.org/2010/11/22/opensuse-bug-day-on-saturday-november-27th/"
+              >Zombie Bug Squashing Day</ulink>, where 10-15 volunteers combed through bugs for
+            v10.2, 10.3 and 11.0 still marked Open in the Bugzilla database, and<ulink
+              url="http://lists.opensuse.org/opensuse-project/2010-11/msg00205.html"> disposed of
+              something close to half of them</ulink>, as reported to the <ulink
+              url="http://en.wikipedia.org/wiki/OpenSUSE_Project">opensuse-project</ulink> mailing
+            list. This project may continue soon.</para>
+        </listitem>
+        <listitem>
+          <para>Both the<ulink
+              url="http://news.opensuse.org/2010/11/30/feature-handling-for-opensuse-reworked/">
+              openFATE feature request</ulink> process and the <ulink
+              url="http://news.opensuse.org/">openSUSE News</ulink> page are becoming a bit more
+            professional, with the help of still more volunteers.</para>
+        </listitem>
+        <listitem>
+          <para>And maybe I’m a little too excited about this, but <ulink
+              url="http://en.wikipedia.org/wiki/Greg_Kroah-Hartman">Greg Kroah-Hartman</ulink>
+            announced on Tuesday the beginning of a new “Tumbleweeds” project. Greg describes it
+            like this: </para>
+          <para>a repo that is a rolling updated version of openSUSE containing the latest “stable”
+            versions of packages for people to use. </para>
+          <para>I’d describe it like this: An “in-between” version of openSUSE that offers packages
+            that are a little bit more current than the most recent release, but not as buggy as the
+            cutting-edge Factory repository. For those of us who like stability, but don’t want to
+            miss out on the latest. </para>
+        </listitem>
+      </itemizedlist>So what does this have to do with the Attachmate-Novell hookup? It tells me
+      that regardless of what happens at the corporate level, there is energy in our community.
+      There’s reason to believe that energy can sustain this distribution for a long time. Got any
+      thoughts about the future of openSUSE, and other community distributions with a major
+      corporate sponsor? Add a comment here.</para>
+    </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/01/hermes-work/">Klaas Freitag: Hermes
+        Work</ulink></title>
+    <para>Not every day is a sunshine day, also not in software development. This is my credo about
+      the last few days which I spent debugging <ulink url="http://en.opensuse.org/openSUSE:Hermes"
+        >Hermes</ulink> a bit, motivated by a <ulink
+        url="https://bugzilla.novell.com/show_bug.cgi?id=630725">kind bug</ulink> report saying
+      basically that the digest mails suck. Well, I had to kind of agree on that, so I revisited
+      that topic. </para>
+    <para>Do you remember what Hermes is? We use Hermes in the openSUSE infrastructure to handle
+      notifications. Since we do not want to send people emails they do not explicitly agree that
+      they want it (otherwise it would be spamming, right?), we invented a system that recognizes
+      all kinds of events that happen in the openSUSE world, than check if a certain user wants to
+      know about it and finally send it to these users. The benefit the user of the system is that
+      he can pick from a huge variety of events and control if and how he gets informed about.
+      Hermes does not only serve users with email but also maintains RSS feeds, it Twitters and does
+      even more. And as another bonus, it can collect similar events for you and later send a digest
+      with a collection. That way, you for example can get a mail with a list of failed package
+      builds in OBS each hour instead a mail every fife seconds for each and every failing package. </para>
+    <para>But back to my debugging fun: I was mainly fixing the appearance of the digest messages:
+      They now in the subject tell you how many events are digested and how frequently the digest
+      comes, such as hourly, minutely etc. In the mail body, you now find a numbered “table of
+      contents” of the mail and the individual events nicely listed. So much more useful. </para>
+    <para>Unfortunately it wasn’t the most time efficient debugging session I ever had, I stumbled
+      over some things that weren’t optimal now in an environment where Hermes processes between
+      40,000 and 70,000 events a day for more than 25,000 users. Some of the problems are ugly to
+      identify. I got lost a bit which is not good for the overall mood, so I decided to cry at
+      Susanne, one of our colleagues. She asked me quite a few questions and than she left home for
+      dinner. Ten minutes later I could nail the bug. </para>
+    <para>So this is my strong suggestion: If in debugging trouble, talk to your friends. Tell about
+      the problem, share your misfortune. A few question can guide you to the right path which you
+      did not see before. Not new? Well, yes, of course we knew that already from other topics in
+      live, talking helps ;-) </para>
+    <para>The other suggestion I wanted to make: Check Hermes digests! Go to the <ulink
+        url="http://hermes.opensuse.org">Hermes Subscription Page</ulink> and change one of your
+      subscriptions to digest mode, will be fun. Let me know what you think. </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://karl-tux-stadt.de/ktuxs/?p=2925">Sirko Kemter: openSUSE pic
+        paste</ulink></title>
+    <para>As some of you know, we have our own paste service – susepaste.org. Miska is responsible
+      for that service and some time ago we had a little conversation, that for me and the other
+      artists is more useful to pasting pictures. But not only for us, some times is a screenshot
+      helpful for others too. So Miska take care of my feature wish and implemented pasting of
+      pictures. He wrote already a <ulink
+        url="http://michal.hrusecky.net/index.php/blog/show/Pasting-images.html">blogpost</ulink>
+      for it. You can use the picture pasting if you select “Image File” at susepast or go directly
+      to http://img.susepaste.org. So nothing new until yet, why then a blogpost again. Its simple
+      today, I tried to use the service and failed. I simple did a screenshot and tried to paste it,
+      and the service told me, its only allowed to past images not bigger then 300k. A simple
+      screenshot, depending from the resolution is bigger as that. So I spoke with Miska again, the
+      problem for the file size is that he have not so lot of space for the service. But he had
+      immediatly a great solution for this and implemented it. You can paste greater pictures now,
+      it depends from the time, the pic should be kept. So for me that works excellent, because
+      mostly I need it for seconds or better until the opposite told me thats what I want or
+      something like that. So now it works really fine for me, thx to Miska.</para>
+  </blockquote>
+</sect1>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document licensed under CC-BY-SA by Sascha Manns -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+ <!ENTITY % myentities SYSTEM "entities.ent">
+ %myentities;
+]>
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html">Announcing
+        openSUSE Tumbleweed project</ulink>
+    </title>
+    <para>There's been many discussions over the past years about a "rolling update" version of
+      openSUSE on lots of different mailing lists and in person a different conferences. So the time
+      now is to stop talking about it, and actually trying to do it :) So, I'd like to propose
+      "openSUSE Tumbleweed" a repo that is a rolling updated version of openSUSE containing the
+      latest "stable" versions of packages for people to use. (...)</para>
+    <para>Other Sources: <ulink url="http://lwn.net/Articles/417946/rss">LWN</ulink>
+      <ulink url="http://www.linuxjournal.com/content/opensuse-and-ubuntu-rollercoasters"
+        >LinuxJournal</ulink>
+      <ulink
+        url="http://www.h-online.com/open/news/item/openSUSE-Rolling-release-project-Tumbleweed-proposed-1146308.html"
+        >h-online</ulink></para>
+  </blockquote>
+  <figure id="fig.geeko">
+    <title>Geeko wants you</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://zonker.opensuse.org/wp-content/uploads/2008/09/uncle_geeko.jpg" width="15%"/>
+      </imageobject>
+    </mediaobject>
+  </figure>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2010/12/01/third-opensuse-board-election-2010/"
+        >Third openSUSE Board Election 2010</ulink></title>
+    <para>We are pleased to announce the <ulink
+        url="http://en.opensuse.org/openSUSE:Board_election_2010">openSUSE Board Election
+        2010</ulink>! The Election Committee this year is staffed by: geeko wants you <ulink
+        url="http://en.opensuse.org/User:Diamond_gr">Stathis Iosifidis</ulink> , <ulink
+        url="http://en.opensuse.org/User:saigkill">Sascha Manns</ulink>, <ulink
+        url="http://en.opensuse.org/User:HeliosReds">Satoru Matsumoto</ulink>, <ulink
+        url="http://en.opensuse.org/User:Digitaltomm">Thomas Schmidt</ulink> The Committee has
+      prepared the timeline for this year’s election. As last year the election process consists of
+      3 phases: (...)<xref linkend="fig.geeko"/></para>
+  </blockquote>
+  <figure id="fig.fate">
+    <title>openFATE Picture</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/11/Screenshot-300x169.png"/>
+      </imageobject>    
+    </mediaobject>
+  </figure>
+  <blockquote>
+    <title><ulink
+      url="http://news.opensuse.org/2010/11/30/feature-handling-for-opensuse-reworked/"
+      >Feature handling for openSUSE reworked</ulink></title>
+    <para>openFATE, the feature tracking tool used in openSUSE has been completely reworked and the
+      new version is live now on features.opensuse.org. A team has started driving the handling of
+      features and we’d like to update you with the current state and invite you to participate. The
+      new version is now live and contains a long list of new features so that features can be
+      handled completely with the new web user interface. The interface uses the new openSUSE Bento
+      theme to fit in better in the openSUSE site family, has several search options to allow the
+      screening team to find features easily, it’s possible to edit all fields and also the product
+      states. Thanks to the openSUSE boosters, especially to Thomas Schmidt, for the new version.
+      The new team has defined a workflow to handle features and described it in the openSUSE wiki.
+        <xref linkend="fig.fate"/></para>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://news.opensuse.org/2010/12/02/opensuse-announces-fourth-development-milestone-with-kernel-interactivity-patch/"
+        >openSUSE Announces Fourth Development Milestone with Kernel Interactivity Patch</ulink>
+    </title>
+    <para>On Monday, the openSUSE project released the fourth of six milestones in the development
+      of openSUSE 11.4. Milestone 4 (M4) brings a wide range of updates, both major and
+      minor.</para>
+    <para>Kernel 2.6.37rc3 is the basis of M4, including the famous “200 line” per tty task groups
+      patch to improve desktop interactivity, and featuring the removal of the so-called ‘Big Kernel
+      Lock’ that will improve scalability. </para>
+    <para>NetworkManager was updated to 0.8.2, seeing several last minute fixes in cooperation with
+      upstream developers. </para>
+    <para>Libzypp 8.8 adds support for metalinks, the multiple download URL specification. </para>
+    <para>On the desktops, KDE makes the leap to version 4.6 beta 1. This includes a complete
+      rewrite of Kontact and is undergoing heavy testing. GNOME 2.32.2 is the final version planned
+      for openSUSE 11.4, which is notable for being the last stable release before GNOME 3 in March.
+      Zeitgeist, the activity tracker, is updated to 0.6. KOffice is updated to 2.3beta1, bringing
+      the exciting Krita natural media painting app to M4, while OpenOffice.org is removed, having
+      been succeeded by LibreOffice in M3. Qt 4.7.1 and Qt Creator 2.1beta2 will allow improved Qt
+      Quick development. Other major updates include the addition of the Midori lightweight browser,
+      the Rosegarden musical notation editor in version 10.10 and monodevelop 2.4. Gnash, the free
+      Flash viewer, comes in version 0.8.8, which has “100% Youtube support” and supports hardware
+      acceleration. </para>
+    <para>And finally, the prize for biggest version number leap goes to xmahjong, which went from
+      2006.8.10 to 2010.11.8. xmahjong fans will be happy to hear that the version bump is only due
+      to a packaging change removing build support for SUSE versions earlier than 9.1. The graphics
+      and gameplay remain as they were in 1990. </para>
+    <para>A <ulink
+        url="http://en.opensuse.org/openSUSE:Most_annoying_bugs_11.4_dev#openSUSE_11.4_Milestone_4_of_6"
+        >list of most annoying bugs</ulink> is being compiled; please check it before installing. We
+      look forward to <ulink url="http://bit.ly/el1dv8">your bug reports</ulink> and test
+      experiences too. Automated testing and the openSUSE Factory team have been active to ensure
+      that your download of M4 will be at least minimally functional. </para>
+    <para>The next milestone is scheduled for December 16. openSUSE 11.4 is planned to be released
+      in March 2011.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2010/12/02/marketing-collaboration-days/">Marketing
+        Collaboration Days</ulink></title>
+    <para>The openSUSE Marketing Team is proud to host Collaboration Days during the month of
+      December. Each designated day, we will focus on a specifc area related to marketing. The
+      purpose of this is to get some work done on that topic to strengthen our ability to promote
+      openSUSE to the world. It is a day that is meant to be busy and productive for the team as
+      well as an opportunity for non-team members to stop by and offer their perspectives and help
+      out as we hack away. As this is an open process, we encourage everyone to come join us, even
+      if you are not directly related to openSUSE. All perspectives are important and we welcome you
+      all.</para>
+  </blockquote></sect1>

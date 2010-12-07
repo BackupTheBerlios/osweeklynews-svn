@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document licensed under CC-BY-SA by Sascha Manns -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://jared.ottleys.net/alfresco/alfresco-alfresco-pdf-tool-kit-insert-pdf-action"
+          >Jared Ottley: Alfresco: Alfresco PDF Tool Kit – Insert PDF Action</ulink>
+      </title>
+      <para>I’ve taken a bit of Holiday time to update the Alfresco PDF Toolkit. <ulink
+          url="http://www.unorganizedmachines.com/">Nate</ulink> has been doing an outstanding job
+        adding <ulink
+          url="http://www.unorganizedmachines.com/site/software-and-technology/34-software-development/99-watermarking-pdf-documents-with-alfresco"
+          >Watermarking</ulink>, <ulink
+          url="http://www.unorganizedmachines.com/site/software-and-technology/34-software-development/106-alfresco-pdf-toolkit-digital-signatures"
+          >Digital Signatures</ulink>, <ulink
+          url="http://www.unorganizedmachines.com/site/software-and-technology/34-software-development/101-encrypting-pdf-documents-with-alfresco"
+          >Encryption</ulink> and cleaning up my messy code. But it was time to add a little bit
+        myself. So I took sometime this evening to add in one of my planned actions: Insert PDF.
+        This action allows you to insert a PDF into another PDF at a specific page. This is a pretty
+        straight forward action to test: From the Document Details page of the PDF you want to
+        insert content into, select Run Action (This action can also be run through the rules engine
+        or scripted). (...)</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://lizards.opensuse.org/2010/12/01/googleearth-6-0-running-in-opensuse-11-4-factory-64bits/"
+          >Bruno Friedmann: GoogleEarth 6.0 running in opensuse 11.4 factory 64Bits</ulink></title>
+      <para>Sometimes we need some of those applications running under our favorite OS. If you can
+        stick with <ulink url="http://kde.org/applications/education/marble/">marble</ulink>. So the
+        new googleearth 6.0 version hit the street. And if like me you want to give it a try,
+        there’s some tricks to make it installing under your 64bits opensuse factory. My first
+        attempt just result in a nice crash … (...)</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.unixmen.com/linux-tutorials/1300-install-and-configure-wine-to-play-latest-windows-games-in-linux-ubuntu-linuxmint-fedora"
+          >Unixmen/zinovsky: Install and configure wine to Play latest windows games in
+          Linux</ulink></title>
+      <para>In this post i will show you how to install latest windows applications and games using
+        wine in Linux. When you install wine the first time, wine will work but not all windows
+        application and games will work properly because most of them need a special configuration,
+        some installed dlls and libraries. There are severals opensource software based on wine like
+        for example <ulink url="http://www.unixmen.com/tag/playonlinux">PlayOnLinux</ulink>, a great
+        software that can install and use windows games and applications. (...) </para>
+    </blockquote>
+  </sect2>
+  
+  <!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>Full hack</title>
+      <para>do this...</para>
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>super article</title>
+      <para>bin/sh</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title><ulink
+          url="http://suseware.com/blog/2010/11/28/installing-broadcom-wireless-bcm43225-opensuse-113/"
+          >Manu Gupta: Installing Broadcom Wireless – BCM43225 on openSUSE 11.3</ulink></title>
+      <para>Again I am with a blog post, this time I am troubleshooting the Broadcom driver, BCM
+        43225. Ok, to start with we need to do the following (...)</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://feeds.ottleys.net/~r/jaredottley/~3/FvOzTp4RrCY/alfresco-simple-file-diff"
+          >Jared Ottley: Alfresco: Simple File Diff</ulink></title>
+      <para>I’ve heard asked many times by customers and community members if there was a way to
+        diff files in Alfresco and alas there isn’t an OTB way to do this. A month ago the
+        discussion came up again internally. And I thought it might be fun to tackle this as side
+        project just to see if/what was possible. So I took an evening and hammered out a simple
+        Java class that did a comparison between two text files. Once I saw that I had at least the
+        basics (annotate the differences between two files) and had gotten the question of basic
+        possibility/difficulty out of the way I moved on to other projects. Today almost the entire
+        family is sick so I thought I’d pick up the project again, moving the Java class to a Java
+        Backed web script. The web script is a simple GET that takes the nodeRef of two files, or
+        two versions of the same file and outputs a simple HTML page that highlights the differences
+        between the two. There are no complex algorithms that take into account shifts in blocks or
+        identifies just the text in a line that has changed. It is a simple line by line comparison
+        of two pieces of content. It is not integrated in to Share or Explorer at this time. I might
+        take that as a separate sick day project (or accept any code contributions to add that).
+        (...)</para>
+    </blockquote>
+  </sect2>
+</sect1>
