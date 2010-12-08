@@ -34,25 +34,8 @@
 <!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
 
     <blockquote>
-      <title><ulink 
-        url="http://rajkov-blog.blogspot.com/2010/11/bug-days-in-opensuse.html"
-        >Rajko Matovic: Bug days in openSUSE</ulink></title>
-      <para>We had quite successful openSUSE Bug Day organized by A. Naumov on Saturday, November
-        27, and once rolling we continued through Sunday. The goal was to clear old bugs that
-        refused to die for quite some time. You can see what is done in the wiki article. November
-        28th, evening by US Central Time: <itemizedlist>
-          <listitem>
-            <para>openSUSE 10.2: Start 40 bugs now we have 14 bugs left.</para>
-          </listitem>
-          <listitem>
-            <para>openSUSE 10.3: Start 162 bugs now is 87 bugs left.</para>
-          </listitem>
-          <listitem>
-            <para>openSUSE 11.0: Start 526 bugs now is 346 bugs left. </para>
-          </listitem>
-        </itemizedlist></para>
-      <para>We started with 728 bugs and now we have 447, which is 281 bug lesser. I hope that A.
-        Naumov will repeat call for the next Bug Day right next weekend.</para>
+      <title></title>
+      <para></para>
     </blockquote>
     <!--
     <blockquote>
@@ -99,25 +82,10 @@
     <title>Team Report</title>
 
     <sect3 role="artteam">
-      <title>Art Team</title>
-      <figure id="fig.sirkoart">
-        <title>openSUSE Coverart for the future</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://karl-tux-stadt.de/graph/newface.png" width="20%"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
+      <title></title>
       <blockquote>
-        <title><ulink url="http://karl-tux-stadt.de/ktuxs/?p=2922">Sirko Kemter: Give
-            openSUSE</ulink></title>
-        <para>I working since a few weeks on a series, that can represent openSUSE and they other
-          software from us in the future. They are still not all ready yet only what I have in mind,
-          nearly all need some improvements. So what yout think, I am on the right way with this?
-          Dont look at the text on them, thats then really up to the marketing guys. What I want to
-          show is, that openSUSE is more as a distribution we have cool tools for creating software
-          and some cool derivates too. I try to show some of cool feature that openSUSE have. So
-          what u think?<xref linkend="fig.sirkoart"/></para>
+        <title></title>
+        <para></para>
       </blockquote>
     </sect3>
 
@@ -134,10 +102,89 @@
      <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
 
       <blockquote>
-        <title><ulink url="http://lists.opensuse.org/opensuse-buildservice/2010-12/msg00058.html"
-            >osc 0.130 release</ulink></title>
-        <para>Now just released a new osc version: 0.130. The whole Article can be viewed with
-          clicking on the Title.</para>   
+        <title><ulink url="http://lizards.opensuse.org/2010/12/06/osc-0-130/">Marcus Hüwe: osc
+            0.130</ulink></title>
+        <para>We just released a new osc version: 0.130. The main changes/features are:</para>
+        <itemizedlist>
+          <listitem>
+            <para>– new “revert” command to restore the original working copy file (without
+              downloading it)</para>
+          </listitem>
+          <listitem>
+            <para>- rewrote “diff” logic</para>
+          </listitem>
+          <listitem>
+            <para>- added new “–http-full-debug” option, “–http-debug” filters the “Authentication”
+              and “Set-Cookie” header</para>
+          </listitem>
+          <listitem>
+            <para>- added new “–disabled-cpio-bulk-download” option: disable downloading packages as
+              cpio archive from api</para>
+          </listitem>
+          <listitem>
+            <para>- added new “repairwc” command which tries to repair an inconsistent working
+              copy</para>
+          </listitem>
+          <listitem>
+            <para>- workaround for broken urllib2 in python 2.6.5: wrong credentials lead to an
+              infinite recursion</para>
+          </listitem>
+          <listitem>
+            <para>- support –interactive-review option when running “osc rq list
+              &lt;project>”</para>
+          </listitem>
+          <listitem>
+            <para>- improved “osc rq show &lt;id> –interactive-review”</para>
+          </listitem>
+          <listitem>
+            <para>- do_config: added new options –stdin, –prompt, –no-echo:<itemizedlist>
+                <listitem>
+                  <para>–stdin: read value from stdin</para>
+                </listitem>
+                <listitem>
+                  <para>–prompt: prompt for a value</para>
+                </listitem>
+                <listitem>
+                  <para>–no-echo: prompt for a value but don’t echo entered characters (for instance
+                    to enter a passwd)</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+        </itemizedlist>
+        <itemizedlist>
+          <listitem>
+            <para>- added template support for a submitrequest accept/decline message</para>
+          </listitem>
+          <listitem>
+            <para>- lots of internal rewrites (new working copy handling etc.)</para>
+          </listitem>
+          <listitem>
+            <para>- support added for osc search ‘perl(Foo::Bar)’</para>
+          </listitem>
+          <listitem>
+            <para>- New “service” command to run source services locally or trigger a re-run on the
+              server.</para>
+          </listitem>
+          <listitem>
+            <para>- setlinkrev is setting now the revision to xsrcmd5 by default to avoid later
+              breakage on indirect links by default.</para>
+          </listitem>
+          <listitem>
+            <para>Features which requires OBS 2.1: support reliable diff for an accepted
+              request</para>
+          </listitem>
+        </itemizedlist>
+        <para>Due to the rewrite of the working copy handling osc might fail with the following
+          error: <emphasis role="italic">Your working copy ‘.’ is in an inconsistent state. Please
+            run ‘osc repairwc .’ (Note this might _remove_ files from the .osc/ dir). Please check
+            the state of the working copy afterwards (via ‘osc status .’)</emphasis></para>
+        <para>Simply run “osc repairwc” which might fetch files from the api or delete some files
+          from the storedir (.osc/). It won’t touch locally modified files. For more information see
+          section “WORKING COPY INCONSISTENT” in the README.</para>
+        <para>The new packages should be available soon in the <ulink
+            url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
+            repo</ulink>.</para>
+        <para>Thanks to everyone who contributed to osc!</para>   
       </blockquote>
 
       <formalpara>
@@ -165,18 +212,9 @@
       <title>GNOME Team</title>
 
       <blockquote>
-        <title><ulink
-        url="http://www.vuntz.net/journal/post/2010/10/21/JDLL-2010">Vincent
-        Untz: JDLL 2010</ulink></title>
+        <title></title>
 
-        <para>Last Friday, I headed to Lyon for the JDLL 2010. It's an event
-        that feels always a bit special for me since the JDLL was the first
-        event I attended a long while ago. Even though it's not the biggest
-        event in France, for some reason, all the usual suspects from the
-        french-speaking free software community is coming. So a good place to
-        be to catch up with various people (Alexandre, Didier, FrédéricP,
-        Michael from the GNOME-FR conspiracycommunity, as well as our friends
-        from Mageia, and more). (…)</para>
+        <para></para>
       </blockquote>
     </sect3>
 
@@ -184,19 +222,9 @@
       <title>KDE Team</title>
 
       <blockquote>
-        <title><ulink url="">Andreas Demmer: Dashboard
-        animation</ulink></title>
+        <title></title>
 
-        <para>Yesterday evening, I added the first animation to the KWin
-        dashboard effect: Saturation and brightness of the background do now
-        change over a configurable time span when the dashboard appears. The
-        smooth fade of the background adds some eye candy without being to
-        obstrusive (hopefully).</para>
-
-        <para>I posted the <ulink
-        url="http://reviewboard.kde.org/r/5658/">according patch</ulink> to
-        the KDE review board. If everything works out fine, the patch will be
-        in trunk for KDE SC 4.6 before code freeze.</para>
+        <para></para>
       </blockquote>
     </sect3>
 
