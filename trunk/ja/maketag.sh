@@ -5,8 +5,8 @@
 ISSUE=$1
 echo "Create a tag for Issue $ISSUE ..."
 
-svn copy http://svn.berlios.de/svnroot/repos/osweeklynews/trunk/en \
-   http://svn.berlios.de/svnroot/repos/osweeklynews/tags/ownen$ISSUE
+svn copy http://svn.berlios.de/svnroot/repos/osweeklynews/trunk/ja \
+   http://svn.berlios.de/svnroot/repos/osweeklynews/tags/ownja$ISSUE
 
 echo "Tag correct set."
 
