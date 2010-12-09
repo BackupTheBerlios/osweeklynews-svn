@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Common Entities for all OWN articles
-  
-  This work is licensed under the
-  Creative Commons Attribution-ShareAlike 3.0 Unported License
-  by Sascha Manns. To view a copy of this license, visit
-  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
-  Creative Commons
-  171 Second Street
-  Suite 300
-  San Francisco California 94105
-  USA.
-  
--->
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
+  <!--
+    Common Entities for all OWN articles
+    
+    This work is licensed under the
+    Creative Commons Attribution-ShareAlike 3.0 Unported License
+    by Sascha Manns. To view a copy of this license, visit
+    http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+    Creative Commons
+    171 Second Street
+    Suite 300
+    San Francisco California 94105
+    USA.
+    
+  -->
+  
 <xsl:template name="article.titlepage.before.recto">
   <xsl:param name="filename">Opensuse_weekly_news_banner.png</xsl:param>
   <fo:block space-after="2em">

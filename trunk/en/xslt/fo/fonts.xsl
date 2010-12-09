@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <!--
   Common Entities for all OWN articles
   
@@ -13,8 +15,6 @@
   USA.
   
 -->
-<xsl:stylesheet version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
 <xsl:param name="body.font.family">'DejaVu Sans Condensed'</xsl:param><!-- 'Charis SIL' -->
 <xsl:param name="title.font.family">'DejaVu Sans Condensed'</xsl:param>
