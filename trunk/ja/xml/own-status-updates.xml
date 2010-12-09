@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<sect1 role="status-updates">
+  <title>Status Updates</title>
+
+  <!--
+  <sect2 role="board">
+    <title>Board</title>
+    <blockquote>
+      <para>...</para>
+    </blockquote>
+  </sect2> -->
+
+  <sect2 role="distribution">
+    <title>Distribution</title>
+
+<!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
+
+    <blockquote>
+      <title></title>
+      <para></para>
+    </blockquote>
+    <!--
+    <blockquote>
+      <title><ulink 
+        url="http://www.suse.de/~coolo/opensuse_11.4/"
+        >Schedules for the next week</ulink></title>
+      <para>...</para>
+    </blockquote> -->
+
+    <itemizedlist>
+      <title>Important Links</title>
+
+      <listitem>
+        <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla
+        Report</ulink></para>
+      </listitem>
+
+      <listitem>
+        <para><ulink
+        url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting
+        Bug Reports</ulink></para>
+      </listitem>
+
+      <listitem>
+        <para><ulink
+        url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+        FAQ</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <!--
+  <sect2 role="susestudio">
+    <title>SUSE Studio</title>
+
+    <blockquote>
+      <title>Interesting article</title>
+
+      <para>blah laber</para>
+    </blockquote>
+  </sect2> -->
+
+  <sect2>
+    <title>Team Report</title>
+
+    <sect3 role="artteam">
+      <title></title>
+      <blockquote>
+        <title></title>
+        <para></para>
+      </blockquote>
+    </sect3>
+
+    <!--
+    <sect3 role="boosters">
+      <title>Boosters Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>
+
+     <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
+
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/06/osc-0-130/">Marcus Hüwe: osc
+            0.130</ulink></title>
+        <para>We just released a new osc version: 0.130. The main changes/features are:</para>
+        <itemizedlist>
+          <listitem>
+            <para>– new “revert” command to restore the original working copy file (without
+              downloading it)</para>
+          </listitem>
+          <listitem>
+            <para>- rewrote “diff” logic</para>
+          </listitem>
+          <listitem>
+            <para>- added new “–http-full-debug” option, “–http-debug” filters the “Authentication”
+              and “Set-Cookie” header</para>
+          </listitem>
+          <listitem>
+            <para>- added new “–disabled-cpio-bulk-download” option: disable downloading packages as
+              cpio archive from api</para>
+          </listitem>
+          <listitem>
+            <para>- added new “repairwc” command which tries to repair an inconsistent working
+              copy</para>
+          </listitem>
+          <listitem>
+            <para>- workaround for broken urllib2 in python 2.6.5: wrong credentials lead to an
+              infinite recursion</para>
+          </listitem>
+          <listitem>
+            <para>- support –interactive-review option when running “osc rq list
+              &lt;project>”</para>
+          </listitem>
+          <listitem>
+            <para>- improved “osc rq show &lt;id> –interactive-review”</para>
+          </listitem>
+          <listitem>
+            <para>- do_config: added new options –stdin, –prompt, –no-echo:<itemizedlist>
+                <listitem>
+                  <para>–stdin: read value from stdin</para>
+                </listitem>
+                <listitem>
+                  <para>–prompt: prompt for a value</para>
+                </listitem>
+                <listitem>
+                  <para>–no-echo: prompt for a value but don’t echo entered characters (for instance
+                    to enter a passwd)</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+        </itemizedlist>
+        <itemizedlist>
+          <listitem>
+            <para>- added template support for a submitrequest accept/decline message</para>
+          </listitem>
+          <listitem>
+            <para>- lots of internal rewrites (new working copy handling etc.)</para>
+          </listitem>
+          <listitem>
+            <para>- support added for osc search ‘perl(Foo::Bar)’</para>
+          </listitem>
+          <listitem>
+            <para>- New “service” command to run source services locally or trigger a re-run on the
+              server.</para>
+          </listitem>
+          <listitem>
+            <para>- setlinkrev is setting now the revision to xsrcmd5 by default to avoid later
+              breakage on indirect links by default.</para>
+          </listitem>
+          <listitem>
+            <para>Features which requires OBS 2.1: support reliable diff for an accepted
+              request</para>
+          </listitem>
+        </itemizedlist>
+        <para>Due to the rewrite of the working copy handling osc might fail with the following
+          error: <emphasis role="italic">Your working copy ‘.’ is in an inconsistent state. Please
+            run ‘osc repairwc .’ (Note this might _remove_ files from the .osc/ dir). Please check
+            the state of the working copy afterwards (via ‘osc status .’)</emphasis></para>
+        <para>Simply run “osc repairwc” which might fetch files from the api or delete some files
+          from the storedir (.osc/). It won’t touch locally modified files. For more information see
+          section “WORKING COPY INCONSISTENT” in the README.</para>
+        <para>The new packages should be available soon in the <ulink
+            url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
+            repo</ulink>.</para>
+        <para>Thanks to everyone who contributed to osc!</para>   
+      </blockquote>
+
+      <formalpara>
+        <title>Build Service Statistics</title>
+
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
+      </formalpara>
+    </sect3>
+
+    <!--
+    <sect3 role="education">
+      <title>Education Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="forums">
+      <title>Forums Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="gnometeam">
+      <title>GNOME Team</title>
+
+      <blockquote>
+        <title></title>
+
+        <para></para>
+      </blockquote>
+    </sect3>
+
+    <sect3 role="kdeteam">
+      <title>KDE Team</title>
+
+      <blockquote>
+        <title></title>
+
+        <para></para>
+      </blockquote>
+    </sect3>
+
+    <!--
+    <sect3 role="marketingteam">
+      <title>Marketing Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="medical">
+      <title>Medical Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="monoteam">
+      <title>Mono Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="openfateteam">
+      <title>openFATE Team</title>
+      <itemizedlist>
+        <listitem><para><ulink url="https://features.opensuse.org/310883">#310883: File Integrity GUI/Nautilus/GOME/Right click</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310885">#310885: Use flash-player square for x64 instead of 10.1</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310887">#310887: buil gimp in openoffice</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310889">#310889: YaST UI Two modes for the control center panels</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310891">#310891: ease amazing presentation</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310896">#310896: Consistent Network device naming-Name network interfaces to
+          match chassis labels</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310899">#310899: Bring back yast2-repair (or alternative)</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310904">#310904: Include Mesa 7.10</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310905">#310905: Make Konqueror Default File Manager</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310909">#310909: Bibliography management system</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310911">#310911: Use RPM 5 for opensuse 11.4</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310912">#310912: Please, include Kile</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310913">#310913: Add YAST module to set up multiseat installations</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310920">#310920: The ~200 Line Linux Kernel Patch That Does Wonders for opensuse
+          11.4</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310922">#310922: central system user registry</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310923">#310923: Update tv-card list in Yast Module</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310929">#310929: include blender 2.5 in opensuse 11.4</ulink></para></listitem>
+        <listitem><para><ulink url="https://features.opensuse.org/310930">#310930: Split samba-server.desktop into two desktop files</ulink></para></listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <para><emphasis role="bold">Feature Statistics</emphasis></para>
+
+        <listitem>
+          <para>Statistics for openSUSE 11.4 <ulink
+          url="https://features.opensuse.org/statistic/product/22236">in
+          openFATE</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+    
+    <!--
+    <sect3 role="oooteam">
+      <title>OpenOffice Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="testing">
+      <title>Testing Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="translationteam">
+      <title>Translation Team</title>
+
+      <itemizedlist>
+        <listitem>
+          <para>Daily updated translation statistics are available on the
+          <ulink url="http://i18n.opensuse.org/">openSUSE Localization
+          Portal</ulink>.</para>
+        </listitem>
+
+        <listitem>
+          <para><ulink
+          url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk
+          Top-List</ulink> – <ulink
+          url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+          Guide</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+    
+    <!--
+    <sect3 role="wiki">
+      <title>Wiki Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="yast">
+      <title>YaST Team</title>
+
+      <para>...</para>
+    </sect3> -->
+  </sect2>
+</sect1>
