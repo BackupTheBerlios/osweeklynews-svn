@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/06/a-new-aeon-a-new-team-of-ambassadors/"
+        >Nelson Marques: A new aeon, a new team of ambassadors!</ulink></title>
+    <para>For a long time that I actively search the Portuguese Ambassadors… unfortunately I was unable to find them. I’ve learned once with someone which is very dear to me a single line that ended up by translating one great universal truth: “Stopping is dying”.</para>
+    <para>This afternoon, I’ve traveled northeast to the beautiful city of Oliveira de Azemeis, where I’ve met one of the unknown faces of the Portuguese openSUSE Community, João Matias. We’ve had a small chat about several topics… amongst them:</para>
+    <itemizedlist>
+      <listitem>
+        <para>OBS – openSUSE Build Service – howto, examples and how useful it can be for students
+          projects!</para>
+      </listitem>
+      <listitem>
+        <para>University Campus – Event creaton… how openSUSE can represent itself on 3rd parties
+          events inside of the campus;</para>
+      </listitem>
+      <listitem>
+        <para>Concerns about the growth of the Portuguese Community;</para>
+      </listitem>
+      <listitem>
+        <para>Ambassadors or Campus Activists?</para>
+      </listitem>
+      <listitem>
+        <para>The new ‘Portuguese’ Forum at forums.opensuse.org (Special Thanks to Jim Henderson and
+          the Forums Team for their outstanding guidance during the submission process);</para>
+      </listitem>
+      <listitem>
+        <para>Christmas Dinner @ 11th December and hot-topics.</para>
+      </listitem>
+    </itemizedlist>
+    <para>We look forward to a smiling future full of work and hopefully with a stronger openSUSE
+      presence in the Portuguese University Campus.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/07/indicator-me-has-landed/">Nelson
+        Marques: Indicator ME has landed!</ulink></title>
+    <para>The first package I pushed to openSUSE was Notify OSD (Canonicals Notification
+      Agent/Bubble) with a small patch for extended features (skinning/theming) maintained by Roman
+      Sukochev. This patch is popular and wasn’t merged with Notify OSD because it ‘breaks’ the spec
+      of Notify OSD that states it shouldn’t be skinnable/themable on Ubuntu. </para>
+    <para>Now I’ve packaged a lot of dependencies… cracked and patched GTK with a patch taken from
+      Ubuntu, spended hours of mind crushing frustration…. but finally it has landed! The first
+      ‘Indicator’ has landed… Often known as “Ubuntu Me Menu”, under openSUSE it will be known as
+      ‘indicator-me’.</para>
+    <figure id="fig.indicator">
+      <title>Indicator ME Screenshot 1</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-1.png" width="75%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>This screenshot was taken on openSUSE Factory 11.4 Milestone 4. It’s a clean install with
+      Sonar and the only tweak is the Faenza-Dark icon theme, which I also packaged and pushed to
+      openSUSE:Contrib. <xref linkend="fig.indicator"/></para>
+    <para>Top right corner… Indicator ME on openSUSE. It works… I won’t backport it and will only
+      maintain it from 11.4 forward. I’m doing this for personal reasons, mainly to become an
+      alternative on a localized openSUSE Spin that will be named ‘openSUSE IBERIA’, which was
+      already taken into openSUSE-Project by Javier Llorente. </para>
+    <para>The main reason to bring this to openSUSE and into IBERIA is tightly related to the fact
+      that most people on the Iberian Peninsula use Ubuntu, so we find the best approach possible to
+      offer something as close as Ubuntu and hopefully even a better offer when it comes to
+      localization. We don’t want to make of openSUSE a ‘clone’ of Ubuntu, instead we want to make
+      the openSUSE experience more close to what people already use. </para>
+    <para>I’m also going to post a small pic of the same software, this time with Canonical’s
+      Radiance Theme, which introduces a small ‘tab’ like visual on the bar. This theme is awesome…
+      regardless of what people think of Ubuntu and Canonical… This is the kind of polishing that
+      makes Canonical successful, not just the ‘marketing’ many point and even despise.</para>
+    <figure id="fig.indicator1">
+      <title>Indicator ME Screenshot 2</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-2.png" width="75%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>Indicator ME as landed… soon others will follow… My plans are to submit this pieces of
+      software to GNOME:Apps, and not to push as default, but instead offer them at the distance of
+      a ‘zypper in package’ to the openSUSE users out there. And at the same time, since the
+      libraries behind it are also packaged… be more attractive to developers who might want to use
+      them. I see no loss neither an identity crisis on openSUSE by providing more packages and
+      alternative software to improve users Desktop experience… <xref linkend="fig.indicator1"/></para>
+    <para>Future work (after indicators):<itemizedlist>
+        <listitem>
+          <para>Synapse Launcher;</para>
+        </listitem>
+        <listitem>
+          <para>Unity (depending on some wild dependencies and some progress in understanding
+            cmake).</para>
+        </listitem>
+      </itemizedlist></para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.wafaa.eu/entry/smeegol-status---08dec10-1-45.html">Andrew Wafaa:
+        Blogged about: Smeegol Status - 08Dec10</ulink></title>
+    <para>Looks like it's been a while since I mentioned anything about our dear friend Smeegol –
+      sorry. </para>
+    <para>As most will know MeeGo made a couple of releases: <itemizedlist>
+        <listitem>
+          <para>1.0.5 mostly an update to their original release</para>
+        </listitem>
+        <listitem>
+          <para>1.1.0 the new release with new API, and renaming most packages</para>
+        </listitem>
+      </itemizedlist>So where is Smeegol? Well we're pretty much there, although not 100%. I have
+      1.0.5 all built and packaged including an image. Problem is I seem to have hit a bug with
+      network-manager-netbook – it doesn't seem to be displaying networks which is a fairly
+      fundamental issue :-( </para>
+    <para>I have also got 1.1.0 built, but for factory only atm – I'm having some issues with
+      tracker on 11.3. Problem is when I try and run the image, I basically have an unusable system
+      thanks to some Gconf fubar but I don't really know what. </para>
+    <para>You may have also noticed that I'm still calling it Smeegol ;-) Well the simple reason is
+      I have requested clarification from MeeGo, Nokia, Intel and the Linux Foundation and so far
+      I've received bubkiss!! I heard loads of talk from the recent MeeGo Conference about how open
+      MeeGo was, but it seems that they are only open to partners who can help them make money; not
+      open to the wider community. I am not alone in waiting for a response from them, Fedora and
+      Debian are also in limbo waiting for information/clarification and general communication from
+      them. The difference between us is the fact that in openSUSE if you want something done the
+      best way is to Just Do It :-) </para>
+    <para>So in a nutshell, before I make an official release of either I need people to test and
+      report back to me what does and doesn't work. I haven't tried doing an upgrade from 1.0.3 to
+      1.0.5 or 1.1.0 so maybe someone could try that. Jump onto #opensuse-moblin on Freenode or the
+      opensuse-goblin mailing list and let's continue to be trail blazers. Yes I know I need to
+      align the mailing list and irc channel names, but I'm waiting for a conclusion to the name
+      debacle first. </para>
+    <para>I would really love to get both releases out as a little christmas present to you the
+      community, so who's up for some festive fun?</para>
+  </blockquote>
+  
+</sect1>
