@@ -184,7 +184,7 @@
         <para>The new packages should be available soon in the <ulink
             url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
             repo</ulink>.</para>
-        <para>Thanks to everyone who contributed to osc!</para>   
+        <para>Thanks to everyone who contributed to osc! ($ ld: 10.12.10 sm $)</para>   
       </blockquote>
 
       <formalpara>
@@ -212,10 +212,156 @@
       <title>GNOME Team</title>
 
       <blockquote>
-        <title></title>
-
-        <para></para>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/07/indicator-me-has-landed/">Nelson
+          Marques: Indicator ME has landed!</ulink></title>
+        <para>The first package I pushed to openSUSE was Notify OSD (Canonicals Notification
+          Agent/Bubble) with a small patch for extended features (skinning/theming) maintained by Roman
+          Sukochev. This patch is popular and wasn’t merged with Notify OSD because it ‘breaks’ the spec
+          of Notify OSD that states it shouldn’t be skinnable/themable on Ubuntu. </para>
+        <para>Now I’ve packaged a lot of dependencies… cracked and patched GTK with a patch taken from
+          Ubuntu, spended hours of mind crushing frustration…. but finally it has landed! The first
+          ‘Indicator’ has landed… Often known as “Ubuntu Me Menu”, under openSUSE it will be known as
+          ‘indicator-me’.</para>
+        <figure id="fig.indicator">
+          <title>Indicator ME Screenshot 1</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-1.png" width="75%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>This screenshot was taken on openSUSE Factory 11.4 Milestone 4. It’s a clean install with
+          Sonar and the only tweak is the Faenza-Dark icon theme, which I also packaged and pushed to
+          openSUSE:Contrib. <xref linkend="fig.indicator"/></para>
+        <para>Top right corner… Indicator ME on openSUSE. It works… I won’t backport it and will only
+          maintain it from 11.4 forward. I’m doing this for personal reasons, mainly to become an
+          alternative on a localized openSUSE Spin that will be named ‘openSUSE IBERIA’, which was
+          already taken into openSUSE-Project by Javier Llorente. </para>
+        <para>The main reason to bring this to openSUSE and into IBERIA is tightly related to the fact
+          that most people on the Iberian Peninsula use Ubuntu, so we find the best approach possible to
+          offer something as close as Ubuntu and hopefully even a better offer when it comes to
+          localization. We don’t want to make of openSUSE a ‘clone’ of Ubuntu, instead we want to make
+          the openSUSE experience more close to what people already use. </para>
+        <para>I’m also going to post a small pic of the same software, this time with Canonical’s
+          Radiance Theme, which introduces a small ‘tab’ like visual on the bar. This theme is awesome…
+          regardless of what people think of Ubuntu and Canonical… This is the kind of polishing that
+          makes Canonical successful, not just the ‘marketing’ many point and even despise.</para>
+        <figure id="fig.indicator1">
+          <title>Indicator ME Screenshot 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-2.png" width="75%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>Indicator ME as landed… soon others will follow… My plans are to submit this pieces of
+          software to GNOME:Apps, and not to push as default, but instead offer them at the distance of
+          a ‘zypper in package’ to the openSUSE users out there. And at the same time, since the
+          libraries behind it are also packaged… be more attractive to developers who might want to use
+          them. I see no loss neither an identity crisis on openSUSE by providing more packages and
+          alternative software to improve users Desktop experience… <xref linkend="fig.indicator1"/></para>
+        <para>Future work (after indicators):<itemizedlist>
+          <listitem>
+            <para>Synapse Launcher;</para>
+          </listitem>
+          <listitem>
+            <para>Unity (depending on some wild dependencies and some progress in understanding
+              cmake).</para>
+          </listitem>
+        </itemizedlist></para>
       </blockquote>
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/09/indicator-sessionnetwork/">Nelson
+            Marques: indicator-{session,network}</ulink></title>
+
+        <para>I’ve manage to hammer in 2 more indicators. Indicator-session provides a quick and
+          easy method to manage your GNOME session. The options are pretty intuitive and it works ok
+          so far. A simple screenshot. </para>
+        <figure id="fig.gnometeam">
+          <title>Screenshot</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+          </figure>
+          <para>Then we have also indicator-network which was a bit more problematic to build and required a couple of very ugly quick fixes. Though I’ve built a package for it and it’s dependencies (including The Connection Manager). My concerns about it: <xref linkend="fig.gnometeam"/></para>
+      <itemizedlist>
+        <listitem><para>It’s a piece of software under heavy development;</para></listitem>
+        <listitem><para>The user configuration interface is very fuzzy and provides cool clear text passwords for LAN;</para></listitem>
+        <listitem><para>nm-applet is far superior;</para></listitem>
+        <listitem><para>Requires ‘connection manager’ – Connection Manager is a pretty cool application, and it’s compat mode with Network Manager makes it’s integration pretty easy… Though ‘connection manager’ seemed to be an outstanding piece of software, I’m not going through all the trouble to package and integrate it in openSUSE (integration should be pretty fast, just a init script, since it allows compat mode with Network Manager).</para></listitem>
+      </itemizedlist>
+        <para>I personally don’t like this network indicator… Though I’ve packaged it,  I’ve decided not to share it because of 4 points above. I really don’t see anything positive about having it for openSUSE users, it would most likely turn their GNOME experience into something a bit fuzzy.</para>
+        <para>Either way… that’s how it looks…</para>
+        <figure id="fig.gnometeam2">
+          <title>Screenshot 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-41.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para><xref linkend="fig.gnometeam2"/>
+        </para>
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2010/12/10/new-indicators-the-saga-continues/">Nelson
+            Marques: New Indicators… the saga continues…</ulink></title>
+        <para>As the indicator saga continues… some new indicators were built… Indicator-messages is
+          a small indicator that pics up messages and stuff from applications to display them on a
+          nice all-around indicator. It works fine with evolution (plugin also built and doesn’t
+          require patching for what I’ve seen). </para>
+        <para>This indicator support more applications, though they require some patching. As being
+          discussed on the opensuse-GNOME mailing list as as proposed by Vincent Untz, this
+          indicators are moving to GNOME:Apps and there _might_ an effort to support some features
+          in applications like empathy. Keep in mind this is not a priority, but if it’s possible to
+          support some more feature, it might happen.</para>
+        <figure id="fig.gnomeindicator">
+          <title>Screenshot</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-21.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>Additionally<xref linkend="fig.gnomeindicator"/>, I’ve also tried some other indicators… indicator-application for what I
+          can tell is an indicator that removes the menu’s from the GTK applications and places them
+          on the panel (MAC style). I’ve built this indicator, but I have no means to test yet
+          because further patching is required at least in GTK and eventually on glib. I don’t think
+          there’s actually any need to have this indicator, specially when it will bring additional
+          efforts on GTK maintenance, and this feature is somehow supported by software like
+          gnome-globalmenu (which I’ve also packaged for myself and works dearly with supported
+          apps). </para>
+        <para>I’ve done some hammering on indicator-sound as well… Ubuntu’s sound widget… I’m stuck
+          with some error and I have 2 possibilities… downgrade to the last version of the previous
+          branch which should built, or work the current branch (more dependency demanding). I’m
+          working on it… it will happen one way or another during the next days. I guess this one is
+          actually one of the most wanted :) </para>
+        <para>There are few other indicators… for time and date, calendar and so on… Those will be
+          last ones. After indicator-sound is done, I’m starting to clean up the packaging and make
+          sure it’s compliant to the GNOME team methodology and submit them to GNOME:Apps and the
+          support libraries that are required as dependencies forwarded to projects where they might
+          be useful (need to check out with the people which ones those will be). </para>
+        <para>A special thanks to Ken Vandine from Canonical for some guidance with libindicate. </para>
+        <para>I’ve seen around some ‘hate’ waves towards Canonical, and I would like to say that so
+          far in the few times I’ve interacted with them, either on bug submission or asking help,
+          they have been awesome and caring. It’s really something I would like to point… they are
+          pretty cool, and their devs are very helpful (but hey… so are our devs ;) ). Also a very
+          special thanks to Vincent Untz, Dimstar and mrdocs which have been a great help and from
+          whom I’ve learned already a lot.</para>
+        <para>So picking up the useful stuff… and placing it up together in a single Indicator:</para>
+        <figure id="fig.gnomeindicator2">
+          <title>Screenshot 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-11.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para><xref linkend="fig.gnomeindicator2"/> ($ ld: 10.12.10 sm $)</para>
+      </blockquote>     
     </sect3>
 
     <sect3 role="kdeteam">

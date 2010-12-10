@@ -53,65 +53,6 @@
       presence in the Portuguese University Campus.</para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2010/12/07/indicator-me-has-landed/">Nelson
-        Marques: Indicator ME has landed!</ulink></title>
-    <para>The first package I pushed to openSUSE was Notify OSD (Canonicals Notification
-      Agent/Bubble) with a small patch for extended features (skinning/theming) maintained by Roman
-      Sukochev. This patch is popular and wasn’t merged with Notify OSD because it ‘breaks’ the spec
-      of Notify OSD that states it shouldn’t be skinnable/themable on Ubuntu. </para>
-    <para>Now I’ve packaged a lot of dependencies… cracked and patched GTK with a patch taken from
-      Ubuntu, spended hours of mind crushing frustration…. but finally it has landed! The first
-      ‘Indicator’ has landed… Often known as “Ubuntu Me Menu”, under openSUSE it will be known as
-      ‘indicator-me’.</para>
-    <figure id="fig.indicator">
-      <title>Indicator ME Screenshot 1</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-1.png" width="75%"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>This screenshot was taken on openSUSE Factory 11.4 Milestone 4. It’s a clean install with
-      Sonar and the only tweak is the Faenza-Dark icon theme, which I also packaged and pushed to
-      openSUSE:Contrib. <xref linkend="fig.indicator"/></para>
-    <para>Top right corner… Indicator ME on openSUSE. It works… I won’t backport it and will only
-      maintain it from 11.4 forward. I’m doing this for personal reasons, mainly to become an
-      alternative on a localized openSUSE Spin that will be named ‘openSUSE IBERIA’, which was
-      already taken into openSUSE-Project by Javier Llorente. </para>
-    <para>The main reason to bring this to openSUSE and into IBERIA is tightly related to the fact
-      that most people on the Iberian Peninsula use Ubuntu, so we find the best approach possible to
-      offer something as close as Ubuntu and hopefully even a better offer when it comes to
-      localization. We don’t want to make of openSUSE a ‘clone’ of Ubuntu, instead we want to make
-      the openSUSE experience more close to what people already use. </para>
-    <para>I’m also going to post a small pic of the same software, this time with Canonical’s
-      Radiance Theme, which introduces a small ‘tab’ like visual on the bar. This theme is awesome…
-      regardless of what people think of Ubuntu and Canonical… This is the kind of polishing that
-      makes Canonical successful, not just the ‘marketing’ many point and even despise.</para>
-    <figure id="fig.indicator1">
-      <title>Indicator ME Screenshot 2</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-2.png" width="75%"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>Indicator ME as landed… soon others will follow… My plans are to submit this pieces of
-      software to GNOME:Apps, and not to push as default, but instead offer them at the distance of
-      a ‘zypper in package’ to the openSUSE users out there. And at the same time, since the
-      libraries behind it are also packaged… be more attractive to developers who might want to use
-      them. I see no loss neither an identity crisis on openSUSE by providing more packages and
-      alternative software to improve users Desktop experience… <xref linkend="fig.indicator1"/></para>
-    <para>Future work (after indicators):<itemizedlist>
-        <listitem>
-          <para>Synapse Launcher;</para>
-        </listitem>
-        <listitem>
-          <para>Unity (depending on some wild dependencies and some progress in understanding
-            cmake).</para>
-        </listitem>
-      </itemizedlist></para>
-  </blockquote>
-  <blockquote>
     <title><ulink url="http://www.wafaa.eu/entry/smeegol-status---08dec10-1-45.html">Andrew Wafaa:
         Blogged about: Smeegol Status - 08Dec10</ulink></title>
     <para>Looks like it's been a while since I mentioned anything about our dear friend Smeegol –
@@ -145,7 +86,23 @@
       align the mailing list and irc channel names, but I'm waiting for a conclusion to the name
       debacle first. </para>
     <para>I would really love to get both releases out as a little christmas present to you the
-      community, so who's up for some festive fun?</para>
+      community, so who's up for some festive fun? ($ ld: 10.12.10 sm $)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://karl-tux-stadt.de/ktuxs/?p=2929">Sirko Kemter: Let us bring home the
+        Award</ulink></title>
+    <para>Yearly the LinuxNewMedia give away an Award for some Free and Open software projects. A
+      jury give away some prizes for organizations, companies, and individuals who performed
+      exceptional feats in the Linux and open source scene in the past year. That prizes are given
+      from a jury with well know people from the FLOSS world. Normally there is no choice for the
+      readers, but this year is different. The best Linux distribution can be choosen from the
+      people. </para>
+    <para>Its definitly so that openSUSE made in the last year big steps forward not only the
+      distribution himself even the tools that come from the project, like the Buildservice or such
+      tools like SUSE Studio makes the distribution of one of them the move the Open Source world
+      forward. So when you think also, then get out and vote. <ulink
+        url="http://www.linuxnewmedia.com/Products/Events/Linux-New-Media-Award-Favourite-Linux-Distribution-2010"
+        >to the vote</ulink></para>
   </blockquote>
   
 </sect1>

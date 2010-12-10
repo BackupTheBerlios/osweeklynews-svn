@@ -25,4 +25,49 @@
     as soon as they're released, refer to the <ulink
       url="http://lists.opensuse.org/opensuse-security-announce/"
       >openSUSE Security Announce</ulink> mailing list.</para>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00002.html"
+        >Heads up on new kernel local root exploit</ulink></title>
+    <para>Dan Rosenberg published a new local root exploit for the kernel,
+      linked e.g. in this LWN article <ulink url="http://lwn.net/Articles/419141/">http://lwn.net/Articles/419141/</ulink>
+      and for our german readers on
+      <ulink url="http://www.heise.de/newsticker/meldung/OOPS-Root-Rechte-auf-Linux-1149512.html">http://www.heise.de/newsticker/meldung/OOPS-Root-Rechte-auf-Linux-1149512.html</ulink>
+    </para>
+    <para>  
+      The exploit itself uses 3 seperate security issues in chain, all
+      found by Nelson Elhage.</para>
+      
+      <para><emphasis role="bold"><ulink
+          url="http://support.novell.com/security/cve/CVE-2010-4258.html"
+        >CVE-2010-4258</ulink></emphasis>: This is the core vulnerability, which can basically turn
+      any user program triggered Oops into a local privilege escalation. This problem affects all
+      SUSE Linux Enterprise and openSUSE products (but needs another problem to trigger it.)</para>
+      
+      
+      <para>In the published exploit this Oops is caused by: <emphasis role="bold"><ulink
+          url="http://support.novell.com/security/cve/CVE-2010-3850.html"
+        >CVE-2010-3850</ulink></emphasis>: Associating a ECONET address with any network interface.
+      This is possible in older SUSE products before SUSE Linux Enterprise 11 SP1 and openSUSE
+      11.2.</para>
+      
+      <para><emphasis role="bold"><ulink
+          url="http://support.novell.com/security/cve/CVE-2010-3849.html"
+        >CVE-2010-3849</ulink></emphasis>[3]: A kernel Oops caused by a NULL pointer dereference in
+      ECONET. This vulnerability does not affect any SUSE Linux or openSUSE product, as we do not
+      have the the sub-configuration of ECONET enabled that are necessary to exploit this.</para>
+      
+      <para>As the ECONET parts of this exploit are not effective on openSUSE and
+        SUSE Linux Enterprise, the published exploit will not work as-is.</para>
+      
+      <para>However, as SUSE kernels are affected by <emphasis role="bold">CVE-2010-4258</emphasis>,
+      an exploit could be written that uses a different method to Oops the kernel.</para>
+      
+      <para>To mitigate this issue until updates are available, you can switch your
+        kernel to cause a panic on any Oops by doing as root:</para>
+      
+    <para><emphasis role="italic">echo 1 > /proc/sys/kernel/panic_on_oops</emphasis></para>
+      
+      <para>We will be of course also be releasing updated kernel packages containing
+        fixes.</para>
+  </blockquote>
 </sect1>
