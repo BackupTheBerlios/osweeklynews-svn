@@ -1,4 +1,4 @@
-ev<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -19,11 +19,14 @@ ev<?xml version='1.0' encoding='UTF-8'?>
 <sect1 role="community">
   <title>In the Community</title>
 <!--Put here things relevant to the openSUSE community maybe from * People of openSUSE or elections, votings 1 - 2 posts-->  
+  <!--
   <sect2>
     <title>Postings from the Community</title>
     <blockquote>
+      <title>..</title>
+      <para>...</para>
     </blockquote>
-  </sect2>
+  </sect2> -->
   <!--  
   <sect2>
     <title>People of openSUSE</title>
@@ -32,6 +35,7 @@ ev<?xml version='1.0' encoding='UTF-8'?>
       <para>Good Guy. Glows in the night.</para>
     </blockquote>
     </sect2> -->
+  <!--
   <sect2>
     <title>Welcome new openSUSE Members</title>
     <blockquote>
@@ -39,9 +43,9 @@ ev<?xml version='1.0' encoding='UTF-8'?>
         <ulink url="https://users.opensuse.org/show/cyberiad">New Member: Stephan Barth (cyberiad)</ulink>
       </title>
       <para>He is involved in some openSUSE Build Service Projects, he is active in Bugreporting and
-        is active in Wiki and IRC. OLD</para>
+      is active in Wiki and IRC.</para>
     </blockquote>
-  </sect2>
+  </sect2> -->
   <sect2>
     <title>Events &amp; Meetings</title>
     <itemizedlist>
@@ -54,7 +58,6 @@ ev<?xml version='1.0' encoding='UTF-8'?>
         <para><ulink url="http://news.opensuse.org/2010/05/13/%ef%bb%bfopensuse-kde-team-meeting/">December 09, 2010: ﻿openSUSE KDE Team meeting"</ulink></para>
       </listitem>
     </itemizedlist>
-(EDIT MARK)
     <itemizedlist>
       <title>Upcoming</title>
       <listitem>
@@ -65,7 +68,7 @@ ev<?xml version='1.0' encoding='UTF-8'?>
         <para><ulink url="http://news.opensuse.org/2010/05/30/german-wiki-team-meeting-2/">December 22, 2010: German Wiki Team Meeting</ulink></para>
       </listitem>
     </itemizedlist>
-(EDIT MARK)
+    <!-- ($ ld: 10.12.10 ts $) -->
     <para>You can find more informations on other events at: <ulink url="http://news.opensuse.org/category/events/">openSUSE News/Events</ulink>. - <ulink url="http://en.opensuse.org/openSUSE:Ambassadors_events">Local Events</ulink></para>
   </sect2>
   <sect2>
@@ -186,7 +189,7 @@ ev<?xml version='1.0' encoding='UTF-8'?>
         ambassadors organized a large number of well-attended talks and workshops; there was the
         openSUSE keynote; and at the booth many visitors brought their laptops to be equipped with a
         fresh openSUSE installation. In short, we made quite an impact at the conference and brought
-        fun with us!<xref linkend="fig.brasbooth"/> ($ ld: 10.12.10 sm $)</para>
+        fun with us!<xref linkend="fig.brasbooth"/> <!-- ($ ld: 10.12.10 sm $) --></para>
     </blockquote>
   </sect2>
   <sect2>

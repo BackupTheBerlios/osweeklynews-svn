@@ -32,18 +32,27 @@
     <title>Distribution</title>
 
 <!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
-
+   <!-- 
     <blockquote>
       <title></title>
       <para></para>
-    </blockquote>
-    <!--
+      </blockquote>  -->
+   
     <blockquote>
       <title><ulink 
         url="http://www.suse.de/~coolo/opensuse_11.4/"
         >Schedules for the next week</ulink></title>
-      <para>...</para>
-    </blockquote> -->
+      <para>openSUSE 11.4 Milestone 5 release</para>
+      <itemizedlist>
+        <listitem><para>Milestone: installation workflow is feature frozen</para></listitem>
+        <listitem><para>Proofreading of all software starts so that we have a new baseline.</para></listitem>
+        <listitem><para>Milestone: Feature and version freeze for the complete distribution (exception: patchlevel update of leaf packages until Beta1+)</para></listitem>
+        <listitem><para>Milestone: All features are coding and function complete.</para></listitem>
+        <listitem><para>Milestone: Kernel and install works on all targeted machines.</para></listitem>
+        <listitem><para>Milestone: Last round of software translation starts - "hard text freeze"</para></listitem>
+        <!-- ($ ld: 11.12.10 sm $) -->
+      </itemizedlist>
+    </blockquote>
 
     <itemizedlist>
       <title>Important Links</title>
@@ -81,13 +90,14 @@
   <sect2>
     <title>Team Report</title>
 
+    <!--
     <sect3 role="artteam">
       <title></title>
       <blockquote>
         <title></title>
         <para></para>
       </blockquote>
-    </sect3>
+    </sect3> -->
 
     <!--
     <sect3 role="boosters">
@@ -184,7 +194,8 @@
         <para>The new packages should be available soon in the <ulink
             url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
             repo</ulink>.</para>
-        <para>Thanks to everyone who contributed to osc! ($ ld: 10.12.10 sm $)</para>   
+        <para>Thanks to everyone who contributed to osc!</para>   
+        <!-- ($ ld: 10.12.10 sm $) -->
       </blockquote>
 
       <formalpara>
@@ -360,10 +371,12 @@
             </imageobject>
           </mediaobject>
         </figure>
-        <para><xref linkend="fig.gnomeindicator2"/> ($ ld: 10.12.10 sm $)</para>
+        <para><xref linkend="fig.gnomeindicator2"/></para>
+        <!-- ($ ld: 10.12.10 sm $) -->
       </blockquote>     
     </sect3>
 
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
 
@@ -372,7 +385,7 @@
 
         <para></para>
       </blockquote>
-    </sect3>
+    </sect3> -->
 
     <!--
     <sect3 role="marketingteam">
@@ -416,6 +429,7 @@
         <listitem><para><ulink url="https://features.opensuse.org/310923">#310923: Update tv-card list in Yast Module</ulink></para></listitem>
         <listitem><para><ulink url="https://features.opensuse.org/310929">#310929: include blender 2.5 in opensuse 11.4</ulink></para></listitem>
         <listitem><para><ulink url="https://features.opensuse.org/310930">#310930: Split samba-server.desktop into two desktop files</ulink></para></listitem>
+        <!-- ($ ld: 04.12.10 sm $) -->
       </itemizedlist>
       <itemizedlist>
         <para><emphasis role="bold">Feature Statistics</emphasis></para>
