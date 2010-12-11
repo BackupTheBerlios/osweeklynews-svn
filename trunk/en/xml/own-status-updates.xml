@@ -408,16 +408,7 @@
 
     <sect3 role="openfateteam">
       <title>openFATE Team</title>
-      <itemizedlist>
-        <title>Feature Statistics</title>
-        <para><emphasis role="bold">Feature Statistics</emphasis></para>
-        
-        <listitem>
-          <para>Statistics for openSUSE 11.4 <ulink
-            url="https://features.opensuse.org/statistic/product/22236">in
-            openFATE</ulink></para>
-        </listitem>
-      </itemizedlist>
+  
       <sect4>
         <title>Top voted Features</title>
         <para>* Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </para>
@@ -425,9 +416,34 @@
           <title><ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 320)</ulink></title>
           <para>Network installation could be improved by running package download and package installation in parallel.</para>        
         </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 320)</ulink></title>
+          <para>"Network installation could be improved by running package download and package installation in parallel."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 148)</ulink></title>
+          <para>"I wanted to open a fate feature about this when I first heard of plymouth, but reading http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way. (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 115)</ulink></title>
+          <para>"An easy way to remove Software! For  example: you installed an application with "1-click install" (which  will install all the packages that you need), there should be an easy  way (also with 1 click) to remove what you have installed with that  1-click operation... in another words: an "1-click Uninstall" to remove  installed software (dependencies and packages included)."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/308357">Please, replacement for Sax2 in 11.3, and now for 11.4 (Score: 81)</ulink></title>
+          <para>"We  need a replacement for sax2 in 11.3, as a safety measure for when  auto  configuration fails to detect certain monitors/keyboards/mice. (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative "Installation Summary" (Score: 60)</ulink></title>
+          <para>"The  YaST Qt package manager should provide as much information in the   "Installation Summary" view as zypper, esp the overall download size to   expect and how much disk space will be freed/used after performing the   operation."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 52)</ulink></title>
+          <para>"Idea from community member Raúl García.
+            Same  concept as MSI packages for Windows but exploiting the One Click   Install concept of openSUSE (and therefore inheriting the simplicity,   code and security. (...)"</para>
+        </blockquote>
       </sect4>
       <sect4>
-        <title>Recently requeted features</title>
+        <title>Recently requested features</title>
         <para>* Features newly requested last week. Please vote and/or comment if you get interested.</para>
         <blockquote>
           <title><ulink url="https://features.opensuse.org/310937">Mobile Broadband Assistant Wizard</ulink></title>
@@ -435,9 +451,71 @@
             http://blogs.gnome.org/dcbw/2009/06/22/mobile-broadband-assistant-makes-it-easy/
             can I suggest this could be valuable addition to OpenSuse for mobile broadband?"</para>
         </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310938">Support Harddrives with more than 3TB capacity</ulink></title>
+          <para>"As harddrives with capacities more than 3TB's are available, we need to ensure that those drives are fully supported. (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310939">[zypper] add package counter</ulink></title>
+          <para>"When installing/updating with zypper and "--download in-advance" zypper  shows a counter of how many packages are to be downloaded and at which  position we currently are: (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310940">Mumble into Distribution</ulink></title>
+          <para>"Mumble, a groupchat system, should go into next Release. It could improve the support. A testchannel "openSUSE" is alreday set up at "openMafia.org". Working repos exist at buildservice."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310942">include BCache (cache on SSD) in kernel</ulink></title>
+          <para>"Bcache is a patch to use SSDs to transparently cache arbitrary block  devices. Its main claim to fame is that it's designed for the  performance characteristics of SSDs - it avoids random writes and  extraneous IO at all costs, instead allocating buckets sized to your  erase blocks and filling them up seqentially. It uses a hybrid  btree/log, instead of a hash table as some other caches."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310944">openSUSE 11.4 Manuals</ulink></title>
+          <para>"We need for openSUSE 11.4 a review and update of the startup guidee and of other manuals. Let us add in the comments what we need to change in the documentation."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310945">extend chkconfig to dbus services</ulink></title>
+          <para>"chkconfig can be used to enable/disable init scripts and [x]inetd services. e.g. 
+            chkconfig vsftpd on -> disable xinetd config and turns on vsftpd init script
+            chkconfig vsftpd xinetd -> turns off init script and enable xinetd config
+            chkconfig vsftpd off -> turns off init script and/or xinetd config (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310955">Include PAC Manager in openSuSE</ulink></title>
+          <para>"The description from the application's website [
+            http://gtk-apps.org/content/show.php/PAC+Manager?content=125533 ]
+            "PAC is a Perl/GTK Gnome replacement for  SecureCRT/Putty/...
+            It provides a GUI to configure SSH/Telnet  connections: users, passwords, EXPECT regular expressions, macros, etc...""</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310958">Amarok 2.4 for opensuse 11.4</ulink></title>
+          <para>"as per the first beta announcement:
+            http://amarok.kde.org/en/releases/2.4/beta/1
+            "This new release brings a lot of new features. The following  features are critical and need a lot of testing to make sure they are  top-notch for final release at the beginning of 2011. We need your help  with this, so try them out and report any problems you find! (...)""</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310963">Make openSUSE releases with more life time than 18 months</ulink></title>
+          <para>"It would be nice if OpenSUSE would make special releases which have much  life time than 18 months, as like as Ubuntu does with its LTS releases.
+            Ubuntu  release a LTS version each two years, and they have five years of  support, updates, and repository life. OpenSUSE could adopt a similar  policy about this.
+            Believe me, many people love to can install an OS  and not have to touch it in years, and this is a main reason about why I  deploy Ubuntu LTS releases in some systems instead of OpenSUSE."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310964">Add YAST module to set up an OpenVPN server</ulink></title>
+          <para>"Many people today use an OpenVPN server to access their personal networks or networks at work.
+            The set up of an OpenVPN server is complex also, as several adjustments must be made at various points in the system.
+            e.g. OpenVPN Configfile, SUSEFirewall, /etc/sysconfig Files.
+            A module would make it easier to set up a OpenVPNserver."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310975">Video Driver Pre-Install Script for ATI Installation</ulink></title>
+          <para>"Installing ATI Catalyst is problematic, possibly due to pre-existing  FGLRX drivers which need to be removed before installation of the ATI  drivers. It's remarkably easy for a non technical user to come up with a  botched installation. Doubly so for the 64 bit version which has 32 bit  dependencies. (...)"</para>
+        </blockquote>
+      </sect4>
+      <!-- ($ ld: 11.12.10 sm $) -->
+      <sect4>
+        <title>Feature Statistics</title>
+        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    
+        
     <!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
