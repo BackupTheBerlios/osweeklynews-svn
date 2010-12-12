@@ -65,7 +65,7 @@
       <para>To mitigate this issue until updates are available, you can switch your
         kernel to cause a panic on any Oops by doing as root:</para>
       
-    <para><emphasis role="italic">echo 1 > /proc/sys/kernel/panic_on_oops</emphasis></para>
+    <screen>echo 1 > /proc/sys/kernel/panic_on_oops</screen>
       
       <para>We will be of course also be releasing updated kernel packages containing
         fixes.</para>
