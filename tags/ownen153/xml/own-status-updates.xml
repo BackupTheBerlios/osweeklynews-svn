@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="status-updates">
+  <title>Status Updates</title>
+
+  <!--
+  <sect2 role="board">
+    <title>Board</title>
+    <blockquote>
+      <para>...</para>
+    </blockquote>
+  </sect2> -->
+
+  <sect2 role="distribution">
+    <title>Distribution</title>
+
+<!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
+   <!-- 
+    <blockquote>
+      <title></title>
+      <para></para>
+      </blockquote>  -->
+   
+    <blockquote>
+      <title><ulink 
+        url="http://www.suse.de/~coolo/opensuse_11.4/"
+        >Schedules for the next week</ulink></title>
+      <para>openSUSE 11.4 Milestone 5 release</para>
+      <itemizedlist>
+        <listitem><para>Milestone: installation workflow is feature frozen</para></listitem>
+        <listitem><para>Proofreading of all software starts so that we have a new baseline.</para></listitem>
+        <listitem><para>Milestone: Feature and version freeze for the complete distribution (exception: patchlevel update of leaf packages until Beta1+)</para></listitem>
+        <listitem><para>Milestone: All features are coding and function complete.</para></listitem>
+        <listitem><para>Milestone: Kernel and install works on all targeted machines.</para></listitem>
+        <listitem><para>Milestone: Last round of software translation starts - "hard text freeze"</para></listitem>
+        <!-- ($ ld: 11.12.10 sm $) -->
+      </itemizedlist>
+    </blockquote>
+
+    <itemizedlist>
+      <title>Important Links</title>
+
+      <listitem>
+        <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla
+        Report</ulink></para>
+      </listitem>
+
+      <listitem>
+        <para><ulink
+        url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting
+        Bug Reports</ulink></para>
+      </listitem>
+
+      <listitem>
+        <para><ulink
+        url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+        FAQ</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <!--
+  <sect2 role="susestudio">
+    <title>SUSE Studio</title>
+
+    <blockquote>
+      <title>Interesting article</title>
+
+      <para>blah laber</para>
+    </blockquote>
+  </sect2> -->
+
+  <sect2>
+    <title>Team Report</title>
+
+    <!--
+    <sect3 role="artteam">
+      <title></title>
+      <blockquote>
+        <title></title>
+        <para></para>
+      </blockquote>
+    </sect3> -->
+
+    <!--
+    <sect3 role="boosters">
+      <title>Boosters Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>
+
+     <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
+
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/06/osc-0-130/">Marcus Hüwe: osc
+            0.130</ulink></title>
+        <para>We just released a new osc version: 0.130. The main changes/features are:</para>
+        <itemizedlist>
+          <listitem>
+            <para>– new “revert” command to restore the original working copy file (without
+              downloading it)</para>
+          </listitem>
+          <listitem>
+            <para>- rewrote “diff” logic</para>
+          </listitem>
+          <listitem>
+            <para>- added new “–http-full-debug” option, “–http-debug” filters the “Authentication”
+              and “Set-Cookie” header</para>
+          </listitem>
+          <listitem>
+            <para>- added new “–disabled-cpio-bulk-download” option: disable downloading packages as
+              cpio archive from api</para>
+          </listitem>
+          <listitem>
+            <para>- added new “repairwc” command which tries to repair an inconsistent working
+              copy</para>
+          </listitem>
+          <listitem>
+            <para>- workaround for broken urllib2 in python 2.6.5: wrong credentials lead to an
+              infinite recursion</para>
+          </listitem>
+          <listitem>
+            <para>- support –interactive-review option when running “osc rq list
+              &lt;project>”</para>
+          </listitem>
+          <listitem>
+            <para>- improved “osc rq show &lt;id> –interactive-review”</para>
+          </listitem>
+          <listitem>
+            <para>- do_config: added new options –stdin, –prompt, –no-echo:<itemizedlist>
+                <listitem>
+                  <para>–stdin: read value from stdin</para>
+                </listitem>
+                <listitem>
+                  <para>–prompt: prompt for a value</para>
+                </listitem>
+                <listitem>
+                  <para>–no-echo: prompt for a value but don’t echo entered characters (for instance
+                    to enter a passwd)</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+        </itemizedlist>
+        <itemizedlist>
+          <listitem>
+            <para>- added template support for a submitrequest accept/decline message</para>
+          </listitem>
+          <listitem>
+            <para>- lots of internal rewrites (new working copy handling etc.)</para>
+          </listitem>
+          <listitem>
+            <para>- support added for osc search ‘perl(Foo::Bar)’</para>
+          </listitem>
+          <listitem>
+            <para>- New “service” command to run source services locally or trigger a re-run on the
+              server.</para>
+          </listitem>
+          <listitem>
+            <para>- setlinkrev is setting now the revision to xsrcmd5 by default to avoid later
+              breakage on indirect links by default.</para>
+          </listitem>
+          <listitem>
+            <para>Features which requires OBS 2.1: support reliable diff for an accepted
+              request</para>
+          </listitem>
+        </itemizedlist>
+        <para>Due to the rewrite of the working copy handling osc might fail with the following
+          error: <emphasis role="italic">Your working copy ‘.’ is in an inconsistent state. Please
+            run ‘osc repairwc .’ (Note this might _remove_ files from the .osc/ dir). Please check
+            the state of the working copy afterwards (via ‘osc status .’)</emphasis></para>
+        <para>Simply run “osc repairwc” which might fetch files from the api or delete some files
+          from the storedir (.osc/). It won’t touch locally modified files. For more information see
+          section “WORKING COPY INCONSISTENT” in the README.</para>
+        <para>The new packages should be available soon in the <ulink
+            url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
+            repo</ulink>.</para>
+        <para>Thanks to everyone who contributed to osc!</para>   
+        <!-- ($ ld: 10.12.10 sm $) -->
+      </blockquote>
+
+      <formalpara>
+        <title>Build Service Statistics</title>
+
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
+      </formalpara>
+    </sect3>
+
+    <!--
+    <sect3 role="education">
+      <title>Education Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="forums">
+      <title>Forums Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="gnometeam">
+      <title>GNOME Team</title>
+
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/07/indicator-me-has-landed/">Nelson
+          Marques: Indicator ME has landed!</ulink></title>
+        <para>The first package I pushed to openSUSE was Notify OSD (Canonicals Notification
+          Agent/Bubble) with a small patch for extended features (skinning/theming) maintained by Roman
+          Sukochev. This patch is popular and wasn’t merged with Notify OSD because it ‘breaks’ the spec
+          of Notify OSD that states it shouldn’t be skinnable/themable on Ubuntu. </para>
+        <para>Now I’ve packaged a lot of dependencies… cracked and patched GTK with a patch taken from
+          Ubuntu, spended hours of mind crushing frustration…. but finally it has landed! The first
+          ‘Indicator’ has landed… Often known as “Ubuntu Me Menu”, under openSUSE it will be known as
+          ‘indicator-me’.</para>
+        <figure id="fig.indicator">
+          <title>Indicator ME Screenshot 1</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-1.png" width="75%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>This screenshot was taken on openSUSE Factory 11.4 Milestone 4. It’s a clean install with
+          Sonar and the only tweak is the Faenza-Dark icon theme, which I also packaged and pushed to
+          openSUSE:Contrib. <xref linkend="fig.indicator"/></para>
+        <para>Top right corner… Indicator ME on openSUSE. It works… I won’t backport it and will only
+          maintain it from 11.4 forward. I’m doing this for personal reasons, mainly to become an
+          alternative on a localized openSUSE Spin that will be named ‘openSUSE IBERIA’, which was
+          already taken into openSUSE-Project by Javier Llorente. </para>
+        <para>The main reason to bring this to openSUSE and into IBERIA is tightly related to the fact
+          that most people on the Iberian Peninsula use Ubuntu, so we find the best approach possible to
+          offer something as close as Ubuntu and hopefully even a better offer when it comes to
+          localization. We don’t want to make of openSUSE a ‘clone’ of Ubuntu, instead we want to make
+          the openSUSE experience more close to what people already use. </para>
+        <para>I’m also going to post a small pic of the same software, this time with Canonical’s
+          Radiance Theme, which introduces a small ‘tab’ like visual on the bar. This theme is awesome…
+          regardless of what people think of Ubuntu and Canonical… This is the kind of polishing that
+          makes Canonical successful, not just the ‘marketing’ many point and even despise.</para>
+        <figure id="fig.indicator1">
+          <title>Indicator ME Screenshot 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-2.png" width="75%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>Indicator ME as landed… soon others will follow… My plans are to submit this pieces of
+          software to GNOME:Apps, and not to push as default, but instead offer them at the distance of
+          a ‘zypper in package’ to the openSUSE users out there. And at the same time, since the
+          libraries behind it are also packaged… be more attractive to developers who might want to use
+          them. I see no loss neither an identity crisis on openSUSE by providing more packages and
+          alternative software to improve users Desktop experience… <xref linkend="fig.indicator1"/></para>
+        <para>Future work (after indicators):<itemizedlist>
+          <listitem>
+            <para>Synapse Launcher;</para>
+          </listitem>
+          <listitem>
+            <para>Unity (depending on some wild dependencies and some progress in understanding
+              cmake).</para>
+          </listitem>
+        </itemizedlist></para>
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/09/indicator-sessionnetwork/">Nelson
+            Marques: indicator-{session,network}</ulink></title>
+
+        <para>I’ve manage to hammer in 2 more indicators. Indicator-session provides a quick and
+          easy method to manage your GNOME session. The options are pretty intuitive and it works ok
+          so far. A simple screenshot. </para>
+        <figure id="fig.gnometeam">
+          <title>Screenshot</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+          </figure>
+          <para>Then we have also indicator-network which was a bit more problematic to build and required a couple of very ugly quick fixes. Though I’ve built a package for it and it’s dependencies (including The Connection Manager). My concerns about it: <xref linkend="fig.gnometeam"/></para>
+      <itemizedlist>
+        <listitem><para>It’s a piece of software under heavy development;</para></listitem>
+        <listitem><para>The user configuration interface is very fuzzy and provides cool clear text passwords for LAN;</para></listitem>
+        <listitem><para>nm-applet is far superior;</para></listitem>
+        <listitem><para>Requires ‘connection manager’ – Connection Manager is a pretty cool application, and it’s compat mode with Network Manager makes it’s integration pretty easy… Though ‘connection manager’ seemed to be an outstanding piece of software, I’m not going through all the trouble to package and integrate it in openSUSE (integration should be pretty fast, just a init script, since it allows compat mode with Network Manager).</para></listitem>
+      </itemizedlist>
+        <para>I personally don’t like this network indicator… Though I’ve packaged it,  I’ve decided not to share it because of 4 points above. I really don’t see anything positive about having it for openSUSE users, it would most likely turn their GNOME experience into something a bit fuzzy.</para>
+        <para>Either way… that’s how it looks…</para>
+        <figure id="fig.gnometeam2">
+          <title>Screenshot 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-41.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para><xref linkend="fig.gnometeam2"/>
+        </para>
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2010/12/10/new-indicators-the-saga-continues/">Nelson
+            Marques: New Indicators… the saga continues…</ulink></title>
+        <para>As the indicator saga continues… some new indicators were built… Indicator-messages is
+          a small indicator that pics up messages and stuff from applications to display them on a
+          nice all-around indicator. It works fine with evolution (plugin also built and doesn’t
+          require patching for what I’ve seen). </para>
+        <para>This indicator support more applications, though they require some patching. As being
+          discussed on the opensuse-GNOME mailing list as as proposed by Vincent Untz, this
+          indicators are moving to GNOME:Apps and there _might_ an effort to support some features
+          in applications like empathy. Keep in mind this is not a priority, but if it’s possible to
+          support some more feature, it might happen.</para>
+        <figure id="fig.gnomeindicator">
+          <title>Screenshot</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-21.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>Additionally<xref linkend="fig.gnomeindicator"/>, I’ve also tried some other indicators… indicator-application for what I
+          can tell is an indicator that removes the menu’s from the GTK applications and places them
+          on the panel (MAC style). I’ve built this indicator, but I have no means to test yet
+          because further patching is required at least in GTK and eventually on glib. I don’t think
+          there’s actually any need to have this indicator, specially when it will bring additional
+          efforts on GTK maintenance, and this feature is somehow supported by software like
+          gnome-globalmenu (which I’ve also packaged for myself and works dearly with supported
+          apps). </para>
+        <para>I’ve done some hammering on indicator-sound as well… Ubuntu’s sound widget… I’m stuck
+          with some error and I have 2 possibilities… downgrade to the last version of the previous
+          branch which should built, or work the current branch (more dependency demanding). I’m
+          working on it… it will happen one way or another during the next days. I guess this one is
+          actually one of the most wanted :) </para>
+        <para>There are few other indicators… for time and date, calendar and so on… Those will be
+          last ones. After indicator-sound is done, I’m starting to clean up the packaging and make
+          sure it’s compliant to the GNOME team methodology and submit them to GNOME:Apps and the
+          support libraries that are required as dependencies forwarded to projects where they might
+          be useful (need to check out with the people which ones those will be). </para>
+        <para>A special thanks to Ken Vandine from Canonical for some guidance with libindicate. </para>
+        <para>I’ve seen around some ‘hate’ waves towards Canonical, and I would like to say that so
+          far in the few times I’ve interacted with them, either on bug submission or asking help,
+          they have been awesome and caring. It’s really something I would like to point… they are
+          pretty cool, and their devs are very helpful (but hey… so are our devs ;) ). Also a very
+          special thanks to Vincent Untz, Dimstar and mrdocs which have been a great help and from
+          whom I’ve learned already a lot.</para>
+        <para>So picking up the useful stuff… and placing it up together in a single Indicator:</para>
+        <figure id="fig.gnomeindicator2">
+          <title>Screenshot 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-11.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para><xref linkend="fig.gnomeindicator2"/></para>
+        <!-- ($ ld: 10.12.10 sm $) -->
+      </blockquote>     
+    </sect3>
+
+    <!--
+    <sect3 role="kdeteam">
+      <title>KDE Team</title>
+
+      <blockquote>
+        <title></title>
+
+        <para></para>
+      </blockquote>
+    </sect3> -->
+
+    <!--
+    <sect3 role="marketingteam">
+      <title>Marketing Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="medical">
+      <title>Medical Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="monoteam">
+      <title>Mono Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="openfateteam">
+      <title>openFATE Team</title>
+  
+      <sect4>
+        <title>Top voted Features</title>
+        <para>* Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </para>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 320)</ulink></title>
+          <para>Network installation could be improved by running package download and package installation in parallel.</para>        
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 148)</ulink></title>
+          <para>"I wanted to open a fate feature about this when I first heard of plymouth, but reading http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way. (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 115)</ulink></title>
+          <para>"An easy way to remove Software! For  example: you installed an application with "1-click install" (which  will install all the packages that you need), there should be an easy  way (also with 1 click) to remove what you have installed with that  1-click operation... in another words: an "1-click Uninstall" to remove  installed software (dependencies and packages included)."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/308357">Please, replacement for Sax2 in 11.3, and now for 11.4 (Score: 81)</ulink></title>
+          <para>"We  need a replacement for sax2 in 11.3, as a safety measure for when  auto  configuration fails to detect certain monitors/keyboards/mice. (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative "Installation Summary" (Score: 60)</ulink></title>
+          <para>"The  YaST Qt package manager should provide as much information in the   "Installation Summary" view as zypper, esp the overall download size to   expect and how much disk space will be freed/used after performing the   operation."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 52)</ulink></title>
+          <para>"Idea from community member Raúl García.
+            Same  concept as MSI packages for Windows but exploiting the One Click   Install concept of openSUSE (and therefore inheriting the simplicity,   code and security. (...)"</para>
+        </blockquote>
+      </sect4>
+      <sect4>
+        <title>Recently requested features</title>
+        <para>* Features newly requested last week. Please vote and/or comment if you get interested.</para>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310937">Mobile Broadband Assistant Wizard</ulink></title>
+          <para>"http://forums.opensuse.org/english/get-help-here/network-internet/450790-mobile-broadband-assistant-would-further-enhance-opensuse.html#post2261514
+            http://blogs.gnome.org/dcbw/2009/06/22/mobile-broadband-assistant-makes-it-easy/
+            can I suggest this could be valuable addition to OpenSuse for mobile broadband?"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310938">Support Harddrives with more than 3TB capacity</ulink></title>
+          <para>"As harddrives with capacities more than 3TB's are available, we need to ensure that those drives are fully supported. (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310939">[zypper] add package counter</ulink></title>
+          <para>"When installing/updating with zypper and "--download in-advance" zypper  shows a counter of how many packages are to be downloaded and at which  position we currently are: (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310940">Mumble into Distribution</ulink></title>
+          <para>"Mumble, a groupchat system, should go into next Release. It could improve the support. A testchannel "openSUSE" is alreday set up at "openMafia.org". Working repos exist at buildservice."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310942">include BCache (cache on SSD) in kernel</ulink></title>
+          <para>"Bcache is a patch to use SSDs to transparently cache arbitrary block  devices. Its main claim to fame is that it's designed for the  performance characteristics of SSDs - it avoids random writes and  extraneous IO at all costs, instead allocating buckets sized to your  erase blocks and filling them up seqentially. It uses a hybrid  btree/log, instead of a hash table as some other caches."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310944">openSUSE 11.4 Manuals</ulink></title>
+          <para>"We need for openSUSE 11.4 a review and update of the startup guidee and of other manuals. Let us add in the comments what we need to change in the documentation."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310945">extend chkconfig to dbus services</ulink></title>
+          <para>"chkconfig can be used to enable/disable init scripts and [x]inetd services. e.g. 
+            chkconfig vsftpd on -> disable xinetd config and turns on vsftpd init script
+            chkconfig vsftpd xinetd -> turns off init script and enable xinetd config
+            chkconfig vsftpd off -> turns off init script and/or xinetd config (...)"</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310955">Include PAC Manager in openSuSE</ulink></title>
+          <para>"The description from the application's website [
+            http://gtk-apps.org/content/show.php/PAC+Manager?content=125533 ]
+            "PAC is a Perl/GTK Gnome replacement for  SecureCRT/Putty/...
+            It provides a GUI to configure SSH/Telnet  connections: users, passwords, EXPECT regular expressions, macros, etc...""</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310958">Amarok 2.4 for opensuse 11.4</ulink></title>
+          <para>"as per the first beta announcement:
+            http://amarok.kde.org/en/releases/2.4/beta/1
+            "This new release brings a lot of new features. The following  features are critical and need a lot of testing to make sure they are  top-notch for final release at the beginning of 2011. We need your help  with this, so try them out and report any problems you find! (...)""</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310963">Make openSUSE releases with more life time than 18 months</ulink></title>
+          <para>"It would be nice if OpenSUSE would make special releases which have much  life time than 18 months, as like as Ubuntu does with its LTS releases.
+            Ubuntu  release a LTS version each two years, and they have five years of  support, updates, and repository life. OpenSUSE could adopt a similar  policy about this.
+            Believe me, many people love to can install an OS  and not have to touch it in years, and this is a main reason about why I  deploy Ubuntu LTS releases in some systems instead of OpenSUSE."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310964">Add YAST module to set up an OpenVPN server</ulink></title>
+          <para>"Many people today use an OpenVPN server to access their personal networks or networks at work.
+            The set up of an OpenVPN server is complex also, as several adjustments must be made at various points in the system.
+            e.g. OpenVPN Configfile, SUSEFirewall, /etc/sysconfig Files.
+            A module would make it easier to set up a OpenVPNserver."</para>
+        </blockquote>
+        <blockquote>
+          <title><ulink url="https://features.opensuse.org/310975">Video Driver Pre-Install Script for ATI Installation</ulink></title>
+          <para>"Installing ATI Catalyst is problematic, possibly due to pre-existing  FGLRX drivers which need to be removed before installation of the ATI  drivers. It's remarkably easy for a non technical user to come up with a  botched installation. Doubly so for the 64 bit version which has 32 bit  dependencies. (...)"</para>
+        </blockquote>
+      </sect4>
+      <!-- ($ ld: 11.12.10 sm $) -->
+      <sect4>
+        <title>Feature Statistics</title>
+        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+      </sect4>
+    </sect3>
+        
+    <!--
+    <sect3 role="oooteam">
+      <title>OpenOffice Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="testing">
+      <title>Testing Team</title>
+
+      <para>...</para>
+    </sect3> -->
+
+    <sect3 role="translationteam">
+      <title>Translation Team</title>
+
+      <itemizedlist>
+        <listitem>
+          <para>Daily updated translation statistics are available on the
+          <ulink url="http://i18n.opensuse.org/">openSUSE Localization
+          Portal</ulink>.</para>
+        </listitem>
+
+        <listitem>
+          <para><ulink
+          url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk
+          Top-List</ulink> – <ulink
+          url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+          Guide</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+    
+    <!--
+    <sect3 role="wiki">
+      <title>Wiki Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="yast">
+      <title>YaST Team</title>
+
+      <para>...</para>
+    </sect3> -->
+  </sect2>
+</sect1>

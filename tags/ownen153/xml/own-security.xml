@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="security">
+  <title>Security Updates</title>
+  <para>To view the security announcements in full, or to receive them
+    as soon as they're released, refer to the <ulink
+      url="http://lists.opensuse.org/opensuse-security-announce/"
+      >openSUSE Security Announce</ulink> mailing list.</para>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00002.html"
+        >Heads up on new kernel local root exploit</ulink></title>
+    <para>Dan Rosenberg published a new local root exploit for the kernel,
+      linked e.g. in this LWN article <ulink url="http://lwn.net/Articles/419141/">http://lwn.net/Articles/419141/</ulink>
+      and for our german readers on
+      <ulink url="http://www.heise.de/newsticker/meldung/OOPS-Root-Rechte-auf-Linux-1149512.html">http://www.heise.de/newsticker/meldung/OOPS-Root-Rechte-auf-Linux-1149512.html</ulink>
+    </para>
+    <para>  
+      The exploit itself uses 3 seperate security issues in chain, all
+      found by Nelson Elhage.</para>
+      
+      <para><emphasis role="bold"><ulink
+          url="http://support.novell.com/security/cve/CVE-2010-4258.html"
+        >CVE-2010-4258</ulink></emphasis>: This is the core vulnerability, which can basically turn
+      any user program triggered Oops into a local privilege escalation. This problem affects all
+      SUSE Linux Enterprise and openSUSE products (but needs another problem to trigger it.)</para>
+      
+      
+      <para>In the published exploit this Oops is caused by: <emphasis role="bold"><ulink
+          url="http://support.novell.com/security/cve/CVE-2010-3850.html"
+        >CVE-2010-3850</ulink></emphasis>: Associating a ECONET address with any network interface.
+      This is possible in older SUSE products before SUSE Linux Enterprise 11 SP1 and openSUSE
+      11.2.</para>
+      
+      <para><emphasis role="bold"><ulink
+          url="http://support.novell.com/security/cve/CVE-2010-3849.html"
+        >CVE-2010-3849</ulink></emphasis>[3]: A kernel Oops caused by a NULL pointer dereference in
+      ECONET. This vulnerability does not affect any SUSE Linux or openSUSE product, as we do not
+      have the the sub-configuration of ECONET enabled that are necessary to exploit this.</para>
+      
+      <para>As the ECONET parts of this exploit are not effective on openSUSE and
+        SUSE Linux Enterprise, the published exploit will not work as-is.</para>
+      
+      <para>However, as SUSE kernels are affected by <emphasis role="bold">CVE-2010-4258</emphasis>,
+      an exploit could be written that uses a different method to Oops the kernel.</para>
+      
+      <para>To mitigate this issue until updates are available, you can switch your
+        kernel to cause a panic on any Oops by doing as root:</para>
+      
+    <para><emphasis role="italic">echo 1 > /proc/sys/kernel/panic_on_oops</emphasis></para>
+      
+      <para>We will be of course also be releasing updated kernel packages containing
+        fixes.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00001.html"
+        >SUSE Security Announcement: acoread (SUSE-SA:2010:058)</ulink></title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.0*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td><emphasis role="bold">acroread</emphasis></td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>SUSE-SA:2010:058</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Wed, 08 Dec 2010 14:00:00 +0000</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.1</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>openSUSE 11.2</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>SUSE Linux Enterprise Desktop 10 SP3</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>SUSE Linux Enterprise Desktop 11</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>SUSE Linux Enterprise Desktop 11 SP1</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00000.html"
+        >SUSE Security Summary Report: SUSE-SR:2010:023</ulink></title>
+    <table frame="void">
+      <caption/>
+      <col width="1.0*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>SUSE-SR:2010:023</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Wed, 08 Dec 2010 14:00:00 +0000</td>
+        </tr>
+        <tr>
+          <td>Cross-Reference:</td>
+          <td>CVE-2010-0542, CVE-2010-1323, CVE-2010-1324</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>CVE-2010-1748, CVE-2010-2941, CVE-2010-3073</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>CVE-2010-3074, CVE-2010-3312, CVE-2010-3702</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>CVE-2010-3710, CVE-2010-3860, CVE-2010-3870</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>CVE-2010-4005, CVE-2010-4008, CVE-2010-4020</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>CVE-2010-4021</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+</sect1>

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <figure id="fig.toad">
+    <title>Old Toad Poster</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/11/Old-Toad-Poster-2-210x300.png" width="15%"/>
+      </imageobject>
+    </mediaobject>
+  </figure>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2010/12/06/opensuse-poster-and-free-software-calendar-2011-with-linux-magazin/"
+        >openSUSE poster and Free Software Calendar 2011 with Linux Magazin</ulink></title>
+    <para>The Januari edition of the German <ulink url="http://www.linux-magazin.de">Linux-Magazin</ulink> this year will feature something this Magazine has not featured for almost 10 years: a Free Software Event calendar. Sponsored by SUSE, this calendar features many of the upcoming Free Software events in 2011 mingled with interesting tidbits about Linux and Unix history! While this geeky piece of paper (offering the date and time of events in unix time) is cool, the back offers an even more exciting layer of ink: Beer! Our very own Robert Lihm, openSUSE artist Extra-Ordinaire has taken a picture of the <ulink url="http://en.opensuse.org/openSUSE:Beer">famous “Old Toad” beer</ulink>, featured at the openSUSE conference. Uttering the infamous words “A good beer is a good beer”, he decided this would form a good foundation for a poster. Hence, everyone who gets his or her hands on this first 2011 edition of Linux-Magazin can use the back of this Calendar to show how much beer and openSUSE go together (read more about the beer).
+      The Linux-Magazin folks have also thought about those for whom German is not a first language – they have made an English translation of the Calendar and the graphics for both Calendar and Poster are available on the openSUSE wiki for re-print under liberal licensing terms – the magazine is for sale now, get it or just <ulink url="http://en.opensuse.org/openSUSE:Marketing_materials#Folders_and_leaflets">download and print the calendars and of course the awesome poster</ulink>! For the poster we hope to have sources online soon, if you want them now, ask Robert Lihm!<xref linkend="fig.toad"/>
+    </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2010/12/07/updating-opensuse-manuals-for-opensuse-11-4/"
+        >Updating openSUSE Manuals for openSUSE 11.4</ulink></title>
+    <para>With the openSUSE distribution, we have a set of openSUSE manuals and QuickStart guides.
+      You can read them online via <ulink url="http://doc.opensuse.org"
+        >http://doc.opensuse.org</ulink>. They are installed by default on your system so you can
+        access them there as well. </para>
+    <figure id="fig.docs">
+      <title>docs.opensuse.org</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/12/doc-300x180.png" width="40%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>For openSUSE 11.4, we face the usual challenge of updating the manuals: The documentation
+      writers know what’s in the manuals but do not know everything that’s changed and the
+      developers know what’s changed but may not know all the manuals. For openSUSE 11.4, I created
+        <ulink url="https://features.opensuse.org/310944">feature 310944</ulink> Read the
+      documentation at doc.opensuse.orgin openFATE which will be the one reference point for
+      documentation. Please add there things that need to be changed in the manuals. I’ve already
+      added a few things that came to mind. <xref linkend="fig.docs"/></para>
+    <para>The Novell<ulink url="http://en.opensuse.org/openSUSE:Documentation_team"> documentation
+        team</ulink> will concentrate on updating the Startup Guide, the GNOME and KDE Quick Guides
+      and the Reference guide. They plan to also add a short chapter on the top use cases so that
+      for example new users know to use LibreOffice as their Office Suite and where to find more
+      information about it. </para>
+    <para>If anybody is interested in helping improve the documentation, please reach out to the
+      documentation team on the opensuse-doc mailing list or on IRC on the #opensuse-doc channel on
+      the freenode network. You can also find the sources of the manuals at <ulink
+        url="https://developer.berlios.de/projects/opensuse-doc/"
+        >https://developer.berlios.de/projects/opensuse-doc/</ulink>.</para>
+    <para><emphasis role="bold">Call for help</emphasis> Please add to <ulink
+        url="https://features.opensuse.org/310944">feature 310944</ulink> new comments that explain
+      what needs to be changed in the manuals for openSUSE 11.4.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2010/12/07/greek-sub-forum-opensuse-forums/">Greek
+        sub-forum @ openSUSE Forums</ulink></title>
+    <para>We are pleased to announce the Greek sub-forum is now live and ready for business. I have
+      been working closely with: @warlordfff, who will be one of the Forum Moderators. The full list
+      of openSUSE forum Moderators can be seen here: <ulink
+        url="http://en.opensuse.org/openSUSE:Forums_team"
+        >http://en.opensuse.org/openSUSE:Forums_team </ulink></para>
+    <para>openSUSE forums offers a warm welcome to all language groups and we are especially pleased
+      to see the successful launch of the Greek Forum. Now if only I was fluent in Greek! I could
+      make this announcement look really impressive. Enjoy.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2010/12/08/join-us-on-saturday-for-the-next-opensuse-zombie-bug-day/"
+        >Join us on Saturday for the next openSUSE “Zombie” Bug Day</ulink></title>
+    <para>On Saturday the 27th of November a Bug Day was organized to <ulink
+        url="http://news.opensuse.org/2010/11/22/opensuse-bug-day-on-saturday-november-27th/">solve
+        the issue with Zombie bugs</ulink>, bugs against old, non-maintained versions of openSUSE. A
+      team got together in the <ulink url="irc://irc.freenode.net/opensuse-bug"
+        >#opensuse-bug</ulink> channel on the <ulink url="http://freenode.net">freenode</ulink>
+      network to review the bugs for any important and still valid information, otherwise closing
+      them to clean up <ulink url="http://bugzilla.novell.com">bugzilla</ulink>.</para>
+    <para><emphasis role="bold">Results</emphasis> The outcome has been <ulink
+        url="http://lists.opensuse.org/opensuse-project/2010-11/msg00205.html"
+      >awesome:</ulink></para>
+    <table frame="all">
+      <title>Results</title>
+      <tgroup cols="5">
+        <colspec colname="open Bugs in:" colnum="1"/>
+        <colspec colname="openSUSE 10.2" colnum="2"/>
+        <colspec colname="openSUSE 10.3" colnum="3"/>
+        <colspec colname="openSUSE 11.0" colnum="4"/>
+        <colspec colname="Total" colnum="4"/>
+        <thead>
+          <row>
+            <entry>open Bugs in: </entry>
+            <entry>openSUSE 10.2</entry>
+            <entry>openSUSE 10.3</entry>
+            <entry>openSUSE 11.0</entry>
+            <entry>Total</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Before</entry>
+            <entry>40</entry>
+            <entry>162</entry>
+            <entry>526</entry>
+            <entry>728</entry>
+          </row>
+          <row>
+            <entry>After</entry>
+            <entry>15</entry>
+            <entry>89</entry>
+            <entry>360</entry>
+            <entry>464</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para><emphasis role="bold">Join us in this effort!</emphasis> Here is what you need to
+      participate:</para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para>A recent version of<ulink url="http://software.opensuse.org/"> openSUSE like
+              11.3</ulink> or a <ulink url="http://software.opensuse.org/developer">milestone of
+              11.4</ulink>. It’s of course okay to run openSUSE in a virtual machine.</para>
+        </listitem>
+        <listitem>
+          <para>An IRC client to interact with the other participants</para>
+        </listitem>
+        <listitem>
+          <para>Good mood :-)</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>But the most important thing that you should know is that everybody can help: just join us
+      and we’ll guide you, even if you only have 30 minutes of free time! A small team will organize
+      the event by providing lists of bugs, and will be available to guide new contributors if
+      needed. So it will be easy to help, you just have to come to the #opensuse-bug channel on the
+      freenode network at Saturday! </para>
+    <para>The team had a lot of fun last time, so be sure to join them and help out!</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2010/12/10/opensuse-collaboration-thrives/">openSUSE
+        Collaboration thrives!</ulink></title>
+    <para>Earlier this week, the openSUSE Marketing Team held the first of a series of Collaboration
+      Days in December. This was, without a doubt, a success with many of our team members showing
+      up as well as many newcomers offering to lend a hand.</para>
+  <figure id="fig.rom">
+    <title>Apparently not build in a day</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/12/4757005099_74b8c7311b_b-300x200.jpg" width="50%"/>
+      </imageobject>
+    </mediaobject>
+  </figure>
+  <para>The focus for the 6 December event was to review existing support materials for our
+    Ambassadors. Moderated by Kostas Koudaras and Carlos Ribeiro, a variety of assignments were
+    tackled, from a list that included booth design and organization, kits for Ambassadors,
+    presentations, talking points, 2011 planning and much more. To be sure, not everything can be
+    accomplished in one day. Heck, even Rome wasn’t built in a day! Still, this day was long – after
+    all, we’re an international bunch, so there were a few more hours than usual :D </para>
+  <para>But the coolest thing was that at the end of the day people volunteered to take on the
+    assignments that were not done and committed to finishing them! We’re confident that in the very
+    near future, we’ll have just about everything on the list of last Monday will be finished.
+    Koudras and Ribeiro are busy sorting out the “dones” and remaining to-dos and the results will
+    be posted on the <ulink url="http://en.opensuse.org/Portal:Marketing">marketing
+      wiki</ulink>.<xref linkend="fig.rom"/></para>
+  <para><emphasis role="bold">More Collaboration Days coming! </emphasis></para>
+  <para>Meanwhile, Linux Journal is noticing <ulink
+      url="http://www.linuxjournal.com/content/has-novell-deal-hampered-opensuse">the spirit of
+      openSUSE</ulink> – mentioning the Collaboration days in the linked article! The team feels
+    full of energy and is looking forward to the next two Collaboration Days scheduled for this
+    month. On Monday, 13 December, we’ll have the Marketing Materials Review Day and on Tuesday, 21
+    December, we’ll have the PR and Social Media Review Day. </para>
+  <para>To quickly summarize again what we’ll be doing on those two days: </para>
+  <para>Marketing Review Day, under guidance of Chuck Payne and Bryen Yunashko, will review current
+    posted materials including, but not limited to, brochures, slide presentations, talking points,
+    etc. with the goal to strengthen existing materials and add new materials where needed.
+    Moreover, the wiki will be, where needed, reorganized so things will be easier to find. </para>
+  <para>Manu Gupta and Jos Poortvliet will host a Social Media day to focus on improving our
+    press/media communication, especially through social media outlets like Twitter/Identi.ca, bogs,
+    Facebook and more. If you’re interested in helping out, just do so! It’s great fun and we are
+    getting things done.</para>
+  <para><emphasis role="bold">How it works </emphasis></para>
+  <para>The day begins at 9:00 UTC and ends at 24:00 UTC in the #openSUSE-Marketing channel on
+    Freenode IRC The moderators of the day will post the list of suggested assignments. When you
+    come by, simply review the list and volunteer for an assignment to complete. Or, if you feel
+    there is something else more relevant to your preferences, you may create your own assignment. </para>
+  <para>At the end of the day, the moderators will review the day’s accomplishments and list what
+    has been completed and what needs to be completed. This subsequently will be posted on the
+    marketing wiki.</para>
+  <para>This is an opportunity for people to come together, not just marketing folks, and provide
+      their expertise in their areas, whether you are an OBS expert, openSUSE expert, design expert,
+      etc. <!-- ($ ld: 11.12.10 sm $) --></para>
+  </blockquote>
+</sect1>

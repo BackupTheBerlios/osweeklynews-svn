@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.freesoftwaremagazine.com/columns/making_realistic_characters_blender_makehuman"
+          >Free Software Magazine/Terry Hancock: Making realistic characters for Blender with
+          MakeHuman</ulink>
+      </title>
+      <para>There are lots of options for creating 3D characters for animation, and they are often
+        made from scratch by mesh-modeling artists. But it’s obviously a very often-needed task,
+        using a lot of common elements, so you’d think someone would come up with a tool to make it
+        easier. And you’d be right. The free-software tool of choice for this task is MakeHuman. I
+        had looked into a much earlier version of the software before, but today it is rapidly
+        approaching the first real release, version 1.0 (currently it’s at 1.0-Alpha 5, with plans
+        to go through several more alphas still). The progress is remarkable, and this is going to
+        be a really important tool for 3D modeling in the future. (...) <!-- ($ ld: 10.12.10 sm $) --></para>
+    </blockquote>
+  </sect2>
+  
+  
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title><ulink url="http://opensuse.terrorpup.net/?p=204">Chuck Payne: Tips and Trick: fdisk helps find and show your drives.</ulink></title>
+      <para>Have you every wanted to know how many hard drives a system has? Or how to find that USB
+        drive that you just plugged in, that isn’t showing up? It very simple with fdisk. Fdisk —
+        Partition table manipulator for Linux. Is also a great tool to help you. To see your drives
+        run the following command… (...) <!-- ($ ld: 10.12.10 sm $) --></para>
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>super article</title>
+      <para>bin/sh</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title><ulink
+          url="http://www.osnews.com/story/24111/Wake_Your_Linux_Up_From_Sleep_for_a_Cron_Job">*
+          OSNews/Dedoimedo: Wake Your Linux Up From Sleep for a Cron Job </ulink></title>
+      <para>Here's the latest in our new series on OS tips from power users: a seemingly trivial
+        task. You have a computer, most likely a laptop, that you wish to keep suspended while
+        you're not working. For example, let's say overnight. At the same time, you wish to run a
+        handful of maintenance tasks, like backups and cleanup, which you don't normally do during
+        the day. So you need a mechanism that will send your machine to sleep, wake it up when
+        necessary, run cron jobs, then send it back to sleep again. </para>
+      <para>Possible? Well, if it weren't, I would not be writing this tutorial, but it definitely
+        is not trivial. In this tutorial, I will show you how you can do this, in a relatively
+        simple and safe manner. We will check the requirements for the task. We will examine a
+        typical use case. We will discuss the many small-print items revolving around this idea,
+        e.g. why you need to be extra careful with waking from sleep for cron jobs. And we'll do a
+        few other things, besides. . (...) <!-- ($ ld: 10.12.10 sm $) --></para>
+    </blockquote>
+  </sect2>
+</sect1>
