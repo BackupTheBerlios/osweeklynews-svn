@@ -45,13 +45,14 @@
         >Updating openSUSE Manuals for openSUSE 11.4</ulink></title>
     <para>With the openSUSE distribution, we have a set of openSUSE manuals and QuickStart guides.
       You can read them online via <ulink url="http://doc.opensuse.org"
-        >http://doc.opensuse.org</ulink>. They are installed by default on your system so you can
+        />, see <xref linkend="fig.docs"/>. They are installed by default on your system so you can
         access them there as well. </para>
     <figure id="fig.docs">
       <title>docs.opensuse.org</title>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/12/doc-300x180.png" width="40%"/>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2010/12/doc-300x180.png" width="60%"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -59,21 +60,21 @@
       writers know what’s in the manuals but do not know everything that’s changed and the
       developers know what’s changed but may not know all the manuals. For openSUSE 11.4, I created
         <ulink url="https://features.opensuse.org/310944">feature 310944</ulink> Read the
-      documentation at doc.opensuse.orgin openFATE which will be the one reference point for
+      documentation at <uri>doc.opensuse.org</uri> in openFATE which will be the one reference point for
       documentation. Please add there things that need to be changed in the manuals. I’ve already
-      added a few things that came to mind. <xref linkend="fig.docs"/></para>
-    <para>The Novell<ulink url="http://en.opensuse.org/openSUSE:Documentation_team"> documentation
+      added a few things that came to mind.</para>
+    <para>The Novell<ulink url="http://en.opensuse.org/openSUSE:Documentation_team">documentation
         team</ulink> will concentrate on updating the Startup Guide, the GNOME and KDE Quick Guides
       and the Reference guide. They plan to also add a short chapter on the top use cases so that
       for example new users know to use LibreOffice as their Office Suite and where to find more
       information about it. </para>
     <para>If anybody is interested in helping improve the documentation, please reach out to the
-      documentation team on the opensuse-doc mailing list or on IRC on the #opensuse-doc channel on
+      documentation team on the opensuse-doc mailing list or on IRC on
+      the <systemitem>#opensuse-doc</systemitem> channel on
       the freenode network. You can also find the sources of the manuals at <ulink
-        url="https://developer.berlios.de/projects/opensuse-doc/"
-        >https://developer.berlios.de/projects/opensuse-doc/</ulink>.</para>
+        url="https://developer.berlios.de/projects/opensuse-doc/"/>.</para>
     <para><emphasis role="bold">Call for help</emphasis> Please add to <ulink
-        url="https://features.opensuse.org/310944">feature 310944</ulink> new comments that explain
+        url="https://features.opensuse.org/310944">FATE #310944</ulink> new comments that explain
       what needs to be changed in the manuals for openSUSE 11.4.</para>
   </blockquote>
   <blockquote>
