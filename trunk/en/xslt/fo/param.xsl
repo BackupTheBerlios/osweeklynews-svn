@@ -93,5 +93,11 @@
 <xsl:attribute-set name="component.title.properties" use-attribute-sets="own-title-color">
 </xsl:attribute-set>
 
-
+<xsl:attribute-set name="footnote.mark.properties">
+  <xsl:attribute name="font-family"><xsl:value-of
+    select="$sans.font.family"/></xsl:attribute>
+  <xsl:attribute name="font-size">100%</xsl:attribute>
+  <xsl:attribute name="font-weight">bold</xsl:attribute>
+  <xsl:attribute name="font-style">normal</xsl:attribute>
+</xsl:attribute-set>
 </xsl:stylesheet>

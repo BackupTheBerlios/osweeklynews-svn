@@ -27,6 +27,6 @@
 <xsl:include href="hyphenate-url.xsl"/>
 <xsl:include href="fonts.xsl"/>
 <xsl:include href="sections.xsl"/>
-
+<xsl:include href="xref.xsl"/>
   
 </xsl:stylesheet>
