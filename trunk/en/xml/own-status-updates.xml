@@ -117,45 +117,45 @@
         <para>We just released a new osc version: 0.130. The main changes/features are:</para>
         <itemizedlist>
           <listitem>
-            <para>– new “revert” command to restore the original working copy file (without
+            <para>new “revert” command to restore the original working copy file (without
               downloading it)</para>
           </listitem>
           <listitem>
-            <para>- rewrote “diff” logic</para>
+            <para>rewrote “diff” logic</para>
           </listitem>
           <listitem>
-            <para>- added new “–http-full-debug” option, “–http-debug” filters the “Authentication”
-              and “Set-Cookie” header</para>
+            <para>added new <option>–http-full-debug</option> option, <option>–http-debug</option> filters the
+              “Authentication” and “Set-Cookie” header</para>
           </listitem>
           <listitem>
-            <para>- added new “–disabled-cpio-bulk-download” option: disable downloading packages as
-              cpio archive from api</para>
+            <para>added new “<option>–disabled-cpio-bulk-download</option>” option: disable 
+              downloading packages as cpio archive from api</para>
           </listitem>
           <listitem>
-            <para>- added new “repairwc” command which tries to repair an inconsistent working
+            <para>added new “repairwc” command which tries to repair an inconsistent working
               copy</para>
           </listitem>
           <listitem>
-            <para>- workaround for broken urllib2 in python 2.6.5: wrong credentials lead to an
+            <para>workaround for broken urllib2 in python 2.6.5: wrong credentials lead to an
               infinite recursion</para>
           </listitem>
           <listitem>
-            <para>- support –interactive-review option when running “osc rq list
+            <para>support <option>–interactive-review</option> option when running “osc rq list
               &lt;project>”</para>
           </listitem>
           <listitem>
-            <para>- improved “osc rq show &lt;id> –interactive-review”</para>
+            <para>improved “osc rq show &lt;id> –interactive-review”</para>
           </listitem>
           <listitem>
-            <para>- do_config: added new options –stdin, –prompt, –no-echo:<itemizedlist>
+            <para>do_config: added new options <option>–stdin</option>, <option>–prompt</option>, <option>–no-echo</option>:<itemizedlist>
                 <listitem>
-                  <para>–stdin: read value from stdin</para>
+                  <para><option>–stdin</option>: read value from stdin</para>
                 </listitem>
                 <listitem>
-                  <para>–prompt: prompt for a value</para>
+                  <para><option>–prompt</option>: prompt for a value</para>
                 </listitem>
                 <listitem>
-                  <para>–no-echo: prompt for a value but don’t echo entered characters (for instance
+                  <para><option>–no-echo</option>: prompt for a value but don’t echo entered characters (for instance
                     to enter a passwd)</para>
                 </listitem>
               </itemizedlist></para>
@@ -163,20 +163,20 @@
         </itemizedlist>
         <itemizedlist>
           <listitem>
-            <para>- added template support for a submitrequest accept/decline message</para>
+            <para>added template support for a submitrequest accept/decline message</para>
           </listitem>
           <listitem>
-            <para>- lots of internal rewrites (new working copy handling etc.)</para>
+            <para>lots of internal rewrites (new working copy handling etc.)</para>
           </listitem>
           <listitem>
-            <para>- support added for osc search ‘perl(Foo::Bar)’</para>
+            <para>support added for osc search ‘perl(Foo::Bar)’</para>
           </listitem>
           <listitem>
-            <para>- New “service” command to run source services locally or trigger a re-run on the
+            <para>New “service” command to run source services locally or trigger a re-run on the
               server.</para>
           </listitem>
           <listitem>
-            <para>- setlinkrev is setting now the revision to xsrcmd5 by default to avoid later
+            <para>setlinkrev is setting now the revision to xsrcmd5 by default to avoid later
               breakage on indirect links by default.</para>
           </listitem>
           <listitem>
@@ -185,11 +185,15 @@
           </listitem>
         </itemizedlist>
         <para>Due to the rewrite of the working copy handling osc might fail with the following
-          error: <emphasis role="italic">Your working copy ‘.’ is in an inconsistent state. Please
-            run ‘osc repairwc .’ (Note this might _remove_ files from the .osc/ dir). Please check
-            the state of the working copy afterwards (via ‘osc status .’)</emphasis></para>
+          error:</para>
+        <screen>Your working copy ‘.’ is in an inconsistent state. Please
+run ‘osc repairwc .’ 
+(Note this might _remove_ files from the .osc/ dir). 
+Please check the state of the working copy afterwards 
+(via ‘osc status .’)</screen>
         <para>Simply run “osc repairwc” which might fetch files from the api or delete some files
-          from the storedir (.osc/). It won’t touch locally modified files. For more information see
+          from the storedir (<filename class="directory">.osc/</filename>). It won’t touch locally
+          modified files. For more information see
           section “WORKING COPY INCONSISTENT” in the README.</para>
         <para>The new packages should be available soon in the <ulink
             url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
@@ -443,17 +447,19 @@
         <para>* Features newly requested last week. Please vote and/or comment if you get interested.</para>
         <blockquote>
           <title><ulink url="https://features.opensuse.org/310937">Mobile Broadband Assistant Wizard</ulink></title>
-          <para>"http://forums.opensuse.org/english/get-help-here/network-internet/450790-mobile-broadband-assistant-would-further-enhance-opensuse.html#post2261514
-            http://blogs.gnome.org/dcbw/2009/06/22/mobile-broadband-assistant-makes-it-easy/
-            can I suggest this could be valuable addition to OpenSuse for mobile broadband?"</para>
+          <para><ulink
+            url="http://forums.opensuse.org/english/get-help-here/network-internet/450790-mobile-broadband-assistant-would-further-enhance-opensuse.html#post2261514"/>
+            <ulink
+              url="http://blogs.gnome.org/dcbw/2009/06/22/mobile-broadband-assistant-makes-it-easy/"/>
+            can I suggest this could be valuable addition to openSUSE for mobile broadband?"</para>
         </blockquote>
         <blockquote>
           <title><ulink url="https://features.opensuse.org/310938">Support Harddrives with more than 3TB capacity</ulink></title>
-          <para>"As harddrives with capacities more than 3TB's are available, we need to ensure that those drives are fully supported. (...)"</para>
+          <para>As harddrives with capacities more than 3TB's are available, we need to ensure that those drives are fully supported. (...)</para>
         </blockquote>
         <blockquote>
           <title><ulink url="https://features.opensuse.org/310939">[zypper] add package counter</ulink></title>
-          <para>"When installing/updating with zypper and "--download in-advance" zypper  shows a counter of how many packages are to be downloaded and at which  position we currently are: (...)"</para>
+          <para>When installing/updating with zypper and "--download in-advance" zypper  shows a counter of how many packages are to be downloaded and at which  position we currently are: (...)</para>
         </blockquote>
         <blockquote>
           <title><ulink url="https://features.opensuse.org/310940">Mumble into Distribution</ulink></title>
@@ -475,16 +481,19 @@
             chkconfig vsftpd off -> turns off init script and/or xinetd config (...)"</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/310955">Include PAC Manager in openSuSE</ulink></title>
+          <title><ulink
+            url="https://features.opensuse.org/310955">Include PAC Manager in openSUSE</ulink></title>
           <para>"The description from the application's website [
-            http://gtk-apps.org/content/show.php/PAC+Manager?content=125533 ]
+            <ulink
+              url="http://gtk-apps.org/content/show.php/PAC+Manager?content=125533"/>]
             "PAC is a Perl/GTK Gnome replacement for  SecureCRT/Putty/...
             It provides a GUI to configure SSH/Telnet  connections: users, passwords, EXPECT regular expressions, macros, etc...""</para>
         </blockquote>
         <blockquote>
           <title><ulink url="https://features.opensuse.org/310958">Amarok 2.4 for opensuse 11.4</ulink></title>
           <para>"as per the first beta announcement:
-            http://amarok.kde.org/en/releases/2.4/beta/1
+            <ulink
+              url="http://amarok.kde.org/en/releases/2.4/beta/1"/>
             "This new release brings a lot of new features. The following  features are critical and need a lot of testing to make sure they are  top-notch for final release at the beginning of 2011. We need your help  with this, so try them out and report any problems you find! (...)""</para>
         </blockquote>
         <blockquote>
