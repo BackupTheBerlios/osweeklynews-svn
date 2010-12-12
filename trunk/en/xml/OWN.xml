@@ -21,6 +21,11 @@
 -->
 <article class="journalarticle">
   <title>openSUSE Weekly News</title>
+  <para><mediaobject>
+    <imageobject>
+      <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/12/Opensuse_weekly_news_banner.png"/>
+    </imageobject>
+  </mediaobject></para>
   <articleinfo>
     <!-- Maybe date and/or pubdate might be useful: -->
     <date>2010-12-06</date>
@@ -29,6 +34,12 @@
     <!-- When it's published -->
     <edition>&edition;</edition>
     <authorgroup>
+      <author>
+        <firstname>openSUSE</firstname>
+        <surname>Weekly News Team</surname>
+        <contrib>Producer</contrib>
+      </author>
+      <!--
       <author>
         <firstname>Sascha</firstname>
         <surname>Manns</surname>
@@ -53,7 +64,7 @@
         <firstname>Thomas</firstname>
         <surname>Schraitle</surname>
         <contrib>DocBook-Consultant</contrib>
-      </author>
+      </author> -->
       <!-- The english version don't have othercredit for
            translators as there is none.
            Translators just put there name
@@ -66,6 +77,12 @@
       <!--   
       <legalnotice>
        <title>Legal Notice</title>
+       <para><mediaobject>
+          <imageobject>
+          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/12/CCL.png"/>
+          </imageobject>
+       </mediaobject>
+       </para>
        <para>This publication is licenced under <ulink
           url="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Share
          Alike unless expressly otherwise indicated</ulink>. The rights are copyright by Sascha Manns.
@@ -88,7 +105,9 @@
   <xi:include href="own-planetsuse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="own-forums.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="own-ontheweb.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="own-credits.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="own-feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="own-translations.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
 
 </article>
