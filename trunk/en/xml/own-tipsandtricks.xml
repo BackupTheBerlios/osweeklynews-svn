@@ -22,19 +22,36 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.freesoftwaremagazine.com/columns/making_realistic_characters_blender_makehuman"
-          >Free Software Magazine/Terry Hancock: Making realistic characters for Blender with
-          MakeHuman</ulink>
+        <ulink url="http://tuxtweaks.com/2010/12/converting-audio-files-with-gstreamer/"
+          >TuxTweaks/Linerd: Converting Audio Files with GStreamer</ulink>
       </title>
-      <para>There are lots of options for creating 3D characters for animation, and they are often
-        made from scratch by mesh-modeling artists. But it’s obviously a very often-needed task,
-        using a lot of common elements, so you’d think someone would come up with a tool to make it
-        easier. And you’d be right. The free-software tool of choice for this task is MakeHuman. I
-        had looked into a much earlier version of the software before, but today it is rapidly
-        approaching the first real release, version 1.0 (currently it’s at 1.0-Alpha 5, with plans
-        to go through several more alphas still). The progress is remarkable, and this is going to
-        be a really important tool for 3D modeling in the future. (...) <!-- ($ ld: 10.12.10 sm $) --></para>
+      <para>I've written before about <emphasis role="bold">ripping audio CD's</emphasis> from the
+        command line (<ulink
+          url="http://tuxtweaks.com/2010/09/command-line-basics-ripping-audio-cds-part-1/">part
+          1</ulink>, <ulink
+          url="http://tuxtweaks.com/2010/09/command-line-basics-ripping-audio-cds-part-2/">part
+          2</ulink>, <ulink
+          url="http://tuxtweaks.com/2010/09/command-line-basics-ripping-audio-cd%e2%80%99s-part-3/"
+          >part 3</ulink>, <ulink
+          url="http://tuxtweaks.com/2010/09/command-line-basics-ripping-audio-cd’s-part-4/">part
+          4</ulink>). Certainly, if you're just ripping a new CD, then just convert the audio to
+        your chosen format at that time. But maybe you've been archiving your music in <emphasis
+          role="bold">FLAC</emphasis> format or you purchased some high bit-rate <emphasis
+          role="bold">MP3</emphasis>'s for download and now you want them in a different format or
+        bit-rate for your music player. </para>
+      <para><emphasis role="bold">GStreamer</emphasis> is an open source multimedia framework that's
+        used by many <emphasis role="bold">GNOME</emphasis> applications and a few <emphasis
+          role="bold">KDE</emphasis> apps as well. It's really meant to be used by programmers to
+        create rich applications by accessing GStreamer's API. Thankfully there's also a command
+        line interface available for us non-programmers. It's really meant for only testing, but
+        that's OK. If it works, it works. </para>
+      <para>Now you may be asking yourself why you'd want to use <emphasis role="bold"
+          >GStreamer</emphasis> to convert audio when there are so many other choices available.
+        Well, one really cool thing about GStreamer is that the metadata is preserved through the
+        conversion process. That means you won't have to go through and <ulink
+          url="http://tuxtweaks.com/2008/11/tagging-mp3-files-in-linux-with-easytag/">re-tag</ulink>
+        your files after converting. (...)</para>
+      <!-- ($ ld: 15.12.10 sm $) -->
     </blockquote>
   </sect2>
   

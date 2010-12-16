@@ -112,96 +112,56 @@
      <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
 
       <blockquote>
-        <title><ulink url="http://lizards.opensuse.org/2010/12/06/osc-0-130/">Marcus Hüwe: osc
-            0.130</ulink></title>
-        <para>We just released a new osc version: 0.130. The main changes/features are:</para>
-        <itemizedlist>
-          <listitem>
-            <para>new “revert” command to restore the original working copy file (without
-              downloading it)</para>
-          </listitem>
-          <listitem>
-            <para>rewrote “diff” logic</para>
-          </listitem>
-          <listitem>
-            <para>added new <option>–http-full-debug</option> option, <option>–http-debug</option> filters the
-              “Authentication” and “Set-Cookie” header</para>
-          </listitem>
-          <listitem>
-            <para>added new “<option>–disabled-cpio-bulk-download</option>” option: disable 
-              downloading packages as cpio archive from api</para>
-          </listitem>
-          <listitem>
-            <para>added new “repairwc” command which tries to repair an inconsistent working
-              copy</para>
-          </listitem>
-          <listitem>
-            <para>workaround for broken urllib2 in python 2.6.5: wrong credentials lead to an
-              infinite recursion</para>
-          </listitem>
-          <listitem>
-            <para>support <option>–interactive-review</option> option when running “osc rq list
-              &lt;project>”</para>
-          </listitem>
-          <listitem>
-            <para>improved “osc rq show &lt;id> –interactive-review”</para>
-          </listitem>
-          <listitem>
-            <para>do_config: added new options <option>–stdin</option>, <option>–prompt</option>, <option>–no-echo</option>:<itemizedlist>
-                <listitem>
-                  <para><option>–stdin</option>: read value from stdin</para>
-                </listitem>
-                <listitem>
-                  <para><option>–prompt</option>: prompt for a value</para>
-                </listitem>
-                <listitem>
-                  <para><option>–no-echo</option>: prompt for a value but don’t echo entered characters (for instance
-                    to enter a passwd)</para>
-                </listitem>
-              </itemizedlist></para>
-          </listitem>
-        </itemizedlist>
-        <itemizedlist>
-          <listitem>
-            <para>added template support for a submitrequest accept/decline message</para>
-          </listitem>
-          <listitem>
-            <para>lots of internal rewrites (new working copy handling etc.)</para>
-          </listitem>
-          <listitem>
-            <para>support added for osc search ‘perl(Foo::Bar)’</para>
-          </listitem>
-          <listitem>
-            <para>New “service” command to run source services locally or trigger a re-run on the
-              server.</para>
-          </listitem>
-          <listitem>
-            <para>setlinkrev is setting now the revision to xsrcmd5 by default to avoid later
-              breakage on indirect links by default.</para>
-          </listitem>
-          <listitem>
-            <para>Features which requires OBS 2.1: support reliable diff for an accepted
-              request</para>
-          </listitem>
-        </itemizedlist>
-        <para>Due to the rewrite of the working copy handling osc might fail with the following
-          error:</para>
-        <screen>Your working copy ‘.’ is in an inconsistent state. Please
-run ‘osc repairwc .’ 
-(Note this might _remove_ files from the .osc/ dir). 
-Please check the state of the working copy afterwards 
-(via ‘osc status .’)</screen>
-        <para>Simply run “osc repairwc” which might fetch files from the api or delete some files
-          from the storedir (<filename class="directory">.osc/</filename>). It won’t touch locally
-          modified files. For more information see
-          section “WORKING COPY INCONSISTENT” in the README.</para>
-        <para>The new packages should be available soon in the <ulink
-            url="http://download.opensuse.org/repositories/openSUSE:/Tools/">openSUSE:Tools
-            repo</ulink>.</para>
-        <para>Thanks to everyone who contributed to osc!</para>   
-        <!-- ($ ld: 10.12.10 sm $) -->
+        <title><ulink
+            url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/"
+            >Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all
+            openSUSE packages</ulink></title>
+      <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
+          version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
+        <para>About 2 weeks ago, I copied the official KDE 4.6 Beta 2 packages over from the
+          KDE:Distro:Factory repository to the KDE:Unstable:SC repository. This has two effects,
+          namely: </para>
+        <para>1) People using 4.6 Beta 2, can easily update to a slightly newer version to see if
+          bugs have been resolved, without loosing important patches that are openSUSE specific. </para>
+        <para>2) It gives us, the openSUSE KDE team the change to easier and faster adopt to a newer
+          release (e.g. RC1, RC2, etc), as that all patches are matches on a weekly basis to the
+          newer source code. </para>
+        <para>If you decide to switch repository, then make sure that you keep an eye on this blog,
+          as that on a certain moment the KDE:Unstable:SC will switch to very unstable snapshots of
+          the future KDE 4.7. I will however blog here to let you know that you should switch back
+          again repostories, before I will publish the first KDE 4.7 snapshot. </para>
+        <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
+          about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
+          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>
       </blockquote>
-
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan
+            Kulow: How we use our power</ulink></title>
+        <para>I had a side project the last two weeks: Make the build service more fun to use. </para>
+        <para>No matter how much fun you have creating packages, if they don’t build, there is
+          little point in using a Service that has Build in its name, no? So one of the major goals
+          of the service is actually to help those that want to build packages as good as possible.
+          But there is a problem: </para>
+        <para>Let me quote from the landing page of <ulink url="https://build.opensuse.org/"
+            >build.opensuse.org</ulink>: “The openSUSE Build Service hosts 16,414 projects, with
+          107,691 packages, in 26,259 repositories and is used by 25,967 confirmed users.”. That are
+          quite some high numbers – especially in the relation to the ~25 servers we have for
+          actually building. </para>
+        <para>If you look at the build statistics of the last month (and this is just i586, x86_64
+          has around the same), you notice that there is not much purple in the “Busy workers / Idle
+          workers” graphic:</para>
+        <figure id="fig.buildservice">
+          <title>Buildservice</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Bildschirmfoto11.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>(..)</para>
+      </blockquote>
+      <!-- ($ ld: 16.12.10 sm $) -->
+      
       <formalpara>
         <title>Build Service Statistics</title>
 

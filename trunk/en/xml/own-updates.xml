@@ -24,65 +24,34 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  
   <blockquote>
-    <title>
-      <ulink url="http://packman.links2linux.org/package/XBMC">Packman: XBMC
-      9.11-2.pm.13.3</ulink></title>
-    <para>XBMC is an award-winning free and open source (GPL) software media player and
-      entertainment hub for digital media. XBMC is available for Linux, Mac OS X (Leopard, Tiger and
-      Apple TV) and Microsoft Windows, as well as the original Xbox game console. Created in 2003 by
-      a group of like minded programmers, XBMC is a non-profit project run and developed by
-      volunteers located around the world. More than 50 software developers have contributed to
-      XBMC, and 100-plus translators have worked to expand its reach, making it available in more
-      than 30 languages.</para>
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/handbrake-unstable">Packman:
-        handbrake-unstable 0.9.4+3697-0.pm.1.4</ulink></title>
-    <para>HandBrake is an open-source, GPL-licensed, multiplatform, multithreaded video
-      transcoder.</para>
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/clementine-unstable">Packman:
-        clementine-unstable 2233-0.pm.1.13</ulink></title>
+    <title><ulink url="http://packman.links2linux.org/package/clementine/198133">Packman: clementine
+        0.6-8.1</ulink></title>
     <para>Clementine is a modern music player and library organiser. Clementine is a port of Amarok
-      1.4, with some features rewritten to take advantage of Qt4. Features: * Search and play your
-      local music library * Listen to internet radio from Last.fm and SomaFM * Edit tags on MP3 and
-      OGG files, organise your music * Cross-platform - works on Windows, Mac OS X and Linux *
-      Native desktop notifications on Linux (libnotify) and Mac OS X (Growl)<itemizedlist>
-        <listitem>
-          <para>Search and play your local music library</para>
-        </listitem>
-        <listitem>
-          <para>Listen to internet radio from Last.fm and SomaFM</para>
-        </listitem>
-        <listitem>
-          <para>Edit tags on MP3 and OGG files, organise your music</para>
-        </listitem>
-        <listitem>
-          <para>Cross-platform - works on Windows, Mac OS X and Linux</para>
-        </listitem>
-        <listitem>
-          <para>Native desktop notifications on Linux (libnotify) and Mac OS X (Growl)</para>
-        </listitem>
-      </itemizedlist></para>
+      1.4, with some features rewritten to take advantage of Qt4.</para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/mythtv-0_24">Packman: mythtv-0_24
-        0.24-0.pm.6.2</ulink></title>
-    <para>MythTV provides a unified graphical interface for recording and viewing television
-      programs. Refer to the mythtv package for more information. There are also several add-ons and
-      themes available. In order to facilitate installations with smart/apt-get/yum and other
-      related package resolvers this meta-package can be used to install all in one sweep.</para>
+    <title><ulink
+        url="http://tittiatcoke.wordpress.com/2010/12/13/additional-package-for-chromium-on-packman/"
+        >Raymond Wooninck: Additional package for Chromium (on packman)</ulink></title>
+    <para>As most of you already found out, Chromium is not that easy when it comes with MultiMedia.
+      Due to the heavy patches from Google to ffmpeg, it does not work just to build chromium
+      against the standard ffmpeg libraries. For distributions like openSUSE, Fedora, etc this
+      brings issues as that ffmpeg code is still legally a no-no. </para>
+    <para>There were some attempts in the past to solve this issue, but they failed. At the moment I
+      have created a new package chromium-ffmpeg which delivers the missing libffmpegsumo.so
+      library. The package is available from packman and it builds the patched ffmpeg code. </para>
+    <para>It still doesn’t really work 100%, but it should resolve some multimedia issues that
+      people have been experiencing with the openSUSE Chromium package. In the meantime Chromium has
+      already reached version 10.x.x.x, so check out the changes. </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/vlc">Packman: vlc
-        1.1.5-1.pm.3.19</ulink></title>
-    <para>VLC media player is a highly portable multimedia player for various audio and video
-      formats (MPEG-1, MPEG-2, MPEG-4, DivX, mp3, ogg, ...) as well as DVDs, VCDs, and various
-      streaming protocols. It can also be used as a server to stream in unicast or multicast in IPv4
-      or IPv6 on a high-bandwidth network.</para>
-    <!-- ($ ld: 11.12.10 sm $) -->
+    <title><ulink url="http://packman.links2linux.org/package/mkvtoolnix">Packman: mkvtoolnix
+        4.4.0-1.pm.1.18</ulink></title>
+    <para>Tools to create and manipulate Matroska files (extensions .mkv and .mka), a new container
+      format for audio and video files. Includes command line tools mkvextract, mkvinfo, mkvmerge,
+      and a graphical front-end for them, mkvmerge-gui.</para>
   </blockquote>
+  <!-- ($ ld: 15.12.10 sm $) -->
   
   <itemizedlist>
     <title>You can find other interesting Packages at:</title>

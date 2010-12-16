@@ -22,88 +22,208 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2010/12/06/a-new-aeon-a-new-team-of-ambassadors/"
-        >Nelson Marques: A new aeon, a new team of ambassadors!</ulink></title>
-    <para>For a long time that I actively search the Portuguese Ambassadors… unfortunately I was unable to find them. I’ve learned once with someone which is very dear to me a single line that ended up by translating one great universal truth: “Stopping is dying”.</para>
-    <para>This afternoon, I’ve traveled northeast to the beautiful city of Oliveira de Azemeis, where I’ve met one of the unknown faces of the Portuguese openSUSE Community, João Matias. We’ve had a small chat about several topics… amongst them:</para>
-    <itemizedlist>
-      <listitem>
-        <para>OBS – openSUSE Build Service – howto, examples and how useful it can be for students
-          projects!</para>
-      </listitem>
-      <listitem>
-        <para>University Campus – Event creaton… how openSUSE can represent itself on 3rd parties
-          events inside of the campus;</para>
-      </listitem>
-      <listitem>
-        <para>Concerns about the growth of the Portuguese Community;</para>
-      </listitem>
-      <listitem>
-        <para>Ambassadors or Campus Activists?</para>
-      </listitem>
-      <listitem>
-        <para>The new ‘Portuguese’ Forum at forums.opensuse.org (Special Thanks to Jim Henderson and
-          the Forums Team for their outstanding guidance during the submission process);</para>
-      </listitem>
-      <listitem>
-        <para>Christmas Dinner @ 11th December and hot-topics.</para>
-      </listitem>
-    </itemizedlist>
-    <para>We look forward to a smiling future full of work and hopefully with a stronger openSUSE
-      presence in the Portuguese University Campus.</para>
+    <title><ulink
+        url="http://andreasjaeger.blogspot.com/2010/12/fixing-smugbatch-for-new-smugmug-api.html"
+        >Fixing smugbatch for new smugmug API</ulink></title>
+    <para>I'm using smugmug to share my photos and have used the <ulink
+        url="http://ajaeger.smugmug.com/">smugbatch</ulink> command line tool to upload photos
+      directly to albums at smugmug. Recently smugmug made some changes to the API so that the
+      command line tool did not work anymore. Now it needs the _su cookie to be send back with each
+      request. I enhanced the tool, submitted the fixes back and now they are awaiting for the
+      review by Greg KH at <ulink url="https://github.com/gregkh/smugbatch/pull/1">github</ulink>. </para>
+    <para>I also packaged smugbatch with the changes in the<ulink url="http://build.opensuse.org/">
+        openSUSE Build Service</ulink> and submitted the fix to the Contrib repository so that
+      others can use the package as well. </para>
+    <para>P.S. The primary reason for writing this is to evaluate the Blogilo blog editor. I wanted
+      to know how it works - and will now test it some more and then write about that as
+      well.</para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://www.wafaa.eu/entry/smeegol-status---08dec10-1-45.html">Andrew Wafaa:
-        Blogged about: Smeegol Status - 08Dec10</ulink></title>
-    <para>Looks like it's been a while since I mentioned anything about our dear friend Smeegol –
-      sorry. </para>
-    <para>As most will know MeeGo made a couple of releases: <itemizedlist>
-        <listitem>
-          <para>1.0.5 mostly an update to their original release</para>
-        </listitem>
-        <listitem>
-          <para>1.1.0 the new release with new API, and renaming most packages</para>
-        </listitem>
-      </itemizedlist>So where is Smeegol? Well we're pretty much there, although not 100%. I have
-      1.0.5 all built and packaged including an image. Problem is I seem to have hit a bug with
-      network-manager-netbook – it doesn't seem to be displaying networks which is a fairly
-      fundamental issue :-( </para>
-    <para>I have also got 1.1.0 built, but for factory only atm – I'm having some issues with
-      tracker on 11.3. Problem is when I try and run the image, I basically have an unusable system
-      thanks to some Gconf fubar but I don't really know what. </para>
-    <para>You may have also noticed that I'm still calling it Smeegol ;-) Well the simple reason is
-      I have requested clarification from MeeGo, Nokia, Intel and the Linux Foundation and so far
-      I've received bubkiss!! I heard loads of talk from the recent MeeGo Conference about how open
-      MeeGo was, but it seems that they are only open to partners who can help them make money; not
-      open to the wider community. I am not alone in waiting for a response from them, Fedora and
-      Debian are also in limbo waiting for information/clarification and general communication from
-      them. The difference between us is the fact that in openSUSE if you want something done the
-      best way is to Just Do It :-) </para>
-    <para>So in a nutshell, before I make an official release of either I need people to test and
-      report back to me what does and doesn't work. I haven't tried doing an upgrade from 1.0.3 to
-      1.0.5 or 1.1.0 so maybe someone could try that. Jump onto #opensuse-moblin on Freenode or the
-      opensuse-goblin mailing list and let's continue to be trail blazers. Yes I know I need to
-      align the mailing list and irc channel names, but I'm waiting for a conclusion to the name
-      debacle first. </para>
-    <para>I would really love to get both releases out as a little christmas present to you the
-      community, so who's up for some festive fun? ($ ld: 10.12.10 sm $)</para>
+    <title><ulink url="https://saschpe.wordpress.com/2010/12/12/braindead-python-packaging/">Sascha
+        Peilicke: Braindead Python packaging</ulink></title>
+    <para>As you all know, distributing and building packages with the <ulink
+        url="https://build.opensuse.org/">openSUSE Build Service</ulink> is easy and fun. The only
+      party pooper is that you have to write a spec file to get your RPMs out there. Thanks to
+        <ulink url="http://nordisch.org/">darix</ulink>, we have a decent solution at least for Ruby
+      packages: gem2rpm, a script which auto-generates RPM spec files for Ruby gems. Ever wondered
+      why we don’t have something similar for Python? Well, I did so too. Thus, after a half a week
+      of hackery, I’d like to introduce <ulink url="http://pypi.python.org/pypi/py2pack"
+        >py2pack</ulink>, my take on braindead Python packaging. Here’s how it goes: </para>
+    <para>Lets suppose you want to package <ulink url="http://pypi.python.org/pypi/zope.interface"
+        >zope.interface</ulink> and you don’t know how it is named exactly or where to download
+      from. First of all, you can search for it and download the source tarball automatically if you
+      found the correct module:</para>
+    <para><screen>$ py2pack search zope.interface
+ searching for module zope.interface...
+ found zope.interface-3.6.1
+ $ py2pack fetch zope.interface
+ downloading package zope.interface-3.6.1...
+ from http://pypi.python.org/packages/source/z/zope.interface/zope.interface-3.6.1.tar.gz</screen></para>
+    <para>(...)</para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://karl-tux-stadt.de/ktuxs/?p=2929">Sirko Kemter: Let us bring home the
-        Award</ulink></title>
-    <para>Yearly the LinuxNewMedia give away an Award for some Free and Open software projects. A
-      jury give away some prizes for organizations, companies, and individuals who performed
-      exceptional feats in the Linux and open source scene in the past year. That prizes are given
-      from a jury with well know people from the FLOSS world. Normally there is no choice for the
-      readers, but this year is different. The best Linux distribution can be choosen from the
-      people. </para>
-    <para>Its definitly so that openSUSE made in the last year big steps forward not only the
-      distribution himself even the tools that come from the project, like the Buildservice or such
-      tools like SUSE Studio makes the distribution of one of them the move the Open Source world
-      forward. So when you think also, then get out and vote. <ulink
-        url="http://www.linuxnewmedia.com/Products/Events/Linux-New-Media-Award-Favourite-Linux-Distribution-2010"
-        >to the vote</ulink></para>
-    <!-- ($ ld: 10.12.10 sm $) -->
+    <title><ulink url="http://lizards.opensuse.org/2010/12/13/last-indicator-builds/">Nelson
+        Marques: Last Indicator builds!</ulink></title>
+    <para>Finally… the last of the indicators builds and works properly… fun thing… works out of the
+      box with Banshee! Two pics… one from the indicator-sound and another from the messaging
+      indicator with empathy and evolution support.</para>
+    <figure id="fig.indic">
+      <title>Picture 1</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot2.png" width="50%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <figure id="fig.indic2">
+      <title>Picture 2</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-12.png" width="50%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
   </blockquote>
-  
+  <blockquote>
+    <title><ulink
+        url="http://jeffreystedfast.blogspot.com/2010/12/assignment-apologize-to-someone-you.html"
+        >Jeffrey Stedfast: Assignment: Apologize to someone you have wronged</ulink></title>
+    <para>This past Friday, on our walk back from lunch, <ulink url="http://tirania.org/blog"
+        >Miguel</ulink> told me about the latest assignment given to him by his teacher and mentor,
+        <ulink url="http://www.benjaminzander.com/">Benjamin Zander</ulink>, the conductor of the
+        <ulink url="http://www.bostonphil.org/">Boston Philharmonic</ulink>. The assignment was to
+      pick someone you have wronged and apologize to them. </para>
+    <para>For those who don't know, Benjamin Zander is the author of the book, The Art of
+      Possibility, a book which I have been reading the past week or so. The idea of this book is to
+      change your perspective on life by teaching you to see things in a positive light and thus
+      present you with a world of possibility where you can accomplish anything you set your mind to
+      because you are no longer held back by negative thinking (fear of failure, criticism from
+      others, and most importantly, criticism from yourself). </para>
+    <para>To continue on with my story, as I was laying in bed last night after having read a few
+      more chapters in <ulink url="http://amzn.to/fi53Qj">The Art of Possibility</ulink>, I was
+      reminded of Miguel's assignment and I began to wonder: if I was given this assignment, who
+      would I apologize to? </para>
+    <para>I thought of 1 person in particular and a community of users and decided to apologize to
+      them all. (...)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://psankar.blogspot.com/2010/12/meego-naming-conflicts-controversies.html">Sankar
+        P: MeeGo - Naming Conflicts / Controversies</ulink></title>
+    <para>Some of you might remember the <ulink
+        url="http://www.wafaa.eu/entry/disappointment-at-the-linux-foundation-and-meego-project-1-46.html"
+        >Naming Controversy</ulink> behind Meego. There is a<ulink
+        url="http://www.wafaa.eu/entry/disappointment-at-the-linux-foundation-and-meego-project-1-46.html"
+        > new blog</ulink> post by Andrew on this matter and since he is not on Planet GNOME, I am
+      just linking here, for the interested people. In case you want to know what the issue is all
+      about, read further. </para>
+    <para>There were Maemo and Moblin platforms from Nokia and Intel respectively. They both merged
+      to form the Meego project under the governance of the <emphasis role="bold">Linux
+        Foundation</emphasis>. Distributions such as openSUSE, Fedora, Debian tried to spin off
+      Meego based derivatives and faced a lot of troubles. </para>
+    <para>Well known openSUSE rockstar <emphasis role="bold">Andrew Wafaa</emphasis>, overcame some
+      of these troubles and did a distro release using these Meego packages on top of an openSUSE
+      image. He named this distro "<emphasis role="bold">Smeegol" => SuSE + Meego</emphasis>. This
+      effort by Andrew (and other distros) is a step in bringing the cool, shiny features of MeeGo
+      to the masses, by riding on the large user-base of the existing distros. However, this has not
+      went well with the linux foundation and they have asked to change the name of the project.
+      They were afraid that Andrew using "Smeegol" will dilute the brand image of Meego. </para>
+    <para>Let us take a different case. "<emphasis role="bold">Linux</emphasis> " is a registered
+      trademark of <emphasis role="bold">Linus Torvalds</emphasis>. If he has decided that nobody
+      should be using the name "Linux" in their projects, We may not be able to use names such as
+        "<emphasis role="bold">RedHat Enterprise Linux (RHEL)</emphasis>", "<emphasis role="bold"
+        >SUSE Linux Enterprise (SLED/S)</emphasis>" etc. Allowing other people to use the name
+      "Linux" (with due credits of course) has given it a widespread popularity. The Linux
+      Foundation seems to be missing this point altogether and insists <emphasis role="italic">to
+        move away from using {M,m}-e-e-{G,g}-o or any subset of those letters or sounds in that
+        order, alone or in combination with other letters, words or marks that would tend to cause
+        someone to make a reasonable connection of the reference with the MeeGo mark.</emphasis>
+      (...)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2010/12/good-news.html">Jos Poortvliet: good
+        news!</ulink></title>
+    <para>Hello world, Some good news. </para>
+    <para>First of all, the dutch Linux Starter I blogged about a few days ago is now <ulink
+        url="http://www.hubstore.nl/informatie.asp?LN=STLIN2010">available online</ulink>. So if
+      you're dutch and want to try out openSUSE - go and get it! </para>
+    <para>And second of all, the board has just announced that Alan Clark has been appointed by
+      Novell as new chair of the board. Most of you probably don't know him, I do as I have been
+      working with him for the last few months on the openSUSE Foundation and some other things.
+      He's in my humble opinion one of those people who gets Free Software and a pleasure to work
+      with. Only after this announcement I discovered he was pretty "high in the tree" as we in NL
+      say - being on the Senior Leadership team of Markus, his experience in the Linux Foundation
+      and other organizations... But while working with me he had a simple "let's get this done and
+      do it well" attitude. Still an engineer on the inside - something you actually see a lot in
+      Novell and something I appreciate greatly.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.wafaa.eu/entry/fed-up-of-fud-against-novell-suse--opensuse-1-47.html">Andrew
+        Wafaa: Blogged about: Fed up of FUD against Novell, SUSE</ulink></title>
+    <para>tl;dr – To all you doomsday FUD mongers about Novell/SUSE/openSUSE STFU &amp; let us show
+      you what we can and will do!! </para>
+    <para>For those living under a rock, yes Novell has agreed to be acquired. Welcome to the world
+      of business, and especially in software this sort of thing is very common. </para>
+    <para>Now for some reason a whole heap of people seem to think that this spells doom for Novell,
+      SUSE and openSUSE. Why? I really can't answer that. What I do know is that all their negative
+      speculation is at best counter productive, at worst foolish and damaging. </para>
+    <para>As with any form of speculation there are no facts to back up what they reckon is going to
+      happen – hence the speculation. If there is enough negative talk, negative things will happen.
+      Current customers will look at switching from Novell products whether they be SUSE based or
+      not, purely based on all the negativity that is being generated. </para>
+    <para>No-one is giving Attachemate a chance to prove what they have openly said – Novell, SUSE
+      and openSUSE's contribution to the wider community will continue and that it is business as
+      usual. If you look at when Oracle bought Sun they said sod all about OpenSolaris and the rest
+      of Sun. This is different. The new overlords are actually communicating – maybe not as much as
+      we would like, but hey it's a bloody good step in the right direction. </para>
+    <para>The latest negative piece comes from the <ulink
+        url="http://blogs.the451group.com/opensource/2010/12/08/linux-kernel-solid-but-what-will-become-of-novell-contribution"
+        >451 Group</ulink>. Why the frig would Novell's purchase change their kernel contributions?
+      Why the frig would Novell's purchase change any of their current contributions to the vast
+      array of projects including GNOME/KDE/Banshee/LibreOffice/Systemd and a whole heap of others?
+      Simple, it doesn't. </para>
+    <para>Don't get me wrong Novell has screwed up big time in the past, but we are working together
+      as a community to learn from these mistakes. All this negative noise is counter productive and
+      just gets in the way. If you want to see Novell, SUSE and openSUSE flourish hows about you
+      roll your sleeves up and get stuck in? If you don't want to chip in STFU and wait and see if
+      something does happen. Then you can berate us and tell us how and where we went wrong.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2010/12/15/verein-computerspende-hamburg-and-opensuse/"
+        >Klaas Freitag: Verein Computerspende Hamburg and openSUSE</ulink></title>
+    <para>This <ulink url="http://www.spiegel.de/netzwelt/netzpolitik/0,1518,706047,00.html"
+        >article</ulink> of the German news magazine <ulink url="http://www.spiegel.de/">Der
+        Spiegel</ulink> made me aware of the <ulink url="http://www.computerspendehamburg.de/"
+        >Verein Computerspende Hamburg</ulink>. A German verein is a non profit association, there
+      are lots in Germany for sports, culture and these kind of stuff. </para>
+    <para>The Verein Computerspende Hamburg does something very useful: It takes used computer parts
+      that other people do not longer need and refurbish them to working computers again. These
+      computers are handed to people who happen to be in a difficult situation in life. They have to
+      live from Hartz IV which is a kind German social security, following the unemployment benefit
+      which ends after a short period. Hartz IV means very, very little money the people have to
+      make their lives from, too little to buy a new computer. </para>
+    <para>On the other hand, an increasing amount of the job offerings are posted on the web, so
+      people currently unemployed basically have to search the web, not speaking about preparing the
+      resumes to apply for a job. So how would one do that without a computer? </para>
+    <para>Computing is not only hardware and well known operating systems and applications are far
+      away from free, so it’s obvious that our great project is a perfect partner here: Not that we
+      only offer a user friendly, easy to install, secure, feature rich and last but not least
+      completely free <ulink url="http://en.opensuse.org/Portal:Distribution">Linux
+        Distribution</ulink>, we as a community are also able to help if problems come up,
+      regardless if somebody has money or not and what kind of problem it might be. This is another
+      very concrete example where free software and the FOSS communities help your neighbor, or you
+      – as it is very easy to get into a difficult situation in life. </para>
+    <para>We sent 500 openSUSE 11.3 DVDs to Hamburg with our warm invitation and welcome to all new
+      users to show up and join our community. So be aware of new kids on the block :-) </para>
+    <para>And if you are in Hamburg or around and want to help, I am sure <ulink
+        url="http://www.computerspendehamburg.de/">Verein Computerspende</ulink> can make use of the
+      help of more Geekos, such as installation, first hand user support and probably much more. And
+      if you know of a similar interested initiative, let me know, I am sure I will find more DVDs
+      ;-) </para>
+  </blockquote>
+  <!-- ($ ld: 16.12.10 sm $) -->
 </sect1>
