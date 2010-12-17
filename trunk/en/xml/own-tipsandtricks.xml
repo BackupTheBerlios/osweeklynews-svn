@@ -53,6 +53,55 @@
         your files after converting. (...)</para>
       <!-- ($ ld: 15.12.10 sm $) -->
     </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.linux.com/learn/tutorials/390966:creating-and-reading-ebooks-on-linux-with-calibre"
+          >Linux.com/Joe Brockmeier: Creating and Reading eBooks on Linux with
+        Calibre</ulink></title>
+      <para>Many of us are hoping for an eBook reader under the tree. A Kindle, a Nook, or perhaps
+        just an Android device that runs eBook software. But if you don't get the gadget of your
+        choice, or if you want to create content to fill one, you'll find plenty of eBook software
+        for Linux as well as open source software to publish your own. The best of the lot? Calibre,
+        a one stop solution for all your e-book needs. I didn't coin that term for Calibre — that's
+        their motto. How accurate is it? Very. Calibre handles library management, format
+        conversion, syncing to your device, and more. Oh, and it also lets you read your books too.
+        Nice, eh?</para>
+      <figure id="fig.calibre">
+        <title>Viewing the Linux.com RSS Feed as eBook</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://www.linux.com/images/stories/screenshot-e-book%20viewer%20-%20linux.com.png" width="25%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para><emphasis role="bold">Formats and DRM</emphasis> If you're new to eBooks, you might be
+        wondering what I'm babbling about with regards to format conversions. Just as video and
+        digital audio have a lot of formats to choose from, so do eBooks. Annoyingly, they not only
+        offer many formats, but also several DRM schemes too. </para>
+      <para>One of the problems with eBooks, or some eBooks, is Digital Restriction Management
+        (DRM). Yes, the industry likes to call it Digital Right's Management, but that's really not
+        what's going on. When you buy books from Amazon, Barnes and Noble, Apple, etc.the books are
+        encrypted with DRM so that you can't open them on multiple devices or competing devices —
+        even if they support the same format. For example, ePub is a widely supported format that
+        can be read by a number of eBook devices like Barnes and Noble's Nook and iBooks on iOS. If
+        you have an ePub book without DRM, you can read it anywhere. </para>
+      <para>But ePub supports an optional DRM scheme, so publishers can add DRM to it and restrict
+        it to one player or one type of DRM format. I don't find it upsetting that publishers are
+        trying to find a way to limit sharing of eBooks, but the side effect is that users really
+        lack options when it comes to acquiring books. If you want access to new books, you're stuck
+        choosing one of the major vendors (Amazon, Apple, Barnes and Noble, etc.) and then as you
+        acquire more material, you get locked into those vendors and their readers. </para>
+      <para>Unfortunately, I don't have a good answer to that if you want access to the latest books
+        via electronic formats. But if you want to read classics or publish your own books, you have
+        lots of great options with open source. </para>
+      <para>You'll find quite a few eBook formats, but the ones that matter the most for the most
+        popular devices (Kindle, Nook, and iBooks on iOS) are ePub and Mobipocket. You'll also find
+        a lot of support for PDF and plain text, too, but those are well-understood and handled
+        formats within open source already. The ePub format is supported via Nook and iBooks,
+        Mobipocket on Kindle. You can produce both ePub and Mobipocket with Calibre. (...)</para>
+      <!-- ($ ld: 17.12.10 sm $) -->
+    </blockquote>
   </sect2>
   
   
