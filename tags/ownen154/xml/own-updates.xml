@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+<!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/clementine/198133">Packman: clementine
+        0.6-8.1</ulink></title>
+    <para>Clementine is a modern music player and library organiser. Clementine is a port of Amarok
+      1.4, with some features rewritten to take advantage of Qt4.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://tittiatcoke.wordpress.com/2010/12/13/additional-package-for-chromium-on-packman/"
+        >Raymond Wooninck: Additional package for Chromium (on packman)</ulink></title>
+    <para>As most of you already found out, Chromium is not that easy when it comes with MultiMedia.
+      Due to the heavy patches from Google to ffmpeg, it does not work just to build chromium
+      against the standard ffmpeg libraries. For distributions like openSUSE, Fedora, etc this
+      brings issues as that ffmpeg code is still legally a no-no. </para>
+    <para>There were some attempts in the past to solve this issue, but they failed. At the moment I
+      have created a new package chromium-ffmpeg which delivers the missing libffmpegsumo.so
+      library. The package is available from packman and it builds the patched ffmpeg code. </para>
+    <para>It still doesn’t really work 100%, but it should resolve some multimedia issues that
+      people have been experiencing with the openSUSE Chromium package. In the meantime Chromium has
+      already reached version 10.x.x.x, so check out the changes. </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/mkvtoolnix">Packman: mkvtoolnix
+        4.4.0-1.pm.1.18</ulink></title>
+    <para>Tools to create and manipulate Matroska files (extensions .mkv and .mka), a new container
+      format for audio and video files. Includes command line tools mkvextract, mkvinfo, mkvmerge,
+      and a graphical front-end for them, mkvmerge-gui.</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.tuxarena.com/?p=3">Quick Look at Firefox 4 Beta - New Features
+        With Screenshots</ulink></title>
+    <para>Firefox 4 is knocking at the door and the <ulink
+        url="http://www.mozilla.com/en-US/firefox/beta/">latest beta release</ulink> looks just
+      awesome. The seventh beta release introduces several important changes, including a revamped
+      user interface (with the tab location above the address bar and navigation buttons), tab
+      grouping, improved bookmarking system, re-open recently closed windows, built-in synchronizing
+      system, rendering engine improvements, and more. This article contains a screenshot gallery
+      with all the main features and changes brought until now by Firefox 4. (...)</para>
+    <figure id="fig.firefox">
+      <title>Firefox Screenshot</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://www.tuxarena.com/wp-content/uploads/2010/12/firefox4beta7-300x189.png" width="50%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>The Firefox beta is available in the <ulink url="http://download.opensuse.org/repositories/mozilla:/beta/">mozilla:beta</ulink> Repository.
+    </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/">Sascha Manns: Updated bleachbit to Version 0.8.4</ulink></title>
+    <para>I've updated bleachbit for openSUSE to Version 0.8.4. What are the changes?</para>
+    <itemizedlist>
+      <listitem><para>When deep scan was enabled, BleachBit 0.8.3 would freeze with the progress bar displaying the name of the last cleaner (so it could be any one of 90 different names). Sorry!</para></listitem>
+      <listitem><para>In addition to fixing this bug (of course), new automatic tests will prevent this from happening in the future. From the beginning, BleachBit has extensively used automatic tests to ensure quality.</para></listitem>
+    </itemizedlist>
+    <!-- ($ ld: 18.12.10 sm $) -->
+    </blockquote>
+    
+  
+  
+  
+  <itemizedlist>
+    <title>You can find other interesting Packages at:</title>
+    <listitem>
+      <para><ulink url="http://packman.links2linux.de/rdf/packman_en.rdf">Packman</ulink></para>
+    </listitem>
+    <listitem>
+      <para><ulink url="https://hermes.opensuse.org/feeds/66367.rdf">openSUSE Build
+        Service</ulink></para>
+    </listitem>
+  </itemizedlist>
+</sect1>
