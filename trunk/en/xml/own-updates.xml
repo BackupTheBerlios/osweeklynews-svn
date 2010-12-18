@@ -73,7 +73,18 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <para>The Firefox beta is available in the <ulink url="http://download.opensuse.org/repositories/mozilla:/beta/">mozilla:beta</ulink> Repository.
     </para>
   </blockquote>
-  <!-- ($ ld: 17.12.10 sm $) -->
+  <blockquote>
+    <title><ulink url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/">Sascha Manns: Updated bleachbit to Version 0.8.4</ulink></title>
+    <para>I've updated bleachbit for openSUSE to Version 0.8.4. What are the changes?</para>
+    <itemizedlist>
+      <listitem><para>When deep scan was enabled, BleachBit 0.8.3 would freeze with the progress bar displaying the name of the last cleaner (so it could be any one of 90 different names). Sorry!</para></listitem>
+      <listitem><para>In addition to fixing this bug (of course), new automatic tests will prevent this from happening in the future. From the beginning, BleachBit has extensively used automatic tests to ensure quality.</para></listitem>
+    </itemizedlist>
+    <!-- ($ ld: 18.12.10 sm $) -->
+    </blockquote>
+    
+  
+  
   
   <itemizedlist>
     <title>You can find other interesting Packages at:</title>
