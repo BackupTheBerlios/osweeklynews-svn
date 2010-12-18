@@ -55,7 +55,8 @@
         <listitem>
           <para>Milestone: Last round of software translation starts - &quot;hard text freeze&quot;</para>
         </listitem>
-<!-- ($ ld: 11.12.10 sm $) -->      </itemizedlist>
+      </itemizedlist>
+      <!-- ($ ld: 11.12.10 sm $) -->      
     </blockquote>
     <itemizedlist>
       <title>Important Links</title>
@@ -95,7 +96,8 @@
       <para>...</para>
     </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-<!-- News related to Build Service (mostly status) * meeting minutes As needed. -->      <blockquote>
+      <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->      
+      <blockquote>
         <title>
           <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
         </title>
@@ -116,6 +118,7 @@
         <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
           about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
           better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>
+        <!-- ($ ld: 16.12.10 sm $) -->
       </blockquote>
       <blockquote>
         <title>
@@ -142,8 +145,27 @@
           </mediaobject>
         </figure>
         <para>(..)</para>
+        <!-- ($ ld: 16.12.10 sm $) -->
       </blockquote>
-<!-- ($ ld: 16.12.10 sm $) -->      <formalpara>
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/18/osc-0-130-1-bugfix-release/">Marcus Hüwe: osc 0.130.1 (bugfix release)</ulink></title>
+        <para>I just released a new osc version: 0.130.1 (bugfix release). The following issues were fixed:</para>
+        <itemizedlist>
+          <listitem><para>don’t crash if a file marked as ‘A’ does not exist (<ulink
+                url="https://bugzilla.novell.com/show_bug.cgi?id=658664">bnc#658664</ulink>)</para></listitem>
+          <listitem><para>fixed proxy handling (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657958"
+                >bnc#657958</ulink>)</para></listitem>
+          <listitem><para>fixed repairwc (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657838"
+                >bnc#657838</ulink>)</para></listitem>
+          <listitem><para>fixed build for python2.4</para></listitem>
+         </itemizedlist>
+        <para>The new version is available in the<ulink
+            url="http://download.opensuse.org/repositories/openSUSE:/Tools"> openSUSE:Tools</ulink>
+            repo.</para>
+        <!-- ($ ld: 18.12.10 sm $) -->
+      </blockquote>
+
+      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -320,7 +342,8 @@
           </mediaobject>
         </figure>
         <para><xref linkend="fig.gnomeindicator2"/></para>
-<!-- ($ ld: 10.12.10 sm $) -->      </blockquote>
+        <!-- ($ ld: 10.12.10 sm $) -->      
+      </blockquote>
     </sect3>
 <!--
     <sect3 role="kdeteam">
@@ -421,6 +444,7 @@ We need a system wide deamon, which control how many normal users are logged in,
           <para>&quot;KDE has monthly updates and mainly depends on Qt.
 Qt only has updates from time to time.
 If you have crashes with KDE apps which are caused by (resolved) Qt bugs (e.g. <ulink url="http://bugs.kde.org/show_bug.cgi?id=249373">Â¹</ulink><ulink url="http://bugreports.qt.nokia.com/browse/QTBUG-15857">Â²</ulink>) we push them (days/weeks/months/years/decades?) in front of us until a new Qt release. (...)&quot;</para>
+        </blockquote>
           <blockquote>
             <title>
               <ulink url="https://features.opensuse.org/310982">Please add Lightspark as a standard avant-garde/forefront browser flash player</ulink>
@@ -443,16 +467,20 @@ is an avant-garde/forefront browser flash player with modern hardware support de
               <ulink url="https://features.opensuse.org/310992">WUBI like feature for openSUSE</ulink>
             </title>
             <para>&quot;A feature that I really miss in openSUSE is something like WUBI. Maybe you know this tool, what let you install Ubuntu on a Windows-partition. I think for beginners, who don&apos;t want to create a Linux-partition is this a easy and great way to have a nice welcome-unit in Linux. openSUSE will be a distro for beginners and advanced users, right? So this feature is a real nice present for beginners and people who just want test openSUSE. (...)&quot;</para>
+          </blockquote>
             <blockquote>
               <title>
                 <ulink url="https://features.opensuse.org/310994">Restore button in recycle bin</ulink>
               </title>
               <para>&quot;Need &quot;restore&quot; button near &quot;empty Trash&quot; button in Nautilus when a file is selected in Trash Folder.&quot;</para>
-            </blockquote>
-          </blockquote>
+            
+          
         </blockquote>
+        <!-- ($ ld: 18.12.10 sm $) -->
       </sect4>
-<!-- ($ ld: 11.12.10 sm $) -->      <sect4>
+            
+      
+      <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
@@ -462,13 +490,32 @@ is an avant-garde/forefront browser flash player with modern hardware support de
       <title>OpenOffice Team</title>
 
       <para>...</para>
-    </sect3>
+    </sect3> -->
 
     <sect3 role="testing">
       <title>Testing Team</title>
+       <blockquote>
+         <title><ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00004.html">Larry Finger: Weekly News for December 18</ulink></title>
+         <para>The next Testing Core Team IRC meeting to discuss 11.4 Milestone 5 will be held
+         December 27 at 1800 UTC.</para>
+         <para>The Team had a meeting on Monday, December 6, when we talked about our
+           experiences with openSUSE 11.4 M4. The automated installation testing seems to
+           be working as no one reported installation failures. Our major complaints were
+           Bug #657605 (corrupted downloads), Bug #656060 (poor performance for i945
+           graphics hardware), and k3b crashing. The corrupted download bug is fixed in M5,
+           and k3b now works. I am aware of other problems with the i915 driver in the
+           2.6.37 kernel, but those are being addresses in the upstream kernel.
+         </para>
+         <para>My early experience with M5 has led be to switch to it from 11.3 on both 32- and
+           64-bit systems. From what I see, 11.4 should be a really good distribution.
+         </para>
+         <para>I repeat my plea for readers of these news to test, test, test, and and report
+           all bugs to the Novell bugzilla.</para>
+       </blockquote>
+    </sect3> 
+    
+    <sect3 role="translationteam">
 
-      <para>...</para>
-    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
