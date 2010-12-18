@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -18,22 +19,22 @@
 -->
 <sect1 role="announcements">
   <title>Announcements</title>
-  <!--Put a maximum of 5 announcements from the following sources here: 
+<!--Put a maximum of 5 announcements from the following sources here: 
     * opensuse-announce mailinglist
     * opensuse-project mailinglist
     * news.opensuse.org
-    * carefully selected other sources-->
-  <figure id="fig.holiday">
+    * carefully selected other sources-->  <figure id="fig.holiday">
     <title>Holiday Geeko</title>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/12/holiday-geeko-245x300.png" width="15%"/>
+        <imagedata width="15%" fileref="http://news.opensuse.org/wp-content/uploads/2010/12/holiday-geeko-245x300.png"/>
       </imageobject>
     </mediaobject>
   </figure>
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2010/12/13/holiday-wishes-from-the-opensuse-board/"
-        >Holiday Wishes from the openSUSE Board</ulink></title>
+    <title>
+      <ulink url="http://news.opensuse.org/2010/12/13/holiday-wishes-from-the-opensuse-board/">Holiday Wishes from the openSUSE Board</ulink>
+    </title>
     <para>Seasons Greetings to everyone in the openSUSE Community and beyond from the openSUSE
       Board! </para>
     <para>As we come to the end of 2010, we’d like to take a moment to reflect on a banner year in
@@ -71,20 +72,18 @@
       the New Year from various corners of the world, we’ll be thinking of you all and rejoicing
       being part of a strong, dedicated and passionate community. </para>
     <para>See you all at Wednesday’s meeting, and in 2011! </para>
-    <para><emphasis role="italic">The openSUSE Board Pascal Bleser, Rupert Horstkötter, Pavol
-        Rusnak, Henne Vogelsang, Bryen Yunashko</emphasis><xref linkend="fig.holiday"/>
+    <para><emphasis role="italic">The openSUSE Board Pascal Bleser, Rupert Horstkötter, Pavol Rusnak, Henne Vogelsang, Bryen Yunashko</emphasis><xref linkend="fig.holiday"/>
     </para>
-    <!-- ($ ld: 14.12.10 sm $) -->
-  </blockquote>
+<!-- ($ ld: 14.12.10 sm $) -->  </blockquote>
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2010/12/14/alan-clark-new-opensuse-board-chairman/"
-        >Alan Clark new openSUSE Board Chairman</ulink></title>
+    <title>
+      <ulink url="http://news.opensuse.org/2010/12/14/alan-clark-new-opensuse-board-chairman/">Alan Clark new openSUSE Board Chairman</ulink>
+    </title>
     <figure id="fig.aclarc">
       <title>Alan Clark. Chairman of the openSUSE Board</title>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="http://news.opensuse.org/wp-content/uploads/2010/12/AlanClark-252x300.jpg" width="25%"/>
+          <imagedata width="25%" fileref="http://news.opensuse.org/wp-content/uploads/2010/12/AlanClark-252x300.jpg"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -124,13 +123,18 @@
       openSUSE Board meeting tomorrow at 19:00 UTC in the #opensuse-project channel on the Freenode
       network. All of our meetings are open to the public and we welcome you to our meeting to meet
       Alan.</para>
-    <!-- ($ ld: 14.12.10 sm $) -->
-  </blockquote>
+<!-- ($ ld: 14.12.10 sm $) -->  </blockquote>
   <blockquote>
-    <title><ulink url="http://www.novell.com/promo/suse/the-disters-contest-winners.html">Novell
-        "The Disters" Award</ulink></title>
-    <para>Novell has released at Wed, 15 Dec 2010 the winners of the "The Disters" award. We
+    <title>
+      <ulink url="http://www.novell.com/promo/suse/the-disters-contest-winners.html">Novell &quot;The Disters&quot; Award</ulink>
+    </title>
+    <para>Novell has released at Wed, 15 Dec 2010 the winners of the &quot;The Disters&quot; award. We
       congratulate all Winners.</para>
+<<<<<<< .mine
+    <para>Other Souces: <ulink url="http://www.linux.com/news/enterprise/biz-enterprise/390534-novell-names-first-annual-dister-winners">Linux.com</ulink></para>
+<!-- ($ ld: 16.12.10 sm $) -->  </blockquote>
+  <blockquote>
+=======
     <para>Other Souces: <ulink
         url="http://www.linux.com/news/enterprise/biz-enterprise/390534-novell-names-first-annual-dister-winners"
         >Linux.com</ulink><ulink
@@ -139,16 +143,108 @@
     <!-- ($ ld: 17.12.10 sm $) -->
     </blockquote>
     <blockquote>
+>>>>>>> .r167
+<<<<<<< .mine
+    <title>
+      <ulink url="http://news.opensuse.org/2010/12/08/join-us-on-saturday-for-the-next-opensuse-zombie-bug-day/">Join us on Saturday for the next openSUSE “Zombie” Bug Day</ulink>
+    </title>
+    <para>On Saturday the 27th of November a Bug Day was organized to <ulink url="http://news.opensuse.org/2010/11/22/opensuse-bug-day-on-saturday-november-27th/">solve the issue with Zombie bugs</ulink>, bugs against old, non-maintained versions of openSUSE. A
+      team got together in the <ulink url="irc://irc.freenode.net/opensuse-bug">#opensuse-bug</ulink> channel on the <ulink url="http://freenode.net">freenode</ulink>
+      network to review the bugs for any important and still valid information, otherwise closing
+      them to clean up <ulink url="http://bugzilla.novell.com">bugzilla</ulink>.</para>
+    <para><emphasis role="bold">Results</emphasis> The outcome has been <ulink url="http://lists.opensuse.org/opensuse-project/2010-11/msg00205.html">awesome:</ulink></para>
+    <table frame="all">
+      <title>Results</title>
+      <tgroup cols="5">
+        <colspec colnum="1" colname="open Bugs in:"/>
+        <colspec colnum="2" colname="openSUSE 10.2"/>
+        <colspec colnum="3" colname="openSUSE 10.3"/>
+        <colspec colnum="4" colname="openSUSE 11.0"/>
+        <colspec colnum="4" colname="Total"/>
+        <thead>
+          <row>
+            <entry>open Bugs in: </entry>
+            <entry>openSUSE 10.2</entry>
+            <entry>openSUSE 10.3</entry>
+            <entry>openSUSE 11.0</entry>
+            <entry>Total</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Before</entry>
+            <entry>40</entry>
+            <entry>162</entry>
+            <entry>526</entry>
+            <entry>728</entry>
+          </row>
+          <row>
+            <entry>After</entry>
+            <entry>15</entry>
+            <entry>89</entry>
+            <entry>360</entry>
+            <entry>464</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para><emphasis role="bold">Join us in this effort!</emphasis> Here is what you need to
+      participate:</para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para>A recent version of<ulink url="http://software.opensuse.org/"> openSUSE like 11.3</ulink> or a <ulink url="http://software.opensuse.org/developer">milestone of 11.4</ulink>. It’s of course okay to run openSUSE in a virtual machine.</para>
+        </listitem>
+        <listitem>
+          <para>An IRC client to interact with the other participants</para>
+        </listitem>
+        <listitem>
+          <para>Good mood :-)</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>But the most important thing that you should know is that everybody can help: just join us
+      and we’ll guide you, even if you only have 30 minutes of free time! A small team will organize
+      the event by providing lists of bugs, and will be available to guide new contributors if
+      needed. So it will be easy to help, you just have to come to the #opensuse-bug channel on the
+      freenode network at Saturday! </para>
+    <para>The team had a lot of fun last time, so be sure to join them and help out!</para>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2010-12/msg00302.html">openFATE screening next monday</ulink>
+    </title>
+    <para>Hi, we will do an openFATE screening day next monday.</para>
+    <para>What does this mean?</para>
+    <para>With the renewed  <ulink url="https://features.opensuse.org/ ">openFATE feature trackingsystem </ulink>we have the possibility
+to involve the community in all steps of feature evaluation and implementation.
+Everyone can take responsibility for features now and track their state in
+openFATE.
+We already have some <ulink url="https://features.opensuse.org/statistic">subprojects</ulink> using openfate such as the openSUSE
+distribution,
+OBS, SUSE Studio, Infrastructure ...</para>
+    <para>On monday we will focus on screening the 11.4 features, getting used to
+the <ulink url="http://en.opensuse.org/openSUSE:Openfate_process">process</ulink> and report problems with the feature tracking tool.</para>
+    <para>We will be in #opensuse-project the whole day, just drop in if you want to help
+or have questions.
+
+Greetings!</para>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://news.opensuse.org/2010/12/17/next-tuesday-social-media-collaboration-day/">Next Tuesday: Social Media Collaboration Day</ulink>
+    </title>
+    <para>Last Monday the second Marketing Collaboration Day happened – with a focus on Marketing
+=======
     <title><ulink
         url="http://news.opensuse.org/2010/12/17/next-tuesday-social-media-collaboration-day/">Next
         Tuesday: Social Media Collaboration Day</ulink></title>
   <para>Last Monday the second Marketing Collaboration Day happened – with a focus on Marketing
+>>>>>>> .r167
       Materials. The moderators, Chuck Payne and Bryen Yunashko, would like to thank everyone who
       got involved for their hard work! It was a successful day with many items covered, added and
       expanded for openSUSE Marketing. </para>
-    <para>Among other things, some how-to’s were updated like <ulink
-        url="http://en.opensuse.org/openSUSE:Launch_party_HOWTO">how to organize a Launch
-        Party</ulink> (yes, openSUSE 11.4 is coming!) Moreover two short presentations on SUSE
+    <para>Among other things, some how-to’s were updated like <ulink url="http://en.opensuse.org/openSUSE:Launch_party_HOWTO">how to organize a Launch Party</ulink> (yes, openSUSE 11.4 is coming!) Moreover two short presentations on SUSE
       Studio and OBS were created which can be used in presentations from the Ambassadors. Already
       some Greek ambassadors are using them and they promised to contribute back translated
       versions. Besides the wiki and the presentations, volunteers took on the task of developing
@@ -173,8 +269,7 @@
       the account details are in the hands of several different people and much more. All in all it
       promises to be a great Collaboration day, so if you’re interested in Social Media and doing
       some work, join us and help out! </para>
-    <para>The meeting will be held in the <ulink url="irc://irc.freenode.net/opensuse-marketing"
-        >#openSUSE-Marketing</ulink> IRC channel on Freenode. Collaboration Days begin at 9:00 UTC
+    <para>The meeting will be held in the <ulink url="irc://irc.freenode.net/opensuse-marketing">#openSUSE-Marketing</ulink> IRC channel on Freenode. Collaboration Days begin at 9:00 UTC
       and end at 24:00 UTC See you there!!! <!-- ($ ld: 17.12.10 sm $) --></para>
   </blockquote>
 </sect1>
