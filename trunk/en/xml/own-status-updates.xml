@@ -99,29 +99,7 @@
     </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
       <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->      
-      <blockquote>
-        <title>
-          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
-        </title>
-        <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
-          version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
-        <para>About 2 weeks ago, I copied the official KDE 4.6 Beta 2 packages over from the
-          KDE:Distro:Factory repository to the KDE:Unstable:SC repository. This has two effects,
-          namely: </para>
-        <para>1) People using 4.6 Beta 2, can easily update to a slightly newer version to see if
-          bugs have been resolved, without loosing important patches that are openSUSE specific. </para>
-        <para>2) It gives us, the openSUSE KDE team the change to easier and faster adopt to a newer
-          release (e.g. RC1, RC2, etc), as that all patches are matches on a weekly basis to the
-          newer source code. </para>
-        <para>If you decide to switch repository, then make sure that you keep an eye on this blog,
-          as that on a certain moment the KDE:Unstable:SC will switch to very unstable snapshots of
-          the future KDE 4.7. I will however blog here to let you know that you should switch back
-          again repostories, before I will publish the first KDE 4.7 snapshot. </para>
-        <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
-          about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
-          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>
-        <!-- ($ ld: 16.12.10 sm $) -->
-      </blockquote>
+    
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan Kulow: How we use our power</ulink>
@@ -245,17 +223,61 @@
         <para><xref linkend="fig.gnomeindicator2"/></para>
         <!-- ($ ld: 16.12.10 sm $) -->      
       </blockquote>
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/13/last-indicator-builds/">Nelson
+          Marques: Last Indicator builds!</ulink></title>
+        <para>Finally… the last of the indicators builds and works properly… fun thing… works out of the
+          box with Banshee! Two pics… one from the indicator-sound and another from the messaging
+          indicator with empathy and evolution support.</para>
+        <figure id="fig.indic">
+          <title>Picture 1</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot2.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure id="fig.indic2">
+          <title>Picture 2</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-12.png" width="50%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </blockquote>
+      <!-- ($ ld: 18.12.10 sm $) -->
     </sect3>
-<!--
+
     <sect3 role="kdeteam">
       <title>KDE Team</title>
-
       <blockquote>
-        <title></title>
-
-        <para></para>
+        <title>
+          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
+        </title>
+        <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
+          version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
+        <para>About 2 weeks ago, I copied the official KDE 4.6 Beta 2 packages over from the
+          KDE:Distro:Factory repository to the KDE:Unstable:SC repository. This has two effects,
+          namely: </para>
+        <para>1) People using 4.6 Beta 2, can easily update to a slightly newer version to see if
+          bugs have been resolved, without loosing important patches that are openSUSE specific. </para>
+        <para>2) It gives us, the openSUSE KDE team the change to easier and faster adopt to a newer
+          release (e.g. RC1, RC2, etc), as that all patches are matches on a weekly basis to the
+          newer source code. </para>
+        <para>If you decide to switch repository, then make sure that you keep an eye on this blog,
+          as that on a certain moment the KDE:Unstable:SC will switch to very unstable snapshots of
+          the future KDE 4.7. I will however blog here to let you know that you should switch back
+          again repostories, before I will publish the first KDE 4.7 snapshot. </para>
+        <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
+          about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
+          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>
+        <!-- ($ ld: 18.12.10 sm $) -->
       </blockquote>
-    </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
 
@@ -272,7 +294,9 @@
       <title>Mono Team</title>
 
       <para>...</para>
-    </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->    
+    
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>

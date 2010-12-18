@@ -54,6 +54,16 @@
       <!-- ($ ld: 15.12.10 sm $) -->
     </blockquote>
     <blockquote>
+      <title><ulink url="http://tuxtweaks.com/2010/12/converting-audio-to-mp3-with-gstreamer/">Tuxtweaks/Linerd: Converting Audio to MP3 with GStreamer</ulink></title>
+      <para>My last post was about converting audio files in Linux with GStreamer. In that post I showed how to convert FLAC files to Ogg Vorbis files and retain the audio tags. You may however, have an audio player that does not support playing Ogg Vorbis audio files and you want to convert your files to MP3 instead.</para>
+      <para>The following commands will work as long as you have the appropriate GStreamer plugins installed along with the LAME package.</para>
+      <para>This command will encode to MP3 using LAME's defaults.</para>
+      <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc ! id3v2mux ! filesink location=file.mp3</screen>
+      <para>If you want to encode your files with VBR at a higher quality level, you can do something like this.</para>
+      <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc target=quality quality=2 ! id3v2mux ! filesink location=file.mp3</screen>
+      <!-- ($ ld: 18.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
       <title><ulink
           url="http://www.linux.com/learn/tutorials/390966:creating-and-reading-ebooks-on-linux-with-calibre"
           >Linux.com/Joe Brockmeier: Creating and Reading eBooks on Linux with
@@ -103,24 +113,9 @@
       <!-- ($ ld: 17.12.10 sm $) -->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://tuxtweaks.com/2010/12/converting-audio-to-mp3-with-gstreamer/">Tuxtweaks/Linerd: Converting Audio to MP3 with GStreamer</ulink></title>
-      <para>My last post was about converting audio files in Linux with GStreamer. In that post I showed how to convert FLAC files to Ogg Vorbis files and retain the audio tags. You may however, have an audio player that does not support playing Ogg Vorbis audio files and you want to convert your files to MP3 instead.</para>
-      <para>The following commands will work as long as you have the appropriate GStreamer plugins installed along with the LAME package.</para>
-      <para>This command will encode to MP3 using LAME's defaults.</para>
-      <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc ! id3v2mux ! filesink location=file.mp3</screen>
-      <para>If you want to encode your files with VBR at a higher quality level, you can do something like this.</para>
-      <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc target=quality quality=2 ! id3v2mux ! filesink location=file.mp3</screen>
-      <!-- ($ ld: 18.12.10 sm $) -->
-    </blockquote>
-  </sect2>
-  
-  
-  <sect2>
-    <title>For Commandline/Script Newbies</title>
-    <blockquote>
       <title><ulink url="http://lizards.opensuse.org/2010/12/17/adobe-flash-64-bits-under-opensuse-64bits-11-211-311-4factory/"
-            >Bruno Friedmann: Adobe Flash 64 bits under openSUSE 64bits
-            (11.2,11.3,11.4,factory)</ulink></title>
+        >Bruno Friedmann: Adobe Flash 64 bits under openSUSE 64bits
+        (11.2,11.3,11.4,factory)</ulink></title>
       <para><emphasis role="bold">Non Free </emphasis></para>
       <para>Dear readers, we sometimes have to use non-free software. This post will learn you how
         to get the latest flash player supporting natively your favorite openSUSE Linux 64 bits
@@ -134,7 +129,7 @@
       <para><emphasis role="bold">Remove any installed 32bits packages </emphasis>First things to
         do, remove all actual 32bits flash installed. </para>
       <para><screen>zypper rm flash-player pullin-flash-player</screen><emphasis role="bold">Get the
-          lastest Flash square preview </emphasis></para>
+        lastest Flash square preview </emphasis></para>
       <para>Go the main project page Square </para>
       <para>Read the informations, and the Adobe License you implicitly accept by using this
         software. </para>
@@ -152,7 +147,12 @@
       <para><!-- ($ ld: 17.12.10 sm $) --></para>
     </blockquote>
   </sect2>
+  
   <!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <para>...</para>
+  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
