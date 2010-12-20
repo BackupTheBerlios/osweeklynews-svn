@@ -22,21 +22,28 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink
-        url="http://andreasjaeger.blogspot.com/2010/12/fixing-smugbatch-for-new-smugmug-api.html"
-        >Andreas Jaeger: Fixing smugbatch for new smugmug API</ulink></title>
-    <para>I'm using smugmug to share my photos and have used the <ulink
-        url="http://ajaeger.smugmug.com/">smugbatch</ulink> command line tool to upload photos
-      directly to albums at smugmug. Recently smugmug made some changes to the API so that the
-      command line tool did not work anymore. Now it needs the _su cookie to be send back with each
-      request. I enhanced the tool, submitted the fixes back and now they are awaiting for the
-      review by Greg KH at <ulink url="https://github.com/gregkh/smugbatch/pull/1">github</ulink>. </para>
-    <para>I also packaged smugbatch with the changes in the<ulink url="http://build.opensuse.org/">
-        openSUSE Build Service</ulink> and submitted the fix to the Contrib repository so that
-      others can use the package as well. </para>
-    <para>P.S. The primary reason for writing this is to evaluate the Blogilo blog editor. I wanted
-      to know how it works - and will now test it some more and then write about that as
-      well.</para>
+    <title><ulink url="http://anditosan.blogspot.com/2010/12/new-idea-about-chat-program.html"
+        >Andres Silva: New Idea About Chat Program</ulink></title>
+    <para><quote>I am a good user of social networking sites, such as Facebook and Twitter. They have used
+      very interesting features on their websites, such as instant messaging. By that I do not mean
+      the chat application that Facebook uses, or the immediate update on Twitter messages. I am
+      talking about the idea of instant messaging on settled messages. For example, when a person
+      posts a comment on Facebook and is able to keep a conversation from one person to the next. It
+      is a minifeed that also includes the rest of the present contacts that are involved in the
+      message box.</quote></para>
+    <figure id="fig.fbminifeed">
+      <title>Facebook Minifeed</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%"
+            fileref="http://startupmeme.com/wp-content/uploads/2008/06/facebook-minifeed.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para><quote>Twitter is a little similar, you are able to scroll through the many messages on your home
+      page as well as the rest of the contacts who have posted messages on your Twitter. (...)<xref
+      linkend="fig.fbminifeed"/></quote></para>
+    <!-- ($ ld: 20.12.10 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="https://saschpe.wordpress.com/2010/12/12/braindead-python-packaging/">Sascha
@@ -53,12 +60,14 @@
         >zope.interface</ulink> and you don’t know how it is named exactly or where to download
       from. First of all, you can search for it and download the source tarball automatically if you
       found the correct module:</para>
-    <para><screen>$ py2pack search zope.interface
+    <para>
+      <screen>$ py2pack search zope.interface
  searching for module zope.interface...
  found zope.interface-3.6.1
  $ py2pack fetch zope.interface
  downloading package zope.interface-3.6.1...
- from http://pypi.python.org/packages/source/z/zope.interface/zope.interface-3.6.1.tar.gz</screen></para>
+ from http://pypi.python.org/packages/source/z/zope.interface/zope.interface-3.6.1.tar.gz</screen>
+    </para>
     <para>(...)</para>
   </blockquote>
   <blockquote>
@@ -208,12 +217,14 @@
       <mediaobject>
         <imageobject>
           <imagedata
-            fileref="http://www.openclipart.org/image/800px/svg_to_png/Clue_Calico_Jack_pirate_logo.png" width="15%"/>
+            fileref="http://www.openclipart.org/image/800px/svg_to_png/Clue_Calico_Jack_pirate_logo.png"
+            width="15%"/>
         </imageobject>
       </mediaobject>
     </figure>
     <para>Fellow openSUSE Contributor, I am not as gifted as Mizmo, so I can’t really present some
-      cool metaphore in the form of a cartoon… Nevertheless I will try my best.<xref linkend="fig.pirate"/></para>
+      cool metaphore in the form of a cartoon… Nevertheless I will try my best.<xref
+        linkend="fig.pirate"/></para>
     <para>During the OSC2010 in Nürnberg I tried without much success to pass on the word that
       Marketing isn’t about a Team, but comes also down to us. This in an awesome time to
       demonstrate that on practice… Right now with an important release on the horizon, your

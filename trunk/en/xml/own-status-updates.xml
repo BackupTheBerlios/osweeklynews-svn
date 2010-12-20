@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -19,16 +18,16 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-<!--
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <para>...</para>
     </blockquote>
-    </sect2> -->  
+    </sect2> -->
   <sect2 role="distribution">
     <title>Distribution</title>
-<!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
+    <!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. -->
     <!-- 
     <blockquote>
       <title></title>
@@ -66,14 +65,16 @@
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-<!--
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
 
@@ -82,34 +83,38 @@
 
       <para>blah laber</para>
     </blockquote>
-  </sect2> -->  <sect2>
+  </sect2> -->
+  <sect2>
     <title>Team Report</title>
-<!--
+    <!--
     <sect3 role="artteam">
       <title></title>
       <blockquote>
         <title></title>
         <para></para>
       </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
 
       <para>...</para>
-    </sect3> -->    <sect3 role="buildserviceteam">
+    </sect3> -->
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->      
-    
+      <!-- News related to Build Service (mostly status) * meeting minutes As needed. -->
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan Kulow: How we use our power</ulink>
+          <ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan Kulow:
+            How we use our power</ulink>
         </title>
         <para>I had a side project the last two weeks: Make the build service more fun to use. </para>
         <para>No matter how much fun you have creating packages, if they don’t build, there is
           little point in using a Service that has Build in its name, no? So one of the major goals
           of the service is actually to help those that want to build packages as good as possible.
           But there is a problem: </para>
-        <para>Let me quote from the landing page of <ulink url="https://build.opensuse.org/">build.opensuse.org</ulink>: “The openSUSE Build Service hosts 16,414 projects, with
+        <para>Let me quote from the landing page of <ulink url="https://build.opensuse.org/"
+            >build.opensuse.org</ulink>: “The openSUSE Build Service hosts 16,414 projects, with
           107,691 packages, in 26,259 repositories and is used by 25,967 confirmed users.”. That are
           quite some high numbers – especially in the relation to the ~25 servers we have for
           actually building. </para>
@@ -120,7 +125,9 @@
           <title>Buildservice</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Bildschirmfoto11.png"/>
+              <imagedata width="50%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Bildschirmfoto11.png"
+              />
             </imageobject>
           </mediaobject>
         </figure>
@@ -128,29 +135,39 @@
         <!-- ($ ld: 16.12.10 sm $) -->
       </blockquote>
       <blockquote>
-        <title><ulink url="http://lizards.opensuse.org/2010/12/18/osc-0-130-1-bugfix-release/">Marcus Hüwe: osc 0.130.1 (bugfix release)</ulink></title>
-        <para>I just released a new osc version: 0.130.1 (bugfix release). The following issues were fixed:</para>
+        <title><ulink url="http://lizards.opensuse.org/2010/12/18/osc-0-130-1-bugfix-release/"
+            >Marcus Hüwe: osc 0.130.1 (bugfix release)</ulink></title>
+        <para>I just released a new osc version: 0.130.1 (bugfix release). The following issues were
+          fixed:</para>
         <itemizedlist>
-          <listitem><para>don’t crash if a file marked as ‘A’ does not exist (<ulink
-                url="https://bugzilla.novell.com/show_bug.cgi?id=658664">bnc#658664</ulink>)</para></listitem>
-          <listitem><para>fixed proxy handling (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657958"
-                >bnc#657958</ulink>)</para></listitem>
-          <listitem><para>fixed repairwc (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657838"
-                >bnc#657838</ulink>)</para></listitem>
-          <listitem><para>fixed build for python2.4</para></listitem>
-         </itemizedlist>
+          <listitem>
+            <para>don’t crash if a file marked as ‘A’ does not exist (<ulink
+                url="https://bugzilla.novell.com/show_bug.cgi?id=658664">bnc#658664</ulink>)</para>
+          </listitem>
+          <listitem>
+            <para>fixed proxy handling (<ulink
+                url="https://bugzilla.novell.com/show_bug.cgi?id=657958">bnc#657958</ulink>)</para>
+          </listitem>
+          <listitem>
+            <para>fixed repairwc (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657838"
+                >bnc#657838</ulink>)</para>
+          </listitem>
+          <listitem>
+            <para>fixed build for python2.4</para>
+          </listitem>
+        </itemizedlist>
         <para>The new version is available in the<ulink
             url="http://download.opensuse.org/repositories/openSUSE:/Tools"> openSUSE:Tools</ulink>
-            repo.</para>
+          repo.</para>
         <!-- ($ ld: 18.12.10 sm $) -->
       </blockquote>
-
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
       </formalpara>
     </sect3>
-<!--
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -161,13 +178,13 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
+      </sect3> -->
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
-      
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/10/new-indicators-the-saga-continues/">Nelson Marques: New Indicators… the saga continues…</ulink>
+          <ulink url="http://lizards.opensuse.org/2010/12/10/new-indicators-the-saga-continues/"
+            >Nelson Marques: New Indicators… the saga continues…</ulink>
         </title>
         <para>As the indicator saga continues… some new indicators were built… Indicator-messages is
           a small indicator that pics up messages and stuff from applications to display them on a
@@ -182,18 +199,19 @@
           <title>Screenshot</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-21.png"/>
+              <imagedata width="50%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-21.png"/>
             </imageobject>
           </mediaobject>
         </figure>
-        <para>Additionally<xref linkend="fig.gnomeindicator"/>, I’ve also tried some other indicators… indicator-application for what I
-          can tell is an indicator that removes the menu’s from the GTK applications and places them
-          on the panel (MAC style). I’ve built this indicator, but I have no means to test yet
-          because further patching is required at least in GTK and eventually on glib. I don’t think
-          there’s actually any need to have this indicator, specially when it will bring additional
-          efforts on GTK maintenance, and this feature is somehow supported by software like
-          gnome-globalmenu (which I’ve also packaged for myself and works dearly with supported
-          apps). </para>
+        <para>Additionally<xref linkend="fig.gnomeindicator"/>, I’ve also tried some other
+          indicators… indicator-application for what I can tell is an indicator that removes the
+          menu’s from the GTK applications and places them on the panel (MAC style). I’ve built this
+          indicator, but I have no means to test yet because further patching is required at least
+          in GTK and eventually on glib. I don’t think there’s actually any need to have this
+          indicator, specially when it will bring additional efforts on GTK maintenance, and this
+          feature is somehow supported by software like gnome-globalmenu (which I’ve also packaged
+          for myself and works dearly with supported apps). </para>
         <para>I’ve done some hammering on indicator-sound as well… Ubuntu’s sound widget… I’m stuck
           with some error and I have 2 possibilities… downgrade to the last version of the previous
           branch which should built, or work the current branch (more dependency demanding). I’m
@@ -211,30 +229,33 @@
           pretty cool, and their devs are very helpful (but hey… so are our devs ;) ). Also a very
           special thanks to Vincent Untz, Dimstar and mrdocs which have been a great help and from
           whom I’ve learned already a lot.</para>
-        <para>So picking up the useful stuff… and placing it up together in a single Indicator:</para>
+        <para>So picking up the useful stuff… and placing it up together in a single
+          Indicator:</para>
         <figure id="fig.gnomeindicator2">
           <title>Screenshot 2</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-11.png"/>
+              <imagedata width="50%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-11.png"/>
             </imageobject>
           </mediaobject>
         </figure>
         <para><xref linkend="fig.gnomeindicator2"/></para>
-        <!-- ($ ld: 16.12.10 sm $) -->      
+        <!-- ($ ld: 16.12.10 sm $) -->
       </blockquote>
       <blockquote>
         <title><ulink url="http://lizards.opensuse.org/2010/12/13/last-indicator-builds/">Nelson
-          Marques: Last Indicator builds!</ulink></title>
-        <para>Finally… the last of the indicators builds and works properly… fun thing… works out of the
-          box with Banshee! Two pics… one from the indicator-sound and another from the messaging
-          indicator with empathy and evolution support.</para>
+            Marques: Last Indicator builds!</ulink></title>
+        <para>Finally… the last of the indicators builds and works properly… fun thing… works out of
+          the box with Banshee! Two pics… one from the indicator-sound and another from the
+          messaging indicator with empathy and evolution support.</para>
         <figure id="fig.indic">
           <title>Picture 1</title>
           <mediaobject>
             <imageobject>
               <imagedata
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot2.png" width="50%"/>
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot2.png"
+                width="50%"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -243,19 +264,22 @@
           <mediaobject>
             <imageobject>
               <imagedata
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-12.png" width="50%"/>
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-12.png"
+                width="50%"/>
             </imageobject>
           </mediaobject>
         </figure>
       </blockquote>
       <!-- ($ ld: 18.12.10 sm $) -->
     </sect3>
-
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
+          <ulink
+            url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/"
+            >Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all
+            openSUSE packages</ulink>
         </title>
         <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
           version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
@@ -294,165 +318,216 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->    
-    
+      </sect3> -->
     <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para>* Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+            We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 323)</ulink>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
+              (Score: 323)</ulink>
           </title>
-          <para>&quot;Network installation could be improved by running package download and package installation in parallel.&quot;</para>
+          <para>&quot;Network installation could be improved by running package download and package
+            installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
-          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but reading http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way. (...)&quot;</para>
+          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
+            reading
+            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
+            really makes me think we should go this way. (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 115)</ulink>
           </title>
           <para>&quot;An easy way to remove Software! </para>
-          <para>For  example: you installed an application with &quot;1-click install&quot; (which  will install all the packages that you need), there should be an easy  way (also with 1 click) to remove what you have installed with that  1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove  installed software (dependencies and packages included).&quot;</para>
+          <para>For example: you installed an application with &quot;1-click install&quot; (which
+            will install all the packages that you need), there should be an easy way (also with 1
+            click) to remove what you have installed with that 1-click operation... in another
+            words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and
+            packages included).&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Please, replacement for Sax2 in 11.3, and now for 11.4 (Score: 86)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Please, replacement for Sax2 in 11.3,
+              and now for 11.4 (Score: 86)</ulink>
           </title>
-          <para>&quot;We  need a replacement for sax2 in 11.3, as a safety measure for when  auto  configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
+          <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
+            configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 75)</ulink>
           </title>
-          <para>&quot;We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
+          <para>&quot;We need a feedback about packages that are preferred by users and actively
+            used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 60)</ulink>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
+              &quot;Installation Summary&quot; (Score: 60)</ulink>
           </title>
-          <para>&quot;The  YaST Qt package manager should provide as much information in the   &quot;Installation Summary&quot; view as zypper, esp the overall download size to   expect and how much disk space will be freed/used after performing the   operation.&quot;</para>
+          <para>&quot;The YaST Qt package manager should provide as much information in the
+            &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
+            and how much disk space will be freed/used after performing the operation.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 52)</ulink>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
+              Linux) (Score: 52)</ulink>
           </title>
-          <para>&quot;Idea from community member Raúl García.
-            Same  concept as MSI packages for Windows but exploiting the One Click   Install concept of openSUSE (and therefore inheriting the simplicity,   code and security. (...)&quot;</para>
+          <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
+            Windows but exploiting the One Click Install concept of openSUSE (and therefore
+            inheriting the simplicity, code and security. (...)&quot;</para>
         </blockquote>
       </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para>* Features newly requested last week. Please vote and/or comment if you get interested.</para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/310976">System wide media player deamon</ulink>
+            <ulink url="https://features.opensuse.org/310976">System wide media player
+              deamon</ulink>
           </title>
           <para>&quot;Some users use computers only to play media, like music.</para>
-          <para>I have a lot of friends, witch only run computer to login and put CDs inside.
-We need a system wide deamon, which control how many normal users are logged in, check /usr/media directory and all removable media to start playing music/etc.</para>
+          <para>I have a lot of friends, witch only run computer to login and put CDs inside. We
+            need a system wide deamon, which control how many normal users are logged in, check
+            /usr/media directory and all removable media to start playing music/etc.</para>
           <para>When user get logged, music will stop playing.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/310979">Set the default mouse behaviour of KDE 4.x to double click to open files / folders</ulink>
+            <ulink url="https://features.opensuse.org/310979">Set the default mouse behaviour of KDE
+              4.x to double click to open files / folders</ulink>
           </title>
-          <para>&quot;Set the default mouse behaviour of KDE 4.x to double click to open files / folders.</para>
+          <para>&quot;Set the default mouse behaviour of KDE 4.x to double click to open files /
+            folders.</para>
           <para>Current default is single-click to open files / folders.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/310980">Monthly Qt updates</ulink>
           </title>
-          <para>&quot;KDE has monthly updates and mainly depends on Qt.
-Qt only has updates from time to time.
-If you have crashes with KDE apps which are caused by (resolved) Qt bugs (e.g. <ulink url="http://bugs.kde.org/show_bug.cgi?id=249373">Â¹</ulink><ulink url="http://bugreports.qt.nokia.com/browse/QTBUG-15857">Â²</ulink>) we push them (days/weeks/months/years/decades?) in front of us until a new Qt release. (...)&quot;</para>
+          <para>&quot;KDE has monthly updates and mainly depends on Qt. Qt only has updates from
+            time to time. If you have crashes with KDE apps which are caused by (resolved) Qt bugs
+            (e.g. <ulink url="http://bugs.kde.org/show_bug.cgi?id=249373">Â¹</ulink><ulink
+              url="http://bugreports.qt.nokia.com/browse/QTBUG-15857">Â²</ulink>) we push them
+            (days/weeks/months/years/decades?) in front of us until a new Qt release.
+            (...)&quot;</para>
         </blockquote>
-          <blockquote>
-            <title>
-              <ulink url="https://features.opensuse.org/310982">Please add Lightspark as a standard avant-garde/forefront browser flash player</ulink>
-            </title>
-            <para>&quot;I think <ulink url="https://launchpad.net/lightspark">Lightspark</ulink>
-
-is an avant-garde/forefront browser flash player with modern hardware support design and written from scratch.</para>
-            <para>We could find it only on Packman repository, but both gnash and swfdec are in standard OpenSuSE repository (swfdec in Packman one too and in a more recent version).</para>
-            <para>Are there too some language (flash, swf files) legal troubles?&quot;</para>
-          </blockquote>
-          <blockquote>
-            <title>
-              <ulink url="https://features.opensuse.org/310987">Add Intel Atom as a specific architecture</ulink>
-            </title>
-            <para>&quot;Atom processors, currently very popular in lightweight devices, behave very differently from common Intel/AMD processors; although they can execute code optimized for common x86 or x86-64, they don&apos;t run it much efficiently. Because they are not that fast, every cycle counts.</para>
-            <para>I believe it would be useful to consider them a separate sub-architecture that deserves its own set of compilation options.&quot;</para>
-          </blockquote>
-          <blockquote>
-            <title>
-              <ulink url="https://features.opensuse.org/310992">WUBI like feature for openSUSE</ulink>
-            </title>
-            <para>&quot;A feature that I really miss in openSUSE is something like WUBI. Maybe you know this tool, what let you install Ubuntu on a Windows-partition. I think for beginners, who don&apos;t want to create a Linux-partition is this a easy and great way to have a nice welcome-unit in Linux. openSUSE will be a distro for beginners and advanced users, right? So this feature is a real nice present for beginners and people who just want test openSUSE. (...)&quot;</para>
-          </blockquote>
-            <blockquote>
-              <title>
-                <ulink url="https://features.opensuse.org/310994">Restore button in recycle bin</ulink>
-              </title>
-              <para>&quot;Need &quot;restore&quot; button near &quot;empty Trash&quot; button in Nautilus when a file is selected in Trash Folder.&quot;</para>
-            
-          
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/310982">Please add Lightspark as a standard
+              avant-garde/forefront browser flash player</ulink>
+          </title>
+          <para>&quot;I think <ulink url="https://launchpad.net/lightspark">Lightspark</ulink> is an
+            avant-garde/forefront browser flash player with modern hardware support design and
+            written from scratch.</para>
+          <para>We could find it only on Packman repository, but both gnash and swfdec are in
+            standard OpenSuSE repository (swfdec in Packman one too and in a more recent
+            version).</para>
+          <para>Are there too some language (flash, swf files) legal troubles?&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/310987">Add Intel Atom as a specific
+              architecture</ulink>
+          </title>
+          <para>&quot;Atom processors, currently very popular in lightweight devices, behave very
+            differently from common Intel/AMD processors; although they can execute code optimized
+            for common x86 or x86-64, they don&apos;t run it much efficiently. Because they are not
+            that fast, every cycle counts.</para>
+          <para>I believe it would be useful to consider them a separate sub-architecture that
+            deserves its own set of compilation options.&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/310992">WUBI like feature for openSUSE</ulink>
+          </title>
+          <para>&quot;A feature that I really miss in openSUSE is something like WUBI. Maybe you
+            know this tool, what let you install Ubuntu on a Windows-partition. I think for
+            beginners, who don&apos;t want to create a Linux-partition is this a easy and great way
+            to have a nice welcome-unit in Linux. openSUSE will be a distro for beginners and
+            advanced users, right? So this feature is a real nice present for beginners and people
+            who just want test openSUSE. (...)&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/310994">Restore button in recycle bin</ulink>
+          </title>
+          <para>&quot;Need &quot;restore&quot; button near &quot;empty Trash&quot; button in
+            Nautilus when a file is selected in Trash Folder.&quot;</para>
         </blockquote>
         <!-- ($ ld: 18.12.10 sm $) -->
       </sect4>
-            
-      
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink
+            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-<!--
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
     </sect3> -->
-
     <sect3 role="testing">
       <title>Testing Team</title>
-       <blockquote>
-         <title><ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00004.html">Larry Finger: Weekly News for December 18</ulink></title>
-         <para>The next Testing Core Team IRC meeting to discuss 11.4 Milestone 5 will be held
-         December 27 at 1800 UTC.</para>
-         <para>The Team had a meeting on Monday, December 6, when we talked about our
-           experiences with openSUSE 11.4 M4. The automated installation testing seems to
-           be working as no one reported installation failures. Our major complaints were
-           Bug #657605 (corrupted downloads), Bug #656060 (poor performance for i945
-           graphics hardware), and k3b crashing. The corrupted download bug is fixed in M5,
-           and k3b now works. I am aware of other problems with the i915 driver in the
-           2.6.37 kernel, but those are being addresses in the upstream kernel.
-         </para>
-         <para>My early experience with M5 has led be to switch to it from 11.3 on both 32- and
-           64-bit systems. From what I see, 11.4 should be a really good distribution.
-         </para>
-         <para>I repeat my plea for readers of these news to test, test, test, and and report
-           all bugs to the Novell bugzilla.</para>
-       </blockquote>
-    </sect3> 
-    
+      <blockquote>
+        <title><ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00004.html">Larry
+            Finger: Weekly News for December 18</ulink></title>
+        <para>The next Testing Core Team IRC meeting to discuss 11.4 Milestone 5 will be held
+          December 27 at 1800 UTC.</para>
+        <para>The Team had a meeting on Monday, December 6, when we talked about our experiences
+          with openSUSE 11.4 M4. The automated installation testing seems to be working as no one
+          reported installation failures. Our major complaints were Bug #657605 (corrupted
+          downloads), Bug #656060 (poor performance for i945 graphics hardware), and k3b crashing.
+          The corrupted download bug is fixed in M5, and k3b now works. I am aware of other problems
+          with the i915 driver in the 2.6.37 kernel, but those are being addresses in the upstream
+          kernel. </para>
+        <para>My early experience with M5 has led be to switch to it from 11.3 on both 32- and
+          64-bit systems. From what I see, 11.4 should be a really good distribution. </para>
+        <para>I repeat my plea for readers of these news to test, test, test, and and report all
+          bugs to the Novell bugzilla.</para>
+      </blockquote>
+    </sect3>
     <sect3 role="translationteam">
-
       <title>Translation Team</title>
+      <blockquote>
+        <title><ulink
+            url="http://mschlander.wordpress.com/2010/12/20/time-to-translate-opensuse-11-4/">Martin
+            Schlander: Time to translate openSUSE 11.4</ulink></title>
+        <para>If openSUSE <ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">is not fully
+            translated to your language</ulink> or the translations are lacking in quality, now is
+          the time to join <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Teams">your
+            team</ulink> or if no (active) team exists, <ulink
+            url="http://en.opensuse.org/OpenSUSE_Localization_Guide">revive it or have it
+            created</ulink>. openSUSE 11.4 is now in string freeze, and you have until about mid
+          February to get the job done. If you have questions join the opensuse-translation mailing
+          list, or join #opensuse-translation on IRC (Freenode). <ulink
+            url="http://l10n.kde.org/stats/gui/trunk-kde4/toplist/">Translation of KDE SC
+            4.6</ulink> is also ongoing, so you may want to consider joining your KDE team
+            too.</para>
+        <!-- ($ ld: 20.12.10 sm $) -->
+      </blockquote>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the
-          <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
-          <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink> – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+          <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
@@ -463,5 +538,6 @@ is an avant-garde/forefront browser flash player with modern hardware support de
       <title>YaST Team</title>
 
       <para>...</para>
-    </sect3> -->  </sect2>
+    </sect3> -->
+  </sect2>
 </sect1>
