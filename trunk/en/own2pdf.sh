@@ -22,19 +22,57 @@ _XML="xml/.${BASEXML}"
 _XSLT="${XSLTFO}"
 _FO="${FO}"
 _PDF="${PDF}"
+_FORMATTER=fop
 
 #export LC_ALL=C
-TEMP=$(getopt -o h -l "help,xml:,xslt:,pdf:fop-config:" -n "$0" -- "$@")
+TEMP=$(getopt -o "hf:" -l "help,formatter:,xml:,xslt:,pdf:,xep-config:,fop-config:" -n "$0" -- "$@")
 eval set -- "$TEMP"
+
+usage()
+{
+  cat << EOF
+${0#*/} [OPTIONS] [PARAM=VALUE]*
+Transform an OWN XML file into PDF
+
+Options:
+  --xml XMLFILE       The XML file to use
+  --xslt STYLESHEET   The stylesheet to use (must output XSL-FO)
+  --pdf PDFFILE       Where to save the PDF file
+  -f, --formatter FO  Which formatter to use (currently supported: fop, xep)
+  --xep-config FILE   XEP configuration file
+  --fop-config FILE   FOP configuration file
+EOF
+}
 
 while true
 do
    case $1 in
     -h|--help)
-      printf "${0#*/} [--xml XMLFILE] [--xslt STYLESHEET] [--pdf PDFFILE] [--fop-config FOPCONFIG] [PARAM=VALUE]*\n\n"
-      printf "Transform an OWN XML file into PDF.\n"
+      usage
       exit 0
       ;;
+    -f|--formatter)
+      if [ "$2" = '' ]; then
+        error "No formatter value."
+        exit 20
+      fi
+      case $2 in
+       xep)
+        _FORMATTER=$2
+         ;;
+       XEP)
+        _FORMATTER=xep
+         ;;
+       FOP|fop)
+        # default, already set
+        ;;
+       *)
+         error "Unsupported FO formatter '$2'"
+         exit 100
+       ;; 
+      esac
+      shift
+      ;; 
     --xml)
       if [ ! -f "$2" ]; then
         error "XML file '$2' not found."
@@ -61,6 +99,10 @@ do
       FOPCONF=$2
       shift
       ;;
+    --xep-config)
+      XEPCONF=$2
+      shift
+      ;; 
     --) shift ; break ;;
     *)
       printf "Unknown option $1\n"
@@ -72,6 +114,8 @@ done
 
 debug "XML=$_XML, XSLT=$_XSLT, FO=$_FO, FOPCONF=$FOPCONF, PDF=$_PDF"
 
+# Some other consistency checks
+
 validate
 [ -d ${PDFDIR} ] || mkdir -p ${PDFDIR}
 
@@ -80,5 +124,15 @@ ln -sf ../xslt/common .
 )
 
 transform "${_XML}" "${_XSLT}" -o "${_FO}" $@
-fop -c "${FOPCONF}" "${_FO}" "${_PDF}"
+
+info "Using $_FORMATTER formatter..."
+case $_FORMATTER in
+  fop)
+    fop -c "${FOPCONF}" "${_FO}" "${_PDF}"
+    ;;
+  xep)
+    # export XEP_CONFIG_FILES=$XEPCONF
+    xep "${_FO}" "${_PDF}"
+    ;;
+esac
 
