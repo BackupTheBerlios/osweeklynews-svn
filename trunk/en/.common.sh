@@ -35,6 +35,8 @@ FO=${PDFDIR}${BASEXML%.xml}.fo
 PDF=${PDFDIR}${BASEXML%.xml}.pdf
 # The FOP configuration filename:
 FOPCONF=fop-config.xml
+# The XEP configuration filename:
+XEPCONF=xep-config.xml
 # The XSLT stylesheet to create FO file:
 XSLTFO=${XSLTDIR}/fo/docbook.xsl
 
