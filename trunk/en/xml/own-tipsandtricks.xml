@@ -44,14 +44,41 @@
         started e.g. in KDE:</para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast1.jpeg"
+          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast1.jpeg"
             width="25%"/>
         </imageobject>
       </mediaobject>
-      <para>After starting the WebYaST applet the WebYaST icon appears on the right edge of the frame :</para>
-      <para>WebYaST is disabled</para>
-      <para>WebYaST is enabled</para>
+      <para>After starting the WebYaST applet the WebYaST icon appears on the right edge of the
+        frame :</para>
+      <informaltable frame="none">
+        <tgroup cols="2">
+          <colspec colwidth="0.5in"/>
+          <colspec colwidth="0.5in"/>
+          <tbody>
+            <row>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata
+                      fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast-disabled.png"
+                    /></imageobject>
+                </mediaobject>
+              </entry>
+              <entry>WebYaST is disabled</entry>
+            </row>
+            <row>
+              <entry>
+                <mediaobject>
+                  <imageobject><imagedata
+                      fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast-enabled.png"
+                    /></imageobject>
+                </mediaobject>
+              </entry>
+              <entry>WebYaST is enabled</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
       <para>With the right mouse click you can manage WebYaST:</para>
       <mediaobject>
         <imageobject>
@@ -60,19 +87,19 @@
             width="25%"/>
         </imageobject>
       </mediaobject>
-      <para>With this applet you can start WebYaST in your browser too. After accepting the GPG-key please login with your <quote>root</quote> account.</para>
+      <para>With this applet you can start WebYaST in your browser too. After accepting the GPG-key
+        please login with your <quote>root</quote> account.</para>
       <para>And that’s WebYaST:</para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/webyast.png"
+          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/webyast.png"
             width="25%"/>
         </imageobject>
       </mediaobject>
       <para>That’s all.</para>
-      <para>(Yes, I know that sentence is written almost in every post here. Even in posts where problems just starting after the sentence has been read. :-) )But I think 
-        that should be really all. If not, please use bugzilla and blame us ! Have fun !
-      </para>
+      <para>(Yes, I know that sentence is written almost in every post here. Even in posts where
+        problems just starting after the sentence has been read. :-) )But I think that should be
+        really all. If not, please use bugzilla and blame us ! Have fun ! </para>
       <para>(Yes, I know that’s the second sentence which should be in every blog :-) )</para>
       <!-- ($ ld: 22.12.10 sm $) -->
     </blockquote>
