@@ -24,13 +24,13 @@
   <blockquote>
     <title><ulink url="http://anditosan.blogspot.com/2010/12/new-idea-about-chat-program.html"
         >Andres Silva: New Idea About Chat Program</ulink></title>
-    <para><quote>I am a good user of social networking sites, such as Facebook and Twitter. They have used
-      very interesting features on their websites, such as instant messaging. By that I do not mean
-      the chat application that Facebook uses, or the immediate update on Twitter messages. I am
-      talking about the idea of instant messaging on settled messages. For example, when a person
-      posts a comment on Facebook and is able to keep a conversation from one person to the next. It
-      is a minifeed that also includes the rest of the present contacts that are involved in the
-      message box.</quote></para>
+    <para><quote>I am a good user of social networking sites, such as Facebook and Twitter. They
+        have used very interesting features on their websites, such as instant messaging. By that I
+        do not mean the chat application that Facebook uses, or the immediate update on Twitter
+        messages. I am talking about the idea of instant messaging on settled messages. For example,
+        when a person posts a comment on Facebook and is able to keep a conversation from one person
+        to the next. It is a minifeed that also includes the rest of the present contacts that are
+        involved in the message box.</quote></para>
     <figure id="fig.fbminifeed">
       <title>Facebook Minifeed</title>
       <mediaobject>
@@ -40,91 +40,128 @@
         </imageobject>
       </mediaobject>
     </figure>
-    <para><quote>Twitter is a little similar, you are able to scroll through the many messages on your home
-      page as well as the rest of the contacts who have posted messages on your Twitter. (...)<xref
-      linkend="fig.fbminifeed"/></quote></para>
+    <para><quote>Twitter is a little similar, you are able to scroll through the many messages on
+        your home page as well as the rest of the contacts who have posted messages on your Twitter.
+          (...)<xref linkend="fig.fbminifeed"/></quote></para>
     <!-- ($ ld: 20.12.10 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="https://saschpe.wordpress.com/2010/12/12/braindead-python-packaging/">Sascha
-        Peilicke: Braindead Python packaging</ulink></title>
-    <para>As you all know, distributing and building packages with the <ulink
-        url="https://build.opensuse.org/">openSUSE Build Service</ulink> is easy and fun. The only
-      party pooper is that you have to write a spec file to get your RPMs out there. Thanks to
-        <ulink url="http://nordisch.org/">darix</ulink>, we have a decent solution at least for Ruby
-      packages: gem2rpm, a script which auto-generates RPM spec files for Ruby gems. Ever wondered
-      why we don’t have something similar for Python? Well, I did so too. Thus, after a half a week
-      of hackery, I’d like to introduce <ulink url="http://pypi.python.org/pypi/py2pack"
-        >py2pack</ulink>, my take on braindead Python packaging. Here’s how it goes: </para>
-    <para>Lets suppose you want to package <ulink url="http://pypi.python.org/pypi/zope.interface"
-        >zope.interface</ulink> and you don’t know how it is named exactly or where to download
-      from. First of all, you can search for it and download the source tarball automatically if you
-      found the correct module:</para>
-    <para>
-      <screen>$ py2pack search zope.interface
- searching for module zope.interface...
- found zope.interface-3.6.1
- $ py2pack fetch zope.interface
- downloading package zope.interface-3.6.1...
- from http://pypi.python.org/packages/source/z/zope.interface/zope.interface-3.6.1.tar.gz</screen>
-    </para>
-    <para>(...)</para>
+    <title><ulink url="https://saschpe.wordpress.com/2010/12/12/braindead-python-packaging/">Martin
+        Vidner: network-autoconfig: Find a connected eth interface and create an ifcfg for
+        it</ulink></title>
+    <para>Use case: I want to create an appliance image for a build farm worker machine. I don't
+      know its hardware configuration beforehand; in particular, it may have multiple network
+      interfaces and I don't want to bother figuring out which is which. I will simply include
+        <emphasis role="bold">network-autoconfig.rpm</emphasis> and plug the cable into any socket
+      before booting.</para>
+    <para>network-autoconfig helps setting up machines with multiple network interfaces. At the
+      first boot, all available Ethernet interfaces are cycled until one is successfully configured
+      with DHCP.</para>
+    <para>I have submitted it to openSUSE:Factory now. Enjoy it in the upcoming openSUSE
+      11.4!</para>
+    <para>It is referenced as <ulink url="https://features.opensuse.org/311012"
+        >Feature#311012</ulink>. You are welcome to improve it on <ulink
+        url="http://gitorious.org/opensuse/network-autoconfig">Gitorious</ulink>. (...)</para>
+    <!-- ($ ld: 22.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/23/more-unity-news/">Nelson Marques: More
+        ‘Unity’ news…</ulink></title>
+    <para>I’ve finished with the base packages required for Unity, in fact Unity already builds,
+      though I’ve not really tested it yet as some components still need to take care… so far what’s
+      done:</para>
+    <itemizedlist>
+      <listitem>
+        <para>dee – is now properly packaged and ready for submission (no patching required);</para>
+      </listitem>
+      <listitem>
+        <para>bamf – is now properly packaged and ready for submission (includes a patch modified by
+          Adam Williamson based on a Debian patch);</para>
+      </listitem>
+      <listitem>
+        <para>ux – builds and in a way it’s ready, though I want to split this package in the nearby
+          future.</para>
+      </listitem>
+      <listitem>
+        <para>unity – builds for the time being… though it requires proper integration on the
+          system. This build also builds with support for Indicators, since the dependencies are
+          already prepared. Will take now a bit of time due to integration. I will offer this
+          package installed on /opt/unity and not on usual system path.</para>
+      </listitem>
+    </itemizedlist>
+    <para>While fighting for dependencies there emerged a small problem with ‘glewmx’, which builds
+      from the same sources of ‘glew’. I’m currently working on this package as a priority to fix it
+      and submit it to ‘multimedia:libs’ which also hosts ‘glew’. This package has also a small
+      patch by Adam Williamson which was already submitted upstream that allows the proper build of
+      ‘libGLEWmx.so*’ and glewmx.pc. Currently I’ve built this package only offering the libs. I’ve
+      removed the binaries (and made a dependency on ‘glew’ for the binaries) and I’ve also removed
+      the headers from the includes which will be shared with ‘glew’ and made a proper dependency.
+      I’ve consulted Dimstar regarding this operation which promptly offered some quick guidance on
+      the process and showed a couple of useful examples on how to this ‘the openSUSE way’.</para>
+    <para>I hope that before the new year there’s a test package of Unity for Factory users. I would
+      also take this opportunity to thank everyone which has helped me so far on this ‘one man
+      inglorious rush’ towards bringing Unity to openSUSE as an option for those who want to check
+      it out.</para>
+    <para>My sincere thanks to the following:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Vincent Untz (openSUSE/Novell);</para>
+      </listitem>
+      <listitem>
+        <para>Ken Vandine (Canonical);</para>
+      </listitem>
+      <listitem>
+        <para>Cristopher Roges (Ubuntu);</para>
+      </listitem>
+      <listitem>
+        <para>Adam Williamson (Fedora/Red Hat);</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE GNOME team;</para>
+      </listitem>
+      <listitem>
+        <para>The openSUSE community, specially those which have supported this effort since day
+          #1.</para>
+      </listitem>
+      <listitem>
+        <para>Arch Linux contributors (which were working on this and from which I got some guidance
+          from their ‘forums’);</para>
+      </listitem>
+    </itemizedlist>
+    <para>Nelson Marques</para>
+    <!-- ($ ld: 23.12.10 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink
-        url="http://jeffreystedfast.blogspot.com/2010/12/assignment-apologize-to-someone-you.html"
-        >Jeffrey Stedfast: Assignment: Apologize to someone you have wronged</ulink></title>
-    <para>This past Friday, on our walk back from lunch, <ulink url="http://tirania.org/blog"
-        >Miguel</ulink> told me about the latest assignment given to him by his teacher and mentor,
-        <ulink url="http://www.benjaminzander.com/">Benjamin Zander</ulink>, the conductor of the
-        <ulink url="http://www.bostonphil.org/">Boston Philharmonic</ulink>. The assignment was to
-      pick someone you have wronged and apologize to them. </para>
-    <para>For those who don't know, Benjamin Zander is the author of the book, The Art of
-      Possibility, a book which I have been reading the past week or so. The idea of this book is to
-      change your perspective on life by teaching you to see things in a positive light and thus
-      present you with a world of possibility where you can accomplish anything you set your mind to
-      because you are no longer held back by negative thinking (fear of failure, criticism from
-      others, and most importantly, criticism from yourself). </para>
-    <para>To continue on with my story, as I was laying in bed last night after having read a few
-      more chapters in <ulink url="http://amzn.to/fi53Qj">The Art of Possibility</ulink>, I was
-      reminded of Miguel's assignment and I began to wonder: if I was given this assignment, who
-      would I apologize to? </para>
-    <para>I thought of 1 person in particular and a community of users and decided to apologize to
-      them all. (...)</para>
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://psankar.blogspot.com/2010/12/meego-naming-conflicts-controversies.html">Sankar
-        P: MeeGo - Naming Conflicts / Controversies</ulink></title>
-    <para>Some of you might remember the <ulink
-        url="http://www.wafaa.eu/entry/disappointment-at-the-linux-foundation-and-meego-project-1-46.html"
-        >Naming Controversy</ulink> behind Meego. There is a<ulink
-        url="http://www.wafaa.eu/entry/disappointment-at-the-linux-foundation-and-meego-project-1-46.html"
-        > new blog</ulink> post by Andrew on this matter and since he is not on Planet GNOME, I am
-      just linking here, for the interested people. In case you want to know what the issue is all
-      about, read further. </para>
-    <para>There were Maemo and Moblin platforms from Nokia and Intel respectively. They both merged
-      to form the Meego project under the governance of the <emphasis role="bold">Linux
-        Foundation</emphasis>. Distributions such as openSUSE, Fedora, Debian tried to spin off
-      Meego based derivatives and faced a lot of troubles. </para>
-    <para>Well known openSUSE rockstar <emphasis role="bold">Andrew Wafaa</emphasis>, overcame some
-      of these troubles and did a distro release using these Meego packages on top of an openSUSE
-      image. He named this distro "<emphasis role="bold">Smeegol" => SuSE + Meego</emphasis>. This
-      effort by Andrew (and other distros) is a step in bringing the cool, shiny features of MeeGo
-      to the masses, by riding on the large user-base of the existing distros. However, this has not
-      went well with the linux foundation and they have asked to change the name of the project.
-      They were afraid that Andrew using "Smeegol" will dilute the brand image of Meego. </para>
-    <para>Let us take a different case. "<emphasis role="bold">Linux</emphasis> " is a registered
-      trademark of <emphasis role="bold">Linus Torvalds</emphasis>. If he has decided that nobody
-      should be using the name "Linux" in their projects, We may not be able to use names such as
-        "<emphasis role="bold">RedHat Enterprise Linux (RHEL)</emphasis>", "<emphasis role="bold"
-        >SUSE Linux Enterprise (SLED/S)</emphasis>" etc. Allowing other people to use the name
-      "Linux" (with due credits of course) has given it a widespread popularity. The Linux
-      Foundation seems to be missing this point altogether and insists <emphasis role="italic">to
-        move away from using {M,m}-e-e-{G,g}-o or any subset of those letters or sounds in that
-        order, alone or in combination with other letters, words or marks that would tend to cause
-        someone to make a reasonable connection of the reference with the MeeGo mark.</emphasis>
-      (...)</para>
+        url="http://psankar.blogspot.com/2010/12/meego-naming-conflicts-controversies.html">Josef
+        Reidinger: Easy scripting actions with susestudio alias new rubygem
+      studio_api</ulink></title>
+    <para>Now I work for SLMS ( Suse Lifecycle Management Server ) project. It cooperate with SuSE
+      studio and use its API. I get idea that more people could benefit from easy access to studio
+      API from ruby so I extract functionality and improve behavior, documentation and testing and
+      now there is new rubygem studio_api. Why you should use this gem?</para>
+    <itemizedlist>
+      <listitem>
+        <para>ActiveResource Behavior</para>
+      </listitem>
+      <listitem>
+        <para>Actively maintained ( and will be due to SLMS support )</para>
+      </listitem>
+      <listitem>
+        <para>Tightly developed with guys from studio team</para>
+      </listitem>
+      <listitem>
+        <para>Well documented with yard</para>
+      </listitem>
+      <listitem>
+        <para>Good test coverage.</para>
+      </listitem>
+    </itemizedlist>
+    <para>I think then a lot of glory words is better to show example. It is example based on
+      example from documentation. Example goal is simple. Create new appliance in studio, add own
+      cool rpm and build appliance with it. It can be useful to test your new version of software in
+      stable environment and have automatic appliance in which you can test it. (...)</para>
+    <!-- ($ ld: 23.12.10 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://nowwhatthe.blogspot.com/2010/12/good-news.html">Jos Poortvliet: good

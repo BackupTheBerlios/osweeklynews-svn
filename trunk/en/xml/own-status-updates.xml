@@ -74,16 +74,54 @@
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
-
     <blockquote>
-      <title>Interesting article</title>
-
-      <para>blah laber</para>
+      <title><ulink url="http://holger123.wordpress.com/2010/12/23/smbta-stresstest-0-0-1-released/"
+          >Holger Hetterich: SMBTA Stresstest 0.0.1 released</ulink></title>
+      <para><emphasis role="bold">SMBTA Stresstest</emphasis> is an appliance based on openSUSE 11.3
+        for long-time- or stress testing the <ulink
+          url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
+        software suite. It is used mainly by the SMBTA development team to check the behaviour of
+        SMB Traffic Analyzer under certain traffic conditions. It also can easily be used to just
+        try out SMB Traffic Analyzer.</para>
+      <figure id="fig.smbta">
+        <title>SMBTA Stresstest running in VirtualBox</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="50%"
+              fileref="http://holger123.files.wordpress.com/2010/12/smbtastresstester.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>With this first release, <emphasis role="bold">SMBTA Stresstest</emphasis>
+        <xref linkend="fig.smbta"/> comes with a <emphasis role="bold">Samba</emphasis> Server that
+        is configured for two shares, “Officespace” and “music”, and logs traffic on those shares
+        using SMB Traffic Analyzer. Two users are preconfigured, “holger” and “john”, and for those
+        two instances of the <emphasis role="bold">smbtatorture</emphasis> program is started,
+        producing infinite traffic on the shares.</para>
+      <para>The appliance is configured for port 3491 as the connection port for the smbtatools,
+        which allows to inspect the generated traffic from an other machine.</para>
+      <para>SMBTA Stresstester has been created using the fabulous <ulink
+          url="http://www.susestudio.com">SUSE Studio</ulink> and comes in <ulink
+          url="http://en.wikipedia.org/wiki/Open_Virtualization_Format">OVF format</ulink>, and
+        should be able to run on <emphasis role="bold">KVM</emphasis>, <emphasis role="bold"
+          >VMware</emphasis>, and <emphasis role="bold">VirtualBox</emphasis>. The appliance is
+        completely self-contained, runs the smbtatorture processes directly after reaching runlevel
+        3,and Built with SUSE Studio if your virtual machine is setup to be reachable from the
+        host’s network, all the SMBTA tools like rrddriver or smbtaquery can be run against it, once
+        you know the IP adress of SMBTA Stresstester (the appliance root password is
+        “linux”):</para>
+      <screen>smbtaquery -i 3491 -h 192.168.178.26 -q ‘global, usage rw;’</screen>
+      <para>SMBTA Stresstest is available in the <ulink
+          url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SUSE Gallery</ulink>, and we also
+        uploaded it to <ulink url="http://morelias.org/smbta/SMBTA_Stresstest.i686-0.0.1.ovf.tar.gz"
+          >this place</ulink>. For more information on SMB Traffic Analyzer, please check out it’s
+          <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink>. Merry
+          Christmas and a happy new year.</para>
+      <!-- ($ ld: 23.12.10 sm $) -->
     </blockquote>
-  </sect2> -->
+  </sect2>
   <sect2>
     <title>Team Report</title>
     <sect3 role="artteam">

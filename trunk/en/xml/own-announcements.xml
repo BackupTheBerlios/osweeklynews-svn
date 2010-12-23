@@ -318,17 +318,76 @@
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://www.novell.com/promo/suse/the-disters-contest-winners.html">Novell
-        &quot;The Disters&quot; Award</ulink>
+      <ulink
+        url="http://news.opensuse.org/2010/12/23/opensuse-announces-fifth-development-milestone-with-kernel-interactivity-patch/"
+        >openSUSE Announces Fifth Development Milestone with Kernel Interactivity Patch</ulink>
     </title>
-    <para>Novell has released at Wed, 15 Dec 2010 the winners of the &quot;The Disters&quot; award.
-      We congratulate all Winners.</para>
+    <para>The openSUSE project released the fifth of six milestones in the development of openSUSE
+      11.4 some days ago. <emphasis role="bold">Milestone 5 (M5)</emphasis> brings a wide range of
+      updates, both major and minor. As usual, you can get it <ulink
+        url="http://software.opensuse.org/developer/en">here</ulink>.</para>
+    <para><emphasis role="bold">Major Features</emphasis>:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Kernel 2.6.37rc5-12 is the basis of M5, including the famous “200 line” per tty task
+          groups patch to improve desktop interactivity, and featuring the almost-complete removal
+          of the so-called ‘Big Kernel Lock’, which should improve scalability. This kernel supports
+          new drivers, including Broadcom wireless and updated open-source graphics drivers, and a
+          host of the usual other improvements.</para>
+      </listitem>
+      <listitem>
+        <para>Libzypp 8.10.2 adds improved support and fixes for metalinks, the multiple download
+          URL specification.</para>
+      </listitem>
+      <listitem>
+        <para>On the desktop, the KDE Platform makes the leap to version 4.6 beta with many
+          improvements in the UI and underlying infrastructure. This includes a complete rewrite of
+          Kontact and is undergoing heavy testing. There is a serious chance KDE PIM 4.6 will not
+          make it into the final openSUSE 11.4 release, testing and development is needed!</para>
+      </listitem>
+      <listitem>
+        <para>KOffice is updated to 2.3 RC superseding beta1, including the exciting Krita natural
+          media painting app. Meanwhile OpenOffice.org is removed, having been succeeded by
+          LibreOffice which is updated to 3.3.0.1.</para>
+      </listitem>
+      <listitem>
+        <para>GNOME 2.32.1 is now available as the 2.32.2 is the final version planned for openSUSE
+          11.4, which is notable for being the last stable release before GNOME 3 in March.</para>
+      </listitem>
+      <listitem>
+        <para>GNUCash 2.4 RC comes with a new complete dress-up.</para>
+      </listitem>
+      <listitem>
+        <para>Pidgin updates fixes several MSN and ICQ issues.</para>
+      </listitem>
+      <listitem>
+        <para>In the Virtualization area, available now are kernel-xen 2.5.37 features and
+          kernel-ec2 2.6.37 with improvements for cloud sync services and Virtual Box 4 Beta
+          including USB devices support and more than 2GB RAM support on 32 bit guest, Intel HD
+          Audio, asynchronous I/O for iSCSI, VMDK, VHD and Parallels image support.</para>
+      </listitem>
+      <listitem>
+        <para>systemd 15 provides aggressive parallelization capabilities to start multiple daemons
+          at the same time with dependencies which offers improvements to the boot times on some
+          systems. More testing (and porting of init scripts) is still needed for systemd, which
+          will most likely make it into 11.4 as experimental and optional feature.</para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">Get it!</emphasis></para>
+    <para>A list of most annoying bugs is being compiled; please check it before installing. We look
+      forward to your bug reports and test experiences! Automated testing and the openSUSE Factory
+      team have been very active to ensure that your download of M5 will be at least minimally
+      functional, thanks for that! now go and <ulink url="http://software.opensuse.org/developer/en"
+        >download it!</ulink></para>
+    <para>The next milestone is scheduled for Thursday, Jan 20 2011, and will be the openSUSE 11.4
+      Milestone 6 release. The final openSUSE 11.4 is planned to be released in March 2011.</para>
     <para>Other Souces: <ulink
-        url="http://www.linux.com/news/enterprise/biz-enterprise/390534-novell-names-first-annual-dister-winners"
-        >Linux.com</ulink><ulink
-        url="http://rss.feedsportal.com/c/32569/f/491734/s/10b35230/l/0L0Sh0Eonline0N0Copen0Cnews0Citem0CNovell0Epresents0EDister0EAwards0E11556410Bhtml0Cfrom0Crss/story01.htm"
-        > h-online</ulink></para>
-    <!-- ($ ld: 17.12.10 sm $) -->
+        url="http://www.h-online.com/open/news/item/openSUSE-11-4-Milestone-5-released-1158848.html"
+        > h-online</ulink>
+      <ulink
+        url="http://www.linux.com/news/enterprise/biz-enterprise/392669:opensuse-114-milestone-5-released"
+        >Linux.com</ulink></para>
+    <!-- ($ ld: 23.12.10 sm $) -->
   </blockquote>
   <blockquote>
     <title>
