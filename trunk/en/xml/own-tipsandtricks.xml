@@ -111,7 +111,13 @@
         something like this.</para>
       <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc target=quality quality=2 ! id3v2mux ! filesink location=file.mp3</screen>
 <!-- ($ ld: 18.12.10 sm $) -->    </blockquote>
-  </sect2>
+    <blockquote>
+      <title>
+        <ulink url="http://maketecheasier.com/change-linux-displays-on-the-fly-with-disper/2010/12/22">Make Tech Easier/Tavis J. Hampton: How to Change Linux Displays on the Fly with Disper</ulink>
+      </title>
+      <para>Using Linux on a laptop has always been a hit and miss affair. With sometimes obscure proprietary hardware, many laptop manufacturers have showed no interest in supporting the free operating system. Nevertheless, through hard work by developers and support from some hardware manufacturers, Linux now supports a wide variety of laptops and netbooks. (...)</para>
+    </blockquote>
+<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
@@ -130,7 +136,7 @@
         <ulink url="http://www.developer.com/open/10-ways-git-version-control-can-streamline-your-writing-projects.html">Developer.com/Jason Gilmore: 10 Ways Git Version Control Can Streamline Your Writing Projects</ulink>
       </title>
       <para>Establishing a rigorous version control process is a standard part of any software project, and <ulink url="http://git-scm.com/">Git</ulink> is a powerful system for enabling such version control. But Git&apos;s advantages extend beyond just software development. For instance, I use Git to manage all of my writing projects, including <ulink url="http://www.wjgilmore.com/">books</ulink> and my articles published on Developer.com (including this one). Git offers writers a fantastic set of features for producing material in an impressively fast, efficient and organized manner. In this article I&apos;ll introduce you to 10 Git tips and tricks I regularly apply within my own writing projects! Even if you&apos;re using Git solely for software development, you&apos;ll still be able to apply these tips to your projects! (...)</para>
-    </blockquote>
+<!-- ($ ld: 25.12.10 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
@@ -157,5 +163,11 @@
         /dev/sda1 168G 144G 24G 86% /</screen>
       <para>How neat, 8 fresh new gigs of storage :-)</para>
 <!-- ($ ld: 21.12.10 sm $) -->    </blockquote>
-  </sect2>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/postgresql-ssl-certificates">HowtoForge/thebrain.ca: SSL Certificates For PostgreSQL</ulink>
+      </title>
+      <para>This describes how to set up ssl certificates to enable encrypted connections from PgAdmin on some client machine to postgresql on a server machine. The assumption is that postgresql (compiled with ssl support) and openssl are already installed and functional on the server (Linux). PgAdmin is already installed on the client (either Windows or Linux). (...)</para>
+    </blockquote>
+<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
 </sect1>
