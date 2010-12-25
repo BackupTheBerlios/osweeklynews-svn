@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://anditosan.blogspot.com/2010/12/new-idea-about-chat-program.html"
+        >Andres Silva: New Idea About Chat Program</ulink></title>
+    <para><quote>I am a good user of social networking sites, such as Facebook and Twitter. They
+        have used very interesting features on their websites, such as instant messaging. By that I
+        do not mean the chat application that Facebook uses, or the immediate update on Twitter
+        messages. I am talking about the idea of instant messaging on settled messages. For example,
+        when a person posts a comment on Facebook and is able to keep a conversation from one person
+        to the next. It is a minifeed that also includes the rest of the present contacts that are
+        involved in the message box.</quote></para>
+    <figure id="fig.fbminifeed">
+      <title>Facebook Minifeed</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%"
+            fileref="http://startupmeme.com/wp-content/uploads/2008/06/facebook-minifeed.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para><quote>Twitter is a little similar, you are able to scroll through the many messages on
+        your home page as well as the rest of the contacts who have posted messages on your Twitter.
+          (...)<xref linkend="fig.fbminifeed"/></quote></para>
+    <!-- ($ ld: 20.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="https://saschpe.wordpress.com/2010/12/12/braindead-python-packaging/">Martin
+        Vidner: network-autoconfig: Find a connected eth interface and create an ifcfg for
+        it</ulink></title>
+    <para>Use case: I want to create an appliance image for a build farm worker machine. I don't
+      know its hardware configuration beforehand; in particular, it may have multiple network
+      interfaces and I don't want to bother figuring out which is which. I will simply include
+        <emphasis role="bold">network-autoconfig.rpm</emphasis> and plug the cable into any socket
+      before booting.</para>
+    <para>network-autoconfig helps setting up machines with multiple network interfaces. At the
+      first boot, all available Ethernet interfaces are cycled until one is successfully configured
+      with DHCP.</para>
+    <para>I have submitted it to openSUSE:Factory now. Enjoy it in the upcoming openSUSE
+      11.4!</para>
+    <para>It is referenced as <ulink url="https://features.opensuse.org/311012"
+        >Feature#311012</ulink>. You are welcome to improve it on <ulink
+        url="http://gitorious.org/opensuse/network-autoconfig">Gitorious</ulink>. (...)</para>
+    <!-- ($ ld: 22.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2010/12/23/more-unity-news/">Nelson Marques: More
+        ‘Unity’ news…</ulink></title>
+    <para>I’ve finished with the base packages required for Unity, in fact Unity already builds,
+      though I’ve not really tested it yet as some components still need to take care… so far what’s
+      done:</para>
+    <itemizedlist>
+      <listitem>
+        <para>dee – is now properly packaged and ready for submission (no patching required);</para>
+      </listitem>
+      <listitem>
+        <para>bamf – is now properly packaged and ready for submission (includes a patch modified by
+          Adam Williamson based on a Debian patch);</para>
+      </listitem>
+      <listitem>
+        <para>ux – builds and in a way it’s ready, though I want to split this package in the nearby
+          future.</para>
+      </listitem>
+      <listitem>
+        <para>unity – builds for the time being… though it requires proper integration on the
+          system. This build also builds with support for Indicators, since the dependencies are
+          already prepared. Will take now a bit of time due to integration. I will offer this
+          package installed on /opt/unity and not on usual system path.</para>
+      </listitem>
+    </itemizedlist>
+    <para>While fighting for dependencies there emerged a small problem with ‘glewmx’, which builds
+      from the same sources of ‘glew’. I’m currently working on this package as a priority to fix it
+      and submit it to ‘multimedia:libs’ which also hosts ‘glew’. This package has also a small
+      patch by Adam Williamson which was already submitted upstream that allows the proper build of
+      ‘libGLEWmx.so*’ and glewmx.pc. Currently I’ve built this package only offering the libs. I’ve
+      removed the binaries (and made a dependency on ‘glew’ for the binaries) and I’ve also removed
+      the headers from the includes which will be shared with ‘glew’ and made a proper dependency.
+      I’ve consulted Dimstar regarding this operation which promptly offered some quick guidance on
+      the process and showed a couple of useful examples on how to this ‘the openSUSE way’.</para>
+    <para>I hope that before the new year there’s a test package of Unity for Factory users. I would
+      also take this opportunity to thank everyone which has helped me so far on this ‘one man
+      inglorious rush’ towards bringing Unity to openSUSE as an option for those who want to check
+      it out.</para>
+    <para>My sincere thanks to the following:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Vincent Untz (openSUSE/Novell);</para>
+      </listitem>
+      <listitem>
+        <para>Ken Vandine (Canonical);</para>
+      </listitem>
+      <listitem>
+        <para>Cristopher Roges (Ubuntu);</para>
+      </listitem>
+      <listitem>
+        <para>Adam Williamson (Fedora/Red Hat);</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE GNOME team;</para>
+      </listitem>
+      <listitem>
+        <para>The openSUSE community, specially those which have supported this effort since day
+          #1.</para>
+      </listitem>
+      <listitem>
+        <para>Arch Linux contributors (which were working on this and from which I got some guidance
+          from their ‘forums’);</para>
+      </listitem>
+    </itemizedlist>
+    <para>Nelson Marques</para>
+    <!-- ($ ld: 23.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://psankar.blogspot.com/2010/12/meego-naming-conflicts-controversies.html">Josef
+        Reidinger: Easy scripting actions with susestudio alias new rubygem
+      studio_api</ulink></title>
+    <para>Now I work for SLMS ( Suse Lifecycle Management Server ) project. It cooperate with SuSE
+      studio and use its API. I get idea that more people could benefit from easy access to studio
+      API from ruby so I extract functionality and improve behavior, documentation and testing and
+      now there is new rubygem studio_api. Why you should use this gem?</para>
+    <itemizedlist>
+      <listitem>
+        <para>ActiveResource Behavior</para>
+      </listitem>
+      <listitem>
+        <para>Actively maintained ( and will be due to SLMS support )</para>
+      </listitem>
+      <listitem>
+        <para>Tightly developed with guys from studio team</para>
+      </listitem>
+      <listitem>
+        <para>Well documented with yard</para>
+      </listitem>
+      <listitem>
+        <para>Good test coverage.</para>
+      </listitem>
+    </itemizedlist>
+    <para>I think then a lot of glory words is better to show example. It is example based on
+      example from documentation. Example goal is simple. Create new appliance in studio, add own
+      cool rpm and build appliance with it. It can be useful to test your new version of software in
+      stable environment and have automatic appliance in which you can test it. (...)</para>
+    <!-- ($ ld: 23.12.10 sm $) -->
+  </blockquote>
+</sect1>

@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="status-updates">
+  <title>Status Updates</title>
+<!--
+  <sect2 role="board">
+    <title>Board</title>
+    <blockquote>
+      <para>...</para>
+    </blockquote>
+    </sect2> -->  
+  <sect2 role="distribution">
+    <title>Distribution</title>
+     <!-- 
+    <blockquote>
+      <title></title>
+      <para></para>
+      </blockquote>     
+    <blockquote>
+      <title>
+        <ulink url="http://www.suse.de/~coolo/opensuse_11.4/">Schedules for the next week</ulink>
+      </title>
+      <para>openSUSE 11.4 Milestone 5 release</para>
+      <itemizedlist>
+        <listitem>
+          <para>Milestone: installation workflow is feature frozen</para>
+        </listitem>
+        <listitem>
+          <para>Proofreading of all software starts so that we have a new baseline.</para>
+        </listitem>
+        <listitem>
+          <para>Milestone: Feature and version freeze for the complete distribution (exception: patchlevel update of leaf packages until Beta1+)</para>
+        </listitem>
+        <listitem>
+          <para>Milestone: All features are coding and function complete.</para>
+        </listitem>
+        <listitem>
+          <para>Milestone: Kernel and install works on all targeted machines.</para>
+        </listitem>
+        <listitem>
+        <para>Milestone: Last round of software translation starts - &quot;hard text freeze&quot;($ ld: 11.12.10 sm $</para>
+        </listitem>
+      </itemizedlist>      
+      </blockquote> -->    
+    <itemizedlist>
+      <title>Important Links</title>
+      <listitem>
+        <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+  <sect2 role="susestudio">
+    <title>SUSE Studio</title>
+    <blockquote>
+      <title>
+        <ulink url="http://holger123.wordpress.com/2010/12/23/smbta-stresstest-0-0-1-released/">Holger Hetterich: SMBTA Stresstest 0.0.1 released</ulink>
+      </title>
+      <para><emphasis role="bold">SMBTA Stresstest</emphasis> is an appliance based on openSUSE 11.3
+        for long-time- or stress testing the <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
+        software suite. It is used mainly by the SMBTA development team to check the behaviour of
+        SMB Traffic Analyzer under certain traffic conditions. It also can easily be used to just
+        try out SMB Traffic Analyzer.</para>
+      <figure id="fig.smbta">
+        <title>SMBTA Stresstest running in VirtualBox</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="50%" fileref="http://holger123.files.wordpress.com/2010/12/smbtastresstester.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>With this first release, <emphasis role="bold">SMBTA Stresstest</emphasis>
+        <xref linkend="fig.smbta"/> comes with a <emphasis role="bold">Samba</emphasis> Server that
+        is configured for two shares, “Officespace” and “music”, and logs traffic on those shares
+        using SMB Traffic Analyzer. Two users are preconfigured, “holger” and “john”, and for those
+        two instances of the <emphasis role="bold">smbtatorture</emphasis> program is started,
+        producing infinite traffic on the shares.</para>
+      <para>The appliance is configured for port 3491 as the connection port for the smbtatools,
+        which allows to inspect the generated traffic from an other machine.</para>
+      <para>SMBTA Stresstester has been created using the fabulous <ulink url="http://www.susestudio.com">SUSE Studio</ulink> and comes in <ulink url="http://en.wikipedia.org/wiki/Open_Virtualization_Format">OVF format</ulink>, and
+        should be able to run on <emphasis role="bold">KVM</emphasis>, <emphasis role="bold">VMware</emphasis>, and <emphasis role="bold">VirtualBox</emphasis>. The appliance is
+        completely self-contained, runs the smbtatorture processes directly after reaching runlevel
+        3,and Built with SUSE Studio if your virtual machine is setup to be reachable from the
+        host’s network, all the SMBTA tools like rrddriver or smbtaquery can be run against it, once
+        you know the IP adress of SMBTA Stresstester (the appliance root password is
+        “linux”):</para>
+      <screen>smbtaquery -i 3491 -h 192.168.178.26 -q ‘global, usage rw;’</screen>
+      <para>SMBTA Stresstest is available in the <ulink url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SUSE Gallery</ulink>, and we also
+        uploaded it to <ulink url="http://morelias.org/smbta/SMBTA_Stresstest.i686-0.0.1.ovf.tar.gz">this place</ulink>. For more information on SMB Traffic Analyzer, please check out it’s
+          <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink>. Merry
+        Christmas and a happy new year.</para>
+    <!-- ($ ld: 23.12.10 sm $) -->    
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Team Report</title>
+    <sect3 role="artteam">
+      <title>Art Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://karl-tux-stadt.de/ktuxs/?p=2950">Sirko Kemter: openSUSE 11.4 – Color trouble</ulink>
+        </title>
+        <para>If you have the last Milestone of openSUSE, thats already number 5, installed then you
+          can take a look into the history. You would see a dark splash as I planned them long time
+          ago. You also see the KDM in the color I planned in August.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="25%" fileref="http://karl-tux-stadt.de/graph/kdm114.png"/>
+          </imageobject>
+        </mediaobject>
+        <para>2 weeks ago Coolo asked for some artwork for integrate it into the next Milestone, a
+          weekend with lot of work, for Javier and me. After that some people woke up. First the KDE
+          team wanted the color changed to celadon, whats also is the codename for 11.4. Thats ok
+          for me, its there choice and it would be work with the grey what I planned for the GNOME
+          side.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="25%" fileref="http://karl-tux-stadt.de/graph/celadon.png"/>
+          </imageobject>
+        </mediaobject>
+        <para>But now the GNOME team also want it changed. And that becomes now harder to do. There
+          are some possibilities and also some borders for the work. Right now there is a little
+          discussion on the mailinglist. But the default background of GNOME would be definitly not
+          happen, he is nice but the blue works not with the celadon green tone. Also change that
+          background to celadon green, wouldnt work because I have to choose one of the backgrounds
+          for the bootsplash. Hope they find a solution I can work with. I would prefer a grey one,
+          with a celadon geeko on it and change the green tone in sonar to celadon green
+          also.</para>
+      </blockquote>
+      <!-- ($ ld: 23.12.10 sm $) -->
+    </sect3>
+    <!--
+    <sect3 role="boosters">
+      <title>Boosters Team</title>
+
+      <para>...</para>
+    </sect3> -->
+    
+    <!--
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>      
+      
+      <blockquote>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan Kulow: How we use our power</ulink>
+        </title>
+        <para>I had a side project the last two weeks: Make the build service more fun to use. </para>
+        <para>No matter how much fun you have creating packages, if they don’t build, there is
+          little point in using a Service that has Build in its name, no? So one of the major goals
+          of the service is actually to help those that want to build packages as good as possible.
+          But there is a problem: </para>
+        <para>Let me quote from the landing page of <ulink url="https://build.opensuse.org/">build.opensuse.org</ulink>: “The openSUSE Build Service hosts 16,414 projects, with
+          107,691 packages, in 26,259 repositories and is used by 25,967 confirmed users.”. That are
+          quite some high numbers – especially in the relation to the ~25 servers we have for
+          actually building. </para>
+        <para>If you look at the build statistics of the last month (and this is just i586, x86_64
+          has around the same), you notice that there is not much purple in the “Busy workers / Idle
+          workers” graphic:</para>
+        <figure id="fig.buildservice">
+          <title>Buildservice</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Bildschirmfoto11.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>(..)</para>    
+      </blockquote>
+      <blockquote>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2010/12/18/osc-0-130-1-bugfix-release/">Marcus Hüwe: osc 0.130.1 (bugfix release)</ulink>
+        </title>
+        <para>I just released a new osc version: 0.130.1 (bugfix release). The following issues were
+          fixed:</para>
+        <itemizedlist>
+          <listitem>
+            <para>don’t crash if a file marked as ‘A’ does not exist (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=658664">bnc#658664</ulink>)</para>
+          </listitem>
+          <listitem>
+            <para>fixed proxy handling (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657958">bnc#657958</ulink>)</para>
+          </listitem>
+          <listitem>
+            <para>fixed repairwc (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657838">bnc#657838</ulink>)</para>
+          </listitem>
+          <listitem>
+            <para>fixed build for python2.4</para>
+          </listitem>
+        </itemizedlist>
+        <para>The new version is available in the<ulink url="http://download.opensuse.org/repositories/openSUSE:/Tools"> openSUSE:Tools</ulink>
+          repo.</para>      
+      </blockquote>
+      <formalpara>
+        <title>Build Service Statistics</title>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
+        </formalpara> 
+        </sect3> -->
+    <!--
+    <sect3 role="education">
+      <title>Education Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="forums">
+      <title>Forums Team</title>
+
+      <para>...</para>
+      </sect3> -->    
+      <!--
+      <sect3 role="gnometeam">
+      <title>GNOME Team</title>
+      <blockquote>
+        <title> 
+      </sect3> -->
+    <!--
+    <sect3 role="kdeteam">
+      <title>KDE Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
+        </title>
+        <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
+          version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
+        <para>About 2 weeks ago, I copied the official KDE 4.6 Beta 2 packages over from the
+          KDE:Distro:Factory repository to the KDE:Unstable:SC repository. This has two effects,
+          namely: </para>
+        <para>1) People using 4.6 Beta 2, can easily update to a slightly newer version to see if
+          bugs have been resolved, without loosing important patches that are openSUSE specific. </para>
+        <para>2) It gives us, the openSUSE KDE team the change to easier and faster adopt to a newer
+          release (e.g. RC1, RC2, etc), as that all patches are matches on a weekly basis to the
+          newer source code. </para>
+        <para>If you decide to switch repository, then make sure that you keep an eye on this blog,
+          as that on a certain moment the KDE:Unstable:SC will switch to very unstable snapshots of
+          the future KDE 4.7. I will however blog here to let you know that you should switch back
+          again repostories, before I will publish the first KDE 4.7 snapshot. </para>
+        <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
+          about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
+          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>      
+      </blockquote> 
+      </sect3> -->
+    <sect3 role="marketingteam">
+      <title>Marketing Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://lists.opensuse.org/opensuse-marketing/2010-12/msg00168.html">Writing!</ulink>
+        </title>
+        <para>Again thanks for participating in the collaboration day on Social Media. I have
+          written an overview, I hope one of the news editors on this list has time to take a look
+          and maybe find a pretty picture to accompany our success story.</para>
+        <para>Meanwhile there are a few things which are close to being finished, but aren&apos;t there
+          just yet. My pet peeve: the short descriptions of openSUSE. They are here: <ulink url="http://ietherpad.com/idAZ997QVS">http://ietherpad.com/idAZ997QVS</ulink></para>
+        <para>I have used part of that text to make a start on the two folders that we&apos;ll
+          need:</para>
+        <itemizedlist>
+          <listitem>
+            <para><ulink url="http://piratepad.net/xKoBE4vmSM">http://piratepad.net/xKoBE4vmSM</ulink> for potential contributors</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://piratepad.net/xKoBE4vmSM">http://piratepad.net/d8xWTUwHq3</ulink> for potential users</para>
+          </listitem>
+        </itemizedlist>
+        <para>Both need a lot of work and any help here is appreciated too!</para>
+        <para>I really appreciated the work done on the feature guide, I worked on it some more and
+          I hope we can get it a bit further and finish it during the marketing meeting in Februari.
+          Anyone who has some spare time, check it out here: http://manugupt1.ietherpad.com/4</para>
+        <para>I can however hapilly tell you that the article we wanted to write about new openSUSE
+          projects is pretty much there now - some finishing touches and it can go live on
+          news.opensuse.org! Great work all involved!</para>
+        <para>Wow. That&apos;s a large bunch of writing things. I know not all of you like that stuff, so
+          - who comes up with tasks that are less writy? ;-)</para>
+        <para>Let me name one: we need themes for Identi.ca, Blogger and Twitter! Shouldn&apos;t be
+          incredibly hard to make and I&apos;m sure Robert Lihm, gnokki, Javier and our other artists can
+          and will help here.</para>
+      <!-- ($ ld: 24.12.10 sm $) -->      
+      </blockquote>
+    </sect3>
+      <!--
+    <sect3 role="medical">
+      <title>Medical Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="monoteam">
+      <title>Mono Team</title>
+
+      <para>...</para>
+      </sect3> -->    
+    <sect3 role="openfateteam">
+      <title>openFATE Team</title>
+      <sect4>
+        <title>Top voted Features</title>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 327)</ulink>
+          </title>
+          <para>&quot;Network installation could be improved by running package download and package
+            installation in parallel.&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 153)</ulink>
+          </title>
+          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but reading 
+            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way.</para>
+          <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot process takes away from the whole experience.&quot; is especially interesting. 
+            Is it okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 121)</ulink>
+          </title>
+          <para>&quot;An easy way to remove Software! </para>
+          <para>For example: you installed an application with &quot;1-click install&quot; (which
+            will install all the packages that you need), there should be an easy way (also with 1
+            click) to remove what you have installed with that 1-click operation... in another
+            words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and
+            packages included).&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/308357">Please, replacement for Sax2 in 11.3, and now for 11.4 (Score: 92)</ulink>
+          </title>
+          <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
+            configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 74)</ulink>
+          </title>
+          <para>&quot;We need a feedback about packages that are preferred by users and actively
+            used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 60)</ulink>
+          </title>
+          <para>&quot;The YaST Qt package manager should provide as much information in the
+            &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
+            and how much disk space will be freed/used after performing the operation.&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 54)</ulink>
+          </title>
+          <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
+            Windows but exploiting the One Click Install concept of openSUSE (and therefore
+            inheriting the simplicity, code and security. (...)&quot;</para>
+        </blockquote>
+       <!-- ($ ld: 25.12.10 sat $) -->      
+      </sect4>
+      <sect4>
+        <title>Recently requested features</title>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/310995">[Bash] Signing scripts</ulink>
+          </title>
+          <para>&quot;Actually many distribution force scripts to have x privileges set. In KDE it will appear a dialog, when user try to run Desktop/Executable file.</para>
+          <para>I think, that we should also add a way to write checksums and fingerprints to scripts/executables. User won&apos;t allow to run command if vendor are untrusted.&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/310996">Non-PAE versions of kernels</ulink>
+            </title>
+            <para>&quot;In openSUSE 11.0, when kernels were packaged, the developers used a -pae flag to show that the kernel had PAE enabled, so if I wanted a realtime kernel I could choose between kernel-rt and kernel-rtpae.
+Now (from 11.2 up) it seems that all the kernels have PAE enabled, except kernel-default; and they are not marked as such, so kernel-rt STILL has PAE enabled. (...)&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/310997">partition manager with compression</ulink>
+            </title>
+            <para>&quot;The partition manager allows backup and resotre of whole partitions, unfortunately it does a 1:1 copy, without compression.</para>
+            <para>Compression would be great to save some disk space on the image.&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311001">create a build-essential metapackage</ulink>
+            </title>
+            <para>&quot;This feature is a continuation of
+https://bugzilla.novell.com/show_bug.cgi?id=657607 I agreed with J.W. that there should be a &quot;build-essential&quot; meta-package that depends on things like gcc, make, automake. Those are always pre-installed in OBS and thus missing from the explicit BuildRequires list of packages.
+Currently, the exact list of implicit BuildRequires might only be known in the osc build script.</para>
+            <para>This build-essential could then be fetched by &quot;zypper si PACKAGENAME&quot; and also be used in OBS to not have to maintain the list of packages in two places.&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311008">xprint</ulink>
+            </title>
+            <para>&quot;<ulink url="http://xprint.mozdev.org/">Xprint</ulink> is an advanced printing system which enables X11 applications to use devices like printers, FAX or create documents in formats like PostScript, PDF, PCL, etc.&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311010">printer-enabled indicator</ulink>
+            </title>
+            <para>&quot;with yast-&gt;printer-&gt;edit there is at bottom of that window a little box &quot;Enable Printing&quot; which must be activated to print. (...)&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311011">Boot option &quot;toram&quot;</ulink>
+            </title>
+            <para>&quot;I&apos;ve long been amazed about the speed of DamnSmallLinux on a low spec machine when run completely in RAM.
+I&apos;ve also seen that this is possible with Gentoo and Ubuntu nowadays. (...)&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311014">Create a wow effect for the openSUSE 12 (2012)</ulink>
+            </title>
+            <para>&quot;Next openSUSE will be 11.4. How can we have a really good reason to go to *12* and not 11.5 there after.</para>
+            <para>We have to create something specially related to openSUSE (not GNOME, not Kde...). One thing or several, something that makes people say &quot;wow!!&quot; (...)&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311016">desktop synchronization</ulink>
+            </title>
+            <para>&quot;portable across multiple suse installations of the kde/gnome settings... everywhere is like home.&quot;</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311018">External language loaded from external media(liveCD)</ulink>
+            </title>
+            <para>&quot;Many users are frustrated, that OpenSUSE don&apos;t support He/She&apos;s native language well.
+Allow to load native language files on system startup. Simply initramfs/initrd could load very base system, create ramdisk and asks to remove system CD them insert language support CD.
+System will install packages with additional language onto ramdisk and asks to insert base system CD again.
+
+</para>
+            <para>After this process is performed, system will boot normally.&quot;</para>
+          </blockquote>
+      <!-- ($ ld: 25.12.10 sat $) -->      
+      </sect4>
+      <sect4>
+        <title>Feature Statistics</title>
+        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+      </sect4>
+    </sect3>
+    <!--
+    <sect3 role="oooteam">
+      <title>OpenOffice Team</title>
+
+      <para>...</para>
+      </sect3> -->    
+    <sect3 role="testing">
+      <title>Testing Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00011.html">Larry Finger: Weekly News for December 25</ulink>
+        </title>
+        <para>The next Testing Core Team IRC meeting to discuss 11.4 Milestone 5 will be held
+          December 27 at 1800 UTC.</para>
+        <para>As most of you are aware, openSUSE 11.4 Milestone 5 was released on schedule.
+          Many of us have had a chance to test it, and found few problems. The only bug
+          added to the "most annoying" list is that zypper is slow on Live-installs (Bug
+          #659864). There is a workaround.</para>
+        <para>I repeat my plea for readers of these news to test, test, test, and and report
+          all bugs to the Novell bugzilla.</para>
+        <para>A very happy holiday for all.</para>
+        <!-- ($ ld: 25.12.10 sm $) -->
+      </blockquote>
+    </sect3>
+    <sect3 role="translationteam">
+      <title>Translation Team</title>
+      <itemizedlist>
+        <listitem>
+          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+    <!--
+    <sect3 role="wiki">
+      <title>Wiki Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="yast">
+      <title>YaST Team</title>
+
+      <para>...</para>
+      </sect3> -->  
+  </sect2>
+</sect1>

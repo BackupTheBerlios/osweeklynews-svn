@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://lizards.opensuse.org/2010/12/21/easy-use-of-webyast-for-opensuse-11-3/">Stefan Schubert: Easy use of WebYaST for OpenSuSE 11.3</ulink>
+      </title>
+      <para><emphasis role="bold">Have you ever tried WebYaST ? No ? Then it is time for.</emphasis>
+      </para>
+      <para>We have noticed that WebYaST is not really known in the OpenSuSE community. One reason
+        for is that WebYaST is not really user friendly regarding the installation.</para>
+      <para>So we have investigate here some effort. Lets see….</para>
+      <para><emphasis role="bold">Installation</emphasis></para>
+      <para>The simplest way is the one-click installation which is already installed on your
+        OpenSuSE 11.3.</para>
+      <para>Just use a web browser (like firefox) with the url: <ulink url="http://download.opensuse.org/repositories/YaST:/Web/openSUSE_11.3/webyast.ymp">http://download.opensuse.org/repositories/YaST:/Web/openSUSE_11.3/webyast.ymp</ulink></para>
+      <para>The browser will ask you to start the installation via the one-click installation. Start
+        the installation and go through the installation workflow.</para>
+      <para><emphasis role="bold">Starting and managing WebYaST</emphasis></para>
+      <para>WebYaST is a web application which runs on two http servers on your system. For starting
+        and managing these servers Thomas Goettlicher has written a nice Qt-applet which can be
+        started e.g. in KDE:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast1.jpeg"/>
+        </imageobject>
+      </mediaobject>
+      <para>After starting the WebYaST applet the WebYaST icon appears on the right edge of the
+        frame :</para>
+      <informaltable frame="none">
+        <tgroup cols="2">
+          <colspec colwidth="0.5in"/>
+          <colspec colwidth="0.5in"/>
+          <tbody>
+            <row>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast-disabled.png"/>
+                  </imageobject>
+                </mediaobject>
+              </entry>
+              <entry>WebYaST is disabled</entry>
+            </row>
+            <row>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast-enabled.png"/>
+                  </imageobject>
+                </mediaobject>
+              </entry>
+              <entry>WebYaST is enabled</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+      <para>With the right mouse click you can manage WebYaST:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/qwebyast21.jpeg"/>
+        </imageobject>
+      </mediaobject>
+      <para>With this applet you can start WebYaST in your browser too. After accepting the GPG-key
+        please login with your <quote>root</quote> account.</para>
+      <para>And that’s WebYaST:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/webyast.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>That’s all.</para>
+      <para>(Yes, I know that sentence is written almost in every post here. Even in posts where
+        problems just starting after the sentence has been read. :-) )But I think that should be
+        really all. If not, please use bugzilla and blame us ! Have fun ! </para>
+      <para>(Yes, I know that’s the second sentence which should be in every blog :-) )</para>
+     <!-- ($ ld: 22.12.10 sm $) -->    
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://maketecheasier.com/change-linux-displays-on-the-fly-with-disper/2010/12/22">Make Tech Easier/Tavis J. Hampton: How to Change Linux Displays on the Fly with Disper</ulink>
+      </title>
+      <para>Using Linux on a laptop has always been a hit and miss affair. With sometimes obscure proprietary hardware, many laptop manufacturers have showed no interest in supporting the free operating system. Nevertheless, through hard work by developers and support from some hardware manufacturers, Linux now supports a wide variety of laptops and netbooks. (...)</para>
+    </blockquote>
+     <!-- ($ ld: 25.12.10 sat $) -->  
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.tuxarena.com/?p=508">Tuxarena/Craciun Dan: 8 More Bash Tips for Working Faster With the Shell (Part 2 of 2)</ulink>
+      </title>
+      <para>This is the second article in this series, and brings eight additional tips for working
+        faster with the shell. <ulink url="http://www.tuxarena.com/?p=257">Here</ulink> is the first
+        article of the series, containing 10 tips. (...)</para>
+      <!-- ($ ld: 25.12.10 sat $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.developer.com/open/10-ways-git-version-control-can-streamline-your-writing-projects.html">Developer.com/Jason Gilmore: 10 Ways Git Version 
+          Control Can Streamline Your Writing Projects</ulink>
+      </title>
+      <para>Establishing a rigorous version control process is a standard part of any software project, and <ulink url="http://git-scm.com/">Git</ulink> is a powerful system 
+        for enabling such version control. But Git&apos;s advantages extend beyond just software development. For instance, I use Git to manage all of my writing projects, 
+        including <ulink url="http://www.wjgilmore.com/">books</ulink> and my articles published on Developer.com (including this one). Git offers writers a fantastic set 
+        of features for producing material in an impressively fast, efficient and organized manner. In this article I&apos;ll introduce you to 10 Git tips and tricks I 
+        regularly apply within my own writing projects! Even if you&apos;re using Git solely for software development, you&apos;ll still be able to apply these tips to 
+        your projects! (...)</para>
+      <!-- ($ ld: 25.12.10 sat $) -->    
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="https://saschpe.wordpress.com/2010/12/20/reclaim-me-blocks/">Sascha Peilicke: Reclaim me blocks!</ulink>
+      </title>
+      <para>Ever wondered why your filesystems fill up so quickly and why those new discs aren’t as
+        big as advertised? While the latter may have several reasons (measuring units, the metric
+        system or just damn lies), it may also be just an overly precautious default filesystem
+        setting. On Linux, every filesystem gets some 5% of the available blocks reserved for the
+        root user. This way, you can still work on your machine even if you forgot to rotate your
+        log files Changing this default to something more realistic on today’s big hard discs may
+        come with a nice surprises. Here’s my laptops root partition before:</para>
+      <screen>saschpe@minime:~% df -h
+        Filesystem Size Used Avail Use% Mounted on
+        /dev/sda1 168G 144G 16G 91% /</screen>
+      <para>Now let’s do a courageous tune2fs changing this to 0.2% (more than enough to be able to
+        login and remove logfiles):</para>
+      <screen>sudo tune2fs -m 0.2 /dev/sda1</screen>
+      <para>And check again:</para>
+      <screen>saschpe@minime:~/download% df -h
+        Filesystem Size Used Avail Use% Mounted on
+        /dev/sda1 168G 144G 24G 86% /</screen>
+      <para>How neat, 8 fresh new gigs of storage :-)</para>
+      <!-- ($ ld: 21.12.10 sm $) -->    
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/postgresql-ssl-certificates">HowtoForge/thebrain.ca: SSL Certificates For PostgreSQL</ulink>
+      </title>
+      <para>This describes how to set up ssl certificates to enable encrypted connections from PgAdmin on some client machine to postgresql on a server machine. The assumption is that postgresql (compiled with ssl support) and openssl are already installed and functional on the server (Linux). PgAdmin is already installed on the client (either Windows or Linux). (...)</para>
+    </blockquote>
+      <!-- ($ ld: 25.12.10 sat $) -->  
+  </sect2>
+</sect1>

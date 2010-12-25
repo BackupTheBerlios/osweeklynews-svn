@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title><ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-coming-in-2-6-37-Part-4-Architecture-and-infrastructure-code-1156965.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: coming in 2.6.37 (Part 4) – Architecture and
+        infrastructure code</ulink>
+    </title>
+    <para><emphasis role="bold">The kernel now includes some components for supporting operation as
+        a Xen host (Dom0). Switching into and out of sleep mode should be accelerated by the use of
+        LZO compression. Following years of work, almost all parts of the kernel are now able to run
+        without using the big kernel lock (BKL). </emphasis></para>
+    <para>On releasing 2.6.37-rc6 last week, Linus Torvalds<ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1077573"> reiterated</ulink> that he hoped
+      to release Linux kernel 2.6.37 after the holiday period, around the turn of the year. However
+      things have not been running quite as smoothly as he might like – something which probably
+      also applies to the seventh pre-release version, due for release shortly, since a change aimed
+      at improving hardware resource allocation has now been reverted. </para>
+    <para>This, Part 4 of our "What's coming in 2.6.37" Kernel Log series, provides an overview of
+      these and other changes in platform-specific and infrastructure-related kernel code. <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-1-Graphics-1144218.html"
+        >Part 1</ulink> of the series dealt with graphics hardware-related changes, <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-2-File-systems-1148305.html"
+        >Part 2</ulink> with file system changes and the <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-3-Network-and-storage-hardware-1153025.html"
+        >Part 3</ulink> with changes to network and storage code. The fifth and final part will be
+      published around the turn of the year and will deal with other drivers and the kernel
+      subsystems in which they are found. (...)</para>
+  </blockquote>
+  <!-- ($ ld: 16.12.10 sm $) -->
+</sect1>
