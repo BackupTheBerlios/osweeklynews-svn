@@ -94,30 +94,16 @@
         problems just starting after the sentence has been read. :-) )But I think that should be
         really all. If not, please use bugzilla and blame us ! Have fun ! </para>
       <para>(Yes, I know that’s the second sentence which should be in every blog :-) )</para>
-<!-- ($ ld: 22.12.10 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.tuxarena.com/?p=508">8 More Bash Tips for Working Faster With the Shell (Part 2 of 2)</ulink>
-      </title>
-      <para>My last post was about converting audio files in Linux with GStreamer. In that post I
-        showed how to convert FLAC files to Ogg Vorbis files and retain the audio tags. You may
-        however, have an audio player that does not support playing Ogg Vorbis audio files and you
-        want to convert your files to MP3 instead.</para>
-      <para>The following commands will work as long as you have the appropriate GStreamer plugins
-        installed along with the LAME package.</para>
-      <para>This command will encode to MP3 using LAME&apos;s defaults.</para>
-      <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc ! id3v2mux ! filesink location=file.mp3</screen>
-      <para>If you want to encode your files with VBR at a higher quality level, you can do
-        something like this.</para>
-      <screen>gst-launch filesrc location=file.flac ! flacdec ! audioconvert ! lamemp3enc target=quality quality=2 ! id3v2mux ! filesink location=file.mp3</screen>
-<!-- ($ ld: 18.12.10 sm $) -->    </blockquote>
+     <!-- ($ ld: 22.12.10 sm $) -->    
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://maketecheasier.com/change-linux-displays-on-the-fly-with-disper/2010/12/22">Make Tech Easier/Tavis J. Hampton: How to Change Linux Displays on the Fly with Disper</ulink>
       </title>
       <para>Using Linux on a laptop has always been a hit and miss affair. With sometimes obscure proprietary hardware, many laptop manufacturers have showed no interest in supporting the free operating system. Nevertheless, through hard work by developers and support from some hardware manufacturers, Linux now supports a wide variety of laptops and netbooks. (...)</para>
     </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
+     <!-- ($ ld: 25.12.10 sat $) -->  
+  </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
@@ -127,16 +113,24 @@
       <para>This is the second article in this series, and brings eight additional tips for working
         faster with the shell. <ulink url="http://www.tuxarena.com/?p=257">Here</ulink> is the first
         article of the series, containing 10 tips. (...)</para>
+      <!-- ($ ld: 25.12.10 sat $) -->
     </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://www.developer.com/open/10-ways-git-version-control-can-streamline-your-writing-projects.html">Developer.com/Jason Gilmore: 10 Ways Git Version Control Can Streamline Your Writing Projects</ulink>
+        <ulink url="http://www.developer.com/open/10-ways-git-version-control-can-streamline-your-writing-projects.html">Developer.com/Jason Gilmore: 10 Ways Git Version 
+          Control Can Streamline Your Writing Projects</ulink>
       </title>
-      <para>Establishing a rigorous version control process is a standard part of any software project, and <ulink url="http://git-scm.com/">Git</ulink> is a powerful system for enabling such version control. But Git&apos;s advantages extend beyond just software development. For instance, I use Git to manage all of my writing projects, including <ulink url="http://www.wjgilmore.com/">books</ulink> and my articles published on Developer.com (including this one). Git offers writers a fantastic set of features for producing material in an impressively fast, efficient and organized manner. In this article I&apos;ll introduce you to 10 Git tips and tricks I regularly apply within my own writing projects! Even if you&apos;re using Git solely for software development, you&apos;ll still be able to apply these tips to your projects! (...)</para>
-<!-- ($ ld: 25.12.10 sat $) -->    </blockquote>
+      <para>Establishing a rigorous version control process is a standard part of any software project, and <ulink url="http://git-scm.com/">Git</ulink> is a powerful system 
+        for enabling such version control. But Git&apos;s advantages extend beyond just software development. For instance, I use Git to manage all of my writing projects, 
+        including <ulink url="http://www.wjgilmore.com/">books</ulink> and my articles published on Developer.com (including this one). Git offers writers a fantastic set 
+        of features for producing material in an impressively fast, efficient and organized manner. In this article I&apos;ll introduce you to 10 Git tips and tricks I 
+        regularly apply within my own writing projects! Even if you&apos;re using Git solely for software development, you&apos;ll still be able to apply these tips to 
+        your projects! (...)</para>
+      <!-- ($ ld: 25.12.10 sat $) -->    
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
@@ -162,12 +156,14 @@
         Filesystem Size Used Avail Use% Mounted on
         /dev/sda1 168G 144G 24G 86% /</screen>
       <para>How neat, 8 fresh new gigs of storage :-)</para>
-<!-- ($ ld: 21.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 21.12.10 sm $) -->    
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.howtoforge.com/postgresql-ssl-certificates">HowtoForge/thebrain.ca: SSL Certificates For PostgreSQL</ulink>
       </title>
       <para>This describes how to set up ssl certificates to enable encrypted connections from PgAdmin on some client machine to postgresql on a server machine. The assumption is that postgresql (compiled with ssl support) and openssl are already installed and functional on the server (Linux). PgAdmin is already installed on the client (either Windows or Linux). (...)</para>
     </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
+      <!-- ($ ld: 25.12.10 sat $) -->  
+  </sect2>
 </sect1>

@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -25,9 +24,10 @@
     <blockquote>
       <para>...</para>
     </blockquote>
-    </sect2> -->  <sect2 role="distribution">
+    </sect2> -->  
+  <sect2 role="distribution">
     <title>Distribution</title>
-<!--* interesting topics relating factory (opensuse-factory) (mostly status) * topics from yast/zypp teams (mostly status) * topics from kde/gnome teams (mostly status) As needed. --><!-- 
+     <!-- 
     <blockquote>
       <title></title>
       <para></para>
@@ -57,7 +57,8 @@
         <para>Milestone: Last round of software translation starts - &quot;hard text freeze&quot;($ ld: 11.12.10 sm $</para>
         </listitem>
       </itemizedlist>      
-      </blockquote> -->    <itemizedlist>
+      </blockquote> -->    
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
@@ -109,7 +110,8 @@
         uploaded it to <ulink url="http://morelias.org/smbta/SMBTA_Stresstest.i686-0.0.1.ovf.tar.gz">this place</ulink>. For more information on SMB Traffic Analyzer, please check out it’s
           <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink>. Merry
         Christmas and a happy new year.</para>
-<!-- ($ ld: 23.12.10 sm $) -->    </blockquote>
+    <!-- ($ ld: 23.12.10 sm $) -->    
+    </blockquote>
   </sect2>
   <sect2>
     <title>Team Report</title>
@@ -146,15 +148,20 @@
           with a celadon geeko on it and change the green tone in sonar to celadon green
           also.</para>
       </blockquote>
+      <!-- ($ ld: 23.12.10 sm $) -->
     </sect3>
-<!--
+    <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
 
       <para>...</para>
-    </sect3> -->    <sect3 role="buildserviceteam">
-      <title>Build Service Team</title>
-<!-- News related to Build Service (mostly status) * meeting minutes As needed. -->      <blockquote>
+    </sect3> -->
+    
+    <!--
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>      
+      
+      <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan Kulow: How we use our power</ulink>
         </title>
@@ -178,8 +185,8 @@
             </imageobject>
           </mediaobject>
         </figure>
-        <para>(..)</para>
-<!-- ($ ld: 16.12.10 sm $) -->      </blockquote>
+        <para>(..)</para>    
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2010/12/18/osc-0-130-1-bugfix-release/">Marcus Hüwe: osc 0.130.1 (bugfix release)</ulink>
@@ -201,14 +208,14 @@
           </listitem>
         </itemizedlist>
         <para>The new version is available in the<ulink url="http://download.opensuse.org/repositories/openSUSE:/Tools"> openSUSE:Tools</ulink>
-          repo.</para>
-<!-- ($ ld: 18.12.10 sm $) -->      </blockquote>
+          repo.</para>      
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
-      </formalpara>
-    </sect3>
-<!--
+        </formalpara> 
+        </sect3> -->
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -219,91 +226,14 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->    
+      <!--
+      <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/10/new-indicators-the-saga-continues/">Nelson Marques: New Indicators… the saga continues…</ulink>
-        </title>
-        <para>As the indicator saga continues… some new indicators were built… Indicator-messages is
-          a small indicator that pics up messages and stuff from applications to display them on a
-          nice all-around indicator. It works fine with evolution (plugin also built and doesn’t
-          require patching for what I’ve seen). </para>
-        <para>This indicator support more applications, though they require some patching. As being
-          discussed on the opensuse-GNOME mailing list as as proposed by Vincent Untz, this
-          indicators are moving to GNOME:Apps and there _might_ an effort to support some features
-          in applications like empathy. Keep in mind this is not a priority, but if it’s possible to
-          support some more feature, it might happen.</para>
-        <figure id="fig.gnomeindicator">
-          <title>Screenshot</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-21.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para>Additionally<xref linkend="fig.gnomeindicator"/>, I’ve also tried some other
-          indicators… indicator-application for what I can tell is an indicator that removes the
-          menu’s from the GTK applications and places them on the panel (MAC style). I’ve built this
-          indicator, but I have no means to test yet because further patching is required at least
-          in GTK and eventually on glib. I don’t think there’s actually any need to have this
-          indicator, specially when it will bring additional efforts on GTK maintenance, and this
-          feature is somehow supported by software like gnome-globalmenu (which I’ve also packaged
-          for myself and works dearly with supported apps). </para>
-        <para>I’ve done some hammering on indicator-sound as well… Ubuntu’s sound widget… I’m stuck
-          with some error and I have 2 possibilities… downgrade to the last version of the previous
-          branch which should built, or work the current branch (more dependency demanding). I’m
-          working on it… it will happen one way or another during the next days. I guess this one is
-          actually one of the most wanted :) </para>
-        <para>There are few other indicators… for time and date, calendar and so on… Those will be
-          last ones. After indicator-sound is done, I’m starting to clean up the packaging and make
-          sure it’s compliant to the GNOME team methodology and submit them to GNOME:Apps and the
-          support libraries that are required as dependencies forwarded to projects where they might
-          be useful (need to check out with the people which ones those will be). </para>
-        <para>A special thanks to Ken Vandine from Canonical for some guidance with libindicate. </para>
-        <para>I’ve seen around some ‘hate’ waves towards Canonical, and I would like to say that so
-          far in the few times I’ve interacted with them, either on bug submission or asking help,
-          they have been awesome and caring. It’s really something I would like to point… they are
-          pretty cool, and their devs are very helpful (but hey… so are our devs ;) ). Also a very
-          special thanks to Vincent Untz, Dimstar and mrdocs which have been a great help and from
-          whom I’ve learned already a lot.</para>
-        <para>So picking up the useful stuff… and placing it up together in a single
-          Indicator:</para>
-        <figure id="fig.gnomeindicator2">
-          <title>Screenshot 2</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-11.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para><xref linkend="fig.gnomeindicator2"/></para>
-<!-- ($ ld: 16.12.10 sm $) -->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/13/last-indicator-builds/">Nelson Marques: Last Indicator builds!</ulink>
-        </title>
-        <para>Finally… the last of the indicators builds and works properly… fun thing… works out of
-          the box with Banshee! Two pics… one from the indicator-sound and another from the
-          messaging indicator with empathy and evolution support.</para>
-        <figure id="fig.indic">
-          <title>Picture 1</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot2.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <figure id="fig.indic2">
-          <title>Picture 2</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-12.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-      </blockquote>
-<!-- ($ ld: 18.12.10 sm $) -->    </sect3>
+        <title> 
+      </sect3> -->
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -326,9 +256,9 @@
           again repostories, before I will publish the first KDE 4.7 snapshot. </para>
         <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
           about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
-          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>
-<!-- ($ ld: 18.12.10 sm $) -->      </blockquote>
-    </sect3>
+          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>      
+      </blockquote> 
+      </sect3> -->
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -362,9 +292,10 @@
         <para>Let me name one: we need themes for Identi.ca, Blogger and Twitter! Shouldn&apos;t be
           incredibly hard to make and I&apos;m sure Robert Lihm, gnokki, Javier and our other artists can
           and will help here.</para>
-<!-- ($ ld: 24.12.10 sm $) -->      </blockquote>
+      <!-- ($ ld: 24.12.10 sm $) -->      
+      </blockquote>
     </sect3>
-<!--
+      <!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
@@ -375,7 +306,8 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->    
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
@@ -391,10 +323,10 @@
           <title>
             <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 153)</ulink>
           </title>
-          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but reading http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way.</para>
-          <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot process takes away from the whole experience.&quot; is especially interesting.
-
-Is it okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
+          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but reading 
+            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way.</para>
+          <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot process takes away from the whole experience.&quot; is especially interesting. 
+            Is it okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
         </blockquote>
         <blockquote>
           <title>
@@ -437,7 +369,8 @@ Is it okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;<
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
             inheriting the simplicity, code and security. (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->      </sect4>
+       <!-- ($ ld: 25.12.10 sat $) -->      
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
@@ -447,6 +380,7 @@ Is it okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;<
           </title>
           <para>&quot;Actually many distribution force scripts to have x privileges set. In KDE it will appear a dialog, when user try to run Desktop/Executable file.</para>
           <para>I think, that we should also add a way to write checksums and fingerprints to scripts/executables. User won&apos;t allow to run command if vendor are untrusted.&quot;</para>
+          </blockquote>
           <blockquote>
             <title>
               <ulink url="https://features.opensuse.org/310996">Non-PAE versions of kernels</ulink>
@@ -513,51 +447,39 @@ System will install packages with additional language onto ramdisk and asks to i
 </para>
             <para>After this process is performed, system will boot normally.&quot;</para>
           </blockquote>
-        </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->      </sect4>
+      <!-- ($ ld: 25.12.10 sat $) -->      
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-<!--
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
-    </sect3> -->    <sect3 role="testing">
+      </sect3> -->    
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00004.html">Larry Finger: Weekly News for December 18</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00011.html">Larry Finger: Weekly News for December 25</ulink>
         </title>
         <para>The next Testing Core Team IRC meeting to discuss 11.4 Milestone 5 will be held
           December 27 at 1800 UTC.</para>
-        <para>The Team had a meeting on Monday, December 6, when we talked about our experiences
-          with openSUSE 11.4 M4. The automated installation testing seems to be working as no one
-          reported installation failures. Our major complaints were Bug #657605 (corrupted
-          downloads), Bug #656060 (poor performance for i945 graphics hardware), and k3b crashing.
-          The corrupted download bug is fixed in M5, and k3b now works. I am aware of other problems
-          with the i915 driver in the 2.6.37 kernel, but those are being addresses in the upstream
-          kernel. </para>
-        <para>My early experience with M5 has led be to switch to it from 11.3 on both 32- and
-          64-bit systems. From what I see, 11.4 should be a really good distribution. </para>
-        <para>I repeat my plea for readers of these news to test, test, test, and and report all
-          bugs to the Novell bugzilla.</para>
+        <para>As most of you are aware, openSUSE 11.4 Milestone 5 was released on schedule.
+          Many of us have had a chance to test it, and found few problems. The only bug
+          added to the "most annoying" list is that zypper is slow on Live-installs (Bug
+          #659864). There is a workaround.</para>
+        <para>I repeat my plea for readers of these news to test, test, test, and and report
+          all bugs to the Novell bugzilla.</para>
+        <para>A very happy holiday for all.</para>
+        <!-- ($ ld: 25.12.10 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
-      <blockquote>
-        <title>
-          <ulink url="http://mschlander.wordpress.com/2010/12/20/time-to-translate-opensuse-11-4/">Martin Schlander: Time to translate openSUSE 11.4</ulink>
-        </title>
-        <para>If openSUSE <ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">is not fully translated to your language</ulink> or the translations are lacking in quality, now is
-          the time to join <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Teams">your team</ulink> or if no (active) team exists, <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">revive it or have it created</ulink>. openSUSE 11.4 is now in string freeze, and you have until about mid
-          February to get the job done. If you have questions join the opensuse-translation mailing
-          list, or join #opensuse-translation on IRC (Freenode). <ulink url="http://l10n.kde.org/stats/gui/trunk-kde4/toplist/">Translation of KDE SC 4.6</ulink> is also ongoing, so you may want to consider joining your KDE team
-          too.</para>
-<!-- ($ ld: 20.12.10 sm $) -->      </blockquote>
       <itemizedlist>
         <listitem>
           <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
@@ -568,7 +490,7 @@ System will install packages with additional language onto ramdisk and asks to i
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
@@ -579,5 +501,6 @@ System will install packages with additional language onto ramdisk and asks to i
       <title>YaST Team</title>
 
       <para>...</para>
-    </sect3> -->  </sect2>
+      </sect3> -->  
+  </sect2>
 </sect1>
