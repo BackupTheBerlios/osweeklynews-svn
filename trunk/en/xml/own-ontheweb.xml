@@ -24,7 +24,7 @@
     <title>Announcements</title>
     <blockquote>
       <title>
-        <ulink url="http://lwn.net/Articles/420487/">The Document Foundation joins Open Invention
+        <ulink url="http://listarchives.documentfoundation.org/www/announce/msg00021.html">The Document Foundation joins Open Invention
           Network</ulink>
       </title>
       <para>The Document Foundation has joined the Open Invention Network (OIN), to further extend
@@ -205,7 +205,93 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxlinks.com/article/2010121106112994/NotableGamesPart2.html">21
+        <ulink
+          url="http://www.h-online.com/open/news/item/X-org-7-6-supports-udev-and-modularized-configuration-1157824.html"
+          >h-online: X.org 7.6 supports udev and modularized configuration</ulink>
+      </title>
+      <para>The X.org developers have released version X11R7.6 of their graphics system, which
+        contains the X Server version 1.9.3. One of the innovations in 7.6 is that it uses udev for
+        hardware detection and hot-plug notification; a HAL (Hardware Abstraction Layer) is no
+        longer required. </para>
+      <para>Xorg configuration directories now allow the X Server configuration to be saved as
+        individual module files. For instance, the input device driver matching rules previously
+        provided in HAL .fdi files are now provided as InputClass sections in .conf files in
+        /etc/X11/xorg.conf.d.</para>
+      <para>The <ulink url="http://www.x.org/releases/X11R7.6/src/">sources</ulink> for the current
+        release, the <ulink url="http://www.x.org/releases/X11R7.6/doc/xorg-docs/ReleaseNotes.txt"
+          >release notes</ulink>, the detailed <ulink
+          url="http://www.x.org/releases/X11R7.6/changelog.txt">Change Log</ulink> and the <ulink
+          url="http://www.x.org/wiki/">project wiki</ulink> are all available from the X.org project
+        web site. X11R7.8 is released under the <ulink
+          url="http://en.wikipedia.org/wiki/X11_License">MIT licence.</ulink></para>
+      <!-- ($ ld: 22.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.h-online.com/open/news/item/Google-launches-open-source-YouTube-channel-1157267.html"
+          >h-online: Google launches open source YouTube channel</ulink>
+      </title>
+      <para>Google has launched an<ulink url="http://www.youtube.com/user/googleOSPO"> official
+          YouTube channel</ulink> for its<ulink url="http://code.google.com/opensource/"> Open
+          Source Programs Office</ulink> (OSPO). According to Google Open Source Team member Ellen
+        Ko, the new channel is aimed at organizing videos related to Google and other open source
+        projects in a single place.</para>
+      <para>A number of playlists with videos of, for example, <ulink
+          url="http://www.youtube.com/googletechtalks">Google Tech Talks</ulink> that feature open
+        source projects have already been added. Other videos from Jeremy Allison’s <ulink
+          url="http://www.youtube.com/view_play_list?p=7FC162E0B1E7C602">Geek Time</ulink> series,
+        as well as of Googlers speaking at open source conferences are also available. The Google
+        OSPO YouTube channel currently has 14 videos, with links to a variety of other videos from
+        other channels and users.</para>
+      <para>Google&apos;s current open source projects include the <ulink
+          url="http://www.h-online.com/news/item/Google-releases-Chrome-8-0-stable-1147222.html"
+          >Chrome</ulink> web browser, which is based on <ulink url="http://www.chromium.org/"
+          >Chromium</ulink> , the Android mobile operating system, <ulink
+          url="http://www.h-online.com/news/item/Google-previews-Chrome-OS-Cloud-computing-but-without-touch-1149420.html"
+          >Chrome OS</ulink> and many others.</para>
+      <!-- ($ ld: 22.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.consortiuminfo.org/standardsblog/article.php?story=20101221084910541"
+          >ConsortiumInfo.org/Andy Updegrove: EC Takes One Step Forward, Two Steps Back in
+          Openness</ulink>
+      </title>
+      <para>Last Thursday the European Commission took a major step forward on the “openness” scale.
+        The occasion was the release of a new version of the European Interoperability Framework
+        (EIF) which definitively endorsed the use of open source friendly standards when providing
+        “public services” within the EU. This result was rightly hailed by open source advocates
+        like <ulink
+          url="http://www.openforumeurope.org/press-room/press-releases/EIF%20PR3%2016.12.10.pdf"
+          >Open Forum Europe</ulink>. (...)</para>
+      <!-- ($ ld: 23.12.10 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/ubuntu-indicators-opensuse">Linux
+          Journal/Susan Linton: Ubuntu Indicators in openSUSE?</ulink>
+      </title>
+      <para>Ubuntu takes a lot of punches from time to time for its marketing and even its
+        interface. Some feel Ubuntu is dumbed down and oversimplified, while many others think
+        it&apos;s innovative and user-friendly. Where ever you fall in the debate, one developer
+        thinks some elements of Ubuntu should land into openSUSE. In fact, he has packaged up and
+        pushed them to openSUSE:Contrib.</para>
+      <para><emphasis role="bold">Nelson Marques</emphasis>, Fedora and openSUSE contributor, thinks
+        Ubuntu indicators are the bee&apos;s knees. Actually, since Ubuntu is the dominant
+        distribution in his corner of the world he thinks using some of its more familiar elements
+        might help users migrate to openSUSE. He said, &quot;We don’t want to make of openSUSE a
+        ‘clone’ of Ubuntu, instead we want to make the openSUSE experience more close to what people
+        already use.&quot; (...) Other Sources: <ulink
+          url="http://ostatic.com/blog/unity-coming-to-opensuse-too">ostatic</ulink></para>
+      <!-- ($ ld: 25.12.10 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxlinks.com/article/2010121106112994/NotableGamesPart2.html">LinuxLinks.com: 21
           More Notable Free Linux Games (Part 2 of 3)</ulink>
       </title>
       <para>We have always been strong advocates of computer games. Rather than rotting the brain,
@@ -267,55 +353,6 @@
     <blockquote>
       <title>
         <ulink
-          url="http://www.h-online.com/open/news/item/X-org-7-6-supports-udev-and-modularized-configuration-1157824.html"
-          >h-online: X.org 7.6 supports udev and modularized configuration</ulink>
-      </title>
-      <para>The X.org developers have released version X11R7.6 of their graphics system, which
-        contains the X Server version 1.9.3. One of the innovations in 7.6 is that it uses udev for
-        hardware detection and hot-plug notification; a HAL (Hardware Abstraction Layer) is no
-        longer required. </para>
-      <para>Xorg configuration directories now allow the X Server configuration to be saved as
-        individual module files. For instance, the input device driver matching rules previously
-        provided in HAL .fdi files are now provided as InputClass sections in .conf files in
-        /etc/X11/xorg.conf.d.</para>
-      <para>The <ulink url="http://www.x.org/releases/X11R7.6/src/">sources</ulink> for the current
-        release, the <ulink url="http://www.x.org/releases/X11R7.6/doc/xorg-docs/ReleaseNotes.txt"
-          >release notes</ulink>, the detailed <ulink
-          url="http://www.x.org/releases/X11R7.6/changelog.txt">Change Log</ulink> and the <ulink
-          url="http://www.x.org/wiki/">project wiki</ulink> are all available from the X.org project
-        web site. X11R7.8 is released under the <ulink
-          url="http://en.wikipedia.org/wiki/X11_License">MIT licence.</ulink></para>
-      <!-- ($ ld: 22.12.10 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink
-          url="http://www.h-online.com/open/news/item/Google-launches-open-source-YouTube-channel-1157267.html"
-          >Google launches open source YouTube channel</ulink>
-      </title>
-      <para>Google has launched an<ulink url="http://www.youtube.com/user/googleOSPO"> official
-          YouTube channel</ulink> for its<ulink url="http://code.google.com/opensource/"> Open
-          Source Programs Office</ulink> (OSPO). According to Google Open Source Team member Ellen
-        Ko, the new channel is aimed at organizing videos related to Google and other open source
-        projects in a single place.</para>
-      <para>A number of playlists with videos of, for example, <ulink
-          url="http://www.youtube.com/googletechtalks">Google Tech Talks</ulink> that feature open
-        source projects have already been added. Other videos from Jeremy Allison’s <ulink
-          url="http://www.youtube.com/view_play_list?p=7FC162E0B1E7C602">Geek Time</ulink> series,
-        as well as of Googlers speaking at open source conferences are also available. The Google
-        OSPO YouTube channel currently has 14 videos, with links to a variety of other videos from
-        other channels and users.</para>
-      <para>Google&apos;s current open source projects include the <ulink
-          url="http://www.h-online.com/news/item/Google-releases-Chrome-8-0-stable-1147222.html"
-          >Chrome</ulink> web browser, which is based on <ulink url="http://www.chromium.org/"
-          >Chromium</ulink> , the Android mobile operating system, <ulink
-          url="http://www.h-online.com/news/item/Google-previews-Chrome-OS-Cloud-computing-but-without-touch-1149420.html"
-          >Chrome OS</ulink> and many others.</para>
-      <!-- ($ ld: 22.12.10 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink
           url="http://www.2indya.com/2010/12/23/advantages-of-opensuse%E2%80%99s-yast-software-management/"
           >2indiya.com/Nilanka: Advantages of OpenSUSE’s YaST Software Management</ulink>
       </title>
@@ -336,25 +373,10 @@
       <!-- ($ ld: 23.12.10 sm $) -->
     </blockquote>
     <blockquote>
-      <title>
-        <ulink url="http://www.consortiuminfo.org/standardsblog/article.php?story=20101221084910541"
-          >ConsortiumInfo.org/Andy Updegrove: EC Takes One Step Forward, Two Steps Back in
-          Openness</ulink>
-      </title>
-      <para>Last Thursday the European Commission took a major step forward on the “openness” scale.
-        The occasion was the release of a new version of the European Interoperability Framework
-        (EIF) which definitively endorsed the use of open source friendly standards when providing
-        “public services” within the EU. This result was rightly hailed by open source advocates
-        like <ulink
-          url="http://www.openforumeurope.org/press-room/press-releases/EIF%20PR3%2016.12.10.pdf"
-          >Open Forum Europe</ulink>. (...)</para>
-      <!-- ($ ld: 23.12.10 sm $) -->
-    </blockquote>
-    <blockquote>
       <title><ulink
-          url="http://www.linux.com/learn/tutorials/392855:weekend-project-replace-delicious-with-an-open-source-bookmark-service"
-          >Linux.com/Nathan Willis: Weekend Project - Replace Delicious with an Open Source Bookmark
-          Service</ulink>
+        url="http://www.linux.com/learn/tutorials/392855:weekend-project-replace-delicious-with-an-open-source-bookmark-service"
+        >Linux.com/Nathan Willis: Weekend Project - Replace Delicious with an Open Source Bookmark
+        Service</ulink>
       </title>
       <para>The past two weeks have been rough for users of the Yahoo-owned "social bookmarking"
         service, <ulink url="http://www.delicious.com/">Delicious</ulink>. First, reports leaked out
@@ -378,35 +400,13 @@
         distributions provide builds through their package management systems, most will not have
         caught up yet.</para>
       <para>That means you'll have to grab a <ulink
-          url="http://sourceforge.net/projects/scuttle/files/">source package</ulink> from the
+        url="http://sourceforge.net/projects/scuttle/files/">source package</ulink> from the
         project's Web site if you want to run the latest and greatest, but don't let it frighten you
         away. As a pure LAMP app, you don't have to worry about compilation — the setup process is
         straightforward. We'll take a look at installing and configuring the basic Scuttle
         application, then talk about some alternatives, including an interesting Scuttle derivative.
         (...)</para>
       <!-- ($ ld: 25.12.10 sm $) -->
-    </blockquote>
-  </sect2>
-  <sect2>
-    <title>Reviews and Essays</title>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxjournal.com/content/ubuntu-indicators-opensuse">Linux
-          Journal/Susan Linton: Ubuntu Indicators in openSUSE?</ulink>
-      </title>
-      <para>Ubuntu takes a lot of punches from time to time for its marketing and even its
-        interface. Some feel Ubuntu is dumbed down and oversimplified, while many others think
-        it&apos;s innovative and user-friendly. Where ever you fall in the debate, one developer
-        thinks some elements of Ubuntu should land into openSUSE. In fact, he has packaged up and
-        pushed them to openSUSE:Contrib.</para>
-      <para><emphasis role="bold">Nelson Marques</emphasis>, Fedora and openSUSE contributor, thinks
-        Ubuntu indicators are the bee&apos;s knees. Actually, since Ubuntu is the dominant
-        distribution in his corner of the world he thinks using some of its more familiar elements
-        might help users migrate to openSUSE. He said, &quot;We don’t want to make of openSUSE a
-        ‘clone’ of Ubuntu, instead we want to make the openSUSE experience more close to what people
-        already use.&quot; (...) Other Sources: <ulink
-          url="http://ostatic.com/blog/unity-coming-to-opensuse-too">ostatic</ulink></para>
-      <!-- ($ ld: 25.12.10 sat $) -->
     </blockquote>
   </sect2>
   <sect2>
@@ -446,6 +446,7 @@
           <imagedata width="50%" fileref="http://imgs.xkcd.com/comics/incident.png"/>
         </imageobject>
       </mediaobject>
+      <para>This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License. </para>
     </blockquote>
     <blockquote>
       <title>

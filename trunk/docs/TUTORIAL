@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-24 17:20:52 +0100 (Mi, 24. Nov 2010) $            ##
+## Last edit: $Date: 2010-12-26 12:47:32 +0100 (So, 26. Dez 2010) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -82,6 +82,9 @@ can create ulinks for URL.
 So our Eventeditor just must use Itemizedlist and listitem. Other
 Fields of the Newsletter needs blockquote and para.
 
+If we would like to introduce some Shell Code we can use te <screen> Element. 
+Screen can used on every place.
+
 If we have finished editing of one of the own-* Files, we have to 
 checkin our stuff to the SVN. So others can use your copy. For checkin use:
 
@@ -112,7 +115,7 @@ Maybe we have a whole section who is unneeded, we open OWN.xml just in a editor 
 Now i write about the cause, that we don't need own-statusupdates.xml. Then we search
 in the OWN.xml the line: 
 
-:include href="own-status-updates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="own-status-updates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 and we comment it out like:
 
@@ -133,7 +136,16 @@ If the Issue is ready we set a Tag under ~/tags/own146. Then we don't clean the 
 the trunk. Then we overwrite the old content. But we have the Situation that we have new content on the
 top and old content on the foot. So we must clarify what we have done. So we use this Workaround:
 1.) Overwrite old content. 
-2.) Place on the End of your Change that string (EDITMARK).
+2.) Place on the End of your Change that string:
+<!-- ($ ld: 20.12.10 sm $) -->
+If you're working with an GUI you just can place ($ ld: 20.12.10 sm $).
+BTW: Please use your own initials. ;-)
+ATM We have the following initials:
+sm  - Sascha Manns
+sat - Satoru Matsumoto
+th  - Thomas Hofstätter
+gl  - Gertjan Lettink
+
 Then the next can delete your (EDITMARK) can overwrite the next paragraph and he can set the 
 (EDITMARK) for the next.
 In the old days, who we worked in the Wiki, i placed every new issue a blank template in the Workplace.
