@@ -22,47 +22,30 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://anditosan.blogspot.com/2010/12/new-idea-about-chat-program.html"
-        >Andres Silva: New Idea About Chat Program</ulink></title>
-    <para><quote>I am a good user of social networking sites, such as Facebook and Twitter. They
-        have used very interesting features on their websites, such as instant messaging. By that I
-        do not mean the chat application that Facebook uses, or the immediate update on Twitter
-        messages. I am talking about the idea of instant messaging on settled messages. For example,
-        when a person posts a comment on Facebook and is able to keep a conversation from one person
-        to the next. It is a minifeed that also includes the rest of the present contacts that are
-        involved in the message box.</quote></para>
-    <figure id="fig.fbminifeed">
-      <title>Facebook Minifeed</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="25%"
-            fileref="http://startupmeme.com/wp-content/uploads/2008/06/facebook-minifeed.jpg"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para><quote>Twitter is a little similar, you are able to scroll through the many messages on
-        your home page as well as the rest of the contacts who have posted messages on your Twitter.
-          (...)<xref linkend="fig.fbminifeed"/></quote></para>
-    <!-- ($ ld: 20.12.10 sm $) -->
+    <title><ulink url="http://log.or.cz/?p=108"
+      >Petr Baudis: quick update</ulink></title>
+    <para>Couple of things to blog about accumulated again, so I guess I will be posting bunch of articles soon. For such a long gap, a general update is in order, 
+    I suppose.</para>
+    <para>Aside of my studies, continuous MCTS (Go) research, grinding away on random glibc bugs and such, I most notably got involved in <emphasis role="bold">brmlab</emphasis> this summer – 
+      the <ulink url="http://brmlab.cz/">Prague hackerspace</ulink>. We got a pretty thriving community there now, with various cool events, a lot of great projects (I’m involved in quite a few), and so on!</para>
+    <para>Well, I wanted to mention more, but I can’t remember it right now. I suppose it will just come together. Oh, and seeing my last post – I have a new bike, this time 
+      with insurance. ;-)</para>
+    <!-- ($ ld: 28.12.10 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://mvidner.blogspot.com/2010/12/network-autoconfig-find-connected-eth.html">Martin
-        Vidner: network-autoconfig: Find a connected eth interface and create an ifcfg for
-        it</ulink></title>
-    <para>Use case: I want to create an appliance image for a build farm worker machine. I don't
-      know its hardware configuration beforehand; in particular, it may have multiple network
-      interfaces and I don't want to bother figuring out which is which. I will simply include
-        <emphasis role="bold">network-autoconfig.rpm</emphasis> and plug the cable into any socket
-      before booting.</para>
-    <para>network-autoconfig helps setting up machines with multiple network interfaces. At the
-      first boot, all available Ethernet interfaces are cycled until one is successfully configured
-      with DHCP.</para>
-    <para>I have submitted it to openSUSE:Factory now. Enjoy it in the upcoming openSUSE
-      11.4!</para>
-    <para>It is referenced as <ulink url="https://features.opensuse.org/311012"
-        >Feature#311012</ulink>. You are welcome to improve it on <ulink
-        url="http://gitorious.org/opensuse/network-autoconfig">Gitorious</ulink>. (...)</para>
-    <!-- ($ ld: 22.12.10 sm $) -->
+    <title><ulink url="http://log.or.cz/?p=110">Petr Baudis: Datasheet Translator</ulink></title>
+    <para>As we (well, mostly other people than me) were dealing with a rather obscure micro-controller when hacking our laser projector in brmlab, the only datasheet we have found has been in Chinese. This is quite 
+      often the case with obscure China-made parts (including event stuff like LEDs) and it’s annoying to deal with.</para>
+    <para>So I hacked together a simple datasheet translator – you feed it a PDF with your datasheet, specify the source language, let it munch away for a minute and then it spews out a link to the 
+    English translation!</para>
+    <itemizedlist>
+      <listitem><para><ulink url="http://datasheet-en.or.cz/">http://datasheet-en.or.cz</ulink></para></listitem>
+      <listitem><para>Example: <ulink url="http://tinyurl.com/2bbq6o7">http://tinyurl.com/2bbq6o7</ulink></para></listitem>
+    </itemizedlist>
+    <para>Its user interface is extremely rudimentary, if someone wants to add an AJAXy progressbar and what-not, just let me know. :-)</para>
+    <para>The “technology” is not much to mention either – thankfully, pdftohtml can do quite nifty stuff nowadays (just needs a lot of beating to properly zoom the documents), and Google Translate can do awesome 
+      job with technical documents.</para>
+    <!-- ($ ld: 28.12.10 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://lizards.opensuse.org/2010/12/23/more-unity-news/">Nelson Marques: More

@@ -24,8 +24,8 @@
     <title>Announcements</title>
     <blockquote>
       <title>
-        <ulink url="http://listarchives.documentfoundation.org/www/announce/msg00021.html">The Document Foundation joins Open Invention
-          Network</ulink>
+        <ulink url="http://listarchives.documentfoundation.org/www/announce/msg00021.html">The
+          Document Foundation joins Open Invention Network</ulink>
       </title>
       <para>The Document Foundation has joined the Open Invention Network (OIN), to further extend
         the free software ecosystems. By becoming a licensee, The Document Foundation - developer of
@@ -205,26 +205,37 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.h-online.com/open/news/item/X-org-7-6-supports-udev-and-modularized-configuration-1157824.html"
-          >h-online: X.org 7.6 supports udev and modularized configuration</ulink>
+        <ulink url="http://www.groklaw.net/article.php?story=20101228003140376">Groklaw: I Figured
+          Out What to Explain to You Next: Bylaws -- And a Word to the OpenSUSE Guys</ulink>
       </title>
-      <para>The X.org developers have released version X11R7.6 of their graphics system, which
-        contains the X Server version 1.9.3. One of the innovations in 7.6 is that it uses udev for
-        hardware detection and hot-plug notification; a HAL (Hardware Abstraction Layer) is no
-        longer required. </para>
-      <para>Xorg configuration directories now allow the X Server configuration to be saved as
-        individual module files. For instance, the input device driver matching rules previously
-        provided in HAL .fdi files are now provided as InputClass sections in .conf files in
-        /etc/X11/xorg.conf.d.</para>
-      <para>The <ulink url="http://www.x.org/releases/X11R7.6/src/">sources</ulink> for the current
-        release, the <ulink url="http://www.x.org/releases/X11R7.6/doc/xorg-docs/ReleaseNotes.txt"
-          >release notes</ulink>, the detailed <ulink
-          url="http://www.x.org/releases/X11R7.6/changelog.txt">Change Log</ulink> and the <ulink
-          url="http://www.x.org/wiki/">project wiki</ulink> are all available from the X.org project
-        web site. X11R7.8 is released under the <ulink
-          url="http://en.wikipedia.org/wiki/X11_License">MIT licence.</ulink></para>
-      <!-- ($ ld: 22.12.10 sm $) -->
+      <para>I've been thinking and thinking about everything, and I've figured out what I need to
+        explain to you next. Reading <ulink
+          url="http://community.opensuse.org/meetings/opensuse-project/2010/opensuse-project.2010-12-15-19.01.log.html"
+          >the log</ulink> of the recent OpenSUSE board meeting discussing setting up a foundation
+        for the project turned on the light in my head: you need to understand bylaws. Because
+        corporations are setting up foundations to get you to donate code to them, and they set them
+        up to suit themselves, not to benefit you. There's a difference between the community
+        setting up a foundation to be a project's home and a corporate sponsor doing it. I'm going
+        to write about that in more detail later. To really explain it, I need to explain some
+        things that you might think will be boring or too foreign, but if you can learn Perl, you
+        can learn bylaws.</para>
+      <para>I'll tell you that my favorite task when I was working as a paralegal was drawing up
+        bylaws for new businesses and entities setting up for the first time. It interests me, so
+        I'll try to make it interesting to you. But what should motivate you is this: whatever the
+        bylaws say is what the entity legally can and can't do. It matters. It will affect you. So,
+        just as you'd try to learn a language before visiting a foreign country, at least enough to
+        get around so that if you get lost, you'll have some way to find your hotel again and a
+        bathroom en route, you should understand enough about bylaws and incorporation so no one can
+        blindside you.</para>
+      <para>I'm still working on the Comes v. Microsoft exhibits project, and I swore I'd finish
+        first, so it will take me a while to get to this to explain in detail, but in the meantime,
+        I just want to say to the community stakeholders in the OpenSUSE Project, here's what I
+        think you should do:</para>
+      <tip>
+        <para>Hire your own lawyer. Don't rely on Novell's lawyers to represent the community's
+          interests in the foundation. (...)</para>
+      </tip>
+      <!-- ($ ld: 28.12.10 sm $) -->
     </blockquote>
     <blockquote>
       <title>
@@ -291,8 +302,8 @@
     </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxlinks.com/article/2010121106112994/NotableGamesPart2.html">LinuxLinks.com: 21
-          More Notable Free Linux Games (Part 2 of 3)</ulink>
+        <ulink url="http://www.linuxlinks.com/article/2010121106112994/NotableGamesPart2.html"
+          >LinuxLinks.com: 21 More Notable Free Linux Games (Part 2 of 3)</ulink>
       </title>
       <para>We have always been strong advocates of computer games. Rather than rotting the brain,
         computer games are interactive, teach essential life skills, and can stimulate learning.
@@ -374,9 +385,9 @@
     </blockquote>
     <blockquote>
       <title><ulink
-        url="http://www.linux.com/learn/tutorials/392855:weekend-project-replace-delicious-with-an-open-source-bookmark-service"
-        >Linux.com/Nathan Willis: Weekend Project - Replace Delicious with an Open Source Bookmark
-        Service</ulink>
+          url="http://www.linux.com/learn/tutorials/392855:weekend-project-replace-delicious-with-an-open-source-bookmark-service"
+          >Linux.com/Nathan Willis: Weekend Project - Replace Delicious with an Open Source Bookmark
+          Service</ulink>
       </title>
       <para>The past two weeks have been rough for users of the Yahoo-owned "social bookmarking"
         service, <ulink url="http://www.delicious.com/">Delicious</ulink>. First, reports leaked out
@@ -400,7 +411,7 @@
         distributions provide builds through their package management systems, most will not have
         caught up yet.</para>
       <para>That means you'll have to grab a <ulink
-        url="http://sourceforge.net/projects/scuttle/files/">source package</ulink> from the
+          url="http://sourceforge.net/projects/scuttle/files/">source package</ulink> from the
         project's Web site if you want to run the latest and greatest, but don't let it frighten you
         away. As a pure LAMP app, you don't have to worry about compilation — the setup process is
         straightforward. We'll take a look at installing and configuring the basic Scuttle
@@ -446,7 +457,8 @@
           <imagedata width="50%" fileref="http://imgs.xkcd.com/comics/incident.png"/>
         </imageobject>
       </mediaobject>
-      <para>This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License. </para>
+      <para>This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License.
+      </para>
     </blockquote>
     <blockquote>
       <title>
