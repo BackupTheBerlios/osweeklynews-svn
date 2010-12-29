@@ -48,71 +48,18 @@
     <!-- ($ ld: 28.12.10 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2010/12/23/more-unity-news/">Nelson Marques: More
-        ‘Unity’ news…</ulink></title>
-    <para>I’ve finished with the base packages required for Unity, in fact Unity already builds,
-      though I’ve not really tested it yet as some components still need to take care… so far what’s
-      done:</para>
-    <itemizedlist>
-      <listitem>
-        <para>dee – is now properly packaged and ready for submission (no patching required);</para>
-      </listitem>
-      <listitem>
-        <para>bamf – is now properly packaged and ready for submission (includes a patch modified by
-          Adam Williamson based on a Debian patch);</para>
-      </listitem>
-      <listitem>
-        <para>ux – builds and in a way it’s ready, though I want to split this package in the nearby
-          future.</para>
-      </listitem>
-      <listitem>
-        <para>unity – builds for the time being… though it requires proper integration on the
-          system. This build also builds with support for Indicators, since the dependencies are
-          already prepared. Will take now a bit of time due to integration. I will offer this
-          package installed on /opt/unity and not on usual system path.</para>
-      </listitem>
-    </itemizedlist>
-    <para>While fighting for dependencies there emerged a small problem with ‘glewmx’, which builds
-      from the same sources of ‘glew’. I’m currently working on this package as a priority to fix it
-      and submit it to ‘multimedia:libs’ which also hosts ‘glew’. This package has also a small
-      patch by Adam Williamson which was already submitted upstream that allows the proper build of
-      ‘libGLEWmx.so*’ and glewmx.pc. Currently I’ve built this package only offering the libs. I’ve
-      removed the binaries (and made a dependency on ‘glew’ for the binaries) and I’ve also removed
-      the headers from the includes which will be shared with ‘glew’ and made a proper dependency.
-      I’ve consulted Dimstar regarding this operation which promptly offered some quick guidance on
-      the process and showed a couple of useful examples on how to this ‘the openSUSE way’.</para>
-    <para>I hope that before the new year there’s a test package of Unity for Factory users. I would
-      also take this opportunity to thank everyone which has helped me so far on this ‘one man
-      inglorious rush’ towards bringing Unity to openSUSE as an option for those who want to check
-      it out.</para>
-    <para>My sincere thanks to the following:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Vincent Untz (openSUSE/Novell);</para>
-      </listitem>
-      <listitem>
-        <para>Ken Vandine (Canonical);</para>
-      </listitem>
-      <listitem>
-        <para>Cristopher Roges (Ubuntu);</para>
-      </listitem>
-      <listitem>
-        <para>Adam Williamson (Fedora/Red Hat);</para>
-      </listitem>
-      <listitem>
-        <para>openSUSE GNOME team;</para>
-      </listitem>
-      <listitem>
-        <para>The openSUSE community, specially those which have supported this effort since day
-          #1.</para>
-      </listitem>
-      <listitem>
-        <para>Arch Linux contributors (which were working on this and from which I got some guidance
-          from their ‘forums’);</para>
-      </listitem>
-    </itemizedlist>
-    <para>Nelson Marques</para>
-    <!-- ($ ld: 23.12.10 sm $) -->
+    <title><ulink url="http://sellingfreesoftwareforaliving.blogspot.com/2010/12/suse-linux-enterprise-wins-readers.html"
+      >Han Wen Kam: SUSE Linux Enterprise Wins Readers' Choice Award 2010</ulink></title>
+    <para>On 15th October 2010, Novell was presented a <ulink url="http://www.computerworld.com.sg/rca-2010/winners">Readers' Choice Award</ulink> from 
+      <ulink url="http://mis-asia.com/magazines/computerworld_singapore">ComputerWorld Singapore</ulink> for winning in the Open Source Platforms/Operating Systems category. 
+      It was a very proud moment for us in Novell Singapore and I'm sure it will pleased all SUSE supporters everywhere.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="45%" fileref="http://4.bp.blogspot.com/_B1ti23BeShI/TRqM3yUwEuI/AAAAAAAAAl8/yu8tJctXuow/s1600/SUSE-Trophy.jpg"/>
+      </imageobject>
+    </mediaobject>
+    <para>Above is a photo of the trophy presented and its now sitting in a prominent place in the Novell Singapore office. :)</para>
+    <!-- ($ ld: 29.12.10 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink

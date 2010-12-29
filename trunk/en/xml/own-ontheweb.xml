@@ -24,42 +24,26 @@
     <title>Announcements</title>
     <blockquote>
       <title>
-        <ulink url="http://listarchives.documentfoundation.org/www/announce/msg00021.html">The
-          Document Foundation joins Open Invention Network</ulink>
+        <ulink url="http://blog.karlitschek.de/2010/12/beta-of-qt-creator-buildservice-plugin.html"
+          >Frank Karlitscheck: Beta of the Qt Creator Buildservice Plugin released (Project Bretzn)</ulink>
       </title>
-      <para>The Document Foundation has joined the Open Invention Network (OIN), to further extend
-        the free software ecosystems. By becoming a licensee, The Document Foundation - developer of
-        LibreOffice, a free office suite for personal and corporate productivity - has joined the
-        growing list of organizations that recognize the importance of participating in the Open
-        Invention Network, in order to protect the free software ecosystem from the risks associated
-        to software patents.</para>
-      <para><quote>The Document Foundation is a major free software project, and LibreOffice a key
-          office suite for creating, managing and sharing documents. By becoming a licensee of the
-          Open Invention Network, we fight software patents - which stifle innovation and encourage
-          predatory business practices - and at the same time we improve the protection of our
-          software projects,</quote> said Charles Schulz, Member of TDF Steering Committee.</para>
-      <para>Patents owned by Open Invention Network are available royalty-free to whichever company,
-        institution or individual that agrees not to assert its patents against free software.
-        Through this network of developers, distributors, sellers, resellers and end-users that
-        license its patent portfolio, Open Invention Network is creating a supportive and shielded
-        ecosystem to ensure the growth and adoption of free and open source software. This enables
-        OIN licensees like The Document Foundation to make significant investments, helping to fuel
-        economic growth. </para>
-      <para>OIN has amassed a broad portfolio of patents, including patents held by nominees on its
-        behalf. These patents are available to all licensees as part of the patent portfolio that
-        OIN is creating in support of free software. The license agreement is at <ulink
-          url="http://www.openinventionnetwork.com/pat_license_agreement.php"
-          >http://www.openinventionnetwork.com/pat_license_agreement.php</ulink></para>
-      <para>The home of The Document Foundation is at <ulink url="http://www.documentfoundation.org"
-          >http://www.documentfoundation.org.</ulink></para>
-      <para>The Document Foundation has the mission to facilitate the evolution of the OOo Community
-        into a new open, independent, and meritocratic organization within the next few months. An
-        independent Foundation is a better match to the values of contributors, users and
-        supporters, and will enable a more effective, efficient, transparent, and inclusive
-        Community. TDF will protect past investments by building on the achievements of the first
-        decade, will encourage wide participation in the Community, and will co-ordinate activity
-        across the Community.</para>
-      <!-- ($ ld: 20.12.10 sm $) -->
+      <mediaobject>
+        <imageobject>
+          <imagedata width="45%" fileref="http://3.bp.blogspot.com/_2NI924aDGNc/TRsVY8C6yCI/AAAAAAAAALw/DiW8cGZZL_0/s1600/shot1.jpg"
+          />
+        </imageobject>
+      </mediaobject>
+      <para><emphasis role="bold">What is Project Bretzn?</emphasis></para>
+      <para>Apart from being a tasty Bavarian bread-snack, Bretzn is a code-name for a collection of technology aimed at solving a problem which has existed 
+        in software development for a very long time: How do you get your applications build for all available platforms and get it to your users?</para>
+      <para>In the open source community, we already have many individual bits of this dream in place. We the great cross platform toolkit Qt, we have the powerful openSuse 
+        Build Service which allows for the easy creation of binaries for a great number of Linux distributions, we have the Open Collaboration Services (OCS) which allows 
+        for the easy and socially adept distribution of packages both to and from central software download sites such as KDE-Apps.org, and we have a great many powerful 
+        integrated development enviromnents such as Qt Creator, KDevelop and Eclipse.</para>
+      <para>In the spring of 2010 these many powerful and successful technologies and tools made up mostly isolated islands, and it seemed the obvious choice to begin the 
+        process of bridging them. Finally, in August the same year, the project was begun and and announced during the openSUSE conference in October. Project Bretzn would 
+        make it possible, with a few clicks, to publish software projects directly from the IDE. The development of this project is sponsored by Nokia. (...)</para>
+      <!-- ($ ld: 29.12.10 sm $) -->
     </blockquote>
     <blockquote>
       <title>
@@ -240,28 +224,32 @@
     <blockquote>
       <title>
         <ulink
-          url="http://www.h-online.com/open/news/item/Google-launches-open-source-YouTube-channel-1157267.html"
-          >h-online: Google launches open source YouTube channel</ulink>
+          url="http://www.techradar.com/news/software/operating-systems/linux-in-education-a-genuine-alternative-915319"
+          >Techradar/Graham Morrison: Linux in education: a genuine alternative</ulink>
       </title>
-      <para>Google has launched an<ulink url="http://www.youtube.com/user/googleOSPO"> official
-          YouTube channel</ulink> for its<ulink url="http://code.google.com/opensource/"> Open
-          Source Programs Office</ulink> (OSPO). According to Google Open Source Team member Ellen
-        Ko, the new channel is aimed at organizing videos related to Google and other open source
-        projects in a single place.</para>
-      <para>A number of playlists with videos of, for example, <ulink
-          url="http://www.youtube.com/googletechtalks">Google Tech Talks</ulink> that feature open
-        source projects have already been added. Other videos from Jeremy Allison’s <ulink
-          url="http://www.youtube.com/view_play_list?p=7FC162E0B1E7C602">Geek Time</ulink> series,
-        as well as of Googlers speaking at open source conferences are also available. The Google
-        OSPO YouTube channel currently has 14 videos, with links to a variety of other videos from
-        other channels and users.</para>
-      <para>Google&apos;s current open source projects include the <ulink
-          url="http://www.h-online.com/news/item/Google-releases-Chrome-8-0-stable-1147222.html"
-          >Chrome</ulink> web browser, which is based on <ulink url="http://www.chromium.org/"
-          >Chromium</ulink> , the Android mobile operating system, <ulink
-          url="http://www.h-online.com/news/item/Google-previews-Chrome-OS-Cloud-computing-but-without-touch-1149420.html"
-          >Chrome OS</ulink> and many others.</para>
-      <!-- ($ ld: 22.12.10 sm $) -->
+      <figure id="fig.edu">
+        <title>The Barnix distribution was designed by students at Barnfield College to ease people into the world of Linux</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="45%" fileref="http://cdn.mos.techradar.com//Review%20images/Linux%20Format/LXF%20139/LXF139.schools.barnix_01-218-85.jpg"/>
+        </imageobject>
+      </mediaobject>
+      </figure>
+      <para>Using free software in education is not just about saving money. It's also about preserving choice, not locking a student's experience into a certain way of doing 
+        something.<xref linkend="fig.edu"/></para>
+      <para>With Linux, there's no vendor lock-in. Free software is more likely to be open-standards compliant, and it's going to be more open to different languages, localities 
+        and curricula.</para>
+      <para>It also removes what can sometimes be a barrier to learning; using the same software on your own machine at home. And because there's usually more than one piece of 
+      open source software for a job, free software makes it easier to broaden your experience and look at a variety of methods for completing that job.</para>
+      <para>All of which is essential in a world where technology is turned on its head every five years and where training needs are so unpredictable. It's also never too early 
+      to start training in IT skills, and in the UK at least, computer training starts for many at primary school level.</para>
+      <para>For some, this will be their first experience of a computer. It's also likely to be the first time they've had any kind of formal training on how to use one, and 
+      these first impressions are going to last. So there's a strong argument that teaching should be as unbiased as possible.</para>
+      <para>Yet for a variety of reasons most schools favour Microsoft. There's nothing wrong with this, as experience with Microsoft's ubiquitous products is never going to be 
+      wasted, but as Linux users, we all know there might be a better option.</para>
+      <para>Linux and open source offers a genuine alternative, with many advantages over proprietary training that aren't costrelated, although there's no reason why this can't 
+        be part of the overall solution. (...)</para>
+      <!-- ($ ld: 29.12.10 sm $) -->
     </blockquote>
     <blockquote>
       <title>

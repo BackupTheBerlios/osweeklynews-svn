@@ -23,30 +23,25 @@
   <title>Kernel Review</title>
   <blockquote>
     <title><ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-coming-in-2-6-37-Part-4-Architecture-and-infrastructure-code-1156965.html"
-        >h-online/Thorsten Leemhuis: Kernel Log: coming in 2.6.37 (Part 4) – Architecture and
-        infrastructure code</ulink>
+      url="http://www.linuxuser.co.uk/opinion/the-kernel-column-95-by-jon-masters/"
+      >Linux User and Developer/Jon Masters: The kernel column #95 by Jon Masters</ulink>
     </title>
-    <para><emphasis role="bold">The kernel now includes some components for supporting operation as
-        a Xen host (Dom0). Switching into and out of sleep mode should be accelerated by the use of
-        LZO compression. Following years of work, almost all parts of the kernel are now able to run
-        without using the big kernel lock (BKL). </emphasis></para>
-    <para>On releasing 2.6.37-rc6 last week, Linus Torvalds<ulink
-        url="http://thread.gmane.org/gmane.linux.kernel/1077573"> reiterated</ulink> that he hoped
-      to release Linux kernel 2.6.37 after the holiday period, around the turn of the year. However
-      things have not been running quite as smoothly as he might like – something which probably
-      also applies to the seventh pre-release version, due for release shortly, since a change aimed
-      at improving hardware resource allocation has now been reverted. </para>
-    <para>This, Part 4 of our "What's coming in 2.6.37" Kernel Log series, provides an overview of
-      these and other changes in platform-specific and infrastructure-related kernel code. <ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-1-Graphics-1144218.html"
-        >Part 1</ulink> of the series dealt with graphics hardware-related changes, <ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-2-File-systems-1148305.html"
-        >Part 2</ulink> with file system changes and the <ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-3-Network-and-storage-hardware-1153025.html"
-        >Part 3</ulink> with changes to network and storage code. The fifth and final part will be
-      published around the turn of the year and will deal with other drivers and the kernel
-      subsystems in which they are found. (...)</para>
+    <para><emphasis role="bold">Jon Masters talks about features in the 2.6.37 Linux kernel and describes debugging a kernel problem using the Git bisection feature… </emphasis></para>
+    <para>We’re now free of the Big Kernel Lock (in many configurations – it’s a config option that will hide other not-yet-compatible options when used) and I have been running 
+      systems BKL-free for some time now. Arnd Bergman and others have done an excellent job to rid us of this last vestige of truly ancient non-scalable Linux and unless you need 
+      a V4L (Video-4-Linux – TV tuner, webcam etc) device, you can probably run BKL-free today too. It is hoped that V4L will be fixed soon, maybe in time for 2.6.37. You probably 
+      won’t notice a huge performance benefit of running without the BKL unless you happen to have something more high end than a desktop, but it’s still pretty cool to know that 
+      you could get higher performance if only you could afford to have a system with dozens of CPUs to take advantage of it.</para>
+    <para>calability is great on the high end, but another more impressive feature for those working with more down-to-earth systems is (at last) near-complete support for running 
+      as a Xen ‘Dom0’ (or host kernel) under the Xen hypervisor. For years, the support for Xen host kernels lived in patches separate from the mainline kernel and had to be added 
+      separately. This constrained which Xen kernels could be used and made life more difficult for those using it in their virtualisation setups. It’s not (yet) possible to fully 
+      run an official Linus kernel without any patches as a Dom0 host kernel, but the remaining extra driver pieces and other work should be complete in time for 2.6.38. This 
+      incidentally prompted some folks in the Fedora kernel community to wonder about scheduling. They would like this to land in Fedora 15 (for those who want to use Xen instead 
+      of hardware-based KVM virtualisation) but are unwilling to accept large patches for things not yet in the official kernel (especially given historical experiences with having 
+      to maintain large patches for Xen). Only time can tell what will happen there. (...)</para>
+    <para><emphasis role="italic">This article originally appeared in <ulink url="http://www.linuxuser.co.uk/magazine-issues/linux-user-developer-issue-95-is-out-now/">issue 95</ulink> of 
+      <ulink url="http://www.linuxuser.co.uk/">Linux User &amp; Developer</ulink> magazine.The kernel column #95 by Jon Masters Subscribe and save more than 30% and receive our 
+      exclusive money back guarantee – click <ulink url="https://imagine.subscribeonline.co.uk/all-titles/linux-user-&amp;-developer?offer=WEB100">here</ulink> to find out more.</emphasis></para>
   </blockquote>
-  <!-- ($ ld: 16.12.10 sm $) -->
+  <!-- ($ ld: 29.12.10 sm $) -->
 </sect1>
