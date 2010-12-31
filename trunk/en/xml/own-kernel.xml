@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1 PUBLIC 
-  "-//OASIS//DTD DocBook XML V4.5//EN" 
-  "http://www.docbook.org/xml/4.5/docbookx.dtd"
-[
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
   <!ENTITY % myentities SYSTEM "entities.ent">
   %myentities;
 ]>
@@ -22,9 +20,8 @@
 <sect1 role="kernel">
   <title>Kernel Review</title>
   <blockquote>
-    <title><ulink
-      url="http://www.linuxuser.co.uk/opinion/the-kernel-column-95-by-jon-masters/"
-      >Linux User and Developer/Jon Masters: The kernel column #95 by Jon Masters</ulink>
+    <title>
+      <ulink url="http://www.linuxuser.co.uk/opinion/the-kernel-column-95-by-jon-masters/">Linux User and Developer/Jon Masters: The kernel column #95 by Jon Masters</ulink>
     </title>
     <para><emphasis role="bold">Jon Masters talks about features in the 2.6.37 Linux kernel and describes debugging a kernel problem using the Git bisection feature… </emphasis></para>
     <para>We’re now free of the Big Kernel Lock (in many configurations – it’s a config option that will hide other not-yet-compatible options when used) and I have been running 
@@ -39,9 +36,12 @@
       incidentally prompted some folks in the Fedora kernel community to wonder about scheduling. They would like this to land in Fedora 15 (for those who want to use Xen instead 
       of hardware-based KVM virtualisation) but are unwilling to accept large patches for things not yet in the official kernel (especially given historical experiences with having 
       to maintain large patches for Xen). Only time can tell what will happen there. (...)</para>
-    <para><emphasis role="italic">This article originally appeared in <ulink url="http://www.linuxuser.co.uk/magazine-issues/linux-user-developer-issue-95-is-out-now/">issue 95</ulink> of 
-      <ulink url="http://www.linuxuser.co.uk/">Linux User &amp; Developer</ulink> magazine.The kernel column #95 by Jon Masters Subscribe and save more than 30% and receive our 
-      exclusive money back guarantee – click <ulink url="https://imagine.subscribeonline.co.uk/all-titles/linux-user-&amp;-developer?offer=WEB100">here</ulink> to find out more.</emphasis></para>
+    <para><emphasis role="italic">This article originally appeared in <ulink url="http://www.linuxuser.co.uk/magazine-issues/linux-user-developer-issue-95-is-out-now/">issue 95</ulink> of <ulink url="http://www.linuxuser.co.uk/">Linux User &amp; Developer</ulink> magazine.The kernel column #95 by Jon Masters Subscribe and save more than 30% and receive our exclusive money back guarantee – click <ulink url="https://imagine.subscribeonline.co.uk/all-titles/linux-user-&amp;-developer?offer=WEB100">here</ulink> to find out more.</emphasis></para>
   </blockquote>
-  <!-- ($ ld: 29.12.10 sm $) -->
+<!-- ($ ld: 29.12.10 sm $) -->  <blockquote>
+    <title>
+      <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-5-Drivers-1158991.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.37 (Part 5) - Drivers</ulink>
+    </title>
+    <para>Support for fast USB 3.0 storage devices with USB Attached SCSI Protocol (UASP), an audio loopback driver plus extensions to support Apple&apos;s Magic Trackpad are only some of the advances that improve the hardware support of the forthcoming Linux kernel version 2.6.37; final release is expected in January. (...)</para>
+<!-- ($ ld: 31.12.10 sat $) -->  </blockquote>
 </sect1>
