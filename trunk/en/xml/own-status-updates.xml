@@ -19,6 +19,7 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
@@ -58,8 +59,8 @@
       <para>If you&apos;re interested in helping us, just send a Mail to: <ulink url="mailto:saigkill@opensuse.org">saigkill@opensuse.org</ulink></para>
       <para>Last but not least the openSUSE Weekly News team with the translations into hungarian,
         greek and japanese wishes merry cristmas to all people across the world.</para>
-<!-- ($ ld: 25.12.10 sm $) -->    </blockquote>
-  </sect2>
+      </blockquote>
+  </sect2> -->
   <sect2 role="distribution">
     <title>Distribution</title>
 <!-- 
@@ -92,7 +93,8 @@
         <para>Milestone: Last round of software translation starts - &quot;hard text freeze&quot;($ ld: 11.12.10 sm $</para>
         </listitem>
       </itemizedlist>      
-      </blockquote> -->    <itemizedlist>
+      </blockquote> -->    
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
@@ -105,6 +107,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -132,7 +135,8 @@
         producing infinite traffic on the shares.</para>
       <para>The appliance is configured for port 3491 as the connection port for the smbtatools,
         which allows to inspect the generated traffic from an other machine.</para>
-      <para>SMBTA Stresstester has been created using the fabulous <ulink url="http://www.susestudio.com">SUSE Studio</ulink> and comes in <ulink url="http://en.wikipedia.org/wiki/Open_Virtualization_Format">OVF format</ulink>, and
+      <para>SMBTA Stresstester has been created using the fabulous <ulink url="http://www.susestudio.com">SUSE Studio</ulink> and comes 
+        in <ulink url="http://en.wikipedia.org/wiki/Open_Virtualization_Format">OVF format</ulink>, and
         should be able to run on <emphasis role="bold">KVM</emphasis>, <emphasis role="bold">VMware</emphasis>, and <emphasis role="bold">VirtualBox</emphasis>. The appliance is
         completely self-contained, runs the smbtatorture processes directly after reaching runlevel
         3,and Built with SUSE Studio if your virtual machine is setup to be reachable from the
@@ -144,10 +148,11 @@
         uploaded it to <ulink url="http://morelias.org/smbta/SMBTA_Stresstest.i686-0.0.1.ovf.tar.gz">this place</ulink>. For more information on SMB Traffic Analyzer, please check out it’s
           <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink>. Merry
         Christmas and a happy new year.</para>
-<!-- ($ ld: 23.12.10 sm $) -->    </blockquote>
-  </sect2>
+      </blockquote>
+  </sect2> -->
   <sect2>
     <title>Team Report</title>
+    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -181,13 +186,14 @@
           with a celadon geeko on it and change the green tone in sonar to celadon green
           also.</para>
       </blockquote>
-<!-- ($ ld: 23.12.10 sm $) -->    </sect3>
-<!--
+    </sect3> -->
+    <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
 
       <para>...</para>
-    </sect3> --><!--
+      </sect3> -->
+    <!--
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>      
       
@@ -244,7 +250,8 @@
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
         </formalpara> 
-        </sect3> --><!--
+        </sect3> -->
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -255,13 +262,14 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->    
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/">Nelson Marques: Kick off for GNOME:Ayatana Project…</ulink>
         </title>
-        <para>“Follow effective action with quiet reflection. From the quiet reflection will come even more effective action.” // Peter F. Drucker</para>
+        <para><quote>Follow effective action with quiet reflection. From the quiet reflection will come even more effective action.</quote> // Peter F. Drucker</para>
         <para>This has been one of the guidelines in my life for quite some time… It started as a curiosity a long time ago with Notify OSD and evolved to full project 
           in openSUSE. It is important to acknowledge at this point the motivation provided by the openSUSE GNOME Team from which I’ve been getting plenty of guidance and 
           help, namely from Vincent Untz (vuntz) and Dominique ﻿Leuenberger (Dimstar). Thanks to them, we have now a GNOME:Ayatana Project on OBS (openSUSE Build Service), 
@@ -269,25 +277,27 @@
         <para>Susan Linton has made a small article for Linux Journal about this project in the past. Though some people pointed to me that it was advertising and excelling 
           Ubuntu… I would like to leave a statement… We’re not taking a hike on Ubuntu visibility, and it isn’t bad at all, on the contrary… In fact it will help Ubuntu, us 
           and many others… specially if some Ubuntu patches are accepted faster by upstream. I hope other RPM distributions will follow the way we, openSUSE, proudly seem to 
-          pioneering! From my personal point of view… a distribution ‘distributes’… and despite this software isn’t attractive for some openSUSE users, I’m happy it is 
-          available (totally or partially) for all those who want to test it… Wait… you don’t even need to install Ubuntu or changing the platform you run!</para>
+          pioneering! From my personal point of view… a distribution <quote>distributes</quote>… and despite this software isn’t attractive for some openSUSE users, I’m happy 
+          it is available (totally or partially) for all those who want to test it… Wait… you don’t even need to install Ubuntu or changing the platform you run!</para>
         <para>Due to several reasons, being the most important of them versioning, this repository will start on the next release of openSUSE in March 16th (World day 
         of Conscience, interesting point). This is also interesting as if YOU are willing to improve a package or submit a package you can now do it to this repository.</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="45%" align="center" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"/>
+            <imagedata width="65%" align="center" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"/>
           </imageobject>
         </mediaobject>
         <para>This goes with a very huge cookie for Dimstar and Vuntz for taking care of this repository and making sure that everything will comply with the openSUSE 
         Guidelines. You are my personal heroes. (...)</para>
-<!-- ($ ld: 29.12.10 sm $) -->      </blockquote>
+        <!-- ($ ld: 29.12.10 sm $) -->      
+      </blockquote>
     </sect3>
-<!--
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
+          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/"
+          >Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
         </title>
         <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
           version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
@@ -307,7 +317,9 @@
           about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
           better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>      
       </blockquote> 
-      </sect3> -->    <sect3 role="marketingteam">
+      </sect3> -->    
+    <!--
+    <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
         <title>
@@ -340,9 +352,9 @@
         <para>Let me name one: we need themes for Identi.ca, Blogger and Twitter! Shouldn&apos;t be
           incredibly hard to make and I&apos;m sure Robert Lihm, gnokki, Javier and our other artists can
           and will help here.</para>
-<!-- ($ ld: 24.12.10 sm $) -->      </blockquote>
-    </sect3>
-<!--
+    </blockquote>
+    </sect3> -->
+    <!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
@@ -353,7 +365,8 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->    
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
@@ -415,7 +428,8 @@
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
             inheriting the simplicity, code and security. (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 01.01.11 sat *updated* $) -->      </sect4>
+      <!-- ($ ld: 01.01.11 sat *updated* $) -->      
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
@@ -423,43 +437,51 @@
           <title>
             <ulink url="https://features.opensuse.org/311021">Get rid of the Christmas bootloader screen</ulink>
           </title>
-          <para>&quot;Every year around Christmas, openSUSE changes the bootloader screen to some winter wonderland with animated penguins. To me it is confusing, annoying and childish.
-Please remove it from future releases.&quot;</para>
+          <para>&quot;Every year around Christmas, openSUSE changes the bootloader screen to some winter wonderland with animated penguins. To me it is confusing, annoying and 
+            childish. Please remove it from future releases.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311023">Make GNOME 3 default</ulink>
           </title>
-          <para>&quot;openSUSE has continuously been outranked since 2009 by 3 GNOME-based distributions on distrowatch.com. openSUSE has failed to re-capture its spot as hot contender in 2010 by betting everything on the KDE-4-card.</para>
-          <para>The only way to re-gain popularity and some of the buzz of those early years of SUSE Linux Enterprise Desktop introduction seems to me to strengthen the visibility of GNOME in openSUSE and preferably be at the forefront of GNOME 3 adoption; a position that Ubuntu has foolishly relinquished of its own accord. (...)&quot;</para>
+          <para>&quot;openSUSE has continuously been outranked since 2009 by 3 GNOME-based distributions on distrowatch.com. openSUSE has failed to re-capture its spot as hot 
+            contender in 2010 by betting everything on the KDE-4-card.</para>
+          <para>The only way to re-gain popularity and some of the buzz of those early years of SUSE Linux Enterprise Desktop introduction seems to me to strengthen the 
+            visibility of GNOME in openSUSE and preferably be at the forefront of GNOME 3 adoption; a position that Ubuntu has foolishly relinquished of its own 
+            accord. (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 01.01.11 sat $) -->      </sect4>
+        <!-- ($ ld: 01.01.11 sat $) -->      
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-<!--
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="testing">
+      </sect3> -->    
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2010-12/msg00011.html">Larry Finger: Weekly News for December 25</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry Finger: Weekly News for January 1</ulink>
         </title>
-        <para>The next Testing Core Team IRC meeting to discuss 11.4 Milestone 5 will be held
-          December 27 at 1800 UTC.</para>
-        <para>As most of you are aware, openSUSE 11.4 Milestone 5 was released on schedule.
-          Many of us have had a chance to test it, and found few problems. The only bug
-          added to the &quot;most annoying&quot; list is that zypper is slow on Live-installs (Bug
-          #659864). There is a workaround.</para>
-        <para>I repeat my plea for readers of these news to test, test, test, and and report
-          all bugs to the Novell bugzilla.</para>
-        <para>A very happy holiday for all.</para>
-<!-- ($ ld: 25.12.10 sm $) -->      </blockquote>
+        <para>The next Testing Core Team IRC meeting will be held 2011-01-31 at 18:00 UTC and
+          will discuss 11.4 M6.</para>
+        <para>Attendance at the December 27 meeting was optional. As many of the team were on
+          holiday, only two were present. Neither of us had any particular problems with
+          11.4 M5, thus we took some time to get to know each other. As we did not have a
+          real meeting, the IRC log will not be posted.</para>
+        <para>The openSUSE forums have not had many complaints about M5, thus it appears to be
+          shaping up quite well. In addition, the 2.6.37 kernel, which is used in 11.4,
+          will have its release in roughly 1-2 weeks, thus there will be approximately 3
+          months of kernel testing before 11.4 is released. That is good timing.</para>
+        <para>Wishing everyone a happy and prosperous new year.</para>
+        <!-- ($ ld: 1.1.11 sm $) -->      
+      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>

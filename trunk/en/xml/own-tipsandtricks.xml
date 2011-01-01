@@ -18,6 +18,7 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
+  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
@@ -93,7 +94,7 @@
         problems just starting after the sentence has been read. :-) )But I think that should be
         really all. If not, please use bugzilla and blame us ! Have fun ! </para>
       <para>(Yes, I know that’s the second sentence which should be in every blog :-) )</para>
-<!-- ($ ld: 22.12.10 sm $) -->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://maketecheasier.com/change-linux-displays-on-the-fly-with-disper/2010/12/22">Make Tech Easier/Tavis J. Hampton: How to Change Linux Displays on the Fly with Disper</ulink>
@@ -104,22 +105,27 @@
         hardware manufacturers, Linux now supports a wide variety of laptops and netbooks.
         (...)</para>
     </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
+  </sect2> -->
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.computerworld.com/s/article/9202538/12_Commands_Every_Linux_Newbie_Should_Learn">Computerworld/Katherine Noyes: 12 Commands Every Linux Newbie Should Learn</ulink>
+        <ulink url="http://www.computerworld.com/s/article/9202538/12_Commands_Every_Linux_Newbie_Should_Learn"
+          >Computerworld/Katherine Noyes: 12 Commands Every Linux Newbie Should Learn</ulink>
       </title>
-      <para>PC World - It&apos;s a testament to how far <ulink url="http://www.pcworld.com/businesscenter/article/207479/linux_is_on_the_rise_for_business.html?tk=rel_news">Linux</ulink> has come that users today don&apos;t typically have to use the command line if
-        they don&apos;t want to. Such is the quality of the graphical user interfaces in many modern
-          <ulink url="http://www.pcworld.com/businesscenter/article/204767/a_guide_to_todays_top_10_linux_distributions.html?tk=rel_news">Linux distributions</ulink> that there&apos;s simply no need, in general.</para>
+      <para>PC World - It&apos;s a testament to how far <ulink url="http://www.pcworld.com/businesscenter/article/207479/linux_is_on_the_rise_for_business.html?tk=rel_news"
+        >Linux</ulink> has come that users today don&apos;t typically have to use the command line if they don&apos;t want to. Such is the quality of the graphical user 
+        interfaces in many modern <ulink url="http://www.pcworld.com/businesscenter/article/204767/a_guide_to_todays_top_10_linux_distributions.html?tk=rel_news"
+          >Linux distributions</ulink> that there&apos;s simply no need, in general.</para>
       <para>Yet the command line can be a highly efficient way of getting things done in the Linux
         world--it&apos;s often a much simpler, easier and more direct method than clicking through all
         the menu choices, in fact.</para>
-      <para>I believe fear of the command line is one of the <ulink url="http://www.pcworld.com/businesscenter/article/207739/top_5_mistakes_made_by_linux_firsttimers.html?tk=rel_news">top mistakes</ulink> newcomers to Linux sometimes make. For that reason, let&apos;s look at
+      <para>I believe fear of the command line is one of the 
+        <ulink url="http://www.pcworld.com/businesscenter/article/207739/top_5_mistakes_made_by_linux_firsttimers.html?tk=rel_news"
+          >top mistakes</ulink> newcomers to Linux sometimes make. For that reason, let&apos;s look at
         some of the main commands any Linux user should know. (...)</para>
-<!-- ($ ld: 27.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 27.12.10 sm $) -->    
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.linux.com/learn/tutorials/393476:2010-vim-guide-roundup">Linux.com: 2010 VIm Guide Roundup</ulink>
@@ -133,7 +139,8 @@
         <listitem>
           <para><emphasis role="bold">Vim 101: A Beginner&apos;s Guide to Vim</emphasis></para>
           <para>This tutorial covers Vim&apos;s modes, the basics of moving using Vim&apos;s keybindings,
-            editing, searching and replacing, and much more. Read the rest in <ulink url="http://www.linux.com/learn/tutorials/228600-vim-101-a-beginners-guide-to-vim">A Beginner&apos;s Guide to Vim</ulink>.</para>
+            editing, searching and replacing, and much more. Read the rest in <ulink url="http://www.linux.com/learn/tutorials/228600-vim-101-a-beginners-guide-to-vim"
+              >A Beginner&apos;s Guide to Vim</ulink>.</para>
         </listitem>
         <listitem>
           <para><emphasis role="bold">Vim 201: An Intermediate Guide to Vim</emphasis></para>
@@ -160,12 +167,14 @@
           <para><emphasis role="bold">Using Spell Checking in Vim</emphasis></para>
           <para>If you&apos;re new to Vim and/or using Vim in text mode, it&apos;s not obvious that Vim even
             supports spell checking. But it does, and it&apos;s easy to use once you turn it on. If
-            you&apos;re tackling prose in Vim, you&apos;ll definitely want to read <ulink url="http://www.linux.com/learn/tutorials/357267-using-spell-checking-in-vim">Using Spell Checking in Vim</ulink>.</para>
+            you&apos;re tackling prose in Vim, you&apos;ll definitely want to read <ulink url="http://www.linux.com/learn/tutorials/357267-using-spell-checking-in-vim"
+              >Using Spell Checking in Vim</ulink>.</para>
         </listitem>
       </itemizedlist>
       <para>Look for more guides and tutorials in 2011 on Linux utilities and tools. Have some
       suggestions? Drop us a note in the comments!</para>
-<!-- ($ ld: 29.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 29.12.10 sm $) -->    
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
@@ -173,37 +182,46 @@
       <title>
         <ulink url="https://www.packtpub.com/article/testing-tools-techniques-python">Packt/Daniel Arbuckle: Testing Tools and Techniques in Python</ulink>
       </title>
-      <para>This article by Daniel Arbuckle, author of <ulink url="http://www.packtpub.com/python-testing-beginners-guide/book/ns/pythontesting-abr5/1210?utm_source=ns_pythontesting_abr5_1210&amp;utm_medium=content&amp;utm_campaign=naheed">Python Testing</ulink>, introduces code coverage and continuous integration, and teaches how to tie automated testing into version control systems. In this article, we will</para>
-      <para>* Discuss code coverage, and learn about coverage.py</para>
-      <para>* Discuss continuous integration, and learn about buildbot</para>
-      <para>* Learn how to integrate automated testing into popular version control systems (...)
-</para>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
+      <para>This article by Daniel Arbuckle, author of <ulink url="http://bit.ly/OWN1561">Python Testing</ulink>, introduces code coverage and continuous integration, and teaches 
+        how to tie automated testing into version control systems. In this article, we will</para>
+      <itemizedlist>
+        <listitem><para>Discuss code coverage, and learn about coverage.py</para></listitem>
+        <listitem><para>Discuss continuous integration, and learn about buildbot</para></listitem>
+        <listitem><para>Learn how to integrate automated testing into popular version control systems (...)</para></listitem>
+      </itemizedlist>
+      <!-- ($ ld: 31.12.10 sat $) -->    
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://balau82.wordpress.com/2010/12/28/coding-styles-comparison-in-the-open-source-software-world/">Balau: Coding styles comparison in the Open Source Software world</ulink>
+        <ulink url="http://balau82.wordpress.com/2010/12/28/coding-styles-comparison-in-the-open-source-software-world/"
+          >Balau: Coding styles comparison in the Open Source Software world</ulink>
       </title>
-      <para>While looking for existing C coding standards I discovered that the GNU and Linux projects officially suggest very different styles. Inside the Linux kernel documentation, Linus Torvalds goes so far as to mock GNU coding standards:</para>
+      <para>While looking for existing C coding standards I discovered that the GNU and Linux projects officially suggest very different styles. Inside the Linux kernel 
+        documentation, Linus Torvalds goes so far as to mock GNU coding standards:</para>
       <para><quote>First off, I’d suggest printing out a copy of the GNU coding standards, and NOT read it. Burn them, it’s a great symbolic gesture.</quote></para>
-      <para>At this point I wanted to understand the difference between the coding styles of established open source projects. When I say “styles” I mean mainly the source code appearance, and the standards that help to read and maintain the code. Here’s a list of coding styles that I read:</para>
-      <para>* Linux kernel coding style</para>
-      <para>* GNU Coding Standards</para>
-      <para>* Qt Coding Style</para>
-      <para>* Code Conventions for the Java TM Programming Language (PDF version)</para>
-      <para>* Style Guide for Python Code</para>
-      <para>* GNOME Programming Guidelines</para>
-      <para>* Kdelibs Coding Style</para>
-      <para>* Mono Coding Guidelines</para>
-      <para>* Christian Neukirchen’s Ruby Style Guide</para>
-      <para>* The Unofficial Ruby Usage Guide
-(...)</para>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
+      <para>At this point I wanted to understand the difference between the coding styles of established open source projects. When I say <quote>styles</quote> I mean mainly 
+      the source code appearance, and the standards that help to read and maintain the code. Here’s a list of coding styles that I read:</para>
+      <itemizedlist>
+        <listitem><para>Linux kernel coding style</para></listitem>
+        <listitem><para>GNU Coding Standards</para></listitem>
+        <listitem><para>Qt Coding Style</para></listitem>
+        <listitem><para>Code Conventions for the Java TM Programming Language (PDF version)</para></listitem>
+        <listitem><para>Style Guide for Python Code</para></listitem>
+        <listitem><para>GNOME Programming Guidelines</para></listitem>
+        <listitem><para>Kdelibs Coding Style</para></listitem>
+        <listitem><para>Mono Coding Guidelines</para></listitem>
+        <listitem><para>Christian Neukirchen’s Ruby Style Guide</para></listitem>
+        <listitem><para>The Unofficial Ruby Usage Guide(...)</para></listitem>
+      </itemizedlist>
+      <!-- ($ ld: 31.12.10 sat $) -->    
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://vavai.net/2010/12/domainkeysdkim-implementation-on-zimbrasles-11-sp1-with-opendkim/">Masim Sugianto: DomainKeys/DKIM Implementation on Zimbra+SLES 11 SP1 with OpenDKIM</ulink>
+        <ulink url="http://vavai.net/2010/12/domainkeysdkim-implementation-on-zimbrasles-11-sp1-with-opendkim/"
+          >Masim Sugianto: DomainKeys/DKIM Implementation on Zimbra+SLES 11 SP1 with OpenDKIM</ulink>
       </title>
       <figure id="fig.zimbra">
         <title>Zimbra</title>
@@ -216,7 +234,7 @@
       <para>Following tutorial will covers DomainKeys/DKIM implementation using OpenDKIM on SLES or
         openSUSE. Domain Keys Identified Mail (DKIM) is a technology designed to make it difficult
         or impossible for criminals to steal the identities of legitimate organizations. This
-        authentication technology allows good senders to “sign” a message to prove that it really
+        authentication technology allows good senders to <quote>sign</quote> a message to prove that it really
         did come from them..</para>
       <para>DKIM originally written as sender authentication protocol developed in order to address
         the problem of forged email messages. Yahoo! released the DomainKeys specification and Cisco
@@ -225,9 +243,10 @@
         as DomainKeys Identified Mail (DKIM).</para>
       <para>These are various options for implementing DomainKeys Signature : by using DK-Filter,
         DKIM-milter, OpenDKIM and also by using Amavisd-new DKIM implementation. Don’t be confused
-        with all the terms. All method have similar function, signing your email as “trusted” or
+        with all the terms. All method have similar function, signing your email as <quote>trusted</quote> or
         legitimate email. (...)</para>
-<!-- ($ ld: 27.12.10 sm $) -->    </blockquote>
+        <!-- ($ ld: 27.12.10 sm $) -->    
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.howtoforge.com/postgresql-ssl-certificates">HowtoForge/thebrain.ca: SSL Certificates For PostgreSQL</ulink>
@@ -237,6 +256,7 @@
         postgresql (compiled with ssl support) and openssl are already installed and functional on
         the server (Linux). PgAdmin is already installed on the client (either Windows or Linux).
         (...)</para>
+      <!-- ($ ld: 25.12.10 sat $) --> 
     </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
+    </sect2>
 </sect1>

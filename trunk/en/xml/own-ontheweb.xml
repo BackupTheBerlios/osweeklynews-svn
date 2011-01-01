@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,15 +19,20 @@
 -->
 <sect1 role="ontheweb">
   <title>On the Web</title>
-<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  <sect2>
+  <!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->
+  <sect2>
     <title>Announcements</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.karlitschek.de/2010/12/beta-of-qt-creator-buildservice-plugin.html">Frank Karlitscheck: Beta of the Qt Creator Buildservice Plugin released (Project Bretzn)</ulink>
+        <ulink url="http://blog.karlitschek.de/2010/12/beta-of-qt-creator-buildservice-plugin.html"
+          >Frank Karlitscheck: Beta of the Qt Creator Buildservice Plugin released (Project
+          Bretzn)</ulink>
       </title>
       <mediaobject>
         <imageobject>
-          <imagedata width="45%" fileref="http://3.bp.blogspot.com/_2NI924aDGNc/TRsVY8C6yCI/AAAAAAAAALw/DiW8cGZZL_0/s1600/shot1.jpg"/>
+          <imagedata width="45%"
+            fileref="http://3.bp.blogspot.com/_2NI924aDGNc/TRsVY8C6yCI/AAAAAAAAALw/DiW8cGZZL_0/s1600/shot1.jpg"
+            align="center"/>
         </imageobject>
       </mediaobject>
       <para><emphasis role="bold">What is Project Bretzn?</emphasis></para>
@@ -47,10 +53,12 @@
         openSUSE conference in October. Project Bretzn would make it possible, with a few clicks, to
         publish software projects directly from the IDE. The development of this project is
         sponsored by Nokia. (...)</para>
-<!-- ($ ld: 29.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 29.12.10 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://dot.kde.org/2010/12/28/confkdein-first-kde-conference-india">conf.KDE.in: First KDE Conference in India</ulink>
+        <ulink url="http://dot.kde.org/2010/12/28/confkdein-first-kde-conference-india">conf.KDE.in:
+          First KDE Conference in India</ulink>
       </title>
       <para>The Indian KDE community will organize its first conference at Bengaluru in March 2011.
         The 5 day event will bring together KDE contributors, Qt developers, users and FOSS
@@ -60,26 +68,48 @@
         and ways to contribute to it. We not only dazzle them with the world of KDE, but show them
         first hand how simple it is to get involved and make a difference. This is our motivation
         for conducting this event. (...)</para>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
+      <!-- ($ ld: 31.12.10 sat $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.calligra-suite.org/news/koffice-2-3-0-released/">KOffice 2.3.0 Released</ulink>
+        <ulink url="http://www.calligra-suite.org/news/koffice-2-3-0-released/">KOffice 2.3.0
+          Released</ulink>
       </title>
-      <para>The KOffice team is happy to announce the 2.3 release of KOffice. This release brings many small improvements to all the KOffice applications, but not as many large new features. Among the most important new features are:</para>
-      <para>* Krita is now ready for professional artist use. This is thanks to the very focused effort by the Krita team after a meeting which resulted in a clear vision and well defined goals. More details are available in <ulink url="http://www.calligra-suite.org/news/koffice-2-3-0-released/">Krita 2.3.0 announcement</ulink>
-    </para>
-      <para>* A new slide sorter view in KPresenter, which has been greatly missed by some users. There is also a new shape animations feature for KPresenter.</para>
-      <para>* Improvements of the core engine and plugins in the support of the OpenDocument Format. Especially text rendering has seen much work.</para>
-      <para>* Even more improved support for reading Microsoft file formats (doc, xls, ppt, docx, xlsx, pptx).</para>
-      <para>* A new report engine used in KPlato and Kexi.
-(...)</para>
-<!-- ($ ld: 01.01.11 sat $) -->    </blockquote>
+      <para>The KOffice team is happy to announce the 2.3 release of KOffice. This release brings
+        many small improvements to all the KOffice applications, but not as many large new features.
+        Among the most important new features are:</para>
+      <para>* Krita is now ready for professional artist use. This is thanks to the very focused
+        effort by the Krita team after a meeting which resulted in a clear vision and well defined
+        goals. More details are available in <ulink
+          url="http://www.calligra-suite.org/news/koffice-2-3-0-released/">Krita 2.3.0
+          announcement</ulink>
+      </para>
+      <itemizedlist>
+        <listitem>
+          <para>A new slide sorter view in KPresenter, which has been greatly missed by some users.
+            There is also a new shape animations feature for KPresenter.</para>
+        </listitem>
+        <listitem>
+          <para>Improvements of the core engine and plugins in the support of the OpenDocument
+            Format. Especially text rendering has seen much work.</para>
+        </listitem>
+        <listitem>
+          <para>Even more improved support for reading Microsoft file formats (doc, xls, ppt, docx,
+            xlsx, pptx).</para>
+        </listitem>
+        <listitem>
+          <para>A new report engine used in KPlato and Kexi. (...)</para>
+        </listitem>
+      </itemizedlist>
+      <!-- ($ ld: 01.01.11 sm $) -->
+    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>Call for participation</title>
     <blockquote>
       <title>
-        <ulink url="http://qt-apps.org/news/?id=340">QT Apps: Win 10.000,- EUR at the &quot;Qtest Mobile App Port&quot;</ulink>
+        <ulink url="http://qt-apps.org/news/?id=340">QT Apps: Win 10.000,- EUR at the <quote>Qtest Mobile App Port</quote></ulink>
       </title>
       <para>Welcome to the Qtest Mobile App Port! As developers of applications using Qt, you
         already know how great it is to work with - but how about on mobile platforms, such as
@@ -119,17 +149,20 @@
       <para>You can submit your application to the Ovi Store as many times as you wish during the
         competition. This allows you to get feedback from the public on your software. It´s possible
         to submit new or existing KDE/Qt applications.</para>
-      <para>So have fun and good luck everybody!</para>
-<!-- ($ ld: 23.12.10 sm $) -->    </blockquote>
-  </sect2>
+      <para>So have fun and good luck everybody!</para>    
+    </blockquote>
+  </sect2> -->
   <sect2>
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.groklaw.net/article.php?story=20101228003140376">Groklaw: I Figured Out What to Explain to You Next: Bylaws -- And a Word to the OpenSUSE Guys</ulink>
+        <ulink url="http://www.groklaw.net/article.php?story=20101228003140376">Groklaw: I Figured
+          Out What to Explain to You Next: Bylaws -- And a Word to the OpenSUSE Guys</ulink>
       </title>
       <para>I&apos;ve been thinking and thinking about everything, and I&apos;ve figured out what I
-        need to explain to you next. Reading <ulink url="http://community.opensuse.org/meetings/opensuse-project/2010/opensuse-project.2010-12-15-19.01.log.html">the log</ulink> of the recent OpenSUSE board meeting discussing setting up a foundation
+        need to explain to you next. Reading <ulink
+          url="http://community.opensuse.org/meetings/opensuse-project/2010/opensuse-project.2010-12-15-19.01.log.html"
+          >the log</ulink> of the recent OpenSUSE board meeting discussing setting up a foundation
         for the project turned on the light in my head: you need to understand bylaws. Because
         corporations are setting up foundations to get you to donate code to them, and they set them
         up to suit themselves, not to benefit you. There&apos;s a difference between the community
@@ -153,16 +186,22 @@
         <para>Hire your own lawyer. Don&apos;t rely on Novell&apos;s lawyers to represent the
           community&apos;s interests in the foundation. (...)</para>
       </tip>
-<!-- ($ ld: 28.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 28.12.10 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.techradar.com/news/software/operating-systems/linux-in-education-a-genuine-alternative-915319">Techradar/Graham Morrison: Linux in education: a genuine alternative</ulink>
+        <ulink
+          url="http://www.techradar.com/news/software/operating-systems/linux-in-education-a-genuine-alternative-915319"
+          >Techradar/Graham Morrison: Linux in education: a genuine alternative</ulink>
       </title>
       <figure id="fig.edu">
-        <title>The Barnix distribution was designed by students at Barnfield College to ease people into the world of Linux</title>
+        <title>The Barnix distribution was designed by students at Barnfield College to ease people
+          into the world of Linux</title>
         <mediaobject>
           <imageobject>
-            <imagedata width="45%" fileref="http://cdn.mos.techradar.com//Review%20images/Linux%20Format/LXF%20139/LXF139.schools.barnix_01-218-85.jpg"/>
+            <imagedata width="40%"
+              fileref="http://cdn.mos.techradar.com//Review%20images/Linux%20Format/LXF%20139/LXF139.schools.barnix_01-218-85.jpg"
+              align="center"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -190,10 +229,12 @@
       <para>Linux and open source offers a genuine alternative, with many advantages over
         proprietary training that aren&apos;t costrelated, although there&apos;s no reason why this
         can&apos;t be part of the overall solution. (...)</para>
-<!-- ($ ld: 29.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 29.12.10 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://ostatic.com/blog/results-are-in-opensuses-community-survey">ostatic/Susan Linton: Results are in: openSUSE&apos;s Community Survey</ulink>
+        <ulink url="http://ostatic.com/blog/results-are-in-opensuses-community-survey">ostatic/Susan
+          Linton: Results are in: openSUSE&apos;s Community Survey</ulink>
       </title>
       <para>Back in February openSUSE held a survey to find more out about its community. Who are
         they? What OS do they normally run? What do they want? How can openSUSE improve? Well, the
@@ -204,13 +245,35 @@
         install openSUSE for personal use and are not involved with openSUSE development or
         promotion for email, chat, and surfing the Internet think openSUSE has a good amount of
         software and is easy to install. (...)</para>
-<!-- ($ ld: 31.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 31.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.networkworld.com/community/osi-chimes-in-on-novell-sale"
+          >NetworkWorld/Joe Brockmeier:Open Source Initiative chimes in on Novell
+        sale</ulink></title>
+      <para>The Open Source Initiative (OSI) is stepping into the Novell sale. The organization is
+          <ulink url="http://www.opensource.org/statements/CPTN">asking the German Federal Cartel
+          Office</ulink> to investigate the sale of Novell's patents to the Microsoft-led
+        CPTN.</para>
+      <para>OSI is primarily known for being the keeper of the flame for the <ulink
+          url="http://opensource.org/docs/osd">Open Source Definition (OSD)</ulink> and approving
+        licenses that <ulink url="http://opensource.org/licenses/index.html">meet the
+          definition</ulink>. But members of the self-appointed OSI board, in particular Simon
+        Phipps, have said they <ulink
+          url="http://www.itworld.com/open-source/100432/osi-board-addition-may-bring-needed-change"
+          >wish to nudge OSI into becoming a more active organization</ulink> with an <ulink
+          url="http://blogs.computerworlduk.com/simon-says/2010/06/your-chance-to-change-osi/index.htm"
+          >actual representative membership structure</ulink>. So far, little has happened, but this
+        is at least a minor step in that direction.</para>
+      <!-- ($ ld: 1.1.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxlinks.com/article/2010121805530372/NotableGamesPart3.html">LinuxLinks.com: 21 More Notable Free Linux Games (Part 3 of 3)</ulink>
+        <ulink url="http://www.linuxlinks.com/article/2010121805530372/NotableGamesPart3.html"
+          >LinuxLinks.com: 21 More Notable Free Linux Games (Part 3 of 3)</ulink>
       </title>
       <para>There are often reports regarding concerns about computer games having negative effects
         on children and adults, with the fear that these games can lead to violent behaviour and
@@ -228,55 +291,75 @@
         download). Whilst they do not gain much publicity, many of them offer real depth and
         gameplay. The purpose of this three part article is to help draw attention to these unsung
         gems. (...)</para>
-<!-- ($ ld: 29.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 29.12.10 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/2010s-top-five-linux-and-open-source-stories/8008">ZDNet/Steven J. Vaughan-Nichols: 2010&apos;s Top Five Linux and Open-Source Stories</ulink>
+        <ulink
+          url="http://www.zdnet.com/blog/open-source/2010s-top-five-linux-and-open-source-stories/8008"
+          >ZDNet/Steven J. Vaughan-Nichols: 2010&apos;s Top Five Linux and Open-Source
+          Stories</ulink>
       </title>
       <para>Sure, unlike me, you’re probably not reading this on a Linux desktop–Mint 10 for those
         who care about such things–but do you use Google, Facebook or Twitter? If so, you’re using
         Linux. That Android phone in your pocket? Linux. DVRs, network attached storage (NAS), trade
         stocks? Linux, Linux, Linux.</para>
       <para>I think one of the most telling stories about Linux this year came from a friend of
-        mine, Joe “Zonker” Brockmeier, who told me of a friend who said “Linux was too hard.” When
-        Zonker asked him about his Android phone, he replied something like, “Oh, but Android is
-        easy. It’s not Linux!” (...)</para>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
+        mine, Joe <quote>Zonker</quote> Brockmeier, who told me of a friend who said <quote>Linux
+          was too hard.</quote> When Zonker asked him about his Android phone, he replied something
+        like, <quote>Oh, but Android is easy. It’s not Linux!</quote> (...)</para>
+      <!-- ($ ld: 31.12.10 sat $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.networkworld.com/community/node/70116">Network World/Joe Brockmeier: Understanding the Open Invention Network</ulink>
+        <ulink url="http://www.networkworld.com/community/node/70116">Network World/Joe Brockmeier:
+          Understanding the Open Invention Network</ulink>
       </title>
-      <para>A couple of weeks ago I wrote about the <ulink url="http://www.networkworld.com/community/novell-patent-quartet-spells-google-trouble">CPTN gang that&apos;s buying Novell&apos;s patents</ulink> and speculated that it might
+      <para>A couple of weeks ago I wrote about the <ulink
+          url="http://www.networkworld.com/community/novell-patent-quartet-spells-google-trouble"
+          >CPTN gang that&apos;s buying Novell&apos;s patents</ulink> and speculated that it might
         be a Google they&apos;re after. Whether Google or another company, a few folks have
         commented that the Open Invention Network (OIN) can protect members against patent threats
         from other OIN members. When it comes to Linux, that&apos;s true. When it comes to other
         things? Not so much. (...)</para>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
+      <!-- ($ ld: 31.12.10 sat $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxinsider.com/rsstory/71551.html?wlc=1293794091">Linuxinsider.com/Katherine Noyes: Linuxy Hopes, Dreams and Resolutions for 2011</ulink>
+        <ulink url="http://www.linuxinsider.com/rsstory/71551.html?wlc=1293794091"
+          >Linuxinsider.com/Katherine Noyes: Linuxy Hopes, Dreams and Resolutions for 2011</ulink>
       </title>
       <mediaobject>
         <imageobject>
-          <imagedata width="25%" fileref="http://www.linuxinsider.com/images/rw612529/linuxy.jpg"/>
+          <imagedata width="20%" fileref="http://www.linuxinsider.com/images/rw612529/linuxy.jpg"
+            align="center"/>
         </imageobject>
       </mediaobject>
-      <para><emphasis role="bold">Continuing to advocate &quot;for all things Open Source or built with Open Source&quot; is on Slashdot blogger yagu&apos;s 2011 to-do list -- &quot;and I resolve to call out any and all reaping the benefits of Open Source who don&apos;t give back.&quot; Also, &quot;I resolve to be respectful and humble in regards to everything Microsoft,&quot; he asserted sincerely before adding, &quot;I always like to pick at least one resolution I can break early.&quot;</emphasis></para>
-      <para>Now that New Year&apos;s Eve is almost upon us once again, there seems little to do with 2010
-        but bid it a fond farewell and set our sights on what&apos;s to come. </para>
-      <para>We&apos;ve already taken the required <ulink url="http://www.linuxinsider.com/perl/story/71368.html">look back</ulink> over the year;
-        we&apos;ve even put the &quot;<ulink url="http://www.linuxinsider.com/perl/story/71470.html">year of</ulink>&quot; debate through one more round. Now, all that&apos;s left to do is formulate the
-        hopes, dreams and resolutions that will carry us forward into 2011. </para>
+      <para><emphasis role="bold">Continuing to advocate &quot;for all things Open Source or built
+          with Open Source&quot; is on Slashdot blogger yagu&apos;s 2011 to-do list -- &quot;and I
+          resolve to call out any and all reaping the benefits of Open Source who don&apos;t give
+          back.&quot; Also, &quot;I resolve to be respectful and humble in regards to everything
+          Microsoft,&quot; he asserted sincerely before adding, &quot;I always like to pick at least
+          one resolution I can break early.&quot;</emphasis></para>
+      <para>Now that New Year&apos;s Eve is almost upon us once again, there seems little to do with
+        2010 but bid it a fond farewell and set our sights on what&apos;s to come. </para>
+      <para>We&apos;ve already taken the required <ulink
+          url="http://www.linuxinsider.com/perl/story/71368.html">look back</ulink> over the year;
+        we&apos;ve even put the &quot;<ulink url="http://www.linuxinsider.com/perl/story/71470.html"
+          >year of</ulink>&quot; debate through one more round. Now, all that&apos;s left to do is
+        formulate the hopes, dreams and resolutions that will carry us forward into 2011. </para>
       <para>That, at least, is what Linux bloggers have been doing in recent days down at the
-        blogosphere&apos;s seedy Broken Windows Lounge, where the snow drifts have now all but blocked
-        any remaining view out of the already grimy windows. </para>
+        blogosphere&apos;s seedy Broken Windows Lounge, where the snow drifts have now all but
+        blocked any remaining view out of the already grimy windows. </para>
       <para>The mood has been somber and contemplative, aided no doubt by the Peppermint Penguins,
         the Sudo Santas and the Command Lime Coolers that have been so freely flowing. </para>
       <para>What are <ulink url="http://en.wikipedia.org/wiki/FOSS">FOSS</ulink> geeks hoping might
         happen in this coming year? What are their own resolutions and plans? Linux Girl settled
         into her favorite bar stool and took it upon herself to find out. (...)</para>
-<!-- ($ ld: 31.12.10 sm $) -->    </blockquote>
+      <!-- ($ ld: 31.12.10 sm $) -->
+    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>Warning!</title>
     <blockquote>
@@ -293,7 +376,7 @@
       <para>The new version also fixes a number of additional <ulink url="http://www.proftpd.org/docs/NEWS-1.3.3d">bugs</ulink>; as a result, the GPL-licensed
         server is reportedly now more stable. At the same time, the developers have also published
         the first release candidate for version <ulink url="http://www.proftpd.org/docs/RELEASE_NOTES-1.3.4rc1">1.3.4</ulink>. (...)</para>
-<!-- ($ ld: 22.12.10 sm $) -->    </blockquote>
+    </blockquote>
   </sect2>
   <sect2>
     <title>LOL</title>
@@ -318,5 +401,5 @@
         the technological shark with whimsical and weird gear, some of which is downright loopy.
         Here are our favorite examples of oddball tech that could be made only in Japan.</para>
     </blockquote>
-<!-- ($ ld: 25.12.10 sat $) -->  </sect2>
+  </sect2>-->
 </sect1>
