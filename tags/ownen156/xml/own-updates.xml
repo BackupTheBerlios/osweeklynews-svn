@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/yamdi">Packman: yamdi 1.7-0.pm</ulink></title>
+    <para><quote>yamdi stands for Yet Another MetaData Injector and is a metadata injector
+      for FLV files. It adds the onMetaData event to your FLV files. It uses little
+      memory, is fast, and can handle big files (over 1 GB).</quote></para>
+    <!-- ($ ld: 27.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/pogo">Packman: pogo 0.3.1-0.pm</ulink></title>
+    <para><quote>Pogo is probably the simplest and fastest audio player for Linux. Its
+      elementary-inspired design uses the screen-space very efficiently. Pogo is
+      especially well-suited for people who organize their music by albums on the
+      hard drive. The main interface components are a directory tree and a playlist
+      that groups albums in an innovative way.</quote></para>
+    <!-- ($ ld: 28.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.de/package/mupen64plus">Packman: mupen64plus 1.99.4-2.pm</ulink></title>
+    <para><quote><ulink url="http://code.google.com/p/mupen64plus/">Mupen64Plus</ulink> is a plugin-based N64 emulator which is capable of accurately
+      playing many games. It includes four MIPS R4300 CPU emulators, with dynamic
+      recompilers for 32-bit x86 and 64-bit amd64 systems.  It supports plugins for
+      audio, graphical rendering (RDP), the signal co-processor (RSP), and input.</quote></para>
+    <!-- ($ ld: 28.12.10 sm $) -->
+  </blockquote>
+  <itemizedlist>
+    <title>You can find other interesting Packages at:</title>
+    <listitem>
+      <para><ulink url="http://packman.links2linux.de/rdf/packman_en.rdf">Packman</ulink></para>
+    </listitem>
+    <listitem>
+      <para><ulink url="https://hermes.opensuse.org/feeds/66367.rdf">openSUSE Build
+        Service</ulink></para>
+    </listitem>
+  </itemizedlist>
+</sect1>

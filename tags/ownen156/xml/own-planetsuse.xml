@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://log.or.cz/?p=108">Petr Baudis: quick update</ulink></title>
+    <para>Couple of things to blog about accumulated again, so I guess I will be posting bunch of articles soon. For such a long gap, a general update is in order, 
+    I suppose.</para>
+    <para>Aside of my studies, continuous MCTS (Go) research, grinding away on random glibc bugs and such, I most notably got involved in <emphasis role="bold">brmlab</emphasis> 
+      this summer – the <ulink url="http://brmlab.cz/">Prague hackerspace</ulink>. We got a pretty thriving community there now, with various cool events, a lot of great 
+      projects (I’m involved in quite a few), and so on!</para>
+    <para>Well, I wanted to mention more, but I can’t remember it right now. I suppose it will just come together. Oh, and seeing my last post – I have a new bike, this time 
+      with insurance. ;-)</para>
+    <!-- ($ ld: 28.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://log.or.cz/?p=110">Petr Baudis: Datasheet Translator</ulink></title>
+    <para>As we (well, mostly other people than me) were dealing with a rather obscure micro-controller when hacking our laser projector in brmlab, the only datasheet we have 
+      found has been in Chinese. This is quite often the case with obscure China-made parts (including event stuff like LEDs) and it’s annoying to deal with.</para>
+    <para>So I hacked together a simple datasheet translator – you feed it a PDF with your datasheet, specify the source language, let it munch away for a minute and then it 
+      spews out a link to the English translation!</para>
+    <itemizedlist>
+      <listitem><para><ulink url="http://datasheet-en.or.cz/">http://datasheet-en.or.cz</ulink></para></listitem>
+      <listitem><para>Example: <ulink url="http://tinyurl.com/2bbq6o7">http://tinyurl.com/2bbq6o7</ulink></para></listitem>
+    </itemizedlist>
+    <para>Its user interface is extremely rudimentary, if someone wants to add an AJAXy progressbar and what-not, just let me know. :-)</para>
+    <para>The <quote>technology</quote> is not much to mention either – thankfully, pdftohtml can do quite nifty stuff nowadays (just needs a lot of beating to properly zoom the 
+      documents), and Google Translate can do awesome job with technical documents.</para>
+    <!-- ($ ld: 28.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://sellingfreesoftwareforaliving.blogspot.com/2010/12/suse-linux-enterprise-wins-readers.html"
+      >Han Wen Kam: SUSE Linux Enterprise Wins Readers' Choice Award 2010</ulink></title>
+    <para>On 15th October 2010, Novell was presented a <ulink url="http://www.computerworld.com.sg/rca-2010/winners">Readers' Choice Award</ulink> from 
+      <ulink url="http://mis-asia.com/magazines/computerworld_singapore">ComputerWorld Singapore</ulink> for winning in the Open Source Platforms/Operating Systems category. 
+      It was a very proud moment for us in Novell Singapore and I'm sure it will pleased all SUSE supporters everywhere.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="25%" fileref="http://4.bp.blogspot.com/_B1ti23BeShI/TRqM3yUwEuI/AAAAAAAAAl8/yu8tJctXuow/s1600/SUSE-Trophy.jpg" align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>Above is a photo of the trophy presented and its now sitting in a prominent place in the Novell Singapore office. :)</para>
+    <!-- ($ ld: 29.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://dev-loki.blogspot.com/2010/12/discussion-packman-repository-layout.html">Pascal Bleser: Discussion: Packman repository layout</ulink></title>
+    <para>Just to inform everyone (who reads Planet openSUSE ;)) that we have started a <ulink url="http://lists.links2linux.de/pipermail/packman/2010-December/009213.html"
+      >crucial discussion on the packman mailing-list</ulink> about (potentially) changing the layout of repositories.</para>
+    <para>As most if not all of you are using Packman on openSUSE, your opinion is more than welcome and if you would like to chime in, please give us your feedback (by 
+      email, <emphasis role="bold">NOT</emphasis> as comments on this blog post).</para>
+    <para>Ultimately, the <ulink url="http://packman.links2linux.org/">Packman</ulink> team will obviously take the decision, but we are very concerned about what would suit 
+      our users best and, hence, we'd love to hear what you'd prefer us to do.</para>
+    <!-- ($ ld: 1.1.11 sm $) -->
+  </blockquote>
+</sect1>

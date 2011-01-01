@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+  <!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->
+  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.karlitschek.de/2010/12/beta-of-qt-creator-buildservice-plugin.html"
+          >Frank Karlitscheck: Beta of the Qt Creator Buildservice Plugin released (Project
+          Bretzn)</ulink>
+      </title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="45%"
+            fileref="http://3.bp.blogspot.com/_2NI924aDGNc/TRsVY8C6yCI/AAAAAAAAALw/DiW8cGZZL_0/s1600/shot1.jpg"
+            align="center"/>
+        </imageobject>
+      </mediaobject>
+      <para><emphasis role="bold">What is Project Bretzn?</emphasis></para>
+      <para>Apart from being a tasty Bavarian bread-snack, Bretzn is a code-name for a collection of
+        technology aimed at solving a problem which has existed in software development for a very
+        long time: How do you get your applications build for all available platforms and get it to
+        your users?</para>
+      <para>In the open source community, we already have many individual bits of this dream in
+        place. We the great cross platform toolkit Qt, we have the powerful openSuse Build Service
+        which allows for the easy creation of binaries for a great number of Linux distributions, we
+        have the Open Collaboration Services (OCS) which allows for the easy and socially adept
+        distribution of packages both to and from central software download sites such as
+        KDE-Apps.org, and we have a great many powerful integrated development enviromnents such as
+        Qt Creator, KDevelop and Eclipse.</para>
+      <para>In the spring of 2010 these many powerful and successful technologies and tools made up
+        mostly isolated islands, and it seemed the obvious choice to begin the process of bridging
+        them. Finally, in August the same year, the project was begun and and announced during the
+        openSUSE conference in October. Project Bretzn would make it possible, with a few clicks, to
+        publish software projects directly from the IDE. The development of this project is
+        sponsored by Nokia. (...)</para>
+      <!-- ($ ld: 29.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://dot.kde.org/2010/12/28/confkdein-first-kde-conference-india">conf.KDE.in:
+          First KDE Conference in India</ulink>
+      </title>
+      <para>The Indian KDE community will organize its first conference at Bengaluru in March 2011.
+        The 5 day event will bring together KDE contributors, Qt developers, users and FOSS
+        enthusiasts.</para>
+      <para>We realise that there are not many KDE/Qt related events that are accessible to Indians.
+        FOSS conferences or meetings are an excellent way to show people the technology first hand
+        and ways to contribute to it. We not only dazzle them with the world of KDE, but show them
+        first hand how simple it is to get involved and make a difference. This is our motivation
+        for conducting this event. (...)</para>
+      <!-- ($ ld: 31.12.10 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.calligra-suite.org/news/koffice-2-3-0-released/">KOffice 2.3.0
+          Released</ulink>
+      </title>
+      <para>The KOffice team is happy to announce the 2.3 release of KOffice. This release brings
+        many small improvements to all the KOffice applications, but not as many large new features.
+        Among the most important new features are:</para>
+      <para>* Krita is now ready for professional artist use. This is thanks to the very focused
+        effort by the Krita team after a meeting which resulted in a clear vision and well defined
+        goals. More details are available in <ulink
+          url="http://www.calligra-suite.org/news/koffice-2-3-0-released/">Krita 2.3.0
+          announcement</ulink>
+      </para>
+      <itemizedlist>
+        <listitem>
+          <para>A new slide sorter view in KPresenter, which has been greatly missed by some users.
+            There is also a new shape animations feature for KPresenter.</para>
+        </listitem>
+        <listitem>
+          <para>Improvements of the core engine and plugins in the support of the OpenDocument
+            Format. Especially text rendering has seen much work.</para>
+        </listitem>
+        <listitem>
+          <para>Even more improved support for reading Microsoft file formats (doc, xls, ppt, docx,
+            xlsx, pptx).</para>
+        </listitem>
+        <listitem>
+          <para>A new report engine used in KPlato and Kexi. (...)</para>
+        </listitem>
+      </itemizedlist>
+      <!-- ($ ld: 01.01.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://qt-apps.org/news/?id=340">QT Apps: Win 10.000,- EUR at the <quote>Qtest Mobile App Port</quote></ulink>
+      </title>
+      <para>Welcome to the Qtest Mobile App Port! As developers of applications using Qt, you
+        already know how great it is to work with - but how about on mobile platforms, such as
+        Symbian and MeeGo? How would you like to take that step you have been wanting to take, but
+        not been able to justify: Take your application from the desktop and bring it into the
+        hand-held world via the Ovi store. Let this contest be the justification, with the
+        possibility of a new phone or even 10,000 euros waiting at the end. </para>
+      <para><emphasis role="bold">Dates</emphasis>: The contest starts on 20th of December, 2010,
+        and runs till 28th of February. The 31st of December is important for you if you wish to
+        take part in the Early Bird competition. If you do no win, you will still take part in the
+        main competition, and will be allowed to continue your work and submit new versions to the
+        Ovi Store. The 28th of February is the deadline for taking part in the main
+        competition.</para>
+      <para><emphasis role="bold">Developer Sprint</emphasis>: There will be a sponsored developer
+        sprint organized together with the KDE e.V. during the competition. The travel and stay can
+        be paid for if you do not have the budget yourself. Further details will be made public at a
+        later time, and all participants will be notified of this information via email. </para>
+      <para><emphasis role="bold">Judging and prizes</emphasis>: The Qtest Mobile App Port is
+        evaluated by a panel of judges which will be announced in the next few days. The jury will
+        pic 5 winners at 31th of December as the early bird winners. Every winner gets a free N900
+        phone. The main competition first prize is EUR 10,000, which will be awarded to the
+        application which the judges find to be the best ported application. The second to sixth
+        price will be another 5 N900 phones.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%" fileref="http://qt-apps.org/CONTENT/news-pics/340-pic4.jpg"/>
+        </imageobject>
+      </mediaobject>
+      <para>And, finally: Everybody who takes part in the competition will be awarded a gift bag,
+        with a T-shirt and other merchandise.</para>
+      <para><emphasis role="bold">Eligibility</emphasis>: To be able to take part in the contest,
+        the ported application must be submitted for Ovi Store signing by one of the two deadlines:
+        - Early bird entries must be submitted by December 31st - Standard entries must be submitted
+        by February 28th.</para>
+      <para>You also have to submit your application to the &quot;Mobile Contest&quot; category on
+        Qt-Apps.org or MeeGo-Central.org </para>
+      <para>You can submit your application to the Ovi Store as many times as you wish during the
+        competition. This allows you to get feedback from the public on your software. It´s possible
+        to submit new or existing KDE/Qt applications.</para>
+      <para>So have fun and good luck everybody!</para>    
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.techradar.com/news/software/operating-systems/linux-in-education-a-genuine-alternative-915319"
+          >Techradar/Graham Morrison: Linux in education: a genuine alternative</ulink>
+      </title>
+      <figure id="fig.edu">
+        <title>The Barnix distribution was designed by students at Barnfield College to ease people
+          into the world of Linux</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="40%"
+              fileref="http://cdn.mos.techradar.com//Review%20images/Linux%20Format/LXF%20139/LXF139.schools.barnix_01-218-85.jpg"
+              align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Using free software in education is not just about saving money. It&apos;s also about
+        preserving choice, not locking a student&apos;s experience into a certain way of doing
+          something.<xref linkend="fig.edu"/></para>
+      <para>With Linux, there&apos;s no vendor lock-in. Free software is more likely to be
+        open-standards compliant, and it&apos;s going to be more open to different languages,
+        localities and curricula.</para>
+      <para>It also removes what can sometimes be a barrier to learning; using the same software on
+        your own machine at home. And because there&apos;s usually more than one piece of open
+        source software for a job, free software makes it easier to broaden your experience and look
+        at a variety of methods for completing that job.</para>
+      <para>All of which is essential in a world where technology is turned on its head every five
+        years and where training needs are so unpredictable. It&apos;s also never too early to start
+        training in IT skills, and in the UK at least, computer training starts for many at primary
+        school level.</para>
+      <para>For some, this will be their first experience of a computer. It&apos;s also likely to be
+        the first time they&apos;ve had any kind of formal training on how to use one, and these
+        first impressions are going to last. So there&apos;s a strong argument that teaching should
+        be as unbiased as possible.</para>
+      <para>Yet for a variety of reasons most schools favour Microsoft. There&apos;s nothing wrong
+        with this, as experience with Microsoft&apos;s ubiquitous products is never going to be
+        wasted, but as Linux users, we all know there might be a better option.</para>
+      <para>Linux and open source offers a genuine alternative, with many advantages over
+        proprietary training that aren&apos;t costrelated, although there&apos;s no reason why this
+        can&apos;t be part of the overall solution. (...)</para>
+      <!-- ($ ld: 29.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://ostatic.com/blog/results-are-in-opensuses-community-survey">ostatic/Susan
+          Linton: Results are in: openSUSE&apos;s Community Survey</ulink>
+      </title>
+      <para>Back in February openSUSE held a survey to find more out about its community. Who are
+        they? What OS do they normally run? What do they want? How can openSUSE improve? Well, the
+        results are in and quite interesting to openSUSE users and the community at large.</para>
+      <para>Most questions received approximately 8,500 responses. Generally it was found that young
+        male adult students with moderate to high technical knowledge and prefer stability, hardware
+        support, and security, many of which dual boot with some version of Windows for work, who
+        install openSUSE for personal use and are not involved with openSUSE development or
+        promotion for email, chat, and surfing the Internet think openSUSE has a good amount of
+        software and is easy to install. (...)</para>
+      <!-- ($ ld: 31.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.networkworld.com/community/osi-chimes-in-on-novell-sale"
+          >NetworkWorld/Joe Brockmeier:Open Source Initiative chimes in on Novell
+        sale</ulink></title>
+      <para>The Open Source Initiative (OSI) is stepping into the Novell sale. The organization is
+          <ulink url="http://www.opensource.org/statements/CPTN">asking the German Federal Cartel
+          Office</ulink> to investigate the sale of Novell's patents to the Microsoft-led
+        CPTN.</para>
+      <para>OSI is primarily known for being the keeper of the flame for the <ulink
+          url="http://opensource.org/docs/osd">Open Source Definition (OSD)</ulink> and approving
+        licenses that <ulink url="http://opensource.org/licenses/index.html">meet the
+          definition</ulink>. But members of the self-appointed OSI board, in particular Simon
+        Phipps, have said they <ulink
+          url="http://www.itworld.com/open-source/100432/osi-board-addition-may-bring-needed-change"
+          >wish to nudge OSI into becoming a more active organization</ulink> with an <ulink
+          url="http://blogs.computerworlduk.com/simon-says/2010/06/your-chance-to-change-osi/index.htm"
+          >actual representative membership structure</ulink>. So far, little has happened, but this
+        is at least a minor step in that direction.</para>
+      <!-- ($ ld: 1.1.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxlinks.com/article/2010121805530372/NotableGamesPart3.html"
+          >LinuxLinks.com: 21 More Notable Free Linux Games (Part 3 of 3)</ulink>
+      </title>
+      <para>There are often reports regarding concerns about computer games having negative effects
+        on children and adults, with the fear that these games can lead to violent behaviour and
+        addiction. However, studies by leading researchers have shown that there are many positive
+        attributes to playing computer games, some of which we have alluded to in our earlier
+        articles. Computer games can help players to improve their cognitive skills, enhance
+        creativity, deepen language and maths skills, and help people to think on their feet and
+        outside the box, the latter referring to novel, creative and smart thinking. However, above
+        all these things, games offer pure, unadulterated fun. </para>
+      <para>Linux is vastly underrated as a gaming platform. This may be due to the fact that there
+        is no significant marketing of Linux games. With a lack of big-name games featuring in the
+        computing press, coupled with a low market share for Linux on desktop PCs, things might seem
+        bleak, with major barriers to the growth of Linux games.</para>
+      <para>However, the reality is that Linux has a huge range of games (predominately free to
+        download). Whilst they do not gain much publicity, many of them offer real depth and
+        gameplay. The purpose of this three part article is to help draw attention to these unsung
+        gems. (...)</para>
+      <!-- ($ ld: 29.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.zdnet.com/blog/open-source/2010s-top-five-linux-and-open-source-stories/8008"
+          >ZDNet/Steven J. Vaughan-Nichols: 2010&apos;s Top Five Linux and Open-Source
+          Stories</ulink>
+      </title>
+      <para>Sure, unlike me, you’re probably not reading this on a Linux desktop–Mint 10 for those
+        who care about such things–but do you use Google, Facebook or Twitter? If so, you’re using
+        Linux. That Android phone in your pocket? Linux. DVRs, network attached storage (NAS), trade
+        stocks? Linux, Linux, Linux.</para>
+      <para>I think one of the most telling stories about Linux this year came from a friend of
+        mine, Joe <quote>Zonker</quote> Brockmeier, who told me of a friend who said <quote>Linux
+          was too hard.</quote> When Zonker asked him about his Android phone, he replied something
+        like, <quote>Oh, but Android is easy. It’s not Linux!</quote> (...)</para>
+      <!-- ($ ld: 31.12.10 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.networkworld.com/community/node/70116">Network World/Joe Brockmeier:
+          Understanding the Open Invention Network</ulink>
+      </title>
+      <para>A couple of weeks ago I wrote about the <ulink
+          url="http://www.networkworld.com/community/novell-patent-quartet-spells-google-trouble"
+          >CPTN gang that&apos;s buying Novell&apos;s patents</ulink> and speculated that it might
+        be a Google they&apos;re after. Whether Google or another company, a few folks have
+        commented that the Open Invention Network (OIN) can protect members against patent threats
+        from other OIN members. When it comes to Linux, that&apos;s true. When it comes to other
+        things? Not so much. (...)</para>
+      <!-- ($ ld: 31.12.10 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxinsider.com/rsstory/71551.html?wlc=1293794091"
+          >Linuxinsider.com/Katherine Noyes: Linuxy Hopes, Dreams and Resolutions for 2011</ulink>
+      </title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="20%" fileref="http://www.linuxinsider.com/images/rw612529/linuxy.jpg"
+            align="center"/>
+        </imageobject>
+      </mediaobject>
+      <para><emphasis role="bold">Continuing to advocate &quot;for all things Open Source or built
+          with Open Source&quot; is on Slashdot blogger yagu&apos;s 2011 to-do list -- &quot;and I
+          resolve to call out any and all reaping the benefits of Open Source who don&apos;t give
+          back.&quot; Also, &quot;I resolve to be respectful and humble in regards to everything
+          Microsoft,&quot; he asserted sincerely before adding, &quot;I always like to pick at least
+          one resolution I can break early.&quot;</emphasis></para>
+      <para>Now that New Year&apos;s Eve is almost upon us once again, there seems little to do with
+        2010 but bid it a fond farewell and set our sights on what&apos;s to come. </para>
+      <para>We&apos;ve already taken the required <ulink
+          url="http://www.linuxinsider.com/perl/story/71368.html">look back</ulink> over the year;
+        we&apos;ve even put the &quot;<ulink url="http://www.linuxinsider.com/perl/story/71470.html"
+          >year of</ulink>&quot; debate through one more round. Now, all that&apos;s left to do is
+        formulate the hopes, dreams and resolutions that will carry us forward into 2011. </para>
+      <para>That, at least, is what Linux bloggers have been doing in recent days down at the
+        blogosphere&apos;s seedy Broken Windows Lounge, where the snow drifts have now all but
+        blocked any remaining view out of the already grimy windows. </para>
+      <para>The mood has been somber and contemplative, aided no doubt by the Peppermint Penguins,
+        the Sudo Santas and the Command Lime Coolers that have been so freely flowing. </para>
+      <para>What are <ulink url="http://en.wikipedia.org/wiki/FOSS">FOSS</ulink> geeks hoping might
+        happen in this coming year? What are their own resolutions and plans? Linux Girl settled
+        into her favorite bar stool and took it upon herself to find out. (...)</para>
+      <!-- ($ ld: 31.12.10 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.groklaw.net/article.php?story=20101228003140376">Groklaw: I Figured
+          Out What to Explain to You Next: Bylaws -- And a Word to the OpenSUSE Guys</ulink>
+      </title>
+      <para>I&apos;ve been thinking and thinking about everything, and I&apos;ve figured out what I
+        need to explain to you next. Reading <ulink
+          url="http://community.opensuse.org/meetings/opensuse-project/2010/opensuse-project.2010-12-15-19.01.log.html"
+          >the log</ulink> of the recent OpenSUSE board meeting discussing setting up a foundation
+        for the project turned on the light in my head: you need to understand bylaws. Because
+        corporations are setting up foundations to get you to donate code to them, and they set them
+        up to suit themselves, not to benefit you. There&apos;s a difference between the community
+        setting up a foundation to be a project&apos;s home and a corporate sponsor doing it.
+        I&apos;m going to write about that in more detail later. To really explain it, I need to
+        explain some things that you might think will be boring or too foreign, but if you can learn
+        Perl, you can learn bylaws.</para>
+      <para>I&apos;ll tell you that my favorite task when I was working as a paralegal was drawing
+        up bylaws for new businesses and entities setting up for the first time. It interests me, so
+        I&apos;ll try to make it interesting to you. But what should motivate you is this: whatever
+        the bylaws say is what the entity legally can and can&apos;t do. It matters. It will affect
+        you. So, just as you&apos;d try to learn a language before visiting a foreign country, at
+        least enough to get around so that if you get lost, you&apos;ll have some way to find your
+        hotel again and a bathroom en route, you should understand enough about bylaws and
+        incorporation so no one can blindside you.</para>
+      <para>I&apos;m still working on the Comes v. Microsoft exhibits project, and I swore I&apos;d
+        finish first, so it will take me a while to get to this to explain in detail, but in the
+        meantime, I just want to say to the community stakeholders in the OpenSUSE Project,
+        here&apos;s what I think you should do:</para>
+      <tip>
+        <para>Hire your own lawyer. Don&apos;t rely on Novell&apos;s lawyers to represent the
+          community&apos;s interests in the foundation. (...)</para>
+      </tip>
+      <!-- ($ ld: 28.12.10 sm $) -->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.h-online.com/security/news/item/Phrack-hole-closed-in-ProFTPD-1156782.html">h-online: Phrack hole closed in ProFTPD </ulink>
+      </title>
+      <para>The development team behind <ulink url="http://www.proftpd.org/">ProFTPD</ulink> has
+        released version <ulink url="http://www.proftpd.org/docs/RELEASE_NOTES-1.3.3d">1.3.3d</ulink>, which closes a critical security hole in the SQL module of all previous
+        versions. The flaw was <ulink url="http://www.phrack.org/issues.html">reported</ulink>
+        roughly a month ago in Phrack, the hacker magazine. A buffer overflow in the function
+        sql_prepare_where() allows attackers to remotely execute arbitrary code on the server. The
+        developers themselves suffered when this vulnerability was exploited by still unknown
+        parties, who entered the project server and <ulink url="http://www.h-online.com/news/item/Back-door-in-ProFTPD-FTP-server-1146592.html">installed</ulink> a back door in the source code.</para>
+      <para>The new version also fixes a number of additional <ulink url="http://www.proftpd.org/docs/NEWS-1.3.3d">bugs</ulink>; as a result, the GPL-licensed
+        server is reportedly now more stable. At the same time, the developers have also published
+        the first release candidate for version <ulink url="http://www.proftpd.org/docs/RELEASE_NOTES-1.3.4rc1">1.3.4</ulink>. (...)</para>
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>LOL</title>
+    <blockquote>
+      <title>
+        <ulink url="http://xkcd.com/838/">XKCD: Incident</ulink>
+      </title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="50%" fileref="http://imgs.xkcd.com/comics/incident.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License.
+      </para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.pcworld.com/article/214710/15_crazy_japanese_tech_gizmos.html">PCWorld/Jeff Bertolucci: 15 Crazy Japanese Tech Gizmos</ulink>
+      </title>
+      <para>The Japanese have proven their techie prowess over the decades. Where would we be
+        without the transistor radio, the camcorder, or the Sony Walkman? But sometimes they jump
+        the technological shark with whimsical and weird gear, some of which is downright loopy.
+        Here are our favorite examples of oddball tech that could be made only in Japan.</para>
+    </blockquote>
+  </sect2>-->
+</sect1>

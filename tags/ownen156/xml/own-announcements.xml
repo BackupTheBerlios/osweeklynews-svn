@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title>
+      <ulink url="http://news.opensuse.org/2010/12/28/opensuse-at-and-with-fosdem-2011/">openSUSE at
+        and with FOSDEM 2011</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="50%"
+          fileref="http://news.opensuse.org/wp-content/uploads/2010/12/openSUSEboothfosdemrhlim-300x200.jpg"
+         align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>Next years <ulink url="http://www.fosdem.org/2011/">FOSDEM</ulink> takes place again in
+      Brussels on Feb 5th and 6th 2011 and openSUSE will be present as usual!</para>
+    <para>Apart of the well known high level open Source tech conference there will be for the 2nd
+      time the Distribution <ulink url="http://www.fosdem.org/2011/distrominiconf">Miniconf</ulink>.
+      The Miniconf provides the perfect place for different projects to share ideas, talk about
+      challenges each project has and to foster collaboration – and as openSUSE is all about
+      collaboration we want to play a major role there.</para>
+    <para>The Miniconf is open for every project. For more information please subscribe on the
+      Miniconf <ulink url="http://lists.fosdem.org/mailman/listinfo/dist2011">mailinglist</ulink>.
+      We are looking for talks about cross-distro collaboration and presentations on openSUSE
+      technology – like OBS, openFATE but also where we are going – things like Tumbleweed!</para>
+    <para>Our contact with FOSDEM is <ulink url="http://en.opensuse.org/User:Hennevogel">Henne
+        Vogelsang</ulink>, if you think about giving a talk, contact him.</para>
+    <!-- ($ ld: 28.12.10 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2010/12/30/winner-of-opensuse-2010-survey-got-his-chumby/">Winner of openSUSE 2010 survey got his Chumby!</ulink></title>
+    <figure id="fig.chumby">
+      <title>The elusive Thirsty Thirteen</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%"
+            fileref="http://news.opensuse.org/wp-content/uploads/2010/12/chumby_info1-300x219.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>In February 2010 openSUSE held the openSUSE survey 2010 to find out more about the community. Who are the openSUSE users? What do they want? Who are our contributors? 
+      What motivates them? How can openSUSE improve? These questions and more have, to some extend, been answered by the over 27.000 participants in the three months the survey 
+      was live. Just before the end of the year we finally managed to get the winner of the Chumby <xref linkend="fig.chumby"/> his prize. Konrad Schlichtherle from Dortmund, 
+      Germany, is the lucky winner. Read on for more!</para>
+    <para><emphasis role="bold">Winners</emphasis></para>
+    <para>The winners of the prizes we gave away were, in no particular order:</para>
+    <itemizedlist>
+      <listitem><para>Yosef Peretz from Jerusalem Israel</para></listitem>
+      <listitem><para>Carlos Gárzon from Colombia</para></listitem>
+      <listitem><para>Mityunin Alexander Vladimirovich from Russia</para></listitem>
+      <listitem><para>Dong Xiaoyan from China</para></listitem>
+      <listitem><para>Mar’yan Rachynskyy from Ukraine</para></listitem>
+      <listitem><para>Roland Ortmann from Germany</para></listitem>
+      <listitem><para>Sergey Goncharuk from Russia</para></listitem>
+      <listitem><para>Wolodja Pskowskaja from Russia</para></listitem>
+    </itemizedlist>
+    <para>And the main prize, the Chumby, went to <emphasis role="bold">Konrad Schlichtherle</emphasis> from Germany.</para>
+    <para>We managed to catch Konrad on IRC – he is currently not involved with Free Software but looking to change that so tips for him are welcome!</para>
+    <screen>
+      News.o.o: So, Konrad, you got the Chumby?
+      Konrad: yes, i got it on the 27th. Many thanks for it. Its a nice gadget!
+      News.o.o: So it’s working for you?
+      Konrad: Yes, what else can I say about the Chumby? He stands beside me and plays music. I have to say, I use Linux since one year and have a lot to learn. I hope to 
+      use the Chumby with some other useful things so I can learn more about Linux.
+    </screen>
+    <para><emphasis role="bold">Survey results</emphasis></para>
+    <para>The survey results are available as <ulink url="http://en.opensuse.org/images/3/3a/SurveySummary_03012010.pdf">pdf file</ulink> and on the openSUSE Survey 
+      2010 <ulink url="http://en.opensuse.org/openSUSE:Survey_2010">wiki page</ulink> an extensive analysis has been made. The results have helped make project 
+      decisions, be it technical, marketing or otherwise – and we call upon all openSUSE community members to keep using these numbers to back up their choices! We want to be 
+      close to ourselves and the opinions of 27,000 users and contributors is nothing to be sneezed at.</para>
+    <para>We’d like to thank everyone who answered the questionnaire again for their time and efforts and wish the winners a lot of fun with their prizes and their future 
+      endeavors in the world of Free Software! And as usual, if you’re looking into getting involved, you can simply contact anyone on IRC or mail – that includes me, your 
+      humble writer. Find me on IRC <ulink url="http://webchat.freenode.net/">(freenode.net in the openSUSE channels like #opensuse-project)</ulink> under the 
+      nick jospoortvliet!</para>
+    <!-- ($ ld: 31.12.10 sm $) -->
+  </blockquote>
+</sect1>
