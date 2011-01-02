@@ -87,12 +87,15 @@
   </xsl:template>
   
   <xsl:template match="pubdate" mode="article.titlepage.recto.auto.mode">
-    <div xsl:use-attribute-sets="article.titlepage.recto.style">
+    <div xsl:use-attribute-sets="article.titlepage.recto.style"
+      class="pubdate">
       <xsl:call-template name="gentext">
         <xsl:with-param name="key">published</xsl:with-param>
       </xsl:call-template>
       <xsl:text>: </xsl:text>
-      <xsl:apply-templates select="." mode="article.titlepage.recto.mode"/>
+      <span>
+         <xsl:apply-templates/>
+      </span>
     </div>
   </xsl:template>
   
