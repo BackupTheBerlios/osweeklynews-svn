@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 #  Common Entities for all OWN articles
-  
+
 #  This work is licensed under the
 #  Creative Commons Attribution-ShareAlike 3.0 Unported License
 #  by Sascha Manns. To view a copy of this license, visit
@@ -11,7 +11,7 @@
 #  Suite 300
 #  San Francisco California 94105
 #  USA.
-  
+
 #
 #
 # Include common variables and functions
@@ -32,6 +32,7 @@ usage()
 {
   cat << EOF
 ${0#*/} [OPTIONS] [PARAM=VALUE]*
+
 Transform an OWN XML file into PDF
 
 Options:
@@ -69,10 +70,10 @@ do
        *)
          error "Unsupported FO formatter '$2'"
          exit 100
-       ;; 
+       ;;
       esac
       shift
-      ;; 
+      ;;
     --xml)
       if [ ! -f "$2" ]; then
         error "XML file '$2' not found."
@@ -102,7 +103,7 @@ do
     --xep-config)
       XEPCONF=$2
       shift
-      ;; 
+      ;;
     --) shift ; break ;;
     *)
       printf "Unknown option $1\n"
@@ -131,7 +132,11 @@ case $_FORMATTER in
     fop -c "${FOPCONF}" "${_FO}" "${_PDF}"
     ;;
   xep)
-    # export XEP_CONFIG_FILES=$XEPCONF
+    if [ "$XEPCONF" != "" ]; then
+      export XEP_CONFIG_FILE=$XEPCONF
+      info "Using XEP configuration file $XEPCONF"
+    fi
+    # export VERBOSE=1
     xep "${_FO}" "${_PDF}"
     ;;
 esac
