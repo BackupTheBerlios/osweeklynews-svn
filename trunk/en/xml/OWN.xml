@@ -24,15 +24,13 @@
   <articleinfo>
     <!-- Maybe date and/or pubdate might be useful: -->
     <date>2010-12-25</date>
-    <!-- When it's written -->
-    <pubdate>2011-01-01</pubdate>
+    <!-- When it's published, date automatically inserted: -->
+    <pubdate><?dbtimestamp format="Y-m-d" ?></pubdate>
     <!-- When it's published -->
     <edition>&edition;</edition>
     <authorgroup>
       <author>
-        <firstname>openSUSE</firstname>
-        <surname>Weekly News Team</surname>
-        <contrib>Producer</contrib>
+        <othername>openSUSE Weekly News Team</othername>
       </author>
       <!--
       <author>
