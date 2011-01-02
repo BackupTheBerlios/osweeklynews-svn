@@ -1,16 +1,15 @@
 #!/bin/sh
-# <!--
- # Common Entities for all OWN articles
-  
- # This work is licensed under the
- # Creative Commons Attribution-ShareAlike 3.0 Unported License
- # by Sascha Manns. To view a copy of this license, visit
- # http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
- # Creative Commons
- # 171 Second Street
- # Suite 300
- # San Francisco California 94105
- # USA.
+# Common Entities for all OWN articles
+#
+# This work is licensed under the
+# Creative Commons Attribution-ShareAlike 3.0 Unported License
+# by Sascha Manns. To view a copy of this license, visit
+# http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+# Creative Commons
+# 171 Second Street
+# Suite 300
+# San Francisco California 94105
+# USA.
 
 # Include common variables and functions
 source ./.common.sh
