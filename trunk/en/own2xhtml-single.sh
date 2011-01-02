@@ -28,8 +28,20 @@ while true
 do
    case $1 in
     -h|--help)
-      printf "${0#*/} [--xml XMLFILE] [--xslt STYLESHEET] [--output HTMLFILE] [PARAM=VALUE]*\n\n"
-      printf "Transform an OWN XML file to a single XHTML.\n"
+      printf "${0#*/} [--xml XMLFILE] [--xslt STYLESHEET] [--output HTMLFILE] [PARAM=VALUE]*
+
+Transform an OWN XML file to a single XHTML
+
+Options:
+ --xml XMLFILE      XML file to process, usually after resolving XIncludes
+                    (default $_XML)
+ --xslt STYLESHEET  Use XSLT stylesheet  
+                    (default $_XSLT)
+ --output HTMLFILE  Output result to HTMLFILE 
+                    (default $_OUT)
+ PARAM=VALUE        Add XSLT parameter with VALUE to the process;
+                    can be added multiple times
+"
       exit 0
       ;;
     --xml)
@@ -66,11 +78,13 @@ debug "XML=$_XML, XSLT=$_XSLT, OUT=$_OUT"
 validate
 transform ${_XML} ${_XSLT} -o "${_OUT}" $@
 
-# FIXME: How can be output an absolute path?
-info "Find the XHTML file here: $PWD/${_OUT}"
 
-cp xslt/xhtml/*.css ${HTMLDIR}
 (cd ${HTMLDIR}
 ln -sf ${XSLTDIR}/common .
+for c in ${XSLTDIR}/xhtml/*.css ; do
+  ln -sf $c .
+done
 )
 
+# FIXME: How can be output an absolute path?
+info "Find the XHTML file here: $PWD/${_OUT}"
