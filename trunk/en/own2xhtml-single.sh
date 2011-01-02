@@ -67,7 +67,7 @@ validate
 transform ${_XML} ${_XSLT} -o "${_OUT}" $@
 
 # FIXME: How can be output an absolute path?
-info "Find the XHTML file here: ${_OUT}"
+info "Find the XHTML file here: $PWD/${_OUT}"
 
 cp xslt/xhtml/*.css ${HTMLDIR}
 (cd ${HTMLDIR}
