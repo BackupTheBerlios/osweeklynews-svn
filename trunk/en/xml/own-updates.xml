@@ -24,27 +24,120 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/yamdi">Packman: yamdi 1.7-0.pm</ulink></title>
-    <para><quote>yamdi stands for Yet Another MetaData Injector and is a metadata injector
-      for FLV files. It adds the onMetaData event to your FLV files. It uses little
-      memory, is fast, and can handle big files (over 1 GB).</quote></para>
-    <!-- ($ ld: 27.12.10 sm $) -->
+    <title><ulink url="http://psankar.blogspot.com/2011/01/introducing-sqlite-commander-curses.html"
+        >Sankar P: Introducing Sqlite-Commander - Curses Client for your SQLite
+      Database</ulink></title>
+    <para>I am happy to introduce to you, my recent nighttime hack "Sqlite-Commander - <ulink
+        url="https://github.com/curiosity/sqlite-commander">A Curses client for your SQLite
+        Database</ulink>".</para>
+    <para>While I was working in a project involving sqlite, I wanted to check the contents of a
+      sqlite database. The command line sqlite client involves too much of typing for viewing
+      records. The sqlite viewers that I found were not very keyboard friendly. There was a firefox
+      extension which looked good but I felt it is too clumsy to launch that application. Also, I
+      wanted a tool that will read SQLite tables over ssh without requiring much bandwidth. I could
+      not find any CUI client for SQLite and I felt it may be useful to write one, atleast for my
+      satisfying my needs. So, here we have Sqlite-Commander. The name is inspired from an awesome
+      piece of software Midnight-Commander written by Miguel De Icaza.</para>
+    <figure id="fig.sqlite">
+      <title>Screenshot</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="50%"
+            fileref="http://4.bp.blogspot.com/_G_VBnbGWMzs/TSBaaaJW18I/AAAAAAAAEWQ/v9HLv-7nHMk/s1600/sqlite-commander.png"
+            align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para><emphasis role="bold">Features</emphasis></para>
+    <itemizedlist>
+      <listitem>
+        <para>Shows the list of tables in the left pane.</para>
+      </listitem>
+      <listitem>
+        <para>Allows you to navigate the list of tables using arrow keys.</para>
+      </listitem>
+      <listitem>
+        <para>Shows the first 30 records for the selected table in the right pane</para>
+      </listitem>
+      <listitem>
+        <para>Non-printable columns are shown with a ???</para>
+      </listitem>
+      <listitem>
+        <para>Maximum of 30 characters are displayed per column. Column data exceeding this length
+          are shown with <quote>...</quote></para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">TODO</emphasis></para>
+    <itemizedlist>
+      <listitem>
+        <para>It is not a full-fledged SQLite client with rich features. It is like an enriched
+          version of cat for working with sqlite. I don't intend to make a release, as I am not sure
+          if this will be useful for anyone other than people who work with SQLite and can use only
+          a terminal/ssh. If there are enough users, I will enhance and make it a full-fledged
+          product. So drop me a mail if you are interested in this project.</para>
+      </listitem>
+      <listitem>
+        <para>It should be fairly straight-forward to implement connectivity to any database (MySQL,
+          Oracle, etc.) such that we can have a generic SQL NCurses client. It will be a good
+          exercise for someone who wants to know C#.</para>
+      </listitem>
+      <listitem>
+        <para>Add a scroll bar and show more than 30 columns. Should be moderate/easy to
+          implement.</para>
+      </listitem>
+      <listitem>
+        <para>Add a dialog box to execute any random SQL statement. Should be fairly trivial to
+          implement.</para>
+      </listitem>
+      <listitem>
+        <para>Create Events such that pressing Enter on the records list will pass the currently
+          selected record to a custom script/command. Useful ?</para>
+      </listitem>
+      <listitem>
+        <para>Copy selections of records to clipboard. Easy to implement.</para>
+      </listitem>
+      <listitem>
+        <para>Handle tablenames with special characters.</para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">Thanks</emphasis></para>
+    <para>Credits are due for the awesome mono-ncurses interface authors (Miguel and Co.) If you are
+      looking to writing some terminal application I can heartily recommend that mono-ncurses is the
+      best library you will ever get. Before beginning this application, I evaluated a few options
+      (like Python etc.) and nothing comes close to being as easy to use as <ulink
+        url="http://www.mono-project.com/MonoCurses">mono-ncurses</ulink>. Also, special thanks to
+      VIM and git, two of the most productive tools ever invented. </para>
+    <!-- ($ ld: 3.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/pogo">Packman: pogo 0.3.1-0.pm</ulink></title>
-    <para><quote>Pogo is probably the simplest and fastest audio player for Linux. Its
-      elementary-inspired design uses the screen-space very efficiently. Pogo is
-      especially well-suited for people who organize their music by albums on the
-      hard drive. The main interface components are a directory tree and a playlist
-      that groups albums in an innovative way.</quote></para>
-    <!-- ($ ld: 28.12.10 sm $) -->
+    <title><ulink url="http://dev-loki.blogspot.com/2011/01/mplayer-and-smplayer-update.html">Pascal
+        Bleser: MPlayer and smplayer update</ulink></title>
+    <para>I've just updated the <ulink url="http://packman.links2linux.org/package/MPlayer"
+          ><emphasis role="bold">MPlayer</emphasis></ulink> and <ulink
+        url="http://packman.links2linux.org/package/smplayer"><emphasis role="bold"
+          >smplayer</emphasis></ulink> in the <ulink url="http://packman.links2linux.org">Packman
+        repository</ulink> to their latest respective development revisions. </para>
+    <para>I also enabled <ulink url="http://packman.links2linux.org/package/rtmpdump"><emphasis
+          role="bold">rtmpdump</emphasis></ulink>, <ulink
+        url="http://packman.links2linux.org/package/mpg123"><emphasis role="bold"
+        >mpg123</emphasis></ulink> and mpcdec support. <emphasis role="bold">MPlayer</emphasis>
+      changed the way it handles <ulink url="http://en.wikipedia.org/wiki/Closed_captioning">closed
+        captions</ulink> in a recent revision, as it now takes an option to the <emphasis
+        role="bold">-subcc</emphasis> parameter to select which channel to use. </para>
+    <para>Because of that, I also had to update the (brilliant) smplayer GUI frontend for <emphasis
+        role="bold">mplayer</emphasis> in order to support that change. </para>
+    <para>Needless to say, if you encounter any issue, please report it by email to packman with the
+      domain <emphasis role="bold">links2linux.de</emphasis></para>
+    <!-- ($ ld: 3.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://packman.links2linux.de/package/mupen64plus">Packman: mupen64plus 1.99.4-2.pm</ulink></title>
-    <para><quote><ulink url="http://code.google.com/p/mupen64plus/">Mupen64Plus</ulink> is a plugin-based N64 emulator which is capable of accurately
-      playing many games. It includes four MIPS R4300 CPU emulators, with dynamic
-      recompilers for 32-bit x86 and 64-bit amd64 systems.  It supports plugins for
-      audio, graphical rendering (RDP), the signal co-processor (RSP), and input.</quote></para>
+    <title><ulink url="http://packman.links2linux.de/package/mupen64plus">Packman: mupen64plus
+        1.99.4-2.pm</ulink></title>
+    <para><quote><ulink url="http://code.google.com/p/mupen64plus/">Mupen64Plus</ulink> is a
+        plugin-based N64 emulator which is capable of accurately playing many games. It includes
+        four MIPS R4300 CPU emulators, with dynamic recompilers for 32-bit x86 and 64-bit amd64
+        systems. It supports plugins for audio, graphical rendering (RDP), the signal co-processor
+        (RSP), and input.</quote></para>
     <!-- ($ ld: 28.12.10 sm $) -->
   </blockquote>
   <itemizedlist>
