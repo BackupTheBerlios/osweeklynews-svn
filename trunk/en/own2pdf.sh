@@ -141,3 +141,4 @@ case $_FORMATTER in
     ;;
 esac
 
+info "Find the PDF in ${_PDF}"
