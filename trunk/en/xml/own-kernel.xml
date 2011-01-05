@@ -21,41 +21,22 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-      <ulink url="http://www.linuxuser.co.uk/opinion/the-kernel-column-95-by-jon-masters/">Linux
-        User and Developer/Jon Masters: The kernel column #95 by Jon Masters</ulink>
+      <ulink url="http://www.linuxuser.co.uk/opinion/the-kernel-column-96-with-jon-masters-2010-in-review/"
+        >Linux User and Developer/Jon Masters: The kernel column #96 with Jon Masters – 2010 in review </ulink>
     </title>
-    <para><emphasis role="bold">Jon Masters talks about features in the 2.6.37 Linux kernel and
-        describes debugging a kernel problem using the Git bisection feature… </emphasis></para>
-    <para>We’re now free of the Big Kernel Lock (in many configurations – it’s a config option that
-      will hide other not-yet-compatible options when used) and I have been running systems BKL-free
-      for some time now. Arnd Bergman and others have done an excellent job to rid us of this last
-      vestige of truly ancient non-scalable Linux and unless you need a V4L (Video-4-Linux – TV
-      tuner, webcam etc) device, you can probably run BKL-free today too. It is hoped that V4L will
-      be fixed soon, maybe in time for 2.6.37. You probably won’t notice a huge performance benefit
-      of running without the BKL unless you happen to have something more high end than a desktop,
-      but it’s still pretty cool to know that you could get higher performance if only you could
-      afford to have a system with dozens of CPUs to take advantage of it.</para>
-    <para>calability is great on the high end, but another more impressive feature for those working
-      with more down-to-earth systems is (at last) near-complete support for running as a Xen ‘Dom0’
-      (or host kernel) under the Xen hypervisor. For years, the support for Xen host kernels lived
-      in patches separate from the mainline kernel and had to be added separately. This constrained
-      which Xen kernels could be used and made life more difficult for those using it in their
-      virtualisation setups. It’s not (yet) possible to fully run an official Linus kernel without
-      any patches as a Dom0 host kernel, but the remaining extra driver pieces and other work should
-      be complete in time for 2.6.38. This incidentally prompted some folks in the Fedora kernel
-      community to wonder about scheduling. They would like this to land in Fedora 15 (for those who
-      want to use Xen instead of hardware-based KVM virtualisation) but are unwilling to accept
-      large patches for things not yet in the official kernel (especially given historical
-      experiences with having to maintain large patches for Xen). Only time can tell what will
-      happen there. (...)</para>
-    <para><emphasis role="italic">This article originally appeared in <ulink
-          url="http://www.linuxuser.co.uk/magazine-issues/linux-user-developer-issue-95-is-out-now/"
-          >issue 95</ulink> of <ulink url="http://www.linuxuser.co.uk/">Linux User &amp;
-          Developer</ulink> magazine.The kernel column #95 by Jon Masters Subscribe and save more
-        than 30% and receive our exclusive money back guarantee – click <ulink
-          url="https://imagine.subscribeonline.co.uk/all-titles/linux-user-&amp;-developer?offer=WEB100"
-          >here</ulink> to find out more.</emphasis></para>
-    <!-- ($ ld: 29.12.10 sm $) -->
+    <para><emphasis role="bold">2010 was another exciting year for the Linux kernel and its community. Over the course of four kernel releases and many tens of thousands of 
+      mailing list messages, over one thousand individual developers (some working alone, some working for corporations) contributed two new architectures, several new file 
+      systems, and drivers for key hardware in the form of the Nouveau Nvidia driver (produced independently of Nvidia) and an open source Broadcom driver for its recent Wi-Fi 
+      chips. Of course, many more features were added, too… </emphasis></para>
+    <para>Along the way, we also had two huge flame wars, several major security holes (one of which had been around for many years) were fixed, and many regressions were tracked 
+      and squashed. But if the year had to be summarised in a word, that word would be scalability. 2010 saw work on almost every aspect of the kernel – from Nick Piggin’s VFS 
+      (virtual file system) scalability patches to Arnd Bergmann’s BKL (Big Kernel Lock) removal work, and countless other efforts in between. You will see that recurring theme 
+      in the following month-by-month summary. If you’d like to see some more figures to accompany this timeline, visit the Linux Foundation website (linuxfoundation.org). Their 
+      annual kernel report focuses on overall numbers, not on individual features as we do here.</para>
+    <para><emphasis role="italic">This article is due to appear in issue 96 of <ulink url="http://www.linuxuser.co.uk/">Linux User &amp; Developer</ulink> magazine.The kernel 
+      column #96 with Jon Masters - 2010 in review Subscribe and save more than 30% and receive our exclusive money back guarantee – click <ulink url="http://bit.ly/dTo0l9"
+        >here</ulink> to find out more.</emphasis></para>
+    <!-- ($ ld: 5.1.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>

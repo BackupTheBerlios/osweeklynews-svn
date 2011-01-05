@@ -157,45 +157,26 @@
     <blockquote>
       <title>
         <ulink
-          url="http://www.techradar.com/news/software/operating-systems/linux-in-education-a-genuine-alternative-915319"
-          >Techradar/Graham Morrison: Linux in education: a genuine alternative</ulink>
+          url="http://apachelog.wordpress.com/2011/01/05/phonon-loves-codecs/"
+          >Harald Sitter: Phonon Loves Codecs</ulink>
       </title>
-      <figure id="fig.edu">
-        <title>The Barnix distribution was designed by students at Barnfield College to ease people
-          into the world of Linux</title>
+      <para>As the Phonon team is hard at work to prepare for the release of Phonon 4.4.4, the GStreamer backend has seen some awesome improvements these past few days.</para>
+      <para>Not only will it be the second backend to support the experimental video capturing features introduced with Phonon 4.4.3 but has also seen tremendous improvements 
+        with regards to stability. But most importantly of all it got improved codec installation support.</para>
+      <para>If you ever found yourself looking for a way to play that mov video a friend sent you, then you will love Phonon GStreamer 4.4.4. Whenever it can not play a file 
+        because a media plugin is missing, it will now try to get it semi-automatically. Check out the screencast:</para>
         <mediaobject>
-          <imageobject>
-            <imagedata width="40%"
-              fileref="http://cdn.mos.techradar.com//Review%20images/Linux%20Format/LXF%20139/LXF139.schools.barnix_01-218-85.jpg"
+          <videoobject>
+            <videodata width="40%"
+              fileref="http://blip.tv/file/4592850"
               align="center"/>
-          </imageobject>
+          </videoobject>
         </mediaobject>
-      </figure>
-      <para>Using free software in education is not just about saving money. It&apos;s also about
-        preserving choice, not locking a student&apos;s experience into a certain way of doing
-          something.<xref linkend="fig.edu"/></para>
-      <para>With Linux, there&apos;s no vendor lock-in. Free software is more likely to be
-        open-standards compliant, and it&apos;s going to be more open to different languages,
-        localities and curricula.</para>
-      <para>It also removes what can sometimes be a barrier to learning; using the same software on
-        your own machine at home. And because there&apos;s usually more than one piece of open
-        source software for a job, free software makes it easier to broaden your experience and look
-        at a variety of methods for completing that job.</para>
-      <para>All of which is essential in a world where technology is turned on its head every five
-        years and where training needs are so unpredictable. It&apos;s also never too early to start
-        training in IT skills, and in the UK at least, computer training starts for many at primary
-        school level.</para>
-      <para>For some, this will be their first experience of a computer. It&apos;s also likely to be
-        the first time they&apos;ve had any kind of formal training on how to use one, and these
-        first impressions are going to last. So there&apos;s a strong argument that teaching should
-        be as unbiased as possible.</para>
-      <para>Yet for a variety of reasons most schools favour Microsoft. There&apos;s nothing wrong
-        with this, as experience with Microsoft&apos;s ubiquitous products is never going to be
-        wasted, but as Linux users, we all know there might be a better option.</para>
-      <para>Linux and open source offers a genuine alternative, with many advantages over
-        proprietary training that aren&apos;t costrelated, although there&apos;s no reason why this
-        can&apos;t be part of the overall solution. (...)</para>
-      <!-- ($ ld: 29.12.10 sm $) -->
+      <para>This gives user experience quite a boost, so I am most certain that Linux distributions will pick this up and integrate it nicely with their package management 
+        systems.</para>
+      <para>In the video KPackageKit is handling the plugin lookup and installation, so both Fedora and Kubuntu should have this awesome feature in their next releases.</para>
+      <para>Have fun...</para>
+      <!-- ($ ld: 5.1.11 sm $) -->
     </blockquote>
     <blockquote>
       <title>
