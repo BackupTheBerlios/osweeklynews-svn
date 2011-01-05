@@ -21,33 +21,55 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-      <ulink url="http://www.linuxuser.co.uk/opinion/the-kernel-column-96-with-jon-masters-2010-in-review/"
-        >Linux User and Developer/Jon Masters: The kernel column #96 with Jon Masters – 2010 in review </ulink>
+      <ulink
+        url="http://www.linuxuser.co.uk/opinion/the-kernel-column-96-with-jon-masters-2010-in-review/"
+        >Linux User and Developer/Jon Masters: The kernel column #96 with Jon Masters – 2010 in
+        review </ulink>
     </title>
-    <para><emphasis role="bold">2010 was another exciting year for the Linux kernel and its community. Over the course of four kernel releases and many tens of thousands of 
-      mailing list messages, over one thousand individual developers (some working alone, some working for corporations) contributed two new architectures, several new file 
-      systems, and drivers for key hardware in the form of the Nouveau Nvidia driver (produced independently of Nvidia) and an open source Broadcom driver for its recent Wi-Fi 
-      chips. Of course, many more features were added, too… </emphasis></para>
-    <para>Along the way, we also had two huge flame wars, several major security holes (one of which had been around for many years) were fixed, and many regressions were tracked 
-      and squashed. But if the year had to be summarised in a word, that word would be scalability. 2010 saw work on almost every aspect of the kernel – from Nick Piggin’s VFS 
-      (virtual file system) scalability patches to Arnd Bergmann’s BKL (Big Kernel Lock) removal work, and countless other efforts in between. You will see that recurring theme 
-      in the following month-by-month summary. If you’d like to see some more figures to accompany this timeline, visit the Linux Foundation website (linuxfoundation.org). Their 
-      annual kernel report focuses on overall numbers, not on individual features as we do here.</para>
-    <para><emphasis role="italic">This article is due to appear in issue 96 of <ulink url="http://www.linuxuser.co.uk/">Linux User &amp; Developer</ulink> magazine.The kernel 
-      column #96 with Jon Masters - 2010 in review Subscribe and save more than 30% and receive our exclusive money back guarantee – click <ulink url="http://bit.ly/dTo0l9"
-        >here</ulink> to find out more.</emphasis></para>
+    <para><emphasis role="bold">2010 was another exciting year for the Linux kernel and its
+        community. Over the course of four kernel releases and many tens of thousands of mailing
+        list messages, over one thousand individual developers (some working alone, some working for
+        corporations) contributed two new architectures, several new file systems, and drivers for
+        key hardware in the form of the Nouveau Nvidia driver (produced independently of Nvidia) and
+        an open source Broadcom driver for its recent Wi-Fi chips. Of course, many more features
+        were added, too… </emphasis></para>
+    <para>Along the way, we also had two huge flame wars, several major security holes (one of which
+      had been around for many years) were fixed, and many regressions were tracked and squashed.
+      But if the year had to be summarised in a word, that word would be scalability. 2010 saw work
+      on almost every aspect of the kernel – from Nick Piggin’s VFS (virtual file system)
+      scalability patches to Arnd Bergmann’s BKL (Big Kernel Lock) removal work, and countless other
+      efforts in between. You will see that recurring theme in the following month-by-month summary.
+      If you’d like to see some more figures to accompany this timeline, visit the Linux Foundation
+      website (linuxfoundation.org). Their annual kernel report focuses on overall numbers, not on
+      individual features as we do here.</para>
+    <para><emphasis role="italic">This article is due to appear in issue 96 of <ulink
+          url="http://www.linuxuser.co.uk/">Linux User &amp; Developer</ulink> magazine.The kernel
+        column #96 with Jon Masters - 2010 in review Subscribe and save more than 30% and receive
+        our exclusive money back guarantee – click <ulink url="http://bit.ly/dTo0l9">here</ulink> to
+        find out more.</emphasis></para>
     <!-- ($ ld: 5.1.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
-      <ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-37-Part-5-Drivers-1158991.html"
-        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.37 (Part 5) - Drivers</ulink>
+      <ulink url="http://www.h-online.com/open/features/What-s-new-in-Linux-2-6-37-1163376.html"
+        >h-online/Thorsten Leemhuis: What's new in Linux 2.6.37 </ulink>
     </title>
-    <para>Support for fast USB 3.0 storage devices with USB Attached SCSI Protocol (UASP), an audio
-      loopback driver plus extensions to support Apple&apos;s Magic Trackpad are only some of the
-      advances that improve the hardware support of the forthcoming Linux kernel version 2.6.37;
-      final release is expected in January. (...)</para>
-    <!-- ($ ld: 31.12.10 sat $) -->
+    <para>After about eleven weeks of development, Linus Torvalds has released the Linux kernel
+      2.6.37. The new version of the main development line has many improvements. Advances in the
+      Ext4 file system mean it should be able to compete with XFS on larger systems and new discard
+      functions can inform slow SSDs of vacant areas, without negatively affecting performance. </para>
+    <para>This kernel also sees the first parts of the support for operation as a Xen host (Dom0).
+      LZO compression will speed the transition into and out of hibernation and after years of work,
+      almost all areas of the kernel are now without the Big Kernel Lock (BKL). Hundreds of new and
+      revised drivers improve hardware support. New examples are the support for fast USB 3.0 disk
+      with USB Attached SCSI Protocol (UASP) and various drivers for wireless hardware from Atheros,
+      Broadcom and Realtek. The new kernel also has an audio loopback driver, extensions to deal
+      with the Apple Magic Trackpad and support for 4 KByte logical sectors on hard drives. </para>
+    <para>The following Kernel Log offers an overview of these and many further new features of
+      Linux 2.6.37. These changes will eventually impact all Linux users as Linux distributions
+      adopt the 2.6.37 kernel, or subsequent point releases, and make these improvements available
+      to end users. At the end of this article, the Kernel Log will also take a peek at the advances
+      that might make it into 2.6.38. (...)</para>
+    <!-- ($ ld: 5.1.11 sm $) -->
   </blockquote>
 </sect1>
