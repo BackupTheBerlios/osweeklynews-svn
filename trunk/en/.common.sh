@@ -13,6 +13,12 @@ XSLT=${XSLT:-"xsltproc"}
 XSLTDIR=$PWD/xslt/
 # Default debugging value is no:
 DEBUG=${DEBUG:-no}
+# Get the current version from the entity file. Match the following
+# line and extract the value of edition:
+# <!ENTITY edition "...">
+ENTITIES=xml/entities.ent
+VER=$(cat $ENTITIES | sed -n 's#<!ENTITY\s\s*edition\s\s*"\(.*\)">#\1#p')
+
 
 ##
 ## HTML Parameters
@@ -32,7 +38,7 @@ PDFDIR=pdf/
 # The FO output filename:
 FO=${PDFDIR}${BASEXML%.xml}.fo
 # The PDF output filename
-PDF=${PDFDIR}${BASEXML%.xml}.pdf
+PDF=${PDFDIR}${BASEXML%.xml}-${VER}.pdf
 # The FOP configuration filename:
 FOPCONF=fop-config.xml
 # The XEP configuration filename:
