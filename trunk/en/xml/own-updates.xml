@@ -147,6 +147,55 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
       few days once RC2 is released. </para>
     <!-- ($ ld: 5.1.11 sm $) -->
   </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.lenzg.net/archives/332-Updated-Drupal-7-appliances-to-version-7.0-final.html"
+        >LenZ Grimmer: Updated Drupal 7 appliances to version 7.0 final</ulink></title>
+    <para>Congratulations to the Drupal community for getting <ulink
+        url="http://drupal.org/drupal-7.0">version 7.0</ulink>
+      <ulink url="http://drupal.org/drupal-7-released">released</ulink>! This is a major mile stone
+      and an excellent reason to <ulink url="http://www.drupal7releaseparty.org/">celebrate</ulink>!
+      If you want to give Drupal 7 a try without having to install anything, I've now updated my
+      Drupal 7 appliances on <ulink url="http://susestudio.com/">SuSE Studio</ulink> to the latest
+      release. The appliance is based on <ulink url="http://software.opensuse.org/113/en">openSUSE
+        Linux 11.3</ulink> and is available in two variants:<itemizedlist>
+        <listitem>
+          <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive">text-mode</ulink>
+            only appliance to which you connect using your local web browser via the network.</para>
+        </listitem>
+        <listitem>
+          <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive-gui">GUI
+              version</ulink> that starts up the Firefox browser in a minimalistic GNOME desktop to
+            perform the installation locally. Remote network access is available, too.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The database backend is phpMyAdmin has been added to support web-based administration of
+      the MySQL server. You can access it via http://localhost/phpMyAdmin/. I also added <ulink
+        url="http://drush.ws/">drush</ulink>, the Drupal command line shell and scripting interface
+      and some additional packages (yast2-http-server, bind-utils, php5-ctype, patch). I also bumped
+      up the appliance's version number to 7.0.0, to match the version number of Drupal included. </para>
+    <para>The appliance is available in various formats:<itemizedlist>
+        <listitem>
+          <para>A live raw disk image, ready to be written to an USB stick or flash drive</para>
+        </listitem>
+        <listitem>
+          <para>A live ISO image, to be burned on a CD or used in a virtual machine</para>
+        </listitem>
+        <listitem>
+          <para>A hard disk image, to be dumped on a hard disk drive</para>
+        </listitem>
+        <listitem>
+          <para>Various virtual disk formats, e.g. OVF, VMWare/VirtualBox/KVM and Xen</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Please see the installation instructions provided on the download pages for details on how
+      to use the various image formats. </para>
+    <para>So congratulations to the Drupal developer community for reaching this goal and thanks to
+      SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I also
+      would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard
+      Bos</ulink> for the testing and many suggestions for improvement of these appliances!</para>
+    <!-- ($ ld: 5.1.11 sm $) -->
+  </blockquote>
   <itemizedlist>
     <title>You can find other interesting Packages at:</title>
     <listitem>

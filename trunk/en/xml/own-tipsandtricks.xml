@@ -74,6 +74,39 @@
         (...)</para>
       <!-- ($ ld: 5.1.11 sm $) -->
     </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.linuxaria.com/article/7-game-linux-classic?lang=en">Linuxaria: 7
+          Classic game on Linux</ulink></title>
+      <para>One thing I found very interesting about Linux is the ability to have a whole series of
+        classic games already present on your distribution, and therefore easy to install. </para>
+      <para>What do I mean as classic game ? </para>
+      <para>Games released prior to 2000 on Amiga or perhaps on other operating systems and now
+        ported to Linux. Follow me in this series of old games (as a concept), but always enjoyable
+        and funny. (...)</para>
+      <!-- ($ ld: 6.1.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://news.softpedia.com/news/Best-Windows-Games-and-Apps-That-Run-Under-Linux-176410.shtml"
+          >Softpedia: Best Windows Games and Apps That Run Under Linux</ulink></title>
+      <para><emphasis role="bold">The following article was created to inform our readers about
+          popular native Windows games and applications which install and run under Linux-based
+          operating systems, with the help of the Wine software. </emphasis></para>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="15%"
+            fileref="http://i1-news.softpedia-static.com/images/newsrsz/Best-Windows-Games-and-Apps-That-Run-Under-Linux-2.jpg"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>We have recently discovered that many people have no idea that games such as the popular
+        World of Warcraft, Call of Duty or Left 4 Dead work flawlessly under Linux. Therefore, we've
+        decided to make a list with all of them. </para>
+      <para>While most of the following games work flawlessly, other will require some special
+        configuration from the user. Also, a couple of the listed applications and games will have
+        minor issues. (...)</para>
+      <!-- ($ ld: 6.1.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -259,35 +292,44 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://vavai.net/2010/12/domainkeysdkim-implementation-on-zimbrasles-11-sp1-with-opendkim/"
-          >Masim Sugianto: DomainKeys/DKIM Implementation on Zimbra+SLES 11 SP1 with
-          OpenDKIM</ulink>
+        <ulink url="http://www.makeuseof.com/tag/linux-web-server-software-apache-alternatives/"
+          >MakeUseOf/Dave Drager: The Best Linux Web Server Software (&amp; Apache
+          Alternatives)</ulink>
       </title>
-      <figure id="fig.zimbra">
-        <title>Zimbra</title>
+      <para>Since the protocol that runs the world wide web – the <ulink
+          url="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP protocol</ulink> – is
+        open and viewable to the entire world, anyone with the programming knowledge is able to
+        write their own web server. In fact Wikipedia <ulink
+          url="http://en.wikipedia.org/wiki/Comparison_of_web_servers">lists over 60 web
+          servers</ulink> and those are only the ones released to the public. So which is the best
+        one that you should run on your Linux server? </para>
+      <para>To be able to determine the ‘best’ one we need to look at several factors. Ultimately it
+        depends on what your end goal is since some <ulink
+          url="http://makeuseof.com/tags/web-server">web servers</ulink> are geared towards a kind
+        of client, others for speed and others for security. The main factors we are going to look
+        at are <emphasis role="bold">reliability, speed, security</emphasis> and <emphasis
+          role="bold">ease of use</emphasis>. </para>
+      <para>A lot of web servers will make claims to being the “king” of one or more of these
+        factors. However I believe the proof is in the pudding and if you look at actual web server
+        usage across the internet you get a better idea of the wisdom of the crowds. Netcraft has
+        been keeping track of web server types, hostnames and other data since 1995 and is a great
+        way to see what the current trends are in web server usage.</para>
+      <para>Here is their web server usage survey up until December 2010:</para>
+      <figure id="fig.survey">
+        <title>Server Survey</title>
         <mediaobject>
           <imageobject>
-            <imagedata width="25%"
-              fileref="http://vavai.com/wp-content/uploads/2010/12/zimbra-logo32.jpg"/>
+            <imagedata width="50%"
+              fileref="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2010/12/netcraft-survey.png"
+            />
           </imageobject>
         </mediaobject>
       </figure>
-      <para>Following tutorial will covers DomainKeys/DKIM implementation using OpenDKIM on SLES or
-        openSUSE. Domain Keys Identified Mail (DKIM) is a technology designed to make it difficult
-        or impossible for criminals to steal the identities of legitimate organizations. This
-        authentication technology allows good senders to <quote>sign</quote> a message to prove that
-        it really did come from them..</para>
-      <para>DKIM originally written as sender authentication protocol developed in order to address
-        the problem of forged email messages. Yahoo! released the DomainKeys specification and Cisco
-        released the Internet Identified Mail specification. Both methods are based on cryptographic
-        message signing. The two efforts have been merged, and the combined specification is known
-        as DomainKeys Identified Mail (DKIM).</para>
-      <para>These are various options for implementing DomainKeys Signature : by using DK-Filter,
-        DKIM-milter, OpenDKIM and also by using Amavisd-new DKIM implementation. Don’t be confused
-        with all the terms. All method have similar function, signing your email as
-          <quote>trusted</quote> or legitimate email. (...)</para>
-      <!-- ($ ld: 27.12.10 sm $) -->
+      <para>Of the top <xref linkend="fig.survey"/>web servers in current use, Microsoft’s web
+        server IIS is the only pure-Windows one. Apache by and large is the most widely used web
+        server software based on the number of users. It is also good to note that it is
+        cross-platform and will run on both Windows and Linux systems. (...)</para>
+      <!-- ($ ld: 6.1.11 sm $) -->
     </blockquote>
   </sect2>
 </sect1>

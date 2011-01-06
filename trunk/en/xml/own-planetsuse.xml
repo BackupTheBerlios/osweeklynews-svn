@@ -131,21 +131,38 @@
       <title>LibreOffice on 11.3</title>
       <mediaobject>
         <imageobject>
-          <imagedata width="45%"
-            fileref="http://cdn.omgsuse.com/omg/images/libreoffice.jpg"
+          <imagedata width="45%" fileref="http://cdn.omgsuse.com/omg/images/libreoffice.jpg"
             align="center"/>
         </imageobject>
       </mediaobject>
-    </figure>   
-    <para>Thanks to some great work by the LibreOffice hackers associated with the openSUSE <xref linkend="fig.libre"/> project,
-    LibreOffice is packaged and ready for you to enjoy on openSUSE 11.3.</para>
+    </figure>
+    <para>Thanks to some great work by the LibreOffice hackers associated with the openSUSE <xref
+        linkend="fig.libre"/> project, LibreOffice is packaged and ready for you to enjoy on
+      openSUSE 11.3.</para>
     <mediaobject>
       <imageobject>
-        <imagedata width="45%"
-          fileref="http://cdn.omgsuse.com/os/sites/default/files/oneclick.png"
+        <imagedata width="15%" fileref="http://cdn.omgsuse.com/os/sites/default/files/oneclick.png"
           align="center"/>
       </imageobject>
     </mediaobject>
     <!-- ($ ld: 5.1.11 sm $) FIXME: Target should be added.-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://michal.hrusecky.net/2011/01/opensuse-paste-screenshooting-script/"
+        >Michal Hrusecky: openSUSE Paste screenshooting script</ulink></title>
+    <para>This post will be really quick. As you may know, <ulink url="http://susepaste.org"
+        >openSUSE Paste</ulink> already supports <ulink
+        url="http://michal.hrusecky.net/2010/11/pasting-images/">pasting images</ulink>. But I found
+      out, that some people don’t use it because they’ve got some other pastebin nicelly integrated.
+      So to help them out, I created simple script that can help them. It is currently available in
+        <ulink url="http://en.opensuse.org/openSUSE:Contrib">openSUSE:Contrib</ulink> repository.
+      You can install it, package name is susepaste-screenshot. When you run it, it will let you
+      click on any window and then it will paste image of that window. It will also show you the
+      link for your paste (in new X window) and copy it to you clipboard. I know that it is not
+      prettiest thing you ever seen, but it works. For nicer GUI, ask for openSUSE Paste support
+      upstream of your favourite pasting tool ;-) </para>
+    <para>btw. If you prefer not to install it manually, you can get it from <ulink
+        url="http://gitorious.org/opensuse/paste/trees/master/script">gitorious</ulink>, but that
+      way, you’ll have to deal with dependencies by yourself ;-)</para>
   </blockquote>
 </sect1>
