@@ -63,7 +63,7 @@
   </sect2> -->
   <sect2 role="distribution">
     <title>Distribution</title>
-<!-- 
+    <!-- 
     <blockquote>
       <title></title>
       <para></para>
@@ -93,17 +93,19 @@
         <para>Milestone: Last round of software translation starts - &quot;hard text freeze&quot;($ ld: 11.12.10 sm $</para>
         </listitem>
       </itemizedlist>      
-      </blockquote> -->    
+      </blockquote> -->
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
@@ -187,7 +189,6 @@
           also.</para>
       </blockquote>
     </sect3> -->
-    
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -200,137 +201,143 @@
           <mediaobject>
             <imageobject>
               <imagedata width="50%"
-                fileref="http://news.opensuse.org/wp-content/uploads/2010/12/Opensuse-boosters-300x200.jpg" align="center"/>
+                fileref="http://news.opensuse.org/wp-content/uploads/2010/12/Opensuse-boosters-300x200.jpg"
+                align="center"/>
             </imageobject>
           </mediaobject>
         </figure>
-        <para>At the end of the year it is the time for reviews and the openSUSE Booster <xref linkend="fig.boosters"/> team did not
-          want to let that opportunity slip. So what was important in 2010 from an openSUSE Boosters
-          perspective? What happened, what progress was made, how did the boosters help openSUSE? A
-          report from Klaas Freitag.</para>
+        <para>At the end of the year it is the time for reviews and the openSUSE Booster <xref
+            linkend="fig.boosters"/> team did not want to let that opportunity slip. So what was
+          important in 2010 from an openSUSE Boosters perspective? What happened, what progress was
+          made, how did the boosters help openSUSE? A report from Klaas Freitag.</para>
         <para><emphasis role="bold">Who are the Boosters</emphasis></para>
-        <para>For those who do not know who <ulink url="http://en.opensuse.org/openSUSE:Boosters_team"
-          >the Boosters</ulink> are: We’re not Tuxies favorite boy group, but a bunch of people
-          dedicated to help the openSUSE Project in any way we can. The team consists of 13 people (BTW:
-          widely known as the thirsty thirteen) with skills ranging from low level C hackery over Ruby
-          on Rails mastering to Graphical Design or Project Management. Our team picks milestones and
-          works on them in a agile fashion while always following our mantra: Grow community by enabling
-          community. You can meet us at the usual places like IRC, the mailinglists or events were we
-          show up and spread the word about openSUSE. We’re there to make contributors life easier and
-          more fun, so if you have anything do not hesitate to talk to us. We’re here for you.</para>
+        <para>For those who do not know who <ulink
+            url="http://en.opensuse.org/openSUSE:Boosters_team">the Boosters</ulink> are: We’re not
+          Tuxies favorite boy group, but a bunch of people dedicated to help the openSUSE Project in
+          any way we can. The team consists of 13 people (BTW: widely known as the thirsty thirteen)
+          with skills ranging from low level C hackery over Ruby on Rails mastering to Graphical
+          Design or Project Management. Our team picks milestones and works on them in a agile
+          fashion while always following our mantra: Grow community by enabling community. You can
+          meet us at the usual places like IRC, the mailinglists or events were we show up and
+          spread the word about openSUSE. We’re there to make contributors life easier and more fun,
+          so if you have anything do not hesitate to talk to us. We’re here for you.</para>
         <para role="bold"><emphasis role="bold">Events in 2010</emphasis></para>
         <para>So let’s quickly fly over the year of 2010 and see what was nice and important.</para>
         <itemizedlist>
           <listitem>
             <para>FOSDEM</para>
-            <para>Lets start with a very important event, FOSDEM in Brussels in February. We traveled
-              there by coach the first time. That was remarkable because there were some push back
-              against before (long journey) but we did it because it is cheaper, which means more people
-              can go. The result was that we all were quite pleased by the coach trip as it was
-              comfortable and fun, and finally not so much longer than the flight. And yes, consider how
-              much carbon dioxide was saved? Since that trip I am constantly nagging for budget for an
-              openSUSE Coach…</para>
-            <para>I held a talk about Hermes at FOSDEM which was, well, not a great success, that thing
-              seems hard to market. That happens, others were more succesfull, like Christopher with his
-              talk about image building with Kiwi. Michal had a meeting with MySQL packagers from all
-              over the world at FOSDEM, which was probably the first real initiative to collaborate on
-              cross distro topics. I also bought a GNOME T-Shirt, met tons of old friends, had cherry
-              beer and got a cold as usual on FOSDEM.</para>
+            <para>Lets start with a very important event, FOSDEM in Brussels in February. We
+              traveled there by coach the first time. That was remarkable because there were some
+              push back against before (long journey) but we did it because it is cheaper, which
+              means more people can go. The result was that we all were quite pleased by the coach
+              trip as it was comfortable and fun, and finally not so much longer than the flight.
+              And yes, consider how much carbon dioxide was saved? Since that trip I am constantly
+              nagging for budget for an openSUSE Coach…</para>
+            <para>I held a talk about Hermes at FOSDEM which was, well, not a great success, that
+              thing seems hard to market. That happens, others were more succesfull, like
+              Christopher with his talk about image building with Kiwi. Michal had a meeting with
+              MySQL packagers from all over the world at FOSDEM, which was probably the first real
+              initiative to collaborate on cross distro topics. I also bought a GNOME T-Shirt, met
+              tons of old friends, had cherry beer and got a cold as usual on FOSDEM.</para>
           </listitem>
           <listitem>
             <para>Dev meeting</para>
             <para>Also in February, we hosted a dev meeting of 25 KDE hackers here in the Nuremberg
-              office. They worked on the highly rated plasma workspace for KDE 4.5. I still wonder how
-              Will managed to get around with definitely no sleep for days.</para>
+              office. They worked on the highly rated plasma workspace for KDE 4.5. I still wonder
+              how Will managed to get around with definitely no sleep for days.</para>
           </listitem>
           <listitem>
             <para>Bento and wiki work</para>
-            <para>At home, at the beginning of the year we worked on projects called <quote>Integrate all
-              Infrastructure under one Umbrella</quote> which resulted in the Bento web theme nowadays at all
-              openSUSE sites use. It provides short ways from one site to another by thought through and
-              pretty menus. Robert did a real great job with that and we got a lot of external
-              recognition for it. At the same time the Wiki project started which was a huge project the
-              Wiki community was pulling together with Henne and Tom. The decision was to create a new
-              Wiki from scratch, implement reviewing features and transfer all relevant content into the
-              new one while making sure to not transfer stuff nobody needs and maintains any more. That
-              was a big thing and caused a lot of discussion. Today we can look back and say that we now
-              have a well structured Wiki with valuable content. Fortune favors the bold :-)</para>
+            <para>At home, at the beginning of the year we worked on projects called
+                <quote>Integrate all Infrastructure under one Umbrella</quote> which resulted in the
+              Bento web theme nowadays at all openSUSE sites use. It provides short ways from one
+              site to another by thought through and pretty menus. Robert did a real great job with
+              that and we got a lot of external recognition for it. At the same time the Wiki
+              project started which was a huge project the Wiki community was pulling together with
+              Henne and Tom. The decision was to create a new Wiki from scratch, implement reviewing
+              features and transfer all relevant content into the new one while making sure to not
+              transfer stuff nobody needs and maintains any more. That was a big thing and caused a
+              lot of discussion. Today we can look back and say that we now have a well structured
+              Wiki with valuable content. Fortune favors the bold :-)</para>
           </listitem>
           <listitem>
             <para>OBS</para>
-            <para>In parallel to that, Coolo and Tom were contributing to the new BuildService <ulink
-              url="http://build.opensuse.org">web interface</ulink>. After long working hours we
-              finally came out with a great web interface for OBS which was a big bum for the whole
-              project, as it makes working in OBS much more fun. I remember that whole thing being
-              started as a sprint called “Factory status”, aiming to provide a good <ulink
-                url="https://build.opensuse.org/projectstatus?project=openSUSE%3AFactory">overview
-                page</ulink> for the Factory project in OBS. It grew a bit more ambitions, but, well,
-              that’s how it goes if things are in movement ;-)</para>
+            <para>In parallel to that, Coolo and Tom were contributing to the new BuildService
+                <ulink url="http://build.opensuse.org">web interface</ulink>. After long working
+              hours we finally came out with a great web interface for OBS which was a big bum for
+              the whole project, as it makes working in OBS much more fun. I remember that whole
+              thing being started as a sprint called “Factory status”, aiming to provide a good
+                <ulink url="https://build.opensuse.org/projectstatus?project=openSUSE%3AFactory"
+                >overview page</ulink> for the Factory project in OBS. It grew a bit more ambitions,
+              but, well, that’s how it goes if things are in movement ;-)</para>
           </listitem>
           <listitem>
             <para>LinuxTag</para>
-            <para>In June, there was LinuxTag in Berlin where most of us participated with talks in the
-              free program or workshops on our booth. We educated a lot of people how to contribute to
-              openSUSE in various ways. From submitting code fixes through the Build Service to creating
-              great Geeko graphics with Inkscape to how to twist their own Geeko out of pipe
-              cleaners.</para>
+            <para>In June, there was LinuxTag in Berlin where most of us participated with talks in
+              the free program or workshops on our booth. We educated a lot of people how to
+              contribute to openSUSE in various ways. From submitting code fixes through the Build
+              Service to creating great Geeko graphics with Inkscape to how to twist their own Geeko
+              out of pipe cleaners.</para>
           </listitem>
           <listitem>
             <para>openSUSE 11.3</para>
-            <para>In July, openSUSE 11.3 was released. That was lots of work beforehand with quite some
-              boosters involvement, as Mr. Distro Coolo is part of the team. However not only he is
-              contributing to the distribution, we all have our shares in it. 11.3 was a good one, it
-              got good press and showed that we as a community are doing great. All over the world
-              release parties were organized, some Boosters took over the one here in Nürnberg. <ulink
+            <para>In July, openSUSE 11.3 was released. That was lots of work beforehand with quite
+              some boosters involvement, as Mr. Distro Coolo is part of the team. However not only
+              he is contributing to the distribution, we all have our shares in it. 11.3 was a good
+              one, it got good press and showed that we as a community are doing great. All over the
+              world release parties were organized, some Boosters took over the one here in
+              Nürnberg. <ulink
                 url="http://lizards.opensuse.org/2010/07/16/opensuse-11-3-launch-party-in-nurnberg/"
-                >Nice party</ulink> with some talks, along with BBQ and beer. The latter ran out at 7pm,
-              because many community members showed up. Cool, I love that kind of stress to organize
-              food and beer quickly to let the party go on :-)</para>
+                >Nice party</ulink> with some talks, along with BBQ and beer. The latter ran out at
+              7pm, because many community members showed up. Cool, I love that kind of stress to
+              organize food and beer quickly to let the party go on :-)</para>
           </listitem>
           <listitem>
             <para>GNOME and KDE conferences</para>
-            <para>Also in Summer, GUADEC as well as Akademy took place for our desktop Boosters. Vincent
-              rocked GUADEC and gave away Geekos and stuff and advertised openSUSE as a good platform
-              for the upcoming GNOME3. Will could not go to Akademy this year for a very good reason
-              called Anna :-)</para>
+            <para>Also in Summer, GUADEC as well as Akademy took place for our desktop Boosters.
+              Vincent rocked GUADEC and gave away Geekos and stuff and advertised openSUSE as a good
+              platform for the upcoming GNOME3. Will could not go to Akademy this year for a very
+              good reason called Anna :-)</para>
           </listitem>
           <listitem>
             <para>openSUSE conference</para>
-            <para>In autumn, the for me most exciting event of the year took place, the second <ulink
-              url="http://en.opensuse.org/Portal:Conference">openSUSE Conference</ulink>. We were
-              heavily involved in organizing, program committee work, giving talks and presentations and
-              all what is involved with that kind of large event. It was a huge success, as a very
-              active and passionate community showed up. Discussions went from a <quote>This is what we did</quote>
-              in the last year to a <quote>this is what we could do</quote> which is so great to see as that is
-              resulting in innovation for the whole project. As a result some very concrete sub projects
-              were created such as <quote>Project Brezn</quote> and openSUSE Invis which slowly evolves.</para>
+            <para>In autumn, the for me most exciting event of the year took place, the second
+                <ulink url="http://en.opensuse.org/Portal:Conference">openSUSE Conference</ulink>.
+              We were heavily involved in organizing, program committee work, giving talks and
+              presentations and all what is involved with that kind of large event. It was a huge
+              success, as a very active and passionate community showed up. Discussions went from a
+                <quote>This is what we did</quote> in the last year to a <quote>this is what we
+                could do</quote> which is so great to see as that is resulting in innovation for the
+              whole project. As a result some very concrete sub projects were created such as
+                <quote>Project Brezn</quote> and openSUSE Invis which slowly evolves.</para>
           </listitem>
           <listitem>
             <para>openFATE, Connect and more</para>
-            <para>After the conference and the release of 11.3 we started to dig into milestones again
-              with <ulink url="http://features.opensuse.org">openFATE</ulink> and <ulink
+            <para>After the conference and the release of 11.3 we started to dig into milestones
+              again with <ulink url="http://features.opensuse.org">openFATE</ulink> and <ulink
                 url="http://connect.opensuse.org">Connect</ulink>. Since a couple of weeks we have a
               nice looking openFATE that has the features that make it possible for the feature
-              screening team to work on one of our most important tasks in our project: Looking into the
-              future of the distribution with feature evaluation. We also implemented the future of the
-              user/group handling for all the openSUSE services with a social twist: Connect. Our own
-              instance of a social network that makes it possible to connect the people that make this
-              project what it is and at the same time makes it possible to centralize the user
-              data.</para>
+              screening team to work on one of our most important tasks in our project: Looking into
+              the future of the distribution with feature evaluation. We also implemented the future
+              of the user/group handling for all the openSUSE services with a social twist: Connect.
+              Our own instance of a social network that makes it possible to connect the people that
+              make this project what it is and at the same time makes it possible to centralize the
+              user data.</para>
           </listitem>
         </itemizedlist>
         <para><emphasis role="bold">Busy 2010</emphasis></para>
         <para>So all in all the boosters had a very busy and prosperous year 2010. All of us carried
-          their individual share of work in the various areas of the openSUSE project we participate in,
-          be it in the openSUSE KDE and GNOME Teams, the openSUSE Distribution, the openSUSE tools or
-          the openSUSE Board. We attended a lot of events and organized a couple of our own with great
-          success. And we worked together on the most pressing milestones we saw for contributor growth
-          in a fun and clever way. All in all we helped a lot of contributors to stand up, take
-          responsibility and do get their hands dirty for the openSUSE Project. That makes us proud and
-          we will do this smarter, faster, better and stronger in 2011. Promised!</para>
+          their individual share of work in the various areas of the openSUSE project we participate
+          in, be it in the openSUSE KDE and GNOME Teams, the openSUSE Distribution, the openSUSE
+          tools or the openSUSE Board. We attended a lot of events and organized a couple of our own
+          with great success. And we worked together on the most pressing milestones we saw for
+          contributor growth in a fun and clever way. All in all we helped a lot of contributors to
+          stand up, take responsibility and do get their hands dirty for the openSUSE Project. That
+          makes us proud and we will do this smarter, faster, better and stronger in 2011.
+          Promised!</para>
         <!-- ($ ld: 31.12.10 sm $) -->
       </blockquote>
-      </sect3>
+    </sect3>
     <!--
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>      
@@ -400,33 +407,48 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
+      </sect3> -->
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/">Nelson Marques: Kick off for GNOME:Ayatana Project…</ulink>
+          <ulink url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/"
+            >Nelson Marques: Kick off for GNOME:Ayatana Project…</ulink>
         </title>
-        <para><quote>Follow effective action with quiet reflection. From the quiet reflection will come even more effective action.</quote> // Peter F. Drucker</para>
-        <para>This has been one of the guidelines in my life for quite some time… It started as a curiosity a long time ago with Notify OSD and evolved to full project 
-          in openSUSE. It is important to acknowledge at this point the motivation provided by the openSUSE GNOME Team from which I’ve been getting plenty of guidance and 
-          help, namely from Vincent Untz (vuntz) and Dominique ﻿Leuenberger (Dimstar). Thanks to them, we have now a GNOME:Ayatana Project on OBS (openSUSE Build Service), 
-          currently being populated with the support libraries for Ayatana’s Unity and Indicators.</para>
-        <para>Susan Linton has made a small article for Linux Journal about this project in the past. Though some people pointed to me that it was advertising and excelling 
-          Ubuntu… I would like to leave a statement… We’re not taking a hike on Ubuntu visibility, and it isn’t bad at all, on the contrary… In fact it will help Ubuntu, us 
-          and many others… specially if some Ubuntu patches are accepted faster by upstream. I hope other RPM distributions will follow the way we, openSUSE, proudly seem to 
-          pioneering! From my personal point of view… a distribution <quote>distributes</quote>… and despite this software isn’t attractive for some openSUSE users, I’m happy 
-          it is available (totally or partially) for all those who want to test it… Wait… you don’t even need to install Ubuntu or changing the platform you run!</para>
-        <para>Due to several reasons, being the most important of them versioning, this repository will start on the next release of openSUSE in March 16th (World day 
-        of Conscience, interesting point). This is also interesting as if YOU are willing to improve a package or submit a package you can now do it to this repository.</para>
+        <para><quote>Follow effective action with quiet reflection. From the quiet reflection will
+            come even more effective action.</quote> // Peter F. Drucker</para>
+        <para>This has been one of the guidelines in my life for quite some time… It started as a
+          curiosity a long time ago with Notify OSD and evolved to full project in openSUSE. It is
+          important to acknowledge at this point the motivation provided by the openSUSE GNOME Team
+          from which I’ve been getting plenty of guidance and help, namely from Vincent Untz (vuntz)
+          and Dominique ﻿Leuenberger (Dimstar). Thanks to them, we have now a GNOME:Ayatana Project
+          on OBS (openSUSE Build Service), currently being populated with the support libraries for
+          Ayatana’s Unity and Indicators.</para>
+        <para>Susan Linton has made a small article for Linux Journal about this project in the
+          past. Though some people pointed to me that it was advertising and excelling Ubuntu… I
+          would like to leave a statement… We’re not taking a hike on Ubuntu visibility, and it
+          isn’t bad at all, on the contrary… In fact it will help Ubuntu, us and many others…
+          specially if some Ubuntu patches are accepted faster by upstream. I hope other RPM
+          distributions will follow the way we, openSUSE, proudly seem to pioneering! From my
+          personal point of view… a distribution <quote>distributes</quote>… and despite this
+          software isn’t attractive for some openSUSE users, I’m happy it is available (totally or
+          partially) for all those who want to test it… Wait… you don’t even need to install Ubuntu
+          or changing the platform you run!</para>
+        <para>Due to several reasons, being the most important of them versioning, this repository
+          will start on the next release of openSUSE in March 16th (World day of Conscience,
+          interesting point). This is also interesting as if YOU are willing to improve a package or
+          submit a package you can now do it to this repository.</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="65%" align="center" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"/>
+            <imagedata width="65%" align="center"
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"
+            />
           </imageobject>
         </mediaobject>
-        <para>This goes with a very huge cookie for Dimstar and Vuntz for taking care of this repository and making sure that everything will comply with the openSUSE 
-        Guidelines. You are my personal heroes. (...)</para>
-        <!-- ($ ld: 29.12.10 sm $) -->      
+        <para>This goes with a very huge cookie for Dimstar and Vuntz for taking care of this
+          repository and making sure that everything will comply with the openSUSE Guidelines. You
+          are my personal heroes. (...)</para>
+        <!-- ($ ld: 29.12.10 sm $) -->
       </blockquote>
     </sect3>
     <!--
@@ -455,67 +477,63 @@
           about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
           better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>      
       </blockquote> 
-      </sect3> -->    
-    
+      </sect3> -->
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
         <title>
           <ulink
-            url="http://news.opensuse.org/2010/12/28/the-first-marketing-collaboration-days-are-over-but-more-will-come/"
-            >The first Marketing Collaboration days are over but more will come!</ulink>
+            url="http://dev-loki.blogspot.com/2011/01/review-of-opensuse-trademark-guidelines.html"
+            >Pascal Bleser: Review of openSUSE Trademark Guidelines</ulink>
         </title>
-        <para>On the 6th of December, the openSUSE marketing team held the first of three Collaboration
-          Days. The goal of these days was to get on IRC together and get some tasks done. Each day was
-          organized by a team of two volunteers who build up a list of possible task which on the day
-          itself were to be picked up by the attendees.</para>
-        <para><emphasis role="bold">Results</emphasis></para>
-        <para>Before talking about the material results, an important note: while indeed it was great to
-          get so many things done, the most important was something else. Working together like this was
-          fun. Really, the team spirit was great and everyone involved deserves a big kudos for simply
-          being such a great person! During the 24 hours that the event took, some members were online
-          for a much longer time than you could expect anyone to stay – true dedication! The meetings
-          really showed what the spirit of Free Software and openSUSE means – making a difference
-          together. Because we made a difference.</para>
-        <para>Among other things, the following things were accomplished:</para>
-        <para><emphasis role="bold">Documentation created and updated</emphasis>: organizing booths and
-          launch parties; Ambassador documentation; Talking points; example Letters of Sponsorship; and
-          a general WIKI reorganization and cleanup.</para>
-        <para><emphasis role="bold">Totally new</emphasis>: two short presentations, one about SUSE
-          Studio and one on OBS; short descriptions of openSUSE to be used in marketing materials; a
-          series of keywords associated to openSUSE for SEO usage; a photo gallery showing openSUSE
-          related images;</para>
-        <para>We also made significant strides in the feature list for openSUSE 11.4, which we hope to
-          turn into an informative and fun to read feature guide for the release! Based on the work on
-          short descriptions of openSUSE and the latest state of our Strategy, two folders are now in
-          development: one for potential openSUSE users and one for potential contributors. Anyone
-          interested in helping out: please contact us!</para>
-        <para>Moreover two short presentations on SUSE Studio and OBS were created which can be used in
-          presentations from the Ambassadors. Already some Greek ambassadors are using them and they
-          promised to contribute back translated versions.</para>
-        <para><emphasis role="bold">Thanks all!</emphasis></para>
-        <para>We would like to thank the whole marketing team and everyone else who joined for a great
-          job. We made a few significant steps forward and surely there will be more collaboration days
-          in the future!</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="45%"
-              fileref="http://news.opensuse.org/wp-content/uploads/2010/12/openSUSECollaborationDayCertificate-300x212.jpg"/>
-          </imageobject>
-        </mediaobject>
-        <para>Thanks especially to the volunteers who prepared the Collaboration days:</para>
-        <itemizedlist>
-          <listitem>
-            <para>Review of Ambassador materials: Kostas Koudaras and Carlos Ribeiro</para>
-          </listitem>
-          <listitem>
-            <para>Marketing Review: Chuck Payne and Bryen Yunashko</para>
-          </listitem>
-          <listitem>
-            <para>Social Media: Manu Gupta and Jos Poortvliet</para>
-          </listitem>
-        </itemizedlist>
-        <!-- ($ ld: 29.12.10 sm $) -->
+        <para><ulink url="http://en.opensuse.org/User:Byunashko">Bryen</ulink> just opened an <ulink
+            url="https://features.opensuse.org/311039">interesting feature request about a review of
+            the current openSUSE trademark guidelines (#311039).</ulink>
+        </para>
+        <para>The current state of things is that Novell owns the openSUSE and openSUSE related
+          trademarks (which include things like the openSUSE name and the openSUSE branding). While
+          at some point I would love to see those trademarks go into the ownership of the openSUSE
+          foundation (but let's first actually have that foundation ;)), it is better to keep them
+          with Novell until we have a properly working and funded foundation, because owning
+          trademarks is also an obligation to enforce them. And that potentially means legal
+          enforcement as well. </para>
+        <para>As the trademarks are owned and enforced by Novell, permissions to use trademarked
+          material must be sent to Novell (permission@novell.com, actually), but in practice,
+          Novell's legal team has been delegating the responsibility of evaluating such requests to
+          the openSUSE board. </para>
+        <!-- FIXME: Use the Email Element -->
+        <para>Nevertheless, the board has to take decisions within a certain framework. Part of that
+          framework, obviously, are a few legal aspects, but more prominently, it is what is
+          currently defined in the <ulink url="http://en.opensuse.org/openSUSE:Trademark_guidelines"
+            >openSUSE Trademark Guidelines</ulink> document. </para>
+        <para>Bryen's feature request (which is essentially filed as such because <ulink
+            url="http://en.opensuse.org/openSUSE:Openfate">openFATE</ulink> gives us a good tool for
+          transparency and collecting feedback) is precisely about that point: let's take a step
+          back and rethink our trademark guidelines. </para>
+        <para>The task isn't as simple as it might sound, of course, as we have to find a good
+          balance between a few, most probably contradictory things:<itemizedlist>
+            <listitem>
+              <para>make the rules short and simple: the simpler they are, the easier to grasp and
+                the less daunting to approach</para>
+            </listitem>
+            <listitem>
+              <para>enable derivatives of openSUSE: yes, we'd love to see more and more derivative
+                works based on openSUSE (but the <ulink
+                  url="http://en.opensuse.org/openSUSE:Trademark_guidelines">current
+                  guidelines</ulink>, which the board has to abide by, do not really reflect
+                that)</para>
+            </listitem>
+            <listitem>
+              <para>prevent abuse</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Which is why we'd love to hear from YOU what you believe are genuinely good use cases
+          that we want to enable and support and what you believe would be cases of abuse,
+          especially if you have been involved or have been pondering about making a derivative of
+          openSUSE or, more generally, use the openSUSE trademarks in one way or another. </para>
+        <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
+          log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
+        <!-- ($ ld: 7.1.10 sm $) -->
       </blockquote>
     </sect3>
     <!--
@@ -529,27 +547,33 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->    
+      </sect3> -->
     <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+            We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 328)</ulink>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
+              (Score: 328)</ulink>
           </title>
           <para>&quot;Network installation could be improved by running package download and package
             installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 155)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
+              boot (Score: 155)</ulink>
           </title>
-          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but reading 
-            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really makes me think we should go this way.</para>
-          <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot process takes away from the whole experience.&quot; is especially interesting. 
-            Is it okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
+          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
+            reading
+            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
+            really makes me think we should go this way.</para>
+          <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot
+            process takes away from the whole experience.&quot; is especially interesting. Is it
+            okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
         </blockquote>
         <blockquote>
           <title>
@@ -564,7 +588,8 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 94)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
+              94)</ulink>
           </title>
           <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
@@ -578,7 +603,8 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 60)</ulink>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
+              &quot;Installation Summary&quot; (Score: 60)</ulink>
           </title>
           <para>&quot;The YaST Qt package manager should provide as much information in the
             &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
@@ -586,39 +612,46 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 56)</ulink>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
+              Linux) (Score: 56)</ulink>
           </title>
           <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
             inheriting the simplicity, code and security. (...)&quot;</para>
         </blockquote>
-      <!-- ($ ld: 01.01.11 sat *updated* $) -->      
+        <!-- ($ ld: 01.01.11 sat *updated* $) -->
       </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311021">Get rid of the Christmas bootloader screen</ulink>
+            <ulink url="https://features.opensuse.org/311021">Get rid of the Christmas bootloader
+              screen</ulink>
           </title>
-          <para>&quot;Every year around Christmas, openSUSE changes the bootloader screen to some winter wonderland with animated penguins. To me it is confusing, annoying and 
-            childish. Please remove it from future releases.&quot;</para>
+          <para>&quot;Every year around Christmas, openSUSE changes the bootloader screen to some
+            winter wonderland with animated penguins. To me it is confusing, annoying and childish.
+            Please remove it from future releases.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311023">Make GNOME 3 default</ulink>
           </title>
-          <para>&quot;openSUSE has continuously been outranked since 2009 by 3 GNOME-based distributions on distrowatch.com. openSUSE has failed to re-capture its spot as hot 
+          <para>&quot;openSUSE has continuously been outranked since 2009 by 3 GNOME-based
+            distributions on distrowatch.com. openSUSE has failed to re-capture its spot as hot
             contender in 2010 by betting everything on the KDE-4-card.</para>
-          <para>The only way to re-gain popularity and some of the buzz of those early years of SUSE Linux Enterprise Desktop introduction seems to me to strengthen the 
-            visibility of GNOME in openSUSE and preferably be at the forefront of GNOME 3 adoption; a position that Ubuntu has foolishly relinquished of its own 
-            accord. (...)&quot;</para>
+          <para>The only way to re-gain popularity and some of the buzz of those early years of SUSE
+            Linux Enterprise Desktop introduction seems to me to strengthen the visibility of GNOME
+            in openSUSE and preferably be at the forefront of GNOME 3 adoption; a position that
+            Ubuntu has foolishly relinquished of its own accord. (...)&quot;</para>
         </blockquote>
-        <!-- ($ ld: 01.01.11 sat $) -->      
+        <!-- ($ ld: 01.01.11 sat $) -->
       </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink
+            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
     <!--
@@ -626,40 +659,43 @@
       <title>OpenOffice Team</title>
 
       <para>...</para>
-      </sect3> -->    
+      </sect3> -->
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry Finger: Weekly News for January 1</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry
+            Finger: Weekly News for January 1</ulink>
         </title>
-        <para>The next Testing Core Team IRC meeting will be held 2011-01-31 at 18:00 UTC and
-          will discuss 11.4 M6.</para>
+        <para>The next Testing Core Team IRC meeting will be held 2011-01-31 at 18:00 UTC and will
+          discuss 11.4 M6.</para>
         <para>Attendance at the December 27 meeting was optional. As many of the team were on
-          holiday, only two were present. Neither of us had any particular problems with
-          11.4 M5, thus we took some time to get to know each other. As we did not have a
-          real meeting, the IRC log will not be posted.</para>
+          holiday, only two were present. Neither of us had any particular problems with 11.4 M5,
+          thus we took some time to get to know each other. As we did not have a real meeting, the
+          IRC log will not be posted.</para>
         <para>The openSUSE forums have not had many complaints about M5, thus it appears to be
-          shaping up quite well. In addition, the 2.6.37 kernel, which is used in 11.4,
-          will have its release in roughly 1-2 weeks, thus there will be approximately 3
-          months of kernel testing before 11.4 is released. That is good timing.</para>
+          shaping up quite well. In addition, the 2.6.37 kernel, which is used in 11.4, will have
+          its release in roughly 1-2 weeks, thus there will be approximately 3 months of kernel
+          testing before 11.4 is released. That is good timing.</para>
         <para>Wishing everyone a happy and prosperous new year.</para>
-        <!-- ($ ld: 1.1.11 sm $) -->      
+        <!-- ($ ld: 1.1.11 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
@@ -670,5 +706,6 @@
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->  </sect2>
+      </sect3> -->
+  </sect2>
 </sect1>
