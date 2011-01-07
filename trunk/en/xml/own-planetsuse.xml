@@ -136,7 +136,8 @@
       for <ulink url="http://www.compiz.org/">Compiz</ulink> and CompIcc.</para>
     <mediaobject>
       <imageobject>
-        <imagedata width="45%" fileref="http://3.bp.blogspot.com/_-YtM6xplLKA/TSYoRypjT6I/AAAAAAAAABY/dhMHU9p-loo/s1600/qcmsevents_2.png"
+        <imagedata width="45%"
+          fileref="http://3.bp.blogspot.com/_-YtM6xplLKA/TSYoRypjT6I/AAAAAAAAABY/dhMHU9p-loo/s1600/qcmsevents_2.png"
           align="center"/>
       </imageobject>
     </mediaobject>
@@ -153,17 +154,18 @@
       <title>kolor-manager device profile selection</title>
       <mediaobject>
         <imageobject>
-          <imagedata width="45%" fileref="http://2.bp.blogspot.com/_-YtM6xplLKA/TSYwyGSAiGI/AAAAAAAAABc/WVncYf7WVEY/s400/kolor-manager_devices_110106.png"
+          <imagedata width="45%"
+            fileref="http://2.bp.blogspot.com/_-YtM6xplLKA/TSYwyGSAiGI/AAAAAAAAABc/WVncYf7WVEY/s400/kolor-manager_devices_110106.png"
             align="center"/>
         </imageobject>
       </mediaobject>
     </figure>
-    
-    <para>To change the monitor profile one can use kolor-manager <xref linkend="fig.oyanos"/> from KDE's systemsettings panel.
-      It contains as well policies and default profile selection. These settings are stored in a per
-      user database. To see that CompIcc is working one might select the CIE*XYZ profile, with its
-      headroom and gamma of 1.0 the monitor appearance should change dramatically. But thats only
-      visible when the "Show only device related ICC profiles" box is deactivated. </para>
+    <para>To change the monitor profile one can use kolor-manager <xref linkend="fig.oyanos"/> from
+      KDE's systemsettings panel. It contains as well policies and default profile selection. These
+      settings are stored in a per user database. To see that CompIcc is working one might select
+      the CIE*XYZ profile, with its headroom and gamma of 1.0 the monitor appearance should change
+      dramatically. But thats only visible when the "Show only device related ICC profiles" box is
+      deactivated. </para>
     <para>On the desktop are three example images just for having some wide gamut media available.
       The two tiff files are raw camera developed images with a custom ICC profile assigned. The
       restaurant JPEG is in AdobeRGB as typical for some cameras. All are tagged with the respective
@@ -191,7 +193,7 @@
         </listitem>
       </itemizedlist></para>
     <para>Hope you can start the media. For ATI cards one further version is planed and maybe for
-    other cards, like intel graphics, a separate version can follow. </para>
+      other cards, like intel graphics, a separate version can follow. </para>
     <!-- ($ ld: 7.1.11 sm $) -->
   </blockquote>
   <blockquote>
@@ -255,11 +257,13 @@
         linkend="fig.libre"/> project, LibreOffice is packaged and ready for you to enjoy on
       openSUSE 11.3.</para>
     <para>
-      <ulink url="http://software.opensuse.org/ymp/LibreOffice:Unstable/openSUSE_11.3/libreoffice.ymp?base=openSUSE:11.3&amp;query=libreoffice"></ulink>
+      <ulink
+        url="http://software.opensuse.org/ymp/LibreOffice:Unstable/openSUSE_11.3/libreoffice.ymp?base=openSUSE:11.3&amp;query=libreoffice"
+      />
       <inlinemediaobject>
         <imageobject>
-        <imagedata width="15%" fileref="http://cdn.omgsuse.com/os/sites/default/files/oneclick.png"
-        align="center"/>
+          <imagedata width="15%"
+            fileref="http://cdn.omgsuse.com/os/sites/default/files/oneclick.png" align="center"/>
         </imageobject>
       </inlinemediaobject>
     </para>
@@ -282,5 +286,56 @@
     <para>btw. If you prefer not to install it manually, you can get it from <ulink
         url="http://gitorious.org/opensuse/paste/trees/master/script">gitorious</ulink>, but that
       way, you’ll have to deal with dependencies by yourself ;-)</para>
+    <!-- ($ ld: 7.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/incredible-improvement-linux-desktop-224-lines"
+        >OMG!SUSE! team: The incredible improvement of the Linux desktop, with 224
+      lines</ulink></title>
+    <para>Over the last months significant work has been done on the Linux Kernel to improve
+      performance under heavy load in various user cases – including common desktop scenario's. This
+      started after the 2.6.35 release of the kernel (openSUSE 11.3 contains 2.6.34) with the
+      VM-scalability patches by Nick Piggin. Nick's improvements help desktop interactivity during
+      heavy disk usage, for example when you are copying large files or when <ulink
+        url="http://en.wikipedia.org/wiki/KTorrent">Ktorrent</ulink> is writing a lot of data. These
+      patches have had a hard time getting into the kernel, even though Master Tux (Linus Torvalds)
+      himself was very happy about the improvements – it was complicated code. But most if not all
+      of the improvements will make it into openSUSE 11.4. And it turned out there was some
+      low-hanging fruit as well.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="45%" fileref="http://cdn.omgsuse.com/omg/images/gltronwin.jpg"
+          align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>A few weeks back, SUSE kernel hacker Mike Galbraith released the third version of a patch,
+      only 224 new lines of code but greatly increasing the performance of the desktop under load.
+      Some tests performed by Mike Galbraith showed that this patch can drop the maximum latency,
+      the time needed to switch between tasks, by over ten times, and the average latency of the
+      desktop by about 60 times. Just when you thought that your 4 year PC was old and you had to
+      buy a new one... A patch shows up that could make such old hardware reasonably performance
+      again! </para>
+    <para>Linus Torvalds himself was again happily surprised that it is possible to change so much
+      with so little code., as he mentioned in an email. Testers around the world are echoing his
+      statement. The code has been tested on various systems, from cutting edge systems to small
+      net-books and it seems to work similar everywhere. </para>
+    <para>One of the major problems we all Linux users had was the responsiveness of our desktop
+      interface. Regardless of the GUI we used (mo matter if it's GNOME/KDE/XFCE/LXDE or anything
+      else) transferring many large files or upgrading our system or making any other disk
+      operations, made our environment too slow and this was not good at all, especially for
+      professionals where time is actually money. </para>
+    <para>This patch automatically creates task groups per user session, limiting the impact of some
+      heavy processes running on the background on desktop interactivity. It's amazing how something
+      so simple can bring so admirable results! </para>
+    <para>Many Linux users that don't use 'high class' technology will be very happy with the way
+      things are getting better with this patch, on the other hand users with cutting edge systems
+      will get even more addicted to the boost of speed that their Linux desktop will gain. Having
+      the ability to get more things done in less time will also affect the FOSS community since it
+      will probably bring even more people to Gnu/Linux. It will also affect software engineers and
+      everyone else around it. And hopefully more improvements will be done in the future. We will
+      propably see this 224 lines of the code on the forthcoming 2.6.37 kernel. Project Tumbleweed
+      or the Kernel:Stable buildservice repository are probably your best bets to get this quickly –
+      otherwise you can of course wait for the next release of openSUSE in March 2011! </para>
+    <!-- ($ ld: 7.1.11 sm $) -->
   </blockquote>
 </sect1>
