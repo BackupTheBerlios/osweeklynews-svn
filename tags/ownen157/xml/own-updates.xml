@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://psankar.blogspot.com/2011/01/introducing-sqlite-commander-curses.html"
+        >Sankar P: Introducing Sqlite-Commander - Curses Client for your SQLite
+      Database</ulink></title>
+    <para>I am happy to introduce to you, my recent nighttime hack "Sqlite-Commander - <ulink
+        url="https://github.com/curiosity/sqlite-commander">A Curses client for your SQLite
+        Database</ulink>".</para>
+    <para>While I was working in a project involving sqlite, I wanted to check the contents of a
+      sqlite database. The command line sqlite client involves too much of typing for viewing
+      records. The sqlite viewers that I found were not very keyboard friendly. There was a firefox
+      extension which looked good but I felt it is too clumsy to launch that application. Also, I
+      wanted a tool that will read SQLite tables over ssh without requiring much bandwidth. I could
+      not find any CUI client for SQLite and I felt it may be useful to write one, atleast for my
+      satisfying my needs. So, here we have Sqlite-Commander. The name is inspired from an awesome
+      piece of software Midnight-Commander written by Miguel De Icaza.</para>
+    <figure id="fig.sqlite">
+      <title>Screenshot</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="50%"
+            fileref="http://4.bp.blogspot.com/_G_VBnbGWMzs/TSBaaaJW18I/AAAAAAAAEWQ/v9HLv-7nHMk/s1600/sqlite-commander.png"
+            align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para><emphasis role="bold">Features</emphasis></para>
+    <itemizedlist>
+      <listitem>
+        <para>Shows the list of tables in the left pane.</para>
+      </listitem>
+      <listitem>
+        <para>Allows you to navigate the list of tables using arrow keys.</para>
+      </listitem>
+      <listitem>
+        <para>Shows the first 30 records for the selected table in the right pane</para>
+      </listitem>
+      <listitem>
+        <para>Non-printable columns are shown with a ???</para>
+      </listitem>
+      <listitem>
+        <para>Maximum of 30 characters are displayed per column. Column data exceeding this length
+          are shown with <quote>...</quote></para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">TODO</emphasis></para>
+    <itemizedlist>
+      <listitem>
+        <para>It is not a full-fledged SQLite client with rich features. It is like an enriched
+          version of cat for working with sqlite. I don't intend to make a release, as I am not sure
+          if this will be useful for anyone other than people who work with SQLite and can use only
+          a terminal/ssh. If there are enough users, I will enhance and make it a full-fledged
+          product. So drop me a mail if you are interested in this project.</para>
+      </listitem>
+      <listitem>
+        <para>It should be fairly straight-forward to implement connectivity to any database (MySQL,
+          Oracle, etc.) such that we can have a generic SQL NCurses client. It will be a good
+          exercise for someone who wants to know C#.</para>
+      </listitem>
+      <listitem>
+        <para>Add a scroll bar and show more than 30 columns. Should be moderate/easy to
+          implement.</para>
+      </listitem>
+      <listitem>
+        <para>Add a dialog box to execute any random SQL statement. Should be fairly trivial to
+          implement.</para>
+      </listitem>
+      <listitem>
+        <para>Create Events such that pressing Enter on the records list will pass the currently
+          selected record to a custom script/command. Useful ?</para>
+      </listitem>
+      <listitem>
+        <para>Copy selections of records to clipboard. Easy to implement.</para>
+      </listitem>
+      <listitem>
+        <para>Handle tablenames with special characters.</para>
+      </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">Thanks</emphasis></para>
+    <para>Credits are due for the awesome mono-ncurses interface authors (Miguel and Co.) If you are
+      looking to writing some terminal application I can heartily recommend that mono-ncurses is the
+      best library you will ever get. Before beginning this application, I evaluated a few options
+      (like Python etc.) and nothing comes close to being as easy to use as <ulink
+        url="http://www.mono-project.com/MonoCurses">mono-ncurses</ulink>. Also, special thanks to
+      VIM and git, two of the most productive tools ever invented. </para>
+    <!-- ($ ld: 3.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://dev-loki.blogspot.com/2011/01/mplayer-and-smplayer-update.html">Pascal
+        Bleser: MPlayer and smplayer update</ulink></title>
+    <para>I've just updated the <ulink url="http://packman.links2linux.org/package/MPlayer"
+          ><emphasis role="bold">MPlayer</emphasis></ulink> and <ulink
+        url="http://packman.links2linux.org/package/smplayer"><emphasis role="bold"
+          >smplayer</emphasis></ulink> in the <ulink url="http://packman.links2linux.org">Packman
+        repository</ulink> to their latest respective development revisions. </para>
+    <para>I also enabled <ulink url="http://packman.links2linux.org/package/rtmpdump"><emphasis
+          role="bold">rtmpdump</emphasis></ulink>, <ulink
+        url="http://packman.links2linux.org/package/mpg123"><emphasis role="bold"
+        >mpg123</emphasis></ulink> and mpcdec support. <emphasis role="bold">MPlayer</emphasis>
+      changed the way it handles <ulink url="http://en.wikipedia.org/wiki/Closed_captioning">closed
+        captions</ulink> in a recent revision, as it now takes an option to the <emphasis
+        role="bold">-subcc</emphasis> parameter to select which channel to use. </para>
+    <para>Because of that, I also had to update the (brilliant) smplayer GUI frontend for <emphasis
+        role="bold">mplayer</emphasis> in order to support that change. </para>
+    <para>Needless to say, if you encounter any issue, please report it by email to packman with the
+      domain <emphasis role="bold">links2linux.de</emphasis></para>
+    <!-- ($ ld: 3.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://tittiatcoke.wordpress.com/2011/01/04/opensuse-kdeunstablesc-repo-becomes-trunk-again/"
+        >Raymond Wooninck: openSUSE KDE:Unstable:SC repo becomes Trunk again !</ulink></title>
+    <para>A little warning to those that have switched over to the KDE:Unstable:SC repo. The target
+      is that either tonight or tomorrow a new Trunk snapshot will be loaded in this repo. That
+      would mean that the Unstable becomes unstable again.</para>
+    <para>I have already been building a number of snapshots based on the opened KDE 4.7 trunk and
+      have to admit that things are still looking very stable and even kdebindings is compiling well
+      :-) But this might of course change from the moment that KDE 4.6 has been released and the
+      focus shifts to the newer 4.7 release. </para>
+    <para>I will keep you posted on the developments around this repository, but this would be the
+      moment to switch over to KDE:Distro:Factory if you want to get the RC1, RC2 and KDE 4.6 final
+      version for your openSUSE system. Currently it contains RC1, but this would change in the next
+      few days once RC2 is released. </para>
+    <!-- ($ ld: 5.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.lenzg.net/archives/332-Updated-Drupal-7-appliances-to-version-7.0-final.html"
+        >LenZ Grimmer: Updated Drupal 7 appliances to version 7.0 final</ulink></title>
+    <para>Congratulations to the Drupal community for getting <ulink
+        url="http://drupal.org/drupal-7.0">version 7.0</ulink>
+      <ulink url="http://drupal.org/drupal-7-released">released</ulink>! This is a major mile stone
+      and an excellent reason to <ulink url="http://www.drupal7releaseparty.org/">celebrate</ulink>!
+      If you want to give Drupal 7 a try without having to install anything, I've now updated my
+      Drupal 7 appliances on <ulink url="http://susestudio.com/">SuSE Studio</ulink> to the latest
+      release. The appliance is based on <ulink url="http://software.opensuse.org/113/en">openSUSE
+        Linux 11.3</ulink> and is available in two variants:<itemizedlist>
+        <listitem>
+          <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive">text-mode</ulink>
+            only appliance to which you connect using your local web browser via the network.</para>
+        </listitem>
+        <listitem>
+          <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive-gui">GUI
+              version</ulink> that starts up the Firefox browser in a minimalistic GNOME desktop to
+            perform the installation locally. Remote network access is available, too.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The database backend is phpMyAdmin has been added to support web-based administration of
+      the MySQL server. You can access it via http://localhost/phpMyAdmin/. I also added <ulink
+        url="http://drush.ws/">drush</ulink>, the Drupal command line shell and scripting interface
+      and some additional packages (yast2-http-server, bind-utils, php5-ctype, patch). I also bumped
+      up the appliance's version number to 7.0.0, to match the version number of Drupal included. </para>
+    <para>The appliance is available in various formats:<itemizedlist>
+        <listitem>
+          <para>A live raw disk image, ready to be written to an USB stick or flash drive</para>
+        </listitem>
+        <listitem>
+          <para>A live ISO image, to be burned on a CD or used in a virtual machine</para>
+        </listitem>
+        <listitem>
+          <para>A hard disk image, to be dumped on a hard disk drive</para>
+        </listitem>
+        <listitem>
+          <para>Various virtual disk formats, e.g. OVF, VMWare/VirtualBox/KVM and Xen</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Please see the installation instructions provided on the download pages for details on how
+      to use the various image formats. </para>
+    <para>So congratulations to the Drupal developer community for reaching this goal and thanks to
+      SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I also
+      would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard
+        Bos</ulink> for the testing and many suggestions for improvement of these appliances!</para>
+    <!-- ($ ld: 5.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/FrostWire/200549">Packman: FrostWire
+        4.20.6_svn1467-0.pm</ulink></title>
+    <para>FrostWire is a gnutella client written in Java. It supports a number of advanced features
+      like ultrapeers (like FastTrack's supernodes), automatic download retries, freeloader
+      punishment, etc. FrostWire is a fork of the very popular LimeWire Gnutella client. </para>
+    <!-- ($ ld: 7.1.11 sm $) -->
+  </blockquote>
+  <itemizedlist>
+    <title>You can find other interesting Packages at:</title>
+    <listitem>
+      <para><ulink url="http://packman.links2linux.de/rdf/packman_en.rdf">Packman</ulink></para>
+    </listitem>
+    <listitem>
+      <para><ulink url="https://hermes.opensuse.org/feeds/66367.rdf">openSUSE Build
+        Service</ulink></para>
+    </listitem>
+  </itemizedlist>
+</sect1>
