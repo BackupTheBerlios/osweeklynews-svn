@@ -131,78 +131,63 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <!-- ($ ld: 3.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://tittiatcoke.wordpress.com/2011/01/04/opensuse-kdeunstablesc-repo-becomes-trunk-again/"
-        >Raymond Wooninck: openSUSE KDE:Unstable:SC repo becomes Trunk again !</ulink></title>
-    <para>A little warning to those that have switched over to the KDE:Unstable:SC repo. The target
-      is that either tonight or tomorrow a new Trunk snapshot will be loaded in this repo. That
-      would mean that the Unstable becomes unstable again.</para>
-    <para>I have already been building a number of snapshots based on the opened KDE 4.7 trunk and
-      have to admit that things are still looking very stable and even kdebindings is compiling well
-      :-) But this might of course change from the moment that KDE 4.6 has been released and the
-      focus shifts to the newer 4.7 release. </para>
-    <para>I will keep you posted on the developments around this repository, but this would be the
-      moment to switch over to KDE:Distro:Factory if you want to get the RC1, RC2 and KDE 4.6 final
-      version for your openSUSE system. Currently it contains RC1, but this would change in the next
-      few days once RC2 is released. </para>
-    <!-- ($ ld: 5.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://www.lenzg.net/archives/332-Updated-Drupal-7-appliances-to-version-7.0-final.html"
-        >LenZ Grimmer: Updated Drupal 7 appliances to version 7.0 final</ulink></title>
-    <para>Congratulations to the Drupal community for getting <ulink
-        url="http://drupal.org/drupal-7.0">version 7.0</ulink>
-      <ulink url="http://drupal.org/drupal-7-released">released</ulink>! This is a major mile stone
-      and an excellent reason to <ulink url="http://www.drupal7releaseparty.org/">celebrate</ulink>!
-      If you want to give Drupal 7 a try without having to install anything, I've now updated my
-      Drupal 7 appliances on <ulink url="http://susestudio.com/">SuSE Studio</ulink> to the latest
-      release. The appliance is based on <ulink url="http://software.opensuse.org/113/en">openSUSE
-        Linux 11.3</ulink> and is available in two variants:<itemizedlist>
-        <listitem>
-          <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive">text-mode</ulink>
-            only appliance to which you connect using your local web browser via the network.</para>
-        </listitem>
-        <listitem>
-          <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive-gui">GUI
-              version</ulink> that starts up the Firefox browser in a minimalistic GNOME desktop to
-            perform the installation locally. Remote network access is available, too.</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>The database backend is phpMyAdmin has been added to support web-based administration of
-      the MySQL server. You can access it via http://localhost/phpMyAdmin/. I also added <ulink
-        url="http://drush.ws/">drush</ulink>, the Drupal command line shell and scripting interface
-      and some additional packages (yast2-http-server, bind-utils, php5-ctype, patch). I also bumped
-      up the appliance's version number to 7.0.0, to match the version number of Drupal included. </para>
-    <para>The appliance is available in various formats:<itemizedlist>
-        <listitem>
-          <para>A live raw disk image, ready to be written to an USB stick or flash drive</para>
-        </listitem>
-        <listitem>
-          <para>A live ISO image, to be burned on a CD or used in a virtual machine</para>
-        </listitem>
-        <listitem>
-          <para>A hard disk image, to be dumped on a hard disk drive</para>
-        </listitem>
-        <listitem>
-          <para>Various virtual disk formats, e.g. OVF, VMWare/VirtualBox/KVM and Xen</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>Please see the installation instructions provided on the download pages for details on how
-      to use the various image formats. </para>
-    <para>So congratulations to the Drupal developer community for reaching this goal and thanks to
-      SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I also
-      would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard
-        Bos</ulink> for the testing and many suggestions for improvement of these appliances!</para>
-    <!-- ($ ld: 5.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
     <title><ulink url="http://packman.links2linux.org/package/FrostWire/200549">Packman: FrostWire
         4.20.6_svn1467-0.pm</ulink></title>
     <para>FrostWire is a gnutella client written in Java. It supports a number of advanced features
       like ultrapeers (like FastTrack's supernodes), automatic download retries, freeloader
       punishment, etc. FrostWire is a fork of the very popular LimeWire Gnutella client. </para>
     <!-- ($ ld: 7.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2010/11/30/smb-traffic-analyzer-1-2-1-released">Holger
+        Hetterich: SMB Traffic Analyzer 1.2.1 released</ulink></title>
+    <para>The team is happy to announce the release of SMB Traffic Analyzer (SMBTA in the following)
+      version 1.2.1. This is a <emphasis role="italic">very important release</emphasis>, as many
+      fixes have been done for the build, making both smbtad and smbtatools much more portable.
+      Also, the build has been adapted to work with libraries that are not installed at the usual
+      places on the system (bnc#654930). </para>
+    <para>On the feature side, we have two really cool things to say. First off, we are introducing
+      rrddriver with this release. It is an interface to <ulink url="http://www.mrtg.org/rrdtool/"
+        >rrdtool</ulink>, and allows to build a <ulink
+        url="http://en.wikipedia.org/wiki/Round-robin">round robin database</ulink> from the data
+      smbtad is receiving, in real time. Having data in a rrdtool database allows you to create all
+      the fancy graphics SMBTA was missing until today (bnc#655149).</para>
+    <figure id="fig.smb">
+      <title>An example graph of network throughput, created with rrdtool by using rrddriver.</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="50%"
+            fileref="http://holger123.files.wordpress.com/2010/11/rrddriver-graph.png"
+            align="center"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>And then we have all tools <xref linkend="fig.smb"/> being able to run over a unix domain socket, including
+      rrddriver. This is a further step to make the setup and configuration of SMBTA easier, as well
+      as more efficient (bnc#654073) and helps us in our effort to build appliances for SMBTA. </para>
+    <para>Smbtad was leaking memory when either smbtamonitor or rrddriver was connected to it, and
+      run over 24 hours, now this is fixed (bnc#656120). Both rrddriver and smbtamonitor have been
+      using too much CPU time, this has been fixed with bnc#656011. The smbtatorture tool, most
+      likely interesting to those who are developing SMBTA, has been completely documented
+      (bnc#653769). </para>
+    <para>A short <quote>howto</quote> section has been added to the documentation, that aims to
+      describe the simplest possible setup for SMBTA. The idea is that users get a clue what to do
+      and are able to adapt it to their environment. The documentation on building SMBTA has been
+      updated with important details on how to build SMBTA in more complex environments and
+      rrddriver has been completely documented (bnc#651147). </para>
+    <para>Finally, I come back as to <ulink url="http://en.wikipedia.org/wiki/Round-robin">why this
+        is an important release</ulink> as I said in the beginning of this article. Due to the
+      efforts done for version 1.2.1 SMBTA will now build on Solaris 10, and a side effect is that
+      SMBTA has become much more portable during that sessions. Many thanks to those who are
+      interested in a Solaris build, the result was an essentially needed contribution to SMBTA! A
+      side effect of this is that we can offer a download for the Fedora 13 distribution. </para>
+    <para>You can download SMB Traffic Analyzer from the <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/smb-traffic-analyzer-download/"
+        >Download Page</ulink>. </para>
+    <para>For more information about SMB Traffic Analyzer, check it’s <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer">homepage</ulink>.</para>
+    <!-- ($ ld: 8.1.11 sm $) -->
   </blockquote>
   <itemizedlist>
     <title>You can find other interesting Packages at:</title>

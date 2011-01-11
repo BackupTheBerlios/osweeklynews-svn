@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,7 +19,7 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-<!--
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
@@ -59,9 +60,10 @@
       <para>Last but not least the openSUSE Weekly News team with the translations into hungarian,
         greek and japanese wishes merry cristmas to all people across the world.</para>
       </blockquote>
-  </sect2> -->  <sect2 role="distribution">
+  </sect2> -->
+  <sect2 role="distribution">
     <title>Distribution</title>
-<!-- 
+    <!-- 
     <blockquote>
       <title></title>
       <para></para>
@@ -91,64 +93,81 @@
         <para>Milestone: Last round of software translation starts - &quot;hard text freeze&quot;($ ld: 11.12.10 sm $</para>
         </listitem>
       </itemizedlist>      
-      </blockquote> -->    <itemizedlist>
+      </blockquote> -->
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title>
-        <ulink url="http://holger123.wordpress.com/2010/12/23/smbta-stresstest-0-0-1-released/">Holger Hetterich: SMBTA Stresstest 0.0.1 released</ulink>
-      </title>
-      <para><emphasis role="bold">SMBTA Stresstest</emphasis> is an appliance based on openSUSE 11.3
-        for long-time- or stress testing the <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
-        software suite. It is used mainly by the SMBTA development team to check the behaviour of
-        SMB Traffic Analyzer under certain traffic conditions. It also can easily be used to just
-        try out SMB Traffic Analyzer.</para>
-      <figure id="fig.smbta">
-        <title>SMBTA Stresstest running in VirtualBox</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="50%" fileref="http://holger123.files.wordpress.com/2010/12/smbtastresstester.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para>With this first release, <emphasis role="bold">SMBTA Stresstest</emphasis>
-        <xref linkend="fig.smbta"/> comes with a <emphasis role="bold">Samba</emphasis> Server that
-        is configured for two shares, “Officespace” and “music”, and logs traffic on those shares
-        using SMB Traffic Analyzer. Two users are preconfigured, “holger” and “john”, and for those
-        two instances of the <emphasis role="bold">smbtatorture</emphasis> program is started,
-        producing infinite traffic on the shares.</para>
-      <para>The appliance is configured for port 3491 as the connection port for the smbtatools,
-        which allows to inspect the generated traffic from an other machine.</para>
-      <para>SMBTA Stresstester has been created using the fabulous <ulink url="http://www.susestudio.com">SUSE Studio</ulink> and comes 
-        in <ulink url="http://en.wikipedia.org/wiki/Open_Virtualization_Format">OVF format</ulink>, and
-        should be able to run on <emphasis role="bold">KVM</emphasis>, <emphasis role="bold">VMware</emphasis>, and <emphasis role="bold">VirtualBox</emphasis>. The appliance is
-        completely self-contained, runs the smbtatorture processes directly after reaching runlevel
-        3,and Built with SUSE Studio if your virtual machine is setup to be reachable from the
-        host’s network, all the SMBTA tools like rrddriver or smbtaquery can be run against it, once
-        you know the IP adress of SMBTA Stresstester (the appliance root password is
-        “linux”):</para>
-      <screen>smbtaquery -i 3491 -h 192.168.178.26 -q ‘global, usage rw;’</screen>
-      <para>SMBTA Stresstest is available in the <ulink url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SUSE Gallery</ulink>, and we also
-        uploaded it to <ulink url="http://morelias.org/smbta/SMBTA_Stresstest.i686-0.0.1.ovf.tar.gz">this place</ulink>. For more information on SMB Traffic Analyzer, please check out it’s
-          <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink>. Merry
-        Christmas and a happy new year.</para>
-      </blockquote>
-  </sect2> -->  <sect2>
+      <title><ulink
+          url="http://www.lenzg.net/archives/332-Updated-Drupal-7-appliances-to-version-7.0-final.html"
+          >Lenz Grimmer: Updated Drupal 7 appliances to version 7.0 final</ulink></title>
+      <para>Congratulations to the Drupal community for getting <ulink
+          url="http://drupal.org/drupal-7.0">version 7.0</ulink>
+        <ulink url="http://drupal.org/drupal-7-released">released</ulink>! This is a major mile
+        stone and an excellent reason to <ulink url="http://www.drupal7releaseparty.org/"
+          >celebrate</ulink>! If you want to give Drupal 7 a try without having to install anything,
+        I've now updated my Drupal 7 appliances on <ulink url="http://susestudio.com/">SuSE
+          Studio</ulink> to the latest release. The appliance is based on <ulink
+          url="http://software.opensuse.org/113/en">openSUSE Linux 11.3</ulink> and is available in
+        two variants:<itemizedlist>
+          <listitem>
+            <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive"
+                >text-mode</ulink> only appliance to which you connect using your local web browser
+              via the network.</para>
+          </listitem>
+          <listitem>
+            <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive-gui">GUI
+                version</ulink> that starts up the Firefox browser in a minimalistic GNOME desktop
+              to perform the installation locally. Remote network access is available, too.</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>The database backend is phpMyAdmin has been added to support web-based administration of
+        the MySQL server. You can access it via http://localhost/phpMyAdmin/. I also added <ulink
+          url="http://drush.ws/">drush</ulink>, the Drupal command line shell and scripting
+        interface and some additional packages (yast2-http-server, bind-utils, php5-ctype, patch). I
+        also bumped up the appliance's version number to 7.0.0, to match the version number of
+        Drupal included. </para>
+      <para>The appliance is available in various formats:<itemizedlist>
+          <listitem>
+            <para>A live raw disk image, ready to be written to an USB stick or flash drive</para>
+          </listitem>
+          <listitem>
+            <para>A live ISO image, to be burned on a CD or used in a virtual machine</para>
+          </listitem>
+          <listitem>
+            <para>A hard disk image, to be dumped on a hard disk drive</para>
+          </listitem>
+          <listitem>
+            <para>Various virtual disk formats, e.g. OVF, VMWare/VirtualBox/KVM and Xen</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>Please see the installation instructions provided on the download pages for details on
+        how to use the various image formats. </para>
+      <para>So congratulations to the Drupal developer community for reaching this goal and thanks
+        to SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I
+        also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/"
+          >Richard Bos</ulink> for the testing and many suggestions for improvement of these
+        appliances!</para>
+      <!-- ($ ld: 5.1.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
     <title>Team Report</title>
-<!--
+    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -182,25 +201,32 @@
           with a celadon geeko on it and change the green tone in sonar to celadon green
           also.</para>
       </blockquote>
-    </sect3> -->    <sect3 role="boosters">
+    </sect3> -->
+    <!--
+    <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
         <title>
-          <ulink url="http://news.opensuse.org/2010/12/29/opensuse-boosters-year-2010/">openSUSE Boosters Year 2010</ulink>
+          <ulink url="http://news.opensuse.org/2010/12/29/opensuse-boosters-year-2010/">openSUSE
+            Boosters Year 2010</ulink>
         </title>
         <figure id="fig.boosters">
           <title>The elusive Thirsty Thirteen</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="50%" align="center" fileref="http://news.opensuse.org/wp-content/uploads/2010/12/Opensuse-boosters-300x200.jpg"/>
+              <imagedata width="50%" align="center"
+                fileref="http://news.opensuse.org/wp-content/uploads/2010/12/Opensuse-boosters-300x200.jpg"
+              />
             </imageobject>
           </mediaobject>
         </figure>
-        <para>At the end of the year it is the time for reviews and the openSUSE Booster <xref linkend="fig.boosters"/> team did not want to let that opportunity slip. So what was
+        <para>At the end of the year it is the time for reviews and the openSUSE Booster <xref
+            linkend="fig.boosters"/> team did not want to let that opportunity slip. So what was
           important in 2010 from an openSUSE Boosters perspective? What happened, what progress was
           made, how did the boosters help openSUSE? A report from Klaas Freitag.</para>
         <para><emphasis role="bold">Who are the Boosters</emphasis></para>
-        <para>For those who do not know who <ulink url="http://en.opensuse.org/openSUSE:Boosters_team">the Boosters</ulink> are: We’re not
+        <para>For those who do not know who <ulink
+            url="http://en.opensuse.org/openSUSE:Boosters_team">the Boosters</ulink> are: We’re not
           Tuxies favorite boy group, but a bunch of people dedicated to help the openSUSE Project in
           any way we can. The team consists of 13 people (BTW: widely known as the thirsty thirteen)
           with skills ranging from low level C hackery over Ruby on Rails mastering to Graphical
@@ -255,7 +281,8 @@
               hours we finally came out with a great web interface for OBS which was a big bum for
               the whole project, as it makes working in OBS much more fun. I remember that whole
               thing being started as a sprint called “Factory status”, aiming to provide a good
-                <ulink url="https://build.opensuse.org/projectstatus?project=openSUSE%3AFactory">overview page</ulink> for the Factory project in OBS. It grew a bit more ambitions,
+                <ulink url="https://build.opensuse.org/projectstatus?project=openSUSE%3AFactory"
+                >overview page</ulink> for the Factory project in OBS. It grew a bit more ambitions,
               but, well, that’s how it goes if things are in movement ;-)</para>
           </listitem>
           <listitem>
@@ -273,7 +300,9 @@
               he is contributing to the distribution, we all have our shares in it. 11.3 was a good
               one, it got good press and showed that we as a community are doing great. All over the
               world release parties were organized, some Boosters took over the one here in
-              Nürnberg. <ulink url="http://lizards.opensuse.org/2010/07/16/opensuse-11-3-launch-party-in-nurnberg/">Nice party</ulink> with some talks, along with BBQ and beer. The latter ran out at
+              Nürnberg. <ulink
+                url="http://lizards.opensuse.org/2010/07/16/opensuse-11-3-launch-party-in-nurnberg/"
+                >Nice party</ulink> with some talks, along with BBQ and beer. The latter ran out at
               7pm, because many community members showed up. Cool, I love that kind of stress to
               organize food and beer quickly to let the party go on :-)</para>
           </listitem>
@@ -291,14 +320,16 @@
               We were heavily involved in organizing, program committee work, giving talks and
               presentations and all what is involved with that kind of large event. It was a huge
               success, as a very active and passionate community showed up. Discussions went from a
-                <quote>This is what we did</quote> in the last year to a <quote>this is what we could do</quote> which is so great to see as that is resulting in innovation for the
+                <quote>This is what we did</quote> in the last year to a <quote>this is what we
+                could do</quote> which is so great to see as that is resulting in innovation for the
               whole project. As a result some very concrete sub projects were created such as
                 <quote>Project Brezn</quote> and openSUSE Invis which slowly evolves.</para>
           </listitem>
           <listitem>
             <para>openFATE, Connect and more</para>
             <para>After the conference and the release of 11.3 we started to dig into milestones
-              again with <ulink url="http://features.opensuse.org">openFATE</ulink> and <ulink url="http://connect.opensuse.org">Connect</ulink>. Since a couple of weeks we have a
+              again with <ulink url="http://features.opensuse.org">openFATE</ulink> and <ulink
+                url="http://connect.opensuse.org">Connect</ulink>. Since a couple of weeks we have a
               nice looking openFATE that has the features that make it possible for the feature
               screening team to work on one of our most important tasks in our project: Looking into
               the future of the distribution with feature evaluation. We also implemented the future
@@ -318,66 +349,83 @@
           stand up, take responsibility and do get their hands dirty for the openSUSE Project. That
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
-<!-- ($ ld: 31.12.10 sm $) -->      </blockquote>
-    </sect3>
-<!--
-    <sect3 role="buildserviceteam">
-      <title>Build Service Team</title>      
-      
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/16/how-we-use-our-power/">Stephan Kulow: How we use our power</ulink>
-        </title>
-        <para>I had a side project the last two weeks: Make the build service more fun to use. </para>
-        <para>No matter how much fun you have creating packages, if they don’t build, there is
-          little point in using a Service that has Build in its name, no? So one of the major goals
-          of the service is actually to help those that want to build packages as good as possible.
-          But there is a problem: </para>
-        <para>Let me quote from the landing page of <ulink url="https://build.opensuse.org/">build.opensuse.org</ulink>: “The openSUSE Build Service hosts 16,414 projects, with
-          107,691 packages, in 26,259 repositories and is used by 25,967 confirmed users.”. That are
-          quite some high numbers – especially in the relation to the ~25 servers we have for
-          actually building. </para>
-        <para>If you look at the build statistics of the last month (and this is just i586, x86_64
-          has around the same), you notice that there is not much purple in the “Busy workers / Idle
-          workers” graphic:</para>
-        <figure id="fig.buildservice">
-          <title>Buildservice</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Bildschirmfoto11.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para>(..)</para>    
       </blockquote>
+      </sect3> -->
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/18/osc-0-130-1-bugfix-release/">Marcus Hüwe: osc 0.130.1 (bugfix release)</ulink>
+          <ulink url="http://michal.hrusecky.net/2011/01/mysql-5-5-in-opensuse-build-service/"
+            >Michal Hrusecky: MySQL 5.5 in openSUSE Build Service</ulink>
         </title>
-        <para>I just released a new osc version: 0.130.1 (bugfix release). The following issues were
-          fixed:</para>
+        <para>MySQL 5.5 is GA for more then a month already. If you are reading some news, you
+          probably already heard, that it is great, million times faster, has trillion new features
+          that you desperately need and much more. Of course, I’m exaggerating a little bit. But
+          anyway, MySQL 5.5 is new version everybody talks about. So now when do you get it? It is
+          already lying around for some time in server:database:UNSTABLE repository. It was there
+          since beta, but took me some time to get final version ready. Just add it to your
+          repositories for example by:</para>
+        <screen>zypper ar -f http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.3 server-database-unstable></screen>
+        <para>and then install it by</para>
+        <screen>zypper in mysql-community-server_55</screen>
+        <para>As it conflicts with whatever MySQL variant you currently have, it will ask you to
+          confirm uninstallation of your currently installed MySQL. Then it will replace it and you
+          can start trying it.</para>
+        <para>And to answer question when it will be in official openSUSE. For 11.4 is too late. I
+          know it was made GA last year already, but as many things depends on MySQL, I don’t want
+          to accidentally break something. So you can expect it in next openSUSE (11.5 or 12.0, not
+          sure what the name would be). And maybe in Tumbleweed a little bit sooner, after some
+          testing, but currently don’t know when. And of course, it is build not only for openSUSE
+          11.3, so here comes full list of repositories it is built for:</para>
         <itemizedlist>
           <listitem>
-            <para>don’t crash if a file marked as ‘A’ does not exist (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=658664">bnc#658664</ulink>)</para>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/Fedora_12/"
+                >Fedora 12</ulink></para>
           </listitem>
           <listitem>
-            <para>fixed proxy handling (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657958">bnc#657958</ulink>)</para>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/Fedora_13/"
+                >Fedora 13</ulink></para>
           </listitem>
           <listitem>
-            <para>fixed repairwc (<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=657838">bnc#657838</ulink>)</para>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/SLE_11/"
+                >SLE_11</ulink></para>
           </listitem>
           <listitem>
-            <para>fixed build for python2.4</para>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/SLE_11_SP1/"
+                >SLE_11_SP1</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="">openSUSE 11.1</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.2/"
+                >openSUSE 11.2</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.3/"
+                >openSUSE 11.3</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink
+                url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_Factory/"
+                >openSUSE Factory</ulink></para>
           </listitem>
         </itemizedlist>
-        <para>The new version is available in the<ulink url="http://download.opensuse.org/repositories/openSUSE:/Tools"> openSUSE:Tools</ulink>
-          repo.</para>      
+        <!-- ($ ld: 11.1.11 sm $) -->
       </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
-        </formalpara> 
-        </sect3> --><!--
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
+      </formalpara>
+    </sect3>
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -388,13 +436,17 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->
+    <!--
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/">Nelson Marques: Kick off for GNOME:Ayatana Project…</ulink>
+          <ulink url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/"
+            >Nelson Marques: Kick off for GNOME:Ayatana Project…</ulink>
         </title>
-        <para><quote>Follow effective action with quiet reflection. From the quiet reflection will come even more effective action.</quote> // Peter F. Drucker</para>
+        <para><quote>Follow effective action with quiet reflection. From the quiet reflection will
+            come even more effective action.</quote> // Peter F. Drucker</para>
         <para>This has been one of the guidelines in my life for quite some time… It started as a
           curiosity a long time ago with Notify OSD and evolved to full project in openSUSE. It is
           important to acknowledge at this point the motivation provided by the openSUSE GNOME Team
@@ -418,65 +470,67 @@
           submit a package you can now do it to this repository.</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="65%" align="center" fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"/>
+            <imagedata width="65%" align="center"
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"
+            />
           </imageobject>
         </mediaobject>
         <para>This goes with a very huge cookie for Dimstar and Vuntz for taking care of this
           repository and making sure that everything will comply with the openSUSE Guidelines. You
           are my personal heroes. (...)</para>
-<!-- ($ ld: 29.12.10 sm $) -->      </blockquote>
-    </sect3>
-<!--
+      </blockquote>
+    </sect3> -->
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://tittiatcoke.wordpress.com/2010/12/13/opensuse-kdeunstablesc-repo-builds-newer-snapshots-of-4-6-with-all-opensuse-packages/"
-          >Raymond Wooninck: openSUSE KDE:Unstable:SC repo builds newer snapshots of 4.6 with all openSUSE packages</ulink>
-        </title>
-        <para>Are you using the openSUSE KDE 4.6 Beta 2 packages and you would like to try a newer
-          version ? Then for the time being you could switch over to the KDE:Unstable:SC repository. </para>
-        <para>About 2 weeks ago, I copied the official KDE 4.6 Beta 2 packages over from the
-          KDE:Distro:Factory repository to the KDE:Unstable:SC repository. This has two effects,
-          namely: </para>
-        <para>1) People using 4.6 Beta 2, can easily update to a slightly newer version to see if
-          bugs have been resolved, without loosing important patches that are openSUSE specific. </para>
-        <para>2) It gives us, the openSUSE KDE team the change to easier and faster adopt to a newer
-          release (e.g. RC1, RC2, etc), as that all patches are matches on a weekly basis to the
-          newer source code. </para>
-        <para>If you decide to switch repository, then make sure that you keep an eye on this blog,
-          as that on a certain moment the KDE:Unstable:SC will switch to very unstable snapshots of
-          the future KDE 4.7. I will however blog here to let you know that you should switch back
-          again repostories, before I will publish the first KDE 4.7 snapshot. </para>
-        <para>Feel free to contact me over email or on IRC (tittiatcoke) if you have any questions
-          about this. So far KDE 4.6 has been a very stable release and also KDEPIM 4.6 is looking
-          better. Let’s hope that the last glitches are also resolved, before KDE 4.6 is released. </para>      
-      </blockquote> 
-      </sect3> -->    <sect3 role="marketingteam">
+        <title><ulink
+            url="http://tittiatcoke.wordpress.com/2011/01/04/opensuse-kdeunstablesc-repo-becomes-trunk-again/"
+            >Raymond Wooninck: openSUSE KDE:Unstable:SC repo becomes Trunk again !</ulink></title>
+        <para>A little warning to those that have switched over to the KDE:Unstable:SC repo. The
+          target is that either tonight or tomorrow a new Trunk snapshot will be loaded in this
+          repo. That would mean that the Unstable becomes unstable again.</para>
+        <para>I have already been building a number of snapshots based on the opened KDE 4.7 trunk
+          and have to admit that things are still looking very stable and even kdebindings is
+          compiling well :-) But this might of course change from the moment that KDE 4.6 has been
+          released and the focus shifts to the newer 4.7 release. </para>
+        <para>I will keep you posted on the developments around this repository, but this would be
+          the moment to switch over to KDE:Distro:Factory if you want to get the RC1, RC2 and KDE
+          4.6 final version for your openSUSE system. Currently it contains RC1, but this would
+          change in the next few days once RC2 is released. </para>
+        <!-- ($ ld: 5.1.11 sm $) -->
+      </blockquote>
+    </sect3>
+    <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://dev-loki.blogspot.com/2011/01/review-of-opensuse-trademark-guidelines.html">Pascal Bleser: Review of openSUSE Trademark Guidelines</ulink>
+          <ulink
+            url="http://dev-loki.blogspot.com/2011/01/review-of-opensuse-trademark-guidelines.html"
+            >Pascal Bleser: Review of openSUSE Trademark Guidelines</ulink>
         </title>
-        <para><ulink url="http://en.opensuse.org/User:Byunashko">Bryen</ulink> just opened an <ulink url="https://features.opensuse.org/311039">interesting feature request about a review of the current openSUSE trademark guidelines (#311039).</ulink>
+        <para><ulink url="http://en.opensuse.org/User:Byunashko">Bryen</ulink> just opened an <ulink
+            url="https://features.opensuse.org/311039">interesting feature request about a review of
+            the current openSUSE trademark guidelines (#311039).</ulink>
         </para>
         <para>The current state of things is that Novell owns the openSUSE and openSUSE related
           trademarks (which include things like the openSUSE name and the openSUSE branding). While
           at some point I would love to see those trademarks go into the ownership of the openSUSE
-          foundation (but let&apos;s first actually have that foundation ;)), it is better to keep them
-          with Novell until we have a properly working and funded foundation, because owning
+          foundation (but let&apos;s first actually have that foundation ;)), it is better to keep
+          them with Novell until we have a properly working and funded foundation, because owning
           trademarks is also an obligation to enforce them. And that potentially means legal
           enforcement as well. </para>
         <para>As the trademarks are owned and enforced by Novell, permissions to use trademarked
-          material must be sent to Novell (<email>permission@novell.com</email>, actually), but in practice,
-          Novell&apos;s legal team has been delegating the responsibility of evaluating such requests to
-          the openSUSE board. </para>
-<!-- FIXME: Use the Email Element -->        <para>Nevertheless, the board has to take decisions within a certain framework. Part of that
+          material must be sent to Novell (<email>permission@novell.com</email>, actually), but in
+          practice, Novell&apos;s legal team has been delegating the responsibility of evaluating
+          such requests to the openSUSE board. </para>
+        <para>Nevertheless, the board has to take decisions within a certain framework. Part of that
           framework, obviously, are a few legal aspects, but more prominently, it is what is
-          currently defined in the <ulink url="http://en.opensuse.org/openSUSE:Trademark_guidelines">openSUSE Trademark Guidelines</ulink> document. </para>
-        <para>Bryen&apos;s feature request (which is essentially filed as such because <ulink url="http://en.opensuse.org/openSUSE:Openfate">openFATE</ulink> gives us a good tool for
-          transparency and collecting feedback) is precisely about that point: let&apos;s take a step
-          back and rethink our trademark guidelines. </para>
+          currently defined in the <ulink url="http://en.opensuse.org/openSUSE:Trademark_guidelines"
+            >openSUSE Trademark Guidelines</ulink> document. </para>
+        <para>Bryen&apos;s feature request (which is essentially filed as such because <ulink
+            url="http://en.opensuse.org/openSUSE:Openfate">openFATE</ulink> gives us a good tool for
+          transparency and collecting feedback) is precisely about that point: let&apos;s take a
+          step back and rethink our trademark guidelines. </para>
         <para>The task isn&apos;t as simple as it might sound, of course, as we have to find a good
           balance between a few, most probably contradictory things:<itemizedlist>
             <listitem>
@@ -484,23 +538,26 @@
                 the less daunting to approach</para>
             </listitem>
             <listitem>
-              <para>enable derivatives of openSUSE: yes, we&apos;d love to see more and more derivative
-                works based on openSUSE (but the <ulink url="http://en.opensuse.org/openSUSE:Trademark_guidelines">current guidelines</ulink>, which the board has to abide by, do not really reflect
+              <para>enable derivatives of openSUSE: yes, we&apos;d love to see more and more
+                derivative works based on openSUSE (but the <ulink
+                  url="http://en.opensuse.org/openSUSE:Trademark_guidelines">current
+                  guidelines</ulink>, which the board has to abide by, do not really reflect
                 that)</para>
             </listitem>
             <listitem>
               <para>prevent abuse</para>
             </listitem>
           </itemizedlist></para>
-        <para>Which is why we&apos;d love to hear from YOU what you believe are genuinely good use cases
-          that we want to enable and support and what you believe would be cases of abuse,
+        <para>Which is why we&apos;d love to hear from YOU what you believe are genuinely good use
+          cases that we want to enable and support and what you believe would be cases of abuse,
           especially if you have been involved or have been pondering about making a derivative of
           openSUSE or, more generally, use the openSUSE trademarks in one way or another. </para>
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
-<!-- ($ ld: 7.1.10 sm $) -->      </blockquote>
+        <!-- ($ ld: 7.1.10 sm $) -->
+      </blockquote>
     </sect3>
-<!--
+    <!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
@@ -511,21 +568,25 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+            We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 331)</ulink>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
+              (Score: 331)</ulink>
           </title>
           <para>&quot;Network installation could be improved by running package download and package
             installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 159)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
+              boot (Score: 159)</ulink>
           </title>
           <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -548,7 +609,8 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 96)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
+              96)</ulink>
           </title>
           <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
@@ -562,7 +624,8 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 60)</ulink>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
+              &quot;Installation Summary&quot; (Score: 60)</ulink>
           </title>
           <para>&quot;The YaST Qt package manager should provide as much information in the
             &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
@@ -570,100 +633,121 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 57)</ulink>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
+              Linux) (Score: 57)</ulink>
           </title>
           <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
             inheriting the simplicity, code and security. (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 8.1.11 sat *updated* $) -->      </sect4>
+        <!-- ($ ld: 8.1.11 sat *updated* $) -->
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311024">add pyudev, the python bindings for libudev, as a package</ulink>
+            <ulink url="https://features.opensuse.org/311024">add pyudev, the python bindings for
+              libudev, as a package</ulink>
           </title>
-          <para>it would be nice to have the python-bindings for libudev as a package in the opensuse distribution.</para>
+          <para>it would be nice to have the python-bindings for libudev as a package in the
+            opensuse distribution.</para>
           <para>http://packages.python.org/pyudev/</para>
           <para>they work very well and are under quite active development.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311026">Ability to list reiser4 partitions in Yast partitoner</ulink>
+            <ulink url="https://features.opensuse.org/311026">Ability to list reiser4 partitions in
+              Yast partitoner</ulink>
           </title>
           <para>Ability to list reiser4 partitions in Yast partitoner</para>
-          <para>I have a kernel installed [1] which handles this type of partition but yast cant see or manipulate it in any way.[1]</para>
+          <para>I have a kernel installed [1] which handles this type of partition but yast cant see
+            or manipulate it in any way.[1]</para>
           <para>http://www.spinics.net/lists/reiserfs-devel/msg02657.html
-http://www.spinics.net/lists/reiserfs-devel/msg02654.html</para>
+            http://www.spinics.net/lists/reiserfs-devel/msg02654.html</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311027">How to simplify partitioning during install for people who are new to Linux</ulink>
+            <ulink url="https://features.opensuse.org/311027">How to simplify partitioning during
+              install for people who are new to Linux</ulink>
           </title>
-          <para>Currently, you have to know a thing or two about partitioning if you want to install openSUSE. I&apos;ve found that it&apos;s possible to simplify the partitioning process by suggesting two frequently used configurations alongside the advanced partitioning system that is currently used by the installer. (...)</para>
+          <para>Currently, you have to know a thing or two about partitioning if you want to install
+            openSUSE. I&apos;ve found that it&apos;s possible to simplify the partitioning process
+            by suggesting two frequently used configurations alongside the advanced partitioning
+            system that is currently used by the installer. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311028">Add &quot;Enable/disable numlock at startup&quot; option to installer and YaST</ulink>
+            <ulink url="https://features.opensuse.org/311028">Add &quot;Enable/disable numlock at
+              startup&quot; option to installer and YaST</ulink>
           </title>
           <para>Related thread: https://features.opensuse.org/310152</para>
-          <para>Some people who don&apos;t have a QWERTY layout can&apos;t use the numbers on the top of the keyboard. I&apos;m an
-AZERTY user so I have to hold Shift to use the numbers on top of the keyboard. Therefore I usually prefer using the numpad, but that isn&apos;t possible if the numlock is switched off. Auto-enabling numlock at startup would be a huge time-saver. (...)</para>
+          <para>Some people who don&apos;t have a QWERTY layout can&apos;t use the numbers on the
+            top of the keyboard. I&apos;m an AZERTY user so I have to hold Shift to use the numbers
+            on top of the keyboard. Therefore I usually prefer using the numpad, but that isn&apos;t
+            possible if the numlock is switched off. Auto-enabling numlock at startup would be a
+            huge time-saver. (...)</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311029">Add Link to Documentation Site</ulink>
           </title>
-          <para>The official documentation seems to be not very known in the openSUSE world. To make it more visible, I would suggest the following improvements:
-
-    </para>
-          <para>* Add a link
-      http://docs.opensuse.org to the welcome screen (SUSEgreeter?) of a fresh installation
-    </para>
-          <para>* Include
-      http://docs.opensuse.org to the list of pre-installed bookmarks in Firefox, Konqueror, ...
-    </para>
-          <para>* Maybe add an icon on the desktop which refers to the above link.
-</para>
+          <para>The official documentation seems to be not very known in the openSUSE world. To make
+            it more visible, I would suggest the following improvements: </para>
+          <para>* Add a link http://docs.opensuse.org to the welcome screen (SUSEgreeter?) of a
+            fresh installation </para>
+          <para>* Include http://docs.opensuse.org to the list of pre-installed bookmarks in
+            Firefox, Konqueror, ... </para>
+          <para>* Maybe add an icon on the desktop which refers to the above link. </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311030">Add the new ZFS file system Kernel module</ulink>
+            <ulink url="https://features.opensuse.org/311030">Add the new ZFS file system Kernel
+              module</ulink>
           </title>
-          <para>This is very cool, ZFS will be available on Linux in a few days and it will have decent performance.
-</para>
+          <para>This is very cool, ZFS will be available on Linux in a few days and it will have
+            decent performance. </para>
           <para>http://www.phoronix.com/scan.php?page=article&amp;item=linux_kqzfs_benchmarks&amp;num=1</para>
           <para>http://zfs.kqinfotech.com/</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311031">Support of Mp3-konvert in KDE / Dolphin</ulink>
+            <ulink url="https://features.opensuse.org/311031">Support of Mp3-konvert in KDE /
+              Dolphin</ulink>
           </title>
-          <para>Its a longt time ago, you can convert an Audio CD very easy into mp3 Files. You just type audiocd:/ in dolphin or konqueror and copy the mp3 Files to your Hard disk. Its much more easy than in Windows. (...)</para>
+          <para>Its a longt time ago, you can convert an Audio CD very easy into mp3 Files. You just
+            type audiocd:/ in dolphin or konqueror and copy the mp3 Files to your Hard disk. Its
+            much more easy than in Windows. (...)</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311033">GPS devices</ulink>
           </title>
-          <para>It woul be nice to update, control and use my TomTom without the need for a Winbox.</para>
+          <para>It woul be nice to update, control and use my TomTom without the need for a
+            Winbox.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311035">Support different linux installations in grub</ulink>
+            <ulink url="https://features.opensuse.org/311035">Support different linux installations
+              in grub</ulink>
           </title>
-          <para>When you update your kernel via Suse updater, the entries for different linux installations in grub disappear. Just the Suse and the Windows (!) entries are preserved. (...)</para>
+          <para>When you update your kernel via Suse updater, the entries for different linux
+            installations in grub disappear. Just the Suse and the Windows (!) entries are
+            preserved. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311037">let partitioner create faster RAID</ulink>
+            <ulink url="https://features.opensuse.org/311037">let partitioner create faster
+              RAID</ulink>
           </title>
-          <para>Both mkfs.ext[234] and mkfs.xfs have options to tune the filesystem for striped RAID (i.e. RAID0/RAID10), so it would be nice if yast2/disk could make use of it.</para>
+          <para>Both mkfs.ext[234] and mkfs.xfs have options to tune the filesystem for striped RAID
+            (i.e. RAID0/RAID10), so it would be nice if yast2/disk could make use of it.</para>
           <para>The options are</para>
           <para>-E stride=x -E stripe-width=y and -d sunit=x,swidth=y</para>
           <para>notice that units of above sizes may vary.</para>
-          <para>There are several sites out there describing how to choose the proper values for x and y, e.g.
-</para>
+          <para>There are several sites out there describing how to choose the proper values for x
+            and y, e.g. </para>
           <para>http://www.mythtv.org/wiki/Optimizing_Performance</para>
         </blockquote>
         <blockquote>
@@ -674,63 +758,90 @@ AZERTY user so I have to hold Shift to use the numbers on top of the keyboard. T
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311039">Review of openSUSE Trademark Guidelines</ulink>
+            <ulink url="https://features.opensuse.org/311039">Review of openSUSE Trademark
+              Guidelines</ulink>
           </title>
-          <para>This feature request is meant to collect the comments of the community at large The current guidlines can be found here</para>
+          <para>This feature request is meant to collect the comments of the community at large The
+            current guidlines can be found here</para>
           <para>http://en.opensuse.org/OpenSUSE_Trademark_Guidelines</para>
-          <para>The openSUSE Board will review comments posted here along with concerns and considerations collected elsewhere and find ways to strengthen/clarify the guidelines.</para>
-          <para>Please review the current guidelines and post comments on language. (Giving specific language change suggestions is helpful) and if you have specific cases where current guidelines have been a problem, please post here as well.</para>
+          <para>The openSUSE Board will review comments posted here along with concerns and
+            considerations collected elsewhere and find ways to strengthen/clarify the
+            guidelines.</para>
+          <para>Please review the current guidelines and post comments on language. (Giving specific
+            language change suggestions is helpful) and if you have specific cases where current
+            guidelines have been a problem, please post here as well.</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311040">Remote Desktop</ulink>
           </title>
-          <para>In example like xrdp, but with better services with i.e. german keyboards and supplying with sound and videos.</para>
-          <para>Most ThinClients can connect to ICA Xen-Desktop-Server and Windows-RDP-Protokoll. It should be also an option, than to use Microsoft Server 2003/2008 for enterprises.</para>
+          <para>In example like xrdp, but with better services with i.e. german keyboards and
+            supplying with sound and videos.</para>
+          <para>Most ThinClients can connect to ICA Xen-Desktop-Server and Windows-RDP-Protokoll. It
+            should be also an option, than to use Microsoft Server 2003/2008 for enterprises.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311043">switch to a UEFI-ready bootloader by default</ulink>
+            <ulink url="https://features.opensuse.org/311043">switch to a UEFI-ready bootloader by
+              default</ulink>
           </title>
-          <para>While reading a review of a Sandy Bridge motherboard in Anandtech it was pointed that upcoming intel motherboards will ship with a UEFI firmware instead of a BIOS. While reading the documentation for UEFI firmware I noticed that the bootloader has to be a UEFI application. In order to support this new hardware we need a bootloader that supports UEFI booting, GRUB legacy as far as I know doesn&apos;t support this. I think it&apos;s time to retire GRUB legacy and use GRUB2, elilo or rEFIt (though this one is a long shot).</para>
+          <para>While reading a review of a Sandy Bridge motherboard in Anandtech it was pointed
+            that upcoming intel motherboards will ship with a UEFI firmware instead of a BIOS. While
+            reading the documentation for UEFI firmware I noticed that the bootloader has to be a
+            UEFI application. In order to support this new hardware we need a bootloader that
+            supports UEFI booting, GRUB legacy as far as I know doesn&apos;t support this. I think
+            it&apos;s time to retire GRUB legacy and use GRUB2, elilo or rEFIt (though this one is a
+            long shot).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311045">Old-repositories handling during upgrade (inst_upgrade_urls) needs rewriting</ulink>
+            <ulink url="https://features.opensuse.org/311045">Old-repositories handling during
+              upgrade (inst_upgrade_urls) needs rewriting</ulink>
           </title>
-          <para>See more in Bug <ulink url="https://bugzilla.novell.com/show_bug.cgi?id=556469">#556469</ulink></para>
+          <para>See more in Bug <ulink url="https://bugzilla.novell.com/show_bug.cgi?id=556469"
+              >#556469</ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311046">Autoredirect to specify language version wiki</ulink>
+            <ulink url="https://features.opensuse.org/311046">Autoredirect to specify language
+              version wiki</ulink>
           </title>
-          <para>Can make autoredirect from wiki.opensuse.org to *language*.opensuse.org. As in www.opensuse.org (for me it&apos;s autoredirect to www.opensuse.org/ru/).</para>
+          <para>Can make autoredirect from wiki.opensuse.org to *language*.opensuse.org. As in
+            www.opensuse.org (for me it&apos;s autoredirect to www.opensuse.org/ru/).</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311047">Remove Windows Local Installer</ulink>
           </title>
-          <para>The local installer which starts up when a windows user loads the openSUSE DVD, allowing installation to be started from a running windows OS, IS an absolute disaster.</para>
+          <para>The local installer which starts up when a windows user loads the openSUSE DVD,
+            allowing installation to be started from a running windows OS, IS an absolute
+            disaster.</para>
           <para>Did I say it was an absolute disaster?</para>
-          <para>Oh yes, I did say that.
-Either remove it or include a unmistakable warning, that using it is likely to lead to disaster and that installation is best done by booting from the DVD.</para>
+          <para>Oh yes, I did say that. Either remove it or include a unmistakable warning, that
+            using it is likely to lead to disaster and that installation is best done by booting
+            from the DVD.</para>
         </blockquote>
-<!-- ($ ld: 8.1.11 sat $) -->      </sect4>
+        <!-- ($ ld: 8.1.11 sat $) -->
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink
+            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-<!--
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="testing">
+      </sect3> -->
+    <!--
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry Finger: Weekly News for January 1</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry
+            Finger: Weekly News for January 1</ulink>
         </title>
         <para>The next Testing Core Team IRC meeting will be held 2011-01-31 at 18:00 UTC and will
           discuss 11.4 M6.</para>
@@ -743,21 +854,23 @@ Either remove it or include a unmistakable warning, that using it is likely to l
           its release in roughly 1-2 weeks, thus there will be approximately 3 months of kernel
           testing before 11.4 is released. That is good timing.</para>
         <para>Wishing everyone a happy and prosperous new year.</para>
-<!-- ($ ld: 1.1.11 sm $) -->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
@@ -768,5 +881,6 @@ Either remove it or include a unmistakable warning, that using it is likely to l
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->  </sect2>
+      </sect3> -->
+  </sect2>
 </sect1>

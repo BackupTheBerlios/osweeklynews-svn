@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -19,95 +20,34 @@
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
   <sect2>
-    <title>For Desktop Users</title>
+   <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.techradar.com/news/software/operating-systems/how-your-secure-your-linux-system-915651">Techradar/Mayank Sharma: How to secure your Linux system</ulink>
+        <ulink url="http://pcplus.techradar.com/feature/linux/multi-boot-linux-usb-30-12-10">PC
+          Plus/Graham Morrison: Multi Boot Linux From USB</ulink>
       </title>
-      <para>Are you running Linux just because you think it&apos;s safer than Windows? Think again. Sure,
-        security is a built-in (and not a bolt-on) feature and extends right from the Linux kernel
-        to the desktop, but it still leaves enough room to let someone muck about with your /home
-        folder.</para>
-      <para>Linux might be impervious to viruses and worms written for Windows, but that&apos;s just a
-        small subset of the larger issue. Attackers have various tricks up their sleeves to get to
-        those precious bits and bytes that make up everything from your mugshot to your credit card
-        details.</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://cdn.mos.techradar.com//Review%20images/Linux%20Format/LXF%20139/LXF139.secure.privoxy-218-85.jpg"/>
-        </imageobject>
-      </mediaobject>
-      <para>Computers that connect to the internet are the ones most exposed to attackers, although
-        computers that never get to see online action are just as vulnerable. Think of that ageing
-        laptop or that old hard disk you just chucked away without a second thought. Bad move.
-        (...)</para>
-<!-- ($ ld: 5.1.11 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxlinks.com/article/20110101010956149/SystemCleaning.html">LinuxLinks: 5 of the Best Free Linux System Cleaning Tools</ulink>
-      </title>
-      <para>There are lots of ways of improving the performance of your computer. We investigated a
-        number of solutions in our feature entitled <ulink url="http://www.linuxlinks.com/article/20090927065836306/UbuntuTips-Booting-Part1.html">Ubuntu Tips - Boot Faster</ulink> which concentrated on shortening the time taken for a
-        machine to boot. These included disabling services that are not needed, concurrent booting,
-        and reprofiling the boot sequence. The article also gave tips on optimising the general
-        system performance including ways to make more efficient use of memory, improving hard disk
-        performance, and by using a lightweight desktop environment. These can all have a marked
-        effect on minimising the boot process. However, having a machine that is quick to boot is
-        only one area that needs to be tackled if a computer is going to remain responsive. </para>
-      <para>Many readers will have witnessed their computer system becoming progressively slower in
-        use over time. This particularly affects Windows so much so that over time it can feel like
-        the machine is running at half speed. This is in part due to users continually installing
-        more applications, and not performing system maintenance. Other factors include ineffective
-        uninstallation routines, Microsoft&apos;s propensity for almost daily patches and security
-        updates, hard drives full of temporary files, a bloated registry, and poorly configured
-        antivirus software. These types of issues also affect Linux albeit to a lesser degree.
-        Nevertheless, if a Linux machine is to remain in pristine condition, there is a genuine need
-        for users to run software that vacuums up the detritus, wiping clean applications, deleting
-        cookies, shredding temporary files, removing logs, and other types of system maintenance.
-        (...)</para>
-<!-- ($ ld: 5.1.11 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxaria.com/article/7-game-linux-classic?lang=en">Linuxaria: 7 Classic game on Linux</ulink>
-      </title>
-      <para>One thing I found very interesting about Linux is the ability to have a whole series of
-        classic games already present on your distribution, and therefore easy to install. </para>
-      <para>What do I mean as classic game ? </para>
-      <para>Games released prior to 2000 on Amiga or perhaps on other operating systems and now
-        ported to Linux. Follow me in this series of old games (as a concept), but always enjoyable
-        and funny. (...)</para>
-<!-- ($ ld: 6.1.11 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://news.softpedia.com/news/Best-Windows-Games-and-Apps-That-Run-Under-Linux-176410.shtml">Softpedia: Best Windows Games and Apps That Run Under Linux</ulink>
-      </title>
-      <para><emphasis role="bold">The following article was created to inform our readers about popular native Windows games and applications which install and run under Linux-based operating systems, with the help of the Wine software. </emphasis></para>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="15%" fileref="http://i1-news.softpedia-static.com/images/newsrsz/Best-Windows-Games-and-Apps-That-Run-Under-Linux-2.jpg"/>
-        </imageobject>
-      </mediaobject>
-      <para>We have recently discovered that many people have no idea that games such as the popular
-        World of Warcraft, Call of Duty or Left 4 Dead work flawlessly under Linux. Therefore, we&apos;ve
-        decided to make a list with all of them. </para>
-      <para>While most of the following games work flawlessly, other will require some special
-        configuration from the user. Also, a couple of the listed applications and games will have
-        minor issues. (...)</para>
-<!-- ($ ld: 6.1.11 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://pcplus.techradar.com/feature/linux/multi-boot-linux-usb-30-12-10">PC Plus/Graham Morrison: Multi Boot Linux From USB</ulink>
-      </title>
-      <para>Running Linux from a USB stick is a fun and sometimes useful distraction. It can be handy if you want to try another distribution, for example, but can&apos;t commit to the drive space. Or perhaps your netbook insists on running Windows while your heart hankers for Ubuntu. But running a single, monogamous distribution can be a little limiting, and there&apos;s only one reason why you can&apos;t squeeze a few more alongside on any decent-sized USB stick: it used to be quite a difficult process. (...)</para>
-<!-- ($ ld: 8.1.11 sat $) -->    </blockquote>
+      <para>Running Linux from a USB stick is a fun and sometimes useful distraction. It can be
+        handy if you want to try another distribution, for example, but can&apos;t commit to the
+        drive space. Or perhaps your netbook insists on running Windows while your heart hankers for
+        Ubuntu. But running a single, monogamous distribution can be a little limiting, and
+        there&apos;s only one reason why you can&apos;t squeeze a few more alongside on any
+        decent-sized USB stick: it used to be quite a difficult process. (...)</para>
+      <!-- ($ ld: 8.1.11 sat $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-101-3/index.html?ca=drs-">IBM Developerworks/Ian Shields: Learn Linux, 101: Runlevels, shutdown, and reboot</ulink>
+        <ulink
+          url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-101-3/index.html?ca=drs-"
+          >IBM Developerworks/Ian Shields: Learn Linux, 101: Runlevels, shutdown, and reboot</ulink>
       </title>
-      <para><emphasis role="bold">Learn to shut down or reboot your Linux system, warn users that the system is going down, and switch to a more or less restrictive runlevel. You can use the material in this article to study for the LPI 101 exam for Linux system administrator certification, or just to learn about shutting down, rebooting, and changing runlevels.</emphasis></para>
+      <para><emphasis role="bold">Learn to shut down or reboot your Linux system, warn users that
+          the system is going down, and switch to a more or less restrictive runlevel. You can use
+          the material in this article to study for the LPI 101 exam for Linux system administrator
+          certification, or just to learn about shutting down, rebooting, and changing
+          runlevels.</emphasis></para>
       <para><emphasis role="bold">Overview</emphasis></para>
       <para>In this article, learn to shut down or reboot your Linux system, warn users that the
         system is going down, and switch to single-user mode or a more or less restrictive runlevel.
@@ -136,17 +76,29 @@
         kernel. The upstart examples use Fedora 13 with a 2.6.34 kernel, or Ubuntu 10.10 with a
         2.6.35 kernel. Your results on other systems may differ. </para>
       <para>This article helps you prepare for Objective 101.3 in Topic 101 of the Linux
-        Professional Institute&apos;s Junior Level Administration (LPIC-1) exam 101. The objective has a
-        weight of 3. (...)</para>
-<!-- ($ ld: 5.1.11 sm $) -->    </blockquote>
+        Professional Institute&apos;s Junior Level Administration (LPIC-1) exam 101. The objective
+        has a weight of 3. (...)</para>
+      <!-- ($ ld: 5.1.11 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/shell-scripts/recording-user-activity-with-a-script/">bashshell.net/MIKE: Recording User Activity with a Script</ulink>
+        <ulink url="http://bashshell.net/shell-scripts/recording-user-activity-with-a-script/"
+          >bashshell.net/MIKE: Recording User Activity with a Script</ulink>
       </title>
       <para><emphasis role="bold">Using Variables in Scripts</emphasis></para>
-      <para>The purpose of this script is to log the commands and output of a user so you have an accurate record of all activity.  One problem that you find if you depend upon logs with users and sudo is that sudo will not log the stdout nor the stderr. (...)</para>
-<!-- ($ ld: 8.1.11 sat $) -->    </blockquote>
+      <para>The purpose of this script is to log the commands and output of a user so you have an
+        accurate record of all activity. One problem that you find if you depend upon logs with
+        users and sudo is that sudo will not log the stdout nor the stderr. (...)</para>
+      <!-- ($ ld: 8.1.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://theopenhelp.com/2011/01/the-explicit-vim-editor-cheat-sheet.html"
+          >OpenHelp: The explicit vim command list</ulink></title>
+      <para>Open Help gives us a great Overview and Reference Table for using vim.</para>
+      <!-- ($ ld: 8.1.11 sm $) -->
+    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
@@ -167,7 +119,7 @@
             (...)</para>
         </listitem>
       </itemizedlist>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
+     </blockquote>
     <blockquote>
       <title>
         <ulink url="http://balau82.wordpress.com/2010/12/28/coding-styles-comparison-in-the-open-source-software-world/">Balau: Coding styles comparison in the Open Source Software world</ulink>
@@ -212,46 +164,33 @@
           <para>The Unofficial Ruby Usage Guide(...)</para>
         </listitem>
       </itemizedlist>
-<!-- ($ ld: 31.12.10 sat $) -->    </blockquote>
-  </sect2>
+      </blockquote>
+  </sect2> -->
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.makeuseof.com/tag/linux-web-server-software-apache-alternatives/">MakeUseOf/Dave Drager: The Best Linux Web Server Software (&amp; Apache Alternatives)</ulink>
+        <ulink url="http://www.howtoforge.com/virtualization-with-kvm-on-an-opensuse-11.3-server"
+          >HowtoForge/Falko Timme: Virtualization With KVM On An OpenSUSE 11.3 Server</ulink>
       </title>
-      <para>Since the protocol that runs the world wide web – the <ulink url="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP protocol</ulink> – is
-        open and viewable to the entire world, anyone with the programming knowledge is able to
-        write their own web server. In fact Wikipedia <ulink url="http://en.wikipedia.org/wiki/Comparison_of_web_servers">lists over 60 web servers</ulink> and those are only the ones released to the public. So which is the best
-        one that you should run on your Linux server? </para>
-      <para>To be able to determine the ‘best’ one we need to look at several factors. Ultimately it
-        depends on what your end goal is since some <ulink url="http://makeuseof.com/tags/web-server">web servers</ulink> are geared towards a kind
-        of client, others for speed and others for security. The main factors we are going to look
-        at are <emphasis role="bold">reliability, speed, security</emphasis> and <emphasis role="bold">ease of use</emphasis>. </para>
-      <para>A lot of web servers will make claims to being the “king” of one or more of these
-        factors. However I believe the proof is in the pudding and if you look at actual web server
-        usage across the internet you get a better idea of the wisdom of the crowds. Netcraft has
-        been keeping track of web server types, hostnames and other data since 1995 and is a great
-        way to see what the current trends are in web server usage.</para>
-      <para>Here is their web server usage survey up until December 2010:</para>
-      <figure id="fig.survey">
-        <title>Server Survey</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="50%" fileref="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2010/12/netcraft-survey.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para>Of the top <xref linkend="fig.survey"/>web servers in current use, Microsoft’s web
-        server IIS is the only pure-Windows one. Apache by and large is the most widely used web
-        server software based on the number of users. It is also good to note that it is
-        cross-platform and will run on both Windows and Linux systems. (...)</para>
-<!-- ($ ld: 6.1.11 sm $) -->    </blockquote>
+      <para>This guide explains how you can install and use KVM for creating and running virtual
+        machines on an OpenSUSE 11.3 server. I will show how to create image-based virtual machines
+        and also virtual machines that use a logical volume (LVM). KVM is short for Kernel-based
+        Virtual Machine and makes use of hardware virtualization, i.e., you need a CPU that supports
+        hardware virtualization, e.g. Intel VT or AMD-V. (...)</para>
+      <!-- ($ ld: 8.1.11 sat $) -->
+    </blockquote>
     <blockquote>
-      <title>
-        <ulink url="http://www.howtoforge.com/virtualization-with-kvm-on-an-opensuse-11.3-server">HowtoForge/Falko Timme: Virtualization With KVM On An OpenSUSE 11.3 Server</ulink>
-      </title>
-      <para>This guide explains how you can install and use KVM for creating and running virtual machines on an OpenSUSE 11.3 server. I will show how to create image-based virtual machines and also virtual machines that use a logical volume (LVM). KVM is short for Kernel-based Virtual Machine and makes use of hardware virtualization, i.e., you need a CPU that supports hardware virtualization, e.g. Intel VT or AMD-V. (...)</para>
-<!-- ($ ld: 8.1.11 sat $) -->    </blockquote>
+      <title><ulink
+          url="http://www.go2linux.org/linux/2011/01/how-change-priority-linux-process-881"
+          >OpenHelp/garrot: How to change the priority of a Linux process</ulink></title>
+      <para>The Linux Kernel will take care of the time each process, will have to use the
+        processor, but you can change that, by changing the priority. </para>
+      <para>When is this needed?, well usually never, but if you have a not to fast PC, and you are
+        compiling something, and at the same time having a video conferencing, you may want to
+        increase the priority of your video conference applications, while reducing the priority of
+        the program compiling your software. (...)</para>
+      <!-- ($ ld: 8.1.11 sm $) -->
+    </blockquote>
   </sect2>
 </sect1>

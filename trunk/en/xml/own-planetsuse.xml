@@ -22,62 +22,105 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink
-        url="http://anditosan.blogspot.com/2011/01/new-opensuse-build-service-interface.html">Andres
-        Silva: New openSUSE Build Service Interface</ulink></title>
-    <para>For some time now, I have been reviewing some of the interaction that one is to use when
-      working with openSUSE's Build Service system. I believe it is one of the most useful tools
-      that openSUSE has created because it encourages collaboration between programmers and users.
-      It provides a powerful tool to package applications. </para>
-    <para>However, I have noted that the interface could be changed a little in order to reflect a
-      more active form of interacting with one's package information. I created some preliminary and
-      simple images that could potentially become what openSUSE Build Service could look like. </para>
-    <para>My emphasis is on at-a-glance information. Currently, as users enter OBS, they are greeted
-      with little information about what they are working on and only see information about other
-      packages being worked on . Probably this could change, focusing on what a particular user has
-      on OBS is more important to that user than other packages from across OBS, which can come in
-      second. (...)</para>
-    <!-- ($ ld: 3.1.11 sm $) -->
+    <title>
+      <ulink url="http://omgsuse.com/content/zombie-lizards-evergreen-brings-111-back-dead">OMG!
+        SUSE!-Team: Zombie Lizards! Evergreen brings 11.1 back from the dead</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="15%" fileref="http://cdn.omgsuse.com/omg/images/evergreen.jpg"
+          align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>In mid-October we wrote about <ulink url="http://omgsuse.com/content/adios-opensuse-111"
+        >openSUSE 11.1 being put out to pasture</ulink> and the openSUSE team's decision to rapidly
+      end-of-life the release. In the world of open source, what does "end of life" actually mean
+      for users? As resident security expert <ulink url="http://twitter.com/msmeissn">Marcus
+        Meissner</ulink> stated in the original announcement: </para>
+    <para><quote><emphasis role="italic">SUSE Security announces that the SUSE Security Team will
+          stop releasing updates for openSUSE 11.1 soon. Having provided security-relevant fixes for
+          the last two years, we will stop releasing updates after December 31st
+        2010.</emphasis></quote>
+    </para>
+    <para>Before the deadline of December 31st came, there <ulink
+        url="http://www.rosenauer.org/blog/2010/11/30/community-powered-long-term-support-for-opensuse/"
+        >was already talk</ulink> about extending support for openSUSE 11.1 by the openSUSE
+      community. Shortly after the new year, openSUSE <ulink
+        url="http://www.rosenauer.org/blog/2011/01/03/opensuse-project-evergreen/">project Evergreen
+        was born</ulink>, a community-powered attempt at extending long-term support for 11.1. </para>
+    <para>Currently Evergreen is still very much an experiment but community member <ulink
+        url="http://www.rosenauer.org/blog/">Wolfgang Rosenauer</ulink>, who originally proposed the
+      project, is actively working with a few other contributors to get all the infrastructural and
+      technical issues worked out so the Evergreen project can start pushing out updates. If you're
+      interested in joining the project, Wolfgang has created a <ulink
+        url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailing list</ulink> you can
+      subscribe to in order to get started.</para>
+    <para>(...)</para>
+    <!-- ($ ld: 11.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://oyranos-cms.blogspot.com/2011/01/speeding-up-compicc.html">Kai-Uwe
-        Behrmann: Speeding up CompICC</ulink></title>
-    <para>As we (well, mostly other people than me) were dealing with a rather obscure
-      micro-controller when hacking our laser projector in brmlab, the only datasheet we have found
-      has been in Chinese. This is quite often the case with obscure China-made parts (including
-      event stuff like LEDs) and it’s annoying to deal with.</para>
-    <para>As powerful as the net-color spec for CompIcc and Oyranos are, they are currently slow. It
-      takes Compiz around 11 seconds to show a usable desktop. For a colour geek like me no problem.
-      Especially with a wide gamut display the startup delay is less of a pain then over saturated
-      colours. The weak points I could figure out is that Compiz sends several _NET_DESKTOP_GEOMETRY
-      events. I tried to blacklist some events and fiddle with _NET_DESKTOP_GEOMETRY, but that gave
-      errors in other places. After using the nvidia-settings panel the new monitors where not
-      initialised by the CompIcc plugin. So I decided to speed up the remainder. That is Oyranos and
-      some stuff inside the plugin itself. </para>
-    <para>First with many profiles installed Oyranos spends more time on greping through them to
-      find implicit matches. The search for implicit matches occurs after the explicit search. So
-      assigning a ICC profile to a monitor device would already help. </para>
-    <para>One of my monitors uses a lcms generated on the fly profile. That is much slower than the
-      implicit search. So I decided to cache the on the fly profile. Its now in <emphasis
-        role="italic">~/.local/share/color/icc/devices/Monitor</emphasis>. Thats especially nice as
-      it has a beautiful name on disk. Manufacturer-Model-Serial_edid.icc . The _edid sequence says,
-      it is automatic generated. To look up the newly created profile, it has the meta tag with the
-      EDID infos embedded. For the next start its a implicit profile and thats faster. </para>
-    <para>The next bottleneck is colour conversion. CompIcc uses a texture lookup with 64 cubic grid
-      points. These are 262144 pixel or 1.5MB in memory per monitor. Of course the 64 grid could be
-      reduced, but at the expense of precision. Thats not so nice on the desktop. As the
-      transformation happens at start time 3 times per monitor, it appears as a good idea to cache
-      this expensive texture. Its written to a Oyranos pixel array and cached with a Oyranos in
-      memory hash table. The lookup is several times faster than the computation in lcms. </para>
-    <para>Well these two changes made CompIcc start now in five seconds or maybe four. Without my
-      many profiles, startup in git takes around three seconds. </para>
-    <para>Further a on disk cache could help eliminate the texture computation. That would be around
-      one second for my two monitors. The implicit search could be reduced by caching a list on disk
-      for previously parsed ICC profiles. But that is always fragile without a proper md5 hash. And
-      I am not sure if reading and hashing is actual the most expensive part during the implicit
-      search. But after all a abstracted on disk cache would be great in Oyranos. Lets see when I
-      come around that.</para>
-    <!-- ($ ld: 3.1.11 sm $) -->
+    <title><ulink url="http://masterpatricko.blogspot.com/2011/01/winter-updates.html">Tejas
+        Guruswamy: Winter updates</ulink></title>
+    <para>Phew. long time no news! It's been a busy start of winter ... on that topic a happy new
+      year to everyone! Welcome if you're reading this for the first time on PlanetSUSE, have a look
+      at my <ulink url="http://masterpatricko.blogspot.com/2010/09/introduction.html">intro</ulink>
+      if you're curious who I am. A few updates on what I've been working on this month at
+      least.</para>
+    <para><ulink url="http://kde-apps.org/content/show.php/opensync-plugin-akonadi?content=132900"
+        >libopensync-plugin-akonadi 0.22.1</ulink> released Released an update to try and make it
+      work better with the Google Akonadi resource (thanks ares).</para>
+    <para>Package updates on the OBS:<itemizedlist>
+        <listitem>
+          <para>Packaged <emphasis role="bold">krazy2</emphasis>, the KDE code quality checker,
+            straight from git in <emphasis role="italic">KDE:Unstable:Playground</emphasis></para>
+        </listitem>
+        <listitem>
+          <para>Updated <ulink url="http://www.infradead.org/get_iplayer/html/get_iplayer.html"
+              >get_iplayer</ulink>, the BBC iPlayer download tool, in <emphasis role="italic"
+              >home:MasterPatricko</emphasis>. It now works!</para>
+        </listitem>
+        <listitem>
+          <para>Packaged <ulink url="http://blog.fenrus.org/">powertop2 beta</ulink>, the power
+            consumption monitor, in <emphasis role="italic">home:MasterPatricko</emphasis>;
+            interesting improvements compared to powertop. Needs kernel 2.6.37 (i.e. Factory or
+            Kernel:HEAD) to show off its full power, but still works in 11.3.</para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://www.gnu.org/software/liquidwar6/">liquidwar6</ulink>, the
+            particle simulation game, to 0.0.9beta in <emphasis role="italic"
+            >games</emphasis></para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://maxima.sourceforge.net/">maxima</ulink>, the Computer
+            Algebra system, in <emphasis role="italic">science</emphasis> to 5.23.0</para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://www.synce.org">unshield</ulink>, the .CAB file extractor
+            from the SynCE project, in <emphasis role="italic">Archiving</emphasis> (and eventually
+            Factory) to 0.6</para>
+        </listitem>
+        <listitem>
+          <para>Fix build of <ulink url="http://denyhosts.sourceforge.net/">denyhosts</ulink>, the
+            SSH brute-force protection tool, on x86_64</para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://jonls.dk/redshift/">redshift</ulink>, the auto
+            screen-brightness adjuster in <emphasis role="italic">Factory:Contrib</emphasis> to
+            0.6</para>
+        </listitem>
+        <listitem>
+          <para>Created a package <emphasis role="bold">vncserver-autostart</emphasis> in
+            home:MasterPatricko which adds an init script to start a tightvnc vncserver on bootup.
+            Complete with sysconfig-style configuration. Completely insecure of course but perfect
+            for a local network.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Started using my hard-earned openSUSE member benefits; tejas.guruswamy AT and
+      masterpatricko AT opensuse.org are operational; got the blog syndicated on <ulink
+        url="http://planet.opensuse.org">planet.opensuse.org</ulink>.</para>
+    <para>Plus, as always, I have a couple of new project ideas I'd like to get started on ... more
+      on that soon. Comments welcome as always.</para>
+    <!-- ($ ld: 11.1.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink
@@ -225,7 +268,7 @@
   </blockquote>
   <blockquote>
     <title><ulink url="http://omgsuse.com/content/hey-slacker-get-back-work-libreoffice-opensuse"
-        >Hey slacker! Get back to work with LibreOffice on openSUSE</ulink></title>
+        >OMG!SUSE! team: Hey slacker! Get back to work with LibreOffice on openSUSE</ulink></title>
     <para>In <ulink url="http://omgsuse.com/content/sleeping-job">a previous post</ulink> I
       mentioned a <quote><ulink url="http://hudson-labs.org/content/whos-driving-thing">spat with
           Oracle</ulink></quote> regarding the <ulink url="http://www.hudson-labs.org">Hudson
