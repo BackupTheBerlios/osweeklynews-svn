@@ -124,120 +124,18 @@
   </blockquote>
   <blockquote>
     <title><ulink
-        url="http://oyranos-cms.blogspot.com/2011/01/oyranos-colour-management-livecd.html">Kai Uwe
-        Behrmann: Oyranos Colour Management LiveCD </ulink></title>
-    <para>On <ulink url="http://sourceforge.net/projects/oyranos/files/Oyranos/Oyranos%200.2/"
-        >Oyranos' download area</ulink> on SourceForge is now a CD Live media available for 64-bit
-      computers. It contains many colour management tools as available from <ulink
-        url="https://build.opensuse.org/">openSUSE's Build Service</ulink>. <itemizedlist>
-        <listitem>
-          <para><ulink url="http://www.littlecms.com/">littleCMS</ulink> - widely used colour
-            converter</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink> -1.3.0, dispcalGUI - cross
-            platform colour management</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://www.oyranos.org/">Oyranos</ulink> - colour management
-            system</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://compicc.sf.net/">Compiz ICC</ulink> colour server - or short
-            CompIcc</para>
-        </listitem>
-        <listitem>
-          <para>kolor manager - in KDE's system settings panel</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://bit.ly/own1571">ICC Examin</ulink> - profile viewer</para>
-        </listitem>
-        <listitem>
-          <para>Xcm/QCmsEvents - Xorg colour management event observer</para>
-        </listitem>
-        <listitem>
-          <para>CinePaint - with net-color and other patches</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://www.scribus.net/">Scribus 1.3.8</ulink> - Layoutprogramm</para>
-        </listitem>
-        <listitem>
-          <para>Cmyktool, <ulink
-              url="http://blackfiveimaging.co.uk/index.php?article=02Software%2F01PhotoPrint"
-              >Photoprint - imaging software</ulink></para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://sampleicc.sf.net/">SampleICC</ulink>, IccXML - ICC sample
-            implementation</para>
-        </listitem>
-        <listitem>
-          <para>Nvidia drivers ... and more.</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>The CD should start on not too old nvidia graphics card hardware. Other systems are
-      currently not support due to the requirement of a stable OpenGL driver with GPU Shader support
-      for <ulink url="http://www.compiz.org/">Compiz</ulink> and CompIcc.</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata width="45%"
-          fileref="http://3.bp.blogspot.com/_-YtM6xplLKA/TSYoRypjT6I/AAAAAAAAABY/dhMHU9p-loo/s1600/qcmsevents_2.png"
-          align="center"/>
-      </imageobject>
-    </mediaobject>
-    <para>Once the live media runs, the desktop should appear colour managed. The trayicon, with the
-      little horse shoe in it, should be coloured to show the colour server is correcting the the
-      desktop. CompIcc is colour managing each monitor separately and acts on hotplug appropriately.
-      Currently is no monitor ICC profile pre installed on the CD. So it must be generated on the
-      fly. The <ulink url="http://en.wikipedia.org/wiki/Extended_display_identification_data"
-        >colorimetry data comes from the monitor</ulink> itself and contains the colour primaries, a
-      white point and a single gamma value. This is enough to let strange primaries appear more
-      natural, or detect a wide gamut monitor and compensate for its possibly very strong
-      saturation.</para>
-    <figure id="fig.oyanos">
-      <title>kolor-manager device profile selection</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="45%"
-            fileref="http://2.bp.blogspot.com/_-YtM6xplLKA/TSYwyGSAiGI/AAAAAAAAABc/WVncYf7WVEY/s400/kolor-manager_devices_110106.png"
-            align="center"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>To change the monitor profile one can use kolor-manager <xref linkend="fig.oyanos"/> from
-      KDE's systemsettings panel. It contains as well policies and default profile selection. These
-      settings are stored in a per user database. To see that CompIcc is working one might select
-      the CIE*XYZ profile, with its headroom and gamma of 1.0 the monitor appearance should change
-      dramatically. But thats only visible when the "Show only device related ICC profiles" box is
-      deactivated. </para>
-    <para>On the desktop are three example images just for having some wide gamut media available.
-      The two tiff files are raw camera developed images with a custom ICC profile assigned. The
-      restaurant JPEG is in AdobeRGB as typical for some cameras. All are tagged with the respective
-      profiles and can be loaded into the installed image tools. PhotoPrint is a very sensible
-      application and Scribus of course. To show the whole image gamut on a wide gamut monitor only
-      CinePaint can communicate with CompIcc to get a own hole in the screen to colour correct to
-      the native screen colours. All other applications see sRGB as monitor colour space. Thats
-      visible by again assigning a CIE*XYZ while CinePaint has opened a image. It will not be
-      affected as it does not check monitor profile switching.</para>
-    <para>The advantages of complete desktop colour correct are:<itemizedlist>
-        <listitem>
-          <para>wallpapers and movies look like indented</para>
-        </listitem>
-        <listitem>
-          <para>shopping via internet is more reliable colour wise</para>
-        </listitem>
-        <listitem>
-          <para>content on different brand of monitor look more uniform</para>
-        </listitem>
-        <listitem>
-          <para>wide gamut displays become useable</para>
-        </listitem>
-        <listitem>
-          <para>non colour managed applications fall back reasonable to sRGB</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>Hope you can start the media. For ATI cards one further version is planed and maybe for
-      other cards, like intel graphics, a separate version can follow. </para>
-    <!-- ($ ld: 7.1.11 sm $) -->
+        url="http://www.linux.com/distrocentral/distroblogs/395853:opensuse-weekly-news-available-for-ebook-reader"
+        >Sascha Manns: openSUSE Weekly News available for EBook Reader</ulink></title>
+    <para>Some years, the openSUSE Weekly News, only was edited and published in the Wiki. </para>
+    <para>Now, after some time the team is looking forward to break new ground. The new ground are
+      new formats. editing for . Also, translations are well done. The disadvantage, however, that
+      an interested reader must surf again and again to a particular website, and these must be read
+      online. </para>
+    <para>To extend our offer, we have already started in the middle of last year to convert the
+      wikicode in HTML code, and published it in full on openSUSE's News platform news.opensuse.org.
+      This is now offered readers the opportunity to subscribe to the RSS feed, and thus any time if
+      the reader wishes it to be available.  (...)</para>
+    <!-- ($ ld: 11.1.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://www.rosenauer.org/blog/2011/01/03/opensuse-project-evergreen/"
