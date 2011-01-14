@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -23,177 +22,48 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://pcplus.techradar.com/feature/linux/multi-boot-linux-usb-30-12-10">PC
-          Plus/Graham Morrison: Multi Boot Linux From USB</ulink>
+        <ulink url="http://www.freesoftwaremagazine.com/columns/creating_moving_story_reel_shot_inkscape_and_blender">FreeSoftwareMagazine/Terry Hancock: Creating a moving story-reel shot with Inkscape and Blender</ulink>
       </title>
-      <para>Running Linux from a USB stick is a fun and sometimes useful distraction. It can be
-        handy if you want to try another distribution, for example, but can&apos;t commit to the
-        drive space. Or perhaps your netbook insists on running Windows while your heart hankers for
-        Ubuntu. But running a single, monogamous distribution can be a little limiting, and
-        there&apos;s only one reason why you can&apos;t squeeze a few more alongside on any
-        decent-sized USB stick: it used to be quite a difficult process. (...)</para>
-      <!-- ($ ld: 8.1.11 sat $) -->
-    </blockquote>
+      <para>There’s a reason they’re called “movies.” They’re supposed to move. Your eyes are keyed to follow motion, and the constant revelation of new information in a moving shot holds your interest longer. Thus, while four seconds might be about the maximum comfortable length for a static shot, shots in which the camera or subject are moving extensively can often last more than a minute without feeling slow at all. Storyboards made entirely from static images make it hard to judge active shots. It’s useful, therefore, to be able to insert some movement at the storyboard phase by panning and zooming a drawing. Here I’m going to demonstrate such an animated storyboard using Inkscape and Blender. (...)</para>
+<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-101-3/index.html?ca=drs-"
-          >IBM Developerworks/Ian Shields: Learn Linux, 101: Runlevels, shutdown, and reboot</ulink>
+        <ulink url="http://bashshell.net/bash-shell/using-pipes-in-the-bash-shell/">BashShell.net: Using Pipes in the Bash Shell</ulink>
       </title>
-      <para><emphasis role="bold">Learn to shut down or reboot your Linux system, warn users that
-          the system is going down, and switch to a more or less restrictive runlevel. You can use
-          the material in this article to study for the LPI 101 exam for Linux system administrator
-          certification, or just to learn about shutting down, rebooting, and changing
-          runlevels.</emphasis></para>
-      <para><emphasis role="bold">Overview</emphasis></para>
-      <para>In this article, learn to shut down or reboot your Linux system, warn users that the
-        system is going down, and switch to single-user mode or a more or less restrictive runlevel.
-        Learn to: <itemizedlist>
-          <listitem>
-            <para>Set the default runlevel</para>
-          </listitem>
-          <listitem>
-            <para>Change between runlevels</para>
-          </listitem>
-          <listitem>
-            <para>Change to single-user mode</para>
-          </listitem>
-          <listitem>
-            <para>Shut down or reboot the system from the command line</para>
-          </listitem>
-          <listitem>
-            <para>Alert users about major system events, including switching to another
-              runlevel</para>
-          </listitem>
-          <listitem>
-            <para>Terminate processes properly</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>Unless otherwise noted, the examples in this article use a Fedora 8 system with a 2.6.26
-        kernel. The upstart examples use Fedora 13 with a 2.6.34 kernel, or Ubuntu 10.10 with a
-        2.6.35 kernel. Your results on other systems may differ. </para>
-      <para>This article helps you prepare for Objective 101.3 in Topic 101 of the Linux
-        Professional Institute&apos;s Junior Level Administration (LPIC-1) exam 101. The objective
-        has a weight of 3. (...)</para>
-      <!-- ($ ld: 5.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://bashshell.net/shell-scripts/recording-user-activity-with-a-script/"
-          >bashshell.net/MIKE: Recording User Activity with a Script</ulink>
-      </title>
-      <para><emphasis role="bold">Using Variables in Scripts</emphasis></para>
-      <para>The purpose of this script is to log the commands and output of a user so you have an
-        accurate record of all activity. One problem that you find if you depend upon logs with
-        users and sudo is that sudo will not log the stdout nor the stderr. (...)</para>
-      <!-- ($ ld: 8.1.11 sat $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://theopenhelp.com/2011/01/the-explicit-vim-editor-cheat-sheet.html"
-          >OpenHelp: The explicit vim command list</ulink></title>
-      <para>Open Help gives us a great Overview and Reference Table for using vim.</para>
-      <!-- ($ ld: 8.1.11 sm $) -->
-    </blockquote>
+      <para>The usage of pipes with the shell is easy and powerful.  This lab will help you understand the use of pipes. (...)</para>
+<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="https://www.packtpub.com/article/testing-tools-techniques-python">Packt/Daniel Arbuckle: Testing Tools and Techniques in Python</ulink>
+        <ulink url="http://www.cyberciti.biz/tips/linux-shared-library-management.html">nixCraft/Vivek Gite: Linux Commands For Shared Library Management &amp; Debugging Problem</ulink>
       </title>
-      <para>This article by Daniel Arbuckle, author of <ulink url="http://bit.ly/OWN1561">Python Testing</ulink>, introduces code coverage and continuous integration, and teaches how to
-        tie automated testing into version control systems. In this article, we will</para>
-      <itemizedlist>
-        <listitem>
-          <para>Discuss code coverage, and learn about coverage.py</para>
-        </listitem>
-        <listitem>
-          <para>Discuss continuous integration, and learn about buildbot</para>
-        </listitem>
-        <listitem>
-          <para>Learn how to integrate automated testing into popular version control systems
-            (...)</para>
-        </listitem>
-      </itemizedlist>
-     </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://balau82.wordpress.com/2010/12/28/coding-styles-comparison-in-the-open-source-software-world/">Balau: Coding styles comparison in the Open Source Software world</ulink>
-      </title>
-      <para>While looking for existing C coding standards I discovered that the GNU and Linux
-        projects officially suggest very different styles. Inside the Linux kernel documentation,
-        Linus Torvalds goes so far as to mock GNU coding standards:</para>
-      <para><quote>First off, I’d suggest printing out a copy of the GNU coding standards, and NOT read it. Burn them, it’s a great symbolic gesture.</quote></para>
-      <para>At this point I wanted to understand the difference between the coding styles of
-        established open source projects. When I say <quote>styles</quote> I mean mainly the source
-        code appearance, and the standards that help to read and maintain the code. Here’s a list of
-        coding styles that I read:</para>
-      <itemizedlist>
-        <listitem>
-          <para>Linux kernel coding style</para>
-        </listitem>
-        <listitem>
-          <para>GNU Coding Standards</para>
-        </listitem>
-        <listitem>
-          <para>Qt Coding Style</para>
-        </listitem>
-        <listitem>
-          <para>Code Conventions for the Java TM Programming Language (PDF version)</para>
-        </listitem>
-        <listitem>
-          <para>Style Guide for Python Code</para>
-        </listitem>
-        <listitem>
-          <para>GNOME Programming Guidelines</para>
-        </listitem>
-        <listitem>
-          <para>Kdelibs Coding Style</para>
-        </listitem>
-        <listitem>
-          <para>Mono Coding Guidelines</para>
-        </listitem>
-        <listitem>
-          <para>Christian Neukirchen’s Ruby Style Guide</para>
-        </listitem>
-        <listitem>
-          <para>The Unofficial Ruby Usage Guide(...)</para>
-        </listitem>
-      </itemizedlist>
-      </blockquote>
-  </sect2> -->
+      <para>f you are a developer, you will re-use code provided by others. Usually /lib, /lib64, /usr/local/lib, and other directories stores various shared libraries. You can write your own program using these shared libraries. As a sys admin you need to manage and install these shared libraries. Use the following commands for shared libraries management, security, and debugging problems. (...)</para>
+<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
+  </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/396770-linux-kernel-module-management-101"
-          >Linux.com/Joe Brockmeier: Linux Kernel Module Management 101 </ulink>
+        <ulink url="http://www.linux.com/learn/tutorials/396770-linux-kernel-module-management-101">Linux.com/Joe Brockmeier: Linux Kernel Module Management 101 </ulink>
       </title>
       <para>The Linux kernel allows drivers and features to be compiled as modules rather than as
         part of the kernel itself. This means that users can often change features in the kernel or
-        add drivers without recompiling, and that the Linux kernel doesn't have to carry a lot of
-        unnecessary baggage. Want to learn how to manage your modules? It's easy to do, just keep
+        add drivers without recompiling, and that the Linux kernel doesn&apos;t have to carry a lot of
+        unnecessary baggage. Want to learn how to manage your modules? It&apos;s easy to do, just keep
         reading. </para>
-      <para>In this tutorial, we'll walk through the steps of seeing what's already loaded in the
-        running kernel, and adding and removing modules from the kernel. (...) <emphasis role="bold"
-          >License</emphasis>: <link linkend="credits">1</link></para>
-      <!-- ($ ld: 13.1.11 sm $) -->
-    </blockquote>
+      <para>In this tutorial, we&apos;ll walk through the steps of seeing what&apos;s already loaded in the
+        running kernel, and adding and removing modules from the kernel. (...) <emphasis role="bold">License</emphasis>: <link linkend="credits">1</link></para>
+<!-- ($ ld: 13.1.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://www.go2linux.org/linux/2011/01/how-change-priority-linux-process-881"
-          >OpenHelp/garrot: How to change the priority of a Linux process</ulink></title>
-      <para>The Linux Kernel will take care of the time each process, will have to use the
-        processor, but you can change that, by changing the priority. </para>
-      <para>When is this needed?, well usually never, but if you have a not to fast PC, and you are
-        compiling something, and at the same time having a video conferencing, you may want to
-        increase the priority of your video conference applications, while reducing the priority of
-        the program compiling your software. (...)</para>
-      <!-- ($ ld: 8.1.11 sm $) -->
-    </blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/installing-cherokee-with-php5-and-mysql-support-on-opensuse-11.3">HowtoForge/Falko Timme: Installing Cherokee With PHP5 And MySQL Support On OpenSUSE 11.3</ulink>
+      </title>
+      <para>Cherokee is a very fast, flexible and easy to configure Web Server. It supports the widespread technologies nowadays: FastCGI, SCGI, PHP, CGI, TLS and SSL encrypted connections, virtual hosts, authentication, on the fly encoding, load balancing, Apache compatible log files, and much more. This tutorial shows how you can install Cherokee on an OpenSUSE 11.3 server with PHP5 support (through FastCGI) and MySQL support. (...)</para>
+<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
   </sect2>
 </sect1>
