@@ -167,41 +167,55 @@
   </sect2>
   <sect2>
     <title>Team Report</title>
-    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
         <title>
-          <ulink url="http://karl-tux-stadt.de/ktuxs/?p=2950">Sirko Kemter: openSUSE 11.4 – Color trouble</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/13/wallpaper-community-pack-1/">Nelson
+            Marques: Wallpaper Community Pack #1</ulink>
         </title>
-        <para>If you have the last Milestone of openSUSE, thats already number 5, installed then you
-          can take a look into the history. You would see a dark splash as I planned them long time
-          ago. You also see the KDM in the color I planned in August.</para>
+        <para>I’ve received some emails and some positive feedback about one wallpaper I used for a
+          couple of screenshot’s I’ve used in the past, including also information requests about
+          where that very same wallpaper could be found. I’m happy people liked my choice. </para>
+        <para>The wallpaper is question is the following, which can be found at <ulink
+            url="http://gnome-look.org">gnome-look [dot] org</ulink>: Green Snake HD - by Kmurat @
+          gnome-art.org</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="25%" fileref="http://karl-tux-stadt.de/graph/kdm114.png"/>
+            <imagedata width="25%" fileref="http://gnome-look.org/CONTENT/content-pre1/70282-1.jpg"
+            />
           </imageobject>
         </mediaobject>
-        <para>2 weeks ago Coolo asked for some artwork for integrate it into the next Milestone, a
-          weekend with lot of work, for Javier and me. After that some people woke up. First the KDE
-          team wanted the color changed to celadon, whats also is the codename for 11.4. Thats ok
-          for me, its there choice and it would be work with the grey what I planned for the GNOME
-          side.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="25%" fileref="http://karl-tux-stadt.de/graph/celadon.png"/>
-          </imageobject>
-        </mediaobject>
-        <para>But now the GNOME team also want it changed. And that becomes now harder to do. There
-          are some possibilities and also some borders for the work. Right now there is a little
-          discussion on the mailinglist. But the default background of GNOME would be definitly not
-          happen, he is nice but the blue works not with the celadon green tone. Also change that
-          background to celadon green, wouldnt work because I have to choose one of the backgrounds
-          for the bootsplash. Hope they find a solution I can work with. I would prefer a grey one,
-          with a celadon geeko on it and change the green tone in sonar to celadon green
-          also.</para>
+        <para>It is clear to me at this stage that Artwork has good demand and it’s a ‘value +’
+          recognized by many users. Understanding this, I’ve decided two things: <orderedlist>
+            <listitem>
+              <para>GNOME:Ayatana will have a small Artwork Package by the Community, I’m currently
+                contacting Kmurat to check if he can change the licence on this artwork piece (with
+                over 20.000 downloads on gnome-art) so I can use it for distribution. Currently it’s
+                licensed as CC BY-NC-ND, in which the NC can be probably a problem. Let’s wait a
+                couple of days and see… Either way for those who asked for the source of this
+                wallpaper, click on the image above.</para>
+            </listitem>
+            <listitem>
+              <para>I will create a small package with wallpapers from the community and make it
+                available (for GNOME, KDE, etc) users.</para>
+            </listitem>
+          </orderedlist>My intentions are to include a set of wallpapers (4/3, 16/9 and 16/10) of
+          around 5/7 wallpapers from several artists and community contributors. The first person
+          I’ve contacted regarding this was Javier Llorente, a openSUSE Artwork Team and KDE
+          contributor, which donated and pointed some artwork. I’ve also sent a small email to
+            <ulink url="http://tatica.org">María ‘Tatica’ Leandro</ulink>, a contributor of Fedora
+          Design Team from South America asking if she had something that she could share with us
+          for this community package (I did loved some of her submissions into Fedora Art).
+          Additionally, I’m also going to nag <ulink url="http://karl-tux-stadt.de">Sirko Kemter
+            (gnokii)</ulink> for a contribution… </para>
+        <para>Once this is assembled (already have 5 wallpapers) I’m going to package it, run a
+          sanity check and prepare it for distribution… </para>
+        <para><emphasis role="bold">UPDATE</emphasis>: María ‘Tatica’ Leandro has answered positive
+          to my email requesting for a donation, Sirko Kemter also answered positive.</para>
+        <!-- ($ ld: 14.1.11 sm $) -->
       </blockquote>
-    </sect3> -->
+    </sect3>
     <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
@@ -418,6 +432,30 @@
           </listitem>
         </itemizedlist>
         <!-- ($ ld: 11.1.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://michal.hrusecky.net/2011/01/mongodb-and-redis-in-opensuse/">Michal
+            Hrusecky: MongoDB and Redis in openSUSE Build Service</ulink></title>
+        <para>Usually I inform you here about MySQL related news in openSUSE. This time it will be a
+          little bit different. But it will be still database related. You probably know that not so
+          long ago (maybe still valid today), NoSQL databases were the cool thing to try. I think it
+          has settled a bit now and it is no more about being cool, but more about your actual
+          needs. So you may actually need some of these. And I can happily inform you, that thanks
+          to the efforts of <ulink url="https://connect.opensuse.org/pg/profile/gladiac"
+            >gladiac</ulink>, we’ve got some of these in <ulink
+            url="http://download.opensuse.org/repositories/server:/database"
+            >server﻿:database</ulink> repository now! Namely we’ve got MongoDB there and also Redis.
+          Hurray! They don’t build for all distributions, but if you’ve got recent openSUSE, you can
+          find a package for you there ;-) </para>
+        <para>Although some of us might like the idea of playing around with new technologies, there
+          are already some applications that can use these databases. One of them, that I was told
+          about is <ulink url="https://joindiaspora.com/">Diaspora</ulink> (I admit that I wouldn’t
+          be aware of it’s existence without gladiac telling me about it). This social networking
+          thing has interesting concept. It is totally decentralized and gives you ability to have
+          control over you own data! And it requires these two databases. So thanks to gladiac
+          efforts, you can now build your own Diaspora server on openSUSE! Anyone going to create
+          Diaspora appliance using SUSE Studio? ;-)</para>
+        <!-- ($ ld: 14.1.11 sm $) -->
       </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
