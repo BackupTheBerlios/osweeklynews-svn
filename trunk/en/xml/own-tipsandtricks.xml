@@ -20,7 +20,7 @@
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
   <sect2>
-   <title>For Desktop Users</title>
+    <title>For Desktop Users</title>
     <blockquote>
       <title>
         <ulink url="http://pcplus.techradar.com/feature/linux/multi-boot-linux-usb-30-12-10">PC
@@ -170,15 +170,18 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/virtualization-with-kvm-on-an-opensuse-11.3-server"
-          >HowtoForge/Falko Timme: Virtualization With KVM On An OpenSUSE 11.3 Server</ulink>
+        <ulink url="http://www.linux.com/learn/tutorials/396770-linux-kernel-module-management-101"
+          >Linux.com/Joe Brockmeier: Linux Kernel Module Management 101 </ulink>
       </title>
-      <para>This guide explains how you can install and use KVM for creating and running virtual
-        machines on an OpenSUSE 11.3 server. I will show how to create image-based virtual machines
-        and also virtual machines that use a logical volume (LVM). KVM is short for Kernel-based
-        Virtual Machine and makes use of hardware virtualization, i.e., you need a CPU that supports
-        hardware virtualization, e.g. Intel VT or AMD-V. (...)</para>
-      <!-- ($ ld: 8.1.11 sat $) -->
+      <para>The Linux kernel allows drivers and features to be compiled as modules rather than as
+        part of the kernel itself. This means that users can often change features in the kernel or
+        add drivers without recompiling, and that the Linux kernel doesn't have to carry a lot of
+        unnecessary baggage. Want to learn how to manage your modules? It's easy to do, just keep
+        reading. </para>
+      <para>In this tutorial, we'll walk through the steps of seeing what's already loaded in the
+        running kernel, and adding and removing modules from the kernel. (...) <emphasis role="bold"
+          >License</emphasis>: <link linkend="credits">1</link></para>
+      <!-- ($ ld: 13.1.11 sm $) -->
     </blockquote>
     <blockquote>
       <title><ulink
