@@ -55,7 +55,7 @@
 for i in `cat vdos`; do youtube-dl -t $i; done; rm vdos;</screen></para>
       <para>HTH someone. </para>
       <para>If you know of a better solution (some firefox/chrome addon, Greasmonkey, etc.) which
-      will work in Linux, please let me know.</para>
+        will work in Linux, please let me know.</para>
       <!-- ($ ld: 15.1.11 sm $) -->
     </blockquote>
   </sect2>
@@ -101,7 +101,7 @@ for i in `cat vdos`; do youtube-dl -t $i; done; rm vdos;</screen></para>
         keep reading. </para>
       <para>In this tutorial, we&apos;ll walk through the steps of seeing what&apos;s already loaded
         in the running kernel, and adding and removing modules from the kernel. (...) <emphasis
-          role="bold">License</emphasis>: <link linkend="credits">1</link></para>
+          role="bold">License</emphasis>: <link linkend="excopyright">1</link></para>
       <!-- ($ ld: 13.1.11 sm $) -->
     </blockquote>
     <blockquote>
@@ -152,10 +152,10 @@ for i in `cat vdos`; do youtube-dl -t $i; done; rm vdos;</screen></para>
         </note></para>
       <para>Now lets say that file you pushed to the server is rpm that you need to update your
         server. You can do ‘for loop’, using ssh and pass the command to the boxes to update that
-        rpm<screen>for r in `cat linux_server | awk &apos;{ print $2 }` ; do ssh user@$r rpm -Uvh /dir/myfile ; done</screen></para>
+        rpm<screen>for r in `cat linux_server | awk &apos;{ print $2 }` ; do ssh user@$r rpm -Uvh /dir/myfile ; </screen><screen>done</screen></para>
       <para>To ensure that the file was updated, you can do another ‘for loop’ check the rpm
         database to see if there by doing rpm -qa and pipe into a grep with the file
-        name.<screen>for r in `cat linux_server | awk &apos;{ print $2 }` ; do ssh user@$r rpm -qa | grep myfile ; done</screen></para>
+        name.<screen>for r in `cat linux_server | awk &apos;{ print $2 }` ; do ssh user@$r rpm -qa | grep myfile ; </screen><screen>done</screen></para>
       <para>By the way you can use all of these commands together in one script to save even more
         time.<programlisting>#!/bin/bash
  servers=”linux_server”
@@ -170,7 +170,7 @@ for x in `cat $servers | awk &apos;{ print $2 }` ; do ssh user@$x rpm-qa | grep 
 exit 0</programlisting></para>
       <para>As great System Administrator, finding the simplest ways to do recurring tasks frees up
         your time for tackling more complex problems . A ‘for loop’ is a great way to help. Next
-        time I will go over while. <emphasis role="bold">License</emphasis>: <link linkend="credits"
+        time I will go over while. <emphasis role="bold">License</emphasis>: <link linkend="excopyright"
           >3</link></para>
       <!-- ($ ld: 14.1.11 sm $) -->
     </blockquote>
@@ -188,7 +188,7 @@ exit 0</programlisting></para>
           <listitem>
             <para>Install the required dependencies to compile the kernel module (currently on
               ﻿﻿﻿﻿﻿2.6.37-rc5-12-desktop). 64bit users will require the
-              following:<screen>zypper in kernel-source compat-32bit qt3-32bit libstdc++ libgcc xorg-x11-libs-32bit xorg-x11-devel-32bit Mesa-devel-32bit \</screen><screen>fontconfig-32bit expat-32bit freetype2-32bit zlib-32bit gcc make</screen></para>
+              following:<screen>zypper in kernel-source compat-32bit qt3-32bit libstdc++ libgcc xorg-x11-libs-32bit \</screen><screen>xorg-x11-devel-32bit Mesa-devel-32bit \</screen><screen>fontconfig-32bit expat-32bit freetype2-32bit zlib-32bit gcc make</screen></para>
           </listitem>
           <listitem>
             <para>Download ATI FireGL driver (version 10.12) from ATI website (http://ati.amd.com).
