@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -22,52 +23,91 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.freesoftwaremagazine.com/columns/creating_moving_story_reel_shot_inkscape_and_blender">FreeSoftwareMagazine/Terry Hancock: Creating a moving story-reel shot with Inkscape and Blender</ulink>
+        <ulink
+          url="http://www.freesoftwaremagazine.com/columns/creating_moving_story_reel_shot_inkscape_and_blender"
+          >FreeSoftwareMagazine/Terry Hancock: Creating a moving story-reel shot with Inkscape and
+          Blender</ulink>
       </title>
-      <para>There’s a reason they’re called “movies.” They’re supposed to move. Your eyes are keyed to follow motion, and the constant revelation of new information in a moving 
-        shot holds your interest longer. Thus, while four seconds might be about the maximum comfortable length for a static shot, shots in which the camera or subject are moving 
-        extensively can often last more than a minute without feeling slow at all. Storyboards made entirely from static images make it hard to judge active shots. It’s useful, 
-        therefore, to be able to insert some movement at the storyboard phase by panning and zooming a drawing. Here I’m going to demonstrate such an animated storyboard using 
-        Inkscape and Blender. (...)</para>
-<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
+      <para>There’s a reason they’re called “movies.” They’re supposed to move. Your eyes are keyed
+        to follow motion, and the constant revelation of new information in a moving shot holds your
+        interest longer. Thus, while four seconds might be about the maximum comfortable length for
+        a static shot, shots in which the camera or subject are moving extensively can often last
+        more than a minute without feeling slow at all. Storyboards made entirely from static images
+        make it hard to judge active shots. It’s useful, therefore, to be able to insert some
+        movement at the storyboard phase by panning and zooming a drawing. Here I’m going to
+        demonstrate such an animated storyboard using Inkscape and Blender. (...)</para>
+      <!-- ($ ld: 15.1.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://psankar.blogspot.com/2011/01/download-all-youtube-videos-of-user.html">Sankar
+          P: Download all youtube videos of an user</ulink></title>
+      <para>Recently I got addicted to watching Nigella Lawson Cooking videos on youtube. As much as
+        I like youtube, I prefer to watch videos offline as well. One user has uploaded a lot of
+        those videos and I wanted to download all the videos by that user. </para>
+      <para>I tried a few firefox plugins, youtube-dl python script, etc. for doing this but none
+        seemed to be fit for the job. Good old Shell-script came for rescue. I saved the user's
+        youtube homepage in .html, grepped through the file for links, ran uniq and then fed them
+        all to youtube-dl and bulk-downloaded all the videos. If you want parallel downloads, you
+        can easily do that also by tweaking the script.</para>
+      <para>The commands
+        are:<screen>grep -E 'http://www.youtube.com/watch\?v=[[:alnum:]-]{11}' dump.html -o | uniq > vdos
+for i in `cat vdos`; do youtube-dl -t $i; done; rm vdos;</screen></para>
+      <para>HTH someone. </para>
+      <para>If you know of a better solution (some firefox/chrome addon, Greasmonkey, etc.) which
+      will work in Linux, please let me know.</para>
+      <!-- ($ ld: 15.1.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/bash-shell/using-pipes-in-the-bash-shell/">BashShell.net: Using Pipes in the Bash Shell</ulink>
+        <ulink url="http://bashshell.net/bash-shell/using-pipes-in-the-bash-shell/">BashShell.net:
+          Using Pipes in the Bash Shell</ulink>
       </title>
-      <para>The usage of pipes with the shell is easy and powerful.  This lab will help you understand the use of pipes. (...)</para>
-<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
+      <para>The usage of pipes with the shell is easy and powerful. This lab will help you
+        understand the use of pipes. (...)</para>
+      <!-- ($ ld: 15.1.11 sat $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://www.cyberciti.biz/tips/linux-shared-library-management.html">nixCraft/Vivek Gite: Linux Commands For Shared Library Management &amp; Debugging Problem</ulink>
+        <ulink url="http://www.cyberciti.biz/tips/linux-shared-library-management.html"
+          >nixCraft/Vivek Gite: Linux Commands For Shared Library Management &amp; Debugging
+          Problem</ulink>
       </title>
-      <para>If you are a developer, you will re-use code provided by others. Usually /lib, /lib64, /usr/local/lib, and other directories stores various shared libraries. You can 
-        write your own program using these shared libraries. As a sys admin you need to manage and install these shared libraries. Use the following commands for shared libraries 
-        management, security, and debugging problems. (...)</para>
-<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
+      <para>If you are a developer, you will re-use code provided by others. Usually /lib, /lib64,
+        /usr/local/lib, and other directories stores various shared libraries. You can write your
+        own program using these shared libraries. As a sys admin you need to manage and install
+        these shared libraries. Use the following commands for shared libraries management,
+        security, and debugging problems. (...)</para>
+      <!-- ($ ld: 15.1.11 sat $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/396770-linux-kernel-module-management-101">Linux.com/Joe Brockmeier: Linux Kernel Module Management 101 </ulink>
+        <ulink url="http://www.linux.com/learn/tutorials/396770-linux-kernel-module-management-101"
+          >Linux.com/Joe Brockmeier: Linux Kernel Module Management 101 </ulink>
       </title>
       <para>The Linux kernel allows drivers and features to be compiled as modules rather than as
         part of the kernel itself. This means that users can often change features in the kernel or
-        add drivers without recompiling, and that the Linux kernel doesn&apos;t have to carry a lot of
-        unnecessary baggage. Want to learn how to manage your modules? It&apos;s easy to do, just keep
-        reading. </para>
-      <para>In this tutorial, we&apos;ll walk through the steps of seeing what&apos;s already loaded in the
-        running kernel, and adding and removing modules from the kernel. (...) <emphasis role="bold">License</emphasis>: <link linkend="credits">1</link></para>
-<!-- ($ ld: 13.1.11 sm $) -->    </blockquote>
+        add drivers without recompiling, and that the Linux kernel doesn&apos;t have to carry a lot
+        of unnecessary baggage. Want to learn how to manage your modules? It&apos;s easy to do, just
+        keep reading. </para>
+      <para>In this tutorial, we&apos;ll walk through the steps of seeing what&apos;s already loaded
+        in the running kernel, and adding and removing modules from the kernel. (...) <emphasis
+          role="bold">License</emphasis>: <link linkend="credits">1</link></para>
+      <!-- ($ ld: 13.1.11 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://opensuse.terrorpup.net/?p=196">Chuck Payne: System Administrator 101 — A Basic Bash Loop — Part 1 “for”</ulink>
+        <ulink url="http://opensuse.terrorpup.net/?p=196">Chuck Payne: System Administrator 101 — A
+          Basic Bash Loop — Part 1 “for”</ulink>
       </title>
       <para>Being a System Administrator you will find that you need to do a lot of repetitive
         tasks. Moving files, grepping files, and creating users. You could spend all your time type
@@ -130,11 +170,14 @@ for x in `cat $servers | awk &apos;{ print $2 }` ; do ssh user@$x rpm-qa | grep 
 exit 0</programlisting></para>
       <para>As great System Administrator, finding the simplest ways to do recurring tasks frees up
         your time for tackling more complex problems . A ‘for loop’ is a great way to help. Next
-        time I will go over while. <emphasis role="bold">License</emphasis>: <link linkend="credits">3</link></para>
-<!-- ($ ld: 14.1.11 sm $) -->    </blockquote>
+        time I will go over while. <emphasis role="bold">License</emphasis>: <link linkend="credits"
+          >3</link></para>
+      <!-- ($ ld: 14.1.11 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/01/13/opensuse-factory-ati-firegl-10-12/">Nelson Marques: openSUSE Factory: ATI FireGL 10.12</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/01/13/opensuse-factory-ati-firegl-10-12/"
+          >Nelson Marques: openSUSE Factory: ATI FireGL 10.12</ulink>
       </title>
       <para>I’ve had some problems in the past with openSUSE Factory and ATI support… even the
         normal radeon driver wasn’t worked properly. After the last updates, the radeon driver
@@ -160,13 +203,19 @@ exit 0</programlisting></para>
           <listitem>
             <para> Download the following patches:<itemizedlist>
                 <listitem>
-                  <para><ulink url="http://aur.archlinux.org/packages/catalyst/catalyst/sema_init.patch">sema_init.patch</ulink></para>
+                  <para><ulink
+                      url="http://aur.archlinux.org/packages/catalyst/catalyst/sema_init.patch"
+                      >sema_init.patch</ulink></para>
                 </listitem>
                 <listitem>
-                  <para><ulink url="http://aur.archlinux.org/packages/catalyst/catalyst/fglrx-2.6.36.patch">fglrx-2.6.36.patch</ulink></para>
+                  <para><ulink
+                      url="http://aur.archlinux.org/packages/catalyst/catalyst/fglrx-2.6.36.patch"
+                      >fglrx-2.6.36.patch</ulink></para>
                 </listitem>
                 <listitem>
-                  <para><ulink url="http://aur.archlinux.org/packages/catalyst/catalyst/makefile_compat.patch">makefile_compat.patch</ulink></para>
+                  <para><ulink
+                      url="http://aur.archlinux.org/packages/catalyst/catalyst/makefile_compat.patch"
+                      >makefile_compat.patch</ulink></para>
                 </listitem>
               </itemizedlist></para>
           </listitem>
@@ -186,14 +235,21 @@ exit 0</programlisting></para>
           </listitem>
         </itemizedlist></para>
       <para>Enjoy FireGL on openSUSE Factory!</para>
-<!-- ($ ld: 14.1.11 sm $) -->    </blockquote>
+      <!-- ($ ld: 14.1.11 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/installing-cherokee-with-php5-and-mysql-support-on-opensuse-11.3">HowtoForge/Falko Timme: Installing Cherokee With PHP5 And MySQL Support On OpenSUSE 11.3</ulink>
+        <ulink
+          url="http://www.howtoforge.com/installing-cherokee-with-php5-and-mysql-support-on-opensuse-11.3"
+          >HowtoForge/Falko Timme: Installing Cherokee With PHP5 And MySQL Support On OpenSUSE
+          11.3</ulink>
       </title>
-      <para>Cherokee is a very fast, flexible and easy to configure Web Server. It supports the widespread technologies nowadays: FastCGI, SCGI, PHP, CGI, TLS and SSL encrypted 
-        connections, virtual hosts, authentication, on the fly encoding, load balancing, Apache compatible log files, and much more. This tutorial shows how you can install 
-        Cherokee on an OpenSUSE 11.3 server with PHP5 support (through FastCGI) and MySQL support. (...)</para>
-<!-- ($ ld: 15.1.11 sat $) -->    </blockquote>
+      <para>Cherokee is a very fast, flexible and easy to configure Web Server. It supports the
+        widespread technologies nowadays: FastCGI, SCGI, PHP, CGI, TLS and SSL encrypted
+        connections, virtual hosts, authentication, on the fly encoding, load balancing, Apache
+        compatible log files, and much more. This tutorial shows how you can install Cherokee on an
+        OpenSUSE 11.3 server with PHP5 support (through FastCGI) and MySQL support. (...)</para>
+      <!-- ($ ld: 15.1.11 sat $) -->
+    </blockquote>
   </sect2>
 </sect1>

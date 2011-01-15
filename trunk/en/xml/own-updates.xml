@@ -24,179 +24,20 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://psankar.blogspot.com/2011/01/introducing-sqlite-commander-curses.html"
-        >Sankar P: Introducing Sqlite-Commander - Curses Client for your SQLite
-      Database</ulink></title>
-    <para>I am happy to introduce to you, my recent nighttime hack "Sqlite-Commander - <ulink
-        url="https://github.com/curiosity/sqlite-commander">A Curses client for your SQLite
-        Database</ulink>".</para>
-    <para>While I was working in a project involving sqlite, I wanted to check the contents of a
-      sqlite database. The command line sqlite client involves too much of typing for viewing
-      records. The sqlite viewers that I found were not very keyboard friendly. There was a firefox
-      extension which looked good but I felt it is too clumsy to launch that application. Also, I
-      wanted a tool that will read SQLite tables over ssh without requiring much bandwidth. I could
-      not find any CUI client for SQLite and I felt it may be useful to write one, atleast for my
-      satisfying my needs. So, here we have Sqlite-Commander. The name is inspired from an awesome
-      piece of software Midnight-Commander written by Miguel De Icaza.</para>
-    <figure id="fig.sqlite">
-      <title>Screenshot</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="50%"
-            fileref="http://4.bp.blogspot.com/_G_VBnbGWMzs/TSBaaaJW18I/AAAAAAAAEWQ/v9HLv-7nHMk/s1600/sqlite-commander.png"
-            align="center"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para><emphasis role="bold">Features</emphasis></para>
-    <itemizedlist>
-      <listitem>
-        <para>Shows the list of tables in the left pane.</para>
-      </listitem>
-      <listitem>
-        <para>Allows you to navigate the list of tables using arrow keys.</para>
-      </listitem>
-      <listitem>
-        <para>Shows the first 30 records for the selected table in the right pane</para>
-      </listitem>
-      <listitem>
-        <para>Non-printable columns are shown with a ???</para>
-      </listitem>
-      <listitem>
-        <para>Maximum of 30 characters are displayed per column. Column data exceeding this length
-          are shown with <quote>...</quote></para>
-      </listitem>
-    </itemizedlist>
-    <para><emphasis role="bold">TODO</emphasis></para>
-    <itemizedlist>
-      <listitem>
-        <para>It is not a full-fledged SQLite client with rich features. It is like an enriched
-          version of cat for working with sqlite. I don't intend to make a release, as I am not sure
-          if this will be useful for anyone other than people who work with SQLite and can use only
-          a terminal/ssh. If there are enough users, I will enhance and make it a full-fledged
-          product. So drop me a mail if you are interested in this project.</para>
-      </listitem>
-      <listitem>
-        <para>It should be fairly straight-forward to implement connectivity to any database (MySQL,
-          Oracle, etc.) such that we can have a generic SQL NCurses client. It will be a good
-          exercise for someone who wants to know C#.</para>
-      </listitem>
-      <listitem>
-        <para>Add a scroll bar and show more than 30 columns. Should be moderate/easy to
-          implement.</para>
-      </listitem>
-      <listitem>
-        <para>Add a dialog box to execute any random SQL statement. Should be fairly trivial to
-          implement.</para>
-      </listitem>
-      <listitem>
-        <para>Create Events such that pressing Enter on the records list will pass the currently
-          selected record to a custom script/command. Useful ?</para>
-      </listitem>
-      <listitem>
-        <para>Copy selections of records to clipboard. Easy to implement.</para>
-      </listitem>
-      <listitem>
-        <para>Handle tablenames with special characters.</para>
-      </listitem>
-    </itemizedlist>
-    <para><emphasis role="bold">Thanks</emphasis></para>
-    <para>Credits are due for the awesome mono-ncurses interface authors (Miguel and Co.) If you are
-      looking to writing some terminal application I can heartily recommend that mono-ncurses is the
-      best library you will ever get. Before beginning this application, I evaluated a few options
-      (like Python etc.) and nothing comes close to being as easy to use as <ulink
-        url="http://www.mono-project.com/MonoCurses">mono-ncurses</ulink>. Also, special thanks to
-      VIM and git, two of the most productive tools ever invented. </para>
-    <!-- ($ ld: 3.1.11 sm $) -->
+    <title><ulink url="http://packman.links2linux.org/package/vlc"
+      >Packman: vlc 1.1.5-5.pm</ulink></title>
+    <para><quote>VLC media player is a highly portable multimedia player for various
+      audio and video formats (MPEG-1, MPEG-2, MPEG-4, DivX, mp3, ogg, ...)
+      as well as DVDs, VCDs, and various streaming protocols.
+      It can also be used as a server to stream in unicast or multicast
+      in IPv4 or IPv6 on a high-bandwidth network.</quote></para>
+    <!-- ($ ld: 15.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://dev-loki.blogspot.com/2011/01/mplayer-and-smplayer-update.html">Pascal
-        Bleser: MPlayer and smplayer update</ulink></title>
-    <para>I've just updated the <ulink url="http://packman.links2linux.org/package/MPlayer"
-          ><emphasis role="bold">MPlayer</emphasis></ulink> and <ulink
-        url="http://packman.links2linux.org/package/smplayer"><emphasis role="bold"
-          >smplayer</emphasis></ulink> in the <ulink url="http://packman.links2linux.org">Packman
-        repository</ulink> to their latest respective development revisions. </para>
-    <para>I also enabled <ulink url="http://packman.links2linux.org/package/rtmpdump"><emphasis
-          role="bold">rtmpdump</emphasis></ulink>, <ulink
-        url="http://packman.links2linux.org/package/mpg123"><emphasis role="bold"
-        >mpg123</emphasis></ulink> and mpcdec support. <emphasis role="bold">MPlayer</emphasis>
-      changed the way it handles <ulink url="http://en.wikipedia.org/wiki/Closed_captioning">closed
-        captions</ulink> in a recent revision, as it now takes an option to the <emphasis
-        role="bold">-subcc</emphasis> parameter to select which channel to use. </para>
-    <para>Because of that, I also had to update the (brilliant) smplayer GUI frontend for <emphasis
-        role="bold">mplayer</emphasis> in order to support that change. </para>
-    <para>Needless to say, if you encounter any issue, please report it by email to packman with the
-      domain <emphasis role="bold">links2linux.de</emphasis></para>
-    <!-- ($ ld: 3.1.11 sm $) -->
+    <title><ulink url="http://packman.links2linux.org/package/flexdock">Packman: flexdock 0.5.1-0.pm</ulink></title>
+    <para>FlexDock is a Java docking framework for use in cross-platform Swing
+      applications. It offers features you'd expect in any desktop docking
+      framework such as: (...)</para>
+    <!-- ($ ld: 15.1.11 sm $) -->
   </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/FrostWire/200549">Packman: FrostWire
-        4.20.6_svn1467-0.pm</ulink></title>
-    <para>FrostWire is a gnutella client written in Java. It supports a number of advanced features
-      like ultrapeers (like FastTrack's supernodes), automatic download retries, freeloader
-      punishment, etc. FrostWire is a fork of the very popular LimeWire Gnutella client. </para>
-    <!-- ($ ld: 7.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://holger123.wordpress.com/2010/11/30/smb-traffic-analyzer-1-2-1-released">Holger
-        Hetterich: SMB Traffic Analyzer 1.2.1 released</ulink></title>
-    <para>The team is happy to announce the release of SMB Traffic Analyzer (SMBTA in the following)
-      version 1.2.1. This is a <emphasis role="italic">very important release</emphasis>, as many
-      fixes have been done for the build, making both smbtad and smbtatools much more portable.
-      Also, the build has been adapted to work with libraries that are not installed at the usual
-      places on the system (bnc#654930). </para>
-    <para>On the feature side, we have two really cool things to say. First off, we are introducing
-      rrddriver with this release. It is an interface to <ulink url="http://www.mrtg.org/rrdtool/"
-        >rrdtool</ulink>, and allows to build a <ulink
-        url="http://en.wikipedia.org/wiki/Round-robin">round robin database</ulink> from the data
-      smbtad is receiving, in real time. Having data in a rrdtool database allows you to create all
-      the fancy graphics SMBTA was missing until today (bnc#655149).</para>
-    <figure id="fig.smb">
-      <title>An example graph of network throughput, created with rrdtool by using rrddriver.</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="50%"
-            fileref="http://holger123.files.wordpress.com/2010/11/rrddriver-graph.png"
-            align="center"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>And then we have all tools <xref linkend="fig.smb"/> being able to run over a unix domain socket, including
-      rrddriver. This is a further step to make the setup and configuration of SMBTA easier, as well
-      as more efficient (bnc#654073) and helps us in our effort to build appliances for SMBTA. </para>
-    <para>Smbtad was leaking memory when either smbtamonitor or rrddriver was connected to it, and
-      run over 24 hours, now this is fixed (bnc#656120). Both rrddriver and smbtamonitor have been
-      using too much CPU time, this has been fixed with bnc#656011. The smbtatorture tool, most
-      likely interesting to those who are developing SMBTA, has been completely documented
-      (bnc#653769). </para>
-    <para>A short <quote>howto</quote> section has been added to the documentation, that aims to
-      describe the simplest possible setup for SMBTA. The idea is that users get a clue what to do
-      and are able to adapt it to their environment. The documentation on building SMBTA has been
-      updated with important details on how to build SMBTA in more complex environments and
-      rrddriver has been completely documented (bnc#651147). </para>
-    <para>Finally, I come back as to <ulink url="http://en.wikipedia.org/wiki/Round-robin">why this
-        is an important release</ulink> as I said in the beginning of this article. Due to the
-      efforts done for version 1.2.1 SMBTA will now build on Solaris 10, and a side effect is that
-      SMBTA has become much more portable during that sessions. Many thanks to those who are
-      interested in a Solaris build, the result was an essentially needed contribution to SMBTA! A
-      side effect of this is that we can offer a download for the Fedora 13 distribution. </para>
-    <para>You can download SMB Traffic Analyzer from the <ulink
-        url="http://holger123.wordpress.com/smb-traffic-analyzer/smb-traffic-analyzer-download/"
-        >Download Page</ulink>. </para>
-    <para>For more information about SMB Traffic Analyzer, check it’s <ulink
-        url="http://holger123.wordpress.com/smb-traffic-analyzer">homepage</ulink>.</para>
-    <!-- ($ ld: 8.1.11 sm $) -->
-  </blockquote>
-  <itemizedlist>
-    <title>You can find other interesting Packages at:</title>
-    <listitem>
-      <para><ulink url="http://packman.links2linux.de/rdf/packman_en.rdf">Packman</ulink></para>
-    </listitem>
-    <listitem>
-      <para><ulink url="https://hermes.opensuse.org/feeds/66367.rdf">openSUSE Build
-        Service</ulink></para>
-    </listitem>
-  </itemizedlist>
 </sect1>
