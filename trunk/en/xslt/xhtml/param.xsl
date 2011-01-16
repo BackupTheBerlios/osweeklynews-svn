@@ -35,4 +35,9 @@
   <xsl:param name="own.imgtable" select="document('../fo/imagetable.xml')//img:*"/>
 
   <xsl:param name="logos.src.path">common/logos/</xsl:param>
+  
+  <xsl:param name="cover.logo.filename">Opensuse_weekly_news_banner.png</xsl:param>
+  <xsl:param name="cover.logo.width">50%</xsl:param>
+  <xsl:param name="cover.logo.align">middle</xsl:param>
+  
 </xsl:stylesheet>
