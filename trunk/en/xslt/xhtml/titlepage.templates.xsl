@@ -16,9 +16,19 @@
     USA.
     
   -->
+  <xsl:template name="generate.cover.logo">
+    <!-- Creates OWN logo -->
+    <div class="cover-logo" align="{$cover.logo.align}">
+      <img src="{$cover.logo.filename}" 
+        alt="Cover"
+        width="{$cover.logo.width}"/>
+    </div>
+  </xsl:template>
+  
   
   <xsl:template name="article.titlepage.recto">
-   <xsl:choose>
+   <xsl:call-template name="generate.cover.logo"/>
+  <xsl:choose>
     <xsl:when test="articleinfo/title">
       <xsl:apply-templates mode="article.titlepage.recto.auto.mode" select="articleinfo/title"/>
     </xsl:when>
