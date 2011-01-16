@@ -19,6 +19,9 @@ _XML="xml/.${BASEXML}"
 _XSLT="${XSLTHTML}"
 _OUT="${HTML}"
 
+# Common graphics for all XHTML files
+# Separate with space but insert filenames only
+LOGOS="Opensuse_weekly_news_banner.png"
 
 #export LC_ALL=C
 TEMP=$(getopt -o h -l "help,xml:,xslt:,output:" -n "$0" -- "$@")
@@ -83,6 +86,9 @@ transform ${_XML} ${_XSLT} -o "${_OUT}" $@
 ln -sf ${XSLTDIR}/common .
 for c in ${XSLTDIR}/xhtml/*.css ; do
   ln -sf $c .
+done
+for g in ${LOGOS}; do
+  ln -sf ../common/logos/$g
 done
 )
 
