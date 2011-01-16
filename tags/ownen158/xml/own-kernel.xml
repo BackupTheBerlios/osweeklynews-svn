@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Wonder-patch-merged-improved-AMD-and-Intel-graphic-support-1166430.html"
+        >h-online/Thorsten Leemhuis: Kernel Log - Wonder patch merged, improved AMD and Intel
+        graphic support</ulink>
+    </title>
+    <para><emphasis role="bold">For Linux 2.6.38, the kernel developers have integrated the
+        much-discussed patch which considerably improves the response time of Linux desktops in
+        certain situations. The AMD developers have extended their open source graphics drivers to
+        support various Radeon HD 6000 graphics chips. A discussion was sparked by the tricky
+        situation surrounding the graphics drivers for Intel's new processors. </emphasis></para>
+    <para>After the <ulink
+        url="http://www.h-online.com/open/features/What-s-new-in-Linux-2-6-37-1163376.html">release
+        of Linux 2.6.37</ulink> on Wednesday morning, the first patches for kernel version 2.6.38
+      appeared in the Linux main development branch late on Thursday night. Among Torvalds' first
+      2,769 commits were the almost 600 patches for the network subsystem that had been <ulink
+        url="http://thread.gmane.org/gmane.linux.network/183011">submitted</ulink> by its
+      maintainer, David Miller. As expected, these patches have added the <ulink
+        url="http://git.kernel.org/linus/0c8173385e549f95cd80c3fff5aab87b4f881d8d">rtl8192ce
+        driver</ulink> for Realtek's RTL8192CE and RTL8188CE 802.11n Wi-Fi chips to the kernel. </para>
+    <para>The first changes made for Linux 2.6.38 also include <ulink
+        url="http://git.kernel.org/linus/5091faa449ee0b7d73bc296a93bca9540fc51d0a">the patch</ulink>
+      that considerably improves the interactivity of desktop applications in situations where the
+      CPU is fully utilised. This patch became known through such articles as <ulink
+        url="http://bit.ly/fI6LyR"><quote>The ~200 Line Linux Kernel Patch That Does
+        Wonders</quote></ulink> on the Phoronix web site; details of the patch's functionality as
+      well as a description of an alternative, more flexible, approach can be found in a <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Fast-response-times-via-process-groups-1141390.html"
+        >previous Kernel Log</ulink>. The maintainer of the process scheduler, Ingo Molnar, <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1084129">explicitly pointed out</ulink> this
+      function in his Git-Pull request, calling it <quote>one of the biggest and most visible
+        interactivity improvements achieved by the Linux scheduler</quote>. (...) <emphasis
+        role="bold">License</emphasis>: <link linkend="excopyright">4</link></para>
+    <!-- ($ ld: 15.1.11 sm $) -->
+  </blockquote>
+</sect1>

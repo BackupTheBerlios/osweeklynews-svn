@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title>
+      <ulink url="http://omgsuse.com/content/zombie-lizards-evergreen-brings-111-back-dead">OMG!
+        SUSE!-Team: Zombie Lizards! Evergreen brings 11.1 back from the dead</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="15%" fileref="http://cdn.omgsuse.com/omg/images/evergreen.jpg"
+          align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>In mid-October we wrote about <ulink url="http://omgsuse.com/content/adios-opensuse-111"
+        >openSUSE 11.1 being put out to pasture</ulink> and the openSUSE team's decision to rapidly
+      end-of-life the release. In the world of open source, what does "end of life" actually mean
+      for users? As resident security expert <ulink url="http://twitter.com/msmeissn">Marcus
+        Meissner</ulink> stated in the original announcement: </para>
+    <para><quote><emphasis role="italic">SUSE Security announces that the SUSE Security Team will
+          stop releasing updates for openSUSE 11.1 soon. Having provided security-relevant fixes for
+          the last two years, we will stop releasing updates after December 31st
+        2010.</emphasis></quote>
+    </para>
+    <para>Before the deadline of December 31st came, there <ulink
+        url="http://www.rosenauer.org/blog/2010/11/30/community-powered-long-term-support-for-opensuse/"
+        >was already talk</ulink> about extending support for openSUSE 11.1 by the openSUSE
+      community. Shortly after the new year, openSUSE <ulink
+        url="http://www.rosenauer.org/blog/2011/01/03/opensuse-project-evergreen/">project Evergreen
+        was born</ulink>, a community-powered attempt at extending long-term support for 11.1. </para>
+    <para>Currently Evergreen is still very much an experiment but community member <ulink
+        url="http://www.rosenauer.org/blog/">Wolfgang Rosenauer</ulink>, who originally proposed the
+      project, is actively working with a few other contributors to get all the infrastructural and
+      technical issues worked out so the Evergreen project can start pushing out updates. If you're
+      interested in joining the project, Wolfgang has created a <ulink
+        url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailing list</ulink> you can
+      subscribe to in order to get started.</para>
+    <para>(...)</para>
+    <!-- ($ ld: 11.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://masterpatricko.blogspot.com/2011/01/winter-updates.html">Tejas
+        Guruswamy: Winter updates</ulink></title>
+    <para>Phew. long time no news! It's been a busy start of winter ... on that topic a happy new
+      year to everyone! Welcome if you're reading this for the first time on PlanetSUSE, have a look
+      at my <ulink url="http://masterpatricko.blogspot.com/2010/09/introduction.html">intro</ulink>
+      if you're curious who I am. A few updates on what I've been working on this month at
+      least.</para>
+    <para><ulink url="http://kde-apps.org/content/show.php/opensync-plugin-akonadi?content=132900"
+        >libopensync-plugin-akonadi 0.22.1</ulink> released Released an update to try and make it
+      work better with the Google Akonadi resource (thanks ares).</para>
+    <para>Package updates on the OBS:<itemizedlist>
+        <listitem>
+          <para>Packaged <emphasis role="bold">krazy2</emphasis>, the KDE code quality checker,
+            straight from git in <emphasis role="italic">KDE:Unstable:Playground</emphasis></para>
+        </listitem>
+        <listitem>
+          <para>Updated <ulink url="http://www.infradead.org/get_iplayer/html/get_iplayer.html"
+              >get_iplayer</ulink>, the BBC iPlayer download tool, in <emphasis role="italic"
+              >home:MasterPatricko</emphasis>. It now works!</para>
+        </listitem>
+        <listitem>
+          <para>Packaged <ulink url="http://blog.fenrus.org/">powertop2 beta</ulink>, the power
+            consumption monitor, in <emphasis role="italic">home:MasterPatricko</emphasis>;
+            interesting improvements compared to powertop. Needs kernel 2.6.37 (i.e. Factory or
+            Kernel:HEAD) to show off its full power, but still works in 11.3.</para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://www.gnu.org/software/liquidwar6/">liquidwar6</ulink>, the
+            particle simulation game, to 0.0.9beta in <emphasis role="italic"
+            >games</emphasis></para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://maxima.sourceforge.net/">maxima</ulink>, the Computer
+            Algebra system, in <emphasis role="italic">science</emphasis> to 5.23.0</para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://www.synce.org">unshield</ulink>, the .CAB file extractor
+            from the SynCE project, in <emphasis role="italic">Archiving</emphasis> (and eventually
+            Factory) to 0.6</para>
+        </listitem>
+        <listitem>
+          <para>Fix build of <ulink url="http://denyhosts.sourceforge.net/">denyhosts</ulink>, the
+            SSH brute-force protection tool, on x86_64</para>
+        </listitem>
+        <listitem>
+          <para>Update <ulink url="http://jonls.dk/redshift/">redshift</ulink>, the auto
+            screen-brightness adjuster in <emphasis role="italic">Factory:Contrib</emphasis> to
+            0.6</para>
+        </listitem>
+        <listitem>
+          <para>Created a package <emphasis role="bold">vncserver-autostart</emphasis> in
+            home:MasterPatricko which adds an init script to start a tightvnc vncserver on bootup.
+            Complete with sysconfig-style configuration. Completely insecure of course but perfect
+            for a local network.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Started using my hard-earned openSUSE member benefits; tejas.guruswamy AT and
+      masterpatricko AT opensuse.org are operational; got the blog syndicated on <ulink
+        url="http://planet.opensuse.org">planet.opensuse.org</ulink>.</para>
+    <para>Plus, as always, I have a couple of new project ideas I'd like to get started on ... more
+      on that soon. Comments welcome as always.</para>
+    <!-- ($ ld: 11.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.linux.com/distrocentral/distroblogs/395853:opensuse-weekly-news-available-for-ebook-reader"
+        >Sascha Manns: openSUSE Weekly News available for EBook Reader</ulink></title>
+    <para>Some years, the openSUSE Weekly News, only was edited and published in the Wiki. </para>
+    <para>Now, after some time the team is looking forward to break new ground. The new ground are
+      new formats. editing for . Also, translations are well done. The disadvantage, however, that
+      an interested reader must surf again and again to a particular website, and these must be read
+      online. </para>
+    <para>To extend our offer, we have already started in the middle of last year to convert the
+      wikicode in HTML code, and published it in full on openSUSE's News platform news.opensuse.org.
+      This is now offered readers the opportunity to subscribe to the RSS feed, and thus any time if
+      the reader wishes it to be available. (...)</para>
+    <!-- ($ ld: 11.1.11 sm $) -->
+  </blockquote>
+</sect1>
