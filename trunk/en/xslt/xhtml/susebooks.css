@@ -30,6 +30,13 @@ body
 div.cover-logo
 {
   margin-bottom:2em;
+  -moz-box-shadow:none !important;;
+  -moz-border-radius:0pt;
+  -webkit-box-shadow:none !important;;
+  -webkit-border-radius:0pt;
+  border:none!important;
+  padding:4px;
+  text-align:center;
 }
 
 body div.preface,body div.glossary,body div.appendix,body div.bibliography,body div.index,body div.chapter,body div.sect1,body div.sect2,body div.sect3
