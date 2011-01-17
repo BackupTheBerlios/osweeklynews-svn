@@ -19,7 +19,7 @@
   <xsl:template name="generate.cover.logo">
     <!-- Creates OWN logo -->
     <div class="cover-logo" align="{$cover.logo.align}">
-      <img src="{$cover.logo.filename}" 
+      <img src="{concat($logos.src.path, $cover.logo.filename)}" 
         alt="Cover"
         width="{$cover.logo.width}"/>
     </div>
