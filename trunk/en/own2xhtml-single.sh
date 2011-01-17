@@ -87,9 +87,9 @@ ln -sf ${XSLTDIR}/common .
 for c in ${XSLTDIR}/xhtml/*.css ; do
   ln -sf $c .
 done
-for g in ${LOGOS}; do
-  ln -sf ../common/logos/$g
-done
+#for g in ${LOGOS}; do
+#  ln -sf ../common/logos/$g
+#done
 )
 
 # FIXME: How can be output an absolute path?
