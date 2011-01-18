@@ -23,118 +23,121 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://omgsuse.com/content/zombie-lizards-evergreen-brings-111-back-dead">OMG!
-        SUSE!-Team: Zombie Lizards! Evergreen brings 11.1 back from the dead</ulink>
+      <ulink url="http://vizzzion.org/blog/2011/01/open-slx-end-user-platform-announced/">Sebastian
+        Kügler: open-slx end-user platform announced</ulink>
     </title>
-    <mediaobject>
-      <imageobject>
-        <imagedata width="15%" fileref="http://cdn.omgsuse.com/omg/images/evergreen.jpg"
-          align="center"/>
-      </imageobject>
-    </mediaobject>
-    <para>In mid-October we wrote about <ulink url="http://omgsuse.com/content/adios-opensuse-111"
-        >openSUSE 11.1 being put out to pasture</ulink> and the openSUSE team's decision to rapidly
-      end-of-life the release. In the world of open source, what does "end of life" actually mean
-      for users? As resident security expert <ulink url="http://twitter.com/msmeissn">Marcus
-        Meissner</ulink> stated in the original announcement: </para>
-    <para><quote><emphasis role="italic">SUSE Security announces that the SUSE Security Team will
-          stop releasing updates for openSUSE 11.1 soon. Having provided security-relevant fixes for
-          the last two years, we will stop releasing updates after December 31st
-        2010.</emphasis></quote>
-    </para>
-    <para>Before the deadline of December 31st came, there <ulink
-        url="http://www.rosenauer.org/blog/2010/11/30/community-powered-long-term-support-for-opensuse/"
-        >was already talk</ulink> about extending support for openSUSE 11.1 by the openSUSE
-      community. Shortly after the new year, openSUSE <ulink
-        url="http://www.rosenauer.org/blog/2011/01/03/opensuse-project-evergreen/">project Evergreen
-        was born</ulink>, a community-powered attempt at extending long-term support for 11.1. </para>
-    <para>Currently Evergreen is still very much an experiment but community member <ulink
-        url="http://www.rosenauer.org/blog/">Wolfgang Rosenauer</ulink>, who originally proposed the
-      project, is actively working with a few other contributors to get all the infrastructural and
-      technical issues worked out so the Evergreen project can start pushing out updates. If you're
-      interested in joining the project, Wolfgang has created a <ulink
-        url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailing list</ulink> you can
-      subscribe to in order to get started.</para>
+    <para>A couple of months ago at open-slx, when we (like so many times before and after) talked
+      about how we can make the lives of Linux users easier, an idea was sparked. While there’s huge
+      amounts of content out there, it struck us that there’s still a large number of people not
+      being too well served when searching Google to get answers to your questions. This poses some
+      problems though: First of all, most of the information is not in English. This poses an extra
+      barrier for some, who might not be as fluent in English as we developers usually are. Then,
+      the content is hard to verify: How do I *know* that the information given there makes sense?
+      Maybe it will just delete all my erotic movies? ;) So the problem is that there’s little
+      content for the German end-user audience, which is hard to verify. So a team consisting of
+      openSUSE community members and open-slx employees led by my colleague Rupert Horstkötter has
+      set out to fix this problem. They looked into existing solutions to these problem, and found
+      that what is currently running as ubuntuusers.de comes closest to the solution we have in
+      mind. We got in contact with the team at ubuntuusers.de, and they were enthusiastic about the
+      idea and willing to make it happen. A good start. </para>
+    <para>Then comes the real work of course. We’ve worked out a concept that allows us to provide a
+      modern support tool for our users, which builds on two pillars: information and interaction.
+      The concept we come up with puts this into three different tools: a wiki as knowledgebase, a
+      forum to discuss articles, questions and to get in contact with other people, and a blog
+      aggregation (Planet) which collects news about developments in openSUSE and howtos for
+      specific topics. In order to accomplish this gargantuan task, we’ve asked for help in the
+      openSUSE community. People were immediately enthusiastic about the idea, and started chipping
+      in, helping to review and improve lots of articles. </para>
+    <para>Over the past few months, we have reviewed about 2000 articles from the existing
+      ubuntuusers.de <ulink url="http://wiki.open-slx.de">knowledgebase</ulink>, prioritizing 500 of
+      them, and adapted the articles to modern standards and that they apply to openSUSE. These 500
+      articles form the foundation for the knowledgebase we created for the open-slx community
+      platform. We’ve also set up a <ulink url="http://community.open-slx.de">webforum</ulink> users
+      can use to communicate and ask further questions, and we’ve put up a <ulink
+        url="http://planet.open-slx.de">blog aggregator</ulink>. </para>
+    <para>So, if you’re a German-speaking user (or future user :)) of openSUSE, hop over to
+      community.open-slx.de and see for yourself whether this new platform fits your needs (and if
+      it doesn’t, let us know what we can improve). You can find the official announcement <ulink
+        url="http://news.open-slx.de/2011/01/17/herzlich-willkommen-bei-community-open-slx-de/"
+        >here</ulink>.</para>
     <para>(...)</para>
-    <!-- ($ ld: 11.1.11 sm $) -->
+    <!-- ($ ld: 18.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://masterpatricko.blogspot.com/2011/01/winter-updates.html">Tejas
-        Guruswamy: Winter updates</ulink></title>
-    <para>Phew. long time no news! It's been a busy start of winter ... on that topic a happy new
-      year to everyone! Welcome if you're reading this for the first time on PlanetSUSE, have a look
-      at my <ulink url="http://masterpatricko.blogspot.com/2010/09/introduction.html">intro</ulink>
-      if you're curious who I am. A few updates on what I've been working on this month at
-      least.</para>
-    <para><ulink url="http://kde-apps.org/content/show.php/opensync-plugin-akonadi?content=132900"
-        >libopensync-plugin-akonadi 0.22.1</ulink> released Released an update to try and make it
-      work better with the Google Akonadi resource (thanks ares).</para>
-    <para>Package updates on the OBS:<itemizedlist>
-        <listitem>
-          <para>Packaged <emphasis role="bold">krazy2</emphasis>, the KDE code quality checker,
-            straight from git in <emphasis role="italic">KDE:Unstable:Playground</emphasis></para>
-        </listitem>
-        <listitem>
-          <para>Updated <ulink url="http://www.infradead.org/get_iplayer/html/get_iplayer.html"
-              >get_iplayer</ulink>, the BBC iPlayer download tool, in <emphasis role="italic"
-              >home:MasterPatricko</emphasis>. It now works!</para>
-        </listitem>
-        <listitem>
-          <para>Packaged <ulink url="http://blog.fenrus.org/">powertop2 beta</ulink>, the power
-            consumption monitor, in <emphasis role="italic">home:MasterPatricko</emphasis>;
-            interesting improvements compared to powertop. Needs kernel 2.6.37 (i.e. Factory or
-            Kernel:HEAD) to show off its full power, but still works in 11.3.</para>
-        </listitem>
-        <listitem>
-          <para>Update <ulink url="http://www.gnu.org/software/liquidwar6/">liquidwar6</ulink>, the
-            particle simulation game, to 0.0.9beta in <emphasis role="italic"
-            >games</emphasis></para>
-        </listitem>
-        <listitem>
-          <para>Update <ulink url="http://maxima.sourceforge.net/">maxima</ulink>, the Computer
-            Algebra system, in <emphasis role="italic">science</emphasis> to 5.23.0</para>
-        </listitem>
-        <listitem>
-          <para>Update <ulink url="http://www.synce.org">unshield</ulink>, the .CAB file extractor
-            from the SynCE project, in <emphasis role="italic">Archiving</emphasis> (and eventually
-            Factory) to 0.6</para>
-        </listitem>
-        <listitem>
-          <para>Fix build of <ulink url="http://denyhosts.sourceforge.net/">denyhosts</ulink>, the
-            SSH brute-force protection tool, on x86_64</para>
-        </listitem>
-        <listitem>
-          <para>Update <ulink url="http://jonls.dk/redshift/">redshift</ulink>, the auto
-            screen-brightness adjuster in <emphasis role="italic">Factory:Contrib</emphasis> to
-            0.6</para>
-        </listitem>
-        <listitem>
-          <para>Created a package <emphasis role="bold">vncserver-autostart</emphasis> in
-            home:MasterPatricko which adds an init script to start a tightvnc vncserver on bootup.
-            Complete with sysconfig-style configuration. Completely insecure of course but perfect
-            for a local network.</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>Started using my hard-earned openSUSE member benefits; tejas.guruswamy AT and
-      masterpatricko AT opensuse.org are operational; got the blog syndicated on <ulink
-        url="http://planet.opensuse.org">planet.opensuse.org</ulink>.</para>
-    <para>Plus, as always, I have a couple of new project ideas I'd like to get started on ... more
-      on that soon. Comments welcome as always.</para>
-    <!-- ($ ld: 11.1.11 sm $) -->
+    <title><ulink url="http://lizards.opensuse.org/2011/01/17/a-brief-update/">Nelson Marques: A
+        brief update…</ulink></title>
+    <para>In the last days I’ve been leaving my full attention to Compiz and the famous glib main
+      loop. I’ve made a small perl script to compare my local builds with the ones available on
+      launchpad… nothing too fancy, but it seems to work. During the last days Canonical updated a
+      lot of software. </para>
+    <para>I’ve decided to start updating the on my test repository to the newer versions. A couple
+      of new packages are required as dependencies (the most impressive one is utouch-evemu, which
+      is a part of Canonical’s Multitouch uTouch stack). </para>
+    <para>The number of updates is quite impressive, the number of patches (even on some new
+      updates) is equally impressive… I’ve just realized that GTK+-2.0 has been subjected of a
+      couple of fun patches and gobject-introspection is becoming mind crushing… Either way, the
+      work continues, and unfortunately for me I was planning to do a small open beta phase for
+      Factory users soon… but all this changes will require much more work and a lot of packages
+      will have dependency lists updated. </para>
+    <para>The next days free time will be spent around this massive update, I am sure it will pay
+      off. If anyone is using my test repository on my home project, expect some turbulence during
+      the next days. Since I’m on this, I’m already starting to enable GTK3 wherever I can do it in
+      a safe way, nevertheless, it’s just to speed work for the time being, as much things are
+      changing.</para>
+    <!-- ($ ld: 18.1.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink
-        url="http://www.linux.com/distrocentral/distroblogs/395853:opensuse-weekly-news-available-for-ebook-reader"
-        >Sascha Manns: openSUSE Weekly News available for EBook Reader</ulink></title>
-    <para>Some years, the openSUSE Weekly News, only was edited and published in the Wiki. </para>
-    <para>Now, after some time the team is looking forward to break new ground. The new ground are
-      new formats. editing for . Also, translations are well done. The disadvantage, however, that
-      an interested reader must surf again and again to a particular website, and these must be read
-      online. </para>
-    <para>To extend our offer, we have already started in the middle of last year to convert the
-      wikicode in HTML code, and published it in full on openSUSE's News platform news.opensuse.org.
-      This is now offered readers the opportunity to subscribe to the RSS feed, and thus any time if
-      the reader wishes it to be available. (...)</para>
-    <!-- ($ ld: 11.1.11 sm $) -->
+        url="http://www.vuntz.net/journal/post/2011/01/18/Cross-distribution-meeting-on-application-installer"
+        >Vincent Untz: Cross-distribution meeting on application installer</ulink></title>
+    <para>Back in October, at the <ulink url="http://en.opensuse.org/Portal:Conference">openSUSE
+        Conference</ulink>, many people were interested in the whole app store/market place/software
+      center topic for openSUSE: we had a session about that, and several hallway discussion. There
+      is no big surprise here, since it's a hot topic for various <ulink
+        url="http://www.apple.com/mac/app-store/">OS</ulink>
+      <ulink
+        url="http://www.neowin.net/news/microsoft-planning-039windows-store039-app-store-for-windows-8"
+        >distributors</ulink>, and not just our free distributions. Of course, being lazy people, we
+      discussed what we could re-use to minimize our work; the <ulink
+        url="https://wiki.ubuntu.com/SoftwareCenter">software center</ulink> used in Ubuntu and the
+        <ulink url="http://blogs.gnome.org/hughsie/2010/09/07/linux-and-application-installing/"
+        >app-install</ulink> work that <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>
+      did a while ago came to our minds. </para>
+    <para>And then we thought: Hrm, why do this in our corner? Everybody is doing this in a corner.
+      Let's see if we can work together! </para>
+    <para>Obvious idea, right? But on the other hand, everybody is generally all for collaboration,
+      but when it comes to do the work, it's easier to hack in a corner. So we didn't exactly know
+      what to expect: is this something that can really happen, or is this just a blue-sky dream? I
+      decided to give it a try. </para>
+    <para>In the past couple of months, I chatted with people from various distributions to organize
+      a cross-distribution meeting. I first talked to <ulink url="http://mvogt.wordpress.com/"
+        >Michael</ulink> (Ubuntu), and <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>
+      (Fedora) who were both enthusiastic about the idea. I met <ulink
+        url="http://upsilon.cc/~zack/blog/">Stefano</ulink> (Debian) at an <ulink
+        url="http://www.toulibre.org/ubuntuparty">event in Toulouse</ulink>, and we had a great chat
+      about many topics; that lead me to ask him if we could help find some Debian people interested
+      in this. I discussed with <ulink url="https://blog.misc.ephaone.org/">Michael </ulink>(Mageia)
+      to find out the relevant people in Mageia, and a few people were interested in the topic. And
+      of course, I knew the right openSUSE people ;-) So after a few weeks, it turned out there was
+      great interest from Debian, Fedora, Mageia, openSUSE and Ubuntu, with people willing to attend
+      such a meeting. I then sent out a mail to <ulink
+        url="http://lists.freedesktop.org/archives/distributions/2010-December/000408.html"
+        >distributions@fd.o</ulink>, to open this up to other distributions. </para>
+    <para>Fast-forward a bit, and here we are today: I'm flying to Nuremberg in a few hours to
+      attend this <ulink url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011"
+        >cross-distro meeting on application installer</ulink>, that will occur in the next three
+      days with a group of 14 people. The goals are to see where and how we can work together on the
+      end-user experience as well as on the application metadata that we want to provide. It might
+      all sound easy, but the fact is that with all distributions building its own packages, on its
+      own infrastructure, with different metadata and different users who could create more
+      metadata, we're currently not set to share anything, which is a shame. This meeting will help
+      us decide where we can mutualize our efforts to provide the best end-user experience possible
+      for everyone. </para>
+    <para>Three days is a short time for a topic like this, and we obviously won't do everything
+      we'd love to. But I'm optimistic about the result :-) </para>
+    <para>Thanks to Novell for hosting and sponsoring a few attendees, to Canonical and Red Hat for
+      sending people on their own budget, to Debian for helping sponsoring a last-minute attendee,
+      and also to some attendees who didn't need sponsorship at all!</para>
+    <!-- ($ ld: 18.1.11 sm $) -->
   </blockquote>
 </sect1>
