@@ -68,24 +68,24 @@
       <!-- ($ ld: 18.1.11 sm $) -->
     </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://psankar.blogspot.com/2011/01/download-all-youtube-videos-of-user.html">Sankar
-          P: Download all youtube videos of a user</ulink></title>
-      <para>Recently I got addicted to watching Nigella Lawson Cooking videos on youtube. As much as
-        I like youtube, I prefer to watch videos offline as well. One user has uploaded a lot of
-        those videos and I wanted to download all the videos by that user. </para>
-      <para>I tried a few firefox plugins, youtube-dl python script, etc. for doing this but none
-        seemed to be fit for the job. Good old Shell-script came for rescue. I saved the user's
-        youtube homepage in .html, grepped through the file for links, ran uniq and then fed them
-        all to youtube-dl and bulk-downloaded all the videos. If you want parallel downloads, you
-        can easily do that also by tweaking the script.</para>
-      <para>The commands
-        are:<screen>grep -E 'http://www.youtube.com/watch\?v=[[:alnum:]-]{11}' dump.html -o | uniq > vdos
-for i in `cat vdos`; do youtube-dl -t $i; done; rm vdos;</screen></para>
-      <para>HTH someone. </para>
-      <para>If you know of a better solution (some firefox/chrome addon, Greasmonkey, etc.) which
-        will work in Linux, please let me know.</para>
-      <!-- ($ ld: 15.1.11 sm $) -->
+      <title><ulink url="http://omgsuse.com/content/surfing-securely-opensuse">OMG! SUSE!
+          Team/rtyler: Surfing securely on openSUSE</ulink></title>
+      <para>For openSUSE users constantly on the go, the security of your network traffic at random
+        airport/coffee shop/university wireless hotspots can become a big issue. Even with WPA2 or
+        WEP encryption, your traffic can still be insecure and visible to the owner of the hotspot
+        if left unencrypted. For some sites you can try to be sure to always use their HTTPS
+        versions, but you've got to trust that the site owner has implemented their encryption
+        properly and aren't inadvertantly leaking your data to third party observers of
+        traffic.</para>
+      <para>If you're fortunate enough to have an ISP that offers VPN service, such as Sonic.net,
+        you can use a VPN (Virtual Private Network) to encrypt all of your traffic between you and
+        the end-point of the VPN.<note>
+          <para>You can also use independent VPN providers like SuperVPN, but you should be certain
+            you can trust them.</para>
+        </note></para>
+      <para>Below is a step-by-step screenshot guide for using IPSec-based VPN with NetworkManager
+        under GNOME and KDE4. (...)</para>
+      <!-- ($ ld: 20.1.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
@@ -232,6 +232,49 @@ Using default vrefresh range of 50.00-70.00 Hz</screen></para>
       <para>- <emphasis role="bold">Get the IP of the host your coming from when logged in
           remotely</emphasis><screen>$echo ${SSH_CLIENT%% *}</screen></para>
       <!-- ($ ld: 19.1.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://lizards.opensuse.org/2011/01/19/configuring-an-ipv6-dsl-connection/"
+          >Ludwig Nussel: Configuring an IPv6 DSL connection</ulink></title>
+      <para>The German company rh-tec offers free IPv6 internet connections for people that already
+        have T-DSL. Configuring such a connection on openSUSE 11.3 is not as straight forward as
+        with IPv4. It’s not hard either if you know where to put the settings though.<orderedlist>
+          <listitem>
+            <para>start the yast2 DSL module</para>
+          </listitem>
+          <listitem>
+            <para>follow the instructions of the wizard to set up a new PPPoE device. Enter your
+              user name and password at the provider screen.</para>
+          </listitem>
+          <listitem>
+            <para>At the “Connection Parameters” screen uncheck “Automatically Retrieve DNS”. Enter
+              an arbitrary IPv4 address as first DNS server (yast doesn’t accept IPv6 there yet, bug
+              665516).</para>
+          </listitem>
+          <listitem>
+            <para>finish the wizard and leave yast</para>
+          </listitem>
+          <listitem>
+            <para>open /etc/sysconfig/network/providers/provider0 (or whatever name was chosen by
+              yast) in an editor</para>
+          </listitem>
+          <listitem>
+            <para>change DNS1 and DNS2 to the actual IPv6 addresses of your provider’s name
+              servers</para>
+          </listitem>
+          <listitem>
+            <para>add the following line to the
+              file:<screen>PPPD_OPTIONS="noip +ipv6 ipv6cp-accept-local"</screen></para>
+          </listitem>
+          <listitem>
+            <para>save and quit</para>
+          </listitem>
+          <listitem>
+            <para>Done! You may now use cinternet or qinternet to dial in and enjoy the (rather
+              empty) IPv6 internet.</para>
+          </listitem>
+        </orderedlist></para>
+      <!-- ($ ld: 20.1.11 sm $) -->
     </blockquote>
   </sect2>
 </sect1>

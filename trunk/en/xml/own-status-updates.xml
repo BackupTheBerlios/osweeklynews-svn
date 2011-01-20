@@ -415,49 +415,95 @@
 
       <para>...</para>
       </sect3> -->
-    <!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/"
-            >Nelson Marques: Kick off for GNOME:Ayatana Project…</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/20/massive-update-on-ubuntu-software/"
+            >Nelson Marques: Massive update on Ubuntu software…</ulink>
         </title>
-        <para><quote>Follow effective action with quiet reflection. From the quiet reflection will
-            come even more effective action.</quote> // Peter F. Drucker</para>
-        <para>This has been one of the guidelines in my life for quite some time… It started as a
-          curiosity a long time ago with Notify OSD and evolved to full project in openSUSE. It is
-          important to acknowledge at this point the motivation provided by the openSUSE GNOME Team
-          from which I’ve been getting plenty of guidance and help, namely from Vincent Untz (vuntz)
-          and Dominique ﻿Leuenberger (Dimstar). Thanks to them, we have now a GNOME:Ayatana Project
-          on OBS (openSUSE Build Service), currently being populated with the support libraries for
-          Ayatana’s Unity and Indicators.</para>
-        <para>Susan Linton has made a small article for Linux Journal about this project in the
-          past. Though some people pointed to me that it was advertising and excelling Ubuntu… I
-          would like to leave a statement… We’re not taking a hike on Ubuntu visibility, and it
-          isn’t bad at all, on the contrary… In fact it will help Ubuntu, us and many others…
-          specially if some Ubuntu patches are accepted faster by upstream. I hope other RPM
-          distributions will follow the way we, openSUSE, proudly seem to pioneering! From my
-          personal point of view… a distribution <quote>distributes</quote>… and despite this
-          software isn’t attractive for some openSUSE users, I’m happy it is available (totally or
-          partially) for all those who want to test it… Wait… you don’t even need to install Ubuntu
-          or changing the platform you run!</para>
-        <para>Due to several reasons, being the most important of them versioning, this repository
-          will start on the next release of openSUSE in March 16th (World day of Conscience,
-          interesting point). This is also interesting as if YOU are willing to improve a package or
-          submit a package you can now do it to this repository.</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="65%" align="center"
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2010/12/Screenshot-nmarques@magtheridon...ketherielayatana.png"
-            />
+            <imagedata width="45%" align="center"
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot1.png"/>
           </imageobject>
         </mediaobject>
-        <para>This goes with a very huge cookie for Dimstar and Vuntz for taking care of this
-          repository and making sure that everything will comply with the openSUSE Guidelines. You
-          are my personal heroes. (...)</para>
+        <para>Screenshot using Radiance Light Theme and default Ubuntu indicator layout. </para>
+        <para>Some brief updates about the ongoing work towards bringing Ayatana Project software
+          into openSUSE:<orderedlist>
+            <listitem>
+              <para><emphasis role="bold">Software Updates</emphasis></para>
+              <para>Canonical recently released a batch of updates which bring new functionality
+                (Indicators seem to respond faster now) and very nice improvements, some of them
+                contributed by down-streamers. From my humble experience I would risk to claim that
+                Canonical is doing an excellent job as an upstreamer. I’ve updated all packages to
+                the latest versions. This allowed to remove some patches.</para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">Unity</emphasis></para>
+              <para>Unity is now one step closer. For Unity I’ve started to package Compiz git
+                snapshots from the correct branches pointed by Unity documentation. This brought
+                something new to me, cmake. I’ve done this very slowly, reading some docs meanwhile
+                about cmake. My packaging around Compiz is mainly based on OBS X11:Compiz
+                repository, so pretty much all the credits should be for the original project
+                Packagers which done an awesome job. Currently I’m missing only 3 packages to test
+                Unity. Recently with kernel and mesa updates some issues around ATI hardware seem to
+                have fixed for openSUSE Factory users, which enabled in my case FireGL, therefore I
+                can test properly Unity now and check for the integration into openSUSE. </para>
+              <para>Unity by default uses the Ayatana’s Indicators, and if they are not present, it
+                will fallback to GNOME’s applets. This is very nice and I’m thankful Canonical made
+                it this way. This brings non-Ubuntu users the Unity experience at almost no trouble,
+                since there isn’t actually much patching required to implement Unity.</para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">GNOME:Ayatana Repository</emphasis></para>
+              <para>GNOME:Ayatana Repository will be populated during the next two weeks with the
+                latest changes and will provide for the time being the Ayatana’s Indicators and
+                Unity. I am currently working around libappindicator stack and it’s Indicators.
+                Currently I’m testing the patches required on the GTK+ stack and this is pretty much
+                the last barrier before going into #STAGE2, polishing and populating GNOME:Ayatana. </para>
+              <para>It’s not decided yet what packages are going to present on Factory. My wish is
+                to push only Unity into Factory and it’s dependencies, this might not happen for
+                11.4 as I’m not sure about the freeze schedules and it might be too late already,
+                but since we’re depending on Compiz upstream, we’ll see what happens. Even if Unity
+                isn’t going to be available on Factory, I’m sure we can use KIWI or SUSE Studio to
+                release a small openSUSE Unity Spin. </para>
+              <para>I’ve also decided that I (typo: previously would) <emphasis role="bold"
+                  >wouldn’t</emphasis> like to see Unity available by openSUSE before the official
+                release from Ubuntu, for which I wish all the success. </para>
+              <para>Since the very early start that I’ve been using pkg-config as much as I can.
+                According to some information that I collected previously, this would be great for
+                cross-distribution build. Depending on the time and work done, I might make the
+                necessary modifications and enable cross-distribution building on this project,
+                thus, making it available for other RPM distributions supported by OBS. This will
+                require a bit of testing before, so it will be work to be done after 11.4 is
+                released and during it’s lifecycle. Maybe by the time of openSUSE 12 gets released,
+                we will have this project also available for other RPM based distributions. I have
+                no knowledge on Debian packaging, but Ubuntu ships this software and Debian probably
+                has it also available so… that won’t be a problem.</para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">Artwork</emphasis></para>
+              <para>I am providing on GNOME:Ayatana Ubuntu’s Light Themes (Ambiance and Radiance)
+                and offering a patched version of Metacity that renders those themes perfectly. I’m
+                not changing the original colors from the themes or modifying them in any way. So
+                they might be a bit more of orange and not green. </para>
+              <para>I’ve contacted some people to ask if they would be willing to donate some
+                artwork to make a small package with Wallpapers, some have answered yes, so I will
+                make a small package with a couple of wallpapers for the traditional resolutions and
+                distribute it alongside with this software as optional as always.</para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">GTK2, GTK3 and QT</emphasis></para>
+              <para>Implementation of GTK3 will be done within the next days, as I am also
+                considering enabling QT support for KDE users (Indicators only for now). </para>
+              <para>That’s pretty much the result of the last days of work… more news to come in the
+                nearby future.</para>
+            </listitem>
+          </orderedlist></para>
+        <!-- ($ ld: 20.1.11 sm $) -->
       </blockquote>
-      </sect3> -->
+    </sect3>
     <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
