@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Wonder-patch-merged-improved-AMD-and-Intel-graphic-support-1166430.html"
+        >Rares Aioanei: Kernel Weekly News – 22.01.2011</ulink>
+    </title>
+    <para>Hello world, and welcome to the first edition of KWN for 2011! Long talk is no fun, so
+      let’s jump into it! </para>
+    <para>We start this week’s news with Dan Williams, who has a pull requests for .38 regarding the
+      async_tx tree
+      :<screen>Hi Linus, please pull from:
+
+git://git.kernel.org/pub/scm/linux/kernel/git/djbw/async_tx.git next
+
+...to receive:
+
+1/ An overhaul of the amba-pl08x driver by Russell who caught a lot of
+issues in this experimental driver that really should have been caught
+before the initial merge.
+
+2/ A collection of small updates and fixes across fsldma, dma40,
+intel-mid, and iop-adma.
+
+All but the last two amba-pl08x patches have appeared in a -next
+release.
+
+Thanks,
+Dan </screen></para>
+    <para>-Dave Airlie has some drm fixes, fixes that are described as follows
+      :<screen>Hi everyone,
+
+The for-linus branch of the btrfs-unstable git tree:
+
+git://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-unstable.git for-linus
+
+Has our collection of features and fixes for 2.6.38-rc1.  The git tree
+is actually against 2.6.36 and these commits have been tested against
+.36, .37 and Linus' current git.  There's no particular reason for the
+.36 part, other than it's what one of my build boxes was running.
+
+The highlights this time around are LZO compression from Li Zefan and a
+large collection of multi-device fixes from Miao Xie.  Liubo kicked in
+the start of our forced-readonly support, which will be the building
+block for ripping out a big collection of BUG_ONs and replacing them
+with kinder gentler error messages.
+
+Li Zefan also added readonly snapshot support, and I'll have the
+corresponding btrfs-progs changes integrated this week.
+
+This pull does have a duplicate for the btrfs ctree.c build fix that
+Linus already has in his tree.  Git merge seems to do magic on this one,
+it applies without doing a duplicate #include.</screen></para>
+    <para>, also we have a infiniband-related request from Roland Dreier and , last but not least,
+      it’s Al Viro again with autofs cleanups and fixes.</para>
+    <para>- Still in the updates/pull requests zone, here’s a list :<itemizedlist>
+        <listitem>
+          <para>Kukjin Kim – linux-samsung tree</para>
+        </listitem>
+        <listitem>
+          <para>Arnaldo Carvalho de Melo – perf/urgent</para>
+        </listitem>
+        <listitem>
+          <para>Greg Ungerer – m68knommu</para>
+        </listitem>
+        <listitem>
+          <para>Michal Simek – arch/microblaze fixes for 2.6.38</para>
+        </listitem>
+        <listitem>
+          <para>James Bottomley – PARISC fixes for 2.6.38-rc1</para>
+        </listitem>
+        <listitem>
+          <para>John W. Linville – fixes for the wireless tree, aimed @ .38</para>
+        </listitem>
+        <listitem>
+          <para>Guenter Roeck – hwmon changes for 2.6.38 and</para>
+        </listitem>
+        <listitem>
+          <para>ACPICA patches by Len Brown for 2.6.38-merge . (...)</para>
+        </listitem>
+      </itemizedlist></para>   
+    <!-- ($ ld: 21.1.11 sm $) -->
+  </blockquote>
+</sect1>

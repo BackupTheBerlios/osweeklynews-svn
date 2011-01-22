@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="forums">
+  <title>openSUSE Forums</title>
+  <blockquote>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/452530-invalid-partition-table-parted-magic-5-8-grub.html">
+	Invalid partition table - Parted Magic 5.8 - GRUB
+	</ulink></title>
+    <para>
+      Without a proper functioning bootloader there's no running operating system. Sometimes the bootloader gets damaged, misconfigured, or the install of another distro disables openSUSE's GRUB as the system's bootloader. Many times Parted Magic, a free LiveCD utility, is suggested to repair GRUB issues, also in this thread. But it's not as simple as booting from the Parted CD and fixing it........
+      </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/452802-how-revert-suse-11-3-kde-freshly-installed-state.html">
+      How to revert openSUSE 11.3 KDE to freshly installed state
+      </ulink></title>
+    <para>
+      These days, most distros give lots of options to users to keep their systems up to date, or up to "bleeding edge". Now what, if you want your system to go back to the state right after the install was done, i.e. bring all packages back to the distro's version? This thread shows quite some different replies on how to get this done.
+      </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/452844-boot-init-5-without-gui.html">
+      Boot with "init 5" without GUI
+      </ulink></title>
+    <para>
+      Many of us have a third party driver packages installed for optimal use of our video cards. These drivers create kernel modules (the driver) and some symbolic link(s) for Xorg, the display server. Here's a member that decided to upgrade to kernel- and Xorg-versions from other than default repos.
+      </para>
+  </blockquote>
+  <blockquote>
+    <title>This week's subforum: <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/">
+      Applications
+      </ulink></title>
+    <para>
+      In <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/">Applications</ulink> we have a subforum dedicated to individual applications. This varies from questions about importing music folders in Amarok to installing third party, even commercial, software on openSUSE. Some threads in fact contain little howto's by users who let us know about their succesful attempts to get software working.
+      </para>
+    <!-- ($ ld: 19.1.11 gl $) -->
+  </blockquote>
+</sect1>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title>
+      <ulink url="http://vizzzion.org/blog/2011/01/open-slx-end-user-platform-announced/">Sebastian
+        Kügler: open-slx end-user platform announced</ulink>
+    </title>
+    <para>A couple of months ago at open-slx, when we (like so many times before and after) talked
+      about how we can make the lives of Linux users easier, an idea was sparked. While there’s huge
+      amounts of content out there, it struck us that there’s still a large number of people not
+      being too well served when searching Google to get answers to your questions. This poses some
+      problems though: First of all, most of the information is not in English. This poses an extra
+      barrier for some, who might not be as fluent in English as we developers usually are. Then,
+      the content is hard to verify: How do I *know* that the information given there makes sense?
+      Maybe it will just delete all my erotic movies? ;) So the problem is that there’s little
+      content for the German end-user audience, which is hard to verify. So a team consisting of
+      openSUSE community members and open-slx employees led by my colleague Rupert Horstkötter has
+      set out to fix this problem. They looked into existing solutions to these problem, and found
+      that what is currently running as ubuntuusers.de comes closest to the solution we have in
+      mind. We got in contact with the team at ubuntuusers.de, and they were enthusiastic about the
+      idea and willing to make it happen. A good start. </para>
+    <para>Then comes the real work of course. We’ve worked out a concept that allows us to provide a
+      modern support tool for our users, which builds on two pillars: information and interaction.
+      The concept we come up with puts this into three different tools: a wiki as knowledgebase, a
+      forum to discuss articles, questions and to get in contact with other people, and a blog
+      aggregation (Planet) which collects news about developments in openSUSE and howtos for
+      specific topics. In order to accomplish this gargantuan task, we’ve asked for help in the
+      openSUSE community. People were immediately enthusiastic about the idea, and started chipping
+      in, helping to review and improve lots of articles. </para>
+    <para>Over the past few months, we have reviewed about 2000 articles from the existing
+      ubuntuusers.de <ulink url="http://wiki.open-slx.de">knowledgebase</ulink>, prioritizing 500 of
+      them, and adapted the articles to modern standards and that they apply to openSUSE. These 500
+      articles form the foundation for the knowledgebase we created for the open-slx community
+      platform. We’ve also set up a <ulink url="http://community.open-slx.de">webforum</ulink> users
+      can use to communicate and ask further questions, and we’ve put up a <ulink
+        url="http://planet.open-slx.de">blog aggregator</ulink>. </para>
+    <para>So, if you’re a German-speaking user (or future user :)) of openSUSE, hop over to
+      community.open-slx.de and see for yourself whether this new platform fits your needs (and if
+      it doesn’t, let us know what we can improve). You can find the official announcement <ulink
+        url="http://news.open-slx.de/2011/01/17/herzlich-willkommen-bei-community-open-slx-de/"
+        >here</ulink>.</para>
+    <para>(...)</para>
+    <!-- ($ ld: 18.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/01/17/a-brief-update/">Nelson Marques: A
+        brief update…</ulink></title>
+    <para>In the last days I’ve been leaving my full attention to Compiz and the famous glib main
+      loop. I’ve made a small perl script to compare my local builds with the ones available on
+      launchpad… nothing too fancy, but it seems to work. During the last days Canonical updated a
+      lot of software. </para>
+    <para>I’ve decided to start updating the on my test repository to the newer versions. A couple
+      of new packages are required as dependencies (the most impressive one is utouch-evemu, which
+      is a part of Canonical’s Multitouch uTouch stack). </para>
+    <para>The number of updates is quite impressive, the number of patches (even on some new
+      updates) is equally impressive… I’ve just realized that GTK+-2.0 has been subjected of a
+      couple of fun patches and gobject-introspection is becoming mind crushing… Either way, the
+      work continues, and unfortunately for me I was planning to do a small open beta phase for
+      Factory users soon… but all this changes will require much more work and a lot of packages
+      will have dependency lists updated. </para>
+    <para>The next days free time will be spent around this massive update, I am sure it will pay
+      off. If anyone is using my test repository on my home project, expect some turbulence during
+      the next days. Since I’m on this, I’m already starting to enable GTK3 wherever I can do it in
+      a safe way, nevertheless, it’s just to speed work for the time being, as much things are
+      changing.</para>
+    <!-- ($ ld: 18.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://www.vuntz.net/journal/post/2011/01/18/Cross-distribution-meeting-on-application-installer"
+        >Vincent Untz: Cross-distribution meeting on application installer</ulink></title>
+    <para>Back in October, at the <ulink url="http://en.opensuse.org/Portal:Conference">openSUSE
+        Conference</ulink>, many people were interested in the whole app store/market place/software
+      center topic for openSUSE: we had a session about that, and several hallway discussion. There
+      is no big surprise here, since it's a hot topic for various <ulink
+        url="http://www.apple.com/mac/app-store/">OS</ulink>
+      <ulink
+        url="http://www.neowin.net/news/microsoft-planning-039windows-store039-app-store-for-windows-8"
+        >distributors</ulink>, and not just our free distributions. Of course, being lazy people, we
+      discussed what we could re-use to minimize our work; the <ulink
+        url="https://wiki.ubuntu.com/SoftwareCenter">software center</ulink> used in Ubuntu and the
+        <ulink url="http://blogs.gnome.org/hughsie/2010/09/07/linux-and-application-installing/"
+        >app-install</ulink> work that <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>
+      did a while ago came to our minds. </para>
+    <para>And then we thought: Hrm, why do this in our corner? Everybody is doing this in a corner.
+      Let's see if we can work together! </para>
+    <para>Obvious idea, right? But on the other hand, everybody is generally all for collaboration,
+      but when it comes to do the work, it's easier to hack in a corner. So we didn't exactly know
+      what to expect: is this something that can really happen, or is this just a blue-sky dream? I
+      decided to give it a try. </para>
+    <para>In the past couple of months, I chatted with people from various distributions to organize
+      a cross-distribution meeting. I first talked to <ulink url="http://mvogt.wordpress.com/"
+        >Michael</ulink> (Ubuntu), and <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>
+      (Fedora) who were both enthusiastic about the idea. I met <ulink
+        url="http://upsilon.cc/~zack/blog/">Stefano</ulink> (Debian) at an <ulink
+        url="http://www.toulibre.org/ubuntuparty">event in Toulouse</ulink>, and we had a great chat
+      about many topics; that lead me to ask him if we could help find some Debian people interested
+      in this. I discussed with <ulink url="https://blog.misc.ephaone.org/">Michael </ulink>(Mageia)
+      to find out the relevant people in Mageia, and a few people were interested in the topic. And
+      of course, I knew the right openSUSE people ;-) So after a few weeks, it turned out there was
+      great interest from Debian, Fedora, Mageia, openSUSE and Ubuntu, with people willing to attend
+      such a meeting. I then sent out a mail to <ulink
+        url="http://lists.freedesktop.org/archives/distributions/2010-December/000408.html"
+        >distributions@fd.o</ulink>, to open this up to other distributions. </para>
+    <para>Fast-forward a bit, and here we are today: I'm flying to Nuremberg in a few hours to
+      attend this <ulink url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011"
+        >cross-distro meeting on application installer</ulink>, that will occur in the next three
+      days with a group of 14 people. The goals are to see where and how we can work together on the
+      end-user experience as well as on the application metadata that we want to provide. It might
+      all sound easy, but the fact is that with all distributions building its own packages, on its
+      own infrastructure, with different metadata and different users who could create more
+      metadata, we're currently not set to share anything, which is a shame. This meeting will help
+      us decide where we can mutualize our efforts to provide the best end-user experience possible
+      for everyone. </para>
+    <para>Three days is a short time for a topic like this, and we obviously won't do everything
+      we'd love to. But I'm optimistic about the result :-) </para>
+    <para>Thanks to Novell for hosting and sponsoring a few attendees, to Canonical and Red Hat for
+      sending people on their own budget, to Debian for helping sponsoring a last-minute attendee,
+      and also to some attendees who didn't need sponsorship at all!</para>
+    <!-- ($ ld: 18.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/01/meetings-stuff.html">Jos Poortvliet:
+        Meetings</ulink></title>
+    <para>I just heard from Vincent that the <ulink
+        url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011">Cross-distro app
+        installer</ulink> meeting organized by openSUSE is in full swing. </para>
+    <para><emphasis role="bold">Cross distribution Appstore Sprint </emphasis></para>
+    <para>As Vincent wrote <ulink
+        url="http://www.vuntz.net/journal/post/2011/01/18/Cross-distribution-meeting-on-application-installer"
+        >in his blog</ulink>, the idea came up at the openSUSE conference. We should work on getting
+      distributions on the same page when it comes to a Linux Appstore technology. Appstore API's
+      have been in development for ages on linux so we have a strong base. The as the <ulink
+        url="http://freedesktop.org/wiki/Specifications/open-collaboration-services">Open
+        Collaboration Services</ulink> we currently have on freedesktop.org are inspired by the
+      GetHotNewStuff technology which was developed by Josef Spillner many years ago - KDE and GNOME
+      have used this to deliver wallpapers and scripts to their users. After GHNS, two possible
+      successors were developed - OCS, started by Frank Karlitschek, seems the de-facto standard
+      now. It was adopted by Maemo and now by MeeGo for their appstore, openoffice.org supports it
+      and of course the family of <ulink url="http://opendesktop.org">opendesktop.org</ulink> series
+      of sites including the popular gtk-apps.org, qt-apps.org, GNOME- and KDE-look.org are all
+      accessible from this API. </para>
+    <para>At the <ulink url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011"
+        >cross-distro appinstaller meeting</ulink> which started this morning people from several
+      distributions including Red Hat, Mandriva and Debian are discussing together how Linux should
+      tackle this. Can we agree on a common technology shared between distributions and Desktops?
+      Hopefully we can bring together the work on <ulink
+        url="http://blogs.gnome.org/hughsie/2010/09/07/linux-and-application-installing/">app
+        install</ulink> by <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>, the <ulink
+        url="https://wiki.ubuntu.com/SoftwareCenter">Software Center</ulink> tech from Ubuntu and
+      FD.o's <ulink url="http://freedesktop.org/wiki/Specifications/open-collaboration-services"
+        >Open Collaboration Services</ulink> in a way that benefits all. </para>
+    <para>I had a quick phone call with Frank who told me the meeting is very constructive and he
+      hopes that the major distributions can agree on some kind of standard by the end of this week.
+      That would be pretty awesome! The appstore sprint aims to bring people on the same page and
+      will be followed by a Bretzn sprint for openSUSE. </para>
+    <para><emphasis role="bold">Bretzn Sprint </emphasis></para>
+    <para>At the Bretzn sprint (also sponsored by openSUSE) the goal is to get something done: work
+      on appstore integration in openSUSE, as well as smoothen the process of building and
+      distributing an application for developers. Bretzn, <ulink
+        url="http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/"
+        >first announced at the openSUSE conference in October</ulink>, is almost ready for its
+      first release. At the sprint, Pavol Rusnak, who developed a web based openSUSE Games store,
+      will also be present - I hope he can make sure we also have a web-accessible store for
+      openSUSE! </para>
+    <para>While it is unsure if the work on Bretzn and the openSUSE appstore will make it into
+      openSUSE 11.4, it is clear that openSUSE is pushing innovation and standardization in the
+      Linux market. Not going all alone, but thinking and caring about the larger ecosystem - I
+      think that is what separates a real community effort from a company pushing a corporate
+      agenda. Bringing the right people with the right skills and the right ideas together is what
+      these sprints are all about - I'm happy to have helped make it possible. And less happy that I
+      couldn't be there myself, there is little in the world of Free Software that gives me more
+      energy than being at a developer sprint! </para>
+    <para>I'd like to thank Frank and Vincent for organizing, as well as all the attendees for
+      attending and I look forward to their blogs and <ulink url="http://news.opensuse.org"
+        >news.o.o</ulink> article ;-) </para>
+    <para>Good luck and Rock the Boat!</para>
+    <!-- ($ ld: 18.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.hennevogel.de/why-we-are-here/">Henne Vogelsang: Why we are
+        here.</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://blog.hennevogel.de/files/2011/01/12694840_204ab9cba6_o.jpg"
+          width="25%" align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>I’m chewing on something for a couple of weeks now and I think I need to tell you before
+      my jaw turns into dust. It’s about the <ulink url="http://www.opensuse.org">openSUSE
+        Project</ulink> and what’s happening with it. I’m heavily involved in the project. Since
+      over 10 years I get paid by my employer to work in that project and I spend a lot of my spare
+      time on it. It’s a huge part of my life, both personal and professional and I love it! I love
+      the people, I love how the project is set up and I love all the cool results we produce
+      together. But since a couple of weeks, I couldn’t really pin down if there was a single cause,
+      what it was or when, I was in misery about it. It’s only yesterday that while talking to a
+      fellow <ulink url="http://en.opensuse.org/openSUSE:Board">openSUSE Board</ulink> member that I
+      realized what really causes my grief. All of the sudden this project went from “<emphasis
+        role="bold">Hey dude, let’s do cool things together</emphasis>” to “<emphasis role="bold">I
+        have this and that opinion and I’m going to stick it to you!</emphasis>”. The whole project
+      went from collaboration to politics in a blink. Now I’m sure all of you tin foil hat wearing
+      people out there will start to spin this as result of some single event, whatever fits your
+      agenda best, but I assure you it’s not. Sometime in the last couple of weeks this tipped over
+      and we started to have discussions about all aspects of the theory of politics, we argue about
+      human rights or quotes from Mahatma Gandhi, people put up motions for the powers that be, the
+      structure and people are questioned to the last extent, alliances are forged, opportunities
+      are seized to get even and a lot of distrust is spreading around. </para>
+    <para>And there are two answers so far I have heard. One is that people say that this is normal.
+      Because we as open source project always ask for equal rights, democracy and all these other
+      crazy liberal ideas and that now <emphasis role="bold">we reap what we sow:
+        politics</emphasis>. So however you are involved in this, like me for instance that stood up
+      and took responsibility for nasty things nobody else wants to do, you have asked for this and
+      now got what was coming to you. <emphasis role="bold">Don’t be a crybaby now, bitch!
+      </emphasis></para>
+    <para>The other answer I see to this from the members of our project is to be passive. <emphasis
+        role="bold">YAWN politics</emphasis>… I want to code, draw, write, fix, test. Politics are
+      not of my interest and I don’t want to get involved. You idiots can fight this out, I just
+      work on my stuff while you’re doing that. So however you are involved in this, like me for
+      instance that stood up and took responsibility for nasty things nobody else wants to do, you
+      have asked for this and now got what was coming to you. <emphasis role="bold">Don’t look at
+        me, not interested!</emphasis>
+    </para>
+    <para>Both are equally destructive and neglect the reason all of us are here. We are here for
+      one thing: <emphasis role="bold">FUN</emphasis>! Yes, remember please why you have came to the
+      openSUSE Project. Because it’s fun to use the software for any purpose you want. Because it’s
+      great to study how the software works, and change it to make it do what you wish. Because it’s
+      cool to redistribute copies so you can help your neighbor. Because it’s a great feeling to
+      give the whole community a chance to benefit from your work. You know what’s wrong with us? We
+      have forgot to Have a lot of fun! </para>
+    <para>Can all of you who love openSUSE please go to a console, open an xterm, gnome-terminal or
+      a konsole, do a <emphasis role="italic">cat /etc/motd</emphasis> and think about the output
+      for a while? </para>
+    <para>Then pull yourself together and stop doing what is robbing ALL OF US of the reason we are
+      here! If you want to push through your agenda, don’t! If you want to stick it to the man,
+      don’t! If you want to insist on all of your given rights, don’t! If you want to be pigheaded,
+      don’t. If you want to be serious, don’t! </para>
+    <para><emphasis role="bold">Instead, remember to Have a lot of fun!</emphasis></para>
+    <!-- ($ ld: 20.1.11 sm $) -->
+  </blockquote>
+</sect1>
