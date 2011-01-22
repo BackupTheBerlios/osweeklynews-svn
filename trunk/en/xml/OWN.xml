@@ -20,9 +20,10 @@
 <article class="journalarticle">
   <title>openSUSE Weekly News</title>
   <articleinfo>
-<!-- Maybe date and/or pubdate might be useful: -->    <date>2011-1-16</date>
-<!-- When it's published, date automatically inserted: -->    <pubdate>
-<?dbtimestamp format="Y-m-d" ?>    </pubdate>
+<!-- Maybe date and/or pubdate might be useful: -->    
+    <date>2011-1-16</date>
+<!-- When it's published, date automatically inserted: -->    
+    <pubdate><?dbtimestamp format="Y-m-d" ?></pubdate>
 <!-- When it's published -->    <edition>&edition;</edition>
     <authorgroup>
       <author>
@@ -90,7 +91,8 @@
     </para>
   </abstract>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-announcements.xml"/>
-<!-- <xi:include href="own-belection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> -->  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/>
+<!-- <xi:include href="own-belection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> -->  
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-status-updates.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-community.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/>
