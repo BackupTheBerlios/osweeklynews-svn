@@ -303,7 +303,8 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->  <sect3 role="buildserviceteam">
+      </sect3> -->  
+  <sect2 role="buildserviceteam">
     <title>Build Service Team</title>
     <para/>
 <!--
@@ -356,11 +357,12 @@
             <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_Factory/">openSUSE Factory</ulink></para>
           </listitem>
         </itemizedlist>     
-     </blockquote> -->    <formalpara>
+        </blockquote> -->
+    <formalpara>
       <title>Build Service Statistics</title>
       <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
     </formalpara>
-  </sect3>
+  </sect2>
 <!--
     <sect3 role="education">
       <title>Education Team</title>
@@ -372,7 +374,7 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->  <sect3 role="gnometeam">
+      </sect3> -->  <sect2 role="gnometeam">
     <title>GNOME Team</title>
     <blockquote>
       <title>
@@ -456,7 +458,7 @@
           </listitem>
         </orderedlist></para>
 <!-- ($ ld: 20.1.11 sm $) -->    </blockquote>
-  </sect3>
+  </sect2>
 <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
@@ -535,9 +537,9 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->  <sect3 role="openfateteam">
+      </sect3> -->  <sect2 role="openfateteam">
     <title>openFATE Team</title>
-    <sect4>
+    <sect3>
       <title>Top voted Features</title>
       <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
       <blockquote>
@@ -607,8 +609,8 @@
         <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change etc. is very scary for many users.</para>
         <para>The dialog asks the user to select one of usually three offered solutions for each problem without giving much help. This is a cause for many complaints, and contributes to myths of RPM dependency hell still existing today. (...)&quot;</para>
       </blockquote>
-<!-- ($ ld: 22.1.11 sat *updated* $) -->    </sect4>
-    <sect4>
+<!-- ($ ld: 22.1.11 sat *updated* $) -->    </sect3>
+    <sect3>
       <title>Recently requested features</title>
       <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
       <blockquote>
@@ -668,12 +670,12 @@
         </title>
         <para>Most famous Linux distributions are compile Mesa and x-server with --enable-glx-tls.</para>
       </blockquote>
-<!-- ($ ld: 22.1.11 sat *replaced with newer ones* $) -->    </sect4>
-    <sect4>
+<!-- ($ ld: 22.1.11 sat *replaced with newer ones* $) -->    </sect3>
+    <sect3>
       <title>Feature Statistics</title>
       <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
-    </sect4>
-  </sect3>
+    </sect3>
+  </sect2>
 <!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
@@ -699,7 +701,7 @@
           testing before 11.4 is released. That is good timing.</para>
         <para>Wishing everyone a happy and prosperous new year.</para>
       </blockquote>
-    </sect3> -->  <sect3 role="translationteam">
+    </sect3> -->  <sect2 role="translationteam">
     <title>Translation Team</title>
     <itemizedlist>
       <listitem>
@@ -710,7 +712,7 @@
             – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
       </listitem>
     </itemizedlist>
-  </sect3>
+  </sect2>
 <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
@@ -722,4 +724,6 @@
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> --></sect1>
+      </sect3> -->
+
+</sect1>
