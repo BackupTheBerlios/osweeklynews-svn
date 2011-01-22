@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -60,8 +59,9 @@
       <para>Last but not least the openSUSE Weekly News team with the translations into hungarian,
         greek and japanese wishes merry cristmas to all people across the world.</para>
       </blockquote>
-  </sect2> -->
-  <sect2 role="distribution">
+    </sect2> -->
+    <!--
+    <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
       <title>
@@ -95,7 +95,7 @@
             FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-  </sect2>
+  </sect2> -->
   <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
@@ -144,6 +144,7 @@
         appliances!</para>
 </blockquote>
 </sect2> -->
+  <!--
   <sect2>
     <title>Team Report</title>
     <sect3 role="artteam">
@@ -155,46 +156,9 @@
         </title>
         <para>I’ve received some emails and some positive feedback about one wallpaper I used for a
           couple of screenshot’s I’ve used in the past, including also information requests about
-          where that very same wallpaper could be found. I’m happy people liked my choice. </para>
-        <para>The wallpaper is question is the following, which can be found at <ulink
-            url="http://gnome-look.org">gnome-look [dot] org</ulink>: Green Snake HD - by Kmurat @
-          gnome-art.org</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="25%" fileref="http://gnome-look.org/CONTENT/content-pre1/70282-1.jpg"
-            />
-          </imageobject>
-        </mediaobject>
-        <para>It is clear to me at this stage that Artwork has good demand and it’s a ‘value +’
-          recognized by many users. Understanding this, I’ve decided two things: <orderedlist>
-            <listitem>
-              <para>GNOME:Ayatana will have a small Artwork Package by the Community, I’m currently
-                contacting Kmurat to check if he can change the licence on this artwork piece (with
-                over 20.000 downloads on gnome-art) so I can use it for distribution. Currently it’s
-                licensed as CC BY-NC-ND, in which the NC can be probably a problem. Let’s wait a
-                couple of days and see… Either way for those who asked for the source of this
-                wallpaper, click on the image above.</para>
-            </listitem>
-            <listitem>
-              <para>I will create a small package with wallpapers from the community and make it
-                available (for GNOME, KDE, etc) users.</para>
-            </listitem>
-          </orderedlist>My intentions are to include a set of wallpapers (4/3, 16/9 and 16/10) of
-          around 5/7 wallpapers from several artists and community contributors. The first person
-          I’ve contacted regarding this was Javier Llorente, a openSUSE Artwork Team and KDE
-          contributor, which donated and pointed some artwork. I’ve also sent a small email to
-            <ulink url="http://tatica.org">María ‘Tatica’ Leandro</ulink>, a contributor of Fedora
-          Design Team from South America asking if she had something that she could share with us
-          for this community package (I did loved some of her submissions into Fedora Art).
-          Additionally, I’m also going to nag <ulink url="http://karl-tux-stadt.de">Sirko Kemter
-            (gnokii)</ulink> for a contribution… </para>
-        <para>Once this is assembled (already have 5 wallpapers) I’m going to package it, run a
-          sanity check and prepare it for distribution… </para>
-        <para><emphasis role="bold">UPDATE</emphasis>: María ‘Tatica’ Leandro has answered positive
-          to my email requesting for a donation, Sirko Kemter also answered positive.</para>
-        <!-- ($ ld: 14.1.11 sm $) -->
+          where that very same wallpaper could be found. I’m happy people liked my choice. </para>                
       </blockquote>
-    </sect3>
+    </sect3> -->
     <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
@@ -346,6 +310,7 @@
       </sect3> -->
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
+      <para></para>
       <!--
       <blockquote>
         <title>

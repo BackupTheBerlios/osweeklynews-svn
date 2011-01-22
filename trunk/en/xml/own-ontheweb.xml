@@ -20,6 +20,7 @@
 <sect1 role="ontheweb">
   <title>On the Web</title>
   <!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->
+  <!--
   <sect2>
     <title>Announcements</title>
     <blockquote>
@@ -33,9 +34,8 @@
           url="http://blog.webmproject.org/2010/05/introducing-webm-open-web-media-project.html"
           >launched</ulink> last year to bring an open, world-class video codec to the web. Since
         the launch, we’ve seen first-hand the benefits of an open development model: (...)</para>
-      <!--($ ld: 15.1.11 sat $) -->
     </blockquote>
-  </sect2>
+  </sect2> -->
   <!--
   <sect2>
     <title>Call for participation</title>
@@ -217,8 +217,7 @@
         Payne, openSUSE Ambassador; Nelson Marques, contributor; Kostas Koudaras, openSUSE
         Ambassador; Peter Linnell, programmer and founder of Scribus; and Sebastian Kügler, KDE e.V.
         Board member and openSUSE enthusists. The election results for the two available seats
-        should be announced on January 26, 2011. <emphasis role="bold">License</emphasis>: <link
-          linkend="excopyright">5</link></para>
+        should be announced on January 26, 2011.</para>
       <!-- ($ ld: 19.1.11 sm $) -->
     </blockquote>
   </sect2>
@@ -226,49 +225,36 @@
     <title>Reviews and Essays</title>
     <blockquote>
       <title>
-        <ulink url="http://www.youtube.com/watch?v=6tw2JOuct7k">Youtube-- "Be Free with KDE"
-          advertisement</ulink>
+        <ulink url="http://www.youtube.com/watch?v=6tw2JOuct7k">Linux User ;amp Developer/Jos
+          Poortvliet:The openSUSE column #96 with Jos Poortvliet</ulink>
       </title>
-      <para>Youtube: <quote>Created as part of the Google Code In program</quote></para>
-      <!-- ($ ld: 10.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://infoworld.com/t/linux/linux-iq-test-round-2-657">InfoWorld's Linux IQ
-          test: Round 2</ulink>
-      </title>
-      <para>So you live and breathe Linux, eh? You've aced <ulink
-          url="http://www.infoworld.com/t/linux/linux-admin-iq-test-066">Linux IQ Test: Round
-          1</ulink> and our <ulink
-          url="http://www.infoworld.com/d/open-source/open-source-iq-test-766">Open Source IQ
-          Test</ulink> to boot. The free OS runs on your phone, your netbook, your desktop, and even
-        your alarm clock. You named your dog Linus and you have Tux wallpaper. You take such great
-        pride in your uptimes that you brag about them at the lunch table. Andrew Morton signed your
-        underwear. You're in the game. But how much do you really know about the most pervasive open
-        source project on the planet? Take Round 2 of our Linux IQ test and find out. <emphasis
-          role="bold">License</emphasis>: <link linkend="excopyright">6</link></para>
-      <!-- ($ ld: 11.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink
-          url="http://www.eweekeurope.co.uk/interview/novell-community-wants-opensuse-foundation-17980"
-          > EweekEurope/Tom Jowitt: Novell: Community Wants OpenSUSE Foundation </ulink>
-      </title>
-      <para>Open source commentators were suspicious when news emerged that <ulink
-          url="http://www.eweekeurope.co.uk/news/concerns-raised-over-opensuse-spin-off-17723"
-          >openSUSE will move to an independent foundation</ulink>, during the acquisition of
-        Novell, which currently supports openSUSE development. </para>
-      <para>But the move is in line with the wishes of the openSUSE community, will be properly
-        funded, and does not represent any fading of Novell’s interest in the Linux version – or any
-        lack of involvement by <ulink
-          url="http://www.eweekeurope.co.uk/news/microsoft-gets-novell-ip-in-2-65-billion-carve-up-13995"
-          >Novell’s prospective owner, Attachmate</ulink>. </para>
-      <para>That is the view of Jos Poortvliet, Jos Poortvliet, openSUSE Community Manager at
-        Novell, who contacted us to give some background to the move, which he says dates back well
-        before the Attachmate deal was announced. (...) <emphasis role="bold">License</emphasis>:
-          <link linkend="excopyright">2</link></para>
-      <!-- ($ ld: 13.1.11 sm $) -->
+      <para><emphasis role="bold">openSUSE community manager, Jos Poortvliet, talks about the latest
+          in openSUSE projects and developments since the successful openSUSE Conference last
+          October… </emphasis></para>
+      <para>Since the openSUSE Conference in Nuremberg in October, the openSUSE community has been
+        extremely active. New projects announced there have progressed, and others have emerged. One
+        example of the latter would be the announcement of Project Tumbleweed by kernel hacker and
+        openSUSE contributor Greg Kroah-Hartman. The goal of this project is to create a
+        ‘rolling-release’ version of openSUSE. A rolling-release distribution (like Arch Linux or
+        Gentoo) always offers the latest stable versions of a package in updates so that when a new
+        release surfaces, users actually don’t have to do an upgrade! </para>
+      <para>Tumbleweed is something you could probably only pull off in openSUSE. While openSUSE is
+        a fixed-schedule release project (with a release every 8th), we provide newer stable
+        packages for a variety of things on the openSUSE Build Service (OBS). OBS warrants an
+        article on its own – a rather unique project (a tutorial for which featured in last month’s
+        magazine). We use it to build our distribution, but also packages for other distributions,
+        including Fedora, CentOS, Mandriva, Debian, Ubuntu and – seriously – Windows support is
+        under development. Hence the OBS mainframes handle the building of over 100,000 packages
+        from 25,000 users working on 15,000 different projects. OBS can provide newer packages for
+        older openSUSE versions because it is easy: from the web interface our packagers just select
+        the older versions and OBS takes care of it – it’s really that easy. OBS accomplishes this
+        by starting a fresh virtual machine (of the chosen distro and version) for each package that
+        has to be built. It then installs all build dependencies and builds the package. Any errors
+        are relayed back to the packager via the web (or command-line) interface. And OBS can take
+        code directly out of CVS/SVN/Git and has built-in live CD generation (so yes, an automatic
+        daily live CD of Git GNOME can be accomplished with ease). It’s unique and free software, so
+        OBS is used by a variety of other projects, including VLC and MeeGo. (...)</para>
+      <!-- ($ ld: 21.1.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
