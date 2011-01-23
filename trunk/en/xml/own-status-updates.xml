@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,7 +19,7 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-<!--
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
@@ -59,7 +60,8 @@
       <para>Last but not least the openSUSE Weekly News team with the translations into hungarian,
         greek and japanese wishes merry cristmas to all people across the world.</para>
       </blockquote>
-    </sect2> --><!--
+      </sect2> -->
+  <!--
     <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
@@ -94,7 +96,8 @@
             FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-  </sect2> --><!--
+    </sect2> -->
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -140,8 +143,9 @@
         to SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I
         also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
         appliances!</para>
-</blockquote>
-</sect2> --><!--
+      </blockquote>
+      </sect2> -->
+  <!--
   <sect2>
     <title>Team Report</title>
     <sect3 role="artteam">
@@ -155,7 +159,8 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>                
       </blockquote>
-    </sect3> --><!--
+      </sect3> -->
+  <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -303,11 +308,11 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->  
+      </sect3> -->
   <sect2 role="buildserviceteam">
     <title>Build Service Team</title>
     <para/>
-<!--
+    <!--
       <blockquote>
         <title>
           <ulink url="http://michal.hrusecky.net/2011/01/mysql-5-5-in-opensuse-build-service/">Michal Hrusecky: MySQL 5.5 in openSUSE Build Service</ulink>
@@ -360,107 +365,52 @@
         </blockquote> -->
     <formalpara>
       <title>Build Service Statistics</title>
-      <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
+      <para>Statistics can found at <ulink url="http://build.opensuse.org"
+        >Buildservice</ulink></para>
     </formalpara>
   </sect2>
-<!--
-    <sect3 role="education">
+  <!--
+    <sect2 role="education">
       <title>Education Team</title>
 
       <para>...</para>
-    </sect3>
+    </sect2>
 
-    <sect3 role="forums">
+    <sect2 role="forums">
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->  <sect2 role="gnometeam">
+      </sect2> -->
+  <sect2 role="gnometeam">
     <title>GNOME Team</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/01/20/massive-update-on-ubuntu-software/">Nelson Marques: Massive update on Ubuntu software…</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/"
+          >Nelson Marques: Unity, Compiz and ATI…</ulink>
       </title>
+      <para>I’ve finally added the Compiz packages to my development repository and unity itself alongside with some tools.</para>
+      <para>There are several bug reports on launchpad concerning ATI users, involving RADEON DRM driver and FireGL (fglrx) drivers. Unfortunately for me, I’m also a very happy 
+        ATI customer.</para>            
+      <para>I’ve struggled yesterday with some ABI problems on compiz, this was mainly because I had git snapshots from different days, and updating and rebuilding it, really 
+        solved the issue.</para>            
+      <para>Today I’ll be implementing the required patches for compiz by Ubuntu,, and hopefully this will enable me to test Unity, this time on a spare laptop with Intel 
+        Graphics chipset. I was hoping to pop some screenshots today, unfortunately, I’m having a couple of problems with Compiz that hopefully a couple of missing patches 
+        will solve.</para>
+      <para>I’ve left behind the ‘clutk’ package, as it’s currently broken and I need to take closer look into ‘glew’ and work it out. Something for monday/tuesday spare 
+      time.</para> 
+      <para>For the time being, the only screenshot I have to show is the one of CCSM (compizconfig-settings-manager) with the Unity plugin.</para>
       <mediaobject>
         <imageobject>
-          <imagedata width="45%" align="center" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot1.png"/>
+          <imagedata width="45%" align="center"
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"/>
         </imageobject>
       </mediaobject>
-      <para>Screenshot using Radiance Light Theme and default Ubuntu indicator layout. </para>
-      <para>Some brief updates about the ongoing work towards bringing Ayatana Project software
-          into openSUSE:<orderedlist>
-          <listitem>
-            <para><emphasis role="bold">Software Updates</emphasis></para>
-            <para>Canonical recently released a batch of updates which bring new functionality
-                (Indicators seem to respond faster now) and very nice improvements, some of them
-                contributed by down-streamers. From my humble experience I would risk to claim that
-                Canonical is doing an excellent job as an upstreamer. I’ve updated all packages to
-                the latest versions. This allowed to remove some patches.</para>
-          </listitem>
-          <listitem>
-            <para><emphasis role="bold">Unity</emphasis></para>
-            <para>Unity is now one step closer. For Unity I’ve started to package Compiz git
-                snapshots from the correct branches pointed by Unity documentation. This brought
-                something new to me, cmake. I’ve done this very slowly, reading some docs meanwhile
-                about cmake. My packaging around Compiz is mainly based on OBS X11:Compiz
-                repository, so pretty much all the credits should be for the original project
-                Packagers which done an awesome job. Currently I’m missing only 3 packages to test
-                Unity. Recently with kernel and mesa updates some issues around ATI hardware seem to
-                have fixed for openSUSE Factory users, which enabled in my case FireGL, therefore I
-                can test properly Unity now and check for the integration into openSUSE. </para>
-            <para>Unity by default uses the Ayatana’s Indicators, and if they are not present, it
-                will fallback to GNOME’s applets. This is very nice and I’m thankful Canonical made
-                it this way. This brings non-Ubuntu users the Unity experience at almost no trouble,
-                since there isn’t actually much patching required to implement Unity.</para>
-          </listitem>
-          <listitem>
-            <para><emphasis role="bold">GNOME:Ayatana Repository</emphasis></para>
-            <para>GNOME:Ayatana Repository will be populated during the next two weeks with the
-                latest changes and will provide for the time being the Ayatana’s Indicators and
-                Unity. I am currently working around libappindicator stack and it’s Indicators.
-                Currently I’m testing the patches required on the GTK+ stack and this is pretty much
-                the last barrier before going into #STAGE2, polishing and populating GNOME:Ayatana. </para>
-            <para>It’s not decided yet what packages are going to present on Factory. My wish is
-                to push only Unity into Factory and it’s dependencies, this might not happen for
-                11.4 as I’m not sure about the freeze schedules and it might be too late already,
-                but since we’re depending on Compiz upstream, we’ll see what happens. Even if Unity
-                isn’t going to be available on Factory, I’m sure we can use KIWI or SUSE Studio to
-                release a small openSUSE Unity Spin. </para>
-            <para>I’ve also decided that I (typo: previously would) <emphasis role="bold">wouldn’t</emphasis> like to see Unity available by openSUSE before the official
-                release from Ubuntu, for which I wish all the success. </para>
-            <para>Since the very early start that I’ve been using pkg-config as much as I can.
-                According to some information that I collected previously, this would be great for
-                cross-distribution build. Depending on the time and work done, I might make the
-                necessary modifications and enable cross-distribution building on this project,
-                thus, making it available for other RPM distributions supported by OBS. This will
-                require a bit of testing before, so it will be work to be done after 11.4 is
-                released and during it’s lifecycle. Maybe by the time of openSUSE 12 gets released,
-                we will have this project also available for other RPM based distributions. I have
-                no knowledge on Debian packaging, but Ubuntu ships this software and Debian probably
-                has it also available so… that won’t be a problem.</para>
-          </listitem>
-          <listitem>
-            <para><emphasis role="bold">Artwork</emphasis></para>
-            <para>I am providing on GNOME:Ayatana Ubuntu’s Light Themes (Ambiance and Radiance)
-                and offering a patched version of Metacity that renders those themes perfectly. I’m
-                not changing the original colors from the themes or modifying them in any way. So
-                they might be a bit more of orange and not green. </para>
-            <para>I’ve contacted some people to ask if they would be willing to donate some
-                artwork to make a small package with Wallpapers, some have answered yes, so I will
-                make a small package with a couple of wallpapers for the traditional resolutions and
-                distribute it alongside with this software as optional as always.</para>
-          </listitem>
-          <listitem>
-            <para><emphasis role="bold">GTK2, GTK3 and QT</emphasis></para>
-            <para>Implementation of GTK3 will be done within the next days, as I am also
-                considering enabling QT support for KDE users (Indicators only for now). </para>
-            <para>That’s pretty much the result of the last days of work… more news to come in the
-                nearby future.</para>
-          </listitem>
-        </orderedlist></para>
-<!-- ($ ld: 20.1.11 sm $) -->    </blockquote>
+      <para>(...)</para>
+      <!-- ($ ld: 23.1.11 sm $) -->
+    </blockquote>
   </sect2>
-<!--
-    <sect3 role="kdeteam">
+  <!--
+    <sect2 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
@@ -478,8 +428,9 @@
           4.6 final version for your openSUSE system. Currently it contains RC1, but this would
           change in the next few days once RC2 is released. </para>
     </blockquote> 
-    </sect3> --><!--
-    <sect3 role="marketingteam">
+    </sect2> -->
+  <!--
+    <sect2 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
         <title>
@@ -526,129 +477,160 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> --><!--
-    <sect3 role="medical">
+    </sect2> -->
+  <!--
+    <sect2 role="medical">
       <title>Medical Team</title>
 
       <para>...</para>
-    </sect3>
+    </sect2>
 
-    <sect3 role="monoteam">
+    <sect2 role="monoteam">
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->  <sect2 role="openfateteam">
+      </sect2> -->
+  <sect2 role="openfateteam">
     <title>openFATE Team</title>
     <sect3>
       <title>Top voted Features</title>
-      <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
+      <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+          We are looking for volunteers to implement. </emphasis></para>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 334)</ulink>
+          <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
+            (Score: 334)</ulink>
         </title>
         <para>&quot;Network installation could be improved by running package download and package
-            installation in parallel.&quot;</para>
+          installation in parallel.&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 166)</ulink>
+          <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot
+            (Score: 166)</ulink>
         </title>
         <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
-            reading
-            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
-            really makes me think we should go this way.</para>
+          reading
+          http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/ really
+          makes me think we should go this way.</para>
         <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot
-            process takes away from the whole experience.&quot; is especially interesting. Is it
-            okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
+          process takes away from the whole experience.&quot; is especially interesting. Is it okay
+          to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
       </blockquote>
       <blockquote>
         <title>
           <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 134)</ulink>
         </title>
         <para>&quot;An easy way to remove Software! </para>
-        <para>For example: you installed an application with &quot;1-click install&quot; (which
-            will install all the packages that you need), there should be an easy way (also with 1
-            click) to remove what you have installed with that 1-click operation... in another
-            words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and
-            packages included).&quot;</para>
+        <para>For example: you installed an application with &quot;1-click install&quot; (which will
+          install all the packages that you need), there should be an easy way (also with 1 click)
+          to remove what you have installed with that 1-click operation... in another words: an
+          &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages
+          included).&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 106)</ulink>
+          <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
+            106)</ulink>
         </title>
         <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
-            configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
+          configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
       </blockquote>
       <blockquote>
         <title>
           <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 84)</ulink>
         </title>
-        <para>&quot;We need a feedback about packages that are preferred by users and actively
-            used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
+        <para>&quot;We need a feedback about packages that are preferred by users and actively used.
+          Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 69)</ulink>
+          <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
+            Linux) (Score: 69)</ulink>
         </title>
-        <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
-            Windows but exploiting the One Click Install concept of openSUSE (and therefore
-            inheriting the simplicity, code and security. (...)&quot;</para>
+        <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for Windows
+          but exploiting the One Click Install concept of openSUSE (and therefore inheriting the
+          simplicity, code and security. (...)&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 64)</ulink>
+          <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
+            &quot;Installation Summary&quot; (Score: 64)</ulink>
         </title>
         <para>&quot;The YaST Qt package manager should provide as much information in the
-            &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
-            and how much disk space will be freed/used after performing the operation.&quot;</para>
+          &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
+          and how much disk space will be freed/used after performing the operation.&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score: 50)</ulink>
+          <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score:
+            50)</ulink>
         </title>
-        <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change etc. is very scary for many users.</para>
-        <para>The dialog asks the user to select one of usually three offered solutions for each problem without giving much help. This is a cause for many complaints, and contributes to myths of RPM dependency hell still existing today. (...)&quot;</para>
+        <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change
+          etc. is very scary for many users.</para>
+        <para>The dialog asks the user to select one of usually three offered solutions for each
+          problem without giving much help. This is a cause for many complaints, and contributes to
+          myths of RPM dependency hell still existing today. (...)&quot;</para>
       </blockquote>
-<!-- ($ ld: 22.1.11 sat *updated* $) -->    </sect3>
+      <!-- ($ ld: 22.1.11 sat *updated* $) -->
+    </sect3>
     <sect3>
       <title>Recently requested features</title>
-      <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+      <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if
+          you get interested.</emphasis></para>
       <blockquote>
         <title>
           <ulink url="https://features.opensuse.org/311068">Akmod Equivalent for openSUSE</ulink>
         </title>
         <para>Tumbleweed related as opposed to 11.4 related.</para>
-        <para>Fedora has this really nice tool called Akmod or Automatic Kernel Module, which builds kmods on boot when you load into a new kernel that doesn&apos;t have kmods or to use the openSUSE term kmps. As we now have a rolling release in openSUSE: Tumbleweed this kind of functionality is more important than ever. Unless there are plans for rebuilding the kmps for Tumbleweed each time there is a new kernel. Which doesn&apos;t seem to be the case with the Nvidia kmp only supporting up to 2.6.34 series.</para>
+        <para>Fedora has this really nice tool called Akmod or Automatic Kernel Module, which builds
+          kmods on boot when you load into a new kernel that doesn&apos;t have kmods or to use the
+          openSUSE term kmps. As we now have a rolling release in openSUSE: Tumbleweed this kind of
+          functionality is more important than ever. Unless there are plans for rebuilding the kmps
+          for Tumbleweed each time there is a new kernel. Which doesn&apos;t seem to be the case
+          with the Nvidia kmp only supporting up to 2.6.34 series.</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311069">Simple default file share config (ala Ubuntu/MacOSX)</ulink>
+          <ulink url="https://features.opensuse.org/311069">Simple default file share config (ala
+            Ubuntu/MacOSX)</ulink>
         </title>
         <para>Enable simple Share and Dropbox folders by default on each account.</para>
-        <para>Home network filesharing should be easy for the home user. Ubuntu does this very elegantly, with simple sharing and permission management. Current tools in most distros are very confusing to the point of being nearly unusable, including OpenSUSE. I recommend cloning the samba etc. technique as used in Ubuntu/Kubuntu.</para>
+        <para>Home network filesharing should be easy for the home user. Ubuntu does this very
+          elegantly, with simple sharing and permission management. Current tools in most distros
+          are very confusing to the point of being nearly unusable, including OpenSUSE. I recommend
+          cloning the samba etc. technique as used in Ubuntu/Kubuntu.</para>
       </blockquote>
       <blockquote>
         <title>
           <ulink url="https://features.opensuse.org/311076">Change MAC via YaST</ulink>
         </title>
-        <para>YaST can&apos;t change MAC-address. Now, for change this address need do ifconfig eth0 hw ether 00:00:00:11:22:33. Think, it&apos;s not SUSE-way. </para>
+        <para>YaST can&apos;t change MAC-address. Now, for change this address need do ifconfig eth0
+          hw ether 00:00:00:11:22:33. Think, it&apos;s not SUSE-way. </para>
         <para>Change MAC-address may be simple. With YaST.</para>
       </blockquote>
       <blockquote>
         <title>
           <ulink url="https://features.opensuse.org/311077">Themeing (SuSE-Elegant?)</ulink>
         </title>
-        <para>What about changing the Default-Theme to SuSE-Elegant from Cristian Rodriguez? See http://kde-look.org/content/show.php/SuSE+Elegant?content=117251 + the there mentioned links for the look.</para>
-        <para>At least providing a package for simple change of the various grub/boot/kdm/kde-screens would be neat.</para>
+        <para>What about changing the Default-Theme to SuSE-Elegant from Cristian Rodriguez? See
+          http://kde-look.org/content/show.php/SuSE+Elegant?content=117251 + the there mentioned
+          links for the look.</para>
+        <para>At least providing a package for simple change of the various
+          grub/boot/kdm/kde-screens would be neat.</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311089">Disable system bell by default if sound card is installed</ulink>
+          <ulink url="https://features.opensuse.org/311089">Disable system bell by default if sound
+            card is installed</ulink>
         </title>
-        <para>One of the first things I do after installing openSUSE is disabling the system bell by adding this to ~/.inputrc:</para>
+        <para>One of the first things I do after installing openSUSE is disabling the system bell by
+          adding this to ~/.inputrc:</para>
         <para><emphasis role="italic">set bell-style none</emphasis></para>
-        <para>Its volume is needlessly high. The bell scares the hell outta me whenever it creeps up because I backspaced too much on the command line.</para>
-        <para>My suggestion: disable the system bell by default, unless no sound card is installed.</para>
+        <para>Its volume is needlessly high. The bell scares the hell outta me whenever it creeps up
+          because I backspaced too much on the command line.</para>
+        <para>My suggestion: disable the system bell by default, unless no sound card is
+          installed.</para>
       </blockquote>
       <blockquote>
         <title>
@@ -658,72 +640,101 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311124">Consolidate faillog, pam_tally, pam_tally2, pam_faillock</ulink>
+          <ulink url="https://features.opensuse.org/311124">Consolidate faillog, pam_tally,
+            pam_tally2, pam_faillock</ulink>
         </title>
-        <para>There are four different ways to track the number of failed logins and react to this: faillog, pam_tally, pam_tally2, pam_faillock. They are all incompatible together and pretty hard next to impossible to configure.</para>
-        <para>Goal: Write one new module &quot;pam_faillog&quot;, which replaces all of them. Should be able to read all current databases, supports all features together but uses advanced PAM functionality to make configuration very easy.</para>
-        <para>The module depends on correct behavior of calling application, which means we need some checks if application behaves correct and maybe fix them.</para>
+        <para>There are four different ways to track the number of failed logins and react to this:
+          faillog, pam_tally, pam_tally2, pam_faillock. They are all incompatible together and
+          pretty hard next to impossible to configure.</para>
+        <para>Goal: Write one new module &quot;pam_faillog&quot;, which replaces all of them. Should
+          be able to read all current databases, supports all features together but uses advanced
+          PAM functionality to make configuration very easy.</para>
+        <para>The module depends on correct behavior of calling application, which means we need
+          some checks if application behaves correct and maybe fix them.</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311132">Compile Mesa and x-server with --enable-glx-tls</ulink>
+          <ulink url="https://features.opensuse.org/311132">Compile Mesa and x-server with
+            --enable-glx-tls</ulink>
         </title>
-        <para>Most famous Linux distributions are compile Mesa and x-server with --enable-glx-tls.</para>
+        <para>Most famous Linux distributions are compile Mesa and x-server with
+          --enable-glx-tls.</para>
       </blockquote>
-<!-- ($ ld: 22.1.11 sat *replaced with newer ones* $) -->    </sect3>
+      <!-- ($ ld: 22.1.11 sat *replaced with newer ones* $) -->
+    </sect3>
     <sect3>
       <title>Feature Statistics</title>
-      <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+      <para>Statistics for openSUSE 11.4 <ulink
+          url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
     </sect3>
   </sect2>
-<!--
-    <sect3 role="oooteam">
+  <!--
+    <sect2 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
-      </sect3> --><!--
-    <sect3 role="testing">
-      <title>Testing Team</title>
-      <blockquote>
-        <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry
-            Finger: Weekly News for January 1</ulink>
-        </title>
-        <para>The next Testing Core Team IRC meeting will be held 2011-01-31 at 18:00 UTC and will
-          discuss 11.4 M6.</para>
-        <para>Attendance at the December 27 meeting was optional. As many of the team were on
-          holiday, only two were present. Neither of us had any particular problems with 11.4 M5,
-          thus we took some time to get to know each other. As we did not have a real meeting, the
-          IRC log will not be posted.</para>
-        <para>The openSUSE forums have not had many complaints about M5, thus it appears to be
-          shaping up quite well. In addition, the 2.6.37 kernel, which is used in 11.4, will have
-          its release in roughly 1-2 weeks, thus there will be approximately 3 months of kernel
-          testing before 11.4 is released. That is good timing.</para>
-        <para>Wishing everyone a happy and prosperous new year.</para>
-      </blockquote>
-    </sect3> -->  <sect2 role="translationteam">
+      </sect2> -->
+  <sect2 role="testing">
+    <title>Testing Team</title>
+    <blockquote>
+      <title>
+        <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry Finger:
+          Weekly News for January 1</ulink>
+      </title>
+      <para>The next Testing Core Team IRC meeting has not been scheduled, but I expect it to Jan.
+        31, 2011 if M6 is released next week. </para>
+      <para>A number of problems still need to be fixed before M6 can be released. Stephan Kulow
+        lists them as:</para>
+      <para>blocking issues (for M6):<itemizedlist>
+          <listitem>
+            <para>/etc/mtab still is not right (broken by yast during installation
+              bnc#665437)</para>
+          </listitem>
+          <listitem>
+            <para>Artwork is a bad mixture and this is the last milestone (bnc#665439)</para>
+          </listitem>
+          <listitem>
+            <para>kernel on i586 still acting up (bnc#660464)</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>minor issues (for M6):<itemizedlist>
+          <listitem>
+            <para>the progress bar of the live cd is not moving between 16-92% (bnc#665413)</para>
+          </listitem>
+          <listitem>
+            <para>the live cd does not boot into the kernel (kexec broken?)</para>
+          </listitem>
+          <listitem>
+            <para>the kde live cd runs slowly</para>
+          </listitem>
+      </itemizedlist></para>
+      <!-- ($ ld: 22.1.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2 role="translationteam">
     <title>Translation Team</title>
     <itemizedlist>
       <listitem>
-        <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+        <para>Daily updated translation statistics are available on the <ulink
+            url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
       </listitem>
       <listitem>
-        <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+        <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink> –
+            <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+            Guide</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-<!--
+  <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3>
-
+    </sect3> -->
+  <!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
       </sect3> -->
-
 </sect1>

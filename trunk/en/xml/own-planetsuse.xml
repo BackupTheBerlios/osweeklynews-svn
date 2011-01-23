@@ -23,122 +23,99 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://vizzzion.org/blog/2011/01/open-slx-end-user-platform-announced/">Sebastian
-        Kügler: open-slx end-user platform announced</ulink>
-    </title>
-    <para>A couple of months ago at open-slx, when we (like so many times before and after) talked
-      about how we can make the lives of Linux users easier, an idea was sparked. While there’s huge
-      amounts of content out there, it struck us that there’s still a large number of people not
-      being too well served when searching Google to get answers to your questions. This poses some
-      problems though: First of all, most of the information is not in English. This poses an extra
-      barrier for some, who might not be as fluent in English as we developers usually are. Then,
-      the content is hard to verify: How do I *know* that the information given there makes sense?
-      Maybe it will just delete all my erotic movies? ;) So the problem is that there’s little
-      content for the German end-user audience, which is hard to verify. So a team consisting of
-      openSUSE community members and open-slx employees led by my colleague Rupert Horstkötter has
-      set out to fix this problem. They looked into existing solutions to these problem, and found
-      that what is currently running as ubuntuusers.de comes closest to the solution we have in
-      mind. We got in contact with the team at ubuntuusers.de, and they were enthusiastic about the
-      idea and willing to make it happen. A good start. </para>
-    <para>Then comes the real work of course. We’ve worked out a concept that allows us to provide a
-      modern support tool for our users, which builds on two pillars: information and interaction.
-      The concept we come up with puts this into three different tools: a wiki as knowledgebase, a
-      forum to discuss articles, questions and to get in contact with other people, and a blog
-      aggregation (Planet) which collects news about developments in openSUSE and howtos for
-      specific topics. In order to accomplish this gargantuan task, we’ve asked for help in the
-      openSUSE community. People were immediately enthusiastic about the idea, and started chipping
-      in, helping to review and improve lots of articles. </para>
-    <para>Over the past few months, we have reviewed about 2000 articles from the existing
-      ubuntuusers.de <ulink url="http://wiki.open-slx.de">knowledgebase</ulink>, prioritizing 500 of
-      them, and adapted the articles to modern standards and that they apply to openSUSE. These 500
-      articles form the foundation for the knowledgebase we created for the open-slx community
-      platform. We’ve also set up a <ulink url="http://community.open-slx.de">webforum</ulink> users
-      can use to communicate and ask further questions, and we’ve put up a <ulink
-        url="http://planet.open-slx.de">blog aggregator</ulink>. </para>
-    <para>So, if you’re a German-speaking user (or future user :)) of openSUSE, hop over to
-      community.open-slx.de and see for yourself whether this new platform fits your needs (and if
-      it doesn’t, let us know what we can improve). You can find the official announcement <ulink
-        url="http://news.open-slx.de/2011/01/17/herzlich-willkommen-bei-community-open-slx-de/"
-        >here</ulink>.</para>
-    <para>(...)</para>
-    <!-- ($ ld: 18.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/01/17/a-brief-update/">Nelson Marques: A
-        brief update…</ulink></title>
-    <para>In the last days I’ve been leaving my full attention to Compiz and the famous glib main
-      loop. I’ve made a small perl script to compare my local builds with the ones available on
-      launchpad… nothing too fancy, but it seems to work. During the last days Canonical updated a
-      lot of software. </para>
-    <para>I’ve decided to start updating the on my test repository to the newer versions. A couple
-      of new packages are required as dependencies (the most impressive one is utouch-evemu, which
-      is a part of Canonical’s Multitouch uTouch stack). </para>
-    <para>The number of updates is quite impressive, the number of patches (even on some new
-      updates) is equally impressive… I’ve just realized that GTK+-2.0 has been subjected of a
-      couple of fun patches and gobject-introspection is becoming mind crushing… Either way, the
-      work continues, and unfortunately for me I was planning to do a small open beta phase for
-      Factory users soon… but all this changes will require much more work and a lot of packages
-      will have dependency lists updated. </para>
-    <para>The next days free time will be spent around this massive update, I am sure it will pay
-      off. If anyone is using my test repository on my home project, expect some turbulence during
-      the next days. Since I’m on this, I’m already starting to enable GTK3 wherever I can do it in
-      a safe way, nevertheless, it’s just to speed work for the time being, as much things are
-      changing.</para>
-    <!-- ($ ld: 18.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://www.vuntz.net/journal/post/2011/01/18/Cross-distribution-meeting-on-application-installer"
-        >Vincent Untz: Cross-distribution meeting on application installer</ulink></title>
-    <para>Back in October, at the <ulink url="http://en.opensuse.org/Portal:Conference">openSUSE
-        Conference</ulink>, many people were interested in the whole app store/market place/software
-      center topic for openSUSE: we had a session about that, and several hallway discussion. There
-      is no big surprise here, since it's a hot topic for various <ulink
-        url="http://www.apple.com/mac/app-store/">OS</ulink>
       <ulink
-        url="http://www.neowin.net/news/microsoft-planning-039windows-store039-app-store-for-windows-8"
-        >distributors</ulink>, and not just our free distributions. Of course, being lazy people, we
-      discussed what we could re-use to minimize our work; the <ulink
-        url="https://wiki.ubuntu.com/SoftwareCenter">software center</ulink> used in Ubuntu and the
-        <ulink url="http://blogs.gnome.org/hughsie/2010/09/07/linux-and-application-installing/"
-        >app-install</ulink> work that <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>
-      did a while ago came to our minds. </para>
-    <para>And then we thought: Hrm, why do this in our corner? Everybody is doing this in a corner.
-      Let's see if we can work together! </para>
-    <para>Obvious idea, right? But on the other hand, everybody is generally all for collaboration,
-      but when it comes to do the work, it's easier to hack in a corner. So we didn't exactly know
-      what to expect: is this something that can really happen, or is this just a blue-sky dream? I
-      decided to give it a try. </para>
-    <para>In the past couple of months, I chatted with people from various distributions to organize
-      a cross-distribution meeting. I first talked to <ulink url="http://mvogt.wordpress.com/"
-        >Michael</ulink> (Ubuntu), and <ulink url="http://blogs.gnome.org/hughsie">Richard</ulink>
-      (Fedora) who were both enthusiastic about the idea. I met <ulink
-        url="http://upsilon.cc/~zack/blog/">Stefano</ulink> (Debian) at an <ulink
-        url="http://www.toulibre.org/ubuntuparty">event in Toulouse</ulink>, and we had a great chat
-      about many topics; that lead me to ask him if we could help find some Debian people interested
-      in this. I discussed with <ulink url="https://blog.misc.ephaone.org/">Michael </ulink>(Mageia)
-      to find out the relevant people in Mageia, and a few people were interested in the topic. And
-      of course, I knew the right openSUSE people ;-) So after a few weeks, it turned out there was
-      great interest from Debian, Fedora, Mageia, openSUSE and Ubuntu, with people willing to attend
-      such a meeting. I then sent out a mail to <ulink
-        url="http://lists.freedesktop.org/archives/distributions/2010-December/000408.html"
-        >distributions@fd.o</ulink>, to open this up to other distributions. </para>
-    <para>Fast-forward a bit, and here we are today: I'm flying to Nuremberg in a few hours to
-      attend this <ulink url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011"
-        >cross-distro meeting on application installer</ulink>, that will occur in the next three
-      days with a group of 14 people. The goals are to see where and how we can work together on the
-      end-user experience as well as on the application metadata that we want to provide. It might
-      all sound easy, but the fact is that with all distributions building its own packages, on its
-      own infrastructure, with different metadata and different users who could create more
-      metadata, we're currently not set to share anything, which is a shame. This meeting will help
-      us decide where we can mutualize our efforts to provide the best end-user experience possible
-      for everyone. </para>
-    <para>Three days is a short time for a topic like this, and we obviously won't do everything
-      we'd love to. But I'm optimistic about the result :-) </para>
-    <para>Thanks to Novell for hosting and sponsoring a few attendees, to Canonical and Red Hat for
-      sending people on their own budget, to Debian for helping sponsoring a last-minute attendee,
-      and also to some attendees who didn't need sponsorship at all!</para>
-    <!-- ($ ld: 18.1.11 sm $) -->
+        url="http://blixtra.org/blog/2011/01/21/first-experiences-with-the-opensuse-build-service-obs/"
+        >blixtra Blog/Chris Kühl: First experiences with the OpenSUSE Build Service</ulink>
+    </title>
+    <para>As part of my <ulink url="http://www.openismus.com/">Openismus</ulink>
+      <ulink url="http://www.murrayc.com/blog/permalink/2010/03/09/what-our-trainees-learn/"
+        >training</ulink>, I was recently tasked with packaging a Qt application using the <ulink
+        url="https://build.opensuse.org/">OpenSUSE Build Service</ulink> (OBS). Here I’ll try to
+      note my first impressions as well as offer some solutions to problems I encountered.<note>
+        <para>This was my first attempt at packaging anything and the application I’m packaging
+            (<ulink url="http://gitorious.org/conferencegoer">ConferenceGoer</ulink>) is a personal
+          project which is in an unusably-early state. So let’s ignore all that and focus on OBS
+          itself.</para>
+      </note></para>
+    <para><emphasis role="bold">What is OBS </emphasis></para>
+    <para>The OBS allows a packager to create packages for multiple distributions and architectures
+      using one spec file for <ulink url="http://en.wikipedia.org/wiki/RPM_Package_Manager">RPM
+        packages</ulink> or one set of debian packaging files for <ulink
+        url="http://en.wikipedia.org/wiki/Deb_(file_format)">debian packages</ulink>. For example,
+      in <ulink url="https://build.opensuse.org/project/show?project=home:blixtra">my OpenSUSE OBS
+        repository</ulink> I’ve built packages for multiple releases of <ulink
+        url="http://fedoraproject.org/">Fedora</ulink>, <ulink url="http://www.ubuntu.com/"
+        >Ubuntu</ulink>, <ulink url="http://www.opensuse.org/">OpenSUSE</ulink>, <ulink
+        url="http://www.mageia.org/">Mandriva</ulink> and <ulink url="http://www.debian.org/"
+        >Debian</ulink> for the i586 and x86_64 architectures from one set of package files. </para>
+    <para>Despite the “OpenSUSE” in the name, the OBS is useful for other distros as well. For
+      example, the <ulink url="http://meego.com/">MeeGo</ulink> project has adopted it as its
+      build-service of choice. I’ve used both and will refer to them as the <ulink
+        url="https://build.opensuse.org/">OpenSUSE OBS</ulink> and <ulink
+        url="https://build.pub.meego.com/">MeeGo OBS</ulink>. This is not an OBS how-to. See the
+        <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Tutorial">OBS tutorial</ulink> for
+      getting started with OBS. (...)</para>
+    <para>
+    </para>
+    <!-- ($ ld: 23.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/01/my-way-or-highway.html">Jos
+        Poortvliet: My way or the highway?</ulink></title>
+    <para>2 days ago I wrote <ulink url="http://nowwhatthe.blogspot.com/2011/01/meetings-stuff.html"
+        >an enthusiastic blog</ulink> about a cross-distribution collaboration meeting on App Stores
+      we've organized in Nuremberg. Then, a day later, Canonical decided to <ulink
+        url="http://www.markshuttleworth.com/archives/568">ship Qt with Ubuntu</ulink>. While not
+      anything special from an openSUSE pov (we give both GTK and Qt equal treatment and offer the
+      best platform to develop for both), it's a nice move. In the announcement Mark Shuttleworth
+      emphasized Qt integration with Ubuntu. I specifically write Ubuntu, not GNOME/GTK - Aaron
+      Seigo responded to that with a <ulink
+        url="http://aseigo.blogspot.com/2011/01/qt-acceptance-growing-next-colaboration.html">blog
+        post</ulink> showing a bit of frustration with Canonical's policy, the push for dconf &amp;
+      Ubuntu-specific Qt integration in apps.</para>
+    <para><emphasis role="bold">Yay, more flamewars! </emphasis></para>
+    <para>Now I'm as big a fan of a good KDE vs GNOME flamewar as anyone and maybe we make them more
+      fun by introducing a GNOME/Ubuntu and Qt/Ubuntu set of apps (what seems to be going on since
+      Mark announced <ulink
+        url="http://arstechnica.com/open-source/news/2010/10/shuttleworth-unity-shell-will-be-default-desktop-in-ubuntu-1104.ars"
+        >Unity as default in Ubuntu</ulink>. More splitting up = more fun, and openSUSE's tagline is
+      'have fun' so maybe we've been going at this all wrong. openSUSE has a focus on collaboration
+      and integration. I <ulink
+        url="http://nowwhatthe.blogspot.com/2010/10/osc-successful-absolutely.html">happily wrote
+        about</ulink> the archievements at the openSUSE conference in that area in October - we
+      worked with Red Hat, Mandriva, Debian... Over the last 3 days we had people from these and
+      more distributions in Nuremberg to <ulink
+        url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011">work on an app
+        store spec for Linux</ulink>. Then, right now a second sprint has started, to <ulink
+        url="http://en.opensuse.org/openSUSE:2011_Bretzn_Meeting">integrate appstore technology in
+        openSUSE itself</ulink>. Yes, 2 birds, one stone: first we discuss cooperation, then
+      implement results. </para>
+    <para><emphasis role="bold">Learning... </emphasis></para>
+    <para>We do things that way because at Novell, we've made our share of mistakes. And we learned
+      - we don't tell our community what openSUSE is going to do, we let them choose. Yes, Novell
+      ships GNOME on their Enterprise Desktop. The community has KDE as default. Up to them. We work
+      with others because, you know, the Free Software ecosystem matters. "It is an ill bird that
+      fouls its own nest". A saying well over 1000 years old but quite relevant. I wonder if
+      Canonical is going to repeat those mistakes... Now maybe Mark is right, creating a special
+      Ubuntu world for application developers will create more fun. Or maybe we're right - letting
+      the community do it's thing is more fun. I dunno. But if anyone is unhappy about Mark telling
+      you what to do in Ubuntu, you're welcome here to help shape openSUSE how you want it! Which
+      includes bringing <ulink
+        url="http://lizards.opensuse.org/2010/12/29/kick-off-for-gnomeayatana-project/">Ayatana to
+        openSUSE</ulink>. Or <ulink
+        url="http://www.wafaa.eu/entry/smeegol-status---08dec10-1-45.html">MeeGo</ulink>. And Mark,
+      if you happen to hear Aaron and decide Canonical should cooperate a bit more with others,
+      we're always open for that! (...)</para>
+    <!-- ($ ld: 23.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://mschlander.wordpress.com/2011/01/23/kde-is-slow-for-dummies/">Martin
+        Schlander: KDE is slow – for dummies</ulink></title>
+    <para>On forums, IRC, mailing lists etc. you get a lot of people complaining that “KDE is slow”.
+      I finally got fed up trying to answer the same question over and over, hence I’m writing this
+      blog post, to explain how most people can solve their problem in a few very simple steps.
+      (...)</para>
+    <!-- ($ ld: 23.1.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://nowwhatthe.blogspot.com/2011/01/meetings-stuff.html">Jos Poortvliet:
