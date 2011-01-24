@@ -22,22 +22,36 @@
   <sect2>
     <title>Postings from the Community</title>
     <blockquote>
-      <title><ulink
-        url="http://blog.lydiapintscher.de/2011/01/22/4-6-release-party-in-karlsruhe-germany/"
-        >Lydia Pintscher: 4.6 release party in Karlsruhe, Germany</ulink>
+      <title><ulink url="http://blog.karlitschek.de/2011/01/2-amazing-meetings-to-change-world.html"
+          >Frank Karlitschek: 2 amazing meetings to change the world</ulink>
       </title>
-      <para>The release is getting really close so it’s about time we have some parties :)</para>
-      <para>We’ll have a get-together at Vogelbräu in Karlsruhe next Saturday at 18:00. Let me know if you want to come and meet cool people.</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://blog.lydiapintscher.de/wp-content/4.6releaseparty.png"
-            width="15%" align="center"/>
-        </imageobject>
-      </mediaobject>
-      <para>If you are not anywhere near Karlsruhe you can check <ulink url="http://community.kde.org/Promo/ReleaseParties/4.6">the wiki</ulink> to see if there is a party near 
-        you. No party near you? Organize one! (...)</para>
-      <!-- ($ ld: 23.1.11 sm $) -->
+      <para>Last week I attended two very interesting developer sprints at the SUSE office in
+        Nürnberg. </para>
+      <para>More and more people in the Linux world realize that a nice application installer
+        (Application Store) is needed to make the Linux platform more attractive for normal users
+        and third party developers. The current package managers expose way to much complexity to
+        the end users. The normal users doesn´t care about dependencies, libraries and other
+        internals. But the user cares about things like screenshots, description texts, ratings.
+        tags, comments, recommendation from friends and other features which current package
+        managers don´t provide. So the idea grow to build a better tool for finding and installing
+        applications which sits on top of the current package management. </para>
+      <para>It´s part of the Bretzn project to build something like this. The first sprint last week
+        brought people from all major Linux distributions on one table to discuss ways to work
+        together to build a common application installer API and infrastructure. Developers from
+        RedHat, Fedora, Debian, Ubuntu, openSUSE, Mandriva and Mageia met and discussed ways to make
+        this happen. After 2 and a half days we all agreed on an architecture and we will work in
+        the next few month to bring this to all majors distributions. I´m happy that OCS was chosen
+        as the standard API to access App Store Servers. </para>
+      <para>The second sprint was the Bretzn sprint which took place directly afterwards and was all
+        about coding. </para>
+      <para>Several people from openSUSE and KDE met to build a proof of concept implementation of
+        an Application Store for openSUSE and KDE. </para>
+      <para>This second sprint was also super productive so after another weekend we have a basic
+        App Store client together with a server running. </para>
+      <para>All the basic features are in place and it just needs a bit more polishing. </para>
+      <para>There is a news story coming up with some more information and screenshots. So stay
+        tuned if you are looking for more information. :-)</para>
+      <!-- ($ ld: 24.1.11 sm $) -->
     </blockquote>
     <blockquote>
       <title><ulink url="http://nowwhatthe.blogspot.com/2011/01/lca-here-i-come.html">Jos
@@ -171,83 +185,123 @@
     <para>The openSUSE Weekly News are available as livestream or podcast in German. You can hear it
       or download it on <ulink url="http://blog.radiotux.de/podcast">Radiotux</ulink>. </para>
   </sect2>
-  <!-- 
   <sect2>
     <title>From Ambassadors</title>
     <blockquote>
       <title>
         <ulink
-          url="http://opensuseambassadors.blogspot.com/2010/12/report-1-openfest-open-christmas-at.html"
-          >Greek openSUSE Ambassadors: Report: 1st OpenFest Open Christmas at Florina, December 24th
-          2010</ulink>
+          url="http://stick.gk2.sk/blog/2011/01/gnome-python-hackfest-appinstaller-meeting-and-bretzn-hackfest/"
+          >Pavol Rusnak: GNOME Python Hackfest, AppInstaller Meeting and Bretzn Hackfest</ulink>
       </title>
-      <figure id="fig.greek">
-        <title>Merry Christmas to everyone</title>
+      <para>What a cool and productive week! But let me start from the beginning … </para>
+      <para>A couple of months ago we decided to start a <ulink
+          url="http://en.wikipedia.org/wiki/Hackerspace">hackerspace</ulink> in Prague called <ulink
+          url="http://brmlab.cz/">brmlab</ulink>. Most of the members deal with hardware, but there
+        are also couple of software guys like me. At the end of November we were contacted by <ulink
+          url="http://blog.tomeuvizoso.net/">Tomeu</ulink> and he asked if they can organize <ulink
+          url="http://live.gnome.org/Hackfests/Python2011">GNOME Python Hackfest</ulink> in our
+        hackerspace. I was more than delighted about the idea, so we agreed and started to plan
+        things. In the end we had 9 FOSS hackers working on GNOME and Python and I think they
+        enjoyed their time in Prague. Hackerspace is a great concept, because these folks didn’t
+        have to spend extra money on renting some place and our members had opportunity to meet
+        foreign FOSS developers and try exotic hardware like <ulink
+          url="http://en.wikipedia.org/wiki/OLPC_XO-1">OLPC XO-1</ulink>.</para>
+      <figure id="fig.blogpost">
+        <title>Blogposts from <ulink
+            url="http://blog.tomeuvizoso.net/2010/12/python-gnome-hackfest-2011.html">Tomeu</ulink>
+          and <ulink url="http://www.j5live.com/2011/01/19/pygi-in-prague/">J5</ulink> about the
+          event</title>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="http://diamond.comlu.com/suse/events/florina_24_12_10/14.jpg"
+            <imagedata
+              fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/gnome-python-1.jpg"
               width="25%" align="center"/>
           </imageobject>
         </mediaobject>
       </figure>
-      <para>Yesterday a small team of the Greek openSUSE community decided to go on a Christmas
-        roadtrip. We traveled about 2 and a half hours to go to the beautiful border town of
-        Florina. We were invited by teachers of The Educational Computer Association of Florina to
-        help them promote FOSS. In the central square of the city they hard wooden houses with
-        different themes (you can see the pictures). openSUSE Greek team with KLUG and a very active
-        elementary teacher, Mr Ioannis Kaskamanidis, were informing people who was interested in
-        what we do. Mr Kaskamanidis, brought his students with their XO laptops. Kids were showing
-        their laptops with pride and giving away info packs (PromoDVDs, stickers, brochures). We
-        also met with a local doctor, Dr Evangelos Tsoukas. He translated and supports the
-        Electronic Medical Records program called openEMR.</para>
-      <para>openSUSE team was pretty happy about promoting our distro to citizens of Florina. We
-        didn't mind that we drove 200km to reach the city or the soft rain that made us to put all
-        our equipment inside the wooden house. What is left from this event was:</para>
-      <para>We did our job and we had fun!!!<xref linkend="fig.greek"/></para>
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://lizards.opensuse.org/2010/12/31/kokoa-and-friends-meeting-kya2010/"
-          >José Oramas M.: Kokoa and Friends Meeting (KyA2010)</ulink></title>
-      <para>The first Kokoa and Friends meeting took place the 20th of December at the Computing and
-        Electrical Department of ESPOL.</para>
-      <para>This meeting supported by the openSUSE community, gathered people from different levels
-        of the Kokoa community and the ESPOL university. From students that are just getting
-        interested in using FLOSS (a.k.a. newbies), students who are <quote>candidates</quote> to
-        join the Kokoa community, the current <quote>active</quote> members and the experienced
-          <quote>senior</quote> members.</para>
-      <para>In this event different topics were discussed covering FLOSS usage in the academia and
-        the industry. Stories of success and guidelines were shared with people interested in going
-        forward in the world of FLOSS.</para>
-      <para>Special thanks to Cristina Guerrero, Nervo Verdezoto, Marisol Villacrés, and from
-        Jarflex, Adonis Figueroa and Jessica Zuñiga the speakers of this meeting and specially to
-        Arturo Tumbaco, who helped me with the logistics to make this event possible.</para>
-      <para><ulink url="http://lizards.opensuse.org/2010/12/31/kokoa-and-friends-meeting-kya2010/"
-          >Here some pictures about the meeting.</ulink></para>
+      <para>I had to leave the guys on Tuesday evening, because I spent the rest of the week in SUSE
+        office in Nuernberg. The first three days were dedicated to <ulink
+          url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011"
+          >Cross-distribution meeting</ulink> about application installer organized by <ulink
+          url="http://www.vuntz.net/journal/">Vincent</ulink>. It went more than well, we discussed
+        and agreed on many things, which is great and in the end we were able to give a <ulink
+          url="http://www.youtube.com/watch?v=BHeP2ZBwS_U">presentation</ulink> + we also created a
+          <ulink url="http://distributions.freedesktop.org/wiki/AppStream">nice AppStream
+          wikipage</ulink> as a starting point for any future work.</para>
+      <figure id="fig.summary">
+        <title>Vincent wrote a nice summary for <ulink url="http://news.opensuse.org/">openSUSE
+            News</ulink>. (It is not yet there, but should appear soon.)</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/appstream_meeting.jpg"
+              width="25%" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>This meeting was immediately followed by <ulink
+          url="http://en.opensuse.org/openSUSE:2011_Bretzn_Meeting">Bretzn hackfest</ulink>
+        organized by <ulink url="http://blog.karlitschek.de/">Frank</ulink>. The main focus of it
+        was implementing some of the things we agreed on previous meeting from the KDE/Qt
+        perspective and porting MeeGo Garage to openSUSE. During it I was mainly dealing with
+        appdata.xml format we described in the AppStream meeting – I created an XML schema so we can
+        validate it and also developed a proof-of-concept generator of this piece of metadata in
+        Python. (<ulink url="http://gitorious.org/appstream">git repo</ulink>) Hope we can get it in
+        createrepo and dpkg-scan* utilities soon.</para>
+      <figure id="fig.planetsuse">
+        <title>Frank’s summary about the hackfest will appear on <ulink
+            url="http://planet.opensuse.org/">Planet openSUSE</ulink> soon</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/DSC_1674.jpg"
+              width="25%" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>I would like to thank GNOME Foundation and Collabora for sponsoring the GNOME Python
+        Hackfest, Novell for sponsoring the Bretzn Hackfest and Canonical, Debian, Mageia, Novell
+        and Red Hat for sending their people to AppInstaller Meeting! It’s really nice and
+        encouraging to see folks from various companies working on one common goal.</para>
+      <para>And yeah,</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/going-to.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>so see you there!</para>
+      <!-- ($ ld: 24.01.10 th $) -->
     </blockquote>
     <blockquote>
       <title><ulink
-          url="http://opensuseambassadors.blogspot.com/2010/12/xarisetogr-bazaar-december-28-29-30.html"
-          >Greek openSUSE Ambassadors: Xariseto.gr Bazaar, December 28-29-30, 2010 -
-        report</ulink></title>
-      <figure id="fig.greek2">
-        <title>Merry Christmas to everyone</title>
+          url="http://opensuseambassadors.blogspot.com/2011/01/greek-customs-new-years-pie.html"
+          >Greek openSUSE Ambassadors: Greek Customs (New Year's Pie)</ulink></title>
+      <para>Here in Greece we celebrate the new year except from gifts but also by cutting a New
+        Year's Pie where inside there is a coin hidden. Whoever finds it wins a special gift and is
+        meant to be lucky the new year. A local Linux User Group located in Volos called Volug and
+        LinuxTeam Teilar in Larisa which both teams consist of colleagues had two small parties for
+        cutting the New Year's Pie. I was there to celebrate with those people and inform them about
+        openSUSE and openSUSE community. They were all interested about openSUSE distribution. I
+        answered many questions about Tumbleweed and Evergreen and informed them about our new 11.4
+        and OBS as many of them where interested about the work that is done by openSUSE community
+        and by the Greek Community. I had some cds/dvds and posters with me which i gave them. In
+        the future we will make some events together. Unfortunately we did not took any pictures. I
+        would slightly have won the hidden coin at the first party but the next person got it. </para>
+      <para>Photo of the New Year's Pie</para>
+      <figure id="fig.pie">
+        <title>Happy New Year All!!!!</title>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="http://diamond.comlu.com/suse/events/xariseto_28_12_10/3.jpg"
-              width="25%" align="center"/>
+            <imagedata
+              fileref="http://3.bp.blogspot.com/_jdKLYe7Jeds/TT2yTD-TOII/AAAAAAAAADc/mjbWhEdAlxo/s1600/5360749563_455c17fa19.jpg"
+            />
           </imageobject>
         </mediaobject>
       </figure>
-      <para>On December 28-29-30, 2010, we joined the calling from our friends from the web page
-        xariseto.gr. They had a bazaar in Hortiatis, Thessaloniki (Greece). The place was far from
-        our city but it was near for some people that live there.</para>
-      <para>Many people were bringing items they didn't need, but can be used by someone else that
-        need them. You can see on the last picture <xref linkend="fig.greek2"/> what it was all
-        about. We were there to inform people about FOSS and openSUSE. We had a lot of people asking
-        questions about it. Mostly they didn't know that there's something different than windows.
-        We hope we made a difference even to 1 person.</para>
-        </blockquote>
-        </sect2> -->
+      <para><ulink url="http://en.opensuse.org/User:Etern4L">George Bratsos aka
+        Etern4L</ulink></para>
+      <!-- ($ ld: 24.01.10 th $) -->
+    </blockquote>
+  </sect2>
   <sect2>
     <title>Communication</title>
     <itemizedlist>
