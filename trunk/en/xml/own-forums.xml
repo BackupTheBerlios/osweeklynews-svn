@@ -22,35 +22,35 @@
 <sect1 role="forums">
   <title>openSUSE Forums</title>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/452530-invalid-partition-table-parted-magic-5-8-grub.html">
-	Invalid partition table - Parted Magic 5.8 - GRUB
+    <title><ulink url="http://forums.opensuse.org/english/other-forums/community-fun/general-chit-chat/452115-free-lts-version-opensuse-would-top-my-linux-wish-list.html">
+	A free LTS version of openSUSE would top my linux wish list
 	</ulink></title>
     <para>
-      Without a proper functioning bootloader there's no running operating system. Sometimes the bootloader gets damaged, misconfigured, or the install of another distro disables openSUSE's GRUB as the system's bootloader. Many times Parted Magic, a free LiveCD utility, is suggested to repair GRUB issues, also in this thread. But it's not as simple as booting from the Parted CD and fixing it........
+      openSUSE has a release cycle of 8 months, i.e. a new version every eight months, and each version is supported for 24 months. There are numerous reasons to have it this way, but there are equally numerous situations where one would like to have an LTS (Long Term Support) version, like servers. This thread shows the demand is there for at least some of us. It also appears that some efforts to come to an LTS version of openSUSE have already been made. 
       </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/452802-how-revert-suse-11-3-kde-freshly-installed-state.html">
-      How to revert openSUSE 11.3 KDE to freshly installed state
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/453120-system-failure-dual-boot-xp.html">
+      System failure (dual boot with XP)
       </ulink></title>
     <para>
-      These days, most distros give lots of options to users to keep their systems up to date, or up to "bleeding edge". Now what, if you want your system to go back to the state right after the install was done, i.e. bring all packages back to the distro's version? This thread shows quite some different replies on how to get this done.
+      A returning issue: problems in another OS require the use of install media, which causes loss of the bootloader, that manages booting the installed operating systems, so no openSUSE. This user had a crash in XP, that made him land in a continuous loop, with no OS available at all. This one is not solved yet, but it's going there...
       </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/452844-boot-init-5-without-gui.html">
-      Boot with "init 5" without GUI
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/453181-kernel-2-6-37-wont-boot.html">
+      Kernel 2.6.37 won't boot
       </ulink></title>
     <para>
-      Many of us have a third party driver packages installed for optimal use of our video cards. These drivers create kernel modules (the driver) and some symbolic link(s) for Xorg, the display server. Here's a member that decided to upgrade to kernel- and Xorg-versions from other than default repos.
+      From the title an insider would expect an openSUSE Factory or openSUSE 11.4 Milestone 5 user, since those have kernel 2.6.37. Neither of those is true, the kernel was installed from a repo, that was added during a one-click procedure from a non-supported repo. Read how this is found out by the thread starter and the other contributors.
       </para>
   </blockquote>
   <blockquote>
-    <title>This week's subforum: <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/">
-      Applications
+    <title>This week's subforum: <ulink url="http://forums.opensuse.org/english/other-forums/looking-something-other-than-support/">
+      Looking for something other than support
       </ulink></title>
     <para>
-      In <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/">Applications</ulink> we have a subforum dedicated to individual applications. This varies from questions about importing music folders in Amarok to installing third party, even commercial, software on openSUSE. Some threads in fact contain little howto's by users who let us know about their succesful attempts to get software working.
+      This is the place in the forums where people ask for things like hardware advice, open source software equivalents for proprietary ones, community members' thoughts on their plans, or "will openSUSE run well on my ....". Sometimes the replies are quite straight forward, other times we see lively discussions. 
       </para>
     <!-- ($ ld: 19.1.11 gl $) -->
   </blockquote>
