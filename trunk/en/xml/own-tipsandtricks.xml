@@ -87,34 +87,18 @@
     <blockquote>
       <title>
         <ulink url="http://www.unixmen.com/linux-commands/1459-useful-commands-for-daily-use"
-          >Unixmen/Zinovsky: Useful commands for daily use</ulink>
+          >Linux.com/Jack Wallen: Reclaim Deleted Files and Repair Filesystems on Linux </ulink>
       </title>
-      <para><quote>Under Linux there are graphical user interfaces (GUIs), where you can point and
-          click and drag, and hopefully get work done terminalwithout first reading lots of
-          documentation. The traditional Unix environment is a CLI (command line interface), where
-          you type commands to tell the computer what to do. That is faster and more powerful, but
-          requires finding out what the commands are.</quote> -<emphasis role="italic">man
-          intro</emphasis>-</para>
-      <para>Find in this post a list of some useful commands for this week.</para>
-      <para>- <emphasis role="bold">Download a file and uncompress it while it
-        downloads</emphasis><screen>$wget http://URL/FILE.tar.gz -O - | tar xfz -</screen></para>
-      <para>- <emphasis role="bold">If you play loto, try this command to generate the 6 numbers
-          :</emphasis><screen>$echo $(shuf -n 6 -i 1-49 | sort -n)</screen></para>
-      <para>- <emphasis role="bold">To get the CPU temperature continuously on the
-          desktop</emphasis><screen>$while :; do acpi -t | osd_cat -p bottom ; sleep 1; done &amp;</screen></para>
-      <para>- <emphasis role="bold">Search for large files and show size and
-        location.</emphasis><screen>$find . -size +100000k -exec du -h {} \;</screen></para>
-      <para>- <emphasis role="bold">Get a random
-        Command</emphasis><screen>$ls /usr/bin | shuf -n 1</screen></para>
-      <para>This is useful if you want to explore various random commands. </para>
-      <para>More commands :</para>
-      <para>- <emphasis role="bold">Bash logger :Log everything from a bash script to a
-          file</emphasis><screen>$script /tmp/log.txt</screen></para>
-      <para>- <emphasis role="bold">Using NMAP to check if a port is open or
-        close</emphasis><screen>$nmap -oG - -T4 -p22 -v 192.168.0.254 | grep ssh</screen></para>
-      <para>- <emphasis role="bold">Get the IP of the host your coming from when logged in
-          remotely</emphasis><screen>$echo ${SSH_CLIENT%% *}</screen></para>
-      <!-- ($ ld: 19.1.11 sm $) -->
+      <para><quote>Linux is as solid an operating system as you'll ever use — but that doesn't mean
+          that the hardware you're running it on is equally solid. Hard drives are as prone to
+          errors as are file systems. And no matter how stable an OS is, it can't prevent you from
+          accidentally deleting files and/or folders. But don't despair: Linux is equipped with a
+          number of tools that can help you repair filesystem errors and reclaim deleted files.
+          Which tools? To start, <emphasis role="bold">e2fsck</emphasis>, <emphasis role="bold"
+            >scalpel</emphasis>, and <emphasis role="bold">lsof</emphasis> will get you the
+          farthest. Let's take a look at how each of these can be used to help your file systems be
+          free of errors and your files be freed from accidental deletion.</quote> (...)</para>
+      <!-- ($ ld: 26.1.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>

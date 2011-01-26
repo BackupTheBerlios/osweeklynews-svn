@@ -61,9 +61,46 @@
         greek and japanese wishes merry cristmas to all people across the world.</para>
       </blockquote>
       </sect2> -->
-  <!--
-    <sect2 role="distribution">
+  <sect2 role="distribution">
     <title>Distribution</title>
+    <blockquote>
+      <title><ulink
+          url="http://holger123.wordpress.com/2011/01/25/smb-traffic-analyzer-submitted-to-opensuse-tumbleweed-rolling-update-distro/"
+          >Holger Hetterich: SMB Traffic Analyzer submitted to openSUSE Tumbleweed rolling update
+          distro</ulink></title>
+      <para>The complete <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB
+          Traffic Analyzer</ulink> (SMBTA in the following) software package (up to date Samba
+        including SMBTA VFS module, smbtad and smbtatools) are now available in <emphasis
+          role="bold">openSUSE’s Tumbleweed distribution</emphasis>, making it ready to run SMBTA
+        out of the box. Since my blog is read by quite some people outside of the openSUSE
+        community, I am using this space to shortly introduce the Tumbleweed project, as it might
+        raise interest to those who were not aware of it. </para>
+      <para><emphasis role="bold">openSUSE Tumbleweed</emphasis> is a project to provide the
+        openSUSE Distribution in form of <emphasis role="bold">rolling updates</emphasis>. At a
+        glance, this means in the ideal world: Install Tumbleweed once, and never run out of updates
+        or maintenance, as Tumbleweed will update itself to always match the current package
+        versions that openSUSE’s maintainers or the according open source projects consider as the
+        current stable release of a package. In difference to the <ulink
+          url="http://en.opensuse.org/Portal:Factory">openSUSE Factory distribution</ulink>, which
+        simply provides the current development state of openSUSE, Tumbleweed will <emphasis
+          role="bold">not provide unstable or experimental packages</emphasis>. The projects idea
+        was being discussed for longer time in the community, and finally brought to life and
+        implementation by Greg Kroah-Hartman, who <ulink
+          url="http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html">announced a
+          Tumbleweed repository in the openSUSE Buildservice</ulink>. In it’s current form,
+        Tumbleweed is driven by a number of package maintainers and developers who want to make
+        Tumbleweed to happen, and relies on package maintainers to support Tumbleweed by submitting
+        their packages to the repository. </para>
+      <para>It’s <emphasis role="bold">very easy</emphasis> to jump from openSUSE 11.3 to Tumbleweed
+        by using zypper, to give it a try. I run it successfully in a virtual machine since
+        Tumbleweed was announced, and consider to make it my distribution for development/work as it
+        brings advantages that I don’t want to miss. Being able to release a new <emphasis
+          role="bold">SMB Traffic Analyzer version and having it available for users and packaged in
+          a distribution</emphasis> in a matter of hours is one of them. Read more about that on
+          <ulink url="http://en.opensuse.org/Tumbleweed">the Tumbleweed page in the openSUSE
+          wiki</ulink>.</para>
+      <!-- ($ ld: 26.1.11 sm $) -->
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.suse.de/~coolo/opensuse_11.4/">Schedules for the next week (Thu, 20
@@ -96,7 +133,7 @@
             FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-    </sect2> -->
+  </sect2>
   <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
@@ -385,24 +422,30 @@
     <title>GNOME Team</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/"
-          >Nelson Marques: Unity, Compiz and ATI…</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/">Nelson Marques:
+          Unity, Compiz and ATI…</ulink>
       </title>
-      <para>I’ve finally added the Compiz packages to my development repository and unity itself alongside with some tools.</para>
-      <para>There are several bug reports on launchpad concerning ATI users, involving RADEON DRM driver and FireGL (fglrx) drivers. Unfortunately for me, I’m also a very happy 
-        ATI customer.</para>            
-      <para>I’ve struggled yesterday with some ABI problems on compiz, this was mainly because I had git snapshots from different days, and updating and rebuilding it, really 
-        solved the issue.</para>            
-      <para>Today I’ll be implementing the required patches for compiz by Ubuntu,, and hopefully this will enable me to test Unity, this time on a spare laptop with Intel 
-        Graphics chipset. I was hoping to pop some screenshots today, unfortunately, I’m having a couple of problems with Compiz that hopefully a couple of missing patches 
-        will solve.</para>
-      <para>I’ve left behind the ‘clutk’ package, as it’s currently broken and I need to take closer look into ‘glew’ and work it out. Something for monday/tuesday spare 
-      time.</para> 
-      <para>For the time being, the only screenshot I have to show is the one of CCSM (compizconfig-settings-manager) with the Unity plugin.</para>
+      <para>I’ve finally added the Compiz packages to my development repository and unity itself
+        alongside with some tools.</para>
+      <para>There are several bug reports on launchpad concerning ATI users, involving RADEON DRM
+        driver and FireGL (fglrx) drivers. Unfortunately for me, I’m also a very happy ATI
+        customer.</para>
+      <para>I’ve struggled yesterday with some ABI problems on compiz, this was mainly because I had
+        git snapshots from different days, and updating and rebuilding it, really solved the
+        issue.</para>
+      <para>Today I’ll be implementing the required patches for compiz by Ubuntu,, and hopefully
+        this will enable me to test Unity, this time on a spare laptop with Intel Graphics chipset.
+        I was hoping to pop some screenshots today, unfortunately, I’m having a couple of problems
+        with Compiz that hopefully a couple of missing patches will solve.</para>
+      <para>I’ve left behind the ‘clutk’ package, as it’s currently broken and I need to take closer
+        look into ‘glew’ and work it out. Something for monday/tuesday spare time.</para>
+      <para>For the time being, the only screenshot I have to show is the one of CCSM
+        (compizconfig-settings-manager) with the Unity plugin.</para>
       <mediaobject>
         <imageobject>
           <imagedata width="45%" align="center"
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"/>
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"
+          />
         </imageobject>
       </mediaobject>
       <para>(...)</para>
@@ -707,7 +750,7 @@
           <listitem>
             <para>the kde live cd runs slowly</para>
           </listitem>
-      </itemizedlist></para>
+        </itemizedlist></para>
       <!-- ($ ld: 22.1.11 sm $) -->
     </blockquote>
   </sect2>

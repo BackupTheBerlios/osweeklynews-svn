@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -24,15 +24,13 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html"
-        >Javier Llorente: Oxygenise your Apache</ulink></title>
+    <title><ulink url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html">Javier Llorente: Oxygenise your Apache</ulink></title>
     <para>I have updated <ulink url="http://bit.ly/f2eLPJ">apache2-icons-oxygen</ulink> with icons
       from KDE 4.6 RC2. Thanks Nuno &amp; Co! Now Apache’s directory listings look a bit better
       ;-)</para>
     <mediaobject>
       <imageobject>
-        <imagedata
-          fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/screenshot-300x205.png"/>
+        <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/screenshot-300x205.png"/>
       </imageobject>
     </mediaobject>
     <para>See it in action <ulink url="http://www.javierllorente.com/tmp/">here</ulink>. If you want
@@ -41,169 +39,96 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <!-- ($ ld: 24.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/cclive">Packman: cclive
-        0.7.1-1.pm</ulink></title>
-    <para><quote>cclive is a command line video extraction utility similar to clive but focuses on
-        low requirements. Its features are few and essential. cclive is intended for users who
-        prefer lightweight and <quote>snappy</quote> programs. It was written in C and depends on
-        libcurl. cclive sports much of the same features but some compromises were made along the
-        way to keep the prerequisites low.</quote></para>
-    <!-- ($ ld: 20.1.11 sm $) -->
+    <title><ulink url="http://packman.links2linux.org/package/vlc/203011">Packman: vlc
+        1.1.6-1.pm</ulink></title>
+    <para><quote>VLC media player is a highly portable multimedia player for various audio and video
+        formats (MPEG-1, MPEG-2, MPEG-4, DivX, mp3, ogg, ...) as well as DVDs, VCDs, and various
+        streaming protocols. It can also be used as a server to stream in unicast or multicast in
+        IPv4 or IPv6 on a high-bandwidth network.</quote></para>
+    <!-- ($ ld: 26.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://holger123.wordpress.com/2011/01/20/smb-traffic-analyzer-1-2-2-released/">Holger
-        Hetterich: SMB Traffic Analyzer 1.2.2 released</ulink></title>
-    <para>After some delay which wasn’t on our plan, we’re happy to announce <ulink
-        url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
-      (called SMBTA in the following) version 1.2.2, bringing a whole bunch of new features and
-      bugfixes to the table. First off, you might not believe it but SMBTA actually received some
-      artwork, as we already reported here. :) <emphasis role="bold">Version 1.2.2</emphasis>
-      includes those graphics as well as the SVG source. Thank you Sirko!</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://holger123.files.wordpress.com/2011/01/smbta1281.png" width="10%"
-        />
-      </imageobject>
-    </mediaobject>
-    <para>SMBTA was installed on completely different systems than Linux during the past months. In
-      some cases, things could have been much easier if required libraries could have come included
-      with SMBTA. So we did for sqlite. If shared sqlite objects are found, and are of version 3.7.0
-      or newer, those will be used, otherwise SMBTA will compile the 3.7.4 <ulink
-        url="http://www.sqlite.org/amalgamation.html">Amalgamation build of sqlite</ulink>, that is
-      included with both smbtad and smbtatools (<emphasis role="bold">bnc#662186</emphasis>). By
-      specifying an environment variable, the user can also force an amalgamation build, even if
-      shared libraries are available. Since the amalgamation build of sqlite is basically sqlite in
-      a single c file, most compilers can employ optimization much better compared to a usual sqlite
-      build.</para>
-    <para>We are in the process of addressing possibilities to make SMBTA more than just output it’s
-      results to a text mode terminal.</para>
-    <figure id="fig.smbt">
-      <title>A run of 'global, top 10 files rw', and it's HTML output</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://holger123.files.wordpress.com/2011/01/html-demo2.png"
-            width="30%"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>The decision was taken to drive the output of smbtaquery – the main program used to query
-      the database of SMBTA – with XML, a move that allows us maximum flexibility. The smbtaquery
-      program therefore produces XML by default and employs the XSLT processor <ulink
-        url="http://xmlsoft.org/XSLT/"><emphasis role="bold">xsltproc</emphasis> of the libxslt
-        library</ulink> to convert the output to HTML or ASCII text automatically.<xref
-        linkend="fig.smbt"/></para>
-    <para>Snipped of the "usage" function output in HTML All functions of smbtaquery are supported
-      in both formats. SMBTA includes style sheets to produce the output and the user can choose the
-      prefered output format on the command line. HTML support in smbtaquery forms the core of our
-      plans to create a web based user interface for SMBTA (<emphasis role="bold"
-        >bnc#659326</emphasis>). </para>
-    <figure id="fig.smbt1">
-      <title>Snipped of the "usage" function output in HTML</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://holger123.files.wordpress.com/2011/01/html-demo1.png"
-            width="40%"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>SMBTA 1.2.2 extends 128Bit AES encryption for the whole software suite. All tools, smbtad,
-      and the module are now able to talk encrypted to each other. With former versions this has
-      only been possible from the VFS module to smbtad. To support the end user, smbtaquery has been
-      extended to generate 128 bit keys for usage with smbtad. The smbtad daemon supports two
-      different keys, to allow a different group of users running the smbtatools (<emphasis
-        role="bold">bnc#599644</emphasis>). A long standing issue finally resolved. <xref
-        linkend="fig.smbt1"/></para>
-    <para>A lot of effort moved into our test suite – smbtatorture -, in order to enhance the <ulink
-        url="http://holger123.wordpress.com/2010/12/23/smbta-stresstest-0-0-1-released/">SMBTA
-        Stresstest appliance</ulink>. First off, a smbtatorture process now creates directories, and
-      filenames that make some more sense then the ones used before (which were just generated out
-      of the user name and a number), to produce much more realistic looking results (<emphasis
-        role="bold">bnc#653618</emphasis>). Furthermore, we worked on having support for multiple
-      instances of smbtatorture on the same shares. A small control server has been created,
-        “<emphasis role="italic">smbtatorturesrv</emphasis>“, distributing unique filenames to make
-      sure that no smbtatorture process chooses the same file name than one of the others running on
-      the network. smbtatorturesrv is internet socket networked, therefore smbtatorture processes
-      can connect from anywhere to it.</para>
-    <figure id="fig.smbt2">
-      <title>Snipped of the SMBTA-Guide. We will work on getting more illustrations into where it
-        makes sense.</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://holger123.files.wordpress.com/2011/01/docu.png" width="30%"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>This program will be extended to make up a controlling instance for the connecting
-      smbtatorture processes, showing statistics and healthiness information. We will implement the
-      features introduced with 1.2.2 in the upcoming version of the <ulink
-        url="http://holger123.wordpress.com/2010/12/23/smbta-stresstest-0-0-1-released/">SMBTA
-        Stresstest</ulink>. <xref linkend="fig.smbt2"/></para>
-    <para>On the documentation, <emphasis role="bold">probably the most irrelevant part of
-        SMBTA</emphasis> :) , it has been completely reviewed and many design changes have been
-      made. Everything about encryption has been taken out, and formed into a separate new chapter,
-      addressing how encryption works in all parts of the software suite. All new features of
-      smbtatorture and smbtatorturesrv have been documented. We have added descriptive illustration
-      and diagrams to the documentation. (<emphasis role="bold">bnc#664823</emphasis>). And of
-      course we updated <ulink url="http://morelias.org/smbta/smbta-guide.html">the online version
-        of this document</ulink>. </para>
-    <para>Oh wait, the <ulink url="http://build.opensuse.org/">openSUSE’s BuildService</ulink>
-      already consumed SMB Traffic Analyzer 1.2.2. We will submit packages to openSUSE Factory and
-      Tumbleweed in the next days. </para>
-    <para>You can download SMB Traffic Analyzer on the <ulink
-        url="http://holger123.wordpress.com/smb-traffic-analyzer/smb-traffic-analyzer-download/"
-        >Download Page</ulink>. To get more info about SMB Traffic Analyzer, <ulink
-        url="http://holger123.wordpress.com/smb-traffic-analyzer/">visit it’s home
-      page</ulink>.</para>
-    <!-- ($ ld: 21.1.11 sm $) -->
+    <title><ulink url="http://saigkill.wordpress.com/2011/01/25/newupdated-applications/">Sascha
+        Manns: New/Updated Applications</ulink></title>
+    <para>The last days i’ve updated or added new Packages:<itemizedlist>
+        <listitem>
+          <para><ulink url="http://shutter-project.org/">shutter</ulink>: new added. Available in:
+              <ulink url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/">openSUSE:Factory:Contrib</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://www.calibre-ebook.com/">calibre</ulink>: updated. Available in:
+              <ulink url="http://download.opensuse.org/repositories/home:/thomas-schraitle:/calibre/">home:thomas-schraitle:calibre</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink url="">bleachbit</ulink>: updated. Available in: <ulink url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/">openSUSE:Factory:Contrib</ulink></para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Have a lot of fun with it :-)</para>
+    <!-- ($ ld: 26.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://lizards.opensuse.org/2011/01/21/libreoffice-3-3-rc4-available-for-opensuse/"
-        >Petr Mladek: LibreOffice 3.3 rc4 available for openSUSE</ulink></title>
-    <para>I’m happy to announce that LibreOffice 3.3 rc4 packages are available for <emphasis
-        role="italic">openSUSE</emphasis> in the Build Service <emphasis role="italic"><ulink
-          url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/"
-          >LibreOffice:Unstable project</ulink></emphasis>. They are based on the <ulink
-        url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.0.4"
-        >libreoffice-3.3.0.4</ulink> release. Please, look for more details about the openSUSE
-      LibreOffice build on the <ulink url="http://en.opensuse.org/OpenOffice.org">wiki page</ulink>. </para>
-    <para>The packages are based on LibreOffice release candidate sources. Though, they include some
-      addons from the old <emphasis role="italic">Go-oo</emphasis> project. They have not passed
-      full QA round yet and might include even serious bugs. Therefore they are not intended for
-        <emphasis role="italic">data-critical</emphasis> usage. A good practice is to archive any
-      important data before an use, … </para>
-    <para>As usual, we kindly ask any interested beta testers to try the package and <ulink
-        url="http://en.opensuse.org/openSUSE:Bugreport_OOo">report bugs</ulink> against the product
-        <emphasis role="italic">LibreOffice</emphasis> .</para>
-    <para><emphasis role="bold">Known Bugs</emphasis>:<itemizedlist>
-        <listitem>
-          <para>some packages were not renamed, .e.g. <emphasis role="italic"
-              >OpenOffice_org-thesaurus</emphasis>, …; they are not built from the main LibO
-            sources; I will do soon.</para>
-        </listitem>
-        <listitem>
-          <para>SLED10 build is not available; need more love</para>
-        </listitem>
-      </itemizedlist></para>
-    <para><emphasis role="bold">More known Bugs</emphasis>:<itemizedlist>
-        <listitem>
-          <para><ulink url="http://alturl.com/dmqve">Free Desktop bugzilla</ulink></para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://alturl.com/qaq5">Novell bugzilla</ulink></para>
-        </listitem>
-      </itemizedlist></para>
-    <para><emphasis role="bold">Other information and plans</emphasis>: </para>
-    <para>First, I am sorry that I did not announce two older builds. I published rc2 build just
-      before Christmas and the announce was forgot in the hurry. There were problems with building
-      rc3. It was ready only one day before rc4, so it did not make sense to announce it. </para>
-    <para>There still might be some <emphasis role="italic">openSUSE-specific</emphasis> bugs that
-      would need to be fixed. I hope that they do not break the base function but… I will continue
-      with producing newer builds with more fixes from the stable libreoffice-3-3 branch. I will
-      move the packages to a stable project once we finish testing of all the SUSE-specific addons.
-      It should happen within the next few weeks. </para>
-    <para>Please be patient and thanks for understanding.</para>
-    <!-- ($ ld: 21.1.11 sm $) -->
+    <title><ulink url="http://www.gnome.org/~michael/blog/2011-01-25-libreoffice-release.html">Michael Meeks: LibreOffice - our first release</ulink></title>
+    <para>Today we <ulink url="http://blog.documentfoundation.org/2011/01/25/the-document-foundation-launches-libreoffice-3-3/">released</ulink> our first stable release of LibreOffice. That is really rather exciting !
+      and a major milestone. Of course, if you have a GNU/Linux or Unix distribution, most likely
+      your packagers already knew our release timetable, and have distribution packages ready for
+      you to use. If you can use those, do - they are likely to be better integrated with the
+      system, and somewhat faster. </para>
+    <para>If you are a Windows or Mac user though, it is a great time to try out LibreOffice,
+      directly from our <ulink url="http://www.libreoffice.org/download/">download</ulink> site. </para>
+    <para><emphasis role="bold">Why LibreOffice ?</emphasis>
+    </para>
+    <para>Apart from all the obvious reasons - of loving Freedom, Free Software, and fun, open,
+      community development. LibreOffice is just better, much better, check out our (still
+      expanding) <ulink url="http://www.libreoffice.org/download/new-features-and-fixes/">New
+        Features</ulink> page - showing off what people can expect to enjoy in LibreOffice. As I get
+      time, I'll add some highlights of my own appended here. </para>
+    <para><emphasis role="bold">What next ?</emphasis>
+    </para>
+    <para>As we work in a much more conventional Free Software project mold, we are releasing a
+        <emphasis role="italic">point-zero</emphasis> release. This will not be perfect, but is any
+      software ? what we will be doing is rapidly iterating it, via many minor point releases,
+      towards perfection. We've published our <ulink url="http://wiki.documentfoundation.org/ReleasePlan">timeline</ulink> for that. Something
+      you don't like ? some hideous translation or crasher bug ? we can include that fix soon, so do
+      get stuck in and help out. </para>
+    <para>Perhaps the more interesting piece is the commitment to move to a six month release cycle,
+      that is well aligned with existing Free Software community and distribution release cycles. We
+      hope this will help get the latest, and best LibreOffice into users' hands as quickly as
+      possible. </para>
+    <para><emphasis role="bold">How do I get involved ? </emphasis></para>
+    <para>LibreOffice is a project, almost uniquely suited to scaling to hundreds of people working
+      on it - there are problems, missing features and bugs everywhere. There are millions of
+      malnourished lines-of-code, awaiting your loving ownership, and remedial care - can you help
+      them ? If so, please head to our <ulink url="http://www.libreoffice.org/get-involved/developers/">developer instructions</ulink>
+      grab the code from freedesktop's git repository, and get stuck in, we'd love to work with you.
+      We have many <ulink url="http://wiki.documentfoundation.org/Development/Easy_Hacks">Easy
+        Hacks</ulink> designed for beginners to get involved - ranging from zero programming skill
+      required, to some heavier lifting for the elite. As you do that, please do say hello on IRC:
+        <emphasis role="italic">#libreoffice</emphasis> on irc.freenode.net, where much of the team
+      hangs out. </para>
+    <para>Of course, if you want to mirror our binaries - and we are only 11Gb small (compared to
+      70Gb+ for OO.o), then drop a mail to <email>mirrors@documentfoundation.org</email>, we use Peter's excellent
+        <ulink url="http://mirrorbrain.org/">mirrorbrain</ulink> - we have good coverage, but it can
+      always improve. If you just like web banners that point to us there is just such a <ulink url="http://wiki.documentfoundation.org/File:LibreOffice_banner_728x90_L.png">image</ulink>. </para>
+    <para><emphasis role="bold">Who did this thing ? </emphasis></para>
+    <para>Well, in fact many people, far more than I can write down in one place - there are
+      extensive credits <ulink url="http://www.libreoffice.org/credits.html">here</ulink> for all of
+      the many individuals that have struck their blow for freedom with us; I am incredibly grateful
+      for their support and friendship. </para>
+    <para>However, of course, some people have put more than the usual effort into this release -
+      and here is where I forget people and offend at least someone. For various reasons: new
+      packaging, and split help - the Windows build sucked a lot of mental energy this cycle, with
+      Fridrich and Tor bearing the brunt of the pain. Similarly, Kendy battled the split help
+      indomitably at great length, while managing the Novell team too. Then of course, the Steering
+      Committee have put in lots of time with my personal favorite of Italo - creating and massaging
+      press text and briefing many. The poor translation team, worked incredibly well under very
+      tight deadline pressure to make up for the late strings that routinely needed shoving in, with
+      Andras doing fantastic work getting their changes merged. Then finally, the website, its
+      infrastructure, mirroring, scripting, design, artwork, and volume of text, polish, translation
+      and beauty, as always - done on the very cusp of release swallowed much sweat and tears
+      particularly from David, Christian, Florian, Thorsten and Sophie. My profound thanks to all of
+      these, and more who worked so hard to get the release out - oh, and especially to the many
+      un-sung hackers who got really stuck into triple reviewing, and fixing nasty blocker bugs
+      before final code freeze.</para>
+    <!-- ($ ld: 26.1.11 sm $) -->
   </blockquote>
 </sect1>
