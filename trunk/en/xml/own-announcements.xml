@@ -45,9 +45,10 @@
       of applications: people want to use Firefox, LibreOffice or Frozen Bubble.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/01/appstream_meeting-300x225.jpg"/>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/01/appstream_meeting-300x225.jpg"
+        />
       </imageobject>
-      
     </mediaobject>
     <para>We investigated the best way to approach this issue and come to a fast resolution. With
       several people from various distributions already working on some technologies that are
@@ -92,5 +93,57 @@
       person! </para>
     <para>Article contributed by Vincent Untz</para>
     <!-- ($ ld: 26.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/01/27/first-bretzn-sprint-opensuse-app-store-on-the-horizon/"
+        >First Bretzn Sprint: openSUSE App Store on the Horizon</ulink></title>
+    <para>Novell hosted the first <ulink
+        url="http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/"
+        >Bretzn</ulink> Sprint in the SUSE office in Nürnberg between 21th and the 23st of January.
+      The objective of the sprint was to create an proof of concept application store for openSUSE. </para>
+    <para>This meeting is a direct follow up of the <ulink
+        url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
+        >Cross-distribution meeting on application installer</ulink> which took place in the 3 days
+      leading up to the Bretzn sprint. During this meeting developers from <ulink
+        url="http://www.debian.org/">Debian</ulink>, <ulink url="http://fedoraproject.org/"
+        >Fedora</ulink>, <ulink url="http://mageia.org/">Mageia</ulink>, <ulink
+        url="http://www.opensuse.org/">openSUSE</ulink>, and <ulink url="http://www.ubuntu.com/"
+        >Ubuntu Linux</ulink> distributions decided to work together on common APIs and code for
+      application stores on Linux. </para>
+    <para>The Bretzn Sprint was dedicated to the development of a proof of concept of this idea,
+      using existing components like the <ulink url="http://gitorious.org/meego-garage/">MeeGo
+        Garage</ulink> client and <ulink
+        url="http://api.kde.org/kdesupport-api/kdesupport-apidocs/attica-git/html/"
+        >libattica</ulink> as starting points. </para>
+    <para>Attendees of this meeting where Will Stephenson, Dan Leinir Turthra Jensen, Frederik
+      Gladhorn, Mateu Batle Sastre, Eugene Trounev, Vincent Untz, Pavol Rusnak and Frank
+      Karlitschek. This team brought together a wide range of skills, as can be seen in the results
+      of this highly productive sprint.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/01/appstore_details.png"
+          width="50%"/>
+      </imageobject>
+    </mediaobject>
+    <para>In just two and a half days, they managed to create a working application store client for
+      openSUSE and KDE. The server part was based on <ulink
+        url="http://www.freedesktop.org/wiki/Specifications/open-collaboration-services">OCS</ulink>
+      (Open Collaboration Services), which already did everything needed for the server side and
+      just needed some data inserted to be shown in the client. The client in turn was created by
+      using the MeeGo Garage client, and adapting it to be a more KDE-like application, by using the
+      various KDE widgets and other tools, removing the duplication of functionality which was
+      covered by the KDE libraries. </para>
+    <para>Finally, a new application view was created, to replace the existing which was never as
+      pleasing as the original authors wanted it to be. This was done by using <ulink url="">Qt
+        Quick</ulink>, which has allowed for the rapid construction of a much more pleasant look.
+      The new interface is the result of a brainstorming session involving all members of the
+      sprint, based on the results from the <ulink
+        url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
+        >cross-distribution meeting</ulink>. While this work is still in progress, it already
+      represents an improvement over the old interface. </para>
+    <para><emphasis role="italic">Article contributed by Frank Karlitschek</emphasis></para>
+    <!-- ($ ld: 27.1.11 sm $) -->
   </blockquote>
 </sect1>

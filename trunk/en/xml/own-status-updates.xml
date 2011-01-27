@@ -452,26 +452,35 @@
       <!-- ($ ld: 23.1.11 sm $) -->
     </blockquote>
   </sect2>
-  <!--
-    <sect2 role="kdeteam">
-      <title>KDE Team</title>
-      <blockquote>
-        <title>
-          <ulink url="http://tittiatcoke.wordpress.com/2011/01/04/opensuse-kdeunstablesc-repo-becomes-trunk-again/">Raymond Wooninck: openSUSE KDE:Unstable:SC repo becomes Trunk again !</ulink>
-        </title>
-        <para>A little warning to those that have switched over to the KDE:Unstable:SC repo. The
-          target is that either tonight or tomorrow a new Trunk snapshot will be loaded in this
-          repo. That would mean that the Unstable becomes unstable again.</para>
-        <para>I have already been building a number of snapshots based on the opened KDE 4.7 trunk
-          and have to admit that things are still looking very stable and even kdebindings is
-          compiling well :-) But this might of course change from the moment that KDE 4.6 has been
-          released and the focus shifts to the newer 4.7 release. </para>
-        <para>I will keep you posted on the developments around this repository, but this would be
-          the moment to switch over to KDE:Distro:Factory if you want to get the RC1, RC2 and KDE
-          4.6 final version for your openSUSE system. Currently it contains RC1, but this would
-          change in the next few days once RC2 is released. </para>
-    </blockquote> 
-    </sect2> -->
+  <sect2 role="kdeteam">
+    <title>KDE Team</title>
+    <blockquote>
+      <title>
+        <ulink url="http://vizzzion.org/blog/2011/01/4-6-0-available/">Sebastian Kügler: 4.6.0
+          Available</ulink>
+      </title>
+      <para>I’ve just pushed the relevant buttons to make the release of 4.6.0 a public fact.
+        Packages should appear shortly for your favourite operating system, I know that openSUSE
+        packages are available from Factory now, so start your zypper already.4.6.0 Released.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/4.6-elegantly-yours.png"
+            width="25%"/>
+        </imageobject>
+      </mediaobject>
+      <para>The release is actually a pretty big thing, it adds a lot of new features, some of which
+        very visible, others being less noticable. There’s the mobile profile for example, which
+        makes it much easier to use KDE frameworks in your mobile application. Then we have the
+        re-vamped activity manager, that adds a way to group applications in their context and makes
+        it possible to manage these activities like sessions. So head over and read what’s new in
+        the <ulink url="http://www.kde.org/announcements/4.6/plasma.php">Plasma Workspaces</ulink>,
+        the <ulink url="http://www.kde.org/announcements/4.6/applications.php">applications</ulink>
+        and the <ulink url="http://www.kde.org/announcements/4.6/platform.php">KDE development
+          platform</ulink>.</para>
+      <!-- ($ ld: 27.1.11 sm $) -->
+    </blockquote>
+  </sect2>
   <!--
     <sect2 role="marketingteam">
       <title>Marketing Team</title>
