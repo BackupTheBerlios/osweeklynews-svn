@@ -24,13 +24,16 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html">Javier Llorente: Oxygenise your Apache</ulink></title>
+    <title><ulink url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html"
+        >Javier Llorente: Oxygenise your Apache</ulink></title>
     <para>I have updated <ulink url="http://bit.ly/f2eLPJ">apache2-icons-oxygen</ulink> with icons
       from KDE 4.6 RC2. Thanks Nuno &amp; Co! Now Apache’s directory listings look a bit better
       ;-)</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/screenshot-300x205.png"/>
+        <imagedata
+          fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/screenshot-300x205.png"
+          width="15%"/>
       </imageobject>
     </mediaobject>
     <para>See it in action <ulink url="http://www.javierllorente.com/tmp/">here</ulink>. If you want
@@ -53,22 +56,32 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <para>The last days i’ve updated or added new Packages:<itemizedlist>
         <listitem>
           <para><ulink url="http://shutter-project.org/">shutter</ulink>: new added. Available in:
-              <ulink url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/">openSUSE:Factory:Contrib</ulink></para>
+              <ulink
+              url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/"
+              >openSUSE:Factory:Contrib</ulink></para>
         </listitem>
         <listitem>
           <para><ulink url="http://www.calibre-ebook.com/">calibre</ulink>: updated. Available in:
-              <ulink url="http://download.opensuse.org/repositories/home:/thomas-schraitle:/calibre/">home:thomas-schraitle:calibre</ulink></para>
+              <ulink
+              url="http://download.opensuse.org/repositories/home:/thomas-schraitle:/calibre/"
+              >home:thomas-schraitle:calibre</ulink></para>
         </listitem>
         <listitem>
-          <para><ulink url="">bleachbit</ulink>: updated. Available in: <ulink url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/">openSUSE:Factory:Contrib</ulink></para>
+          <para><ulink url="http://bleachbit.sourceforge.net/">bleachbit</ulink>: updated. Available
+            in: <ulink
+              url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/"
+              >openSUSE:Factory:Contrib</ulink></para>
         </listitem>
       </itemizedlist></para>
     <para>Have a lot of fun with it :-)</para>
     <!-- ($ ld: 26.1.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://www.gnome.org/~michael/blog/2011-01-25-libreoffice-release.html">Michael Meeks: LibreOffice - our first release</ulink></title>
-    <para>Today we <ulink url="http://blog.documentfoundation.org/2011/01/25/the-document-foundation-launches-libreoffice-3-3/">released</ulink> our first stable release of LibreOffice. That is really rather exciting !
+    <title><ulink url="http://www.gnome.org/~michael/blog/2011-01-25-libreoffice-release.html"
+        >Michael Meeks: LibreOffice - our first release</ulink></title>
+    <para>Today we <ulink
+        url="http://blog.documentfoundation.org/2011/01/25/the-document-foundation-launches-libreoffice-3-3/"
+        >released</ulink> our first stable release of LibreOffice. That is really rather exciting !
       and a major milestone. Of course, if you have a GNU/Linux or Unix distribution, most likely
       your packagers already knew our release timetable, and have distribution packages ready for
       you to use. If you can use those, do - they are likely to be better integrated with the
@@ -87,7 +100,8 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <para>As we work in a much more conventional Free Software project mold, we are releasing a
         <emphasis role="italic">point-zero</emphasis> release. This will not be perfect, but is any
       software ? what we will be doing is rapidly iterating it, via many minor point releases,
-      towards perfection. We've published our <ulink url="http://wiki.documentfoundation.org/ReleasePlan">timeline</ulink> for that. Something
+      towards perfection. We've published our <ulink
+        url="http://wiki.documentfoundation.org/ReleasePlan">timeline</ulink> for that. Something
       you don't like ? some hideous translation or crasher bug ? we can include that fix soon, so do
       get stuck in and help out. </para>
     <para>Perhaps the more interesting piece is the commitment to move to a six month release cycle,
@@ -98,7 +112,8 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <para>LibreOffice is a project, almost uniquely suited to scaling to hundreds of people working
       on it - there are problems, missing features and bugs everywhere. There are millions of
       malnourished lines-of-code, awaiting your loving ownership, and remedial care - can you help
-      them ? If so, please head to our <ulink url="http://www.libreoffice.org/get-involved/developers/">developer instructions</ulink>
+      them ? If so, please head to our <ulink
+        url="http://www.libreoffice.org/get-involved/developers/">developer instructions</ulink>
       grab the code from freedesktop's git repository, and get stuck in, we'd love to work with you.
       We have many <ulink url="http://wiki.documentfoundation.org/Development/Easy_Hacks">Easy
         Hacks</ulink> designed for beginners to get involved - ranging from zero programming skill
@@ -106,9 +121,11 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
         <emphasis role="italic">#libreoffice</emphasis> on irc.freenode.net, where much of the team
       hangs out. </para>
     <para>Of course, if you want to mirror our binaries - and we are only 11Gb small (compared to
-      70Gb+ for OO.o), then drop a mail to <email>mirrors@documentfoundation.org</email>, we use Peter's excellent
-        <ulink url="http://mirrorbrain.org/">mirrorbrain</ulink> - we have good coverage, but it can
-      always improve. If you just like web banners that point to us there is just such a <ulink url="http://wiki.documentfoundation.org/File:LibreOffice_banner_728x90_L.png">image</ulink>. </para>
+      70Gb+ for OO.o), then drop a mail to <email>mirrors@documentfoundation.org</email>, we use
+      Peter's excellent <ulink url="http://mirrorbrain.org/">mirrorbrain</ulink> - we have good
+      coverage, but it can always improve. If you just like web banners that point to us there is
+      just such a <ulink
+        url="http://wiki.documentfoundation.org/File:LibreOffice_banner_728x90_L.png">image</ulink>. </para>
     <para><emphasis role="bold">Who did this thing ? </emphasis></para>
     <para>Well, in fact many people, far more than I can write down in one place - there are
       extensive credits <ulink url="http://www.libreoffice.org/credits.html">here</ulink> for all of
@@ -130,5 +147,45 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
       un-sung hackers who got really stuck into triple reviewing, and fixing nasty blocker bugs
       before final code freeze.</para>
     <!-- ($ ld: 26.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/01/28/smbta-stresstest-0-0-2-released-built-with-smb-traffic-analyzer-1-2-2/"
+        >Holger Hetterich: SMBTA Stresstest 0.0.2 released, built with SMB Traffic Analyzer
+        1.2.2</ulink></title>
+    <para><ulink url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SMBTA Stresstest 0.0.2 is
+        available in SUSE Studio</ulink>, an appliance made for testing the <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
+      software suite. A side effect of being a test is that SMBTA Stresstest can <emphasis
+        role="bold">easily be used by people interested in trying SMB Traffic Analyzer</emphasis>. </para>
+    <para>Since version 0.0.1 of SMBTA Stresstest, <ulink
+        url="http://holger123.wordpress.com/2011/01/20/smb-traffic-analyzer-1-2-2-released/">a new
+        release of SMB Traffic Analyzer</ulink> brought changes that are affecting the testing
+      appliance. Actually, SMBTA Stresstest includes a <emphasis role="bold">patched version of
+        smbtatools</emphasis> with changes that did not made it into the 1.2.2 release. SMBTA
+      Stresstest now creates directories and human readable filenames which should make it much
+      easier to interpret the results of a machine generated traffic scenario. :)<itemizedlist>
+        <listitem>
+          <para>there is now <emphasis role="bold">smbtatorturesrv</emphasis>, a small server
+            application distributing unique filenames and paths to several smbtatorture processes on
+            the net</para>
+        </listitem>
+        <listitem>
+          <para>now six users are running the smbtatorture application, creating more diverse
+            traffic (compared to 2 users in the former release) and are employing the
+            smbtatorturesrv process.</para>
+        </listitem>
+        <listitem>
+          <para>now three shares are being used while in operation, compared to 2 in the former
+            release.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>SMBTA Stresstest is maintaining an open port 3491 to allow queries from the smbtatools
+      programs. </para>
+    <para>You can download SMBTA Stresstest from the <ulink
+        url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SUSE Studio Gallery</ulink>. For more
+      information on <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic
+        Analyzer, visit it’s homepage</ulink>.</para>
+    <!-- ($ ld: 29.1.11 sm $) -->
   </blockquote>
 </sect1>
