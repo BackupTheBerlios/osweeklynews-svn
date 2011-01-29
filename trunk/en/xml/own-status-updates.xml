@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -19,7 +18,7 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-  <!--
+<!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
@@ -60,18 +59,14 @@
       <para>Last but not least the openSUSE Weekly News team with the translations into hungarian,
         greek and japanese wishes merry cristmas to all people across the world.</para>
       </blockquote>
-      </sect2> -->
-  <sect2 role="distribution">
+      </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
-      <title><ulink
-          url="http://holger123.wordpress.com/2011/01/25/smb-traffic-analyzer-submitted-to-opensuse-tumbleweed-rolling-update-distro/"
-          >Holger Hetterich: SMB Traffic Analyzer submitted to openSUSE Tumbleweed rolling update
-          distro</ulink></title>
-      <para>The complete <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB
-          Traffic Analyzer</ulink> (SMBTA in the following) software package (up to date Samba
-        including SMBTA VFS module, smbtad and smbtatools) are now available in <emphasis
-          role="bold">openSUSE’s Tumbleweed distribution</emphasis>, making it ready to run SMBTA
+      <title>
+        <ulink url="http://holger123.wordpress.com/2011/01/25/smb-traffic-analyzer-submitted-to-opensuse-tumbleweed-rolling-update-distro/">Holger Hetterich: SMB Traffic Analyzer submitted to openSUSE Tumbleweed rolling update distro</ulink>
+      </title>
+      <para>The complete <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink> (SMBTA in the following) software package (up to date Samba
+        including SMBTA VFS module, smbtad and smbtatools) are now available in <emphasis role="bold">openSUSE’s Tumbleweed distribution</emphasis>, making it ready to run SMBTA
         out of the box. Since my blog is read by quite some people outside of the openSUSE
         community, I am using this space to shortly introduce the Tumbleweed project, as it might
         raise interest to those who were not aware of it. </para>
@@ -80,31 +75,22 @@
         glance, this means in the ideal world: Install Tumbleweed once, and never run out of updates
         or maintenance, as Tumbleweed will update itself to always match the current package
         versions that openSUSE’s maintainers or the according open source projects consider as the
-        current stable release of a package. In difference to the <ulink
-          url="http://en.opensuse.org/Portal:Factory">openSUSE Factory distribution</ulink>, which
-        simply provides the current development state of openSUSE, Tumbleweed will <emphasis
-          role="bold">not provide unstable or experimental packages</emphasis>. The projects idea
+        current stable release of a package. In difference to the <ulink url="http://en.opensuse.org/Portal:Factory">openSUSE Factory distribution</ulink>, which
+        simply provides the current development state of openSUSE, Tumbleweed will <emphasis role="bold">not provide unstable or experimental packages</emphasis>. The projects idea
         was being discussed for longer time in the community, and finally brought to life and
-        implementation by Greg Kroah-Hartman, who <ulink
-          url="http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html">announced a
-          Tumbleweed repository in the openSUSE Buildservice</ulink>. In it’s current form,
+        implementation by Greg Kroah-Hartman, who <ulink url="http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html">announced a Tumbleweed repository in the openSUSE Buildservice</ulink>. In it’s current form,
         Tumbleweed is driven by a number of package maintainers and developers who want to make
         Tumbleweed to happen, and relies on package maintainers to support Tumbleweed by submitting
         their packages to the repository. </para>
       <para>It’s <emphasis role="bold">very easy</emphasis> to jump from openSUSE 11.3 to Tumbleweed
         by using zypper, to give it a try. I run it successfully in a virtual machine since
         Tumbleweed was announced, and consider to make it my distribution for development/work as it
-        brings advantages that I don’t want to miss. Being able to release a new <emphasis
-          role="bold">SMB Traffic Analyzer version and having it available for users and packaged in
-          a distribution</emphasis> in a matter of hours is one of them. Read more about that on
-          <ulink url="http://en.opensuse.org/Tumbleweed">the Tumbleweed page in the openSUSE
-          wiki</ulink>.</para>
-      <!-- ($ ld: 26.1.11 sm $) -->
-    </blockquote>
+        brings advantages that I don’t want to miss. Being able to release a new <emphasis role="bold">SMB Traffic Analyzer version and having it available for users and packaged in a distribution</emphasis> in a matter of hours is one of them. Read more about that on
+          <ulink url="http://en.opensuse.org/Tumbleweed">the Tumbleweed page in the openSUSE wiki</ulink>.</para>
+<!-- ($ ld: 26.1.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.suse.de/~coolo/opensuse_11.4/">Schedules for the next week (Thu, 20
-          Jan 2011 14:00:00 GMT)</ulink>
+        <ulink url="http://www.suse.de/~coolo/opensuse_11.4/">Schedules for the next week (Thu, 20 Jan 2011 14:00:00 GMT)</ulink>
       </title>
       <para>openSUSE 11.4 Milestone 6 release</para>
       <itemizedlist>
@@ -125,16 +111,14 @@
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
-            Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
-            FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -181,8 +165,7 @@
         also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
         appliances!</para>
       </blockquote>
-      </sect2> -->
-  <!--
+      </sect2> --><!--
   <sect2>
     <title>Team Report</title>
     <sect3 role="artteam">
@@ -196,8 +179,7 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>                
       </blockquote>
-      </sect3> -->
-  <!--
+      </sect3> --><!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -345,11 +327,10 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->
-  <sect2 role="buildserviceteam">
+      </sect3> -->  <sect2 role="buildserviceteam">
     <title>Build Service Team</title>
     <para/>
-    <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://michal.hrusecky.net/2011/01/mysql-5-5-in-opensuse-build-service/">Michal Hrusecky: MySQL 5.5 in openSUSE Build Service</ulink>
@@ -399,14 +380,12 @@
             <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_Factory/">openSUSE Factory</ulink></para>
           </listitem>
         </itemizedlist>     
-        </blockquote> -->
-    <formalpara>
+        </blockquote> -->    <formalpara>
       <title>Build Service Statistics</title>
-      <para>Statistics can found at <ulink url="http://build.opensuse.org"
-        >Buildservice</ulink></para>
+      <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
     </formalpara>
   </sect2>
-  <!--
+<!--
     <sect2 role="education">
       <title>Education Team</title>
 
@@ -417,13 +396,11 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect2> -->
-  <sect2 role="gnometeam">
+      </sect2> -->  <sect2 role="gnometeam">
     <title>GNOME Team</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/">Nelson Marques:
-          Unity, Compiz and ATI…</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/">Nelson Marques: Unity, Compiz and ATI…</ulink>
       </title>
       <para>I’ve finally added the Compiz packages to my development repository and unity itself
         alongside with some tools.</para>
@@ -443,30 +420,24 @@
         (compizconfig-settings-manager) with the Unity plugin.</para>
       <mediaobject>
         <imageobject>
-          <imagedata width="45%" align="center"
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"
-          />
+          <imagedata width="45%" align="center" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"/>
         </imageobject>
       </mediaobject>
       <para>(...)</para>
-      <!-- ($ ld: 23.1.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 23.1.11 sm $) -->    </blockquote>
   </sect2>
   <sect2 role="kdeteam">
     <title>KDE Team</title>
     <blockquote>
       <title>
-        <ulink url="http://vizzzion.org/blog/2011/01/4-6-0-available/">Sebastian Kügler: 4.6.0
-          Available</ulink>
+        <ulink url="http://vizzzion.org/blog/2011/01/4-6-0-available/">Sebastian Kügler: 4.6.0 Available</ulink>
       </title>
       <para>I’ve just pushed the relevant buttons to make the release of 4.6.0 a public fact.
         Packages should appear shortly for your favourite operating system, I know that openSUSE
         packages are available from Factory now, so start your zypper already.4.6.0 Released.</para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/4.6-elegantly-yours.png"
-            width="25%"/>
+          <imagedata width="25%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/4.6-elegantly-yours.png"/>
         </imageobject>
       </mediaobject>
       <para>The release is actually a pretty big thing, it adds a lot of new features, some of which
@@ -476,13 +447,12 @@
         it possible to manage these activities like sessions. So head over and read what’s new in
         the <ulink url="http://www.kde.org/announcements/4.6/plasma.php">Plasma Workspaces</ulink>,
         the <ulink url="http://www.kde.org/announcements/4.6/applications.php">applications</ulink>
-        and the <ulink url="http://www.kde.org/announcements/4.6/platform.php">KDE development
-          platform</ulink>.</para>
-      <!-- ($ ld: 27.1.11 sm $) -->
-    </blockquote>
+        and the <ulink url="http://www.kde.org/announcements/4.6/platform.php">KDE development platform</ulink>.</para>
+<!-- ($ ld: 27.1.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink url="http://lizards.opensuse.org/2011/01/27/6481/">Will Stephenson: openSUSE KDE
-          Team activity, Jan 2011</ulink></title>
+      <title>
+        <ulink url="http://lizards.opensuse.org/2011/01/27/6481/">Will Stephenson: openSUSE KDE Team activity, Jan 2011</ulink>
+      </title>
       <para>What’s been going on in the openSUSE KDE team this week? The news on everybody’s lips is
         that the KDE project released 4.6.0 yesterday. Naturally, we’ve got it available for
         download for all current openSUSE releases as we prepare 4.6 for openSUSE 11.4. 4.6 brings
@@ -493,13 +463,10 @@
         repository will shortly be made available, providing the point releases in the KDE 4.6
         series.</para>
       <figure id="fig.kde1">
-        <title>Plasma Desktop with Dolphin browsing this week’s modified files, and Speaker Setup
-          dialog</title>
+        <title>Plasma Desktop with Dolphin browsing this week’s modified files, and Speaker Setup dialog</title>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/plasma_workspace-150x150.png"
-              width="25%"/>
+            <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/plasma_workspace-150x150.png"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -507,9 +474,7 @@
         <title>Krita, KPlato, KSpread, KWord, about to transform into Calligra Office</title>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/koffice-150x150.png"
-              width="25%"/>
+            <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/koffice-150x150.png"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -517,9 +482,7 @@
         <title>Amarok 2.4.0 playing last.fm using Phonon 4.4.4 and GStreamer</title>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/amarok-150x150.png"
-              width="25%"/>
+            <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/amarok-150x150.png"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -527,9 +490,7 @@
         <title>Some code I wrote with my feet in a bucket of water in 2004</title>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/kdevelop-150x150.png"
-              width="25%"/>
+            <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/kdevelop-150x150.png"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -558,14 +519,13 @@
         improved performance, for example by deferring starting services until they are needed. </para>
       <para>If you want to join the fun or just need a helping hand, the expert and fanatical
         openSUSE KDE team can be found in #opensuse-kde on IRC, at
-          <email>opensuse-kde@opensuse.org</email> or at <ulink
-          url="http://en.opensuse.org/Portal:KDE">http://en.opensuse.org/Portal:KDE</ulink>. You can
+          <email>opensuse-kde@opensuse.org</email> or at <ulink url="http://en.opensuse.org/Portal:KDE">http://en.opensuse.org/Portal:KDE</ulink>. You can
         skip to the end and leave a response. Pinging is currently not allowed. </para>
-      <!-- ($ ld: 27.1.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 27.1.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink url="http://vizzzion.org/blog/2011/01/slicing-up-the-web/">Sebastian Kügler:
-          Slicing up the Web</ulink></title>
+      <title>
+        <ulink url="http://vizzzion.org/blog/2011/01/slicing-up-the-web/">Sebastian Kügler: Slicing up the Web</ulink>
+      </title>
       <para>The Webslice applet has been in Plasma (kdeplasma-addons, to be precise) since 4.4
         already. It allows the user to display a part of a webpage on the desktop. This can be
         useful for monitoring only a specific part of a webpage, or just to display something nice. </para>
@@ -585,9 +545,7 @@
         <title>performance</title>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-3-slices-268x300.png"
-            />
+            <imagedata fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-3-slices-268x300.png"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -610,9 +568,7 @@
         <title>improving interaction</title>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-config-preview-300x154.png"
-            />
+            <imagedata fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-config-preview-300x154.png"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -652,15 +608,13 @@
         preconfigured slices. In order to do that, copy and rename the .desktop file, change name,
         comment, icon, if you wish, then add a line
         like<screen>X-Plasma-Args=http://mysite.org,#myid </screen></para>
-      <para>Copy the file to ~/.kde(4)/share/kde4/services/, run <emphasis role="italic"
-          >kbuildsycoca4</emphasis> and add your newly created webslice to your Plasma using the
+      <para>Copy the file to ~/.kde(4)/share/kde4/services/, run <emphasis role="italic">kbuildsycoca4</emphasis> and add your newly created webslice to your Plasma using the
         widget explorer. </para>
       <para>A possible direction we can take this is to add a webslice category to opendesktop.org,
         and start sharing our webslices with each other…</para>
-      <!-- ($ ld: 28.1.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 28.1.11 sm $) -->    </blockquote>
   </sect2>
-  <!--
+<!--
     <sect2 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -708,8 +662,7 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect2> -->
-  <!--
+    </sect2> --><!--
     <sect2 role="medical">
       <title>Medical Team</title>
 
@@ -720,25 +673,21 @@
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect2> -->
-  <sect2 role="openfateteam">
+      </sect2> -->  <sect2 role="openfateteam">
     <title>openFATE Team</title>
     <sect3>
       <title>Top voted Features</title>
-      <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
-          We are looking for volunteers to implement. </emphasis></para>
+      <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
-            (Score: 334)</ulink>
+          <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 337)</ulink>
         </title>
         <para>&quot;Network installation could be improved by running package download and package
           installation in parallel.&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot
-            (Score: 166)</ulink>
+          <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 170)</ulink>
         </title>
         <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
           reading
@@ -750,7 +699,7 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 134)</ulink>
+          <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 137)</ulink>
         </title>
         <para>&quot;An easy way to remove Software! </para>
         <para>For example: you installed an application with &quot;1-click install&quot; (which will
@@ -761,23 +710,21 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
-            106)</ulink>
+          <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 111)</ulink>
         </title>
         <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
           configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 84)</ulink>
+          <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 86)</ulink>
         </title>
         <para>&quot;We need a feedback about packages that are preferred by users and actively used.
           Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
-            Linux) (Score: 69)</ulink>
+          <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 70)</ulink>
         </title>
         <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for Windows
           but exploiting the One Click Install concept of openSUSE (and therefore inheriting the
@@ -785,8 +732,7 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
-            &quot;Installation Summary&quot; (Score: 64)</ulink>
+          <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 66)</ulink>
         </title>
         <para>&quot;The YaST Qt package manager should provide as much information in the
           &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
@@ -794,8 +740,7 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score:
-            50)</ulink>
+          <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score: 54)</ulink>
         </title>
         <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change
           etc. is very scary for many users.</para>
@@ -803,114 +748,91 @@
           problem without giving much help. This is a cause for many complaints, and contributes to
           myths of RPM dependency hell still existing today. (...)&quot;</para>
       </blockquote>
-      <!-- ($ ld: 22.1.11 sat *updated* $) -->
-    </sect3>
+<!-- ($ ld: 29.1.11 sat *updated* $) -->    </sect3>
     <sect3>
       <title>Recently requested features</title>
-      <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if
-          you get interested.</emphasis></para>
+      <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311068">Akmod Equivalent for openSUSE</ulink>
+          <ulink url="https://features.opensuse.org/311136">Use the community repos list to remove repos</ulink>
         </title>
-        <para>Tumbleweed related as opposed to 11.4 related.</para>
-        <para>Fedora has this really nice tool called Akmod or Automatic Kernel Module, which builds
-          kmods on boot when you load into a new kernel that doesn&apos;t have kmods or to use the
-          openSUSE term kmps. As we now have a rolling release in openSUSE: Tumbleweed this kind of
-          functionality is more important than ever. Unless there are plans for rebuilding the kmps
-          for Tumbleweed each time there is a new kernel. Which doesn&apos;t seem to be the case
-          with the Nvidia kmp only supporting up to 2.6.34 series.</para>
+        <para>If the user adds a repo via the community repos list he should be able to remove them via the same way, i.e. have a list where he can de-select and thus remove the repos.
+That way if he e.g. added some repo which messed-up his system he could just bring up that same list de-select the repo and yast would &quot;update&quot; all installed packages from that repo to the original state and remove the repo afterwards.</para>
+        <para>In YaST&apos;s software management it&apos;s the same, you add/remove/refresh from within the same list.</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311069">Simple default file share config (ala
-            Ubuntu/MacOSX)</ulink>
+          <ulink url="https://features.opensuse.org/311137">Update of Cyrus imapd to the 2.4.x branch</ulink>
         </title>
-        <para>Enable simple Share and Dropbox folders by default on each account.</para>
-        <para>Home network filesharing should be easy for the home user. Ubuntu does this very
-          elegantly, with simple sharing and permission management. Current tools in most distros
-          are very confusing to the point of being nearly unusable, including OpenSUSE. I recommend
-          cloning the samba etc. technique as used in Ubuntu/Kubuntu.</para>
+        <para>It seems that OpenSUSE 11.4 still ships cyrus imapd 2.3.16. The 2.3.16 is listed as &quot;legacy&quot; at the
+<ulink url="http://www.cyrusimap.org/mediawiki/index.php/Downloads#IMAP_Server">Cyrus-Homepage</ulink> .</para>
+        <para>Would it be possible/better to change to 2.4.6 (or whatever version will be recent then)?</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311076">Change MAC via YaST</ulink>
+          <ulink url="https://features.opensuse.org/311138">Add romanian keyboard layout to future openSUSE installations</ulink>
         </title>
-        <para>YaST can&apos;t change MAC-address. Now, for change this address need do ifconfig eth0
-          hw ether 00:00:00:11:22:33. Think, it&apos;s not SUSE-way. </para>
-        <para>Change MAC-address may be simple. With YaST.</para>
+        <para>Romanian keyboard is not listed to other international layouts during the openSUSE installation.
+It can be choosen only after the openSUSE installation through Control Center -&gt; Keyboard -&gt; Layouts.</para>
+        <para>Please add the romanian keyboard mapping to the openSUSE installation.</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311077">Themeing (SuSE-Elegant?)</ulink>
+          <ulink url="https://features.opensuse.org/311139">Merge YaST and Control Center</ulink>
         </title>
-        <para>What about changing the Default-Theme to SuSE-Elegant from Cristian Rodriguez? See
-          http://kde-look.org/content/show.php/SuSE+Elegant?content=117251 + the there mentioned
-          links for the look.</para>
-        <para>At least providing a package for simple change of the various
-          grub/boot/kdm/kde-screens would be neat.</para>
+        <para>Merge YaST and Control Center together, and make this more structurate.. many similar settings are present here and there...</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311089">Disable system bell by default if sound
-            card is installed</ulink>
+          <ulink url="https://features.opensuse.org/311140">Add ratings and reviews in Software Manager</ulink>
         </title>
-        <para>One of the first things I do after installing openSUSE is disabling the system bell by
-          adding this to ~/.inputrc:</para>
-        <para><emphasis role="italic">set bell-style none</emphasis></para>
-        <para>Its volume is needlessly high. The bell scares the hell outta me whenever it creeps up
-          because I backspaced too much on the command line.</para>
-        <para>My suggestion: disable the system bell by default, unless no sound card is
-          installed.</para>
+        <para>Add ratings and reviews to all the packages in Software Manager, feature implemented already in Linux Mint and soon to be in Ubuntu.</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311114">xfce 4.8 in 11.4</ulink>
+          <ulink url="https://features.opensuse.org/311143">Humane address book for the cloud</ulink>
         </title>
-        <para>To get the new xfce 4.8 into openSUSE for 11.4.</para>
+        <para><emphasis role="bold">Motivation</emphasis></para>
+        <para>This project is not about an address book. It&apos;s not about listing contacts in alphabetical order, having fields for titles and middle names, zip codes, and different types of phone numbers, it&apos;s not about concepts like meta-contacts, contact syncing, IM status notifications, device capabilities, or about formats, APIs, or other technical questions. (...)</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311124">Consolidate faillog, pam_tally,
-            pam_tally2, pam_faillock</ulink>
+          <ulink url="https://features.opensuse.org/311150">Log System Configuration Changes</ulink>
         </title>
-        <para>There are four different ways to track the number of failed logins and react to this:
-          faillog, pam_tally, pam_tally2, pam_faillock. They are all incompatible together and
-          pretty hard next to impossible to configure.</para>
-        <para>Goal: Write one new module &quot;pam_faillog&quot;, which replaces all of them. Should
-          be able to read all current databases, supports all features together but uses advanced
-          PAM functionality to make configuration very easy.</para>
-        <para>The module depends on correct behavior of calling application, which means we need
-          some checks if application behaves correct and maybe fix them.</para>
+        <para>Moving to a new version often (always?) requires manual configuration of the new release to incorporate all the changes made over the life of the current system. If these changes were logged to a central file, we would, at a minimum, have a list to work with for manual changes, but longer term that log could serve as a data source to automate the configuation process. (...)</para>
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="https://features.opensuse.org/311132">Compile Mesa and x-server with
-            --enable-glx-tls</ulink>
+          <ulink url="https://features.opensuse.org/311155">Live and Install on the same DVD</ulink>
         </title>
-        <para>Most famous Linux distributions are compile Mesa and x-server with
-          --enable-glx-tls.</para>
+        <para>One openSUSE dvd that can be used for installation and also for live demo (like Ubuntu, Fedora... etc)</para>
       </blockquote>
-      <!-- ($ ld: 22.1.11 sat *replaced with newer ones* $) -->
-    </sect3>
+      <blockquote>
+        <title>
+          <ulink url="https://features.opensuse.org/311169">MintMenu to be included in openSUSE by default</ulink>
+        </title>
+        <para>We can have MintMenu by default in openSUSE</para>
+        <para>1. It is a fork of our own slab</para>
+        <para>2. It has lots more functionality than our slab and yes more popular too</para>
+        <para>3. Better UX</para>
+        <para>It already exists at OBS http://download.opensuse.org/repositories/home:/unamanic/openSUSE_11.3/ </para>
+      </blockquote>
+<!-- ($ ld: 29.1.11 sat *replaced with newer ones* $) -->    </sect3>
     <sect3>
       <title>Feature Statistics</title>
-      <para>Statistics for openSUSE 11.4 <ulink
-          url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+      <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
     </sect3>
   </sect2>
-  <!--
+<!--
     <sect2 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
-      </sect2> -->
-  <sect2 role="testing">
+      </sect2> -->  <sect2 role="testing">
     <title>Testing Team</title>
     <blockquote>
       <title>
-        <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry Finger:
-          Weekly News for January 1</ulink>
+        <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00000.html">Larry Finger: Weekly News for January 1</ulink>
       </title>
       <para>The next Testing Core Team IRC meeting has not been scheduled, but I expect it to Jan.
         31, 2011 if M6 is released next week. </para>
@@ -939,33 +861,28 @@
             <para>the kde live cd runs slowly</para>
           </listitem>
         </itemizedlist></para>
-      <!-- ($ ld: 22.1.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 22.1.11 sm $) -->    </blockquote>
   </sect2>
   <sect2 role="translationteam">
     <title>Translation Team</title>
     <itemizedlist>
       <listitem>
-        <para>Daily updated translation statistics are available on the <ulink
-            url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+        <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
       </listitem>
       <listitem>
         <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink> –
-            <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
-            Guide</ulink></para>
+            <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> -->
-  <!--
+    </sect3> --><!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->
-</sect1>
+      </sect3> --></sect1>
