@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -23,245 +22,72 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://mschlander.wordpress.com/2011/01/23/kde-is-slow-for-dummies/">Martin
-          Schlander: KDE is slow – for dummies</ulink>
+        <ulink url="http://mschlander.wordpress.com/2011/01/23/kde-is-slow-for-dummies/">Martin Schlander: KDE is slow – for dummies</ulink>
       </title>
       <para>On forums, IRC, mailing lists etc. you get a lot of people complaining that “KDE is
         slow”. I finally got fed up trying to answer the same question over and over, hence I’m
         writing this blog post, to explain how most people can solve their problem in a few very
         simple steps. (...)</para>
-      <!-- ($ ld: 24.1.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 24.1.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://omgsuse.com/content/surfing-securely-opensuse">OMG! SUSE! Team/rtyler:
-          Surfing securely on openSUSE</ulink>
+        <ulink url="http://www.makeuseof.com/tag/create-speech-bubbles-screenshots-gimp/">MakeUseOf/Jessica Cam Wong: How To Create Speech Bubbles For Screenshots In GIMP</ulink>
       </title>
-      <para>For openSUSE users constantly on the go, the security of your network traffic at random
-        airport/coffee shop/university wireless hotspots can become a big issue. Even with WPA2 or
-        WEP encryption, your traffic can still be insecure and visible to the owner of the hotspot
-        if left unencrypted. For some sites you can try to be sure to always use their HTTPS
-        versions, but you&apos;ve got to trust that the site owner has implemented their encryption
-        properly and aren&apos;t inadvertantly leaking your data to third party observers of
-        traffic.</para>
-      <para>If you&apos;re fortunate enough to have an ISP that offers VPN service, such as
-        Sonic.net, you can use a VPN (Virtual Private Network) to encrypt all of your traffic
-        between you and the end-point of the VPN.<note>
-          <para>You can also use independent VPN providers like SuperVPN, but you should be certain
-            you can trust them.</para>
-        </note></para>
-      <para>Below is a step-by-step screenshot guide for using IPSec-based VPN with NetworkManager
-        under GNOME and KDE4. (...)</para>
-      <!-- ($ ld: 20.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink
-          url="http://www.wafaa.eu/entry/counting-down-to-the-new-geeko-with-some-robotic-help-1-54.html"
-          >Andrew Wafaa: Counting down to the new Geeko with some robotic help</ulink>
-      </title>
-      <para>As many know, I have a few Android devices, and I know a lot of other openSUSE fans out
-        there also have robot powered devices. I decided the other day to try something during my
-        lunch break - create a widget to show how many days left till 11.4&apos;s release. </para>
-      <para>Yeah I know it isn&apos;t an earth shattering application, but I&apos;m not a code
-        monkey, so any working code I generate is a serious plus for me ;-) </para>
-      <para>So my lunchtime project was inspired by the efforts of someone at Ubuntu who was doing
-        the same for their Natty release. I used this tutorial to help get me going. I now present
-        to you oSRCD - the openSUSE Release CountDown. </para>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="20%"
-            fileref="http://lh4.ggpht.com/_ObpIMjebLDY/TTl9PbSdCmI/AAAAAAAAANY/5CdAgya0dXA/s640/oSRCD-GalaxyTab.png"
-          />
-        </imageobject>
-      </mediaobject>
-      <para>It isn&apos;t perfect, but it is a start, so if there is anyone that is a bit more able
-        in the ways of Android programming or artwork then please join in :-) </para>
-      <para>You can grab the source code from github or the .apk for manual install. And as
-        it&apos;s a mobile app here&apos;s the QR code: (...)</para>
-      <!-- ($ ld: 21.1.11 sm $) -->
-    </blockquote>
+      <para>Previously we have looked at some tutorials for anyone, new or advanced, to try his/her hand at creating artwork in GIMP because it CAN accomplish phenomenal works, especially in conjunction with other open-source software. Here’s a fun tutorial to <ulink url="http://www.makeuseof.com/tag/cartoonify-photos-gimp/">cartoonify photos in GIMP</ulink> (like you see in ads all over the web), here’s another one on <ulink url="http://www.makeuseof.com/tag/create-image-map-gimp/">creating image maps</ulink>, and there’s also one on <ulink url="http://www.makeuseof.com/tag/create-simple-zoomed-effect-screenshots-gimp/">creating a zoom effect on screenshots</ulink>. I’m certainly really excited about GIMP if you can’t tell already. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.unixmen.com/linux-commands/1459-useful-commands-for-daily-use"
-          >Linux.com/Jack Wallen: Reclaim Deleted Files and Repair Filesystems on Linux </ulink>
+        <ulink url="http://www.unixmen.com/linux-commands/1459-useful-commands-for-daily-use">Linux.com/Jack Wallen: Reclaim Deleted Files and Repair Filesystems on Linux </ulink>
       </title>
-      <para><quote>Linux is as solid an operating system as you'll ever use — but that doesn't mean
-          that the hardware you're running it on is equally solid. Hard drives are as prone to
-          errors as are file systems. And no matter how stable an OS is, it can't prevent you from
-          accidentally deleting files and/or folders. But don't despair: Linux is equipped with a
-          number of tools that can help you repair filesystem errors and reclaim deleted files.
-          Which tools? To start, <emphasis role="bold">e2fsck</emphasis>, <emphasis role="bold"
-            >scalpel</emphasis>, and <emphasis role="bold">lsof</emphasis> will get you the
-          farthest. Let's take a look at how each of these can be used to help your file systems be
-          free of errors and your files be freed from accidental deletion.</quote> (...)</para>
-      <!-- ($ ld: 26.1.11 sm $) -->
-    </blockquote>
+      <para><quote>Linux is as solid an operating system as you&apos;ll ever use — but that doesn&apos;t mean that the hardware you&apos;re running it on is equally solid. Hard drives are as prone to errors as are file systems. And no matter how stable an OS is, it can&apos;t prevent you from accidentally deleting files and/or folders. But don&apos;t despair: Linux is equipped with a number of tools that can help you repair filesystem errors and reclaim deleted files. Which tools? To start, <emphasis role="bold">e2fsck</emphasis>, <emphasis role="bold">scalpel</emphasis>, and <emphasis role="bold">lsof</emphasis> will get you the farthest. Let&apos;s take a look at how each of these can be used to help your file systems be free of errors and your files be freed from accidental deletion.</quote> (...)</para>
+<!-- ($ ld: 26.1.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/shell-scripts/positional-parameters/">BashShell.net/mike: Positional Parameters</ulink>
+      </title>
+      <para>Special built-in environmental  variables are positional parameters which hold command-line arguments to positions with the names 1,2,3,4, etc. which are indicated by $1,$2,$3,$4, etc.  Argument $0 is the name of the script.   These parameters are named positional because within the script the reference is to the position they occur on the command line. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.serverwatch.com/tutorials/article.php/3921001/Setting-Up-Linux-Cgroups.htm"
-          >ServerWatch/Joe Brockmeier: Setting Up Linux Cgroups</ulink>
+        <ulink url="http://www.packtpub.com/article/python-multimedia-enhancing-images">Packt/Ninad Sathaye: Python Multimedia: Enhancing Images</ulink>
       </title>
-      <para><ulink
-          url="http://www.serverwatch.com/tutorials/article.php/3920051/Introduction-to-Linux-Cgroups.htm"
-          >Last week&apos;s column</ulink> introduced Linux Control Groups (or cgroups), a feature
-        initially developed to limit resource usage in the Linux kernel. But it can do much more,
-        including tweak memory, bandwidth and CPU usage of system processes as well as deny access
-        to system resources. This week, let&apos;s delve a bit deeper and actually set up and manage
-        a cgroup. (...)</para>
-      <!-- ($ ld: 22.1.11 sat $) -->
-    </blockquote>
+      <para>Python is a high-level, object-oriented language with a comprehensive standard library. Typically, one can develop complex applications in Python very quickly compared to some other languages. Multimedia applications are used in a broad spectrum of fields. Writing applications that work with images, videos, and other sensory effects is great. Not every application gets to make full use of audio/visual effects, but a certain amount of multimedia makes any application very appealing.</para>
+      <para>In this article by Ninad Sathaye, author of <ulink url="http://www.packtpub.com/python-multimedia-application-beginner%27s-guide/book/ns/pythonmulti-abr6/0111?utm_source=ns_pythonmulti_abr6_0111&amp;utm_medium=content&amp;utm_campaign=naheed">Python Multimedia</ulink>, we shall cover the following recipes:</para>
+      <para>* Adjusting brightness and contrast</para>
+      <para>* Swap colors within an image</para>
+      <para>* Change the color of a flower (...)
+</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.ibm.com/developerworks/linux/library/l-script-linux-desktop-1/index.html"
-          >IBM developerWorks/Paul Ferrill: Scripting the Linux desktop, Part 1: Basics</ulink>
+        <ulink url="http://net.tutsplus.com/tutorials/php/advanced-regular-expression-tips-and-techniques/">Nettuts+/Burak Guzel: Advanced Regular Expression Tips and Techniques</ulink>
       </title>
-      <para>This series of articles explores how to use Python to create scripts for the GNOME
-        desktop, the screenlets framework, and Nautilus to deliver a highly productive environment.
-        Scripts on the desktop enable drag-and-drop functionality and quick access to the
-        information and services you commonly use. In this installment, learn how to build a desktop
-        application using the screenlets widget toolkit. (...)</para>
-      <!-- ($ ld: 22.1.11 sat $) -->
-    </blockquote>
+      <para>Regular Expressions are the Swiss Army knife for searching through information for certain patterns. They have a wide arsenal of tools, some of which often go undiscovered or underutilized. Today I will show you some advanced tips for working with regular expressions. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.phocean.net/2011/01/16/corrupted-virtual-disk-with-vmware.html"
-          >Jean-Christophe Baptiste: Corrupted virtual disk with VMware </ulink>
+        <ulink url="http://www.howtoforge.com/vboxheadless-running-virtual-machines-with-virtualbox-4.0-on-a-headless-opensuse-11.3-server">HowtoForge/Falko Timme: VBoxHeadless - Running Virtual Machines With VirtualBox 4.0 On A Headless OpenSUSE 11.3 Server</ulink>
       </title>
-      <para>Wow, this article and especially one of its comments saved my day. </para>
-      <para>My computer crashed and one of the VMware machine hosted on it could not start anymore
-        :<screen>“Cannot open the disk ‘path of vmdk’ or one of the snapshot disks it depends on.
-Reason: the specific virtual disk needs repair.</screen></para>
-      <para>Checking on the VMware forums, I quickly found the command that was supposed to help
-        :<screen>$ vmware-vdiskmanager -R /path/to/disk.vmdk
-The virtual disk, &apos;/path/to/disk.vmdk&apos;, is corrupted but the repair process has failed.</screen></para>
-      <para>Damned ! I almost resigned restoring the last backup and loosing a week of work when, by
-        chance, I found the article mentioned above. </para>
-      <para>As recommended, I downloaded the Virtual Disk Development Kit 1.2 from VMware, untared
-        it and still doubtfully launched
-        :<screen>$ ./bin64/vmware-vdiskmanager -R /path/to/disk.vmdk
-The virtual disk, &apos;/path/to/disk.vmdk&apos;, was corrupted and has been  successfully repaired.</screen></para>
-      <para>Saved! Thanks so much to the guys. I would have never thought about trying it, I wonder
-        how they could find it. </para>
-      <para>But how is it possible that the utility coming with vmware workstation 7.1 such so much
-        and is not on par with other versions ? (...)</para>
-      <!-- ($ ld: 18.1.11 sm $) -->
-    </blockquote>
+      <para>This guide explains how you can run virtual machines with <ulink url="http://www.virtualbox.org/">VirtualBox 4.0</ulink> on a headless OpenSUSE 11.3 server. Normally you use the VirtualBox GUI to manage your virtual machines, but a server does not have a desktop environment. Fortunately, VirtualBox comes with a tool called VBoxHeadless that allows you to connect to the virtual machines over a remote desktop connection, so there&apos;s no need for the VirtualBox GUI. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink
-          url="http://seife.kernalert.de/blog/2011/01/17/increasing-the-x-resolution-for-kvm-guests/"
-          >Stefan Seyfried: Increasing the X resolution for KVM guests</ulink>
+        <ulink url="http://www.linuxaria.com/article/tool-command-line-bandwidth-linux?lang=en">Linuxaria: 3 Command line tool to test bandwidth between 2 servers</ulink>
       </title>
-      <para>Today I wondered again, why my KVM guests get only 800×600 display resolution, even
-        though the framebuffer console is configured for 1024×768. While most of the time this does
-        not matter for testing, it does once you want to evalutate desktop environments or such in a
-        VM. </para>
-      <para>I checked the xorg log file and found, that the Cirrus card emulation apparently has no
-        DDC channel implemented, thus cannot detect the monitor and then X.org falls back to a plain
-        SVGA monitor. From the
-        logfile:<screen>Using default hsync range of 31.50-37.90 kHz
-Using default vrefresh range of 50.00-70.00 Hz</screen></para>
-      <para>Simply setting those ranges to something reasonable (I got my values from “<emphasis
-          role="bold">hwinfo --monitor</emphasis>“) helps quite a lot. Put this into
-        /etc/X11/xorg.conf.d/50-monitor.conf:<screen>  HorizSync   31 - 61
-  VertRefresh 50 - 90</screen></para>
-      <para>and you get a much more usable 1024×768 resolution.</para>
-      <!-- ($ ld: 18.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://emmes.livejournal.com/8382.html">Matthias Hopf: Restricting Linux kernel
-          configure options to currently used set</ulink>
-      </title>
-      <para>git is great for bisecting regressions (or finding a fix in a series of commits) - but
-        compiling the kernel can take ages, especially if you have to do it on an Atom, and with the
-        configuration of your favorite distribution... </para>
-      <para>Now finally I created a perl script for reducing the default config to the set of
-        modules that are currently actually loaded. Reduces kernel compilation times on a quad core
-        machine from 56 minutes to 6 for a standard SLED kernel Guess it&apos;s even more difference
-        on this !@#$%
-        Atom...<programlisting>  # cd /var/tmp/linux-2.6                    or wherever your git tree is located
-  # gunzip &lt;/proc/config.gz &gt;.config         to get the current configuration
-  # make oldconfig                           to add new options for current kernel
-  # ~/linux-adaptconfig.pl &gt;.config.new      to remove all not required options
-  # mv .config.new .config
-  # make oldconfig                           to be on the save side...
-  # make -j5                                 build, mother*beep*, build :-)
-</programlisting></para>
-      <para>Yes, it&apos;s a hack. No, it&apos;s certainly not perfect. But it might be exactly what
-        you had been waiting for. I waited long enough to actually write it myself...</para>
-      <!-- ($ ld: 18.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxaria.com/article/6-trucchi-con-awk?lang=en">Linuxaria: 6 Tricks
-          with awk</ulink>
-      </title>
-      <para>Awk has always been for me a source of great hatred and love, isan incredibly powerful
-        command with which it is possible to build real programs. </para>
-      <para>In this article I will give you 6 examples ready for use with your preferred terminal. </para>
-      <para>AWK is a data driven programming language designed for processing text-based data,
-        either in files or data streams. It is an example of a programming language that extensively
-        uses the string datatype, associative arrays (that is, arrays indexed by key strings), and
-        regular expressions. (...)</para>
-      <!-- ($ ld: 18.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://lizards.opensuse.org/2011/01/19/configuring-an-ipv6-dsl-connection/"
-          >Ludwig Nussel: Configuring an IPv6 DSL connection</ulink>
-      </title>
-      <para>The German company rh-tec offers free IPv6 internet connections for people that already
-        have T-DSL. Configuring such a connection on openSUSE 11.3 is not as straight forward as
-        with IPv4. It’s not hard either if you know where to put the settings though.<orderedlist>
-          <listitem>
-            <para>start the yast2 DSL module</para>
-          </listitem>
-          <listitem>
-            <para>follow the instructions of the wizard to set up a new PPPoE device. Enter your
-              user name and password at the provider screen.</para>
-          </listitem>
-          <listitem>
-            <para>At the “Connection Parameters” screen uncheck “Automatically Retrieve DNS”. Enter
-              an arbitrary IPv4 address as first DNS server (yast doesn’t accept IPv6 there yet, bug
-              665516).</para>
-          </listitem>
-          <listitem>
-            <para>finish the wizard and leave yast</para>
-          </listitem>
-          <listitem>
-            <para>open /etc/sysconfig/network/providers/provider0 (or whatever name was chosen by
-              yast) in an editor</para>
-          </listitem>
-          <listitem>
-            <para>change DNS1 and DNS2 to the actual IPv6 addresses of your provider’s name
-              servers</para>
-          </listitem>
-          <listitem>
-            <para>add the following line to the
-              file:<screen>PPPD_OPTIONS=&quot;noip +ipv6 ipv6cp-accept-local&quot;</screen></para>
-          </listitem>
-          <listitem>
-            <para>save and quit</para>
-          </listitem>
-          <listitem>
-            <para>Done! You may now use cinternet or qinternet to dial in and enjoy the (rather
-              empty) IPv6 internet.</para>
-          </listitem>
-        </orderedlist></para>
-      <!-- ($ ld: 20.1.11 sm $) -->
-    </blockquote>
+      <para>One element that is often not know, or that should be measured after a problem statement or after a change in the infrastructure is the network .</para>
+      <para>But how do you accurately measure the speed between two servers?
+
+Someone use ftp, scp or other file transfer protocols, these can give some indication, but probably you’ll measure the limit of your disks or CPU.</para>
+      <para>In this article I will show you 3 way to measure the bandwidth from the command line, without using the disks. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
   </sect2>
 </sect1>
