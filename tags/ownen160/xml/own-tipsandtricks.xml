@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://mschlander.wordpress.com/2011/01/23/kde-is-slow-for-dummies/">Martin Schlander: KDE is slow – for dummies</ulink>
+      </title>
+      <para>On forums, IRC, mailing lists etc. you get a lot of people complaining that “KDE is
+        slow”. I finally got fed up trying to answer the same question over and over, hence I’m
+        writing this blog post, to explain how most people can solve their problem in a few very
+        simple steps. (...)</para>
+<!-- ($ ld: 24.1.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.makeuseof.com/tag/create-speech-bubbles-screenshots-gimp/">MakeUseOf/Jessica Cam Wong: How To Create Speech Bubbles For Screenshots In GIMP</ulink>
+      </title>
+      <para>Previously we have looked at some tutorials for anyone, new or advanced, to try his/her hand at creating artwork in GIMP because it CAN accomplish phenomenal works, especially in conjunction with other open-source software. Here’s a fun tutorial to <ulink url="http://www.makeuseof.com/tag/cartoonify-photos-gimp/">cartoonify photos in GIMP</ulink> (like you see in ads all over the web), here’s another one on <ulink url="http://www.makeuseof.com/tag/create-image-map-gimp/">creating image maps</ulink>, and there’s also one on <ulink url="http://www.makeuseof.com/tag/create-simple-zoomed-effect-screenshots-gimp/">creating a zoom effect on screenshots</ulink>. I’m certainly really excited about GIMP if you can’t tell already. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.unixmen.com/linux-commands/1459-useful-commands-for-daily-use">Linux.com/Jack Wallen: Reclaim Deleted Files and Repair Filesystems on Linux </ulink>
+      </title>
+      <para><quote>Linux is as solid an operating system as you&apos;ll ever use — but that doesn&apos;t mean that the hardware you&apos;re running it on is equally solid. Hard drives are as prone to errors as are file systems. And no matter how stable an OS is, it can&apos;t prevent you from accidentally deleting files and/or folders. But don&apos;t despair: Linux is equipped with a number of tools that can help you repair filesystem errors and reclaim deleted files. Which tools? To start, <emphasis role="bold">e2fsck</emphasis>, <emphasis role="bold">scalpel</emphasis>, and <emphasis role="bold">lsof</emphasis> will get you the farthest. Let&apos;s take a look at how each of these can be used to help your file systems be free of errors and your files be freed from accidental deletion.</quote> (...)</para>
+<!-- ($ ld: 26.1.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/shell-scripts/positional-parameters/">BashShell.net/mike: Positional Parameters</ulink>
+      </title>
+      <para>Special built-in environmental  variables are positional parameters which hold command-line arguments to positions with the names 1,2,3,4, etc. which are indicated by $1,$2,$3,$4, etc.  Argument $0 is the name of the script.   These parameters are named positional because within the script the reference is to the position they occur on the command line. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.packtpub.com/article/python-multimedia-enhancing-images">Packt/Ninad Sathaye: Python Multimedia: Enhancing Images</ulink>
+      </title>
+      <para>Python is a high-level, object-oriented language with a comprehensive standard library. Typically, one can develop complex applications in Python very quickly compared to some other languages. Multimedia applications are used in a broad spectrum of fields. Writing applications that work with images, videos, and other sensory effects is great. Not every application gets to make full use of audio/visual effects, but a certain amount of multimedia makes any application very appealing.</para>
+      <para>In this article by Ninad Sathaye, author of <ulink url="http://www.packtpub.com/python-multimedia-application-beginner%27s-guide/book/ns/pythonmulti-abr6/0111?utm_source=ns_pythonmulti_abr6_0111&amp;utm_medium=content&amp;utm_campaign=naheed">Python Multimedia</ulink>, we shall cover the following recipes:</para>
+      <para>* Adjusting brightness and contrast</para>
+      <para>* Swap colors within an image</para>
+      <para>* Change the color of a flower (...)
+</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://net.tutsplus.com/tutorials/php/advanced-regular-expression-tips-and-techniques/">Nettuts+/Burak Guzel: Advanced Regular Expression Tips and Techniques</ulink>
+      </title>
+      <para>Regular Expressions are the Swiss Army knife for searching through information for certain patterns. They have a wide arsenal of tools, some of which often go undiscovered or underutilized. Today I will show you some advanced tips for working with regular expressions. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/vboxheadless-running-virtual-machines-with-virtualbox-4.0-on-a-headless-opensuse-11.3-server">HowtoForge/Falko Timme: VBoxHeadless - Running Virtual Machines With VirtualBox 4.0 On A Headless OpenSUSE 11.3 Server</ulink>
+      </title>
+      <para>This guide explains how you can run virtual machines with <ulink url="http://www.virtualbox.org/">VirtualBox 4.0</ulink> on a headless OpenSUSE 11.3 server. Normally you use the VirtualBox GUI to manage your virtual machines, but a server does not have a desktop environment. Fortunately, VirtualBox comes with a tool called VBoxHeadless that allows you to connect to the virtual machines over a remote desktop connection, so there&apos;s no need for the VirtualBox GUI. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxaria.com/article/tool-command-line-bandwidth-linux?lang=en">Linuxaria: 3 Command line tool to test bandwidth between 2 servers</ulink>
+      </title>
+      <para>One element that is often not know, or that should be measured after a problem statement or after a change in the infrastructure is the network .</para>
+      <para>But how do you accurately measure the speed between two servers?
+
+Someone use ftp, scp or other file transfer protocols, these can give some indication, but probably you’ll measure the limit of your disks or CPU.</para>
+      <para>In this article I will show you 3 way to measure the bandwidth from the command line, without using the disks. (...)</para>
+<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+  </sect2>
+</sect1>

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title><ulink url="http://saigkill.wordpress.com/2011/01/24/opensuse-weekly-news-poll/">Sascha
+        Manns: openSUSE Weekly News Poll</ulink></title>
+    <para>Hey you’re reading the openSUSE Weekly News? Then you’re the right person who fill up this
+      poll: <ulink
+        url="https://connect.opensuse.org/pg/polls/read/saigkill/11553/which-outputformat-of-the-weekly-news-you-prefer"
+        >https://connect.opensuse.org/pg/polls/read/saigkill/11553/which-outputformat-of-the-weekly-news-you-prefer</ulink></para>
+    <para>The more who are polling the better is it :-)</para>
+    <!-- ($ ld: 24.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
+        >App Installer Meeting or More Collaboration Accross Borders</ulink></title>
+    <para>Back in October, at the <ulink
+        url="http://news.opensuse.org/2011/01/26/2010/10/25/thanks-for-your-participation-at-the-opensuse-conference/"
+        >openSUSE Conference</ulink>, several meetings and hallway discussions occurred on the topic
+      of “Installation ofApplications” on openSUSE. As of today, we still have a very
+      package-centric approach, while users usually do not think in terms of packages but in terms
+      of applications: people want to use Firefox, LibreOffice or Frozen Bubble.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/01/appstream_meeting-300x225.jpg"
+          width="25%"/>
+      </imageobject>
+    </mediaobject>
+    <para>We investigated the best way to approach this issue and come to a fast resolution. With
+      several people from various distributions already working on some technologies that are
+      related to this, we realized this could be a prime example of Collaboration Accross Borders.
+      This lead Vincent Untz to contact several people from different distributions, to see if he
+      could spark an interest in a cross-distribution meeting on this topic. It turned out that
+      everyone replied enthusiastically! That’s how the <ulink
+        url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011">App Installer
+        Meeting</ulink> saw the light. </para>
+    <para>This meeting occurred over three days last week at the Novell/SUSE offices in Nuremberg,
+      with 15ish participants, from five distributions: Debian (Enrico Zini, David Kalnischkies),
+      Fedora (Richard Hughes, Florian Festi), Mageia (Michael Scherer, Olivier Thauvin, Samuel
+      Verschelde), openSUSE (Duncan Mac-Vicar, Michael Schroeder, Pavol Rusnak, Vincent Untz),
+      Ubuntu (Michael Vogt, Sebastian Heinlein). Frank Karlitschek and Garrett LeSage joined this
+      group of distribution-oriented people. This was a fantastic set of people to tackle the topic,
+      some of those having a background on user experience, others on low-level bits of packaging
+      systems. </para>
+    <para>During these three days, we looked at various bits of technologies, including <ulink
+        url="http://debtags.alioth.debian.org/">Debtags</ulink>, the <ulink
+        url="https://wiki.ubuntu.com/SoftwareCenter">Ubuntu Software Center</ulink>, the <ulink
+        url="http://www.freedesktop.org/wiki/Specifications/open-collaboration-services">Open
+        Collaboration Services specification</ulink> and more. This helped us know what is available
+      today and where we stand. We quickly agreed that we wanted to share the architecture to
+      provide an Application Center for each distribution, even though some distributions might
+      choose to have a different set of policies. </para>
+    <para>The group worked intensively to define the architecture, from the bottom to the top: this
+      includes the definition of a an application metadata format, how to create it and from which
+      sources (push as much information as possible upstream!), how to handle user-generated
+      metadata, the protocol used to communicate between the distribution server and the Application
+      Center client, as well as the user interface. The group is working on properly documenting the
+      technical results of this meeting to let the wider community understand the overall
+      architecture. Watch the <ulink url="http://www.youtube.com/watch?v=BHeP2ZBwS_U">video</ulink>
+      of a presentation delivered on the last day to Novell people to get an overview of what got
+      produced. </para>
+    <para>The meeting turned out to be even more productive than originally planned, and all
+      participants agreed on a concrete plan with an aggressive time line to push this effort
+      forward! Stay tuned! </para>
+    <para><ulink url="http://www.youtube.com/watch?v=BHeP2ZBwS_U">Youtube</ulink> and <ulink
+        url="http://blip.tv/file/get/Geeko-AppStreamMeetingSummary895.m4v">m4v</ulink> video file </para>
+    <para>Many thanks to all the sponsors of this event: Novell for kindly hosting and sponsoring
+      several attendees, Canonical and Red Hat for sending people, and Debian for sponsoring one
+      person! </para>
+    <para>Article contributed by Vincent Untz</para>
+    <!-- ($ ld: 26.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/01/27/first-bretzn-sprint-opensuse-app-store-on-the-horizon/"
+        >First Bretzn Sprint: openSUSE App Store on the Horizon</ulink></title>
+    <para>Novell hosted the first <ulink
+        url="http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/"
+        >Bretzn</ulink> Sprint in the SUSE office in Nürnberg between 21th and the 23st of January.
+      The objective of the sprint was to create an proof of concept application store for openSUSE. </para>
+    <para>This meeting is a direct follow up of the <ulink
+        url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
+        >Cross-distribution meeting on application installer</ulink> which took place in the 3 days
+      leading up to the Bretzn sprint. During this meeting developers from <ulink
+        url="http://www.debian.org/">Debian</ulink>, <ulink url="http://fedoraproject.org/"
+        >Fedora</ulink>, <ulink url="http://mageia.org/">Mageia</ulink>, <ulink
+        url="http://www.opensuse.org/">openSUSE</ulink>, and <ulink url="http://www.ubuntu.com/"
+        >Ubuntu Linux</ulink> distributions decided to work together on common APIs and code for
+      application stores on Linux. </para>
+    <para>The Bretzn Sprint was dedicated to the development of a proof of concept of this idea,
+      using existing components like the <ulink url="http://gitorious.org/meego-garage/">MeeGo
+        Garage</ulink> client and <ulink
+        url="http://api.kde.org/kdesupport-api/kdesupport-apidocs/attica-git/html/"
+        >libattica</ulink> as starting points. </para>
+    <para>Attendees of this meeting where Will Stephenson, Dan Leinir Turthra Jensen, Frederik
+      Gladhorn, Mateu Batle Sastre, Eugene Trounev, Vincent Untz, Pavol Rusnak and Frank
+      Karlitschek. This team brought together a wide range of skills, as can be seen in the results
+      of this highly productive sprint.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/01/appstore_details.png"
+          width="50%"/>
+      </imageobject>
+    </mediaobject>
+    <para>In just two and a half days, they managed to create a working application store client for
+      openSUSE and KDE. The server part was based on <ulink
+        url="http://www.freedesktop.org/wiki/Specifications/open-collaboration-services">OCS</ulink>
+      (Open Collaboration Services), which already did everything needed for the server side and
+      just needed some data inserted to be shown in the client. The client in turn was created by
+      using the MeeGo Garage client, and adapting it to be a more KDE-like application, by using the
+      various KDE widgets and other tools, removing the duplication of functionality which was
+      covered by the KDE libraries. </para>
+    <para>Finally, a new application view was created, to replace the existing which was never as
+      pleasing as the original authors wanted it to be. This was done by using <ulink
+        url="http://qt.nokia.com/products/qt-quick/">Qt Quick</ulink>, which has allowed for the
+      rapid construction of a much more pleasant look. The new interface is the result of a
+      brainstorming session involving all members of the sprint, based on the results from the
+        <ulink
+        url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
+        >cross-distribution meeting</ulink>. While this work is still in progress, it already
+      represents an improvement over the old interface. </para>
+    <para><emphasis role="italic">Article contributed by Frank Karlitschek</emphasis></para>
+    <!-- ($ ld: 27.1.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/01/28/opensuse-announces-development-milestone-six-of-six/"
+        >openSUSE Announces Development Milestone Six of Six</ulink></title>
+    <para><emphasis role="italic">openSUSE project manager Stephan Kulow has announced that openSUSE
+        11.4 Milestone 6 (M6) is ready for testing. With M6, the pace of development is starting to
+        slow down as the focus switches towards QA and bug fixing.</emphasis></para>
+    <para>The project has been <ulink url="http://news.opensuse.org/2010/11/11/opensuse-11-4m3/"
+        >evaluating systemd vs SysV init</ulink> to manage system and service startup, and has
+      decided to stay with SysV init for 11.4 due to issues in getting the last 10% of the
+      integration perfect. </para>
+    <para>M6 sees the completed removal of the HAL hardware abstraction layer, to be replaced with
+      the more up-to-date and actively maintained udev, udisks and upower suite. HAL was already
+      scheduled for removal in 11.3, but it was retained while the last few software packages which
+      depend on it were ported to udev and company. </para>
+    <para>Branding and artwork has had a lot of attention, with the addition of the final
+      wallpapers, splash screens and branding for 11.4. The default wallpaper is called Celadon
+      Stripes, taking its inspiration from the color codename for this release. </para>
+    <para>New software added in Milestone 4 includes the <ulink
+        url="http://en.opensuse.org/Portal:WebYaST">WebYaST stack</ulink>. WebYaST is the web-based
+      admin tool developed for SLES, now <ulink
+        url="http://lizards.opensuse.org/2010/12/21/easy-use-of-webyast-for-opensuse-11-3/"
+        >available for openSUSE</ulink>. Professional sysadmins and those who just like to
+      comfortably administer their openSUSE servers will appreciate WebYaST. Also on the server
+      side, the latest versions of the Horde groupware suite are now in openSUSE. </para>
+    <para>Software updates this milestone include the update of XOrg to <ulink
+        url="http://www.x.org/wiki/Other/Press/X11R76Released">7.6</ulink>, <ulink
+        url="http://www.virtualbox.org/">VirtualBox 4.0.2</ulink>, <ulink
+        url="http://www.gnucash.org/#101221-2.4.0.news">GnuCash 2.4</ulink>, and <ulink
+        url="http://wiki.scribus.net/canvas/News_2010-11-29">Scribus 1.3.9</ulink>. A <ulink
+        url="http://lists.opensuse.org/opensuse-factory/2011-01/msg00271.html">lively
+        discussion</ulink> on the opensuse-factory list about whether to include the stable Firefox
+      3.6.13 or a Firefox 4 beta centered around the limited availability of popular extensions for
+      version 4 versus the short upstream maintenance period of Firefox 3 releases. As this article
+      was published, the discussion was leaning towards taking a Firefox 4 beta and online-updating
+      it to the final release when it becomes available. </para>
+    <para>Updates are flowing thick and fast to the KDE workspace and applications. <ulink
+        url="http://www.kde.org/announcements/announce-4.6-rc2.php">KDE 4.6RC2</ulink> is on M6, and
+      will be updated to <ulink url="http://amarok.kde.org/en/releases/2.4.0">4.6.0 final</ulink>
+      for the first Release Candidate. The accompanying flurry of application releases include
+        <ulink url="http://amarok.kde.org/en/releases/2.4.0">Amarok 2.4.0</ulink>, <ulink
+        url="http://www.digikam.org/drupal/node/567">Digikam 1.8.0</ulink>, <ulink
+        url="http://www.koffice.org/news/koffice-2-3-1-released/">KOffice 2.3.1</ulink>, k3b 2.0.2,
+        <ulink url="http://milianw.de/blog/kdevelop-42-available">KDevelop 4.2</ulink>, <ulink
+        url="http://kmymoney2.sourceforge.net/index-home.html">KMyMoney 4.5</ulink>, Rekonq 0.6 and
+      BlueDevil 1.0.1. Fans of the Oxygen style will also see it in GTK applications, thanks to the
+      native port of Oxygen to a GTK style in the form of the oxygen-gtk package . </para>
+    <para>As the GNOME project prepares for <ulink url="http://www.gnome3.org">GNOME 3</ulink>, the
+      focus at openSUSE is on stabilisation and polish to GNOME 2.32. Bugfixes to PulseAudio, GDM
+      and gnome-main-menu will ensure that 11.4 brings incremental refinement to GNOME users.
+      Clutter 1.5 is included to support the latest available preview of gnome-shell, and the <ulink
+        url="http://gramps-project.org/">gramps genealogy tool</ulink> is added in version 3.2.5.
+      The GNOME team is preparing an 11.4-based Live CD that will include GNOME 3 when it is
+      released in March. </para>
+    <para>The XFCE desktop is updated thanks to the hard work of the community to <ulink
+        url="http://www.xfce.org/about/news/?post=1295136000">version 4.8</ulink>, bringing with it
+      far too many improvements to mention. </para>
+    <para>A <ulink
+        url="http://en.opensuse.org/openSUSE:Most_annoying_bugs_11.4_dev#openSUSE_11.4_Milestone_6_of_6"
+        >list of most annoying bugs</ulink> is being compiled; please check it before installing. We
+      look forward to <ulink url="http://bit.ly/hmbwUF">your bug reports</ulink> and test
+      experiences too. <ulink url="http://openqa.opensuse.org/">Automated testing</ulink> and the
+      openSUSE Factory team have been active to ensure that your download of M6 will be at least
+      minimally functional. </para>
+    <para>Release Candidate 1 is scheduled for February 10 and brings with it a hard freeze.
+      openSUSE 11.4 is planned to be released in March 2011.</para>
+    <!-- ($ ld: 28.1.11 sm $) -->
+  </blockquote>
+</sect1>

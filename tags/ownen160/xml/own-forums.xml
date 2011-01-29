@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="forums">
+  <title>openSUSE Forums</title>
+  <blockquote>
+    <title><ulink url="http://forums.opensuse.org/english/other-forums/community-fun/general-chit-chat/452115-free-lts-version-opensuse-would-top-my-linux-wish-list.html">
+	A free LTS version of openSUSE would top my linux wish list
+	</ulink></title>
+    <para>
+      openSUSE has a release cycle of 8 months, i.e. a new version every eight months, and each version is supported for 24 months. There are numerous reasons to have it this way, but there are equally numerous situations where one would like to have an LTS (Long Term Support) version, like servers. This thread shows the demand is there for at least some of us. It also appears that some efforts to come to an LTS version of openSUSE have already been made. 
+      </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/453120-system-failure-dual-boot-xp.html">
+      System failure (dual boot with XP)
+      </ulink></title>
+    <para>
+      A returning issue: problems in another OS require the use of install media, which causes loss of the bootloader, that manages booting the installed operating systems, so no openSUSE. This user had a crash in XP, that made him land in a continuous loop, with no OS available at all. This one is not solved yet, but it's going there...
+      </para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/453181-kernel-2-6-37-wont-boot.html">
+      Kernel 2.6.37 won't boot
+      </ulink></title>
+    <para>
+      From the title an insider would expect an openSUSE Factory or openSUSE 11.4 Milestone 5 user, since those have kernel 2.6.37. Neither of those is true, the kernel was installed from a repo, that was added during a one-click procedure from a non-supported repo. Read how this is found out by the thread starter and the other contributors.
+      </para>
+  </blockquote>
+  <blockquote>
+    <title>This week's subforum: <ulink url="http://forums.opensuse.org/english/other-forums/looking-something-other-than-support/">
+      Looking for something other than support
+      </ulink></title>
+    <para>
+      This is the place in the forums where people ask for things like hardware advice, open source software equivalents for proprietary ones, community members' thoughts on their plans, or "will openSUSE run well on my ....". Sometimes the replies are quite straight forward, other times we see lively discussions. 
+      </para>
+    <!-- ($ ld: 19.1.11 gl $) -->
+  </blockquote>
+</sect1>

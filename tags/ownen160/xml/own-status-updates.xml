@@ -1,0 +1,925 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="status-updates">
+  <title>Status Updates</title>
+  <!--
+  <sect2 role="board">
+    <title>Board</title>
+    <blockquote>
+      <title>openSUSE Weekly News searches for contributors</title>
+      <para></para>
+    </blockquote>
+  </sect2> -->
+  <sect2 role="distribution">
+    <title>Distribution</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://holger123.wordpress.com/2011/01/25/smb-traffic-analyzer-submitted-to-opensuse-tumbleweed-rolling-update-distro/"
+          >Holger Hetterich: SMB Traffic Analyzer submitted to openSUSE Tumbleweed rolling update
+          distro</ulink>
+      </title>
+      <para>The complete <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB
+          Traffic Analyzer</ulink> (SMBTA in the following) software package (up to date Samba
+        including SMBTA VFS module, smbtad and smbtatools) are now available in <emphasis
+          role="bold">openSUSE’s Tumbleweed distribution</emphasis>, making it ready to run SMBTA
+        out of the box. Since my blog is read by quite some people outside of the openSUSE
+        community, I am using this space to shortly introduce the Tumbleweed project, as it might
+        raise interest to those who were not aware of it. </para>
+      <para><emphasis role="bold">openSUSE Tumbleweed</emphasis> is a project to provide the
+        openSUSE Distribution in form of <emphasis role="bold">rolling updates</emphasis>. At a
+        glance, this means in the ideal world: Install Tumbleweed once, and never run out of updates
+        or maintenance, as Tumbleweed will update itself to always match the current package
+        versions that openSUSE’s maintainers or the according open source projects consider as the
+        current stable release of a package. In difference to the <ulink
+          url="http://en.opensuse.org/Portal:Factory">openSUSE Factory distribution</ulink>, which
+        simply provides the current development state of openSUSE, Tumbleweed will <emphasis
+          role="bold">not provide unstable or experimental packages</emphasis>. The projects idea
+        was being discussed for longer time in the community, and finally brought to life and
+        implementation by Greg Kroah-Hartman, who <ulink
+          url="http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html">announced a
+          Tumbleweed repository in the openSUSE Buildservice</ulink>. In it’s current form,
+        Tumbleweed is driven by a number of package maintainers and developers who want to make
+        Tumbleweed to happen, and relies on package maintainers to support Tumbleweed by submitting
+        their packages to the repository. </para>
+      <para>It’s <emphasis role="bold">very easy</emphasis> to jump from openSUSE 11.3 to Tumbleweed
+        by using zypper, to give it a try. I run it successfully in a virtual machine since
+        Tumbleweed was announced, and consider to make it my distribution for development/work as it
+        brings advantages that I don’t want to miss. Being able to release a new <emphasis
+          role="bold">SMB Traffic Analyzer version and having it available for users and packaged in
+          a distribution</emphasis> in a matter of hours is one of them. Read more about that on
+          <ulink url="http://en.opensuse.org/Tumbleweed">the Tumbleweed page in the openSUSE
+          wiki</ulink>.</para>
+      <!-- ($ ld: 26.1.11 sm $) -->
+    </blockquote>
+    <itemizedlist>
+      <title>Important Links</title>
+      <listitem>
+        <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+  <!--
+  <sect2 role="susestudio">
+    <title>SUSE Studio</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.lenzg.net/archives/332-Updated-Drupal-7-appliances-to-version-7.0-final.html">Lenz Grimmer: Updated Drupal 7 appliances to version 7.0 final</ulink>
+      </title>
+      <para>Congratulations to the Drupal community for getting <ulink url="http://drupal.org/drupal-7.0">version 7.0</ulink>
+        <ulink url="http://drupal.org/drupal-7-released">released</ulink>! This is a major mile
+        stone and an excellent reason to <ulink url="http://www.drupal7releaseparty.org/">celebrate</ulink>! If you want to give Drupal 7 a try without having to install anything,
+        I&apos;ve now updated my Drupal 7 appliances on <ulink url="http://susestudio.com/">SuSE Studio</ulink> to the latest release. The appliance is based on <ulink url="http://software.opensuse.org/113/en">openSUSE Linux 11.3</ulink> and is available in
+        two variants:<itemizedlist>
+          <listitem>
+            <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive">text-mode</ulink> only appliance to which you connect using your local web browser
+              via the network.</para>
+          </listitem>
+          <listitem>
+            <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive-gui">GUI version</ulink> that starts up the Firefox browser in a minimalistic GNOME desktop
+              to perform the installation locally. Remote network access is available, too.</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>The database backend is phpMyAdmin has been added to support web-based administration of
+        the MySQL server. You can access it via http://localhost/phpMyAdmin/. I also added <ulink url="http://drush.ws/">drush</ulink>, the Drupal command line shell and scripting
+        interface and some additional packages (yast2-http-server, bind-utils, php5-ctype, patch). I
+        also bumped up the appliance&apos;s version number to 7.0.0, to match the version number of
+        Drupal included. </para>
+      <para>The appliance is available in various formats:<itemizedlist>
+          <listitem>
+            <para>A live raw disk image, ready to be written to an USB stick or flash drive</para>
+          </listitem>
+          <listitem>
+            <para>A live ISO image, to be burned on a CD or used in a virtual machine</para>
+          </listitem>
+          <listitem>
+            <para>A hard disk image, to be dumped on a hard disk drive</para>
+          </listitem>
+          <listitem>
+            <para>Various virtual disk formats, e.g. OVF, VMWare/VirtualBox/KVM and Xen</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>Please see the installation instructions provided on the download pages for details on
+        how to use the various image formats. </para>
+      <para>So congratulations to the Drupal developer community for reaching this goal and thanks
+        to SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I
+        also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
+        appliances!</para>
+      </blockquote>
+      </sect2> -->
+  <sect2 role="teamreports">
+    <title>Team Report</title>
+    <sect3 role="artteam">
+      <title>Art Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/01/13/wallpaper-community-pack-1/">Nelson
+            Marques: Wallpaper Community Pack #1</ulink>
+        </title>
+        <para>I’ve received some emails and some positive feedback about one wallpaper I used for a
+          couple of screenshot’s I’ve used in the past, including also information requests about
+          where that very same wallpaper could be found. I’m happy people liked my choice. </para>
+      </blockquote>
+    </sect3>
+    <!--
+    <sect3 role="boosters">
+      <title>Boosters Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://news.opensuse.org/2010/12/29/opensuse-boosters-year-2010/">openSUSE
+            Boosters Year 2010</ulink>
+        </title>
+        <figure id="fig.boosters">
+          <title>The elusive Thirsty Thirteen</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata width="50%" align="center"
+                fileref="http://news.opensuse.org/wp-content/uploads/2010/12/Opensuse-boosters-300x200.jpg"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>At the end of the year it is the time for reviews and the openSUSE Booster <xref
+            linkend="fig.boosters"/> team did not want to let that opportunity slip. So what was
+          important in 2010 from an openSUSE Boosters perspective? What happened, what progress was
+          made, how did the boosters help openSUSE? A report from Klaas Freitag.</para>
+        <para><emphasis role="bold">Who are the Boosters</emphasis></para>
+        <para>For those who do not know who <ulink
+            url="http://en.opensuse.org/openSUSE:Boosters_team">the Boosters</ulink> are: We’re not
+          Tuxies favorite boy group, but a bunch of people dedicated to help the openSUSE Project in
+          any way we can. The team consists of 13 people (BTW: widely known as the thirsty thirteen)
+          with skills ranging from low level C hackery over Ruby on Rails mastering to Graphical
+          Design or Project Management. Our team picks milestones and works on them in a agile
+          fashion while always following our mantra: Grow community by enabling community. You can
+          meet us at the usual places like IRC, the mailinglists or events were we show up and
+          spread the word about openSUSE. We’re there to make contributors life easier and more fun,
+          so if you have anything do not hesitate to talk to us. We’re here for you.</para>
+        <para role="bold"><emphasis role="bold">Events in 2010</emphasis></para>
+        <para>So let’s quickly fly over the year of 2010 and see what was nice and important.</para>
+        <itemizedlist>
+          <listitem>
+            <para>FOSDEM</para>
+            <para>Lets start with a very important event, FOSDEM in Brussels in February. We
+              traveled there by coach the first time. That was remarkable because there were some
+              push back against before (long journey) but we did it because it is cheaper, which
+              means more people can go. The result was that we all were quite pleased by the coach
+              trip as it was comfortable and fun, and finally not so much longer than the flight.
+              And yes, consider how much carbon dioxide was saved? Since that trip I am constantly
+              nagging for budget for an openSUSE Coach…</para>
+            <para>I held a talk about Hermes at FOSDEM which was, well, not a great success, that
+              thing seems hard to market. That happens, others were more succesfull, like
+              Christopher with his talk about image building with Kiwi. Michal had a meeting with
+              MySQL packagers from all over the world at FOSDEM, which was probably the first real
+              initiative to collaborate on cross distro topics. I also bought a GNOME T-Shirt, met
+              tons of old friends, had cherry beer and got a cold as usual on FOSDEM.</para>
+          </listitem>
+          <listitem>
+            <para>Dev meeting</para>
+            <para>Also in February, we hosted a dev meeting of 25 KDE hackers here in the Nuremberg
+              office. They worked on the highly rated plasma workspace for KDE 4.5. I still wonder
+              how Will managed to get around with definitely no sleep for days.</para>
+          </listitem>
+          <listitem>
+            <para>Bento and wiki work</para>
+            <para>At home, at the beginning of the year we worked on projects called
+                <quote>Integrate all Infrastructure under one Umbrella</quote> which resulted in the
+              Bento web theme nowadays at all openSUSE sites use. It provides short ways from one
+              site to another by thought through and pretty menus. Robert did a real great job with
+              that and we got a lot of external recognition for it. At the same time the Wiki
+              project started which was a huge project the Wiki community was pulling together with
+              Henne and Tom. The decision was to create a new Wiki from scratch, implement reviewing
+              features and transfer all relevant content into the new one while making sure to not
+              transfer stuff nobody needs and maintains any more. That was a big thing and caused a
+              lot of discussion. Today we can look back and say that we now have a well structured
+              Wiki with valuable content. Fortune favors the bold :-)</para>
+          </listitem>
+          <listitem>
+            <para>OBS</para>
+            <para>In parallel to that, Coolo and Tom were contributing to the new BuildService
+                <ulink url="http://build.opensuse.org">web interface</ulink>. After long working
+              hours we finally came out with a great web interface for OBS which was a big bum for
+              the whole project, as it makes working in OBS much more fun. I remember that whole
+              thing being started as a sprint called “Factory status”, aiming to provide a good
+                <ulink url="https://build.opensuse.org/projectstatus?project=openSUSE%3AFactory"
+                >overview page</ulink> for the Factory project in OBS. It grew a bit more ambitions,
+              but, well, that’s how it goes if things are in movement ;-)</para>
+          </listitem>
+          <listitem>
+            <para>LinuxTag</para>
+            <para>In June, there was LinuxTag in Berlin where most of us participated with talks in
+              the free program or workshops on our booth. We educated a lot of people how to
+              contribute to openSUSE in various ways. From submitting code fixes through the Build
+              Service to creating great Geeko graphics with Inkscape to how to twist their own Geeko
+              out of pipe cleaners.</para>
+          </listitem>
+          <listitem>
+            <para>openSUSE 11.3</para>
+            <para>In July, openSUSE 11.3 was released. That was lots of work beforehand with quite
+              some boosters involvement, as Mr. Distro Coolo is part of the team. However not only
+              he is contributing to the distribution, we all have our shares in it. 11.3 was a good
+              one, it got good press and showed that we as a community are doing great. All over the
+              world release parties were organized, some Boosters took over the one here in
+              Nürnberg. <ulink
+                url="http://lizards.opensuse.org/2010/07/16/opensuse-11-3-launch-party-in-nurnberg/"
+                >Nice party</ulink> with some talks, along with BBQ and beer. The latter ran out at
+              7pm, because many community members showed up. Cool, I love that kind of stress to
+              organize food and beer quickly to let the party go on :-)</para>
+          </listitem>
+          <listitem>
+            <para>GNOME and KDE conferences</para>
+            <para>Also in Summer, GUADEC as well as Akademy took place for our desktop Boosters.
+              Vincent rocked GUADEC and gave away Geekos and stuff and advertised openSUSE as a good
+              platform for the upcoming GNOME3. Will could not go to Akademy this year for a very
+              good reason called Anna :-)</para>
+          </listitem>
+          <listitem>
+            <para>openSUSE conference</para>
+            <para>In autumn, the for me most exciting event of the year took place, the second
+                <ulink url="http://en.opensuse.org/Portal:Conference">openSUSE Conference</ulink>.
+              We were heavily involved in organizing, program committee work, giving talks and
+              presentations and all what is involved with that kind of large event. It was a huge
+              success, as a very active and passionate community showed up. Discussions went from a
+                <quote>This is what we did</quote> in the last year to a <quote>this is what we
+                could do</quote> which is so great to see as that is resulting in innovation for the
+              whole project. As a result some very concrete sub projects were created such as
+                <quote>Project Brezn</quote> and openSUSE Invis which slowly evolves.</para>
+          </listitem>
+          <listitem>
+            <para>openFATE, Connect and more</para>
+            <para>After the conference and the release of 11.3 we started to dig into milestones
+              again with <ulink url="http://features.opensuse.org">openFATE</ulink> and <ulink
+                url="http://connect.opensuse.org">Connect</ulink>. Since a couple of weeks we have a
+              nice looking openFATE that has the features that make it possible for the feature
+              screening team to work on one of our most important tasks in our project: Looking into
+              the future of the distribution with feature evaluation. We also implemented the future
+              of the user/group handling for all the openSUSE services with a social twist: Connect.
+              Our own instance of a social network that makes it possible to connect the people that
+              make this project what it is and at the same time makes it possible to centralize the
+              user data.</para>
+          </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Busy 2010</emphasis></para>
+        <para>So all in all the boosters had a very busy and prosperous year 2010. All of us carried
+          their individual share of work in the various areas of the openSUSE project we participate
+          in, be it in the openSUSE KDE and GNOME Teams, the openSUSE Distribution, the openSUSE
+          tools or the openSUSE Board. We attended a lot of events and organized a couple of our own
+          with great success. And we worked together on the most pressing milestones we saw for
+          contributor growth in a fun and clever way. All in all we helped a lot of contributors to
+          stand up, take responsibility and do get their hands dirty for the openSUSE Project. That
+          makes us proud and we will do this smarter, faster, better and stronger in 2011.
+          Promised!</para>
+      </blockquote>
+      </sect3> -->
+    <sect3 role="buildserviceteam">
+      <title>Build Service Team</title>
+      <!--
+      <blockquote>
+        <title>
+          <ulink url="http://michal.hrusecky.net/2011/01/mysql-5-5-in-opensuse-build-service/">Michal Hrusecky: MySQL 5.5 in openSUSE Build Service</ulink>
+        </title>
+        <para>MySQL 5.5 is GA for more then a month already. If you are reading some news, you
+          probably already heard, that it is great, million times faster, has trillion new features
+          that you desperately need and much more. Of course, I’m exaggerating a little bit. But
+          anyway, MySQL 5.5 is new version everybody talks about. So now when do you get it? It is
+          already lying around for some time in server:database:UNSTABLE repository. It was there
+          since beta, but took me some time to get final version ready. Just add it to your
+          repositories for example by:</para>
+        <screen>zypper ar -f http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.3 server-database-unstable&gt;</screen>
+        <para>and then install it by</para>
+        <screen>zypper in mysql-community-server_55</screen>
+        <para>As it conflicts with whatever MySQL variant you currently have, it will ask you to
+          confirm uninstallation of your currently installed MySQL. Then it will replace it and you
+          can start trying it.</para>
+        <para>And to answer question when it will be in official openSUSE. For 11.4 is too late. I
+          know it was made GA last year already, but as many things depends on MySQL, I don’t want
+          to accidentally break something. So you can expect it in next openSUSE (11.5 or 12.0, not
+          sure what the name would be). And maybe in Tumbleweed a little bit sooner, after some
+          testing, but currently don’t know when. And of course, it is build not only for openSUSE
+          11.3, so here comes full list of repositories it is built for:</para>
+        <itemizedlist>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/Fedora_12/">Fedora 12</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/Fedora_13/">Fedora 13</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/SLE_11/">SLE_11</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/SLE_11_SP1/">SLE_11_SP1</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="">openSUSE 11.1</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.2/">openSUSE 11.2</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.3/">openSUSE 11.3</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_Factory/">openSUSE Factory</ulink></para>
+          </listitem>
+        </itemizedlist>     
+        </blockquote> -->
+      <formalpara>
+        <title>Build Service Statistics</title>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
+      </formalpara>
+    </sect3>
+    <!--
+    <sect3 role="education">
+      <title>Education Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="forums">
+      <title>Forums Team</title>
+
+      <para>...</para>
+      </sect3> -->
+    <sect3 role="gnometeam">
+      <title>GNOME Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/">Nelson Marques:
+            Unity, Compiz and ATI…</ulink>
+        </title>
+        <para>I’ve finally added the Compiz packages to my development repository and unity itself
+          alongside with some tools.</para>
+        <para>There are several bug reports on launchpad concerning ATI users, involving RADEON DRM
+          driver and FireGL (fglrx) drivers. Unfortunately for me, I’m also a very happy ATI
+          customer.</para>
+        <para>I’ve struggled yesterday with some ABI problems on compiz, this was mainly because I
+          had git snapshots from different days, and updating and rebuilding it, really solved the
+          issue.</para>
+        <para>Today I’ll be implementing the required patches for compiz by Ubuntu,, and hopefully
+          this will enable me to test Unity, this time on a spare laptop with Intel Graphics
+          chipset. I was hoping to pop some screenshots today, unfortunately, I’m having a couple of
+          problems with Compiz that hopefully a couple of missing patches will solve.</para>
+        <para>I’ve left behind the ‘clutk’ package, as it’s currently broken and I need to take
+          closer look into ‘glew’ and work it out. Something for monday/tuesday spare time.</para>
+        <para>For the time being, the only screenshot I have to show is the one of CCSM
+          (compizconfig-settings-manager) with the Unity plugin.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="45%" align="center"
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"
+            />
+          </imageobject>
+        </mediaobject>
+        <para>(...)</para>
+        <!-- ($ ld: 23.1.11 sm $) -->
+      </blockquote>
+    </sect3>
+    <sect3 role="kdeteam">
+      <title>KDE Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://vizzzion.org/blog/2011/01/4-6-0-available/">Sebastian Kügler: 4.6.0
+            Available</ulink>
+        </title>
+        <para>I’ve just pushed the relevant buttons to make the release of 4.6.0 a public fact.
+          Packages should appear shortly for your favourite operating system, I know that openSUSE
+          packages are available from Factory now, so start your zypper already.4.6.0
+          Released.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata width="25%"
+              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/4.6-elegantly-yours.png"
+            />
+          </imageobject>
+        </mediaobject>
+        <para>The release is actually a pretty big thing, it adds a lot of new features, some of
+          which very visible, others being less noticable. There’s the mobile profile for example,
+          which makes it much easier to use KDE frameworks in your mobile application. Then we have
+          the re-vamped activity manager, that adds a way to group applications in their context and
+          makes it possible to manage these activities like sessions. So head over and read what’s
+          new in the <ulink url="http://www.kde.org/announcements/4.6/plasma.php">Plasma
+            Workspaces</ulink>, the <ulink
+            url="http://www.kde.org/announcements/4.6/applications.php">applications</ulink> and the
+            <ulink url="http://www.kde.org/announcements/4.6/platform.php">KDE development
+            platform</ulink>.</para>
+        <!-- ($ ld: 27.1.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/01/27/6481/">Will Stephenson: openSUSE KDE
+            Team activity, Jan 2011</ulink>
+        </title>
+        <para>What’s been going on in the openSUSE KDE team this week? The news on everybody’s lips
+          is that the KDE project released 4.6.0 yesterday. Naturally, we’ve got it available for
+          download for all current openSUSE releases as we prepare 4.6 for openSUSE 11.4. 4.6 brings
+          better performance and improved power management control to the Plasma workspaces. The KDE
+          4.6 application releases include features such as navigation capabilities in the Marble
+          map app, more ways to search your files in Dolphin, and photo sharing via social networks.
+          KDE 4.6.0 is currently available in the KDE:Distro:Factory repositories. A KDE:Release:46
+          repository will shortly be made available, providing the point releases in the KDE 4.6
+          series.</para>
+        <figure id="fig.kde1">
+          <title>Plasma Desktop with Dolphin browsing this week’s modified files, and Speaker Setup
+            dialog</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata width="15%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/plasma_workspace-150x150.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure id="fig.kde2">
+          <title>Krita, KPlato, KSpread, KWord, about to transform into Calligra Office</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata width="15%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/koffice-150x150.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure id="fig.kde3">
+          <title>Amarok 2.4.0 playing last.fm using Phonon 4.4.4 and GStreamer</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata width="15%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/amarok-150x150.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure id="fig.kde4">
+          <title>Some code I wrote with my feet in a bucket of water in 2004</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata width="15%"
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/kdevelop-150x150.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>But that’s not all that we’ve been up to. Amarok 2.4.0 continues to help you
+          rediscover your music, with better automatic playlists and removable device support. We’ve
+          packaged KOffice 2.3.1 including the realistic natural medium paint app, Krita. KDevelop
+          4.2, also released today, is already on our mirrors. C++ and PHP coders should check it
+          out for its powerful code completion and refactoring support, augmented with better search
+          and replace, improved Kate text editor, and QtHelp documentation support. digiKam 1.8.0
+          leads the way in professional Free Software photo management. </para>
+        <para>The team continues to work to prepare openSUSE 11.4. The openSUSE updater applet is
+          being replaced by the more polished KPackageKit from KDE. Our beta testers have already
+          resolved several critical bugs before 4.6.0 was released, and is assessing PulseAudio and
+          the range of Phonon sound system options for the best audio experience when 11.4 is
+          released. All dependencies on the old HAL system for hardware in KDE have now been
+          replaced with udev, and have received a lot of testing. KSynaptiks has been configured by
+          default to allow touchpad taps, but disable the touchpad when typing. And the team has
+          been assiduously packaging new dependencies in KDE’s 4.6 releases so they are fully
+          featured, including the Okteta hex editor plugin for KDevelop, the R backend for the
+          Cantor math app, and the new speaker setup config module. </para>
+        <para>Artwork and branding for 11.4 is nearly complete, featuring the Celadon Stripes
+          wallpaper by KDE’s﻿ Ivan Čukić . The mysterious-looking upstream default wallpaper ‘Horos’
+          is also available – just install the package kdebase4-workspace-branding-upstream. KDE’s
+          Oxygen look and feel becomes possible in GTK apps by installing the new Oxygen GTK theme.
+          And a number of minor tweaks to the default KDE in a new installation of 11.4 add up to
+          improved performance, for example by deferring starting services until they are needed. </para>
+        <para>If you want to join the fun or just need a helping hand, the expert and fanatical
+          openSUSE KDE team can be found in #opensuse-kde on IRC, at
+            <email>opensuse-kde@opensuse.org</email> or at <ulink
+            url="http://en.opensuse.org/Portal:KDE">http://en.opensuse.org/Portal:KDE</ulink>. You
+          can skip to the end and leave a response. Pinging is currently not allowed. </para>
+        <!-- ($ ld: 27.1.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title>
+          <ulink url="http://vizzzion.org/blog/2011/01/slicing-up-the-web/">Sebastian Kügler:
+            Slicing up the Web</ulink>
+        </title>
+        <para>The Webslice applet has been in Plasma (kdeplasma-addons, to be precise) since 4.4
+          already. It allows the user to display a part of a webpage on the desktop. This can be
+          useful for monitoring only a specific part of a webpage, or just to display something
+          nice. </para>
+        <para>The Webslice applet has been written by Richard Moore and me as a functional
+          prototype, but didn’t see much love since it was added to Plasma for 4.4 in 2009. Its
+          basic mechanism is that you specify a “slice” within a website, which is a rectangular
+          region. This region then gets shown in the applet, and resizes dynamically with it,
+          zooming the “slice” in and out. The widget basically worked, but had two significant
+          problems: Resizing was very sluggish and bound to a kept aspect ratio, and you needed to
+          know CSS2 selector syntax to actually use it. </para>
+        <para>Earlier tonight, I’ve committed a set of changes which address these problems, and
+          backported them after review on the plasma-devel mailing list to the 4.6 branch, so these
+          changes become part of Plasma 4.6.1, which will be the first service and translation
+          update to 4.6.0, which we released yesterday.</para>
+        <para><emphasis role="bold">performance</emphasis></para>
+        <figure id="fig.performance">
+          <title>performance</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-3-slices-268x300.png"
+                width="15%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>First, the resize issue. The Webslice applet <xref linkend="fig.performance"/> uses a
+          webkit view, which displays the page and is positioned (basically scrolled with scrollbars
+          switched off) and zoomed to fit into the area the applet covers — fairly simple in fact.
+          The performance problem was caused by too much resizing which got passed down the stack
+          (if you scroll and zoom a website every couple of milliseconds, it becomes quite heavy on
+          the CPU easily. I’ve addressed this by cleaning up the codepathes that lead to resizing,
+          so that it only causes the resize (and thus the repositioning and zoom of the webpage)
+          when absolutely necessary. Resize events from the applet are now compressed a bit, so that
+          we don’t get more than 10 resizes a second. That’s “good enough” for the user to see what
+          effect his mouse-dragging has, but doesn’t have the sluggish effect. Then, while resizing,
+          I’m freezing webkit’s tiled backing store, for an additional performance boost. The result
+          is very noticeable, the lag and CPU-hogging while resizing is gone, and the sizing of the
+          applet is much less unwieldy with these changes. In that process, I’ve also switched to a
+          non-fixed aspect ratio. Bug #1 thoroughly fixed. </para>
+        <para><emphasis role="bold">improving interaction</emphasis></para>
+        <figure id="fig.improving">
+          <title>improving interaction</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-config-preview-300x154.png"
+                width="15%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>Next-up, slice selection. As I already mentioned, that was neither easy, nor
+          user-friendly. (If you’re running, 4.4+, give it a shot, it really sucks ;-).) First off,
+          you need to know CSS2 selectors (they’re quite easy, in most cases you want #myid for an
+          element in the page being marked with id=”myid”), but still limit the utility of the
+          widget to a rather select group. (Does this make the widget 1337?)I’ve been pondering how
+          to best offer this to the user. It should be easy to pick a slice from all the elements
+          that are there. The first thing I did was to turn the lineedit where you’d input the CSS
+          selector (#myid or whatever) into an editable combobox, already containing elements to
+          choose from. That made picking a slice much more “determistic”. Still, the #myid names are
+          not always telling you what part of the page their actually displaying, so some more
+          feedback is desirable. My approach there is the following: When the user opens the
+          configuration dialog <xref linkend="fig.improving"/>, the page is zoomed out and fully
+          shown in the webslice applet, it switches to a preview mode. The user can now enter a
+          different URL, and temporary load this in the slice applet. The combo box containing the
+          elements is now updated to contain the elements of the new page. Website picked, now let’s
+          pick a slice. By selecting a slice from the combobox, the preview mode highlights the
+          position of the currently selected slice in the widget. You apply and it zooms in there. A
+          nice touch is that you can “scroll” through the slice by hovering over the combobox, or
+          flip through them using the arrow keys while focusing the combobox. All in all, not quite
+          unintrusive changes, but considering the widget wasn’t of much use due to above described
+          problems anyway (there was one bug filed against it — likely a bad sign, I’m not that good
+          a hacker). Marco and Aaron were kind enough to review the patches and agreed that they
+          won’t hurt much, but do provide a nice set of improvements we’d like our users to get
+          fairly quickly, not just next summer with 4.7. </para>
+        <para>There are a couple of loose ends left for 4.7, though. As I wanted to keep the
+          possibility of a backport open, I’ve not changed any strings in the widget, adding an
+          explaining tooltip here or there might be useful, but also some more flexible sizing
+          options (what proportions to use for the initial rendering — that matters for fluid
+          layouts, how to clip if the size of the widget doesn’t match the aspect ratio of the
+          slice, etc. I’ve chosen “sane defaults” for these things now, but it’ll probably be nice
+          having that available as an option to the user. </para>
+        <para><emphasis role="bold">Create your own webslice Plasma widgets in 4 minutes</emphasis>
+        </para>
+        <para>There’s one neat thing left to tell about the webslice: You can easily create your own
+          preconfigured slices. In order to do that, copy and rename the .desktop file, change name,
+          comment, icon, if you wish, then add a line
+          like<screen>X-Plasma-Args=http://mysite.org,#myid </screen></para>
+        <para>Copy the file to ~/.kde(4)/share/kde4/services/, run <emphasis role="italic"
+            >kbuildsycoca4</emphasis> and add your newly created webslice to your Plasma using the
+          widget explorer. </para>
+        <para>A possible direction we can take this is to add a webslice category to
+          opendesktop.org, and start sharing our webslices with each other…</para>
+        <!-- ($ ld: 28.1.11 sm $) -->
+      </blockquote>
+    </sect3>
+    <!--
+    <sect3 role="marketingteam">
+      <title>Marketing Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://dev-loki.blogspot.com/2011/01/review-of-opensuse-trademark-guidelines.html">Pascal Bleser: Review of openSUSE Trademark Guidelines</ulink>
+        </title>
+        <para><ulink url="http://en.opensuse.org/User:Byunashko">Bryen</ulink> just opened an <ulink url="https://features.opensuse.org/311039">interesting feature request about a review of the current openSUSE trademark guidelines (#311039).</ulink>
+        </para>
+        <para>The current state of things is that Novell owns the openSUSE and openSUSE related
+          trademarks (which include things like the openSUSE name and the openSUSE branding). While
+          at some point I would love to see those trademarks go into the ownership of the openSUSE
+          foundation (but let&apos;s first actually have that foundation ;)), it is better to keep
+          them with Novell until we have a properly working and funded foundation, because owning
+          trademarks is also an obligation to enforce them. And that potentially means legal
+          enforcement as well. </para>
+        <para>As the trademarks are owned and enforced by Novell, permissions to use trademarked
+          material must be sent to Novell (<email>permission@novell.com</email>, actually), but in
+          practice, Novell&apos;s legal team has been delegating the responsibility of evaluating
+          such requests to the openSUSE board. </para>
+        <para>Nevertheless, the board has to take decisions within a certain framework. Part of that
+          framework, obviously, are a few legal aspects, but more prominently, it is what is
+          currently defined in the <ulink url="http://en.opensuse.org/openSUSE:Trademark_guidelines">openSUSE Trademark Guidelines</ulink> document. </para>
+        <para>Bryen&apos;s feature request (which is essentially filed as such because <ulink url="http://en.opensuse.org/openSUSE:Openfate">openFATE</ulink> gives us a good tool for
+          transparency and collecting feedback) is precisely about that point: let&apos;s take a
+          step back and rethink our trademark guidelines. </para>
+        <para>The task isn&apos;t as simple as it might sound, of course, as we have to find a good
+          balance between a few, most probably contradictory things:<itemizedlist>
+            <listitem>
+              <para>make the rules short and simple: the simpler they are, the easier to grasp and
+                the less daunting to approach</para>
+            </listitem>
+            <listitem>
+              <para>enable derivatives of openSUSE: yes, we&apos;d love to see more and more
+                derivative works based on openSUSE (but the <ulink url="http://en.opensuse.org/openSUSE:Trademark_guidelines">current guidelines</ulink>, which the board has to abide by, do not really reflect
+                that)</para>
+            </listitem>
+            <listitem>
+              <para>prevent abuse</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Which is why we&apos;d love to hear from YOU what you believe are genuinely good use
+          cases that we want to enable and support and what you believe would be cases of abuse,
+          especially if you have been involved or have been pondering about making a derivative of
+          openSUSE or, more generally, use the openSUSE trademarks in one way or another. </para>
+        <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
+          log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
+    </blockquote>
+    </sect3> -->
+    <!--
+    <sect3 role="medical">
+      <title>Medical Team</title>
+
+      <para>...</para>
+    </sect3>
+
+    <sect3 role="monoteam">
+      <title>Mono Team</title>
+
+      <para>...</para>
+      </sect3> -->
+    <sect3 role="openfateteam">
+      <title>openFATE Team</title>
+      <sect4>
+        <title>Top voted Features</title>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+            We are looking for volunteers to implement. </emphasis></para>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
+              (Score: 337)</ulink>
+          </title>
+          <para>&quot;Network installation could be improved by running package download and package
+            installation in parallel.&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
+              boot (Score: 170)</ulink>
+          </title>
+          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
+            reading
+            http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
+            really makes me think we should go this way.</para>
+          <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot
+            process takes away from the whole experience.&quot; is especially interesting. Is it
+            okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 137)</ulink>
+          </title>
+          <para>&quot;An easy way to remove Software! </para>
+          <para>For example: you installed an application with &quot;1-click install&quot; (which
+            will install all the packages that you need), there should be an easy way (also with 1
+            click) to remove what you have installed with that 1-click operation... in another
+            words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and
+            packages included).&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
+              111)</ulink>
+          </title>
+          <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
+            configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 86)</ulink>
+          </title>
+          <para>&quot;We need a feedback about packages that are preferred by users and actively
+            used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
+              Linux) (Score: 70)</ulink>
+          </title>
+          <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
+            Windows but exploiting the One Click Install concept of openSUSE (and therefore
+            inheriting the simplicity, code and security. (...)&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
+              &quot;Installation Summary&quot; (Score: 66)</ulink>
+          </title>
+          <para>&quot;The YaST Qt package manager should provide as much information in the
+            &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
+            and how much disk space will be freed/used after performing the operation.&quot;</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs
+              (Score: 54)</ulink>
+          </title>
+          <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change
+            etc. is very scary for many users.</para>
+          <para>The dialog asks the user to select one of usually three offered solutions for each
+            problem without giving much help. This is a cause for many complaints, and contributes
+            to myths of RPM dependency hell still existing today. (...)&quot;</para>
+        </blockquote>
+        <!-- ($ ld: 29.1.11 sat *updated* $) -->
+      </sect4>
+      <sect4>
+        <title>Recently requested features</title>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311136">Use the community repos list to remove
+              repos</ulink>
+          </title>
+          <para>If the user adds a repo via the community repos list he should be able to remove
+            them via the same way, i.e. have a list where he can de-select and thus remove the
+            repos. That way if he e.g. added some repo which messed-up his system he could just
+            bring up that same list de-select the repo and yast would &quot;update&quot; all
+            installed packages from that repo to the original state and remove the repo
+            afterwards.</para>
+          <para>In YaST&apos;s software management it&apos;s the same, you add/remove/refresh from
+            within the same list.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311137">Update of Cyrus imapd to the 2.4.x
+              branch</ulink>
+          </title>
+          <para>It seems that OpenSUSE 11.4 still ships cyrus imapd 2.3.16. The 2.3.16 is listed as
+            &quot;legacy&quot; at the <ulink
+              url="http://www.cyrusimap.org/mediawiki/index.php/Downloads#IMAP_Server"
+              >Cyrus-Homepage</ulink> .</para>
+          <para>Would it be possible/better to change to 2.4.6 (or whatever version will be recent
+            then)?</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311138">Add romanian keyboard layout to future
+              openSUSE installations</ulink>
+          </title>
+          <para>Romanian keyboard is not listed to other international layouts during the openSUSE
+            installation. It can be choosen only after the openSUSE installation through Control
+            Center -&gt; Keyboard -&gt; Layouts.</para>
+          <para>Please add the romanian keyboard mapping to the openSUSE installation.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311139">Merge YaST and Control Center</ulink>
+          </title>
+          <para>Merge YaST and Control Center together, and make this more structurate.. many
+            similar settings are present here and there...</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311140">Add ratings and reviews in Software
+              Manager</ulink>
+          </title>
+          <para>Add ratings and reviews to all the packages in Software Manager, feature implemented
+            already in Linux Mint and soon to be in Ubuntu.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311143">Humane address book for the
+              cloud</ulink>
+          </title>
+          <para><emphasis role="bold">Motivation</emphasis></para>
+          <para>This project is not about an address book. It&apos;s not about listing contacts in
+            alphabetical order, having fields for titles and middle names, zip codes, and different
+            types of phone numbers, it&apos;s not about concepts like meta-contacts, contact
+            syncing, IM status notifications, device capabilities, or about formats, APIs, or other
+            technical questions. (...)</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311150">Log System Configuration
+              Changes</ulink>
+          </title>
+          <para>Moving to a new version often (always?) requires manual configuration of the new
+            release to incorporate all the changes made over the life of the current system. If
+            these changes were logged to a central file, we would, at a minimum, have a list to work
+            with for manual changes, but longer term that log could serve as a data source to
+            automate the configuation process. (...)</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311155">Live and Install on the same
+              DVD</ulink>
+          </title>
+          <para>One openSUSE dvd that can be used for installation and also for live demo (like
+            Ubuntu, Fedora... etc)</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/311169">MintMenu to be included in openSUSE by
+              default</ulink>
+          </title>
+          <para>We can have MintMenu by default in openSUSE</para>
+          <para>1. It is a fork of our own slab</para>
+          <para>2. It has lots more functionality than our slab and yes more popular too</para>
+          <para>3. Better UX</para>
+          <para>It already exists at OBS
+            http://download.opensuse.org/repositories/home:/unamanic/openSUSE_11.3/ </para>
+        </blockquote>
+        <!-- ($ ld: 29.1.11 sat *replaced with newer ones* $) -->
+      </sect4>
+      <sect4>
+        <title>Feature Statistics</title>
+        <para>Statistics for openSUSE 11.4 <ulink
+            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+      </sect4>
+    </sect3>
+    <!--
+    <sect3 role="oooteam">
+      <title>OpenOffice Team</title>
+
+      <para>...</para>
+      </sect3> -->
+    <sect3 role="testing">
+      <title>Testing Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00028.html">Larry
+            Finger: Weekly News for January 29</ulink>
+        </title>
+        <para>The next Testing Core Team IRC meeting will be Jan. 31, 2011 at 18:00 UTC. </para>
+        <para>In our meeting, we will be discussing our experiences with 11.4 M6 and discussing bugs
+          that we have encountered.</para>
+        <para>The QA tests of team member Bernhard Wiedemann are proving to be exceedingly valuable
+          in preventing problems at release time, even though he only tests on the limited hardware
+          of KVM virtual machines. These tests are improving daily. For example, the x86_64 DVD for
+          M6 is too big to fit on a standard DVD. To prevent such an event in the future, Bernhard
+          has added a check that will fail any future build that exceeds the limit. </para>
+        <para>It is extremely important to test M6 so that as many bugs as possible are found and
+          fixed before the GM comes out in March. Remember that your hardware may have problems not
+          seen by other testers. Unless you find such bugs and file a report on them, they may not
+          be fixed by March. </para>
+        <!-- ($ ld: 29.1.11 sm $) -->
+      </blockquote>
+    </sect3>
+    <sect3 role="translationteam">
+      <title>Translation Team</title>
+      <itemizedlist>
+        <listitem>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+    <!--
+    <sect3 role="wiki">
+      <title>Wiki Team</title>
+
+      <para>...</para>
+    </sect3> -->
+    <!--
+    <sect3 role="yast">
+      <title>YaST Team</title>
+
+      <para>...</para>
+      </sect3> -->
+  </sect2>
+</sect1>
