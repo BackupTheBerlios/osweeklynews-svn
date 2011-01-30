@@ -134,6 +134,7 @@
       </sect2> -->
   <sect2 role="teamreports">
     <title>Team Report</title>
+    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -145,7 +146,7 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3>
+    </sect3> -->
     <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
@@ -297,61 +298,56 @@
       </sect3> -->
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
       <blockquote>
         <title>
-          <ulink url="http://michal.hrusecky.net/2011/01/mysql-5-5-in-opensuse-build-service/">Michal Hrusecky: MySQL 5.5 in openSUSE Build Service</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/30/new-osc-feature-to-edit-a-request/"
+            >Marcus Hüwe: new osc feature to edit a request</ulink>
         </title>
-        <para>MySQL 5.5 is GA for more then a month already. If you are reading some news, you
-          probably already heard, that it is great, million times faster, has trillion new features
-          that you desperately need and much more. Of course, I’m exaggerating a little bit. But
-          anyway, MySQL 5.5 is new version everybody talks about. So now when do you get it? It is
-          already lying around for some time in server:database:UNSTABLE repository. It was there
-          since beta, but took me some time to get final version ready. Just add it to your
-          repositories for example by:</para>
-        <screen>zypper ar -f http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.3 server-database-unstable&gt;</screen>
-        <para>and then install it by</para>
-        <screen>zypper in mysql-community-server_55</screen>
-        <para>As it conflicts with whatever MySQL variant you currently have, it will ask you to
-          confirm uninstallation of your currently installed MySQL. Then it will replace it and you
-          can start trying it.</para>
-        <para>And to answer question when it will be in official openSUSE. For 11.4 is too late. I
-          know it was made GA last year already, but as many things depends on MySQL, I don’t want
-          to accidentally break something. So you can expect it in next openSUSE (11.5 or 12.0, not
-          sure what the name would be). And maybe in Tumbleweed a little bit sooner, after some
-          testing, but currently don’t know when. And of course, it is build not only for openSUSE
-          11.3, so here comes full list of repositories it is built for:</para>
-        <itemizedlist>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/Fedora_12/">Fedora 12</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/Fedora_13/">Fedora 13</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/SLE_11/">SLE_11</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/SLE_11_SP1/">SLE_11_SP1</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="">openSUSE 11.1</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.2/">openSUSE 11.2</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_11.3/">openSUSE 11.3</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://download.opensuse.org/repositories/server:/database:/UNSTABLE/openSUSE_Factory/">openSUSE Factory</ulink></para>
-          </listitem>
-        </itemizedlist>     
-        </blockquote> -->
+        <para>I just pushed a new osc feature to git master which allows you to edit a submit
+          action. Use case: suppose you review a request (which has at least one submit action) and
+          you find a small typo (for instance in the spec file) but except the typo everything is
+          fine. So instead of declining the request you can fix the typo, create a new request
+          (which contains the fix + the original changes), accept the newly created request and
+          supersede the original request (that’s basically what osc does behind the scenes).</para>
+        <para>Example:<screen>    # request with id 80 needs a small fix
+    marcus@linux:~> osc rq show 80 –edit
+    Request: #80
+
+    submit:       home:Admin/foo  -> home:foobar/dest
+    delete:       home:foobar/xxx
+
+    Message:
+    deletes package xxx and fixes dest.
+
+    State:   new        2011-01-30T15:04:03 Admin
+    Comment: &lt;no comment>
+    A    /tmp/osc_editsrr2iDcI/test.spec
+    A    /tmp/osc_editsrr2iDcI/src.tar.bz2
+    At revision 1.
+    Checked out package ‘foo.home_Admin’ to /tmp/osc_editsrr2iDcI. Started a new shell (/bin/bash).
+    Please fix the package and close the shell afterwards.
+    marcus@linux:/tmp/osc_editsrr2iDcI> # fix it and commit changes
+    marcus@linux:/tmp/osc_editsrr2iDcI> exit
+    exit
+    Request: #None
+
+    submit:       home:Admin:branches:REQUEST_80/foo.home_Admin(cleanup) -> home:foobar/dest
+    delete:        home:foobar/xxx
+
+    Message:
+    &lt;no message>
+    d(i)ff/(a)ccept/(b)uildstatus/(e)dit/(s)kip/(c)ancel > a -m “accepted request and applied small fix”
+    Supersede original request? (y|N) y
+    marcus@linux:~></screen></para>
+        <para>By the way you can also do it manually (osc rq clone &lt;id>; osc co &lt;clone
+          project>; fix package(s) and commit changes; create a new request, accept it and supersede
+          original request).</para>
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org"
           >Buildservice</ulink></para>
+        <!-- ($ ld: 30.1.11 sm $) -->
       </formalpara>
     </sect3>
     <!--
@@ -404,31 +400,121 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/01/4-6-0-available/">Sebastian Kügler: 4.6.0
-            Available</ulink>
+          <ulink url="http://kdeatopensuse.wordpress.com/2011/01/30/opensuse-11-4-kde-testing/">KDE
+            at openSUSE: openSUSE 11.4 KDE-testing</ulink>
         </title>
-        <para>I’ve just pushed the relevant buttons to make the release of 4.6.0 a public fact.
-          Packages should appear shortly for your favourite operating system, I know that openSUSE
-          packages are available from Factory now, so start your zypper already.4.6.0
-          Released.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="25%"
-              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/4.6-elegantly-yours.png"
-            />
-          </imageobject>
-        </mediaobject>
-        <para>The release is actually a pretty big thing, it adds a lot of new features, some of
-          which very visible, others being less noticable. There’s the mobile profile for example,
-          which makes it much easier to use KDE frameworks in your mobile application. Then we have
-          the re-vamped activity manager, that adds a way to group applications in their context and
-          makes it possible to manage these activities like sessions. So head over and read what’s
-          new in the <ulink url="http://www.kde.org/announcements/4.6/plasma.php">Plasma
-            Workspaces</ulink>, the <ulink
-            url="http://www.kde.org/announcements/4.6/applications.php">applications</ulink> and the
-            <ulink url="http://www.kde.org/announcements/4.6/platform.php">KDE development
-            platform</ulink>.</para>
-        <!-- ($ ld: 27.1.11 sm $) -->
+        <para>It’s been a while and there was nothing special to report, KDE SC 4.5 just worked. In
+          the meantime KDE SC 4.6 was released and openSUSE offers it in <ulink
+            url="http://en.opensuse.org/KDE_repositories">KDF as well as KR46 repos</ulink>. Big
+          thanks to everybody who is involved in establishing and maintaining those repos – openSUSE
+          really profits a lot from the (openSUSE-)KDE community that makes it possible to provide
+          such a nice and updated KDE distro. </para>
+        <para>Those updating from KDE 4.4 which came with openSUSE 11.3 to 4.6 – please save your
+          plasma* files from ~/.kde4/share/config in case plasma crashes after the update.
+          Submitting them to Novell’s bugzilla would be much appreciated in order to get those
+          crashes fixed for openSUSE 11.4. The same applies to all other issues that come up when
+          updating KDE 4.4 to 4.6, e.g. kdepim-related. </para>
+        <para><emphasis role="bold">KDE SC 4.6</emphasis>
+        </para>
+        <para>KDE 4.6 has some nice fixes, among them <ulink url="http://bugs.kde.org/163707">bko
+            bug 163707</ulink> which prevented KDE from restoring the resolution set in
+          systemsettings on login. This is especially important to openSUSE users since sax2 is gone
+          and display settings moved into the desktop environment. Plasma seems to become more
+          stable with every release – in fact I did not have any major issues with it since ages and
+          bug fixing is pretty fast as well. Dolphin does also not suffer from buggy dbus packages
+          anymore and with the latest strigi packages I do not encounter any crashes on close or
+          when hovering certain files which did crash dolphin before. Thanks to remur_030 who helped
+          the strigi people tracking the latter down for .msi files and thereby found and fixed some
+          general issue in strigi which could cause crashes. </para>
+        <para><emphasis role="bold">Desktop search </emphasis></para>
+        <para>The desktop search does still not justify its name though since basics are still
+          missing, e.g. context given for search results as all other desktop searches do and kerry
+          + beagle already did years ago. <ulink
+            url="http://trueg.wordpress.com/2010/09/10/someone-requested-excerpts-for-query-results/"
+            >The feature was shown some months ago</ulink> but is not as such available in KDE 4.6 –
+          thus even in KDE 4.6 all the user gets is a replacement of kfind + tagging which needs a
+          huge database for that simple task. </para>
+        <para>On top of that there are still issues with <ulink
+            url="https://bugs.kde.org/show_bug.cgi?id=246678">virtuoso-t hogging the CPU</ulink>,
+          its database never decreasing in size but only increasing, even if you remove folders from
+          the “to be indexed”-list and the systray-tool used to suspend the indexing vanished as
+          well decreasing transparency to the user of an app which potentially keeps your hard disk
+          and CPU busy. </para>
+        <para>Yes, I know there is always a shortage of manpower but IMHO if an app fails to provide
+          the very basic features regarding the functionality its name advertises, it will not gain
+          any acceptance among users and since every xth user is also a developer it will not
+          attract developers either. Thus the extent of this manpower shortage is self-imposed in
+          case of nepomuk aka desktop search. </para>
+        <para>I think its a bit unfortunate that strigi is always blamed for anything related to the
+          desktop search in KDE although it is just the tool that is used by nepomuk and its usage
+          is up to nepomuk and not strigi itself, i.e. when to start hammering the hard disk, how to
+          handle the results within a database, what results to display when searching, giving the
+          user control and information regarding its activities etc. From my experience strigi devs
+          are quite responsive regarding bugs and questions – although their websites are all pretty
+          much outdated. :) </para>
+        <para>For openSUSE 11.4 there is still one major mystery bug to solve for openSUSE 32-bit
+          NVIDIA users which get <ulink url="https://bugs.kde.org/show_bug.cgi?id=251719">several
+            apps crashing since they updated to KDE >= 4.5</ulink>. </para>
+        <para><emphasis role="bold">Power-management</emphasis>
+        </para>
+        <para>Power-management got worse in KDE 4.6, regressions such as not disabling
+          powermanagement on desktops and thus suspending the display every 10 minutes, the
+          brigtness slider not representing 100% of the brightness supported by the notebook and it
+          still messes with the brightness the user has set. All these were reported some weeks ago
+          already. Let’s hope that KDE SC 4.6.1 fixes those since that seems to be the version that
+          openSUSE 11.4 will ship. </para>
+        <para>Further having a presentation-scheme (no suspend, no dimming etc.) is kind of useless
+          with KDE 4.6 since it will change to the next scheme if the battery hits any limit. Thus
+          you have to permanently watch the status and switch back to the presentation-scheme to be
+          save of a suspending notebook while you watch a movie within the presentation or during
+          some longer discussion which leads to you not moving the mouse for some minutes. </para>
+        <para>Ignoring the scheme the user manually set does indeed make sense but only for the last
+          5% of your battery and in order to avoid the notebook just turning off because there was
+          no power left. </para>
+        <para>openSUSE 11.4 milestones also features a powermanagement bug that makes your hard disk
+          suspend every few minutes, confirmed but no fix so far. </para>
+        <para><emphasis role="bold">Package-management</emphasis>
+        </para>
+        <para>For openSUSE 11.4 we are currently <ulink
+            url="http://en.opensuse.org/openSUSE:KDE_11.4_packagekit">testing
+            kpackagekit/apper</ulink> as a replacement for the unmaintained kupdateapplet.
+          Kpackagekit works ok but it seems that its zypper backend could need some improvements.
+          And the next version of kpackagekit which will be called apper features monochrome systray
+          icons which is fine, but the “security patch available” signal is just a tiny red dot
+          which is hardly visible, especially if your eye-sight is not the best or you are suffering
+          red-green colour blindness. So most issues with kpackagekit are not actually kpackagekit’s
+          fault but either backend-related or touching artists’ taste. </para>
+        <para><emphasis role="bold">Phonon-backends</emphasis>
+        </para>
+        <para>Another application <ulink
+            url="http://en.opensuse.org/openSUSE:KDE_11.4_phonon-backend">to test is the
+            phonon-backend</ulink> to be used in openSUSE 11.4 by default. Should we stay with xine
+          whose backend is apparently unmaintained but has served most users well, switch to the
+          vlc-backend or maybe use the gstreamer-backend? </para>
+        <para>Trying to play some file with amarok and the gstreamer-backend brings up some dialogue
+          (/usr/lib/gst-install-plugins-helper) that asks whether it should search for some package,
+          I guess codecs. If one clicks on “search” kpackagekit opens up and claims instantly that
+          “Getting what provides” finished but does not do anything. This is on 11.3 plus KDE 4.6
+          from KDF, so let’s hope it works better on 11.4. </para>
+        <para>The vlc-backend consumes the double amount of CPU for playing the same mp3 via amarok.
+          8% instead of 4% might not be that much in absolute terms but a 100% waste nonetheless and
+          especially on mobile devices everything that wastes battery should be avoided. Further
+          there seem to be issues playing video via vlc, some apps like dragonplayer. </para>
+        <para><emphasis role="bold">KDE-PIM </emphasis></para>
+        <para>And finally there is of course the always present issue of KDE-PIM. openSUSE 11.4 will
+          ship kdepim 4.4.10 which needs testing. There is especially <ulink
+            url="https://bugs.kde.org/show_bug.cgi?id=185544">one annoying bug which makes kontact
+            crash</ulink> when logging in if the last view before logging out was kmail. So let’s
+          hope this can be fixed before 11.4 gets released.</para>
+        <para>I was really looking forward to KDE-PIM 4.6 since IMAP-support seems a lot better with
+          akonadi, at least for my use-cases which include suspending/resuming. The latter makes
+          KDE-PIM 4.4′s imap slave fail and not recover which works fine with KDE-PIM 4.6. You can
+          get regularly updated packages for the latter off openSUSE’s UNSTABLE KDE repo. </para>
+        <para><emphasis role="bold">Help testing </emphasis></para>
+        <para>Please help testing KDE SC 4.6 from the openSUSE repos in order to make it shine in
+          openSUSE 11.4. Feedback can go to the related wiki pages or straight to
+          opensuse-kde@.</para>
+        <!-- ($ ld: 30.1.11 sm $) -->
       </blockquote>
       <blockquote>
         <title>
