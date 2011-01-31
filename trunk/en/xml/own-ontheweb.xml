@@ -39,6 +39,40 @@
         lot easier for the jury to test you application. Have fun and good luck.</para>
       <!-- ($ ld: 30.1.11 sm $) -->
     </blockquote>
+    <blockquote>
+      <title><ulink url="http://sourceforge.net/blog/sourceforge-net-attack/">Sourceforge:
+          Sourceforge.net attack</ulink></title>
+      <para>Yesterday our vigilant operations guys detected a targeted attack against some of our
+        developer infrastructure. The attack resulted in an exploit of several SourceForge.net
+        servers, and we have proactively shut down a handful of developer centric services to
+        safeguard data and protect the majority of our services. </para>
+      <para>Our immediate priorities are to prevent further exposure and ensure data integrity.
+        We’ve had all hands on deck working on identifying the exploit vector or vectors,
+        eliminating them, and are now focusing on verifying data integrity and restoring the
+        impacted services. </para>
+      <para>The problem was initially discovered on the servers that host CVS but our analysis
+        indicates that several other machines were involved, and while we believe we’ve determined
+        the extent of the attack, we are verifying all of our other services and data. </para>
+      <para>As a short term response, we’ve taken down the following services to prevent any
+        possible escalation:<itemizedlist>
+          <listitem>
+            <para>CVS Hosting</para>
+          </listitem>
+          <listitem>
+            <para>ViewVC (web based code browsing)</para>
+          </listitem>
+          <listitem>
+            <para>New Release upload capability</para>
+          </listitem>
+          <listitem>
+            <para>Interactive Shell services</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>Once the immediate response to this attack is over, we will be providing a much more
+        detailed account of what’s happened, and what specific actions we are taking to prevent
+        further exploits.</para>
+      <!-- ($ ld: 31.1.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>Call for participation</title>

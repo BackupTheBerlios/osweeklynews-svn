@@ -366,34 +366,44 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/22/unity-compiz-and-ati/">Nelson Marques:
-            Unity, Compiz and ATI…</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/30/unity-on-opensuse-update/">Nelson
+            Marques: Unity on openSUSE: UPDATE</ulink>
         </title>
-        <para>I’ve finally added the Compiz packages to my development repository and unity itself
-          alongside with some tools.</para>
-        <para>There are several bug reports on launchpad concerning ATI users, involving RADEON DRM
-          driver and FireGL (fglrx) drivers. Unfortunately for me, I’m also a very happy ATI
-          customer.</para>
-        <para>I’ve struggled yesterday with some ABI problems on compiz, this was mainly because I
-          had git snapshots from different days, and updating and rebuilding it, really solved the
-          issue.</para>
-        <para>Today I’ll be implementing the required patches for compiz by Ubuntu,, and hopefully
-          this will enable me to test Unity, this time on a spare laptop with Intel Graphics
-          chipset. I was hoping to pop some screenshots today, unfortunately, I’m having a couple of
-          problems with Compiz that hopefully a couple of missing patches will solve.</para>
-        <para>I’ve left behind the ‘clutk’ package, as it’s currently broken and I need to take
-          closer look into ‘glew’ and work it out. Something for monday/tuesday spare time.</para>
-        <para>For the time being, the only screenshot I have to show is the one of CCSM
-          (compizconfig-settings-manager) with the Unity plugin.</para>
+        <para>Unity works as a plugin for Compiz using the glib mainloop. Currently the development
+          version of Compiz available in OBS X11:Compiz already provides this requirement (glib
+          mainloop) as a plugin. This version and two git snapshots I’ve builded were crashing
+          heavilly, so I’ve decided to take a closer look into Ubuntu’s packages and build from
+          their sources on my devel project. This has proven wise as their snapshots (2010-11-25)
+          with their patches removed the crashes on compiz. </para>
         <mediaobject>
           <imageobject>
-            <imagedata width="45%" align="center"
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-CompizConfig-Settings-Manager.png"
-            />
+            <imagedata
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-System-Monitor.png"
+              width="25%"/>
           </imageobject>
         </mediaobject>
-        <para>(...)</para>
-        <!-- ($ ld: 23.1.11 sm $) -->
+        <para>The patches applied include the new unity-window-decorator which works fine. Here’s a
+          small screenshot of GNOME’s System Monitor using Unity’s window decorator (which relies on
+          a patch on metacity to enable UX Shadows).</para>
+        <para>The theme for this screenshot is Ambiance (also from Ubuntu) with a changed color
+          scheme. This shot was taken on M6 with the newest FireGL drivers from ATI. I’ve noticed
+          some changes on the blur effects on this driver, but I really can’t develop much. </para>
+        <para>I haven’t seen crashes on individual components when I test them (ex:
+          unity-panel-service and unity-window-decorator), which seems to be a good pointer. </para>
+        <para>Currently I’m working out in porting the Unity wrapper and some scripts from Ubuntu to
+          the reality on openSUSE as many files seem to be distributed on the filesystem in very
+          different places. Just to name an example… compiz on openSUSE currently stores it’s
+          profiles and stuff on $HOME/.config/compiz-1, and Unity is searching those files on
+          $HOME/.compiz-1, and as such, fails to find them. This is where I’m currently placing my
+          efforts. This should fix soon the ‘unity’ wrapper. </para>
+        <para>To make this short… Compiz isn’t crashing anymore or seg faulting, and Unity is
+          picking up the information required from different file locations on the file system. Once
+          fixed, we should have a running Unity for BETA soon. </para>
+        <para>My very special thanks to Malcolm Lewis for making the integration of Unity with
+          Compiz possible in a very nice way and for fixing many bugs that allowed us to
+          successfully build this packages. </para>
+        <para>As soon as we have more developments, those will be posted.</para>
+        <!-- ($ ld: 31.1.11 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="kdeteam">

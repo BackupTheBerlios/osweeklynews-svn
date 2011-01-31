@@ -1,11 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC 
-  "-//OASIS//DTD DocBook XML V4.5//EN" 
-  "http://www.docbook.org/xml/4.5/docbookx.dtd" 
-[
- <!ENTITY % myentities SYSTEM "entities.ent">
- %myentities;
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
 ]>
 <!--
   
@@ -20,7 +16,56 @@
   USA.
   
 -->
-<sect1>
-  <title>Hackweek</title>
-  <para></para>
+<sect1 role="hackweek" id="hackweek">
+  <title>Hackweek VI</title>
+  <blockquote>
+    <title><ulink
+        url="http://nikanth.blogspot.com/2011/01/real-hackweek-protected-hackweek-and.html">Nikanth
+        Karthikesan: Real hackweek, protected hackweek and long hackweek</ulink></title>
+    <para>I have been using <ulink url="http://www.linux-kvm.org/page/Main_Page">KVM</ulink> a lot,
+      but never took time to understand how kvm works. I used some time from this hackweek to get
+      rid of that regret. </para>
+    <para>Virtual Machine eXtensions instructions allow trap-and-emulate virtualization. And KVM
+      exposes VMX in a convenient way to userspace in Linux. Virtual Machine Monitors(VMM) like
+        <ulink url="http://wiki.qemu.org/KVM">qemu-kvm</ulink> use the KVM API exposed by linux to
+      emulate virtualize software. </para>
+    <para>x86_64 processors boot in <emphasis role="bold">real-mode</emphasis>. In this mode it can
+      use only 16-bit addresses, ie., upto 1MByte RAM. The execution would begin at physical address
+      0xFFFFFFF0. Then the software has to switch to <emphasis role="bold">protected mode</emphasis>
+      where protection and paging is possible. Paging is optional, but almost all OSes use demand
+      paging extensively. Now 4 GBytes of linear address space is used. And then CPU can be switched
+      to <emphasis role="bold">long mode</emphasis> i.e., 64-bit mode. Paging should be disabled in
+      32-bit mode, before switching to long mode. There are also other modes of operation like
+        <emphasis role="bold">virtual-8086 mode</emphasis> to allow executing legacy real-mode
+      software from protected mode, <emphasis role="bold">SMM</emphasis> for OS transparent
+      execution of OEM specific code. </para>
+    <para>I had limited time and very very limited skill at hand. So aiming for the sky was not an
+      option. Hence wrote a very simple <ulink
+        url="http://gitorious.org/kvm-fun/repo/blobs/master/vmm.c">VMM</ulink> that directly starts
+      the guest at address 0H, in 32-bit protected mode with paging disabled. And supports only insb
+      and outsb as the only form of interaction possible for the guest. The <ulink
+        url="http://gitorious.org/kvm-fun/repo/blobs/master/guest.c">guest</ulink> is a simple
+      static linked 32-bit program that doesn't use any library, and <ulink
+        url="http://gitorious.org/kvm-fun/repo/blobs/master/guest.lds">linked</ulink> to start from
+      0x0. The guest simply reads a byte using insb and sends byte+1 back via outsb. The guest would
+      halt, when it gets the, "<ulink
+        url="http://en.wikipedia.org/wiki/Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe_and_Everything_.2842.29."
+        >Answer to the Ultimate Question of Life, the Universe, and Everything</ulink>". The VMM
+      reads the byte value to pass to the guest from stdin and prints its response in stdout. </para>
+    <para>The <ulink
+        url="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob_plain;f=Documentation/kvm/api.txt;hb=HEAD"
+        >KVM API</ulink> is really very easy to understand and use. But some knowledge of the
+      processor was required to make use of it. Intel manuals helped there. I don't have good
+      understanding of things yet, but something is better than nothing. </para>
+    <para>I was occupied by quite a lot of things in life and work in the recent past. So I wasn't
+      really planning to participate and make this a <emphasis role="bold">real hackweek</emphasis>.
+      Also a National holiday for <ulink url="http://en.wikipedia.org/wiki/Republic_Day_%28India%29"
+        >Republic day of India</ulink>, bang in the middle of the week prevents this hackweek from
+      being a <emphasis role="bold">long hackweek</emphasis>! But seeing videos of my colleagues
+      from various parts of world having fun, I couldn't resist and decided to go for the <emphasis
+        role="bold">virtual hackweek</emphasis>. I thank my employer for giving me this <emphasis
+        role="bold">protected hackweek</emphasis>, and let me learn/do things protected from
+      everyday work.</para>
+    <!-- ($ ld: 30.1.11 sm $) -->
+  </blockquote>
 </sect1>
