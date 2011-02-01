@@ -366,44 +366,40 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/30/unity-on-opensuse-update/">Nelson
-            Marques: Unity on openSUSE: UPDATE</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/31/synapse-semantic-launcher-for-gnome/"
+            >Nelson Marques: Synapse – Semantic Launcher for GNOME</ulink>
         </title>
-        <para>Unity works as a plugin for Compiz using the glib mainloop. Currently the development
-          version of Compiz available in OBS X11:Compiz already provides this requirement (glib
-          mainloop) as a plugin. This version and two git snapshots I’ve builded were crashing
-          heavilly, so I’ve decided to take a closer look into Ubuntu’s packages and build from
-          their sources on my devel project. This has proven wise as their snapshots (2010-11-25)
-          with their patches removed the crashes on compiz. </para>
+        <para>Some time ago a openSUSE user mentioned to me if we had <ulink
+            url="http://launchpad.net/synapse-project">synapse</ulink> available for openSUSE or
+          what was required to have it around. I took a look into it and asked some advice in
+          #opensuse-gnome regarding the availability of libzeitgeist which is one of the
+          requirements to build this piece of software.</para>
+        <para>Some time ago Federico Quintero has posted a <ulink
+            url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00016.html">message</ulink> on
+          the opensuse-gnome mailing list regarding his work on the Zeitgeist stack. The rest of the
+          dependencies for this package are provided by my work on the availability of Ubuntu’s
+          software on openSUSE. From my work I took <ulink url="http://launchpad.net/dee"
+            >dee</ulink> and <ulink url="http://launchpad.net/libappindicator"
+            >libappindicator</ulink> and builded a test package of synapse on <ulink
+            url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00020.html"
+            >home:ketheriel:ayatana</ulink>. This package is here until I see this dependencies hit
+          factory on time (libzeitgeist, dee and libappindicator). If anyone wants to test it out,
+          go ahead.</para>
         <mediaobject>
           <imageobject>
             <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-System-Monitor.png"
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-synapse-1.png"
               width="25%"/>
           </imageobject>
         </mediaobject>
-        <para>The patches applied include the new unity-window-decorator which works fine. Here’s a
-          small screenshot of GNOME’s System Monitor using Unity’s window decorator (which relies on
-          a patch on metacity to enable UX Shadows).</para>
-        <para>The theme for this screenshot is Ambiance (also from Ubuntu) with a changed color
-          scheme. This shot was taken on M6 with the newest FireGL drivers from ATI. I’ve noticed
-          some changes on the blur effects on this driver, but I really can’t develop much. </para>
-        <para>I haven’t seen crashes on individual components when I test them (ex:
-          unity-panel-service and unity-window-decorator), which seems to be a good pointer. </para>
-        <para>Currently I’m working out in porting the Unity wrapper and some scripts from Ubuntu to
-          the reality on openSUSE as many files seem to be distributed on the filesystem in very
-          different places. Just to name an example… compiz on openSUSE currently stores it’s
-          profiles and stuff on $HOME/.config/compiz-1, and Unity is searching those files on
-          $HOME/.compiz-1, and as such, fails to find them. This is where I’m currently placing my
-          efforts. This should fix soon the ‘unity’ wrapper. </para>
-        <para>To make this short… Compiz isn’t crashing anymore or seg faulting, and Unity is
-          picking up the information required from different file locations on the file system. Once
-          fixed, we should have a running Unity for BETA soon. </para>
-        <para>My very special thanks to Malcolm Lewis for making the integration of Unity with
-          Compiz possible in a very nice way and for fixing many bugs that allowed us to
-          successfully build this packages. </para>
-        <para>As soon as we have more developments, those will be posted.</para>
-        <!-- ($ ld: 31.1.11 sm $) -->
+        <para>I’m not sure of the functionality that should be present on this vala application, but
+          for the time being I’ve disabled the Application Indicator on the build (needs hammering
+          on the linking). I’ll take a closer look once I have some more free time. So far this
+          should be working only for openSUSE Factory and openSUSE 11.4 milestones. </para>
+        <para>Synapse is a semantic file launcher (pretty much the same as hitting ALT+F2 on a GNOME
+          session) with some crazy looks and a battalion of plugins. Once the dependencies are ok,
+          I’ll maintain this package and push it to the GNOME:Apps repository.</para>
+        <!-- ($ ld: 1.2.11 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="kdeteam">

@@ -93,111 +93,14 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.makeuseof.com/tag/openleaks-wikileaks-alternative-live-news/"
-          >MakeUseOf/Stephen Campbell: OpenLeaks, A WikiLeaks Alternative, Just Went Live</ulink>
+        <ulink url="http://www.linuxjournal.com/content/libreoffice-33-release-brings-new-features"
+          >LinuxJournal/Susan Linton: The New Features in LibreOffice 3.3</ulink>
       </title>
-      <para><ulink url="http://openleaks.org/">OpenLeaks</ulink>, an alternative to <ulink
-          url="http://wikileaks.org/">WikiLeaks</ulink>, which is a site that publishes submissions
-        of private, secret, and classified media from anonymous news sources and news leaks, has
-        officially gone live. WikiLeaks, as you may know, fell under harsh criticism and faced a lot
-        of pressure from various governments and organizations because of material
-          <quote>leaked</quote> via the website. </para>
-      <para>In light of this, OpenLeaks is set to fill the void left by WikiLeaks. They intend to do
-        this by providing <quote><emphasis role="italic">dedicated and generally free services to
-            whistleblowers and organizations interested in transparency.</emphasis></quote> The site
-        seeks to create a knowledge base aiming to provide a comprehensive reference to all areas
-        surrounding whistleblowing. Let’s take a look at how they are going about circumventing the
-        WikiLeaks problem.</para>
-      <para><emphasis role="bold">How is OpenLeaks different from WikiLeaks? </emphasis></para>
-      <para>As stated by Ars Technica, OpenLeaks confirmed that it doesn’t plan to publish
-        information itself, but rather help third parties get access to leaked documents, which then
-        would be shown to the public. Third parties would include non-profit and news organizations.
-        Half of these <quote>members</quote> are to be handpicked by the OpenLeaks community, while
-        the other half will be able to go through a public application process of sorts. </para>
-      <para>The site is not yet fully operational, but they have released a <quote>first
-          draft</quote> video, shown below. It explains the process of leaking and publishing as it
-        will be supported by OpenLeaks, and it visualizes how OpenLeaks works differently from other
-        platforms.</para>
-      <para>If you have any further questions about what OpenLeaks is or who it’s for, as well as
-        what the legal implications of this type of site are, check out the <ulink
-          url="http://openleaks.org/content/faq.shtml">OpenLeaks FAQ</ulink> page. There’s a lot of
-        good information there. What do you think of the new OpenLeaks platform?</para>
-      <!--($ ld: 30.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink
-          url="http://www.zdnet.co.uk/blogs/jamies-mostly-linux-stuff-10006480/whats-up-with-opensuse-10021549/"
-          >ZDNet/J.A. Watson: What&apos;s Up with openSuSE?</ulink>
-      </title>
-      <para>This post is not intended as criticism of the openSuSE project in any way. Most of what
-        I am writing about here concerns their <emphasis role="italic">next</emphasis> release,
-        which is currently at Milestone 5. I understand quite well what pre-release software is, and
-        the uncertainty and instability it can be subject to. What I am trying to do is bring some
-        attention to something I have noticed, which concerns me, and perhaps get some comments from
-        others who have similar/better/worse experiences. If I am very lucky, I might even hear from
-        someone who can point out that I am doing something wrong! </para>
-      <para>There has been quite a bit of commentary and speculation about the Novell takeover and
-        the possible impact on the SuSE/openSuSE products and development. (Note that I am avoiding
-        the patent controversy here, intentionally.) The official statements from Novell and SuSE
-        have been basically that there should be little or no impact, product development and
-        releases should continue as normal. However, I have been following the openSuSE 11.4
-        (factory) pre-release development pretty closely because some of the newest things being
-        developed are important to my Lenovo S10-3s netbook (Broadcom brcm, and Synaptics ClickPad).
-        What I have seen and experienced since the sale/takeover was announced has been troubling -
-        or else I am doing something wrong. </para>
-      <para>First, the openSuSE ISO images are supposed to be what they call &quot;hybrid
-        images&quot;, which can either be burned to a CD/DVD or copied directly to a USB flash
-        drive. Writing to USB can be done either directly with <emphasis role="italic">dd</emphasis>
-        (for hard-core old geezers like me), or using the openSuSE Imagewriter utility. It has
-        always worked quite well for me, until sometime around their 11.4 Milestone 5 release.
-        Suddenly, the USB image wouldn&apos;t boot. I tried both the 32 and 64 bit images, and I
-        tried using both dd and Imagewriter, and it just won&apos;t boot. It goes through what
-        should be a process of reconfiguring the disk label, and then panics. Ugh. It still works
-        when burned to a CD, so the basic Live image is ok. When this first happened, I believe it
-        was shortly before Christmas, I assumed that it would be noticed and fixed in short order.
-        It has been this way for a month now, and it is still the same as of the most recent daily,
-        Build 1030.</para>
-      <!--($ ld: 26.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://ostatic.com/blog/whats-next-for-libreoffice">OStatic/Susan Linton:
-          What&apos;s Next for LibreOffice?</ulink>
-      </title>
-      <para>LibreOffice 3.3 wasn&apos;t even released yet when plans for upcoming versions were
-        being hammered out. A release plan is now in place as well as a development philosophy. </para>
-      <para>According to the foundation, time-based release plans are more productive than the
-        commonly subscribed &quot;ready when ready&quot; model. They say it &quot;enforces
-        discipline, gives predictability, and allows more regular releasing.&quot; The time
-        intervals are uneven because bug fix incremental versions are easier and quicker to ready
-        than a major version with new features. They have also taken in consideration
-        synchronization with some distributions on six-month release schedules to minimize lag
-        between LibreOffice releases and getting into the hands of users. So, their goal is to
-        release every six months. To aid in this and possible accelerate the release cycle, they
-        plan to release daily snapshots and employ an automated build process.</para>
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://ostatic.com/blog/one-package-manager-for-them-all">OStatic/Susan Linton:
-          One Package Manager for them All</ulink>
-      </title>
-      <para>The idea of one universal package format for all distributions has been batted around a
-        few times over the years. One of the most notable was Ryan C. Gordon&apos;s idea of <ulink
-          url="http://icculus.org/fatelf/">FatELF files</ulink>. Reactions varied from supportive to
-        skeptical to down right opposed. Well, it seems a new team from major distributions is
-        coming together to <ulink
-          url="http://blog.karlitschek.de/2011/01/2-amazing-meetings-to-change-world.html"
-          >implement</ulink> a &quot;common application installer API and
-        infrastructure.&quot;</para>
-      <para>Developers from RedHat, Fedora, Debian, Ubuntu, openSUSE, Mandriva and Mageia got
-        together last week at the SUSE office in Nürnberg to discuss how they might implement a
-        universal application installer they are referring to as an Application Store. This is in
-        response to the belief that end users aren&apos;t interested in libraries, dependencies,
-        compatibility, and other technical details. They think users only care about screenshots,
-        basic descriptions, ratings, user reviews, and such. The idea is to define and write a tool
-        to find and install applications. (...)</para>
-      <!-- ($ ld: 29.1.11 sat $) -->
+      <para>Despite earlier reports that very few if any new features would likely be seen in The
+        Document Foundation's first LibreOffice release, the influx of new developers allowed much
+        more work to be done. In fact, it was even released ahead of schedule. So, what kind of new
+        goodies might one find? (...)</para>
+      <!--($ ld: 1.2.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
