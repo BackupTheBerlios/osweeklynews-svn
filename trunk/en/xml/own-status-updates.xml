@@ -31,43 +31,31 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://holger123.wordpress.com/2011/01/25/smb-traffic-analyzer-submitted-to-opensuse-tumbleweed-rolling-update-distro/"
-          >Holger Hetterich: SMB Traffic Analyzer submitted to openSUSE Tumbleweed rolling update
-          distro</ulink>
+        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Dominique
+          Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
       </title>
-      <para>The complete <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB
-          Traffic Analyzer</ulink> (SMBTA in the following) software package (up to date Samba
-        including SMBTA VFS module, smbtad and smbtatools) are now available in <emphasis
-          role="bold">openSUSE’s Tumbleweed distribution</emphasis>, making it ready to run SMBTA
-        out of the box. Since my blog is read by quite some people outside of the openSUSE
-        community, I am using this space to shortly introduce the Tumbleweed project, as it might
-        raise interest to those who were not aware of it. </para>
-      <para><emphasis role="bold">openSUSE Tumbleweed</emphasis> is a project to provide the
-        openSUSE Distribution in form of <emphasis role="bold">rolling updates</emphasis>. At a
-        glance, this means in the ideal world: Install Tumbleweed once, and never run out of updates
-        or maintenance, as Tumbleweed will update itself to always match the current package
-        versions that openSUSE’s maintainers or the according open source projects consider as the
-        current stable release of a package. In difference to the <ulink
-          url="http://en.opensuse.org/Portal:Factory">openSUSE Factory distribution</ulink>, which
-        simply provides the current development state of openSUSE, Tumbleweed will <emphasis
-          role="bold">not provide unstable or experimental packages</emphasis>. The projects idea
-        was being discussed for longer time in the community, and finally brought to life and
-        implementation by Greg Kroah-Hartman, who <ulink
-          url="http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html">announced a
-          Tumbleweed repository in the openSUSE Buildservice</ulink>. In it’s current form,
-        Tumbleweed is driven by a number of package maintainers and developers who want to make
-        Tumbleweed to happen, and relies on package maintainers to support Tumbleweed by submitting
-        their packages to the repository. </para>
-      <para>It’s <emphasis role="bold">very easy</emphasis> to jump from openSUSE 11.3 to Tumbleweed
-        by using zypper, to give it a try. I run it successfully in a virtual machine since
-        Tumbleweed was announced, and consider to make it my distribution for development/work as it
-        brings advantages that I don’t want to miss. Being able to release a new <emphasis
-          role="bold">SMB Traffic Analyzer version and having it available for users and packaged in
-          a distribution</emphasis> in a matter of hours is one of them. Read more about that on
-          <ulink url="http://en.opensuse.org/Tumbleweed">the Tumbleweed page in the openSUSE
-          wiki</ulink>.</para>
-      <!-- ($ ld: 26.1.11 sm $) -->
+      <para>It’s been a long time since I was in touch with Enlightenment, back in the young days I
+        used it as my first alternative Desktop Environment on Windows, before actually daring to
+        switch to Linux. </para>
+      <para>Today I hear that version 1.0.0 of the core libraries have been released. Reason enough
+        to actually look into this again. So 1 hour, many build failures and successes later, I have
+        the entire core-stack built in my obs repository home:dimstar:Enlightenment. The window
+        manager Enlightenment itself is not yet released as full release, but the latest snapshot
+        can be found in my repo as well. </para>
+      <para>But that’s it so far: all core libraries are built. Nothing more. I did not even have
+        time to test them yet. </para>
+      <para>If you feel adventurous, go, add the repository obs://home:dimstar:Enlightenment to your
+        system (published for openSUSE 11.3 and Factory) and start playing with all of the things,
+        starting with the window manager, which should generally pull in the rest. What should be
+        required (as
+        root)<screen>zypper ar obs://home:dimstar:Enlightenment Enlightenment
+zypper in enlightenment</screen></para>
+      <para>This will add my home repository to your catalog list and install enlightenment
+        including dependencies. One logout later, you should see Enlightenment as a new session type
+        in your *DM. </para>
+      <para>Have a lot of fun and share your experiences… I will test it after I get some
+        sleep.</para>
+      <!-- ($ ld: 2.2.11 sm $) -->
     </blockquote>
     <itemizedlist>
       <title>Important Links</title>
