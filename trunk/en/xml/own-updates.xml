@@ -24,168 +24,22 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html"
-        >Javier Llorente: Oxygenise your Apache</ulink></title>
-    <para>I have updated <ulink url="http://bit.ly/f2eLPJ">apache2-icons-oxygen</ulink> with icons
-      from KDE 4.6 RC2. Thanks Nuno &amp; Co! Now Apache’s directory listings look a bit better
-      ;-)</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/screenshot-300x205.png"
-          width="15%"/>
-      </imageobject>
-    </mediaobject>
-    <para>See it in action <ulink url="http://www.javierllorente.com/tmp/">here</ulink>. If you want
-      to download the tarball/rpm, go to the <ulink url="http://bit.ly/f2eLPJ">Build
-      Service</ulink>.</para>
-    <!-- ($ ld: 24.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/vlc/203011">Packman: vlc
-        1.1.6-1.pm</ulink></title>
-    <para><quote>VLC media player is a highly portable multimedia player for various audio and video
-        formats (MPEG-1, MPEG-2, MPEG-4, DivX, mp3, ogg, ...) as well as DVDs, VCDs, and various
-        streaming protocols. It can also be used as a server to stream in unicast or multicast in
-        IPv4 or IPv6 on a high-bandwidth network.</quote></para>
-    <!-- ($ ld: 26.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://saigkill.wordpress.com/2011/01/25/newupdated-applications/">Sascha
-        Manns: New/Updated Applications</ulink></title>
-    <para>The last days i’ve updated or added new Packages:<itemizedlist>
-        <listitem>
-          <para><ulink url="http://shutter-project.org/">shutter</ulink>: new added. Available in:
-              <ulink
-              url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/"
-              >openSUSE:Factory:Contrib</ulink></para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://www.calibre-ebook.com/">calibre</ulink>: updated. Available in:
-              <ulink
-              url="http://download.opensuse.org/repositories/home:/thomas-schraitle:/calibre/"
-              >home:thomas-schraitle:calibre</ulink></para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://bleachbit.sourceforge.net/">bleachbit</ulink>: updated. Available
-            in: <ulink
-              url="http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/"
-              >openSUSE:Factory:Contrib</ulink></para>
-        </listitem>
-      </itemizedlist></para>
-    <para>Have a lot of fun with it :-)</para>
-    <!-- ($ ld: 26.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://www.gnome.org/~michael/blog/2011-01-25-libreoffice-release.html"
-        >Michael Meeks: LibreOffice - our first release</ulink></title>
-    <para>Today we <ulink
-        url="http://blog.documentfoundation.org/2011/01/25/the-document-foundation-launches-libreoffice-3-3/"
-        >released</ulink> our first stable release of LibreOffice. That is really rather exciting !
-      and a major milestone. Of course, if you have a GNU/Linux or Unix distribution, most likely
-      your packagers already knew our release timetable, and have distribution packages ready for
-      you to use. If you can use those, do - they are likely to be better integrated with the
-      system, and somewhat faster. </para>
-    <para>If you are a Windows or Mac user though, it is a great time to try out LibreOffice,
-      directly from our <ulink url="http://www.libreoffice.org/download/">download</ulink> site. </para>
-    <para><emphasis role="bold">Why LibreOffice ?</emphasis>
-    </para>
-    <para>Apart from all the obvious reasons - of loving Freedom, Free Software, and fun, open,
-      community development. LibreOffice is just better, much better, check out our (still
-      expanding) <ulink url="http://www.libreoffice.org/download/new-features-and-fixes/">New
-        Features</ulink> page - showing off what people can expect to enjoy in LibreOffice. As I get
-      time, I'll add some highlights of my own appended here. </para>
-    <para><emphasis role="bold">What next ?</emphasis>
-    </para>
-    <para>As we work in a much more conventional Free Software project mold, we are releasing a
-        <emphasis role="italic">point-zero</emphasis> release. This will not be perfect, but is any
-      software ? what we will be doing is rapidly iterating it, via many minor point releases,
-      towards perfection. We've published our <ulink
-        url="http://wiki.documentfoundation.org/ReleasePlan">timeline</ulink> for that. Something
-      you don't like ? some hideous translation or crasher bug ? we can include that fix soon, so do
-      get stuck in and help out. </para>
-    <para>Perhaps the more interesting piece is the commitment to move to a six month release cycle,
-      that is well aligned with existing Free Software community and distribution release cycles. We
-      hope this will help get the latest, and best LibreOffice into users' hands as quickly as
-      possible. </para>
-    <para><emphasis role="bold">How do I get involved ? </emphasis></para>
-    <para>LibreOffice is a project, almost uniquely suited to scaling to hundreds of people working
-      on it - there are problems, missing features and bugs everywhere. There are millions of
-      malnourished lines-of-code, awaiting your loving ownership, and remedial care - can you help
-      them ? If so, please head to our <ulink
-        url="http://www.libreoffice.org/get-involved/developers/">developer instructions</ulink>
-      grab the code from freedesktop's git repository, and get stuck in, we'd love to work with you.
-      We have many <ulink url="http://wiki.documentfoundation.org/Development/Easy_Hacks">Easy
-        Hacks</ulink> designed for beginners to get involved - ranging from zero programming skill
-      required, to some heavier lifting for the elite. As you do that, please do say hello on IRC:
-        <emphasis role="italic">#libreoffice</emphasis> on irc.freenode.net, where much of the team
-      hangs out. </para>
-    <para>Of course, if you want to mirror our binaries - and we are only 11Gb small (compared to
-      70Gb+ for OO.o), then drop a mail to <email>mirrors@documentfoundation.org</email>, we use
-      Peter's excellent <ulink url="http://mirrorbrain.org/">mirrorbrain</ulink> - we have good
-      coverage, but it can always improve. If you just like web banners that point to us there is
-      just such a <ulink
-        url="http://wiki.documentfoundation.org/File:LibreOffice_banner_728x90_L.png">image</ulink>. </para>
-    <para><emphasis role="bold">Who did this thing ? </emphasis></para>
-    <para>Well, in fact many people, far more than I can write down in one place - there are
-      extensive credits <ulink url="http://www.libreoffice.org/credits.html">here</ulink> for all of
-      the many individuals that have struck their blow for freedom with us; I am incredibly grateful
-      for their support and friendship. </para>
-    <para>However, of course, some people have put more than the usual effort into this release -
-      and here is where I forget people and offend at least someone. For various reasons: new
-      packaging, and split help - the Windows build sucked a lot of mental energy this cycle, with
-      Fridrich and Tor bearing the brunt of the pain. Similarly, Kendy battled the split help
-      indomitably at great length, while managing the Novell team too. Then of course, the Steering
-      Committee have put in lots of time with my personal favorite of Italo - creating and massaging
-      press text and briefing many. The poor translation team, worked incredibly well under very
-      tight deadline pressure to make up for the late strings that routinely needed shoving in, with
-      Andras doing fantastic work getting their changes merged. Then finally, the website, its
-      infrastructure, mirroring, scripting, design, artwork, and volume of text, polish, translation
-      and beauty, as always - done on the very cusp of release swallowed much sweat and tears
-      particularly from David, Christian, Florian, Thorsten and Sophie. My profound thanks to all of
-      these, and more who worked so hard to get the release out - oh, and especially to the many
-      un-sung hackers who got really stuck into triple reviewing, and fixing nasty blocker bugs
-      before final code freeze.</para>
-    <!-- ($ ld: 26.1.11 sm $) -->
-  </blockquote>
-  <blockquote>
     <title><ulink
-        url="http://holger123.wordpress.com/2011/01/28/smbta-stresstest-0-0-2-released-built-with-smb-traffic-analyzer-1-2-2/"
-        >Holger Hetterich: SMBTA Stresstest 0.0.2 released, built with SMB Traffic Analyzer
-        1.2.2</ulink></title>
-    <para><ulink url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SMBTA Stresstest 0.0.2 is
-        available in SUSE Studio</ulink>, an appliance made for testing the <ulink
-        url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
-      software suite. A side effect of being a test is that SMBTA Stresstest can <emphasis
-        role="bold">easily be used by people interested in trying SMB Traffic Analyzer</emphasis>. </para>
-    <para>Since version 0.0.1 of SMBTA Stresstest, <ulink
-        url="http://holger123.wordpress.com/2011/01/20/smb-traffic-analyzer-1-2-2-released/">a new
-        release of SMB Traffic Analyzer</ulink> brought changes that are affecting the testing
-      appliance. Actually, SMBTA Stresstest includes a <emphasis role="bold">patched version of
-        smbtatools</emphasis> with changes that did not made it into the 1.2.2 release. SMBTA
-      Stresstest now creates directories and human readable filenames which should make it much
-      easier to interpret the results of a machine generated traffic scenario. :)<itemizedlist>
-        <listitem>
-          <para>there is now <emphasis role="bold">smbtatorturesrv</emphasis>, a small server
-            application distributing unique filenames and paths to several smbtatorture processes on
-            the net</para>
-        </listitem>
-        <listitem>
-          <para>now six users are running the smbtatorture application, creating more diverse
-            traffic (compared to 2 users in the former release) and are employing the
-            smbtatorturesrv process.</para>
-        </listitem>
-        <listitem>
-          <para>now three shares are being used while in operation, compared to 2 in the former
-            release.</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>SMBTA Stresstest is maintaining an open port 3491 to allow queries from the smbtatools
-      programs. </para>
-    <para>You can download SMBTA Stresstest from the <ulink
-        url="http://susegallery.com/a/HkqPEE/smbta-stresstest">SUSE Studio Gallery</ulink>. For more
-      information on <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic
-        Analyzer, visit it’s homepage</ulink>.</para>
-    <!-- ($ ld: 29.1.11 sm $) -->
+        url="http://seife.kernalert.de/blog/2011/02/03/openstack-bexar-packages-for-suse-and-sles11sp1-are-ready/"
+        >Stefan Seyfried: OpenStack “bexar” packages for openSUSE and SLES11SP1 are
+      ready</ulink></title>
+    <para>Shortly after the <ulink url="https://launchpad.net/~openstack">OpenStack “bexar”</ulink>
+      (spoken “bear”) release was ready, my packages finished building and are available at <ulink
+        url="http://download.opensuse.org/repositories/isv:/B1-Systems:/OpenStack/">the
+        isv:B1-Systems:OpenStack</ulink> Build Service repo. </para>
+    <para>Grab them, while they are still hot! </para>
+    <para>The ride might still be a bit bumpy as the whole OpenStack development is very Ubuntu
+      centric, and thus some of the dependencies, especially to old versions of python stuff are
+      tricky to find. However, first results look promising. </para>
+    <para>I’ll update here soon with some short hints on how to configure and use the whole lot. </para>
+    <para>Thanks go to my colleagues Christian Berendt and Andre Nähring at B1 Systems GmbH who have
+      been tireless in testing packages and reporting packaging bugs and other problems. Thanks also
+      to Gregory Haskins with whom I started the packaging effort early in december.</para>
+    <!-- ($ ld: 3.2.11 sm $) -->
   </blockquote>
 </sect1>

@@ -389,6 +389,101 @@ zypper in enlightenment</screen></para>
           I’ll maintain this package and push it to the GNOME:Apps repository.</para>
         <!-- ($ ld: 1.2.11 sm $) -->
       </blockquote>
+      <blockquote>
+        <title><ulink url="http://www.wafaa.eu/entry/more-board-for-more-geeko-1-55.html">Andrew
+            Wafaa: More Board For More Geeko</ulink></title>
+        <para>I have packaged up the latest and greatest release (0.1.1.1) of <ulink
+            url="http://live.gnome.org/TheBoardProject">the-board</ulink> from <ulink
+            url="http://lucasr.org/">Lucas Rocha</ulink>. If' you want a bit more background have a
+          look at my previous <ulink
+            url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html"
+            >post</ulink>. </para>
+        <para>I also said that it was for 11.4/Factory only and that 11.3 was a WIP. Well the
+          progress is complete (with huge help from <ulink url="http://blog.crozat.net/">Frederic
+            Crozat</ulink>, and his great <ulink
+            url="http://blog.crozat.net/2011/01/gnome-3-live-cd-usb-test-image.html">GNOME3</ulink>
+          repo). </para>
+        <para>Yes, more people can have some of this cool shiny stuff. There is a but, and this is
+          from upstream - it is still in development so you may loose a kitten or bunny, maybe even
+          both ;-) So come and join the fun and try it out, I've not generated a single .ymp file
+          yet so click on your version of Geeko</para>
+        <!-- ($ ld: 3.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://chenthill.wordpress.com/2011/02/03/lightening-up-evolution-with-exchange-web-services/"
+            >chenthill Blog: Lightening up Evolution with Exchange Web Services</ulink></title>
+        <para>Off-late we have been working quite aggressively on improving our exchange
+          connectivity using <ulink
+            url="http://msdn.microsoft.com/en-us/library/cc535017(v=EXCHG.80).aspx">Exchange Web
+            Services</ulink> . Some evolution hackers sat together during GUADEC 2010 and discussed
+          on the focus areas which our community users as well as corporates would be interested in.
+          Exchange Web Services was on top of the list and David Woodhouse kick-started the work at
+          the same time! The development went on in David’s repo - <ulink
+            url="http://git.infradead.org/evolution-ews.git"
+            >http://git.infradead.org/evolution-ews.git</ulink> and you can watch out the progress
+          there..</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://chenthill.files.wordpress.com/2011/02/ews_cal.jpg"
+              width="30%"/>
+          </imageobject>
+          <imageobject>
+            <imagedata fileref="http://chenthill.files.wordpress.com/2011/02/ews_mail.jpg"
+              width="30%"/>
+          </imageobject>
+        </mediaobject>
+        <para>The festival season has started for evolution exchange and we have evolution showing
+          the folders, mails and meetings using Exchange Web Services. We currently just have the
+          read-only support for mailer and calendar at the moment and we are working towards
+          providing a complete support for calendar, mails and contacts. </para>
+        <para>Its always very nice to thanks all the contributors. Thanks to David Woodhouse who
+          kick-started it, Michael meeks he is always there :) , Johnny, Bharath Acharya, Akhil
+          Laddha, Chen, Fridrich who has been constantly getting it to compile on Windows… </para>
+        <para>There are more developers getting involved now and thanks to the organizations for
+          supporting the development!! We are looking forward to deliver the package by the
+          beginning of May 2011 for all the users.. One would be able to use EWS connector with
+          Evolution version 2.32 onwards..</para>
+        <!-- ($ ld: 3.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2011/02/03/a-simple-clock-indicator-indicator-datetime/"
+            >Nelson Marques: A simple clock indicator (indicator-datetime)</ulink></title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot.png"/>
+          </imageobject>          
+        </mediaobject>
+        <para>I’ve neglected this indicator since the first day because it drove me into package
+          dependencies that aren’t used in openSUSE (we use YaST and not system-tools-backends and
+          friends). </para>
+        <para>The documentation of Unity suggests that if no indicators are present, Unity will use
+          the notifications from GNOME. This is very interesting, but from the debugging I’ve done
+          from the Unity Panel, I’ve found it it scans the indicators directory and loads whatever
+          it finds there. So it will eventually find something. One of the coolest features in Unity
+          Indicators and the one I’m currently working on, is ‘appmenu-gtk’ which removes the menu
+          from GTK+ applications and displays it on the unity-panel. This is interesting and the
+          behavior is actually a bit different from OSX. The window buttons are also placed very
+          close to this indicator. </para>
+        <para>If we have such feature enabled, I suppose the panel will always pick up at least one
+          indicator which might endanger the fallback to GNOME notification area. I’ve tested this
+          yet (unity isn’t launched properly yet), but if this happens, it will be wise to have the
+          whole stack of indicators. This explains why I had to build also this clock indicator
+          despite it’s wicked dependencies (liboost, not used on openSUSE). </para>
+        <para>This is how it looks and minimal functionality is already enabled, though
+          configurations aren’t because I haven’t implemented the whole backend, a nd if this
+          indicators are to reach Factory (which depends mainly on the patching on GTK+ and GDK
+          Pixbuf), there is the need to pass this packages through SUSE Security Team. If the
+          indicators are only to live on GNOME:Ayatana, then we skip this process (running this
+          package dependencies through SUSE Security Team). </para>
+        <para>Here’s how it looks the current stack of indicators (there’s a couple more packaged,
+          but I’m not using them at the moment, ex: nm-applet patched, indicator-network and
+          friends). </para>
+        <para>Within the next days, I will I will make a 1 click installer and run a BETA phase for
+        the Indicators/GNOME2.</para>
+        <!-- ($ ld: 3.2.11 sm $) -->
+      </blockquote>
     </sect3>
     <sect3 role="kdeteam">
       <title>KDE Team</title>
