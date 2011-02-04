@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -19,20 +18,18 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-  <!--
+<!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <title>openSUSE Weekly News searches for contributors</title>
       <para></para>
     </blockquote>
-  </sect2> -->
-  <sect2 role="distribution">
+  </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Dominique
-          Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
+        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Dominique Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
       </title>
       <para>It’s been a long time since I was in touch with Enlightenment, back in the young days I
         used it as my first alternative Desktop Environment on Windows, before actually daring to
@@ -55,24 +52,21 @@ zypper in enlightenment</screen></para>
         in your *DM. </para>
       <para>Have a lot of fun and share your experiences… I will test it after I get some
         sleep.</para>
-      <!-- ($ ld: 2.2.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 2.2.11 sm $) -->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
-            Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
-            FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -119,10 +113,9 @@ zypper in enlightenment</screen></para>
         also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
         appliances!</para>
       </blockquote>
-      </sect2> -->
-  <sect2 role="teamreports">
+      </sect2> -->  <sect2 role="teamreports">
     <title>Team Report</title>
-    <!--
+<!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -134,8 +127,7 @@ zypper in enlightenment</screen></para>
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -283,13 +275,11 @@ zypper in enlightenment</screen></para>
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->
-    <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/30/new-osc-feature-to-edit-a-request/"
-            >Marcus Hüwe: new osc feature to edit a request</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/30/new-osc-feature-to-edit-a-request/">Marcus Hüwe: new osc feature to edit a request</ulink>
         </title>
         <para>I just pushed a new osc feature to git master which allows you to edit a submit
           action. Use case: suppose you review a request (which has at least one submit action) and
@@ -298,47 +288,45 @@ zypper in enlightenment</screen></para>
           (which contains the fix + the original changes), accept the newly created request and
           supersede the original request (that’s basically what osc does behind the scenes).</para>
         <para>Example:<screen>    # request with id 80 needs a small fix
-    marcus@linux:~> osc rq show 80 –edit
+    marcus@linux:~&gt; osc rq show 80 –edit
     Request: #80
 
-    submit:       home:Admin/foo  -> home:foobar/dest
+    submit:       home:Admin/foo  -&gt; home:foobar/dest
     delete:       home:foobar/xxx
 
     Message:
     deletes package xxx and fixes dest.
 
     State:   new        2011-01-30T15:04:03 Admin
-    Comment: &lt;no comment>
+    Comment: &lt;no comment&gt;
     A    /tmp/osc_editsrr2iDcI/test.spec
     A    /tmp/osc_editsrr2iDcI/src.tar.bz2
     At revision 1.
     Checked out package ‘foo.home_Admin’ to /tmp/osc_editsrr2iDcI. Started a new shell (/bin/bash).
     Please fix the package and close the shell afterwards.
-    marcus@linux:/tmp/osc_editsrr2iDcI> # fix it and commit changes
-    marcus@linux:/tmp/osc_editsrr2iDcI> exit
+    marcus@linux:/tmp/osc_editsrr2iDcI&gt; # fix it and commit changes
+    marcus@linux:/tmp/osc_editsrr2iDcI&gt; exit
     exit
     Request: #None
 
-    submit:       home:Admin:branches:REQUEST_80/foo.home_Admin(cleanup) -> home:foobar/dest
+    submit:       home:Admin:branches:REQUEST_80/foo.home_Admin(cleanup) -&gt; home:foobar/dest
     delete:        home:foobar/xxx
 
     Message:
-    &lt;no message>
-    d(i)ff/(a)ccept/(b)uildstatus/(e)dit/(s)kip/(c)ancel > a -m “accepted request and applied small fix”
+    &lt;no message&gt;
+    d(i)ff/(a)ccept/(b)uildstatus/(e)dit/(s)kip/(c)ancel &gt; a -m “accepted request and applied small fix”
     Supersede original request? (y|N) y
-    marcus@linux:~></screen></para>
-        <para>By the way you can also do it manually (osc rq clone &lt;id>; osc co &lt;clone
-          project>; fix package(s) and commit changes; create a new request, accept it and supersede
+    marcus@linux:~&gt;</screen></para>
+        <para>By the way you can also do it manually (osc rq clone &lt;id&gt;; osc co &lt;clone
+          project&gt;; fix package(s) and commit changes; create a new request, accept it and supersede
           original request).</para>
       </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org"
-          >Buildservice</ulink></para>
-        <!-- ($ ld: 30.1.11 sm $) -->
-      </formalpara>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
+<!-- ($ ld: 30.1.11 sm $) -->      </formalpara>
     </sect3>
-    <!--
+<!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -349,35 +337,25 @@ zypper in enlightenment</screen></para>
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/31/synapse-semantic-launcher-for-gnome/"
-            >Nelson Marques: Synapse – Semantic Launcher for GNOME</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/31/synapse-semantic-launcher-for-gnome/">Nelson Marques: Synapse – Semantic Launcher for GNOME</ulink>
         </title>
-        <para>Some time ago a openSUSE user mentioned to me if we had <ulink
-            url="http://launchpad.net/synapse-project">synapse</ulink> available for openSUSE or
+        <para>Some time ago a openSUSE user mentioned to me if we had <ulink url="http://launchpad.net/synapse-project">synapse</ulink> available for openSUSE or
           what was required to have it around. I took a look into it and asked some advice in
           #opensuse-gnome regarding the availability of libzeitgeist which is one of the
           requirements to build this piece of software.</para>
-        <para>Some time ago Federico Quintero has posted a <ulink
-            url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00016.html">message</ulink> on
+        <para>Some time ago Federico Quintero has posted a <ulink url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00016.html">message</ulink> on
           the opensuse-gnome mailing list regarding his work on the Zeitgeist stack. The rest of the
           dependencies for this package are provided by my work on the availability of Ubuntu’s
-          software on openSUSE. From my work I took <ulink url="http://launchpad.net/dee"
-            >dee</ulink> and <ulink url="http://launchpad.net/libappindicator"
-            >libappindicator</ulink> and builded a test package of synapse on <ulink
-            url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00020.html"
-            >home:ketheriel:ayatana</ulink>. This package is here until I see this dependencies hit
+          software on openSUSE. From my work I took <ulink url="http://launchpad.net/dee">dee</ulink> and <ulink url="http://launchpad.net/libappindicator">libappindicator</ulink> and builded a test package of synapse on <ulink url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00020.html">home:ketheriel:ayatana</ulink>. This package is here until I see this dependencies hit
           factory on time (libzeitgeist, dee and libappindicator). If anyone wants to test it out,
           go ahead.</para>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-synapse-1.png"
-              width="25%"/>
+            <imagedata width="25%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-synapse-1.png"/>
           </imageobject>
         </mediaobject>
         <para>I’m not sure of the functionality that should be present on this vala application, but
@@ -387,50 +365,37 @@ zypper in enlightenment</screen></para>
         <para>Synapse is a semantic file launcher (pretty much the same as hitting ALT+F2 on a GNOME
           session) with some crazy looks and a battalion of plugins. Once the dependencies are ok,
           I’ll maintain this package and push it to the GNOME:Apps repository.</para>
-        <!-- ($ ld: 1.2.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 1.2.11 sm $) -->      </blockquote>
       <blockquote>
-        <title><ulink url="http://www.wafaa.eu/entry/more-board-for-more-geeko-1-55.html">Andrew
-            Wafaa: More Board For More Geeko</ulink></title>
-        <para>I have packaged up the latest and greatest release (0.1.1.1) of <ulink
-            url="http://live.gnome.org/TheBoardProject">the-board</ulink> from <ulink
-            url="http://lucasr.org/">Lucas Rocha</ulink>. If' you want a bit more background have a
-          look at my previous <ulink
-            url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html"
-            >post</ulink>. </para>
+        <title>
+          <ulink url="http://www.wafaa.eu/entry/more-board-for-more-geeko-1-55.html">Andrew Wafaa: More Board For More Geeko</ulink>
+        </title>
+        <para>I have packaged up the latest and greatest release (0.1.1.1) of <ulink url="http://live.gnome.org/TheBoardProject">the-board</ulink> from <ulink url="http://lucasr.org/">Lucas Rocha</ulink>. If&apos; you want a bit more background have a
+          look at my previous <ulink url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html">post</ulink>. </para>
         <para>I also said that it was for 11.4/Factory only and that 11.3 was a WIP. Well the
-          progress is complete (with huge help from <ulink url="http://blog.crozat.net/">Frederic
-            Crozat</ulink>, and his great <ulink
-            url="http://blog.crozat.net/2011/01/gnome-3-live-cd-usb-test-image.html">GNOME3</ulink>
+          progress is complete (with huge help from <ulink url="http://blog.crozat.net/">Frederic Crozat</ulink>, and his great <ulink url="http://blog.crozat.net/2011/01/gnome-3-live-cd-usb-test-image.html">GNOME3</ulink>
           repo). </para>
         <para>Yes, more people can have some of this cool shiny stuff. There is a but, and this is
           from upstream - it is still in development so you may loose a kitten or bunny, maybe even
-          both ;-) So come and join the fun and try it out, I've not generated a single .ymp file
+          both ;-) So come and join the fun and try it out, I&apos;ve not generated a single .ymp file
           yet so click on your version of Geeko</para>
-        <!-- ($ ld: 3.2.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 3.2.11 sm $) -->      </blockquote>
       <blockquote>
-        <title><ulink
-            url="http://chenthill.wordpress.com/2011/02/03/lightening-up-evolution-with-exchange-web-services/"
-            >chenthill Blog: Lightening up Evolution with Exchange Web Services</ulink></title>
+        <title>
+          <ulink url="http://chenthill.wordpress.com/2011/02/03/lightening-up-evolution-with-exchange-web-services/">chenthill Blog: Lightening up Evolution with Exchange Web Services</ulink>
+        </title>
         <para>Off-late we have been working quite aggressively on improving our exchange
-          connectivity using <ulink
-            url="http://msdn.microsoft.com/en-us/library/cc535017(v=EXCHG.80).aspx">Exchange Web
-            Services</ulink> . Some evolution hackers sat together during GUADEC 2010 and discussed
+          connectivity using <ulink url="http://msdn.microsoft.com/en-us/library/cc535017(v=EXCHG.80).aspx">Exchange Web Services</ulink> . Some evolution hackers sat together during GUADEC 2010 and discussed
           on the focus areas which our community users as well as corporates would be interested in.
           Exchange Web Services was on top of the list and David Woodhouse kick-started the work at
-          the same time! The development went on in David’s repo - <ulink
-            url="http://git.infradead.org/evolution-ews.git"
-            >http://git.infradead.org/evolution-ews.git</ulink> and you can watch out the progress
+          the same time! The development went on in David’s repo - <ulink url="http://git.infradead.org/evolution-ews.git">http://git.infradead.org/evolution-ews.git</ulink> and you can watch out the progress
           there..</para>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="http://chenthill.files.wordpress.com/2011/02/ews_cal.jpg"
-              width="30%"/>
+            <imagedata width="30%" fileref="http://chenthill.files.wordpress.com/2011/02/ews_cal.jpg"/>
           </imageobject>
           <imageobject>
-            <imagedata fileref="http://chenthill.files.wordpress.com/2011/02/ews_mail.jpg"
-              width="30%"/>
+            <imagedata width="30%" fileref="http://chenthill.files.wordpress.com/2011/02/ews_mail.jpg"/>
           </imageobject>
         </mediaobject>
         <para>The festival season has started for evolution exchange and we have evolution showing
@@ -444,16 +409,15 @@ zypper in enlightenment</screen></para>
           supporting the development!! We are looking forward to deliver the package by the
           beginning of May 2011 for all the users.. One would be able to use EWS connector with
           Evolution version 2.32 onwards..</para>
-        <!-- ($ ld: 3.2.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 3.2.11 sm $) -->      </blockquote>
       <blockquote>
-        <title><ulink
-            url="http://lizards.opensuse.org/2011/02/03/a-simple-clock-indicator-indicator-datetime/"
-            >Nelson Marques: A simple clock indicator (indicator-datetime)</ulink></title>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/02/03/a-simple-clock-indicator-indicator-datetime/">Nelson Marques: A simple clock indicator (indicator-datetime)</ulink>
+        </title>
         <mediaobject>
           <imageobject>
             <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot.png"/>
-          </imageobject>          
+          </imageobject>
         </mediaobject>
         <para>I’ve neglected this indicator since the first day because it drove me into package
           dependencies that aren’t used in openSUSE (we use YaST and not system-tools-backends and
@@ -482,19 +446,16 @@ zypper in enlightenment</screen></para>
           friends). </para>
         <para>Within the next days, I will I will make a 1 click installer and run a BETA phase for
         the Indicators/GNOME2.</para>
-        <!-- ($ ld: 3.2.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 3.2.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://kdeatopensuse.wordpress.com/2011/01/30/opensuse-11-4-kde-testing/">KDE
-            at openSUSE: openSUSE 11.4 KDE-testing</ulink>
+          <ulink url="http://kdeatopensuse.wordpress.com/2011/01/30/opensuse-11-4-kde-testing/">KDE at openSUSE: openSUSE 11.4 KDE-testing</ulink>
         </title>
         <para>It’s been a while and there was nothing special to report, KDE SC 4.5 just worked. In
-          the meantime KDE SC 4.6 was released and openSUSE offers it in <ulink
-            url="http://en.opensuse.org/KDE_repositories">KDF as well as KR46 repos</ulink>. Big
+          the meantime KDE SC 4.6 was released and openSUSE offers it in <ulink url="http://en.opensuse.org/KDE_repositories">KDF as well as KR46 repos</ulink>. Big
           thanks to everybody who is involved in establishing and maintaining those repos – openSUSE
           really profits a lot from the (openSUSE-)KDE community that makes it possible to provide
           such a nice and updated KDE distro. </para>
@@ -505,8 +466,7 @@ zypper in enlightenment</screen></para>
           updating KDE 4.4 to 4.6, e.g. kdepim-related. </para>
         <para><emphasis role="bold">KDE SC 4.6</emphasis>
         </para>
-        <para>KDE 4.6 has some nice fixes, among them <ulink url="http://bugs.kde.org/163707">bko
-            bug 163707</ulink> which prevented KDE from restoring the resolution set in
+        <para>KDE 4.6 has some nice fixes, among them <ulink url="http://bugs.kde.org/163707">bko bug 163707</ulink> which prevented KDE from restoring the resolution set in
           systemsettings on login. This is especially important to openSUSE users since sax2 is gone
           and display settings moved into the desktop environment. Plasma seems to become more
           stable with every release – in fact I did not have any major issues with it since ages and
@@ -518,13 +478,10 @@ zypper in enlightenment</screen></para>
         <para><emphasis role="bold">Desktop search </emphasis></para>
         <para>The desktop search does still not justify its name though since basics are still
           missing, e.g. context given for search results as all other desktop searches do and kerry
-          + beagle already did years ago. <ulink
-            url="http://trueg.wordpress.com/2010/09/10/someone-requested-excerpts-for-query-results/"
-            >The feature was shown some months ago</ulink> but is not as such available in KDE 4.6 –
+          + beagle already did years ago. <ulink url="http://trueg.wordpress.com/2010/09/10/someone-requested-excerpts-for-query-results/">The feature was shown some months ago</ulink> but is not as such available in KDE 4.6 –
           thus even in KDE 4.6 all the user gets is a replacement of kfind + tagging which needs a
           huge database for that simple task. </para>
-        <para>On top of that there are still issues with <ulink
-            url="https://bugs.kde.org/show_bug.cgi?id=246678">virtuoso-t hogging the CPU</ulink>,
+        <para>On top of that there are still issues with <ulink url="https://bugs.kde.org/show_bug.cgi?id=246678">virtuoso-t hogging the CPU</ulink>,
           its database never decreasing in size but only increasing, even if you remove folders from
           the “to be indexed”-list and the systray-tool used to suspend the indexing vanished as
           well decreasing transparency to the user of an app which potentially keeps your hard disk
@@ -542,8 +499,7 @@ zypper in enlightenment</screen></para>
           are quite responsive regarding bugs and questions – although their websites are all pretty
           much outdated. :) </para>
         <para>For openSUSE 11.4 there is still one major mystery bug to solve for openSUSE 32-bit
-          NVIDIA users which get <ulink url="https://bugs.kde.org/show_bug.cgi?id=251719">several
-            apps crashing since they updated to KDE >= 4.5</ulink>. </para>
+          NVIDIA users which get <ulink url="https://bugs.kde.org/show_bug.cgi?id=251719">several apps crashing since they updated to KDE &gt;= 4.5</ulink>. </para>
         <para><emphasis role="bold">Power-management</emphasis>
         </para>
         <para>Power-management got worse in KDE 4.6, regressions such as not disabling
@@ -564,9 +520,7 @@ zypper in enlightenment</screen></para>
           suspend every few minutes, confirmed but no fix so far. </para>
         <para><emphasis role="bold">Package-management</emphasis>
         </para>
-        <para>For openSUSE 11.4 we are currently <ulink
-            url="http://en.opensuse.org/openSUSE:KDE_11.4_packagekit">testing
-            kpackagekit/apper</ulink> as a replacement for the unmaintained kupdateapplet.
+        <para>For openSUSE 11.4 we are currently <ulink url="http://en.opensuse.org/openSUSE:KDE_11.4_packagekit">testing kpackagekit/apper</ulink> as a replacement for the unmaintained kupdateapplet.
           Kpackagekit works ok but it seems that its zypper backend could need some improvements.
           And the next version of kpackagekit which will be called apper features monochrome systray
           icons which is fine, but the “security patch available” signal is just a tiny red dot
@@ -575,9 +529,7 @@ zypper in enlightenment</screen></para>
           fault but either backend-related or touching artists’ taste. </para>
         <para><emphasis role="bold">Phonon-backends</emphasis>
         </para>
-        <para>Another application <ulink
-            url="http://en.opensuse.org/openSUSE:KDE_11.4_phonon-backend">to test is the
-            phonon-backend</ulink> to be used in openSUSE 11.4 by default. Should we stay with xine
+        <para>Another application <ulink url="http://en.opensuse.org/openSUSE:KDE_11.4_phonon-backend">to test is the phonon-backend</ulink> to be used in openSUSE 11.4 by default. Should we stay with xine
           whose backend is apparently unmaintained but has served most users well, switch to the
           vlc-backend or maybe use the gstreamer-backend? </para>
         <para>Trying to play some file with amarok and the gstreamer-backend brings up some dialogue
@@ -591,9 +543,7 @@ zypper in enlightenment</screen></para>
           there seem to be issues playing video via vlc, some apps like dragonplayer. </para>
         <para><emphasis role="bold">KDE-PIM </emphasis></para>
         <para>And finally there is of course the always present issue of KDE-PIM. openSUSE 11.4 will
-          ship kdepim 4.4.10 which needs testing. There is especially <ulink
-            url="https://bugs.kde.org/show_bug.cgi?id=185544">one annoying bug which makes kontact
-            crash</ulink> when logging in if the last view before logging out was kmail. So let’s
+          ship kdepim 4.4.10 which needs testing. There is especially <ulink url="https://bugs.kde.org/show_bug.cgi?id=185544">one annoying bug which makes kontact crash</ulink> when logging in if the last view before logging out was kmail. So let’s
           hope this can be fixed before 11.4 gets released.</para>
         <para>I was really looking forward to KDE-PIM 4.6 since IMAP-support seems a lot better with
           akonadi, at least for my use-cases which include suspending/resuming. The latter makes
@@ -603,12 +553,10 @@ zypper in enlightenment</screen></para>
         <para>Please help testing KDE SC 4.6 from the openSUSE repos in order to make it shine in
           openSUSE 11.4. Feedback can go to the related wiki pages or straight to
           opensuse-kde@.</para>
-        <!-- ($ ld: 30.1.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 30.1.11 sm $) -->      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/27/6481/">Will Stephenson: openSUSE KDE
-            Team activity, Jan 2011</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/01/27/6481/">Will Stephenson: openSUSE KDE Team activity, Jan 2011</ulink>
         </title>
         <para>What’s been going on in the openSUSE KDE team this week? The news on everybody’s lips
           is that the KDE project released 4.6.0 yesterday. Naturally, we’ve got it available for
@@ -620,13 +568,10 @@ zypper in enlightenment</screen></para>
           repository will shortly be made available, providing the point releases in the KDE 4.6
           series.</para>
         <figure id="fig.kde1">
-          <title>Plasma Desktop with Dolphin browsing this week’s modified files, and Speaker Setup
-            dialog</title>
+          <title>Plasma Desktop with Dolphin browsing this week’s modified files, and Speaker Setup dialog</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="15%"
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/plasma_workspace-150x150.png"
-              />
+              <imagedata width="15%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/plasma_workspace-150x150.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -634,9 +579,7 @@ zypper in enlightenment</screen></para>
           <title>Krita, KPlato, KSpread, KWord, about to transform into Calligra Office</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="15%"
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/koffice-150x150.png"
-              />
+              <imagedata width="15%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/koffice-150x150.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -644,9 +587,7 @@ zypper in enlightenment</screen></para>
           <title>Amarok 2.4.0 playing last.fm using Phonon 4.4.4 and GStreamer</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="15%"
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/amarok-150x150.png"
-              />
+              <imagedata width="15%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/amarok-150x150.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -654,9 +595,7 @@ zypper in enlightenment</screen></para>
           <title>Some code I wrote with my feet in a bucket of water in 2004</title>
           <mediaobject>
             <imageobject>
-              <imagedata width="15%"
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/kdevelop-150x150.png"
-              />
+              <imagedata width="15%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/kdevelop-150x150.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -685,15 +624,12 @@ zypper in enlightenment</screen></para>
           improved performance, for example by deferring starting services until they are needed. </para>
         <para>If you want to join the fun or just need a helping hand, the expert and fanatical
           openSUSE KDE team can be found in #opensuse-kde on IRC, at
-            <email>opensuse-kde@opensuse.org</email> or at <ulink
-            url="http://en.opensuse.org/Portal:KDE">http://en.opensuse.org/Portal:KDE</ulink>. You
+            <email>opensuse-kde@opensuse.org</email> or at <ulink url="http://en.opensuse.org/Portal:KDE">http://en.opensuse.org/Portal:KDE</ulink>. You
           can skip to the end and leave a response. Pinging is currently not allowed. </para>
-        <!-- ($ ld: 27.1.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 27.1.11 sm $) -->      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/01/slicing-up-the-web/">Sebastian Kügler:
-            Slicing up the Web</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/01/slicing-up-the-web/">Sebastian Kügler: Slicing up the Web</ulink>
         </title>
         <para>The Webslice applet has been in Plasma (kdeplasma-addons, to be precise) since 4.4
           already. It allows the user to display a part of a webpage on the desktop. This can be
@@ -715,9 +651,7 @@ zypper in enlightenment</screen></para>
           <title>performance</title>
           <mediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-3-slices-268x300.png"
-                width="15%"/>
+              <imagedata width="15%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-3-slices-268x300.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -740,9 +674,7 @@ zypper in enlightenment</screen></para>
           <title>improving interaction</title>
           <mediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-config-preview-300x154.png"
-                width="15%"/>
+              <imagedata width="15%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/01/webslice-config-preview-300x154.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -783,15 +715,13 @@ zypper in enlightenment</screen></para>
           preconfigured slices. In order to do that, copy and rename the .desktop file, change name,
           comment, icon, if you wish, then add a line
           like<screen>X-Plasma-Args=http://mysite.org,#myid </screen></para>
-        <para>Copy the file to ~/.kde(4)/share/kde4/services/, run <emphasis role="italic"
-            >kbuildsycoca4</emphasis> and add your newly created webslice to your Plasma using the
+        <para>Copy the file to ~/.kde(4)/share/kde4/services/, run <emphasis role="italic">kbuildsycoca4</emphasis> and add your newly created webslice to your Plasma using the
           widget explorer. </para>
         <para>A possible direction we can take this is to add a webslice category to
           opendesktop.org, and start sharing our webslices with each other…</para>
-        <!-- ($ ld: 28.1.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 28.1.11 sm $) -->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -839,8 +769,7 @@ zypper in enlightenment</screen></para>
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
@@ -851,25 +780,21 @@ zypper in enlightenment</screen></para>
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="openfateteam">
+      </sect3> -->    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
-            We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
-              (Score: 337)</ulink>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 337)</ulink>
           </title>
           <para>&quot;Network installation could be improved by running package download and package
             installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
-              boot (Score: 170)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 171)</ulink>
           </title>
           <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -892,23 +817,21 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
-              111)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 113)</ulink>
           </title>
           <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 86)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 87)</ulink>
           </title>
           <para>&quot;We need a feedback about packages that are preferred by users and actively
             used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
-              Linux) (Score: 70)</ulink>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 71)</ulink>
           </title>
           <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
@@ -916,8 +839,7 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
-              &quot;Installation Summary&quot; (Score: 66)</ulink>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 67)</ulink>
           </title>
           <para>&quot;The YaST Qt package manager should provide as much information in the
             &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
@@ -925,8 +847,7 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs
-              (Score: 54)</ulink>
+            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score: 53)</ulink>
           </title>
           <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change
             etc. is very scary for many users.</para>
@@ -934,126 +855,70 @@ zypper in enlightenment</screen></para>
             problem without giving much help. This is a cause for many complaints, and contributes
             to myths of RPM dependency hell still existing today. (...)&quot;</para>
         </blockquote>
-        <!-- ($ ld: 29.1.11 sat *updated* $) -->
-      </sect4>
+<!-- ($ ld: 5.2.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
-            if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311136">Use the community repos list to remove
-              repos</ulink>
+            <ulink url="https://features.opensuse.org/311175">Firefox search engine multi-language</ulink>
           </title>
-          <para>If the user adds a repo via the community repos list he should be able to remove
-            them via the same way, i.e. have a list where he can de-select and thus remove the
-            repos. That way if he e.g. added some repo which messed-up his system he could just
-            bring up that same list de-select the repo and yast would &quot;update&quot; all
-            installed packages from that repo to the original state and remove the repo
-            afterwards.</para>
-          <para>In YaST&apos;s software management it&apos;s the same, you add/remove/refresh from
-            within the same list.</para>
+          <para>is very annoying that when, install opensuse in Spanish and try to search anything in firefox search bar the results was in English</para>
+          <para>must be a way to they form automatically during the installation</para>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311176">add pypy - a faster python implementation</ulink>
+            </title>
+            <para>pypy is (almost) fully compatible to python 2.5 but it can execute your unmodified Python code 5-15 times faster than the standard cPython.</para>
+            <para>For benefits see here: http://fedoraproject.org/wiki/Features/PyPyStack</para>
+            <para>It takes more than 1 hour to build on a fast machine ....so providing a nice rpm package would make sense</para>
+            <para>pypy has been around for a very long time but only now it has a 64 bit JIT compiler</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311186">original cdrtools</ulink>
+            </title>
+            <para>openSuSE distributes the package wodim instead of the package cdrtools. The reason this happens is a claim of the Debian maintainers that the present license of the package cdrtools is incompatible with GPL.</para>
+            <para>However, even if it were the case, it does not make a good reason to exclude cdrtools from openSuSE.</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311196">Include brcm80211 driver into openSUSE 11.4</ulink>
+            </title>
+            <para>Broadcom has released opensource drivers for some of new Wireless cards.
+That could be nice to get those cards working out of box in opensuse 11.4 for snupported bcm/b43 devices
+I read that this will be included into 2.6.37 but I cannot find it in milestone 6
+</para>
+            <para>For more info:
+
+</para>
+            <para>http://forums.opensuse.org/english/get-technical-help-here/hardware/447485-bcm43224-bcm43225-bcm4313-installation-guide.html</para>
+            <para>http://wireless.kernel.org/en/users/Drivers/brcm80211</para>
+          </blockquote>
+          <blockquote>
+            <title>
+              <ulink url="https://features.opensuse.org/311236">xf86-video-ati 6.14.0 for opensuse 11.4</ulink>
+            </title>
+            <para>It will hopefully provide decent open-source performance for opensuse 11.4 users with AMD 5xxx series graphics cards.</para>
+            <para>http://www.phoronix.com/scan.php?page=news_item&amp;px=OTA3Nw</para>
+          </blockquote>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311137">Update of Cyrus imapd to the 2.4.x
-              branch</ulink>
-          </title>
-          <para>It seems that OpenSUSE 11.4 still ships cyrus imapd 2.3.16. The 2.3.16 is listed as
-            &quot;legacy&quot; at the <ulink
-              url="http://www.cyrusimap.org/mediawiki/index.php/Downloads#IMAP_Server"
-              >Cyrus-Homepage</ulink> .</para>
-          <para>Would it be possible/better to change to 2.4.6 (or whatever version will be recent
-            then)?</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311138">Add romanian keyboard layout to future
-              openSUSE installations</ulink>
-          </title>
-          <para>Romanian keyboard is not listed to other international layouts during the openSUSE
-            installation. It can be choosen only after the openSUSE installation through Control
-            Center -&gt; Keyboard -&gt; Layouts.</para>
-          <para>Please add the romanian keyboard mapping to the openSUSE installation.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311139">Merge YaST and Control Center</ulink>
-          </title>
-          <para>Merge YaST and Control Center together, and make this more structurate.. many
-            similar settings are present here and there...</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311140">Add ratings and reviews in Software
-              Manager</ulink>
-          </title>
-          <para>Add ratings and reviews to all the packages in Software Manager, feature implemented
-            already in Linux Mint and soon to be in Ubuntu.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311143">Humane address book for the
-              cloud</ulink>
-          </title>
-          <para><emphasis role="bold">Motivation</emphasis></para>
-          <para>This project is not about an address book. It&apos;s not about listing contacts in
-            alphabetical order, having fields for titles and middle names, zip codes, and different
-            types of phone numbers, it&apos;s not about concepts like meta-contacts, contact
-            syncing, IM status notifications, device capabilities, or about formats, APIs, or other
-            technical questions. (...)</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311150">Log System Configuration
-              Changes</ulink>
-          </title>
-          <para>Moving to a new version often (always?) requires manual configuration of the new
-            release to incorporate all the changes made over the life of the current system. If
-            these changes were logged to a central file, we would, at a minimum, have a list to work
-            with for manual changes, but longer term that log could serve as a data source to
-            automate the configuation process. (...)</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311155">Live and Install on the same
-              DVD</ulink>
-          </title>
-          <para>One openSUSE dvd that can be used for installation and also for live demo (like
-            Ubuntu, Fedora... etc)</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/311169">MintMenu to be included in openSUSE by
-              default</ulink>
-          </title>
-          <para>We can have MintMenu by default in openSUSE</para>
-          <para>1. It is a fork of our own slab</para>
-          <para>2. It has lots more functionality than our slab and yes more popular too</para>
-          <para>3. Better UX</para>
-          <para>It already exists at OBS
-            http://download.opensuse.org/repositories/home:/unamanic/openSUSE_11.3/ </para>
-        </blockquote>
-        <!-- ($ ld: 29.1.11 sat *replaced with newer ones* $) -->
-      </sect4>
+<!-- ($ ld: 5.2.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink
-            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
+<!--
     <sect3 role="oooteam">
       <title>OpenOffice Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="testing">
+      </sect3> -->    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00028.html">Larry
-            Finger: Weekly News for January 29</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-01/msg00028.html">Larry Finger: Weekly News for January 29</ulink>
         </title>
         <para>The next Testing Core Team IRC meeting will be Jan. 31, 2011 at 18:00 UTC. </para>
         <para>In our meeting, we will be discussing our experiences with 11.4 M6 and discussing bugs
@@ -1067,34 +932,29 @@ zypper in enlightenment</screen></para>
           fixed before the GM comes out in March. Remember that your hardware may have problems not
           seen by other testers. Unless you find such bugs and file a report on them, they may not
           be fixed by March. </para>
-        <!-- ($ ld: 29.1.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 29.1.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink
-              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
-              Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-    <!--
+<!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->
-  </sect2>
+      </sect3> -->  </sect2>
 </sect1>
