@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -31,36 +32,28 @@
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.unixmen.com/linux-commands/1459-useful-commands-for-daily-use">Linux.com/Jack Wallen: Reclaim Deleted Files and Repair Filesystems on Linux </ulink>
+        <ulink url="http://www.linuxaria.com/pills/registrare-il-terminale-con-script?lang=en">Linuxaria: Record your terminal with Script</ulink>
       </title>
-      <para><quote>Linux is as solid an operating system as you&apos;ll ever use — but that doesn&apos;t mean that the hardware you&apos;re running it on is equally solid. Hard drives are as prone to errors as are file systems. And no matter how stable an OS is, it can&apos;t prevent you from accidentally deleting files and/or folders. But don&apos;t despair: Linux is equipped with a number of tools that can help you repair filesystem errors and reclaim deleted files. Which tools? To start, <emphasis role="bold">e2fsck</emphasis>, <emphasis role="bold">scalpel</emphasis>, and <emphasis role="bold">lsof</emphasis> will get you the farthest. Let&apos;s take a look at how each of these can be used to help your file systems be free of errors and your files be freed from accidental deletion.</quote> (...)</para>
-<!-- ($ ld: 26.1.11 sm $) -->    </blockquote>
+      <para>The script command is part of the <ulink url="ftp://ftp.kernel.org/pub/linux/utils/util-linux-ng/">util-linux-ng</ulink> package and so should be available already installed in any distribution, or you should be able to easily add it.</para>
+      <para>What’s script ?</para>
+      <para>From his man page:</para>
+      <para>&quot;Script makes a typescript of everything printed on your terminal. It is useful for students who need a hardcopy record of an interactive session as proof of an assignment, as the type script file can be printed out later with lpr.&quot; (...)</para>
+<!-- ($ ld: 4.2.11 sat $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/shell-scripts/positional-parameters/">BashShell.net/mike: Positional Parameters</ulink>
+        <ulink url="http://bashshell.net/shell-scripts/collecting-user-input-in-a-bash-shell-script/">BashShell.net/mike: Collecting User Input in a Bash Shell Script</ulink>
       </title>
-      <para>Special built-in environmental  variables are positional parameters which hold command-line arguments to positions with the names 1,2,3,4, etc. which are indicated by $1,$2,$3,$4, etc.  Argument $0 is the name of the script.   These parameters are named positional because within the script the reference is to the position they occur on the command line. (...)</para>
-<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+      <para>The read command is designed to read and then use in the script input from the user.  The input that is provided by the user is stored as a variable.  This is a builtin variable that will store one line of input from the user in one or more variables.  The read command is valuable as it is a major way to input information into a shell script.  Lines are read into the script with standard input and split via the $IFS variable.  This stands for internal field separator.    The first word is assigned the first variable, the second word the second variable, etc. (...)</para>
+<!-- ($ ld: 4.2.11 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://www.packtpub.com/article/python-multimedia-enhancing-images">Packt/Ninad Sathaye: Python Multimedia: Enhancing Images</ulink>
+        <ulink url="http://www.developer.com/ws/android-development-101-hello-world-in-four-minutes-flat.html">Developer.com: Android Development 101: &apos;Hello World&apos; in Four Minutes Flat</ulink>
       </title>
-      <para>Python is a high-level, object-oriented language with a comprehensive standard library. Typically, one can develop complex applications in Python very quickly compared to some other languages. Multimedia applications are used in a broad spectrum of fields. Writing applications that work with images, videos, and other sensory effects is great. Not every application gets to make full use of audio/visual effects, but a certain amount of multimedia makes any application very appealing.</para>
-      <para>In this article by Ninad Sathaye, author of <ulink url="http://www.packtpub.com/python-multimedia-application-beginner%27s-guide/book/ns/pythonmulti-abr6/0111?utm_source=ns_pythonmulti_abr6_0111&amp;utm_medium=content&amp;utm_campaign=naheed">Python Multimedia</ulink>, we shall cover the following recipes:</para>
-      <para>* Adjusting brightness and contrast</para>
-      <para>* Swap colors within an image</para>
-      <para>* Change the color of a flower (...)
-</para>
-<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://net.tutsplus.com/tutorials/php/advanced-regular-expression-tips-and-techniques/">Nettuts+/Burak Guzel: Advanced Regular Expression Tips and Techniques</ulink>
-      </title>
-      <para>Regular Expressions are the Swiss Army knife for searching through information for certain patterns. They have a wide arsenal of tools, some of which often go undiscovered or underutilized. Today I will show you some advanced tips for working with regular expressions. (...)</para>
-<!-- ($ ld: 29.1.11 sat $) -->    </blockquote>
+      <para>Start learning how to develop for the Android platform with the Android Development 101 video series. In this first episode, Chris L. Bennett demonstrates how to create a traditional Hello World application. (...)</para>
+<!-- ($ ld: 4.2.11 sat $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
