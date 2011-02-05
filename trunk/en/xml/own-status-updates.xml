@@ -31,7 +31,7 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Dominique
+        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique
           Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
       </title>
       <para>It’s been a long time since I was in touch with Enlightenment, back in the young days I
@@ -342,6 +342,15 @@ zypper in enlightenment</screen></para>
       </formalpara>
     </sect3>
     <!--
+    <sect3 role="evergreen">
+      <title>Evergreen/Tumbleweed Team</title>
+      <blockquote>
+        <title></title>
+        <para></para>
+      </blockquote>
+    </sect3>
+    -->
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -418,7 +427,7 @@ zypper in enlightenment</screen></para>
         <title>
           <ulink
             url="http://chenthill.wordpress.com/2011/02/03/lightening-up-evolution-with-exchange-web-services/"
-            >chenthill Blog: Lightening up Evolution with Exchange Web Services</ulink>
+            >Chenthill P.: Lightening up Evolution with Exchange Web Services</ulink>
         </title>
         <para>Off-late we have been working quite aggressively on improving our exchange
           connectivity using <ulink
@@ -877,6 +886,62 @@ zypper in enlightenment</screen></para>
         </listitem>
       </itemizedlist>
     </sect3>
+    <sect3 role="weeklynews">
+      <title>Weekly News Team</title>
+      <blockquote>
+        <title>Sascha Manns: Poll for our Weekly News Translators</title>
+        <para>The last Poll was for our Readers. Now the next Poll is for our Translators. </para>
+        <para>As shown in <ulink url="http://en.opensuse.org/openSUSE:Weekly_news_contribute"
+          >http://en.opensuse.org/openSUSE:Weekly_news_contribute</ulink> we have different
+          possibilities for our Translators to create own Translations:<itemizedlist>
+            <listitem>
+              <para>XML Source (You get the Sourcecode and you use it to create any other Format like
+                Mediawiki)</para>
+            </listitem>
+            <listitem>
+              <para>XML with using QT Linguist r Lokalize (Then you use the english Stylesheets. You
+                just translate the *.po Files and after translation it goes to the English XMLs and we
+                create a native Issue for you)</para>
+            </listitem>
+            <listitem>
+              <para>Mediawiki: You want to have a Version in the en.o.o Wiki and translate it from there
+                to any other Format like Mediawiki</para>
+            </listitem>
+            <listitem>
+              <para>HTML/news.opensuse.org: You use the HTML File to translate</para>
+            </listitem>
+            <listitem>
+              <para>XML/Docbook: You want to have a own Space with own Stylesheets and want to publish
+                into HTML or PDF.</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>The poll is placed there: <ulink
+          url="https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format"
+          >https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format</ulink>
+        </para>
+        <para>Please vote and help clarifying…</para>
+        <!-- ($ ld: 2.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://saigkill.wordpress.com/2011/02/04/german-weekly-news-relaunched/"
+          >Sascha Manns: German Weekly News relaunched</ulink></title>
+        <para>I’m pleased to announce the relaunch of the german openSUSE Weekly News. </para>
+        <para>If you’re interested in knowing more, just click <ulink url="http://wiki.open-slx.de/OWR"
+          >there</ulink>. </para>
+        <para>We are using an Etherpad Clone for preparing the News. We are happy if many people want to
+          working with us.<itemizedlist>
+            <listitem>
+              <para><ulink url="http://wiki.open-slx.de/OWR">http://wiki.open-slx.de/OWR</ulink></para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://forum.open-slx.de/forum/opensuse-wochenrueckblick/"
+                >http://forum.open-slx.de/forum/opensuse-wochenrueckblick/</ulink></para>
+            </listitem>
+          </itemizedlist></para>
+        <!-- ($ ld: 4.2.11 sm $) -->
+      </blockquote>
+    </sect3>
+    
     <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
