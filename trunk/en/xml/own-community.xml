@@ -19,6 +19,7 @@
 <sect1 role="community">
   <title>In the Community</title>
   <!--Put here things relevant to the openSUSE community maybe from * People of openSUSE or elections, votings 1 - 2 posts-->
+  <!--
   <sect2>
     <title>Postings from the Community</title>
     <blockquote>
@@ -51,73 +52,8 @@
       <para>All the basic features are in place and it just needs a bit more polishing. </para>
       <para>There is a news story coming up with some more information and screenshots. So stay
         tuned if you are looking for more information. :-)</para>
-      <!-- ($ ld: 24.1.11 sm $) -->
     </blockquote>
-    <blockquote>
-      <title><ulink url="http://nowwhatthe.blogspot.com/2011/01/opensuse-in-netherlands.html">Jos
-          Poortvliet: openSUSE in the Netherlands</ulink></title>
-      <para>In May, the dutch "HCC" computerclub will organize a Linux day. They have asked me if
-        I'd be willing to give a talk there - cool, I can do that. And if I could also set up and
-        staff a booth. Slightly harder to do that on my own - so I hereby would like to ask any
-        dutch openSUSE users who are willing to help out to contact me! </para>
-      <para>Maybe we can do more than only that booth, there are plenty of events in the Netherlands
-        and of course we should organize a openSUSE 11.4 release event to get to know each other! </para>
-      <para>Talking about local openSUSE, <ulink
-          url="http://gihyo.jp/magazine/SD/archive/2011/201102">look at this site</ulink> and find
-        the openSUSE article by HeliosRed :D</para>
-      <!-- ($ ld: 26.1.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://nowwhatthe.blogspot.com/2011/01/lca-on-friday.html">Jos Poortvliet:
-          LCA on Friday</ulink></title>
-      <para>Still at Linux Conf Australia. Have new pictures, see below. A few notes:<itemizedlist>
-          <listitem>
-            <para>I spoke with some local Novell/SUSE people - and we made a deal that we'll work
-              more together to <emphasis role="bold">promote openSUSE in Down Under</emphasis>.
-              Sorely needed, our technology can contribute a lot to the work people here are doing.
-              And I bet we can learn a thing or two too... </para>
-          </listitem>
-          <listitem>
-            <para>Yesterday I attended talks about <emphasis role="bold">Koji (Red Hat build system)
-                and Fedora</emphasis>. Koji - let's just say we need to communicate <ulink
-                url="http://build.opensuse.org">OBS</ulink> a lot better. Will make the lives of
-              many sysadmins quite a bit easier. Seriously, Koji is nice but: command line only (web
-              interface just monitors and can restart tasks); runs on local hardware and thus only
-              builds for your own architecture; doesn't really support building for other distro's -
-              surely not Ubuntu and Debian like OBS can do; you can't just point it to a SVN or Git
-              repository - no, first have to create source RPM's by hand. And there's more - just
-              showing how awesome OBS really is. I do think OBS needs a name change - to something
-              like Open Build Service. To make clear it ain't just <emphasis role="bold">openSUSE
-                specific!</emphasis></para>
-          </listitem>
-          <listitem>
-            <para>The Fedora talk was also interested and the Fedora Project Lead is a cool dude. I
-              spend some time with him during the Penguin Dinner and he invited me to a cross-distro
-              discussion panel at FOSDEM together with the Debian project lead. We seem to be very
-              much on the same page and I look greatly forward to that!</para>
-          </listitem>
-          <listitem>
-            <para>The Friday keynote by <ulink url="http://markpesce.com/">Mark Pesce</ulink> was
-              awesome, be sure to to check the video's on <ulink
-                url="http://blip.tv/search?q=lca2011">blip</ulink>! There is an upload/network
-              issue, so they won't be there anytime soon, unfortunately. He spoke about <emphasis
-                role="bold">freedom, mesh networking, facebook and more</emphasis>. Oh and it's 18+
-              rated - including juicy quotes on <emphasis role="bold">Steve Jobs</emphasis> you
-              don't want to miss! </para>
-          </listitem>
-        </itemizedlist></para>
-      <para>All in all - great day which isn't over yet. I'll be giving a <emphasis role="bold">90
-          sec lightning talk</emphasis> at the closing ceremony, showing off the <emphasis
-          role="bold">awesomeness of SUSE Studio</emphasis>. Mostly due to that being the only thing
-        I could whip together into a PDF quick enough - ImageMagick's "convert" tool to the rescue!
-        But it will give a taste to people, show them (open)SUSE is more than relevant: you really
-        need to some SUSE knowledge on your CV if you want to be a good sysadmin ;-) </para>
-      <para>Of course the result will end up on the openSUSE marketing resources page <ulink
-          url="http://en.opensuse.org/openSUSE:Presentations#SUSE_Studio">here</ulink> - I just need
-        darix to upload it as the PDF is more than the 2 MB limit.</para>
-      <!-- ($ ld: 27.1.11 sm $) -->
-    </blockquote>
-  </sect2>
+  </sect2> -->
   <!--
   <sect2>
     <title>People of openSUSE</title>
@@ -187,6 +123,7 @@
     <para>The openSUSE Weekly News are available as livestream or podcast in German. You can hear it
       or download it on <ulink url="http://blog.radiotux.de/podcast">Radiotux</ulink>. </para>
   </sect2>
+  <!--
   <sect2>
     <title>From Ambassadors</title>
     <blockquote>
@@ -272,39 +209,8 @@
         </imageobject>
       </mediaobject>
       <para>so see you there!</para>
-      <!-- ($ ld: 24.01.10 th $) -->
     </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://opensuseambassadors.blogspot.com/2011/01/greek-customs-new-years-pie.html"
-          >Greek openSUSE Ambassadors: Greek Customs (New Year's Pie)</ulink></title>
-      <para>Here in Greece we celebrate the new year except from gifts but also by cutting a New
-        Year's Pie where inside there is a coin hidden. Whoever finds it wins a special gift and is
-        meant to be lucky the new year. A local Linux User Group located in Volos called Volug and
-        LinuxTeam Teilar in Larisa which both teams consist of colleagues had two small parties for
-        cutting the New Year's Pie. I was there to celebrate with those people and inform them about
-        openSUSE and openSUSE community. They were all interested about openSUSE distribution. I
-        answered many questions about Tumbleweed and Evergreen and informed them about our new 11.4
-        and OBS as many of them where interested about the work that is done by openSUSE community
-        and by the Greek Community. I had some cds/dvds and posters with me which i gave them. In
-        the future we will make some events together. Unfortunately we did not took any pictures. I
-        would slightly have won the hidden coin at the first party but the next person got it. </para>
-      <para>Photo of the New Year's Pie</para>
-      <figure id="fig.pie">
-        <title>Happy New Year All!!!!</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata
-              fileref="http://3.bp.blogspot.com/_jdKLYe7Jeds/TT2yTD-TOII/AAAAAAAAADc/mjbWhEdAlxo/s1600/5360749563_455c17fa19.jpg"
-              width="25%"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para><ulink url="http://en.opensuse.org/User:Etern4L">George Bratsos aka
-        Etern4L</ulink></para>
-      <!-- ($ ld: 24.01.10 th $) -->
-    </blockquote>
-  </sect2>
+  </sect2> -->
   <sect2>
     <title>Communication</title>
     <itemizedlist>
