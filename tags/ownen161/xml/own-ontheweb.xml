@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+  <!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->
+  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.karlitschek.de/2011/01/contest-deadline-extended.html">Frank
+          Karlitscheck: Contest deadline extended</ulink>
+      </title>
+      <para>Several developers approached me and asked for more time to port their applications. So
+        we extend the deadline of the contest to 31. of march. Everybody has one more month to port
+        a KDE or Qt application to Symbian or MeeGo. Remember that you can win 10.000,- so please
+        consider to make your KDE or Qt application ready for mobile. </para>
+      <para>You find more informatiuon in the original contest announcement: <ulink
+          url="http://blog.karlitschek.de/2010/12/qtest-mobile-app-port-contest-launched.html"
+          >http://blog.karlitschek.de/2010/12/qtest-mobile-app-port-contest-launched.html</ulink>
+      </para>
+      <para>Please make sure that you also provide binaries for you applications. This makes is a
+        lot easier for the jury to test you application. Have fun and good luck.</para>
+      <!-- ($ ld: 30.1.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://sourceforge.net/blog/sourceforge-net-attack/">Sourceforge:
+          Sourceforge.net attack</ulink>
+      </title>
+      <para>Yesterday our vigilant operations guys detected a targeted attack against some of our
+        developer infrastructure. The attack resulted in an exploit of several SourceForge.net
+        servers, and we have proactively shut down a handful of developer centric services to
+        safeguard data and protect the majority of our services. </para>
+      <para>Our immediate priorities are to prevent further exposure and ensure data integrity.
+        We’ve had all hands on deck working on identifying the exploit vector or vectors,
+        eliminating them, and are now focusing on verifying data integrity and restoring the
+        impacted services. </para>
+      <para>The problem was initially discovered on the servers that host CVS but our analysis
+        indicates that several other machines were involved, and while we believe we’ve determined
+        the extent of the attack, we are verifying all of our other services and data. </para>
+      <para>As a short term response, we’ve taken down the following services to prevent any
+        possible escalation:<itemizedlist>
+          <listitem>
+            <para>CVS Hosting</para>
+          </listitem>
+          <listitem>
+            <para>ViewVC (web based code browsing)</para>
+          </listitem>
+          <listitem>
+            <para>New Release upload capability</para>
+          </listitem>
+          <listitem>
+            <para>Interactive Shell services</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>Once the immediate response to this attack is over, we will be providing a much more
+        detailed account of what’s happened, and what specific actions we are taking to prevent
+        further exploits.</para>
+      <!-- ($ ld: 31.1.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.samba.xp.de/index.php?id=14">SambaXP 2011</ulink>
+      </title>
+      <para>The Samba eXPerience 2011 in Göttingen, Germany is the 10th(!) international <ulink
+          url="http://samba.org/">Samba</ulink> conference for users and developers. Meet the Samba
+        Team and discuss requirements, new features and get an update on current developments! The
+        conference is organized by <ulink url="http://www.sernet.de/">SerNet</ulink>.</para>
+      <para><emphasis role="bold">May 9th - 11th, 2011 - Hotel Freizeit In Göttingen -
+          Germany</emphasis> (...)</para>
+    </blockquote> 
+  </sect2> -->
+  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/libreoffice-33-release-brings-new-features"
+          >LinuxJournal/Susan Linton: The New Features in LibreOffice 3.3</ulink>
+      </title>
+      <para>Despite earlier reports that very few if any new features would likely be seen in The
+        Document Foundation&apos;s first LibreOffice release, the influx of new developers allowed
+        much more work to be done. In fact, it was even released ahead of schedule. So, what kind of
+        new goodies might one find? (...)</para>
+      <!--($ ld: 1.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.desktoplinux.com/news/NS7312694782.html">DesktopLinux/Eric Brown:
+          Linux distros move toward common app installer API</ulink>
+      </title>
+      <para>Recent meetings held among the RedHat, Fedora, Debian, Ubuntu, OpenSUSE, Mandriva, and
+        Mageia communities has resulted in an informal agreement on an architecture for a common app
+        installer API. Yet the dream of a universal GNU/Linux app-store may be much farther off. </para>
+      <para>Word of the app-installer meetings at OpenSUSE&apos;s Nuremberg, Germany, offices
+        earlier this month emerged last week in a <ulink
+          url="http://blog.karlitschek.de/2011/01/2-amazing-meetings-to-change-world.html">blog
+          post</ulink> by OpenDesktop.org&apos;s Frank Karlitschek on Jan. 24. This was followed by
+        a more detailed Jan. 26 report on the meetings by Swapnil Bhartiya <ulink
+          url="http://www.muktware.com/a/1/4/26/2011/709?page=0,0">in <emphasis role="italic"
+            >Muktware</emphasis></ulink>. </para>
+      <para>On Jan. 31, LinuxInsider&apos;s Katherine Noyes <ulink
+          url="http://www.linuxinsider.com/story/Linux-and-the-Great-App-Store-Agenda-71752.html"
+          >sampled the Linux blogs and forums</ulink> for feedback, and found general support for a
+        common app installer, but with plenty of observers predicting doom for the project. The more
+        distant dream of a common app-store for Linux, which was not formally discussed at the main
+        Nuremberg meetings, seemed even more far-fetched to many, though many others deem it a
+        worthy goal. </para>
+      <para>Having a common installer -- and ultimately, a universal app store -- should help
+        attract new users and third-party developers to desktop Linux, goes the general consensus.
+        It would help to cushion the fragmentation of the desktop Linux market while easing the pain
+        of dealing with the complexity of most package managers. Yet, many other attempts at unified
+        standards among Linux communities have ended in failure, note skeptics. </para>
+      <!--($ ld: 3.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.itworld.com/personal-tech/134954/sony-announces-ngp-aka-psp2-and-talks-playstation-gaming-android"
+          >ITworld/Peter Smith: Sony announces NGP (aka PSP2) and talks Playstation gaming on
+          Android [video</ulink>]</title>
+      <para>It was quite a day for Sony portable fans. Earlier today (well, technically yesterday)
+          <ulink
+          url="http://www.engadget.com/2011/01/26/sony-ericsson-xperia-play-playstation-phone-preview/"
+          >Engadget posted</ulink> about some hands-on experience with the Xperia Play, aka the
+        Playstation Phone. It sure looks real to me. Engadget is being coy about where this unit
+        came from but post author Richard Lai says he&apos;s been using it as his primary phone for
+        a few days now, with generally good results. </para>
+      <para>No &apos;official&apos; games are available for it, but Lai loaded up some emulators and
+        mapped the hardware buttons to emulator controls and had a go. This isn&apos;t final
+        hardware but for an early look it seems promising enough. (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.enterprisenetworkingplanet.com/news/article.php/3923031">Enterprise
+          Networking Planet/Sean Michael Kerner: Last of the IPv4 Addresses Allocated</ulink>
+      </title>
+      <para>IPv4 is dead. Long Live IPv6.</para>
+      <para>Early this morning, the Asia Pacific Network Information Centre (APNIC) announced that
+        it had been allocated two /8 address blocks from the Internet Assigned Numbers Authority
+          (<ulink url="http://www.webopedia.com/TERM/I/IANA.html">IANA</ulink> ). Those two blocks,
+        39/8 and 106/8, were the last unallocated blocks in the IANA free pool of IPv4 address
+        available to Regional Internet Registries (RIR). With the allocation, the final days of IPv4
+        have moved closer as the number of available addresses that can be allocated will dwindle.
+        (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://maketecheasier.com/kde46-review-full-of-awesomeness/2011/02/02"
+          >MakeTechEasier/Tavis J. Hampton: KDE 4.6 Review: It’s Full Of Awesomeness</ulink></title>
+      <para>On January 26th of this year, <ulink url="http://www.kde.org/announcements/4.6/">KDE
+          released</ulink> version 4.6.0 of its Plasma Workspaces, Applications, and Development
+        Platform. While many major versions of KDE have focused on features, 4.5 was mostly a
+        stabilizing release, fixing thousands of bugs. The 4.6 release is all about polish. It is
+        the icing on the cake for KDE 4, adding speed, visual enhancements, and increased hardware
+        compatibility. </para>
+      <para><emphasis role="bold">Faceted Browsing for Dolphin</emphasis> – Pressing Ctrl+F in
+        Dolphin used to open Kfind, a search interface that used various Linux/Unix search tools
+        such as “find” and “locate” to get you the files you wanted. In KDE 4.6, you can open the
+        search interface within Dolphin and find indexed files quickly and easily. The addition of a
+        filter side bar also allows you to find exactly the types of files you want, giving you
+        options for file type, creation date, and even rating. (...)</para>
+      <!--($ ld: 4.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://mindplusplus.wordpress.com/2011/02/02/finding-the-fastest-filesystem-2011-edition/"
+          >mindplusplus: Finding the Fastest Filesystem, 2011 Edition</ulink></title>
+      <para>In my <ulink url="http://mindplusplus.wordpress.com/2008/07/14/finding-the-fas/"
+          >previous report</ulink> about journaling filesystem benchmarking using dbench, I observed
+        that a properly-tuned system using XFS, with the deadline I/O scheduler, beat both Linux’s
+        ext3 and IBM’s JFS. A lot has changed in the three years since I posted that report, so it’s
+        time to do a new round of tests. Many bug fixes, improved kernel lock management, and two
+        new filesystem (btrfs and ext4) bring some new configurations to test. </para>
+      <para>Once again, I’ll provide raw numbers, but the emphasis of this report lies in the
+        relative performance of the filesystems under various loads and configurations. To this end,
+        I have normalized the charted data, and eliminated the raw numbers on the Y-axes. Those who
+        wish to run similar tests on their own systems can download a tarball containing the testing
+        scripts; I’ll provide the link to the tarball at the end of this report. (...)</para>
+      <!--($ ld: 4.2.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://dissociatedpress.net/2011/02/02/one-year-after-novell/">Joe Brockmeier:
+          One year after Novell…</ulink>
+      </title>
+      <para>I’m usually big on milestones — anniversaries, birthdays, holidays, etc. But it wasn’t
+        until I was going to bed last night that it hit me: It’s been a year since I left Novell and
+        started working for myself full-time. Here’s how it’s going so far… (read on if you’re
+        interested, but this is mostly full of personal stuff so feel free to skip down to some of
+        the more interesting stuff on technology if you like…)</para>
+      <para>My last day with Novell was January 31st, 2010. Pretty much exactly two years after I
+        started with the company (February 1st, 2008). I put in notice about two weeks before that,
+        but had been considering quitting long before. I’m not going to go into a lot of backstory
+        here, but the long and short of it was that after two years the job was not what I wanted to
+        be doing. Some jobs you can do whether your heart is in them or not (I worked at a car seat
+        factory for three and a half years, and I don’t think my heart was ever in that…), but
+        community management is something that you need to be all-in for. (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://itmanagement.earthweb.com/osrc/article.php/3923351/OpenOfficeorg-vs-LibreOffice.htm"
+          >Datamation/Bruce Byfield: OpenOffice.org vs. LibreOffice</ulink>
+      </title>
+      <para>On September 28, 2010, LibreOffice was announced as a fork of the OpenOffice.org office
+        suite. In the weeks since then, there have been promises of innovation and change from
+        LibreOffice, and an attempt at dignified silence from OpenOffice.org.</para>
+      <para>However, it was only last week that the two rivals released their 3.3 versions, and
+        users had the chance to see whether the differences in the culture of the projects made any
+        difference in the code. (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+        url="http://www.itworld.com/internet/134160/best-firefox-extensions-organize-your-way-better-firefox"
+        >IT World/Brian Proffitt: Best Firefox extensions: Organize your way to a better
+        Firefox</ulink></title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://www.itworld.com/sites/default/files/u45/allinone.png"
+            width="20%"/>
+        </imageobject>
+      </mediaobject>
+      <para>It's been nearly a year since the last major release of Firefox -- version 3.6 -- and
+        development of the Firefox 4 seems to have slowed down a bit, with the planned release of
+        late 2010 getting set back to <ulink
+          url="http://www.itworld.com/internet/133594/mozilla-pushes-devs-make-feb-ship-date-firefox-4"
+          >February 2011</ulink>. </para>
+      <para>Much of this development has been wrapped up in adding HTML 5 features to the open
+        source browser, so the delay, while not greeted with much enthusiasm amongst Firefox users,
+        hasn't created a lot of fussing, either. </para>
+      <para>Nor has it slowed down the development of the vast array of extensions available for
+        Firefox, as developers find new and creative ways to view and interact with the web every
+        day. Extensions are one of Firefox's most powerful feature sets, since their ease-of-use and
+        extensibility enables users to build exactly the kind of browser they need. With more than
+        5,000 add-ons available, there's a lot of customization options to chose from, and some of
+        them have to be better than others. </para>
+      <para>So, which ones do you simply need to have? That will be the focus of this series, which
+        will review the best Firefox extensions in several categories, then round up the most
+        popular Firefox extensions of all as of the end of 2010. The categories are built around
+        Mozilla's own classifications, but grouped together in ways we think makes more sense.
+        (...)</para>
+      <!--($ ld: 4.2.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.h-online.com/security/news/item/Phrack-hole-closed-in-ProFTPD-1156782.html">h-online: Phrack hole closed in ProFTPD </ulink>
+      </title>
+      <para>The development team behind <ulink url="http://www.proftpd.org/">ProFTPD</ulink> has
+        released version <ulink url="http://www.proftpd.org/docs/RELEASE_NOTES-1.3.3d">1.3.3d</ulink>, which closes a critical security hole in the SQL module of all previous
+        versions. The flaw was <ulink url="http://www.phrack.org/issues.html">reported</ulink>
+        roughly a month ago in Phrack, the hacker magazine. A buffer overflow in the function
+        sql_prepare_where() allows attackers to remotely execute arbitrary code on the server. The
+        developers themselves suffered when this vulnerability was exploited by still unknown
+        parties, who entered the project server and <ulink url="http://www.h-online.com/news/item/Back-door-in-ProFTPD-FTP-server-1146592.html">installed</ulink> a back door in the source code.</para>
+      <para>The new version also fixes a number of additional <ulink url="http://www.proftpd.org/docs/NEWS-1.3.3d">bugs</ulink>; as a result, the GPL-licensed
+        server is reportedly now more stable. At the same time, the developers have also published
+        the first release candidate for version <ulink url="http://www.proftpd.org/docs/RELEASE_NOTES-1.3.4rc1">1.3.4</ulink>. (...)</para>
+    </blockquote>
+  </sect2> -->
+  <!--
+  <sect2>
+    <title>LOL</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://e-tote-kala.blogspot.com/2011/01/first-joke-of-year-if-operating-systems.html"
+          >Kostas Koudaras: First Joke of the year: If Operating Systems Ran The Airlines</ulink>
+      </title>
+      <para>The first joke of the year :-) </para>
+    </blockquote>
+  </sect2> -->
+</sect1>

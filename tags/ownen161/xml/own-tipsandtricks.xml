@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title><ulink
+          url="http://www.techrepublic.com/blog/five-tips/five-power-tips-for-libreoffice-users/593"
+          >Tech Republic/Jack Wallen: Five power tips for LibreOffice users</ulink></title>
+      <para>Takeaway: Once you begin to know your way around the LibreOffice suite, you can add a
+        few advanced techniques to your repertoire. Jack Wallen offers five tips to get you started. </para>
+      <para>In a <ulink
+          url="http://www.techrepublic.com/blog/five-tips/five-tips-for-migrating-from-microsoft-office-to-libreoffice/567"
+          >recent post</ulink>, I introduced LibreOffice and shared some pointers to help ease the
+        transition from Microsoft Office to this newly forked piece of software. After you get your
+        bearings with these tools, you may want to expand your LibreOffice prowess and become a
+        power user. How do you do that? You learn some advanced techniques. Here are five tricks
+        that will get you up to power-user speed fairly quickly. (...)</para>
+      <!-- ($ ld: 4.2.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxaria.com/pills/registrare-il-terminale-con-script?lang=en"
+          >Linuxaria: Record your terminal with Script</ulink>
+      </title>
+      <para>The script command is part of the <ulink
+          url="ftp://ftp.kernel.org/pub/linux/utils/util-linux-ng/">util-linux-ng</ulink> package
+        and so should be available already installed in any distribution, or you should be able to
+        easily add it.</para>
+      <para>What’s script ?</para>
+      <para>From his man page:</para>
+      <para>&quot;Script makes a typescript of everything printed on your terminal. It is useful for
+        students who need a hardcopy record of an interactive session as proof of an assignment, as
+        the type script file can be printed out later with lpr.&quot; (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://bashshell.net/shell-scripts/collecting-user-input-in-a-bash-shell-script/"
+          >BashShell.net/mike: Collecting User Input in a Bash Shell Script</ulink>
+      </title>
+      <para>The read command is designed to read and then use in the script input from the user. The
+        input that is provided by the user is stored as a variable. This is a builtin variable that
+        will store one line of input from the user in one or more variables. The read command is
+        valuable as it is a major way to input information into a shell script. Lines are read into
+        the script with standard input and split via the $IFS variable. This stands for internal
+        field separator. The first word is assigned the first variable, the second word the second
+        variable, etc. (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.developer.com/ws/android-development-101-hello-world-in-four-minutes-flat.html"
+          >Developer.com: Android Development 101: &apos;Hello World&apos; in Four Minutes
+          Flat</ulink>
+      </title>
+      <para>Start learning how to develop for the Android platform with the Android Development 101
+        video series. In this first episode, Chris L. Bennett demonstrates how to create a
+        traditional Hello World application. (...)</para>
+      <!-- ($ ld: 4.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.howtoforge.com/vboxheadless-running-virtual-machines-with-virtualbox-4.0-on-a-headless-opensuse-11.3-server"
+          >HowtoForge/Falko Timme: VBoxHeadless - Running Virtual Machines With VirtualBox 4.0 On A
+          Headless OpenSUSE 11.3 Server</ulink>
+      </title>
+      <para>This guide explains how you can run virtual machines with <ulink
+          url="http://www.virtualbox.org/">VirtualBox 4.0</ulink> on a headless OpenSUSE 11.3
+        server. Normally you use the VirtualBox GUI to manage your virtual machines, but a server
+        does not have a desktop environment. Fortunately, VirtualBox comes with a tool called
+        VBoxHeadless that allows you to connect to the virtual machines over a remote desktop
+        connection, so there&apos;s no need for the VirtualBox GUI. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxaria.com/article/tool-command-line-bandwidth-linux?lang=en"
+          >Linuxaria: 3 Command line tool to test bandwidth between 2 servers</ulink>
+      </title>
+      <para>One element that is often not know, or that should be measured after a problem statement
+        or after a change in the infrastructure is the network .</para>
+      <para>But how do you accurately measure the speed between two servers? Someone use ftp, scp or
+        other file transfer protocols, these can give some indication, but probably you’ll measure
+        the limit of your disks or CPU.</para>
+      <para>In this article I will show you 3 way to measure the bandwidth from the command line,
+        without using the disks. (...)</para>
+    </blockquote>
+  </sect2> -->
+</sect1>

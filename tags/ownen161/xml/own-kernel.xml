@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Consistent-names-for-network-interfaces-1180510.html"
+        >h-online/Thorsten Lemmhuis: Kernel Log: Consistent names for network interfaces</ulink>
+    </title>
+    <para><emphasis role="bold">Future distributions will use a consistent, predictable scheme to
+        name network interfaces, using names such as "em1" and "pci2#1" instead of "eth0" and "eth1"
+        to provide more transparency for server administrators. As various new kernels have recently
+        been introduced, the Kernel Log will provide an overview of the most important Stable and
+        Longterm kernel series.</emphasis></para>
+    <para><ulink url="http://domsch.com/linux/lpc2010/lpc2010-network-device-naming.pdf">For
+        years</ulink>, Matt Domsch has advocated solutions which provide reliable and predictable
+      network port names – in systems with multiple network sockets, the driver loading sequence and
+      hardware response times influence whether a certain port will be called eth0 or eth1. Now, the
+      Dell technology strategist and DKMS contributor seems to have taken a big step towards his
+      goal. <ulink url="http://domsch.com/blog/?p=455">On his blog</ulink>, Domsch, who also
+      contributes to the Fedora project, explains that Fedora 15 – expected in May – will <ulink
+        url="https://fedoraproject.org/wiki/Features/ConsistentNetworkDeviceNaming">use</ulink> a
+      device naming scheme that he helped develop, in which udev accesses <quote><ulink
+          url="http://linux.dell.com/files/biosdevname/">biosdevname</ulink></quote>, a program
+      mainly developed by Dell employees, to allocate network device names. The developer says that
+      other distributions are also likely to adopt this solution. </para>
+    <para>This naming scheme will make udev allocate the device name <quote>em1</quote> to the
+      motherboard's first network port, <quote>em</quote> being short for <quote>embedded</quote>;
+      network cards will be named according to the pattern <quote>pci&lt;slot>#&lt;port></quote>
+      (such as pci2#1), which should always make the ports on a network card accessible under the
+      same name as long as the card, or a substitute, is inserted in the same slot. The
+      sub-functions of network cards that can be partitioned (NPAR) and the sub-functions of cards
+      with SR-IOV virtualisation support are given an added underscore and a number. As before, vlan
+      functions are separated by a dot, and aliases by a colon. </para>
+    <para>When allocating names, biosdevname accesses the information available in PCI firmware
+      specification 3.1; if this information is unavailable, it will try to retrieve values using
+      smbios. This is designed to match the numbers behind the <quote>em</quote> with those printed
+      on the housing or board – and considerably help network admins with their cabling, especially
+      on servers with a large number of network sockets. If biosdevname can't retrieve any
+      information this way, the program uses the PCI IRQ routing table and will allocate the numbers
+      according to the card's position in the device hierarchy. Biosdevname doesn't handle USB
+      network interfaces, which will continue to be given such names as <quote>eth0</quote>.</para>
+    <!-- ($ ld: 1.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://ifup.org/2011/02/03/reverse-path-filter-rp_filter-by-example/">Brandon
+        Philips: reverse path filter (rp_filter) by example</ulink></title>
+    <para>Recently, I ran into an rp_filter change for all Kernels after 2.6.31. So read along for
+      an explanation of both the sysctl change and a practical example of rp_filter usage. </para>
+    <para>Lets say you had the following entry in your
+      /etc/sysctl.conf<screen>net.ipv4.conf.all.rp_filter = 1</screen></para>
+    <para>with the intention of turning on <ulink
+        url="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob;f=Documentation/networking/ip-sysctl.txt;hb=HEAD#l844"
+        >reverse path filtering</ulink> for all interfaces. Well you didn't get your wish- rp_filter
+      remained disabled if you are running a Kernel older than 2.6.31. </para>
+    <para>This could come as a suprise if you upgrade your Kernel and have a system relying on
+      rp_filter being disabled or enabled (e.g. multicast routing, multi-homed servers). If you have
+      a single-homed unicast server setups this change will probably go unnoticed however. </para>
+    <para>The fix was implemented upstream in <ulink
+        url="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=27fed4175acf81ddd91d9a4ee2fd298981f60295"
+        >v2.6.31</ulink> and the basic issue was that each individual interface has an rp_filter
+      setting which defaulted to 0 and the interface setting overrides the "all interface setting"
+      since they were AND'd together.</para>
+    <!-- ($ ld: 4.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title>Rares Aioanei: kernel weekly news 05.02.2011</title>
+    <para>Rares gives us this week a great Kernel Review. Thanks Rares :-)</para>
+    <!-- ($ ld: 4.2.11 sm $) -->
+  </blockquote>
+</sect1>
