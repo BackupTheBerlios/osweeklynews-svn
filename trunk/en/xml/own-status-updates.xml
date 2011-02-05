@@ -312,19 +312,22 @@ zypper in enlightenment</screen></para>
     A    /tmp/osc_editsrr2iDcI/test.spec
     A    /tmp/osc_editsrr2iDcI/src.tar.bz2
     At revision 1.
-    Checked out package ‘foo.home_Admin’ to /tmp/osc_editsrr2iDcI. Started a new shell (/bin/bash).
+    Checked out package ‘foo.home_Admin’ to /tmp/osc_editsrr2iDcI. \\
+    Started a new shell (/bin/bash).
     Please fix the package and close the shell afterwards.
     marcus@linux:/tmp/osc_editsrr2iDcI&gt; # fix it and commit changes
     marcus@linux:/tmp/osc_editsrr2iDcI&gt; exit
     exit
     Request: #None
 
-    submit:       home:Admin:branches:REQUEST_80/foo.home_Admin(cleanup) -&gt; home:foobar/dest
+    submit:       home:Admin:branches:REQUEST_80/foo.home_Admin(cleanup) -&gt; \\ 
+    home:foobar/dest
     delete:        home:foobar/xxx
 
     Message:
     &lt;no message&gt;
-    d(i)ff/(a)ccept/(b)uildstatus/(e)dit/(s)kip/(c)ancel &gt; a -m “accepted request and applied small fix”
+    d(i)ff/(a)ccept/(b)uildstatus/(e)dit/(s)kip/(c)ancel &gt; a -m “accepted request and \\ 
+    applied small fix”
     Supersede original request? (y|N) y
     marcus@linux:~&gt;</screen></para>
         <para>By the way you can also do it manually (osc rq clone &lt;id&gt;; osc co &lt;clone
@@ -459,7 +462,8 @@ zypper in enlightenment</screen></para>
         <mediaobject>
           <imageobject>
             <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot.png"/>
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot.png"
+              width="20%"/>
           </imageobject>
         </mediaobject>
         <para>I’ve neglected this indicator since the first day because it drove me into package
