@@ -31,8 +31,8 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique
-          Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
+        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger:
+          Enlightenment 1.0.0 for openSUSE</ulink>
       </title>
       <para>It’s been a long time since I was in touch with Enlightenment, back in the young days I
         used it as my first alternative Desktop Environment on Windows, before actually daring to
@@ -366,143 +366,47 @@ zypper in enlightenment</screen></para>
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/31/synapse-semantic-launcher-for-gnome/"
-            >Nelson Marques: Synapse – Semantic Launcher for GNOME</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/02/05/notify-osd-in-opensuse-11-4/">Nelson
+            Marques: Notify-OSD in openSUSE 11.4</ulink>
         </title>
-        <para>Some time ago a openSUSE user mentioned to me if we had <ulink
-            url="http://launchpad.net/synapse-project">synapse</ulink> available for openSUSE or
-          what was required to have it around. I took a look into it and asked some advice in
-          #opensuse-gnome regarding the availability of libzeitgeist which is one of the
-          requirements to build this piece of software.</para>
-        <para>Some time ago Federico Quintero has posted a <ulink
-            url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00016.html">message</ulink> on
-          the opensuse-gnome mailing list regarding his work on the Zeitgeist stack. The rest of the
-          dependencies for this package are provided by my work on the availability of Ubuntu’s
-          software on openSUSE. From my work I took <ulink url="http://launchpad.net/dee"
-            >dee</ulink> and <ulink url="http://launchpad.net/libappindicator"
-            >libappindicator</ulink> and builded a test package of synapse on <ulink
-            url="http://lists.opensuse.org/opensuse-gnome/2011-01/msg00020.html"
-            >home:ketheriel:ayatana</ulink>. This package is here until I see this dependencies hit
-          factory on time (libzeitgeist, dee and libappindicator). If anyone wants to test it out,
-          go ahead.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="25%"
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/01/Screenshot-synapse-1.png"
-            />
-          </imageobject>
-        </mediaobject>
-        <para>I’m not sure of the functionality that should be present on this vala application, but
-          for the time being I’ve disabled the Application Indicator on the build (needs hammering
-          on the linking). I’ll take a closer look once I have some more free time. So far this
-          should be working only for openSUSE Factory and openSUSE 11.4 milestones. </para>
-        <para>Synapse is a semantic file launcher (pretty much the same as hitting ALT+F2 on a GNOME
-          session) with some crazy looks and a battalion of plugins. Once the dependencies are ok,
-          I’ll maintain this package and push it to the GNOME:Apps repository.</para>
-        <!-- ($ ld: 1.2.11 sm $) -->
-      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://www.wafaa.eu/entry/more-board-for-more-geeko-1-55.html">Andrew Wafaa:
-            More Board For More Geeko</ulink>
-        </title>
-        <para>I have packaged up the latest and greatest release (0.1.1.1) of <ulink
-            url="http://live.gnome.org/TheBoardProject">the-board</ulink> from <ulink
-            url="http://lucasr.org/">Lucas Rocha</ulink>. If&apos; you want a bit more background
-          have a look at my previous <ulink
-            url="http://www.wafaa.eu/entry/the-board---packaged-for-your-pleasure-1-50.html"
-            >post</ulink>. </para>
-        <para>I also said that it was for 11.4/Factory only and that 11.3 was a WIP. Well the
-          progress is complete (with huge help from <ulink url="http://blog.crozat.net/">Frederic
-            Crozat</ulink>, and his great <ulink
-            url="http://blog.crozat.net/2011/01/gnome-3-live-cd-usb-test-image.html">GNOME3</ulink>
-          repo). </para>
-        <para>Yes, more people can have some of this cool shiny stuff. There is a but, and this is
-          from upstream - it is still in development so you may loose a kitten or bunny, maybe even
-          both ;-) So come and join the fun and try it out, I&apos;ve not generated a single .ymp
-          file yet so click on your version of Geeko</para>
-        <!-- ($ ld: 3.2.11 sm $) -->
-      </blockquote>
-      <blockquote>
-        <title>
-          <ulink
-            url="http://chenthill.wordpress.com/2011/02/03/lightening-up-evolution-with-exchange-web-services/"
-            >Chenthill P.: Lightening up Evolution with Exchange Web Services</ulink>
-        </title>
-        <para>Off-late we have been working quite aggressively on improving our exchange
-          connectivity using <ulink
-            url="http://msdn.microsoft.com/en-us/library/cc535017(v=EXCHG.80).aspx">Exchange Web
-            Services</ulink> . Some evolution hackers sat together during GUADEC 2010 and discussed
-          on the focus areas which our community users as well as corporates would be interested in.
-          Exchange Web Services was on top of the list and David Woodhouse kick-started the work at
-          the same time! The development went on in David’s repo - <ulink
-            url="http://git.infradead.org/evolution-ews.git"
-            >http://git.infradead.org/evolution-ews.git</ulink> and you can watch out the progress
-          there..</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="30%"
-              fileref="http://chenthill.files.wordpress.com/2011/02/ews_cal.jpg"/>
-          </imageobject>
-          <imageobject>
-            <imagedata width="30%"
-              fileref="http://chenthill.files.wordpress.com/2011/02/ews_mail.jpg"/>
-          </imageobject>
-        </mediaobject>
-        <para>The festival season has started for evolution exchange and we have evolution showing
-          the folders, mails and meetings using Exchange Web Services. We currently just have the
-          read-only support for mailer and calendar at the moment and we are working towards
-          providing a complete support for calendar, mails and contacts. </para>
-        <para>Its always very nice to thanks all the contributors. Thanks to David Woodhouse who
-          kick-started it, Michael meeks he is always there :) , Johnny, Bharath Acharya, Akhil
-          Laddha, Chen, Fridrich who has been constantly getting it to compile on Windows… </para>
-        <para>There are more developers getting involved now and thanks to the organizations for
-          supporting the development!! We are looking forward to deliver the package by the
-          beginning of May 2011 for all the users.. One would be able to use EWS connector with
-          Evolution version 2.32 onwards..</para>
-        <!-- ($ ld: 3.2.11 sm $) -->
-      </blockquote>
-      <blockquote>
-        <title>
-          <ulink
-            url="http://lizards.opensuse.org/2011/02/03/a-simple-clock-indicator-indicator-datetime/"
-            >Nelson Marques: A simple clock indicator (indicator-datetime)</ulink>
-        </title>
+        <para>My first contribution to openSUSE was <ulink url="http://launchpad.net/notify-osd"
+            >Notify OSD</ulink>, which is also a part of the Ayatana Project. On openSUSE version of
+          Notify OSD, I’ve included a small patch made by Roman Sukochev which isn’t was upstreamed
+          but declined on Ubuntu. This patch enabled skinning/theming of the Notification Bubble.
+          Before submitting this package to GNOME:Apps, I’ve talked with Roman which confirmed that
+          he would maintain the patch for upcoming versions of Notify OSD. </para>
+        <para>This patch handles the skinning of Notify OSD through a text file (~/.notify-osd).
+          I’ve made available an application to configure Notify OSD. This application is known as
+          notifyconf and is available currently on openSUSE:Contrib repositories. </para>
+        <para>The interface of notifyconf is very user friendly and intuitive. This two packages
+          enable extra functionality not present currently in Ubuntu out of the box. I believe it is
+          important to offer more possibilities to our users.</para>
         <mediaobject>
           <imageobject>
             <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot.png"
-              width="20%"/>
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot3.png"
+              width="25%"/>
           </imageobject>
         </mediaobject>
-        <para>I’ve neglected this indicator since the first day because it drove me into package
-          dependencies that aren’t used in openSUSE (we use YaST and not system-tools-backends and
-          friends). </para>
-        <para>The documentation of Unity suggests that if no indicators are present, Unity will use
-          the notifications from GNOME. This is very interesting, but from the debugging I’ve done
-          from the Unity Panel, I’ve found it it scans the indicators directory and loads whatever
-          it finds there. So it will eventually find something. One of the coolest features in Unity
-          Indicators and the one I’m currently working on, is ‘appmenu-gtk’ which removes the menu
-          from GTK+ applications and displays it on the unity-panel. This is interesting and the
-          behavior is actually a bit different from OSX. The window buttons are also placed very
-          close to this indicator. </para>
-        <para>If we have such feature enabled, I suppose the panel will always pick up at least one
-          indicator which might endanger the fallback to GNOME notification area. I’ve tested this
-          yet (unity isn’t launched properly yet), but if this happens, it will be wise to have the
-          whole stack of indicators. This explains why I had to build also this clock indicator
-          despite it’s wicked dependencies (liboost, not used on openSUSE). </para>
-        <para>This is how it looks and minimal functionality is already enabled, though
-          configurations aren’t because I haven’t implemented the whole backend, a nd if this
-          indicators are to reach Factory (which depends mainly on the patching on GTK+ and GDK
-          Pixbuf), there is the need to pass this packages through SUSE Security Team. If the
-          indicators are only to live on GNOME:Ayatana, then we skip this process (running this
-          package dependencies through SUSE Security Team). </para>
-        <para>Here’s how it looks the current stack of indicators (there’s a couple more packaged,
-          but I’m not using them at the moment, ex: nm-applet patched, indicator-network and
-          friends). </para>
-        <para>Within the next days, I will I will make a 1 click installer and run a BETA phase for
-          the Indicators/GNOME2.</para>
-        <!-- ($ ld: 3.2.11 sm $) -->
+        <para>Installing Notify OSD is done through zypper for example “zypper install notify-osd”.
+          For notifyconf the user is required to install the Contrib repository and install the
+          package ‘notifyconf’ (depends on QT).</para>
+        <figure id="fig.notifyconf">
+          <title>notifyconf</title>                
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot-Notify-OSD-Configuration.png"
+              width="25%"/>
+          </imageobject>
+        </mediaobject>
+        </figure>
+        <para>Notify OSD replaces the package ‘notification-daemon’ and can be used either in KDE or
+          in GNOME (same for notifyconf). This is optional software for those who want a different
+          desktop experience. I’m thankful to Vincent Untz, Dominique and Peter Linell for allowing
+          this two applications to be a part of the openSUSE Desktop. Also a word of thanks to the
+          Ayatana Project Team for making this software available.</para>
+        <!-- ($ ld: 7.2.11 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="kdeteam">
@@ -892,56 +796,56 @@ zypper in enlightenment</screen></para>
         <title>Sascha Manns: Poll for our Weekly News Translators</title>
         <para>The last Poll was for our Readers. Now the next Poll is for our Translators. </para>
         <para>As shown in <ulink url="http://en.opensuse.org/openSUSE:Weekly_news_contribute"
-          >http://en.opensuse.org/openSUSE:Weekly_news_contribute</ulink> we have different
+            >http://en.opensuse.org/openSUSE:Weekly_news_contribute</ulink> we have different
           possibilities for our Translators to create own Translations:<itemizedlist>
             <listitem>
-              <para>XML Source (You get the Sourcecode and you use it to create any other Format like
-                Mediawiki)</para>
+              <para>XML Source (You get the Sourcecode and you use it to create any other Format
+                like Mediawiki)</para>
             </listitem>
             <listitem>
               <para>XML with using QT Linguist r Lokalize (Then you use the english Stylesheets. You
-                just translate the *.po Files and after translation it goes to the English XMLs and we
-                create a native Issue for you)</para>
+                just translate the *.po Files and after translation it goes to the English XMLs and
+                we create a native Issue for you)</para>
             </listitem>
             <listitem>
-              <para>Mediawiki: You want to have a Version in the en.o.o Wiki and translate it from there
-                to any other Format like Mediawiki</para>
+              <para>Mediawiki: You want to have a Version in the en.o.o Wiki and translate it from
+                there to any other Format like Mediawiki</para>
             </listitem>
             <listitem>
               <para>HTML/news.opensuse.org: You use the HTML File to translate</para>
             </listitem>
             <listitem>
-              <para>XML/Docbook: You want to have a own Space with own Stylesheets and want to publish
-                into HTML or PDF.</para>
+              <para>XML/Docbook: You want to have a own Space with own Stylesheets and want to
+                publish into HTML or PDF.</para>
             </listitem>
           </itemizedlist></para>
         <para>The poll is placed there: <ulink
-          url="https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format"
-          >https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format</ulink>
+            url="https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format"
+            >https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format</ulink>
         </para>
         <para>Please vote and help clarifying…</para>
         <!-- ($ ld: 2.2.11 sm $) -->
       </blockquote>
       <blockquote>
         <title><ulink url="http://saigkill.wordpress.com/2011/02/04/german-weekly-news-relaunched/"
-          >Sascha Manns: German Weekly News relaunched</ulink></title>
+            >Sascha Manns: German Weekly News relaunched</ulink></title>
         <para>I’m pleased to announce the relaunch of the german openSUSE Weekly News. </para>
-        <para>If you’re interested in knowing more, just click <ulink url="http://wiki.open-slx.de/OWR"
-          >there</ulink>. </para>
-        <para>We are using an Etherpad Clone for preparing the News. We are happy if many people want to
-          working with us.<itemizedlist>
+        <para>If you’re interested in knowing more, just click <ulink
+            url="http://wiki.open-slx.de/OWR">there</ulink>. </para>
+        <para>We are using an Etherpad Clone for preparing the News. We are happy if many people
+          want to working with us.<itemizedlist>
             <listitem>
-              <para><ulink url="http://wiki.open-slx.de/OWR">http://wiki.open-slx.de/OWR</ulink></para>
+              <para><ulink url="http://wiki.open-slx.de/OWR"
+                >http://wiki.open-slx.de/OWR</ulink></para>
             </listitem>
             <listitem>
               <para><ulink url="http://forum.open-slx.de/forum/opensuse-wochenrueckblick/"
-                >http://forum.open-slx.de/forum/opensuse-wochenrueckblick/</ulink></para>
+                  >http://forum.open-slx.de/forum/opensuse-wochenrueckblick/</ulink></para>
             </listitem>
           </itemizedlist></para>
         <!-- ($ ld: 4.2.11 sm $) -->
       </blockquote>
     </sect3>
-    
     <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>

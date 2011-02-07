@@ -22,81 +22,245 @@
   <sect2>
     <title>Postings from the Community</title>
     <blockquote>
-      <title><ulink
-        url="http://lizards.opensuse.org/2011/02/03/join-us-for-the-first-virtual-launch-party-opensuse-11-4/"
-        >Bruno Friedmann: Join us for the first virtual launch party openSUSE 11.4</ulink></title>
-      <para>Annoncing the first virtual launch party </para>
-      <para>Dear folk, we are organizing a special event for the openSUSE 11.4 launch, and you’re
-        invited. Virtually all of you can participate, and increase the success of it. And spend a
-        good time. </para>
-      <para>Too soon? Not really, we are in the process to organize also pre-release party, certainly
-        for the RC1 and RC2 launch. So you can practice before the real event. Prepare your
-        environment, and dress your avatars with decent clothes, and gadgets. </para>
-      <para>We will do our best to welcome you in english, french &amp; greek. </para>
-      <para>If you want you can also anwser our <ulink
-        url="https://connect.opensuse.org/pg/polls/read/bruno_friedmann/11711/virtual-party-will-you-be-there"
-        >short pool</ulink> we are looking about help.</para>
-      <para><emphasis role="bold">Where?</emphasis></para>
-      <para>On secondlife.com, go to area macedonia. at 183,213,21 coordinates Or fire the search
-        engine, and look after Geekos group, then join that group</para>
-      <para><emphasis role="bold">When? </emphasis></para>
-      <para>During 3 days March 9 10 &amp; 11 2011 Party start at 16:00 UTC ( 8am SL time)</para>
-      <para><emphasis role="bold">What?</emphasis></para>
-      <para>Join our special place build for that event and let’s get<itemizedlist>
-        <listitem>
-          <para>Dance party</para>
-        </listitem>
-        <listitem>
-          <para>Free drink</para>
-        </listitem>
-        <listitem>
-          <para>Goodies</para>
-        </listitem>
-        <listitem>
-          <para>Wall of pictures</para>
-        </listitem>
-        <listitem>
-          <para>11.4 installations movies</para>
-        </listitem>
-        <listitem>
-          <para>open minded discussions</para>
-        </listitem>
-        <listitem>
-          <para>Experience exchange</para>
-        </listitem>
-      </itemizedlist></para>
-      <para><emphasis role="bold">Who?</emphasis></para>
-      <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/liz_tigerfoot.png"/>
-        </imageobject>
-        <imageobject>
-          <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/liz_morgane.png"
-          />
-        </imageobject>
-      </mediaobject>
-      <para>Your guests would be myself (tigerfoot) &amp; Morgane Marquis. A team of excellent dj’s as
-        Lillith from Australia, Esquievel from USA, Stefanos from France, or our great Greeks
-        neighbors.</para>
-      <para><emphasis role="bold">Why?</emphasis></para>
-      <para>Hey not so long ago I was kicked by <ulink url="http://blog.hennevogel.de/kick-ass/"
-        >H</ulink>! Because it’s a place where people have also fun, and we want to talk with them
-        about the freedom &amp; openSUSE. Did you never attempt to realize something that has not been
-        made yet? Just to have a lot of fun! The full explanation <ulink
-          url="http://blog.hennevogel.de/why-we-are-here/">Here</ulink>.</para>
-      <para><emphasis role="bold">How?</emphasis></para>
-      <para>To access that 3D virtual world, you need a recent computer 1.5Ghz or +, and good internet
-        access >3500/300bps, and a 3D enabled graphics cards like radeon HD4xxx or more, Nvidia
-        Geforce >9600, Intel > i945 &amp; Intel Extreme.</para>
-      <para><emphasis role="bold">To be continued</emphasis></para>
-      <para>In the next weeks, I will publish an more technical article about how to get 3D world
-        viewer installed on your openSUSE. And we are just finishing the picture gallery about that
-        project which should be online next week (due to <ulink
-          url="http://lizards.opensuse.org/2011/02/03/join-us-for-the-first-virtual-launch-party-opensuse-11-4/fosdem.org"
-          >FOSDEM</ulink>) this week-end. </para>
-      <para>Stay tuned !</para>
-      <!-- ($ ld: 4.2.11 sm $) -->
+      <title><ulink url="http://blip.tv/file/4726423">openSUSE TV: COMAR, Gökmen
+        Göksel</ulink></title>
+      <para>A new approach to system management COMAR is COnfiguration MAnageR of Pardus Linux,
+        which is a DBus service that helps the installed software operate flawlessly. COMAR knows
+        the tasks that can be provided by each application, together with the functionality they
+        depend on and other information. Different applications may adapt themselves according to
+        the presence and capability of their peers. </para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4726612">openSUSE TV: Using NixOS for declarative
+          deployment and testing (Sander van der Burg)</ulink></title>
+      <para>NixOS is a Linux distribution built on top of the Nix package manager, a purely
+        functional package manager. In NixOS, a system configuration is built from a declarative
+        specification capturing the complete system configuration. Moreover, because of the Nix
+        heritage, a user can safely and efficiently install multiple configurations next to each
+        other without interference. This allows users to perform atomic upgrades and rollbacks of a
+        complete Linux distribution.In this talk we explain how we can use NixOS to manage a network
+        of machines by using a declarative specification of a network of NixOS
+        configurations.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4726978">openSUSE TV: Gentoo's RelEng and catalyst use
+          (Jorge Manuel B. S. Vicetto)</ulink></title>
+      <para>A short introduction to Gentoo's Release Engineering team and its current model to
+        produce media to install Gentoo. An introduction to the the catalyst tool and a description
+        of the current configuration to produce our official stages and isos, specifically the
+        weekly autobuilds.A short demonstration of how to configure and use catalyst to create
+        stages and isos on one's hardware.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4728026">openSUSE TV: Gentoo's Reform and Future
+          (Petteri Räty, Jorge Manuel B. S. Vicetto)</ulink></title>
+      <para>The purpose of this talk is to present the view of a few Gentoo Developers that are part
+        of the Council, Foundation and Developer Relations about the future of Gentoo and its
+        reform. We'd like to start a debate involving other Gentoo Developers and interested
+        attendees about this.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4728567">openSUSE TV: Gentoo Q</ulink></title>
+      <para>Do you have anything on your mind related to Gentoo?It can be technical, organizational
+        etc. I will do my best to answer any question the time allows for and there should also be
+        other Gentoo developers around if I am not able to.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729040">openSUSE TV: Ada in Debian and other
+          distributions (Ludovic Brenta, Miguel Telleria de Esteban)</ulink></title>
+      <para>This talk will:briefly describe Ludovic's work maintaining the Ada part of GCC as part
+        of the larger Debian-GCC team;describe the Debian Policy for Ada packages; why one is needed
+        and why it is written the way it is;compare (in a constructive way, obviously) Debian with
+        other distributions that also have good support for Ada, in particular Gentoo and FreeBSD,
+        and with complementary third-party efforts such as the GNU Ada project on SourceForge[2] and
+        MacAda[3] "GNAT for Macintosh";propose coordination between distributions on how to package
+        Ada software.Followed by a live demonstration</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729068">openSUSE TV: The difficulty of forking (Anne
+          Nicolas, Michael Scherer)</ulink></title>
+      <para>and why you should not do it, yet prepare for itForking a project is never an easy task
+        both on social and technical level.Mageia, like Libreoffice, is a big project born from a
+        fork, and faced several issues regarding community and infrastructure. The lessons learned
+        from forking can be generalized to any software project.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729150">openSUSE TV: Can we build a simple,
+          cross-distribution installation framework? (Dieter Plaetinck)</ulink></title>
+      <para>First, this talk will entail the philosophy behind the shellscript-based Arch Linux
+        installation framework (AIF), as well as some implementation information and lessons
+        learned. Second, I want to initiate a discussion on how multiple distributions could work
+        together maintaining an installation framework following a "keep it simple" philosophy, and
+        how feasible it would be to do so. In my experience, quite some necessities, issues and
+        features are distribution-independent. Specific distributions could be supported with
+        plugins or feature branches.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="openSUSE TV: How to be a good downstream">openSUSE TV: How to be a good
+          downstream</ulink></title>
+      <para>Taking a released tarball and packaging it for a distribution is a standard and well
+        understood process for about every distribution package. But there's more to 'packaging than
+        just tinkering with the source: Having good connections to 'upstream' makes life easier for
+        both sides in the long run. Taking a released tarball and packaging it for a distribution is
+        a standard and well understood process for about every distribution package. But there's
+        more to 'packaging than just tinkering with the source: Having good connections to
+        'upstream' makes life easier for both sides in the long run.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729299">openSUSE TV: Sharing package description [and
+          translations] between distros. (Dominique Dumont)</ulink></title>
+      <para>This session proposes to share concrete ideas, gather requirements and wishes (and
+        hopefully volunteers) towards an implementation to help collaboration between distros teams.
+        (The ones that don't talk much together otherwise).The basic idea revolves around creating a
+        central DB that would collect package description.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729392">openSUSE TV: Swimming Upstream (Jared K.
+          Smith)</ulink></title>
+      <para>How Distributions Help Open Source Communities This talk will discuss the ways that
+        distributions (such as Fedora) work collaboratively with upstream communities, and the value
+        that distributions bring. It will also explore ways that distributions can improve their
+        communication and collaboration with upstream projects.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729446">openSUSE TV: Example of cross-distro
+          collaboration: Application Installer (Vincent Untz)</ulink></title>
+      <para>Nearly all distributions are slowly moving towards making it easier to deal with
+        applications, and get information about those. However, many of us are working in our own
+        corners: unfortunately, this is often what happens with many topics that would move faster
+        if they were looked from a cross-distro perspective.A small team of people from various
+        distributions will meet in January to discuss what can be done in a cross-distro way. This
+        talk will present the conclusions from this meeting, and will come back on the experience of
+        organizing work in a cross-distro way.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729504">openSUSE TV: Distribution collaboration
+          manifesto (Stefano Zacchiroli, Jared K. Smith, Jos Poortvliet)</ulink></title>
+      <para>The FOSS distribution communities work toward very similar goals: each distribution aims
+        at providing a coherent set of (Free) softwares to their users.A good deal of work (and
+        patches!) can be shared across distributions and in part already is. The more we
+        collaborate, among us and with our (common!) upstreams, the more we can improve Free
+        Software as a whole. Sometimes, however, social obstacles get in the way of collaboration:
+        volunteers don't like each other or each other distro; they might also easily get
+        "religious" about the everlasting question "which is the best distro out
+        there?".Understanding why we should collaborate across distros is the first needed step in
+        improving how we collaborate.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729511">openSUSE TV: HP and Community Linux
+          distributions</ulink></title>
+      <para>(no further description available)</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729527">openSUSE TV: Downstream packaging
+          collaboration (Hans de Goede, Michal Hrušecký)</ulink></title>
+      <para>patch sharing or start a new upstream?Most distributions contain packages where upstream
+        is completely dead or very close to it, yet there still is a significant user group for the
+        packages in question, be it directly or through other packages depending on them. But even
+        when upstream is alive, packages often needs some additional patching.All distributions seem
+        to end up carrying some custom distro grown patchset, with some patches being shared and
+        other patches being unique per distro. Clearly not an ideal situation and one which most
+        distributions try to avoid by feeding all necessary changes upstream and aiming for having
+        packages which use the upstream provided code as is.Clearly the usual model of sharing code
+        fixes / integration work done at the distribution level between distributions by pushing it
+        upstream does not work for projects where there is no upstream. And even with upstream
+        around, distributions sometimes needs to fix bugs in versions that upstream no longer care
+        about or fix bugs that are not important/considered feature upstream and it may take a long
+        time to get them fixed there. In the end we can't avoid all patching. But we can try to
+        avoid duplicating the work by better sharing the results.The plan for this sessions is to
+        give a short presentation sketching the problem, show two possible approaches to help
+        solving this problem together with few generally helpful ideas. After presenting these
+        hopefully somewhat structured discussion with the audience about this topic is
+        planned.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729541">openSUSE TV: Model Checking the Linux
+          Kernel</ulink></title>
+      <para>Linux Kernel evolves rapidly and, as every software, is subject to bugs.Some people are
+        trying to find defects in the code by searching for known patterns and known misuse,
+        documented either as part of the kernel API usage or after bugs being known. At Mandriva,
+        and as foundation of my PhD subject, we want to explore another way which is well-known but
+        complex: Model-Checking. Main goal of this talk will be to introduce the subject and present
+        the state of the art around kernel code checking.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729545">openSUSE TV: Who the bloody hell cares about
+          Debian? (Stefano Zacchiroli)</ulink></title>
+      <para>Debian has also several unique technical features, still unmatched by concurrent
+        newfangled distributions (and more of those are coming with Debian Squeeze!).Even more
+        importantly, Debian is unique in: (1) its independence from money, infrastructure, people
+        power, and similar "features" that companies use to control the progress of free software
+        distributions; (2) its culture of freedom and democracy, which are both at stake with
+        company-driven decisions on the evolution of free software distributions.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4729654">openSUSE TV: ZYpp your distro (Dominik Heidler
+          Duncan Mac-Vicar P.)</ulink></title>
+      <para>ZYpp is an opensource project originated in the openSUSE distribution which groups the
+        most advanced and fast dependency solver (satsolver), a package management library and a
+        command line package management tool (zypper). Over the years ZYpp has matured to become one
+        of openSUSE most appreciated features.This talk will show ZYpp's main features and work
+        being done to have it running on other rpm-based distributions.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4730529">openSUSE TV: Hackweek 6 Finale - Andrew
+          Fitzsimon</ulink></title>
+      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
+        the beginning of hackweek</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4730556">openSUSE TV: Hackweek 6 Finale - Dinar
+          Valeev</ulink></title>
+      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
+        the beginning of hackweek</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4730579">openSUSE TV: Hackweek 6 Finale - Lukas
+          Lipavsky</ulink></title>
+      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
+        the beginning of hackweek</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4730632">openSUSE TV: Hackweek 6 Finale - Andrew
+          Fitzsimon</ulink></title>
+      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
+        the beginning of hackweek</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4730642">openSUSE TV: Hackweek 6 Finale - Michal
+          Cihar</ulink></title>
+      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
+        the beginning of hackweek</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blip.tv/file/4730657">openSUSE TV: Hackweek 6 Finale - Michal
+          Hrusecky</ulink></title>
+      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
+      the beginning of hackweek</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
@@ -150,9 +314,9 @@
     <itemizedlist>
       <title>Upcoming</title>
       <listitem>
-<para><ulink url="http://news.opensuse.org/2010/05/13/%ef%bb%bfopensuse-kde-team-meeting/">February 10, 2011 : ﻿openSUSE KDE Team meeting</ulink></para>
-</listitem>
-
+        <para><ulink url="http://news.opensuse.org/2010/05/13/%ef%bb%bfopensuse-kde-team-meeting/"
+            >February 10, 2011 : ﻿openSUSE KDE Team meeting</ulink></para>
+      </listitem>
     </itemizedlist>
     <!-- ($ ld: 04.02.11 th $) -->
     <para>You can find more informations on other events at: <ulink

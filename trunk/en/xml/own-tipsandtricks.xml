@@ -22,19 +22,45 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink
-          url="http://www.techrepublic.com/blog/five-tips/five-power-tips-for-libreoffice-users/593"
-          >Tech Republic/Jack Wallen: Five power tips for LibreOffice users</ulink></title>
-      <para>Takeaway: Once you begin to know your way around the LibreOffice suite, you can add a
-        few advanced techniques to your repertoire. Jack Wallen offers five tips to get you started. </para>
-      <para>In a <ulink
-          url="http://www.techrepublic.com/blog/five-tips/five-tips-for-migrating-from-microsoft-office-to-libreoffice/567"
-          >recent post</ulink>, I introduced LibreOffice and shared some pointers to help ease the
-        transition from Microsoft Office to this newly forked piece of software. After you get your
-        bearings with these tools, you may want to expand your LibreOffice prowess and become a
-        power user. How do you do that? You learn some advanced techniques. Here are five tricks
-        that will get you up to power-user speed fairly quickly. (...)</para>
-      <!-- ($ ld: 4.2.11 sm $) -->
+      <title><ulink url="http://seife.kernalert.de/blog/2011/02/05/making-gnome-more-usable/">Stefan
+          Seyfried: Making GNOME more Usable</ulink></title>
+      <para>And while I am at it, some hints on getting GNOME a small little bit more usable. The
+        problem is mostly the default window manager, and the gripes I’m having with it are
+        basically the same that Linus Torvalds had some years ago. I want my window buttons to be
+        configurable. To be more precise, I want the “maximize” button to behave like in almost
+        every other window manager: 3 different mouse buttons, 3 different button actions:
+        “maximize”, “maximize horizontally”, “maximize vertically”. Linus’ problems have been
+        addressed, and I’m explaining a lame workaround for my wishes to get something slightly
+        similar to what I want. My workaround does only work because of the fixes for Linus’
+        problems. </para>
+      <para>After looking into the code I understood that the window buttons are only used with
+        left-click, right and middle click are handled by the “window titlebar action” instead. </para>
+      <para>So I redefined the window titlebar mouse actions to do maximize horizontally /
+        vertically on right click and double click. (I am pretty accustomed to having middle button
+        on title bar put the window into the background, but I might change that). </para>
+      <para>So here’s what you have to do.<itemizedlist>
+          <listitem>
+            <para>open gconf-editor</para>
+          </listitem>
+          <listitem>
+            <para>browse to /apps/metacity/general</para>
+          </listitem>
+          <listitem>
+            <para>change <emphasis role="italic">action_double_click_titlebar</emphasis> to
+                <emphasis role="italic">toggle_maximize_vertically</emphasis></para>
+          </listitem>
+          <listitem>
+            <para>change<emphasis role="italic"> action_right_click_titlebar</emphasis> to <emphasis
+                role="italic">toggle_maximize_horizontally</emphasis></para>
+          </listitem>
+        </itemizedlist></para>
+      <para>While you are at it, you might also enable <emphasis role="italic"
+          >resize_with_right_button</emphasis>, which restores even some more sanity. </para>
+      <para>For all those asking why I’m not using a different window manager with GNOME: been
+        there, tried that, but the integration of them all was pretty horrible (keyboard shortcuts
+        no longer easily configurable, …) and I want somehting that just works and does not always
+        get in my way. If I wanted that, I could have kept KDE.</para>
+      <!-- ($ ld: 7.2.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
