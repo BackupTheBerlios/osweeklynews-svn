@@ -26,7 +26,7 @@ VER=$(cat $ENTITIES | sed -n 's#<!ENTITY\s\s*edition\s\s*"\(.*\)">#\1#p')
 # The HTML output directory:
 HTMLDIR=xhtml/
 # The single HTML output filename:
-HTML=${HTMLDIR}${BASEXML%.xml}.html
+HTML=${HTMLDIR}${BASEXML%.xml}-${VER}.html
 # The XSLT stylesheet to create single XHTML file:
 XSLTHTML=${XSLTDIR}/xhtml/docbook.xsl
 
@@ -52,7 +52,7 @@ XSLTFO=${XSLTDIR}/fo/docbook.xsl
 # THe MediaWiki output directory:
 WIKIDIR=wiki/
 # The single MediaWiki output filename:
-WIKI=${WIKIDIR}${BASEXML%.xml}.wiki
+WIKI=${WIKIDIR}${BASEXML%.xml}-${VER}.wiki
 # The XSLT stylesheet to create single MediaWiki file:
 XSLTWIKI=${XSLTDIR}/db2mediawiki/docbook.xsl
 
