@@ -54,7 +54,7 @@ WIKIDIR=wiki/
 # The single MediaWiki output filename:
 WIKI=${WIKIDIR}${BASEXML%.xml}.wiki
 # The XSLT stylesheet to create single MediaWiki file:
-XSLTMW=${XSLTDIR}/db2mediawiki/docbook.xsl
+XSLTWIKI=${XSLTDIR}/db2mediawiki/docbook.xsl
 
 
 
