@@ -46,6 +46,16 @@ XEPCONF=xep-config.xml
 # The XSLT stylesheet to create FO file:
 XSLTFO=${XSLTDIR}/fo/docbook.xsl
 
+##
+## MediaWiki Parameters
+##
+# THe MediaWiki output directory:
+WIKIDIR=wiki/
+# The single MediaWiki output filename:
+WIKI=${WIKIDIR}${BASEXML%.xml}.wiki
+# The XSLT stylesheet to create single MediaWiki file:
+XSLTMW=${XSLTDIR}/db2mediawiki/docbook.xsl
+
 
 
 ## Outputs error messages
