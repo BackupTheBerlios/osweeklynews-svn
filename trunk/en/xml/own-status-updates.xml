@@ -392,14 +392,14 @@ zypper in enlightenment</screen></para>
           For notifyconf the user is required to install the Contrib repository and install the
           package ‘notifyconf’ (depends on QT).</para>
         <figure id="fig.notifyconf">
-          <title>notifyconf</title>                
-        <mediaobject>
-          <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot-Notify-OSD-Configuration.png"
-              width="25%"/>
-          </imageobject>
-        </mediaobject>
+          <title>notifyconf</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot-Notify-OSD-Configuration.png"
+                width="25%"/>
+            </imageobject>
+          </mediaobject>
         </figure>
         <para>Notify OSD replaces the package ‘notification-daemon’ and can be used either in KDE or
           in GNOME (same for notifyconf). This is optional software for those who want a different
@@ -407,6 +407,47 @@ zypper in enlightenment</screen></para>
           this two applications to be a part of the openSUSE Desktop. Also a word of thanks to the
           Ayatana Project Team for making this software available.</para>
         <!-- ($ ld: 7.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2011/02/07/appmenu-gtk-and-indicator-appmenu/">Nelson
+            Marques: AppMenu-GTK and Indicator-appmenu</ulink></title>
+        <para>This is probably one of the most controversial features that has been subject of
+          continuous work from the Ayatana Project. This two pieces of software work as one and
+          allow to export GTK+ application menus through DBus, being the end result: application
+          menus present on the gnome-panel and unity-panel. </para>
+        <para>This feature requires at least one patch on GTK stack. I’ve talked to Ubuntu devs
+          regarding this patch, and it was told to me that GTK+ upstream had no interest on
+          upstreaming this patch. I’m not the one to comment this move from upstream, but I find it
+          at least interesting that QT has upstreamed an identical patch which includes the same
+          functionality. Since they are competing products (one can replace other totally or
+          partially), such actions only strengthen QT. Adding a bit of speculation and the latest
+          statements from Shuttleworth regarding QT, I wonder if it is to be expecting some ‘wind of
+          change’… who knows?! </para>
+        <para>For us at openSUSE what does matter is if we can Factor’ize this at least the Menu
+          Proxy patch so we can offer Unity and Indicators at the original form and not crippled. I
+          will request soon this changes to GNOME:Factory and we’ll see what people say, regardless
+          of upstream positions. </para>
+        <para>This is on-development software, and has some itches, but for the most it works (GTK+
+          applications), I would expect some polishing in the future from upstream, either way, it’s
+          another option.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot2.png"
+              width="50%"/>
+          </imageobject>
+        </mediaobject>
+        <para>Required Patches on GTK:<itemizedlist>
+            <listitem>
+              <para>043_ubuntu_menu_proxy.patch</para>
+            </listitem>
+            <listitem>
+              <para>072_indicator_menu_update.patch (still figuring if this is actually required and
+                the possible sidekicks of not having it there)</para>
+            </listitem>
+        </itemizedlist></para>
+        <!-- ($ ld: 8.2.11 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="kdeteam">
