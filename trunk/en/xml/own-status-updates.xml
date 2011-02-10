@@ -366,47 +366,57 @@ zypper in enlightenment</screen></para>
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/05/notify-osd-in-opensuse-11-4/">Nelson
-            Marques: Notify-OSD in openSUSE 11.4</ulink>
+          <ulink url="http://www.wafaa.eu/entry/smeegol-nogo-meego-gogo-1-56.html">Andrew Wafaa:
+            Smeegol NoGo MeeGo GoGo</ulink>
         </title>
-        <para>My first contribution to openSUSE was <ulink url="http://launchpad.net/notify-osd"
-            >Notify OSD</ulink>, which is also a part of the Ayatana Project. On openSUSE version of
-          Notify OSD, I’ve included a small patch made by Roman Sukochev which isn’t was upstreamed
-          but declined on Ubuntu. This patch enabled skinning/theming of the Notification Bubble.
-          Before submitting this package to GNOME:Apps, I’ve talked with Roman which confirmed that
-          he would maintain the patch for upcoming versions of Notify OSD. </para>
-        <para>This patch handles the skinning of Notify OSD through a text file (~/.notify-osd).
-          I’ve made available an application to configure Notify OSD. This application is known as
-          notifyconf and is available currently on openSUSE:Contrib repositories. </para>
-        <para>The interface of notifyconf is very user friendly and intuitive. This two packages
-          enable extra functionality not present currently in Ubuntu out of the box. I believe it is
-          important to offer more possibilities to our users.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot3.png"
-              width="25%"/>
-          </imageobject>
-        </mediaobject>
-        <para>Installing Notify OSD is done through zypper for example “zypper install notify-osd”.
-          For notifyconf the user is required to install the Contrib repository and install the
-          package ‘notifyconf’ (depends on QT).</para>
-        <figure id="fig.notifyconf">
-          <title>notifyconf</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata
-                fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot-Notify-OSD-Configuration.png"
-                width="25%"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para>Notify OSD replaces the package ‘notification-daemon’ and can be used either in KDE or
-          in GNOME (same for notifyconf). This is optional software for those who want a different
-          desktop experience. I’m thankful to Vincent Untz, Dominique and Peter Linell for allowing
-          this two applications to be a part of the openSUSE Desktop. Also a word of thanks to the
-          Ayatana Project Team for making this software available.</para>
-        <!-- ($ ld: 7.2.11 sm $) -->
+        <para>As many people will know I've spent around 18 months of my spare time packaging and
+          building the Netbook UX for Moblin/MeeGo on openSUSE. Not on my own, but with a community
+          around me. I would just like to say a huge thank you to that community, you've been great
+          and spurred me on when I felt like the whole world was conspiring against me. </para>
+        <para>Sound a bit morose? Well in a way it is. Basically by all accounts MeeGo is stopping
+          all work on the Netbook UX. Yup, all our hard work is now almost for nothing :-( </para>
+        <para>The first piece of evidence is the <ulink
+            url="http://wiki.meego.com/Release_Engineering/Plans/1.2">Release Engineering Plans for
+            1.2</ulink>. If you look at the bottom, you'll notice that the Netbook doesn't get any
+          mention in Features, just bugs. Actually the same is for the 1.1 release. In all honesty,
+          the biggest change between 1.1 and its predecessor is that all refernces to Moblin was
+          replaced with MeeGo. The next piece of info came at the fabulous FOSDEM XI (I'll do a
+          seperate post on the event later). I spoke to several people directly and indirectly
+          involved with MeeGo, especially the Netbook UX, about the lack of info on the Netbook UX.
+          Each one of them said the same thing - MeeGo is putting the Netbook UX into Maintanence
+          Mode, stopping any further development on it, and only providing bug fixes for major
+          issues. I asked if there was going to be any announcement, basically the answer was
+          nothing official. They're just going to let it drift away - just like netbooks themselves
+          have. </para>
+        <para>There are most likely a huge number of reasons, which is fair enough. I was given a
+          couple of reasons - 1: Netbooks arent selling anymore, the Netbook ship didn't really sail
+          away, but was sunk. 2: MeeGo doesn't want to invest anymore time or effort in gtk
+          development, and wants to concentrate on Qt. Now I take this last one with a tiny bit of
+          salt, only because both Intel and Nokia employ (or at least did so) a sizable team of
+          GNOME developers. Saying that though, if they want to keep a roof over their heads they
+          have to do what their employer says, and both originally started working with touch
+          devices. So it does make sense as much as it doesn't. </para>
+        <para>So, I herby give immediate notice that I am now no longer going to be doing any
+          further work on the MeeGo UX for openSUSE or anyone else. I wont delete the repo for 1.0
+          but will clear out the 1.1 and 1.2 repos that I had - might as well give those resources
+          back :-) . Now if anyone would like to continue what I and others had started, then let me
+          know and I would be more than happy. </para>
+        <para>I cant say what the other distros are going to do, I've spoken to my counter part in
+          Fedora, and they're having a think about it as they were busting their chops to get things
+          in for the F15 release. Either way I wish all involved luck. </para>
+        <para>Now before any of you conspiracy theory junkies get worked up - this has nothing to do
+          with the whole MeeGo Trademark issue that Smeegol had with the Linux Foundation. As it
+          happens I was due to have a conversation with the Linux Foundation about the issues
+          between us and them, but have had to re-schedule due to travel constraints from one party
+          or the other. I still intend to speak with the LF about the issues, as they are still
+          present in the other UX's that they are developing. </para>
+        <para>So it's time for me to close off and say, so long and thanks for all the fish! I'll
+          still be around, I'll probably start getting back into the GNOME swing of things, and help
+          fcrozat with GNOME3 etc. Oh and I've got a lunatic idea for a project which I intend to
+          kick off (stay tuned ;-) ). </para>
+        <para><ulink url="http://wiki.meego.com/MeeGo_Style_Guide#Trademark_Usage">MeeGo is a
+            trademark of the Linux Foundation</ulink>.</para>
+        <!-- ($ ld: 10.2.11 sm $) -->
       </blockquote>
       <blockquote>
         <title><ulink
@@ -446,7 +456,7 @@ zypper in enlightenment</screen></para>
               <para>072_indicator_menu_update.patch (still figuring if this is actually required and
                 the possible sidekicks of not having it there)</para>
             </listitem>
-        </itemizedlist></para>
+          </itemizedlist></para>
         <!-- ($ ld: 8.2.11 sm $) -->
       </blockquote>
     </sect3>
@@ -782,12 +792,52 @@ zypper in enlightenment</screen></para>
             url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
     <sect3 role="oooteam">
-      <title>OpenOffice Team</title>
-
-      <para>...</para>
-      </sect3> -->
+      <title>OpenOffice/LibreOffice Team</title>
+      <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2011/02/09/libreoffice-3-3-0-final-available-for-opensuse/"
+            >Petr Mladek: LibreOffice 3.3.0 final available for openSUSE</ulink></title>
+        <para>I’m happy to announce LibreOffice 3.3.0 <emphasis role="italic">final</emphasis>
+          packages for <emphasis role="italic">openSUSE</emphasis>. They are available in the Build
+          Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
+            >LibreOffice:Stable</ulink> project. They are based on the <ulink
+            url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.0.4"
+            >libreoffice-3.3.0.4 release</ulink>. Please, look for more details about the <emphasis
+            role="italic">openSUSE LibreOffice build</emphasis> on the wiki page. </para>
+        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any
+          software contains bugs and we kindly ask you to <ulink
+            url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us
+          to fix them in the future releases. </para>
+        <para><emphasis role="bold">False error during update </emphasis></para>
+        <para>You might see some installation errors about missing extensions when updating from
+          OpenOffice.org, for example:
+          <screen>ERROR: There is no such extension deployed: com.sun.reportdesigner</screen></para>
+        <para>Please, <emphasis role="bold">ignore them</emphasis>. They are caused by a bug in the
+          OOo packages and can’t be avoided easily. They does not affect the LibreOffice
+          installation! </para>
+        <para><emphasis role="bold">More known bugs </emphasis><itemizedlist>
+            <listitem>
+              <para><ulink url="http://alturl.com/dmqve">Free Desktop bugzilla</ulink></para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://alturl.com/qaq5">Novell bugzilla</ulink></para>
+            </listitem>
+          </itemizedlist><emphasis role="bold">Other information and plans: </emphasis></para>
+        <para>LO switched to a time based schedule and more frequent bug fix releases. The purpose
+          is to keep quality and avoid infinite RC phase at the same time. The idea is that all
+          serious blocker bugs can be found and fixed within few weeks. Then the application is
+          ready for masses who want to enjoy new features and more complicated fixes. The history
+          says that bugs in less typical scenarios are found weeks after the release. Such bugs will
+          be fixed in pure bug fix releases and released few weeks after each other. It means that
+          more conservative people should rather wait for the 3.x.1, 3.x.2, 3.x.3 releases. We hope
+          that it will help all people to get faster what they want. </para>
+        <para>We are already working on <emphasis role="italic">LO-3.3.1</emphasis> bugfix release.
+          I have just published <emphasis role="italic">3.3.1-rc1</emphasis>. The final 3.3.1
+          release should be available within 2 weeks.</para>
+        <!-- ($ ld: 10.2.11 sm $) -->
+      </blockquote>
+    </sect3>
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>

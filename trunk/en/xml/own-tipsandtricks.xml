@@ -22,45 +22,20 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink url="http://seife.kernalert.de/blog/2011/02/05/making-gnome-more-usable/">Stefan
-          Seyfried: Making GNOME more Usable</ulink></title>
-      <para>And while I am at it, some hints on getting GNOME a small little bit more usable. The
-        problem is mostly the default window manager, and the gripes I’m having with it are
-        basically the same that Linus Torvalds had some years ago. I want my window buttons to be
-        configurable. To be more precise, I want the “maximize” button to behave like in almost
-        every other window manager: 3 different mouse buttons, 3 different button actions:
-        “maximize”, “maximize horizontally”, “maximize vertically”. Linus’ problems have been
-        addressed, and I’m explaining a lame workaround for my wishes to get something slightly
-        similar to what I want. My workaround does only work because of the fixes for Linus’
-        problems. </para>
-      <para>After looking into the code I understood that the window buttons are only used with
-        left-click, right and middle click are handled by the “window titlebar action” instead. </para>
-      <para>So I redefined the window titlebar mouse actions to do maximize horizontally /
-        vertically on right click and double click. (I am pretty accustomed to having middle button
-        on title bar put the window into the background, but I might change that). </para>
-      <para>So here’s what you have to do.<itemizedlist>
-          <listitem>
-            <para>open gconf-editor</para>
-          </listitem>
-          <listitem>
-            <para>browse to /apps/metacity/general</para>
-          </listitem>
-          <listitem>
-            <para>change <emphasis role="italic">action_double_click_titlebar</emphasis> to
-                <emphasis role="italic">toggle_maximize_vertically</emphasis></para>
-          </listitem>
-          <listitem>
-            <para>change<emphasis role="italic"> action_right_click_titlebar</emphasis> to <emphasis
-                role="italic">toggle_maximize_horizontally</emphasis></para>
-          </listitem>
-        </itemizedlist></para>
-      <para>While you are at it, you might also enable <emphasis role="italic"
-          >resize_with_right_button</emphasis>, which restores even some more sanity. </para>
-      <para>For all those asking why I’m not using a different window manager with GNOME: been
-        there, tried that, but the integration of them all was pretty horrible (keyboard shortcuts
-        no longer easily configurable, …) and I want somehting that just works and does not always
-        get in my way. If I wanted that, I could have kept KDE.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
+      <title><ulink url="http://seife.kernalert.de/blog/2011/02/05/making-gnome-more-usable/"
+          >Linux.com/Jack Wallen: Collaborate Using LibreOffice Writer Changes and
+        Comments</ulink></title>
+      <para>Being a writer, I often have to collaborate with other writers or editors on an
+        assignment or book. Because of this, there is a need for collaboration tools within my word
+        processor. LibreOffice offers such tools for the writer, editor, student, or teacher. These
+        tools are Changes and Comments and they make the process of collaboration within a
+        LibreOffice Writer document so much easier. </para>
+      <para>But don't think these tools are only good for collaboration. If you want simple revision
+        control, if you want to see how your document is evolving or progressing, or if you have a
+        need to keep notes within your document, you too can take advantage of these tools. But how
+        are they used? Let's dive in and experience the LibreOffice collaboration tools.
+        (...)</para>
+      <!-- ($ ld: 10.2.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>

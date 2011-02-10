@@ -95,43 +95,75 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/libreoffice-33-release-brings-new-features"
-          >LinuxJournal/Susan Linton: The New Features in LibreOffice 3.3</ulink>
+        <ulink url="http://genek.net/wordpress/">Adventures in Linux: Software Review: The KDE 4.6
+          Desktop Environment</ulink>
       </title>
-      <para>Despite earlier reports that very few if any new features would likely be seen in The
-        Document Foundation&apos;s first LibreOffice release, the influx of new developers allowed
-        much more work to be done. In fact, it was even released ahead of schedule. So, what kind of
-        new goodies might one find? (...)</para>
-      <!--($ ld: 1.2.11 sm $) -->
+      <para><emphasis role="bold">Author’s note: </emphasis></para>
+      <para>most of the screenshots contained herein were taken from the KDE release announcement.
+        Thanks to KDE for making these pics available for re-use. </para>
+      <para><emphasis role="bold">Ancient History: </emphasis></para>
+      <para>It’s been three years, and it’s still hard to put the KDE 4.0 debacle behind me. I was
+        running KDE 3.5 on Debian stable happy as a clam, and then one fine day in January of 2008
+        the KDE folks dumped their brand-new, completely re-vamped desktop environment into our
+        laps. I couldn’t get it for Debian so I installed another distro just to check it out… and
+        used it for less than 24 hours. I could see what they were trying to do, and there were some
+        good ideas there, but the implementation was so unbelievably bad that I missed out on the
+        next two releases altogether. I didn’t try KDE 4.x again until January of last year, when I
+        installed Debian testing with the KDE 4.3 desktop. It was great! Since then KDE has gone
+        from strength to strength. KDE 4.4 was mature and stable, and KDE 4.5 added polish and
+        finesse. KDE 4.6, released a little over a week ago, ups the ante once again. (...)</para>
+      <!--($ ld: 10.2.11 sm $) -->
     </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.desktoplinux.com/news/NS7312694782.html">DesktopLinux/Eric Brown:
-          Linux distros move toward common app installer API</ulink>
+        <ulink url="http://www.desktoplinux.com/news/NS7312694782.html">Prashanth Venkataram:
+          Preview - GNOME 3 </ulink>
       </title>
-      <para>Recent meetings held among the RedHat, Fedora, Debian, Ubuntu, OpenSUSE, Mandriva, and
-        Mageia communities has resulted in an informal agreement on an architecture for a common app
-        installer API. Yet the dream of a universal GNU/Linux app-store may be much farther off. </para>
-      <para>Word of the app-installer meetings at OpenSUSE&apos;s Nuremberg, Germany, offices
-        earlier this month emerged last week in a <ulink
-          url="http://blog.karlitschek.de/2011/01/2-amazing-meetings-to-change-world.html">blog
-          post</ulink> by OpenDesktop.org&apos;s Frank Karlitschek on Jan. 24. This was followed by
-        a more detailed Jan. 26 report on the meetings by Swapnil Bhartiya <ulink
-          url="http://www.muktware.com/a/1/4/26/2011/709?page=0,0">in <emphasis role="italic"
-            >Muktware</emphasis></ulink>. </para>
-      <para>On Jan. 31, LinuxInsider&apos;s Katherine Noyes <ulink
-          url="http://www.linuxinsider.com/story/Linux-and-the-Great-App-Store-Agenda-71752.html"
-          >sampled the Linux blogs and forums</ulink> for feedback, and found general support for a
-        common app installer, but with plenty of observers predicting doom for the project. The more
-        distant dream of a common app-store for Linux, which was not formally discussed at the main
-        Nuremberg meetings, seemed even more far-fetched to many, though many others deem it a
-        worthy goal. </para>
-      <para>Having a common installer -- and ultimately, a universal app store -- should help
-        attract new users and third-party developers to desktop Linux, goes the general consensus.
-        It would help to cushion the fragmentation of the desktop Linux market while easing the pain
-        of dealing with the complexity of most package managers. Yet, many other attempts at unified
-        standards among Linux communities have ended in failure, note skeptics. </para>
-      <!--($ ld: 3.2.11 sm $) -->
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://1.bp.blogspot.com/_c0--RsXwTkw/TUx7fv5mxCI/AAAAAAAABNQ/uNZlx1MtApA/s320/Screenshot1.png"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>Usually, when I review desktop environments, I review KDE, specifically version 4. Why?
+        It's constantly evolving and improving, and it's nice to be able to see such changes
+        occurring on all fronts so quickly. By contrast, GNOME and Xfce (not to mention other WMs
+        like Openbox) have remained relatively the same over the past few releases. Sure, Nautilus
+        got tabbed browsing in version 2.22 (I think) and split-pane viewing in version 2.30. Sure,
+        there may have been a couple other back-end changes. But generally speaking, where KDE 4 has
+        changed pretty noticeably between point releases, GNOME has been quite stable. That's all
+        going to change, because GNOME is about to be released under a whole new number: 3. That's
+        right: the number preceding the decimal point in a GNOME release will no longer be
+        '2'.</para>
+      <para>There are some pretty big changes in store for GNOME 3, much of which can be seen in the
+        front-end. Because many major distributions are planning to upgrade to GNOME 3 once that
+        gets released (in a few weeks, apparently), it's important that users try GNOME 3 beforehand
+        both to get accustomed to it as well as to find and report lingering bugs. Happily, the good
+        people at Fedora and openSUSE have put together live CD ISO files with vanilla GNOME 3 on
+        them, just for the purpose of trying out GNOME 3. I downloaded both files and intended to
+        make a multiboot live setup using MultiSystem, but unfortunately MultiSystem reacted with
+        error messages to both ISOs. Knowing that openSUSE doesn't play well with UnetBootin, I
+        decided to just try out the Fedora version on a live USB through UnetBootin. Follow the jump
+        to see how it goes.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://4.bp.blogspot.com/_c0--RsXwTkw/TUx7f_2UmHI/AAAAAAAABNU/-BlafqbqZQg/s320/Screenshot2.png"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>Unfortunately, I initially had a bit of booting trouble when I selected the default boot
+        menu option. The OS hung halfway through booting, so I forced a cold restart. I then
+        selected the <quote>Boot </quote>option instead of either <quote>Default</quote> or
+          <quote>desktop_[stuff] </quote>(the name of the ISO file) and that seemed to work fine — I
+        even got to see the lovely Fedora boot splash screen (the Fedora logo <quote>filling
+          up</quote>). After the boot process came the login screen. I guess GDM hasn't changed a
+        whole lot since GNOME 2.30, though for some reason the GTK+ theming looked really ugly. Upon
+        seeing it, I hoped it was just an issue with GDM and not the whole GNOME desktop theming
+        ability, and thankfully, as I found out shortly thereafter, I was right. I then proceeded to
+        the desktop. (...)</para>
+      <!--($ ld: 10.2.11 sm $) -->
     </blockquote>
     <blockquote>
       <title><ulink
