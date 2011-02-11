@@ -52,29 +52,84 @@
     <!-- ($ ld: 10.2.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://ifup.org/2011/02/03/reverse-path-filter-rp_filter-by-example/">Brandon
-        Philips: reverse path filter (rp_filter) by example</ulink></title>
-    <para>Recently, I ran into an rp_filter change for all Kernels after 2.6.31. So read along for
-      an explanation of both the sysctl change and a practical example of rp_filter usage. </para>
-    <para>Lets say you had the following entry in your
-      /etc/sysctl.conf<screen>net.ipv4.conf.all.rp_filter = 1</screen></para>
-    <para>with the intention of turning on <ulink
-        url="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob;f=Documentation/networking/ip-sysctl.txt;hb=HEAD#l844"
-        >reverse path filtering</ulink> for all interfaces. Well you didn't get your wish- rp_filter
-      remained disabled if you are running a Kernel older than 2.6.31. </para>
-    <para>This could come as a suprise if you upgrade your Kernel and have a system relying on
-      rp_filter being disabled or enabled (e.g. multicast routing, multi-homed servers). If you have
-      a single-homed unicast server setups this change will probably go unnoticed however. </para>
-    <para>The fix was implemented upstream in <ulink
-        url="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=27fed4175acf81ddd91d9a4ee2fd298981f60295"
-        >v2.6.31</ulink> and the basic issue was that each individual interface has an rp_filter
-      setting which defaulted to 0 and the interface setting overrides the "all interface setting"
-      since they were AND'd together.</para>
-    <!-- ($ ld: 4.2.11 sm $) -->
+    <title><ulink url="http://schaiba.wordpress.com/2011/02/11/kernel-weekly-news-12-02-2011/">Rares
+        Aioanei: kernel weekly news 12.02.2011</ulink></title>
+    <para>Rares gives us this week a great Kernel Review. Thanks Rares :-)</para>
+    <!-- ($ ld: 12.2.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title>Rares Aioanei: kernel weekly news 05.02.2011</title>
-    <para>Rares gives us this week a great Kernel Review. Thanks Rares :-)</para>
-    <!-- ($ ld: 4.2.11 sm $) -->
+    <title><ulink url="http://www.kroah.com/log/linux/maintainer-05.html">Greg Kroah-Hartman: Greg
+        Kroah-Hartman: How not to piss off a kernel subsystem maintainer - part 5</ulink></title>
+    <para>Fifth in a long series of complaints... See <ulink
+        url="http://www.kroah.com/log/linux/maintainer.html">part 1</ulink> and <ulink
+        url="http://www.kroah.com/log/linux/maintainer-02.html">part 2</ulink> and <ulink
+        url="http://www.kroah.com/log/linux/maintainer-03.html">part 3</ulink> and <ulink
+        url="http://www.kroah.com/log/linux/maintainer-04.html">part4</ulink> for previous
+      atrocities. </para>
+    <para>Heck, It's not like I haven't said all of this before, but it sure seems like no one
+      learns from the past, or reads the documentation that we write for how to actually submit a
+      patch for the kernel. Linux has one of the best documented procedures for how to do this, it's
+      not like it's a secret or something... </para>
+    <para>Anyway, here's a list of patches that people have sent me in this week alone that have
+      caused me major problems:<itemizedlist>
+        <listitem>
+          <para>patch was never even build tested, and of course, it breaks when you do build
+            it.</para>
+        </listitem>
+        <listitem>
+          <para>patch does build, but it was never tested because the patch does the opposite of
+            what the submitter wanted to do.</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with no authorship </para>
+        </listitem>
+        <listitem>
+          <para>patch sent with no signed-off-by line</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with no description of what the patch did</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with a description, yet it was not the description of the patch
+            itself</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with a description that the patch only did one thing, yet the patch did 4
+            different things</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with a description that made no sense at all</para>
+        </listitem>
+        <listitem>
+          <para>patch sent in a series of 13 patches, all with the same exact subject, and no
+            description of what the patch did</para>
+        </listitem>
+        <listitem>
+          <para>a one line patch that if applied, would instantly break the build</para>
+        </listitem>
+        <listitem>
+          <para>patch that asked for reviews, yet gets angry when you ask why something was done a
+            certain way</para>
+        </listitem>
+        <listitem>
+          <para>patch that asked for reviews, and when asked, can't explain why code was done a
+            certain way, blaming a non-existent person for that portion</para>
+        </listitem>
+        <listitem>
+          <para>patch that said it fixed a bug, yet added a new feature without fixing the original
+            bug</para>
+        </listitem>
+        <listitem>
+          <para>patch for cleaning up coding style issues</para>
+        </listitem>
+        <listitem>
+          <para>yet adds different coding issues patches asked for review, yet had obviously never
+            been even run through our automatic "test this patch for sanity" tools.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Yeah, it's been a fun week... </para>
+    <para>And if anyone ever wonders why code reviewers are grumpy, just look at the above list and
+      understand.</para>
+    <!-- ($ ld: 12.2.11 sm $) -->
   </blockquote>
 </sect1>
