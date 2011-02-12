@@ -20,119 +20,7 @@
   <title>In the Community</title>
   <!--Put here things relevant to the openSUSE community maybe from * People of openSUSE or elections, votings 1 - 2 posts-->
   <sect2>
-    <title>Postings from the Community</title>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4726423">openSUSE TV: COMAR, Gökmen
-        Göksel</ulink></title>
-      <para>A new approach to system management COMAR is COnfiguration MAnageR of Pardus Linux,
-        which is a DBus service that helps the installed software operate flawlessly. COMAR knows
-        the tasks that can be provided by each application, together with the functionality they
-        depend on and other information. Different applications may adapt themselves according to
-        the presence and capability of their peers. </para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4726612">openSUSE TV: Using NixOS for declarative
-          deployment and testing (Sander van der Burg)</ulink></title>
-      <para>NixOS is a Linux distribution built on top of the Nix package manager, a purely
-        functional package manager. In NixOS, a system configuration is built from a declarative
-        specification capturing the complete system configuration. Moreover, because of the Nix
-        heritage, a user can safely and efficiently install multiple configurations next to each
-        other without interference. This allows users to perform atomic upgrades and rollbacks of a
-        complete Linux distribution.In this talk we explain how we can use NixOS to manage a network
-        of machines by using a declarative specification of a network of NixOS
-        configurations.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4726978">openSUSE TV: Gentoo's RelEng and catalyst use
-          (Jorge Manuel B. S. Vicetto)</ulink></title>
-      <para>A short introduction to Gentoo's Release Engineering team and its current model to
-        produce media to install Gentoo. An introduction to the the catalyst tool and a description
-        of the current configuration to produce our official stages and isos, specifically the
-        weekly autobuilds.A short demonstration of how to configure and use catalyst to create
-        stages and isos on one's hardware.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4728026">openSUSE TV: Gentoo's Reform and Future
-          (Petteri Räty, Jorge Manuel B. S. Vicetto)</ulink></title>
-      <para>The purpose of this talk is to present the view of a few Gentoo Developers that are part
-        of the Council, Foundation and Developer Relations about the future of Gentoo and its
-        reform. We'd like to start a debate involving other Gentoo Developers and interested
-        attendees about this.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4728567">openSUSE TV: Gentoo Q</ulink></title>
-      <para>Do you have anything on your mind related to Gentoo?It can be technical, organizational
-        etc. I will do my best to answer any question the time allows for and there should also be
-        other Gentoo developers around if I am not able to.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729040">openSUSE TV: Ada in Debian and other
-          distributions (Ludovic Brenta, Miguel Telleria de Esteban)</ulink></title>
-      <para>This talk will:briefly describe Ludovic's work maintaining the Ada part of GCC as part
-        of the larger Debian-GCC team;describe the Debian Policy for Ada packages; why one is needed
-        and why it is written the way it is;compare (in a constructive way, obviously) Debian with
-        other distributions that also have good support for Ada, in particular Gentoo and FreeBSD,
-        and with complementary third-party efforts such as the GNU Ada project on SourceForge[2] and
-        MacAda[3] "GNAT for Macintosh";propose coordination between distributions on how to package
-        Ada software.Followed by a live demonstration</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729068">openSUSE TV: The difficulty of forking (Anne
-          Nicolas, Michael Scherer)</ulink></title>
-      <para>and why you should not do it, yet prepare for itForking a project is never an easy task
-        both on social and technical level.Mageia, like Libreoffice, is a big project born from a
-        fork, and faced several issues regarding community and infrastructure. The lessons learned
-        from forking can be generalized to any software project.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729150">openSUSE TV: Can we build a simple,
-          cross-distribution installation framework? (Dieter Plaetinck)</ulink></title>
-      <para>First, this talk will entail the philosophy behind the shellscript-based Arch Linux
-        installation framework (AIF), as well as some implementation information and lessons
-        learned. Second, I want to initiate a discussion on how multiple distributions could work
-        together maintaining an installation framework following a "keep it simple" philosophy, and
-        how feasible it would be to do so. In my experience, quite some necessities, issues and
-        features are distribution-independent. Specific distributions could be supported with
-        plugins or feature branches.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="openSUSE TV: How to be a good downstream">openSUSE TV: How to be a good
-          downstream</ulink></title>
-      <para>Taking a released tarball and packaging it for a distribution is a standard and well
-        understood process for about every distribution package. But there's more to 'packaging than
-        just tinkering with the source: Having good connections to 'upstream' makes life easier for
-        both sides in the long run. Taking a released tarball and packaging it for a distribution is
-        a standard and well understood process for about every distribution package. But there's
-        more to 'packaging than just tinkering with the source: Having good connections to
-        'upstream' makes life easier for both sides in the long run.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729299">openSUSE TV: Sharing package description [and
-          translations] between distros. (Dominique Dumont)</ulink></title>
-      <para>This session proposes to share concrete ideas, gather requirements and wishes (and
-        hopefully volunteers) towards an implementation to help collaboration between distros teams.
-        (The ones that don't talk much together otherwise).The basic idea revolves around creating a
-        central DB that would collect package description.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729392">openSUSE TV: Swimming Upstream (Jared K.
-          Smith)</ulink></title>
-      <para>How Distributions Help Open Source Communities This talk will discuss the ways that
-        distributions (such as Fedora) work collaboratively with upstream communities, and the value
-        that distributions bring. It will also explore ways that distributions can improve their
-        communication and collaboration with upstream projects.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
+    <title>Postings from the Community</title>    
     <blockquote>
       <title><ulink url="http://blip.tv/file/4729446">openSUSE TV: Example of cross-distro
           collaboration: Application Installer (Vincent Untz)</ulink></title>
@@ -158,15 +46,9 @@
         there?".Understanding why we should collaborate across distros is the first needed step in
         improving how we collaborate.</para>
       <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
+    </blockquote>    
     <blockquote>
-      <title><ulink url="http://blip.tv/file/4729511">openSUSE TV: HP and Community Linux
-          distributions</ulink></title>
-      <para>(no further description available)</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729527">openSUSE TV: Downstream packaging
+      <title><ulink url="http://opensuse.blip.tv/file/4747393/">openSUSE TV: Downstream packaging
           collaboration (Hans de Goede, Michal Hrušecký)</ulink></title>
       <para>patch sharing or start a new upstream?Most distributions contain packages where upstream
         is completely dead or very close to it, yet there still is a significant user group for the
@@ -189,28 +71,6 @@
       <!-- ($ ld: 7.2.11 sm $) -->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://blip.tv/file/4729541">openSUSE TV: Model Checking the Linux
-          Kernel</ulink></title>
-      <para>Linux Kernel evolves rapidly and, as every software, is subject to bugs.Some people are
-        trying to find defects in the code by searching for known patterns and known misuse,
-        documented either as part of the kernel API usage or after bugs being known. At Mandriva,
-        and as foundation of my PhD subject, we want to explore another way which is well-known but
-        complex: Model-Checking. Main goal of this talk will be to introduce the subject and present
-        the state of the art around kernel code checking.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729545">openSUSE TV: Who the bloody hell cares about
-          Debian? (Stefano Zacchiroli)</ulink></title>
-      <para>Debian has also several unique technical features, still unmatched by concurrent
-        newfangled distributions (and more of those are coming with Debian Squeeze!).Even more
-        importantly, Debian is unique in: (1) its independence from money, infrastructure, people
-        power, and similar "features" that companies use to control the progress of free software
-        distributions; (2) its culture of freedom and democracy, which are both at stake with
-        company-driven decisions on the evolution of free software distributions.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
       <title><ulink url="http://blip.tv/file/4729654">openSUSE TV: ZYpp your distro (Dominik Heidler
           Duncan Mac-Vicar P.)</ulink></title>
       <para>ZYpp is an opensource project originated in the openSUSE distribution which groups the
@@ -218,48 +78,6 @@
         command line package management tool (zypper). Over the years ZYpp has matured to become one
         of openSUSE most appreciated features.This talk will show ZYpp's main features and work
         being done to have it running on other rpm-based distributions.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4730529">openSUSE TV: Hackweek 6 Finale - Andrew
-          Fitzsimon</ulink></title>
-      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
-        the beginning of hackweek</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4730556">openSUSE TV: Hackweek 6 Finale - Dinar
-          Valeev</ulink></title>
-      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
-        the beginning of hackweek</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4730579">openSUSE TV: Hackweek 6 Finale - Lukas
-          Lipavsky</ulink></title>
-      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
-        the beginning of hackweek</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4730632">openSUSE TV: Hackweek 6 Finale - Andrew
-          Fitzsimon</ulink></title>
-      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
-        the beginning of hackweek</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4730642">openSUSE TV: Hackweek 6 Finale - Michal
-          Cihar</ulink></title>
-      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
-        the beginning of hackweek</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4730657">openSUSE TV: Hackweek 6 Finale - Michal
-          Hrusecky</ulink></title>
-      <para>openSUSE's Hackweek 6 is here - follow our hackers while they present their projects at
-        the beginning of hackweek</para>
       <!-- ($ ld: 7.2.11 sm $) -->
     </blockquote>
     <blockquote>
@@ -286,6 +104,119 @@
         to see LibreOffice crew almost having blocked the street in front of Delirium Cafe :)
         (...)</para>
       <!-- ($ ld: 10.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://florianreuter.blogspot.com/2011/02/just-came-back-from-fosdem.html"
+        >Florian Reuter: FOSDEM</ulink></title>
+      <para>Just came back from FOSDEM. Felt really good to meet the “usual suspects” again. Thanks
+        for the great weekend! </para>
+      <para>I also had a chance to talk with Jos about ODF Web and ODF Collaboration. Jos gave a great
+        talk about his ODF Web Javascript Framework which emerged from his ODFKit efforts. </para>
+      <para>Jos had a very important slide in his talk which echoed my own believe: NO CONVERSION!
+        This principle guided the design of his ODF Web Framework. NO CONVERSION simply means that Jos
+        does not try to heuristically (aka lossy) map ODF to HTML and then map HTML heuristically (aka
+        lossy) back to ODF. Instead Jos decided to have a clean 2-tier architecture which cleanly
+        separates the content- and the view layer: ODF is content and HTML is the view. I think that’s
+        the right approach. Even more: I think if you start adding “smart conversions”/”heuristics”
+        and other “intelligent mappings” things will get ugly sooner or later. [And from my experience
+        on OpenOffice.org filter hacking things will get messy sooner than you like. Always keep
+        Murphy’s law in mind: What can go wrong will go wrong!]. </para>
+      <para>We also had a chance to talk about Operational Transformation (OT) in the context of ODF.
+        I tried to argue that what is really missing in ODF is a list of “atomic changes” a user can
+        make to an ODF document. If we had this list of “atomic changes” we could build a
+        transformation on top of it. For OT it is very important that you have “atomic” operations,
+        since you need operation transformations for every pair of operation. E.g. if you have |OPS|
+        operations you need |OPS x OPS| transformations. So keeping |OPS| small is quite important! </para>
+      <para>Assembling the list of atomic operations is a lot of work --- admitted. However it is work
+        that every designer of an API needs to do anyway. I really believe that some input from the
+        ODF API projects like Oracles’ ODFDOM, IBM’s Simple API for ODF, ANR’s LPOD and Jos’ ODFKit
+        could really help. </para>
+      <para>Let me finish my post by a classification of change to an ODF document:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://3.bp.blogspot.com/_k9bd8YQpZ7Y/TVARD-e1z0I/AAAAAAAAAIQ/aejOhYvKRZg/s400/changeclasses.jpg"
+            width="30%"/>
+        </imageobject>
+      </mediaobject>
+      <para> I believe that for change tracking we only need “atomic operations” and a way to combine
+        them to “compound operations”. I don’t think we need to be able to track changes to the XML
+        tree or the XML text. In fact I think it does more harm than good. </para>
+      <!-- ($ ld: 8.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://dev-loki.blogspot.com/2011/02/fosdem-2011-eol.html">Pascal Bleser:
+        FOSDEM 2011 EOL</ulink></title>
+      <para>So <ulink url="http://fosdem.org/2011">FOSDEM 2011</ulink> is over, at last, and it was a
+        huge success, as always (mind you, I'm one of the organizers, my opinions might be just a
+        little subjective here ;)). </para>
+      <para>From the organizational point of view, I was less active this year compared the the 7
+        previous ones (yes, it's already the 8th time for me, and I noticed how annoying it is to say
+        "8th" in English quite a few times during the weekend): lots of procastrination and my "spare
+        time" being vampirized by other activities, most prominently work on the <ulink
+          url="http://en.opensuse.org/openSUSE:Board">openSUSE Board</ulink> (which I am now <ulink
+            url="http://dev-loki.blogspot.com/2011/01/why-i-am-not-running-for-opensuse-board.html">no
+            longer part of</ulink>). Definitely something to fix for next year, and a big mea culpa to
+        my mates on the FOSDEM organization team. </para>
+      <para>That being said, it was still a lot of work, as it is for every edition, and while I
+        suppose that most if not all the visitors are sorry that the event is already over, we're
+        pretty happy it is, I'm sure you can understand why :). </para>
+      <para>All in all, it was very successful. There were more visitors, as each year, and I believe
+        that we've really reached the limits of the infrastructure we're using at the moment. That
+        means we'll have a few "interesting" challenges ahead of us for the next edition (no, we won't
+        move away from the ULB nor from the Solbosch campus, we'll just have to stretch the space used
+        by FOSDEM a bit more to use more and larger rooms). But more about that in a few months' time. </para>
+      <para>It was also very smooth for everything else. Having so many volunteers to help us out
+        during the weekend, including for the very tedious task of setting things up, was really
+        ${deity}-send. Thanks to the support of the ULB networking team, Belnet as well as Cisco made
+        FOSDEM provide what must be the best possible wifi infrastructure at an event of such size.
+        Our usual <ulink url="http://bit.ly/ewcvgx">collaboration with LPI</ulink> went great as well
+        (was awesome to meet my good friend <ulink url="http://twitter.com/fabricemous">Fabrice
+          Mous</ulink> again) as it provided the opportunity for ~130 exams to be taken by FOSDEM
+        visitors. </para>
+      <para>We even managed to fill up our largest room, <ulink
+        url="http://fosdem.org/2011/schedule/room/janson">Janson</ulink>, which is one of the
+        largest auditoriums in Belgium with 1400 seats, up to the limit and even a bit more for the
+        keynotes. That was impressive, to say the least. </para>
+      <para>It was a great pleasure to meet so many fine people and friends again (including, but not
+        exclusively, Henne Vogelsang, Peter Linnell, Andrew Wafaa, Jürgen Weigert, Will Stephenson,
+        Bruno Friedmann, Pavol Rusnak, Michal Hrusecky, Vincent Untz, Michael Meeks, Daniel Seuffert,
+        Frank Karlitschek, Delphine Lebedel, Tristan Nitot, William Quiviger, Tom Marble, etc etc
+        etc... -- sorry if I forgot you, I'm just too lazy and tired to keep pulling names out of my
+        brain at this point, too many to list :)), even if it was usually only for a short chat as I
+        have to keep running around all over the venue to get things done. </para>
+      <para>That's usually the point where one realizes again that it is so much about the people,
+        more than anything else (you are fine to disagree here, dear reader, it is just my very humble
+        opinion). So many FOSS projects are driven by so many great people, I'd just love it to last
+        for a couple of weeks to have the time to have beers (or coffee) with every single one of
+        them, at the very least the ones I already know. I'm really happy and thankful -- to FOSDEM, I
+        guess -- to be so lucky to have been in touch with so many interesting people, and obviously
+        hope to still be in the future. </para>
+      <para>And FOSDEM is also a very inclusive event, where projects and initiatives covering the
+        whole spectrum in terms of technologies, domains and (OSI compatible) licenses get together to
+        have a great deal of fun. I believe that every single visitor would agree that it is the most
+        effective way to get our motivation batteries loaded to spend our spare time, energy, love,
+        sweat and blood into doing such great things. </para>
+      <para>On the cross-pollination front, which is more and more of a priority for us, I'm happy to
+        see the <ulink url="http://fosdem.org/2011/schedule/track/crossdistro_devroom">Crossdistro
+          developer room</ulink> clearly evolve into the right direction (thanks to <ulink
+            url="http://grep.be/">Wouter Verhelst</ulink> (of Debian fame) to take care of that); where
+        not quite there yet, as intentions need to be followed by much more action, but it is a step
+        forward already, and such things do take a good deal of time, as much as many of us would like
+        to see it happening as soon as possible, especially at openSUSE. FOSDEM is such a great
+        opportunity to get together with other projects and people, as so many of them are on the
+        spot. </para>
+      <para>For a couple of final words, my big "thank you" goes out, in no particular order, to the
+        volunteers who helped us during the weekend, to the sponsors that support the event, to the
+        visitors who have donated money in order to keep giving us the chance of remaining
+        independent, to the people and projects who were there at the stands, devrooms, lightning
+        talks, to the speakers who accepted our invitations, obviously to the other members of the
+        FOSDEM organization team (we did it again! :D), to the ULB and CI for providing us with their
+        infrastructure, and, of course, to the people who attended. </para>
+      <para>On a side note, if you were at FOSDEM 2011, please take a minute to fill out our <ulink
+        url="http://fosdem.org/2011/census">census </ulink>as well as our <ulink
+          url="http://fosdem.org/2011/feedback">feedback form</ulink>.</para>
+      <!-- ($ ld: 8.2.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
