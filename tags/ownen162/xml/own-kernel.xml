@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-updated-Radeon-drivers-mdadm-and-ALSA-1185791.html"
+        >h-online/Thorsten Lemmhuis: Kernel Log: Consistent names for network interfaces</ulink>
+    </title>
+    <para><emphasis role="bold">A new version of the AMD driver from X.org improves support for
+        modern Radeon graphics chips. An updated mdadm, initially only designed for developers,
+        allows the RAID functions of modern Intel motherboard chip-sets to be used. After nine
+        months, the ALSA project has published a new version. </emphasis></para>
+    <para>AMD’s kernel and X.org developer Alex Deucher has <ulink
+        url="http://thread.gmane.org/gmane.comp.freedesktop.xorg/45671">published</ulink> version
+      6.14.0 of driver package xf86-video-ati. It contains the X.org driver for Radeon graphics
+      hardware, which provides much better support for the latest version of Radeon graphics chips.
+      For example, it now not only controls the graphics kernel of the Fusion processors developed
+      under codename <quote>Ontario</quote>, but also the Northern Islands GPUs based on Radeon HD
+      models 62xx to 68xx. With both of them, 2D acceleration via EXA now works, as does video
+      acceleration with the antiquated Xv (Xvideo), but in both cases the driver remains dependant
+      on <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-1-Graphics-1176900.html"
+        >Linux kernel 2.6.38</ulink>, which is still under development and is expected to be
+      released at the end of March or beginning of April. Its DRM driver with functions for KMS
+      (kernel-based mode-setting) is required anyway for Northern Islands GPUs because the driver
+      does not support UMS (user mode-setting) on these chips. </para>
+    <para>In combination with KMS in kernel 2.6.36 and later, the driver also supports EXA and Xv on
+      Evergreen GPUs on Radeon HD 5,000 series models. The developers have considerably upgraded the
+      man page in the new version. Along with kernel 2.6.38, the driver offers page-flipping support
+      so that image updates are more precisely synchronised with the start of frame re-draw. For
+      further information on this new technology in Linux 2.6.38, see the <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-1-Graphics-1176900.html">first
+        part</ulink> of the series <quote>Coming in 2.6.38</quote>. </para>
+    <!-- ($ ld: 10.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://schaiba.wordpress.com/2011/02/11/kernel-weekly-news-12-02-2011/">Rares
+        Aioanei: kernel weekly news 12.02.2011</ulink></title>
+    <para>Rares gives us this week a great Kernel Review. Thanks Rares :-)</para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.kroah.com/log/linux/maintainer-05.html">Greg
+        Kroah-Hartman: How not to piss off a kernel subsystem maintainer - part 5</ulink></title>
+    <para>Fifth in a long series of complaints... See <ulink
+        url="http://www.kroah.com/log/linux/maintainer.html">part 1</ulink> and <ulink
+        url="http://www.kroah.com/log/linux/maintainer-02.html">part 2</ulink> and <ulink
+        url="http://www.kroah.com/log/linux/maintainer-03.html">part 3</ulink> and <ulink
+        url="http://www.kroah.com/log/linux/maintainer-04.html">part4</ulink> for previous
+      atrocities. </para>
+    <para>Heck, It's not like I haven't said all of this before, but it sure seems like no one
+      learns from the past, or reads the documentation that we write for how to actually submit a
+      patch for the kernel. Linux has one of the best documented procedures for how to do this, it's
+      not like it's a secret or something... </para>
+    <para>Anyway, here's a list of patches that people have sent me in this week alone that have
+      caused me major problems:<itemizedlist>
+        <listitem>
+          <para>patch was never even build tested, and of course, it breaks when you do build
+            it.</para>
+        </listitem>
+        <listitem>
+          <para>patch does build, but it was never tested because the patch does the opposite of
+            what the submitter wanted to do.</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with no authorship </para>
+        </listitem>
+        <listitem>
+          <para>patch sent with no signed-off-by line</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with no description of what the patch did</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with a description, yet it was not the description of the patch
+            itself</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with a description that the patch only did one thing, yet the patch did 4
+            different things</para>
+        </listitem>
+        <listitem>
+          <para>patch sent with a description that made no sense at all</para>
+        </listitem>
+        <listitem>
+          <para>patch sent in a series of 13 patches, all with the same exact subject, and no
+            description of what the patch did</para>
+        </listitem>
+        <listitem>
+          <para>a one line patch that if applied, would instantly break the build</para>
+        </listitem>
+        <listitem>
+          <para>patch that asked for reviews, yet gets angry when you ask why something was done a
+            certain way</para>
+        </listitem>
+        <listitem>
+          <para>patch that asked for reviews, and when asked, can't explain why code was done a
+            certain way, blaming a non-existent person for that portion</para>
+        </listitem>
+        <listitem>
+          <para>patch that said it fixed a bug, yet added a new feature without fixing the original
+            bug</para>
+        </listitem>
+        <listitem>
+          <para>patch for cleaning up coding style issues</para>
+        </listitem>
+        <listitem>
+          <para>yet adds different coding issues patches asked for review, yet had obviously never
+            been even run through our automatic "test this patch for sanity" tools.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Yeah, it's been a fun week... </para>
+    <para>And if anyone ever wonders why code reviewers are grumpy, just look at the above list and
+      understand.</para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+</sect1>

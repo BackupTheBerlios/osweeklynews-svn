@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+  <!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->
+  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.novell.com/news/press/2011/2/novell-makes-it-easier-to-run-business-critical-linux-workloads-on-hp-proliant-and-bladesystem-servers-.html"
+          >Novell Makes it Easier to Run Business-Critical Linux Workloads on HP ProLiant and
+          BladeSystem Servers</ulink>
+      </title>
+      <para>Novell today announced it has made it easier and more affordable for customers to run
+        business-critical applications in a Linux* environment on HP ProLiant* and BladeSystem*
+        servers. Available immediately, Novell has bundled <ulink
+          url="http://www.novell.com/products/highavailability/">SUSE® Linux Enterprise High
+          Availability (HA) Extension</ulink> for no additional cost with select SUSE Linux
+        Enterprise Server subscriptions sold through HP and authorized resellers for a limited time.
+        (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://lwn.net/Articles/426842/">The Ada Initiative launches</ulink>
+      </title>
+      <para>Ada Initiative launches to promote women in open technology and culture </para>
+      <para>Open source activists Valerie Aurora and Mary Gardiner announce the launch today of the
+        Ada Initiative (http://adainitiative.org/), a non-profit organization to promote
+        women&apos;s participation in open technology and culture. </para>
+      <para>Open technology and culture, including open source software, open content, and related
+        communities, suffer from a dearth of women at all levels. &quot;Open technology and culture
+        are shaping our future and must reflect all people. Involving more women in the creation of
+        our future is a critical step in building a healthy Internet world,&quot; says Mitchell
+        Baker, chair of the Mozilla Foundation. The Ada Initiative will concentrate on focused,
+        direct action programs, including recruitment and training for women, education for
+        community members, and working with companies and projects to improve their outreach to
+        women. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://camp.kde.org/">Welcome to Camp KDE 2011!</ulink>
+      </title>
+      <para>The 3rd annual Camp KDE will be held on the 4th and 5th of April, 2011 in San Francisco,
+        California at <ulink url="http://www.jdvhotels.com/hotels/kabuki">Hotel Kabuki</ulink>. Held
+        annually in the United States, Camp KDE provides a regional opportunity for KDE contributors
+        and enthusiasts to gather, learn about the latest KDE happenings and share their
+        experiences. The event will feature in-depth talks by core KDE developers. </para>
+      <para>This year Camp KDE is co-located with the <ulink
+          url="http://events.linuxfoundation.org/events/collaboration-summit">Linux Foundation
+          Collaboration Summit</ulink>, which takes place April 6-8, 2011. Co-location with the
+        Collaboration Summit will allow Camp KDE attendees a unique opportunity to learn from and
+        share their experiences with members of many other successful Free and Open Source software
+        projects and companies. All Camp KDE attendees are invited to attend the Collaboration
+        Summit. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.desktoplinux.com/news/NS7312694782.html">Prashanth Venkataram:
+          Preview - GNOME 3 </ulink>
+      </title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://1.bp.blogspot.com/_c0--RsXwTkw/TUx7fv5mxCI/AAAAAAAABNQ/uNZlx1MtApA/s320/Screenshot1.png"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>Usually, when I review desktop environments, I review KDE, specifically version 4. Why?
+        It&apos;s constantly evolving and improving, and it&apos;s nice to be able to see such
+        changes occurring on all fronts so quickly. By contrast, GNOME and Xfce (not to mention
+        other WMs like Openbox) have remained relatively the same over the past few releases. Sure,
+        Nautilus got tabbed browsing in version 2.22 (I think) and split-pane viewing in version
+        2.30. Sure, there may have been a couple other back-end changes. But generally speaking,
+        where KDE 4 has changed pretty noticeably between point releases, GNOME has been quite
+        stable. That&apos;s all going to change, because GNOME is about to be released under a whole
+        new number: 3. That&apos;s right: the number preceding the decimal point in a GNOME release
+        will no longer be &apos;2&apos;.</para>
+      <para>There are some pretty big changes in store for GNOME 3, much of which can be seen in the
+        front-end. Because many major distributions are planning to upgrade to GNOME 3 once that
+        gets released (in a few weeks, apparently), it&apos;s important that users try GNOME 3
+        beforehand both to get accustomed to it as well as to find and report lingering bugs.
+        Happily, the good people at Fedora and openSUSE have put together live CD ISO files with
+        vanilla GNOME 3 on them, just for the purpose of trying out GNOME 3. I downloaded both files
+        and intended to make a multiboot live setup using MultiSystem, but unfortunately MultiSystem
+        reacted with error messages to both ISOs. Knowing that openSUSE doesn&apos;t play well with
+        UnetBootin, I decided to just try out the Fedora version on a live USB through UnetBootin.
+        Follow the jump to see how it goes.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://4.bp.blogspot.com/_c0--RsXwTkw/TUx7f_2UmHI/AAAAAAAABNU/-BlafqbqZQg/s320/Screenshot2.png"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>Unfortunately, I initially had a bit of booting trouble when I selected the default boot
+        menu option. The OS hung halfway through booting, so I forced a cold restart. I then
+        selected the <quote>Boot </quote>option instead of either <quote>Default</quote> or
+          <quote>desktop_[stuff] </quote>(the name of the ISO file) and that seemed to work fine — I
+        even got to see the lovely Fedora boot splash screen (the Fedora logo <quote>filling
+          up</quote>). After the boot process came the login screen. I guess GDM hasn&apos;t changed
+        a whole lot since GNOME 2.30, though for some reason the GTK+ theming looked really ugly.
+        Upon seeing it, I hoped it was just an issue with GDM and not the whole GNOME desktop
+        theming ability, and thankfully, as I found out shortly thereafter, I was right. I then
+        proceeded to the desktop. (...)</para>
+      <!--($ ld: 10.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.computing.co.uk/ctg/news/2024721/oracle-ibm-share-source-java-leadership"
+          >Computing.co.uk/Derek du Preez: Oracle and IBM to share open-source Java
+          leadership</ulink>
+      </title>
+      <para>Oracle has agreed to share governance of the OpenJDK Java community with IBM, in a move
+        that demonstrates considerable good will, according to one analyst.</para>
+      <para>The company has created a series of <ulink
+          url="http://cr.openjdk.java.net/~mr/bylaws/draft-openjdk-bylaws-07.html">bylaws</ulink>
+        outlining the way the governance will be structured, with Oracle appointing itself chairman
+        and the OpenJDK lead, and IBM taking the role of vice chairman. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://asiajin.com/blog/2011/02/08/facebook-japan-takes-hard-line-banning-pseudo-names-and-requires-id/"
+          >Asiajin/Akky Akimoto: Facebook Japan Takes Hard Line, Banning Pseudo Names And Requires
+          ID</ulink>
+      </title>
+      <para>Today February 8, some Japanese web users who are influential in tech communities like
+        Hatena and Twitter, started reporting they were locked out from Facebook. After trying to
+        log in, they were taken to the form, which title is “Complaints against a ban of your
+        account, identity demanded”. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/403466-review-hands-on-libreoffice-33"
+          >Linux.com/Brian Proffitt: Review: Hands on LibreOffice 3.3</ulink>
+      </title>
+      <para>The Document Foundation released the first new version of its LibreOffice suite on
+        January 25th, and it was far too tempting not to grab a copy and run it through its paces.
+        And while there are a few new features of note, this is still pretty much OpenOffice.org,
+        with all the attendant advantages and foibles.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata width="25%" fileref="http://www.linux.com/images/stories/calc.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>This is to be expected, of course, since the fork of LibreOffice from the
+        Oracle-controlled (formerly Sun-controlled) OpenOffice.org project only occurred four months
+        ago. Expecting a drastic change is folly in that timeframe. But it still bears noting,
+        because a lot of the problems users may have with the OpenOffice.org suite could still be
+        present. </para>
+      <para>A lot, but not all, so let&apos;s give credit where credit is due. The feature I found
+        most helpful in LibreOffice 3.3 was a much better improvement in file importing from
+        Microsoft Office. OpenOffice.org has long-touted its capability to open and save Office
+        files, but in reality most users know that any file with any kind of complexity was going to
+        have to have problems coming across. </para>
+      <para>In LibreOffice, that&apos;s no longer the case. Opening some heavily-revised and
+        commented chapter files from my last book in OpenOffice.org usually leads to mis-rendered
+        comments and loads of font issues. LibreOffice Writer didn&apos;t even blink: all revisions,
+        comments, and fonts came across perfectly. This was good news, since I would much rather use
+        LibreOffice on Linux than fire up a Windows VM when I&apos;m writing for publishers
+        insistent on clean .docx files. (...)</para>
+      <!-- ($ ld: 8.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.tildehash.com/?article=interview-with-richard-stallman-2011"
+          >Tildehash: Interview with Richard Stallman (2011)</ulink>
+      </title>
+      <para><ulink url="http://www.stallman.org/">Richard M. Stallman</ulink> (born March 16, 1953),
+        often shortened to RMS, is an American software freedom activist and computer programmer. In
+        September 1983, he launched the GNU Project to create a <ulink
+          url="http://www.gnu.org/philosophy/free-sw.html">free</ulink> Unix-like operating system,
+        and has been the project&apos;s lead architect and organizer. With the launch of the <ulink
+          url="http://www.gnu.org/">GNU Project</ulink>, he initiated the <ulink
+          url="http://en.wikipedia.org/wiki/Free_software_movement">Free Software Movement</ulink>;
+        in October 1985 he founded the <ulink url="http://www.fsf.org/">Free Software
+          Foundation</ulink>. </para>
+      <para>Richard Stallman pioneered the concept of <ulink
+          url="http://en.wikipedia.org/wiki/Copyleft">Copyleft</ulink> and he is the main author of
+        several copyleft licenses including the <ulink
+          url="http://en.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public
+          License</ulink>, the most widely used Free Software license. Since the mid-1990s, Richard
+        Stallman has spent most of his time advocating for Free Software, as well as campaigning
+        against both <ulink url="http://en.wikipedia.org/wiki/Software_patent">software
+          patents</ulink> and what he sees as excessive extension of copyright laws. Stallman has
+        also developed a number of pieces of widely used software, including the original <ulink
+          url="http://www.gnu.org/software/emacs/">Emacs</ulink>, the <ulink
+          url="http://gcc.gnu.org/">GNU Compiler Collection (GCC)</ulink>, the <ulink
+          url="http://www.gnu.org/software/gdb/">GNU Debugger (GDB)</ulink>, and many tools in the
+          <ulink url="http://en.wikipedia.org/wiki/Coreutils">GNU Coreutils</ulink>. He co-founded
+        the <ulink url="http://www.progfree.org/">League for Programming Freedom</ulink> in 1989. </para>
+      <!-- ($ ld: 8.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.unixmen.com/gaming-on-linux/1131-19-awesome-opensource-games-for-linux-"
+          >Unixmen/M. Zinoune (Zinovsky): 19 Awesome Open source games for Linux</ulink>
+      </title>
+      <para>This is a nice collection of 19 open source games for Linux that contains most
+        addictive, fun and refined games. For some of these games, also installation steps are
+        included. Enjoy</para>
+      <!--($ ld: 8.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/cups-and-sun">Linux Journal/Johan Thelin:
+          CUPS and Sun</ulink>
+      </title>
+      <para>I recently spent some time getting one of my long term projects built. For quite some
+        time I&apos;ve had an old desktop computer serve as my printer server. As this machine is
+        kind of loud, I&apos;ve turned it off when not using it. This led to some client machines
+        not appreciating the printer becoming available at the wrong time.</para>
+      <para>In my posession I also had an old mini-itx board with passive cooling (large heat sinks)
+        and a pair of sun portable scsi hdd cases. Incidentally, the latter fit into the former. The
+        plan for a new print server was born. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://genek.net/wordpress/">Adventures in Linux: Software Review: The KDE 4.6
+          Desktop Environment</ulink>
+      </title>
+      <para><emphasis role="bold">Author’s note: </emphasis></para>
+      <para>most of the screenshots contained herein were taken from the KDE release announcement.
+        Thanks to KDE for making these pics available for re-use. </para>
+      <para><emphasis role="bold">Ancient History: </emphasis></para>
+      <para>It’s been three years, and it’s still hard to put the KDE 4.0 debacle behind me. I was
+        running KDE 3.5 on Debian stable happy as a clam, and then one fine day in January of 2008
+        the KDE folks dumped their brand-new, completely re-vamped desktop environment into our
+        laps. I couldn’t get it for Debian so I installed another distro just to check it out… and
+        used it for less than 24 hours. I could see what they were trying to do, and there were some
+        good ideas there, but the implementation was so unbelievably bad that I missed out on the
+        next two releases altogether. I didn’t try KDE 4.x again until January of last year, when I
+        installed Debian testing with the KDE 4.3 desktop. It was great! Since then KDE has gone
+        from strength to strength. KDE 4.4 was mature and stable, and KDE 4.5 added polish and
+        finesse. KDE 4.6, released a little over a week ago, ups the ante once again. (...)</para>
+      <!--($ ld: 10.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+        url="http://blog.qt.nokia.com/2011/02/12/nokia-new-strategic-direction-what-is-the-future-for-qt/"
+        >QTBlog/Daniel Kihlberg: Nokia new strategic direction. What is the future for
+        Qt?</ulink></title>
+      <para>Wow, what a day… Nokia outlined its new platform strategy for smartphones, with Windows
+        Phones as it primary smartphone platform in a proposed partnership with Microsoft… and
+        Microsoft’s tools would be used for Nokia Windows Phone application development … and guess
+        what, it has raised a lot of questions in the Qt community. </para>
+      <para>So the question is, what is the future for Qt? </para>
+      <para>Qt will continue to play an important role in Nokia. Consider the following:<itemizedlist>
+        <listitem>
+          <para>The retention of Nokia’s 200 million Symbian-users is vital and Nokia has targeted
+            sales of 150 million more Symbian-devices in years to come. To achieve that Nokia
+            needs to continue the modernization of Symbian in Qt – to keep existing consumers
+            engaged and to attract new customers, either upgrading from existing Symbian devices
+            to Qt enabled devices or entirely new to Nokia.</para>
+        </listitem>
+        <listitem>
+          <para>Nokia also announced it will ship its first MeeGo-related device in 2011, which
+            will rely on the Qt ecosystem – and then will continue with MeeGo as an open source
+            project for future disruption. Nokia can’t afford to be behind the next disruption
+            again and Qt can play an important role in making sure it isn’t.</para>
+        </listitem>
+        <listitem>
+          <para>With Qt Quick and Qt SDK 1.1 releases in the coming months we are expecting the Qt
+            developer community to continue to grow – adding to the 400.000 developers using Qt
+            today. Qt is developed together with the community and we expect the pace of
+            innovation to increase even further as the community grows.</para>
+        </listitem>
+        <listitem>
+          <para>We in Nokia are one of tens of thousands of companies in multiple industries
+            actively using and contributing to Qt, making Qt relevant for both mobile, desktop and
+            other embedded developers</para>
+        </listitem>
+        <listitem>
+          <para>Qt expansion: We have continued to hire Qt developers and we will continue to
+            improve and expand Qt in the future. Qt is great at delivering innovation; we have
+            been doing that for 15 years. With the upcoming release of Qt Quick, we will reach out
+            to new users and make it even easier to create great apps and UIs for many platforms
+            including Symbian and MeeGo.</para>
+        </listitem>
+        <listitem>
+          <para>The new Qt SDK 1.1 technology preview. We now offer only one SDK for both desktop
+            and mobile developers, which makes it easier to target more platforms by using just
+            one SDK.</para>
+        </listitem>
+        <listitem>
+          <para>Qt everywhere. Qt continues to make vast inroads into especially low end Linux
+            devices and distro’s. Qt also continues to provide a platform for others to innovate
+            and differentiate upon. For example Dreamworks switching all their internal animation
+            tools to Qt and making cool movies like “MegaMind” and “How to Train Your
+            Dragon”.</para>
+        </listitem>
+      </itemizedlist></para>
+      <para>Qt is increasingly popular. During 2010, we had 1.5+ million downloads at qt.nokia.com
+        (alone) – twice as much as during 2009 – and with the up-coming innovation and additional
+        investments in Qt combined with the introduction of open governance, I believe Qt will be
+        used more than ever before.</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.net-security.org/secworld.php?id=10544">HELP NET SECURITY: USB
+          autorun attacks against Linux</ulink>
+      </title>
+      <para>Many people think that Linux is immune to the type of Autorun attacks that have plagued
+        Windows systems with malware over the years. However, there have been many advances in the
+        usability of Linux as a desktop OS - including the addition of features that can allow
+        Autorun attacks.</para>
+      <para>This Shmoocon presentation by Jon Larimer from IBM X-Force starts off with a definition
+        of autorun vulnerabilities and some examples from Windows, then jumps straight into the
+        Linux side of things. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>LOL</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://e-tote-kala.blogspot.com/2011/01/first-joke-of-year-if-operating-systems.html"
+          >Kostas Koudaras: First Joke of the year: If Operating Systems Ran The Airlines</ulink>
+      </title>
+      <para>The first joke of the year :-) </para>
+    </blockquote>
+  </sect2> -->
+</sect1>
