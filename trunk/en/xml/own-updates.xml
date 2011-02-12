@@ -24,22 +24,32 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink
-        url="http://seife.kernalert.de/blog/2011/02/03/openstack-bexar-packages-for-suse-and-sles11sp1-are-ready/"
-        >Stefan Seyfried: OpenStack “bexar” packages for openSUSE and SLES11SP1 are
-      ready</ulink></title>
-    <para>Shortly after the <ulink url="https://launchpad.net/~openstack">OpenStack “bexar”</ulink>
-      (spoken “bear”) release was ready, my packages finished building and are available at <ulink
-        url="http://download.opensuse.org/repositories/isv:/B1-Systems:/OpenStack/">the
-        isv:B1-Systems:OpenStack</ulink> Build Service repo. </para>
-    <para>Grab them, while they are still hot! </para>
-    <para>The ride might still be a bit bumpy as the whole OpenStack development is very Ubuntu
-      centric, and thus some of the dependencies, especially to old versions of python stuff are
-      tricky to find. However, first results look promising. </para>
-    <para>I’ll update here soon with some short hints on how to configure and use the whole lot. </para>
-    <para>Thanks go to my colleagues Christian Berendt and Andre Nähring at B1 Systems GmbH who have
-      been tireless in testing packages and reporting packaging bugs and other problems. Thanks also
-      to Gregory Haskins with whom I started the packaging effort early in december.</para>
-    <!-- ($ ld: 3.2.11 sm $) -->
+    <title><ulink url="http://packman.links2linux.org/package/eMount">Packman: eMount
+        0.11.0-1.pm</ulink></title>
+    <para><quote>EMount is a free system administrator tool for Linux that can mount, encrypt and
+        manage disk image files and physical disk drives. It relies on cryptsetup, which implements
+        the LUKS disk encryption specification.</quote></para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/cmus">Packman: cmus
+      2.3.4-1.pm</ulink></title>
+    <para><quote>CMus is a small and fast text mode music player for Linux and *BSD. Supported file
+        formats include FLAC, Ogg, MP3 (via libmad), wav, and all module formats supported by
+        libmodplug. Included output plugins are ALSA, ARTS, OSS, and Sun. It can be controlled
+        through a UNIX socket. Background playlist loading and a metadata cache make loading files
+        very fast. Playqueue, playlist filters and directory browser. Three playlist views are
+        available: artist/album/track, shuffle list, and sorted list. There are three play modes:
+        all, artist, album.</quote></para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/aegisub">Packman: aegisub
+        2.1.8-0.pm</ulink></title>
+    <para><quote>Aegisub is an advanced subtitle editor that assists in the creation of subtitles,
+        translations, and complex overlays using audio or video. Developed by enthusiasts it builds
+        on workflows created and perfected through professional, hobby, and everyday
+        use.</quote></para>
+    <!-- ($ ld: 12.2.11 sm $) -->
   </blockquote>
 </sect1>

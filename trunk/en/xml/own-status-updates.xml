@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,15 +19,17 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-<!--
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <title>openSUSE Weekly News searches for contributors</title>
       <para></para>
     </blockquote>
-  </sect2> -->  <sect2 role="distribution">
+  </sect2> -->
+  <sect2 role="distribution">
     <title>Distribution</title>
+    <!--
     <blockquote>
       <title>
         <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
@@ -52,21 +55,23 @@ zypper in enlightenment</screen></para>
         in your *DM. </para>
       <para>Have a lot of fun and share your experiences… I will test it after I get some
         sleep.</para>
-<!-- ($ ld: 2.2.11 sm $) -->    </blockquote>
+    </blockquote> -->
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-<!--
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -113,9 +118,10 @@ zypper in enlightenment</screen></para>
         also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
         appliances!</para>
       </blockquote>
-      </sect2> -->  <sect2 role="teamreports">
+      </sect2> -->
+  <sect2 role="teamreports">
     <title>Team Report</title>
-<!--
+    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -127,7 +133,8 @@ zypper in enlightenment</screen></para>
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -275,10 +282,12 @@ zypper in enlightenment</screen></para>
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <blockquote>
-        <title>
+      <!--
+      <blockquote>        
+       <title>
           <ulink url="http://lizards.opensuse.org/2011/01/30/new-osc-feature-to-edit-a-request/">Marcus Hüwe: new osc feature to edit a request</ulink>
         </title>
         <para>I just pushed a new osc feature to git master which allows you to edit a submit
@@ -323,13 +332,14 @@ zypper in enlightenment</screen></para>
         <para>By the way you can also do it manually (osc rq clone &lt;id&gt;; osc co &lt;clone
           project&gt;; fix package(s) and commit changes; create a new request, accept it and
           supersede original request).</para>
-      </blockquote>
+      </blockquote> -->
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
-<!-- ($ ld: 30.1.11 sm $) -->      </formalpara>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
+      </formalpara>
     </sect3>
-<!--
+    <!--
     <sect3 role="evergreen">
       <title>Evergreen/Tumbleweed Team</title>
       <blockquote>
@@ -337,7 +347,8 @@ zypper in enlightenment</screen></para>
         <para></para>
       </blockquote>
     </sect3>
-    --><!--
+    -->
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -348,34 +359,39 @@ zypper in enlightenment</screen></para>
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.wafaa.eu/entry/smeegol-nogo-meego-gogo-1-56.html">Andrew Wafaa: Smeegol NoGo MeeGo GoGo</ulink>
+          <ulink url="http://www.wafaa.eu/entry/smeegol-nogo-meego-gogo-1-56.html">Andrew Wafaa:
+            Smeegol NoGo MeeGo GoGo</ulink>
         </title>
-        <para>As many people will know I&apos;ve spent around 18 months of my spare time packaging and
-          building the Netbook UX for Moblin/MeeGo on openSUSE. Not on my own, but with a community
-          around me. I would just like to say a huge thank you to that community, you&apos;ve been great
-          and spurred me on when I felt like the whole world was conspiring against me. </para>
+        <para>As many people will know I&apos;ve spent around 18 months of my spare time packaging
+          and building the Netbook UX for Moblin/MeeGo on openSUSE. Not on my own, but with a
+          community around me. I would just like to say a huge thank you to that community,
+          you&apos;ve been great and spurred me on when I felt like the whole world was conspiring
+          against me. </para>
         <para>Sound a bit morose? Well in a way it is. Basically by all accounts MeeGo is stopping
           all work on the Netbook UX. Yup, all our hard work is now almost for nothing :-( </para>
-        <para>The first piece of evidence is the <ulink url="http://wiki.meego.com/Release_Engineering/Plans/1.2">Release Engineering Plans for 1.2</ulink>. If you look at the bottom, you&apos;ll notice that the Netbook doesn&apos;t get any
-          mention in Features, just bugs. Actually the same is for the 1.1 release. In all honesty,
-          the biggest change between 1.1 and its predecessor is that all refernces to Moblin was
-          replaced with MeeGo. The next piece of info came at the fabulous FOSDEM XI (I&apos;ll do a
-          seperate post on the event later). I spoke to several people directly and indirectly
-          involved with MeeGo, especially the Netbook UX, about the lack of info on the Netbook UX.
-          Each one of them said the same thing - MeeGo is putting the Netbook UX into Maintanence
-          Mode, stopping any further development on it, and only providing bug fixes for major
-          issues. I asked if there was going to be any announcement, basically the answer was
-          nothing official. They&apos;re just going to let it drift away - just like netbooks themselves
-          have. </para>
+        <para>The first piece of evidence is the <ulink
+            url="http://wiki.meego.com/Release_Engineering/Plans/1.2">Release Engineering Plans for
+            1.2</ulink>. If you look at the bottom, you&apos;ll notice that the Netbook doesn&apos;t
+          get any mention in Features, just bugs. Actually the same is for the 1.1 release. In all
+          honesty, the biggest change between 1.1 and its predecessor is that all refernces to
+          Moblin was replaced with MeeGo. The next piece of info came at the fabulous FOSDEM XI
+          (I&apos;ll do a seperate post on the event later). I spoke to several people directly and
+          indirectly involved with MeeGo, especially the Netbook UX, about the lack of info on the
+          Netbook UX. Each one of them said the same thing - MeeGo is putting the Netbook UX into
+          Maintanence Mode, stopping any further development on it, and only providing bug fixes for
+          major issues. I asked if there was going to be any announcement, basically the answer was
+          nothing official. They&apos;re just going to let it drift away - just like netbooks
+          themselves have. </para>
         <para>There are most likely a huge number of reasons, which is fair enough. I was given a
-          couple of reasons - 1: Netbooks arent selling anymore, the Netbook ship didn&apos;t really sail
-          away, but was sunk. 2: MeeGo doesn&apos;t want to invest anymore time or effort in gtk
-          development, and wants to concentrate on Qt. Now I take this last one with a tiny bit of
-          salt, only because both Intel and Nokia employ (or at least did so) a sizable team of
+          couple of reasons - 1: Netbooks arent selling anymore, the Netbook ship didn&apos;t really
+          sail away, but was sunk. 2: MeeGo doesn&apos;t want to invest anymore time or effort in
+          gtk development, and wants to concentrate on Qt. Now I take this last one with a tiny bit
+          of salt, only because both Intel and Nokia employ (or at least did so) a sizable team of
           GNOME developers. Saying that though, if they want to keep a roof over their heads they
           have to do what their employer says, and both originally started working with touch
           devices. So it does make sense as much as it doesn&apos;t. </para>
@@ -384,24 +400,27 @@ zypper in enlightenment</screen></para>
           but will clear out the 1.1 and 1.2 repos that I had - might as well give those resources
           back :-) . Now if anyone would like to continue what I and others had started, then let me
           know and I would be more than happy. </para>
-        <para>I cant say what the other distros are going to do, I&apos;ve spoken to my counter part in
-          Fedora, and they&apos;re having a think about it as they were busting their chops to get things
-          in for the F15 release. Either way I wish all involved luck. </para>
+        <para>I cant say what the other distros are going to do, I&apos;ve spoken to my counter part
+          in Fedora, and they&apos;re having a think about it as they were busting their chops to
+          get things in for the F15 release. Either way I wish all involved luck. </para>
         <para>Now before any of you conspiracy theory junkies get worked up - this has nothing to do
           with the whole MeeGo Trademark issue that Smeegol had with the Linux Foundation. As it
           happens I was due to have a conversation with the Linux Foundation about the issues
           between us and them, but have had to re-schedule due to travel constraints from one party
           or the other. I still intend to speak with the LF about the issues, as they are still
           present in the other UX&apos;s that they are developing. </para>
-        <para>So it&apos;s time for me to close off and say, so long and thanks for all the fish! I&apos;ll
-          still be around, I&apos;ll probably start getting back into the GNOME swing of things, and help
-          fcrozat with GNOME3 etc. Oh and I&apos;ve got a lunatic idea for a project which I intend to
-          kick off (stay tuned ;-) ). </para>
-        <para><ulink url="http://wiki.meego.com/MeeGo_Style_Guide#Trademark_Usage">MeeGo is a trademark of the Linux Foundation</ulink>.</para>
-<!-- ($ ld: 10.2.11 sm $) -->      </blockquote>
+        <para>So it&apos;s time for me to close off and say, so long and thanks for all the fish!
+          I&apos;ll still be around, I&apos;ll probably start getting back into the GNOME swing of
+          things, and help fcrozat with GNOME3 etc. Oh and I&apos;ve got a lunatic idea for a
+          project which I intend to kick off (stay tuned ;-) ). </para>
+        <para><ulink url="http://wiki.meego.com/MeeGo_Style_Guide#Trademark_Usage">MeeGo is a
+            trademark of the Linux Foundation</ulink>.</para>
+        <!-- ($ ld: 10.2.11 sm $) -->
+      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/07/appmenu-gtk-and-indicator-appmenu/">Nelson Marques: AppMenu-GTK and Indicator-appmenu</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/02/07/appmenu-gtk-and-indicator-appmenu/"
+            >Nelson Marques: AppMenu-GTK and Indicator-appmenu</ulink>
         </title>
         <para>This is probably one of the most controversial features that has been subject of
           continuous work from the Ayatana Project. This two pieces of software work as one and
@@ -424,7 +443,8 @@ zypper in enlightenment</screen></para>
           another option.</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="50%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot2.png"/>
+            <imagedata width="50%"
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot2.png"/>
           </imageobject>
         </mediaobject>
         <para>Required Patches on GTK:<itemizedlist>
@@ -436,8 +456,10 @@ zypper in enlightenment</screen></para>
                 the possible sidekicks of not having it there)</para>
             </listitem>
           </itemizedlist></para>
-<!-- ($ ld: 8.2.11 sm $) -->      </blockquote>
+        <!-- ($ ld: 8.2.11 sm $) -->
+      </blockquote>
     </sect3>
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -543,9 +565,9 @@ zypper in enlightenment</screen></para>
         <para>Please help testing KDE SC 4.6 from the openSUSE repos in order to make it shine in
           openSUSE 11.4. Feedback can go to the related wiki pages or straight to
           opensuse-kde@.</para>
-<!-- ($ ld: 30.1.11 sm $) -->      </blockquote>
-    </sect3>
-<!--
+     </blockquote> 
+     </sect3> -->
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -593,7 +615,8 @@ zypper in enlightenment</screen></para>
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
@@ -604,21 +627,25 @@ zypper in enlightenment</screen></para>
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+            We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 339)</ulink>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
+              (Score: 339)</ulink>
           </title>
           <para>&quot;Network installation could be improved by running package download and package
             installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 173)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
+              boot (Score: 173)</ulink>
           </title>
           <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -641,7 +668,8 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 114)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
+              114)</ulink>
           </title>
           <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
@@ -655,7 +683,8 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 74)</ulink>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
+              Linux) (Score: 74)</ulink>
           </title>
           <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
@@ -663,7 +692,8 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 68)</ulink>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
+              &quot;Installation Summary&quot; (Score: 68)</ulink>
           </title>
           <para>&quot;The YaST Qt package manager should provide as much information in the
             &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
@@ -671,7 +701,8 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score: 55)</ulink>
+            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs
+              (Score: 55)</ulink>
           </title>
           <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change
             etc. is very scary for many users.</para>
@@ -679,10 +710,12 @@ zypper in enlightenment</screen></para>
             problem without giving much help. This is a cause for many complaints, and contributes
             to myths of RPM dependency hell still existing today. (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 12.2.11 sat *updated* $) -->      </sect4>
+        <!-- ($ ld: 12.2.11 sat *updated* $) -->
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311243">Wings3d</ulink>
@@ -693,90 +726,120 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311244">install time enhancement for partitionner</ulink>
+            <ulink url="https://features.opensuse.org/311244">install time enhancement for
+              partitionner</ulink>
           </title>
           <para>NB: too late for 11.4, to be seen for next (12?) one.</para>
-          <para>when somebody have to install openSUSE, the moment he have to partition his drive is the key moment. Any error could make him lose his favorite (previous) system.
-The install system makes it&apos;s best to guess the better way to do this, but unless the disk is brand new, the result is random. (...)</para>
+          <para>when somebody have to install openSUSE, the moment he have to partition his drive is
+            the key moment. Any error could make him lose his favorite (previous) system. The
+            install system makes it&apos;s best to guess the better way to do this, but unless the
+            disk is brand new, the result is random. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311246">Hide loading modules and running services from user</ulink>
+            <ulink url="https://features.opensuse.org/311246">Hide loading modules and running
+              services from user</ulink>
           </title>
-          <para>Add new PolicyKit enabled deamons to load/stop services and load/unload kernel modules.</para>
-          <para>For outdated tools, we can add running dbus oriented service into running script, like OpenOffice will automatically starts CUPS service on startup, but when OO will be integrated too, we will remove automatically start of CUPS from script.</para>
+          <para>Add new PolicyKit enabled deamons to load/stop services and load/unload kernel
+            modules.</para>
+          <para>For outdated tools, we can add running dbus oriented service into running script,
+            like OpenOffice will automatically starts CUPS service on startup, but when OO will be
+            integrated too, we will remove automatically start of CUPS from script.</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311249">Squid-2.7</ulink>
           </title>
-          <para>I want the old and stable squid 2.7 for the next opensuse release. It would be better to have a stable software than the bleeding edge ones.</para>
+          <para>I want the old and stable squid 2.7 for the next opensuse release. It would be
+            better to have a stable software than the bleeding edge ones.</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311257">fdutils</ulink>
           </title>
-          <para>The fdutils package contains utilities for configuring and debugging the Linux floppy driver, for formatting extra capacity disks (up to 1992K on a high density disk), and for sending raw commands to the floppy controller.</para>
+          <para>The fdutils package contains utilities for configuring and debugging the Linux
+            floppy driver, for formatting extra capacity disks (up to 1992K on a high density disk),
+            and for sending raw commands to the floppy controller.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311267">Two tier option to Community repository list</ulink>
+            <ulink url="https://features.opensuse.org/311267">Two tier option to Community
+              repository list</ulink>
           </title>
           <para>In brief:</para>
           <para>Working in Yast &gt; Software Repositories</para>
           <para>Add &gt; Community Repositories</para>
-          <para>1. Make a default community repo list Eg: OSS, NON-OSS, UPDATES, PACKMAN, NVIDIA, ATI, LIBDVDCSS</para>
-          <para>2. And offer an advanced option available with a toggle (That should include a warning that it is for advanced users) Where the full community list will be available</para>
+          <para>1. Make a default community repo list Eg: OSS, NON-OSS, UPDATES, PACKMAN, NVIDIA,
+            ATI, LIBDVDCSS</para>
+          <para>2. And offer an advanced option available with a toggle (That should include a
+            warning that it is for advanced users) Where the full community list will be
+            available</para>
           <para>Like this:</para>
           <para>http://dl.dropbox.com/u/10573557/SUSE%20Misc/community_list_edit.png </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311273">Configure ALLMULTI on an interface from YaST</ulink>
+            <ulink url="https://features.opensuse.org/311273">Configure ALLMULTI on an interface
+              from YaST</ulink>
           </title>
-          <para>It would be nice if ALLMULTI could be configured from YaST as a &apos;rcnetwork restart|start|stop&apos; removes ALLMULTI.</para>
+          <para>It would be nice if ALLMULTI could be configured from YaST as a &apos;rcnetwork
+            restart|start|stop&apos; removes ALLMULTI.</para>
           <para>ifcfg-&lt;iface&gt; could have the following parameter in it:</para>
-          <para>ALLMULTI=on|off
-
-in terms</para>
+          <para>ALLMULTI=on|off in terms</para>
           <para>it would run:</para>
           <para>ifconfig &lt;iface&gt; allmulti</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311276">Remove or prevent error messages when mounting a removable</ulink>
+            <ulink url="https://features.opensuse.org/311276">Remove or prevent error messages when
+              mounting a removable</ulink>
           </title>
-          <para>Currently when mounting a removable (usbstick, dvd, etc) often an error from &quot;org.freedesktop.hal.storage.mount-removable&quot; or a &quot;DBus error org.gtk.Private.RemoteVolumeMonitor.Failed: An operation is already pending&quot; occurs.
-These errors occur mostly when using media with multiple partitions.
-This request is to surpress these errors and only start one filemanagerinstance for the specific medium.</para>
-          <para>These errors appear to be DE-agnostic, until now they show up in GNOME, KDE and Xfce on openSUSE 11.3.</para>
+          <para>Currently when mounting a removable (usbstick, dvd, etc) often an error from
+            &quot;org.freedesktop.hal.storage.mount-removable&quot; or a &quot;DBus error
+            org.gtk.Private.RemoteVolumeMonitor.Failed: An operation is already pending&quot;
+            occurs. These errors occur mostly when using media with multiple partitions. This
+            request is to surpress these errors and only start one filemanagerinstance for the
+            specific medium.</para>
+          <para>These errors appear to be DE-agnostic, until now they show up in GNOME, KDE and Xfce
+            on openSUSE 11.3.</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311279">Include Warsow and FreeOrion</ulink>
           </title>
-          <para>Warsow is a multiplayer-designed FPS like OpenArena but in a cartoon-like style and with special moves.</para>
+          <para>Warsow is a multiplayer-designed FPS like OpenArena but in a cartoon-like style and
+            with special moves.</para>
           <para>http://www.warsow.net</para>
-          <para>FreeOrion is a turn-based space empire &amp; galactic conquest game. A good complement to FreeCiv in my opinion</para>
+          <para>FreeOrion is a turn-based space empire &amp; galactic conquest game. A good
+            complement to FreeCiv in my opinion</para>
           <para>http://www.freeorion.org </para>
         </blockquote>
-<!-- ($ ld: 12.2.11 sat *replaced with newer ones* $) -->      </sect4>
+        <!-- ($ ld: 12.2.11 sat *replaced with newer ones* $) -->
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink
+            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/09/libreoffice-3-3-0-final-available-for-opensuse/">Petr Mladek: LibreOffice 3.3.0 final available for openSUSE</ulink>
+          <ulink
+            url="http://lizards.opensuse.org/2011/02/09/libreoffice-3-3-0-final-available-for-opensuse/"
+            >Petr Mladek: LibreOffice 3.3.0 final available for openSUSE</ulink>
         </title>
         <para>I’m happy to announce LibreOffice 3.3.0 <emphasis role="italic">final</emphasis>
           packages for <emphasis role="italic">openSUSE</emphasis>. They are available in the Build
-          Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/">LibreOffice:Stable</ulink> project. They are based on the <ulink url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.0.4">libreoffice-3.3.0.4 release</ulink>. Please, look for more details about the <emphasis role="italic">openSUSE LibreOffice build</emphasis> on the wiki page. </para>
+          Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
+            >LibreOffice:Stable</ulink> project. They are based on the <ulink
+            url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.0.4"
+            >libreoffice-3.3.0.4 release</ulink>. Please, look for more details about the <emphasis
+            role="italic">openSUSE LibreOffice build</emphasis> on the wiki page. </para>
         <para>The openSUSE LO team hopes that you will be happy with this release. Though, any
-          software contains bugs and we kindly ask you to <ulink url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us
+          software contains bugs and we kindly ask you to <ulink
+            url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us
           to fix them in the future releases. </para>
         <para><emphasis role="bold">False error during update </emphasis></para>
         <para>You might see some installation errors about missing extensions when updating from
@@ -804,52 +867,70 @@ This request is to surpress these errors and only start one filemanagerinstance 
         <para>We are already working on <emphasis role="italic">LO-3.3.1</emphasis> bugfix release.
           I have just published <emphasis role="italic">3.3.1-rc1</emphasis>. The final 3.3.1
           release should be available within 2 weeks.</para>
-<!-- ($ ld: 10.2.11 sm $) -->      </blockquote>
+        <!-- ($ ld: 10.2.11 sm $) -->
+      </blockquote>
     </sect3>
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-02/msg00000.html">Larry Finger: Weekly News for February 5</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-02/msg00002.html">Larry
+            Finger: Weekly News for February 12</ulink>
         </title>
-        <para>The Testing Core Team IRC meeting was held Jan. 31, 2011 at 18:00 UTC. The next one
-          will be on the Monday following the release of 11.4 RC1 at 18:00 UTC. </para>
-        <para>In our meeting, we discussed our experiences with 11.4 M6 and discussed bugs that we
-          have encountered. We also discussed how to improve the openQA testing to catch problems
-          that would interfere with installation; however, this will always be problematic. For
-          example, the x86_64 DVD from Build 1034 turned out to be too large to burn to a standard
-          single-layer DVD. At the time of the decision to release that buid as 11.4 M6, the testing
-          process was working on Build 1033, which did not have this problem. </para>
-        <para>My personal set of bugs were mostly due yo problems with software other than 11.4 M6.
-          The NET install CD failed to boot after installation on a VirtualBox VM, but the KDE Live
-          CD installed OK on that same VM. The problem was with VirtualBox 4.0.0 (4.0.2 works fine).
-          I also have one system that uses the i915 graphics driver that boots with a garbled
-          screen, but it works with the &quot;nomodeset&quot; boot option. That is a kernel problem, not with
-          openSUSE 11.4 and the bug report was placed at <ulink url="http://bugzilla.kernel.org/">http://bugzilla.kernel.org</ulink>.. </para>
-        <para>It is extremely important to test M6 so that as many bugs as possible are found and
-          fixed. Remember that your hardware may have problems not seen by other testers. Remember
-          that it is essential to report the bugs, otherwise thay may not be fixed by the final
-          release of 11.4. </para>
-<!-- ($ ld: 5.2.11 sm $) -->      </blockquote>
+        <para>The next Testing Core Team IRC meeting will be held February 14, 2011 at 18:00 UTC.
+          Happy Valentine's day. </para>
+        <para>This meeting will discuss the Team's experiences with openSUSE 11.4 RC1. </para>
+        <para>Since doing my first install about 30 hours ago, I have installed the new release on 3
+          different instances with the following results: </para>
+        <para>1. I did a NET i586 upgrade from M6 to RC1 on a VirtualBox VM. All was going well till
+          the host had a kernel panic. The reason is not yet known, but the host kernel is
+          2.6.38-rc4, and this is not the only panic encountered. Just more to debug. If this were a
+          job, there would be considerable security. </para>
+        <para>2. After the crash, I could not recover the upgrade, thus I did a full install on that
+          VB VM of the KDE desktop from the i586 NET install CD. Everything went well. </para>
+        <para>3. The x86_64 NET install CD was used to update from M6 to RC1 on my main machine. In
+          an initial reboot, NetworkManager has failed to start, but it is not known if this was a
+          one-time event. With the Configure Desktop => Input Devices => Touchpad GUI, I could
+          disable tapping, which is essential for me as my personal capacitance always leads to
+          unintended clicks whenever tapping is enabled. This action was much more difficult with
+          11.3. After running for more than 1 day with my own home-built 2.6.38 kernel, I have found
+          only one problem. VirtualBox has not yet packaged their software for 11.4 and the 11.3
+          version has a set of library requirements that cannot be satisfied. As a result, there was
+          some difficulty in building the necessary kernel module for my kernel. By using the source
+          tree from my 11.3 system, I could build the necessary kernel module for my kernel. As this
+          workaround only came to me while writing this newsletter item, I have not tested
+          extensively; however, it appears that this workaround will allow me to use RC1 for general
+          work. </para>
+        <para>Once again, I issue my plea for testing. Your hardware, software and computing needs
+          are unique - you will be testing combinations unlike anyone else. Please look at the "most
+          annoying bug" list to see if there any killer bugs. Thus far, the only such bug that is
+          posted is a problem with the KDE Live CD. No doubt, we will add to that list during our
+          meeting.</para>
+        <!-- ($ ld: 12.2.11 sm $) -->
+      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
+    <!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
         <title>Sascha Manns: Poll for our Weekly News Translators</title>
         <para>The last Poll was for our Readers. Now the next Poll is for our Translators. </para>
-        <para>As shown in <ulink url="http://en.opensuse.org/openSUSE:Weekly_news_contribute">http://en.opensuse.org/openSUSE:Weekly_news_contribute</ulink> we have different
+        <para>As shown in <ulink url="http://en.opensuse.org/openSUSE:Weekly_news_contribute"
+            >http://en.opensuse.org/openSUSE:Weekly_news_contribute</ulink> we have different
           possibilities for our Translators to create own Translations:<itemizedlist>
             <listitem>
               <para>XML Source (You get the Sourcecode and you use it to create any other Format
@@ -872,36 +953,44 @@ This request is to surpress these errors and only start one filemanagerinstance 
                 publish into HTML or PDF.</para>
             </listitem>
           </itemizedlist></para>
-        <para>The poll is placed there: <ulink url="https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format">https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format</ulink>
+        <para>The poll is placed there: <ulink
+            url="https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format"
+            >https://connect.opensuse.org/pg/polls/read/saigkill/11690/what-is-your-prefered-input-format</ulink>
         </para>
         <para>Please vote and help clarifying…</para>
-<!-- ($ ld: 2.2.11 sm $) -->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://saigkill.wordpress.com/2011/02/04/german-weekly-news-relaunched/">Sascha Manns: German Weekly News relaunched</ulink>
+          <ulink url="http://saigkill.wordpress.com/2011/02/04/german-weekly-news-relaunched/"
+            >Sascha Manns: German Weekly News relaunched</ulink>
         </title>
         <para>I’m pleased to announce the relaunch of the german openSUSE Weekly News. </para>
-        <para>If you’re interested in knowing more, just click <ulink url="http://wiki.open-slx.de/OWR">there</ulink>. </para>
+        <para>If you’re interested in knowing more, just click <ulink
+            url="http://wiki.open-slx.de/OWR">there</ulink>. </para>
         <para>We are using an Etherpad Clone for preparing the News. We are happy if many people
           want to working with us.<itemizedlist>
             <listitem>
-              <para><ulink url="http://wiki.open-slx.de/OWR">http://wiki.open-slx.de/OWR</ulink></para>
+              <para><ulink url="http://wiki.open-slx.de/OWR"
+                >http://wiki.open-slx.de/OWR</ulink></para>
             </listitem>
             <listitem>
-              <para><ulink url="http://forum.open-slx.de/forum/opensuse-wochenrueckblick/">http://forum.open-slx.de/forum/opensuse-wochenrueckblick/</ulink></para>
+              <para><ulink url="http://forum.open-slx.de/forum/opensuse-wochenrueckblick/"
+                  >http://forum.open-slx.de/forum/opensuse-wochenrueckblick/</ulink></para>
             </listitem>
           </itemizedlist></para>
-<!-- ($ ld: 4.2.11 sm $) -->      </blockquote>
-    </sect3>
-<!--
+      </blockquote>
+    </sect3> -->
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->  </sect2>
+      </sect3> -->
+  </sect2>
 </sect1>
