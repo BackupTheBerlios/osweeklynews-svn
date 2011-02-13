@@ -165,74 +165,90 @@
     <blockquote>
       <title>
         <ulink url="http://www.linux.com/learn/tutorials/403466-review-hands-on-libreoffice-33"
-          >Linux.com/Brian Proffitt: Review: Hands on LibreOffice 3.3</ulink>
+          >techhacking.com/Lev: LibreOffice-The Future of Office in Linux</ulink>
       </title>
-      <para>The Document Foundation released the first new version of its LibreOffice suite on
-        January 25th, and it was far too tempting not to grab a copy and run it through its paces.
-        And while there are a few new features of note, this is still pretty much OpenOffice.org,
-        with all the attendant advantages and foibles.</para>
       <mediaobject>
         <imageobject>
-          <imagedata width="25%" fileref="http://www.linux.com/images/stories/calc.png"/>
+          <imagedata fileref="http://techhacking.com/wp-content/uploads/2011/02/libologo.png"/>
         </imageobject>
       </mediaobject>
-      <para>This is to be expected, of course, since the fork of LibreOffice from the
-        Oracle-controlled (formerly Sun-controlled) OpenOffice.org project only occurred four months
-        ago. Expecting a drastic change is folly in that timeframe. But it still bears noting,
-        because a lot of the problems users may have with the OpenOffice.org suite could still be
-        present. </para>
-      <para>A lot, but not all, so let&apos;s give credit where credit is due. The feature I found
-        most helpful in LibreOffice 3.3 was a much better improvement in file importing from
-        Microsoft Office. OpenOffice.org has long-touted its capability to open and save Office
-        files, but in reality most users know that any file with any kind of complexity was going to
-        have to have problems coming across. </para>
-      <para>In LibreOffice, that&apos;s no longer the case. Opening some heavily-revised and
-        commented chapter files from my last book in OpenOffice.org usually leads to mis-rendered
-        comments and loads of font issues. LibreOffice Writer didn&apos;t even blink: all revisions,
-        comments, and fonts came across perfectly. This was good news, since I would much rather use
-        LibreOffice on Linux than fire up a Windows VM when I&apos;m writing for publishers
-        insistent on clean .docx files. (...)</para>
-      <!-- ($ ld: 8.2.11 sm $) -->
+      <para>"<ulink url="http://www.libreoffice.org/">LibreOffice 3.3</ulink> was released a few
+        weeks ago and this marks a very important milestone in the Open Source Office environment.
+        In my previous post I talked in detail about OpenOffice.org but completely forgot to mention
+        LibreOffice and all of the exciting things that are happening at The Document
+        Foundation.</para>
+      <para><emphasis role="bold">The Big Bang of Open Source</emphasis>
+      </para>
+      <para>In September of 2010 many of the top developers of Open Office parted ways from Oracle
+        and the Open Office project. They went on to form the <ulink
+          url="http://documentfoundation.org/">Document Foundation</ulink>. </para>
+      <para><quote>Our mission is to facilitate the evolution of the OpenOffice.org Community into a
+          new open, independent, and meritocratic organizational structure within the next few
+          months. An independent Foundation is a better match to the values of our contributors,
+          users, and supporters, and will enable a more effective, efficient, transparent, and
+          inclusive Community. We will protect past investments by building on the solid
+          achievements of our first decade, encourage wide participation in the Community, and
+          co-ordinate activity across the Community.</quote></para>
+      <para>This split from Oracle was in a sense a revolution. OpenOffice.org used to be sponsored
+        by Sun Micro systems. After Sun was bought out by Oracle there were rumors and fears that
+        OpenOffice.org would go the way of OpenSolaris which lost support from Oracle. The Document
+        Foundation initially hoped to keep Oracle and have a strong working relationship, but Oracle
+        decided not to support LibreOffice and the rest is (or will be?) history." (...)</para>
+      <!-- ($ ld: 13.2.11 sm $) -->
     </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.tildehash.com/?article=interview-with-richard-stallman-2011"
-          >Tildehash: Interview with Richard Stallman (2011)</ulink>
+          >techhacking.com/Lev: Useful Open Source Software #2: GIMP</ulink>
       </title>
-      <para><ulink url="http://www.stallman.org/">Richard M. Stallman</ulink> (born March 16, 1953),
-        often shortened to RMS, is an American software freedom activist and computer programmer. In
-        September 1983, he launched the GNU Project to create a <ulink
-          url="http://www.gnu.org/philosophy/free-sw.html">free</ulink> Unix-like operating system,
-        and has been the project&apos;s lead architect and organizer. With the launch of the <ulink
-          url="http://www.gnu.org/">GNU Project</ulink>, he initiated the <ulink
-          url="http://en.wikipedia.org/wiki/Free_software_movement">Free Software Movement</ulink>;
-        in October 1985 he founded the <ulink url="http://www.fsf.org/">Free Software
-          Foundation</ulink>. </para>
-      <para>Richard Stallman pioneered the concept of <ulink
-          url="http://en.wikipedia.org/wiki/Copyleft">Copyleft</ulink> and he is the main author of
-        several copyleft licenses including the <ulink
-          url="http://en.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public
-          License</ulink>, the most widely used Free Software license. Since the mid-1990s, Richard
-        Stallman has spent most of his time advocating for Free Software, as well as campaigning
-        against both <ulink url="http://en.wikipedia.org/wiki/Software_patent">software
-          patents</ulink> and what he sees as excessive extension of copyright laws. Stallman has
-        also developed a number of pieces of widely used software, including the original <ulink
-          url="http://www.gnu.org/software/emacs/">Emacs</ulink>, the <ulink
-          url="http://gcc.gnu.org/">GNU Compiler Collection (GCC)</ulink>, the <ulink
-          url="http://www.gnu.org/software/gdb/">GNU Debugger (GDB)</ulink>, and many tools in the
-          <ulink url="http://en.wikipedia.org/wiki/Coreutils">GNU Coreutils</ulink>. He co-founded
-        the <ulink url="http://www.progfree.org/">League for Programming Freedom</ulink> in 1989. </para>
-      <!-- ($ ld: 8.2.11 sm $) -->
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://techhacking.com/wp-content/uploads/2011/02/gimp-splash-2.4.png"
+            width="10%"/>
+        </imageobject>
+      </mediaobject>
+      <para>"<ulink url="http://www.gimp.org/">GIMP</ulink> (GNU Image Manipulation Program) is a
+        very powerful piece of image editing software that is comparable to Photoshop. It is free to
+        use, and offers you many of the same basic to advanced image editing capabilities as
+        Photoshop without the hefty price tag. It is available on Mac, Windows, and Linux. </para>
+      <para>GIMP is now at version 2.6 and has come a long way since its humble beginnings. It
+        started off as a small project designed to create a Photoshop-like program in the Linux
+        environment and since 1995 has exploded into a very powerful graphic design system. It is
+        one of my favorite pieces of open source software and I am constantly amazed by the amazing
+        capabilities of this program. </para>
+      <para>The program has many features that computer graphics designers will find useful, but at
+        the same time beginners may be intimidated by the amount of options that are available. When
+        first run, you are met with several screens, tons of menus, and tons of options. If you are
+        new to graphic design it may be very intimidating and overwhelming. Luckily there is a lot
+        of documentation on how to effectively use GIMP. There are free <ulink
+          url="http://www.gimp.org/tutorials/">tutorials</ulink> for all ranges of expertise
+        available on the GIMP.org website. There are also a lot of books that have been published
+        about <ulink url="http://amzn.to/e3xQ0k">GIMP, the newest being GIMP 2.6 for Photographers:
+          Image Editing with Open Source Software</ulink> by Klaus Goelker." (...)</para>
+      <!-- ($ ld: 13.2.11 sm $) -->
     </blockquote>
     <blockquote>
       <title>
         <ulink
           url="http://www.unixmen.com/gaming-on-linux/1131-19-awesome-opensource-games-for-linux-"
-          >Unixmen/M. Zinoune (Zinovsky): 19 Awesome Open source games for Linux</ulink>
+          >techhacking.com/Lev: Useful Open Source Software #3: FreeMind</ulink>
       </title>
-      <para>This is a nice collection of 19 open source games for Linux that contains most
-        addictive, fun and refined games. For some of these games, also installation steps are
-        included. Enjoy</para>
+      <para>"<ulink url="http://freemind.sourceforge.net/wiki/index.php/Main_Page">Freemind</ulink>
+        is a free mind mapping program which has some amazing functionality and a variety of uses. A
+        mind map is nothing more than what people have done for years with a pencil and pad of paper
+        – Brain Storm. You start with a main idea, then you expand it with branches of related
+        concepts, then you expand those concepts with specific details. Before you know it, you have
+        just cured cancer, invented the first car that runs on water, or successfully taken over the
+        world. </para>
+      <para>The best part about Freemind, is that unlike a pad and paper you are able to insert
+        images, objects, links, files, and pretty much anything that you desire into your mind map
+        which allows you to have one place to organize all of your thoughts. Mind maps are an
+        alternative way to study, take notes, organize your ideas, make decisions, and solve
+        problems. I have been using it for about a year in school. Personally, I am in love with it.
+        I used to take vigorous notes in classic format. But I found myself getting lost, confused,
+        and unable to really feel a sense of organization in my notes. Freemind allows you to have
+        all of your information on a single page. You can expand and reduce the categories as you
+        see fit to first learn major concepts, and then specific details." (...)</para>
       <!--($ ld: 8.2.11 sm $) -->
     </blockquote>
     <blockquote>
@@ -272,8 +288,8 @@
     </blockquote>
     <blockquote>
       <title><ulink
-        url="http://blog.qt.nokia.com/2011/02/12/nokia-new-strategic-direction-what-is-the-future-for-qt/"
-        >QTBlog/Daniel Kihlberg: Nokia new strategic direction. What is the future for
+          url="http://blog.qt.nokia.com/2011/02/12/nokia-new-strategic-direction-what-is-the-future-for-qt/"
+          >QTBlog/Daniel Kihlberg: Nokia new strategic direction. What is the future for
         Qt?</ulink></title>
       <para>Wow, what a day… Nokia outlined its new platform strategy for smartphones, with Windows
         Phones as it primary smartphone platform in a proposed partnership with Microsoft… and
@@ -281,50 +297,50 @@
         what, it has raised a lot of questions in the Qt community. </para>
       <para>So the question is, what is the future for Qt? </para>
       <para>Qt will continue to play an important role in Nokia. Consider the following:<itemizedlist>
-        <listitem>
-          <para>The retention of Nokia’s 200 million Symbian-users is vital and Nokia has targeted
-            sales of 150 million more Symbian-devices in years to come. To achieve that Nokia
-            needs to continue the modernization of Symbian in Qt – to keep existing consumers
-            engaged and to attract new customers, either upgrading from existing Symbian devices
-            to Qt enabled devices or entirely new to Nokia.</para>
-        </listitem>
-        <listitem>
-          <para>Nokia also announced it will ship its first MeeGo-related device in 2011, which
-            will rely on the Qt ecosystem – and then will continue with MeeGo as an open source
-            project for future disruption. Nokia can’t afford to be behind the next disruption
-            again and Qt can play an important role in making sure it isn’t.</para>
-        </listitem>
-        <listitem>
-          <para>With Qt Quick and Qt SDK 1.1 releases in the coming months we are expecting the Qt
-            developer community to continue to grow – adding to the 400.000 developers using Qt
-            today. Qt is developed together with the community and we expect the pace of
-            innovation to increase even further as the community grows.</para>
-        </listitem>
-        <listitem>
-          <para>We in Nokia are one of tens of thousands of companies in multiple industries
-            actively using and contributing to Qt, making Qt relevant for both mobile, desktop and
-            other embedded developers</para>
-        </listitem>
-        <listitem>
-          <para>Qt expansion: We have continued to hire Qt developers and we will continue to
-            improve and expand Qt in the future. Qt is great at delivering innovation; we have
-            been doing that for 15 years. With the upcoming release of Qt Quick, we will reach out
-            to new users and make it even easier to create great apps and UIs for many platforms
-            including Symbian and MeeGo.</para>
-        </listitem>
-        <listitem>
-          <para>The new Qt SDK 1.1 technology preview. We now offer only one SDK for both desktop
-            and mobile developers, which makes it easier to target more platforms by using just
-            one SDK.</para>
-        </listitem>
-        <listitem>
-          <para>Qt everywhere. Qt continues to make vast inroads into especially low end Linux
-            devices and distro’s. Qt also continues to provide a platform for others to innovate
-            and differentiate upon. For example Dreamworks switching all their internal animation
-            tools to Qt and making cool movies like “MegaMind” and “How to Train Your
-            Dragon”.</para>
-        </listitem>
-      </itemizedlist></para>
+          <listitem>
+            <para>The retention of Nokia’s 200 million Symbian-users is vital and Nokia has targeted
+              sales of 150 million more Symbian-devices in years to come. To achieve that Nokia
+              needs to continue the modernization of Symbian in Qt – to keep existing consumers
+              engaged and to attract new customers, either upgrading from existing Symbian devices
+              to Qt enabled devices or entirely new to Nokia.</para>
+          </listitem>
+          <listitem>
+            <para>Nokia also announced it will ship its first MeeGo-related device in 2011, which
+              will rely on the Qt ecosystem – and then will continue with MeeGo as an open source
+              project for future disruption. Nokia can’t afford to be behind the next disruption
+              again and Qt can play an important role in making sure it isn’t.</para>
+          </listitem>
+          <listitem>
+            <para>With Qt Quick and Qt SDK 1.1 releases in the coming months we are expecting the Qt
+              developer community to continue to grow – adding to the 400.000 developers using Qt
+              today. Qt is developed together with the community and we expect the pace of
+              innovation to increase even further as the community grows.</para>
+          </listitem>
+          <listitem>
+            <para>We in Nokia are one of tens of thousands of companies in multiple industries
+              actively using and contributing to Qt, making Qt relevant for both mobile, desktop and
+              other embedded developers</para>
+          </listitem>
+          <listitem>
+            <para>Qt expansion: We have continued to hire Qt developers and we will continue to
+              improve and expand Qt in the future. Qt is great at delivering innovation; we have
+              been doing that for 15 years. With the upcoming release of Qt Quick, we will reach out
+              to new users and make it even easier to create great apps and UIs for many platforms
+              including Symbian and MeeGo.</para>
+          </listitem>
+          <listitem>
+            <para>The new Qt SDK 1.1 technology preview. We now offer only one SDK for both desktop
+              and mobile developers, which makes it easier to target more platforms by using just
+              one SDK.</para>
+          </listitem>
+          <listitem>
+            <para>Qt everywhere. Qt continues to make vast inroads into especially low end Linux
+              devices and distro’s. Qt also continues to provide a platform for others to innovate
+              and differentiate upon. For example Dreamworks switching all their internal animation
+              tools to Qt and making cool movies like “MegaMind” and “How to Train Your
+              Dragon”.</para>
+          </listitem>
+        </itemizedlist></para>
       <para>Qt is increasingly popular. During 2010, we had 1.5+ million downloads at qt.nokia.com
         (alone) – twice as much as during 2009 – and with the up-coming innovation and additional
         investments in Qt combined with the introduction of open governance, I believe Qt will be
