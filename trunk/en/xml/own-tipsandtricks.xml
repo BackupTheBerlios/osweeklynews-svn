@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -22,64 +23,92 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/405303:collaborate-using-libreoffice-writer-changes-and-comments">Linux.com/Jack Wallen: Collaborate Using LibreOffice Writer Changes and Comments</ulink>
+        <ulink url="http://www.linuxjournal.com/content/working-frames-and-objects-scribus"
+          >LinuxJournal/Bruce Byfield: Working with Frames and Objects in Scribus</ulink>
       </title>
-      <para>Being a writer, I often have to collaborate with other writers or editors on an
-        assignment or book. Because of this, there is a need for collaboration tools within my word
-        processor. LibreOffice offers such tools for the writer, editor, student, or teacher. These
-        tools are Changes and Comments and they make the process of collaboration within a
-        LibreOffice Writer document so much easier. </para>
-      <para>But don&apos;t think these tools are only good for collaboration. If you want simple revision
-        control, if you want to see how your document is evolving or progressing, or if you have a
-        need to keep notes within your document, you too can take advantage of these tools. But how
-        are they used? Let&apos;s dive in and experience the LibreOffice collaboration tools.
-        (...)</para>
-<!-- ($ ld: 10.2.11 sm $) -->    </blockquote>
+      <para><quote>A Scribus document consists of a series of objects that are added to a page, and
+          contained within a frame. In addition to the usual cut, copy, and paste functions
+          available in most applications, frames in Scribus share a general set of editing
+          attributes and, so far as possible, the same set of properties. As you can see from the
+          Insert menu, Scribus supports four basic types of frame: <ulink
+            url="http://www.linuxjournal.com/content/text-frames-scribus">text</ulink>, <ulink
+            url="http://www.linuxjournal.com/content/working-images-scribus">image</ulink>, table
+          and drawing primitives. Table frames are collections of individual text frames, which may
+          be edited either as a group or as individual cells, while drawing primitives are
+          sub-divided into shape, polygon, line, Bezier curve, and freehand line. Frames for
+          primitives are added with the content, while the content of other frames must be added
+          separately.</quote> (...)</para>
+      <!-- ($ ld: 14.2.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxconfig.org/practical-guide-to-linux-commands">Linuxconfig.org: A Practical Guide to Linux Commands</ulink>
+        <ulink url="http://www.linuxconfig.org/practical-guide-to-linux-commands">Linuxconfig.org: A
+          Practical Guide to Linux Commands</ulink>
       </title>
-      <para>This article lists various practical Linux commands to be used only as a reference guide and by experienced Linux users. Not all Linux commands will be available on your system by default so consider install a relevant package before use. This Practical Guide to Linux Commands may list Linux commands you already know but cannot remember usage syntax as well as it may introduce some new Linux commands to improve your Linux command line efficiency. Note, this guide will not teach you how to use Linux commands since it relies on your experience to alter Linux commands syntax below to fit your needs. (...)</para>
-<!-- ($ ld: 10.2.11 sat $) -->    </blockquote>
+      <para>This article lists various practical Linux commands to be used only as a reference guide
+        and by experienced Linux users. Not all Linux commands will be available on your system by
+        default so consider install a relevant package before use. This Practical Guide to Linux
+        Commands may list Linux commands you already know but cannot remember usage syntax as well
+        as it may introduce some new Linux commands to improve your Linux command line efficiency.
+        Note, this guide will not teach you how to use Linux commands since it relies on your
+        experience to alter Linux commands syntax below to fit your needs. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxaria.com/article/bash-cgi?lang=en">Linuxaria: Bash as CGI</ulink>
+        <ulink url="http://mindby.com/2011/02/celery-and-twisted/">Brent McConnell: Celery and
+          Twisted</ulink>
       </title>
-      <para>Sometimes it can be useful with a simple CGI to show the contents of a directory, or run a command with some parameters.
-If you are a programmer you probably will think at a elegant and practical solutions in Java, Ruby or PHP, but for a system administrator may be convenient to make a simple bash program, a language he’s using everyday.</para>
-      <para>Let’s see how to use the bash we use usually on the terminal in a CGI program. (...)</para>
-<!-- ($ ld: 10.2.11 sat $) -->    </blockquote>
+      <para>"I’ve been working with <ulink url="http://celeryproject.org/">Celery</ulink>, <ulink
+          url="http://twistedmatrix.com/trac/">Twisted</ulink> and <ulink
+          url="https://github.com/fiorix/cyclone">Cyclone</ulink> recently on a side project I have
+        going on, however the integration between Celery and Twisted is not ideal for asynchronous
+        programming which prompted me to jot down some notes for what I’ve worked out. Hopefully
+        this will be useful to someone, also if anyone wants to offer a better way I’m all ears :) . </para>
+      <para>Celery has some built in methods to allow you to check the completeness of a remote job
+        by calling the successful() method on a returned AsyncResult object. For example you can do
+        something like this…" (...)</para>
+      <!-- ($ ld: 14.2.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-310-1/index.html">IBM developerWorks/Sean A. Walberg: Learn Linux, 302 (Mixed environments): Concepts</ulink>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-310-1/index.html">IBM
+          developerWorks/Sean A. Walberg: Learn Linux, 302 (Mixed environments): Concepts</ulink>
       </title>
-      <para>In this article, learn about these concepts:
-
-    </para>
-      <para>* Server Message Block (SMB)/Common Internet File System (CIFS)
-    </para>
-      <para>* File sharing
-    </para>
-      <para>* Print service
-
-</para>
-      <para>This article helps you prepare for Objective 310.1 in Topic 310 of the LPI&apos;s Mixed Environment speciality exam (302). The objective has a weight of 1. (...)</para>
-<!-- ($ ld: 10.2.11 sat $) -->    </blockquote>
+      <para>In this article, learn about these concepts: </para>
+      <para>* Server Message Block (SMB)/Common Internet File System (CIFS) </para>
+      <para>* File sharing </para>
+      <para>* Print service </para>
+      <para>This article helps you prepare for Objective 310.1 in Topic 310 of the LPI&apos;s Mixed
+        Environment speciality exam (302). The objective has a weight of 1. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.phpbuilder.com/columns/phpmyadmin/Jason_Gilmore02082011.php3">PHP Builder/W. Jason Gilmore: Top 10 phpMyAdmin Tips and Tricks You May Not Know</ulink>
+        <ulink url="http://www.phpbuilder.com/columns/phpmyadmin/Jason_Gilmore02082011.php3">PHP
+          Builder/W. Jason Gilmore: Top 10 phpMyAdmin Tips and Tricks You May Not Know</ulink>
       </title>
-      <para>First released in 1998, <ulink url="http://www.phpmyadmin.net/">phpMyAdmin</ulink> is one of the longest running and most popular PHP projects on the planet. One of the first utilities mentioned within PHP and MySQL tutorials, and ubiquitously available on Web hosting providers, over the years phpMyAdmin has grown to be an indispensable tool within every PHP developer&apos;s toolbox.</para>
-      <para>Despite approaching its 12th birthday, phpMyAdmin is still under active development, with at least one significant version released every year since the project&apos;s inception. In fact even after almost a decade of use I still marvel over discovering features which I had no idea existed. In this article I thought I&apos;d highlight 10 useful phpMyAdmin features which may have escaped you during your daily interaction with this fantastic utility. (...)</para>
-<!-- ($ ld: 10.2.11 sat $) -->    </blockquote>
+      <para>First released in 1998, <ulink url="http://www.phpmyadmin.net/">phpMyAdmin</ulink> is
+        one of the longest running and most popular PHP projects on the planet. One of the first
+        utilities mentioned within PHP and MySQL tutorials, and ubiquitously available on Web
+        hosting providers, over the years phpMyAdmin has grown to be an indispensable tool within
+        every PHP developer&apos;s toolbox.</para>
+      <para>Despite approaching its 12th birthday, phpMyAdmin is still under active development,
+        with at least one significant version released every year since the project&apos;s
+        inception. In fact even after almost a decade of use I still marvel over discovering
+        features which I had no idea existed. In this article I thought I&apos;d highlight 10 useful
+        phpMyAdmin features which may have escaped you during your daily interaction with this
+        fantastic utility. (...)</para>
+      <!-- ($ ld: 10.2.11 sat $) -->
+    </blockquote>
   </sect2>
 </sect1>
