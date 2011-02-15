@@ -64,76 +64,80 @@ will be used.</screen></para>
     <!-- ($ ld: 14.2.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://blip.tv/file/4732649">openSUSE TV: Amazing openSUSE</ulink></title>
-    <para>openSUSE has developed both great infrastructure technology and a powerful enduser
-      product; where is it going now? </para>
-    <para>Over 5 years ago Novell decided to turn their new asset, SuSE Linux into a community
-      distribution. It was a long and laborious process but since almost 2 years now the development
-      processes have been opened up to the community. We now speak of openSUSE, a community which is
-      now searching for it's direction. The project has state-of-the-art infrastructure at its
-      disposal and develops a modern, stable and powerful linux distribution. Meanwhile,
-      communication and marketing are it's weak points - innovative technologies like the openSUSE
-      Build Service and SUSE Studio do not get the exposure they deserve. In this talk an overview
-      is given of openSUSE's history, the developments in the community and the latest openSUSE
-      technology is presented.</para>
-    <!-- ($ ld: 8.2.11 sm $) -->
+    <title><ulink url="http://kohei.us/2011/02/14/fosdem-2011-slide-latest-updates/">Kohei Yoshida:
+        FOSDEM 2011 slide &amp; latest updates</ulink></title>
+    <para><quote>I’ve just uploaded the slide for my talk during FOSDEM 2011 here. It was very nice
+        to be able to talk about our somewhat ambitious plan to bring LibreOffice Calc to the next
+        level. Also, I regret that I haven’t been able to blog about what’s been going on lately;
+        lots of time spent on writing, reviewing code, fixing bugs and integrating patches, and
+        sadly little time is left on writing blogs. Having said all that, let me talk about a few
+        things that are new on the master branch (since I’m already in the writing mode).</quote>
+      (...)</para>
+    <!-- ($ ld: 14.2.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://blog.jprosevear.org/2011/02/11/sleeping-on-a-couch-transferring-culture/">JP
-        Rosevear: Sleeping on a Couch: Transferring Culture</ulink></title>
-    <para>In the first half of 2009 the Preload department at Novell was building a team in Taiwan.
-      There were two main reasons for this – our customers (the OEMs and ODMs) were located there
-      and we wanted to be near them and the first question a customer in Taiwan always seemed to be
-      “how many people do you have here”. Local support in the native language backed with a large
-      team is very important to companies in Taiwan. </para>
-    <para>We hired excellent people who were both experienced Linux engineers and people straight
-      out of university. However, all were pretty inexperienced working with open source communities
-      and I had a perception that any previous workplaces they were at in Asia was more likely to be
-      hierarchical in nature where open communication was discouraged because you don’t question the
-      boss. I believe this type of work place leads to the surfacing of issues until its way too
-      late to solve them and leads to sub-optimal problem solving. I wanted to ensure that the new
-      team understood open source was a key component of our work and that open communication was
-      important both internally and externally in support of this. </para>
-    <para>This type of situation is not one I would have thought about at all when I first became a
-      manager, but a couple of prior experiences (including failure) suggested this was something I
-      could and should address. In particular the OpenOffice “indoctrination” about 4 years ago when
-      we were expanding the team. At that time I managed the OpenOffice team at Novell and <ulink
-        url="http://people.gnome.org/~michael/">Michael Meeks</ulink> interviewed everyone we hired
-      during the expansion and many of them spent 1-2 nights sleeping on his couch in the UK or
-      getting trained in the Toronto office in person. Due to this, that team (now the team working
-      on <ulink url="http://bit.ly/e60nXF">LibreOffice</ulink>) to this day cares a lot about
-      tenacious fixing of customer problems, reducing code duplication/bloat and particularly about
-      building a great community around the project. </para>
-    <para>So for Taiwan <ulink url="http://www.kroah.com/log/">Greg KH</ulink>, Michael Meeks,
-        <ulink url="http://bit.ly/f7rQXN">Aaron Bockover</ulink> and Stefan Dirsch all visited the
-      office within a year to cover engaging with community, supportability (no one time throw away
-      code here!), upstreaming commitment to debug and find the real root cause and more. This had
-      two major benefits. First the culture of open source and open investigation into problems was
-      transmitted by people who lived it. Second communication pathways were built so that the
-      engineering team in Taiwan felt comfortable asking questions and had people they had met to
-      ask the questions to, without needing “big boss” (me) to facilitate or hear potentially “dumb”
-      questions. So what do we have now? Those previously inexperienced with open source engineers
-      who are now <ulink url="http://bit.ly/eTVRqt">proposing</ulink>, <ulink
-        url="http://bit.ly/go4W1V">submitting</ulink> and <ulink url="http://bit.ly/hL5CQ9"
-        >maintaining</ulink>
-      <ulink url="http://bit.ly/fcpdvq">code</ulink> upstream. </para>
-    <para>(BTW Greg is really great at the kernel piece of this and was able to help <ulink
-        url="http://bit.ly/iih0G8">Ralink in a similar manner</ulink> with these two items as well –
-      in fact Novell is happy to help any component vendor this way). </para>
-    <para>Don’t get me wrong, you can’t just hire anyone and expect to imbue them with your
-      organization’s culture, you have to have to get people that are interested in and receptive to
-      the culture. For instance its unlikely every single Facebook engineer was previously part of a
-      culture of shared code base ownership and review that required them to be <ulink
-        url="http://bit.ly/hVntIJ">in the room to fix bugs on the fly or allowed them to change and
-        submit code to any part of the app or required checkin review</ulink>. These are cultural
-      pieces that are transmitted post hire, but you still have to pick people who are in general
-      receptive to that culture. </para>
-    <para>I will always think about training engineering people in a cultural context not just in a
-      technical manner now, particularly when building new teams or offices since it will be tougher
-      for them to get it by osmosis. Future communication connections are built and you display the
-      culture you have and want to have in the organization.</para>
-    <!-- ($ ld: 12.2.11 sm $) -->
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/02/nokia-does-right-thing.html">Jos
+        Poortvliet: Nokia does the right thing!</ulink></title>
+    <para>For those who've had it with the Nokia discussions - further down I have some positive
+      news too... </para>
+    <para>So the <ulink
+        url="http://www.nokia.com/press/press-releases/showpressrelease?newsid=1488004">rumors
+        turned out to be true</ulink>. Stephan Elop, the new Nokia CEO (and ex Microsoft employee),
+      has decided the future of Nokia is to work with Microsoft. It will be possible to decrease
+      investments in R&amp;D and Nokia won't have to build it's own platform nor focus on services
+      anymore. Instead it can focus on becoming a phone hardware manufacturer, a strategy which will
+      ensure high margins!</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://3.bp.blogspot.com/-77DvJkCk1Ww/TVnlv4_UlsI/AAAAAAAABPA/Vb6R9VDMPYs/s200/nokia-s-qt-4-7-app-framework-goes-gold-encourages-symbian-and-meego-development-for-fun-and-profit_1.jpg"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>Sarcasm aside, it seems to me that Nokia (or at least its CEO) has realized it has had its
+      best time in the nineties and it is over. Better to show good profitability for the next 4-6
+      years than invest in the future. Within 2-3 years Stephan will leave a company which is "going
+      great" (short-term financially speaking) and receive a big bonus. Usual business of the type
+      which brought us the credit crisis.</para>
+    <para><emphasis role="bold">How about us?</emphasis></para>
+    <para>So what does this mean for Free Software? Hard to say yet but I think it's a fair bet that
+      development on MeeGo won't increase due to these choices. Bad for the linux kernel,
+      infrastructure like Telepathy, Gstreamer and top-level stuff like Qt. Qt will probably not be
+      hurt that much, it is the platform of choice for Symbian for at least the next few years. And
+      if they change their mind Nokia (or otherwise some volunteers, can't stop them can you?) will
+      port Qt to WP7 - write one app, run on MeeGo, Symbian AND WP7. With the open governance model
+      of Qt &amp; the LGPL license, the decreased investments could be compensated by community
+      efforts. Still, I feel sorry for those who might get fired over this. And personally, I was
+      looking for a really open mobile platform - my N900 is pretty awesome and though I'll buy the
+      N9 it's sad it won't have a decent successor. </para>
+    <para>Meanwhile, stock has gone down some 15% on Nokia, MS' stock went down, Apple and Google
+      went up. Hmmmm, what does the stock market think... Anyhow. I guess more than enough has been
+      written and said about it, let's just wait and see what happens next...</para>
+    <para><emphasis role="bold">Good News - twice!</emphasis></para>
+    <para>In far more positive news, my own employer (that would be Novell) has helped the stability
+      of the UK financial system by migrating the London Stock Exchange from a Microsoft .NET based
+      solution to a SUSE Linux Enterprise stack. The new trading system <ulink
+        url="http://www.computerworlduk.com/news/open-source/3260727/london-stock-exchange-in-historic-linux-go-live/"
+        >went live last week</ulink>. The earlier Windows and .NET based software actually managed
+      to get the CEO of the LSE <ulink
+        url="http://blogs.computerworld.com/london_stock_exchange_to_abandon_failed_windows_platform"
+        >fired after an 8 hour outage</ulink> (any idea how much money that costs?). Their new CEO,
+      slightly smarter than Elop if I might say so, decided to go for Linux. This has led to better
+      performance and stability - no surprise. SUSE proves to be about 15 times faster than the
+      MS/.Net system which couldn't get network round trips below 2 milliseconds despite big
+      investments in code and hardware improvements. Meanwhile SUSE comes in at about 126
+      microseconds! I don't expect any 8-hour outages or fired CEO's, so congrats to everyone
+      involved!</para>
+    <para>See the Youtube Video: <ulink url="http://www.youtube.com/watch?v=dr7IxQeXr7g"
+        >http://www.youtube.com/watch?v=dr7IxQeXr7g</ulink></para>
+    <para>And while at it, let me also mention an <ulink
+        url="http://www.linuxplanet.com/linuxplanet/newss/7294/1/">interview with my colleague Kerry
+        Kim</ulink>. Subject was IBM's supercomputer 'Watson' which took on a human in the TV show
+      'Jeopardy'. Watson runs SUSE Linux - as do, Kerry mentioned, 6 out of the top-10
+      supercomputers in the world. Check a video of Watson out <ulink
+        url="http://www.pbs.org/newshour/bb/science/jan-june11/jeopardy_02-14.html">here</ulink> (or
+      embedded above).</para>
+    <!-- ($ ld: 15.2.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
