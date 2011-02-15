@@ -45,17 +45,27 @@
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxconfig.org/practical-guide-to-linux-commands">Linuxconfig.org: A
-          Practical Guide to Linux Commands</ulink>
+        <ulink url="http://www.freesoftwaremagazine.com/columns/getting_more_out_vim_some_tips"
+          >FreeSoftwareMagazine/Ryan Cartwright: Getting more out of Vim - some tips</ulink>
       </title>
-      <para>This article lists various practical Linux commands to be used only as a reference guide
-        and by experienced Linux users. Not all Linux commands will be available on your system by
-        default so consider install a relevant package before use. This Practical Guide to Linux
-        Commands may list Linux commands you already know but cannot remember usage syntax as well
-        as it may introduce some new Linux commands to improve your Linux command line efficiency.
-        Note, this guide will not teach you how to use Linux commands since it relies on your
-        experience to alter Linux commands syntax below to fit your needs. (...)</para>
-      <!-- ($ ld: 10.2.11 sat $) -->
+      <para>"I’m donning my flame-proof suit for this post. Vim is arguably one of the two most
+        popular text-editors used in the free software world: built on vi (its name stands for
+        VIiMproved) it will be found as a default package in many GNU/Linux distributions. The other
+        popular editor is EMACS (although I am sure there are those who will argue that EMACS is
+        much more than a mere text-editor). I use Vim a lot in my work and have found it to be a
+        little like chess: a moment to learn a lifetime to master. With that in mind here are some
+        of the tips and handy commands I have picked up over the years. I thought I’d pass them on
+        in case they help. </para>
+      <para>I’m going to assume you are familiar with the basics of Vim: moving the cursor, entering
+        modes and adding/editing content. I’m also going to presume you know what entering a command
+        that starts with a : means. This is not a beginners class, but it’s not an expert one
+        either. This is not the place to begin learning Vim - sorry. Some of these were seemingly
+        obvious to me, but unknown to other Vim users I’ve encountered. The rest are the reverse of
+        that scenario. I’ve limited myself to ten, because honestly something like this go on
+        forever without such a limit. These are not necessarily the best or most needed tips but
+        they are the ones I found were best received by vim users when they first heard them
+        (including me)." (...)</para>
+      <!-- ($ ld: 15.2.11 sat $) -->
     </blockquote>
   </sect2>
   <sect2>
@@ -81,34 +91,22 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-310-1/index.html">IBM
-          developerWorks/Sean A. Walberg: Learn Linux, 302 (Mixed environments): Concepts</ulink>
+        <ulink
+          url="http://www.serverwatch.com/tutorials/article.php/3924816/Use-Logger-to-Write-Messages-to-Log-Files.htm"
+          >internet.com/Joe Brockmeier: Use Logger to Write Messages to Log Files</ulink>
       </title>
-      <para>In this article, learn about these concepts: </para>
-      <para>* Server Message Block (SMB)/Common Internet File System (CIFS) </para>
-      <para>* File sharing </para>
-      <para>* Print service </para>
-      <para>This article helps you prepare for Objective 310.1 in Topic 310 of the LPI&apos;s Mixed
-        Environment speciality exam (302). The objective has a weight of 1. (...)</para>
-      <!-- ($ ld: 10.2.11 sat $) -->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.phpbuilder.com/columns/phpmyadmin/Jason_Gilmore02082011.php3">PHP
-          Builder/W. Jason Gilmore: Top 10 phpMyAdmin Tips and Tricks You May Not Know</ulink>
-      </title>
-      <para>First released in 1998, <ulink url="http://www.phpmyadmin.net/">phpMyAdmin</ulink> is
-        one of the longest running and most popular PHP projects on the planet. One of the first
-        utilities mentioned within PHP and MySQL tutorials, and ubiquitously available on Web
-        hosting providers, over the years phpMyAdmin has grown to be an indispensable tool within
-        every PHP developer&apos;s toolbox.</para>
-      <para>Despite approaching its 12th birthday, phpMyAdmin is still under active development,
-        with at least one significant version released every year since the project&apos;s
-        inception. In fact even after almost a decade of use I still marvel over discovering
-        features which I had no idea existed. In this article I thought I&apos;d highlight 10 useful
-        phpMyAdmin features which may have escaped you during your daily interaction with this
-        fantastic utility. (...)</para>
-      <!-- ($ ld: 10.2.11 sat $) -->
+      <para>"Want a quick and easy way to write to system logs? Check out logger, a shell utility
+        that works with syslog. </para>
+      <para>The logger utility is part of the bsdutils package on Debian-based systems and the
+        util-linux-ng package on Fedora (and presumably Red Hat Enterprise Linux, although I don't
+        have a RHEL system handy to check). It should be installed by default. </para>
+      <para>The most common use for logger is as a lightweight way to pass messages from a script to
+        logfiles. Say you've got a backup script or another job that runs while you're home
+        snoozing. Rather than having the script send an email and clog up your inbox, you can add
+        logger to your script, and check periodically, at your leisure, to make sure things went as
+        planned -- or use logger to just log error messages when the job doesn't run as planned or
+        encounters an error." (...)</para>
+      <!-- ($ ld: 15.2.11 sm $) -->
     </blockquote>
   </sect2>
 </sect1>

@@ -361,47 +361,31 @@ zypper in enlightenment</screen></para>
       <para>...</para>
       </sect3> -->
     <sect3 role="gnometeam">
-      <title>GNOME Team</title>      
+      <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/07/appmenu-gtk-and-indicator-appmenu/"
-            >Nelson Marques: AppMenu-GTK and Indicator-appmenu</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/02/15/abandoning-unity-for-the-time-being/"
+            >Nelson Marques: Abandoning Unity for the time being…</ulink>
         </title>
-        <para>This is probably one of the most controversial features that has been subject of
-          continuous work from the Ayatana Project. This two pieces of software work as one and
-          allow to export GTK+ application menus through DBus, being the end result: application
-          menus present on the gnome-panel and unity-panel. </para>
-        <para>This feature requires at least one patch on GTK stack. I’ve talked to Ubuntu devs
-          regarding this patch, and it was told to me that GTK+ upstream had no interest on
-          upstreaming this patch. I’m not the one to comment this move from upstream, but I find it
-          at least interesting that QT has upstreamed an identical patch which includes the same
-          functionality. Since they are competing products (one can replace other totally or
-          partially), such actions only strengthen QT. Adding a bit of speculation and the latest
-          statements from Shuttleworth regarding QT, I wonder if it is to be expecting some ‘wind of
-          change’… who knows?! </para>
-        <para>For us at openSUSE what does matter is if we can Factor’ize this at least the Menu
-          Proxy patch so we can offer Unity and Indicators at the original form and not crippled. I
-          will request soon this changes to GNOME:Factory and we’ll see what people say, regardless
-          of upstream positions. </para>
-        <para>This is on-development software, and has some itches, but for the most it works (GTK+
-          applications), I would expect some polishing in the future from upstream, either way, it’s
-          another option.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="50%"
-              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/Screenshot2.png"/>
-          </imageobject>
-        </mediaobject>
-        <para>Required Patches on GTK:<itemizedlist>
-            <listitem>
-              <para>043_ubuntu_menu_proxy.patch</para>
-            </listitem>
-            <listitem>
-              <para>072_indicator_menu_update.patch (still figuring if this is actually required and
-                the possible sidekicks of not having it there)</para>
-            </listitem>
-          </itemizedlist></para>
-        <!-- ($ ld: 8.2.11 sm $) -->
+        <para>"Packaging Unity wasn’t much of a problem, but implementing is being translated into
+          frustration… this cases and the lack of satisfactory results eventually lead to
+          pre-burnout situations, and I’m not walking that road. </para>
+        <para>My apologies for those who had expectations on this, but I sense this task requires
+          much more than what I can offer at the current time. The packages are still available from
+          my home repo if someone wants to pick it up. All the components build so far, the
+          dependencies are all in that repository as well, as I see only integration is required.
+          I’ve runned across some problems, mainly Compiz behavior on several different git
+          snapshots, I’ve run against problems with the default gconf settings required by Unity and
+          the backup/restore operations from openSUSE defaults amongst other things. It’s maybe
+          wiser to wait for a bit more of development from upstream before looking into this.
+          openSUSE is supposed to be stable and reliable, and I don’t see this branch of Compiz
+          match those two qualities yet. </para>
+        <para>If anyone wants to scavenge those packages, feel free to do it. If no one takes this
+          up, I will look into it later once there’s an official Compiz release from the branch that
+          is required for Unity, meanwhile I’ll keep openSUSE time available for learning a bit more
+          on cmake and maintain the stuff that really works, the indicators, which involve already
+          over 30 packages between dependencies and indicators." (...)</para>
+        <!-- ($ ld: 15.2.11 sm $) -->
       </blockquote>
     </sect3>
     <!--

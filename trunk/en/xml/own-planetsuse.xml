@@ -141,55 +141,32 @@ will be used.</screen></para>
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://www.wafaa.eu/entry/smeegol-nogo-meego-gogo-1-56.html">Andrew Wafaa: Smeegol
-        NoGo MeeGo GoGo</ulink>
+      <ulink
+        url="http://www.wafaa.eu/entry/porting-libreoffice-to-android---my-new-crazy-project-1-57.html"
+        >Andrew Wafaa: Porting LibreOffice to Android - My New Crazy Project</ulink>
     </title>
-    <para>As many people will know I&apos;ve spent around 18 months of my spare time packaging and
-      building the Netbook UX for Moblin/MeeGo on openSUSE. Not on my own, but with a community
-      around me. I would just like to say a huge thank you to that community, you&apos;ve been great
-      and spurred me on when I felt like the whole world was conspiring against me. </para>
-    <para>Sound a bit morose? Well in a way it is. Basically by all accounts MeeGo is stopping all
-      work on the Netbook UX. Yup, all our hard work is now almost for nothing :-( </para>
-    <para>The first piece of evidence is the <ulink
-        url="http://wiki.meego.com/Release_Engineering/Plans/1.2">Release Engineering Plans for
-        1.2</ulink>. If you look at the bottom, you&apos;ll notice that the Netbook doesn&apos;t get
-      any mention in Features, just bugs. Actually the same is for the 1.1 release. In all honesty,
-      the biggest change between 1.1 and its predecessor is that all refernces to Moblin was
-      replaced with MeeGo. The next piece of info came at the fabulous FOSDEM XI (I&apos;ll do a
-      seperate post on the event later). I spoke to several people directly and indirectly involved
-      with MeeGo, especially the Netbook UX, about the lack of info on the Netbook UX. Each one of
-      them said the same thing - MeeGo is putting the Netbook UX into Maintanence Mode, stopping any
-      further development on it, and only providing bug fixes for major issues. I asked if there was
-      going to be any announcement, basically the answer was nothing official. They&apos;re just
-      going to let it drift away - just like netbooks themselves have. </para>
-    <para>There are most likely a huge number of reasons, which is fair enough. I was given a couple
-      of reasons - 1: Netbooks arent selling anymore, the Netbook ship didn&apos;t really sail away,
-      but was sunk. 2: MeeGo doesn&apos;t want to invest anymore time or effort in gtk development,
-      and wants to concentrate on Qt. Now I take this last one with a tiny bit of salt, only because
-      both Intel and Nokia employ (or at least did so) a sizable team of GNOME developers. Saying
-      that though, if they want to keep a roof over their heads they have to do what their employer
-      says, and both originally started working with touch devices. So it does make sense as much as
-      it doesn&apos;t. </para>
-    <para>So, I herby give immediate notice that I am now no longer going to be doing any further
-      work on the MeeGo UX for openSUSE or anyone else. I wont delete the repo for 1.0 but will
-      clear out the 1.1 and 1.2 repos that I had - might as well give those resources back :-) . Now
-      if anyone would like to continue what I and others had started, then let me know and I would
-      be more than happy. </para>
-    <para>I cant say what the other distros are going to do, I&apos;ve spoken to my counter part in
-      Fedora, and they&apos;re having a think about it as they were busting their chops to get
-      things in for the F15 release. Either way I wish all involved luck. </para>
-    <para>Now before any of you conspiracy theory junkies get worked up - this has nothing to do
-      with the whole MeeGo Trademark issue that Smeegol had with the Linux Foundation. As it happens
-      I was due to have a conversation with the Linux Foundation about the issues between us and
-      them, but have had to re-schedule due to travel constraints from one party or the other. I
-      still intend to speak with the LF about the issues, as they are still present in the other
-      UX&apos;s that they are developing. </para>
-    <para>So it&apos;s time for me to close off and say, so long and thanks for all the fish!
-      I&apos;ll still be around, I&apos;ll probably start getting back into the GNOME swing of
-      things, and help fcrozat with GNOME3 etc. Oh and I&apos;ve got a lunatic idea for a project
-      which I intend to kick off (stay tuned ;-) ). </para>
-    <para><ulink url="http://wiki.meego.com/MeeGo_Style_Guide#Trademark_Usage">MeeGo is a trademark
-        of the Linux Foundation</ulink>.</para>
-    <!-- ($ ld: 10.2.11 sm $) -->
+    <para>"Yes, you read that correct - I am going to try and port LibreOffice to Android! :-) </para>
+    <para>Why? Simples, there are no ODF compatible products on Android for reading &amp; writing.
+      There is <ulink url="https://market.android.com/details?id=at.tomtasche.reader">OpenOffice
+        Document Reader</ulink> which as the name suggests is just a reader, and also OOo is so 2009
+      ;-) </para>
+    <para>Now if I was a half decent hacker, this may not have been such a big deal. Problem is I'm
+      an absolutley crap hacker, with almost no experience or knowledge of Android or LibreOffice
+      development. So why on earth would I try and do such a monumentally painful task? Two reasons
+      - 1. I was challenged by an engineer that I respect to do it. 2. I've got an itch that needs
+      scratching (actually I'm riddled with itches, and the Doc confirms it isn't a medical
+      condition ;-) ). </para>
+    <para>So how to go about it? I'm still working that one out. As it stands openSUSE doesn't
+      provide the necessary tools for the job - no decent ARM port :( So I'm going to have a play
+      with Debian - after all 6.0 Squeeze is just out the oven so now's as good a time as any. If
+      that doesn't work out I'll give Ubuntu a whirl. Never fear oh mighty Geeko lovers - these
+      alien installations will be going on my test machine. My primary machine is still running
+      openSUSE, with GNOME3. </para>
+    <para>I'll try and document my trip through pain and fun, if for nothing else humour for those
+      more seasoned than me at doing cooky stuff like this. </para>
+    <para>Just as a little side note - my primary machine, a Dell D820 decided to die just before
+      FOSDEM. This has left me using my Netbook as my main machine. It took me ~15.5hrs to build
+      LibreOffice on it. " (...)</para>
+    <!-- ($ ld: 15.2.11 sm $) -->
   </blockquote>
 </sect1>
