@@ -48,17 +48,92 @@
       <!-- ($ ld: 15.2.11 sm $) -->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://blip.tv/file/4729504">openSUSE TV: Distribution collaboration
-          manifesto (Stefano Zacchiroli, Jared K. Smith, Jos Poortvliet)</ulink></title>
-      <para>The FOSS distribution communities work toward very similar goals: each distribution aims
-        at providing a coherent set of (Free) softwares to their users.A good deal of work (and
-        patches!) can be shared across distributions and in part already is. The more we
-        collaborate, among us and with our (common!) upstreams, the more we can improve Free
-        Software as a whole. Sometimes, however, social obstacles get in the way of collaboration:
-        volunteers don't like each other or each other distro; they might also easily get
-        "religious" about the everlasting question "which is the best distro out
-        there?".Understanding why we should collaborate across distros is the first needed step in
-        improving how we collaborate.</para>
+      <title><ulink url="http://nowwhatthe.blogspot.com/2011/02/fosdem-2011.html">Jos Poortvliet:
+          FOSDEM 2011: building distro bridges</ulink></title>
+      <para>FOSDEM. I finally got to the "blog about it" todo I took from there. I have to talk
+        about the <ulink url="http://blip.tv/file/4729504">distribution collaboration panel
+          discussion</ulink>
+        <ulink url="http://fedoraproject.org/wiki/User:Jsmith">Jared Smith</ulink> (Fedora Project
+        Lead), <ulink url="http://upsilon.cc/~zack/">Stefano Zacchirol</ulink> (Debian Project Lead)
+        and myself led on Sunday (video <ulink url="http://blip.tv/file/4729504">here</ulink>). We
+        discussed what barriers there are to cross-distro collaboration and what to do against them.
+        I can summarize the whole thing by saying pretty much everyone in the room agreed more
+        collaboration would be good and won't be that hard. More specifically, the main arguments
+        and their rebuttals that I heard: <itemizedlist>
+          <listitem>
+            <para>We will lose our identity and become one big grey blob! </para>
+            <para>Now first of all, <ulink url="http://www.albinoblacksheep.com/games/run">grey
+                blobs can be cool</ulink>. Second, our identity does not lie in any single tool or
+              application - our identity lies in the people, philosophy, culture AND technology
+              combined. Collaboration on a software installer or init system won't change
+              that!</para>
+          </listitem>
+          <listitem>
+            <para>We will never all agree on anything! </para>
+            <para>And why is that a problem? Maybe openSUSE and Fedora work together on the init
+              system without input from Ubuntu while Mandriva and Arch push forward a new Software
+              Installer without Debian's collaboration. Boehoe. I'd say such a situation would
+              already be a big improvement over each doing its own thing!</para>
+          </listitem>
+          <listitem>
+            <para>We all hate each other! </para>
+            <para>No, we don't. As was said in the discussion panel, usually our users get a whole
+              lot more passionate than our contributors. openSUSE and Fedora, Debian and Mandriva -
+              we all DO work together already.Fedora and openSUSE collaborate on bringing LXDE
+              patches upstream, KDE and GNOME packagers have worked together since ages. There is
+              plenty good going on already.</para>
+          </listitem>
+        </itemizedlist></para>
+      <para><emphasis role="bold">It is not that hard </emphasis></para>
+      <para>I think the last point makes clear what Vincents presentation on Appstream and the
+        success of the <ulink
+          url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
+          >cross-distro collaboration meeting on application installation</ulink> also pointed out:
+        we're doing it, NOW. The reason the Fedora and Debian PL's as well as myself wanted this
+        meeting and are talking and writing about this has little to do with resistance to
+        cross-distribution work in our communities. There's little of that. As I expressed at the
+        panel, the issue is that when we encounter an issue and start thinking of possible
+        solutions, working with other distributions isn't a high priority. Rather, we just don't
+        think about it. That means we start to build a solution, only to discover later that there
+        already are others under development. And I bet the result is often that all solutions have
+        their pros and cons and none is as great as a unified solution might have been. Too bad!
+        Because if you DO try to collaborate, you might find yourself in the same situation Vincent
+        found himself in: he cautiously proposed "maybe we should try and work something out
+        together?" and it turned out everyone loved the idea! </para>
+      <para>So our issue is awareness. I think we already did a lot to advance that at our last
+        openSUSE conference: <ulink url="http://conference.opensuse.org">Collaboration Across
+          Borders</ulink>. It <ulink
+          url="http://news.opensuse.org/2010/10/28/opensuse-conference-big-success/">really made a
+          difference</ulink> and it is where Appstream was born.</para>
+      <para><emphasis role="bold">A good example </emphasis></para>
+      <para>To show how easy it is to communicate, let me point you to this <ulink
+          url="http://lists.freedesktop.org/archives/distributions/2011-February/000506.html">recent
+          email</ulink> on the <ulink
+          url="http://lists.freedesktop.org/mailman/listinfo/distributions">distributions mailing
+          list</ulink> on <ulink url="http://freedesktop.org">Freedesktop.org</ulink>. In that
+        email, Czech SUSE hacker Stanislav Brabec just tells people about a solution for a problem
+        he's been working on: the maintenance of MIME defaults in glib and desktop-file-utils and
+        making it all desktop-specific. This work can help applications integrate better within
+        different desktops. For example, Nautilus in GNOME will start file-roller if the user opens
+        a ZIP archive but if Nautilus runs in a Plasma desktop it will start Ark. If the other
+        distribution people like this work and want to help out, that would be awesome. We would get
+        better integration between Plasma, GNOME, XFCE, LXDE and the other desktop technologies on
+        Linux. And the distributions would share the workload!</para>
+      <para><emphasis role="bold">Help out</emphasis></para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://1.bp.blogspot.com/-JbAGe9u7Cso/TVsuLN6rPcI/AAAAAAAABPI/7z0Yy2FP1PI/s1600/5447235565_4ffea9a9d3_b.jpg"
+            width="20%"/>
+        </imageobject>
+      </mediaobject>
+      <para>So, things are happening. But you can count on me to keep talking about this and trying
+        to help make it happen wherever I can. Jared and Stefano promised to do the same and I hope
+        other distribution leaders will follow suit. And I count on all of you to keep collaboration
+        in mind! More importantly, do it, help push it, help make a difference. As I wrote before in
+          <ulink url="http://nowwhatthe.blogspot.com/2011/01/my-way-or-highway.html">my way or the
+          highway</ulink>, collaboration strengthens us all and is what makes open source work so
+        well...</para>
       <!-- ($ ld: 7.2.11 sm $) -->
     </blockquote>
     <blockquote>

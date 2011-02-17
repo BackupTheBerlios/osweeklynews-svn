@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -39,6 +39,32 @@
           primitives are added with the content, while the content of other frames must be added
           separately.</quote> (...)</para>
       <!-- ($ ld: 14.2.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.ibm.com/developerworks/linux/library/l-script-linux-desktop-2/index.html?ca=drs-"
+          >IBMDeveloperWorks/Paul Ferrill: Scripting the Linux desktop, Part 2: Scripting
+          Nautilus</ulink></title>
+      <para>"<emphasis role="italic"><quote>This series of articles explores how to use Python to
+            create scripts for the GNOME desktop, the screenlets framework, and Nautilus to deliver
+            a highly productive environment. Scripts on the desktop enable drag-and-drop
+            functionality and quick access to the information and services you commonly use. In this
+            installment, learn how to use Python to add functionality to extend Nautilus on your
+            desktop.</quote></emphasis></para>
+      <para>For users of the GNOME desktop, the Nautilus program is probably one of the more
+        frequently used applications. It handles all the file copying, moving, renaming, and
+        searching chores with a simple graphical interface. At first blush, it would appear there
+        aren't many file-related things Nautilus can't do—unless you start thinking about tasks you
+        would typically perform with a shell script. </para>
+      <para>The Nautilus developers provided several ways to add new functionality without breaking
+        open the main code base. The simplest method is to use a bash or shell script that executes
+        a series of commands you would usually perform from a terminal prompt. This method makes it
+        possible to try the commands to make sure they do what you want them to do first. You can
+        use other languages as well, including the C Scripting Language, GnomeBasic, Perl, and
+        Python. This article look at adding new capabilities to Nautilus using the Python language.
+        A basic understanding of the Python language and the Python Standard Library is assumed.
+        "(...)</para>
+      <!-- ($ ld: 17.2.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
