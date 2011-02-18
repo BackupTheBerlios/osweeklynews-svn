@@ -93,6 +93,47 @@
         (including me)." (...)</para>
       <!-- ($ ld: 15.2.11 sat $) -->
     </blockquote>
+    <blockquote>
+      <title><ulink url="http://azouhr.wordpress.com/2011/02/18/bash-features/">Berthold Gunreben:
+          Bash Features</ulink></title>
+      <para>"The bash system shell is the most widely used one on linux systems. For most sysadmins,
+        it is the tool of choice to do small administrative tasks. There are of course other shells,
+        and I don’t want to tell if one or the other is better. </para>
+      <para>Even though it is so well known by many people, one can stumble over some interesting
+        features from time to time. I used one of them to create the data in the recent post about
+        Linux and Memory. The task was, to iterate over a number of different test cases, but also
+        over different sizes for each test case. The first one is
+        easy:<screen>for r in 1 2 3 4 5 6 7 8; do ./memxfer -s 32M 100 $r; done</screen></para>
+      <para>You could also write this somewhat shorter
+        as:<screen>for r in $(seq 1 8); do ./memxfer -s 32M 100 $r; done</screen></para>
+      <para>My method of choice was using a not so well known bash
+        feature:<screen>for r in {1..8}; do ./memxfer -s 32M 100 $r; done</screen></para>
+      <para>The next step would be, to also iterate over sizes. All the sizes I normally use in this
+        benchmark are powers of two, and I definitely do not want to write down all these numbers
+        manually. Therefore, these numbers had to be calculated while iterating over the sizes. This
+        can be done like
+        this:<screen>for s in {0..16}; do ./memxfer -s $((1&lt;&lt;$s))k 100 1; done</screen></para>
+      <para>Finally, after putting all together, the command looks like the
+        following:<screen>for r in {0..8}; do
+   for s in {0..16}; do
+     ./memxfer -s $((1&lt;&lt;$s))k 100 $r
+   done
+done</screen></para>
+      <para>Now back to those interesting curling bracket lists. It is obviously a very short method
+        to create sequences of numbers. But they can do even more. For example, try the following
+        command:<screen>echo hello{1..4}</screen></para>
+      <para>The result is a combination of the list with the preceding
+        string:<screen>hello1 hello2 hello3 hello4</screen></para>
+      <para>This can also be done with letters like in<screen>echo hello{a..f}</screen></para>
+      <para>and it is possible to combine several lists to get permutations or counting backwards:
+        <screen>echo {a..c}{11..13}{z..w}</screen></para>
+      <para>Just try it yourself. It is quite a nice thing. One last note: Sometimes, you want to
+        use numbers that normally have a different digit count. To get the same number of digits for
+        all of the numbers, it is interesting to add a number of leading zeros. The resolution to
+        this is straight forward:<screen>echo {001..300}</screen></para>
+      <para>"</para>
+      <!-- ($ ld: 18.2.11 sat $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>

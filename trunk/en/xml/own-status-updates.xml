@@ -285,54 +285,163 @@ zypper in enlightenment</screen></para>
       </sect3> -->
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
-      <blockquote>        
-       <title>
-          <ulink url="http://lizards.opensuse.org/2011/01/30/new-osc-feature-to-edit-a-request/">Marcus Hüwe: new osc feature to edit a request</ulink>
+      <blockquote>
+        <title>
+          <ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Brandon
+            Philips: Fixing openSUSE Build Service UI Gripes</ulink>
         </title>
-        <para>I just pushed a new osc feature to git master which allows you to edit a submit
-          action. Use case: suppose you review a request (which has at least one submit action) and
-          you find a small typo (for instance in the spec file) but except the typo everything is
-          fine. So instead of declining the request you can fix the typo, create a new request
-          (which contains the fix + the original changes), accept the newly created request and
-          supersede the original request (that’s basically what osc does behind the scenes).</para>
-        <para>Example:<screen>    # request with id 80 needs a small fix
-    marcus@linux:~&gt; osc rq show 80 –edit
-    Request: #80
-
-    submit:       home:Admin/foo  -&gt; home:foobar/dest
-    delete:       home:foobar/xxx
-
-    Message:
-    deletes package xxx and fixes dest.
-
-    State:   new        2011-01-30T15:04:03 Admin
-    Comment: &lt;no comment&gt;
-    A    /tmp/osc_editsrr2iDcI/test.spec
-    A    /tmp/osc_editsrr2iDcI/src.tar.bz2
-    At revision 1.
-    Checked out package ‘foo.home_Admin’ to /tmp/osc_editsrr2iDcI. \\
-    Started a new shell (/bin/bash).
-    Please fix the package and close the shell afterwards.
-    marcus@linux:/tmp/osc_editsrr2iDcI&gt; # fix it and commit changes
-    marcus@linux:/tmp/osc_editsrr2iDcI&gt; exit
-    exit
-    Request: #None
-
-    submit:       home:Admin:branches:REQUEST_80/foo.home_Admin(cleanup) -&gt; \\ 
-    home:foobar/dest
-    delete:        home:foobar/xxx
-
-    Message:
-    &lt;no message&gt;
-    d(i)ff/(a)ccept/(b)uildstatus/(e)dit/(s)kip/(c)ancel &gt; a -m “accepted request and \\ 
-    applied small fix”
-    Supersede original request? (y|N) y
-    marcus@linux:~&gt;</screen></para>
-        <para>By the way you can also do it manually (osc rq clone &lt;id&gt;; osc co &lt;clone
-          project&gt;; fix package(s) and commit changes; create a new request, accept it and
-          supersede original request).</para>
-      </blockquote> -->
+        <para>"The openSUSE Build Service is the tool that openSUSE developers use to build the
+          packages that make up the distro. To the regular openSUSE user and contributor it does its
+          job well. However, anyone who has spent an extensive amount of time with it have found a
+          few sharp corners. Sankar is trying to fix some of those corners by writing a new client,
+          which looks like fun. </para>
+        <para>But, I think with some minor tweaks we can get the web ui in better condition. </para>
+        <para>So, I started off by writing 4 patches that fix the couple of issues that I find most
+          annoying. </para>
+        <para>Issue #1- lots of clicks to get to download URL for a repo</para>
+        <figure id="fig.issue1b">
+          <title>Before</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://ifup.org/images/obs-repo-before.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure id="fig.issuea">
+          <title>After</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://ifup.org/images/obs-repo-after.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>Issue #2- "Actions" menu on package and project page isn't very friendly and those
+          pages are mostly blank anyways. Show me the buttons! :)</para>
+        <figure id="fig.obsprojectb">
+          <title>Before</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://ifup.org/images/obs-project-before.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure id="fig.obsprojecta">
+          <title>After</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://ifup.org/images/obs-project-after.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>If you have other things that you think should be fixed leave a comment below and I
+          will try to fix them. Michal Marek has suggested making the breadcrumbs that are colon
+          seperated into individual links to each subproject. I am working on that next."</para>
+        <!-- ($ ld: 18.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://psankar.blogspot.com/2011/02/introducing-gosc-graphical-client-for.html"
+            >Sankar P: Introducing GOSC - A Graphical client for openSUSE Build
+          Service</ulink></title>
+        <para>"openSUSE buildservice is an awesome framework for building rpms for multiple
+          distributions. It is used by the openSUSE project, the Meego project, VLC, all distro
+          releases from Novell, and in many other places. Usually OBS is accessed by a browser, I
+          have implemented a simple GUI tool for working with OBS servers. </para>
+        <para>If you are extremely busy, just proceed to the screenshots section and the <ulink
+            url="https://github.com/curiosity/gosc">github</ulink> tree. Otherwise, read
+          below:</para>
+        <para><emphasis role="bold">History</emphasis><orderedlist>
+            <listitem>
+              <para>A few days back, sragavan, ravim85 and I were chatting on twitter that the new
+                (2.0) interface of OBS takes too much of clicks and too many page navigations for
+                simple operations (compared to older interface). I felt that it will be better if I
+                could get the build information about all my projects in a single page and also
+                allowing me to easily see the build logs of various packages.</para>
+            </listitem>
+            <listitem>
+              <para>I have always wanted to learn python. I have given some small level python
+                patches for some projects. But haven't had any experience in writing a python
+                project from the scratch.</para>
+            </listitem>
+            <listitem>
+              <para>Today (yesterday to be precise) I had an annoying meeting that drained me
+                mentally and ended up with some frustration. I wanted to get rid of the bad
+                mood.</para>
+            </listitem>
+          </orderedlist></para>
+        <para>Based on the above three factors, I decided to complete a project that I just started
+          day before yesterday (with a simple Python HelloWorld) into an usable thick-client for
+          openSUSE build service. The result is GOSC and the code is already in <ulink
+            url="https://github.com/curiosity/gosc">github</ulink>.</para>
+        <para><emphasis role="bold">OSC commandline &amp; OBS Library </emphasis></para>
+        <para>I wanted to use a library for talking with the OBS APIs from my GUI client. But darix
+          confirmed my fear in IRC that no such library exists as of now. One option was to copy
+          paste code from the osc commandline client's sources. But this is ugly and will give
+          maintenance nightmares. So, I decided to just use "osc" from my python programs and create
+          a GUI wrapper using Python.</para>
+        <para><emphasis role="bold">yabsc </emphasis></para>
+        <para>Srinidhi told me of a different client for build-service named yabsc. I looked into
+          it. It was written in true KDE fashion, exposing every possible control to the user. It
+          lists all the projects building in the entire build-service and not just "My Projects".
+          Also, I felt it is a little keyboard unfriendly and had too many tabs. So I ditched it as
+          it was not meeting my usability requirements. However, if you are a looking for a more
+          powerful, more matured product and not scared by too many controls on screen, it is better
+          if you try yabsc. </para>
+        <figure>
+          <title>Initial screen. "My Projects" are shown in the top-left listview.</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://3.bp.blogspot.com/-Vkr7vCDvK38/TV2I3-bO6OI/AAAAAAAAEXE/iPflQfJFE6U/s320/gosc-main-screen.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure>
+          <title>Double-clicking a project from the list, will list the packages in the project in
+            the adjacent listview. The buildresults of the project are shown in the bottom
+            textarea.</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://4.bp.blogspot.com/-b-yKAWNcGOo/TV2I6CnuSDI/AAAAAAAAEXI/eVh69ZItcO8/s320/gosc-project-results.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure>
+          <title>Double-clicking a package from the top-right listview, will popup a Repository
+            chooser dialog.</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://3.bp.blogspot.com/-ojPZycYhdRI/TV2JFEqjyuI/AAAAAAAAEXM/X63U1lvLxcI/s320/gosc-repo-chooser.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <figure>
+          <title>The entire buildlog of the selected package is shown in the textarea.</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://2.bp.blogspot.com/-rJkncdKa6t8/TV2JIQRmvwI/AAAAAAAAEXQ/w81_yTlNj04/s320/gosc-build-log.png"
+              />
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <para>The source is licensed under LGPLv2.1. There are a lot of small fixes that could still
+          be added, like a "Loading..." status bar for network operations, Caching of buildlogs,
+          project names, subscribing to build notifications from the build-server etc. But they are
+          not part of my regular workflow and also I strongly believe in "Release Early Release
+          Often". So, I am releasing in this barebones version, which already seem to solve my
+          workflow needs. </para>
+        <para>During the implementation of this, I learned a lot about python. This experience also
+            <emphasis role="bold">strengthened</emphasis> my old opinion that <emphasis role="bold"
+            >Compiled languages are better for large scale projects</emphasis>. </para>
+        <para>Your feedback, comments and patches are very much welcome. "</para>
+        <!-- ($ ld: 18.2.11 sm $) -->
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org"
@@ -385,6 +494,65 @@ zypper in enlightenment</screen></para>
           is required for Unity, meanwhile I’ll keep openSUSE time available for learning a bit more
           on cmake and maintain the stuff that really works, the indicators, which involve already
           over 30 packages between dependencies and indicators." (...)</para>
+        <!-- ($ ld: 15.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://blog.crozat.net/2011/02/gnome-3-live-image-version-004.html"
+            >Frédéric Crozat: GNOME 3 Live image - version 0.0.4</ulink></title>
+        <para>"Another week, another release of GNOME 3 live image. </para>
+        <para>Sorry for the delay but the release of GTK 3.0 and glib 2.28 last week pushed back my
+          planned release since I needed to rebuild the entire stack with it. </para>
+        <para>If you want to spread the word about the image, you can also link now to <ulink
+            url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink>
+        </para>
+        <para>Anyway, what is new in this release : <itemizedlist>
+            <listitem>
+              <para>many modules have been updated to GNOME 2.91.6 </para>
+            </listitem>
+            <listitem>
+              <para>kernel 2.6.37 (desktop flavor) and Xorg 1.9.3 (ie fresh drivers for many cards)
+                : thanks to <ulink url="https://build.opensuse.org/">OBS</ulink>, I've been able to
+                easily integrate those packages update on our stable distribution (openSUSE 11.3).
+                Still no gallium driver for radeon, this is scheduled for next week.</para>
+            </listitem>
+            <listitem>
+              <para>fixed freeze at startup on some radeon card (there was a race between graphical
+                splash and radeon KMS)</para>
+            </listitem>
+            <listitem>
+              <para>some additional network drivers (shaun, this release is for you ;)</para>
+            </listitem>
+            <listitem>
+              <para>more GNOME 3 modules, based on feedback we got from FOSDEM (epiphany, evince,
+                brasero, gnome-packagekit, file-roller, evolution, gnome-games,
+                totem-plugins...)</para>
+            </listitem>
+            <listitem>
+              <para>new gnome-shell, with integration with evolution-data-server (no, you won't have
+                yet new workspace layout in this image, since GNOME-Shell hackers are still busy
+                working on it)</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://live.gnome.org/TheBoardProject">The Board</ulink> is also in
+                the image, feel free to test it</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>On the know issues :<itemizedlist>
+            <listitem>
+              <para>ndiswrapper is not shipped (not available for 2.6.37 yet)</para>
+            </listitem>
+            <listitem>
+              <para>same for vmware guest (please use SUSE Studio appliance instead)</para>
+            </listitem>
+            <listitem>
+              <para>there are some SSL certificates popups issues (when using empathy)</para>
+            </listitem>
+            <listitem>
+              <para>changing language from gnome-control-center doesn't work</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>If you installed the image on a system, you should be able to update it, running
+          "zypper dup" as root (careful, we changed a lot of things this time)"</para>
         <!-- ($ ld: 15.2.11 sm $) -->
       </blockquote>
     </sect3>
@@ -756,47 +924,66 @@ zypper in enlightenment</screen></para>
       <blockquote>
         <title>
           <ulink
-            url="http://lizards.opensuse.org/2011/02/09/libreoffice-3-3-0-final-available-for-opensuse/"
-            >Petr Mladek: LibreOffice 3.3.0 final available for openSUSE</ulink>
+            url="http://kohei.us/2011/02/17/extracting-a-sub-project-into-a-new-repository-and-how-mso-dumper-got-its-new-home/"
+            >Kohei Yoshida: Extracting a sub project into a new repository (and how mso-dumper got
+            its new home)</ulink>
         </title>
-        <para>I’m happy to announce LibreOffice 3.3.0 <emphasis role="italic">final</emphasis>
-          packages for <emphasis role="italic">openSUSE</emphasis>. They are available in the Build
-          Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
-            >LibreOffice:Stable</ulink> project. They are based on the <ulink
-            url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.0.4"
-            >libreoffice-3.3.0.4 release</ulink>. Please, look for more details about the <emphasis
-            role="italic">openSUSE LibreOffice build</emphasis> on the wiki page. </para>
-        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any
-          software contains bugs and we kindly ask you to <ulink
-            url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us
-          to fix them in the future releases. </para>
-        <para><emphasis role="bold">False error during update </emphasis></para>
-        <para>You might see some installation errors about missing extensions when updating from
-          OpenOffice.org, for example:
-          <screen>ERROR: There is no such extension deployed: com.sun.reportdesigner</screen></para>
-        <para>Please, <emphasis role="bold">ignore them</emphasis>. They are caused by a bug in the
-          OOo packages and can’t be avoided easily. They does not affect the LibreOffice
-          installation! </para>
-        <para><emphasis role="bold">More known bugs </emphasis><itemizedlist>
-            <listitem>
-              <para><ulink url="http://alturl.com/dmqve">Free Desktop bugzilla</ulink></para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://alturl.com/qaq5">Novell bugzilla</ulink></para>
-            </listitem>
-          </itemizedlist><emphasis role="bold">Other information and plans: </emphasis></para>
-        <para>LO switched to a time based schedule and more frequent bug fix releases. The purpose
-          is to keep quality and avoid infinite RC phase at the same time. The idea is that all
-          serious blocker bugs can be found and fixed within few weeks. Then the application is
-          ready for masses who want to enjoy new features and more complicated fixes. The history
-          says that bugs in less typical scenarios are found weeks after the release. Such bugs will
-          be fixed in pure bug fix releases and released few weeks after each other. It means that
-          more conservative people should rather wait for the 3.x.1, 3.x.2, 3.x.3 releases. We hope
-          that it will help all people to get faster what they want. </para>
-        <para>We are already working on <emphasis role="italic">LO-3.3.1</emphasis> bugfix release.
-          I have just published <emphasis role="italic">3.3.1-rc1</emphasis>. The final 3.3.1
-          release should be available within 2 weeks.</para>
-        <!-- ($ ld: 10.2.11 sm $) -->
+        <para>"<emphasis role="bold">Background </emphasis></para>
+        <para>Just a short while ago I worked on extracting our mso-dumper project from <ulink
+            url="http://cgit.freedesktop.org/libreoffice/build/">LibreOffice’s build
+            repository</ulink>, into a brand new repository created just for this. The new
+          repository was to be located in <ulink
+            url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/"
+            >libreoffice/contrib/mso-dumper</ulink>. </para>
+        <para>Originally, this project started out just as a simple sub directory of a much larger
+          parent repository. But because it grew so much, and because its scope is not entirely in
+          line with that of the parent repository, I decided it was best to move this project into a
+          repository of its own. Now, it’s easy to transfer a subset of files from one repository to
+          another if you don’t mind losing its history, but I wanted to preserve the history of
+          those files even after the transition. </para>
+        <para>It turns out that there is a way to do this with git. Kendy suggested that I look into
+          git filter-branch, so I did. After a few hours of researching and trials &amp; errors (and
+          some bash script writing which was later thrown away), I’ve come to realize that all of
+          this can be achieved in the following simple steps.</para>
+        <para><emphasis role="bold">Steps </emphasis></para>
+        <para>First, clone the whole build repository which contains the sub project to be
+          extracted<screen>git clone path/to/libo/build mso-dumper-temp</screen></para>
+        <para>Once done, cd into that cloned repository, and
+          run<screen>git filter-branch --subdirectory-filter scratch/mso-dumper/ -- --all</screen></para>
+        <para>which will remove all files from the git history except for those under the
+          scratch/mso-dumper directory, and re-locate those files under that directory into the
+          top-level directory. You may also want to run<screen>git remote rm origin</screen></para>
+        <para>to prevent accidental pushing of this to the remote origin during these steps. Anyway,
+          once the filtering is done, remove all tags
+          by<screen>git tag | xargs git tag -d</screen></para>
+        <para>And that’s all. Now, you have only the files you want to keep, they are sitting
+          happily at the top level like they should, all of their commit records are preserved, and
+          you don’t have any old tags you don’t need for the new repository. </para>
+        <para>This is not over yet. At this point, this git repo still stores the objects of the
+          removed files. In fact, the size of the .git directory of this new repo was more than
+          twice the size of the .git directory of the original build repo! To completely prune this
+          unnecessary info in order to shrink the size of the repository,
+          run<screen>git clone file:///path/to/mso-dumper-temp mso-dumper</screen></para>
+        <para>to further clone this into another repo locally to strip all the unnecessary blob.
+          Note that I used the file:///… style file path, as opposed to the usual /path/to/foo style
+          file path. When using the file:///… style path to clone a local repo, git will not clone
+          the objects of the removed files, thereby reducing the size of the objects significantly
+          (and clone is faster too). Using the regular /path/to/foo style path, git will hard-link
+          all the object files, so the size will stay the same. </para>
+        <para>After the second cloning, the size of my .git directory shrank from 280MB to 384k! So
+          it does make a big difference. Now all that’s left to do is to push this repository to the
+          new remote location. Easy huh? :-)</para>
+        <para><emphasis role="bold">But there was a gotcha….</emphasis>
+        </para>
+        <para>There was one caveat, however. This method apparently does not preserve the whole
+          history of the relocated files if the parent sub-directory had been renamed. The
+          mso-dumper directory was renamed from its original name sc-xlsutil in order to accommodate
+            the<ulink url="http://blog.thebehrens.net/2009/01/08/python-binary-ppt-fun/"> ppt dumper
+            that Thorsten wrote</ulink>. Unfortunately <emphasis role="italic">git filter-branch
+            --subdirectory-filter</emphasis> did not preserve the history before the directory
+          rename occurred, but that was just a minor issue, and something I was not too concerned
+          about for this particular transition."</para>
+        <!-- ($ ld: 18.2.11 sm $) -->
       </blockquote>
     </sect3>
     <sect3 role="testing">

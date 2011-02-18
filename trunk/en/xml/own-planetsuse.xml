@@ -173,7 +173,7 @@ will be used.</screen></para>
     <title><ulink
         url="http://dev-loki.blogspot.com/2011/02/new-repository-for-opensuse-artwork-and.html"
         >Pascal Bleser: New repository for openSUSE artwork and marketing material</ulink></title>
-    <para>I just created a new <ulink url="http://gitorious.org/opensuse-artwork/opensuse-artwork"
+    <para>"I just created a new <ulink url="http://gitorious.org/opensuse-artwork/opensuse-artwork"
         >git repository for openSUSE artwork and marketing material on gitorious.org</ulink>. <ulink
         url="irc://irc.freenode.org/#opensuse-marketing">We</ulink> decided to create a new
       repository instead of using the <ulink url="http://gitorious.org/opensuse/art">existing
@@ -182,5 +182,64 @@ will be used.</screen></para>
         url="http://en.opensuse.org/openSUSE:Marketing_and_Artwork_repository">explained on the
         wiki</ulink>.</para>
     <!-- ($ ld: 15.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="https://saschpe.wordpress.com/2011/02/17/getting-the-sources-of-your-rpms/"
+        >Sascha Peilicke: Getting the sources of your RPMs</ulink></title>
+    <para>According to the GPL, you have to provide the source code of any (GPL-licensed) software
+      you distribute (i.e. package and publish). Traditionally, this is satified by Linux
+      distributions in several ways. Like any other package management system, RPM metadata contains
+      the URL of the upstream project that created the software. This is where the (unmodified)
+      source code can be retrieved. </para>
+    <para>But, packaging almost always means modifying the original sources. This could be in order
+      to add patches or to make it conform better to certain (distro-specific) conventions.
+      Therefore, distros offer a download repository where you can fetch source RPMs, i.e. packages
+      which distribute the modified sources (containing the spec file, patches and additional
+      files). </para>
+    <para>However, out of curiosity or to contribute back, you may want to know where exactly your
+      package is maintained and developed. Luckily, packages that originate from one of the many
+      Build Service instances (like build.opensuse.org, packman.links2linux.com or build.meego.com)
+      have that
+      information:<screen>% rpm -q --qf "%{DISTURL}\n" bash   obs://build.opensuse.org/openSUSE:Factory/standard/fd6e76cd402226c76e65438a5e3df693-bash</screen></para>
+    <para>Now you can copy this URL into your browser, replace ‘obs:’ with ‘http:’ and you should
+      see something interesting :-) Well, this is gonna be part of the next OBS release, for now you
+      have to modify the URL slightly further to use the OBS test instance (stage): </para>
+    <para><ulink
+        url="https://build.opensuse.org/stage/openSUSE:Factory/standard/fd6e76cd402226c76e65438a5e3df693-bash"
+        >https://build.opensuse.org/stage/openSUSE:Factory/standard/fd6e76cd402226c76e65438a5e3df693-bash</ulink>
+    </para>
+    <para>Additionally, you could simply put the disturl into the Build Service search and it will
+      come up with the same results. Now you can inspect the development history (revisions) of the
+      package, see who did it and become a part of it! The only thing that is left would be a RPM
+      patch allowing a saner syntax, like:<screen>% rpm -q --disturl bash"</screen></para>
+    <!-- ($ ld: 18.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://oyranos-cms.blogspot.com/2011/02/oyranos-colour-management-livecd-ii.html"
+        >Kai-Uwe Behrmann: Oyranos Colour Management LiveCD II</ulink></title>
+    <para>"After new second try, the driver license problem appears somewhat more relaxed. One
+      important component needs good OpenGL support for plug and play full desktop colour
+      correction. First choice for the OpenGL API on Nvidia and Ati hardware are the proprietary
+      drivers from these manufacturers. For a LiveCD this did not work out due to <ulink
+        url="http://lists.freedesktop.org/archives/xorg/2010-November/051824.html">legal
+        reasons</ulink>. The new CD can offer some basic OpenGL support to run <ulink
+        url="http://compicc.sf.net/">Compiz and GPU accelerated colour conversions</ulink>. The more
+      and improving open source Nouveau driver comes to the rescue. Together with the <ulink
+        url="http://dri.freedesktop.org/wiki/">experimental Mesa DRI</ulink> it provides shader
+      support. Some aspects work even better than the proprietary drivers, like backlight, obtaining
+      monitor infos in a standard way through XRandR and automatic driver selection by Xorg. If you
+      want to run on a daily base consider the Nvidia driver, as that provides power saving. It's
+      simply cooler. </para>
+    <para>There are some more changes like placing <ulink url="http://krita.org/">Krita</ulink> on
+      the CD. Krita is colour management wise a very interesting project. It supports floating point
+      HDR images, comes with <ulink
+        url="http://cyrilleberger.wordpress.com/category/open-source/opengtl/">two own colour
+        transformation modules</ulink> in <ulink
+        url="http://blog.cberger.net/category/open-source/opengtl/">OpenGTL</ulink>. The other new
+      application is <ulink url="http://rawstudio.org/blog/?p=236">RawStudio</ulink>. It implements
+      the DCP spec of Adobe for DNG colour profiles. Both add to a very interesting colour software
+      suite."</para>
+    <!-- ($ ld: 18.2.11 sm $) -->
   </blockquote>
 </sect1>
