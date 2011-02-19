@@ -31,11 +31,13 @@
     <para>The good news, they are also available for 11.4/factory,</para>
     <para><emphasis role="bold">Unofficial-but-working repository</emphasis></para>
     <para>For openSUSE 11.4 (factory) <emphasis role="bold">NEW
-      !</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.4/ "ATI/AMD FGLRX"</screen></para>
+    !</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" \\
+      http://linux.ioda.net/mirror/ati/openSUSE_11.4/ "ATI/AMD FGLRX"</screen></para>
     <para>I would like to have feedback about how that works for you, please comment !</para>
     <para><emphasis role="bold">Factory specifics troubles</emphasis></para>
     <para>on a fresh auto-configuration factory install :
-      libomp43<screen>Problem: fglrx64_7_6_0_SUSE114-8.812-1.x86_64 requires gcc, but this requirement cannot be provided
+      libomp43<screen>Problem: fglrx64_7_6_0_SUSE114-8.812-1.x86_64 requires gcc, but this requirement cannot be \\
+        provided
   uninstallable providers: gcc-4.5-16.1.i586[openSUSE-11.4-11.4-1.35]
                    gcc-4.5-16.1.x86_64[openSUSE-11.4-11.4-1.35]
  Solution 1: deinstallation of libgomp43-4.3.4_20091019-5.23.x86_64
@@ -200,7 +202,8 @@ will be used.</screen></para>
       package is maintained and developed. Luckily, packages that originate from one of the many
       Build Service instances (like build.opensuse.org, packman.links2linux.com or build.meego.com)
       have that
-      information:<screen>% rpm -q --qf "%{DISTURL}\n" bash   obs://build.opensuse.org/openSUSE:Factory/standard/fd6e76cd402226c76e65438a5e3df693-bash</screen></para>
+      information:<screen>% rpm -q --qf "%{DISTURL}\n" bash   obs://build.opensuse.org/openSUSE:Factory/standard/ \\
+        fd6e76cd402226c76e65438a5e3df693-bash</screen></para>
     <para>Now you can copy this URL into your browser, replace ‘obs:’ with ‘http:’ and you should
       see something interesting :-) Well, this is gonna be part of the next OBS release, for now you
       have to modify the URL slightly further to use the OBS test instance (stage): </para>

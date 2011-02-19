@@ -62,10 +62,11 @@
       --><!--<othercredit class="translator">
         <firstname></firstname>
         <surname></surname>
-      </othercredit>-->    </authorgroup>
-<!--  
+        </othercredit>-->    
+    </authorgroup>  
     <legalnotice>
        <title>Legal Notice</title>
+       <!--
        <para><mediaobject>
           <imageobject>
           <imagedata fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/>
@@ -75,8 +76,12 @@
        <para>This work (compilation) is licenced under <ulink
        url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons attribution-ShareAlike 3.0 Unported License unless expressly otherwise indicated</ulink>. 
          The rights for the compilation are copyright by Sascha Manns.
-       </para>       
-       </legalnotice> -->  </articleinfo>
+         </para> -->
+      <para>Copyrights of the introduced articles are owned by original authors or copyright owners. If you want to reuse those articles, ask each original copyright owner which 
+        license should be applied. If you are an Autor and want to set your Blog under a free License? Just visit: 
+        <ulink url="http://bit.ly/hIK1uM">http://bit.ly/hIK1uM</ulink></para>
+    </legalnotice>   
+  </articleinfo>
   <abstract>
     <para>We are pleased to announce our &edition; issue of the openSUSE Weekly News.</para>
     <para/>
@@ -95,7 +100,7 @@
   <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/> -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-status-updates.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-community.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/> -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-security.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-kernel.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-tipsandtricks.xml"/>
@@ -104,7 +109,7 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-ontheweb.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-credits.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-acknowledgements.xml"/>
-  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-excopyright.xml"/> -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-excopyright.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-feedback.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-translations.xml"/>
 </article>
