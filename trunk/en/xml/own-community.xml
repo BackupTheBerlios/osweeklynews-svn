@@ -48,266 +48,48 @@
       <!-- ($ ld: 15.2.11 sm $) -->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://nowwhatthe.blogspot.com/2011/02/fosdem-2011.html">Jos Poortvliet:
-          FOSDEM 2011: building distro bridges</ulink></title>
-      <para>FOSDEM. I finally got to the "blog about it" todo I took from there. I have to talk
-        about the <ulink url="http://blip.tv/file/4729504">distribution collaboration panel
-          discussion</ulink>
-        <ulink url="http://fedoraproject.org/wiki/User:Jsmith">Jared Smith</ulink> (Fedora Project
-        Lead), <ulink url="http://upsilon.cc/~zack/">Stefano Zacchirol</ulink> (Debian Project Lead)
-        and myself led on Sunday (video <ulink url="http://blip.tv/file/4729504">here</ulink>). We
-        discussed what barriers there are to cross-distro collaboration and what to do against them.
-        I can summarize the whole thing by saying pretty much everyone in the room agreed more
-        collaboration would be good and won't be that hard. More specifically, the main arguments
-        and their rebuttals that I heard: <itemizedlist>
-          <listitem>
-            <para>We will lose our identity and become one big grey blob! </para>
-            <para>Now first of all, <ulink url="http://www.albinoblacksheep.com/games/run">grey
-                blobs can be cool</ulink>. Second, our identity does not lie in any single tool or
-              application - our identity lies in the people, philosophy, culture AND technology
-              combined. Collaboration on a software installer or init system won't change
-              that!</para>
-          </listitem>
-          <listitem>
-            <para>We will never all agree on anything! </para>
-            <para>And why is that a problem? Maybe openSUSE and Fedora work together on the init
-              system without input from Ubuntu while Mandriva and Arch push forward a new Software
-              Installer without Debian's collaboration. Boehoe. I'd say such a situation would
-              already be a big improvement over each doing its own thing!</para>
-          </listitem>
-          <listitem>
-            <para>We all hate each other! </para>
-            <para>No, we don't. As was said in the discussion panel, usually our users get a whole
-              lot more passionate than our contributors. openSUSE and Fedora, Debian and Mandriva -
-              we all DO work together already.Fedora and openSUSE collaborate on bringing LXDE
-              patches upstream, KDE and GNOME packagers have worked together since ages. There is
-              plenty good going on already.</para>
-          </listitem>
-        </itemizedlist></para>
-      <para><emphasis role="bold">It is not that hard </emphasis></para>
-      <para>I think the last point makes clear what Vincents presentation on Appstream and the
-        success of the <ulink
-          url="http://news.opensuse.org/2011/01/26/app-installer-meeting-or-more-collaboration-accross-borders/"
-          >cross-distro collaboration meeting on application installation</ulink> also pointed out:
-        we're doing it, NOW. The reason the Fedora and Debian PL's as well as myself wanted this
-        meeting and are talking and writing about this has little to do with resistance to
-        cross-distribution work in our communities. There's little of that. As I expressed at the
-        panel, the issue is that when we encounter an issue and start thinking of possible
-        solutions, working with other distributions isn't a high priority. Rather, we just don't
-        think about it. That means we start to build a solution, only to discover later that there
-        already are others under development. And I bet the result is often that all solutions have
-        their pros and cons and none is as great as a unified solution might have been. Too bad!
-        Because if you DO try to collaborate, you might find yourself in the same situation Vincent
-        found himself in: he cautiously proposed "maybe we should try and work something out
-        together?" and it turned out everyone loved the idea! </para>
-      <para>So our issue is awareness. I think we already did a lot to advance that at our last
-        openSUSE conference: <ulink url="http://conference.opensuse.org">Collaboration Across
-          Borders</ulink>. It <ulink
-          url="http://news.opensuse.org/2010/10/28/opensuse-conference-big-success/">really made a
-          difference</ulink> and it is where Appstream was born.</para>
-      <para><emphasis role="bold">A good example </emphasis></para>
-      <para>To show how easy it is to communicate, let me point you to this <ulink
-          url="http://lists.freedesktop.org/archives/distributions/2011-February/000506.html">recent
-          email</ulink> on the <ulink
-          url="http://lists.freedesktop.org/mailman/listinfo/distributions">distributions mailing
-          list</ulink> on <ulink url="http://freedesktop.org">Freedesktop.org</ulink>. In that
-        email, Czech SUSE hacker Stanislav Brabec just tells people about a solution for a problem
-        he's been working on: the maintenance of MIME defaults in glib and desktop-file-utils and
-        making it all desktop-specific. This work can help applications integrate better within
-        different desktops. For example, Nautilus in GNOME will start file-roller if the user opens
-        a ZIP archive but if Nautilus runs in a Plasma desktop it will start Ark. If the other
-        distribution people like this work and want to help out, that would be awesome. We would get
-        better integration between Plasma, GNOME, XFCE, LXDE and the other desktop technologies on
-        Linux. And the distributions would share the workload!</para>
-      <para><emphasis role="bold">Help out</emphasis></para>
+      <title><ulink
+          url="http://nowwhatthe.blogspot.com/2011/02/on-getting-and-giving-attention.html">Jos
+          Poortvliet: On getting and giving attention</ulink></title>
+      <para>"Dear openSUSE community, There is a lot going on in openSUSE. Some of those things are
+        reasonably well known by now - Tumbleweed for example. Other things like the cross-desktop
+        MIME handling Stanislav Brabec has been working on are not that public. But should be! Now
+        that is where everyone can make a difference. If you're a developer but also if you're just
+        interested in what is going on! Development of important things happens because people know
+        about it and care about it. They know and care about it because there is communication done.
+        The openSUSE marketing team and in particular those writing for news.opensuse.org see it as
+        their task to help spread the word about things in openSUSE which are important and can use
+        help. But our marketeers can't be everywhere - they don't always know what is going on. So
+        they need help with that.</para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="http://1.bp.blogspot.com/-JbAGe9u7Cso/TVsuLN6rPcI/AAAAAAAABPI/7z0Yy2FP1PI/s1600/5447235565_4ffea9a9d3_b.jpg"
-            width="20%"/>
-        </imageobject>
-      </mediaobject>
-      <para>So, things are happening. But you can count on me to keep talking about this and trying
-        to help make it happen wherever I can. Jared and Stefano promised to do the same and I hope
-        other distribution leaders will follow suit. And I count on all of you to keep collaboration
-        in mind! More importantly, do it, help push it, help make a difference. As I wrote before in
-          <ulink url="http://nowwhatthe.blogspot.com/2011/01/my-way-or-highway.html">my way or the
-          highway</ulink>, collaboration strengthens us all and is what makes open source work so
-        well...</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://opensuse.blip.tv/file/4747393/">openSUSE TV: Downstream packaging
-          collaboration (Hans de Goede, Michal Hrušecký)</ulink></title>
-      <para>patch sharing or start a new upstream?Most distributions contain packages where upstream
-        is completely dead or very close to it, yet there still is a significant user group for the
-        packages in question, be it directly or through other packages depending on them. But even
-        when upstream is alive, packages often needs some additional patching.All distributions seem
-        to end up carrying some custom distro grown patchset, with some patches being shared and
-        other patches being unique per distro. Clearly not an ideal situation and one which most
-        distributions try to avoid by feeding all necessary changes upstream and aiming for having
-        packages which use the upstream provided code as is.Clearly the usual model of sharing code
-        fixes / integration work done at the distribution level between distributions by pushing it
-        upstream does not work for projects where there is no upstream. And even with upstream
-        around, distributions sometimes needs to fix bugs in versions that upstream no longer care
-        about or fix bugs that are not important/considered feature upstream and it may take a long
-        time to get them fixed there. In the end we can't avoid all patching. But we can try to
-        avoid duplicating the work by better sharing the results.The plan for this sessions is to
-        give a short presentation sketching the problem, show two possible approaches to help
-        solving this problem together with few generally helpful ideas. After presenting these
-        hopefully somewhat structured discussion with the audience about this topic is
-        planned.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://blip.tv/file/4729654">openSUSE TV: ZYpp your distro (Dominik Heidler
-          Duncan Mac-Vicar P.)</ulink></title>
-      <para>ZYpp is an opensource project originated in the openSUSE distribution which groups the
-        most advanced and fast dependency solver (satsolver), a package management library and a
-        command line package management tool (zypper). Over the years ZYpp has matured to become one
-        of openSUSE most appreciated features.This talk will show ZYpp's main features and work
-        being done to have it running on other rpm-based distributions.</para>
-      <!-- ($ ld: 7.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://hedgehogpainter.livejournal.com/11599.html">Katarina Machalkova: I
-          survived FOSDEM 2011</ulink></title>
-      <para>After some reports from other LibreOffice crowd members (<ulink
-          url="http://luxate.blogspot.com/2011/02/fosdem-2011-summary.html">here</ulink> and <ulink
-          url="http://feedproxy.google.com/~r/ItalosOOoBlog/~3/pJrk3wbKI9g/">here</ulink>), I'm
-        adding mine to the heap: </para>
-      <para><emphasis role="bold">Friday</emphasis>
-      </para>
-      <para>The fun has started at Prague airport already. Due to (to put it mildly) incompetence of
-        the printing shop I'm not gonna name, Kendy and me had exactly 10 minutes to dispatch 45
-        kilos of swag through the check-in -- that meant distributing the load into our luggage and
-        shipping the remaining boxes as overweight ( including paying criminal surcharge for it). I
-        hereby apologize to Czech Airways check-in clerk for spoiling her shift with it ;-) Getting
-        the material from Brussels luggage claim to the train station was rather challenging as
-        well, but fortunately there were some helping hands waiting for us at Brussels Nord (thanks
-        Thorsten, Rene and Kohei). In Kendy's words: "T<emphasis role="italic">he experience doesn't
-          necessarily have to be positive, but it definitely has to be remarkable. We would have
-          nothing to talk about otherwise</emphasis>." Friday's beer event (my first ever) was also
-        an enchanting experience. Met Caolan and Florian 'flr' Reuter for the first time (who, in
-        slightly boozed state, asked me "Hey, so you are my successor at Novell?"). It was amazing
-        to see LibreOffice crew almost having blocked the street in front of Delirium Cafe :)
-        (...)</para>
-      <!-- ($ ld: 10.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://florianreuter.blogspot.com/2011/02/just-came-back-from-fosdem.html"
-          >Florian Reuter: FOSDEM</ulink></title>
-      <para>Just came back from FOSDEM. Felt really good to meet the “usual suspects” again. Thanks
-        for the great weekend! </para>
-      <para>I also had a chance to talk with Jos about ODF Web and ODF Collaboration. Jos gave a
-        great talk about his ODF Web Javascript Framework which emerged from his ODFKit efforts. </para>
-      <para>Jos had a very important slide in his talk which echoed my own believe: NO CONVERSION!
-        This principle guided the design of his ODF Web Framework. NO CONVERSION simply means that
-        Jos does not try to heuristically (aka lossy) map ODF to HTML and then map HTML
-        heuristically (aka lossy) back to ODF. Instead Jos decided to have a clean 2-tier
-        architecture which cleanly separates the content- and the view layer: ODF is content and
-        HTML is the view. I think that’s the right approach. Even more: I think if you start adding
-        “smart conversions”/”heuristics” and other “intelligent mappings” things will get ugly
-        sooner or later. [And from my experience on OpenOffice.org filter hacking things will get
-        messy sooner than you like. Always keep Murphy’s law in mind: What can go wrong will go
-        wrong!]. </para>
-      <para>We also had a chance to talk about Operational Transformation (OT) in the context of
-        ODF. I tried to argue that what is really missing in ODF is a list of “atomic changes” a
-        user can make to an ODF document. If we had this list of “atomic changes” we could build a
-        transformation on top of it. For OT it is very important that you have “atomic” operations,
-        since you need operation transformations for every pair of operation. E.g. if you have |OPS|
-        operations you need |OPS x OPS| transformations. So keeping |OPS| small is quite important! </para>
-      <para>Assembling the list of atomic operations is a lot of work --- admitted. However it is
-        work that every designer of an API needs to do anyway. I really believe that some input from
-        the ODF API projects like Oracles’ ODFDOM, IBM’s Simple API for ODF, ANR’s LPOD and Jos’
-        ODFKit could really help. </para>
-      <para>Let me finish my post by a classification of change to an ODF document:</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://3.bp.blogspot.com/_k9bd8YQpZ7Y/TVARD-e1z0I/AAAAAAAAAIQ/aejOhYvKRZg/s400/changeclasses.jpg"
+          <imagedata fileref="http://farm3.static.flickr.com/2557/3704699851_687d439826_z.jpg"
             width="30%"/>
         </imageobject>
       </mediaobject>
-      <para> I believe that for change tracking we only need “atomic operations” and a way to
-        combine them to “compound operations”. I don’t think we need to be able to track changes to
-        the XML tree or the XML text. In fact I think it does more harm than good. </para>
-      <!-- ($ ld: 8.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://dev-loki.blogspot.com/2011/02/fosdem-2011-eol.html">Pascal Bleser:
-          FOSDEM 2011 EOL</ulink></title>
-      <para>So <ulink url="http://fosdem.org/2011">FOSDEM 2011</ulink> is over, at last, and it was
-        a huge success, as always (mind you, I'm one of the organizers, my opinions might be just a
-        little subjective here ;)). </para>
-      <para>From the organizational point of view, I was less active this year compared the the 7
-        previous ones (yes, it's already the 8th time for me, and I noticed how annoying it is to
-        say "8th" in English quite a few times during the weekend): lots of procastrination and my
-        "spare time" being vampirized by other activities, most prominently work on the <ulink
-          url="http://en.opensuse.org/openSUSE:Board">openSUSE Board</ulink> (which I am now <ulink
-          url="http://dev-loki.blogspot.com/2011/01/why-i-am-not-running-for-opensuse-board.html">no
-          longer part of</ulink>). Definitely something to fix for next year, and a big mea culpa to
-        my mates on the FOSDEM organization team. </para>
-      <para>That being said, it was still a lot of work, as it is for every edition, and while I
-        suppose that most if not all the visitors are sorry that the event is already over, we're
-        pretty happy it is, I'm sure you can understand why :). </para>
-      <para>All in all, it was very successful. There were more visitors, as each year, and I
-        believe that we've really reached the limits of the infrastructure we're using at the
-        moment. That means we'll have a few "interesting" challenges ahead of us for the next
-        edition (no, we won't move away from the ULB nor from the Solbosch campus, we'll just have
-        to stretch the space used by FOSDEM a bit more to use more and larger rooms). But more about
-        that in a few months' time. </para>
-      <para>It was also very smooth for everything else. Having so many volunteers to help us out
-        during the weekend, including for the very tedious task of setting things up, was really
-        ${deity}-send. Thanks to the support of the ULB networking team, Belnet as well as Cisco
-        made FOSDEM provide what must be the best possible wifi infrastructure at an event of such
-        size. Our usual <ulink url="http://bit.ly/ewcvgx">collaboration with LPI</ulink> went great
-        as well (was awesome to meet my good friend <ulink url="http://twitter.com/fabricemous"
-          >Fabrice Mous</ulink> again) as it provided the opportunity for ~130 exams to be taken by
-        FOSDEM visitors. </para>
-      <para>We even managed to fill up our largest room, <ulink
-          url="http://fosdem.org/2011/schedule/room/janson">Janson</ulink>, which is one of the
-        largest auditoriums in Belgium with 1400 seats, up to the limit and even a bit more for the
-        keynotes. That was impressive, to say the least. </para>
-      <para>It was a great pleasure to meet so many fine people and friends again (including, but
-        not exclusively, Henne Vogelsang, Peter Linnell, Andrew Wafaa, Jürgen Weigert, Will
-        Stephenson, Bruno Friedmann, Pavol Rusnak, Michal Hrusecky, Vincent Untz, Michael Meeks,
-        Daniel Seuffert, Frank Karlitschek, Delphine Lebedel, Tristan Nitot, William Quiviger, Tom
-        Marble, etc etc etc... -- sorry if I forgot you, I'm just too lazy and tired to keep pulling
-        names out of my brain at this point, too many to list :)), even if it was usually only for a
-        short chat as I have to keep running around all over the venue to get things done. </para>
-      <para>That's usually the point where one realizes again that it is so much about the people,
-        more than anything else (you are fine to disagree here, dear reader, it is just my very
-        humble opinion). So many FOSS projects are driven by so many great people, I'd just love it
-        to last for a couple of weeks to have the time to have beers (or coffee) with every single
-        one of them, at the very least the ones I already know. I'm really happy and thankful -- to
-        FOSDEM, I guess -- to be so lucky to have been in touch with so many interesting people, and
-        obviously hope to still be in the future. </para>
-      <para>And FOSDEM is also a very inclusive event, where projects and initiatives covering the
-        whole spectrum in terms of technologies, domains and (OSI compatible) licenses get together
-        to have a great deal of fun. I believe that every single visitor would agree that it is the
-        most effective way to get our motivation batteries loaded to spend our spare time, energy,
-        love, sweat and blood into doing such great things. </para>
-      <para>On the cross-pollination front, which is more and more of a priority for us, I'm happy
-        to see the <ulink url="http://fosdem.org/2011/schedule/track/crossdistro_devroom"
-          >Crossdistro developer room</ulink> clearly evolve into the right direction (thanks to
-          <ulink url="http://grep.be/">Wouter Verhelst</ulink> (of Debian fame) to take care of
-        that); where not quite there yet, as intentions need to be followed by much more action, but
-        it is a step forward already, and such things do take a good deal of time, as much as many
-        of us would like to see it happening as soon as possible, especially at openSUSE. FOSDEM is
-        such a great opportunity to get together with other projects and people, as so many of them
-        are on the spot. </para>
-      <para>For a couple of final words, my big "thank you" goes out, in no particular order, to the
-        volunteers who helped us during the weekend, to the sponsors that support the event, to the
-        visitors who have donated money in order to keep giving us the chance of remaining
-        independent, to the people and projects who were there at the stands, devrooms, lightning
-        talks, to the speakers who accepted our invitations, obviously to the other members of the
-        FOSDEM organization team (we did it again! :D), to the ULB and CI for providing us with
-        their infrastructure, and, of course, to the people who attended. </para>
-      <para>On a side note, if you were at FOSDEM 2011, please take a minute to fill out our <ulink
-          url="http://fosdem.org/2011/census">census </ulink>as well as our <ulink
-          url="http://fosdem.org/2011/feedback">feedback form</ulink>.</para>
-      <!-- ($ ld: 8.2.11 sm $) -->
+      <para><emphasis role="bold">How? </emphasis></para>
+      <para>Simple. If you are a developer working on something cool and new, let the openSUSE
+        marketing team know. That doesn't mean you have to write a story - just ping one or more
+        members of the team or mail the mailinglist or <email>news@opensuse.org</email>. They'll get
+        back to you, ask you questions, write about your initiative. And if you're aware of
+        something cool a developer has done or is doing in and for openSUSE but you haven't seen any
+        writing about it, think about letting the marketing and news team know! Send links to mails
+        or blogs where they can find some information or help them contact the developer(s).
+        Obviously, if you can write a quick summary of what is going on and why it is cool - that is
+        awesome. You don't have to write the article, the marketeers can do that for you, but any
+        material you can give or point them to will help them do it! </para>
+      <para>This way we can more easily give some of the cool new initiatives in openSUSE more
+        attention. openSUSE is a bottom-up community, the initiatives by individual contributors
+        make the difference - that also means we need to work a bit harder to get the word out on
+        what is going on. Help us with that, please! </para>
+      <para><emphasis role="bold">Linux Starter</emphasis></para>
+      <para> On an slightly related note (getting the word out), the Dutch "Linux Starter" Magazine
+        still is and will continue to be available from <ulink
+          url="http://www.hubstore.nl/informatie.asp?LN=STLIN2010">this site</ulink>. Yes, you can
+        finally order them now! Go ahead if you want to start with Linux and/or openSUSE, for about
+        10 bucks you have an excellent source of information and a nice custom dutch openSUSE DVD!
+        Spread the word on that too :D"</para>
+      <!-- ($ ld: 19.2.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
@@ -378,94 +160,80 @@
     <para>The openSUSE Weekly News are available as livestream or podcast in German. You can hear it
       or download it on <ulink url="http://blog.radiotux.de/podcast">Radiotux</ulink>. </para>
   </sect2>
-  <!--
   <sect2>
     <title>From Ambassadors</title>
     <blockquote>
       <title>
         <ulink
-          url="http://stick.gk2.sk/blog/2011/01/gnome-python-hackfest-appinstaller-meeting-and-bretzn-hackfest/"
-          >Pavol Rusnak: GNOME Python Hackfest, AppInstaller Meeting and Bretzn Hackfest</ulink>
+          url="http://opensuseambassadors.blogspot.com/2011/02/kde-release-party-in-larissa.html"
+          >Greek openSUSE Ambassadors: KDE Release Party in Larissa</ulink>
       </title>
-      <para>What a cool and productive week! But let me start from the beginning … </para>
-      <para>A couple of months ago we decided to start a <ulink
-          url="http://en.wikipedia.org/wiki/Hackerspace">hackerspace</ulink> in Prague called <ulink
-          url="http://brmlab.cz/">brmlab</ulink>. Most of the members deal with hardware, but there
-        are also couple of software guys like me. At the end of November we were contacted by <ulink
-          url="http://blog.tomeuvizoso.net/">Tomeu</ulink> and he asked if they can organize <ulink
-          url="http://live.gnome.org/Hackfests/Python2011">GNOME Python Hackfest</ulink> in our
-        hackerspace. I was more than delighted about the idea, so we agreed and started to plan
-        things. In the end we had 9 FOSS hackers working on GNOME and Python and I think they
-        enjoyed their time in Prague. Hackerspace is a great concept, because these folks didn’t
-        have to spend extra money on renting some place and our members had opportunity to meet
-        foreign FOSS developers and try exotic hardware like <ulink
-          url="http://en.wikipedia.org/wiki/OLPC_XO-1">OLPC XO-1</ulink>.</para>
-      <figure id="fig.blogpost">
-        <title>Blogposts from <ulink
-            url="http://blog.tomeuvizoso.net/2010/12/python-gnome-hackfest-2011.html">Tomeu</ulink>
-          and <ulink url="http://www.j5live.com/2011/01/19/pygi-in-prague/">J5</ulink> about the
-          event</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata
-              fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/gnome-python-1.jpg"
-              width="25%" align="center"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para>I had to leave the guys on Tuesday evening, because I spent the rest of the week in SUSE
-        office in Nuernberg. The first three days were dedicated to <ulink
-          url="http://distributions.freedesktop.org/wiki/Meetings/AppInstaller2011"
-          >Cross-distribution meeting</ulink> about application installer organized by <ulink
-          url="http://www.vuntz.net/journal/">Vincent</ulink>. It went more than well, we discussed
-        and agreed on many things, which is great and in the end we were able to give a <ulink
-          url="http://www.youtube.com/watch?v=BHeP2ZBwS_U">presentation</ulink> + we also created a
-          <ulink url="http://distributions.freedesktop.org/wiki/AppStream">nice AppStream
-          wikipage</ulink> as a starting point for any future work.</para>
-      <figure id="fig.summary">
-        <title>Vincent wrote a nice summary for <ulink url="http://news.opensuse.org/">openSUSE
-            News</ulink>. (It is not yet there, but should appear soon.)</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata
-              fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/appstream_meeting.jpg"
-              width="25%" align="center"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para>This meeting was immediately followed by <ulink
-          url="http://en.opensuse.org/openSUSE:2011_Bretzn_Meeting">Bretzn hackfest</ulink>
-        organized by <ulink url="http://blog.karlitschek.de/">Frank</ulink>. The main focus of it
-        was implementing some of the things we agreed on previous meeting from the KDE/Qt
-        perspective and porting MeeGo Garage to openSUSE. During it I was mainly dealing with
-        appdata.xml format we described in the AppStream meeting – I created an XML schema so we can
-        validate it and also developed a proof-of-concept generator of this piece of metadata in
-        Python. (<ulink url="http://gitorious.org/appstream">git repo</ulink>) Hope we can get it in
-        createrepo and dpkg-scan* utilities soon.</para>
-      <figure id="fig.planetsuse">
-        <title>Frank’s summary about the hackfest will appear on <ulink
-            url="http://planet.opensuse.org/">Planet openSUSE</ulink> soon</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/DSC_1674.jpg"
-              width="25%" align="center"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para>I would like to thank GNOME Foundation and Collabora for sponsoring the GNOME Python
-        Hackfest, Novell for sponsoring the Bretzn Hackfest and Canonical, Debian, Mageia, Novell
-        and Red Hat for sending their people to AppInstaller Meeting! It’s really nice and
-        encouraging to see folks from various companies working on one common goal.</para>
-      <para>And yeah,</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/going-to.png"
-            width="10%"/>
-        </imageobject>
-      </mediaobject>
-      <para>so see you there!</para>
+      <para>Last week in Larissa LinuxTeam hosted a KDE Release Party for 4.6. The event was listed
+        in the KDE promo's wiki page, hosted in the university and there was a presentation about
+        the new technologies and renovations of KDE 4.6 in which a member of the Greek openSUSE
+        community Giorgos Tsiapaliokas was one of the two main speakers, the other was Theo
+        Chatzimichos from Gentoo Greek Community. Of course Ι was there along with Kostas Koudaras
+        and Stathis Agrapidis (another active Greek community member) who came from Thessaloniki in
+        order to attend the speech and spread the word about openSUSE 11.4. We also had set up a
+        booth with stickers, flyers, openSUSE 11.4 Milestone 6 KDE live cds, openSUSE 11.3 dvds, my
+        netbook with openSUSE 11.4 Milestone 6 and some KDE promo material (stickers and badges)
+        from the KDE e.v. which by the way I want to thank them for it because they managed to send
+        me the promo kit on time. We talked about the new technologies of openSUSE 11.4, met new
+        people and had fun. After the event we went in a local tavern along with LinuxTeam members,
+        ate local food, drunk some tsipouro (local drink) and continued our talk about communities
+        and Linux in general. </para>
+      <para>Some photos from the event. You can find more here.</para>
+      <para>
+        <table frame="none">
+          <title>Photos</title>
+          <tgroup cols="2">
+            <colspec colname="c1" colnum="1"/>
+            <colspec colname="c2" colnum="2"/>
+            <thead>
+              <row>
+                <entry/>
+                <entry/>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref="http://1.bp.blogspot.com/-IUHTfghIJPo/TV61ARRz4aI/AAAAAAAAAE4/0OGPbrzRGdY/s1600/171751_1756198139059_1062123936_32043818_5899666_o.jpg"
+                        width="60%"/>
+                    </imageobject>
+                  </mediaobject>
+                </entry>
+                <entry>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref="http://4.bp.blogspot.com/-t6Up-VwKOG0/TV608uwZJuI/AAAAAAAAAEw/1h0cp_1aVMo/s1600/DSC01443.jpg"
+                        width="60%"/>
+                    </imageobject>
+                  </mediaobject>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata
+                        fileref="http://2.bp.blogspot.com/-QI1FJk394co/TV601RhkHGI/AAAAAAAAAEo/bEqt3tUoLsY/s1600/DSC00822.jpg"
+                        width="60%"/>
+                    </imageobject>
+                  </mediaobject>
+                </entry>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </para>
     </blockquote>
-  </sect2> -->
+  </sect2>
   <sect2>
     <title>Communication</title>
     <itemizedlist>
