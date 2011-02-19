@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/eMount">Packman: eMount
+        0.11.0-1.pm</ulink></title>
+    <para><quote>EMount is a free system administrator tool for Linux that can mount, encrypt and
+        manage disk image files and physical disk drives. It relies on cryptsetup, which implements
+        the LUKS disk encryption specification.</quote></para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/cmus">Packman: cmus
+      2.3.4-1.pm</ulink></title>
+    <para><quote>CMus is a small and fast text mode music player for Linux and *BSD. Supported file
+        formats include FLAC, Ogg, MP3 (via libmad), wav, and all module formats supported by
+        libmodplug. Included output plugins are ALSA, ARTS, OSS, and Sun. It can be controlled
+        through a UNIX socket. Background playlist loading and a metadata cache make loading files
+        very fast. Playqueue, playlist filters and directory browser. Three playlist views are
+        available: artist/album/track, shuffle list, and sorted list. There are three play modes:
+        all, artist, album.</quote></para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/aegisub">Packman: aegisub
+        2.1.8-0.pm</ulink></title>
+    <para><quote>Aegisub is an advanced subtitle editor that assists in the creation of subtitles,
+        translations, and complex overlays using audio or video. Developed by enthusiasts it builds
+        on workflows created and perfected through professional, hobby, and everyday
+        use.</quote></para>
+    <!-- ($ ld: 12.2.11 sm $) -->
+  </blockquote>
+</sect1>

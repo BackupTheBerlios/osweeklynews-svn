@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<article class="journalarticle">
+  <title>openSUSE Weekly News</title>
+  <articleinfo>
+<!-- Maybe date and/or pubdate might be useful: -->    
+    <date>2011-1-16</date>
+<!-- When it's published, date automatically inserted: -->    
+    <pubdate><?dbtimestamp format="Y-m-d" ?></pubdate>
+<!-- When it's published -->    <edition>&edition;</edition>
+    <authorgroup>
+      <author>
+        <othername>
+          <link linkend="credits">openSUSE Weekly News Team</link>
+        </othername>
+      </author>
+<!--
+      <author>
+        <firstname>Sascha</firstname>
+        <surname>Manns</surname>
+        <contrib>editor in chief</contrib>
+      </author>
+      <author>
+        <firstname>Satoru</firstname>
+        <surname>Matsumoto</surname>
+        <contrib>Editorial office</contrib>
+      </author>
+      <author>
+        <firstname>Gertjan</firstname>
+        <surname>Lettink</surname>
+        <contrib>Forums section</contrib>
+      </author>
+      <author>
+        <firstname>Thomas</firstname>
+        <surname>Hofstätter</surname>
+        <contrib>Events &amp; meetings</contrib>
+      </author>
+      <author>  
+        <firstname>Thomas</firstname>
+        <surname>Schraitle</surname>
+        <contrib>DocBook-Consultant</contrib>
+      </author> --><!-- The english version don't have othercredit for
+           translators as there is none.
+           Translators just put there name
+      --><!--<othercredit class="translator">
+        <firstname></firstname>
+        <surname></surname>
+        </othercredit>-->    
+    </authorgroup>  
+    <legalnotice>
+       <title>Legal Notice</title>
+       <!--
+       <para><mediaobject>
+          <imageobject>
+          <imagedata fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/>
+          </imageobject>
+       </mediaobject>
+       </para>
+       <para>This work (compilation) is licenced under <ulink
+       url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons attribution-ShareAlike 3.0 Unported License unless expressly otherwise indicated</ulink>. 
+         The rights for the compilation are copyright by Sascha Manns.
+         </para> -->
+      <para>Copyrights of the introduced articles are owned by original authors or copyright owners. If you want to reuse those articles, ask each original copyright owner which 
+        license should be applied. If you are an Autor and want to set your Blog under a free License? Just visit: 
+        <ulink url="http://bit.ly/hIK1uM">http://bit.ly/hIK1uM</ulink></para>
+    </legalnotice>   
+  </articleinfo>
+  <abstract>
+    <para>We are pleased to announce our &edition; issue of the openSUSE Weekly News.</para>
+    <para/>
+    <para>You can also read this issue in other formats. Just click <ulink url="http://en.opensuse.org/Archive:Weekly_news_other_sources">here</ulink>.</para>
+    <para>Enjoy the reading :-)</para>
+    <para>Counter for openSUSE 11.4
+    <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="http://countdown.opensuse.org/11.4/small.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </para>
+  </abstract>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-announcements.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-belection.xml"/> -->  
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/> -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-status-updates.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-community.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/> -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-security.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-kernel.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-tipsandtricks.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-planetsuse.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-forums.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-ontheweb.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-credits.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-acknowledgements.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-excopyright.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-feedback.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-translations.xml"/>
+</article>
