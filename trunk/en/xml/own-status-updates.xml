@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -19,17 +18,16 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-  <!--
+<!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <title>openSUSE Weekly News searches for contributors</title>
       <para></para>
     </blockquote>
-  </sect2> -->
-  <sect2 role="distribution">
+  </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
-    <!--
+<!--
     <blockquote>
       <title>
         <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
@@ -55,23 +53,20 @@ zypper in enlightenment</screen></para>
         in your *DM. </para>
       <para>Have a lot of fun and share your experiences… I will test it after I get some
         sleep.</para>
-    </blockquote> -->
-    <itemizedlist>
+    </blockquote> -->    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
-            Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
-            FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -118,10 +113,9 @@ zypper in enlightenment</screen></para>
         also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
         appliances!</para>
       </blockquote>
-      </sect2> -->
-  <sect2 role="teamreports">
+      </sect2> -->  <sect2 role="teamreports">
     <title>Team Report</title>
-    <!--
+<!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -133,8 +127,7 @@ zypper in enlightenment</screen></para>
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -282,15 +275,13 @@ zypper in enlightenment</screen></para>
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->
-    <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Brandon
-            Philips: Fixing openSUSE Build Service UI Gripes</ulink>
+          <ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Brandon Philips: Fixing openSUSE Build Service UI Gripes</ulink>
         </title>
-        <para>"The openSUSE Build Service is the tool that openSUSE developers use to build the
+        <para>&quot;The openSUSE Build Service is the tool that openSUSE developers use to build the
           packages that make up the distro. To the regular openSUSE user and contributor it does its
           job well. However, anyone who has spent an extensive amount of time with it have found a
           few sharp corners. Sankar is trying to fix some of those corners by writing a new client,
@@ -315,7 +306,7 @@ zypper in enlightenment</screen></para>
             </imageobject>
           </mediaobject>
         </figure>
-        <para>Issue #2- "Actions" menu on package and project page isn't very friendly and those
+        <para>Issue #2- &quot;Actions&quot; menu on package and project page isn&apos;t very friendly and those
           pages are mostly blank anyways. Show me the buttons! :)</para>
         <figure id="fig.obsprojectb">
           <title>Before</title>
@@ -335,20 +326,17 @@ zypper in enlightenment</screen></para>
         </figure>
         <para>If you have other things that you think should be fixed leave a comment below and I
           will try to fix them. Michal Marek has suggested making the breadcrumbs that are colon
-          seperated into individual links to each subproject. I am working on that next."</para>
-        <!-- ($ ld: 18.2.11 sm $) -->
-      </blockquote>
+          seperated into individual links to each subproject. I am working on that next.&quot;</para>
+<!-- ($ ld: 18.2.11 sm $) -->      </blockquote>
       <blockquote>
-        <title><ulink
-            url="http://psankar.blogspot.com/2011/02/introducing-gosc-graphical-client-for.html"
-            >Sankar P: Introducing GOSC - A Graphical client for openSUSE Build
-          Service</ulink></title>
-        <para>"openSUSE buildservice is an awesome framework for building rpms for multiple
+        <title>
+          <ulink url="http://psankar.blogspot.com/2011/02/introducing-gosc-graphical-client-for.html">Sankar P: Introducing GOSC - A Graphical client for openSUSE Build Service</ulink>
+        </title>
+        <para>&quot;openSUSE buildservice is an awesome framework for building rpms for multiple
           distributions. It is used by the openSUSE project, the Meego project, VLC, all distro
           releases from Novell, and in many other places. Usually OBS is accessed by a browser, I
           have implemented a simple GUI tool for working with OBS servers. </para>
-        <para>If you are extremely busy, just proceed to the screenshots section and the <ulink
-            url="https://github.com/curiosity/gosc">github</ulink> tree. Otherwise, read
+        <para>If you are extremely busy, just proceed to the screenshots section and the <ulink url="https://github.com/curiosity/gosc">github</ulink> tree. Otherwise, read
           below:</para>
         <para><emphasis role="bold">History</emphasis><orderedlist>
             <listitem>
@@ -360,7 +348,7 @@ zypper in enlightenment</screen></para>
             </listitem>
             <listitem>
               <para>I have always wanted to learn python. I have given some small level python
-                patches for some projects. But haven't had any experience in writing a python
+                patches for some projects. But haven&apos;t had any experience in writing a python
                 project from the scratch.</para>
             </listitem>
             <listitem>
@@ -371,52 +359,42 @@ zypper in enlightenment</screen></para>
           </orderedlist></para>
         <para>Based on the above three factors, I decided to complete a project that I just started
           day before yesterday (with a simple Python HelloWorld) into an usable thick-client for
-          openSUSE build service. The result is GOSC and the code is already in <ulink
-            url="https://github.com/curiosity/gosc">github</ulink>.</para>
+          openSUSE build service. The result is GOSC and the code is already in <ulink url="https://github.com/curiosity/gosc">github</ulink>.</para>
         <para><emphasis role="bold">OSC commandline &amp; OBS Library </emphasis></para>
         <para>I wanted to use a library for talking with the OBS APIs from my GUI client. But darix
           confirmed my fear in IRC that no such library exists as of now. One option was to copy
-          paste code from the osc commandline client's sources. But this is ugly and will give
-          maintenance nightmares. So, I decided to just use "osc" from my python programs and create
+          paste code from the osc commandline client&apos;s sources. But this is ugly and will give
+          maintenance nightmares. So, I decided to just use &quot;osc&quot; from my python programs and create
           a GUI wrapper using Python.</para>
         <para><emphasis role="bold">yabsc </emphasis></para>
         <para>Srinidhi told me of a different client for build-service named yabsc. I looked into
           it. It was written in true KDE fashion, exposing every possible control to the user. It
-          lists all the projects building in the entire build-service and not just "My Projects".
+          lists all the projects building in the entire build-service and not just &quot;My Projects&quot;.
           Also, I felt it is a little keyboard unfriendly and had too many tabs. So I ditched it as
           it was not meeting my usability requirements. However, if you are a looking for a more
           powerful, more matured product and not scared by too many controls on screen, it is better
           if you try yabsc. </para>
         <figure>
-          <title>Initial screen. "My Projects" are shown in the top-left listview.</title>
+          <title>Initial screen. &quot;My Projects&quot; are shown in the top-left listview.</title>
           <mediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://3.bp.blogspot.com/-Vkr7vCDvK38/TV2I3-bO6OI/AAAAAAAAEXE/iPflQfJFE6U/s320/gosc-main-screen.png"
-              />
+              <imagedata fileref="http://3.bp.blogspot.com/-Vkr7vCDvK38/TV2I3-bO6OI/AAAAAAAAEXE/iPflQfJFE6U/s320/gosc-main-screen.png"/>
             </imageobject>
           </mediaobject>
         </figure>
         <figure>
-          <title>Double-clicking a project from the list, will list the packages in the project in
-            the adjacent listview. The buildresults of the project are shown in the bottom
-            textarea.</title>
+          <title>Double-clicking a project from the list, will list the packages in the project in the adjacent listview. The buildresults of the project are shown in the bottom textarea.</title>
           <mediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://4.bp.blogspot.com/-b-yKAWNcGOo/TV2I6CnuSDI/AAAAAAAAEXI/eVh69ZItcO8/s320/gosc-project-results.png"
-              />
+              <imagedata fileref="http://4.bp.blogspot.com/-b-yKAWNcGOo/TV2I6CnuSDI/AAAAAAAAEXI/eVh69ZItcO8/s320/gosc-project-results.png"/>
             </imageobject>
           </mediaobject>
         </figure>
         <figure>
-          <title>Double-clicking a package from the top-right listview, will popup a Repository
-            chooser dialog.</title>
+          <title>Double-clicking a package from the top-right listview, will popup a Repository chooser dialog.</title>
           <mediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://3.bp.blogspot.com/-ojPZycYhdRI/TV2JFEqjyuI/AAAAAAAAEXM/X63U1lvLxcI/s320/gosc-repo-chooser.png"
-              />
+              <imagedata fileref="http://3.bp.blogspot.com/-ojPZycYhdRI/TV2JFEqjyuI/AAAAAAAAEXM/X63U1lvLxcI/s320/gosc-repo-chooser.png"/>
             </imageobject>
           </mediaobject>
         </figure>
@@ -424,31 +402,26 @@ zypper in enlightenment</screen></para>
           <title>The entire buildlog of the selected package is shown in the textarea.</title>
           <mediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://2.bp.blogspot.com/-rJkncdKa6t8/TV2JIQRmvwI/AAAAAAAAEXQ/w81_yTlNj04/s320/gosc-build-log.png"
-              />
+              <imagedata fileref="http://2.bp.blogspot.com/-rJkncdKa6t8/TV2JIQRmvwI/AAAAAAAAEXQ/w81_yTlNj04/s320/gosc-build-log.png"/>
             </imageobject>
           </mediaobject>
         </figure>
         <para>The source is licensed under LGPLv2.1. There are a lot of small fixes that could still
-          be added, like a "Loading..." status bar for network operations, Caching of buildlogs,
+          be added, like a &quot;Loading...&quot; status bar for network operations, Caching of buildlogs,
           project names, subscribing to build notifications from the build-server etc. But they are
-          not part of my regular workflow and also I strongly believe in "Release Early Release
-          Often". So, I am releasing in this barebones version, which already seem to solve my
+          not part of my regular workflow and also I strongly believe in &quot;Release Early Release
+          Often&quot;. So, I am releasing in this barebones version, which already seem to solve my
           workflow needs. </para>
         <para>During the implementation of this, I learned a lot about python. This experience also
-            <emphasis role="bold">strengthened</emphasis> my old opinion that <emphasis role="bold"
-            >Compiled languages are better for large scale projects</emphasis>. </para>
-        <para>Your feedback, comments and patches are very much welcome. "</para>
-        <!-- ($ ld: 18.2.11 sm $) -->
-      </blockquote>
+            <emphasis role="bold">strengthened</emphasis> my old opinion that <emphasis role="bold">Compiled languages are better for large scale projects</emphasis>. </para>
+        <para>Your feedback, comments and patches are very much welcome. &quot;</para>
+<!-- ($ ld: 18.2.11 sm $) -->      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org"
-          >Buildservice</ulink></para>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
     </sect3>
-    <!--
+<!--
     <sect3 role="evergreen">
       <title>Evergreen/Tumbleweed Team</title>
       <blockquote>
@@ -456,8 +429,7 @@ zypper in enlightenment</screen></para>
         <para></para>
       </blockquote>
     </sect3>
-    -->
-    <!--
+    --><!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -468,15 +440,13 @@ zypper in enlightenment</screen></para>
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/15/abandoning-unity-for-the-time-being/"
-            >Nelson Marques: Abandoning Unity for the time being…</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/02/15/abandoning-unity-for-the-time-being/">Nelson Marques: Abandoning Unity for the time being…</ulink>
         </title>
-        <para>"Packaging Unity wasn’t much of a problem, but implementing is being translated into
+        <para>&quot;Packaging Unity wasn’t much of a problem, but implementing is being translated into
           frustration… this cases and the lack of satisfactory results eventually lead to
           pre-burnout situations, and I’m not walking that road. </para>
         <para>My apologies for those who had expectations on this, but I sense this task requires
@@ -493,17 +463,16 @@ zypper in enlightenment</screen></para>
           up, I will look into it later once there’s an official Compiz release from the branch that
           is required for Unity, meanwhile I’ll keep openSUSE time available for learning a bit more
           on cmake and maintain the stuff that really works, the indicators, which involve already
-          over 30 packages between dependencies and indicators." (...)</para>
-        <!-- ($ ld: 15.2.11 sm $) -->
-      </blockquote>
+          over 30 packages between dependencies and indicators.&quot; (...)</para>
+<!-- ($ ld: 15.2.11 sm $) -->      </blockquote>
       <blockquote>
-        <title><ulink url="http://blog.crozat.net/2011/02/gnome-3-live-image-version-004.html"
-            >Frédéric Crozat: GNOME 3 Live image - version 0.0.4</ulink></title>
-        <para>"Another week, another release of GNOME 3 live image. </para>
+        <title>
+          <ulink url="http://blog.crozat.net/2011/02/gnome-3-live-image-version-004.html">Frédéric Crozat: GNOME 3 Live image - version 0.0.4</ulink>
+        </title>
+        <para>&quot;Another week, another release of GNOME 3 live image. </para>
         <para>Sorry for the delay but the release of GTK 3.0 and glib 2.28 last week pushed back my
           planned release since I needed to rebuild the entire stack with it. </para>
-        <para>If you want to spread the word about the image, you can also link now to <ulink
-            url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink>
+        <para>If you want to spread the word about the image, you can also link now to <ulink url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink>
         </para>
         <para>Anyway, what is new in this release : <itemizedlist>
             <listitem>
@@ -511,7 +480,7 @@ zypper in enlightenment</screen></para>
             </listitem>
             <listitem>
               <para>kernel 2.6.37 (desktop flavor) and Xorg 1.9.3 (ie fresh drivers for many cards)
-                : thanks to <ulink url="https://build.opensuse.org/">OBS</ulink>, I've been able to
+                : thanks to <ulink url="https://build.opensuse.org/">OBS</ulink>, I&apos;ve been able to
                 easily integrate those packages update on our stable distribution (openSUSE 11.3).
                 Still no gallium driver for radeon, this is scheduled for next week.</para>
             </listitem>
@@ -528,7 +497,7 @@ zypper in enlightenment</screen></para>
                 totem-plugins...)</para>
             </listitem>
             <listitem>
-              <para>new gnome-shell, with integration with evolution-data-server (no, you won't have
+              <para>new gnome-shell, with integration with evolution-data-server (no, you won&apos;t have
                 yet new workspace layout in this image, since GNOME-Shell hackers are still busy
                 working on it)</para>
             </listitem>
@@ -548,15 +517,14 @@ zypper in enlightenment</screen></para>
               <para>there are some SSL certificates popups issues (when using empathy)</para>
             </listitem>
             <listitem>
-              <para>changing language from gnome-control-center doesn't work</para>
+              <para>changing language from gnome-control-center doesn&apos;t work</para>
             </listitem>
           </itemizedlist></para>
         <para>If you installed the image on a system, you should be able to update it, running
-          "zypper dup" as root (careful, we changed a lot of things this time)"</para>
-        <!-- ($ ld: 15.2.11 sm $) -->
-      </blockquote>
+          &quot;zypper dup&quot; as root (careful, we changed a lot of things this time)&quot;</para>
+<!-- ($ ld: 15.2.11 sm $) -->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -663,8 +631,7 @@ zypper in enlightenment</screen></para>
           openSUSE 11.4. Feedback can go to the related wiki pages or straight to
           opensuse-kde@.</para>
      </blockquote> 
-     </sect3> -->
-    <!--
+     </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -712,8 +679,7 @@ zypper in enlightenment</screen></para>
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
@@ -724,25 +690,21 @@ zypper in enlightenment</screen></para>
       <title>Mono Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="openfateteam">
+      </sect3> -->    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
-            We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel
-              (Score: 339)</ulink>
+            <ulink url="https://features.opensuse.org/120340">Run download and install in parallel (Score: 341)</ulink>
           </title>
           <para>&quot;Network installation could be improved by running package download and package
             installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
-              boot (Score: 173)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 178)</ulink>
           </title>
           <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -754,7 +716,7 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 141)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 144)</ulink>
           </title>
           <para>&quot;An easy way to remove Software! </para>
           <para>For example: you installed an application with &quot;1-click install&quot; (which
@@ -765,23 +727,21 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
-              114)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 115)</ulink>
           </title>
           <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 88)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 89)</ulink>
           </title>
           <para>&quot;We need a feedback about packages that are preferred by users and actively
             used. Debian already has a tool named Popularity contest (popcon) (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for
-              Linux) (Score: 74)</ulink>
+            <ulink url="https://features.opensuse.org/305582">Off-Line one click install (MSI for Linux) (Score: 75)</ulink>
           </title>
           <para>&quot;Idea from community member Raúl García. Same concept as MSI packages for
             Windows but exploiting the One Click Install concept of openSUSE (and therefore
@@ -789,8 +749,7 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative
-              &quot;Installation Summary&quot; (Score: 68)</ulink>
+            <ulink url="https://features.opensuse.org/305548">YaST-Qt: More informative &quot;Installation Summary&quot; (Score: 71)</ulink>
           </title>
           <para>&quot;The YaST Qt package manager should provide as much information in the
             &quot;Installation Summary&quot; view as zypper, esp the overall download size to expect
@@ -798,8 +757,7 @@ zypper in enlightenment</screen></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs
-              (Score: 55)</ulink>
+            <ulink url="https://features.opensuse.org/307255">Less scary yast conflict dialogs (Score: 58)</ulink>
           </title>
           <para>&quot;The YaST2 sw_single dialog for conflicts, vendor change, architecture change
             etc. is very scary for many users.</para>
@@ -807,134 +765,133 @@ zypper in enlightenment</screen></para>
             problem without giving much help. This is a cause for many complaints, and contributes
             to myths of RPM dependency hell still existing today. (...)&quot;</para>
         </blockquote>
-        <!-- ($ ld: 12.2.11 sat *updated* $) -->
-      </sect4>
+<!-- ($ ld: 19.2.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
-            if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311243">Wings3d</ulink>
+            <ulink url="https://features.opensuse.org/311288">Add YAST feature to remove application settings</ulink>
           </title>
-          <para>Free and OpenSource 3D modelling tool.</para>
-          <para>Better suited to smaller 3d projects than blender.</para>
-          <para>Download from http://www.wings3d.com/ does not work on 64 bit OpenSuse</para>
+          <para>Kindly include an option in YAST to force removal of .&lt;NAME&gt; Folders when un-installing or de-installing applications through YAST.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311244">install time enhancement for
-              partitionner</ulink>
+            <ulink url="https://features.opensuse.org/311289">Let Dolphin open PERL documents in Kwrite</ulink>
           </title>
-          <para>NB: too late for 11.4, to be seen for next (12?) one.</para>
-          <para>when somebody have to install openSUSE, the moment he have to partition his drive is
-            the key moment. Any error could make him lose his favorite (previous) system. The
-            install system makes it&apos;s best to guess the better way to do this, but unless the
-            disk is brand new, the result is random. (...)</para>
+          <para>Register
+<emphasis role="bold">Kwrite</emphasis> as the handler for
+application/x-perl.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311246">Hide loading modules and running
-              services from user</ulink>
+            <ulink url="https://features.opensuse.org/311308">installing process: please provide new tab &quot;installation setup/summary&quot;</ulink>
           </title>
-          <para>Add new PolicyKit enabled deamons to load/stop services and load/unload kernel
-            modules.</para>
-          <para>For outdated tools, we can add running dbus oriented service into running script,
-            like OpenOffice will automatically starts CUPS service on startup, but when OO will be
-            integrated too, we will remove automatically start of CUPS from script.</para>
+          <para>https://bugzilla.novell.com/show_bug.cgi?id=671541
+</para>
+          <para>When you are just about to confirm installation you can read section by section
+all details about the installation (like booting options, packages selected,
+firewall settings, and so on).
+</para>
+          <para>When you confirm installation, this screen vanishes and you are presented with
+installation progress with 3 tabs -- slide show, details, release notes.
+
+</para>
+          <para>None of those tabs present the summary of the installation you just saw before.
+Please add it (this time static of course, not editable). It is valuable when
+lengthy installation is in progress and you want to reassure you didn&apos;t make
+mistake in settings.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311249">Squid-2.7</ulink>
+            <ulink url="https://features.opensuse.org/311311">Prompt for Computer Name during installation</ulink>
           </title>
-          <para>I want the old and stable squid 2.7 for the next opensuse release. It would be
-            better to have a stable software than the bleeding edge ones.</para>
+          <para>No problems or any errors durning installation but missing &quot;Prompt for PC name&quot;
+causing a &quot;funny name&quot; to be assigned.
+
+</para>
+          <para>A name like &quot;linux-5thc&quot; does not make sense.
+</para>
+          <para>The &quot;preffered name by user choice&quot; should by &quot;prompted&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311257">fdutils</ulink>
+            <ulink url="https://features.opensuse.org/311312">YaST installation with a preview of changes / changelog on demand</ulink>
           </title>
-          <para>The fdutils package contains utilities for configuring and debugging the Linux
-            floppy driver, for formatting extra capacity disks (up to 1992K on a high density disk),
-            and for sending raw commands to the floppy controller.</para>
+          <para>YaST Installation offers me a list of updateable packages, but usually it would be interesting for me, which changes have been made to them and whether updating is intersting for me.
+of course, best would be to see only a diff, but I understand that building a diff might be hard to do, because it depends on the local, preinstalled package and the repository it cames from. This could be probably done jut for the official OpenSUSE update repository.
+
+</para>
+          <para>At least I would appreciate to get the new changelog on demand by marking a package in YaST and providing a &quot;demand changelog action&quot; on it.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311267">Two tier option to Community
-              repository list</ulink>
+            <ulink url="https://features.opensuse.org/311313">Yast installation - more options for marking packages from a list to be updated</ulink>
           </title>
-          <para>In brief:</para>
-          <para>Working in Yast &gt; Software Repositories</para>
-          <para>Add &gt; Community Repositories</para>
-          <para>1. Make a default community repo list Eg: OSS, NON-OSS, UPDATES, PACKMAN, NVIDIA,
-            ATI, LIBDVDCSS</para>
-          <para>2. And offer an advanced option available with a toggle (That should include a
-            warning that it is for advanced users) Where the full community list will be
-            available</para>
-          <para>Like this:</para>
-          <para>http://dl.dropbox.com/u/10573557/SUSE%20Misc/community_list_edit.png </para>
+          <para>I use many different software repositories in YaST for updating and often there are packages of the same name, which
+
+   </para>
+          <para>1. got an older version number, although they are newer,
+   </para>
+          <para>2. are only automatic rebuilds depending on other packages, but they haven&apos;t changed themself (OpenSUSE marks them a change in the Y part of a X.Y release number in RPM packages).
+
+</para>
+          <para>This makes it many times difficult to select the packages I want really to update and I have to mark many of them manually.
+
+</para>
+          <para>I&apos;d appreciate to more options for selecting packages in a shown package list:
+
+   </para>
+          <para>1. Select different packages (regardless whether they have a newer version or release number)
+   </para>
+          <para>2. Select packages which are not built automatically due to other package changes (or however to call this shortly for a menu entry).
+</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311273">Configure ALLMULTI on an interface
-              from YaST</ulink>
+            <ulink url="https://features.opensuse.org/311318">Spark Instant Messenger</ulink>
           </title>
-          <para>It would be nice if ALLMULTI could be configured from YaST as a &apos;rcnetwork
-            restart|start|stop&apos; removes ALLMULTI.</para>
-          <para>ifcfg-&lt;iface&gt; could have the following parameter in it:</para>
-          <para>ALLMULTI=on|off in terms</para>
-          <para>it would run:</para>
-          <para>ifconfig &lt;iface&gt; allmulti</para>
+          <para>The Mozilla Foundation provides live support for Firefox by means of an instant messenger called Spark. Let openSUSE have it too.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311276">Remove or prevent error messages when
-              mounting a removable</ulink>
+            <ulink url="https://features.opensuse.org/311319">Improve localization configuration options for Gnome</ulink>
           </title>
-          <para>Currently when mounting a removable (usbstick, dvd, etc) often an error from
-            &quot;org.freedesktop.hal.storage.mount-removable&quot; or a &quot;DBus error
-            org.gtk.Private.RemoteVolumeMonitor.Failed: An operation is already pending&quot;
-            occurs. These errors occur mostly when using media with multiple partitions. This
-            request is to surpress these errors and only start one filemanagerinstance for the
-            specific medium.</para>
-          <para>These errors appear to be DE-agnostic, until now they show up in GNOME, KDE and Xfce
-            on openSUSE 11.3.</para>
+          <para>There is no proper way to handle language and locale settings on Gnome. You cannot choose English as a Gui language and then locale setting (numeric|time settings) to be Finnish. You can archive some of by hacking /etc/sysconfig/language
+</para>
+          <para>RC_LANG=&quot;en_US.UTF-8&quot;
+</para>
+          <para>RC_LC_ALL=&quot;fi_FI.UTF-8&quot;
+</para>
+          <para>but then date and time is translated to Finnish which isn&apos;t desirable state.
+
+</para>
+          <para>On KDE you have proper tool (system setting -&gt; locale) which work as desirable.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/311279">Include Warsow and FreeOrion</ulink>
+            <ulink url="https://features.opensuse.org/311320">Add patch to kernel - xorg-X11-server/video-driver to disable boot flicker</ulink>
           </title>
-          <para>Warsow is a multiplayer-designed FPS like OpenArena but in a cartoon-like style and
-            with special moves.</para>
-          <para>http://www.warsow.net</para>
-          <para>FreeOrion is a turn-based space empire &amp; galactic conquest game. A good
-            complement to FreeCiv in my opinion</para>
-          <para>http://www.freeorion.org </para>
+          <para>Please add patch to openSUSE kernel and xorg-x11-server including xorg-x11-driver-video to disable the boot flicker during start up of openSUSE.
+
+</para>
+          <para>It could remove the light-to-black transition between openSUSE bootsplash and the kdm login.</para>
         </blockquote>
-        <!-- ($ ld: 12.2.11 sat *replaced with newer ones* $) -->
-      </sect4>
+<!-- ($ ld: 19.2.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink
-            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
     </sect3>
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://kohei.us/2011/02/17/extracting-a-sub-project-into-a-new-repository-and-how-mso-dumper-got-its-new-home/"
-            >Kohei Yoshida: Extracting a sub project into a new repository (and how mso-dumper got
-            its new home)</ulink>
+          <ulink url="http://kohei.us/2011/02/17/extracting-a-sub-project-into-a-new-repository-and-how-mso-dumper-got-its-new-home/">Kohei Yoshida: Extracting a sub project into a new repository (and how mso-dumper got its new home)</ulink>
         </title>
-        <para>"<emphasis role="bold">Background </emphasis></para>
-        <para>Just a short while ago I worked on extracting our mso-dumper project from <ulink
-            url="http://cgit.freedesktop.org/libreoffice/build/">LibreOffice’s build
-            repository</ulink>, into a brand new repository created just for this. The new
-          repository was to be located in <ulink
-            url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/"
-            >libreoffice/contrib/mso-dumper</ulink>. </para>
+        <para>&quot;<emphasis role="bold">Background </emphasis></para>
+        <para>Just a short while ago I worked on extracting our mso-dumper project from <ulink url="http://cgit.freedesktop.org/libreoffice/build/">LibreOffice’s build repository</ulink>, into a brand new repository created just for this. The new
+          repository was to be located in <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/">libreoffice/contrib/mso-dumper</ulink>. </para>
         <para>Originally, this project started out just as a simple sub directory of a much larger
           parent repository. But because it grew so much, and because its scope is not entirely in
           line with that of the parent repository, I decided it was best to move this project into a
@@ -978,24 +935,20 @@ zypper in enlightenment</screen></para>
         <para>There was one caveat, however. This method apparently does not preserve the whole
           history of the relocated files if the parent sub-directory had been renamed. The
           mso-dumper directory was renamed from its original name sc-xlsutil in order to accommodate
-            the<ulink url="http://blog.thebehrens.net/2009/01/08/python-binary-ppt-fun/"> ppt dumper
-            that Thorsten wrote</ulink>. Unfortunately <emphasis role="italic">git filter-branch
-            --subdirectory-filter</emphasis> did not preserve the history before the directory
+            the<ulink url="http://blog.thebehrens.net/2009/01/08/python-binary-ppt-fun/"> ppt dumper that Thorsten wrote</ulink>. Unfortunately <emphasis role="italic">git filter-branch --subdirectory-filter</emphasis> did not preserve the history before the directory
           rename occurred, but that was just a minor issue, and something I was not too concerned
-          about for this particular transition."</para>
-        <!-- ($ ld: 18.2.11 sm $) -->
-      </blockquote>
+          about for this particular transition.&quot;</para>
+<!-- ($ ld: 18.2.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-02/msg00002.html">Larry
-            Finger: Weekly News for February 12</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-02/msg00002.html">Larry Finger: Weekly News for February 12</ulink>
         </title>
         <para>The next Testing Core Team IRC meeting will be held February 14, 2011 at 18:00 UTC.
-          Happy Valentine's day. </para>
-        <para>This meeting will discuss the Team's experiences with openSUSE 11.4 RC1. </para>
+          Happy Valentine&apos;s day. </para>
+        <para>This meeting will discuss the Team&apos;s experiences with openSUSE 11.4 RC1. </para>
         <para>Since doing my first install about 30 hours ago, I have installed the new release on 3
           different instances with the following results: </para>
         <para>1. I did a NET i586 upgrade from M6 to RC1 on a VirtualBox VM. All was going well till
@@ -1006,7 +959,7 @@ zypper in enlightenment</screen></para>
           VB VM of the KDE desktop from the i586 NET install CD. Everything went well. </para>
         <para>3. The x86_64 NET install CD was used to update from M6 to RC1 on my main machine. In
           an initial reboot, NetworkManager has failed to start, but it is not known if this was a
-          one-time event. With the Configure Desktop => Input Devices => Touchpad GUI, I could
+          one-time event. With the Configure Desktop =&gt; Input Devices =&gt; Touchpad GUI, I could
           disable tapping, which is essential for me as my personal capacitance always leads to
           unintended clicks whenever tapping is enabled. This action was much more difficult with
           11.3. After running for more than 1 day with my own home-built 2.6.38 kernel, I have found
@@ -1018,28 +971,25 @@ zypper in enlightenment</screen></para>
           extensively; however, it appears that this workaround will allow me to use RC1 for general
           work. </para>
         <para>Once again, I issue my plea for testing. Your hardware, software and computing needs
-          are unique - you will be testing combinations unlike anyone else. Please look at the "most
-          annoying bug" list to see if there any killer bugs. Thus far, the only such bug that is
+          are unique - you will be testing combinations unlike anyone else. Please look at the &quot;most
+          annoying bug&quot; list to see if there any killer bugs. Thus far, the only such bug that is
           posted is a problem with the KDE Live CD. No doubt, we will add to that list during our
           meeting.</para>
-        <!-- ($ ld: 12.2.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 12.2.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink
-              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
-              Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-    <!--
+<!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -1095,18 +1045,15 @@ zypper in enlightenment</screen></para>
             </listitem>
           </itemizedlist></para>
       </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->
-  </sect2>
+      </sect3> -->  </sect2>
 </sect1>
