@@ -473,28 +473,107 @@ zypper in enlightenment</screen></para>
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/15/abandoning-unity-for-the-time-being/"
-            >Nelson Marques: Abandoning Unity for the time being…</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/02/19/indicators-for-gnome2-update/">Nelson
+            Marques: Indicators for GNOME2 – Update</ulink>
         </title>
-        <para>"Packaging Unity wasn’t much of a problem, but implementing is being translated into
-          frustration… this cases and the lack of satisfactory results eventually lead to
-          pre-burnout situations, and I’m not walking that road. </para>
-        <para>My apologies for those who had expectations on this, but I sense this task requires
-          much more than what I can offer at the current time. The packages are still available from
-          my home repo if someone wants to pick it up. All the components build so far, the
-          dependencies are all in that repository as well, as I see only integration is required.
-          I’ve runned across some problems, mainly Compiz behavior on several different git
-          snapshots, I’ve run against problems with the default gconf settings required by Unity and
-          the backup/restore operations from openSUSE defaults amongst other things. It’s maybe
-          wiser to wait for a bit more of development from upstream before looking into this.
-          openSUSE is supposed to be stable and reliable, and I don’t see this branch of Compiz
-          match those two qualities yet. </para>
-        <para>If anyone wants to scavenge those packages, feel free to do it. If no one takes this
-          up, I will look into it later once there’s an official Compiz release from the branch that
-          is required for Unity, meanwhile I’ll keep openSUSE time available for learning a bit more
-          on cmake and maintain the stuff that really works, the indicators, which involve already
-          over 30 packages between dependencies and indicators." (...)</para>
-        <!-- ($ ld: 15.2.11 sm $) -->
+        <para>"Canonical has been very active and released quite an impressive amount of bug fixes
+          and features for their Ayatana Project software. I’ve been doing the updates, sent a
+          couple of tiny patches upstream (mainly packaging issues) and with the RC1, I am very
+          happy with the results accomplished. </para>
+        <para>Regarding this project, I’ve seen news, blog posts and lots of feedback from several
+          distribution users. I’ve found contents in German, Portuguese (Brazilian Portuguese),
+          English, Russian and Spanish. For the most I believe everyone is happy this is happening. </para>
+        <para>During the next week, I’m going to conduct an open-beta for the GNOME2 indicators from
+          which I hope to get some feedback and improve things so that once openSUSE 11.4 is
+          release, those users willing to use this software can do it safely, and off course in an
+          openSUSE way, a rock solid and featured GNOME experience. </para>
+        <para>I’ve created a pattern which will duplicated in the GNOME:Ayatana repository named
+          ‘gnome2-indicators’ which will install the 5 base indicators on Ubuntu Natty. About this
+          indicators and some previous comments that I’ve seen online, I would like to clarify a
+          couple of things:<itemizedlist>
+            <listitem>
+              <para>All the software is built on top of ‘openSUSE stack’, so we’re not really
+                converting Ubuntu to RPM’s.</para>
+            </listitem>
+            <listitem>
+              <para>The patch level applied from Ubuntu is minimum, only the mandatory feature
+                patches were applied on pure openSUSE stack. Some of this features weren’t
+                upstreamed, while others were turned down, so GNOME:Ayatana will also provide the
+                modified software required, this is the case of GTK+ (2.0) which is properly tested
+                and no issues were found against the regular GTK+ stack on 11.4.</para>
+            </listitem>
+            <listitem>
+              <para>I’ve patched and built applications like Metacity, Empathy and gnome-session to
+                enable functionality with the Indicators. I’m also serving this patched versions
+                through GNOME:Ayatana, without them, there wouldn’t really be a pleasant indicator
+                experience for openSUSE users. I would love to see community contributions to
+                GNOME:Ayatana for all of those that aren’t available yet. Don’t be shy, we don’t
+                bite! (A big plus is that you can actually learn a lot, and the openSUSE GNOME Team
+                is very friendly and helpful. If you really want to help and improve yourself, step
+                forward!.</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Now for real… what does the GNOME2 Indicator pattern offers?<orderedlist>
+            <listitem>
+              <para>A 99% working Session Indicator, from where users can perform several session
+                related tasks (ex: logout, restart, switch users, hibernate, etc). The only feature
+                I know it’s not present is the “restart/relog” option after software updates. If
+                anyone want to work this indicator to work with PackageKit / YaST or zypper, would
+                be probably a big plus and significative contribution to openSUSE and
+                upstream.</para>
+            </listitem>
+            <listitem>
+              <para>The ME Menu, which appears to be fully functional.</para>
+            </listitem>
+            <listitem>
+              <para>A simple clock indicator. This indicator is under very active development, and
+                displays a simple calendar/clock with options to manage appointments (through
+                Evolution). The ‘date/time’ configurations are disabled because on openSUSE we use
+                YaST for it. Except for this, everything seems to be working.</para>
+            </listitem>
+            <listitem>
+              <para>Sound Menu indicator… the (in)famous Sound indicator from Ubuntu, which displays
+                an horizontal slide bar for sound volume management and fully integrates with
+                Banshee. Since I’m recent convert to Banshee from Totem because of the development
+                of this project, I’ve also packaged and made available from GNOME:Ayatana two extensions:<itemizedlist>
+                  <listitem>
+                    <para>banshee-extension-soundmenu – Enables integration with soundmenu, really a
+                      plus/must if Banshee is your preferred multimedia player;</para>
+                  </listitem>
+                  <listitem>
+                    <para>banshee-extension-indicator – A Banshee indicator. I’ve only really
+                      packaged this because it offers integration with Notify OSD, the indicator
+                      itself is less featured than the traditional gnome extension.</para>
+                  </listitem>
+                </itemizedlist></para>
+            </listitem>
+            <listitem>
+              <para>The Messaging Menu – Another controversial indicator… Currently it’s working
+                with Empathy (patched with libindicate on GNOME:Ayatana), xchat, evolution and
+                gwibber. Other applications like pidgin are known to work up to a certain point.
+                This indicator grabs any incoming messaging and alerts the user for it. It’s not
+                really that bad once you get used to it (takes a couple of hours).</para>
+            </listitem>
+          </orderedlist></para>
+        <para>Additionally to this, Notify OSD is also available for openSUSE 11.4, and doesn’t
+          require any extra repository. openSUSE 11.4 ships with a version of Notify OSD that allows
+          the user to skin/theme it in several ways. This behavior isn’t enabled on Ubuntu and
+          relies on a patched refused by upstream by Roman Sokuchev. The development project for
+          this package is GNOME:Apps, and my thanks to Vincent Untz and Dominique L. for helping
+          with the process. </para>
+        <para>During next week, GNOME:Ayatana will be populated and a free open BETA will be start
+          to gather feedback amongst our users. </para>
+        <para>A side note… Yesterday an update for Sound Menu was issued by Canonical and it deeply
+          relies on libnotify >= 0.7.0. openSUSE 11.4 will ship with libnotify 0.6.0 and therefore
+          I’m not committing more changes to Sound Menu and will only fix critical issues if found
+          for this package. </para>
+        <para>After openSUSE 11.4 is released, I’ll start working on implementing this for GNOME3,
+          and hopefully now I will have enough time to try to push them to Factory for openSUSE 12
+          (or whatever it will be called). </para>
+        <para>Contributions are accepted in any area not covered by me, or fixing stuff, and also
+          very important, in the KDE field. About Unity… here’s a riddle: “How can you tell if a
+          ghost is about to faint?”."</para>
+        <!-- ($ ld: 20.2.11 sm $) -->
       </blockquote>
       <blockquote>
         <title><ulink url="http://blog.crozat.net/2011/02/gnome-3-live-image-version-004.html"

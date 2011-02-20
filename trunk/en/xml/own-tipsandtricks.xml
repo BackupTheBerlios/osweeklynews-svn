@@ -158,22 +158,123 @@ done</screen></para>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.serverwatch.com/tutorials/article.php/3924816/Use-Logger-to-Write-Messages-to-Log-Files.htm"
-          >Serverwatch/Joe Brockmeier: Use Logger to Write Messages to Log Files</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/"
+          >Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3,
+          11.4</ulink>
       </title>
-      <para>"Want a quick and easy way to write to system logs? Check out logger, a shell utility
-        that works with syslog. </para>
-      <para>The logger utility is part of the bsdutils package on Debian-based systems and the
-        util-linux-ng package on Fedora (and presumably Red Hat Enterprise Linux, although I don't
-        have a RHEL system handy to check). It should be installed by default. </para>
-      <para>The most common use for logger is as a lightweight way to pass messages from a script to
-        logfiles. Say you've got a backup script or another job that runs while you're home
-        snoozing. Rather than having the script send an email and clog up your inbox, you can add
-        logger to your script, and check periodically, at your leisure, to make sure things went as
-        planned -- or use logger to just log error messages when the job doesn't run as planned or
-        encounters an error." (...)</para>
-      <!-- ($ ld: 15.2.11 sm $) -->
+      <para>"<emphasis role="bold"><emphasis role="underline">Preambule : free
+          software</emphasis></emphasis>
+      </para>
+      <para><emphasis role="bold"><emphasis role="italic">Warning</emphasis>
+        </emphasis></para>
+      <para>I would notice everybody which will install these software : you will install
+        proprietary softwares on your computer. Nobody will be able to debug them, nor help you to
+        resolve what can be happen. That must be said !</para>
+      <para><emphasis role="bold">The free future </emphasis></para>
+      <para>The real future is already in place : it’s called radeon (or free-radeon), it’s fully
+        integrated in kernel &amp; xorg. Actually ( for openSUSE 11.4, or openSUSE 11.3 with <ulink
+          url="http://download.opensuse.org/repositories/Kernel:/stable/openSUSE_11.3/"
+          >kernel-stable</ulink> + <ulink
+          url="http://download.opensuse.org/repositories/X11:/XOrg/openSUSE_11.3/">X11 obs
+          repo</ulink> ). Support for many chipset is in real progress even for the 6xxx series.
+        Give it a try before using the proprietary software, report any bugs you find with it. Only
+        your contributions can help and will make a real differences. Thanks for doing that !</para>
+      <para><emphasis role="bold">Unofficial but working repository </emphasis></para>
+      <para>I offer for those of you that for any reasons can’t use successfully the free-radeon
+        drivers a repository where you will find the latest fglrx/catalyst drivers following the
+        packaging policy made avalaible by AMD. Thanks to Sebastian Siebert ( check his blog ) to
+        work in coordination with ati/amd and follow the catalyst packaging. His work allow us to
+        have that driver available for openSUSE.</para>
+      <para><emphasis role="bold"><emphasis role="italic">The quick how-to</emphasis>
+        </emphasis></para>
+      <para><emphasis role="bold"><emphasis role="underline">Adding the
+          repository</emphasis></emphasis>
+      </para>
+      <para/>
+      <para><emphasis role="bold">For openSUSE
+        11.4</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.4/ "ATI/AMD FGLRX"
+</screen></para>
+      <para><emphasis role="bold">For openSUSE
+        11.3</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.3/ "ATI/AMD FGLRX"</screen></para>
+      <para><emphasis role="bold">For openSUSE
+        11.2</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.2/ "ATI/AMD FGLRX"
+</screen></para>
+      <para><emphasis role="bold"><emphasis role="underline">Installing the
+          driver</emphasis></emphasis></para>
+      <para><emphasis role="bold">Nota previous version</emphasis></para>
+      <para>Due to change in ati/amd way of life, it’s recommanded to completely remove any version
+        of fglrx previously installed with a zypper rm </para>
+      <para>I can only recommand to also (as root)
+        <screen># Remove old conf &amp; stuff
+rm -fr /etc/ati
+# Remove any old fglrx inside kernel modules
+find /lib/modules -type f -iname "flgrx.ko" -exec rm -fv {} \;</screen></para>
+      <para><emphasis role="bold">New installation</emphasis>
+      </para>
+      <para>Once the repo has been added, you will certainly have to reboot to get ride off free
+        radeon module. At boot on the grub line
+        add<screen>nomodeset blacklist=radeon 3</screen></para>
+      <para>Don’t panic you will be land to a console, open it with root account to install fglrx.
+        Search the software you want for example under openSUSE 11.4
+        <screen>zypper se -s fglrx
+Loading repository data...
+Reading installed packages...
+
+S | Name                  | Type    | Version | Arch   | Repository
+--+-----------------------+---------+---------+--------+-----------
+  | fglrx64_7_6_0_SUSE114 | package | 8.812-1 | x86_64 | ATI/AMD fglrx non-official
+i | fglrx64_xpic_SUSE114  | package | 8.821-1 | x86_64 | ATI/AMD fglrx non-official
+  | fglrx_7_6_0_SUSE114   | package | 8.812-1 | i586   | ATI/AMD fglrx non-official
+  | fglrx_xpic_SUSE114    | package | 8.821-1 | i586   | ATI/AMD fglrx non-official</screen></para>
+      <para>Starting with 8.821 (Catalyst 11.2) ATI use now xpic (full explanation) So use that
+        one.</para>
+      <para><emphasis role="bold">For a 64bits
+        version</emphasis><screen>zypper in fglrx64_xpic_SUSE114</screen></para>
+      <para><emphasis role="bold">For a 32bits
+        version</emphasis><screen>zypper in fglrx_xpic_SUSE114</screen></para>
+      <para>During the installation process, all the dependencies will be added, which mostly are
+        needed to build the kernel modules. Expect around 200MB to dowload. </para>
+      <para>Then the installer will build the module for your installed kernel. And if there’s a
+        kernel update, the script will automagically detect that, and will rebuild the module for
+        the new kernel installed. (So if you find that your workstation is slow on reboot just press
+        the esc key to see the details … )</para>
+      <para><emphasis role="bold">Preparing xorg to use fglrx </emphasis></para>
+      <para>Once the module is build and installed, you should have a file fglrx.conf or
+        50-fglrx.conf in
+        /etc/modprobe.d<screen>cat /etc/modprobe.d/50-fglrx.conf
+blacklist radeon</screen></para>
+      <para>Next ati recommend to use ati –initial-config but that break the auto-detect stack of
+        xorg. So I recommend changing one line in file /etc/X11/xorg.conf.d/50-device.conf </para>
+      <para>just change driver line to driver “fglrx” </para>
+      <para>All the rest of the setup (double screen etc) will be made lately with the ati catalyst
+        control center (command is amdcccle). </para>
+      <para>For those of you which want to have an xorg.conf file just have a look at aticonfig
+        –help command.</para>
+      <para><emphasis role="bold">Start X</emphasis>
+      </para>
+      <para>If you are inside the console we start to use before just run “init 5″ to start xorg,
+        and normally you will find your normal xorg login screen (kdm, gdm, ldm, xdm). Hit
+        ctrl+alt+f1 to return to the console and type exit or logout or ctrl+d to close it. then
+        ctrl+alt+f7 to return to the xorg session.</para>
+      <para><emphasis role="bold">Updates </emphasis></para>
+      <para>ati/amd catalyst are release on a month basis, but this vary from 3 weeks to 8 weeks.<itemizedlist>
+          <listitem>
+            <para> Catalyst 11.2 – fglx 8.821 : 14 February 2011 </para>
+          </listitem>
+        </itemizedlist></para>
+      <para><emphasis role="bold">References </emphasis><itemizedlist>
+          <listitem>
+            <para><ulink
+                url="http://www.sebastian-siebert.de/2011/02/15/opensuse-11-3-proprietaeren-grafik-treiber-ati-catalyst-11-2-als-rpm-installieren/"
+                >Sebastian Siebert blog ( German )</ulink> with nice howto and problem
+              resolution.</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://lizards.opensuse.org/?p=4673">My previous post on the
+                subject</ulink> "</para>
+          </listitem>
+        </itemizedlist></para>
+      <!-- ($ ld: 20.2.11 sm $) -->
     </blockquote>
   </sect2>
 </sect1>
