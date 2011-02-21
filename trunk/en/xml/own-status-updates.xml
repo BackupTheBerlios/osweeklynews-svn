@@ -576,63 +576,44 @@ zypper in enlightenment</screen></para>
         <!-- ($ ld: 20.2.11 sm $) -->
       </blockquote>
       <blockquote>
-        <title><ulink url="http://blog.crozat.net/2011/02/gnome-3-live-image-version-004.html"
-            >Frédéric Crozat: GNOME 3 Live image - version 0.0.4</ulink></title>
-        <para>"Another week, another release of GNOME 3 live image. </para>
-        <para>Sorry for the delay but the release of GTK 3.0 and glib 2.28 last week pushed back my
-          planned release since I needed to rebuild the entire stack with it. </para>
-        <para>If you want to spread the word about the image, you can also link now to <ulink
-            url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink>
+        <title><ulink
+            url="http://lizards.opensuse.org/2011/02/20/gnomeayatana-project-page-in-english-and-portuguese/"
+            >Nelson Marques: GNOME:Ayatana project page in English and Portuguese…</ulink></title>
+        <para>"Dear all, While I’ve worked on the GNOME:Ayatana project page in English, Raul, a
+          dedicated contributor from Brazil has provided the Portuguese version of this page. I
+          would like to express my gratitude to Raul for a well done job, and I’m happy that someone
+          from Brazil stepped up for this task, as I assume that this project will have far more
+          visibility in Brazil than in Portugal itself. </para>
+        <para>If anyone wants to translate the page and keep it update for any other languages, that
+          would be awesome! Please let me know, so that I can add your name into the contributors
+          for this Project, or eventually you can do it yourself, this is a community project, so,
+          you don’t actually need my permission to improve contents, I encourage such behavior!
+          Thanks Raul.</para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:GNOME_Ayatana">GNOME:Ayatana on openSUSE
+            [English]</ulink>
         </para>
-        <para>Anyway, what is new in this release : <itemizedlist>
-            <listitem>
-              <para>many modules have been updated to GNOME 2.91.6 </para>
-            </listitem>
-            <listitem>
-              <para>kernel 2.6.37 (desktop flavor) and Xorg 1.9.3 (ie fresh drivers for many cards)
-                : thanks to <ulink url="https://build.opensuse.org/">OBS</ulink>, I've been able to
-                easily integrate those packages update on our stable distribution (openSUSE 11.3).
-                Still no gallium driver for radeon, this is scheduled for next week.</para>
-            </listitem>
-            <listitem>
-              <para>fixed freeze at startup on some radeon card (there was a race between graphical
-                splash and radeon KMS)</para>
-            </listitem>
-            <listitem>
-              <para>some additional network drivers (shaun, this release is for you ;)</para>
-            </listitem>
-            <listitem>
-              <para>more GNOME 3 modules, based on feedback we got from FOSDEM (epiphany, evince,
-                brasero, gnome-packagekit, file-roller, evolution, gnome-games,
-                totem-plugins...)</para>
-            </listitem>
-            <listitem>
-              <para>new gnome-shell, with integration with evolution-data-server (no, you won't have
-                yet new workspace layout in this image, since GNOME-Shell hackers are still busy
-                working on it)</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://live.gnome.org/TheBoardProject">The Board</ulink> is also in
-                the image, feel free to test it</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>On the know issues :<itemizedlist>
-            <listitem>
-              <para>ndiswrapper is not shipped (not available for 2.6.37 yet)</para>
-            </listitem>
-            <listitem>
-              <para>same for vmware guest (please use SUSE Studio appliance instead)</para>
-            </listitem>
-            <listitem>
-              <para>there are some SSL certificates popups issues (when using empathy)</para>
-            </listitem>
-            <listitem>
-              <para>changing language from gnome-control-center doesn't work</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>If you installed the image on a system, you should be able to update it, running
-          "zypper dup" as root (careful, we changed a lot of things this time)"</para>
-        <!-- ($ ld: 15.2.11 sm $) -->
+        <para><ulink url="http://pt.opensuse.org/openSUSE:GNOME_Ayatana">GNOME:Ayatana on openSUSE
+            [Portuguese]</ulink>"</para>
+        <para>
+          <note>
+            <para>This work is licensed under the <ulink url="http://www.gnu.org/licenses/fdl.html"
+                >GNU Free Documentation License</ulink>.</para>
+          </note>
+        </para>
+        <!-- ($ ld: 21.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://log.or.cz/?p=122">Petr Baudis: KMS vs Radeon 7000</ulink></title>
+        <para>Just a quick note for those googlers out there again. My sister has my old and trusty
+          Radeon 7000 (RV100) GPU in her machine and after distro upgrade, we had trouble getting it
+          working with respectable performance; DRI etc. was all fine after the usual installation
+          round of firmware-linux, but heavy 2D blipping work (e.g. moving windows, OpenTTD,
+          darkening/lightening whole screen in various applications) was taking awful amounts of CPU
+          within Xorg and things were really choppy. </para>
+        <para>It seems that there are some bugs lurking within the KMS; <emphasis role="italic"
+            >radeon.modeset=0</emphasis> on the kernel commandline has a good shot at curing things
+          like this!</para>
+        <!--($ ld: 21.2.11 sm $) -->
       </blockquote>
     </sect3>
     <!--

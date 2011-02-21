@@ -52,171 +52,180 @@
     <!-- ($ ld: 20.2.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://nowwhatthe.blogspot.com/2011/02/nokia-does-right-thing.html">Jos
-        Poortvliet: Nokia does the right thing!</ulink></title>
-    <para>"For those who've had it with the Nokia discussions - further down I have some positive
-      news too... </para>
-    <para>So the <ulink
-        url="http://www.nokia.com/press/press-releases/showpressrelease?newsid=1488004">rumors
-        turned out to be true</ulink>. Stephan Elop, the new Nokia CEO (and ex Microsoft employee),
-      has decided the future of Nokia is to work with Microsoft. It will be possible to decrease
-      investments in R&amp;D and Nokia won't have to build it's own platform nor focus on services
-      anymore. Instead it can focus on becoming a phone hardware manufacturer, a strategy which will
-      ensure high margins!</para>
+    <title><ulink
+        url="http://ungethym.blogspot.com/2011/02/gsoc-mentors-wanted-elegant-display.html">Thomas
+        Thym: GSoC: Mentors wanted! - Elegant display settings for presentations</ulink></title>
     <mediaobject>
       <imageobject>
         <imagedata
-          fileref="http://3.bp.blogspot.com/-77DvJkCk1Ww/TVnlv4_UlsI/AAAAAAAABPA/Vb6R9VDMPYs/s200/nokia-s-qt-4-7-app-framework-goes-gold-encourages-symbian-and-meego-development-for-fun-and-profit_1.jpg"
-        />
+          fileref="http://4.bp.blogspot.com/-gyZKgILFwj4/TWDqR2A4SuI/AAAAAAAAAC0/cvVPRXHTlP8/s1600/computer-laptop_and_video-projector.png"
+          width="20%"/>
       </imageobject>
     </mediaobject>
-    <para>Sarcasm aside, it seems to me that Nokia (or at least its CEO) has realized it has had its
-      best time in the nineties and it is over. Better to show good profitability for the next 4-6
-      years than invest in the future. Within 2-3 years Stephan will leave a company which is "going
-      great" (short-term financially speaking) and receive a big bonus. Usual business of the type
-      which brought us the credit crisis.</para>
-    <para><emphasis role="bold">How about us?</emphasis></para>
-    <para>So what does this mean for Free Software? Hard to say yet but I think it's a fair bet that
-      development on MeeGo won't increase due to these choices. Bad for the linux kernel,
-      infrastructure like Telepathy, Gstreamer and top-level stuff like Qt. Qt will probably not be
-      hurt that much, it is the platform of choice for Symbian for at least the next few years. And
-      if they change their mind Nokia (or otherwise some volunteers, can't stop them can you?) will
-      port Qt to WP7 - write one app, run on MeeGo, Symbian AND WP7. With the open governance model
-      of Qt &amp; the LGPL license, the decreased investments could be compensated by community
-      efforts. Still, I feel sorry for those who might get fired over this. And personally, I was
-      looking for a really open mobile platform - my N900 is pretty awesome and though I'll buy the
-      N9 it's sad it won't have a decent successor. </para>
-    <para>Meanwhile, stock has gone down some 15% on Nokia, MS' stock went down, Apple and Google
-      went up. Hmmmm, what does the stock market think... Anyhow. I guess more than enough has been
-      written and said about it, let's just wait and see what happens next...</para>
-    <para><emphasis role="bold">Good News - twice!</emphasis></para>
-    <para>In far more positive news, my own employer (that would be Novell) has helped the stability
-      of the UK financial system by migrating the London Stock Exchange from a Microsoft .NET based
-      solution to a SUSE Linux Enterprise stack. The new trading system <ulink
-        url="http://www.computerworlduk.com/news/open-source/3260727/london-stock-exchange-in-historic-linux-go-live/"
-        >went live last week</ulink>. The earlier Windows and .NET based software actually managed
-      to get the CEO of the LSE <ulink
-        url="http://blogs.computerworld.com/london_stock_exchange_to_abandon_failed_windows_platform"
-        >fired after an 8 hour outage</ulink> (any idea how much money that costs?). Their new CEO,
-      slightly smarter than Elop if I might say so, decided to go for Linux. This has led to better
-      performance and stability - no surprise. SUSE proves to be about 15 times faster than the
-      MS/.Net system which couldn't get network round trips below 2 milliseconds despite big
-      investments in code and hardware improvements. Meanwhile SUSE comes in at about 126
-      microseconds! I don't expect any 8-hour outages or fired CEO's, so congrats to everyone
-      involved!</para>
-    <para>See the Youtube Video: <ulink url="http://www.youtube.com/watch?v=dr7IxQeXr7g"
-        >http://www.youtube.com/watch?v=dr7IxQeXr7g</ulink></para>
-    <para>And while at it, let me also mention an <ulink
-        url="http://www.linuxplanet.com/linuxplanet/newss/7294/1/">interview with my colleague Kerry
-        Kim</ulink>. Subject was IBM's supercomputer 'Watson' which took on a human in the TV show
-      'Jeopardy'. Watson runs SUSE Linux - as do, Kerry mentioned, 6 out of the top-10
-      supercomputers in the world. Check a video of Watson out <ulink
-        url="http://www.pbs.org/newshour/bb/science/jan-june11/jeopardy_02-14.html">here</ulink> (or
-      embedded above)."</para>
-    <!-- ($ ld: 15.2.11 sm $) -->
+    <para>"I recently mentored some students during the Google Code In project. Now the <ulink
+        url="http://linuxgrandma.blogspot.com/2011/02/gsoc-2011-start-your-engines.html"
+        >preparations for Google Summer of Code have begun</ulink>. Unfortunately I am not a hacker,
+      I am a promo guy and I can't mentor here. Nevertheless I have some <ulink
+        url="http://community.kde.org/GSoC/2011/Ideas">ideas for GSoC</ulink> and I hope to scratch
+      somebodies itch so she or he will mentor that idea. </para>
+    <para><emphasis role="bold">Idea 1: (More elegant) Display settings for presentations
+      </emphasis></para>
+    <para>Application/component: Plasma </para>
+    <para><emphasis role="bold">Brief explanation:</emphasis> The handling of multiple screens has
+      continuously improved during the last releases. The handling of a stationary setting of two
+      screens seems to be rather good. When it comes to presentation-mode with a projector I would
+      be delighted to see even more elegance (simplicity).</para>
+    <para><emphasis role="bold">Expected results:</emphasis> When doing presentations there is in
+      general only one question to decide. The presentation mode:<orderedlist>
+        <listitem>
+          <para>The same picture of both screens or </para>
+        </listitem>
+        <listitem>
+          <para>The notes on the notebook, the presentation on the projector. </para>
+        </listitem>
+      </orderedlist></para>
+    <para>To 1: Autodetect the smallest max. resolution of the two displays. Instead of scaling the
+      picture to full screen it would be nicer to keep the ration and leave some space blank on the
+      left and right notebook screen. </para>
+    <para>To 2: Autodetect the max. resolution of each of the two displays and set those different
+      resolutions. The panel, all the widgets and all the open windows should stay on the notebook
+      screen. The projector screen shows only the wallpaper. It does not matter if the projector
+      “screen” is located above or on the right or wherever of the notebook screen. </para>
+    <para>It would be very useful to link that dialog to the keyboard shortcut (e.g. Fn+F7) or to
+      start it automatically when a projector is attached. (At the moment I have to start krandrtray
+      from krunner first or have the symbol in the taskbar all the time. I am not sure if a new
+      users could work that out in a couple of seconds.) </para>
+    <para>Save the display/plasma settings (esp. widget positions etc.) to restore them when the
+      projector is detached. (Perhaps that could be solved with activities.) </para>
+    <para>Extra points: It is possible to save the standard settings. In a second step different
+      screen setting profiles could be saved and loaded (like in powerdevil). Presentation-mode 1
+      and 2 could be such profiles and a user could modify them (e.g. projector on top or right) if
+      it is necessary. </para>
+    <para>So what do you think. Is that scratching your itch? Can you imagine how cool this would be
+      to have? At least for me as a presenter that would really rock."</para>
+    <!-- ($ ld: 21.2.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title>
-      <ulink
-        url="http://www.wafaa.eu/entry/porting-libreoffice-to-android---my-new-crazy-project-1-57.html"
-        >Andrew Wafaa: Porting LibreOffice to Android - My New Crazy Project</ulink>
-    </title>
-    <para>"Yes, you read that correct - I am going to try and port LibreOffice to Android! :-) </para>
-    <para>Why? Simples, there are no ODF compatible products on Android for reading &amp; writing.
-      There is <ulink url="https://market.android.com/details?id=at.tomtasche.reader">OpenOffice
-        Document Reader</ulink> which as the name suggests is just a reader, and also OOo is so 2009
-      ;-) </para>
-    <para>Now if I was a half decent hacker, this may not have been such a big deal. Problem is I'm
-      an absolutley crap hacker, with almost no experience or knowledge of Android or LibreOffice
-      development. So why on earth would I try and do such a monumentally painful task? Two reasons
-      - 1. I was challenged by an engineer that I respect to do it. 2. I've got an itch that needs
-      scratching (actually I'm riddled with itches, and the Doc confirms it isn't a medical
-      condition ;-) ). </para>
-    <para>So how to go about it? I'm still working that one out. As it stands openSUSE doesn't
-      provide the necessary tools for the job - no decent ARM port :( So I'm going to have a play
-      with Debian - after all 6.0 Squeeze is just out the oven so now's as good a time as any. If
-      that doesn't work out I'll give Ubuntu a whirl. Never fear oh mighty Geeko lovers - these
-      alien installations will be going on my test machine. My primary machine is still running
-      openSUSE, with GNOME3. </para>
-    <para>I'll try and document my trip through pain and fun, if for nothing else humour for those
-      more seasoned than me at doing cooky stuff like this. </para>
-    <para>Just as a little side note - my primary machine, a Dell D820 decided to die just before
-      FOSDEM. This has left me using my Netbook as my main machine. It took me ~15.5hrs to build
-      LibreOffice on it. " (...)</para>
-    <!-- ($ ld: 15.2.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://dev-loki.blogspot.com/2011/02/new-repository-for-opensuse-artwork-and.html"
-        >Pascal Bleser: New repository for openSUSE artwork and marketing material</ulink></title>
-    <para>"I just created a new <ulink url="http://gitorious.org/opensuse-artwork/opensuse-artwork"
-        >git repository for openSUSE artwork and marketing material on gitorious.org</ulink>. <ulink
-        url="irc://irc.freenode.org/#opensuse-marketing">We</ulink> decided to create a new
-      repository instead of using the <ulink url="http://gitorious.org/opensuse/art">existing
-        one</ulink> because it contains the trademarked branding content as well. Instructions on
-      how to get started and the workflow to retrieve and modify content there is <ulink
-        url="http://en.opensuse.org/openSUSE:Marketing_and_Artwork_repository">explained on the
-        wiki</ulink>.</para>
-    <!-- ($ ld: 15.2.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="https://saschpe.wordpress.com/2011/02/17/getting-the-sources-of-your-rpms/"
-        >Sascha Peilicke: Getting the sources of your RPMs</ulink></title>
-    <para>According to the GPL, you have to provide the source code of any (GPL-licensed) software
-      you distribute (i.e. package and publish). Traditionally, this is satified by Linux
-      distributions in several ways. Like any other package management system, RPM metadata contains
-      the URL of the upstream project that created the software. This is where the (unmodified)
-      source code can be retrieved. </para>
-    <para>But, packaging almost always means modifying the original sources. This could be in order
-      to add patches or to make it conform better to certain (distro-specific) conventions.
-      Therefore, distros offer a download repository where you can fetch source RPMs, i.e. packages
-      which distribute the modified sources (containing the spec file, patches and additional
-      files). </para>
-    <para>However, out of curiosity or to contribute back, you may want to know where exactly your
-      package is maintained and developed. Luckily, packages that originate from one of the many
-      Build Service instances (like build.opensuse.org, packman.links2linux.com or build.meego.com)
-      have that
-      information:<screen>% rpm -q --qf "%{DISTURL}\n" bash   obs://build.opensuse.org/openSUSE:Factory/standard/ \\
-        fd6e76cd402226c76e65438a5e3df693-bash</screen></para>
-    <para>Now you can copy this URL into your browser, replace ‘obs:’ with ‘http:’ and you should
-      see something interesting :-) Well, this is gonna be part of the next OBS release, for now you
-      have to modify the URL slightly further to use the OBS test instance (stage): </para>
-    <para><ulink
-        url="https://build.opensuse.org/stage/openSUSE:Factory/standard/fd6e76cd402226c76e65438a5e3df693-bash"
-        >https://build.opensuse.org/stage/openSUSE:Factory/standard/fd6e76cd402226c76e65438a5e3df693-bash</ulink>
-    </para>
-    <para>Additionally, you could simply put the disturl into the Build Service search and it will
-      come up with the same results. Now you can inspect the development history (revisions) of the
-      package, see who did it and become a part of it! The only thing that is left would be a RPM
-      patch allowing a saner syntax, like:<screen>% rpm -q --disturl bash"</screen></para>
-    <!-- ($ ld: 18.2.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://oyranos-cms.blogspot.com/2011/02/oyranos-colour-management-livecd-ii.html"
-        >Kai-Uwe Behrmann: Oyranos Colour Management LiveCD II</ulink></title>
-    <para>"After new second try, the driver license problem appears somewhat more relaxed. One
-      important component needs good OpenGL support for plug and play full desktop colour
-      correction. First choice for the OpenGL API on Nvidia and Ati hardware are the proprietary
-      drivers from these manufacturers. For a LiveCD this did not work out due to <ulink
-        url="http://lists.freedesktop.org/archives/xorg/2010-November/051824.html">legal
-        reasons</ulink>. The new CD can offer some basic OpenGL support to run <ulink
-        url="http://compicc.sf.net/">Compiz and GPU accelerated colour conversions</ulink>. The more
-      and improving open source Nouveau driver comes to the rescue. Together with the <ulink
-        url="http://dri.freedesktop.org/wiki/">experimental Mesa DRI</ulink> it provides shader
-      support. Some aspects work even better than the proprietary drivers, like backlight, obtaining
-      monitor infos in a standard way through XRandR and automatic driver selection by Xorg. If you
-      want to run on a daily base consider the Nvidia driver, as that provides power saving. It's
-      simply cooler. </para>
-    <para>There are some more changes like placing <ulink url="http://krita.org/">Krita</ulink> on
-      the CD. Krita is colour management wise a very interesting project. It supports floating point
-      HDR images, comes with <ulink
-        url="http://cyrilleberger.wordpress.com/category/open-source/opengtl/">two own colour
-        transformation modules</ulink> in <ulink
-        url="http://blog.cberger.net/category/open-source/opengtl/">OpenGTL</ulink>. The other new
-      application is <ulink url="http://rawstudio.org/blog/?p=236">RawStudio</ulink>. It implements
-      the DCP spec of Adobe for DNG colour profiles. Both add to a very interesting colour software
-      suite."</para>
-    <!-- ($ ld: 18.2.11 sm $) -->
+    <title><ulink url="http://dev-loki.blogspot.com/2011/02/packman-service-interruption-and.html"
+        >Pascal Bleser: Packman service interruption and migration</ulink></title>
+    <para>The <ulink url="http://packman.links2linux.org/">Packman</ulink> website and <ulink
+        url="http://packman.inode.at/suse/">repositories</ulink> are going to be broken and in the
+      works for several days (possibly up to a week) starting tonight at 20:00 CET, during which the
+      following services will not be available, or only sporadically: <itemizedlist>
+        <listitem>
+          <para>the Packman website itself: <ulink url="http://packman.links2linux.org/"
+              >http://packman.links2linux.org</ulink></para>
+        </listitem>
+        <listitem>
+          <para>the Packman repositories, except "Essentials" (see "new repository layout"
+            below)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The reason is that we are performing a major migration of our services to <itemizedlist>
+        <listitem>
+          <para>the latest version of the openSUSE Build Service (we were still using an old
+            version)</para>
+        </listitem>
+        <listitem>
+          <para>a new layout of our repositories, to enable a more fine-grained control over what
+            parts of Packman should be used (see below)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>In order to try to keep a minimum service going during that time, you may use and point
+      people to our new repositories, that already contain the "Essentials" part, which are almost
+      complete with the bare minimum everyone needs (mplayer, vlc, libraries, ...). The URLs for the
+      new repositories are as follows: <itemizedlist>
+        <listitem>
+          <para><ulink url="http://packman.inode.at/suse/openSUSE_11.3/"
+              >http://packman.inode.at/suse/openSUSE_11.3/</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://packman.inode.at/suse/openSUSE_11.2/"
+              >http://packman.inode.at/suse/openSUSE_11.2/</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://packman.inode.at/suse/Factory/"
+              >http://packman.inode.at/suse/Factory/</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://packman.inode.at/suse/SLE_11/"
+              >http://packman.inode.at/suse/SLE_11/</ulink></para>
+        </listitem>
+      </itemizedlist></para>
+    <para>There are no .repo files there yet, so adding one of these is done as
+      follows:<screen>zypper ar -n packman http://packman.inode.at/suse/openSUSE_11.3/ packman</screen></para>
+    <para>(obviously adapt the URL to your openSUSE version). You may also use one of our mirror
+      sites, as they already have our new repositories: <ulink
+        url="ftp://packman.links2linux.de/pub/packman/MIRRORS"
+        >ftp://packman.links2linux.de/pub/packman/MIRRORS.</ulink></para>
+    <para><emphasis role="bold">New repository layout</emphasis></para>
+    <para>As has been announced (including here), we have had a discussion back in December about
+      whether and how we should reorganize the layout of our repositories. Up to now, and for many
+      years, it has always been "one big repository", which had pros and cons: <itemizedlist>
+        <listitem>
+          <para><emphasis role="underline">good</emphasis>: easy to use, just add onr repository and
+            be done with it</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="underline">good</emphasis>: easy for us to manage</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="underline">bad</emphasis>: you get everything and the kitchen sink,
+            including packages that are duplications of stuff from other repositories, specifically
+            from build.opensuse.org (which didn't exist when Packman was created), and potential
+            conflicts with those</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="underline">bad</emphasis>: large metadata files to synchronise
+            (although zypper has become pretty fast at that)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>We came up with a solution to this, as more and more people requested having split
+      repositories, in order to control whatthey want to use from Packman: <itemizedlist>
+        <listitem>
+          <para>we will have four repositories instead of one: Essentials, Multimedia, Games and
+            Extras</para>
+        </listitem>
+        <listitem>
+          <para>Essentials will be the bare minimum to get your multimedia experience on openSUSE
+            going (libraries, MPlayer, vlc, ffmpeg, ...)</para>
+        </listitem>
+        <listitem>
+          <para>Multimedia will contain additional applications that are not available for openSUSE
+            or only in a crippled build, such as avidemux, etc...</para>
+        </listitem>
+        <listitem>
+          <para>Games are, well, games, although we will try to move most of what may be hosted on
+            build.opensuse.org to the games project there</para>
+        </listitem>
+        <listitem>
+          <para>Extras is all the rest</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>In order to provide the best of both worlds or, rather, still provide you with the old
+      option of adding everything, we are using a little trick and are running "createrepo" on the
+      top-level directory, which results in having repository metadata that contains all the
+      packages from all the above mentioned repositories without having to duplicate the RPM files
+      on our server (and mirrors). </para>
+    <para>Hence, to make it short and less technical, you can still also use the "old way"
+      too.</para>
+    <para>As an example of what needs to be added to zypper, once the migration is complete and
+      .repo files are available too: <itemizedlist>
+        <listitem>
+          <para>add the Essentials
+            repository:<screen>zypper ar -r http://packman.inode.at/suse/openSUSE_11.3/Essentials/Essentials.repo</screen></para>
+        </listitem>
+        <listitem>
+          <para>add the "everything"
+            repository:<screen>zypper ar -r http://packman.inode.at/suse/openSUSE_11.3/packman.repo</screen></para>
+        </listitem>
+      </itemizedlist></para>
+    <para>I will announce our progress <ulink url="http://dev-loki.blogspot.com/">on my blog</ulink>
+      (which is also aggregated on <ulink url="http://planet.opensuse.org/">Planet openSUSE</ulink>)
+      and will obviously post another announcement here once our migration is complete. </para>
+    <para>In advance, sorry for the inconvenience, and thank you for your understanding. We are
+      convinced that our move will not only provide us with a better infrastructure, but also
+      improve your experience with Packman and openSUSE.</para>
+    <!-- ($ ld: 21.2.11 sm $) -->
   </blockquote>
 </sect1>
