@@ -276,5 +276,15 @@ blacklist radeon</screen></para>
         </itemizedlist></para>
       <!-- ($ ld: 20.2.11 sm $) -->
     </blockquote>
+    <blockquote>
+      <title><ulink url="http://ironman.darthgibus.net/?p=113">Fred Blaise: Alfresco 3.4d ldap
+          sync</ulink></title>
+      <para>While upgrading from 3.3g to 3.4d, my ldap sync wouldn’t work anymore. </para>
+      <para>I had to add in my ldap-ad-authentication.properties the following
+        line:<screen>ldap.synchronization.java.naming.security.authentication=simple</screen></para>
+      <para>While there is a similar line for authentication, it doesn’t do it for sync’ing
+        up.<screen>ldap.authentication.java.naming.security.authentication=simple</screen></para>
+      <!--($ ld: 22.2.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>

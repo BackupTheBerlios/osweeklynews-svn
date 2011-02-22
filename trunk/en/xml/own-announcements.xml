@@ -25,73 +25,45 @@
     * carefully selected other sources-->
   <blockquote>
     <title><ulink
-        url="http://news.opensuse.org/2011/02/16/open-bugs-day-on-sunday-the-20th-of-february/"
-        >Open-Bugs-Day on Sunday the 20th of February</ulink></title>
-    <para>As you all know, we’re closing in on the Final Release of openSUSE 11.4…</para>
-    <para>and so in this last window for bug-fixing we need your help! The <ulink
-        url="http://en.opensuse.org/openSUSE:Testing_meeting">testing team</ulink> is looking for
-      volunteers to help with bugs in <ulink url="http://bugzilla.novell.com/">bugzilla</ulink> on
-      the Open-Bugs-Day at Sunday the 20th of February. Participants are going through the bugs that
-      currently exist for 11.4 in bugzilla, close what is fixed and confirm what still needs some
-      work. It’s all part of a final push for a great 11.4 release, with us clearing out what is
-      fixed, the developers can focus their energies on fixing bugs instead of clicking around in
-      bugzilla! We will meet, hang out and coordinate during the Open-Bugs-Day in the IRC channel
-        <ulink url="irc://irc.freenode.net/opensuse-testing">#opensuse-testing</ulink> on the <ulink
-        url="http://freenode.net/">Freenode</ulink> network and anyone using openSUSE is welcome to
-      help. Read on to learn more about how you can make a difference.</para>
-    <para><emphasis role="bold">How to participate </emphasis></para>
-    <para>You only need the following to participate: <itemizedlist>
-        <listitem>
-          <para>An installation of openSUSE 11.4 RC1 or openSUSE Factory so you can verify things.
-            It’s of course okay to run it in a virtual machine</para>
-        </listitem>
-        <listitem>
-          <para>An IRC client to interact with the other participants</para>
-        </listitem>
-        <listitem>
-          <para>Good mood :-)</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>If you don’t know how to triage bugs the organizers will give you a list of bugs that you
-      can work on and you can double-check with other participants that your changes are okay. If
-      you do know how to triage bugs you can of course just go ahead and do it!</para>
-    <para><emphasis role="bold">Workflow</emphasis></para>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://news.opensuse.org/wp-content/uploads/2011/02/t-shirt1-e1297864943503-300x300.png"
-        />
-      </imageobject>
-    </mediaobject>
-    <para>The workflow is as follows <orderedlist>
-        <listitem>
-          <para>Search bugzilla for open bugs in obsolete releases (<ulink
-              url="http://bit.ly/gflb6r">11.4-MS1-5</ulink> or <ulink url="http://bit.ly/hebmX1"
-              >11.4-Factory</ulink>)</para>
-        </listitem>
-        <listitem>
-          <para>Try to reproduce the issue on the 11.4 RC1<orderedlist>
-              <listitem>
-                <para>If the issue still occurs, update the bug to current version</para>
-              </listitem>
-              <listitem>
-                <para>If you know the issue was fixed, set the bug to RESOLVED+FIXED</para>
-              </listitem>
-              <listitem>
-                <para>If you have the feeling that the issue is fixed, set the bug to
-                  RESOLVED+NORESPONSE</para>
-              </listitem>
-            </orderedlist></para>
-        </listitem>
-        <listitem>
-          <para>Go to 1</para>
-        </listitem>
-      </orderedlist></para>
-    <para><emphasis role="bold">No pain without gain!</emphasis>
+        url="http://news.opensuse.org/2011/02/22/opensuse-participates-in-the-google-summer-of-code-2011/"
+        >openSUSE participates in the Google Summer of Code 2011</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article stands under the GNU Free Documentation
+          License.</emphasis></para>
+    </note>
+    <para>In about a week Google will accept applications from Free Software projects to be part of
+      Google’s Summer of Code. This great project enables students who want to spend their summer
+      time working on Free Software instead of a regular summer job the opportunity to do. Commonly
+      called GSOC, the program helps students by paying them cash for their code. A successful
+      project makes the student about USD 5000 which certainly is not bad for a summer job. </para>
+    <para>The students get mentored and the project itself receives another donation of USD500 per
+      successful student project. Of course GSOC is not just about the money: it is about learning
+      and making a difference for the students; it is about having fun and learning for the mentors
+      too; and the project often gains valuable new contributors!</para>
+    <para><emphasis role="bold">Why and for whom?</emphasis>
     </para>
-    <para>The ten most active contributors that help us to clean up bugzilla and make openSUSE 11.4
-      a big success will receive a nice thank you package with an openSUSE t-shirt and other
-      goodies.</para>
-    <!-- ($ ld: 17.2.11 sm $) -->
+    <para>GSOC has shown to be successful in its goal of bringing new contributors to Free Software.
+      Over the years many students continued to be involved in the projects they have participated
+      in through GSOC. If you are a student and want to contribute and even make a career in Free
+      Software we definitely advice you to think about being part of a GSOC program. </para>
+    <para>But also if you are already an openSUSE contributor and you would love an opportunity to
+      spend 8 weeks full time on your favorite project, this is for you! Many great applications and
+      initiatives have been started as GSOC programs in the past like Cheese and Empathy. Many
+      students who started with Free Software thanks to GSOC have been able to turn it into a great
+      career, all that while having fun. </para>
+    <para>openSUSE has unfortunately not been able to participate in GSOC last year. This year we do
+      want to do better and for that we need help. We need people from our community to step up and
+      be mentors, we need ideas for students to execute and of course we need students to submit
+      proposals! </para>
+    <para>Women, don’t forget you are very welcome to be part of openSUSE. We are a community which
+      embraces diversity. We want everyone to have fun, no matter your, skill level, gender, race,
+      cultural background or where you’re from. Everyone deserves an opportunity like this, so join
+      us!</para>
+    <para><emphasis role="bold">Information </emphasis></para>
+    <para>You can find openSUSE’s <ulink url="http://en.opensuse.org/openSUSE:GSOC_2011">wiki
+        page</ulink> on GSOC 2011 here and our <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas">list of ideas here</ulink>. Many
+      people have already submitted ideas but more are very welcome.</para>
+    <!-- ($ ld: 22.2.11 sm $) -->
   </blockquote>
 </sect1>

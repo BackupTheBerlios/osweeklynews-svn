@@ -71,54 +71,88 @@ zypper in enlightenment</screen></para>
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://www.lenzg.net/archives/332-Updated-Drupal-7-appliances-to-version-7.0-final.html">Lenz Grimmer: Updated Drupal 7 appliances to version 7.0 final</ulink>
+        <ulink url="http://blog.susestudio.com/2010/10/gold-rush.html">SUSE Studio: Gold
+          rush</ulink>
       </title>
-      <para>Congratulations to the Drupal community for getting <ulink url="http://drupal.org/drupal-7.0">version 7.0</ulink>
-        <ulink url="http://drupal.org/drupal-7-released">released</ulink>! This is a major mile
-        stone and an excellent reason to <ulink url="http://www.drupal7releaseparty.org/">celebrate</ulink>! If you want to give Drupal 7 a try without having to install anything,
-        I&apos;ve now updated my Drupal 7 appliances on <ulink url="http://susestudio.com/">SuSE Studio</ulink> to the latest release. The appliance is based on <ulink url="http://software.opensuse.org/113/en">openSUSE Linux 11.3</ulink> and is available in
-        two variants:<itemizedlist>
+      <para><note>
+          <para><emphasis role="bold">This Article is owned by Novell Inc. <ulink
+                url="http://www.novell.com/company/legal/"
+                >http://www.novell.com/company/legal/</ulink></emphasis></para>
+        </note>"Inventive minds have built and submitted their appliance to <ulink
+          url="http://susegallery.com/">SUSE Gallery</ulink> in the quest to win $10,000 and fame
+        within the community. With the contest coming soon to a close, you can also submit your
+        appliance before the 1st of November and win the big prize!</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://3.bp.blogspot.com/_I0jbESd5Btw/TFwvgU1LvxI/AAAAAAAAAJU/XRtKGujnkkM/s1600/competition.png"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>If you are not sure what this is all about, here is a brief overview of what you have to
+          do:<orderedlist>
           <listitem>
-            <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive">text-mode</ulink> only appliance to which you connect using your local web browser
-              via the network.</para>
+            <para>Build your appliance using <ulink url="http://susestudio.com/">SUSE
+              Studio</ulink></para>
           </listitem>
           <listitem>
-            <para>A <ulink url="http://susegallery.com/a/Byn5dM/drupal-7-testdrive-gui">GUI version</ulink> that starts up the Firefox browser in a minimalistic GNOME desktop
-              to perform the installation locally. Remote network access is available, too.</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>The database backend is phpMyAdmin has been added to support web-based administration of
-        the MySQL server. You can access it via http://localhost/phpMyAdmin/. I also added <ulink url="http://drush.ws/">drush</ulink>, the Drupal command line shell and scripting
-        interface and some additional packages (yast2-http-server, bind-utils, php5-ctype, patch). I
-        also bumped up the appliance&apos;s version number to 7.0.0, to match the version number of
-        Drupal included. </para>
-      <para>The appliance is available in various formats:<itemizedlist>
-          <listitem>
-            <para>A live raw disk image, ready to be written to an USB stick or flash drive</para>
+            <para>Publish your appliance to Gallery and obtain your URL</para>
           </listitem>
           <listitem>
-            <para>A live ISO image, to be burned on a CD or used in a virtual machine</para>
+            <para>Complete the form following this link: <ulink url="http://novell.com/thedisters"
+                >http://novell.com/thedisters</ulink></para>
           </listitem>
-          <listitem>
-            <para>A hard disk image, to be dumped on a hard disk drive</para>
-          </listitem>
-          <listitem>
-            <para>Various virtual disk formats, e.g. OVF, VMWare/VirtualBox/KVM and Xen</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>Please see the installation instructions provided on the download pages for details on
-        how to use the various image formats. </para>
-      <para>So congratulations to the Drupal developer community for reaching this goal and thanks
-        to SuSE/Novell/Attachmate for providing the infrastructure for creating such appliances. I
-        also would like to especially thank <ulink url="http://lizards.opensuse.org/author/rbos/">Richard Bos</ulink> for the testing and many suggestions for improvement of these
-        appliances!</para>
-      </blockquote>
-      </sect2> -->
+        </orderedlist></para>
+      <para>When competing you can choose to build a community appliance, something you plan to
+        share with everybody or a commercial appliance, something you want to market. Your appliance
+        will be reviewed by some renowned judges including Jason Brooks from eWeek, Steven
+        Vaughn-Nichols of ComputerWorld, Sean Michael Kerner from InternetNews, Jim Zemlin from the
+        Linux Foundation, Markus Rex Head of Linux for Novell and Jos Poortvliet from openSUSE. This
+        is a great chance to get insight from the pros. </para>
+      <para>Building an appliance is really easy. It is also one of the fastest ways to package and
+        distribute software for the cloud, as live system or for traditional installation. With our
+        free appliance-building tool, SUSE Studio, developers can create many kinds of software
+        appliances – the only limit is your imagination. To get some inspiration, you can checkout
+        already built appliances at <ulink url="http://susegallery.com/">susegallery.com</ulink>. </para>
+      <para>The deadline for the contest is approaching fast, but you still have a few days for a
+        last sprint. How would you spend your prize? Buy a new computer? Get a robot? Go to Hawaii?
+        Don't hesitate, build your appliance, publish it on Gallery, and submit it to the contest.
+          <ulink url="http://susestudio.com/artwork/">Dister</ulink> is looking forward to your
+        entry."</para>
+      <!--($ ld: 22.2.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blog.susestudio.com/2011/02/public-opensuse-113-amis.html">SUSE
+          Studio: Public openSUSE 11.3 AMIs</ulink></title>
+      <para><note>
+          <para><emphasis role="bold">This Article is owned by Novell Inc. <ulink
+                url="http://www.novell.com/company/legal/"
+                >http://www.novell.com/company/legal/</ulink></emphasis></para>
+        </note>"We've been receiving a lot of very positive feedback since we <ulink
+          url="http://blog.susestudio.com/2010/10/new-amazon-ec2-build-format.html">added Amazon EC2
+          support</ulink> in SUSE Studio, so I'd just like to take a moment to thank everyone for
+        their support! </para>
+      <para>Feature requests keep coming in, but one in particular stands out due to its popularity
+        -- the ability to create openSUSE <ulink url="http://aws.amazon.com/ebs/">EBS</ulink>
+        <ulink url="http://aws.amazon.com/amis">AMIs</ulink>. This is especially useful as Amazon's
+          <ulink url="http://aws.amazon.com/free/">free usage tier</ulink> does not support
+        instance-store backed AMIs (which we already support in Studio for openSUSE). </para>
+      <para>So after some nudging from one of our users, Thomps, I did some hacking over the weekend
+        and added openSUSE EBS support in the create_ebs_ami.sh script (which is by the way,
+        open-source and <ulink url="https://github.com/jamestyj/susestudio-ec2">available on
+          Github</ulink>). This will be merged into Studio soon. </para>
+      <para>While working on this, I noticed that there aren't any official public openSUSE AMIs out
+        there, so I created some with SUSE Studio (<ulink
+          url="http://susegallery.com/a/n0rKOx/opensuse-113-ami--2">32 bit</ulink>, <ulink
+          url="http://susegallery.com/a/n0rKOx/opensuse-113-ami">64 bit</ulink>). The full list of
+        public openSUSE 11.3 AMIs are listed in the table below." (...)</para>
+      <!--($ ld: 22.2.11 sm $)-->
+    </blockquote>
+  </sect2>
   <sect2 role="teamreports">
     <title>Team Report</title>
     <!--
@@ -476,6 +510,10 @@ zypper in enlightenment</screen></para>
           <ulink url="http://lizards.opensuse.org/2011/02/19/indicators-for-gnome2-update/">Nelson
             Marques: Indicators for GNOME2 – Update</ulink>
         </title>
+        <note>
+          <para><citation role="bold">This Article is licensed under the GNU Free Documentation
+              License.</citation></para>
+        </note>
         <para>"Canonical has been very active and released quite an impressive amount of bug fixes
           and features for their Ayatana Project software. I’ve been doing the updates, sent a
           couple of tiny patches upstream (mainly packaging issues) and with the RC1, I am very
@@ -579,7 +617,10 @@ zypper in enlightenment</screen></para>
         <title><ulink
             url="http://lizards.opensuse.org/2011/02/20/gnomeayatana-project-page-in-english-and-portuguese/"
             >Nelson Marques: GNOME:Ayatana project page in English and Portuguese…</ulink></title>
-        <para>"Dear all, While I’ve worked on the GNOME:Ayatana project page in English, Raul, a
+        <para><note>
+            <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation
+                License.</emphasis></para>
+          </note>"Dear all, While I’ve worked on the GNOME:Ayatana project page in English, Raul, a
           dedicated contributor from Brazil has provided the Portuguese version of this page. I
           would like to express my gratitude to Raul for a well done job, and I’m happy that someone
           from Brazil stepped up for this task, as I assume that this project will have far more
@@ -594,16 +635,14 @@ zypper in enlightenment</screen></para>
         </para>
         <para><ulink url="http://pt.opensuse.org/openSUSE:GNOME_Ayatana">GNOME:Ayatana on openSUSE
             [Portuguese]</ulink>"</para>
-        <para>
-          <note>
-            <para>This work is licensed under the <ulink url="http://www.gnu.org/licenses/fdl.html"
-                >GNU Free Documentation License</ulink>.</para>
-          </note>
-        </para>
         <!-- ($ ld: 21.2.11 sm $) -->
       </blockquote>
       <blockquote>
         <title><ulink url="http://log.or.cz/?p=122">Petr Baudis: KMS vs Radeon 7000</ulink></title>
+        <note>
+          <para><citation role="bold">This Article is licensed under the Creatice Commons
+              Attribution-ShareAlike 3.0 Unported License</citation></para>
+        </note>
         <para>Just a quick note for those googlers out there again. My sister has my old and trusty
           Radeon 7000 (RV100) GPU in her machine and after distro upgrade, we had trouble getting it
           working with respectable performance; DRI etc. was all fine after the usual installation
@@ -613,6 +652,37 @@ zypper in enlightenment</screen></para>
         <para>It seems that there are some bugs lurking within the KMS; <emphasis role="italic"
             >radeon.modeset=0</emphasis> on the kernel commandline has a good shot at curing things
           like this!</para>
+        <!--($ ld: 21.2.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2011/02/21/default-wallpaper-for-gnomeayatana/">Nelson
+            Marques: Default Wallpaper for GNOME:Ayatana</ulink></title>
+        <para><note>
+            <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation
+                License.</emphasis></para>
+          </note>Not that I know a lot about Artwork or Wallpapers… For those, I am mainly a
+          ‘customer’ most of the times, and things get easy for… either I like it, or I don’t.
+          There’s a lot of stuff available out there, and initially I loved the snake (I still do),
+          but since I couldn’t distribute it due to licensing, I’ve spent a couple of hours looking
+          for Artwork with a compatible license and contacted a few artists about licensing and the
+          possibility of using/distributing their work. </para>
+        <para>To distribute for GNOME:Ayatana on the 11.4 cycle, I’m going to use ‘Spaceman Goldrush
+          Edition’ from ‘mydarktime’, a German artist. I’m happy that mydarktime has been so kind in
+          allowing openSUSE to distribute this package under CC-BY-SA. I will also take the
+          opportunity to quote him: </para>
+        <para>“(…) I would be very pleased to see mine in it” (wallpaper pack on GNOME:Ayatana). </para>
+        <para>I find this wallpaper very attractive and it doesn’t really tire me up from looking at
+          it, which is really, really nice! I hope everyone else likes it also!</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/spaceman_goldrush_1680.jpg"
+              width="30%"/>
+          </imageobject>
+        </mediaobject>
+        <para><ulink url="http://mydarktime.deviantart.com/art/spaceman-169794648">Spaceman Goldrush
+            Edition @ Deviant ART</ulink></para>
         <!--($ ld: 21.2.11 sm $) -->
       </blockquote>
     </sect3>

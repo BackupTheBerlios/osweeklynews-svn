@@ -26,6 +26,10 @@
       <ulink url="http://dominique.leuenberger.net/blog/?p=149">Dominique Leuenberger: VLC /
         openSUSE 11.0 repository to be removed</ulink>
     </title>
+    <note>
+      <para><emphasis role="bold">This Article is licensed under the Creatice Commons
+          Attribution-ShareAlike 3.0 Unported License</emphasis>.</para>
+    </note>
     <para>"openSUSE 11.0 has been End-Of_life for a good while already, but the VLC Repository kept
       on being available for the users still relying on it. There have not been any updates and
       rebuilds for a long time (maintaining new versions became a nightmare, as underlying libraries
@@ -43,12 +47,60 @@
   <blockquote>
     <title><ulink url="http://log.or.cz/?p=119">Petr Baudis: Arduino Software Tone
       Generator</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is licensed under the Creatice Commons
+          Attribution-ShareAlike 3.0 Unported License</emphasis>.</para>
+    </note>
     <para>"This is something really trivial, but I have not actually googled out a recipe so I
       thought I’d post it anyway for the googlers out there. Sometimes, you discover the Arduino
       tune() function does not really work – in our case, it was since we have ethernet shield
       attached and apparently, some other piece of the software drives the timer (not surprising at
       all) – besides, the tune() function may silently abuse other pins than the chosen one, AIUI,
-      due to its timer usage."</para>
+      due to its timer usage.</para>
+    <para>Therefore, it may be useful to manually generate sounds. The code snippet really is
+      simple, with play-by-melody code thrown in for good measure
+      too:<screen>#include "pitches.h"
+ 
+/* Cue Star Wars - Darth Vader theme, opening notes! */
+int melody_nak[] = { NOTE_G5, NOTE_G5, NOTE_G5, NOTE_DS5, NOTE_AS5, NOTE_G5, NOTE_DS5, NOTE_AS5, NOTE_G5};
+int noteDurations_nak[] = { 330, 330, 330, 250, 120, 330, 250, 120, 500 };
+ 
+int melody_ack[] = { NOTE_D6, NOTE_A6, NOTE_C7, NOTE_A6 };
+int noteDurations_ack[] = { 120, 500, 120, 500 };
+ 
+void toneManual(int pin, int frequency, int duration)
+{
+  unsigned long period = 1000000/frequency;
+  unsigned long length;
+  boolean state = false;
+  for (length = 0; length &lt; (long) duration * 1000; length += period) {
+    state = !state;
+    digitalWrite(pin, state);
+    /* The 50uS correspond to the time the rest of the loop body takes.
+     * It seems about right, but has not been tuned precisely for
+     * a 16MHz ATMega. */
+    delayMicroseconds(period - 50);
+  }
+}
+ 
+void playMelody(int *melody, int *noteDurations, int notes)
+{
+  int i;
+  for (i = 0; i &lt; notes; i++) {
+    toneManual(8, melody[i], noteDurations[i]);
+    delay(noteDurations[i] * 6/10);
+  }
+}
+ 
+void playMelodyAck()
+{ playMelody(melody_ack, noteDurations_ack, sizeof(melody_ack)/sizeof(melody_ack[0])); }
+void playMelodyNak()
+{ playMelody(melody_nak, noteDurations_nak, sizeof(melody_nak)/sizeof(melody_nak[0])); }</screen></para>
+    <para>Grab pitches.h from the digital -> tone generator example sketches, i.e. <emphasis
+        role="italic">/usr/share/arduino*/examples/2.Digital/toneMelody/pitches.h</emphasis>. </para>
+    <para>There is one important point. With tone(), you did not need to correctly set pin mode of
+      the pin to output – you <emphasis role="bold">do need to do that</emphasis> with this routine!
+      This took me quite a while to debug…"</para>
     <!-- ($ ld: 20.2.11 sm $) -->
   </blockquote>
   <blockquote>
@@ -227,5 +279,79 @@
       convinced that our move will not only provide us with a better infrastructure, but also
       improve your experience with Packman and openSUSE.</para>
     <!-- ($ ld: 21.2.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="https://saschpe.wordpress.com/2011/02/21/summer-of-code-approaches/">Sascha
+        Peilicke: Summer of Code approaches</ulink></title>
+    <para>As in the past years, <ulink url="http://code.google.com/soc/">Google’s Summer of
+        Code</ulink> is going to happen again and we’re currently collecting ideas for <ulink
+        url="http://www.opensuse.org/en/">openSUSE</ulink>. So if you want to support your favorite
+      distribution or seek a way to getting involved more deeply, be sure to check out our <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011">GSoC info page</ulink>. </para>
+    <para>Or, if you want it cross-distro, the awesome <ulink
+        url="http://en.wikipedia.org/wiki/OpenSUSE_Build_Service">Build Service</ulink> always needs
+      some helping hands that are curious on how to expand it’s massive feature set :-) . This
+      includes adding support for currently unsupported distros like <ulink
+        url="http://www.archlinux.org/">Arch Linux</ulink> or <ulink
+        url="http://www.pardus.org.tr/eng/">Pardus</ulink> as well as making it’s web user interface
+      more social. </para>
+    <para>Feel free to add you ideas to <ulink url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas"
+        >our list</ulink> and discuss them on our IRC channel (#opensuse-project on FreeNode). </para>
+    <!--($ ld: 22.2.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://ungethym.blogspot.com/2011/02/gsoc-idea-2-improved-more-elegant.html"
+        >Thomas Thym: GSoC idea 2: Improved (more elegant) keygeneration in
+      KMail/Kleopatra</ulink></title>
+    <para>As I mentioned in my <ulink
+        url="http://ungethym.blogspot.com/2011/02/gsoc-mentors-wanted-elegant-display.html">previous
+        post</ulink> I can't mentor GSoC students myself and therefore are looking for a developer
+      to jump in for me. </para>
+    <para><emphasis role="bold">GSoC idea 2: Improved (more elegant) keygeneration in
+        KMail/Kleopatra </emphasis></para>
+    <para>Application/component: <emphasis role="italic">KDEPIM/KMail and
+      Kleopatra</emphasis></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://3.bp.blogspot.com/-cf3L8CKxspY/TWFKcHk9iYI/AAAAAAAAAC4/1leB6C1GIEY/s1600/kmail2-kleopatra.png"
+          width="20%"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">Brief explanation: </emphasis></para>
+    <para>Signing and encrypting emails is very old, however only a minority is using it. One reason
+      might be, that it is not easy enough for regular users to use it. The importance for private
+      and business users is still high. Private companies started to sell proprietary, secure e-mail
+      services (e.g. in Germany DE-Mail and e-brief). There are good key creation, signing and other
+      key management functions present in KDE software. The goal of this proposal is to make it easy
+      and fast to work with signed and encrypted emails.</para>
+    <para><emphasis role="bold">Expected results:</emphasis><orderedlist>
+        <listitem>
+          <para><emphasis role="bold">Analyze and optimize the key creation, signing etc processes,
+              make it dumb easy to create and use a key/signature</emphasis>. One way could be to
+            add a button “Generate Key” (next to “Change”) in the KMail – Identity settings –
+            Cryptographie; start the key creation wizard from Kleopatra and take the name and email
+            address from that identity (at the moment you have to enter them manually). The user
+            just has to enter the passphrase and is done. Offer a button “Save private key and
+            revoke key on usb” or something like this and “send public key to server” / “Make key
+            public”. Add the key creation (or import possibilities) into the identity / account
+            creation wizard of KMail. Add the possibility to create revoke keys within the gui (when
+            sending the key to the server, there is an information message yet.) </para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Guide the user through the whole process of signing and
+              encrypting/decrypting emails.</emphasis> Offer possibilities to learn about the topic
+            in an easy and fast way (offline help, online help / wiki, videos, tutorials etc). Show
+            how they use the keys, how they get their keys signed, how they sign other keys etc.
+          </para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Integrate other free/open services</emphasis> like CAcert.
+          </para>
+        </listitem>
+      </orderedlist></para>
+    <para>These are just some ideas. If there is someone interested I could go more into details if
+      necessary.</para>
+    <!--($ ld: 22.2.11 sm $)-->
   </blockquote>
 </sect1>
