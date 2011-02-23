@@ -30,7 +30,7 @@
       <para><emphasis role="bold">This Article is licensed under the Creatice Commons
           Attribution-ShareAlike 3.0 Unported License</emphasis>.</para>
     </note>
-    <para>"openSUSE 11.0 has been End-Of_life for a good while already, but the VLC Repository kept
+    <para>openSUSE 11.0 has been End-Of_life for a good while already, but the VLC Repository kept
       on being available for the users still relying on it. There have not been any updates and
       rebuilds for a long time (maintaining new versions became a nightmare, as underlying libraries
       started to be outdated). </para>
@@ -41,7 +41,7 @@
     <para>On the bright side though: the 11.4 repository has just been uploaded. It is built against
       the latest snapshot of 11.4, which is somewhat between RC1 and RC2. Most likely not much is
       changing that would affect stability of the VLC packages. And like always of course: Factory
-      package keep on existing. But they did for a long time already." </para>
+      package keep on existing. But they did for a long time already.</para>
     <!-- ($ ld: 20.2.11 sm $) -->
   </blockquote>
   <blockquote>
@@ -51,7 +51,7 @@
       <para><emphasis role="bold">This Article is licensed under the Creatice Commons
           Attribution-ShareAlike 3.0 Unported License</emphasis>.</para>
     </note>
-    <para>"This is something really trivial, but I have not actually googled out a recipe so I
+    <para>This is something really trivial, but I have not actually googled out a recipe so I
       thought I’d post it anyway for the googlers out there. Sometimes, you discover the Arduino
       tune() function does not really work – in our case, it was since we have ethernet shield
       attached and apparently, some other piece of the software drives the timer (not surprising at
@@ -100,7 +100,7 @@ void playMelodyNak()
         role="italic">/usr/share/arduino*/examples/2.Digital/toneMelody/pitches.h</emphasis>. </para>
     <para>There is one important point. With tone(), you did not need to correctly set pin mode of
       the pin to output – you <emphasis role="bold">do need to do that</emphasis> with this routine!
-      This took me quite a while to debug…"</para>
+      This took me quite a while to debug…</para>
     <!-- ($ ld: 20.2.11 sm $) -->
   </blockquote>
   <blockquote>
@@ -114,7 +114,7 @@ void playMelodyNak()
           width="20%"/>
       </imageobject>
     </mediaobject>
-    <para>"I recently mentored some students during the Google Code In project. Now the <ulink
+    <para>I recently mentored some students during the Google Code In project. Now the <ulink
         url="http://linuxgrandma.blogspot.com/2011/02/gsoc-2011-start-your-engines.html"
         >preparations for Google Summer of Code have begun</ulink>. Unfortunately I am not a hacker,
       I am a promo guy and I can't mentor here. Nevertheless I have some <ulink
@@ -154,7 +154,7 @@ void playMelodyNak()
       and 2 could be such profiles and a user could modify them (e.g. projector on top or right) if
       it is necessary. </para>
     <para>So what do you think. Is that scratching your itch? Can you imagine how cool this would be
-      to have? At least for me as a presenter that would really rock."</para>
+      to have? At least for me as a presenter that would really rock.</para>
     <!-- ($ ld: 21.2.11 sm $) -->
   </blockquote>
   <blockquote>
@@ -456,5 +456,57 @@ void playMelodyNak()
     <para>In my next life I will become a developer and the I could mentor that project myself.
       Until this happens I am really hoping someone else steps up.</para>
     <!--($ ld: 23.2.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.karlitschek.de/2011/02/owncloud-update.html">online communities
+        and free desktops /Frank Karlitscheck: ownCloud update</ulink>
+    </title>
+    <para><note>
+        <para><emphasis role="bold">This Article is licensed under the Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</emphasis>.</para>
+      </note>A lot of cool stuff is happening around ownCloud at the moment. François is working on
+      a super cool new webinterface. It looks really nice.<itemizedlist>
+        <listitem>
+          <para>Login: <ulink url="Login: http://www.kubler.org/owncloud-mockups/login.html"
+              >http://www.kubler.org/owncloud-mockups/login.html</ulink></para>
+        </listitem>
+        <listitem>
+          <para>Files : <ulink url="http://www.kubler.org/owncloud-mockups/"
+              >http://www.kubler.org/owncloud-mockups/</ulink></para>
+        </listitem>
+        <listitem>
+          <para>Logs : <ulink url="http://www.kubler.org/owncloud-mockups/logs.html"
+              >http://www.kubler.org/owncloud-mockups/logs.html</ulink></para>
+        </listitem>
+        <listitem>
+          <para>User settings : <ulink
+              url="http://www.kubler.org/owncloud-mockups/user_settings.html"
+              >http://www.kubler.org/owncloud-mockups/user_settings.html</ulink>
+          </para>
+        </listitem>
+      </itemizedlist></para>
+    <para>We have a cool new audioplayer so people have easy access to their media from all their
+      devices. This works with Amarok or just your browser. Several people are working on a syncing
+      client for KDE. Is important to have offlice access to your files. This is super cool. I´m
+      totaly amazed by the speed we are moving forward. </para>
+    <para>Another cool thing is that we have a first provider to offer hosted ownCloud services if
+      you don´t have webspace to host it yourself. PackageCloud offers a free ownCloud installation
+      for 100MB and an installation with unlimited storage and traffic for 5,- EUR per month. I
+      think this is a very nice offer. Completely free software and more affordable than other cloud
+      solutions. Try it here if you don´t have your own server. <ulink
+        url="https://www.packagecloud.com/?au=owncloud">https://www.packagecloud.com/?au=owncloud
+      </ulink></para>
+    <para>We will participate in this years Google Summer of code again. So if you have ideas add
+      them to the brainstorming page here: <ulink
+        url="http://community.kde.org/GSoC/2011/Ideas#ownCloud"
+        >http://community.kde.org/GSoC/2011/Ideas#ownCloud</ulink>
+    </para>
+    <para>We are also planing the first ownCloud developer meeting. It will take place between 15.
+      and 18. of April in Stuttgart, Germany. <ulink
+        url="http://community.kde.org/Sprints/ownCloud2011"
+        >http://community.kde.org/Sprints/ownCloud2011</ulink> We will hack on ownCloud and plan the
+      next releases. </para>
+    <para>Please send me an email if you want to join the meeting and help working on ownCloud.
+      Cheers Frank</para>
   </blockquote>
 </sect1>
