@@ -15,7 +15,9 @@
           <tr>
             <td width="10%" valign="top">&#160;</td>
             <td width="80%" valign="top">
+              <span class="startquote"><xsl:call-template name="gentext.startquote"/></span>
               <xsl:apply-templates select="child::*[local-name(.)!='attribution']"/>
+              <span class="endquote"><xsl:call-template name="gentext.endquote"/></span>
             </td>
             <td width="10%" valign="top">&#160;</td>
           </tr>
@@ -33,7 +35,9 @@
           avoid the Bento theme (italic)
         -->
         <div>
+          <span class="startquote"><xsl:call-template name="gentext.startquote"/></span>
           <xsl:apply-templates/>
+          <span class="endquote"><xsl:call-template name="gentext.endquote"/></span>
         </div>          
       </xsl:otherwise>
     </xsl:choose>
