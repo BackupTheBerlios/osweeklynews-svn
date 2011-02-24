@@ -43,6 +43,7 @@
         <xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
     </head>
+    <xsl:copy-of select="$insert.piwikcode"/>
     <body>
       <xsl:call-template name="body.attributes"/>
       <xsl:call-template name="user.header.content">
@@ -52,7 +53,6 @@
       <xsl:call-template name="user.footer.content">
          <xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
-      <xsl:copy-of select="$insert.piwikcode"/>
     </body>
   </html>
   <xsl:value-of select="$html.append"/>
