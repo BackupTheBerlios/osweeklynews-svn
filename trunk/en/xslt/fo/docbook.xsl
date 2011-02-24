@@ -28,5 +28,6 @@
 <xsl:include href="fonts.xsl"/>
 <xsl:include href="sections.xsl"/>
 <xsl:include href="xref.xsl"/>
+<xsl:include href="block.xsl"/>
   
 </xsl:stylesheet>
