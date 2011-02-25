@@ -508,5 +508,70 @@ void playMelodyNak()
       next releases. </para>
     <para>Please send me an email if you want to join the meeting and help working on ownCloud.
       Cheers Frank</para>
+    <!--($ ld: 23.2.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://michal.hrusecky.net/2011/02/gsoc-2011-ideas-sax-3/">Michal Hrusecky:
+        GSoC 2011 ideas – SaX 3</ulink></title>
+    <para>You must already heard about this from everybody. Google Summer of Code 2011 is nearby and
+      openSUSE wants to participate. Currently we are collecting ideas and mentors and we are going
+      to apply. I also came up with few projects and volunteered to mentor them. I saw Thomas Thym
+      introducing his GSoC ideas and I think it’s great to write a blog posts that introduce
+      projects. So I’ll join and here comes the first project that many of you were waiting for –
+      SaX 3.</para>
+    <para><emphasis role="bold">SaX 3</emphasis>
+    </para>
+    <para>I guess I don’t have to explain what was SaX 2 good for. It is one of the most voted
+      features in openFATE – bring SaX back to live. SaX 2 was the tool to configure X server.
+      Whenever your X didn’t behave correctly, whenever you needed to tweak any settings, SaX 2 was
+      there for you. Unfortunately it worked only with xorg.conf file. Nowadays X are much better.
+      We’ve got auto detection of everything which works most of the time. Some little tweaks can be
+      added to /etc/X11/xorg.conf.d directory and every tweak can be in separate file. It’s much
+      better than before, easier to take care of, easier to understand and maintain. But as already
+      mentioned, SaX2 can’t handle current situation. That is why I propose creating SaX 3 as a part
+      of GSoC.</para>
+    <para><emphasis role="bold">Features</emphasis>
+    </para>
+    <para>Main feature is that it should be able to configure X. That means to force them to use
+      different mode that your monitor claims to support, force it to use different graphic card
+      driver or change default resolution. Also some little tweaks like per mouse drivers with
+      specific settings (I have pretty different settings for my trackpoint than for my external
+      mouse) or default keyboard layout. I guess we all expect this basic functionality from SaX. </para>
+    <para>From coding point of view, we need to keep it as small as possible. As it will be one of
+      the basic administration tool, we don’t want it to pull in several frameworks just to
+      configure X. And if I can’t get X working I still want to use this tool. So that makes it
+      obvious that ncurses UI is a must. On the other hand, once I have X running, I don’t want to
+      see any ugly ncurses anymore, but nice Qt/GTK. So it should also support at least some toolkit
+      for nice and shiny X window UI. But as this might pull in some dependencies and pulling Qt to
+      your minimalistic PekWM desktop might sound terrifying, it should be optional and SaX should
+      be able to detect whether it is installed and X are running so it can use it or not. </para>
+    <para>One feature that is also a little bit important is to make it distribution independent to
+      make it easy for other distributions to use it, improve it and contribute back, so we will
+      make a world better place for all of us ;-)</para>
+    <para><emphasis role="bold">Student? </emphasis></para>
+    <para>I wrote it on the wiki and yesterday I already received an e-mail from interested student,
+      who is considering it! So if openSUSE and SaX3 get selected, there is a pretty good chance
+      that we will have it!</para>
+    <!--($ ld: 25.2.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://dev-loki.blogspot.com/2011/02/packman-removing-111.html">Pascal
+        Bleser: Packman: removing 11.1</ulink></title>
+    <para><ulink url="http://packman.links2linux.org">We</ulink>'re going to remove the <ulink
+        url="http://www.opensuse.org">openSUSE</ulink> 11.1 <ulink
+        url="http://packman.links2linux.org">Packman</ulink> repositories from our primary server
+      and, hence, also our <ulink url="http://packman.links2linux.de/MIRRORS.html">mirrors</ulink>. </para>
+    <para>If you would like to keep a copy (for whatever reason, as they're unmaintained), make sure
+      to pull the tree <emphasis role="bold"><emphasis role="underline">before
+        Monday</emphasis></emphasis> (2011-02-28). </para>
+    <para>The reason, obviously, is that <ulink
+        url="http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00005.html">openSUSE
+        11.1 has gone End-Of-Life since mid-January</ulink>, and as we're <ulink
+        url="http://dev-loki.blogspot.com/2011/02/packman-service-interruption-and.html"
+        >restructuring our repositories</ulink>, we do need quite some extra space right now and
+      don't want to put too much of a burden on our <ulink
+        url="http://packman.links2linux.de/MIRRORS.html">mirrors</ulink> (there are a few <ulink
+        url="http://en.wikipedia.org/wiki/Rsync">rsync</ulink> mirrors in there too).</para>
+    <!--($ ld: 25.2.11 sm $)-->
   </blockquote>
 </sect1>

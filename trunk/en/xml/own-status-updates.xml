@@ -321,56 +321,55 @@ zypper in enlightenment</screen></para>
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Brandon
-            Philips: Fixing openSUSE Build Service UI Gripes</ulink>
+          <ulink url="http://ifup.org/2011/02/24/build-service-action-menu-ui/">Brandon Philips:
+            Build Service Action Menu UI</ulink>
         </title>
-        <para>"The openSUSE Build Service is the tool that openSUSE developers use to build the
-          packages that make up the distro. To the regular openSUSE user and contributor it does its
-          job well. However, anyone who has spent an extensive amount of time with it have found a
-          few sharp corners. Sankar is trying to fix some of those corners by writing a new client,
-          which looks like fun. </para>
-        <para>But, I think with some minor tweaks we can get the web ui in better condition. </para>
-        <para>So, I started off by writing 4 patches that fix the couple of issues that I find most
-          annoying. </para>
-        <para>Issue #1- lots of clicks to get to download URL for a repo</para>
-        <figure id="fig.issue1b">
-          <title>Before</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://ifup.org/images/obs-repo-before.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <figure id="fig.issuea">
-          <title>After</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://ifup.org/images/obs-repo-after.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para>Issue #2- "Actions" menu on package and project page isn't very friendly and those
-          pages are mostly blank anyways. Show me the buttons! :)</para>
-        <figure id="fig.obsprojectb">
-          <title>Before</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://ifup.org/images/obs-project-before.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <figure id="fig.obsprojecta">
-          <title>After</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://ifup.org/images/obs-project-after.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para>If you have other things that you think should be fixed leave a comment below and I
-          will try to fix them. Michal Marek has suggested making the breadcrumbs that are colon
-          seperated into individual links to each subproject. I am working on that next."</para>
-        <!-- ($ ld: 18.2.11 sm $) -->
+        <para><ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Last
+            week</ulink> I wrote a few patches to improve the UI of the build service. The first of
+          these patches were accepted but the removal of the Actions menu wasn't as well liked. This
+          was the proposal: </para>
+        <para><emphasis role="bold">Current Interface</emphasis></para>
+        <para>The current javascript pop out menu is hard to discover and not really necessary given
+          how much space is available in the UI.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://ifup.org/images/obs-project-before.png"/>
+          </imageobject>
+        </mediaobject>
+        <para><emphasis role="bold">My Suggested Patch</emphasis></para>
+        <para>OBS has other horizontal controls and the vertical space to handle an inline list so I
+          submitted this layout in my patches.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://ifup.org/images/obs/control-horizontal.png"/>
+          </imageobject>
+        </mediaobject>
+        <para>However, in the merge request <ulink
+            url="http://gitorious.org/opensuse/build-service/merge_requests/9">Sascha
+            suggested</ulink> an alternative which I have tried out and taken screenshots of below
+          (ignore the margin issues, I need to fix the css for the bento showleft class which breaks
+          the 960 grid layout).</para>
+        <para><emphasis role="bold">Sascha's Suggestion</emphasis>
+        </para>
+        <para>What I don't like about this is that if you visit a project or package with a long
+          description the really useful information about failures and the controls are below the
+          fold and a scroll wheel away.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://ifup.org/images/obs/control-bottom.png"/>
+          </imageobject>
+        </mediaobject>
+        <para><emphasis role="bold">Controls on Top </emphasis></para>
+        <para>I could move the controls to the top above the description but this feels like it
+          takes up a lot of space.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://ifup.org/images/obs/control-top.png"/>
+          </imageobject>
+        </mediaobject>
+        <para>What do people think? I still feel like the horizontal layout is the best option but
+          some more feedback would be helpful.</para>
+        <!-- ($ ld: 25.2.11 sm $) -->
       </blockquote>
       <blockquote>
         <title><ulink
@@ -1128,6 +1127,68 @@ zypper in enlightenment</screen></para>
     </sect3>
     <sect3 role="testing">
       <title>Testing Team</title>
+      <blockquote>
+        <title><ulink url="http://news.opensuse.org/2011/02/25/open-bugs-day-held-last-sunday/"
+            >Open-Bugs-Day Held Last Sunday</ulink></title>
+        <para><ulink
+            url="http://news.opensuse.org/2011/02/16/open-bugs-day-on-sunday-the-20th-of-february/"
+            >As announced previously</ulink>, openSUSE organized an Open-Bugs-Day held on January
+          20. Many people participated, including a large number of contributors new to <ulink
+            url="irc://irc.freenode.net/opensuse-testing">#opensuse-testing</ulink> on <ulink
+            url="http://freenode.net/">Freenode servers</ulink>! </para>
+        <para><emphasis role="bold">Results </emphasis></para>
+        <para>Bernhard Wiedemann created a nice tool at <ulink url="http://openbugs.zq1.de/"
+            >openbugs.zq1.de</ulink> to avoid the situation where two people work on the same issue.
+          There were VM’s prepared with VNC access so people could easily test and someone in the
+          team ran his first KVM Virtual Machine at home, thanks to the help of the rest of the
+          team. Another participant filed his first bug on bugzilla (that would be bug number <ulink
+            url="https://bugzilla.novell.com/show_bug.cgi?id=673629">673629</ulink>). In the end,
+          the team went through and updated 60% of all old 11.4 bugs (=132 of 219)! </para>
+        <para>And of course, they had a lot of fun… </para>
+        <para>Finally, we have some crude statistics about yesterday’s most active participants, who
+          can get the geeko-gear reward (just send your details to <ulink
+            url="http://en.opensuse.org/User:Bmwiedemann">Bernhard Wiedermann</ulink>)!</para>
+        <para>This list is generated with a perl script | sort | uniq -c | sort -n -r | head -11<itemizedlist>
+            <listitem>
+              <para>49 Rainer Hurtado Navarro</para>
+            </listitem>
+            <listitem>
+              <para>34 Bernhard Wiedemann</para>
+            </listitem>
+            <listitem>
+              <para>24 Pieter De Decker</para>
+            </listitem>
+            <listitem>
+              <para>13 Larry Finger</para>
+            </listitem>
+            <listitem>
+              <para>11 Terje J. Hanssen</para>
+            </listitem>
+            <listitem>
+              <para>10 Malvern Star</para>
+            </listitem>
+            <listitem>
+              <para>10 Karsten König</para>
+            </listitem>
+            <listitem>
+              <para>9 Michal Hucko</para>
+            </listitem>
+            <listitem>
+              <para>8 Refilwe Seete</para>
+            </listitem>
+            <listitem>
+              <para>8 John McInnes</para>
+            </listitem>
+            <listitem>
+              <para>8 Jason Craig</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Congrats on the great work! </para>
+        <para><emphasis role="bold">Future </emphasis></para>
+        <para>The team decided it would be nice to have such events on a regular basis, so
+          2011-04-02 is proposed for the next Open-Bugs-Day.</para>
+        <!--($ ld: 25.2.11 sm $)-->
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://lists.opensuse.org/opensuse-testing/2011-02/msg00019.html">Larry
