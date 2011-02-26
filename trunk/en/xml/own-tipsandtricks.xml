@@ -68,6 +68,21 @@ This article is licensed under a Creative Commons Attribution License (CC BY 2.5
     <title>For System Administrators</title>
     <blockquote>
       <title>
+        <ulink url="http://www.howtoforge.com/how-to-install-railo-3.2-under-opensuse-11.3-running-apache2-tomcat6-virtual-host">HowtoForge/wintel2006: How To Install Railo 3.2 Under OpenSUSE 11.3 Running Apache2 Tomcat 6 Virtual Host</ulink>
+      </title>
+      <para>&quot;Railo Server 3.2 Final. (3.2.1.000) has been released. As you know Railo is an Open Source ColdFusion Markup Language (CFML) engine. It is free and pretty fast.
+
+</para>
+      <para>For the new 3.2 version railo stop running resin, but tomcat as the default web server. </para>
+      <para>Instead of compile apache2 with tomcat 6 by yourself, the railo team had created the default installation script which help you setup railo on tomcat6 and using apache2 to connect to tomcat via mod_jk.
+
+Instead of using tomcat default webapps directory, we will modify the server.xml file and DocumentRoot will point back to default apache DocumentRoot directory defined under the virtual host configuration file.
+
+</para>
+      <para>The server is running OpenSUSE 11.3 (i386) on vmware player, and we need apache2 and Java installed before you run tomcat/railo service. (...)&quot;</para>
+<!-- ($ Id: 26.2.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
         <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/">Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3, 11.4</ulink>
       </title>
       <para>&quot;<emphasis role="bold">
@@ -98,7 +113,6 @@ This article is licensed under a Creative Commons Attribution License (CC BY 2.5
           <emphasis role="underline">Adding the repository</emphasis>
         </emphasis>
       </para>
-      <para/>
       <para><emphasis role="bold">For openSUSE 11.4</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.4/ &quot;ATI/AMD FGLRX&quot;
 </screen></para>
       <para><emphasis role="bold">For openSUSE 11.3</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.3/ &quot;ATI/AMD FGLRX&quot;</screen></para>
