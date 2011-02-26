@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -23,160 +22,67 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/working-frames-and-objects-scribus"
-          >LinuxJournal/Bruce Byfield: Working with Frames and Objects in Scribus</ulink>
+        <ulink url="http://news.softpedia.com/news/How-to-Sync-Firefox-Add-ons-Bookmarks-Preferences-History-185187.shtml">Softpedia/Marius Nestor: How to Sync Firefox Add-ons, Bookmarks, Preferences, History</ulink>
       </title>
-      <para><quote>A Scribus document consists of a series of objects that are added to a page, and
-          contained within a frame. In addition to the usual cut, copy, and paste functions
-          available in most applications, frames in Scribus share a general set of editing
-          attributes and, so far as possible, the same set of properties. As you can see from the
-          Insert menu, Scribus supports four basic types of frame: <ulink
-            url="http://www.linuxjournal.com/content/text-frames-scribus">text</ulink>, <ulink
-            url="http://www.linuxjournal.com/content/working-images-scribus">image</ulink>, table
-          and drawing primitives. Table frames are collections of individual text frames, which may
-          be edited either as a group or as individual cells, while drawing primitives are
-          sub-divided into shape, polygon, line, Bezier curve, and freehand line. Frames for
-          primitives are added with the content, while the content of other frames must be added
-          separately.</quote> (...)</para>
-      <!-- ($ ld: 14.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://www.ibm.com/developerworks/linux/library/l-script-linux-desktop-2/index.html?ca=drs-"
-          >IBMDeveloperWorks/Paul Ferrill: Scripting the Linux desktop, Part 2: Scripting
-          Nautilus</ulink></title>
-      <para>"<emphasis role="italic"><quote>This series of articles explores how to use Python to
-            create scripts for the GNOME desktop, the screenlets framework, and Nautilus to deliver
-            a highly productive environment. Scripts on the desktop enable drag-and-drop
-            functionality and quick access to the information and services you commonly use. In this
-            installment, learn how to use Python to add functionality to extend Nautilus on your
-            desktop.</quote></emphasis></para>
-      <para>For users of the GNOME desktop, the Nautilus program is probably one of the more
-        frequently used applications. It handles all the file copying, moving, renaming, and
-        searching chores with a simple graphical interface. At first blush, it would appear there
-        aren't many file-related things Nautilus can't do—unless you start thinking about tasks you
-        would typically perform with a shell script. </para>
-      <para>The Nautilus developers provided several ways to add new functionality without breaking
-        open the main code base. The simplest method is to use a bash or shell script that executes
-        a series of commands you would usually perform from a terminal prompt. This method makes it
-        possible to try the commands to make sure they do what you want them to do first. You can
-        use other languages as well, including the C Scripting Language, GnomeBasic, Perl, and
-        Python. This article look at adding new capabilities to Nautilus using the Python language.
-        A basic understanding of the Python language and the Python Standard Library is assumed.
-        "(...)</para>
-      <!-- ($ ld: 17.2.11 sm $) -->
-    </blockquote>
+      <para>&quot;Do you have lots of Firefox add-ons installed? Ever wondered if there&apos;s an easy way to backup and restore your Firefox&apos;s add-ons, preferences, history, passwords, bookmarks, and even the opened tabs?
+
+</para>
+      <para>Look no further! We have the solution right here, and it is easier than you think. Even if we tested on Ubuntu 10.10, the following tutorial is for Linux, Windows and Macintosh users, and it will teach you how to keep your Firefox extensions, bookmarks, passwords, preferences, history and tabs in sync across multiple computers. (...)&quot;</para>
+<!-- ($ Id: 26.2.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.freesoftwaremagazine.com/columns/getting_more_out_vim_some_tips"
-          >FreeSoftwareMagazine/Ryan Cartwright: Getting more out of Vim - some tips</ulink>
+        <ulink url="http://www.linuxaria.com/pills/cut-shell-linux?lang=en">Linuxaria: Using cut on linux terminal</ulink>
       </title>
-      <para>"I’m donning my flame-proof suit for this post. Vim is arguably one of the two most
-        popular text-editors used in the free software world: built on vi (its name stands for
-        VIiMproved) it will be found as a default package in many GNU/Linux distributions. The other
-        popular editor is EMACS (although I am sure there are those who will argue that EMACS is
-        much more than a mere text-editor). I use Vim a lot in my work and have found it to be a
-        little like chess: a moment to learn a lifetime to master. With that in mind here are some
-        of the tips and handy commands I have picked up over the years. I thought I’d pass them on
-        in case they help. </para>
-      <para>I’m going to assume you are familiar with the basics of Vim: moving the cursor, entering
-        modes and adding/editing content. I’m also going to presume you know what entering a command
-        that starts with a : means. This is not a beginners class, but it’s not an expert one
-        either. This is not the place to begin learning Vim - sorry. Some of these were seemingly
-        obvious to me, but unknown to other Vim users I’ve encountered. The rest are the reverse of
-        that scenario. I’ve limited myself to ten, because honestly something like this go on
-        forever without such a limit. These are not necessarily the best or most needed tips but
-        they are the ones I found were best received by vim users when they first heard them
-        (including me)." (...)</para>
-      <!-- ($ ld: 15.2.11 sat $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://azouhr.wordpress.com/2011/02/18/bash-features/">Berthold Gunreben:
-          Bash Features</ulink></title>
-      <para>"The bash system shell is the most widely used one on linux systems. For most sysadmins,
-        it is the tool of choice to do small administrative tasks. There are of course other shells,
-        and I don’t want to tell if one or the other is better. </para>
-      <para>Even though it is so well known by many people, one can stumble over some interesting
-        features from time to time. I used one of them to create the data in the recent post about
-        Linux and Memory. The task was, to iterate over a number of different test cases, but also
-        over different sizes for each test case. The first one is
-        easy:<screen>for r in 1 2 3 4 5 6 7 8; do ./memxfer -s 32M 100 $r; done</screen></para>
-      <para>You could also write this somewhat shorter
-        as:<screen>for r in $(seq 1 8); do ./memxfer -s 32M 100 $r; done</screen></para>
-      <para>My method of choice was using a not so well known bash
-        feature:<screen>for r in {1..8}; do ./memxfer -s 32M 100 $r; done</screen></para>
-      <para>The next step would be, to also iterate over sizes. All the sizes I normally use in this
-        benchmark are powers of two, and I definitely do not want to write down all these numbers
-        manually. Therefore, these numbers had to be calculated while iterating over the sizes. This
-        can be done like
-        this:<screen>for s in {0..16}; do ./memxfer -s $((1&lt;&lt;$s))k 100 1; done</screen></para>
-      <para>Finally, after putting all together, the command looks like the
-        following:<screen>for r in {0..8}; do
-   for s in {0..16}; do
-     ./memxfer -s $((1&lt;&lt;$s))k 100 $r
-   done
-done</screen></para>
-      <para>Now back to those interesting curling bracket lists. It is obviously a very short method
-        to create sequences of numbers. But they can do even more. For example, try the following
-        command:<screen>echo hello{1..4}</screen></para>
-      <para>The result is a combination of the list with the preceding
-        string:<screen>hello1 hello2 hello3 hello4</screen></para>
-      <para>This can also be done with letters like in<screen>echo hello{a..f}</screen></para>
-      <para>and it is possible to combine several lists to get permutations or counting backwards:
-        <screen>echo {a..c}{11..13}{z..w}</screen></para>
-      <para>Just try it yourself. It is quite a nice thing. One last note: Sometimes, you want to
-        use numbers that normally have a different digit count. To get the same number of digits for
-        all of the numbers, it is interesting to add a number of leading zeros. The resolution to
-        this is straight forward:<screen>echo {001..300}</screen></para>
-      <para>"</para>
-      <!-- ($ ld: 18.2.11 sat $) -->
-    </blockquote>
+      <para>&quot;Among the commands available from the linux terminal there’s also cut, very useful for processing strings and characters in general.
+
+</para>
+      <para>The cut command is one of the oldest Unix command. That means that it is more then 40 years old. And it shows. It is important to understand that this is a Unix command and behaves in “Unix way”.  For example, it  uses IFS (Input Field Separators) to determine where to split fields.  You can check it with set | grep IFS. You can also set it, for example, to:
+
+</para>
+      <para>IFS=&quot; \t\n&quot;
+
+</para>
+      <para>The cut command takes a vertical slice of a file, printing only the specified columns or fields. The columns are selected using the standard IFS or one specified. (...)&quot;</para>
+<!-- ($ Id: 26.2.11 sat $)
+This article is licensed under a Creative Commons Attribution License (CC BY 2.5).-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://mindby.com/2011/02/celery-and-twisted/">Brent McConnell: Celery and
-          Twisted</ulink>
+        <ulink url="http://mindby.com/2011/02/celery-and-twisted/">Brent McConnell: Celery and Twisted</ulink>
       </title>
-      <para>"I’ve been working with <ulink url="http://celeryproject.org/">Celery</ulink>, <ulink
-          url="http://twistedmatrix.com/trac/">Twisted</ulink> and <ulink
-          url="https://github.com/fiorix/cyclone">Cyclone</ulink> recently on a side project I have
+      <para>&quot;I’ve been working with <ulink url="http://celeryproject.org/">Celery</ulink>, <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink> and <ulink url="https://github.com/fiorix/cyclone">Cyclone</ulink> recently on a side project I have
         going on, however the integration between Celery and Twisted is not ideal for asynchronous
         programming which prompted me to jot down some notes for what I’ve worked out. Hopefully
         this will be useful to someone, also if anyone wants to offer a better way I’m all ears :) . </para>
       <para>Celery has some built in methods to allow you to check the completeness of a remote job
         by calling the successful() method on a returned AsyncResult object. For example you can do
-        something like this…" (...)</para>
-      <!-- ($ ld: 14.2.11 sm $) -->
-    </blockquote>
+        something like this…&quot; (...)</para>
+<!-- ($ ld: 14.2.11 sm $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/"
-          >Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3,
-          11.4</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/">Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3, 11.4</ulink>
       </title>
-      <para>"<emphasis role="bold"><emphasis role="underline">Preambule : free
-          software</emphasis></emphasis>
+      <para>&quot;<emphasis role="bold">
+          <emphasis role="underline">Preambule : free software</emphasis>
+        </emphasis>
       </para>
-      <para><emphasis role="bold"><emphasis role="italic">Warning</emphasis>
+      <para><emphasis role="bold">
+          <emphasis role="italic">Warning</emphasis>
         </emphasis></para>
       <para>I would notice everybody which will install these software : you will install
         proprietary softwares on your computer. Nobody will be able to debug them, nor help you to
         resolve what can be happen. That must be said !</para>
       <para><emphasis role="bold">The free future </emphasis></para>
       <para>The real future is already in place : it’s called radeon (or free-radeon), it’s fully
-        integrated in kernel &amp; xorg. Actually ( for openSUSE 11.4, or openSUSE 11.3 with <ulink
-          url="http://download.opensuse.org/repositories/Kernel:/stable/openSUSE_11.3/"
-          >kernel-stable</ulink> + <ulink
-          url="http://download.opensuse.org/repositories/X11:/XOrg/openSUSE_11.3/">X11 obs
-          repo</ulink> ). Support for many chipset is in real progress even for the 6xxx series.
+        integrated in kernel &amp; xorg. Actually ( for openSUSE 11.4, or openSUSE 11.3 with <ulink url="http://download.opensuse.org/repositories/Kernel:/stable/openSUSE_11.3/">kernel-stable</ulink> + <ulink url="http://download.opensuse.org/repositories/X11:/XOrg/openSUSE_11.3/">X11 obs repo</ulink> ). Support for many chipset is in real progress even for the 6xxx series.
         Give it a try before using the proprietary software, report any bugs you find with it. Only
         your contributions can help and will make a real differences. Thanks for doing that !</para>
       <para><emphasis role="bold">Unofficial but working repository </emphasis></para>
@@ -185,22 +91,22 @@ done</screen></para>
         packaging policy made avalaible by AMD. Thanks to Sebastian Siebert ( check his blog ) to
         work in coordination with ati/amd and follow the catalyst packaging. His work allow us to
         have that driver available for openSUSE.</para>
-      <para><emphasis role="bold"><emphasis role="italic">The quick how-to</emphasis>
+      <para><emphasis role="bold">
+          <emphasis role="italic">The quick how-to</emphasis>
         </emphasis></para>
-      <para><emphasis role="bold"><emphasis role="underline">Adding the
-          repository</emphasis></emphasis>
+      <para><emphasis role="bold">
+          <emphasis role="underline">Adding the repository</emphasis>
+        </emphasis>
       </para>
       <para/>
-      <para><emphasis role="bold">For openSUSE
-        11.4</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.4/ "ATI/AMD FGLRX"
+      <para><emphasis role="bold">For openSUSE 11.4</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.4/ &quot;ATI/AMD FGLRX&quot;
 </screen></para>
-      <para><emphasis role="bold">For openSUSE
-        11.3</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.3/ "ATI/AMD FGLRX"</screen></para>
-      <para><emphasis role="bold">For openSUSE
-        11.2</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.2/ "ATI/AMD FGLRX"
+      <para><emphasis role="bold">For openSUSE 11.3</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.3/ &quot;ATI/AMD FGLRX&quot;</screen></para>
+      <para><emphasis role="bold">For openSUSE 11.2</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.2/ &quot;ATI/AMD FGLRX&quot;
 </screen></para>
-      <para><emphasis role="bold"><emphasis role="underline">Installing the
-          driver</emphasis></emphasis></para>
+      <para><emphasis role="bold">
+          <emphasis role="underline">Installing the driver</emphasis>
+        </emphasis></para>
       <para><emphasis role="bold">Nota previous version</emphasis></para>
       <para>Due to change in ati/amd way of life, it’s recommanded to completely remove any version
         of fglrx previously installed with a zypper rm </para>
@@ -208,7 +114,7 @@ done</screen></para>
         <screen># Remove old conf &amp; stuff
 rm -fr /etc/ati
 # Remove any old fglrx inside kernel modules
-find /lib/modules -type f -iname "flgrx.ko" -exec rm -fv {} \;</screen></para>
+find /lib/modules -type f -iname &quot;flgrx.ko&quot; -exec rm -fv {} \;</screen></para>
       <para><emphasis role="bold">New installation</emphasis>
       </para>
       <para>Once the repo has been added, you will certainly have to reboot to get ride off free
@@ -228,10 +134,8 @@ i | fglrx64_xpic_SUSE114  | package | 8.821-1 | x86_64 | ATI/AMD fglrx non-offic
   | fglrx_xpic_SUSE114    | package | 8.821-1 | i586   | ATI/AMD fglrx non-official</screen></para>
       <para>Starting with 8.821 (Catalyst 11.2) ATI use now xpic (full explanation) So use that
         one.</para>
-      <para><emphasis role="bold">For a 64bits
-        version</emphasis><screen>zypper in fglrx64_xpic_SUSE114</screen></para>
-      <para><emphasis role="bold">For a 32bits
-        version</emphasis><screen>zypper in fglrx_xpic_SUSE114</screen></para>
+      <para><emphasis role="bold">For a 64bits version</emphasis><screen>zypper in fglrx64_xpic_SUSE114</screen></para>
+      <para><emphasis role="bold">For a 32bits version</emphasis><screen>zypper in fglrx_xpic_SUSE114</screen></para>
       <para>During the installation process, all the dependencies will be added, which mostly are
         needed to build the kernel modules. Expect around 200MB to dowload. </para>
       <para>Then the installer will build the module for your installed kernel. And if there’s a
@@ -264,27 +168,23 @@ blacklist radeon</screen></para>
         </itemizedlist></para>
       <para><emphasis role="bold">References </emphasis><itemizedlist>
           <listitem>
-            <para><ulink
-                url="http://www.sebastian-siebert.de/2011/02/15/opensuse-11-3-proprietaeren-grafik-treiber-ati-catalyst-11-2-als-rpm-installieren/"
-                >Sebastian Siebert blog ( German )</ulink> with nice howto and problem
+            <para><ulink url="http://www.sebastian-siebert.de/2011/02/15/opensuse-11-3-proprietaeren-grafik-treiber-ati-catalyst-11-2-als-rpm-installieren/">Sebastian Siebert blog ( German )</ulink> with nice howto and problem
               resolution.</para>
           </listitem>
           <listitem>
-            <para><ulink url="http://lizards.opensuse.org/?p=4673">My previous post on the
-                subject</ulink> "</para>
+            <para><ulink url="http://lizards.opensuse.org/?p=4673">My previous post on the subject</ulink> &quot;</para>
           </listitem>
         </itemizedlist></para>
-      <!-- ($ ld: 20.2.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 20.2.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink url="http://ironman.darthgibus.net/?p=113">Fred Blaise: Alfresco 3.4d ldap
-          sync</ulink></title>
+      <title>
+        <ulink url="http://ironman.darthgibus.net/?p=113">Fred Blaise: Alfresco 3.4d ldap sync</ulink>
+      </title>
       <para>While upgrading from 3.3g to 3.4d, my ldap sync wouldn’t work anymore. </para>
       <para>I had to add in my ldap-ad-authentication.properties the following
         line:<screen>ldap.synchronization.java.naming.security.authentication=simple</screen></para>
       <para>While there is a similar line for authentication, it doesn’t do it for sync’ing
         up.<screen>ldap.authentication.java.naming.security.authentication=simple</screen></para>
-      <!--($ ld: 22.2.11 sm $)-->
-    </blockquote>
+<!--($ ld: 22.2.11 sm $)-->    </blockquote>
   </sect2>
 </sect1>
