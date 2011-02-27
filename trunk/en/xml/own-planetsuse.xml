@@ -62,7 +62,8 @@
       too:<screen>#include "pitches.h"
  
 /* Cue Star Wars - Darth Vader theme, opening notes! */
-int melody_nak[] = { NOTE_G5, NOTE_G5, NOTE_G5, NOTE_DS5, NOTE_AS5, NOTE_G5, NOTE_DS5, NOTE_AS5, NOTE_G5};
+int melody_nak[] = { NOTE_G5, NOTE_G5, NOTE_G5, NOTE_DS5, NOTE_AS5, NOTE_G5, \\
+NOTE_DS5, NOTE_AS5, NOTE_G5};
 int noteDurations_nak[] = { 330, 330, 330, 250, 120, 330, 250, 120, 500 };
  
 int melody_ack[] = { NOTE_D6, NOTE_A6, NOTE_C7, NOTE_A6 };
