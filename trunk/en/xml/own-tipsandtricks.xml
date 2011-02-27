@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -22,82 +23,95 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://news.softpedia.com/news/How-to-Sync-Firefox-Add-ons-Bookmarks-Preferences-History-185187.shtml">Softpedia/Marius Nestor: How to Sync Firefox Add-ons, Bookmarks, Preferences, History</ulink>
+        <ulink
+          url="http://news.softpedia.com/news/How-to-Sync-Firefox-Add-ons-Bookmarks-Preferences-History-185187.shtml"
+          >Softpedia/Marius Nestor: How to Sync Firefox Add-ons, Bookmarks, Preferences,
+          History</ulink>
       </title>
-      <para>&quot;Do you have lots of Firefox add-ons installed? Ever wondered if there&apos;s an easy way to backup and restore your Firefox&apos;s add-ons, preferences, history, passwords, bookmarks, and even the opened tabs?
-
-</para>
-      <para>Look no further! We have the solution right here, and it is easier than you think. Even if we tested on Ubuntu 10.10, the following tutorial is for Linux, Windows and Macintosh users, and it will teach you how to keep your Firefox extensions, bookmarks, passwords, preferences, history and tabs in sync across multiple computers. (...)&quot;</para>
-<!-- ($ Id: 26.2.11 sat $)-->    </blockquote>
+      <para><note>
+          <para><emphasis role="bold">© 2001 - 2011 Softpedia. All rights
+            reserved.</emphasis></para>
+        </note>&quot;Do you have lots of Firefox add-ons installed? Ever wondered if there&apos;s an
+        easy way to backup and restore your Firefox&apos;s add-ons, preferences, history, passwords,
+        bookmarks, and even the opened tabs? </para>
+      <para>Look no further! We have the solution right here, and it is easier than you think. Even
+        if we tested on Ubuntu 10.10, the following tutorial is for Linux, Windows and Macintosh
+        users, and it will teach you how to keep your Firefox extensions, bookmarks, passwords,
+        preferences, history and tabs in sync across multiple computers. (...)&quot;</para>
+      <!-- ($ Id: 26.2.11 sat $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxaria.com/pills/cut-shell-linux?lang=en">Linuxaria: Using cut on linux terminal</ulink>
+        <ulink url="http://www.linuxaria.com/pills/cut-shell-linux?lang=en">Linuxaria: Using cut on
+          linux terminal</ulink>
       </title>
-      <para>&quot;Among the commands available from the linux terminal there’s also cut, very useful for processing strings and characters in general.
-
-</para>
-      <para>The cut command is one of the oldest Unix command. That means that it is more then 40 years old. And it shows. It is important to understand that this is a Unix command and behaves in “Unix way”.  For example, it  uses IFS (Input Field Separators) to determine where to split fields.  You can check it with set | grep IFS. You can also set it, for example, to:
-
-</para>
+      <para><note>
+          <para>This article is licensed under a Creative Commons Attribution License (CC BY
+            2.5).</para>
+        </note>&quot;Among the commands available from the linux terminal there’s also cut, very
+        useful for processing strings and characters in general. </para>
+      <para>The cut command is one of the oldest Unix command. That means that it is more then 40
+        years old. And it shows. It is important to understand that this is a Unix command and
+        behaves in “Unix way”. For example, it uses IFS (Input Field Separators) to determine where
+        to split fields. You can check it with set | grep IFS. You can also set it, for example, to: </para>
       <para>IFS=&quot; \t\n&quot;
-
-</para>
-      <para>The cut command takes a vertical slice of a file, printing only the specified columns or fields. The columns are selected using the standard IFS or one specified. (...)&quot;</para>
-<!-- ($ Id: 26.2.11 sat $)
-This article is licensed under a Creative Commons Attribution License (CC BY 2.5).-->    </blockquote>
+      </para>
+      <para>The cut command takes a vertical slice of a file, printing only the specified columns or
+        fields. The columns are selected using the standard IFS or one specified. (...)&quot;</para>
+      <!-- ($ Id: 26.2.11 sat $)
+      This article is licensed under a Creative Commons Attribution License (CC BY 2.5).-->
+    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://mindby.com/2011/02/celery-and-twisted/">Brent McConnell: Celery and Twisted</ulink>
+        <ulink url="http://mindby.com/2011/02/celery-and-twisted/">Brent McConnell: Celery and
+          Twisted</ulink>
       </title>
-      <para>&quot;I’ve been working with <ulink url="http://celeryproject.org/">Celery</ulink>, <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink> and <ulink url="https://github.com/fiorix/cyclone">Cyclone</ulink> recently on a side project I have
+      <para>"I’ve been working with <ulink url="http://celeryproject.org/">Celery</ulink>, <ulink
+          url="http://twistedmatrix.com/trac/">Twisted</ulink> and <ulink
+          url="https://github.com/fiorix/cyclone">Cyclone</ulink> recently on a side project I have
         going on, however the integration between Celery and Twisted is not ideal for asynchronous
         programming which prompted me to jot down some notes for what I’ve worked out. Hopefully
         this will be useful to someone, also if anyone wants to offer a better way I’m all ears :) . </para>
       <para>Celery has some built in methods to allow you to check the completeness of a remote job
         by calling the successful() method on a returned AsyncResult object. For example you can do
-        something like this…&quot; (...)</para>
-<!-- ($ ld: 14.2.11 sm $) -->    </blockquote>
-  </sect2>
+        something like this…" (...)</para>     
+    </blockquote>
+  </sect2> -->
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/how-to-install-railo-3.2-under-opensuse-11.3-running-apache2-tomcat6-virtual-host">HowtoForge/wintel2006: How To Install Railo 3.2 Under OpenSUSE 11.3 Running Apache2 Tomcat 6 Virtual Host</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/"
+          >Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3,
+          11.4</ulink>
       </title>
-      <para>&quot;Railo Server 3.2 Final. (3.2.1.000) has been released. As you know Railo is an Open Source ColdFusion Markup Language (CFML) engine. It is free and pretty fast.
-
-</para>
-      <para>For the new 3.2 version railo stop running resin, but tomcat as the default web server. </para>
-      <para>Instead of compile apache2 with tomcat 6 by yourself, the railo team had created the default installation script which help you setup railo on tomcat6 and using apache2 to connect to tomcat via mod_jk.
-
-Instead of using tomcat default webapps directory, we will modify the server.xml file and DocumentRoot will point back to default apache DocumentRoot directory defined under the virtual host configuration file.
-
-</para>
-      <para>The server is running OpenSUSE 11.3 (i386) on vmware player, and we need apache2 and Java installed before you run tomcat/railo service. (...)&quot;</para>
-<!-- ($ Id: 26.2.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/">Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3, 11.4</ulink>
-      </title>
-      <para>&quot;<emphasis role="bold">
-          <emphasis role="underline">Preambule : free software</emphasis>
-        </emphasis>
+      <note>
+        <para><emphasis role="bold">This Article is licensed under the <ulink
+              url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation
+            License.</ulink></emphasis></para>
+      </note>
+      <para>"<emphasis role="bold"><emphasis role="underline">Preambule : free
+          software</emphasis></emphasis>
       </para>
-      <para><emphasis role="bold">
-          <emphasis role="italic">Warning</emphasis>
+      <para><emphasis role="bold"><emphasis role="italic">Warning</emphasis>
         </emphasis></para>
       <para>I would notice everybody which will install these software : you will install
         proprietary softwares on your computer. Nobody will be able to debug them, nor help you to
         resolve what can be happen. That must be said !</para>
       <para><emphasis role="bold">The free future </emphasis></para>
       <para>The real future is already in place : it’s called radeon (or free-radeon), it’s fully
-        integrated in kernel &amp; xorg. Actually ( for openSUSE 11.4, or openSUSE 11.3 with <ulink url="http://download.opensuse.org/repositories/Kernel:/stable/openSUSE_11.3/">kernel-stable</ulink> + <ulink url="http://download.opensuse.org/repositories/X11:/XOrg/openSUSE_11.3/">X11 obs repo</ulink> ). Support for many chipset is in real progress even for the 6xxx series.
+        integrated in kernel &amp; xorg. Actually ( for openSUSE 11.4, or openSUSE 11.3 with <ulink
+          url="http://download.opensuse.org/repositories/Kernel:/stable/openSUSE_11.3/"
+          >kernel-stable</ulink> + <ulink
+          url="http://download.opensuse.org/repositories/X11:/XOrg/openSUSE_11.3/">X11 obs
+          repo</ulink> ). Support for many chipset is in real progress even for the 6xxx series.
         Give it a try before using the proprietary software, report any bugs you find with it. Only
         your contributions can help and will make a real differences. Thanks for doing that !</para>
       <para><emphasis role="bold">Unofficial but working repository </emphasis></para>
@@ -106,21 +120,22 @@ Instead of using tomcat default webapps directory, we will modify the server.xml
         packaging policy made avalaible by AMD. Thanks to Sebastian Siebert ( check his blog ) to
         work in coordination with ati/amd and follow the catalyst packaging. His work allow us to
         have that driver available for openSUSE.</para>
-      <para><emphasis role="bold">
-          <emphasis role="italic">The quick how-to</emphasis>
+      <para><emphasis role="bold"><emphasis role="italic">The quick how-to</emphasis>
         </emphasis></para>
-      <para><emphasis role="bold">
-          <emphasis role="underline">Adding the repository</emphasis>
-        </emphasis>
+      <para><emphasis role="bold"><emphasis role="underline">Adding the
+          repository</emphasis></emphasis>
       </para>
-      <para><emphasis role="bold">For openSUSE 11.4</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.4/ &quot;ATI/AMD FGLRX&quot;
+      <para/>
+      <para><emphasis role="bold">For openSUSE
+        11.4</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.4/ "ATI/AMD FGLRX"
 </screen></para>
-      <para><emphasis role="bold">For openSUSE 11.3</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.3/ &quot;ATI/AMD FGLRX&quot;</screen></para>
-      <para><emphasis role="bold">For openSUSE 11.2</emphasis><screen>zypper ar -c -f -n &quot;ATI/AMD fglrx non-official&quot; http://linux.ioda.net/mirror/ati/openSUSE_11.2/ &quot;ATI/AMD FGLRX&quot;
+      <para><emphasis role="bold">For openSUSE
+        11.3</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.3/ "ATI/AMD FGLRX"</screen></para>
+      <para><emphasis role="bold">For openSUSE
+        11.2</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" http://linux.ioda.net/mirror/ati/openSUSE_11.2/ "ATI/AMD FGLRX"
 </screen></para>
-      <para><emphasis role="bold">
-          <emphasis role="underline">Installing the driver</emphasis>
-        </emphasis></para>
+      <para><emphasis role="bold"><emphasis role="underline">Installing the
+          driver</emphasis></emphasis></para>
       <para><emphasis role="bold">Nota previous version</emphasis></para>
       <para>Due to change in ati/amd way of life, it’s recommanded to completely remove any version
         of fglrx previously installed with a zypper rm </para>
@@ -128,7 +143,7 @@ Instead of using tomcat default webapps directory, we will modify the server.xml
         <screen># Remove old conf &amp; stuff
 rm -fr /etc/ati
 # Remove any old fglrx inside kernel modules
-find /lib/modules -type f -iname &quot;flgrx.ko&quot; -exec rm -fv {} \;</screen></para>
+find /lib/modules -type f -iname "flgrx.ko" -exec rm -fv {} \;</screen></para>
       <para><emphasis role="bold">New installation</emphasis>
       </para>
       <para>Once the repo has been added, you will certainly have to reboot to get ride off free
@@ -148,8 +163,10 @@ i | fglrx64_xpic_SUSE114  | package | 8.821-1 | x86_64 | ATI/AMD fglrx non-offic
   | fglrx_xpic_SUSE114    | package | 8.821-1 | i586   | ATI/AMD fglrx non-official</screen></para>
       <para>Starting with 8.821 (Catalyst 11.2) ATI use now xpic (full explanation) So use that
         one.</para>
-      <para><emphasis role="bold">For a 64bits version</emphasis><screen>zypper in fglrx64_xpic_SUSE114</screen></para>
-      <para><emphasis role="bold">For a 32bits version</emphasis><screen>zypper in fglrx_xpic_SUSE114</screen></para>
+      <para><emphasis role="bold">For a 64bits
+        version</emphasis><screen>zypper in fglrx64_xpic_SUSE114</screen></para>
+      <para><emphasis role="bold">For a 32bits
+        version</emphasis><screen>zypper in fglrx_xpic_SUSE114</screen></para>
       <para>During the installation process, all the dependencies will be added, which mostly are
         needed to build the kernel modules. Expect around 200MB to dowload. </para>
       <para>Then the installer will build the module for your installed kernel. And if there’s a
@@ -182,23 +199,46 @@ blacklist radeon</screen></para>
         </itemizedlist></para>
       <para><emphasis role="bold">References </emphasis><itemizedlist>
           <listitem>
-            <para><ulink url="http://www.sebastian-siebert.de/2011/02/15/opensuse-11-3-proprietaeren-grafik-treiber-ati-catalyst-11-2-als-rpm-installieren/">Sebastian Siebert blog ( German )</ulink> with nice howto and problem
+            <para><ulink
+                url="http://www.sebastian-siebert.de/2011/02/15/opensuse-11-3-proprietaeren-grafik-treiber-ati-catalyst-11-2-als-rpm-installieren/"
+                >Sebastian Siebert blog ( German )</ulink> with nice howto and problem
               resolution.</para>
           </listitem>
           <listitem>
-            <para><ulink url="http://lizards.opensuse.org/?p=4673">My previous post on the subject</ulink> &quot;</para>
+            <para><ulink url="http://lizards.opensuse.org/?p=4673">My previous post on the
+                subject</ulink> "</para>
           </listitem>
         </itemizedlist></para>
-<!-- ($ ld: 20.2.11 sm $) -->    </blockquote>
+      <!-- ($ ld: 20.2.11 sm $) -->
+    </blockquote>
     <blockquote>
-      <title>
-        <ulink url="http://ironman.darthgibus.net/?p=113">Fred Blaise: Alfresco 3.4d ldap sync</ulink>
-      </title>
+      <title><ulink url="http://ironman.darthgibus.net/?p=113">Fred Blaise: Alfresco 3.4d ldap
+          sync</ulink></title>
       <para>While upgrading from 3.3g to 3.4d, my ldap sync wouldn’t work anymore. </para>
       <para>I had to add in my ldap-ad-authentication.properties the following
         line:<screen>ldap.synchronization.java.naming.security.authentication=simple</screen></para>
       <para>While there is a similar line for authentication, it doesn’t do it for sync’ing
         up.<screen>ldap.authentication.java.naming.security.authentication=simple</screen></para>
-<!--($ ld: 22.2.11 sm $)-->    </blockquote>
+      <!--($ ld: 22.2.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.howtoforge.com/how-to-install-railo-3.2-under-opensuse-11.3-running-apache2-tomcat6-virtual-host"
+          >HowtoForge/wintel2006: How To Install Railo 3.2 Under OpenSUSE 11.3 Running Apache2
+          Tomcat 6 Virtual Host</ulink>
+      </title>
+      <para>&quot;Railo Server 3.2 Final. (3.2.1.000) has been released. As you know Railo is an
+        Open Source ColdFusion Markup Language (CFML) engine. It is free and pretty fast. </para>
+      <para>For the new 3.2 version railo stop running resin, but tomcat as the default web server. </para>
+      <para>Instead of compile apache2 with tomcat 6 by yourself, the railo team had created the
+        default installation script which help you setup railo on tomcat6 and using apache2 to
+        connect to tomcat via mod_jk. Instead of using tomcat default webapps directory, we will
+        modify the server.xml file and DocumentRoot will point back to default apache DocumentRoot
+        directory defined under the virtual host configuration file. </para>
+      <para>The server is running OpenSUSE 11.3 (i386) on vmware player, and we need apache2 and
+        Java installed before you run tomcat/railo service. (...)&quot;</para>
+      <!-- ($ Id: 26.2.11 sat $)-->
+    </blockquote>
   </sect2>
 </sect1>
