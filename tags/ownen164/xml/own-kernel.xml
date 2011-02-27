@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title><ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-3-Network-drivers-and-infrastructure-1197480.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.38 (Part 3) – Network drivers and
+        infrastructure</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is: Copyright © 2011 Heise Media UK Ltd. The openSUSE
+          Weekly News Team has a special Permission to introduce Articles from
+          h-online.com.</emphasis></para>
+    </note>
+    <para>"<emphasis role="bold">Kernel version 38 will offer a new meshing implementation, loads of
+        new and improved LAN and Wi-Fi drivers, plus various minor changes that promise to improve
+        the network subsystem's performance.</emphasis>
+    </para>
+    <para>All the parts in this Kernel Log mini-series can be found by referring to <ulink
+        url="http://www.h-online.com/open/features/Linux-Kernel-2-6-38-Tracking-1193254.html">the
+        2.6.38 tracking page</ulink>. </para>
+    <para>Early on the morning of 22 February, Linus Torvalds <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1103561">issued</ulink> the sixth release
+      candidate of Linux 2.6.38. In his release email, Torvalds mentioned a fix for a memory
+      corruption problem – but he said that it is rare and only two people ever saw it. There was no
+      indication of a final release date for 2.6.38. Usually released on a weekly basis, the
+      "regression reports" have recently listed <ulink
+        url="http://thread.gmane.org/gmane.linux.acpi.devel/49465">17 unsolved problems</ulink>
+      which don't exist in 2.6.37; a further <ulink
+        url="http://thread.gmane.org/gmane.linux.network/186887">26 flaws</ulink> introduced between
+      2.6.36 and 2.6.37 also remain unsolved. </para>
+    <para>The Kernel Log takes the release of RC6 as an opportunity to continue its "Coming in
+      2.6.38" mini series and describe the advancements in terms of network hardware drivers and
+      infrastructure. <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-1-Graphics-1176900.html"
+        >The first part of our mini series</ulink> described the changes in the graphics hardware
+      area, while the <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-2-File-systems-1192694.html"
+        >second part</ulink> covered file systems. Over the coming weeks, further articles will
+      discuss the kernel's storage, architecture and infrastructure code as well as its audio, USB,
+      and video hardware drivers. (...)</para>
+    <!-- ($ ld: 25.2.11 sm $) -->
+  </blockquote>
+</sect1>
