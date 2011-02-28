@@ -81,23 +81,103 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.zdnet.com/blog/open-source/novells-stockholders-approve-attachmate-buyout-but-the-deals-far-from-done/8307"
-          >ZDNet/Steven J. Vaughan-Nichols: Novell&apos;s Stockholders approve Attachmate buyout but
-          the Deal&apos;s far from done</ulink>
+        <ulink url="http://thomasmcguire.wordpress.com/2011/02/27/facebook-support-in-kdepim/"
+          >Thomas McGuire: Facebook support in KDEPIM</ulink>
       </title>
-      <para><note>
-          <para><emphasis role="bold">© 2011 CBS Interactive. All rights reserved.
-            </emphasis></para>
-        </note>&quot;Last week, Novell announced that its stockholders have voted to adopt the
-        previously announced <ulink
-          url="http://practical-tech.com/operating-system/dark-horse-attachmate-buys-novell-with-microsofts-help/3274"
-          >merger with Attachmate</ulink> and <ulink
-          url="http://www.alacrastore.com/deal-snapshot/Longview_Software_Acquisition_acquires_Novell_Inc-633792"
-          >Longview Software Acquisition Corp.</ulink>, a special purpose vehicle formed by
-        Attachmate designed to acquire all of Novell’s stock. The deal is still far from done
-        though. (...)&quot;</para>
-      <!-- ($ ld: 26.2.11 sat $) -->
+      <para>I am at the annual <ulink url="http://community.kde.org/KDE_PIM/Meetings/Osnabrueck_9"
+          >KDEPIM meeting in Osnabrück</ulink> for the weekend. It is awesome meeting old friends
+        again and seeing new faces as well. Even better is that it is a welcome break from writing
+        my thesis which is due next week, one weekend of hacking in discussing without
+        worries.</para>
+      <para>I took the opportunity to hack on <ulink url="http://www.facebook.com/">Facebook</ulink>
+        support for KDEPIM. The result is an <ulink url="http://pim.kde.org/akonadi/"
+          >Akonadi</ulink> resource that provides access to your Facebook friends and events.
+        Screenshots say more than thousand words, so below are two screenshots, showing my Facebook
+        friends in KAddressbook and showing my <ulink url="http://www.facebook.com/"
+          >Facebook</ulink> events in KOrganizer. Notice how birthdays from Facebook are
+        automatically integrated (although birthdays without the year display the wrong age at the
+        moment).</para>
+      <para>Sorry for the ugly widget style in the screenshots, for some reason the Oxygen style
+        doesn’t work for me.</para>
+      <figure id="fig.faceadressbook">
+        <title>Facebook in KAddressbook</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://thomasmcguire.files.wordpress.com/2011/02/facebook_addressbook_redacted.png"
+              width="40%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <figure id="fig.faceorganizer">
+        <title>Facebook in KOrganizer</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://thomasmcguire.files.wordpress.com/2011/02/facebook_korganizer_redacted.png"
+              width="40%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>That is not all! Since events also show in the Plasma clock calendar, the events from
+        Facebook are automatically shown there as well <xref linkend="fig.faceorganizer"/>. The
+        Kontact summary will of course show upcoming birthdays and events from Facebook. The data is
+        also cached when you are offline, thanks to the Akonadi framework. Much more is planned for
+        the future:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Show the Facebook news feed in the Kontact summary and in a plasma widget</para>
+        </listitem>
+        <listitem>
+          <para>Show Facebook notes in KJots</para>
+        </listitem>
+        <listitem>
+          <para>Support for Facebook messages, either in KMail or in a custom Kontact plugin</para>
+        </listitem>
+        <listitem>
+          <para>Support for creating and editing events</para>
+        </listitem>
+      </itemizedlist>
+      <para>The Facebook resource is still very young, thus there is no official release yet. Work
+        is underway for a 0.1 release, just a bit of polishing is needed.</para>
+      <para>Please try out the resource for yourself and help with testing. Since it is a developer
+        preview, you need to build the resource from source code. Do the following:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Get the source code with
+            <screen>git clone git://anongit.kde.org/scratch/tmcguire/kfacebook.git</screen></para>
+        </listitem>
+        <listitem>
+          <para>Build and install</para>
+        </listitem>
+        <listitem>
+          <para>Open KAddressbook and chose <emphasis role="italic">File->New->Add Address
+              Book</emphasis>.</para>
+          <orderedlist>
+            <listitem><para>Select <emphasis role="italic">Facebook</emphasis>. A settings dialog will open.</para></listitem>
+            <listitem><para>In the settings dialog, click the <emphasis role="italic">Authenticate</emphasis> button</para></listitem>
+            <listitem><para>A webpage will open and ask you to give the <emphasis role="italic">KDE Connector</emphasis> access to the Facebook data. Confirm that. You may need 
+            to login to Facebook first.</para></listitem>
+            <listitem><para>Close the settings dialog. The address book and calendar should automatically synchronize with Facebook. If not, you can always do that manually by 
+              right-clicking on the Facebook address book or calendar folder.</para></listitem>
+          </orderedlist>        
+        </listitem>
+        <listitem><para>Enjoy!</para></listitem>          
+      </itemizedlist>
+      <para>Please contact me in case you have any problems or feedback. Bugs are best reported on the <ulink url="http://bugs.kde.org/">KDE bugtracker</ulink>, there is a 
+      Facebook component for the Akonadi product.</para>
+      <para>For version 0.1, I plan to move the repository to <ulink url="http://projects.kde.org/">projects.kde.org</ulink> and add support for translations. More importantly, 
+      0.1 will be the first real release, which will hopefully be picked up by packagers, so stay tuned!</para>
+      <para>Oh, and since we’re talking about Facebook, there is also a page for the Akonadi resource <ulink 
+        url="http://www.facebook.com/apps/application.php?id=175243235841602">here</ulink>, click the Like button if you like it :)</para>
+      <para>Writing the resource was easy and lots of fun, and hopefully many of you will find it useful. I am certainly looking forward adding more cool features to it.</para>
+      <para><emphasis role="bold">Update</emphasis>: The Facebook resource should now compile against KDE SC 4.6.0. Please comment or file a bug report if you still have a 
+      problem compiling.</para>
+      <para><emphasis role="bold">Update</emphasis>: Some people report having trouble authenticating with Facebook, sometimes the links in the embedded web view don’t seem to 
+        work. I would appreciate help from a KDE webkit developer here. To workaround that problem, first log in to Facebook with Konqueror. You may also need to grab the 
+        authentication URL from the debug output of the resource and view that URL in Konqueror, you should see something like “<emphasis 
+          role="italic">https://graph.facebook.com/oauth/authorize?…</emphasis>” in the debug output.</para>
+      <!-- ($ ld: 27.2.11 sm $) -->
     </blockquote>
     <blockquote>
       <title>
