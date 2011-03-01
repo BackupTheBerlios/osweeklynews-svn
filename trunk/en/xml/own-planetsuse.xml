@@ -22,34 +22,26 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title>
-      <ulink url="http://dev-loki.blogspot.com/2011/02/packman-switching-to-new-repositories.html">Pascal Bleser: Packman: switching to new repositories</ulink>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-one-kernel">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day One: The Kernel</ulink>
     </title>
     <note>
-      <para><emphasis role="bold">This Article isn't licensed under any free License yet.</emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
-    <para>As I <ulink url="http://dev-loki.blogspot.com/2011/02/packman-service-interruption-and.html">wrote about</ulink> a couple of days ago, the <ulink 
-      url="http://packman.links2linux.org">Packman team</ulink> has been busy migrating to a new <ulink url="http://en.opensuse.org/Portal:Build_Service"
-        >openSUSE Build Service</ulink> instance as well as, while we were at it, <ulink url="http://dev-loki.blogspot.com/2011/02/packman-service-interruption-and.html"
-          >changing the repository layout</ulink>.</para>
-    <para>We've been putting quite some steam behind the effort and we finally have reached a point where everything is working great (for us as packagers) and where the most 
-      used packages have been added and re-built on <ulink url="http://pmbs.links2linux.org">our new openSUSE Build Service instance</ulink>, as well as having been published 
-      in <ulink url="http://packman.inode.at/suse/openSUSE_11.4">our new repositories</ulink>, including on all <ulink url="http://packman.links2linux.org/MIRRORS.html">our 
-      mirrors</ulink>.</para>
-    <para>On Wednesday (2011-03-02), in CET evening, we will delete the old repositories. We will create symbolic links to make the old URLs point to the new repositories 
-      (e.g. <emphasis role="italic">11.3</emphasis> to <emphasis role="italic">openSUSE_11.3</emphasis>), in order to make the old URLs still work perfectly fine.</para>
-    <para>But it will also mean that there are a lot of packages that were in the old repositories that are not in the new ones, as we didn't migrate everything yet, and didn't 
-      migrate everything on purpose. Indeed, it is also a good opportunity for us to get rid of old cruft which we added many years ago and isn't used by anyone any more, or 
-      even anyone in the first place.</para>
-    <para>At the same time, I will change the list of repositories that show up in YaST's "community repositories" module in order to reflect the new layout, with the option 
-    of picking only some of our repositories, and not just the "big one" (for details, please refer to <ulink url="http:/2011/02/packman-service-interruption-and.html">this 
-    post</ulink>). Of course, once performed, I will duly announce it.</para>
-    <para>So if you do run into a package you were used to get from us and which doesn't show up in the <ulink url="http://packman.inode.at/suse/openSUSE_11.4"
-      >Packman repository</ulink> any more, please let us know by sending us an email to our mailing-list at <email>packman@links2linux.de</email> (no need to register first, 
-      just send an email to that address, in English or German).</para>
-    <para>Sorry for the inconvenience that move might create, but it will definitely help us because we will hopefully have a little less packages to maintain (because no 
-      one is using them), and also make the service a bit swifter for you to use, as there will be less RPM-MD metadata to download on each refresh.</para>
-    <!-- ($ ld: 28.2.11 sm $) -->
+    <para>In the lead up to the upcoming openSUSE release 11.4, I figured we could highlight some major new developments that are coming in this release.</para>
+    <para>At the core of every Linux distribution lies the Linux Kernel, the heart of it all. The kernel the most fundamental part of the operating system, allowing programs to 
+    interact with your processor, hard disks, keyboard, etc. The kernel coming in 11.4 contains quite a number of great improvements.</para>
+    <itemizedlist>
+      <listitem><para>"Kernel activity patch," which we had previously talked about makes the openSUSE desktop feel faster and more responsive than ever.</para></listitem>
+      <listitem><para><ulink url="http://kernelnewbies.org/Linux_2_6_37-DriversArch#head-c3d9fded6c4cb322c878028ff6af0bd9b491d86a">Hoardes of new drivers</ulink> adding better 
+      hardware support than ever, including a number of new input devices (including some new Wacom hardware, which I'm particularly pleased about).</para></listitem>
+      <listitem><para>Multi-processor support for Ext4, the default filesystem openSUSE uses. If you have a dual-core notebook or desktop, openSUSE 11.4 will give you faster 
+      data access than before</para></listitem>
+      <listitem><para>Plenty more that I cannot properly enumerate.</para></listitem>
+    </itemizedlist>
+    <para>For all the gritty technical details, the folks over at <ulink url="http://kernelnewbies.org/">kernelnewbies.org</ulink> put up <ulink 
+      url="http://kernelnewbies.org/LinuxChanges">this handy summary</ulink> of changes.</para>
+    <!-- ($ ld: 1.3.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://log.or.cz/?p=119">Petr Baudis: Arduino Software Tone

@@ -22,68 +22,56 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title>
-        <ulink
-          url="http://news.softpedia.com/news/How-to-Sync-Firefox-Add-ons-Bookmarks-Preferences-History-185187.shtml"
-          >Softpedia/Marius Nestor: How to Sync Firefox Add-ons, Bookmarks, Preferences,
-          History</ulink>
+      <title><ulink url="http://www.techrepublic.com/blog/opensource/how-to-use-calibre-to-access-your-ebook-collection-online/2275">techrepublic.com/Jack Wallen: How to use Calibre to access your ebook collection online</ulink>
       </title>
-      <para><note>
-          <para><emphasis role="bold">© 2001 - 2011 Softpedia. All rights
-            reserved.</emphasis></para>
-        </note>&quot;Do you have lots of Firefox add-ons installed? Ever wondered if there&apos;s an
-        easy way to backup and restore your Firefox&apos;s add-ons, preferences, history, passwords,
-        bookmarks, and even the opened tabs? </para>
-      <para>Look no further! We have the solution right here, and it is easier than you think. Even
-        if we tested on Ubuntu 10.10, the following tutorial is for Linux, Windows and Macintosh
-        users, and it will teach you how to keep your Firefox extensions, bookmarks, passwords,
-        preferences, history and tabs in sync across multiple computers. (...)&quot;</para>
-      <!-- ($ Id: 26.2.11 sat $)-->
+      <para><emphasis role="bold">Takeaway</emphasis>: Calibre is one of the most powerful ebook managers available. But did you know that Calibre has a built in server that 
+      allows you to access your library from a web browser? In this how-to, Jack Wallen shows you how to set up Calibre to serve up your book library.</para>
+      <para>I have been in near-saturation mode with ebooks lately, due to the publishing of my own works of fiction (find them on <ulink url="http://amzn.to/hmXIQN">Amazon</ulink>, 
+        <ulink url="http://bit.ly/e8coZL">Barnes &amp; Noble</ulink>, and <ulink url="http://bit.ly/e553VF">Smashwords</ulink>). For many indie writers/publishers and readers of 
+        ebooks the challenge of managing a vast collection of works can be a bit overwhelming (thanks to the ereaders’ insufficient built-in book management tools). Thankfully there 
+        are tools available for the PC to help you manage those collections.</para>
+      <para>Naturally Linux is not left out of this mix. The <ulink url="http://calibre-ebook.com/">Calibre</ulink> ebook manager is one of the best tools of the trade I have 
+        found for managing ebooks. And for administrators looking for ways to convert and add books, PDFs, howtos, etc. to an ereader for portable reading, Calibre is exactly 
+        the tool you need. Let’s take a look at this tool and how you can benefit from using it. (...)</para>
+      <para><emphasis role="bold">Copyright</emphasis>: <link linkend="extcopyright">1</link></para>
+      <tip><para>The Calibre Package can downloaded in the <ulink url="http://download.opensuse.org/repositories/Documentation:/Tools/">Documentation:Tools Repository</ulink>. 
+        Because the Developer uses brand new Libs it is just available for >= 11.4</para></tip>
+      <!-- ($ Id: 01.3.11 sm $)-->
     </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
-      <title>
-        <ulink url="http://www.linuxaria.com/pills/cut-shell-linux?lang=en">Linuxaria: Using cut on
-          linux terminal</ulink>
+      <title><ulink url="http://bashshell.net/utilities/exercise-6-set-variables-in-scripts/">BashShell.net/Mike: Exercise #6: Set Variables in Scripts</ulink>
       </title>
-      <note>
-        <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-          Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
-      </note>
-        <para>&quot;Among the commands available from the linux terminal there’s also cut, very
-        useful for processing strings and characters in general. </para>
-      <para>The cut command is one of the oldest Unix command. That means that it is more then 40
-        years old. And it shows. It is important to understand that this is a Unix command and
-        behaves in “Unix way”. For example, it uses IFS (Input Field Separators) to determine where
-        to split fields. You can check it with set | grep IFS. You can also set it, for example, to: </para>
-      <para>IFS=&quot; \t\n&quot;
-      </para>
-      <para>The cut command takes a vertical slice of a file, printing only the specified columns or
-        fields. The columns are selected using the standard IFS or one specified. (...)&quot;</para>
-      <!-- ($ Id: 26.2.11 sat $) -->
+      <para>When you need to set variables, you can do that in the BEGIN section of an awk script. Here the variable firstuser is set to 1000. The BEGIN section sets that 
+      variable and it is then used later in the script. (...)</para>
+      <para><emphasis role="bold">Copyright:</emphasis><link linkend="extcopyright">3</link></para>
+      <!-- ($ Id: 01.3.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://bashshell.net/script-of-the-week/log-parser/">BashShell.net/Mike: LogParser</ulink></title>
+      <para>The idea behind a log parser is to create a loop that will check all of your required logs to return information about specific needs that you may have as an 
+        administrator. For example, with this script you may want to search a specific log for one or two text strings that are very important to the function of your 
+        system.(...)</para>
+      <para><emphasis role="bold">Copyright:</emphasis><link linkend="extcopyright">3</link></para>
+      <!-- ($ Id: 01.3.11 sm $) -->
     </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title>
-        <ulink url="http://mindby.com/2011/02/celery-and-twisted/">Brent McConnell: Celery and
-          Twisted</ulink>
+      <title><ulink url="http://python4kids.wordpress.com/2011/02/24/a-big-jar-of-pickles/">python4kids/Brandan Scott: A Big Jar of Pickle</ulink>
       </title>
-      <para>"I’ve been working with <ulink url="http://celeryproject.org/">Celery</ulink>, <ulink
-          url="http://twistedmatrix.com/trac/">Twisted</ulink> and <ulink
-          url="https://github.com/fiorix/cyclone">Cyclone</ulink> recently on a side project I have
-        going on, however the integration between Celery and Twisted is not ideal for asynchronous
-        programming which prompted me to jot down some notes for what I’ve worked out. Hopefully
-        this will be useful to someone, also if anyone wants to offer a better way I’m all ears :) . </para>
-      <para>Celery has some built in methods to allow you to check the completeness of a remote job
-        by calling the successful() method on a returned AsyncResult object. For example you can do
-        something like this…" (...)</para>     
+      <para>In the last tutorial we learned how to pickle our objects.  Pickling is a way of storing the object (on the computer’s file system) so that it can be used later. 
+        This means that if we want to re use an object we can simply save it and load it when we need it, rather than re-creating it each time we want to use it.  This is very 
+        useful when our object is a list of questions for our trivia game.  We really only want to type the questions in once and then reload them later.</para>
+      <para>Now we need to settle on a way to structure our data.  We saw in our earlier tutorial that each question was a list, and that the list itself had a certain 
+        structure.  We also need to think about how a number of questions will be stored.  We will use a list to do that as well!  In this case we will have a list of questions. 
+        Each of the elements in the list will itself be a list. Let’s build one. First we make an empty list to store all the questions: (...)</para>
+      <!-- ($ Id: 1.3.11 sm $) -->
     </blockquote>
-  </sect2> -->
+  </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
