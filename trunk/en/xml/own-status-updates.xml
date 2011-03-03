@@ -1017,17 +1017,33 @@ zypper in enlightenment</screen></para>
         <para>Statistics for openSUSE 11.4 <ulink
             url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
-    </sect3>
-    <!--
+    </sect3>    
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
         <title>
-          <ulink url="http://kohei.us/2011/02/17/extracting-a-sub-project-into-a-new-repository-and-how-mso-dumper-got-its-new-home/">Kohei Yoshida: Extracting a sub project into a new repository (and how mso-dumper got its new home)</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/03/01/libreoffice-3-3-1-bugfix-release-available-for-opensuse/">Petr Mladek: LibreOffice 3.3.1 bugfix release available for openSUSE</ulink>
         </title>
-        <para>"<emphasis role="bold">Background </emphasis></para>        
+        <note>
+          <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation
+            License.</ulink></emphasis></para>
+        </note>
+        <para>I’m happy to announce LibreOffice 3.3.1 <emphasis role="italic">bugfix release</emphasis> for <emphasis role="italic">openSUSE</emphasis>. The packages are 
+          available in the Build Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/">LibreOffice:Stable</ulink> project. They fix various 
+          crashers, usability and translation problems, see the <ulink url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.1.2"
+            >libreoffice-3.3.1.2 release news</ulink> for more details. See also some notes <ulink url="http://en.opensuse.org/LibreOffice">about openSUSE LibreOffice 
+            build</ulink>.</para>
+        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any software contains bugs and we kindly ask you to <ulink 
+          url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us to fix them in the future releases.</para>
+        <para><emphasis role="bold">Other information and plans:</emphasis></para>
+        <para>This version will be in openSUSE-11.4 out of box. We are going to prepare official maintenance update for openSUSE-11.2 and 11.3.</para>
+        <para>There are already several fixes for the LO-3.3.2 bugfix release. You might expect 3.3.2-rc1 in the “<ulink 
+          url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink>” repositories by the end of the following week.</para>
+        <para>Most developers are already concentrated on LO-3.4 release. I hope that the first beta packages will be ready in the beginning of April.</para>
+        
       </blockquote> 
-      </sect3> -->
+    </sect3>
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
