@@ -125,4 +125,105 @@
       we are having there.</para>
     <!-- ($ ld: 4.3.11 sm $) -->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://feedproxy.google.com/~r/omgsuse/~3/EF0zvH9M9wg/ten-days-opensuse-day-four-grub2">OMG! SUSE!: Ten Days of openSUSE, Day Four: GRUB2</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>Day four of the count down to openSUSE 11.4, I've covered the kernel, some higher level apps and today I wanted to jump all the way back down to the beginning. The 
+      beginning of <emphasis role="bold">every</emphasis> experience with Linux, Windows and Mac OS X starts with the bootloader.</para>
+    <para>The bootloader is responsible for getting your computer from "POST" (power-on self-test) to the operating system. Think of it like the ignition switch in your car, 
+    something has to get things going and for computers the bootloader is it.</para>
+    <para>Historically, openSUSE has shipped with <ulink url="https://secure.wikimedia.org/wikipedia/en/wiki/GNU_GRUB">GRUB</ulink>. GRUB has long been the bootloader of choice 
+      for Linux users running on PCs, and has now been supplanted by <emphasis role="bold">GRUB2</emphasis>.</para>
+    <para>In order to preserve stability for users, the openSUSE project has actually incorporated GRUB2 later than some other distributions who have put the system "through 
+      its paces," working out all the kinks in the system. The team is pretty confident that GRUB2 is now ready for primetime, and is making it the default bootloader 
+      for 11.4.</para>
+    <para>So what's so special about GRUB2 compared to the original GRUB? The folks who maintain Ubuntu's "community documentation" <ulink 
+      url="https://help.ubuntu.com/community/Grub2">wrote up a nice comparision</ulink> that you can take a look at if you're interested, but here's the highlights:</para>
+    <itemizedlist>
+      <listitem><para>With GRUB2 you can boot LiveCD ISO images straight from your hard drive</para></listitem>
+      <listitem><para>Better graphical boot menu support</para></listitem>
+      <listitem><para>Themes!</para></listitem>
+      <listitem><para>Rescue mode</para></listitem>
+      <listitem><para>Improved speed and reliability</para></listitem>
+      <listitem><para>Auto-detect other operating systems like Windows, etc.</para></listitem>
+    </itemizedlist>
+    <para>Personally, I run openSUSE on my laptop, so I rarely see the bootloader but I'm glad the openSUSE team's attention to detail encompasses the entirety of the 
+    computing experience from start to finish.</para>
+    <para>If you're a dual-booter, be sure to grab openSUSE 11.4 on <emphasis role="bold">March 10th</emphasis> and enjoy the fanciful new GRUB :)</para>
+    <!-- ($ ld: 4.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://ugansert.blogspot.com/2011/03/suse-manager-autoinstall-screenshots.html">Uwe Gansert: SUSE Manager Autoinstall Screenshots</ulink></title>
+    <para>as you might know, we published the <ulink url="http://www.novell.com/de-de/products/suse-manager">SUSE Manager</ulink> yesterday. It was fun to work on that project 
+      and I learned really a lot. Anyway, I read many announcement texts in the press and from Novell but I did not see any pictures. People love pictures. So here they come 
+      (most screenshots about autoinstallation - I guess you know why ;) ).(...)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.wafaa.eu/entry/bug-tracking-with-the-help-of-an-entomologist-1-58.html">Andrew Wafaa: Bug Tracking With The Help Of An Entomologist</ulink></title>
+    <para>I like to think of myself as being fairly consistent, and I've had one request for a long time, a desktop bug tracker client. I even <ulink url="http://www.wafaa.eu/entry/bugging-bugs---a-call-for-help-1-20.html">asked</ulink>  if someone more adept in 
+    the ways of The Code could help. Unfortunately my call for help wasn't heard :-(</para>
+    <para>That was until <ulink url="http://news.opensuse.org/2011/01/19/hackweek-vi/">HackWeek VI</ulink>  came along! Luckily <ulink 
+      url="http://en.opensuse.org/User:Mbarringer">Matt Barringer</ulink> (from those crazy cooks in the <ulink url="http://susestudio.com/">SUSE Studio</ulink> team) heard my 
+      call. He picked up his code machine gun and blasted away \o/ </para>
+    <para>A few days after HackWeek VI ended he enlightened me to his new masterpiece – <ulink url="http://entomologist.sourceforge.net/">Entomologist</ulink>.  So what is it? 
+      As you may have guessed, it is a desktop bug tracker client.  It's cutely written in Qt, isn't final yet (is any software?) but works fairly well.  Why only fairly well? 
+      Simples, it only supports Bugzilla at the minute, but there are plans afoot to add others (please see the <ulink url="http://entomologist.sourceforge.net/#todo">ToDo</ulink> list). Once more bug backends are added it will be great (yes, this is a subtle hint for you to contribute code ;-) ). It is being put forward as one of the <ulink url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#Cross_Platform_Bug_Tracker_Client">GSOC</ulink> projects so fingers crossed ;-)</para>
+    <para>Of course you need some obligatory screenshots, so feast your eyes :-)</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="https://lh6.googleusercontent.com/_ObpIMjebLDY/TXC_A6xeQLI/AAAAAAAAAOY/FDjKJM3lPV8/s912/entomologist-desktop.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>Seeing your bugs on the desktop</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="https://lh5.googleusercontent.com/_ObpIMjebLDY/TXC_Aq_GPaI/AAAAAAAAAOU/qEmmPWywluo/s640/entomologist-android1.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>Seeing your bugs on the move.</para>
+    <para>Yes that's right, entomologist works on Android!! Sure the UI is a bit butt ugly on the platform, but the app works ;-)</para>
+    <para>I'll do a post on how I ported entomologist to Android shortly, it wasn't too difficult.</para>
+    <para>So if you want to give it a whirl, then head over to the homepage and choose your flavour of openSUSE, Fedora, Mandriva, Ubuntu or Debian (thanks <ulink 
+      url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>) (...)</para>
+    <!-- ($ ld: 4.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/criticism-towards-gnome-shell.html">Jos Poortvliet: criticism towards GNOME Shell</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>Reading all the controversy around the decision by the GNOME Shell designers to remove the minimize and maximize buttons from GNOME shell reminds me quite a bit of the discussions around Plasma. Especially for stuff like the brilliant yet controversial Folderview widget.</para>
+    <para><emphasis role="bold">criticism</emphasis></para>
+    <para>It also makes me wonder if those complaining have ever tried GNOME Shell... As is adequately explained in <ulink 
+      url="http://mail.gnome.org/archives/gnome-shell-list/2011-February/msg00192.html">this rationale</ulink>, minimizing simply has no place in the concepts behind GNOME Shell. Period. And if you've tried GNOME Shell you would realize that.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="https://lh3.googleusercontent.com/_WMsbUl3phhU/TXD1Sqz8HyI/AAAAAAAABSc/dSs852B3rTY/s288/gnome3_windows.png"/>
+      </imageobject>
+    </mediaobject>
+    <para>Yes, Shell takes getting used to, it does enforce certain habits. If you want to customize your environment for maximum 'getting-work-done' then <ulink url="http://www.linux.com/learn/tutorials/415694-an-early-look-at-gnome-30">maybe 
+    GNOME Shell is (currently) not for you</ulink>. But that's the crowd KDE has always appeased to anyway. There is after all a trade-off between efficiency and ease of use (or 
+    rather, discoverability) - it is why most seasoned sysadmins use a command line.</para>
+    <para><emphasis role="bold">Newbies!</emphasis></para>
+    <para>But the power of GNOME Shell lies somewhere else. Put a newbie in front of it. Observe - in 5 minutes they've figured out how to use it, really. It is very simple and intuitive. I find that very impressive. Especially on a touch screen, it all makes a lot of sense. And it also 
+    works on very small screens. And yes, you'll see, the minimize button DOES NOT make sense in GNOME Shell. Really.</para>
+    <para>If you want to criticize GNOME Shell, talk about technology. I would've advocated to not build a new tech platform but build Shell on something like Plasma which is 
+      designed to make interfaces like GNOME Shell, or do like <ulink url="bold">Ubuntu did with Unity 2D</ulink>). But I kind'a get why they didn't, it's software 'from the 
+      other camp'. A more harmful thing is that they didn't get involved with the fd.o systray/notification rework done by KDE and Ubuntu, I see it as a big miss for GNOME 
+      Shell, and I'll consider it narrow-minded until I see or hear a good rationale somewhere ;-)</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="https://picasaweb.google.com/lh/photo/ol3BTw-PvZbdBMc1HNZ4pCvCDBWg5XVEDDolYbcYhW4?feat=embedwebsite"/>
+      </imageobject>      
+    </mediaobject>
+    <para>But don't balk at the design until you've tried it with your grandmother... And in the end, Shell is innovative and new and will need maturing. I always have a soft 
+      spot for innovative and new things, it's why I like Plasma despite the issues it still has. So I do look forward to the final release of GNOME 3 and I'm happy that we 
+      (openSUSE/Novell) decided to press GNOME 3/Shell LiveDVDs as soon as the release of GNOME 3 is out. Yes, we'll also make KDE ones, 4.6 on openSUSE 11.4 really rocks and 
+      deserves it ;-)</para>
+    <!-- ($ ld: 4.3.11 sm $) -->
+  </blockquote>
 </sect1>
