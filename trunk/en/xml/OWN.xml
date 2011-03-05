@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
@@ -20,9 +19,10 @@
 <article class="journalarticle">
   <title>openSUSE Weekly News</title>
   <articleinfo>
-<!-- Maybe date and/or pubdate might be useful: -->    <date>2011-1-19</date>
-<!-- When it's published, date automatically inserted: -->    <pubdate>
-<?dbtimestamp format="Y-m-d" ?>    </pubdate>
+<!-- Maybe date and/or pubdate might be useful: -->    
+    <date>2011-1-19</date>
+<!-- When it's published, date automatically inserted: -->    
+    <pubdate><?dbtimestamp format="Y-m-d" ?></pubdate>
 <!-- When it's published -->    <edition>&edition;</edition>
     <authorgroup>
       <author>
@@ -61,10 +61,11 @@
       --><!--<othercredit class="translator">
         <firstname></firstname>
         <surname></surname>
-        </othercredit>-->    </authorgroup>
+        </othercredit>-->    
+    </authorgroup>  
     <legalnotice>
-      <title>Legal Notice</title>
-<!--
+       <title>Legal Notice</title>
+       <!--
        <para><mediaobject>
           <imageobject>
           <imagedata fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/>
@@ -74,10 +75,11 @@
        <para>This work (compilation) is licenced under <ulink
        url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons attribution-ShareAlike 3.0 Unported License unless expressly otherwise indicated</ulink>. 
          The rights for the compilation are copyright by Sascha Manns.
-         </para> -->      <para>Copyrights of the introduced articles are owned by original authors or copyright owners. If you want to reuse those articles, ask each original copyright owner which 
-        license should be applied. If you are an Autor and want to set your Blog under a free License? Just visit: 
- <ulink url="http://bit.ly/gKqGDT">http://bit.ly/gKqGDT</ulink></para>
-    </legalnotice>
+         </para> -->
+      <para>Copyrights of the introduced articles are owned by original authors or copyright owners. If you want to reuse those articles, ask each original copyright owner which 
+        license should be applied. If you are an autor and want to set your blog under a free License? Just visit: 
+	<ulink url="http://bit.ly/gKqGDT">http://bit.ly/gKqGDT</ulink></para>
+    </legalnotice>   
   </articleinfo>
   <abstract>
     <para>We are pleased to announce our &edition; issue of the openSUSE Weekly News.</para>
@@ -93,10 +95,14 @@
     </para>
   </abstract>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-announcements.xml"/>
-<!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-belection.xml"/> --><!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/> -->  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-gsoc.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-belection.xml"/> -->  
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/> -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-sneak-peeks.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-gsoc.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-status-updates.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-community.xml"/>
-<!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/> -->  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-security.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/> -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-security.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-kernel.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-tipsandtricks.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-planetsuse.xml"/>

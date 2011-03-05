@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="sneak-peeks">
+  <title>Sneak Peeks</title>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/03/02/opensuse-11-4-and-kde-2/">openSUSE 11.4 and KDE</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is Licensed under the <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free
+        Documentation License version 1.2.</ulink></emphasis></para>
+    </note>
+    <para>KDE fans must definitely watch out for openSUSE 11.4, which will be the first major Linux distribution to feature <ulink url="http://www.kde.org/announcements/4.6/"
+      >KDE’s Plasma Workspaces, Applications and Development Platform version 4.6</ulink>. This trio of releases by the KDE community brings much better performance as well as 
+      many usability and feature improvements all over the place. Upgraders will feel a double dose of KDE goodness, as openSUSE 11.4 brings two major releases’ improvements 
+      over the KDE 4.4 shipped with openSUSE 11.3.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/02/snapshot22-300x187.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">On the Desktop or on your Netbook</emphasis></para>
+    <para>The Plasma Desktop Workspace, which is openSUSE’s default graphical desktop, introduces several new features. First up is a more intuitive and smarter power management 
+      UI and a new Bluetooth stack which makes it easier to share files or use features of other Bluetooth devices such as headsets and mice . Plasma also introduces many 
+      improvements to the innovative ‘Activities’ management. Activities allow users to associate applications with tasks which can be saved, stopped and resumed at any time.</para>
+    <para>For those with less screen estate to spend, the Plasma Netbook Workspace offers an experience more optimized for small screens. Plasma Netbook shows all your 
+      applications full-screen with a automatically hiding panel on the top of the screen offering a way to see all your windows as well as closing the current one, starting new 
+      applications and seeing the status of your battery or wifi connection. Plasma Netbook 4.6 has become more touch-friendly and much faster than the previous versions. Read 
+      more about these and other new Plasma Workspace features <ulink url="http://www.kde.org/announcements/4.6/plasma.php">in the KDE Plasma 4.6 announcement</ulink>.</para>
+    <para><emphasis role="bold">KDE Applications</emphasis></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/digikam-picasaweb-e1299039264422-150x150.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>The KDE Applications 4.6 release introduces improvements like a new faceted search as well as non-indexed files search and support for git repositories in Dolphin, the 
+      file manager; social sharing of photos to sites like Flickr, Facebook and Picasaweb are now easy to reach from Gwenview, Digikam and KSnapshot.  Developers will appreciate 
+      Kate’s new plugins for working with SQL and with GDB.</para>
+    <para>KDE Games 4.6 marks the return of Klickety, also replacing KSame. Thanks to the KGameRenderer framework, KDE games take on a more consistent look and feel and perform 
+      better. Palapeli makes creating jigsaw puzzles out of your own images easier and Kajongg became easier and smarter.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/kdegames-300x187.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>KDE PIM 4.6 is available in openSUSE as experimental feature. While openSUSE 11.4 ships with the more stable and more dependable KDE Kontact Suite 4.4.10, the latest 
+      and still experimental Akonadi based Kontact 4.6 is available for installation using <ulink 
+        url="http://download.opensuse.org/repositories/KDE:/Unstable:/SC:/kdepim46/KDE_Distro_Factory_openSUSE_11.4/">this repository</ulink>.</para>
+    <para>openSUSE 11.4 also ships with many KDE applications not part of the regular KDE Software Compilation releases. This includes the latest KOffice, Amarok and many more. 
+      Some highlights include:</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/scribus-e1299039158288-150x150.png"/>
+      </imageobject>      
+    </mediaobject>
+    <itemizedlist>
+      <listitem><para>Painting application Krita 2.3 has been designated by its developers as the first end-user ready version since 1.6. Their standards are high and they have 
+        been working with a variety of artist to make sure 2.3 is indeed fulfilling the needs of graphics ninjas. Krita 2.3 provides many new features, ranging from brush 
+        settings presets to canvas rotation, from warp transform to a new color selector — and of course many new brush engines. But the many improvements to stability, 
+        usability and especially performance probably make the biggest difference in everyday usage.</para></listitem>
+      <listitem><para>Amarok 2.4.0 has a much faster collection scanner and can write statistics and covers directly to your audio files. Speaking of tags, there’s a new feature 
+        to work along with the rewritten collection scanner: Integration with the MusicBrainz music library to update your songs with accurate information. Having a well 
+        organized collection is easier than ever, now that you can select what you want tagged and do it with two clicks. Other notable features are improved iPod support (the 
+        Touch 3G should work great now), better transcoding support, Guitar and Bass tab information fetching, OPML export for Podcast subscriptions, an upcoming event applet 
+        and finally this release introduces support for UPnP.</para></listitem>
+      <listitem><para>KOffice 2.3.1 brings improved performance, stability and usability in all applications. In the feature department, there is a new slide sorter view and a 
+        shape animations tool for KPresenter. OpenDocument support (especially text rendering) has been improved in all KOffice applications, as well as support for reading 
+        Microsoft file formats (doc, xls, ppt, docx, xlsx, pptx). KPlato and Kexi introduce a new report engine.</para></listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">For developers</emphasis></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/snapshot40-150x150.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>openSUSE prides itself on being a prominent development platform for KDE applications and again offers the latest KDE Platform libraries and tools in openSUSE 11.4. 
+      Improvements brought by KDE Platform 4.6 include QML support in the Plasma framework, improvements to Nepomuk and a “Mobile Build Target” for those who want to build a 
+      thinner version of the KDE libraries.</para>
+    <para>The toolkit KDE develops its applications and framework upon is Qt, a Nokia product. openSUSE ships the latest Qt 4.7.1 which introduces Qt Quick, the Qt UI Creation 
+      Kit. that enables the creation of dynamic user interfaces, easier and more effective than possible with existing UI technologies. With the help of IDE’s like Qt Creator 
+      and the powerful build tools like OBS openSUSE offers the best possible Linux software development environment in the Free Software world.</para>
+    <para>Conclusion</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/snapshot27-300x187.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>With the latest KDE Plasma Netbook and Desktop Workspaces and the many updated KDE applications as well as the latest development tools and libraries, openSUSE 11.4 
+      will offer a stellar experience for desktop users. openSUSE is the home of many KDE developers and contributors, which shows in the polished KDE products and the latest 
+      KDE updates which we make available for all supported openSUSE releases. Of course openSUSE ships the latest GNOME, XFCE and LXDE for those who prefer other desktops and 
+      we ship many different applications, all of which work perfectly well with the Plasma Workspaces as well as other desktops. Stay tuned for an article about one of those 
+      applications, LibreOffice, coming soon!</para>
+    <para><emphasis role="italic">Article contributed by Manu Gupta.</emphasis></para>
+    <!-- ($ ld: 3.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/03/03/gnome-on-opensuse-11-4/">GNOME on openSUSE 11.4</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is Licensed under the <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free
+        Documentation License version 1.2.</ulink></emphasis></para>
+    </note>
+    <para>The upcoming new release of openSUSE 11.4 will be shipped with the latest and greatest <ulink url="http://library.gnome.org/misc/release-notes/2.32/">GNOME 2.32</ulink>
+      . GNOME 2.32 is the last release in the GNOME 2.x series and has a number of final refinements to offer openSUSE users a stable base for the next 8 months. At the same 
+      time, the openSUSE GNOME team is already busy preparing for <ulink url="http://www.gnome3.org/">GNOME 3</ulink>. A preview of GNOME 3 and the new GNOME Shell will be 
+      available in openSUSE 11.4.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/02/evince-300x240.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">Features and improvements in 2.32</emphasis></para>
+    <para>There have been several small updates to <ulink url="http://live.gnome.org/Mousetweaks/Home">Mousetweaks</ulink>, which makes it easier to use a mouse for those users 
+      who may have limited mobility. It now has updated documentation including an updated manual and man pages so users can now see all the options they have and look up how 
+      things are supposed to work.</para>
+    <para>The <ulink url="http://projects.gnome.org/evince/">Evince</ulink> document viewer has improved accessibility support through the use of the AtkText interface, which 
+      allows <ulink url="http://live.gnome.org/Orca">Orca</ulink>, the GNOME screen reader, to read documents in Evince. The maximum zoom level has also been increased when 
+      viewing a document. Annotation support has been improved and you can now add annotations from the side panel, change the default properties including author, color, 
+      transparency and more. Evince now supports “SyncTeX” which enables synchronization between a TeX source file and the resulting PDF (or DVI) output.</para>
+    <para><ulink url="http://live.gnome.org/Empathy">Empathy</ulink>, the universal instant messaging client, now allows you to group a contact’s information together using 
+      “metacontacts.” For example, if one of your contacts uses multiple instant messaging accounts you can now link the different services together under one name for your 
+      contact. Empathy has also added live contact search, which allows you to type into the contact list to quickly find somebody. The new and improved Empathy in GNOME 2.32 
+      also adds chat logging support and the ability to import security certificates.</para>
+    <para><ulink url="http://projects.gnome.org/eog/">Eye of GNOME</ulink>, <ulink url="http://www.gnome.org/projects/totem/">Totem</ulink> and <ulink url="http://projects.gnome.org/gst/"
+      >GNOME System Tools</ulink> all come up with minor tweaks like enhancing image contrast, automatically deinterlacing interlaced videos and setting up permissions for home 
+      directories. For openSUSE’s vast international audience, this latest release of GNOME 2 will support over 50 languages.</para>
+    <para>Outside of the official GNOME release, openSUSE 11.4 will bundle a number of great third-party GNOME applications including Banshee, GIMP, AbiWord and more! 
+      Some of the major highlights include:</para>
+    <para><ulink url="http://www.yorba.org/shotwell/">Shotwell</ulink> 0.8.1 is included openSUSE 11.4 bringing a number of major new features with it such as video support for 
+      all major fileformats, video uploading to YouTube, Facebook and Flickr, monitoring the library directory and writing metadata behind the scenes to give users a more 
+      responsive interface.</para>
+    <para>Media player <ulink url="http://projects.gnome.org/rhythmbox/">Rhythmbox</ulink> 0.13.3 “Country Rain” is available in openSUSE 11.4. This will most likely be the last 
+      stable release before the move to GNOME 3 and introduces several new features and bugfixes. Most prominent are the reimplementation of source lists, updated notifications, 
+      MPRIS and MediaServer2 support and a new context pane tab showing links to various websites.</para>
+    <para>The popular media player <ulink url="http://banshee.fm/">Banshee</ulink> is updated to 1.8 in this release of openSUSE 11.4. Some highlights of this release are: a “Now
+      Playing” simplified mode, play queue shuffle action, improved cover art downloading, MusicBrainz ID support and improved Last.fm integration. Banshee 12.8 also includes 
+      several developer features like an improved WebBrowser API for WebKit browsers and DBus API additions. Finally, device support has been greatly improved! Among others, 
+      Banshee now works better with the Droid X, Galaxy Portal, Xperia X10, Maemo and MTP capable devices in general.</para>
+    <para><emphasis role="bold">For developers!</emphasis></para>
+    <para>openSUSE 11.4 has a lot to offer GNOME developers. Starting GNOME development is a matter of a few simple clicks in YaST, while GLib 2.26 now includes support for 
+      GSettings, the replacement for GConf as well as GDBus. Anjuta users can now enjoy full support for Vala and Python projects while MonoDevelop users get a myriad of new 
+      features and improvements from <ulink url="http://monodevelop.com/Download/MonoDevelop_2.4_Released">MonoDevelop 2.4</ulink>. And good news for those anxious to adapt 
+      their applications to GTK3 or write new applications with this latest GNOME framework: openSUSE 11.4 is the first major linux distribution to ship <ulink 
+        url="http://thread.gmane.org/gmane.comp.gnome.announce/9389">GTK 3.0</ulink> so developers, Start Your IDE’s!</para>
+    <para><emphasis role="bold">Getting GNOME 3</emphasis></para>
+    <para>For those of us anxious to try out GNOME 3 and GNOME Shell, Vincent Untz, openSUSE GNOME packager and until recently GNOME release manager has the following to say:</para>
+    <para><quote>You can test a beta version of GNOME Shell, which will be a core part of GNOME 3. Note that GNOME Shell has already moved a lot since the version we include in 11.4.</quote></para>
+    <para>There is also a GNOME 3 live USB test image available from another openSUSE GNOME contributor, get it from <ulink url="http://blog.crozat.net/2011/01/gnome-3-live-cd-usb-test-image.html">fcrozat’s home repo</ulink>. Once openSUSE 11.4 is out, openSUSE users can easily be up to date with GNOME development using the GNOME OBS repositories.</para>
+    <para>Conclusion</para>
+    <para>In short, openSUSE 11.4 will offer a stellar experience for desktop users and developers alike. If the GNOME desktop isn’t quite your cup of tea, you’re in luck! openSUSE 11.4 will ship with updates to KDE, LXDE and XFCE which we’ll cover in another article. Stay tuned!</para>
+    <para><emphasis role="bold">Article contributed by Manu Gupta</emphasis></para>
+    <!-- ($ ld: 3.3.11 sm $) -->
+  </blockquote>
+</sect1>
