@@ -22,206 +22,348 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-one-kernel">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day One: The Kernel</ulink>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-one-kernel">OMG!
+        SUSE!/rtyler: Ten Days of openSUSE, Day One: The Kernel</ulink>
     </title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
-    <para>In the lead up to the upcoming openSUSE release 11.4, I figured we could highlight some major new developments that are coming in this release.</para>
-    <para>At the core of every Linux distribution lies the Linux Kernel, the heart of it all. The kernel the most fundamental part of the operating system, allowing programs to 
-    interact with your processor, hard disks, keyboard, etc. The kernel coming in 11.4 contains quite a number of great improvements.</para>
+    <para>In the lead up to the upcoming openSUSE release 11.4, I figured we could highlight some
+      major new developments that are coming in this release.</para>
+    <para>At the core of every Linux distribution lies the Linux Kernel, the heart of it all. The
+      kernel the most fundamental part of the operating system, allowing programs to interact with
+      your processor, hard disks, keyboard, etc. The kernel coming in 11.4 contains quite a number
+      of great improvements.</para>
     <itemizedlist>
-      <listitem><para>"Kernel activity patch," which we had previously talked about makes the openSUSE desktop feel faster and more responsive than ever.</para></listitem>
-      <listitem><para><ulink url="http://kernelnewbies.org/Linux_2_6_37-DriversArch#head-c3d9fded6c4cb322c878028ff6af0bd9b491d86a">Hoardes of new drivers</ulink> adding better 
-      hardware support than ever, including a number of new input devices (including some new Wacom hardware, which I'm particularly pleased about).</para></listitem>
-      <listitem><para>Multi-processor support for Ext4, the default filesystem openSUSE uses. If you have a dual-core notebook or desktop, openSUSE 11.4 will give you faster 
-      data access than before</para></listitem>
-      <listitem><para>Plenty more that I cannot properly enumerate.</para></listitem>
+      <listitem>
+        <para>"Kernel activity patch," which we had previously talked about makes the openSUSE
+          desktop feel faster and more responsive than ever.</para>
+      </listitem>
+      <listitem>
+        <para><ulink
+            url="http://kernelnewbies.org/Linux_2_6_37-DriversArch#head-c3d9fded6c4cb322c878028ff6af0bd9b491d86a"
+            >Hoardes of new drivers</ulink> adding better hardware support than ever, including a
+          number of new input devices (including some new Wacom hardware, which I'm particularly
+          pleased about).</para>
+      </listitem>
+      <listitem>
+        <para>Multi-processor support for Ext4, the default filesystem openSUSE uses. If you have a
+          dual-core notebook or desktop, openSUSE 11.4 will give you faster data access than
+          before</para>
+      </listitem>
+      <listitem>
+        <para>Plenty more that I cannot properly enumerate.</para>
+      </listitem>
     </itemizedlist>
-    <para>For all the gritty technical details, the folks over at <ulink url="http://kernelnewbies.org/">kernelnewbies.org</ulink> put up <ulink 
-      url="http://kernelnewbies.org/LinuxChanges">this handy summary</ulink> of changes.</para>
+    <para>For all the gritty technical details, the folks over at <ulink
+        url="http://kernelnewbies.org/">kernelnewbies.org</ulink> put up <ulink
+        url="http://kernelnewbies.org/LinuxChanges">this handy summary</ulink> of changes.</para>
     <!-- ($ ld: 1.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-two-libreoffice">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Two: LibreOffice</ulink></title>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-two-libreoffice">OMG!
+        SUSE!/rtyler: Ten Days of openSUSE, Day Two: LibreOffice</ulink></title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
-    </note>      
-    <para>With 8 days to go until the release of openSUSE 11.4, why not highlight: <emphasis role="bold">LibreOffice</emphasis>! (since <ulink url="http://identi.ca/jospoortvliet"
-      >Jos</ulink> already <ulink url="http://nowwhatthe.blogspot.com/2011/03/libreoffice-and-opensuse-114.html">spilled the beans</ulink>)</para>
-    <para>As far as I know, openSUSE 11.4 will be <emphasis role="italic">the first</emphasis> major distribution to bundle LibreOffice with a release, something the folks in the 
-    underground SUSE ice cave seem pretty happy about.</para>
-    <para>What's the big deal about LibreOffice? Remember OpenOffice and how it was pretty good but occasionally had some annoying quirks that seemed to take forever to get 
-    fixed. Lots of things have changed for the better with LibreOffice.</para>
-    <para>For starters LibreOffice is developed under the umbrella of <ulink url="http://www.documentfoundation.org/">The Document Foundation</ulink> which strives to foster 
-    development and partipation in the LibreOffice community.</para>
-    <para>This focus on open development and a merit-based leadership means end-users like us get to see <emphasis role="bold">more bug fixes</emphasis> and <emphasis role="bold"
-      >newer features</emphasis> faster! Already the LibreOffice guys have incorporated a number of outstanding improvements that were not yet incorporated into OpenOffice (such 
-      as the <ulink url="http://go-oo.org/">go-oo.org</ulink> changes)).</para>
-    <para>The version of LibreOffice shipping with openSUSE 11.4 is faster, less buggy and will continue to improve at an incredible pace compared to the old OpenOffice, this is 
-      a <emphasis role="bold">good thing</emphasis>!</para>
-    <para>If you're upgrading to, or installing openSUSE 11.4 on March 10th, you should get the latest LibreOffice but if you can't wait until then, click the shiny button and 
-    grab LibreOffice for 11.3!</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>With 8 days to go until the release of openSUSE 11.4, why not highlight: <emphasis
+        role="bold">LibreOffice</emphasis>! (since <ulink url="http://identi.ca/jospoortvliet"
+        >Jos</ulink> already <ulink
+        url="http://nowwhatthe.blogspot.com/2011/03/libreoffice-and-opensuse-114.html">spilled the
+        beans</ulink>)</para>
+    <para>As far as I know, openSUSE 11.4 will be <emphasis role="italic">the first</emphasis> major
+      distribution to bundle LibreOffice with a release, something the folks in the underground SUSE
+      ice cave seem pretty happy about.</para>
+    <para>What's the big deal about LibreOffice? Remember OpenOffice and how it was pretty good but
+      occasionally had some annoying quirks that seemed to take forever to get fixed. Lots of things
+      have changed for the better with LibreOffice.</para>
+    <para>For starters LibreOffice is developed under the umbrella of <ulink
+        url="http://www.documentfoundation.org/">The Document Foundation</ulink> which strives to
+      foster development and partipation in the LibreOffice community.</para>
+    <para>This focus on open development and a merit-based leadership means end-users like us get to
+      see <emphasis role="bold">more bug fixes</emphasis> and <emphasis role="bold">newer
+        features</emphasis> faster! Already the LibreOffice guys have incorporated a number of
+      outstanding improvements that were not yet incorporated into OpenOffice (such as the <ulink
+        url="http://go-oo.org/">go-oo.org</ulink> changes)).</para>
+    <para>The version of LibreOffice shipping with openSUSE 11.4 is faster, less buggy and will
+      continue to improve at an incredible pace compared to the old OpenOffice, this is a <emphasis
+        role="bold">good thing</emphasis>!</para>
+    <para>If you're upgrading to, or installing openSUSE 11.4 on March 10th, you should get the
+      latest LibreOffice but if you can't wait until then, click the shiny button and grab
+      LibreOffice for 11.3!</para>
     <para><ulink url="http://bit.ly/hML0Pd">Install LibreOffice 3.3.1 for 11.3</ulink></para>
     <!-- ($ ld: 3.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/libreoffice-and-opensuse-114.html">Jos Poortvliet: LibreOffice and openSUSE 11.4</ulink></title>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/libreoffice-and-opensuse-114.html">Jos
+        Poortvliet: LibreOffice and openSUSE 11.4</ulink></title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://4.bp.blogspot.com/-zsh13s7cR7s/TW2Nw8AhS7I/AAAAAAAABQ0/w1dRRxtlsJE/s200/LibreOffice-logo.jpg"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://4.bp.blogspot.com/-zsh13s7cR7s/TW2Nw8AhS7I/AAAAAAAABQ0/w1dRRxtlsJE/s200/LibreOffice-logo.jpg"
+        />
+      </imageobject>
     </mediaobject>
-    <para>Happy to see LibreOffice going strong... <ulink url="http://www.linuxjournal.com/content/who-contributes-most-libreoffice">This article</ulink> analyzes the 
-      contributions to LibreOffice. Some impressive numbers - 133 new contributors already!!! Even Canonical has send in a patch to fix something... Meanwhile Michael Meeks' team 
-      (Novell) is leading the 'corporate contributors' pack. And yes, openSUSE will be the first major linux distribution to ship LibreOffice - and it'll be good, thanks to that 
-      involvement in LibreOffice development.</para>
-    <para>Sean Michael Kerner mentions this fact and our upcoming release in his <ulink url="http://blog.internetnews.com/skerner/2011/02/novell-opensuse-114-nears-comp.html"
-      >blog on internetnews.com</ulink> where he also quotes our AJ on several infrastructural improvements. We do need to educate him and explain openSUSE isn't exclusively a 
-      Novell product - with so many volunteers involved and the work going on to set up a Foundation you simply can't claim that anymore... We're leading the pack in that area as 
-      well and we need to be vocal about that!</para>
-    <para>PS will blog on the Marketing Meeting we had last week soonish, need to catch up to some urgent things first... Especially sleep!</para>
+    <para>Happy to see LibreOffice going strong... <ulink
+        url="http://www.linuxjournal.com/content/who-contributes-most-libreoffice">This
+        article</ulink> analyzes the contributions to LibreOffice. Some impressive numbers - 133 new
+      contributors already!!! Even Canonical has send in a patch to fix something... Meanwhile
+      Michael Meeks' team (Novell) is leading the 'corporate contributors' pack. And yes, openSUSE
+      will be the first major linux distribution to ship LibreOffice - and it'll be good, thanks to
+      that involvement in LibreOffice development.</para>
+    <para>Sean Michael Kerner mentions this fact and our upcoming release in his <ulink
+        url="http://blog.internetnews.com/skerner/2011/02/novell-opensuse-114-nears-comp.html">blog
+        on internetnews.com</ulink> where he also quotes our AJ on several infrastructural
+      improvements. We do need to educate him and explain openSUSE isn't exclusively a Novell
+      product - with so many volunteers involved and the work going on to set up a Foundation you
+      simply can't claim that anymore... We're leading the pack in that area as well and we need to
+      be vocal about that!</para>
+    <para>PS will blog on the Marketing Meeting we had last week soonish, need to catch up to some
+      urgent things first... Especially sleep!</para>
     <!-- ($ ld: 3.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://gburt.blogspot.com/2011/03/pdf-mod-update.html">Gabriel Burt: PDF Mod Update</ulink></title>
+    <title><ulink url="http://gburt.blogspot.com/2011/03/pdf-mod-update.html">Gabriel Burt: PDF Mod
+        Update</ulink></title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
-    <para>I haven't blogged about <ulink url="http://live.gnome.org/PdfMod"><emphasis role="bold">PDF Mod</emphasis></ulink> since Nov, 2009. We've had five releases in the 
-    meantime, including 0.9.1 just released today!</para>
-    <para>We have had tons of improvements and fixes, and one major new feature: <emphasis role="bold">bookmark editing</emphasis>!</para>
+    <para>I haven't blogged about <ulink url="http://live.gnome.org/PdfMod"><emphasis role="bold"
+          >PDF Mod</emphasis></ulink> since Nov, 2009. We've had five releases in the meantime,
+      including 0.9.1 just released today!</para>
+    <para>We have had tons of improvements and fixes, and one major new feature: <emphasis
+        role="bold">bookmark editing</emphasis>!</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://3.bp.blogspot.com/-zHw5vftltXI/TW_tSb6kUrI/AAAAAAAABBg/eqzmdYLWr9c/s800/pdfmod2.png"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://3.bp.blogspot.com/-zHw5vftltXI/TW_tSb6kUrI/AAAAAAAABBg/eqzmdYLWr9c/s800/pdfmod2.png"
+          width="30%"/>
+      </imageobject>
     </mediaobject>
-    <para>We're up to <ulink url="http://l10n.gnome.org/module/pdfmod/"><emphasis role="bold">26 translations</emphasis></ulink> now, including 11 of <ulink 
-      url="http://library.gnome.org/users/pdfmod/"><emphasis role="bold">our user manual</emphasis></ulink>!</para>
+    <para>We're up to <ulink url="http://l10n.gnome.org/module/pdfmod/"><emphasis role="bold">26
+          translations</emphasis></ulink> now, including 11 of <ulink
+        url="http://library.gnome.org/users/pdfmod/"><emphasis role="bold">our user
+          manual</emphasis></ulink>!</para>
     <para>As a reminder, PDF Mod can:</para>
     <itemizedlist>
-      <listitem><para>pull out (extract) pages from a document into a new PDF</para></listitem>
-      <listitem><para>combine two documents, or parts thereof</para></listitem>
-      <listitem><para>reorder and rotate pages</para></listitem>
-      <listitem><para>extract embedded images</para></listitem>
-      <listitem><para>edit basic metadata (title, author, keywords)</para></listitem>
-      <listitem><para>edit a document's bookmarks (aka outlines)</para></listitem>
-      <listitem><para>and that's it!</para></listitem>
+      <listitem>
+        <para>pull out (extract) pages from a document into a new PDF</para>
+      </listitem>
+      <listitem>
+        <para>combine two documents, or parts thereof</para>
+      </listitem>
+      <listitem>
+        <para>reorder and rotate pages</para>
+      </listitem>
+      <listitem>
+        <para>extract embedded images</para>
+      </listitem>
+      <listitem>
+        <para>edit basic metadata (title, author, keywords)</para>
+      </listitem>
+      <listitem>
+        <para>edit a document's bookmarks (aka outlines)</para>
+      </listitem>
+      <listitem>
+        <para>and that's it!</para>
+      </listitem>
     </itemizedlist>
     <!-- ($ ld: 4.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://fridrich.blogspot.com/2011/03/opensuse-mingw-mailing-list.html">Fridrich Strba: opensuse-mingw mailing list</ulink></title>
-    <para>The <ulink url="https://build.opensuse.org/project/show?project=windows%3Amingw">windows::mingw</ulink> project and its sub-project quickly gain a true community 
-      around themselves. This week, the number of source packages that we build for Windows in <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink> reached 
-      200 for both the <ulink url="https://build.opensuse.org/project/show?project=windows%3Amingw%3Awin32">32-bit</ulink> as well as <ulink 
-        url="https://build.opensuse.org/project/show?project=windows%3Amingw%3Awin64">64-bit</ulink> Windows versions.</para>
-    <para>In order to make the communication between contributors, developers and users easier, we got a sparkling new mailing list at <ulink url="http://lists.opensuse.org/"
-      >lists.opensuse.org</ulink>. You can subscribe it by sending a mail to <email>opensuse-mingw+subscribe@opensuse.org</email> and enjoy all the intelligent and edifying talk 
-      we are having there.</para>
+    <title><ulink url="http://fridrich.blogspot.com/2011/03/opensuse-mingw-mailing-list.html"
+        >Fridrich Strba: opensuse-mingw mailing list</ulink></title>
+    <para>The <ulink url="https://build.opensuse.org/project/show?project=windows%3Amingw"
+        >windows::mingw</ulink> project and its sub-project quickly gain a true community around
+      themselves. This week, the number of source packages that we build for Windows in <ulink
+        url="https://build.opensuse.org/">openSUSE Build Service</ulink> reached 200 for both the
+        <ulink url="https://build.opensuse.org/project/show?project=windows%3Amingw%3Awin32"
+        >32-bit</ulink> as well as <ulink
+        url="https://build.opensuse.org/project/show?project=windows%3Amingw%3Awin64">64-bit</ulink>
+      Windows versions.</para>
+    <para>In order to make the communication between contributors, developers and users easier, we
+      got a sparkling new mailing list at <ulink url="http://lists.opensuse.org/"
+        >lists.opensuse.org</ulink>. You can subscribe it by sending a mail to
+        <email>opensuse-mingw+subscribe@opensuse.org</email> and enjoy all the intelligent and
+      edifying talk we are having there.</para>
     <!-- ($ ld: 4.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://feedproxy.google.com/~r/omgsuse/~3/EF0zvH9M9wg/ten-days-opensuse-day-four-grub2">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Four: GRUB2</ulink></title>
+    <title><ulink
+        url="http://feedproxy.google.com/~r/omgsuse/~3/EF0zvH9M9wg/ten-days-opensuse-day-four-grub2"
+        >OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Four: GRUB2</ulink></title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
-    <para>Day four of the count down to openSUSE 11.4, I've covered the kernel, some higher level apps and today I wanted to jump all the way back down to the beginning. The 
-      beginning of <emphasis role="bold">every</emphasis> experience with Linux, Windows and Mac OS X starts with the bootloader.</para>
-    <para>The bootloader is responsible for getting your computer from "POST" (power-on self-test) to the operating system. Think of it like the ignition switch in your car, 
-    something has to get things going and for computers the bootloader is it.</para>
-    <para>Historically, openSUSE has shipped with <ulink url="https://secure.wikimedia.org/wikipedia/en/wiki/GNU_GRUB">GRUB</ulink>. GRUB has long been the bootloader of choice 
-      for Linux users running on PCs, and has now been supplanted by <emphasis role="bold">GRUB2</emphasis>.</para>
-    <para>In order to preserve stability for users, the openSUSE project has actually incorporated GRUB2 later than some other distributions who have put the system "through 
-      its paces," working out all the kinks in the system. The team is pretty confident that GRUB2 is now ready for primetime, and is making it the default bootloader 
-      for 11.4.</para>
-    <para>So what's so special about GRUB2 compared to the original GRUB? The folks who maintain Ubuntu's "community documentation" <ulink 
-      url="https://help.ubuntu.com/community/Grub2">wrote up a nice comparision</ulink> that you can take a look at if you're interested, but here's the highlights:</para>
+    <para>Day four of the count down to openSUSE 11.4, I've covered the kernel, some higher level
+      apps and today I wanted to jump all the way back down to the beginning. The beginning of
+        <emphasis role="bold">every</emphasis> experience with Linux, Windows and Mac OS X starts
+      with the bootloader.</para>
+    <para>The bootloader is responsible for getting your computer from "POST" (power-on self-test)
+      to the operating system. Think of it like the ignition switch in your car, something has to
+      get things going and for computers the bootloader is it.</para>
+    <para>Historically, openSUSE has shipped with <ulink
+        url="https://secure.wikimedia.org/wikipedia/en/wiki/GNU_GRUB">GRUB</ulink>. GRUB has long
+      been the bootloader of choice for Linux users running on PCs, and has now been supplanted by
+        <emphasis role="bold">GRUB2</emphasis>.</para>
+    <para>In order to preserve stability for users, the openSUSE project has actually incorporated
+      GRUB2 later than some other distributions who have put the system "through its paces," working
+      out all the kinks in the system. The team is pretty confident that GRUB2 is now ready for
+      primetime, and is making it the default bootloader for 11.4.</para>
+    <para>So what's so special about GRUB2 compared to the original GRUB? The folks who maintain
+      Ubuntu's "community documentation" <ulink url="https://help.ubuntu.com/community/Grub2">wrote
+        up a nice comparision</ulink> that you can take a look at if you're interested, but here's
+      the highlights:</para>
     <itemizedlist>
-      <listitem><para>With GRUB2 you can boot LiveCD ISO images straight from your hard drive</para></listitem>
-      <listitem><para>Better graphical boot menu support</para></listitem>
-      <listitem><para>Themes!</para></listitem>
-      <listitem><para>Rescue mode</para></listitem>
-      <listitem><para>Improved speed and reliability</para></listitem>
-      <listitem><para>Auto-detect other operating systems like Windows, etc.</para></listitem>
+      <listitem>
+        <para>With GRUB2 you can boot LiveCD ISO images straight from your hard drive</para>
+      </listitem>
+      <listitem>
+        <para>Better graphical boot menu support</para>
+      </listitem>
+      <listitem>
+        <para>Themes!</para>
+      </listitem>
+      <listitem>
+        <para>Rescue mode</para>
+      </listitem>
+      <listitem>
+        <para>Improved speed and reliability</para>
+      </listitem>
+      <listitem>
+        <para>Auto-detect other operating systems like Windows, etc.</para>
+      </listitem>
     </itemizedlist>
-    <para>Personally, I run openSUSE on my laptop, so I rarely see the bootloader but I'm glad the openSUSE team's attention to detail encompasses the entirety of the 
-    computing experience from start to finish.</para>
-    <para>If you're a dual-booter, be sure to grab openSUSE 11.4 on <emphasis role="bold">March 10th</emphasis> and enjoy the fanciful new GRUB :)</para>
+    <para>Personally, I run openSUSE on my laptop, so I rarely see the bootloader but I'm glad the
+      openSUSE team's attention to detail encompasses the entirety of the computing experience from
+      start to finish.</para>
+    <para>If you're a dual-booter, be sure to grab openSUSE 11.4 on <emphasis role="bold">March
+        10th</emphasis> and enjoy the fanciful new GRUB :)</para>
     <!-- ($ ld: 4.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://ugansert.blogspot.com/2011/03/suse-manager-autoinstall-screenshots.html">Uwe Gansert: SUSE Manager Autoinstall Screenshots</ulink></title>
-    <para>as you might know, we published the <ulink url="http://www.novell.com/de-de/products/suse-manager">SUSE Manager</ulink> yesterday. It was fun to work on that project 
-      and I learned really a lot. Anyway, I read many announcement texts in the press and from Novell but I did not see any pictures. People love pictures. So here they come 
-      (most screenshots about autoinstallation - I guess you know why ;) ).(...)</para>
+    <title><ulink
+        url="http://ugansert.blogspot.com/2011/03/suse-manager-autoinstall-screenshots.html">Uwe
+        Gansert: SUSE Manager Autoinstall Screenshots</ulink></title>
+    <para>as you might know, we published the <ulink
+        url="http://www.novell.com/de-de/products/suse-manager">SUSE Manager</ulink> yesterday. It
+      was fun to work on that project and I learned really a lot. Anyway, I read many announcement
+      texts in the press and from Novell but I did not see any pictures. People love pictures. So
+      here they come (most screenshots about autoinstallation - I guess you know why ;)
+      ).(...)</para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://www.wafaa.eu/entry/bug-tracking-with-the-help-of-an-entomologist-1-58.html">Andrew Wafaa: Bug Tracking With The Help Of An Entomologist</ulink></title>
-    <para>I like to think of myself as being fairly consistent, and I've had one request for a long time, a desktop bug tracker client. I even <ulink url="http://www.wafaa.eu/entry/bugging-bugs---a-call-for-help-1-20.html">asked</ulink>  if someone more adept in 
-    the ways of The Code could help. Unfortunately my call for help wasn't heard :-(</para>
-    <para>That was until <ulink url="http://news.opensuse.org/2011/01/19/hackweek-vi/">HackWeek VI</ulink>  came along! Luckily <ulink 
-      url="http://en.opensuse.org/User:Mbarringer">Matt Barringer</ulink> (from those crazy cooks in the <ulink url="http://susestudio.com/">SUSE Studio</ulink> team) heard my 
-      call. He picked up his code machine gun and blasted away \o/ </para>
-    <para>A few days after HackWeek VI ended he enlightened me to his new masterpiece – <ulink url="http://entomologist.sourceforge.net/">Entomologist</ulink>.  So what is it? 
-      As you may have guessed, it is a desktop bug tracker client.  It's cutely written in Qt, isn't final yet (is any software?) but works fairly well.  Why only fairly well? 
-      Simples, it only supports Bugzilla at the minute, but there are plans afoot to add others (please see the <ulink url="http://entomologist.sourceforge.net/#todo">ToDo</ulink> list). Once more bug backends are added it will be great (yes, this is a subtle hint for you to contribute code ;-) ). It is being put forward as one of the <ulink url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#Cross_Platform_Bug_Tracker_Client">GSOC</ulink> projects so fingers crossed ;-)</para>
+    <title><ulink
+        url="http://www.wafaa.eu/entry/bug-tracking-with-the-help-of-an-entomologist-1-58.html"
+        >Andrew Wafaa: Bug Tracking With The Help Of An Entomologist</ulink></title>
+    <para>I like to think of myself as being fairly consistent, and I've had one request for a long
+      time, a desktop bug tracker client. I even <ulink
+        url="http://www.wafaa.eu/entry/bugging-bugs---a-call-for-help-1-20.html">asked</ulink> if
+      someone more adept in the ways of The Code could help. Unfortunately my call for help wasn't
+      heard :-(</para>
+    <para>That was until <ulink url="http://news.opensuse.org/2011/01/19/hackweek-vi/">HackWeek
+        VI</ulink> came along! Luckily <ulink url="http://en.opensuse.org/User:Mbarringer">Matt
+        Barringer</ulink> (from those crazy cooks in the <ulink url="http://susestudio.com/">SUSE
+        Studio</ulink> team) heard my call. He picked up his code machine gun and blasted away \o/ </para>
+    <para>A few days after HackWeek VI ended he enlightened me to his new masterpiece – <ulink
+        url="http://entomologist.sourceforge.net/">Entomologist</ulink>. So what is it? As you may
+      have guessed, it is a desktop bug tracker client. It's cutely written in Qt, isn't final yet
+      (is any software?) but works fairly well. Why only fairly well? Simples, it only supports
+      Bugzilla at the minute, but there are plans afoot to add others (please see the <ulink
+        url="http://entomologist.sourceforge.net/#todo">ToDo</ulink> list). Once more bug backends
+      are added it will be great (yes, this is a subtle hint for you to contribute code ;-) ). It is
+      being put forward as one of the <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#Cross_Platform_Bug_Tracker_Client"
+        >GSOC</ulink> projects so fingers crossed ;-)</para>
     <para>Of course you need some obligatory screenshots, so feast your eyes :-)</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="https://lh6.googleusercontent.com/_ObpIMjebLDY/TXC_A6xeQLI/AAAAAAAAAOY/FDjKJM3lPV8/s912/entomologist-desktop.png"/>
-      </imageobject>      
+        <imagedata
+          fileref="https://lh6.googleusercontent.com/_ObpIMjebLDY/TXC_A6xeQLI/AAAAAAAAAOY/FDjKJM3lPV8/s912/entomologist-desktop.png"
+          width="30%"/>
+      </imageobject>
     </mediaobject>
     <para>Seeing your bugs on the desktop</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="https://lh5.googleusercontent.com/_ObpIMjebLDY/TXC_Aq_GPaI/AAAAAAAAAOU/qEmmPWywluo/s640/entomologist-android1.png"/>
-      </imageobject>      
+        <imagedata
+          fileref="https://lh5.googleusercontent.com/_ObpIMjebLDY/TXC_Aq_GPaI/AAAAAAAAAOU/qEmmPWywluo/s640/entomologist-android1.png"
+          width="20%"/>
+      </imageobject>
     </mediaobject>
     <para>Seeing your bugs on the move.</para>
-    <para>Yes that's right, entomologist works on Android!! Sure the UI is a bit butt ugly on the platform, but the app works ;-)</para>
-    <para>I'll do a post on how I ported entomologist to Android shortly, it wasn't too difficult.</para>
-    <para>So if you want to give it a whirl, then head over to the homepage and choose your flavour of openSUSE, Fedora, Mandriva, Ubuntu or Debian (thanks <ulink 
-      url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>) (...)</para>
+    <para>Yes that's right, entomologist works on Android!! Sure the UI is a bit butt ugly on the
+      platform, but the app works ;-)</para>
+    <para>I'll do a post on how I ported entomologist to Android shortly, it wasn't too
+      difficult.</para>
+    <para>So if you want to give it a whirl, then head over to the homepage and choose your flavour
+      of openSUSE, Fedora, Mandriva, Ubuntu or Debian (thanks <ulink
+        url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>) (...)</para>
     <!-- ($ ld: 4.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/criticism-towards-gnome-shell.html">Jos Poortvliet: criticism towards GNOME Shell</ulink></title>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/criticism-towards-gnome-shell.html"
+        >Jos Poortvliet: criticism towards GNOME Shell</ulink></title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-        Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
+            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
-    <para>Reading all the controversy around the decision by the GNOME Shell designers to remove the minimize and maximize buttons from GNOME shell reminds me quite a bit of the discussions around Plasma. Especially for stuff like the brilliant yet controversial Folderview widget.</para>
+    <para>Reading all the controversy around the decision by the GNOME Shell designers to remove the
+      minimize and maximize buttons from GNOME shell reminds me quite a bit of the discussions
+      around Plasma. Especially for stuff like the brilliant yet controversial Folderview
+      widget.</para>
     <para><emphasis role="bold">criticism</emphasis></para>
-    <para>It also makes me wonder if those complaining have ever tried GNOME Shell... As is adequately explained in <ulink 
-      url="http://mail.gnome.org/archives/gnome-shell-list/2011-February/msg00192.html">this rationale</ulink>, minimizing simply has no place in the concepts behind GNOME Shell. Period. And if you've tried GNOME Shell you would realize that.</para>
+    <para>It also makes me wonder if those complaining have ever tried GNOME Shell... As is
+      adequately explained in <ulink
+        url="http://mail.gnome.org/archives/gnome-shell-list/2011-February/msg00192.html">this
+        rationale</ulink>, minimizing simply has no place in the concepts behind GNOME Shell.
+      Period. And if you've tried GNOME Shell you would realize that.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="https://lh3.googleusercontent.com/_WMsbUl3phhU/TXD1Sqz8HyI/AAAAAAAABSc/dSs852B3rTY/s288/gnome3_windows.png"/>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/_WMsbUl3phhU/TXD1Sqz8HyI/AAAAAAAABSc/dSs852B3rTY/s288/gnome3_windows.png"
+        />
       </imageobject>
     </mediaobject>
-    <para>Yes, Shell takes getting used to, it does enforce certain habits. If you want to customize your environment for maximum 'getting-work-done' then <ulink url="http://www.linux.com/learn/tutorials/415694-an-early-look-at-gnome-30">maybe 
-    GNOME Shell is (currently) not for you</ulink>. But that's the crowd KDE has always appeased to anyway. There is after all a trade-off between efficiency and ease of use (or 
-    rather, discoverability) - it is why most seasoned sysadmins use a command line.</para>
+    <para>Yes, Shell takes getting used to, it does enforce certain habits. If you want to customize
+      your environment for maximum 'getting-work-done' then <ulink
+        url="http://www.linux.com/learn/tutorials/415694-an-early-look-at-gnome-30">maybe GNOME
+        Shell is (currently) not for you</ulink>. But that's the crowd KDE has always appeased to
+      anyway. There is after all a trade-off between efficiency and ease of use (or rather,
+      discoverability) - it is why most seasoned sysadmins use a command line.</para>
     <para><emphasis role="bold">Newbies!</emphasis></para>
-    <para>But the power of GNOME Shell lies somewhere else. Put a newbie in front of it. Observe - in 5 minutes they've figured out how to use it, really. It is very simple and intuitive. I find that very impressive. Especially on a touch screen, it all makes a lot of sense. And it also 
-    works on very small screens. And yes, you'll see, the minimize button DOES NOT make sense in GNOME Shell. Really.</para>
-    <para>If you want to criticize GNOME Shell, talk about technology. I would've advocated to not build a new tech platform but build Shell on something like Plasma which is 
-      designed to make interfaces like GNOME Shell, or do like <ulink url="bold">Ubuntu did with Unity 2D</ulink>). But I kind'a get why they didn't, it's software 'from the 
-      other camp'. A more harmful thing is that they didn't get involved with the fd.o systray/notification rework done by KDE and Ubuntu, I see it as a big miss for GNOME 
-      Shell, and I'll consider it narrow-minded until I see or hear a good rationale somewhere ;-)</para>
-    <para>But don't balk at the design until you've tried it with your grandmother... And in the end, Shell is innovative and new and will need maturing. I always have a soft 
-      spot for innovative and new things, it's why I like Plasma despite the issues it still has. So I do look forward to the final release of GNOME 3 and I'm happy that we 
-      (openSUSE/Novell) decided to press GNOME 3/Shell LiveDVDs as soon as the release of GNOME 3 is out. Yes, we'll also make KDE ones, 4.6 on openSUSE 11.4 really rocks and 
-      deserves it ;-)</para>
+    <para>But the power of GNOME Shell lies somewhere else. Put a newbie in front of it. Observe -
+      in 5 minutes they've figured out how to use it, really. It is very simple and intuitive. I
+      find that very impressive. Especially on a touch screen, it all makes a lot of sense. And it
+      also works on very small screens. And yes, you'll see, the minimize button DOES NOT make sense
+      in GNOME Shell. Really.</para>
+    <para>If you want to criticize GNOME Shell, talk about technology. I would've advocated to not
+      build a new tech platform but build Shell on something like Plasma which is designed to make
+      interfaces like GNOME Shell, or do like <ulink url="https://launchpad.net/unity-2d">Ubuntu did
+        with Unity 2D</ulink>). But I kind'a get why they didn't, it's software 'from the other
+      camp'. A more harmful thing is that they didn't get involved with the fd.o
+      systray/notification rework done by KDE and Ubuntu, I see it as a big miss for GNOME Shell,
+      and I'll consider it narrow-minded until I see or hear a good rationale somewhere ;-)</para>
+    <para>But don't balk at the design until you've tried it with your grandmother... And in the
+      end, Shell is innovative and new and will need maturing. I always have a soft spot for
+      innovative and new things, it's why I like Plasma despite the issues it still has. So I do
+      look forward to the final release of GNOME 3 and I'm happy that we (openSUSE/Novell) decided
+      to press GNOME 3/Shell LiveDVDs as soon as the release of GNOME 3 is out. Yes, we'll also make
+      KDE ones, 4.6 on openSUSE 11.4 really rocks and deserves it ;-)</para>
     <!-- ($ ld: 4.3.11 sm $) -->
   </blockquote>
 </sect1>

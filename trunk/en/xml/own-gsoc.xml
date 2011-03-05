@@ -23,88 +23,141 @@
   <title>Google Summer of Code</title>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"/>
-    </imageobject>    
+      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"
+        width="20%"/>
+    </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://michal.hrusecky.net/2011/02/gsoc-2011-ideas-openid-provider-for-elgg/">Michal Hrušecký: GSoC 2011 Ideas – OpenID provider for Elgg</ulink></title>
-    <para>Last week I <ulink type="" url="http://michal.hrusecky.net/2011/02/gsoc-2011-ideas-sax-3/">started</ulink> introducing my GSoC ideas. This is continuation of that post 
-    series. Today I’ll be writing about OpenID provider plugin for Elgg, what is it good for and why we need it.</para>
-    <para><emphasis role="bold">What is <ulink url="http://www.elgg.org/">Elgg</ulink> and why should you care?</emphasis></para>
-    <para>Elgg is a soacial networking platform. It is written in PHP and it has quite general design. It supports plugins that can change nearly anything. It also has quite vivid 
-      community around. Community that among other things provides lots of plugins. And it is of course open source. All these features were reasons why we chose Elgg as a platform 
-      for <ulink url="http://connect.opensuse.org">openSUSE Connect</ulink>.</para>
-    <para>If you are not familiar with openSUSE Connect, let me quickly explain what is it. As you may have already guess from previous paragraph, it is social network for our 
-      (openSUSE) users. We (Boosters) are still working on if, improving it and adding new functionality. But as it now, it was already used for example for our last <ulink 
-        url="http://news.opensuse.org/2011/01/28/opensuse-board-election-2010-vogelsang-and-linnell-elected/">board elections</ulink>. It also gathers various user data that can be 
-        make accessible using API. And of course it allows people to follow each other, engage in discussions or do the polls asking our community for its opinion.</para>
+    <title><ulink url="http://michal.hrusecky.net/2011/02/gsoc-2011-ideas-openid-provider-for-elgg/"
+        >Michal Hrušecký: GSoC 2011 Ideas – OpenID provider for Elgg</ulink></title>
+    <para>Last week I <ulink type="" url="http://michal.hrusecky.net/2011/02/gsoc-2011-ideas-sax-3/"
+        >started</ulink> introducing my GSoC ideas. This is continuation of that post series. Today
+      I’ll be writing about OpenID provider plugin for Elgg, what is it good for and why we need
+      it.</para>
+    <para><emphasis role="bold">What is <ulink url="http://www.elgg.org/">Elgg</ulink> and why
+        should you care?</emphasis></para>
+    <para>Elgg is a soacial networking platform. It is written in PHP and it has quite general
+      design. It supports plugins that can change nearly anything. It also has quite vivid community
+      around. Community that among other things provides lots of plugins. And it is of course open
+      source. All these features were reasons why we chose Elgg as a platform for <ulink
+        url="http://connect.opensuse.org">openSUSE Connect</ulink>.</para>
+    <para>If you are not familiar with openSUSE Connect, let me quickly explain what is it. As you
+      may have already guess from previous paragraph, it is social network for our (openSUSE) users.
+      We (Boosters) are still working on if, improving it and adding new functionality. But as it
+      now, it was already used for example for our last <ulink
+        url="http://news.opensuse.org/2011/01/28/opensuse-board-election-2010-vogelsang-and-linnell-elected/"
+        >board elections</ulink>. It also gathers various user data that can be make accessible
+      using API. And of course it allows people to follow each other, engage in discussions or do
+      the polls asking our community for its opinion.</para>
     <para><emphasis role="bold">Why do we need OpenID provider?</emphasis></para>
-    <para>We don’t. We have iChain that does something quite similar. It already provides single login and password for all our services. So what is wrong with iChain? Tough 
-      question. It is Novell only solution. So whenever we want add another web service we have to bend it ourselves to support iChain. On the other end, whenever we develop our 
-      own web application, everybody who wants to deploy it as well have to add support for other authentication mechanism. So it puts some additional obstacles to the 
-      collaboration. iChain also requires some internal administrative mambo jambo to get support for a new service.</para>
-    <para>So now you know few disadvantages of iChain. OpenID has also one big advantage that you can use it to login to other sites (like <ulink url="http://www.sf.net"
-      >sourceforge</ulink>). Wouldn’t it be great if we were using OpenID everywhere instead of iChain? You can then use you openSUSE login not only on our sites, but really 
-      everywhere… And this GSoC project is the first step.</para>
+    <para>We don’t. We have iChain that does something quite similar. It already provides single
+      login and password for all our services. So what is wrong with iChain? Tough question. It is
+      Novell only solution. So whenever we want add another web service we have to bend it ourselves
+      to support iChain. On the other end, whenever we develop our own web application, everybody
+      who wants to deploy it as well have to add support for other authentication mechanism. So it
+      puts some additional obstacles to the collaboration. iChain also requires some internal
+      administrative mambo jambo to get support for a new service.</para>
+    <para>So now you know few disadvantages of iChain. OpenID has also one big advantage that you
+      can use it to login to other sites (like <ulink url="http://www.sf.net">sourceforge</ulink>).
+      Wouldn’t it be great if we were using OpenID everywhere instead of iChain? You can then use
+      you openSUSE login not only on our sites, but really everywhere… And this GSoC project is the
+      first step.</para>
     <para><emphasis role="bold">Project description</emphasis></para>
-    <para>Goal of this project will be to implement OpenID provider for Elgg. As already said, Elgg supports plugins that can modify anything. Among other things for example 
-      authentication. Which means that this provider can’t really rely on any specific authentication method used. This will make it possible to use it by anybody (not only us) 
-      and it will also make it easier to migrate our openSUSE webs to OpenID later. Currently we are using iChain to login to the Connect, but in the future we might let Connect 
-      handle login by itself and support OpenID login as well. So in the end you could be able to login to your OpenID provider using another OpenID :-D</para>
+    <para>Goal of this project will be to implement OpenID provider for Elgg. As already said, Elgg
+      supports plugins that can modify anything. Among other things for example authentication.
+      Which means that this provider can’t really rely on any specific authentication method used.
+      This will make it possible to use it by anybody (not only us) and it will also make it easier
+      to migrate our openSUSE webs to OpenID later. Currently we are using iChain to login to the
+      Connect, but in the future we might let Connect handle login by itself and support OpenID
+      login as well. So in the end you could be able to login to your OpenID provider using another
+      OpenID :-D</para>
     <para><emphasis role="bold">Students?</emphasis></para>
-    <para>Similarly to my previous post I already got student who is interested in working on this! <emphasis role="bold">Kartik Mandaville</emphasis> was really interested in 
-      working on this project as part of GSoC if it gets elected. He already got experience with developing web applications so if this project gets selected, we’ve got something 
-      to look forward to.</para>
-    <para>Overall I’m really excited about whole GSoC 2011. Many ideas are already gathered and some other might still come. And we have people interested in working on these 
-    feature even though that today only registration for organizations starts! Let’s hope that many of these interesting projects will get implemented!</para>
+    <para>Similarly to my previous post I already got student who is interested in working on this!
+        <emphasis role="bold">Kartik Mandaville</emphasis> was really interested in working on this
+      project as part of GSoC if it gets elected. He already got experience with developing web
+      applications so if this project gets selected, we’ve got something to look forward to.</para>
+    <para>Overall I’m really excited about whole GSoC 2011. Many ideas are already gathered and some
+      other might still come. And we have people interested in working on these feature even though
+      that today only registration for organizations starts! Let’s hope that many of these
+      interesting projects will get implemented!</para>
     <!-- ($ ld: 1.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://michal.hrusecky.net/2011/03/gsoc-2011-ideas-support-for-bitbake-in-obs/">Michal Hrušecký: GSoC 2011 Ideas – Support for Bitbake in OBS</ulink></title>
+    <title><ulink
+        url="http://michal.hrusecky.net/2011/03/gsoc-2011-ideas-support-for-bitbake-in-obs/">Michal
+        Hrušecký: GSoC 2011 Ideas – Support for Bitbake in OBS</ulink></title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-nc-sa/3.0/">Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://creativecommons.org/licenses/by-nc-sa/3.0/"
+            >Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA
+        3.0)</ulink></emphasis>.</para>
     </note>
-    <para>Another of GSoC ideas that I volunteered to mentor for our GSoC was adding support for BitBake to the openSUSE Build Service. In this post I want to talk about why do I think that BitBake support for openSUSE 
-    Build Service will be useful and why do I think that OpenEmbedded is actually pretty cool.</para>
-    <para><emphasis role="bold">What is <ulink url="http://bitbake.berlios.de/manual/">BitBake</ulink>? Why is <ulink url="http://www.openembedded.org/index.php/Main_Page"
-      >OpenEmbedded</ulink> cool?</emphasis></para>
-    <para>BitBake is a build system used mainly by OpenEmbedded. In a way it is kind of similar to what openSUSE does for us. It takes one sources and makes it possible to build 
-      them for many distributions. There are some differences though. Let’s start with few notes a out OpenEmbedded. BitBake description will make more sense once you’ll know 
-      what OpenEmbedded is. It’s a meta distribution. You can think about it as a common code base for multiple distributions. It has many packages. It also contains distribution 
-      settings. Same source can be built in different ways for various distributions. Each distribution can choose which version of which package does it want to have in which 
-      release. It can choose package management system, preferred providers for virtual packages and many other things. BitBake is then used to build whole distribution out from 
-      BitBake recipes. From recipes that all maintainers from all distributions work on together at one place. And yes, it doesn’t support spec or dsc files. You have to write 
-      .bb files. But it will build .rpm, .deb, .opk or .tgz out of it. All from one recipe. And that recipe is easier to write and more powerful then spec. If you never tried 
-      packaging for Debian, trust me that it is also much easier than Debian packaging. I actually had a <ulink 
-        url="http://michal.hrusecky.net/download/opensuse_conference_2009/packaging.pdf">presentation</ulink> on openSUSE Conference 2009 about what can be done in BitBake and 
-        how it makes packagers life easier. Let’s quickly mention few features that BitBake has.</para>
+    <para>Another of GSoC ideas that I volunteered to mentor for our GSoC was adding support for
+      BitBake to the openSUSE Build Service. In this post I want to talk about why do I think that
+      BitBake support for openSUSE Build Service will be useful and why do I think that OpenEmbedded
+      is actually pretty cool.</para>
+    <para><emphasis role="bold">What is <ulink url="http://bitbake.berlios.de/manual/"
+          >BitBake</ulink>? Why is <ulink url="http://www.openembedded.org/index.php/Main_Page"
+          >OpenEmbedded</ulink> cool?</emphasis></para>
+    <para>BitBake is a build system used mainly by OpenEmbedded. In a way it is kind of similar to
+      what openSUSE does for us. It takes one sources and makes it possible to build them for many
+      distributions. There are some differences though. Let’s start with few notes a out
+      OpenEmbedded. BitBake description will make more sense once you’ll know what OpenEmbedded is.
+      It’s a meta distribution. You can think about it as a common code base for multiple
+      distributions. It has many packages. It also contains distribution settings. Same source can
+      be built in different ways for various distributions. Each distribution can choose which
+      version of which package does it want to have in which release. It can choose package
+      management system, preferred providers for virtual packages and many other things. BitBake is
+      then used to build whole distribution out from BitBake recipes. From recipes that all
+      maintainers from all distributions work on together at one place. And yes, it doesn’t support
+      spec or dsc files. You have to write .bb files. But it will build .rpm, .deb, .opk or .tgz out
+      of it. All from one recipe. And that recipe is easier to write and more powerful then spec. If
+      you never tried packaging for Debian, trust me that it is also much easier than Debian
+      packaging. I actually had a <ulink
+        url="http://michal.hrusecky.net/download/opensuse_conference_2009/packaging.pdf"
+        >presentation</ulink> on openSUSE Conference 2009 about what can be done in BitBake and how
+      it makes packagers life easier. Let’s quickly mention few features that BitBake has.</para>
     <para><emphasis role="bold">Everything from one recipe</emphasis></para>
-    <para>This was already mention, but it is quite important so I want to mention it once more. It can create both .rpm and .deb from one recipe. So you don’t have to learn two 
-    different packaging method if you are upstream and want to provide binary packages for as many distributions as possible.</para>
+    <para>This was already mention, but it is quite important so I want to mention it once more. It
+      can create both .rpm and .deb from one recipe. So you don’t have to learn two different
+      packaging method if you are upstream and want to provide binary packages for as many
+      distributions as possible.</para>
     <para><emphasis role="bold">Class based packaging system</emphasis></para>
-    <para>What is so great about inheritance in packaging? It helps you reduce copy &amp; paste and makes it easier to do some policy changes. Let’s take a look at some example. 
-      Let’s say, that you are packaging some KDE game. How would you do that? In spec, you’ll probably need to figure out how to call cmake, how to pass right KDE paths to it, 
-      how to make games rights ok and such. Then you’ll white down the spec file. Or probably you’ll just grab some other KDE game and copy &amp; paste its spec file with minor 
-      adjustments. What you’ll do in BitBake is something like</para>
+    <para>What is so great about inheritance in packaging? It helps you reduce copy &amp; paste and
+      makes it easier to do some policy changes. Let’s take a look at some example. Let’s say, that
+      you are packaging some KDE game. How would you do that? In spec, you’ll probably need to
+      figure out how to call cmake, how to pass right KDE paths to it, how to make games rights ok
+      and such. Then you’ll white down the spec file. Or probably you’ll just grab some other KDE
+      game and copy &amp; paste its spec file with minor adjustments. What you’ll do in BitBake is
+      something like</para>
     <screen>inherit cmake kde games</screen>
-    <para>because BitBake has a class for compiling cmake programs, it has a class that knows how to package KDE programs and how to package games. And you are done. That’s all. 
-      You don’t need to write any %setup, %install or %files. It knows what it should do. You can start packaging something else ;-) If you know Gentoo ebuilds, BitBake recipes 
-      are a little bit similar, but focused on binary distributions.</para>
+    <para>because BitBake has a class for compiling cmake programs, it has a class that knows how to
+      package KDE programs and how to package games. And you are done. That’s all. You don’t need to
+      write any %setup, %install or %files. It knows what it should do. You can start packaging
+      something else ;-) If you know Gentoo ebuilds, BitBake recipes are a little bit similar, but
+      focused on binary distributions.</para>
     <para><emphasis role="bold">New sub-packages on the way</emphasis></para>
-    <para>One disadvantage that writing spec files has is that you have to know beforehand haw many and what sub-packages you will be creating. And you have to name all of them 
-      explicitly. BitBake on the other hand let you do some neat tricks. You can compile your whole package and decide about sub-packages after that. Why is it cool? Let’s 
-      imagine for example Pidgin. It contains many plugins and let’s imagine that you want to make package for every single plugin. In .spec file, you’ll have to write down all 
-      of them manually. In BitBake you can use something like this:</para>
+    <para>One disadvantage that writing spec files has is that you have to know beforehand haw many
+      and what sub-packages you will be creating. And you have to name all of them explicitly.
+      BitBake on the other hand let you do some neat tricks. You can compile your whole package and
+      decide about sub-packages after that. Why is it cool? Let’s imagine for example Pidgin. It
+      contains many plugins and let’s imagine that you want to make package for every single plugin.
+      In .spec file, you’ll have to write down all of them manually. In BitBake you can use
+      something like this:</para>
     <screen>do_split_packages(d, purple, '^lib(.*)\.so$',
       output_pattern='libpurple-protocol-%s',
       description='Libpurple protocol plugin for %s',
       prepend=True, extra_depends='')</screen>
-    <para>This will split packages automatically, less writing for you and it will work even if Pidgin developers will add another plugin or take one of them away.</para>
+    <para>This will split packages automatically, less writing for you and it will work even if
+      Pidgin developers will add another plugin or take one of them away.</para>
     <para><emphasis role="bold">Student</emphasis></para>
-    <para>This time I don’t have any student in my pocket who wants to work on it. And it will be quite tough job. I think it would be definitely the most difficult idea I’m 
-      suggesting for GSoC. And I think it would require somebody who is willing to create many ugly hacks for greater good. The ends justifies the means ;-) It will require some 
-      serious digging into BitBake and obs so student will have to be quite independent as after a little digging I wouldn’t be able to help him much and he’ll learn more low 
-      level stuff than I want to know. But I think if this gets done, it will be great.</para>
+    <para>This time I don’t have any student in my pocket who wants to work on it. And it will be
+      quite tough job. I think it would be definitely the most difficult idea I’m suggesting for
+      GSoC. And I think it would require somebody who is willing to create many ugly hacks for
+      greater good. The ends justifies the means ;-) It will require some serious digging into
+      BitBake and obs so student will have to be quite independent as after a little digging I
+      wouldn’t be able to help him much and he’ll learn more low level stuff than I want to know.
+      But I think if this gets done, it will be great.</para>
     <!-- ($ ld: 1.3.11 sm $) -->
   </blockquote>
 </sect1>

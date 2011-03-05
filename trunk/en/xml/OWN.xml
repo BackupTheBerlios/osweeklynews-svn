@@ -23,62 +23,29 @@
     <date>2011-1-19</date>
 <!-- When it's published, date automatically inserted: -->    
     <pubdate><?dbtimestamp format="Y-m-d" ?></pubdate>
-<!-- When it's published -->    <edition>&edition;</edition>
+<!-- When it's published -->    
+    <edition>&edition;</edition>
     <authorgroup>
       <author>
         <othername>
           <link linkend="credits">openSUSE Weekly News Team</link>
         </othername>
       </author>
-<!--
-      <author>
-        <firstname>Sascha</firstname>
-        <surname>Manns</surname>
-        <contrib>editor in chief</contrib>
-      </author>
-      <author>
-        <firstname>Satoru</firstname>
-        <surname>Matsumoto</surname>
-        <contrib>Editorial office</contrib>
-      </author>
-      <author>
-        <firstname>Gertjan</firstname>
-        <surname>Lettink</surname>
-        <contrib>Forums section</contrib>
-      </author>
-      <author>
-        <firstname>Thomas</firstname>
-        <surname>Hofstätter</surname>
-        <contrib>Events &amp; meetings</contrib>
-      </author>
-      <author>  
-        <firstname>Thomas</firstname>
-        <surname>Schraitle</surname>
-        <contrib>DocBook-Consultant</contrib>
-      </author> --><!-- The english version don't have othercredit for
-           translators as there is none.
-           Translators just put there name
-      --><!--<othercredit class="translator">
-        <firstname></firstname>
-        <surname></surname>
-        </othercredit>-->    
     </authorgroup>  
     <legalnotice>
        <title>Legal Notice</title>
-       <!--
        <para><mediaobject>
           <imageobject>
           <imagedata fileref="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/>
           </imageobject>
        </mediaobject>
        </para>
-       <para>This work (compilation) is licenced under <ulink
-       url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons attribution-ShareAlike 3.0 Unported License unless expressly otherwise indicated</ulink>. 
-         The rights for the compilation are copyright by Sascha Manns.
-         </para> -->
-      <para>Copyrights of the introduced articles are owned by original authors or copyright owners. If you want to reuse those articles, ask each original copyright owner which 
-        license should be applied. If you are an autor and want to set your blog under a free License? Just visit: 
-	<ulink url="http://bit.ly/gKqGDT">http://bit.ly/gKqGDT</ulink></para>
+       <para>This work (compilation) is licenced under <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons attribution-ShareAlike 3.0 Unported License</ulink>. 
+       The rights for the compilation itself are copyright by Sascha Manns.</para>
+       <para>Opt-Out: If you are an Author and don't want to be introduced in the openSUSE Weekly News, just send a Mail to: <email>saigkill@opensuse.org</email>.</para>
+       <para>Copyrights of the introduced articles are owned by original authors or copyright owners. If you want to reuse those articles, ask each original copyright owner which 
+        license should be applied. We don't reprint any Article without an free license, we just introduce it then under the Agreement of the German Copyright Law.</para> 
+       <para>If you are an autor and want to set your blog under a free License? Just visit: <ulink url="http://bit.ly/gKqGDT">http://bit.ly/gKqGDT</ulink></para>
     </legalnotice>   
   </articleinfo>
   <abstract>
