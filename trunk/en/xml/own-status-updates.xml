@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,16 +19,17 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-<!--
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <title>openSUSE Weekly News searches for contributors</title>
       <para></para>
     </blockquote>
-  </sect2> -->  <sect2 role="distribution">
+  </sect2> -->
+  <sect2 role="distribution">
     <title>Distribution</title>
-<!--
+    <!--
     <blockquote>
       <title>
         <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
@@ -53,45 +55,43 @@ zypper in enlightenment</screen></para>
         in your *DM. </para>
       <para>Have a lot of fun and share your experiences… I will test it after I get some
         sleep.</para>
-    </blockquote> -->    <itemizedlist>
+    </blockquote> -->
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.susestudio.com/2011/02/public-opensuse-113-amis.html">SUSE Studio/James Tan: Public openSUSE 11.3 AMIs</ulink>
+        <ulink url="http://blog.susestudio.com/2011/02/public-opensuse-113-amis.html">SUSE
+          Studio/James Tan: Public openSUSE 11.3 AMIs</ulink>
       </title>
       <para><note>
-          <para><emphasis role="bold">This Article is owned by Novell Inc. <ulink url="http://www.novell.com/company/legal/">http://www.novell.com/company/legal/</ulink></emphasis></para>
-        </note>&quot;We&apos;ve been receiving a lot of very positive feedback since we <ulink url="http://blog.susestudio.com/2010/10/new-amazon-ec2-build-format.html">added Amazon EC2 support</ulink> in SUSE Studio, so I&apos;d just like to take a moment to thank everyone
+          <para><emphasis role="bold">This Article is owned by Novell Inc. <ulink
+                url="http://www.novell.com/company/legal/"
+                >http://www.novell.com/company/legal/</ulink></emphasis></para>
+        </note>&quot;We&apos;ve been receiving a lot of very positive feedback since we <ulink
+          url="http://blog.susestudio.com/2010/10/new-amazon-ec2-build-format.html">added Amazon EC2
+          support</ulink> in SUSE Studio, so I&apos;d just like to take a moment to thank everyone
         for their support! </para>
-      <para>Feature requests keep coming in, but one in particular stands out due to its popularity
-        -- the ability to create openSUSE <ulink url="http://aws.amazon.com/ebs/">EBS</ulink>
-        <ulink url="http://aws.amazon.com/amis">AMIs</ulink>. This is especially useful as
-        Amazon&apos;s <ulink url="http://aws.amazon.com/free/">free usage tier</ulink> does not
-        support instance-store backed AMIs (which we already support in Studio for openSUSE). </para>
-      <para>So after some nudging from one of our users, Thomps, I did some hacking over the weekend
-        and added openSUSE EBS support in the create_ebs_ami.sh script (which is by the way,
-        open-source and <ulink url="https://github.com/jamestyj/susestudio-ec2">available on Github</ulink>). This will be merged into Studio soon. </para>
-      <para>While working on this, I noticed that there aren&apos;t any official public openSUSE
-        AMIs out there, so I created some with SUSE Studio (<ulink url="http://susegallery.com/a/n0rKOx/opensuse-113-ami--2">32 bit</ulink>, <ulink url="http://susegallery.com/a/n0rKOx/opensuse-113-ami">64 bit</ulink>). The full list of
-        public openSUSE 11.3 AMIs are listed in the table below.&quot; (...)</para>
-<!--($ ld: 22.2.11 sm $)-->    </blockquote>
-  </sect2>
+    </blockquote> 
+    </sect2> -->
   <sect2 role="teamreports">
     <title>Team Report</title>
-<!--
+    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -103,7 +103,8 @@ zypper in enlightenment</screen></para>
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -251,13 +252,17 @@ zypper in enlightenment</screen></para>
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
+      <!--
       <blockquote>
         <title>
-          <ulink url="http://ifup.org/2011/02/24/build-service-action-menu-ui/">Brandon Philips: Build Service Action Menu UI</ulink>
+          <ulink url="http://ifup.org/2011/02/24/build-service-action-menu-ui/">Brandon Philips:
+            Build Service Action Menu UI</ulink>
         </title>
-        <para><ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Last week</ulink> I wrote a few patches to improve the UI of the build service. The first of
+        <para><ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Last
+            week</ulink> I wrote a few patches to improve the UI of the build service. The first of
           these patches were accepted but the removal of the Actions menu wasn&apos;t as well liked.
           This was the proposal: </para>
         <para><emphasis role="bold">Current Interface</emphasis></para>
@@ -276,7 +281,9 @@ zypper in enlightenment</screen></para>
             <imagedata fileref="http://ifup.org/images/obs/control-horizontal.png"/>
           </imageobject>
         </mediaobject>
-        <para>However, in the merge request <ulink url="http://gitorious.org/opensuse/build-service/merge_requests/9">Sascha suggested</ulink> an alternative which I have tried out and taken screenshots of below
+        <para>However, in the merge request <ulink
+            url="http://gitorious.org/opensuse/build-service/merge_requests/9">Sascha
+            suggested</ulink> an alternative which I have tried out and taken screenshots of below
           (ignore the margin issues, I need to fix the css for the bento showleft class which breaks
           the 960 grid layout).</para>
         <para><emphasis role="bold">Sascha&apos;s Suggestion</emphasis>
@@ -298,102 +305,15 @@ zypper in enlightenment</screen></para>
           </imageobject>
         </mediaobject>
         <para>What do people think? I still feel like the horizontal layout is the best option but
-          some more feedback would be helpful.</para>
-<!-- ($ ld: 25.2.11 sm $) -->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://psankar.blogspot.com/2011/02/introducing-gosc-graphical-client-for.html">Sankar P: Introducing GOSC - A Graphical client for openSUSE Build Service</ulink>
-        </title>
-        <para>&quot;openSUSE buildservice is an awesome framework for building rpms for multiple
-          distributions. It is used by the openSUSE project, the Meego project, VLC, all distro
-          releases from Novell, and in many other places. Usually OBS is accessed by a browser, I
-          have implemented a simple GUI tool for working with OBS servers. </para>
-        <para>If you are extremely busy, just proceed to the screenshots section and the <ulink url="https://github.com/curiosity/gosc">github</ulink> tree. Otherwise, read
-          below:</para>
-        <para><emphasis role="bold">History</emphasis><orderedlist>
-            <listitem>
-              <para>A few days back, sragavan, ravim85 and I were chatting on twitter that the new
-                (2.0) interface of OBS takes too much of clicks and too many page navigations for
-                simple operations (compared to older interface). I felt that it will be better if I
-                could get the build information about all my projects in a single page and also
-                allowing me to easily see the build logs of various packages.</para>
-            </listitem>
-            <listitem>
-              <para>I have always wanted to learn python. I have given some small level python
-                patches for some projects. But haven&apos;t had any experience in writing a python
-                project from the scratch.</para>
-            </listitem>
-            <listitem>
-              <para>Today (yesterday to be precise) I had an annoying meeting that drained me
-                mentally and ended up with some frustration. I wanted to get rid of the bad
-                mood.</para>
-            </listitem>
-          </orderedlist></para>
-        <para>Based on the above three factors, I decided to complete a project that I just started
-          day before yesterday (with a simple Python HelloWorld) into an usable thick-client for
-          openSUSE build service. The result is GOSC and the code is already in <ulink url="https://github.com/curiosity/gosc">github</ulink>.</para>
-        <para><emphasis role="bold">OSC commandline &amp; OBS Library </emphasis></para>
-        <para>I wanted to use a library for talking with the OBS APIs from my GUI client. But darix
-          confirmed my fear in IRC that no such library exists as of now. One option was to copy
-          paste code from the osc commandline client&apos;s sources. But this is ugly and will give
-          maintenance nightmares. So, I decided to just use &quot;osc&quot; from my python programs
-          and create a GUI wrapper using Python.</para>
-        <para><emphasis role="bold">yabsc </emphasis></para>
-        <para>Srinidhi told me of a different client for build-service named yabsc. I looked into
-          it. It was written in true KDE fashion, exposing every possible control to the user. It
-          lists all the projects building in the entire build-service and not just &quot;My
-          Projects&quot;. Also, I felt it is a little keyboard unfriendly and had too many tabs. So
-          I ditched it as it was not meeting my usability requirements. However, if you are a
-          looking for a more powerful, more matured product and not scared by too many controls on
-          screen, it is better if you try yabsc. </para>
-        <figure>
-          <title>Initial screen. &quot;My Projects&quot; are shown in the top-left listview.</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://3.bp.blogspot.com/-Vkr7vCDvK38/TV2I3-bO6OI/AAAAAAAAEXE/iPflQfJFE6U/s320/gosc-main-screen.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <figure>
-          <title>Double-clicking a project from the list, will list the packages in the project in the adjacent listview. The buildresults of the project are shown in the bottom textarea.</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://4.bp.blogspot.com/-b-yKAWNcGOo/TV2I6CnuSDI/AAAAAAAAEXI/eVh69ZItcO8/s320/gosc-project-results.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <figure>
-          <title>Double-clicking a package from the top-right listview, will popup a Repository chooser dialog.</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://3.bp.blogspot.com/-ojPZycYhdRI/TV2JFEqjyuI/AAAAAAAAEXM/X63U1lvLxcI/s320/gosc-repo-chooser.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <figure>
-          <title>The entire buildlog of the selected package is shown in the textarea.</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="http://2.bp.blogspot.com/-rJkncdKa6t8/TV2JIQRmvwI/AAAAAAAAEXQ/w81_yTlNj04/s320/gosc-build-log.png"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <para>The source is licensed under LGPLv2.1. There are a lot of small fixes that could still
-          be added, like a &quot;Loading...&quot; status bar for network operations, Caching of
-          buildlogs, project names, subscribing to build notifications from the build-server etc.
-          But they are not part of my regular workflow and also I strongly believe in &quot;Release
-          Early Release Often&quot;. So, I am releasing in this barebones version, which already
-          seem to solve my workflow needs. </para>
-        <para>During the implementation of this, I learned a lot about python. This experience also
-            <emphasis role="bold">strengthened</emphasis> my old opinion that <emphasis role="bold">Compiled languages are better for large scale projects</emphasis>. </para>
-        <para>Your feedback, comments and patches are very much welcome. &quot;</para>
-<!-- ($ ld: 18.2.11 sm $) -->      </blockquote>
+          some more feedback would be helpful.</para>       
+      </blockquote> -->
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
       </formalpara>
     </sect3>
-<!--
+    <!--
     <sect3 role="evergreen">
       <title>Evergreen/Tumbleweed Team</title>
       <blockquote>
@@ -401,7 +321,8 @@ zypper in enlightenment</screen></para>
         <para></para>
       </blockquote>
     </sect3>
-    --><!--
+    -->
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -412,14 +333,17 @@ zypper in enlightenment</screen></para>
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/19/indicators-for-gnome2-update/">Nelson Marques: Indicators for GNOME2 – Update</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/02/19/indicators-for-gnome2-update/">Nelson
+            Marques: Indicators for GNOME2 – Update</ulink>
         </title>
         <note>
-          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation License.</emphasis></para>
+          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation
+              License.</emphasis></para>
         </note>
         <para>&quot;Canonical has been very active and released quite an impressive amount of bug
           fixes and features for their Ayatana Project software. I’ve been doing the updates, sent a
@@ -518,57 +442,10 @@ zypper in enlightenment</screen></para>
         <para>Contributions are accepted in any area not covered by me, or fixing stuff, and also
           very important, in the KDE field. About Unity… here’s a riddle: “How can you tell if a
           ghost is about to faint?”.&quot;</para>
-<!-- ($ ld: 20.2.11 sm $) -->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/20/gnomeayatana-project-page-in-english-and-portuguese/">Nelson Marques: GNOME:Ayatana project page in English and Portuguese…</ulink>
-        </title>
-        <note>
-          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation License.</emphasis></para>
-        </note>
-        <para>&quot;Dear all, While I’ve worked on the GNOME:Ayatana project page in English,
-          Raul, a dedicated contributor from Brazil has provided the Portuguese version of this
-          page. I would like to express my gratitude to Raul for a well done job, and I’m happy that
-          someone from Brazil stepped up for this task, as I assume that this project will have far
-          more visibility in Brazil than in Portugal itself. </para>
-        <para>If anyone wants to translate the page and keep it update for any other languages, that
-          would be awesome! Please let me know, so that I can add your name into the contributors
-          for this Project, or eventually you can do it yourself, this is a community project, so,
-          you don’t actually need my permission to improve contents, I encourage such behavior!
-          Thanks Raul.</para>
-        <para><ulink url="http://en.opensuse.org/openSUSE:GNOME_Ayatana">GNOME:Ayatana on openSUSE [English]</ulink>
-        </para>
-        <para><ulink url="http://pt.opensuse.org/openSUSE:GNOME_Ayatana">GNOME:Ayatana on openSUSE [Portuguese]</ulink>&quot;</para>
-<!-- ($ ld: 21.2.11 sm $) -->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2011/02/21/default-wallpaper-for-gnomeayatana/">Nelson Marques: Default Wallpaper for GNOME:Ayatana</ulink>
-        </title>
-        <note>
-          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation License.</emphasis></para>
-        </note>
-        <para>Not that I know a lot about Artwork or Wallpapers… For those, I am mainly a
-          ‘customer’ most of the times, and things get easy for… either I like it, or I don’t.
-          There’s a lot of stuff available out there, and initially I loved the snake (I still do),
-          but since I couldn’t distribute it due to licensing, I’ve spent a couple of hours looking
-          for Artwork with a compatible license and contacted a few artists about licensing and the
-          possibility of using/distributing their work. </para>
-        <para>To distribute for GNOME:Ayatana on the 11.4 cycle, I’m going to use ‘Spaceman Goldrush
-          Edition’ from ‘mydarktime’, a German artist. I’m happy that mydarktime has been so kind in
-          allowing openSUSE to distribute this package under CC-BY-SA. I will also take the
-          opportunity to quote him: </para>
-        <para>“(…) I would be very pleased to see mine in it” (wallpaper pack on GNOME:Ayatana). </para>
-        <para>I find this wallpaper very attractive and it doesn’t really tire me up from looking at
-          it, which is really, really nice! I hope everyone else likes it also!</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="30%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/02/spaceman_goldrush_1680.jpg"/>
-          </imageobject>
-        </mediaobject>
-        <para><ulink url="http://mydarktime.deviantart.com/art/spaceman-169794648">Spaceman Goldrush Edition @ Deviant ART</ulink></para>
-<!--($ ld: 21.2.11 sm $) -->      </blockquote>
+        <!-- ($ ld: 20.2.11 sm $) -->
+      </blockquote>
     </sect3>
-<!--
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -675,7 +552,8 @@ zypper in enlightenment</screen></para>
           openSUSE 11.4. Feedback can go to the related wiki pages or straight to
           opensuse-kde@.</para>
      </blockquote> 
-     </sect3> --><!--
+     </sect3> -->
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -723,27 +601,31 @@ zypper in enlightenment</screen></para>
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
       <para>...</para>
-    </sect3> -->    <sect3 role="monoteam">
+    </sect3> -->
+
+    <sect3 role="monoteam">
       <title>Mono Team</title>
       <sect4>
-        <title>First beta of MonoDevelop 2.6 </title>
+        <title><ulink url="http://foodformonkeys.blogspot.com/2011/03/first-beta-of-monodevelop-26.html">Lluis Sanchez: First beta of MonoDevelop 2.6</ulink></title>
         <para>MonoDevelop 2.6 beta 1 was released yesterday. Like every major release, it has many new features. Here is a summary of what have we done.</para>
         <para>The first new big feature is <emphasis role="bold">support for GIT</emphasis>. This was long time due, especially since Mono and MonoDevelop itself moved to GIT. I 
           already <ulink url="http://foodformonkeys.blogspot.com/2010/10/ngit.html">blogged about it</ulink> a few months ago, but basically we are using NGit, a C# port of JGit, 
-          as the core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we now have a GIT core that can be easily updated and which is fully 
+          as the core for the GIT add-in. It hasn't been easy to make this port fully operational, but we now have a GIT core that can be easily updated and which is fully 
           portable.(...)</para>
-      </sect4>
+      </sect4>      
     </sect3>
     <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
+            We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 344)</ulink>
@@ -814,10 +696,12 @@ zypper in enlightenment</screen></para>
             problem without giving much help. This is a cause for many complaints, and contributes
             to myths of RPM dependency hell still existing today. (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 5.3.11 sat *updated* $) -->      </sect4>
+        <!-- ($ ld: 5.3.11 sat *updated* $) -->
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/311361">usermod</ulink>
@@ -835,14 +719,14 @@ zypper in enlightenment</screen></para>
             <ulink url="https://features.opensuse.org/311364">Include biosdevname udev helper utility into openSUSE</ulink>
           </title>
           <para>&quot;This feature is needed to implement the &quot;Consistent Network device naming-Name network interfaces to match chassis labels&quot; (https://features.opensuse.org/310896 ).
-</para>
+          </para>
           <para>Biosdevname is a udev helper which can suggest chassis based names to network interfaces.
-Please find latest version of biosdevname here -
-</para>
+            Please find latest version of biosdevname here -
+          </para>
           <para>http://linux.dell.com/files/biosdevname/permalink/biosdevname-0.3.7.tar.gz
-</para>
+          </para>
           <para>http://linux.dell.com/files/biosdevname/permalink/biosdevname-0.3.7.tar.gz.sign
-</para>
+          </para>
           <para>git://linux.dell.com/biosdevname.git &quot;</para>
         </blockquote>
         <blockquote>
@@ -850,16 +734,16 @@ Please find latest version of biosdevname here -
             <ulink url="https://features.opensuse.org/311365">Include 71-biosdevname.rules to rename network interfaces based on chassis labels</ulink>
           </title>
           <para>&quot;On a Dell PowerEdge server with multiple add-in cards, the naming of the network interfaces is non-deterministic. This results in &apos;eth0&apos; not mapping to &quot;Embedded NIC 1&quot; as labeled on the server chassis. This issue is seen on Dell PowerEdge 10G above. This feature addresses this issue by renaming network interfaces based on their location on the system motherboard.
-
-</para>
+            
+          </para>
           <para>The naming policy it suggests are as follows -
-
-</para>
+            
+          </para>
           <para>Embedded devices: em&lt;port&gt;
-</para>
+          </para>
           <para>Add-in PCI cards: pci&lt;slot&gt;p&lt;port&gt;_&lt;virtual function instance&gt;
-
-</para>
+            
+          </para>
           <para>Please refer to &quot;Consistent Network device naming-Name network interfaces to match chassis labels&quot; (https://features.opensuse.org/310896 ).&quot;</para>
         </blockquote>
         <blockquote>
@@ -873,12 +757,12 @@ Please find latest version of biosdevname here -
             <ulink url="https://features.opensuse.org/311383">Add a short introduction movie to openSUSE in the welcome screen</ulink>
           </title>
           <para>&quot;When first logging on to openSUSE you are greeted with a small welcome screen with some useful links.
-However, for a new user with little computing experience (or one migrating from another OS), the user doesn&apos;t really know where to start.
-
-</para>
+            However, for a new user with little computing experience (or one migrating from another OS), the user doesn&apos;t really know where to start.
+            
+          </para>
           <para>I suggest we add a short introductory clip, which can be activated from the welcome screen, to demonstrate simple and common activities in openSUSE.
-
-</para>
+            
+          </para>
           <para>I imagine the clip to be in non-technical language, narrated by a talker with a pleasant voice, and with light music in the background.&quot;</para>
         </blockquote>
         <blockquote>
@@ -886,13 +770,13 @@ However, for a new user with little computing experience (or one migrating from 
             <ulink url="https://features.opensuse.org/311386">RALCGM</ulink>
           </title>
           <para>&quot;<ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RAL-CGM</ulink>  is a program to interpret Computer Graphics Metafiles. It can:
-</para>
+          </para>
           <para>* Translate them to a different encoding (Binary, Character or Clear Text)
-</para>
+          </para>
           <para>* Display CGM&apos;s on screen using X-Windows
-</para>
+          </para>
           <para>* Send CGM&apos;s to a printer or plotter (PostScript or HPGL)
-It runs on Unix machines (X11 needed for display).&quot;</para>
+            It runs on Unix machines (X11 needed for display).&quot;</para>
         </blockquote>
         <blockquote>
           <title>
@@ -929,9 +813,9 @@ It runs on Unix machines (X11 needed for display).&quot;</para>
             <ulink url="https://features.opensuse.org/311410">make braille support in installer work again</ulink>
           </title>
           <para>&quot;Blind people would like to use Linux.
-At the moment they need a seeing person to do the install+setup for them.
-
-</para>
+            At the moment they need a seeing person to do the install+setup for them.
+            
+          </para>
           <para>In earlier times, a11y in SUSE Linux was good, but at some point the braille support in the installer was no more working.&quot;</para>
         </blockquote>
         <blockquote>
@@ -939,14 +823,16 @@ At the moment they need a seeing person to do the install+setup for them.
             <ulink url="https://features.opensuse.org/311414">abort cleanly if install fail</ulink>
           </title>
           <para>&quot;if ever the standard installation is aborted, the user go back to the very old ncurse interface.
-Shoulod simply go to an abort/rtry menu and reboot after ejecting the dvd.&quot;</para>
+            Shoulod simply go to an abort/rtry menu and reboot after ejecting the dvd.&quot;</para>
         </blockquote>
-<!-- ($ ld: 5.3.11 sat *replaced with newer ones* $) -->      </sect4>
+        <!-- ($ ld: 5.3.11 sat *replaced with newer ones* $) -->
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE 11.4 <ulink url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
+        <para>Statistics for openSUSE 11.4 <ulink
+            url="https://features.opensuse.org/statistic/product/22236">in openFATE</ulink></para>
       </sect4>
-    </sect3>
+    </sect3>    
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -954,38 +840,54 @@ Shoulod simply go to an abort/rtry menu and reboot after ejecting the dvd.&quot;
           <ulink url="http://lizards.opensuse.org/2011/03/01/libreoffice-3-3-1-bugfix-release-available-for-opensuse/">Petr Mladek: LibreOffice 3.3.1 bugfix release available for openSUSE</ulink>
         </title>
         <note>
-          <para><emphasis role="bold">This Article is licensed under the <ulink url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation License.</ulink></emphasis></para>
+          <para><emphasis role="bold">This Article is licensed under the <ulink
+            url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation
+            License.</ulink></emphasis></para>
         </note>
         <para>I’m happy to announce LibreOffice 3.3.1 <emphasis role="italic">bugfix release</emphasis> for <emphasis role="italic">openSUSE</emphasis>. The packages are 
           available in the Build Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/">LibreOffice:Stable</ulink> project. They fix various 
-          crashers, usability and translation problems, see the <ulink url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.1.2">libreoffice-3.3.1.2 release news</ulink> for more details. See also some notes <ulink url="http://en.opensuse.org/LibreOffice">about openSUSE LibreOffice build</ulink>.</para>
-        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any software contains bugs and we kindly ask you to <ulink url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us to fix them in the future releases.</para>
+          crashers, usability and translation problems, see the <ulink url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.1.2"
+            >libreoffice-3.3.1.2 release news</ulink> for more details. See also some notes <ulink url="http://en.opensuse.org/LibreOffice">about openSUSE LibreOffice 
+            build</ulink>.</para>
+        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any software contains bugs and we kindly ask you to <ulink 
+          url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us to fix them in the future releases.</para>
         <para><emphasis role="bold">Other information and plans:</emphasis></para>
         <para>This version will be in openSUSE-11.4 out of box. We are going to prepare official maintenance update for openSUSE-11.2 and 11.3.</para>
-        <para>There are already several fixes for the LO-3.3.2 bugfix release. You might expect 3.3.2-rc1 in the “<ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink>” repositories by the end of the following week.</para>
+        <para>There are already several fixes for the LO-3.3.2 bugfix release. You might expect 3.3.2-rc1 in the “<ulink 
+          url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink>” repositories by the end of the following week.</para>
         <para>Most developers are already concentrated on LO-3.4 release. I hope that the first beta packages will be ready in the beginning of April.</para>
-<!-- ($ ld: 3.3.11 sm $) -->      </blockquote>
+        <!-- ($ ld: 3.3.11 sm $) -->
+      </blockquote> 
     </sect3>
+    <!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://news.opensuse.org/2011/02/25/open-bugs-day-held-last-sunday/">Open-Bugs-Day Held Last Sunday</ulink>
-        </title>
+        <title><ulink url="http://news.opensuse.org/2011/02/25/open-bugs-day-held-last-sunday/"
+            >Open-Bugs-Day Held Last Sunday</ulink></title>
         <note>
-          <para><emphasis role="bold">This Article is licensed under the <ulink url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation License.</ulink></emphasis></para>
+          <para><emphasis role="bold">This Article is licensed under the <ulink
+                url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation
+              License.</ulink></emphasis></para>
         </note>
-        <para><ulink url="http://news.opensuse.org/2011/02/16/open-bugs-day-on-sunday-the-20th-of-february/">As announced previously</ulink>, openSUSE organized an Open-Bugs-Day held on January
-          20. Many people participated, including a large number of contributors new to <ulink url="irc://irc.freenode.net/opensuse-testing">#opensuse-testing</ulink> on <ulink url="http://freenode.net/">Freenode servers</ulink>! </para>
+        <para><ulink
+            url="http://news.opensuse.org/2011/02/16/open-bugs-day-on-sunday-the-20th-of-february/"
+            >As announced previously</ulink>, openSUSE organized an Open-Bugs-Day held on January
+          20. Many people participated, including a large number of contributors new to <ulink
+            url="irc://irc.freenode.net/opensuse-testing">#opensuse-testing</ulink> on <ulink
+            url="http://freenode.net/">Freenode servers</ulink>! </para>
         <para><emphasis role="bold">Results </emphasis></para>
-        <para>Bernhard Wiedemann created a nice tool at <ulink url="http://openbugs.zq1.de/">openbugs.zq1.de</ulink> to avoid the situation where two people work on the same issue.
+        <para>Bernhard Wiedemann created a nice tool at <ulink url="http://openbugs.zq1.de/"
+            >openbugs.zq1.de</ulink> to avoid the situation where two people work on the same issue.
           There were VM’s prepared with VNC access so people could easily test and someone in the
           team ran his first KVM Virtual Machine at home, thanks to the help of the rest of the
-          team. Another participant filed his first bug on bugzilla (that would be bug number <ulink url="https://bugzilla.novell.com/show_bug.cgi?id=673629">673629</ulink>). In the end,
+          team. Another participant filed his first bug on bugzilla (that would be bug number <ulink
+            url="https://bugzilla.novell.com/show_bug.cgi?id=673629">673629</ulink>). In the end,
           the team went through and updated 60% of all old 11.4 bugs (=132 of 219)! </para>
         <para>And of course, they had a lot of fun… </para>
         <para>Finally, we have some crude statistics about yesterday’s most active participants, who
-          can get the geeko-gear reward (just send your details to <ulink url="http://en.opensuse.org/User:Bmwiedemann">Bernhard Wiedermann</ulink>)!</para>
+          can get the geeko-gear reward (just send your details to <ulink
+            url="http://en.opensuse.org/User:Bmwiedemann">Bernhard Wiedermann</ulink>)!</para>
         <para>This list is generated with a perl script | sort | uniq -c | sort -n -r | head -11<itemizedlist>
             <listitem>
               <para>49 Rainer Hurtado Navarro</para>
@@ -1025,21 +927,23 @@ Shoulod simply go to an abort/rtry menu and reboot after ejecting the dvd.&quot;
         <para><emphasis role="bold">Future </emphasis></para>
         <para>The team decided it would be nice to have such events on a regular basis, so
           2011-04-02 is proposed for the next Open-Bugs-Day.</para>
-<!--($ ld: 25.2.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+    <!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -1095,15 +999,18 @@ Shoulod simply go to an abort/rtry menu and reboot after ejecting the dvd.&quot;
             </listitem>
           </itemizedlist></para>
       </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->  </sect2>
+      </sect3> -->
+  </sect2>
 </sect1>
