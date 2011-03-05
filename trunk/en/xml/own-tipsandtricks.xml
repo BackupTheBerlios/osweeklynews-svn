@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -22,7 +21,8 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink url="http://www.techrepublic.com/blog/opensource/how-to-use-calibre-to-access-your-ebook-collection-online/2275">techrepublic.com/Jack Wallen: How to use Calibre to access your ebook collection online</ulink>
+      <title>
+        <ulink url="http://www.techrepublic.com/blog/opensource/how-to-use-calibre-to-access-your-ebook-collection-online/2275">techrepublic.com/Jack Wallen: How to use Calibre to access your ebook collection online</ulink>
       </title>
       <para><emphasis role="bold">Takeaway</emphasis>: Calibre is one of the most powerful ebook managers available. But did you know that Calibre has a built in server that 
       allows you to access your library from a web browser? In this how-to, Jack Wallen shows you how to set up Calibre to serve up your book library.</para>
@@ -34,43 +34,56 @@
         found for managing ebooks. And for administrators looking for ways to convert and add books, PDFs, howtos, etc. to an ereader for portable reading, Calibre is exactly 
         the tool you need. Let’s take a look at this tool and how you can benefit from using it. (...)</para>
       <para><emphasis role="bold">Copyright</emphasis>: <link linkend="extcopyright">1</link></para>
-      <tip><para>The Calibre Package can downloaded in the <ulink url="http://download.opensuse.org/repositories/Documentation:/Tools/">Documentation:Tools Repository</ulink>. 
-        Because the Developer uses brand new Libs it is just available for >= 11.4</para></tip>
-      <!-- ($ Id: 01.3.11 sm $)-->
-    </blockquote>
+      <tip>
+        <para>The Calibre Package can be downloaded from the <ulink url="http://download.opensuse.org/repositories/Documentation:/Tools/">Documentation:Tools Repository</ulink>. 
+        Because the Developer uses brand new Libs, it is just available for &gt;= 11.4</para>
+      </tip>
+<!-- ($ Id: 01.3.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://artax.karlin.mff.cuni.cz/~kendy/blog/archives/monthly/2011-03.html#2011-03-04T10_18_40.htm">Jan Holesovsky: LibreOffice Findbar improvements</ulink></title>
+      <title>
+        <ulink url="http://artax.karlin.mff.cuni.cz/~kendy/blog/archives/monthly/2011-03.html#2011-03-04T10_18_40.htm">Jan Holesovsky: LibreOffice Findbar improvements</ulink>
+      </title>
       <para>Yesterday I played a bit with the Findbar in LibreOffice, and changed it to look and behave more like in the applications like Firefox, or Evolution:</para>
       <para>It is now hidden by default, and opens when you press Ctrl-f (for the old <emphasis role="bold">Search and Replace</emphasis> dialog I changed the keybinding to 
         Ctrl-Alt-f), or when you choose <emphasis role="bold">Find</emphasis> in the menu. It opens at the bottom of the document, and you can close it again (and return back to 
         the document) by pressing Escape. I also made the text entry wider so that more characters fits in there. </para>
       <para>Enjoy! :-) - will be available in LibreOffice 3.4.</para>
-      <!-- ($ Id: 4.3.11 sm $)-->
-    </blockquote>
+<!-- ($ Id: 4.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://scribblesandsnaps.wordpress.com/2011/02/22/work-with-photo-metadata-in-digikam/">Scribbles and Snaps/Dmitri Popov: Photography and Open Source Work with Photo Metadata in digiKam</ulink>
+      </title>
+      <para>&quot;Inside each digital photo hides metadata in the <ulink url="http://en.wikipedia.org/wiki/Exif">EXIF</ulink>, <ulink url="http://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model">IPTC</ulink>, or <ulink url="http://en.wikipedia.org/wiki/Extensible_Metadata_Platform">XMP</ulink> formats, and digiKam provides tools for viewing and editing this useful information.
+
+</para>
+      <para>For starters, digiKam’s main window features the dedicated <emphasis role="bold">Metadata</emphasis> sidebar which lets you view EXIF, Makernote, IPTC, and XMP metadata. You can switch between concise and full views as well as print the metadata, save them as a file, and copy them into the clipboard. (...)&quot;</para>
+<!-- ($ Id: 5.3.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
-      <title><ulink url="http://bashshell.net/utilities/exercise-6-set-variables-in-scripts/">BashShell.net/Mike: Exercise #6: Set Variables in Scripts</ulink>
+      <title>
+        <ulink url="http://bashshell.net/utilities/exercise-6-set-variables-in-scripts/">BashShell.net/Mike: Exercise #6: Set Variables in Scripts</ulink>
       </title>
       <para>When you need to set variables, you can do that in the BEGIN section of an awk script. Here the variable firstuser is set to 1000. The BEGIN section sets that 
       variable and it is then used later in the script. (...)</para>
       <para><emphasis role="bold">Copyright:</emphasis><link linkend="extcopyright">3</link></para>
-      <!-- ($ Id: 01.3.11 sm $) -->
-    </blockquote>
+<!-- ($ Id: 01.3.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink url="http://bashshell.net/script-of-the-week/log-parser/">BashShell.net/Mike: LogParser</ulink></title>
+      <title>
+        <ulink url="http://bashshell.net/script-of-the-week/log-parser/">BashShell.net/Mike: LogParser</ulink>
+      </title>
       <para>The idea behind a log parser is to create a loop that will check all of your required logs to return information about specific needs that you may have as an 
         administrator. For example, with this script you may want to search a specific log for one or two text strings that are very important to the function of your 
         system.(...)</para>
       <para><emphasis role="bold">Copyright:</emphasis><link linkend="extcopyright">3</link></para>
-      <!-- ($ Id: 01.3.11 sm $) -->
-    </blockquote>
+<!-- ($ Id: 01.3.11 sm $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://python4kids.wordpress.com/2011/02/24/a-big-jar-of-pickles/">python4kids/Brandan Scott: A Big Jar of Pickle</ulink>
+      <title>
+        <ulink url="http://python4kids.wordpress.com/2011/02/24/a-big-jar-of-pickles/">python4kids/Brandan Scott: A Big Jar of Pickle</ulink>
       </title>
       <para>In the last tutorial we learned how to pickle our objects.  Pickling is a way of storing the object (on the computer’s file system) so that it can be used later. 
         This means that if we want to re use an object we can simply save it and load it when we need it, rather than re-creating it each time we want to use it.  This is very 
@@ -78,167 +91,15 @@
       <para>Now we need to settle on a way to structure our data.  We saw in our earlier tutorial that each question was a list, and that the list itself had a certain 
         structure.  We also need to think about how a number of questions will be stored.  We will use a list to do that as well!  In this case we will have a list of questions. 
         Each of the elements in the list will itself be a list. Let’s build one. First we make an empty list to store all the questions: (...)</para>
-      <!-- ($ Id: 1.3.11 sm $) -->
-    </blockquote>
+<!-- ($ Id: 1.3.11 sm $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/02/19/atiamd-fglrx-catalyst-for-opensuse/"
-          >Bruno Friedmann: ATI/AMD fglrx 8.821 Catalyst 11.2 available for openSUSE 11.2, 11.3,
-          11.4</ulink>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-310-2/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): Samba roles</ulink>
       </title>
-      <note>
-        <para><emphasis role="bold">This Article is licensed under the <ulink
-              url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation
-            License.</ulink></emphasis></para>
-      </note>
-      <para>"<emphasis role="bold"><emphasis role="underline">Preambule : free
-          software</emphasis></emphasis>
-      </para>
-      <para><emphasis role="bold"><emphasis role="italic">Warning</emphasis>
-        </emphasis></para>
-      <para>I would notice everybody which will install these software : you will install
-        proprietary softwares on your computer. Nobody will be able to debug them, nor help you to
-        resolve what can be happen. That must be said !</para>
-      <para><emphasis role="bold">The free future </emphasis></para>
-      <para>The real future is already in place : it’s called radeon (or free-radeon), it’s fully
-        integrated in kernel &amp; xorg. Actually ( for openSUSE 11.4, or openSUSE 11.3 with <ulink
-          url="http://download.opensuse.org/repositories/Kernel:/stable/openSUSE_11.3/"
-          >kernel-stable</ulink> + <ulink
-          url="http://download.opensuse.org/repositories/X11:/XOrg/openSUSE_11.3/">X11 obs
-          repo</ulink> ). Support for many chipset is in real progress even for the 6xxx series.
-        Give it a try before using the proprietary software, report any bugs you find with it. Only
-        your contributions can help and will make a real differences. Thanks for doing that !</para>
-      <para><emphasis role="bold">Unofficial but working repository </emphasis></para>
-      <para>I offer for those of you that for any reasons can’t use successfully the free-radeon
-        drivers a repository where you will find the latest fglrx/catalyst drivers following the
-        packaging policy made avalaible by AMD. Thanks to Sebastian Siebert ( check his blog ) to
-        work in coordination with ati/amd and follow the catalyst packaging. His work allow us to
-        have that driver available for openSUSE.</para>
-      <para><emphasis role="bold"><emphasis role="italic">The quick how-to</emphasis>
-        </emphasis></para>
-      <para><emphasis role="bold"><emphasis role="underline">Adding the
-          repository</emphasis></emphasis>
-      </para>
-      <para/>
-      <para><emphasis role="bold">For openSUSE
-      11.4</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" \\
-        http://linux.ioda.net/mirror/ati/openSUSE_11.4/ "ATI/AMD FGLRX"
-</screen></para>
-      <para><emphasis role="bold">For openSUSE
-      11.3</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" \\
-        http://linux.ioda.net/mirror/ati/openSUSE_11.3/ "ATI/AMD FGLRX"</screen></para>
-      <para><emphasis role="bold">For openSUSE
-      11.2</emphasis><screen>zypper ar -c -f -n "ATI/AMD fglrx non-official" \\
-        http://linux.ioda.net/mirror/ati/openSUSE_11.2/ "ATI/AMD FGLRX"
-</screen></para>
-      <para><emphasis role="bold"><emphasis role="underline">Installing the
-          driver</emphasis></emphasis></para>
-      <para><emphasis role="bold">Nota previous version</emphasis></para>
-      <para>Due to change in ati/amd way of life, it’s recommanded to completely remove any version
-        of fglrx previously installed with a zypper rm </para>
-      <para>I can only recommand to also (as root)
-        <screen># Remove old conf &amp; stuff
-rm -fr /etc/ati
-# Remove any old fglrx inside kernel modules
-find /lib/modules -type f -iname "flgrx.ko" -exec rm -fv {} \;</screen></para>
-      <para><emphasis role="bold">New installation</emphasis>
-      </para>
-      <para>Once the repo has been added, you will certainly have to reboot to get ride off free
-        radeon module. At boot on the grub line
-        add<screen>nomodeset blacklist=radeon 3</screen></para>
-      <para>Don’t panic you will be land to a console, open it with root account to install fglrx.
-        Search the software you want for example under openSUSE 11.4
-        <screen>zypper se -s fglrx
-Loading repository data...
-Reading installed packages...
-
-S | Name                  | Type    | Version | Arch   | Repository
---+-----------------------+---------+---------+--------+-----------
-  | fglrx64_7_6_0_SUSE114 | package | 8.812-1 | x86_64 | ATI/AMD fglrx non-official
-i | fglrx64_xpic_SUSE114  | package | 8.821-1 | x86_64 | ATI/AMD fglrx non-official
-  | fglrx_7_6_0_SUSE114   | package | 8.812-1 | i586   | ATI/AMD fglrx non-official
-  | fglrx_xpic_SUSE114    | package | 8.821-1 | i586   | ATI/AMD fglrx non-official</screen></para>
-      <para>Starting with 8.821 (Catalyst 11.2) ATI use now xpic (full explanation) So use that
-        one.</para>
-      <para><emphasis role="bold">For a 64bits
-        version</emphasis><screen>zypper in fglrx64_xpic_SUSE114</screen></para>
-      <para><emphasis role="bold">For a 32bits
-        version</emphasis><screen>zypper in fglrx_xpic_SUSE114</screen></para>
-      <para>During the installation process, all the dependencies will be added, which mostly are
-        needed to build the kernel modules. Expect around 200MB to dowload. </para>
-      <para>Then the installer will build the module for your installed kernel. And if there’s a
-        kernel update, the script will automagically detect that, and will rebuild the module for
-        the new kernel installed. (So if you find that your workstation is slow on reboot just press
-        the esc key to see the details … )</para>
-      <para><emphasis role="bold">Preparing xorg to use fglrx </emphasis></para>
-      <para>Once the module is build and installed, you should have a file fglrx.conf or
-        50-fglrx.conf in
-        /etc/modprobe.d<screen>cat /etc/modprobe.d/50-fglrx.conf
-blacklist radeon</screen></para>
-      <para>Next ati recommend to use ati –initial-config but that break the auto-detect stack of
-        xorg. So I recommend changing one line in file /etc/X11/xorg.conf.d/50-device.conf </para>
-      <para>just change driver line to driver “fglrx” </para>
-      <para>All the rest of the setup (double screen etc) will be made lately with the ati catalyst
-        control center (command is amdcccle). </para>
-      <para>For those of you which want to have an xorg.conf file just have a look at aticonfig
-        –help command.</para>
-      <para><emphasis role="bold">Start X</emphasis>
-      </para>
-      <para>If you are inside the console we start to use before just run “init 5″ to start xorg,
-        and normally you will find your normal xorg login screen (kdm, gdm, ldm, xdm). Hit
-        ctrl+alt+f1 to return to the console and type exit or logout or ctrl+d to close it. then
-        ctrl+alt+f7 to return to the xorg session.</para>
-      <para><emphasis role="bold">Updates </emphasis></para>
-      <para>ati/amd catalyst are release on a month basis, but this vary from 3 weeks to 8 weeks.<itemizedlist>
-          <listitem>
-            <para> Catalyst 11.2 – fglx 8.821 : 14 February 2011 </para>
-          </listitem>
-        </itemizedlist></para>
-      <para><emphasis role="bold">References </emphasis><itemizedlist>
-          <listitem>
-            <para><ulink
-                url="http://www.sebastian-siebert.de/2011/02/15/opensuse-11-3-proprietaeren-grafik-treiber-ati-catalyst-11-2-als-rpm-installieren/"
-                >Sebastian Siebert blog ( German )</ulink> with nice howto and problem
-              resolution.</para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://lizards.opensuse.org/?p=4673">My previous post on the
-                subject</ulink> "</para>
-          </listitem>
-        </itemizedlist></para>
-      <!-- ($ ld: 20.2.11 sm $) -->
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://ironman.darthgibus.net/?p=113">Fred Blaise: Alfresco 3.4d ldap
-          sync</ulink></title>
-      <para>While upgrading from 3.3g to 3.4d, my ldap sync wouldn’t work anymore. </para>
-      <para>I had to add in my ldap-ad-authentication.properties the following
-        line:<screen>ldap.synchronization.java.naming.security.authentication=simple</screen></para>
-      <para>While there is a similar line for authentication, it doesn’t do it for sync’ing
-        up.<screen>ldap.authentication.java.naming.security.authentication=simple</screen></para>
-      <!--($ ld: 22.2.11 sm $)-->
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink
-          url="http://www.howtoforge.com/how-to-install-railo-3.2-under-opensuse-11.3-running-apache2-tomcat6-virtual-host"
-          >HowtoForge/wintel2006: How To Install Railo 3.2 Under OpenSUSE 11.3 Running Apache2
-          Tomcat 6 Virtual Host</ulink>
-      </title>
-      <para>&quot;Railo Server 3.2 Final. (3.2.1.000) has been released. As you know Railo is an
-        Open Source ColdFusion Markup Language (CFML) engine. It is free and pretty fast. </para>
-      <para>For the new 3.2 version railo stop running resin, but tomcat as the default web server. </para>
-      <para>Instead of compile apache2 with tomcat 6 by yourself, the railo team had created the
-        default installation script which help you setup railo on tomcat6 and using apache2 to
-        connect to tomcat via mod_jk. Instead of using tomcat default webapps directory, we will
-        modify the server.xml file and DocumentRoot will point back to default apache DocumentRoot
-        directory defined under the virtual host configuration file. </para>
-      <para>The server is running OpenSUSE 11.3 (i386) on vmware player, and we need apache2 and
-        Java installed before you run tomcat/railo service. (...)&quot;</para>
-      <!-- ($ Id: 26.2.11 sat $)-->
-    </blockquote>
+      <para>&quot;Samba isn&apos;t a single program; rather, it&apos;s a series of interrelated servers and utilities, each of which has its own specific purpose. Understanding the differences between these servers and utilities will help you manage your Samba system. Furthermore, Samba implements a number of different security models, which you must understand to properly integrate Samba into an existing network or to set up a new network with Samba servers at its core. (...)&quot;</para>
+<!-- ($ Id: 5.3.11 sat $) -->    </blockquote>
   </sect2>
 </sect1>
