@@ -24,69 +24,55 @@
     * news.opensuse.org
     * carefully selected other sources-->
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/02/26/opensuse-11-4-rc2-steps-out/">openSUSE 11.4 RC2 Steps Out</ulink>
+    <title><ulink url="http://news.opensuse.org/2011/03/07/opensuse-11-4-will-be-first-to-roll-out-with-libreoffice/">openSUSE 11.4 Will Be First To Roll Out With LibreOffice</ulink>
     </title>
-    <note>
-      <para><emphasis role="bold">This Article is Licensed under the <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free
-        Documentation License version 1.2.</ulink></emphasis></para>
+    <note><para><emphasis role="bold">This Article is Licensed under the <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free Documentation License version 1.2.</ulink></emphasis></para>
     </note>
-    <para>With red carpets rolling out in Hollywood, you’d expect some applause for the openSUSE 11.4 RC2 release, which has now gone live ahead of 11.4 proper. But with much of 
-      the hard work going in behind the scenes, this superb release candidate isn’t getting the fanfare it deserves. The recent Bug Squashing day saw 132 bugs updated so few 
-      serious issues remain. Improvements in the ‘backend’ work includes some tweaks to Wifi supplicant and drivers, and a host of small fixes across the distribution which enhance 
-      stability and performance. The addition of MediaCurl backend with zsync support to libzypp iut is already being noticed. openSUSE user and forum member Pier Andreit comments 
-      that “YaST install/remove software is a thunderbolt!”</para>
-    <para>The transition from OpenOffice.org to LibreOffice still has a few minor documentation blips but more importantly, users should be cautious. The raft of new functionality 
-      has created a few specific issues, such as loss of data in tables. Though not quite ready for the production environment, user feedback is critical for smoothing performance 
-      and reliability. </para>
-    <para>KDE SC 4.6 is also running beautifully though 32 BIT nVidia users may have a bug.</para>
-    <para>If you’d like to help add the final touches of celebrity glam prior to the ‘big event’ of 11.4 release, <ulink 
-      url="http://download.opensuse.org/distribution/11.4-RC2/iso/">download it here</ulink> and check out the <ulink 
-        url="http://en.opensuse.org/openSUSE:Most_annoying_bugs_11.4_dev#openSUSE_11.4_RC2">most annoying bugs</ulink>.</para>    
-    <!-- ($ ld: 27.2.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/03/02/build-service-team-releases-new-versions-fixing-security-problems/">Build Service team releases new versions fixing security problems</ulink></title>
-    <note>
-      <para><emphasis role="bold">This Article is Licensed under the <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free
-        Documentation License version 1.2.</ulink></emphasis></para>
-    </note>
-      <para>The openSUSE Build Service team has released verison 2.0.8 and 2.1.6. of OBS. Both versions are fixing a critical security leak which can be miss-used to modify 
-        projects or packages without having write permission there. We highly recommend to update your instance of OBS as soon as possible to these new versions. Version 1.7 is 
-        not affected by this issue.</para>
-      <para><emphasis role="italic">Thanks to Marcus Hüwe for reporting this issue.</emphasis></para>
-    <para><emphasis role="bold">Details on OBS 2.1.6</emphasis></para>
-    <para>OBS 2.1.6 is also fixing security issues in LDAP mode and a possible crossite scripting attack vector on the login screen (full XSS protection in all webui interfaces 
-      will be part of OBS 2.3). <emphasis role="italic">Thanks to Dean Pierce from Intel for discussing these issues and possible solutions with us.</emphasis></para>
-    <para>Version 2.1.6 can be downloaded as usual from gitorious, openSUSE:Tools (or openSUSE:Tool:2.0 for version 2.0.8) project repositories or as <ulink 
-      url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">appliance for testing and production systems</ulink>.</para>
-    <para>OBS 2.1.6 contains several further changes, please read the release notes below.</para>
-    <para><emphasis role="bold">openSUSE Build Service 2.1.6</emphasis></para>
-    <para>Updaters from any OBS 2.1 release can just upgrade the packages and restart all services. Updaters from former releases should read the README.UPDATERS file.</para>
-    <para><emphasis role="bold">Security fixes</emphasis></para>
-    <itemizedlist>
-      <listitem><para>api: fix security leak which allowed to modify packages or projects without write access (CVE-2011-0466)</para></listitem>
-      <listitem><para>api: change password in LDAP mode was possible for foreign user (bnc #648982)</para></listitem>
-      <listitem><para>webui: Fix possible XSS attack vectors in login page (bnc #669909, CVE-2011-0462)</para></listitem>      
-    </itemizedlist>
-    <para><emphasis role="bold">Feature backports</emphasis></para>
-    <para>None</para>
-    <para><emphasis role="bold">Changes</emphasis></para>
-    <itemizedlist>
-      <listitem><para>openSUSE 11.4 and Debian 6.0 got added as default target.</para></listitem>
-      <listitem><para>adding reviewers or changing the review state is only allowed for requests which are in review state now.</para></listitem>
-    </itemizedlist>
-    <para><emphasis role="bold">Bugfixes</emphasis></para>
-    <itemizedlist>
-      <listitem><para>webui: Fix link to moved OBS web forums</para></listitem>
-      <listitem><para>webui: Fix adding of repositories from remote projects in advanced repository interface</para></listitem>
-      <listitem><para>api and webui: Do not use (and fail with) rails 3 environment</para></listitem>
-      <listitem><para>api: allow admins to raise “sourceaccess” permissions on existing projects or packages</para></listitem>
-      <listitem><para>api: do not allow to create packages with invalid chars via branch command</para></listitem>
-      <listitem><para>api: do not fail on “mbranch” when a package gets found directly and indirectly via project link</para></listitem>
-      <listitem><para>backend: Allow browsing of repositories of remote projects (fixes advanced webui view for adding repos)</para></listitem>
-    </itemizedlist>
-    <!-- ($ ld: 3.3.11 sm $) -->
+    <para>openSUSE 11.4 is set to release on 10th March 2010. A highlight among many exciting features is the debut of <ulink url="bold">LibreOffice</ulink>, successor project of the popular cross-platform desktop office suite by OpenOffice.org.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/LibreOffice-splash-150x150.jpg"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">LibreOffice features</emphasis></para>
+    <para>LibreOffice comes with many improvements over its predecessor, OpenOffice.Org-3.2.1. The new Search Bar, Title Page, and Print Dialogs are impressive additions. Petr Mladek, long standing LibreOffice and openSUSE contributor, comments:</para>
+    <para><quote>I think that users will appreciate the new hierarchical axis labels for charts, RTF export, easier slide layout handling, and all the other features we were able to add thanks to our more open development model.</quote></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-calc-on-xfce-300x225.jpg" align="right"/>
+      </imageobject>      
+    </mediaobject>
+    <para>LibreOffice provides some unique benefits over other Office solutions beyond simply being free, like Online Help, as well as a host of usability improvements. Different Formula Syntaxes are implemented, including Calc A1, Excel A1 and Excel R1C1. Inline form editing is a lot easier to use. Another useful feature is the ability to use a split view on a sheet, while in multi-lingual documents we now have the ability to change language for a particular sentence. Presentations with LibreOffice will sparkle with the new 3D slide transitions in Impress.</para>
+    <para><emphasis role="bold">LibreOffice in openSUSE</emphasis></para>
+    <para>Mladek notes several advantages of LibreOffice in openSUSE; one of them being a huge group of LibreOffice Developers inside openSUSE benefiting from the suite’s faster development model and no need of any copyright assignment. Another advantage he mentions is the use of the <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>, which helps to keep the packages up-to-date and compatible for older distributions. And finally, openSUSE is the only distribution using the split build (separate packages for each component) which makes it easier to hack on LibreOffice, providing a quicker development path for bug fixes and incremental feature improvements.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/02/libreoffice-300x187.png" align="left"/>
+      </imageobject>      
+    </mediaobject>
+    <para>Developers and packagers at both LibreOffice and openSUSE have taken special care that the migration and update process from OpenOffice.org to LibreOffice moves on smoothly. Backward compatibility and improved import &amp; export filters were set as top priorities.</para>
+    <para>LibreOffice receives major contributions from Novell and SUSE hackers, as <ulink url="http://cedric.bosdonnat.free.fr/wordpress/?p=758">a recent blog from Cedric Bosdonnat showed</ulink>. Bosdonnat also notices the growth of LibreOffice:</para>
+    <para><quote>LibreOffice now counts 133 new hackers and 55 localizers (since the fork).</quote></para>
+    <para>Michael Meeks, another prominent LibreOffice contributor and openSUSE developer, adds:</para>
+    <para><quote>I’m really excited to have LibreOffice in openSUSE 11.4, and the converse, to have so many great openSUSE developers involved with LibreOffice both in testing and developing. It is great to work together with the wider community to get the best Free Software Office experience possible into users’ hands.</quote></para>
+    <para><quote>openSUSE 11.4 will be the first stable distribution to ship with LibreOffice, a happy accident of timing. If you happen to be an enterprise user of SLED, don’t worry – there will also be updates to LibreOffice across our portfolio of supported products.</quote></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-writer-on-lxde-300x225.jpg" align="right"/>        
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">Foundations</emphasis></para>
+    <para>Meeks, who was closely involved with the decision to fork LibreOffice away from the control of Oracle and create the <ulink url="http://www.documentfoundation.org/">Document Foundation</ulink>, sees similarities between the Document Foundation and the work going on to set up an openSUSE Foundation:</para>
+    <para><quote>in some ways, openSUSE’s trajectory is close to that of LibreOffice’s with the creation of a truly independent foundation. Surely openSUSE is under the stewardship of a company which is very much open to contributions, unlike OpenOffice.org was, but for sustained growth and a secure future a Foundation is really important.</quote></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-start-300x225.jpg" align="right"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">Coming soon!</emphasis></para>
+    <para>Watch out for LibreOffice in the upcoming scheduled release of openSUSE 11.4 on 10th March, 2011 which besides being the first major distribution to ship LibreOffice in a stable release promises many other new and updated applications, features and extensions, as well as numerous improvements to and stability and performance.</para>
+    <para>A recent <ulink url="http://sysbytes.wordpress.com/2011/03/07/an-interview-with-petr-mladek-libre-office-developer/">interview with openSUSE LibreOffice developer Petr Mladek</ulink> gives additional information.</para>
+    <para><emphasis role="italic">Article contributed by Manu Gupta</emphasis></para>
+    <!-- ($ ld: 7.3.11 sm $) -->
   </blockquote>
 </sect1>

@@ -21,34 +21,20 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title>
-        <ulink url="http://www.techrepublic.com/blog/opensource/how-to-use-calibre-to-access-your-ebook-collection-online/2275">TechRepublic/Jack Wallen: How to use Calibre to access your ebook collection online</ulink>
+      <title><ulink url="http://blog.martin-graesslin.com/blog/2011/03/proactive-spam-fighting-with-akonadi/">Martin Grässlin: Proactive Spam Fighting with Akonadi</ulink>
       </title>
-      <para><emphasis role="bold">Takeaway</emphasis>: Calibre is one of the most powerful ebook managers available. But did you know that Calibre has a built in server that 
-      allows you to access your library from a web browser? In this how-to, Jack Wallen shows you how to set up Calibre to serve up your book library.</para>
-      <para>I have been in near-saturation mode with ebooks lately, due to the publishing of my own works of fiction (find them on <ulink url="http://amzn.to/hmXIQN">Amazon</ulink>, 
-        <ulink url="http://bit.ly/e8coZL">Barnes &amp; Noble</ulink>, and <ulink url="http://bit.ly/e553VF">Smashwords</ulink>). For many indie writers/publishers and readers of 
-        ebooks the challenge of managing a vast collection of works can be a bit overwhelming (thanks to the ereaders’ insufficient built-in book management tools). Thankfully there 
-        are tools available for the PC to help you manage those collections.</para>
-      <para>Naturally Linux is not left out of this mix. The <ulink url="http://calibre-ebook.com/">Calibre</ulink> ebook manager is one of the best tools of the trade I have 
-        found for managing ebooks. And for administrators looking for ways to convert and add books, PDFs, howtos, etc. to an ereader for portable reading, Calibre is exactly 
-        the tool you need. Let’s take a look at this tool and how you can benefit from using it. (...)</para>
-      <para><emphasis role="bold">Copyright</emphasis>: <link linkend="extcopyright">1</link></para>
-      <tip>
-        <para>The Calibre Package for openSUSE can be downloaded from the <ulink url="http://download.opensuse.org/repositories/Documentation:/Tools/">Documentation:Tools Repository</ulink>. 
-        Because the Developer uses brand new Libs, it is just available for &gt;= 11.4</para>
-      </tip>
-<!-- ($ Id: 01.3.11 sm $)-->    </blockquote>
+      <para>One year ago I finished my Master Thesis and I just realized that I never really blogged about it. I had the chance to build my implementation during the Thesis upon the Akonadi framework, which is the reason why I want to share what I worked about. For all who might be more interested in my Thesis, a publisher was so kind to <ulink url="http://amzn.to/evh4lj">publish</ulink> it.</para>     
+      <para>The title of my Thesis was "<emphasis role="bold">Implementation of Proactive Spam Fighting Techniques</emphasis>" and the Thesis covered the implementation of two orthogonal techniques. Both techniques shared the idea to eliminate Spam before it hits the user’s inbox. Current Spam fighting techniques like for example SpamAssassin are reactive. <ulink url="http://spamassassin.apache.org/">SpamAssassin</ulink> uses a rule based approach and a Bayesian filter. Rule based approaches cannot identify Spam messages reliable and have the danger to incorrectly mark ham messages if like last year <ulink url="https://issues.apache.org/SpamAssassin/show_bug.cgi?id=6269">the date grossly in the future becomes present</ulink>. Bayesian filtering requires to collect a rather large amount of mail messages before messages can be filtered. This illustrates that reactive Spam fighting is no real solution.</para>
+      <para>Both implementations required to interact with the user’s inbox and in one case it was required to automatically send out mail on mail reception. The original idea of my tutors at the <ulink url="http://pi1.informatik.uni-mannheim.de/">Laboratory for Dependable Distributed Systems</ulink> was to develop either a plugin for Mozilla Thunderbird or Microsoft Outlook. With my background of KDE development I had to think of one framework which handles this much better: <ulink url="http://community.kde.org/KDE_PIM/Akonadi">Akonadi</ulink>. Thanks to Akonadi I was able to implement the solution in a client and platform independent way. Instead of just supporting Mozilla Thunderbird the solution works on all systems supporting Akonadi and no specific mail client is required. It can even be used by users who just use a web mail client. (...)</para>
+      <!-- ($ Id: 07.3.11 sm $)-->        
+    </blockquote>
     <blockquote>
-      <title>
-        <ulink url="http://artax.karlin.mff.cuni.cz/~kendy/blog/archives/monthly/2011-03.html">Jan Holesovsky: LibreOffice Findbar improvements</ulink>
+      <title><ulink url="http://www.mohamedmalik.com/?p=897">Mohammed Malik: Adding Borders To Use Photos Using digiKam..</ulink>
       </title>
-      <para>Yesterday I played a bit with the Findbar in LibreOffice, and changed it to look and behave more like in the applications like Firefox, or Evolution:</para>
-      <para>It is now hidden by default, and opens when you press Ctrl-f (for the old <emphasis role="bold">Search and Replace</emphasis> dialog I changed the keybinding to 
-        Ctrl-Alt-f), or when you choose <emphasis role="bold">Find</emphasis> in the menu. It opens at the bottom of the document, and you can close it again (and return back to 
-        the document) by pressing Escape. I also made the text entry wider so that more characters fits in there. </para>
-      <para>Enjoy! :-) - will be available in LibreOffice 3.4.</para>
-<!-- ($ Id: 4.3.11 sm $)-->    </blockquote>
+      <para>Many people add borders to there images, since they make the image look better and stands out unique and digiKam makes this very easy and simple!</para>
+      <para>There are two ways to apply image borders in digiKam (...)</para>
+      <!-- ($ Id: 7.3.11 sm $)-->    
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://scribblesandsnaps.wordpress.com/2011/02/22/work-with-photo-metadata-in-digikam/">Scribbles and Snaps/Dmitri Popov: Photography and Open Source Work with Photo Metadata in digiKam</ulink>

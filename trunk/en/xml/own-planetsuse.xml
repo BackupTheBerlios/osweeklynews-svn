@@ -22,13 +22,10 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-five-scribus">OMG!
-        SUSE!/rtyler: Ten Days of openSUSE, Day Five: Scribus</ulink>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-five-scribus">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Five: Scribus</ulink>
     </title>
     <note>
-      <para><emphasis role="bold">This Article is licensed under the <ulink
-            url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons
-            Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
     </note>
     <para>On the fifth day of openSU-SE my true love gave to me, <ulink
         url="http://www.youtube.com/watch?v=BgSe_gzyM1c">fiiiiveeee goollldeeen
@@ -55,5 +52,58 @@
     <title><ulink url="http://oyranos-cms.blogspot.com/2011/03/gutenprint-talks-to-colour-management.html">Kai-Uwe Behrmann: Gutenprint talks to colour management systems</ulink></title>
     <para>The <ulink url="http://sourceforge.net/mailarchive/message.php?msg_id=27150124">Gutenprint project is going to tag its colour related print options</ulink> with the <ulink url="http://www.freedesktop.org/wiki/OpenIcc#PPDcolouring">ColorKeyWords PPD entry</ulink>. Thus Gutenprint follows a request to tag colour related options in native device API's. Marking colour related options as being colour related will help automatic profile selection depending on the calibration state in the deriver. So if Gutenprint was set to a increased brightness of 1.1 and the media size is A5, then the colour marked brightness setting will play a role in searching the correct ICC profile, while the non colour hinted paper size will not influence the ICC profile search. This concept works as well for SANE and Xorg. The colour related options can be serialised to a common file format, which still has to be defined. Then this calibration information can be embedded by profilers into ICC profiles. Such calibration data enriched ICC profiles can then even be used to setup the calibration state of a given device + driver combination and automatically ensure the correct usage, while minimising user errors. That approach is already deployed in Oyranos' Xorg module. For display profiles it is typical to embed the calibration data inside the ICC profiles for a long time. The embedded calibration data is used to setup the graphics card to work with the display. Gutenprint is the next candidate to get related to ICC colour management a similar calibration support. </para>
     <!-- ($ ld: 6.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-six-rock-out">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Six: Rock Out!</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>We're down to the final stretch! Only a few more days until openSUSE 11.4 is <emphasis role="bold">finally released</emphasis>! (March 10th)</para>
+    <para role="bold">We've talked about <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-two-libreoffice">LibreOffice</ulink> and <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-five-scribus">Scribus</ulink>, but now let's talk about something <emphasis role="italic">fun</emphasis> (not that spreadsheeting isn't fun..). <emphasis role="bold">Music</emphasis>.</para>
+    <para>An integral part to any modern desktop experience is great music and openSUSE tries to meet everybody's musical needs by shipping numerous players such as: Banshee, Amarok and Rhythmbox. What I consider the holy trinity of popular open source music apps.</para> 
+    <para><emphasis role="bold">Banshee</emphasis></para>
+    <para>If you're a lover of <ulink url="http://banshee.fm/">Banshee</ulink> then you may have read about some of the updates already in <ulink url="http://news.opensuse.org/2011/03/03/gnome-on-opensuse-11-4/">this post on GNOME in 11.4</ulink> over at <ulink url="http://news.opensuse.org/">news.opensuse.org</ulink>. The upcoming release of openSUSE (11.4) bundles Banshee 1.9.3 which is another stepping stone release to Banshee <emphasis role="bold">2.0</emphasis> which is due out in mid-Aoril.</para>
+    <para>Packed into Banshee 1.9.3 are a number of bug fixes and improvements for developers, but from a user's perspective you can expect to find this Banshee more stable and more integrated with a number of new devices such as the Nexus S and Xperia X10 mini pro.</para>
+    <para><emphasis role="bold">Amarok</emphasis></para>
+    <para>The openSUSE team decided to bundle <ulink url="http://amarok.kde.org/">Amarok</ulink> 2.4.0 for KDE users, and everybody else I suppose. This point-release from the Amarok crew, nicknamed "Slipstream", includes plenty of bug fixes, performances improvements, new features and support for new devices. The biggest feature addition that I've found in this release is <emphasis role="bold">transcoding</emphasis>! With Amarok in the new openSUSE 11.4, you can convert files from one format to another right there in Amarok!</para>
+    <para>"Slipstream" also includes faster music collection support and has brought with it some great improvements to tagging. It literally takes two clicks to tag music in the new Amarok.</para>
+    <para><emphasis role="bold">Rythmbox</emphasis></para>
+    <para>openSUSE 11.4 also bundles the popular GNOME media player <ulink url="http://projects.gnome.org/rhythmbox/">Rhythmbox</ulink>. Although I've written the name "Rhythmbox" out more times than I can count over the psat week, I'm stlil double-checking whether or not I've spelled it correctly. Anyways, Rhythmbox 0.13.3 will be available for 11.4 users and this release of <emphasis role="role">Rhythmbox</emphasis> is likely going to be the last "big" release of the music manager before GNOME 3.</para>
+    <para>Unfortunately the Rhythmbox folks don't make <ulink url="http://projects.gnome.org/rhythmbox/rhythmbox-0.13.3.changes">their changelogs</ulink> easily parseable, so the best I can mention is that this release includes plenty of bugfixes and ... other stuff. (<emphasis role="bold">update</emphasis>: Bertrand pointed out <ulink url="http://projects.gnome.org/rhythmbox/rhythmbox-0.13.3.news">this link</ulink> for Rhythmbox changes)</para>
+    <para>For months Banshee users on openSUSE and many other distributions have been sending 100% of the Amazon referral revenue to the GNOME Foundation whenever they purchased a song or album.</para>
+    <!-- ($ ld: 7.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/opensuse-banshee-and-root-all-evil">OMG! SUSE!/rtyler: openSUSE, Banshee and the root of all evil</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>You may or may have not been following some of the <ulink url="http://gburt.blogspot.com/2011/02/banshee-supporting-gnome-on-ubuntu.html">controversy surrounding Banshee on Ubuntu</ulink>, if you haven't I'll try to bring you up to speed as impartially as possible.</para>
+    <para>The next <emphasis role="bold">major</emphasis> release of Ubuntu, <ulink url="http://www.omgubuntu.co.uk/tag/natty/">Naggy Narwhal</ulink>, is bundling the popular music player <ulink url="http://www.banshee.fm/">Banshee</ulink>. Most openSUSE users are already familiar with the glory that is Banshee, so this is a good thing right? Not <emphasis role="italic">entirely</emphasis>.</para>
+    <para>Remember <ulink url="http://omgsuse.com/content/banshee-brings-amazon-store-linux">way back when</ulink>, when we talked about Banshee allowing you to purchase Amazon MP3s from within the app? One of the features that the Banshee team added was a Banshee-specific "referral code" that generates an additional source of revenue for the <ulink url="http://foundation.gnome.org/about/">GNOME Foundation</ulink>.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/os/sites/default/files/amazon_sidebar.jpeg"/>
+      </imageobject>      
+    </mediaobject>
+    <para>For months Banshee users on openSUSE and many other distributions have been sending 100% of the Amazon referral revenue to the GNOME Foundation whenever they purchased a song or album.</para>
+    <para>Canonical, the company behind Ubuntu, wants a cut of this revenue. Well, "cut" may not be the right word, perhaps "all" is more appropriate. Last I checked the "agreement" that Canonical made with the Banshee team was that Canonical was going to take 75% of referral revenue, and then pass 25% on to the GNOME Foundation.</para>
+    <para>That seems fair right? After all Canonical is a business that has built itself almost entirely on GNOME and the open source community right? They've gotta make money somehow! The plot has one more <emphasis role="bold">twist</emphasis> to offer!</para>
+    <para>You might recall me mentioning how awesome Banshee is (it really is a great app), well Banshee development has been largely funded by <emphasis role="bold">drumroll please</emphasis> <ulink url="http://www.novell.com/">Novell</ulink>, who also happens to sponsor a lot of GNOME, Mono, KDE and openSUSE development. In fact, until  <ulink url="http://twitter.com/abock">Aaron's</ulink> recent departure from Novell, two of Banshee's core contributors <emphasis role="bold">both</emphasis> worked on Banshee for Novell (the other being Gabriel).</para>
+    <para><emphasis role="bold">Recap</emphasis></para>
+    <itemizedlist>
+      <listitem><para>Novell funds development of a great open source music app</para></listitem>
+      <listitem><para>Said great music app generates some Amazon referral revenue which is sent straight to the GNOME Foundation</para></listitem>
+      <listitem><para>Ubuntu bundles great music app with upcoming release, but decides to take the majority of the revenue generated that would otherwise go to the GNOME Foundation</para></listitem>
+      <listitem><para>Hijinks ensue</para></listitem>
+    </itemizedlist>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/i_dunno_lolcat.jpg" align="right"/>
+      </imageobject>      
+    </mediaobject>
+    <para>In my opinion, Ubuntu is perfectly within their rights dictated by Banshee's license but that doesn't make their decision to do what they're doing any less "dickish." Canonical better tread very carefully with actions like this, for a number of open source contributors the "spirit" of open source is just as, if not more important than the open source licenses themselves.</para>
+    <para>What do you think? Much ado about nothing, or should we all grab pitchforks?</para>
+    <!-- ($ ld: 7.3.11 sm $) -->
   </blockquote>
 </sect1>
