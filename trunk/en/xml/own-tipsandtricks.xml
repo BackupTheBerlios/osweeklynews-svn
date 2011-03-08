@@ -48,36 +48,22 @@
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
-      <title>
-        <ulink url="http://bashshell.net/utilities/exercise-6-set-variables-in-scripts/">BashShell.net/Mike: Exercise #6: Set Variables in Scripts</ulink>
-      </title>
-      <para>When you need to set variables, you can do that in the BEGIN section of an awk script. Here the variable firstuser is set to 1000. The BEGIN section sets that 
-      variable and it is then used later in the script. (...)</para>
-      <para><emphasis role="bold">Copyright:</emphasis><link linkend="extcopyright">3</link></para>
-<!-- ($ Id: 01.3.11 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://bashshell.net/script-of-the-week/log-parser/">BashShell.net/Mike: LogParser</ulink>
-      </title>
-      <para>The idea behind a log parser is to create a loop that will check all of your required logs to return information about specific needs that you may have as an 
-        administrator. For example, with this script you may want to search a specific log for one or two text strings that are very important to the function of your 
-        system.(...)</para>
-      <para><emphasis role="bold">Copyright:</emphasis><link linkend="extcopyright">3</link></para>
-<!-- ($ Id: 01.3.11 sm $) -->    </blockquote>
+      <title><ulink url="http://tuxtweaks.com/2011/03/how-to-hide-secret-messages-in-images-with-linux">TuxTweaks: How To Hide Secret Messages In Images With Linux</ulink>        
+      </title>      
+      <para>In today's post I'm going to show how to embed a text message into an image file. This type of messaging is known as steganography. Steganography is the practice of hiding secrets in such a way that only the intended message recipient would know to look for your hidden message.</para>
+      <para>In this basic form of secret messaging we'll be adding text onto the end of a file. I'm going to use the following image of Tux for my example. (...)</para>
+      <!-- ($ Id: 08.3.11 sm $) -->   
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title>
-        <ulink url="http://python4kids.wordpress.com/2011/02/24/a-big-jar-of-pickles/">python4kids/Brandan Scott: A Big Jar of Pickle</ulink>
+      <title><ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/">python4kids/Brandan Scott: Time for Some Introspection</ulink>
       </title>
-      <para>In the last tutorial we learned how to pickle our objects.  Pickling is a way of storing the object (on the computer’s file system) so that it can be used later. 
-        This means that if we want to re use an object we can simply save it and load it when we need it, rather than re-creating it each time we want to use it.  This is very 
-        useful when our object is a list of questions for our trivia game.  We really only want to type the questions in once and then reload them later.</para>
-      <para>Now we need to settle on a way to structure our data.  We saw in our earlier tutorial that each question was a list, and that the list itself had a certain 
-        structure.  We also need to think about how a number of questions will be stored.  We will use a list to do that as well!  In this case we will have a list of questions. 
-        Each of the elements in the list will itself be a list. Let’s build one. First we make an empty list to store all the questions: (...)</para>
-<!-- ($ Id: 1.3.11 sm $) -->    </blockquote>
+      <para><quote><ulink url="http://www.ibras.dk/montypython/episode24.htm#6">…The illusion is complete; it is reality, the reality is illusion and the ambiguity is the only truth. But is the truth, as Hitchcock observes, in the box? No there isn’t room, the ambiguity has put on weight. The point is taken, the elk is dead, the beast stops at Swindon, Chabrol stops at nothing, I’m having treatment and La Fontaine can get knotted.</ulink></quote></para>
+      <para>Did you notice some errors in the previous tutorial? One was fatal.  The fact that no one commented on them indicates to me that no one is actually typing in the code – naughty naughty!  Type it in. It’s important. (...)</para>
+      <!-- ($ Id: 8.3.11 sm $) -->    
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
