@@ -113,26 +113,19 @@
       </title>
       <para>Recently it was brought to my attention that all the desktop Linux hoopla in the world doesn't mean squat without compelling applications to get the end user interested. To address this need, I’ve rounded up fifteen powerful Linux applications that reflect the best that Linux has to offer the desktop user, both in and out of the enterprise environment.</para>
       <para>This is not meant to diminish any excluded apps. Instead my goal is to showcase applications that I’ve found to be really powerful for the typical Linux user. (...)</para>
-      <!-- ($ ld: 8.3.11 smH $) -->    
+      <!-- ($ ld: 8.3.11 sm $) -->    
     </blockquote>
   </sect2>
-<!--
   <sect2>
     <title>Warning!</title>
     <blockquote>
-      <title>
-        <ulink url="http://www.net-security.org/secworld.php?id=10544">HELP NET SECURITY: USB
-          autorun attacks against Linux</ulink>
+      <title><ulink url="http://www.petur.eu/blog/?p=349">Petur.eu: Linux can be hacked with an USB device</ulink>
       </title>
-      <para>Many people think that Linux is immune to the type of Autorun attacks that have plagued
-        Windows systems with malware over the years. However, there have been many advances in the
-        usability of Linux as a desktop OS - including the addition of features that can allow
-        Autorun attacks.</para>
-      <para>This Shmoocon presentation by Jon Larimer from IBM X-Force starts off with a definition
-        of autorun vulnerabilities and some examples from Windows, then jumps straight into the
-        Linux side of things. (...)</para>
+      <para>A bug in the Caiaq USB driver, which could be used to execute arbitrary at the kernel level has been <ulink url="http://labs.mwrinfosecurity.com/files/Advisories/mwri_caiaq-usb-drivers-buffer-overflow_2011-03-07.pdf">reported by</ulink> Rafael Dominguez Vega of MRW InfoSecurity.</para>
+      <para>The device drivers are vulnerable to <ulink url="http://en.wikipedia.org/wiki/Buffer_overflow">buffer overflow</ulink> condition when an USB device with an unusually long name (over 80 characters) is connected to the machine. This is due to the use of strcpy() which length is not being tested, enabling the attacker to execute malicious code on the target machine. (...)</para>
+      <!-- ($ ld: 8.3.11 sm $) -->
     </blockquote>
-  </sect2> -->
+  </sect2>
   <sect2>
     <title>LOL</title>
     <blockquote>
