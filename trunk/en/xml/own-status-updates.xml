@@ -74,43 +74,11 @@ zypper in enlightenment</screen></para>
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title><ulink url="http://blog.susestudio.com/2011/02/public-opensuse-113-amis.html">SUSE
-          Studio/James Tan: Public openSUSE 11.3 AMIs</ulink>
+      <title><ulink url="http://blog.susestudio.com/2011/03/suse-gallery-becomes-more-open.html">SUSE Studio/James Mason: SUSE Studio: SUSE Gallery becomes more open</ulink>
       </title>
-      <note>
-        <para><emphasis role="bold">This Article is owned by Novell Inc. <ulink
-              url="http://www.novell.com/company/legal/"
-              >http://www.novell.com/company/legal/</ulink></emphasis></para>
+      <note><para><emphasis role="bold">This Article is owned by Novell Inc. <ulink url="http://www.novell.com/company/legal/">http://www.novell.com/company/legal/</ulink></emphasis></para>
       </note>
-      <para>
-        <informaltable frame="none">
-          <tgroup cols="2">
-            <colspec colname="c1" colnum="1"/>
-            <colspec colname="c2" colnum="2"/>
-            <tbody>
-              <row>
-                <entry>
-                  <mediaobject>
-                    <imageobject>                      
-                          <imagedata fileref="http://www.novell.com/company/logo/img/open_suse.jpg" width="40%"/>
-                        </imageobject>                                                              
-                  </mediaobject>
-                </entry>
-                <entry>
-                  <mediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://3.bp.blogspot.com/-mfSiCxhvqus/TWKTSSq5euI/AAAAAAAABkU/Xlx_CETG5dU/s320/Amazon%2BCloud%2BComputing%2BLogo.png" width="40%"/>
-                    </imageobject>                    
-                  </mediaobject>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </informaltable>
-      </para>
-      <para>openSUSE 11.4 will be officially released on March 10, and we have been working hard to
-        support it in SUSE Studio for a same day release. While you're waiting for that, check out
-        the openSUSE 11.4 public AMIs on Amazon EC2! (All built with SUSE Studio.) (...)</para>
+      <para>We've made a small iteration to the Studio UI, removing the option to prevent cloning of appliances you share on <ulink url="http://susegallery.com/">SUSE Gallery</ulink>. Out of respect for you, our users, if you have already shared an appliance and prevented cloning we'll leave it that way, but we feel that, in the spirit of openness, all of our users have the right to build on the work shared in the Gallery's community.  If you prefer not to share your work to that degree, SUSE Gallery may not be the appropriate venue. You may, as always, download your appliances and host them elsewhere, on your own terms, or simply keep them to yourself. The choice is yours.</para>
     </blockquote>
   </sect2>
   <sect2 role="teamreports">
@@ -373,6 +341,34 @@ zypper in enlightenment</screen></para>
         <para>With this, one more indicator was enabled (indicator-appmenu) and a few critical bugs have been solved. I’m expecting to talk with Ken later on to check out on the plans for the indicators, and unless something very critical pops out, GNOME2 will see the indicator stack as it is currently.</para>
         <para>It’s maybe now the best time to start looking deeply into GNOME3.</para>
         <!-- ($ ld: 8.3.11 sm $) -->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2011/03/10/gnome-shell-test-drive/"></ulink></title>
+        <note><para><emphasis role="bold">This Article is licensed under the GNU Free Documentation License.</emphasis></para>
+        </note>
+        <para>As many people are aware I’ve used Fedora for quite a long time… and with the release of the first ALPHA of Fedora 15 I got this tiny itch to check out GNOME3, namely, the gnome-shell.</para>
+        <para>I’ve have to say that the first impressions I had from GNOME Shell from Fedora 13 raised in me a high level of skepticism towards the new interface of GNOME Shell. The contents of this text are mainly influenced by my own view of the things… I don’t mean to be disruptive… but some things need to be said…</para>
+        <orderedlist>
+          <listitem><para>For starters… gnome-shell UI doesn’t seem to lag that much anymore… this is a very positive step, as lagging interfaces really kill my joy!</para></listitem>
+          <listitem><para>The sound applet – Looks interesting, very well copied from Ubuntu’s Sound Menu, at least in concept. Now this must be a slap in the face for some people I knew that threw a couple of harsh critics on Canonical. Well done to whoever made it that way… you have empowered Canonical’s design and now I will probably watch a full legion of Ubuntu fanboys bragging about how GNOME copied their Sound Menu. /* taking cover */</para></listitem>
+          <listitem><para>The configuration screen – Interesting stuff… But also Deja Vu… I think all the nice people migrating from KDE will find themselves at home with this new ‘control center’. The resemblances are quite awesome!</para></listitem>
+          <listitem><para>The user applet, which I don’t what to call it… Yet shows a lot of resemblances with Canonical’s Me Menu. At least some functions are there, but what I really find strange is the absence of ‘Restart’ button. I guess it’s now really an issue to tap ALT+F2 and issue a ‘shutdown now -frn’ or ‘init 6′ command, I just hope the system allows it.</para></listitem>
+          <listitem><para>The language applet – Interesting thing, but once again I have this Canonical Deja Vu feeling… Not again…</para></listitem>
+          <listitem><para>Moving the cursor to upper left triggers pretty much an effect which brings me a Deja Vu style from Compiz Wall Expo plugins. Awesome stuff!</para></listitem>
+          <listitem><para>The fonts are awesome, my heart is now broken… I don’t really need to install Ubuntu Fonts.</para></listitem>
+          <listitem><para>Icons seem to be monochrome! Awesome, but yet I have this deja vu feeling!</para></listitem>
+          <listitem><para>Artwork – My heart is broken (probably my cóccix as well, I’ve felt from the chair).</para></listitem>
+          <listitem><para>ALT+F2 – Awesome, this is really something I’m used too, I feel at home! I don’t really need menus at all once I know all the commands I need from the top of my head.</para></listitem>
+          <listitem><para>The number of clicks I need to perform to reach for example, Google Chrome. Yeah, ALT+F2 is way faster.</para></listitem>
+          <listitem><para>The default theme… to be replaced by Sonar (has anyone done the GTK3 port?, please someone do it fast, before I loose my motivation).</para></listitem>
+          <listitem><para>System Load up – awesome, nothing to state….</para></listitem>
+          <listitem><para>Calendar ‘applet’ – cool stuff, but evolution is crashing on me (keep in mind this is Alpha, so no real deal here, I’m sure it will be fixed);</para></listitem>
+        </orderedlist>
+        <para>Ok the list could be very long to make this shorter… Despite of all, I’m really waiting to see the final version of gnome-shell… I don’t find it much of innovation, as much of the features seem to be taken from other popular software. Everything worked out fine (except evolution) out of the box… I’m actually happy to see that some Fedora fundamentalists after throwing such a heavy load into Canonical, they ended up by handing over something that in much resembles to some software available from Canonical. I’m sure their hearts will be broken… many of this features were considered ‘kinky’ by them and oriented to Fan Boys… I wonder why they choosed to follow the same path, clearly aiming for those that they choosed to combat? Hmmz… I sense some hipocrisy here.</para>
+        <para>But I’ve gotta be honest, much of this ‘innovations’ actually gave me a rush to see the final product and to run it for a longer period. While many people from the Fedora circle violently attack gnome-shell, I can smell here potential to be a success, I only fear for the quality of the artwork here, which neither presents a nice visual desktop metaphor, neither even looks attractive to me… but once more, I believe it will be fully customizable. Another I missed was the normal system-* applets to configure several parts of the system… I’m happy that openSUSE will not forget YaST for GNOME3, thus I won’t feel defrauded when I run GNOME3 on openSUSE due to missing configuration applications.</para>
+        <para>My final veredict… this 9 months waiting for GNOME3 on openSUSE are going to be painful, because now that I’ve tasted the forbiden God’s honey, I want MORE! And for real… for everyone out there speaking bad about gnome-shell, please guys, be mindful of one thing… though this will require a bit of love for people to get used to, some of the features presented are actually nice. For those who love GNOME, but don’t really like the shell… Are you aware that you can manage your sessions on gnome-session? I’m not sure, but I think most of that functionality was actually developed in-house by Novell ;) and I’m sure it will be explored by a few, while I expect the vast majority of the Hordes will end up by loving this shell…</para>
+        <para>You shouldn’t really take me serious, but thanks for reading until the end… Now that I know that most people are already wanting to crucify me, I hope that you can take 1 week of your time to test the shell and prove I’m wrong. Maybe then, you will become converts, and I’m will for sure rest my head knowing it was worth to write this text.</para>
+        <!-- ($ ld: 10.3.11 sm $) -->
       </blockquote>
     </sect3>
     <!--

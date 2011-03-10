@@ -152,4 +152,29 @@
     <para>If you've never tried KDE before then openSUSE 11.4, which comes out Thursday March 10th, might just be the perfect time to give it a test drive and see what you think.</para>
     <!-- ($ ld: 9.3.11 sm $) -->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://log.or.cz/?p=129">Petr Baudis: ld.so Scopes</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>Recently, I have spent quite a bit of my time debugging an <ulink url="http://sourceware.org/bugzilla/show_bug.cgi?id=12561">evil ld.so bug</ulink> involving mis-handling of scopes and I have noticed precious lack of documentation of any internal ld.so data structures. So again, this comes for the benefit of the googlers, an intro that could have saved me another quite bit of time spent poking the code.</para>
+    <para>Of course, the dynamic linker features a wide variety of fun hacks. The most interesting mechanism is probably how lazy relocation is performed, but things like that have already been described plenty of times before. The question we shall look into is what data structures are used when a new symbol is to be searched for and linker has already taken control. There are two important internal concepts of ld.so related to this – the <emphasis role="bold">link_map</emphasis> and the <emphasis role="bold">scope</emphasis>. You can see the data structures in <ulink url="http://repo.or.cz/w/glibc.git/blob/HEAD:/include/link.h">include/link.h</ulink>.</para>
+    <para role="">The <emphasis role="bold">struct link_map</emphasis> describes a single loaded object; it may be ld.so, the main program, libc, or any other shared object loaded afterwards, during startup or later. It has many members, like its name, its mates in global linked list of all objects, or its state. But the most interesting attribute is its scope.</para>
+    <para>The scope describes which libraries should be searched for symbol lookups occuring within the scope owner. (By the way, given that lookup scope may differ by caller, implementing dlsym() is not that trivial.) It is further divided into <emphasis role="bold">scope elements (struct r_scope_elem)</emphasis> – a single scope element basically describes a single search list of libraries, and the scope (<emphasis role="bold">link_map.l_scope</emphasis> is the scope used for symbol lookup) is list of such scope elements.</para>
+    <para>To reiterate, a symbol lookup scope is a list of lists! Then, when looking up a symbol, the linker walks the lists in the order they are listed in the scope. But what really are the scope elements? There are two usual kinds:</para>
+    <itemizedlist>
+      <listitem><para>The “global scope” – all libraries (ahem, link_maps) that have been requested to be loaded by the main program (what ldd on the binary file of the main program would print out, plus dlopen()ed stuff).</para></listitem>
+      <listitem><para>The “local scope” – DT_NEEDED library dependencies of the current link_map (what ldd on the binary file of the library would print out, plus dlopen()ed stuff).</para></listitem>
+    </itemizedlist>
+    <para>The global scope is shared between all link_maps (in the current namespace), while the local scope is owned by a particular library. (FIXME) If a library has local scope element in its scope, it adds itself to that scope. E.g. assume libA dlopen()ing libB (with RTLD_LOCAL) – libB will get and own a fresh local scope element, and all libraries loaded by libB will inherit and add themselves to that local scope element.</para>
+    <para>There are then four common situations:</para>
+    <itemizedlist>
+      <listitem><para>The main program has only single scope element, the global scope. (At least I would expect so, I have not verified this.) </para></listitem>
+      <listitem><para>A library has been loaded with RTLD_LOCAL (the default case). Then its link_map has two scope elements, first comes the global scope, then comes the local scope. </para></listitem>
+      <listitem><para>A library has been loaded with RTLD_LOCAL | RTLD_DEEPBIND. In that case, the link_map has again the two scope elements, but the order is switched – the local scope comes first. </para></listitem>
+      <listitem><para>A library has been loaded with RTLD_GLOBAL. The link_map lists only the global scope. </para></listitem>
+    </itemizedlist>
+    <para>(Another concept is namespace; each has its own id and linked list of link_maps, but usually there are just two, one for the ld.so and another for the application. Unless you are calling dlmopen() explicitly or using the LD_AUDIT interface, you can usually assume there is only a single <emphasis role="bold">namespace</emphasis> that matters.)</para>
+    <para>Just for fun – the bug I have been hunting has been caused by ld.so not handling local scopes quite properly. Normally, when unloading the library opened with RTLD_LOCAL, all its local scope members would be unloaded too. However, such a member could be flagged as RTLD_NODELETE, and in that case, it would stay around. The problem is, the code did not expect that and would remove the local scope owner and the local scope would go along with it. This means the nodelete library dependencies would disappear from its local scope and the next time it got called (e.g. within its static destructor), trying to resolve such a symbol would cause a “unresolved symbol” fatal error.</para>
+    <!-- ($ ld: 10.3.11 sm $) -->
+  </blockquote>
 </sect1>
