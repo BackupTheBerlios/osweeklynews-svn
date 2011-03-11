@@ -24,100 +24,490 @@
     * news.opensuse.org
     * carefully selected other sources-->
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/03/07/opensuse-11-4-will-be-first-to-roll-out-with-libreoffice/">openSUSE 11.4 Will Be First To Roll Out With LibreOffice</ulink>
+    <title><ulink
+        url="http://news.opensuse.org/2011/03/07/opensuse-11-4-will-be-first-to-roll-out-with-libreoffice/"
+        >openSUSE 11.4 Will Be First To Roll Out With LibreOffice</ulink>
     </title>
-    <note><para><emphasis role="bold">This Article is Licensed under the <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free Documentation License version 1.2.</ulink></emphasis></para>
+    <note>
+      <para><emphasis role="bold">This Article is Licensed under the <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU Free Documentation
+            License version 1.2.</ulink></emphasis></para>
     </note>
-    <para>openSUSE 11.4 is set to release on 10th March 2010. A highlight among many exciting features is the debut of <ulink url="bold">LibreOffice</ulink>, successor project of the popular cross-platform desktop office suite by OpenOffice.org.</para>
+    <para>openSUSE 11.4 is set to release on 10th March 2010. A highlight among many exciting
+      features is the debut of <ulink url="bold">LibreOffice</ulink>, successor project of the
+      popular cross-platform desktop office suite by OpenOffice.org.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/LibreOffice-splash-150x150.jpg"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/LibreOffice-splash-150x150.jpg"
+        />
+      </imageobject>
     </mediaobject>
     <para><emphasis role="bold">LibreOffice features</emphasis></para>
-    <para>LibreOffice comes with many improvements over its predecessor, OpenOffice.Org-3.2.1. The new Search Bar, Title Page, and Print Dialogs are impressive additions. Petr Mladek, long standing LibreOffice and openSUSE contributor, comments:</para>
-    <para><quote>I think that users will appreciate the new hierarchical axis labels for charts, RTF export, easier slide layout handling, and all the other features we were able to add thanks to our more open development model.</quote></para>
+    <para>LibreOffice comes with many improvements over its predecessor, OpenOffice.Org-3.2.1. The
+      new Search Bar, Title Page, and Print Dialogs are impressive additions. Petr Mladek, long
+      standing LibreOffice and openSUSE contributor, comments:</para>
+    <para><quote>I think that users will appreciate the new hierarchical axis labels for charts, RTF
+        export, easier slide layout handling, and all the other features we were able to add thanks
+        to our more open development model.</quote></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-calc-on-xfce-300x225.jpg" align="right"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-calc-on-xfce-300x225.jpg"
+          align="right"/>
+      </imageobject>
     </mediaobject>
-    <para>LibreOffice provides some unique benefits over other Office solutions beyond simply being free, like Online Help, as well as a host of usability improvements. Different Formula Syntaxes are implemented, including Calc A1, Excel A1 and Excel R1C1. Inline form editing is a lot easier to use. Another useful feature is the ability to use a split view on a sheet, while in multi-lingual documents we now have the ability to change language for a particular sentence. Presentations with LibreOffice will sparkle with the new 3D slide transitions in Impress.</para>
+    <para>LibreOffice provides some unique benefits over other Office solutions beyond simply being
+      free, like Online Help, as well as a host of usability improvements. Different Formula
+      Syntaxes are implemented, including Calc A1, Excel A1 and Excel R1C1. Inline form editing is a
+      lot easier to use. Another useful feature is the ability to use a split view on a sheet, while
+      in multi-lingual documents we now have the ability to change language for a particular
+      sentence. Presentations with LibreOffice will sparkle with the new 3D slide transitions in
+      Impress.</para>
     <para><emphasis role="bold">LibreOffice in openSUSE</emphasis></para>
-    <para>Mladek notes several advantages of LibreOffice in openSUSE; one of them being a huge group of LibreOffice Developers inside openSUSE benefiting from the suite’s faster development model and no need of any copyright assignment. Another advantage he mentions is the use of the <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>, which helps to keep the packages up-to-date and compatible for older distributions. And finally, openSUSE is the only distribution using the split build (separate packages for each component) which makes it easier to hack on LibreOffice, providing a quicker development path for bug fixes and incremental feature improvements.</para>
+    <para>Mladek notes several advantages of LibreOffice in openSUSE; one of them being a huge group
+      of LibreOffice Developers inside openSUSE benefiting from the suite’s faster development model
+      and no need of any copyright assignment. Another advantage he mentions is the use of the
+        <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>, which helps to keep
+      the packages up-to-date and compatible for older distributions. And finally, openSUSE is the
+      only distribution using the split build (separate packages for each component) which makes it
+      easier to hack on LibreOffice, providing a quicker development path for bug fixes and
+      incremental feature improvements.</para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/02/libreoffice-300x187.png" align="left"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/02/libreoffice-300x187.png"
+          align="left"/>
+      </imageobject>
     </mediaobject>
-    <para>Developers and packagers at both LibreOffice and openSUSE have taken special care that the migration and update process from OpenOffice.org to LibreOffice moves on smoothly. Backward compatibility and improved import &amp; export filters were set as top priorities.</para>
-    <para>LibreOffice receives major contributions from Novell and SUSE hackers, as <ulink url="http://cedric.bosdonnat.free.fr/wordpress/?p=758">a recent blog from Cedric Bosdonnat showed</ulink>. Bosdonnat also notices the growth of LibreOffice:</para>
-    <para><quote>LibreOffice now counts 133 new hackers and 55 localizers (since the fork).</quote></para>
-    <para>Michael Meeks, another prominent LibreOffice contributor and openSUSE developer, adds:</para>
-    <para><quote>I’m really excited to have LibreOffice in openSUSE 11.4, and the converse, to have so many great openSUSE developers involved with LibreOffice both in testing and developing. It is great to work together with the wider community to get the best Free Software Office experience possible into users’ hands.</quote></para>
-    <para><quote>openSUSE 11.4 will be the first stable distribution to ship with LibreOffice, a happy accident of timing. If you happen to be an enterprise user of SLED, don’t worry – there will also be updates to LibreOffice across our portfolio of supported products.</quote></para>
+    <para>Developers and packagers at both LibreOffice and openSUSE have taken special care that the
+      migration and update process from OpenOffice.org to LibreOffice moves on smoothly. Backward
+      compatibility and improved import &amp; export filters were set as top priorities.</para>
+    <para>LibreOffice receives major contributions from Novell and SUSE hackers, as <ulink
+        url="http://cedric.bosdonnat.free.fr/wordpress/?p=758">a recent blog from Cedric Bosdonnat
+        showed</ulink>. Bosdonnat also notices the growth of LibreOffice:</para>
+    <para><quote>LibreOffice now counts 133 new hackers and 55 localizers (since the
+      fork).</quote></para>
+    <para>Michael Meeks, another prominent LibreOffice contributor and openSUSE developer,
+      adds:</para>
+    <para><quote>I’m really excited to have LibreOffice in openSUSE 11.4, and the converse, to have
+        so many great openSUSE developers involved with LibreOffice both in testing and developing.
+        It is great to work together with the wider community to get the best Free Software Office
+        experience possible into users’ hands.</quote></para>
+    <para><quote>openSUSE 11.4 will be the first stable distribution to ship with LibreOffice, a
+        happy accident of timing. If you happen to be an enterprise user of SLED, don’t worry –
+        there will also be updates to LibreOffice across our portfolio of supported
+        products.</quote></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-writer-on-lxde-300x225.jpg" align="right"/>        
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-writer-on-lxde-300x225.jpg"
+          align="right"/>
+      </imageobject>
     </mediaobject>
     <para><emphasis role="bold">Foundations</emphasis></para>
-    <para>Meeks, who was closely involved with the decision to fork LibreOffice away from the control of Oracle and create the <ulink url="http://www.documentfoundation.org/">Document Foundation</ulink>, sees similarities between the Document Foundation and the work going on to set up an openSUSE Foundation:</para>
-    <para><quote>in some ways, openSUSE’s trajectory is close to that of LibreOffice’s with the creation of a truly independent foundation. Surely openSUSE is under the stewardship of a company which is very much open to contributions, unlike OpenOffice.org was, but for sustained growth and a secure future a Foundation is really important.</quote></para>
+    <para>Meeks, who was closely involved with the decision to fork LibreOffice away from the
+      control of Oracle and create the <ulink url="http://www.documentfoundation.org/">Document
+        Foundation</ulink>, sees similarities between the Document Foundation and the work going on
+      to set up an openSUSE Foundation:</para>
+    <para><quote>in some ways, openSUSE’s trajectory is close to that of LibreOffice’s with the
+        creation of a truly independent foundation. Surely openSUSE is under the stewardship of a
+        company which is very much open to contributions, unlike OpenOffice.org was, but for
+        sustained growth and a secure future a Foundation is really important.</quote></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-start-300x225.jpg" align="right"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-screenshot-libreoffice-start-300x225.jpg"
+          align="right"/>
+      </imageobject>
     </mediaobject>
     <para><emphasis role="bold">Coming soon!</emphasis></para>
-    <para>Watch out for LibreOffice in the upcoming scheduled release of openSUSE 11.4 on 10th March, 2011 which besides being the first major distribution to ship LibreOffice in a stable release promises many other new and updated applications, features and extensions, as well as numerous improvements to and stability and performance.</para>
-    <para>A recent <ulink url="http://sysbytes.wordpress.com/2011/03/07/an-interview-with-petr-mladek-libre-office-developer/">interview with openSUSE LibreOffice developer Petr Mladek</ulink> gives additional information.</para>
+    <para>Watch out for LibreOffice in the upcoming scheduled release of openSUSE 11.4 on 10th
+      March, 2011 which besides being the first major distribution to ship LibreOffice in a stable
+      release promises many other new and updated applications, features and extensions, as well as
+      numerous improvements to and stability and performance.</para>
+    <para>A recent <ulink
+        url="http://sysbytes.wordpress.com/2011/03/07/an-interview-with-petr-mladek-libre-office-developer/"
+        >interview with openSUSE LibreOffice developer Petr Mladek</ulink> gives additional
+      information.</para>
     <para><emphasis role="italic">Article contributed by Manu Gupta</emphasis></para>
     <!-- ($ ld: 7.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/03/07/live-code-party/">Live.Code.Party.</ulink></title>
-    <note><para><emphasis role="bold">This Article is Licensed under the <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU FreeDocumentation License version 1.2.</ulink></emphasis></para>
+    <title><ulink url="http://news.opensuse.org/2011/03/07/live-code-party/"
+        >Live.Code.Party.</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is Licensed under the <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU FreeDocumentation
+            License version 1.2.</ulink></emphasis></para>
     </note>
-    <para><ulink url="http://en.opensuse.org/Portal:11.4">openSUSE 11.4</ulink> is going to be released this Thursday (<emphasis role="bold">March 10th, 2011</emphasis>) and there is no better way to enjoy the new release than having fun with your fellow openSUSE Lizards! That’s why community members all over the world prepare launch parties. Launch parties are events around the release of a new openSUSE version, what kind of event is up to the organizers. But it’s usually about sharing knowledge with each other, get new people to know the distribution, the tools and the project and most important about <emphasis role="italic">having a lot of fun</emphasis>, celebrating our success! Interested? Here are a couple of parties to check out!</para>
+    <para><ulink url="http://en.opensuse.org/Portal:11.4">openSUSE 11.4</ulink> is going to be
+      released this Thursday (<emphasis role="bold">March 10th, 2011</emphasis>) and there is no
+      better way to enjoy the new release than having fun with your fellow openSUSE Lizards! That’s
+      why community members all over the world prepare launch parties. Launch parties are events
+      around the release of a new openSUSE version, what kind of event is up to the organizers. But
+      it’s usually about sharing knowledge with each other, get new people to know the distribution,
+      the tools and the project and most important about <emphasis role="italic">having a lot of
+        fun</emphasis>, celebrating our success! Interested? Here are a couple of parties to check
+      out!</para>
     <para><emphasis role="bold">Europe/Nürnberg</emphasis></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://en.opensuse.org/images/5/51/Release_party_poster_nuernberg.png" align="right"/>
-      </imageobject>      
+        <imagedata fileref="http://en.opensuse.org/images/5/51/Release_party_poster_nuernberg.png"
+          align="right"/>
+      </imageobject>
     </mediaobject>
-    <para>In the town where openSUSE was born, that still hosts the SUSE headquarters and therefor a large portion of the community the launch event will happen on Wednesday March 16 (19:00) in the <ulink url="http://artefakt-nuernberg.de/">Bar/Cafe/Gallery Artefakt</ulink>. In the historic district of Nürnberg the folks plan to have a blast with an introduction to 11.4 by the <ulink url="http://en.opensuse.org/openSUSE:Boosters_team">Boosters</ulink>, live music from <ulink url="http://www.myspace.com/ukuleleinsanity">Ukulele Insanity</ulink> and lots of the openSUSE brew <ulink url="http://en.opensuse.org/openSUSE:Beer">Old Toad</ulink>. They expect a couple of high profile visitors like the man that pulled it off for the 6th time, Stephan Kulow (coolo), release manager of the distribution, Henne Vogelsang, long time openSUSE Board member and maybe even a couple of the SUSE founders!</para>
+    <para>In the town where openSUSE was born, that still hosts the SUSE headquarters and therefor a
+      large portion of the community the launch event will happen on Wednesday March 16 (19:00) in
+      the <ulink url="http://artefakt-nuernberg.de/">Bar/Cafe/Gallery Artefakt</ulink>. In the
+      historic district of Nürnberg the folks plan to have a blast with an introduction to 11.4 by
+      the <ulink url="http://en.opensuse.org/openSUSE:Boosters_team">Boosters</ulink>, live music
+      from <ulink url="http://www.myspace.com/ukuleleinsanity">Ukulele Insanity</ulink> and lots of
+      the openSUSE brew <ulink url="http://en.opensuse.org/openSUSE:Beer">Old Toad</ulink>. They
+      expect a couple of high profile visitors like the man that pulled it off for the 6th time,
+      Stephan Kulow (coolo), release manager of the distribution, Henne Vogelsang, long time
+      openSUSE Board member and maybe even a couple of the SUSE founders!</para>
     <para><emphasis role="bold">North America/San Diego</emphasis></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2010/10/the-party-150x150.jpg" align="left"/>        
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2010/10/the-party-150x150.jpg"
+          align="left"/>
+      </imageobject>
     </mediaobject>
-    <para>In the land of the free, Lizards will meet in San Diego, Americas finest city. The <ulink url="http://www.kernel-panic.org/">Kernel-Panic Linux User Group (KPLUG)</ulink> kindly hosts the openSUSE 11.4 launch party at their general meeting on March 10 (18:30) in the <ulink url="http://extension.ucsd.edu/">UC San Diego Extension</ulink> Mission Valley, the continuing education and public program branch of the University of California. Among the guests will be openSUSE news own Izabel Valverde and openSUSE Board, Marketing, GNOME and a11y team member Bryen Yunashko. Join them in celebrating and learn about the features of the new release!</para>
+    <para>In the land of the free, Lizards will meet in San Diego, Americas finest city. The <ulink
+        url="http://www.kernel-panic.org/">Kernel-Panic Linux User Group (KPLUG)</ulink> kindly
+      hosts the openSUSE 11.4 launch party at their general meeting on March 10 (18:30) in the
+        <ulink url="http://extension.ucsd.edu/">UC San Diego Extension</ulink> Mission Valley, the
+      continuing education and public program branch of the University of California. Among the
+      guests will be openSUSE news own Izabel Valverde and openSUSE Board, Marketing, GNOME and a11y
+      team member Bryen Yunashko. Join them in celebrating and learn about the features of the new
+      release!</para>
     <para><emphasis role="bold">South America/Guatemala</emphasis></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/frets_on_fire-300x240.jpg" align="right"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/frets_on_fire-300x240.jpg"
+          align="right"/>
+      </imageobject>
     </mediaobject>
-    <para>openSUSE Ambassadors Fernando Mejía, founder of the <ulink url="http://www.opensuse.org.gt/">openSUSE LUG Guatemala</ulink> and Axel Ruiz will host a party in the beautiful Centro Histórico, Ciudad de Guatemala. It’s going to take place in a cultural center called Bakabs (15:00). On the event they will introduce the crowd to the principles and philosophies of free software and teach them about new developments in and around the distribution. An install fest, lots of giveaways, like T-shirts and DVDs, and their legendary Frets on Fire tournament will round off the event. We heard there is usually also a nice after-party!</para>
+    <para>openSUSE Ambassadors Fernando Mejía, founder of the <ulink
+        url="http://www.opensuse.org.gt/">openSUSE LUG Guatemala</ulink> and Axel Ruiz will host a
+      party in the beautiful Centro Histórico, Ciudad de Guatemala. It’s going to take place in a
+      cultural center called Bakabs (15:00). On the event they will introduce the crowd to the
+      principles and philosophies of free software and teach them about new developments in and
+      around the distribution. An install fest, lots of giveaways, like T-shirts and DVDs, and their
+      legendary Frets on Fire tournament will round off the event. We heard there is usually also a
+      nice after-party!</para>
     <para><emphasis role="bold">Asia/Honk Kong</emphasis></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://farm4.static.flickr.com/3068/2824169709_859f70f4e2_m.jpg" align="left"/>
-      </imageobject>      
+        <imagedata fileref="http://farm4.static.flickr.com/3068/2824169709_859f70f4e2_m.jpg"
+          align="left"/>
+      </imageobject>
     </mediaobject>
-    <para>In Hong Kong, organizers are still looking for more participants for their launch party! They are contemplating to have lunch together in a <ulink url="http://jojofood.com/main.htm">restaurant</ulink> or to meet up at the seaside mid March. Dates and locations are still not set in stone and are worked out, like everything else, in a collaborative fashion. The launch party will not only be about food and drinks but also host an install fest where you can grab DVDs and community members will then help you with your installation if you bring your computer along.  All Lizards in Hong Kong that are interested to celebrate 11.4 together, please get in contact with the organizers on the <ulink url="http://en.opensuse.org/openSUSE:11.4_Launch_party_Hong_Kong">openSUSE Wiki</ulink>!</para>
+    <para>In Hong Kong, organizers are still looking for more participants for their launch party!
+      They are contemplating to have lunch together in a <ulink url="http://jojofood.com/main.htm"
+        >restaurant</ulink> or to meet up at the seaside mid March. Dates and locations are still
+      not set in stone and are worked out, like everything else, in a collaborative fashion. The
+      launch party will not only be about food and drinks but also host an install fest where you
+      can grab DVDs and community members will then help you with your installation if you bring
+      your computer along. All Lizards in Hong Kong that are interested to celebrate 11.4 together,
+      please get in contact with the organizers on the <ulink
+        url="http://en.opensuse.org/openSUSE:11.4_Launch_party_Hong_Kong">openSUSE
+      Wiki</ulink>!</para>
     <para><emphasis role="bold">More parties…</emphasis></para>
-    <para>For more launch party locations around the globe like Paris, Prague, Thessaloniki, San Salvador, Utrecht, Atlanta, Neuss, Colombo or Managua and for dates, addresses and a large scale map check the <ulink url="http://en.opensuse.org/openSUSE:Launch_parties">openSUSE Wiki launch party</ulink> page.</para>
+    <para>For more launch party locations around the globe like Paris, Prague, Thessaloniki, San
+      Salvador, Utrecht, Atlanta, Neuss, Colombo or Managua and for dates, addresses and a large
+      scale map check the <ulink url="http://en.opensuse.org/openSUSE:Launch_parties">openSUSE Wiki
+        launch party</ulink> page.</para>
     <para><emphasis role="bold">…or how about you run your own?</emphasis></para>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/party_map-e1299503361641-300x147.png" align="right"/>
-      </imageobject>      
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/party_map-e1299503361641-300x147.png"
+          align="right"/>
+      </imageobject>
     </mediaobject>
-    <para>By the way if you’re interested in hosting your own launch party, see our <ulink url="http://en.opensuse.org/openSUSE:Launch_party_HOWTO">Launch Party HOWTO</ulink> for starters. Also note that launch parties aren’t limited to the release date! Feel free to plan yours at any time convenient to you and your guests.  Just remember one thing:</para>
+    <para>By the way if you’re interested in hosting your own launch party, see our <ulink
+        url="http://en.opensuse.org/openSUSE:Launch_party_HOWTO">Launch Party HOWTO</ulink> for
+      starters. Also note that launch parties aren’t limited to the release date! Feel free to plan
+      yours at any time convenient to you and your guests. Just remember one thing:</para>
     <para><emphasis role="bold">Have a lot of fun…</emphasis></para>
     <!-- ($ ld: 8.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">openSUSE News: openSUSE
+        11.4 – A New Hallmark For The openSUSE Project</ulink></title>
+    <note>
+      <para><emphasis role="bold">This Article is Licensed under the <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GNU FreeDocumentation
+            License version 1.2.</ulink></emphasis></para>
+    </note>
+    <para>Dear openSUSE Community. Users. Contributors. Fans and friends. The time has come:
+        <emphasis role="bold">openSUSE 11.4 has arrived</emphasis>!. After 8 months of hard work,
+      you can <emphasis role="bold">learn what is new, download it and upgrade!</emphasis></para>
+    <para>We are proud to announce the launch of 11.4 in the openSUSE tradition of delivering the
+      latest technology while maintaining stability. The 11.4 release brings significant
+      improvements along with the latest in Free Software applications. Combined with the appearance
+      of new tools, projects and services around the release, 11.4 marks a showcase of growth and
+      vitality for the openSUSE Project! Read on for more details about this release…</para>
+    <para>
+      <ulink url="http://software.opensuse.org"><inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/get.jpg"/>
+          </imageobject>
+        </inlinemediaobject></ulink>
+    </para>
+    <para><emphasis role="bold">Base System</emphasis></para>
+    <para>openSUSE always concentrates on a stable foundation that is usable for different
+      workloads. The base system of 11.4 brings better scalability and performance, an enhanced boot
+      processes and significantly faster repository refresh, package install and update.</para>
+    <para>
+      <informaltable frame="void">
+        <tbody>
+          <tr>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4_NET_installer-boot-150x150.png"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/Startup-150x150.png"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4_DVD_installer-overview1-e1299760821406.png"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+          </tr>
+        </tbody>
+      </informaltable>
+    </para>
+    <para>11.4 is based around <ulink url="http://www.kernel.org/">Kernel</ulink> 2.6.37 which
+      improves the scalability of virtual memory management and separation of tasks executed by
+      terminal users, leading to <emphasis role="bold">better scalability and performance</emphasis>
+      and less interference between tasks. The new kernel also brings better hardware support, with
+      open <ulink url="http://www.broadcom.com/products/?industry_id=2">Broadcom Wireless
+        drivers</ulink>, improved <ulink url="http://www.wacom.com/">Wacom</ulink> support and many
+      other new or updated drivers. It also supports the improvements to graphic drivers in the
+      latest <ulink url="http://www.x.org/">Xorg</ulink> and <ulink url="http://www.mesa3d.org/"
+        >Mesa</ulink> shipped, so users will enjoy better 2D and 3D acceleration.</para>
+    <para>New tools for an <emphasis role="bold">enhanced boot process</emphasis>. The latest <ulink
+        url="http://en.opensuse.org/SDB:Gfxboot">gfxboot</ulink> 4.3.5 supports <ulink
+        url="http://www.virtualbox.org/">VirtualBox</ulink> and <ulink
+        url="http://www.linux-kvm.org/">qemu-kvm</ulink> while Vixie Cron has been replaced with
+        <ulink url="https://fedorahosted.org/cronie/">Cronie</ulink> 1.4.6 supporting the <ulink
+        url="http://www.kernel.org/pub/linux/libs/pam/">PAM</ulink> and the <ulink
+        url="http://www.nsa.gov/research/selinux/">SELinux</ulink> security frameworks. The more
+      experimental software options include <ulink url="http://www.gnu.org/software/grub/"
+        >GRUB2</ulink> and <ulink url="http://www.freedesktop.org/wiki/Software/systemd"
+        >systemd</ulink>.</para>
+    <para>The <ulink url="http://en.opensuse.org/Portal:Libzypp">ZYpp</ulink> package management
+      introduces a MultiCurl backend, support for <ulink url="http://zsync.moria.org.uk/"
+        >zsync</ulink> transfers, and <ulink url="http://www.metalinker.org/">Metalink</ulink>
+      download support. With simultaneous downloads from multiple servers, and fetching of only
+      changed parts of files, the result is a <emphasis role="bold">significantly faster repository
+        refresh, package install and update</emphasis>. The new backend gives better support for
+      network proxies and allows for HTTP BASIC password-protected repositories. On the desktop,
+        <ulink url="http://www.packagekit.org/">KPackageKit</ulink> replaces the KDE applet and both
+        <ulink url="http://www.kde.org/">KDE</ulink> and <ulink url="http://www.gnome.org/"
+        >GNOME</ulink> applets now default to installing all package updates, not just
+      patches.</para>
+    <para><emphasis role="bold">Desktops and Applications</emphasis></para>
+    <para>openSUSE is committed to flexibility and choice, providing all major desktops and a full
+      range of applications, well integrated and supported. The desktops and applications of 11.4
+      take the next step with a revamped user experience, all the popular up to date Free Software
+      applications and consistent functionality even in lighter desktops.</para>
+    <para>
+      <informaltable frame="void">
+        <tbody>
+          <tr>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/114_screenshots_gnome_pulse_speaker_tests-e1299761291203-150x150.jpg"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/114_screenshots_gnome_pulse_speaker_tests-e1299761291203-150x150.jpg"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/114_screenshots_gnome_pulse_speaker_tests-e1299761291203-150x150.jpg"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+          </tr>
+        </tbody>
+      </informaltable>
+    </para>
+    <para><ulink url="http://www.mozilla.com/en-US/firefox/">Firefox</ulink> 4.0, first to ship in
+      11.4, introduces a major redesign of the user interface with tabs moved to the top of the
+      toolbar, support for pinning of tabs and more. <ulink
+        url="https://wiki.mozilla.org/Firefox_Sync">Firefox Sync</ulink> synchronizes bookmarks,
+      history, passwords and tabs between all your installations. Firefox 4 also supports newer web
+      standards like HTML5, WebM and CSS3. 11.4 includes even more of the <emphasis role="bold"
+        >popular up to date Free Software</emphasis> applications as it’s the first major
+      distribution to ship <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> 3.3.1.
+      Delivering it’s cleaner, faster code base and features like import and edit SVG files in Draw,
+      support for up to 1 million rows in Calc and easier slide layout handling in Impress. 11.4
+      also débuts the result of almost 4 years of work with the <ulink url="http://www.scribus.net/"
+        >Scribus</ulink> 1.4 release based on Qt 4 and Cairo technology. Improved text rendering,
+      undo-redo, image/color management and vector file import are highlights of this
+      release.</para>
+    <para>openSUSE offers deep integration of all these technologies. By carefully creating
+      ‘patterns’ of software, openSUSE ensures <emphasis role="bold">consistent functionality even
+        in lighter desktops</emphasis> like XFCE and LXDE. Keyboard shortcuts are set, menu layouts
+      tweaked, user-friendly file associations chosen and branding and theming integrated. 11.4
+      furthermore improves on the LibreOffice and Firefox integration in KDE Plasma, using native
+      file dialogs, oxygen styling (also for GTK applications) and respecting the user’s mail client
+      and browser choices.</para>
+    <para><emphasis role="bold">Professional tools for administrators and
+      developers</emphasis></para>
+    <para>openSUSE aims to be the perfect power tool for system administrators to keep their network
+      safe and their systems under control. And as developing and maintaining free software is the
+      bread and butter task of the openSUSE Project the distribution naturally brings everything a
+      software developer needs. 11.4 ships the latest virtualization and web server stacks and all
+      the major development languages, platforms and associated IDEs.</para>
+    <para>
+      <informaltable frame="void">
+        <tbody>
+          <tr>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-VirtualBox-150x150.png"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-YaST-HTTP-Module-e1299762428373-150x150.png"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-KDevelop-150x150.png"
+                    width="40%"/>
+                </imageobject>
+              </mediaobject>
+            </td>
+          </tr>
+        </tbody>
+      </informaltable>
+    </para>
+    <para>11.4 brings <emphasis role="bold">the latest virtualization stack</emphasis> with <ulink
+        url="http://www.xen.org/">Xen</ulink> 4.0.2 introducing memory overcommit and a VMware
+      Workstation/player driver, <ulink url="http://www.virtualbox.org/">VirtualBox</ulink> 4.0.4
+      supporting VMDK, VHD, and Parallels images, as well as resizing for VHD and VDI and <ulink
+        url="http://www.linux-kvm.org/">KVM</ulink> 0.14 with support for the QEMU Enhanced Disk
+      format and the SPICE protocol. As guest, 11.4 includes open-vm-tools and
+      virtualbox-guest-tools, and seamlessly integrates clipboard sharing, screen resizing and
+      un-trapping your mouse.</para>
+    <para>openSUSE ships with <emphasis role="bold">the latest web server stack</emphasis> featuring
+        <ulink url="http://www.apache.org/">Apache</ulink> 2.2.17, <ulink
+        url="http://www.lighttpd.net/">lighttpd</ulink> 1.4.26 and <ulink url="http://nginx.net/"
+        >ngninx</ulink> 0.8.54. As well as the main databases like version 9.0.3 of <ulink
+        url="http://www.postgresql.org/">PostgreSQL</ulink>, a release that brings major features
+      like easy-to-use replication, a mass permission-changing facility, and anonymous code blocks.
+      And <ulink url="http://www.mysql.com/">MySQL</ulink> 5.1.53 (community edition), and its fork
+        <ulink url="http://mariadb.org/">MariaDB</ulink> 5.1 that offers a drop-in replacement with
+      better performance and some extra features are complemented while SQLite features a new
+      transaction control mechanism using a write-ahead log.</para>
+    <para>openSUSE 11.4 comes with <emphasis role="bold">all the major development languages,
+        platforms and associated IDEs</emphasis>. <ulink url="http://qt.nokia.com/">Qt</ulink> 4.7.1
+      and <ulink url="http://qt.nokia.com/products/developer-tools/">QtCreator</ulink> 2.1 bring a
+      better and faster WebKit and support for the QML Declarative language, also supported in the
+      KDE Development Platform 4.6 which in turn introduces a ‘Mobile Build Target’ for a thinner
+      version of its libraries. The GNOME 2.32 platform brings <ulink
+        url="http://live.gnome.org/Vala">Vala</ulink> and <ulink url="http://www.python.org/"
+        >Python</ulink> support to <ulink url="http://www.anjuta.org/">Anjuta</ulink> and Glib 2.26
+      supports Gsettings. 11.4 ships with <ulink url="http://www.gtk.org/">GTK+</ulink> 3 bringing
+      improved device input handling, fully <ulink url="http://library.gnome.org/devel/cairo/"
+        >Cairo</ulink> based drawing (with multiple backends) and much easier theming to developers
+      who want to develop for the upcoming GNOME 3 release. For developers who are interested in
+      working on LibreOffice, openSUSE offers the unique advantage of using a ‘split build’, making
+      it easy to get involved.</para>
+    <para><emphasis role="bold">Around 11.4</emphasis></para>
+    <para>Additionally to the distribution the openSUSE project also provides a variety of tools,
+      projects and services to its fellow Free and Open Source community members and its users.
+      Supporting 11.4 are <ulink url="http://en.opensuse.org/Portal:Tumbleweed">Tumbleweed</ulink>,
+      a rolling release repository, the <ulink url="http://build.opensuse.org/">Build
+        Service</ulink> to easily create and release open source software and 11.4 inside <ulink
+        url="http://susestudio.com/">susestudio</ulink> for you to experiment with.</para>
+    <para>
+      <informaltable frame="void">
+        <tbody>
+          <tr>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/appstream.png" width="40%"/>
+                </imageobject>                
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-studio-150x150.jpg" width="40%"/>
+                </imageobject>                
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/11.4-Build-Service-150x150.jpg" width="40%"/>
+                </imageobject>                
+              </mediaobject>
+            </td>
+          </tr>
+        </tbody>
+      </informaltable>
+    </para>
+    <para>For this release we are particularly pleased to introduce <emphasis role="bold">Tumbleweed, a rolling release repository</emphasis> containing the latest stable versions of projects instead of relying on a rigid, periodic release cycle. The project does this for users that want the newest, but stable software. Additionally the popular third-party package provider Packman has reorganized and optimized its repositories for the openSUSE 11.4 release. The <ulink url="http://packman.links2linux.org/">Packman</ulink> team, which provides a large number of new and updated packages for openSUSE, simultaneously introduces support for Tumbleweed.</para>
+    <para>The Free and Open Source software developers are greatly aided in the distribution of their software by the innovative technologies developed or initiated by the openSUSE Project. Like the newly released Build Service 2.1.6 which provides the infrastructure to <emphasis role="bold">easily create and release open source software</emphasis> for openSUSE, Fedora, Debian and many other Linux distributions and projects like <ulink url="http://socialdesktop.org/bretzn/">Bretzn</ulink> or <ulink url="http://distributions.freedesktop.org/wiki/AppStream">Appstream</ulink> which support developers in building and distributing their applications and users in getting it.</para>
+    <para>We are also happy to also announce that Novell’s SUSE Studio, building upon openSUSE technology like KIWI, offers 11.4 as a base to build appliances upon from its convenient webinterface. We invite anyone to <emphasis role="bold">visit <ulink url="http://susestudio.com/">susestudio.com</ulink> to experiment with 11.4</emphasis>, to create custom versions as Live CD, USB or VM images and to share them on <ulink url="http://www.susegallery.com/">susegallery.com</ulink>!</para>
+    <para><emphasis role="Get 11.4 now"></emphasis></para>
+    <para>openSUSE is now available for <ulink url="http://software.opensuse.org/">immediate download</ulink>. You can also <ulink url="http://en.opensuse.org/Buy_openSUSE">purchase a retail box</ulink> with 11.4 that includes 90-day installation support, physical media, and a printed Getting Started guide. Read more about what is new in openSUSE 11.4 in our <ulink url="http://en.opensuse.org/Product_highlights">Product Highlights</ulink>!</para>
+    <para><emphasis role="bold">Thanks</emphasis></para>
+    <para>openSUSE 11.4 represents the combined effort of thousands of developers who participate in openSUSE and projects shipped in openSUSE. The contributors, inside and outside the openSUSE Project, should be proud of this release, and they deserve a major “thank you” for all of the hard work and care that have gone into 11.4. We hope that 11.4 is the best openSUSE release yet, and that it will help to encourage the use of Linux everywhere! We hope that you all <emphasis role="italic">have a lot of fun</emphasis> while you use 11.4, and we look forward to working with you on the next release!</para>
+    <para><emphasis role="About the openSUSE Project"></emphasis></para>
+    <para>The openSUSE Project is a worldwide community that promotes the use of Linux everywhere. It creates one of the world’s best Linux distributions, working together in an open, transparent and friendly manner as part of the worldwide Free and Open Source Software community. The project is controlled by its community and relies on the contributions of individuals, working as testers, writers, translators, usability experts, artists and ambassadors or developers. The project embraces a wide variety of technology, people with different levels of expertise, speaking different languages and having different cultural backgrounds.</para>
+    <!-- ($ ld: 11.3.11 sm $) -->
   </blockquote>
 </sect1>
