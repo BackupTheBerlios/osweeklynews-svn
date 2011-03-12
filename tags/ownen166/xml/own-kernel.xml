@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title><ulink url="http://www.unixmen.com/news-today/1544-kernel-update-on-2638">Unixmen/Anuradha Shukla: Kernel update on 2.6.38</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0</ulink></emphasis>.</para>
+    </note>
+    <para>There is much anticipation on the release of <ulink url="http://bit.ly/fyjerw">Kernel 2.6.38</ulink> in March-April as some new features for Storage Area Networks on LIO target frameworks are on offer. Interesting features such as kernel-side polling for device optimization are something most are waiting for gleefully. There are several changes including graphics upgrades, file systems with better cover features and network codes, infrastructure and architecture tweaks and permutations for audio, video and USB hardware drivers.</para>
+    <para><emphasis role="bold">Updated Storage Area Network</emphasis></para>
+    <para>The storage is an in-kernel feature on a LIO-target framework. The superset features include multi-thread architecture (on SIMD support), without blocks and superlative performance due to advance features. The SCSI features such as Assymetric Logical Unit Assignment (ALUA) as well as Persistent Reservation enabled for enhanced performance. The thin LUN provisioning coupled with full error recovery ensures consistency.</para>
+    <para>The core of these developments is that different storage protocols can now be called as SCSI targets through the iSCSI, the Fibre Channel’s Fibre Channel over Ethernet. The <ulink url="http://www.linux-iscsi.org/wiki/Features">linux-isci.org</ulink> features will in future supersede the existing SCSI subset. That is the SANs will no longer be on STGT, the SCSI Target Framework, or the CONFIG_SCSI_TGT on the kernel configuration.</para>
+    <para><emphasis role="bold">Extended storage control on the in-kernel polling framework</emphasis></para>
+    <para>The in-kernel polling framework offers better control over extended storage media. This can also be used to check for memory cards, optical media such as the DVDs etc. Through regular polling the storage medium status is noted to update user applications in different environments such as the desktop etc. This implies that these applications will not be required for polling media themselves and can instead use the regular polling feature for better media storage management.</para>
+    <para>This is feature, credited to Tejun Heo runs on economized power and show minimum overhead requirement. This feature can be tweaked using the Sysfs and by default, the in-kernel polling is not opted to avoid interrupting and disrupting media that are already in use in the userland applications. This is needs to be understood well because polling is done by opening the device. Opening up the device will create interference and could lead to complicated scenarios such as optical disk burning. Hence, the inherent limitation of user-space polling is well controlled by this in-kernel polling framework.</para>
+    <para>This ensures that the there is no requirement for opening the device as well as delayed polling wakeups working against running systems. A new function has been created that checks for new events and a mask is returned for each mask that is found. Since the polling is not happening in the user environment the disk event needs to be notified. This now possible using the event and are handled using udev and other utilities. There are no drivers on the 2.6.38 asynchronous event reporting and it would be ideal to use a helper function along with core block code to overcome this issue. In fact a zero value to the function will entirely disable the polling feature.</para>
+    <para>Expectations are running high on the kernel 2.6.38 as several features are being addressed for optimization of multiple features.</para>
+    <!-- ($ ld: 6.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-5-Architecture-infrastructure-and-virtualisation-1202216.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.38 (Part 5) - Architecture, infrastructure and virtualisation</ulink></title>
+    <para><emphasis role="bold">In certain situations, a small patch for 2.6.38 perceivably improves the response time of desktop environments. Transparent Huge Pages, on the other hand, simplify memory management, which is particularly relevant in terms of virtualisation and server software.</emphasis></para>
+    <para>On Tuesday last week, Linus Torvalds <ulink url="http://thread.gmane.org/gmane.linux.kernel/1107280">issued</ulink> the seventh release candidate of Linux 2.6.38. Among other things, Torvalds mentioned a fix for a flaw in Btrfs that can potentially cause data loss in certain situations – again, there was no indication of a final release date for 2.6.38.</para>
+    <para>Nevertheless, the next version in the main development branch is approaching completion, and the Kernel Log will, therefore, gradually conclude its "Coming in 2.6.38" mini series; the penultimate part will discuss the advancements in terms of the kernel's architecture code, infrastructure and virtualisation. <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-1-Graphics-1176900.html">Part 1</ulink> and <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-3-Network-drivers-and-infrastructure-1197480.html">part 3</ulink> discussed the changes to the graphics hardware and network communication code; <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-2-File-systems-1192694.html">part 2</ulink> and <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-4-Storage-1199926.html">part 4</ulink> revolved around file systems and storage. This week, the series will be concluded with an article on the kernel's audio, USB and video hardware drivers. (...)</para>
+    <!-- ($ ld: 8.3.11 sm $) -->
+  </blockquote>  
+  <blockquote>
+    <title><ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-6-Drivers-1202826.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.38 (Part 6) - Drivers</ulink></title>
+    <para><emphasis role="bold">The HD audio driver can now run without interrupts, letting processors sleep for longer. There are new drivers for touchscreens and multi-touch panels. More fingers will be detected by the Synaptic touchpad driver from 2.6.38 onwards.</emphasis></para>
+    <para>On Monday night (7 March), Linus Torvalds <ulink url="http://thread.gmane.org/gmane.linux.kernel/1110126">published</ulink> the eighth pre-release of Linux 2.6.38. In the announcement he wrote that it would have been okay for him to release this as the final 2.6.38 – but said that, "I'm going to be partially unreachable for several days next week, so I felt there was no point in opening the merge window yet." </para>
+    <para>With 2.6.38 approaching completion, the Kernel Log series is likewise concluding its report on new features in 2.6.38. This final part of the 'Coming in 2.6.38' series looks at drivers from areas not yet addressed. <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-1-Graphics-1176900.html">Parts one</ulink> and <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-3-Network-drivers-and-infrastructure-1197480.html">three</ulink> of the series looked at the code dealing with graphics hardware and network communication. Parts <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-2-File-systems-1192694.html">two</ulink> and <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-4-Storage-1199926.html">four</ulink> were concerned with file systems and storage. Architecture code, virtualisation and infrastructure were the subject of the <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-5-Architecture-infrastructure-and-virtualisation-1202216.html">fifth</ulink> article in the series.</para>
+    <!-- ($ ld: 10.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://schaiba.wordpress.com/2011/03/12/kernel-weekly-news-12-03-2011/">Rares Aioanei: kernel weekly news –12.03.2011</ulink></title>
+    <para>Rares published the Kernel Review for this Week. Thanks for working on it :-)</para>
+    <!-- ($ ld: 12.3.11 sm $) -->
+  </blockquote>
+</sect1>

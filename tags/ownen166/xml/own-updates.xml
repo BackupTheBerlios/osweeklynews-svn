@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://www.net-security.org/malware_news.php?id=1639">Antivirus engine ClamAV 0.97
+        released</ulink></title>
+    <note><para>This Article is owned and Copyrighted by Help Net Security.</para></note>
+    <para>ClamAV is an open source (GPL) antivirus engine designed for detecting Trojans,
+        viruses, malware and other malicious threats. It provides a high performance mutli-threaded
+        scanning daemon, command line utilities for on demand file scanning, and an intelligent tool
+        for automatic signature updates. The core ClamAV library provides numerous file format
+        detection mechanisms, file unpacking support, archive support, and multiple signature
+        languages for detecting threats. The core ClamAV library is utilized in Immunet 3.0, powered
+        by ClamAV, which is a fast, fully featured Desktop AV solution for Windows.
+      Available in the <ulink url="http://download.opensuse.org/repositories/security/"
+        >Security</ulink> Repository.</para>
+    <!-- ($ ld: 22.2.11 sm $) -->
+  </blockquote>
+</sect1>

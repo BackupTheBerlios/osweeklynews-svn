@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title><ulink url="http://blog.martin-graesslin.com/blog/2011/03/proactive-spam-fighting-with-akonadi/">Martin Grässlin: Proactive Spam Fighting with Akonadi</ulink></title>
+      <para>One year ago I finished my Master Thesis and I just realized that I never really blogged about it. I had the chance to build my implementation during the Thesis upon the Akonadi framework, which is the reason why I want to share what I worked about. For all who might be more interested in my Thesis, a publisher was so kind to <ulink url="http://amzn.to/evh4lj">publish</ulink> it.</para>     
+      <para>The title of my Thesis was "<emphasis role="bold">Implementation of Proactive Spam Fighting Techniques</emphasis>" and the Thesis covered the implementation of two orthogonal techniques. Both techniques shared the idea to eliminate Spam before it hits the user’s inbox. Current Spam fighting techniques like for example SpamAssassin are reactive. <ulink url="http://spamassassin.apache.org/">SpamAssassin</ulink> uses a rule based approach and a Bayesian filter. Rule based approaches cannot identify Spam messages reliable and have the danger to incorrectly mark ham messages if like last year <ulink url="https://issues.apache.org/SpamAssassin/show_bug.cgi?id=6269">the date grossly in the future becomes present</ulink>. Bayesian filtering requires to collect a rather large amount of mail messages before messages can be filtered. This illustrates that reactive Spam fighting is no real solution.</para>
+      <para>Both implementations required to interact with the user’s inbox and in one case it was required to automatically send out mail on mail reception. The original idea of my tutors at the <ulink url="http://pi1.informatik.uni-mannheim.de/">Laboratory for Dependable Distributed Systems</ulink> was to develop either a plugin for Mozilla Thunderbird or Microsoft Outlook. With my background of KDE development I had to think of one framework which handles this much better: <ulink url="http://community.kde.org/KDE_PIM/Akonadi">Akonadi</ulink>. Thanks to Akonadi I was able to implement the solution in a client and platform independent way. Instead of just supporting Mozilla Thunderbird the solution works on all systems supporting Akonadi and no specific mail client is required. It can even be used by users who just use a web mail client. (...)</para>
+      <!-- ($ Id: 07.3.11 sm $)-->        
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.mohamedmalik.com/?p=897">Mohammed Malik: Adding Borders To Use Photos Using digiKam..</ulink></title>
+      <para>Many people add borders to there images, since they make the image look better and stands out unique and digiKam makes this very easy and simple!</para>
+      <para>There are two ways to apply image borders in digiKam (...)</para>
+      <!-- ($ Id: 7.3.11 sm $)-->    
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title><ulink url="http://tuxtweaks.com/2011/03/how-to-hide-secret-messages-in-images-with-linux">TuxTweaks: How To Hide Secret Messages In Images With Linux</ulink></title>      
+      <para>In today's post I'm going to show how to embed a text message into an image file. This type of messaging is known as steganography. Steganography is the practice of hiding secrets in such a way that only the intended message recipient would know to look for your hidden message.</para>
+      <para>In this basic form of secret messaging we'll be adding text onto the end of a file. I'm going to use the following image of Tux for my example. (...)</para>
+      <!-- ($ Id: 08.3.11 sm $) -->   
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title><ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/">python4kids/Brandan Scott: Time for Some Introspection</ulink></title>
+      <para><quote><ulink url="http://www.ibras.dk/montypython/episode24.htm#6">…The illusion is complete; it is reality, the reality is illusion and the ambiguity is the only truth. But is the truth, as Hitchcock observes, in the box? No there isn’t room, the ambiguity has put on weight. The point is taken, the elk is dead, the beast stops at Swindon, Chabrol stops at nothing, I’m having treatment and La Fontaine can get knotted.</ulink></quote></para>
+      <para>Did you notice some errors in the previous tutorial? One was fatal.  The fact that no one commented on them indicates to me that no one is actually typing in the code – naughty naughty!  Type it in. It’s important. (...)</para>
+      <!-- ($ Id: 8.3.11 sm $) -->    
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-310-2/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): Samba roles</ulink>
+      </title>
+      <para>&quot;Samba isn&apos;t a single program; rather, it&apos;s a series of interrelated servers and utilities, each of which has its own specific purpose. Understanding the differences between these servers and utilities will help you manage your Samba system. Furthermore, Samba implements a number of different security models, which you must understand to properly integrate Samba into an existing network or to set up a new network with Samba servers at its core. (...)&quot;</para>
+   </blockquote>
+  </sect2> -->
+</sect1>

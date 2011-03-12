@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-five-scribus">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Five: Scribus</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>On the fifth day of openSU-SE my true love gave to me, <ulink
+        url="http://www.youtube.com/watch?v=BgSe_gzyM1c">fiiiiveeee goollldeeen
+        ringggggssss!</ulink>.</para>
+    <para>Just kidding, on the fifth day of our countdown to openSUSE 11.4 I wanted to highlight an
+      impressive new application that is making it's debut with this release: <ulink
+        url="http://www.scribus.net/">Scribus</ulink>. If you're not "in the know" for desktop
+      publishing applications, Scribus is:</para>
+    <para><quote>Scribus is powerful software that helps you create great looking documents of all
+        kinds. It also comes with a lot of support options to help you achieve the best
+        result.</quote></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/Scribus-screen.png" width="20%"/>
+      </imageobject>
+    </mediaobject>
+    <para>As I'm terribly un-talented when it comes to just about anything spatial, I couldn't
+      honestly tell you how great Scribus is in openSUSE 11.4, but the folks I've talked about it
+      with seem pretty excited about it. </para>
+    <para><ulink url="http://bit.ly/f1CB8v">Install Scribus 1.4 for 11.3</ulink></para>
+    <!-- ($ ld: 6.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://oyranos-cms.blogspot.com/2011/03/gutenprint-talks-to-colour-management.html">Kai-Uwe Behrmann: Gutenprint talks to colour management systems</ulink></title>
+    <para>The <ulink url="http://sourceforge.net/mailarchive/message.php?msg_id=27150124">Gutenprint project is going to tag its colour related print options</ulink> with the <ulink url="http://www.freedesktop.org/wiki/OpenIcc#PPDcolouring">ColorKeyWords PPD entry</ulink>. Thus Gutenprint follows a request to tag colour related options in native device API's. Marking colour related options as being colour related will help automatic profile selection depending on the calibration state in the deriver. So if Gutenprint was set to a increased brightness of 1.1 and the media size is A5, then the colour marked brightness setting will play a role in searching the correct ICC profile, while the non colour hinted paper size will not influence the ICC profile search. This concept works as well for SANE and Xorg. The colour related options can be serialised to a common file format, which still has to be defined. Then this calibration information can be embedded by profilers into ICC profiles. Such calibration data enriched ICC profiles can then even be used to setup the calibration state of a given device + driver combination and automatically ensure the correct usage, while minimising user errors. That approach is already deployed in Oyranos' Xorg module. For display profiles it is typical to embed the calibration data inside the ICC profiles for a long time. The embedded calibration data is used to setup the graphics card to work with the display. Gutenprint is the next candidate to get related to ICC colour management a similar calibration support. </para>
+    <!-- ($ ld: 6.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-six-rock-out">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Six: Rock Out!</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>We're down to the final stretch! Only a few more days until openSUSE 11.4 is <emphasis role="bold">finally released</emphasis>! (March 10th)</para>
+    <para role="bold">We've talked about <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-two-libreoffice">LibreOffice</ulink> and <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-five-scribus">Scribus</ulink>, but now let's talk about something <emphasis role="italic">fun</emphasis> (not that spreadsheeting isn't fun..). <emphasis role="bold">Music</emphasis>.</para>
+    <para>An integral part to any modern desktop experience is great music and openSUSE tries to meet everybody's musical needs by shipping numerous players such as: Banshee, Amarok and Rhythmbox. What I consider the holy trinity of popular open source music apps.</para> 
+    <para><emphasis role="bold">Banshee</emphasis></para>
+    <para>If you're a lover of <ulink url="http://banshee.fm/">Banshee</ulink> then you may have read about some of the updates already in <ulink url="http://news.opensuse.org/2011/03/03/gnome-on-opensuse-11-4/">this post on GNOME in 11.4</ulink> over at <ulink url="http://news.opensuse.org/">news.opensuse.org</ulink>. The upcoming release of openSUSE (11.4) bundles Banshee 1.9.3 which is another stepping stone release to Banshee <emphasis role="bold">2.0</emphasis> which is due out in mid-Aoril.</para>
+    <para>Packed into Banshee 1.9.3 are a number of bug fixes and improvements for developers, but from a user's perspective you can expect to find this Banshee more stable and more integrated with a number of new devices such as the Nexus S and Xperia X10 mini pro.</para>
+    <para><emphasis role="bold">Amarok</emphasis></para>
+    <para>The openSUSE team decided to bundle <ulink url="http://amarok.kde.org/">Amarok</ulink> 2.4.0 for KDE users, and everybody else I suppose. This point-release from the Amarok crew, nicknamed "Slipstream", includes plenty of bug fixes, performances improvements, new features and support for new devices. The biggest feature addition that I've found in this release is <emphasis role="bold">transcoding</emphasis>! With Amarok in the new openSUSE 11.4, you can convert files from one format to another right there in Amarok!</para>
+    <para>"Slipstream" also includes faster music collection support and has brought with it some great improvements to tagging. It literally takes two clicks to tag music in the new Amarok.</para>
+    <para><emphasis role="bold">Rythmbox</emphasis></para>
+    <para>openSUSE 11.4 also bundles the popular GNOME media player <ulink url="http://projects.gnome.org/rhythmbox/">Rhythmbox</ulink>. Although I've written the name "Rhythmbox" out more times than I can count over the psat week, I'm stlil double-checking whether or not I've spelled it correctly. Anyways, Rhythmbox 0.13.3 will be available for 11.4 users and this release of <emphasis role="role">Rhythmbox</emphasis> is likely going to be the last "big" release of the music manager before GNOME 3.</para>
+    <para>Unfortunately the Rhythmbox folks don't make <ulink url="http://projects.gnome.org/rhythmbox/rhythmbox-0.13.3.changes">their changelogs</ulink> easily parseable, so the best I can mention is that this release includes plenty of bugfixes and ... other stuff. (<emphasis role="bold">update</emphasis>: Bertrand pointed out <ulink url="http://projects.gnome.org/rhythmbox/rhythmbox-0.13.3.news">this link</ulink> for Rhythmbox changes)</para>
+    <para>For months Banshee users on openSUSE and many other distributions have been sending 100% of the Amazon referral revenue to the GNOME Foundation whenever they purchased a song or album.</para>
+    <!-- ($ ld: 7.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/opensuse-banshee-and-root-all-evil">OMG! SUSE!/rtyler: openSUSE, Banshee and the root of all evil</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice Commons Attribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>You may or may have not been following some of the <ulink url="http://gburt.blogspot.com/2011/02/banshee-supporting-gnome-on-ubuntu.html">controversy surrounding Banshee on Ubuntu</ulink>, if you haven't I'll try to bring you up to speed as impartially as possible.</para>
+    <para>The next <emphasis role="bold">major</emphasis> release of Ubuntu, <ulink url="http://www.omgubuntu.co.uk/tag/natty/">Naggy Narwhal</ulink>, is bundling the popular music player <ulink url="http://www.banshee.fm/">Banshee</ulink>. Most openSUSE users are already familiar with the glory that is Banshee, so this is a good thing right? Not <emphasis role="italic">entirely</emphasis>.</para>
+    <para>Remember <ulink url="http://omgsuse.com/content/banshee-brings-amazon-store-linux">way back when</ulink>, when we talked about Banshee allowing you to purchase Amazon MP3s from within the app? One of the features that the Banshee team added was a Banshee-specific "referral code" that generates an additional source of revenue for the <ulink url="http://foundation.gnome.org/about/">GNOME Foundation</ulink>.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/os/sites/default/files/amazon_sidebar.jpeg"/>
+      </imageobject>      
+    </mediaobject>
+    <para>For months Banshee users on openSUSE and many other distributions have been sending 100% of the Amazon referral revenue to the GNOME Foundation whenever they purchased a song or album.</para>
+    <para>Canonical, the company behind Ubuntu, wants a cut of this revenue. Well, "cut" may not be the right word, perhaps "all" is more appropriate. Last I checked the "agreement" that Canonical made with the Banshee team was that Canonical was going to take 75% of referral revenue, and then pass 25% on to the GNOME Foundation.</para>
+    <para>That seems fair right? After all Canonical is a business that has built itself almost entirely on GNOME and the open source community right? They've gotta make money somehow! The plot has one more <emphasis role="bold">twist</emphasis> to offer!</para>
+    <para>You might recall me mentioning how awesome Banshee is (it really is a great app), well Banshee development has been largely funded by <emphasis role="bold">drumroll please</emphasis> <ulink url="http://www.novell.com/">Novell</ulink>, who also happens to sponsor a lot of GNOME, Mono, KDE and openSUSE development. In fact, until  <ulink url="http://twitter.com/abock">Aaron's</ulink> recent departure from Novell, two of Banshee's core contributors <emphasis role="bold">both</emphasis> worked on Banshee for Novell (the other being Gabriel).</para>
+    <para><emphasis role="bold">Recap</emphasis></para>
+    <itemizedlist>
+      <listitem><para>Novell funds development of a great open source music app</para></listitem>
+      <listitem><para>Said great music app generates some Amazon referral revenue which is sent straight to the GNOME Foundation</para></listitem>
+      <listitem><para>Ubuntu bundles great music app with upcoming release, but decides to take the majority of the revenue generated that would otherwise go to the GNOME Foundation</para></listitem>
+      <listitem><para>Hijinks ensue</para></listitem>
+    </itemizedlist>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/i_dunno_lolcat.jpg" align="right"/>
+      </imageobject>      
+    </mediaobject>
+    <para>In my opinion, Ubuntu is perfectly within their rights dictated by Banshee's license but that doesn't make their decision to do what they're doing any less "dickish." Canonical better tread very carefully with actions like this, for a number of open source contributors the "spirit" of open source is just as, if not more important than the open source licenses themselves.</para>
+    <para>What do you think? Much ado about nothing, or should we all grab pitchforks?</para>
+    <!-- ($ ld: 7.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-seven-going-going-gnome">OMG! SUSE!/rtyler: Ten Days of openSUSE, Day Seven: Going, Going, GNOME!</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>The 11.4 release of openSUSE, dropping this Thursday (March 10th), is bringing more GNOME to the table than ever before. It might be a bit difficult for me to summarize, since there's simply so much stuff in this one major jump forward for GNOME on openSUSE (some of the <ulink url="http://news.opensuse.org/2011/03/03/gnome-on-opensuse-11-4/">nitty gritty bits covered here already</ulink>).</para>
+    <para>Do you remember when you last installed another Linux distribution? Maybe it was Fedora, maybe it was Ubuntu, maybe it was Mint. With all three distributions you were probably left unsatisfied with just one GNOME inside the box. Well hot dog! Guess what! The new openSUSE packs not one, but <emphasis role="bold">two</emphasis> GNOMEs inside of it. ;) </para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/Gnome_logo2.gif" align="right"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">GNOME 2</emphasis></para>
+    <para>For the less experimental, and typically more productive days, 11.4 will contain the last major release of the GNOME 2.x series, 2.32. This is the standard GNOME desktop we've all come to know and love, with a few more refinements both visually and technically (i.e. bug fixes).</para>
+    <para>GNOME isn't just a window or desktop manager, it's a "desktop experience" which means whenever there's a "GNOME update," there are a lot of updated applications that come along with it such as:</para>
+    <itemizedlist>
+      <listitem><para><ulink url="http://projects.gnome.org/evince/">Evince</ulink>, the PDF viewer became far more accessible by integrating to with Orca the GNOME screen reader.</para></listitem>
+      <listitem><para><ulink url="http://live.gnome.org/Empathy">Empathy</ulink>, the universal IM client, added "meta-contact" support so you can keep all your friends and their cutesy nicknames grouped into a single contact encompassing their screen names from multiple networks. Empathy also seems to have gotten more secure and add the ability to log chats in this release (putting those in the same sentence <emphasis role="italic">feels</emphasis> contradictory).</para></listitem>
+    </itemizedlist>
+    <para><emphasis role="bold">GNOME 3</emphasis></para>
+    <para>If you're feeling like peering into the GNOME crystal ball, openSUSE 11.4 ships with a GNOME 3 preview, which includes a beta version of the ever-so-slightly controversial "GNOME Shell." The Shell is a core part of the upcoming GNOME 3 desktop experience, and contains a lot of new and interesting ideas around the desktop experience. While it still has some lingering quirks that need to ge hammered out, the GNOME team has been moving so fast as of late, that the version of GNOME Shell that's bundled with openSUSE 11.4 is already out of date!</para>
+    <para>If you're really anxious to try out GNOME 3 and GNOME Shell, there's a <ulink url="http://blog.crozat.net/2011/01/gnome-3-live-cd-usb-test-image.html">live USB flash drive image</ulink> around here somewhere, that you can boot your machine, or a virtual machine from and "try before you buy."</para>
+    <para>Suffice to say, 11.4 includes a fantastic number of improvements, particularly for GNOME users. With only a few days left until release, yours truly is getting a bit impatient waiting for all these goodies!</para>
+    <!-- ($ ld: 8.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/ten-days-opensuse-day-eight-k-d-wheeeee">OMG! SUSE!/rtyler: Ten days of openSUSE, Day Eight: K-D-WHEEEEE!</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>As a long-time GNOME user, this post and some of the contents within it are difficutl for me to write. The openSUSE team has traditionally done a great job of packaging up GNOME and KDE, and even smaller more lightweight desktop environments like XFCE and LXDE.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/snapshot22-300x187.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>With 11.4, openSUSE really knocks it out of the park with KDE 4.6 which I must say, is bloody fantastic! So fantastic that I've actually started to use the KDE Plasma Netbook workspace, which has gotten <emphasis role="bold">even better</emphasis> in KDE 4.6 . Not only that, my wife now has made the plunge from Mac OS X to an openSUSE-powered laptop with the KDe plasma netbook workspace. It's just <emphasis role="italic">that</emphasis> good!</para>
+    <para>Bundled with this big update of KDE are a couple of applications that got updates like <ulink url="http://amarok.kde.org/">Amarok</ulink> which <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-six-rock-out">we covered previously</ulink> and KOffice 2.3.1.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/klogo-official-lineart_simple-128x128.png"/>
+      </imageobject>
+    </mediaobject>
+    <para>THe new release of KOffice, a great alternative to <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-two-libreoffice">LibreOffice</ulink> has received a great amount of performance and stability love from its developers. As it's become more rock-solid, it's support for reading the OpenDocument format along with some icky Microsoft formats has improved.</para>
+    <para>To be honest, I've had a hard time summarizing what's special about KDE in openSUSE 11.4 versus KDE in 11.3, any way you cut it I'm out of my comfort zone (there is a write-up on <ulink url="http://news.opensuse.org/2011/03/02/opensuse-11-4-and-kde-2/">news.opensuse.org</ulink> though). I will say this though: KDE 4.6 in the <emphasis role="italic">new</emphasis> openSUSE is visually <emphasis role="bold">stunning</emphasis> and <emphasis role="bold">fast</emphasis>. THe KDE team has done a phenomenal job speeding up KDE and bucking the trend of software getting slower over time.</para>
+    <para>If you've never tried KDE before then openSUSE 11.4, which comes out Thursday March 10th, might just be the perfect time to give it a test drive and see what you think.</para>
+    <!-- ($ ld: 9.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://log.or.cz/?p=129">Petr Baudis: ld.so Scopes</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>Recently, I have spent quite a bit of my time debugging an <ulink url="http://sourceware.org/bugzilla/show_bug.cgi?id=12561">evil ld.so bug</ulink> involving mis-handling of scopes and I have noticed precious lack of documentation of any internal ld.so data structures. So again, this comes for the benefit of the googlers, an intro that could have saved me another quite bit of time spent poking the code.</para>
+    <para>Of course, the dynamic linker features a wide variety of fun hacks. The most interesting mechanism is probably how lazy relocation is performed, but things like that have already been described plenty of times before. The question we shall look into is what data structures are used when a new symbol is to be searched for and linker has already taken control. There are two important internal concepts of ld.so related to this – the <emphasis role="bold">link_map</emphasis> and the <emphasis role="bold">scope</emphasis>. You can see the data structures in <ulink url="http://repo.or.cz/w/glibc.git/blob/HEAD:/include/link.h">include/link.h</ulink>.</para>
+    <para role="">The <emphasis role="bold">struct link_map</emphasis> describes a single loaded object; it may be ld.so, the main program, libc, or any other shared object loaded afterwards, during startup or later. It has many members, like its name, its mates in global linked list of all objects, or its state. But the most interesting attribute is its scope.</para>
+    <para>The scope describes which libraries should be searched for symbol lookups occuring within the scope owner. (By the way, given that lookup scope may differ by caller, implementing dlsym() is not that trivial.) It is further divided into <emphasis role="bold">scope elements (struct r_scope_elem)</emphasis> – a single scope element basically describes a single search list of libraries, and the scope (<emphasis role="bold">link_map.l_scope</emphasis> is the scope used for symbol lookup) is list of such scope elements.</para>
+    <para>To reiterate, a symbol lookup scope is a list of lists! Then, when looking up a symbol, the linker walks the lists in the order they are listed in the scope. But what really are the scope elements? There are two usual kinds:</para>
+    <itemizedlist>
+      <listitem><para>The “global scope” – all libraries (ahem, link_maps) that have been requested to be loaded by the main program (what ldd on the binary file of the main program would print out, plus dlopen()ed stuff).</para></listitem>
+      <listitem><para>The “local scope” – DT_NEEDED library dependencies of the current link_map (what ldd on the binary file of the library would print out, plus dlopen()ed stuff).</para></listitem>
+    </itemizedlist>
+    <para>The global scope is shared between all link_maps (in the current namespace), while the local scope is owned by a particular library. (FIXME) If a library has local scope element in its scope, it adds itself to that scope. E.g. assume libA dlopen()ing libB (with RTLD_LOCAL) – libB will get and own a fresh local scope element, and all libraries loaded by libB will inherit and add themselves to that local scope element.</para>
+    <para>There are then four common situations:</para>
+    <itemizedlist>
+      <listitem><para>The main program has only single scope element, the global scope. (At least I would expect so, I have not verified this.) </para></listitem>
+      <listitem><para>A library has been loaded with RTLD_LOCAL (the default case). Then its link_map has two scope elements, first comes the global scope, then comes the local scope. </para></listitem>
+      <listitem><para>A library has been loaded with RTLD_LOCAL | RTLD_DEEPBIND. In that case, the link_map has again the two scope elements, but the order is switched – the local scope comes first. </para></listitem>
+      <listitem><para>A library has been loaded with RTLD_GLOBAL. The link_map lists only the global scope. </para></listitem>
+    </itemizedlist>
+    <para>(Another concept is namespace; each has its own id and linked list of link_maps, but usually there are just two, one for the ld.so and another for the application. Unless you are calling dlmopen() explicitly or using the LD_AUDIT interface, you can usually assume there is only a single <emphasis role="bold">namespace</emphasis> that matters.)</para>
+    <para>Just for fun – the bug I have been hunting has been caused by ld.so not handling local scopes quite properly. Normally, when unloading the library opened with RTLD_LOCAL, all its local scope members would be unloaded too. However, such a member could be flagged as RTLD_NODELETE, and in that case, it would stay around. The problem is, the code did not expect that and would remove the local scope owner and the local scope would go along with it. This means the nodelete library dependencies would disappear from its local scope and the next time it got called (e.g. within its static destructor), trying to resolve such a symbol would cause a “unresolved symbol” fatal error.</para>
+    <!-- ($ ld: 10.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/tenth-day-opensuse-114-changed-everything">OMG!SUSE! team: On the tenth day, openSUSE 11.4 changed everything</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para></note>
+    <para>It's out! It's out! Go to <ulink url="http://software.opensuse.org/">software.opensuse.org</ulink>, start your download and then come back over here and I'll tell you about all the <emphasis role="bold">awesome</emphasis> in this release of openSUSE.</para>
+    <para>I mean it. Click that link, and start the download. I'll wait.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/114_screenshots_silverlight_gallery_in_ffox_moonlight_med.jpg"/>
+      </imageobject>      
+    </mediaobject>
+    <para>Alright then, first let's talk about the <emphasis role="bold">game changers</emphasis> in openSUSE 11.4. First up is LibreOffice, which <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-two-libreoffice">we talked a little bit about on Day Two already</ulink>, but let me re-iterate: <emphasis role="bold">openSUSE 11.4 is the first major Linux distribution to ship LibreOffice</emphasis>. This release contains the result of thousands of hours of work by the LibreOffice community, all to create the absolutely best open source office suite on the planet. LibreOffice 3.3.1 in this release is faster than OpenOffice.org, more translated and offers more features thanks to the contstruction of <ulink url="http://www.thedocumentfoundation.org/">The Document Foundation</ulink>.</para>
+    <para>If a really righteous office suite isn't enough to get your blood pumping, how about <emphasis role="bold">Firefox 4</emphasis>. The world's most popular browser gets a <emphasis role="bold">major overhaul</emphasis> in this release of openSUSE. Thanks to some healthy competition from Microsoft and Google, the folks over at <ulink url="https://www.mozilla.com/">Mozilla</ulink> have had a fire lit under their arses. As a result they've pulled out all the stops for Firefox 4, which contains some vast speed improvements such as taking advantage of hardware accelerated graphics cards when available and various UI tweaks. As if optimizations weren't enough, they've also bundled support for some of the bleeding edge video standards on the web as well as solid <ulink url="http://www.w3.org/html/logo/">HTML5</ulink> support.</para>
+    <para>Let's zoom out to see the big desktop picture here. Eleven-four bundles major upgrades in three major environments:</para>
+    <itemizedlist>
+      <listitem><para><ulink url="http://en.opensuse.org/Product_highlights#Xfce_4.8">XFCE 4.8</ulink>: The new XFCE brings a massive revamp of the core of XFCE. The team behind the speedy desktop environment gutted some of the older, more antiquated libraries and infrastructure and built 4.8 on top of faster and more modern toolkits used by other desktop environments. This means in the new XFCE you can browse <emphasis role="italic">remote</emphasis> filesystems and mount/unmount filesystems more easily than before. On top of that, the new XFCE plays <emphasis role="bold">much</emphasis> nicer with multiple monitors than before. Jinkeys!</para></listitem>
+      <listitem><para><ulink url="http://en.opensuse.org/Product_highlights#GNOME_2.32">GNOME 2.32</ulink>: We've <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-seven-going-going-gnome">already covered</ulink> some of the updates in openSUSE 11.4's GNOME support, but here's a short recap. In 11.4, the team has included GNOME 3 and GNOME Shell support for users who feel like experimenting with the <emphasis role="italic">future</emphasis> of the GNOME desktop. For users who aren't quite as experimental, fret not! 11.4 bundles GNOME 2.32, which looks like it will be the last GNOME 2 release <emphasis role="bold">ever</emphasis>. The 2.32 release includes a plethora of bug fixes, speed improvements and updates to a number of applications that are bundled with the standard GNOME desktop.</para></listitem>
+      <listitem><para><ulink url="http://en.opensuse.org/Product_highlights#KDE_Plasma_Workspaces_4.6">KDE 4.6</ulink>: As I mentioned in our <ulink url="http://omgsuse.com/content/ten-days-opensuse-day-eight-k-d-wheeeee">post on KDE</ulink>, I've been terrifically impressed with the recent improvements both in the UI and performance of the new KDE. Thanks to some incredible work by some of the KDE crew who work with openSUSE, major applications like LibreOffice and Firefox look fantastic in KDE as do many other GNOME applications.</para></listitem>
+    </itemizedlist>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/114netbooklauncher_med.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>openSUSE 11.4 has so many great improvements across the board, that it's really hard to list them all in any capacity. The openSUSE marketing team did an admirable job trying to put together an expansive list of <ulink url="http://en.opensuse.org/Product_highlights">highlights</ulink>, which I still don't think does this release justice.</para>
+    <para>If you'd like to learn more about openSUSE 11.4, there's some <ulink url="http://en.opensuse.org/Portal:11.4">comprehensive documentation</ulink> on the openSUSE wiki.</para>
+    <para><emphasis role="bold">Existing openSUSE users</emphasis>: You should be able to <ulink url="http://en.opensuse.org/SDB:System_upgrade">follow these instructions</ulink> to upgrade your machine. Personally, I just booted from the DVD and used the "Update" portion of the installer, which is also an option.</para>
+    <para><emphasis role="New openSUSE users: You can try openSUSE with a Live CD (GNOME or KDE flavored), or grab an installation disc from software.opensuse.org.">New openSUSE users</emphasis>: You can try openSUSE with a Live CD (GNOME or KDE flavored), or grab an installation disc from software.opensuse.org.</para>
+    <!-- ($ ld: 11.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-010-released-geeko.html">GNOME 3 Live image 0.1.0 released - Geeko strikes back</ulink></title>
+    <para>This week has been a busy week : GNOME people worked really hard on 2.91.91 release and openSUSE people worked really hard on release <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">openSUSE 11.4</ulink>.</para>
+    <para>So, let's please everybody with this week GNOME 3 Live image 0.1.0 : it features GNOME 2.91.91 on top of the brand new openSUSE 11.4.</para>
+    <!-- ($ ld: 12.3.11 sm $) -->
+  </blockquote>
+</sect1>
