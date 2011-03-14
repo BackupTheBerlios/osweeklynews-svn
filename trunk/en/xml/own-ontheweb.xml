@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,7 +19,7 @@
 -->
 <sect1 role="ontheweb">
   <title>On the Web</title>
-<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  
+  <!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->
   <!--
   <sect2>
     <title>Announcements</title>
@@ -64,7 +65,7 @@
         future that is free.</para>   
     </blockquote>
   </sect2> -->
-<!--
+  <!--
   <sect2>
     <title>Call for participation</title>
     <blockquote>
@@ -84,33 +85,69 @@
         projects and companies. All Camp KDE attendees are invited to attend the Collaboration
         Summit. (...)</para>
     </blockquote>
-    </sect2> -->  
+    </sect2> -->
   <sect2>
     <title>Reports</title>
     <blockquote>
-      <title><ulink url="http://ostatic.com/blog/opensuse-thinking-about-naming-change">Ostatic/Susan Linton: openSUSE Thinking About Naming Change</ulink></title>
-      <para>Andreas Jaeger, Program Manager at Novell for openSUSE, has posted about an on-going discussion concerning the naming convention of openSUSE. Apparently the traditional "old school" 11.4, 12.0, 12.1, etc. might need some modernization. Developers and active users have suggested several alternatives.</para>
-      <para>Jaeger <ulink url="http://lizards.opensuse.org/2011/03/11/how-to-name-the-distribution-releases/">explains</ulink> that despite common belief openSUSE doesn't actually employ major and minor number versioning. So to assume that 11.4 is an update to 11.3 is incorrect. That explains all the times reviewers said things like 'despite being only a minor version upgrade, there are enough new and updated features to warrant a major number up-tick.' They just usually "count it always until 3." So, next release would be 12.0.</para>
+      <title><ulink url="http://ostatic.com/blog/opensuse-thinking-about-naming-change"
+          >Ostatic/Susan Linton: openSUSE Thinking About Naming Change</ulink></title>
+      <para>Andreas Jaeger, Program Manager at Novell for openSUSE, has posted about an on-going
+        discussion concerning the naming convention of openSUSE. Apparently the traditional "old
+        school" 11.4, 12.0, 12.1, etc. might need some modernization. Developers and active users
+        have suggested several alternatives.</para>
+      <para>Jaeger <ulink
+          url="http://lizards.opensuse.org/2011/03/11/how-to-name-the-distribution-releases/"
+          >explains</ulink> that despite common belief openSUSE doesn't actually employ major and
+        minor number versioning. So to assume that 11.4 is an update to 11.3 is incorrect. That
+        explains all the times reviewers said things like 'despite being only a minor version
+        upgrade, there are enough new and updated features to warrant a major number up-tick.' They
+        just usually "count it always until 3." So, next release would be 12.0.</para>
       <!-- ($ ld: 12.3.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
-      <title><ulink url="http://itmanagement.earthweb.com/osrc/article.php/3927256">Datamation/Matt Hartley: 15 Must-Have Linux Desktop Apps</ulink></title>
-      <para>Recently it was brought to my attention that all the desktop Linux hoopla in the world doesn't mean squat without compelling applications to get the end user interested. To address this need, I’ve rounded up fifteen powerful Linux applications that reflect the best that Linux has to offer the desktop user, both in and out of the enterprise environment.</para>
-      <para>This is not meant to diminish any excluded apps. Instead my goal is to showcase applications that I’ve found to be really powerful for the typical Linux user. (...)</para>
-      <!-- ($ ld: 8.3.11 sm $) -->    
+      <title><ulink url="http://www.ghacks.net/2011/03/13/review-opensuse-11-4/">ghacks.net/Jack
+          Wallen: Review: openSUSE 11.4</ulink></title>
+      <para>Recently it was brought to my attention that all the desktop Linux hoopla in the world
+        doesn't mean squat without compelling applications to get the end user interested. To
+        address this need, I’ve rounded up fifteen powerful Linux applications that reflect the best
+        that Linux has to offer the desktop user, both in and out of the enterprise
+        environment.</para>
+      <para>This is not meant to diminish any excluded apps. Instead my goal is to showcase
+        applications that I’ve found to be really powerful for the typical Linux user. (...)</para>
+      <!-- ($ ld: 13.3.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.linuxdistroreview.com/opensuse-11-4">LinuxDistroReview: OpenSUSE
+          11.4</ulink></title>
+      <para><emphasis role="bold">Booting</emphasis></para>
+      <para>The first thing you’ll notice when the <ulink url="http://www.opensuse.org/"
+          >OpenSUSE</ulink> CD/DVD boots, is the looks. They’ve taken the usual, monochromatic
+        “Choose language, okay, now choose your boot options” screen, and made it look welcoming by
+        getting it as close to your normal GUI without having to include a mouse. You also get a
+        decent amount of boot and language options (e.g. safe boot) but you start off with english
+        as the default language (unlike some distros where you have to select a language at the
+        booting screen), which might save time for some, but could cause some difficulties for
+        non-english speakers. (...)</para>
+      <!--($ ld: 13.3.11 sm $)-->
     </blockquote>
   </sect2>
   <sect2>
     <title>Warning!</title>
     <blockquote>
-      <title><ulink url="http://www.petur.eu/blog/?p=349">Petur.eu: Linux can be hacked with an USB device</ulink>
+      <title><ulink url="http://www.petur.eu/blog/?p=349">Petur.eu: Linux can be hacked with an USB
+          device</ulink>
       </title>
-      <para>A bug in the Caiaq USB driver, which could be used to execute arbitrary at the kernel level has been <ulink url="http://labs.mwrinfosecurity.com/files/Advisories/mwri_caiaq-usb-drivers-buffer-overflow_2011-03-07.pdf">reported by</ulink> Rafael Dominguez Vega of MRW InfoSecurity.</para>
-      <para>The device drivers are vulnerable to <ulink url="http://en.wikipedia.org/wiki/Buffer_overflow">buffer overflow</ulink> condition when an USB device with an unusually long name (over 80 characters) is connected to the machine. This is due to the use of strcpy() which length is not being tested, enabling the attacker to execute malicious code on the target machine. (...)</para>
-      <!-- ($ ld: 8.3.11 sm $) -->
+      <para>I have to admit, over the years I haven’t given openSUSE enough love or credit for being
+        the outstanding Linux distribution is it. With that said, I wanted to give some attention to
+        the latest release coming out of the openSUSE project. And, since the default desktop for
+        openSUSE 11.4 is KDE, I will be giving a little extra attention to the KDE desktop. Since
+        both might well gain some serious ground, when Ubuntu 11.04 is released, it will be nice for
+        users to not only know of its existence, but to also know that openSUSE 11.4 is, in fact, a
+        solid distribution worth giving a look. (...)</para>
+      <!-- ($ ld: 13.3.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
@@ -127,5 +164,5 @@
         </imageobject>                  
       </mediaobject>      
     </blockquote>
-  </sect2> --> 
+  </sect2> -->
 </sect1>

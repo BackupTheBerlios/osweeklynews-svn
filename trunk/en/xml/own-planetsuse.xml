@@ -56,9 +56,338 @@
             nm-applet (NetworkManager-gnome) instead – with the new oxygen-gtk theme it doesn’t even
             look bad ;-)</para>
         </listitem>
-      </itemizedlist>
-    </para>
+      </itemizedlist></para>
     <para>That’s it for me. Have a lot of fun with 11.4.</para>
     <!-- ($ ld: 13.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/03/13/opensuse-11-4-how-it-goes-in-portugal/">Nelson
+        Marques: openSUSE 11.4 :: How it goes in Portugal ?!</ulink></title>
+    <para>I’ve been following the biggest general technology forum in Portugal with a close eye for
+      openSUSE 11.4 comments and reviews… 10 years ago SuSE Linux was one of the predominant Linux
+      distributions fighting for first place with Red Hat and followed closely by Debian. The fourth
+      place belonged to Slackware.</para>
+    <para>10 years after… Slackware mainly disappeared, the Red Hat/Fedora community somehow
+      vanished (judging by LUG member strength), and fate hasn’t been nicer for openSUSE. From most
+      of what I read, Ubuntu became the major power, followed by Arch Linux and Debian… there’s a
+      few pockets of resistance by Mandriva… It’s also interesting to see that new users are mainly
+      confused between choosing Fedora and openSUSE… this relation is also getting strong with drop
+      outs from Ubuntu. The timing is good for intervention…</para>
+    <para>From what I could see in the reports of openSUSE reviews I’ve seen:<itemizedlist>
+        <listitem>
+          <para>Installer – Users expected something new, but they didn’t disclaimed what they
+            expected. They say that openSUSE installer is pretty much offering the same features as
+            other distributions. I really don’t know what can be innovated here….</para>
+        </listitem>
+        <listitem>
+          <para>Updates – This is one of the points that is most commented in the reviews. Though
+            there’s no real claims on what could be improved or what is missing, everyone points to
+            a simple conclusion: people seem to like updates and the faster they are done, the
+            better. Update timings seem important.</para>
+        </listitem>
+        <listitem>
+          <para>Tumbleweed – There are a lot of expectations towards rolling releases and
+            Tumbleweed. This feature seems to captivate a lot of veterans changing from other
+            distributions and also new comers. This is without doubt one of the points to invest in
+            the future for the local community…</para>
+        </listitem>
+        <listitem>
+          <para>Time of Installation – Some harsh critics on the installation time. People believe
+            that 30 minutes is too much of installation time. I kinda disagree as it seems pretty
+            much normal for a DVD install. Installing openSUSE LiveCD’s on real hardware (no
+            virtualization) through USB2 and USB3 sticks, is pretty much bellow 10 minutes. Should
+            we focus on USB sticks installations and work the methodology? Sounds good as a
+            differentiation point.</para>
+        </listitem>
+        <listitem>
+          <para>USB Sticks – Some harsh critics with people using imagewritter and unetbootin. For
+            what I was able to determine, this problems seem to be related with the partitions not
+            being flagged as ‘active’. Something we can improve here?</para>
+        </listitem>
+        <listitem>
+          <para>KDE – All the reports seem to place openSUSE as the best KDE offer. Nothing was
+            expected besides this.</para>
+        </listitem>
+        <listitem>
+          <para>OpenSUSE and other distros – Not much has been written, except some comments
+            considering that Mandriva Spring was the only distribution that is more attractive than
+            openSUSE 11.4. Only 2 comments place emphasis on this… Something we can improve on this
+            field ?</para>
+        </listitem>
+        <listitem>
+          <para>Support – Support on those forums is rudimentary… Something we can improve and
+            that’s being worked on. Soon Portuguese will become available on the official openSUSE
+            Forums and a Portuguese Team as been assembled for this. Additionally Jim Henderson is
+            contacting Carlos Ribeiro to explore the possibility of having also Brazilian
+            contributors and community to help on this Forums. They will become Portuguese (language
+            wise) following the work by the Wiki and IRC.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The feedback is very positive, and there’s an abnormal dropouts from Ubuntu and many
+      confused people…. The timing is perfect for taking action… and that will happen soon! </para>
+    <para><emphasis role="italic">License: GFDL V1.2</emphasis></para>
+    <!--($ ld: 14.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.cornelius-schumacher.de/2011/03/its-not-address-book.html"
+        >Cornelius Schumacher: It's not an address book</ulink></title>
+    <para>It began about <ulink url="http://markmail.org/message/7ef64iba64mjoy4a">ten years
+        ago</ulink>, when I <ulink url="http://markmail.org/message/cyt6drrtjjem2xti">rewrote the
+        KDE address book library</ulink>. I implemented a nice API, vCard parsing, and a
+      representation of something I called an Addressee back then, a contact, the data belonging to
+      a person or any other entity, closely modelled after the fields of vCard, which is a fine
+      standard for storing and exchanging address book data.</para>
+    <para>We wrote <ulink url="http://userbase.kde.org/KAddressBook_4.3">KAddressBook</ulink> as an
+      application to manage contact data on top of the address book library, and while it's a nice
+      and useful application, in some ways it still follows to some degree the technical thinking
+      coming from the structure of the underlying implementation. This shows in the user interface,
+      and makes it less useful, attractive, and intuitive as it could be.</para>
+    <para>So I thought it would be a good idea to experiment a bit and approach the task of handling
+      people data from the other direction. Ignoring technical aspects of the implementation, or
+      constraints of underlying technology, but thinking from a user's point of view, thinking about
+      what's a natural way how to deal with this kind of data. I started to think and code a bit,
+      and during <ulink url="http://en.opensuse.org/Portal:Hackweek">Hackweek 6</ulink> I went on
+      and got the application I started to a level where I think it's time now to share it and
+      gather some more feedback.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://en.opensuse.org/images/8/8e/Hackweek6Logo.png" width="20%"/>
+      </imageobject>
+    </mediaobject>
+    <para>But before I come to the application itself, here is some of the motives and concepts
+      behind it.</para>
+    <para><emphasis role="bold">Mental model of people</emphasis></para>
+    <para>The first thing I did was trying to come up with an idea of what the mental model is how
+      people think about people. The way address books usually present this data is practical in
+      some ways, but when you think about other people, do you have an alphabetically ordered list
+      of names in your mind? Probably not. So I collected a list of concepts, which better address
+      the mental model of people.</para>
+    <para><emphasis role="bold">Groups</emphasis>. People usually belong to some groups. There are
+      colleagues, friends, familiy, the weird group of hackers you hang around with on IRC. These
+      groups are often used to classify people, and provide a pretty solid way to structure how you
+      organize people, the KDE guy you met at last year's Akademy, the colleague who used to study
+      with you at university. People often belong to multiple groups, and sometimes there is no
+      clear mapping.</para>
+    <para><emphasis role="bold">Pictures</emphasis>. When thinking of people you usually have some
+      kind of picture in mind. You would recognize most persons you know on a photo without effort.
+      Pictures are widely used to identify people, and pictures of people, especially of people you
+      have a closer relation with are easily available from various sources now.</para>
+    <para><emphasis role="bold">Fuzzy information</emphasis>. In many cases the information you have
+      about other people is somewhat fuzzy. You might not know the exact address, just a city. You
+      might only know a nickname, or the date of the birthday, but not the year, or you might have
+      trouble assigning the parts of a foreign name to the fields of a technical address book. Is it
+      a middle name or is it part of the given name? Is this the surname, or maybe a suffix? While
+      it's nice from a technical view, to have this exact classification of fields of a record, in
+      practice and from a human point of view, it often just is neither possible nor important.
+      Humans deal with fuzzy information pretty well, especially when dealing with other people. </para>
+    <para><emphasis role="bold">Time</emphasis>. An important factor to classify information is
+      time. You remember that you met a person at a certain time. When having multiple phone numbers
+      available, the time, when you got them, will give an important hint about which one is more
+      likely to work. In general, knowing when something changes, helps a lot with navigating
+      information.</para>
+    <para><emphasis role="bold">Space</emphasis>. Another important factor is space. You think of
+      people being close to each other, either physical, as in neighbors, or in a logical way, as in
+      family. A family tree is a great example how space is used to organize and structure people.
+      There are also numerous other ways how to relate people in a spacial configuration. How they
+      appear on a photo, a seating order for a celebration, and many more.</para>
+    <para><emphasis role="bold">It's not paper</emphasis></para>
+    <para>In addition to coming up with a way how to meet the mental model of how people think about
+      people, I also wanted to take benefit of having available the power of managing the data on a
+      computer. There are many address book applications which resemble paper address books, going
+      as far as mimicking the texture of the leather cover. But being able to manage the data
+      electronically without the restrictions of paper, leather, and spiral binders, gives some
+      unique freedom and potential in a couple of areas.</para>
+    <para><emphasis role="bold">Ubiquity</emphasis>. As it's so easy to store, transmit, and
+      distribute data electronically, data can be ubiquitous, it can be available at work as well as
+      at home, or when being on the road, on your laptop, phone, tablet. It can live in the cloud,
+      easily accessible from everywhere.</para>
+    <para><emphasis role="bold">History</emphasis>. Without the restrictions of paper, there is no
+      reason to ever delete data. You can keep an unlimited history, which gives you the safety to
+      always being able to go back, if you have changed something you later realize you didn't want
+      to change, or if a need to access old data arises. This all can be done in a way, which hides
+      old data from the current view, to not clutter the most recent view you normally use.</para>
+    <para><emphasis role="bold">Low-cost editing</emphasis>. With electronic data, the cost of
+      editing, rearranging, duplicating, and deleting data is very low. You can easily duplicate a
+      set of entries about people to do some rearrangements, and then delete it again after a few
+      minutes without loosing anything. No striked through entries, no wasted pieces of paper, no
+      mess of failed attempts to get something done. This provides the opportunity for ad-hoc
+      editing, especially if combined with some kind of history.</para>
+    <para><emphasis role="bold">Connect to the cloud</emphasis>. A ton of personal data lives in the
+      cloud, on various web sites, in structured and not so structured ways. With Facebook, Google,
+      Linkedin, your corporate directory server, the data on your private mail account and much
+      more, you have access to a lot of data from the people you usually deal with. By putting an
+      application at the right place, you can connect all this to represent your personal social
+      network.</para>
+    <para><emphasis role="bold">Unconstrained user interface</emphasis></para>
+    <para>Finally I wanted to go beyond the standard user interface of current address book
+      applications. There is much value in standardized interfaces, taking into account style
+      guides, using standard components, and all the other good stuff of working in a nicely
+      defined, consistent, and integrated environment. But I wanted to experiment with leaving this
+      behind and trying some non-standard concepts.</para>
+    <para>So I decided to not care much about standard widgets, to get rid of everything, which was
+      non-essential to the actual application, to use animations gratiously to make the interface
+      dynamic and support the user in understanding transitions. I also decided to try a new kind of
+      menu, which isn't seen much on desktop applications, but could give more direct access to the
+      actions the user needs. Finally I also decided to create a UI, which is not limited to a
+      specific form factor, but can deal with a variety of devices, not only classical desktops, but
+      also stuff like tablets, or maybe even phones.</para>
+    <para><emphasis role="bold">Polka</emphasis></para>
+    <para>Now that you know where I came from let me introduce you to my experiment. I call it
+      Polka. It's an application for dealing with people data based on the concepts I described,
+      thinking from a user's point of view, matching the mental model of how we think about people,
+      and not caring too much about the current status quo in terms of address book applications. I
+      summarized that in the FATE entry for my hackweek project, where I called it the <ulink
+        url="https://features.opensuse.org/311143">humane address book for the cloud</ulink>. The
+      title came from the idea to approach an address book not from the technical point of view, but
+      from what is relevant for human users, and to tie it to all the data and functionality which
+      is available in the cloud.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh4.googleusercontent.com/-xeFtKuDablU/TX15k4HbdcI/AAAAAAAAAKU/7lus4acD60g/s320/polka_start.png"
+          width="30%"/>
+      </imageobject>
+    </mediaobject>
+    <para>I started to think about this quite some time ago, and did write some code here and there,
+      but during last hackweek I made the effort to actually put it all together and polish it so
+      that it hopefully adequately illustrates the concepts I wanted to experiment with.</para>
+    <para>Let me explain some of the main elements of Polka.</para>
+    <para><emphasis role="bold">Group view </emphasis></para>
+    <para>The central part of Polka is the group view. It shows a group of people and possibly some
+      sub groups. The display is based on people's pictures and makes use of the view as a kind of
+      canvas, where the members of the groups can freely be arranged. Names are shown for entries
+      where no picture is set, and they are shown for all entries, when hovering over with the mouse
+      pointer, so it's easy to identify people.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh4.googleusercontent.com/-Eqc4BFJcCII/TX15gWlVtUI/AAAAAAAAAKE/D51MxeWvnw4/s320/polka_group.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>By default all people are shown in a compact regular arrangement, but you can simply move
+      all entries around to create a different arrangement. The next screenshot shows an example.
+      It's the group of people, who attended the <ulink
+        url="http://community.kde.org/KDE_PIM/Meetings/Osnabrueck_8">Osnabrück 8 meeting</ulink>.
+      The arrangement reflects where people were on the <ulink
+        url="http://community.kde.org/File:KDEPIM_Meetings_Osnabrueck8_group.jpg">group
+        photo</ulink>. </para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/-jPlKm7h6dew/TX15iHRxVLI/AAAAAAAAAKI/Xfh7gyKzxJM/s320/polka_group_menu.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>That's just one application for arranging people freely. You could also reflect breakout
+      groups, seating orders, a family tree, or any other relations between people. The basic idea
+      is that you use space to naturally reflect how you are thinking of people. People can be added
+      to as many groups as needed, and any group can contain other groups with the same or different
+      people. The arrangement of people is specific to the view of the group, but the entries of
+      people are always the same, they are just links, so a person can appear in multiple groups,
+      but the data is only there once.</para>
+    <para><emphasis role="bold">Menus</emphasis></para>
+    <para>For menus and getting access to actions in general I wanted to experiment with something
+      different than the classical menu bars and context menus, and see if I could find a way to
+      make it more natural and direct to work with the elements shown in the user interface. So I
+      got rid of all traditional menus, no menu bar, no status bar, no right clicks.</para>
+    <para>In the previous screen shot you can see how you get access to actions for a person. If you
+      hover over a person, there is shown a fan-like menu, where you can select some person-related
+      options. For general options there is the "main" menu disk at the top right, which also shows
+      actions on hover. You can also click on the canvas to get options which are related to a
+      certain location like adding a label.</para>
+    <para>This all is pretty simple, and you don't even have to be very exact, when hitting a menu,
+      so it probably would also work with a touch screen, although I didn't try it, so take this
+      with a grain of salt.</para>
+    <para><emphasis role="bold">Person view</emphasis></para>
+    <para>When you click on the "show" menu item, a detailed view of the person is shown. It
+      includes all the data you store about this person. This is the usual contact information, but
+      most of it is stored in a relatively free form. You don't have to identify components of the
+      name or the address for example. They are just text fields. You can also easily add free form
+      text by adding comments to every field of the person's data. The speech bubble indicates where
+      a comment is there, and you can add general comments to the person's entry. All this helps
+      dealing with the fuzziness which data about people often has.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/-1ahv7j2sCqs/TX15kUMo4PI/AAAAAAAAAKQ/Lr4GH9CfxSE/s320/polka_person.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>When you hover over a data field, some editor controls are shown to comment, edit or
+      remove the field, and the information is shown when the fields was modified the last time.
+      This way you can judge, which fields are relevant, and which ones might be outdated, and it
+      also can help with putting the entry in the perspective of time, they might be related to
+      something which happened at a certain time you remember.</para>
+    <para>An important element are the pictures of the person. Polka collects pictures from
+      different sources on the web, e.g. from your Twitter profile, and you can easily add more
+      pictures by using a built in screenshot function. So if you see a picture of a person on a web
+      site, in your mail client or any other place, you can just capture it directly from the
+      display without having to deal with saving image files or getting URLs.</para>
+    <para>What the screenshots don't show is how the views transition. It's all done dynamically
+      with animations converting between views of different groups or when the details of a person
+      are shown. This makes it easier to keep track of what belongs where, and also is fun, because
+      it looks and feels nice and smooth.</para>
+    <para><emphasis role="bold">History</emphasis></para>
+    <para>Polka takes care of saving data in the background. The user doesn't need to know or think
+      of that at all. All changes are saved and the complete history of changes is preserved, so
+      data is never lost, and there is no need for confirmation dialogs or anything like
+      that.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/-Nw0nP12fSiY/TX15jK8xDeI/AAAAAAAAAKM/pZrOvHpuDGY/s320/polka_history.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>The data can also be shared via a server, including the full history. So all your people's
+      data is always available and shown in the same way, no matter where you are.</para>
+    <para>Storing the history also makes it possible to have unlimited undo, even across different
+      computers. But I haven't implemented any user interface for that yet.</para>
+    <para><emphasis role="bold">Technology</emphasis></para>
+    <para>So much about what Polka does and how the user interface looks and behaves. Although the
+      implementation is not that important, it is working code, so some technical details might
+      still be interesting.</para>
+    <para>The data is stored in an application-specific XML format, including all the meta data like
+      comments, when something changed, the position of objects in the views. So everything is in
+      one place and can easily be versioned and shared. The interface to the XML is generated via
+        <ulink url="https://github.com/cornelius/kode/tree/master/kxml_compiler"
+        >kxml_compiler</ulink> from an example XML file. So there is a native API to access the data
+      without having to maintain the code to read and write the XML and represent it in C++
+      objects.</para>
+    <para>To store history and for sharing the data across machines, everything is stored in a git
+      repository. Every change is recorded, so the full history is available in the git history. Git
+      is amazing as a storage backend. As it's so fast, it's not really noticable that storing data
+      is more than just writing a file, and by using git's distributed nature, sharing the data and
+      its history with a server and across different machines comes almost for free.</para>
+    <para>The UI is implement with QGraphicsView and the Qt animation framework. I thought about
+      using QML, but as C++ is my native language, using QGraphicsView directly seemed like the more
+      straight-forward way to me. The implementation separates models handling the data and the
+      views reasonable well, though, so adding a QML based view should be possible without too much
+      hassle.</para>
+    <para>For the person's view I use Webkit. The data is rendered as HTML and CSS and shown in
+      Webkit. This gives some more flexibility and power than a widgets or QGraphicsView based view,
+      and also opens a path towards the web. I tried again to write a small library to make it
+      convenient to generate HTML and CSS. It's better than some of Spaghetti code I wrote in the
+      past for this purpose, but it still doesn't match the elegange of for example some of the Ruby
+      based solutions for this. It's a pretty tough problem in C++.</para>
+    <para>Other than that it's a pretty much standard KDE application. It doesn't make too much use
+      of the platform, though, as I consciously didn't use many of the standard UI elements. </para>
+    <para><emphasis role="bold">Code</emphasis></para>
+    <para>The code for Polka is available at <ulink
+        url="http://quickgit.kde.org/?p=scratch/cschumac/polka.git"
+        >git://anongit.kde.org/scratch/cschumac/polka.git</ulink>. It's still experimental, so use
+      with care, although by the use of git as a storage backend your data is pretty safe. </para>
+    <para>I don't have specific plans for making a release or making it a more official part of KDE
+      right now, but will continue to use it as a playground for trying out concepts and maybe
+      provide some inspiration for other projects.</para>
+    <para>I am interested in feedback and comments. So don't hesitate to <ulink
+        url="mailto:schumacher@kde.org">contact me</ulink>, if you have questions, ideas, comments,
+      or suggestions.</para>
+    <para>So I'm at the end with this blog post, and while it is a very long post, there is still a
+      lot to tell. For now I'll let the code speak, and maybe I'll blog again later to discuss some
+      more details about specific aspects of Polka.  </para>
+    <!--($ ld: 14.3.11 sm $)-->
   </blockquote>
 </sect1>
