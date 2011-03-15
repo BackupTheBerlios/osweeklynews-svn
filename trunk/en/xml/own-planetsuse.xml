@@ -387,7 +387,325 @@
       or suggestions.</para>
     <para>So I'm at the end with this blog post, and while it is a very long post, there is still a
       lot to tell. For now I'll let the code speak, and maybe I'll blog again later to discuss some
-      more details about specific aspects of Polka.  </para>
+      more details about specific aspects of Polka. </para>
     <!--($ ld: 14.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/sharing-opensuse-world-mirrorbrain">OMG!
+        SUSE!/rtyler: Sharing openSUSE with the world, via MirrorBrain</ulink></title>
+    <para>Some of our readers might not know this, but the release of openSUSE 11.4 is actually the
+        <emphasis role="bold">second</emphasis> release that OMG! SUSE! has had the opportunity to
+      cover, the first one being <ulink url="http://omgsuse.com/content/meet-opensuse-113">openSUSE
+        11.3</ulink>. </para>
+    <para>Shortly after the 11.3 release, I reached out to some of the folks responsible for
+      coordinating the distribution of <emphasis role="bold">terabytes</emphasis> of openSUSE on
+      release day. I managed to interview <ulink url="http://poeml.de/">Peter Pöml</ulink> one of
+      the creators of MirrorBrain, the brain (weak-pun intended) behind distributing some of the
+      biggest projects on the internet, including <ulink url="http://opensuse.org/"
+      >openSUSE</ulink>.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://pixelpressicons.com/MinersHelmet.jpg" align="right" width="10%"/>
+      </imageobject>
+    </mediaobject>
+    <para>At a high level, MirrorBrain allows a central server such as <ulink
+        url="http://download.opensuse.org/">download.opensuse.org</ulink> utilize a vast network of
+      "mirrors" for distributing enormous amounts of data in such a way that users are downloading
+      from a mirror that's "close" to them. For example, if you're in the UK, MirrorBrain will try
+      to bounce you to a UK mirror, failing that a european mirror, and so on.</para>
+    <para>Enough with the formalities, put on your Miner's cap and let's dig into the
+      interview.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: The openSUSE project
+        uses a tool called MirrorBrain, which (correct me if I'm wrong) tries to automatically
+        redirect users to their closest mirror based on a geographic lookup of their IP address.
+        When did openSUSE start using MirrorBrain and what motivated the switch?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: By the end of 2006, a new openSUSE release (10.0
+      maybe?) was just being issued. There were serious problems with stability of the download
+      server during the "peak". At the time, I joined a new team to work on the openSUSE Build
+      Service. That team used the same download server to publish their work, so I came into contact
+      with this part of the infrastructure. As Apache guru, the server crashes were seriously
+      irritating me and it was clear to me that something should be done about them. Thus, I started
+      working on a solution and made it my obsession for the next three years. The Build Service
+      team kind of had to do without me. However, the Build Service benefitted most from my work,
+      more than anything else. See below :-)</para>
+    <para>You probably realize, as I did at the time, the utter importance of the download system,
+      because a working download is the life blood of openSUSE; its aorta, so to speak. (Users take
+      this for granted, of course.) </para>
+    <para>If you think about delivering openSUSE, you might first thing about CD and DVD images.
+      However, that's only a part. And it is the part that's not difficult to deal with. The images
+      account for about 3 requests per second (peak), which is easily to deal with with a simple
+      Perl script that you can hack up in half an hour. That's what other projects do successfully.
+      openSUSE also had such a script, but it had some performance issues. </para>
+    <para>The real challenge was that we redirect more than ISO images. We have to handle requests on:<itemizedlist>
+        <listitem>
+          <para>updates</para>
+        </listitem>
+        <listitem>
+          <para>network installs</para>
+        </listitem>
+        <listitem>
+          <para>packages built by the build service</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>When the build service was presented, it quickly became popular, and we soon realized that
+      we need a powerful content delivery for all those things. </para>
+    <para>Therefore, we are talking about 300-500 requests per second to be handled and redirected.
+      That made a good design necessary. In the beginning, a handful of people at SUSE gathered to
+      think about the needed feature and the design, but with one early exception I'm the only one
+      who ever worked on it. </para>
+    <para>If it weren't for the build service, it would have been easy to do the following:<itemizedlist>
+        <listitem>
+          <para>redirect requests for ISO images via a little Perl script</para>
+        </listitem>
+        <listitem>
+          <para>distribute updates by giving the clients lists of mirror URLs and let them pick a
+            mirror, just like Fedora does with yum.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The build service however could not be handled by either of this methods. Since it pushes
+      out new packages at an extremely high pace (more than <emphasis role="bold">once a
+        minute</emphasis>). There is simply no time for mirrors to synchronize and for the mirror
+      system to stabilize. They'll always lag and be out-of-date by definition.</para>
+    <para>That's the reason for the design of MirrorBrain. It runs all client requests through a
+      single system (also because we wanted to be able to be in a position to count things), and it
+      keeps track of the mirrors contents and does that for ISO images, updates and buildservice
+      packages alike. </para>
+    <para>The openSUSE build service would impossibly have succeeded without MirrorBrain. It can't
+      work without it.</para>
+    <para>But the DVD and CD images' distribution is a bagatelle, from the perspective of
+      MirrorBrain. Those 3 req/s don't surface in the graph of a server that constantly gets 300
+      req/s. They certainly don't cause any noticeable load. And finally, all the hard work is done
+      by the mirrors! Their bandwidth, hardware and manpower which they contribute is what makes
+      openSUSE whir. </para>
+    <para>You'd have to look very, very hard at <ulink
+        url="http://download.opensuse.org/apachestats/">openSUSE's apache stats</ulink> to see any
+      effect of the recent release on openSUSE's infrastructure.</para>
+    <para>For the mirrors however, the release causes a very noticeable peak, since the files are
+      huge (while the request is tiny, which is all that MirrorBrain has to handle). I worked hard
+      to collect as many mirrors as possible, over three years, so that openSUSE enjoys the help of
+      about 150 mirrors at this time. This number seems to do the demand justice, and there hasn't
+      been a shortness of bandwidth since a long time - the US being an exception, where we had only
+      a few mirrors sometimes and openSUSE wasn't popular enough to find more. </para>
+    <para>Finding mirrors and keeping them working correctly means to communicate with mirror admins
+      and to carefully listen to users. One has to have "big ears" to get hold of problems that
+      surface for users. Of all the problems that occur, only a very tiny fraction is reported in
+      public forums, or even directly to us. Thus, if one happens to hear about some problem it
+      usually affects many people, and has to be taken very seriously. </para>
+    <para>Another design goal of MirrorBrain was reusability and modularity, because an in-house
+      solution didn't seem to have the chance to grow enough. So MirrorBrain is open source and
+      freely available to other projects, and attempts to suit them as well. OpenOffice.org and the
+      Free Software Foundation use MirrorBrain, and Sourceforge uses components of it. The users
+      that I know of are <ulink url="http://mirrorbrain.org/users/">collected here</ulink>.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: Does MirrorBrain
+        incorporate any "health" or speed metrics to try to determine if a mirror is slowing down?
+        Could you tell us a bit about how MirrorBrain determines what the "best" mirror for me
+        is?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Every mirror is checked once a minute with a
+      simple request that it has to answer within 20s. The time seems generous, but has to take into
+      account that many mirrors are far away, on the other end of the world so to speak, it can take
+      that long to talk to them.</para>
+    <para>In addition, when assessing mirrors content we do some trickery to make sure that the
+      mirror is 100% capable of delivering large files (>2G, >4G) correctly and supporting partial
+      transfers (to complete a previously aborted transfer). </para>
+    <para>Since mirrors often are older systems, there are still about 30% among them that don't do
+      this correctly. </para>
+    <para>Further health metrics havn't proven necessary. We had a lot of ideas initially, but
+      either they were to difficult to put into practice or not so much needed in reality, as
+      real-world experience showed. </para>
+    <para>For the distribution of ISO images, it would be quite useful to survey mirrors more
+      closely and monitor their "performance", because:<itemizedlist>
+        <listitem>
+          <para>A user is directly involved and sitting in front of his computer.</para>
+        </listitem>
+        <listitem>
+          <para>Web browsers don't do error checking on downloads</para>
+        </listitem>
+        <listitem>
+          <para>Due to the size of the files, a drop in performance can easily catapult the download
+            time from an hour to 3 days.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>This is where torrents come into play, because (at least for some savvy users) they
+      improve on this. Even though distribution via torrents is not known for the good speed that
+      you can reach when downloading from fast mirrors. </para>
+    <para>There's a lot that could be done in regard to monitoring, and I'd love to see
+      contributions. </para>
+    <para>Regarding other files (not ISOs), we have pursued a different approach. We have large
+      control over the download client that is used to download packages and updates, and we have
+      made the client robust to deal with slow or broken mirrors. MirrorBrain is not only a
+      redirector, but also a Metalink generator. Metalinks contain all the information that is
+      needed to find packages on mirrors and make sure they are 100% intact. MirrorBrain serves
+      Metalinks to zypper and YaST, so they can download packages in parallel from multiple mirrors
+      at the same time, do error correction and automatically deal with most mirror problems that
+      way. </para>
+    <para>This method could also used for ISO images (see: <ulink
+        url="http://lizards.opensuse.org/2008/12/16/best-way-to-download-opensuse/">Best way to
+        download openSUSE</ulink>) and it would be ideal if web browsers would natively support this
+      technology. For now, this isn't the case though. I have been working hard on a standard for
+      the Metalink Download Description format for more than a year, because protocol
+      standardization would probably lower the barrier of such implementations, and the standard has
+      been <ulink url="http://tools.ietf.org/html/rfc5854">published</ulink> in March this year. </para>
+    <para>Regarding mirror selection, the client is geolocated by GeoIP and the network prefix and
+      its autonomous system is looked at. The process is <ulink
+        url="http://www.poeml.de/~poeml/talks/free_software_CDN_vision.pdf">illustrated
+      here</ulink>. Mirrors from the same country (or same continent) are preferred, or in the case
+      of some countries there's a special configuration that makes sure that a useful choice is
+      made. For instance, it could be a nearby country that works best (New Zealand -> Australia),
+      or it could be a country far away that works much better than a neighbouring country
+      (Mozambique -> Germany instead of South Africa). This <ulink
+        url="http://mirrorbrain.org/static/talks/mirrorbrain_fosdem_2010.pdf">presentation from
+        FOSDEM</ulink> contains such an example, which shows that a simple proximity- or
+      geolocation-based choice is not enough.</para>
+    <para>From all mirrors that are eligible for a request, a weighted randomized choice is made, so
+      that powerful mirrors can get a larger amount of requests than small ones. It is also possible
+      (and necessary) to restrict some mirrors to their country, autonomous system, or network. For
+      many mirrors, international bandwidth is scarce and needs to be protected.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: For openSUSE 11.4 and
+        subsequent major releases, how could MirrorBrain or the openSUSE distribution infrastructure
+        improve to make the release process smoother and faster?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Did the 11.3 release leave something to desire in
+      this regard? From what I heard, it went smoothly. There is always a little discussion whether
+      the use of Akamai during the first day makes things faster or slower, but apart from that I
+      didn't hear complaints. However, I'm mostly not involved anymore and miss most of the
+      communication going on.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: How does the openSUSE
+        project ensure that all mirrors that users are being redirected to have the absolute correct
+        files at the time of a release?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Registered mirrors pull the images before they are
+      released. They are first synchronized in a directory that is not readable to the public (and
+      the team makes sure that the mirrors replicate these permissions, so the new stuff doesn't
+      "leak"). The release team then waits and checks mirrors periodically, to see when enough
+      mirrors have the files. Then a time is agreed on when the permissions are "flipped" to open
+      the directory, a procedure often called "bitflip release" which is also employed by other
+      Linux distributors. </para>
+    <para>The reason behind this is that it takes time to spread the files to the mirrors (it could
+      take 3-5 days), and it works best if the files become publicly available within a short
+      timeframe on all mirrors at once. If files become available only on one or a few mirrors,
+      they'll soon be swamped completely by downloading users, which doesn't please the mirror
+      operators (and neither the openSUSE project).</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: Many existing
+        openSUSE users, myself included, use Zypper to upgrade from previous releases. The packages
+        are all downloaded from download.opensuse.org, just like ISO images are. Do you have any
+        numbers to give us a rough idea of how much traffic upgrades produce?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: An upgrade generally consumes less bandwidth than
+      a DVD download, because unnecessary stuff isn't downloaded in the first place. It causes more
+      requests on download.opensuse.org (let's say, a thousand requests) instead of the single
+      request for the image. All that runs through MirrorBrain of course.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: Releases typically
+        "go live" around mid-day in Europe and early morning in the United States. Do you have an
+        idea when traffic "peaks" after a release?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Usually, after 6-10 hours. All traffic that <ulink
+        url="http://download.opensuse.org/">download.opensuse.org</ulink> receives follows a clearly
+      visible circadian rhythm. The release peak also follows this and overlays it.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: This has all been
+        incredibly informative, as it stands right now, are there any other major hurdles or
+        challenges faced when distributing openSUSE?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: I would like to point out that contributions to
+      MirrorBrain would be important, to keep the project alive and improve it further. It is
+      important to make it more attractive for more users, to strengthen its user base. A
+      contribution could be development (a web frontend is needed, e.g., and IPv6 geolocation),
+      sponsoring of the development of a new feature and fixing of bugs, testing, packaging,
+      documentation, testing the documentation, or lastly (but not least) a donation. Donations can
+      ensure all of the above. We have a <ulink url="http://mirrorbrain.org/donations/">donations
+        link</ulink> on the site and feel free to spread the word.</para>
+    <para>I'd like to take this opportunity to publicly thank Peter for taking time out of his busy
+      schedule to share so much information with us about distibuting a major operating system like
+      openSUSE. You can learn more about MirrorBrain at <ulink url="http://mirrorbrain.org/"
+        >mirrorbrain.org</ulink>.</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!--($ ld: 15.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://opensuse.terrorpup.net/?p=246">Chuck Payne: Time to start writing
+        again</ulink></title>
+    <para>I know since the elections it’s been very quite here. I been on the openSUSE Wave that’s
+      calming down a bit, which is sad, because it been a wonderful ride. It fact lately I feel I am
+      on the downward ebb of Karma. </para>
+    <para>The wave started getting ready for Hackfest/SCALE which took place in L.A. I got to work
+      with a great group of people. Very long hard days, but we made a very big splash at SCALE.
+      Where I got to do a bit of training openSUSE Day, and thanks to Alan Clark, got to help give a
+      talk at SCALE. </para>
+    <para>Coming back from that week, I got sick but couldn’t slow down because of the release of
+      openSUSE 11.4 and working on a Poster, I assume for Linux Magazine in UK. Both were very
+      import. The poster looks great because of Carlos awesome background and the release when
+      great. (...)</para>
+    <para><!--($ ld: 15.3.11 sm $)--></para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://e-tote-kala.blogspot.com/2011/03/attachmate-supportive-friend-of.html"
+        >Kostas Koudaras: Attachmate - A supportive friend of the openSUSE Project</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh4.googleusercontent.com/-RHd1mQJWS0s/TX5b1sDf6pI/AAAAAAAAA8Q/D4kH-fD9cWo/s1600/cip_attachmate-sold.gif"
+          align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>Today, Jeff Hawn the Chairman and CEO of <ulink url="http://www.attachmate.com/"
+        >Attachmate</ulink> made an announcement <ulink
+        url="http://www.attachmate.com/Press/PressReleases/congratulations-openSUSE-project.htm"
+        >congratulating the openSUSE community on the release of openSUSE 11.4</ulink>. It is the
+      second press release of <ulink url="http://www.attachmate.com/">Attachmate</ulink> after the
+        '<ulink url="http://www.attachmate.com/Press/PressReleases/nov-22-2010-SUSE.htm">Attachmate
+        Corporation Statement on openSUSE project</ulink>' and it shows the intentions of
+      Attachmate's people to support the openSUSE project and community and all together to achieve
+      great things in the Future. -- Kostas Koudaras</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA </ulink></para>
+    <!--($ ld: 15.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/be-proud-of-yourself-geekos.html">Jos
+        Poortvliet: Be proud of yourself, Geekos!</ulink></title>
+    <para>Right now I'm enjoying the post-release stress. Going back and catching up with what was
+      delayed due to the release being priority and all... And enjoying huge discussions on
+      Identi.ca like <ulink url="http://identi.ca/conversation/65860477#notice-66972122">this
+        one</ulink> ;-)</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://3.bp.blogspot.com/-5cGzCcRPd18/TX7ZH6urREI/AAAAAAAABbc/5dbpQYZiR0A/s200/11.4_NET_installer-boot.png"
+          align="right"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">Me proud of the Geeko!</emphasis></para>
+    <para>The article which went out on Friday made me very proud - <ulink
+        url="http://news.opensuse.org/2011/03/12/opensuse-11-4-made-a-splash/">openSUSE 11.4 made a
+        splash</ulink>. The title is really correct - we're gathering info on reviews etc on <ulink
+        url="http://en.opensuse.org/In_the_press">this page</ulink> but it is extremely incomplete -
+      there are so many reviews, articles, <ulink url="http://twitter.com/#!/search/opensuse"
+        >tweets</ulink>, <ulink url="http://bit.ly/e3IAHc">dents</ulink>, <ulink
+        url="http://www.facebook.com/#!/pages/openSUSE/45393742283">facebook</ulink> comments,
+        <ulink url="http://bit.ly/fPsJaZ">video's on youtube</ulink> - it is really great! And well
+      over <emphasis role="bold">100.000 downloads in 24 hours</emphasis>, almost twice what we did
+      for 11.3 - awesome. openSUSE has its momentum back, that's clear. We already wrote that <ulink
+        url="http://news.opensuse.org/2011/01/03/opensuse-finished-2010-big/">in this "end of 2010"
+        article</ulink>, and the subsequent Bretzn and Appstore sprints, the marketing sprint and
+      all the cool stuff that is going on makes me quite certain about this: the openSUSE conference
+      2010 was a real turning point for openSUSE. The Geeko's back in the game!</para>
+    <para><emphasis role="bold">Did we leave?</emphasis>
+    </para>
+    <para>The question that might come up is - did the Geeko ever leave? I had a look at <ulink
+        url="http://opensuse.org/statistics">some statistics</ulink> on our user base.<emphasis
+        role="bold"> openSUSE has 7-8 million users</emphasis>, that's significant! And,
+      interestingly enough, between 30-50% more than Fedora. Ubuntu has no statistics online but
+      once made some noise about numbers - talking somewhere between 6 and 8.</para>
+    <para><emphasis role="bold">So be a proud Geeko! </emphasis></para>
+    <para>Now all these numbers have some uncertainty associated with them, nothing is sure. Yet the
+      numbers of Fedora and openSUSE at least are measured in the same way, so likely you can at
+      least compare them roughly. And I bet Ubuntu has similar statisics on which they based their
+      number - with the usual exaggeration. So even though the numbers aren't entirely clear, it is
+      interesting to see openSUSE ain't exactly insignificant as many seem to believe... Not only do
+      we have amazing technology like <ulink url="http://build.opensuse.org/">OBS</ulink> and <ulink
+        url="http://susestudio.com/">Studio</ulink> but we also have a HUGE user base whom we serve
+      with <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">a pretty awesome
+        distro</ulink>! So, Geeko's, in the communication and marketing department - maybe openSUSE
+      is not well known for that. But we're a leading distro when it comes to what matters - users
+      and technology. Be proud!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink>
+    </para>
+    <!--($ ld: 15.3.11 sm $)-->
   </blockquote>
 </sect1>

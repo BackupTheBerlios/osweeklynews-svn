@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -21,35 +22,151 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink url="http://blog.martin-graesslin.com/blog/2011/03/proactive-spam-fighting-with-akonadi/">Martin Grässlin: Proactive Spam Fighting with Akonadi</ulink></title>
-      <para>One year ago I finished my Master Thesis and I just realized that I never really blogged about it. I had the chance to build my implementation during the Thesis upon the Akonadi framework, which is the reason why I want to share what I worked about. For all who might be more interested in my Thesis, a publisher was so kind to <ulink url="http://amzn.to/evh4lj">publish</ulink> it.</para>     
-      <para>The title of my Thesis was "<emphasis role="bold">Implementation of Proactive Spam Fighting Techniques</emphasis>" and the Thesis covered the implementation of two orthogonal techniques. Both techniques shared the idea to eliminate Spam before it hits the user’s inbox. Current Spam fighting techniques like for example SpamAssassin are reactive. <ulink url="http://spamassassin.apache.org/">SpamAssassin</ulink> uses a rule based approach and a Bayesian filter. Rule based approaches cannot identify Spam messages reliable and have the danger to incorrectly mark ham messages if like last year <ulink url="https://issues.apache.org/SpamAssassin/show_bug.cgi?id=6269">the date grossly in the future becomes present</ulink>. Bayesian filtering requires to collect a rather large amount of mail messages before messages can be filtered. This illustrates that reactive Spam fighting is no real solution.</para>
-      <para>Both implementations required to interact with the user’s inbox and in one case it was required to automatically send out mail on mail reception. The original idea of my tutors at the <ulink url="http://pi1.informatik.uni-mannheim.de/">Laboratory for Dependable Distributed Systems</ulink> was to develop either a plugin for Mozilla Thunderbird or Microsoft Outlook. With my background of KDE development I had to think of one framework which handles this much better: <ulink url="http://community.kde.org/KDE_PIM/Akonadi">Akonadi</ulink>. Thanks to Akonadi I was able to implement the solution in a client and platform independent way. Instead of just supporting Mozilla Thunderbird the solution works on all systems supporting Akonadi and no specific mail client is required. It can even be used by users who just use a web mail client. (...)</para>
-      <!-- ($ Id: 07.3.11 sm $)-->        
-    </blockquote>
-    <blockquote>
-      <title><ulink url="http://www.mohamedmalik.com/?p=897">Mohammed Malik: Adding Borders To Use Photos Using digiKam..</ulink></title>
-      <para>Many people add borders to there images, since they make the image look better and stands out unique and digiKam makes this very easy and simple!</para>
-      <para>There are two ways to apply image borders in digiKam (...)</para>
-      <!-- ($ Id: 7.3.11 sm $)-->    
+      <title><ulink
+          url="http://lizards.opensuse.org/2011/03/15/opensuse-11-4-wine-a-practical-case/">Nelson
+          Marques: openSUSE 11.4 :: Wine… A practical case…</ulink></title>
+      <para>For some time I follow the <ulink url="http://forums.opensuse.org">openSUSE
+          Forums</ulink> which provide me a very interesting view about what our users do with
+        openSUSE. I’ve noticed there are some relevant questions about Wine once in a while in the
+        Games forums. </para>
+      <para>A few time ago one of my friends nagged me a lot to do a couple of levels in <ulink
+          url="http://bit.ly/ei1sL7">Lord of the Rings Online</ulink> which has a ‘Free Play’ plan
+        in Europe. People can create an account and play for free the game with some restrictions
+        (contents, equipment, items, etc). Players also have the option of using the online game
+        store to unlock several aspects of the game. I’ve used a free play account for this, as I
+        don’t really dedicate much time to it. </para>
+      <para>I’ve downloaded and installed the game in a Windows 7 computer (abour 10.5GB’s), updated
+        it and it works as expected. My laptop has somehow better hardware and I’ve decided to see
+        how it would run under openSUSE through wine! On <ulink url="http://www.winehq.org/"
+          >WineHQ</ulink> there’s some extensive know-how shared by the community about this game…
+        for my little experiment I’ve used the following:<itemizedlist>
+          <listitem>
+            <para>Lord of the Rings Online installation files pulled from the installer (since I had
+              previously downloaded the game on a Windows machine, I’ve used those files to avoid
+              downloading 10.5GB’s again).</para>
+          </listitem>
+          <listitem>
+            <para>Wine 32 bits (1.3.12, shipped with openSUSE, LotRO requires also
+              wine-gecko);</para>
+          </listitem>
+          <listitem>
+            <para>openSUSE 11.4 x86_64;</para>
+          </listitem>
+          <listitem>
+            <para>ATI FireGL drivers, release 11.2;</para>
+          </listitem>
+          <listitem>
+            <para>PyLotRO Launcher (written in Python, used to launch LOTRO since the normal Turbine
+              .NET launcher has some serious issues);</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>Looking at everything written on WineHQ about LotRO it seems quite a hard task to get
+        this running, luckily it’s actually the opposite… pretty much a quick step, though time
+        consuming due to the size of the game. Here’s the procedures:</para>
+      <para><emphasis role="bold">Installing wine on openSUSE 11.4</emphasis></para>
+      <para>Installing wine on openSUSE is pretty easy (like any other software package). Make sure
+        you are networked and open your favourite terminal emulator and type in the following
+        command: <emphasis role="bold">zypper install wine wine-gecko</emphasis>. Zypp client will
+        pull all the required dependencies and install the software. Please be aware that your
+        system needs to have 3D capable drivers, often proprietary drivers.</para>
+      <para><emphasis role="bold">Installing Lord of the Rings Online</emphasis></para>
+      <para>As I’ve stated previously, I’ve had available the installation cache files from a
+        previous Windows installation which made my life easier (around 10.5GB). If this is not your
+        case, you can look into WineHQ and check how it goes with the installer. An interesting
+        thread can be found <ulink url="http://bit.ly/fNf5iA">here</ulink>. </para>
+      <para>When one installs LOTRO on a Windows Machine it will create a folder on the Desktop
+        called LOTRO_* which will contain a local cache of the files necessary to install the game.
+        Inside of this folder there’s a ‘lotrosetup.exe’ runs the installer. To start the
+        installation is quite easy… open a terminal (with normal user), navigate to the directory
+        where we have the cache files from the installer and run: <emphasis role="bold">wine
+          lotrosetup.exe</emphasis>. The installer window pops up preceded by a small splash screen.
+        Follow the instructions on the screen and wait until it deploys the game (took around 30/40
+        minutes).</para>
+      <para><emphasis role="bold">PyLotRO Launcher for Linux </emphasis></para>
+      <para>There’s ways to run the game and the Turbine launcher (.NET) isn’t really friendly of
+        wine. I’ve decided to go for PyLotRO which is a small launcher written in Python. I’ve made
+        a small test package which is available on my test repository in OBS (<ulink
+          url="http://build.opensuse.org/">openSUSE Build Service</ulink>) and called it
+        python-lotro. You can find it <ulink url="http://bit.ly/e2GLTb">here</ulink>. For openSUSE
+        11.4 it can download this RPM, <ulink url="http://bit.ly/eM96wk"
+          >python-lotro-0.1.14-4.1.noarch.rpm</ulink> and install it with: <emphasis role="bold"
+          >sudo zypper install python-lotro-0.1.14-4.1.noarch.rpm</emphasis>. This will also create
+        a link on your Games menu entry (works in GNOME, never tested on KDE). </para>
+      <para>You have the Linux launcher installer and are a tiny step away from being able to play
+        LoTRO…</para>
+      <para><emphasis role="bold">Updating the Game… </emphasis></para>
+      <para>PyLotRO provides a small interface with the very basic functionality available from the
+        Turbine Launcher. Allows to configure wine debugging output and patch the game amongst other
+        features. Here’s a small screenshot how it’s looks:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/03/Screenshot-Lord-of-the-Rings-Online-Launcher-for-Linux.png"
+            width="40%"/>
+        </imageobject>
+      </mediaobject>
+      <para>To update the game, it’s only required to hit the ‘<emphasis role="bold"
+          >Tools</emphasis>‘ menu and select ‘<emphasis role="bold">Patch</emphasis>‘. This will
+        access the game contents, download, decrypt and update the game to the latest version. Due
+        to the size of the game it really takes a bit of time, so be patient. </para>
+      <para><emphasis role="bold">WARNING</emphasis>: Before launching the game make sure that you
+        have 3D effects disabled on the Desktop (ex: disable compiz or composite in Kwin). If this
+        step isn’t done, the game might suffer of great performance issues and weird behavior. If
+        something looks fishy, then that’s because you forgot this step. This also made me think in
+        one thing… What impact will Unity and gnome-shell have in cases like this… when the
+        accelerated 3D Desktop will generate performance issues in applications like in this case…
+        something to look for in the nearby future… </para>
+      <para>After the update it’s possible to login into the game, configure the options and give it
+        a go… You will need a game account first than can be created for free (Europe only as far as
+        I am aware, the game seems to be under subscription in the US), make sure you download the
+        European client as well.</para>
+      <para><emphasis role="bold">Gameplay </emphasis></para>
+      <para>The game tries to detect the best configuration for your system (Low in my case)… I’ve
+        forced it to Very High, selected my native resolution and gave it a go. The game is fluid
+        enough, though lags a bit in big cities (ex: Bree), this is somehow something to expect, the
+        same happens in Windows. While I haven’t seen much problems with performance, I’ve disabled
+        dynamic lighting and it’s somehow a bit better. The runs nice and everything seems to work. </para>
+      <para>I know many tutorials talk about winetricks and d3dx9… I’ve not did such things and the
+        game runs very nice with the native wine dll’s without having the need of installing
+        Microsoft’s DirectX files. </para>
+      <para>This was a very pleasant experience, and it really surprised me on the positive.
+        OpenSUSE has a very nice version of wine capable of running at least LotRO and World of
+        Warcraft without any issues! It’s something that is worth trying with openSUSE!</para>
+      <para><emphasis role="bold">Licenses</emphasis>: <ulink
+          url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
+      <!-- ($ Id: 15.3.11 sm $)-->
     </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
-      <title><ulink url="http://tuxtweaks.com/2011/03/how-to-hide-secret-messages-in-images-with-linux">TuxTweaks: How To Hide Secret Messages In Images With Linux</ulink></title>      
-      <para>In today's post I'm going to show how to embed a text message into an image file. This type of messaging is known as steganography. Steganography is the practice of hiding secrets in such a way that only the intended message recipient would know to look for your hidden message.</para>
-      <para>In this basic form of secret messaging we'll be adding text onto the end of a file. I'm going to use the following image of Tux for my example. (...)</para>
-      <!-- ($ Id: 08.3.11 sm $) -->   
+      <title><ulink
+          url="http://tuxtweaks.com/2011/03/how-to-hide-secret-messages-in-images-with-linux"
+          >TuxTweaks: How To Hide Secret Messages In Images With Linux</ulink></title>
+      <para>In today's post I'm going to show how to embed a text message into an image file. This
+        type of messaging is known as steganography. Steganography is the practice of hiding secrets
+        in such a way that only the intended message recipient would know to look for your hidden
+        message.</para>
+      <para>In this basic form of secret messaging we'll be adding text onto the end of a file. I'm
+        going to use the following image of Tux for my example. (...)</para>
+      <!-- ($ Id: 08.3.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/">python4kids/Brandan Scott: Time for Some Introspection</ulink></title>
-      <para><quote><ulink url="http://www.ibras.dk/montypython/episode24.htm#6">…The illusion is complete; it is reality, the reality is illusion and the ambiguity is the only truth. But is the truth, as Hitchcock observes, in the box? No there isn’t room, the ambiguity has put on weight. The point is taken, the elk is dead, the beast stops at Swindon, Chabrol stops at nothing, I’m having treatment and La Fontaine can get knotted.</ulink></quote></para>
-      <para>Did you notice some errors in the previous tutorial? One was fatal.  The fact that no one commented on them indicates to me that no one is actually typing in the code – naughty naughty!  Type it in. It’s important. (...)</para>
-      <!-- ($ Id: 8.3.11 sm $) -->    
+      <title><ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/"
+          >python4kids/Brandan Scott: Time for Some Introspection</ulink></title>
+      <para><quote><ulink url="http://www.ibras.dk/montypython/episode24.htm#6">…The illusion is
+            complete; it is reality, the reality is illusion and the ambiguity is the only truth.
+            But is the truth, as Hitchcock observes, in the box? No there isn’t room, the ambiguity
+            has put on weight. The point is taken, the elk is dead, the beast stops at Swindon,
+            Chabrol stops at nothing, I’m having treatment and La Fontaine can get
+          knotted.</ulink></quote></para>
+      <para>Did you notice some errors in the previous tutorial? One was fatal. The fact that no one
+        commented on them indicates to me that no one is actually typing in the code – naughty
+        naughty! Type it in. It’s important. (...)</para>
+      <!-- ($ Id: 8.3.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
