@@ -155,18 +155,25 @@
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/"
-          >python4kids/Brandan Scott: Time for Some Introspection</ulink></title>
-      <para><quote><ulink url="http://www.ibras.dk/montypython/episode24.htm#6">…The illusion is
-            complete; it is reality, the reality is illusion and the ambiguity is the only truth.
-            But is the truth, as Hitchcock observes, in the box? No there isn’t room, the ambiguity
-            has put on weight. The point is taken, the elk is dead, the beast stops at Swindon,
-            Chabrol stops at nothing, I’m having treatment and La Fontaine can get
-          knotted.</ulink></quote></para>
-      <para>Did you notice some errors in the previous tutorial? One was fatal. The fact that no one
-        commented on them indicates to me that no one is actually typing in the code – naughty
-        naughty! Type it in. It’s important. (...)</para>
-      <!-- ($ Id: 8.3.11 sm $) -->
+      <title><ulink url="http://seife.kernalert.de/blog/2011/03/17/eglibc-cross-compiling-issue/"
+          >Stefan Seyfried: (e)glibc cross compiling issue…</ulink></title>
+      <para>While building a brand new powerpc cross-compiler with crosstool-ng (which is great), I
+        came about a simple issue which was unexpectedly hard to
+        fix:<screen>../misc/syslog.c: In function '__vsyslog_chk':
+../misc/syslog.c:123: sorry, unimplemented: inlining
+failed in call to 'syslog': function body not available
+../misc/syslog.c:155: sorry, unimplemented: called from here</screen></para>
+      <para>Using different combinations of build helper tools, eglibc, gcc, whatever did not really
+        help. Even the search engine results were full of the same questions but with very little
+        answers, and most of the answers were clearly in the league of cargo cult programming,
+        nothing you’d want to rely on for a toolchain to be used by others. </para>
+      <para>But finally I came across <ulink
+          url="http://sourceware.org/ml/libc-help/2009-02/msg00023.html">this mail from Mike
+          Frysinger</ulink> which finally showed that it can be as easy
+        as<screen>CT_LIBC_GLIBC_EXTRA_CFLAGS="-U_FORTIFY_SOURCE"</screen></para>
+      <para>Of course the question remains why compiling glibc has to be always a major PITA, but
+        that’s something I’d rather not discuss in public…</para>
+      <!-- ($ Id: 17.3.11 sm $) -->
     </blockquote>
   </sect2>
   <!--
