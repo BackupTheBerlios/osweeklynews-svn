@@ -177,6 +177,25 @@
         KDE.</para>
       <!--($ Id: 18.3.11 sm $)-->
     </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.techrepublic.com/blog/five-tips/five-tips-for-faster-web-browsing/722"
+          >TechRepublic/Jack Wallen: Five tips for faster Web browsing</ulink></title>
+      <para><emphasis role="bold">Takeaway</emphasis>: If you’re wasting too much time waiting (and
+        waiting and waiting) for Web pages to load, give these tips a try. You should see an
+        immediate, noticeable boost in speed, making your browsing experience faster and more
+        efficient. </para>
+      <para>Everyone wants faster Web browsing. After all, who has time to wait for Web pages to
+        load these days? This is especially true if you’re a tab-junkie like me. When you live with
+        an open browser containing 10 to 15 tabs running at any given time, you know how crucial it
+        is to have as fast a browsing experience as possible. But how do you manage this? Are there
+        tricks to getting more speed when your pipe is maxed out already? You bet your sweet bits
+        and bytes there are. </para>
+      <para>Not every solution will work for every user, and not every solution should even be
+        attempted by every user. However, if you like to eke out as much blood as you can from every
+        turnip, let’s see how you can squeeze a bit more speed from your browsing experience.
+        (...)</para>
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -215,6 +234,49 @@ failed in call to 'syslog': function body not available
       <para>Of course the question remains why compiling glibc has to be always a major PITA, but
         that’s something I’d rather not discuss in public…</para>
       <!-- ($ Id: 17.3.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title>Josef Reidinger: Temporary overwrite method for specific task</title>
+      <para>Hi, today I must solve issue with not well structured code. Problem is that one method
+        return last correct version, but in one specific case it needs to return newest version
+        (even incorrect). There is many calls between top level method which know what needs to call
+        and target method which is called from generic code. Now I need to fix it and code is not
+        well tested and quite sensitive to changes ( this fix is fix of another fix :) . So what is
+        the safest way to change it? </para>
+      <para>I decide that the best solution which doesn’t change almost nothing ( but is suitable
+        just for maintenance update, for trunk I create better solution ) is temporary overwrite of
+        target method to change its behavior. Now how to do it? There is simple
+        example:<screen>class T
+  def test
+    puts "test"
+  end
+
+  def lest
+    puts "lest"
+  end
+
+  def m
+    test
+  end
+end
+
+T.new.m
+T.send(:define_method,:m_a) { lest }
+T.send(:alias_method, :m_old, :m)
+T.send(:alias_method, :m, :m_a)
+T.new.m
+T.send(:alias_method, :m, :m_old)
+T.send(:undef_method, :m_a)
+T.send(:undef_method, :m_old)
+T.new.m</screen></para>
+      <para>as you can see after modification class is exact same as before ( except if there is
+        method a, but it is possible to handle it via introspection and dynamic choose of method). I
+        don’t need to change whole stack of calls to add parameter or introduce new singleton class
+        which can have flag. I hope it help someone with his fix of not so well written piece of
+        software.</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+          url="http://lizards.opensuse.org/2011/03/18/temporary-overwrite-method-for-specific-task/"
+          >FDL 1.2</ulink></para>
     </blockquote>
   </sect2>
   <!--
