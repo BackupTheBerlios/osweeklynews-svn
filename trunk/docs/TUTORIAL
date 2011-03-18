@@ -6,14 +6,14 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-12-26 12:47:32 +0100 (So, 26. Dez 2010) $            ##
+## Last edit: $Date: 2011-03-18 09:34:00 +0100 (Fr, 18. Mar 2011) $            ##
 ##                                                                             ##
 #################################################################################
 
 1.) What are this project?
 ==========================
 This is a project who supports the code for the openSUSE Weely News.
-We are working with XML (DocBook) Files, and using FOP for formatting and
+We are working with XML (DocBook) Files, and using XEP for formatting and
 exporting into different output formats.
 The great advantage of this method is: write once, publish it in lots of formats!
 For example, you can get HTML, PDF and others output formats.
@@ -41,6 +41,7 @@ Internal (from OBS):
 * susedoc-buildbook
 * docbook
 * fop
+* xep
 
 Normally, if you choose the above packages, the package manager will add new packages
 to the list. Thats ok. All of these packages are needed.
@@ -145,9 +146,8 @@ sm  - Sascha Manns
 sat - Satoru Matsumoto
 th  - Thomas Hofstätter
 gl  - Gertjan Lettink
+kk  - Kostas Kodouras
 
-Then the next can delete your (EDITMARK) can overwrite the next paragraph and he can set the 
-(EDITMARK) for the next.
 In the old days, who we worked in the Wiki, i placed every new issue a blank template in the Workplace.
 Now we don' use templates. We are working every time inside the trunk.
 

@@ -6,7 +6,7 @@
 ## Sascha Manns <saigkill@opensuse.org>                                        ##
 ## Thomas Schraitle <toms@suse.de>                                             ##
 ##                                                                             ##
-## Last edit: $Date: 2010-11-24 20:30:55 +0100 (Mi, 24. Nov 2010) $            ##
+## Last edit: $Date: 2011-03-18 09:28:30 +0100 (Fr, 17. Dec 2011) $            ##
 ##                                                                             ##
 #################################################################################
 
@@ -24,8 +24,8 @@ via zypper or YaST:
 * susedoc-buildbook
 
 For doing that you have to add the following Repositories:
-* https://build.opensuse.org/project/packages?project=home:/thomas-schraitle/openSUSE_11.3
-* Standard 11.3 Repository
+* https://build.opensuse.org/project/packages?project=home:/thomas-schraitle/openSUSE_11.4
+* Standard 11.4 Repository
 
 The susedoc package contains lots of dependencies to other packages. Usually we
 need all of them. The installer take care of resolving all dependencies.
