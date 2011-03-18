@@ -136,6 +136,47 @@
           url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
       <!-- ($ Id: 15.3.11 sm $)-->
     </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://mschlander.wordpress.com/2011/03/17/gnome-networkmanager-applet-in-kde-in-opensuse-11-4/"
+          >Martin Schlander: GNOME NetworkManager Applet in KDE in openSUSE 11.4</ulink></title>
+      <para>The KDE NetworkManager plasmoid used in openSUSE 11.4 has some issues and rough edges.
+        Some of those will be fixed in an online update expected to be out soon. If you want to help
+        make the NetworkManager plasmoid better you can read about filing good bug reports against
+        it <ulink url="http://userbase.kde.org/NetworkManagement">here</ulink>.</para>
+      <para>If the plasmoid is not working for your needs you can easily and safely use the GNOME
+        NetwokManager applet (nm-applet) in KDE instead. Just follow the steps below (# means run as
+        root, $ means run as normal user):<itemizedlist>
+          <listitem>
+            <para>Upgrade oxygen-gtk – otherwise nm-applet will fail to
+              start:<screen># zypper addrepo -f http://download.opensuse.org/repositories/KDE:/UpdatedApps/openSUSE_11.4 kua
+# zypper install 'oxygen-gtk>=1.0.3'</screen></para>
+          </listitem>
+          <listitem>
+            <para>Install nm-applet:<screen># zypper install NetworkManager-gnome</screen></para>
+          </listitem>
+          <listitem>
+            <para>Remove the KDE
+              applet:<screen># zypper remove NetworkManager-kde4-libs</screen></para>
+          </listitem>
+          <listitem>
+            <para>Make nm-applet autostart on
+              login:<screen>$ ln -s /usr/bin/nm-applet ~/.kde4/Autostart/nm-applet-link</screen></para>
+          </listitem>
+          <listitem>
+            <para>Reboot</para>
+          </listitem>
+        </itemizedlist></para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://mschlander.files.wordpress.com/2011/03/nm-applet1.png"
+            width="20%"/>
+        </imageobject>
+      </mediaobject>
+      <para>Thanks to oxygen-gtk nm-applet will even integrate quite well in the look and feel of
+        KDE.</para>
+      <!--($ Id: 18.3.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
