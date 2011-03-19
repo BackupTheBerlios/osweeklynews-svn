@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/03/15/mingle-today/">Mingle Today!</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/02/about_connect-300x128.png"
+          align="left"/>
+      </imageobject>
+    </mediaobject>
+    <para>It all started out with a simple question Pavol Rusnak asked on the openSUSE Conference
+      ’09 </para>
+    <para><emphasis role="italic">What are we really doing when we develop a new tool to handle
+        openSUSE users and groups?</emphasis>
+    </para>
+    <para>The answer was simple: Connecting people to projects, groups and with each other.
+      Connecting faces to names, nicknames and to email addresses. In the end connecting all our
+      other tools to this one so we can share the data. These are the fundamental ideas behind our
+      newest openSUSE tool: <ulink url="http://connect.opensuse.org/">connect</ulink>. In the
+      following months the <ulink url="http://en.opensuse.org/openSUSE:Boosters_team">openSUSE
+        Boosters</ulink> and friends started to work on this tool based on <ulink
+        url="http://elgg.org/">Elgg</ulink>. An open source social networking engine, that delivers
+      the building blocks that enable us to create our own fully-featured social network. And today
+      we release it to you, the openSUSE Community.</para>
+    <para><emphasis role="bold">What is connect?</emphasis>
+    </para>
+    <para>First and foremost connect is a user database. The openSUSE project operates a lot of
+      tools and most of them require users to authenticate to operate them, have some kind of access
+      level for different user types (groups) and possibly other attributes stored for the user like
+      contact information, an avatar or a description of the person. Instead of having to enter and
+      maintain this information over and over again in each tool, connect is the first step in
+      centralizing this.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/connect_userprofile-e1300199288617-300x146.jpg"
+          align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>Secondly connect introduces the nowadays mandatory social features. Instead of rather
+      boring collection of user attributes, connect reflects the social relations among the openSUSE
+      community. It allows the users to share activities, places, events and interests within their
+      network. It truly helps you to connect with other lizards.</para>
+    <para><emphasis role="bold">And what can I do with it?</emphasis>
+    </para>
+    <para>Make friends and tell them about yourself. See what they are up to in the Build Service,
+      openFATE or Bugzilla. Find out who your friends, friends are or get your openSUSE business
+      cards. Or how about you gang up in groups and collaborate in discussions, run your own polls
+      and create your groups events? You can also apply to be an <ulink
+        url="http://en.opensuse.org/openSUSE:Members">openSUSE Member</ulink> and vote in project
+      wide polls like the <ulink url="http://en.opensuse.org/openSUSE:Board">openSUSE Board</ulink>
+      election. And more!</para>
+    <para>
+      <informaltable frame="void">
+        <tbody>
+          <tr>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/connect_followers-150x150.jpg"
+                    width=""/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/connect_group-150x150.jpg"
+                    width=""/>
+                </imageobject>
+              </mediaobject>
+            </td>
+            <td>
+              <mediaobject>
+                <imageobject>
+                  <imagedata
+                    fileref="http://news.opensuse.org/wp-content/uploads/2011/03/connect_polls-150x150.jpg"
+                  />
+                </imageobject>
+              </mediaobject>
+            </td>
+          </tr>
+        </tbody>
+      </informaltable>
+    </para>
+    <para><emphasis role="bold">Can I improve it? </emphasis></para>
+    <para>connect is far from done and is constantly under development, so please help out! Are you
+      able to explain complicated IT coherences so your grandma can understand them? Help us to
+      document the various tools and processes in connect. Is web-development your thing and you
+      master any HTML/CSS? Then improve the whole user experience. Or is PHP coding your thing? Get
+      your editor out then and extend this tool to your needs. As mentioned in the beginning of this
+      article, connect is based on an open source social networking platform called Elgg. They have
+        <ulink url="http://docs.elgg.org/">fantastic documentation</ulink> on how to <ulink
+        url="http://docs.elgg.org/wiki/Themes">theme it</ulink>, <ulink
+        url="http://docs.elgg.org/wiki/Getting_Started_With_Development">getting started with Elgg
+        development</ulink> or how to extend it with <ulink
+        url="http://docs.elgg.org/wiki/Plugin_development">plugins</ulink>. They also run their own
+        <ulink url="http://community.elgg.org/">community</ulink> where you can talk to other Elgg
+      developers and users.</para>
+    <para>You can read, check out and alter the code that is running on connect.opensuse.org in our
+      gitorious repository <ulink url="http://gitorious.org/opensuse/connect"
+        >http://gitorious.org/opensuse/connect </ulink>and communicate with us about your changes on
+      our mailing list <ulink url="mailto:opensuse-web@opensuse.org">opensuse-web</ulink>, so get
+      going. Happy Hacking!</para>
+    <para><emphasis role="bold">Enjoy this new addition to the family of openSUSE tools …and don’t
+        forget to mingle today!</emphasis></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
+    <!-- ($ ld: 15.3.11 sm $) -->
+  </blockquote>
+</sect1>

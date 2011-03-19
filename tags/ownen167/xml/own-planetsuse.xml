@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://mschlander.wordpress.com/2011/03/12/opensuse-11-4-has-been-released/">Martin Schlander: openSUSE 11.4 has been released</ulink></title>
+    <para>In case you hadn’t heard, openSUSE 11.4 was released this Thursday, and as usual <ulink
+        url="http://opensuse-guide.org/">opensuse-guide.org</ulink> was updated at the same time. </para>
+    <para>I think overall it’s a very good release, besides being the first major distribution to
+      ship KDE SC 4.6, LibreOffice Linux 2.6.37 with free Broadcom wlan drivers (for some recent
+      chips) and other goodies. </para>
+    <para>You can read the announcement <ulink
+        url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">here</ulink> or read the <ulink
+        url="http://en.opensuse.org/Product_highlights">Product highlights</ulink> for a more
+      extensive presentation of the new stuff.</para>
+    <para>As customary I like to also prepare people for the most likely causes of problems:<itemizedlist>
+        <listitem>
+          <para>PulseAudio is now installed and enabled in KDE installations by default. If it’s
+            causing sound problems, you can disable it in YaST -> Sound -> Other -> PulseAudio
+            Configuration (or run ‘setup-pulseaudio –disable’) or even uninstall it – KDE doesn’t
+            have hard dependencies on it.</para>
+        </listitem>
+        <listitem>
+          <para>GStreamer is the new default Phonon backend – enough said. You may want to use
+            phonon-backend-xine or phonon-backend-vlc (from Packman) instead, if Amarok or other
+            Phonon applications misbehave.</para>
+        </listitem>
+        <listitem>
+          <para>The great new KDE Bluetooth tool – BlueDevil – has a missing dependency on
+            obexd-client, which means you’ll need to install obexd-client yourself in order for
+            sending files via Bluetooth to work.</para>
+        </listitem>
+        <listitem>
+          <para>The NetworkManager plasmoid is not perfect. An online update should be along soon
+            improving it significantly. If it’s causing problems you can easily install and use
+            nm-applet (NetworkManager-gnome) instead – with the new oxygen-gtk theme it doesn’t even
+            look bad ;-)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>That’s it for me. Have a lot of fun with 11.4.</para>
+    <!-- ($ ld: 13.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/03/13/opensuse-11-4-how-it-goes-in-portugal/">Nelson Marques: openSUSE 11.4 :: How it goes in Portugal ?!</ulink></title>
+    <para>I’ve been following the biggest general technology forum in Portugal with a close eye for
+      openSUSE 11.4 comments and reviews… 10 years ago SuSE Linux was one of the predominant Linux
+      distributions fighting for first place with Red Hat and followed closely by Debian. The fourth
+      place belonged to Slackware.</para>
+    <para>10 years after… Slackware mainly disappeared, the Red Hat/Fedora community somehow
+      vanished (judging by LUG member strength), and fate hasn’t been nicer for openSUSE. From most
+      of what I read, Ubuntu became the major power, followed by Arch Linux and Debian… there’s a
+      few pockets of resistance by Mandriva… It’s also interesting to see that new users are mainly
+      confused between choosing Fedora and openSUSE… this relation is also getting strong with drop
+      outs from Ubuntu. The timing is good for intervention…</para>
+    <para>From what I could see in the reports of openSUSE reviews I’ve seen:<itemizedlist>
+        <listitem>
+          <para>Installer – Users expected something new, but they didn’t disclaimed what they
+            expected. They say that openSUSE installer is pretty much offering the same features as
+            other distributions. I really don’t know what can be innovated here….</para>
+        </listitem>
+        <listitem>
+          <para>Updates – This is one of the points that is most commented in the reviews. Though
+            there’s no real claims on what could be improved or what is missing, everyone points to
+            a simple conclusion: people seem to like updates and the faster they are done, the
+            better. Update timings seem important.</para>
+        </listitem>
+        <listitem>
+          <para>Tumbleweed – There are a lot of expectations towards rolling releases and
+            Tumbleweed. This feature seems to captivate a lot of veterans changing from other
+            distributions and also new comers. This is without doubt one of the points to invest in
+            the future for the local community…</para>
+        </listitem>
+        <listitem>
+          <para>Time of Installation – Some harsh critics on the installation time. People believe
+            that 30 minutes is too much of installation time. I kinda disagree as it seems pretty
+            much normal for a DVD install. Installing openSUSE LiveCD’s on real hardware (no
+            virtualization) through USB2 and USB3 sticks, is pretty much bellow 10 minutes. Should
+            we focus on USB sticks installations and work the methodology? Sounds good as a
+            differentiation point.</para>
+        </listitem>
+        <listitem>
+          <para>USB Sticks – Some harsh critics with people using imagewritter and unetbootin. For
+            what I was able to determine, this problems seem to be related with the partitions not
+            being flagged as ‘active’. Something we can improve here?</para>
+        </listitem>
+        <listitem>
+          <para>KDE – All the reports seem to place openSUSE as the best KDE offer. Nothing was
+            expected besides this.</para>
+        </listitem>
+        <listitem>
+          <para>OpenSUSE and other distros – Not much has been written, except some comments
+            considering that Mandriva Spring was the only distribution that is more attractive than
+            openSUSE 11.4. Only 2 comments place emphasis on this… Something we can improve on this
+            field ?</para>
+        </listitem>
+        <listitem>
+          <para>Support – Support on those forums is rudimentary… Something we can improve and
+            that’s being worked on. Soon Portuguese will become available on the official openSUSE
+            Forums and a Portuguese Team as been assembled for this. Additionally Jim Henderson is
+            contacting Carlos Ribeiro to explore the possibility of having also Brazilian
+            contributors and community to help on this Forums. They will become Portuguese (language
+            wise) following the work by the Wiki and IRC.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The feedback is very positive, and there’s an abnormal dropouts from Ubuntu and many
+      confused people…. The timing is perfect for taking action… and that will happen soon! </para>
+    <para><emphasis role="italic">License: GFDL V1.2</emphasis></para>
+    <!--($ ld: 14.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.cornelius-schumacher.de/2011/03/its-not-address-book.html">Cornelius Schumacher: It's not an address book</ulink></title>
+    <para>It began about <ulink url="http://markmail.org/message/7ef64iba64mjoy4a">ten years
+        ago</ulink>, when I <ulink url="http://markmail.org/message/cyt6drrtjjem2xti">rewrote the
+        KDE address book library</ulink>. I implemented a nice API, vCard parsing, and a
+      representation of something I called an Addressee back then, a contact, the data belonging to
+      a person or any other entity, closely modelled after the fields of vCard, which is a fine
+      standard for storing and exchanging address book data.</para>
+    <para>We wrote <ulink url="http://userbase.kde.org/KAddressBook_4.3">KAddressBook</ulink> as an
+      application to manage contact data on top of the address book library, and while it's a nice
+      and useful application, in some ways it still follows to some degree the technical thinking
+      coming from the structure of the underlying implementation. This shows in the user interface,
+      and makes it less useful, attractive, and intuitive as it could be.</para>
+    <para>So I thought it would be a good idea to experiment a bit and approach the task of handling
+      people data from the other direction. Ignoring technical aspects of the implementation, or
+      constraints of underlying technology, but thinking from a user's point of view, thinking about
+      what's a natural way how to deal with this kind of data. I started to think and code a bit,
+      and during <ulink url="http://en.opensuse.org/Portal:Hackweek">Hackweek 6</ulink> I went on
+      and got the application I started to a level where I think it's time now to share it and
+      gather some more feedback.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://en.opensuse.org/images/8/8e/Hackweek6Logo.png" width="20%"/>
+      </imageobject>
+    </mediaobject>
+    <para>But before I come to the application itself, here is some of the motives and concepts
+      behind it.</para>
+    <para><emphasis role="bold">Mental model of people</emphasis></para>
+    <para>The first thing I did was trying to come up with an idea of what the mental model is how
+      people think about people. The way address books usually present this data is practical in
+      some ways, but when you think about other people, do you have an alphabetically ordered list
+      of names in your mind? Probably not. So I collected a list of concepts, which better address
+      the mental model of people.</para>
+    <para><emphasis role="bold">Groups</emphasis>. People usually belong to some groups. There are
+      colleagues, friends, familiy, the weird group of hackers you hang around with on IRC. These
+      groups are often used to classify people, and provide a pretty solid way to structure how you
+      organize people, the KDE guy you met at last year's Akademy, the colleague who used to study
+      with you at university. People often belong to multiple groups, and sometimes there is no
+      clear mapping.</para>
+    <para><emphasis role="bold">Pictures</emphasis>. When thinking of people you usually have some
+      kind of picture in mind. You would recognize most persons you know on a photo without effort.
+      Pictures are widely used to identify people, and pictures of people, especially of people you
+      have a closer relation with are easily available from various sources now.</para>
+    <para><emphasis role="bold">Fuzzy information</emphasis>. In many cases the information you have
+      about other people is somewhat fuzzy. You might not know the exact address, just a city. You
+      might only know a nickname, or the date of the birthday, but not the year, or you might have
+      trouble assigning the parts of a foreign name to the fields of a technical address book. Is it
+      a middle name or is it part of the given name? Is this the surname, or maybe a suffix? While
+      it's nice from a technical view, to have this exact classification of fields of a record, in
+      practice and from a human point of view, it often just is neither possible nor important.
+      Humans deal with fuzzy information pretty well, especially when dealing with other people. </para>
+    <para><emphasis role="bold">Time</emphasis>. An important factor to classify information is
+      time. You remember that you met a person at a certain time. When having multiple phone numbers
+      available, the time, when you got them, will give an important hint about which one is more
+      likely to work. In general, knowing when something changes, helps a lot with navigating
+      information.</para>
+    <para><emphasis role="bold">Space</emphasis>. Another important factor is space. You think of
+      people being close to each other, either physical, as in neighbors, or in a logical way, as in
+      family. A family tree is a great example how space is used to organize and structure people.
+      There are also numerous other ways how to relate people in a spacial configuration. How they
+      appear on a photo, a seating order for a celebration, and many more.</para>
+    <para><emphasis role="bold">It's not paper</emphasis></para>
+    <para>In addition to coming up with a way how to meet the mental model of how people think about
+      people, I also wanted to take benefit of having available the power of managing the data on a
+      computer. There are many address book applications which resemble paper address books, going
+      as far as mimicking the texture of the leather cover. But being able to manage the data
+      electronically without the restrictions of paper, leather, and spiral binders, gives some
+      unique freedom and potential in a couple of areas.</para>
+    <para><emphasis role="bold">Ubiquity</emphasis>. As it's so easy to store, transmit, and
+      distribute data electronically, data can be ubiquitous, it can be available at work as well as
+      at home, or when being on the road, on your laptop, phone, tablet. It can live in the cloud,
+      easily accessible from everywhere.</para>
+    <para><emphasis role="bold">History</emphasis>. Without the restrictions of paper, there is no
+      reason to ever delete data. You can keep an unlimited history, which gives you the safety to
+      always being able to go back, if you have changed something you later realize you didn't want
+      to change, or if a need to access old data arises. This all can be done in a way, which hides
+      old data from the current view, to not clutter the most recent view you normally use.</para>
+    <para><emphasis role="bold">Low-cost editing</emphasis>. With electronic data, the cost of
+      editing, rearranging, duplicating, and deleting data is very low. You can easily duplicate a
+      set of entries about people to do some rearrangements, and then delete it again after a few
+      minutes without loosing anything. No striked through entries, no wasted pieces of paper, no
+      mess of failed attempts to get something done. This provides the opportunity for ad-hoc
+      editing, especially if combined with some kind of history.</para>
+    <para><emphasis role="bold">Connect to the cloud</emphasis>. A ton of personal data lives in the
+      cloud, on various web sites, in structured and not so structured ways. With Facebook, Google,
+      Linkedin, your corporate directory server, the data on your private mail account and much
+      more, you have access to a lot of data from the people you usually deal with. By putting an
+      application at the right place, you can connect all this to represent your personal social
+      network.</para>
+    <para><emphasis role="bold">Unconstrained user interface</emphasis></para>
+    <para>Finally I wanted to go beyond the standard user interface of current address book
+      applications. There is much value in standardized interfaces, taking into account style
+      guides, using standard components, and all the other good stuff of working in a nicely
+      defined, consistent, and integrated environment. But I wanted to experiment with leaving this
+      behind and trying some non-standard concepts.</para>
+    <para>So I decided to not care much about standard widgets, to get rid of everything, which was
+      non-essential to the actual application, to use animations gratiously to make the interface
+      dynamic and support the user in understanding transitions. I also decided to try a new kind of
+      menu, which isn't seen much on desktop applications, but could give more direct access to the
+      actions the user needs. Finally I also decided to create a UI, which is not limited to a
+      specific form factor, but can deal with a variety of devices, not only classical desktops, but
+      also stuff like tablets, or maybe even phones.</para>
+    <para><emphasis role="bold">Polka</emphasis></para>
+    <para>Now that you know where I came from let me introduce you to my experiment. I call it
+      Polka. It's an application for dealing with people data based on the concepts I described,
+      thinking from a user's point of view, matching the mental model of how we think about people,
+      and not caring too much about the current status quo in terms of address book applications. I
+      summarized that in the FATE entry for my hackweek project, where I called it the <ulink
+        url="https://features.opensuse.org/311143">humane address book for the cloud</ulink>. The
+      title came from the idea to approach an address book not from the technical point of view, but
+      from what is relevant for human users, and to tie it to all the data and functionality which
+      is available in the cloud.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh4.googleusercontent.com/-xeFtKuDablU/TX15k4HbdcI/AAAAAAAAAKU/7lus4acD60g/s320/polka_start.png"
+          width="30%"/>
+      </imageobject>
+    </mediaobject>
+    <para>I started to think about this quite some time ago, and did write some code here and there,
+      but during last hackweek I made the effort to actually put it all together and polish it so
+      that it hopefully adequately illustrates the concepts I wanted to experiment with.</para>
+    <para>Let me explain some of the main elements of Polka.</para>
+    <para><emphasis role="bold">Group view </emphasis></para>
+    <para>The central part of Polka is the group view. It shows a group of people and possibly some
+      sub groups. The display is based on people's pictures and makes use of the view as a kind of
+      canvas, where the members of the groups can freely be arranged. Names are shown for entries
+      where no picture is set, and they are shown for all entries, when hovering over with the mouse
+      pointer, so it's easy to identify people.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh4.googleusercontent.com/-Eqc4BFJcCII/TX15gWlVtUI/AAAAAAAAAKE/D51MxeWvnw4/s320/polka_group.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>By default all people are shown in a compact regular arrangement, but you can simply move
+      all entries around to create a different arrangement. The next screenshot shows an example.
+      It's the group of people, who attended the <ulink
+        url="http://community.kde.org/KDE_PIM/Meetings/Osnabrueck_8">Osnabrück 8 meeting</ulink>.
+      The arrangement reflects where people were on the <ulink
+        url="http://community.kde.org/File:KDEPIM_Meetings_Osnabrueck8_group.jpg">group
+        photo</ulink>. </para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/-jPlKm7h6dew/TX15iHRxVLI/AAAAAAAAAKI/Xfh7gyKzxJM/s320/polka_group_menu.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>That's just one application for arranging people freely. You could also reflect breakout
+      groups, seating orders, a family tree, or any other relations between people. The basic idea
+      is that you use space to naturally reflect how you are thinking of people. People can be added
+      to as many groups as needed, and any group can contain other groups with the same or different
+      people. The arrangement of people is specific to the view of the group, but the entries of
+      people are always the same, they are just links, so a person can appear in multiple groups,
+      but the data is only there once.</para>
+    <para><emphasis role="bold">Menus</emphasis></para>
+    <para>For menus and getting access to actions in general I wanted to experiment with something
+      different than the classical menu bars and context menus, and see if I could find a way to
+      make it more natural and direct to work with the elements shown in the user interface. So I
+      got rid of all traditional menus, no menu bar, no status bar, no right clicks.</para>
+    <para>In the previous screen shot you can see how you get access to actions for a person. If you
+      hover over a person, there is shown a fan-like menu, where you can select some person-related
+      options. For general options there is the "main" menu disk at the top right, which also shows
+      actions on hover. You can also click on the canvas to get options which are related to a
+      certain location like adding a label.</para>
+    <para>This all is pretty simple, and you don't even have to be very exact, when hitting a menu,
+      so it probably would also work with a touch screen, although I didn't try it, so take this
+      with a grain of salt.</para>
+    <para><emphasis role="bold">Person view</emphasis></para>
+    <para>When you click on the "show" menu item, a detailed view of the person is shown. It
+      includes all the data you store about this person. This is the usual contact information, but
+      most of it is stored in a relatively free form. You don't have to identify components of the
+      name or the address for example. They are just text fields. You can also easily add free form
+      text by adding comments to every field of the person's data. The speech bubble indicates where
+      a comment is there, and you can add general comments to the person's entry. All this helps
+      dealing with the fuzziness which data about people often has.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/-1ahv7j2sCqs/TX15kUMo4PI/AAAAAAAAAKQ/Lr4GH9CfxSE/s320/polka_person.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>When you hover over a data field, some editor controls are shown to comment, edit or
+      remove the field, and the information is shown when the fields was modified the last time.
+      This way you can judge, which fields are relevant, and which ones might be outdated, and it
+      also can help with putting the entry in the perspective of time, they might be related to
+      something which happened at a certain time you remember.</para>
+    <para>An important element are the pictures of the person. Polka collects pictures from
+      different sources on the web, e.g. from your Twitter profile, and you can easily add more
+      pictures by using a built in screenshot function. So if you see a picture of a person on a web
+      site, in your mail client or any other place, you can just capture it directly from the
+      display without having to deal with saving image files or getting URLs.</para>
+    <para>What the screenshots don't show is how the views transition. It's all done dynamically
+      with animations converting between views of different groups or when the details of a person
+      are shown. This makes it easier to keep track of what belongs where, and also is fun, because
+      it looks and feels nice and smooth.</para>
+    <para><emphasis role="bold">History</emphasis></para>
+    <para>Polka takes care of saving data in the background. The user doesn't need to know or think
+      of that at all. All changes are saved and the complete history of changes is preserved, so
+      data is never lost, and there is no need for confirmation dialogs or anything like
+      that.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh3.googleusercontent.com/-Nw0nP12fSiY/TX15jK8xDeI/AAAAAAAAAKM/pZrOvHpuDGY/s320/polka_history.png"
+        />
+      </imageobject>
+    </mediaobject>
+    <para>The data can also be shared via a server, including the full history. So all your people's
+      data is always available and shown in the same way, no matter where you are.</para>
+    <para>Storing the history also makes it possible to have unlimited undo, even across different
+      computers. But I haven't implemented any user interface for that yet.</para>
+    <para><emphasis role="bold">Technology</emphasis></para>
+    <para>So much about what Polka does and how the user interface looks and behaves. Although the
+      implementation is not that important, it is working code, so some technical details might
+      still be interesting.</para>
+    <para>The data is stored in an application-specific XML format, including all the meta data like
+      comments, when something changed, the position of objects in the views. So everything is in
+      one place and can easily be versioned and shared. The interface to the XML is generated via
+        <ulink url="https://github.com/cornelius/kode/tree/master/kxml_compiler"
+        >kxml_compiler</ulink> from an example XML file. So there is a native API to access the data
+      without having to maintain the code to read and write the XML and represent it in C++
+      objects.</para>
+    <para>To store history and for sharing the data across machines, everything is stored in a git
+      repository. Every change is recorded, so the full history is available in the git history. Git
+      is amazing as a storage backend. As it's so fast, it's not really noticable that storing data
+      is more than just writing a file, and by using git's distributed nature, sharing the data and
+      its history with a server and across different machines comes almost for free.</para>
+    <para>The UI is implement with QGraphicsView and the Qt animation framework. I thought about
+      using QML, but as C++ is my native language, using QGraphicsView directly seemed like the more
+      straight-forward way to me. The implementation separates models handling the data and the
+      views reasonable well, though, so adding a QML based view should be possible without too much
+      hassle.</para>
+    <para>For the person's view I use Webkit. The data is rendered as HTML and CSS and shown in
+      Webkit. This gives some more flexibility and power than a widgets or QGraphicsView based view,
+      and also opens a path towards the web. I tried again to write a small library to make it
+      convenient to generate HTML and CSS. It's better than some of Spaghetti code I wrote in the
+      past for this purpose, but it still doesn't match the elegange of for example some of the Ruby
+      based solutions for this. It's a pretty tough problem in C++.</para>
+    <para>Other than that it's a pretty much standard KDE application. It doesn't make too much use
+      of the platform, though, as I consciously didn't use many of the standard UI elements. </para>
+    <para><emphasis role="bold">Code</emphasis></para>
+    <para>The code for Polka is available at <ulink
+        url="http://quickgit.kde.org/?p=scratch/cschumac/polka.git"
+        >git://anongit.kde.org/scratch/cschumac/polka.git</ulink>. It's still experimental, so use
+      with care, although by the use of git as a storage backend your data is pretty safe. </para>
+    <para>I don't have specific plans for making a release or making it a more official part of KDE
+      right now, but will continue to use it as a playground for trying out concepts and maybe
+      provide some inspiration for other projects.</para>
+    <para>I am interested in feedback and comments. So don't hesitate to <ulink
+        url="mailto:schumacher@kde.org">contact me</ulink>, if you have questions, ideas, comments,
+      or suggestions.</para>
+    <para>So I'm at the end with this blog post, and while it is a very long post, there is still a
+      lot to tell. For now I'll let the code speak, and maybe I'll blog again later to discuss some
+      more details about specific aspects of Polka. </para>
+    <!--($ ld: 14.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/sharing-opensuse-world-mirrorbrain">OMG! SUSE!/rtyler: Sharing openSUSE with the world, via MirrorBrain</ulink></title>
+    <para>Some of our readers might not know this, but the release of openSUSE 11.4 is actually the
+        <emphasis role="bold">second</emphasis> release that OMG! SUSE! has had the opportunity to
+      cover, the first one being <ulink url="http://omgsuse.com/content/meet-opensuse-113">openSUSE
+        11.3</ulink>. </para>
+    <para>Shortly after the 11.3 release, I reached out to some of the folks responsible for
+      coordinating the distribution of <emphasis role="bold">terabytes</emphasis> of openSUSE on
+      release day. I managed to interview <ulink url="http://poeml.de/">Peter Pöml</ulink> one of
+      the creators of MirrorBrain, the brain (weak-pun intended) behind distributing some of the
+      biggest projects on the internet, including <ulink url="http://opensuse.org/"
+      >openSUSE</ulink>.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://pixelpressicons.com/MinersHelmet.jpg" align="right" width="10%"/>
+      </imageobject>
+    </mediaobject>
+    <para>At a high level, MirrorBrain allows a central server such as <ulink
+        url="http://download.opensuse.org/">download.opensuse.org</ulink> utilize a vast network of
+      "mirrors" for distributing enormous amounts of data in such a way that users are downloading
+      from a mirror that's "close" to them. For example, if you're in the UK, MirrorBrain will try
+      to bounce you to a UK mirror, failing that a european mirror, and so on.</para>
+    <para>Enough with the formalities, put on your Miner's cap and let's dig into the
+      interview.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: The openSUSE project
+        uses a tool called MirrorBrain, which (correct me if I'm wrong) tries to automatically
+        redirect users to their closest mirror based on a geographic lookup of their IP address.
+        When did openSUSE start using MirrorBrain and what motivated the switch?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: By the end of 2006, a new openSUSE release (10.0
+      maybe?) was just being issued. There were serious problems with stability of the download
+      server during the "peak". At the time, I joined a new team to work on the openSUSE Build
+      Service. That team used the same download server to publish their work, so I came into contact
+      with this part of the infrastructure. As Apache guru, the server crashes were seriously
+      irritating me and it was clear to me that something should be done about them. Thus, I started
+      working on a solution and made it my obsession for the next three years. The Build Service
+      team kind of had to do without me. However, the Build Service benefitted most from my work,
+      more than anything else. See below :-)</para>
+    <para>You probably realize, as I did at the time, the utter importance of the download system,
+      because a working download is the life blood of openSUSE; its aorta, so to speak. (Users take
+      this for granted, of course.) </para>
+    <para>If you think about delivering openSUSE, you might first thing about CD and DVD images.
+      However, that's only a part. And it is the part that's not difficult to deal with. The images
+      account for about 3 requests per second (peak), which is easily to deal with with a simple
+      Perl script that you can hack up in half an hour. That's what other projects do successfully.
+      openSUSE also had such a script, but it had some performance issues. </para>
+    <para>The real challenge was that we redirect more than ISO images. We have to handle requests on:<itemizedlist>
+        <listitem>
+          <para>updates</para>
+        </listitem>
+        <listitem>
+          <para>network installs</para>
+        </listitem>
+        <listitem>
+          <para>packages built by the build service</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>When the build service was presented, it quickly became popular, and we soon realized that
+      we need a powerful content delivery for all those things. </para>
+    <para>Therefore, we are talking about 300-500 requests per second to be handled and redirected.
+      That made a good design necessary. In the beginning, a handful of people at SUSE gathered to
+      think about the needed feature and the design, but with one early exception I'm the only one
+      who ever worked on it. </para>
+    <para>If it weren't for the build service, it would have been easy to do the following:<itemizedlist>
+        <listitem>
+          <para>redirect requests for ISO images via a little Perl script</para>
+        </listitem>
+        <listitem>
+          <para>distribute updates by giving the clients lists of mirror URLs and let them pick a
+            mirror, just like Fedora does with yum.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>The build service however could not be handled by either of this methods. Since it pushes
+      out new packages at an extremely high pace (more than <emphasis role="bold">once a
+        minute</emphasis>). There is simply no time for mirrors to synchronize and for the mirror
+      system to stabilize. They'll always lag and be out-of-date by definition.</para>
+    <para>That's the reason for the design of MirrorBrain. It runs all client requests through a
+      single system (also because we wanted to be able to be in a position to count things), and it
+      keeps track of the mirrors contents and does that for ISO images, updates and buildservice
+      packages alike. </para>
+    <para>The openSUSE build service would impossibly have succeeded without MirrorBrain. It can't
+      work without it.</para>
+    <para>But the DVD and CD images' distribution is a bagatelle, from the perspective of
+      MirrorBrain. Those 3 req/s don't surface in the graph of a server that constantly gets 300
+      req/s. They certainly don't cause any noticeable load. And finally, all the hard work is done
+      by the mirrors! Their bandwidth, hardware and manpower which they contribute is what makes
+      openSUSE whir. </para>
+    <para>You'd have to look very, very hard at <ulink
+        url="http://download.opensuse.org/apachestats/">openSUSE's apache stats</ulink> to see any
+      effect of the recent release on openSUSE's infrastructure.</para>
+    <para>For the mirrors however, the release causes a very noticeable peak, since the files are
+      huge (while the request is tiny, which is all that MirrorBrain has to handle). I worked hard
+      to collect as many mirrors as possible, over three years, so that openSUSE enjoys the help of
+      about 150 mirrors at this time. This number seems to do the demand justice, and there hasn't
+      been a shortness of bandwidth since a long time - the US being an exception, where we had only
+      a few mirrors sometimes and openSUSE wasn't popular enough to find more. </para>
+    <para>Finding mirrors and keeping them working correctly means to communicate with mirror admins
+      and to carefully listen to users. One has to have "big ears" to get hold of problems that
+      surface for users. Of all the problems that occur, only a very tiny fraction is reported in
+      public forums, or even directly to us. Thus, if one happens to hear about some problem it
+      usually affects many people, and has to be taken very seriously. </para>
+    <para>Another design goal of MirrorBrain was reusability and modularity, because an in-house
+      solution didn't seem to have the chance to grow enough. So MirrorBrain is open source and
+      freely available to other projects, and attempts to suit them as well. OpenOffice.org and the
+      Free Software Foundation use MirrorBrain, and Sourceforge uses components of it. The users
+      that I know of are <ulink url="http://mirrorbrain.org/users/">collected here</ulink>.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: Does MirrorBrain
+        incorporate any "health" or speed metrics to try to determine if a mirror is slowing down?
+        Could you tell us a bit about how MirrorBrain determines what the "best" mirror for me
+        is?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Every mirror is checked once a minute with a
+      simple request that it has to answer within 20s. The time seems generous, but has to take into
+      account that many mirrors are far away, on the other end of the world so to speak, it can take
+      that long to talk to them.</para>
+    <para>In addition, when assessing mirrors content we do some trickery to make sure that the
+      mirror is 100% capable of delivering large files (>2G, >4G) correctly and supporting partial
+      transfers (to complete a previously aborted transfer). </para>
+    <para>Since mirrors often are older systems, there are still about 30% among them that don't do
+      this correctly. </para>
+    <para>Further health metrics havn't proven necessary. We had a lot of ideas initially, but
+      either they were to difficult to put into practice or not so much needed in reality, as
+      real-world experience showed. </para>
+    <para>For the distribution of ISO images, it would be quite useful to survey mirrors more
+      closely and monitor their "performance", because:<itemizedlist>
+        <listitem>
+          <para>A user is directly involved and sitting in front of his computer.</para>
+        </listitem>
+        <listitem>
+          <para>Web browsers don't do error checking on downloads</para>
+        </listitem>
+        <listitem>
+          <para>Due to the size of the files, a drop in performance can easily catapult the download
+            time from an hour to 3 days.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>This is where torrents come into play, because (at least for some savvy users) they
+      improve on this. Even though distribution via torrents is not known for the good speed that
+      you can reach when downloading from fast mirrors. </para>
+    <para>There's a lot that could be done in regard to monitoring, and I'd love to see
+      contributions. </para>
+    <para>Regarding other files (not ISOs), we have pursued a different approach. We have large
+      control over the download client that is used to download packages and updates, and we have
+      made the client robust to deal with slow or broken mirrors. MirrorBrain is not only a
+      redirector, but also a Metalink generator. Metalinks contain all the information that is
+      needed to find packages on mirrors and make sure they are 100% intact. MirrorBrain serves
+      Metalinks to zypper and YaST, so they can download packages in parallel from multiple mirrors
+      at the same time, do error correction and automatically deal with most mirror problems that
+      way. </para>
+    <para>This method could also used for ISO images (see: <ulink
+        url="http://lizards.opensuse.org/2008/12/16/best-way-to-download-opensuse/">Best way to
+        download openSUSE</ulink>) and it would be ideal if web browsers would natively support this
+      technology. For now, this isn't the case though. I have been working hard on a standard for
+      the Metalink Download Description format for more than a year, because protocol
+      standardization would probably lower the barrier of such implementations, and the standard has
+      been <ulink url="http://tools.ietf.org/html/rfc5854">published</ulink> in March this year. </para>
+    <para>Regarding mirror selection, the client is geolocated by GeoIP and the network prefix and
+      its autonomous system is looked at. The process is <ulink
+        url="http://www.poeml.de/~poeml/talks/free_software_CDN_vision.pdf">illustrated
+      here</ulink>. Mirrors from the same country (or same continent) are preferred, or in the case
+      of some countries there's a special configuration that makes sure that a useful choice is
+      made. For instance, it could be a nearby country that works best (New Zealand -> Australia),
+      or it could be a country far away that works much better than a neighbouring country
+      (Mozambique -> Germany instead of South Africa). This <ulink
+        url="http://mirrorbrain.org/static/talks/mirrorbrain_fosdem_2010.pdf">presentation from
+        FOSDEM</ulink> contains such an example, which shows that a simple proximity- or
+      geolocation-based choice is not enough.</para>
+    <para>From all mirrors that are eligible for a request, a weighted randomized choice is made, so
+      that powerful mirrors can get a larger amount of requests than small ones. It is also possible
+      (and necessary) to restrict some mirrors to their country, autonomous system, or network. For
+      many mirrors, international bandwidth is scarce and needs to be protected.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: For openSUSE 11.4 and
+        subsequent major releases, how could MirrorBrain or the openSUSE distribution infrastructure
+        improve to make the release process smoother and faster?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Did the 11.3 release leave something to desire in
+      this regard? From what I heard, it went smoothly. There is always a little discussion whether
+      the use of Akamai during the first day makes things faster or slower, but apart from that I
+      didn't hear complaints. However, I'm mostly not involved anymore and miss most of the
+      communication going on.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: How does the openSUSE
+        project ensure that all mirrors that users are being redirected to have the absolute correct
+        files at the time of a release?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Registered mirrors pull the images before they are
+      released. They are first synchronized in a directory that is not readable to the public (and
+      the team makes sure that the mirrors replicate these permissions, so the new stuff doesn't
+      "leak"). The release team then waits and checks mirrors periodically, to see when enough
+      mirrors have the files. Then a time is agreed on when the permissions are "flipped" to open
+      the directory, a procedure often called "bitflip release" which is also employed by other
+      Linux distributors. </para>
+    <para>The reason behind this is that it takes time to spread the files to the mirrors (it could
+      take 3-5 days), and it works best if the files become publicly available within a short
+      timeframe on all mirrors at once. If files become available only on one or a few mirrors,
+      they'll soon be swamped completely by downloading users, which doesn't please the mirror
+      operators (and neither the openSUSE project).</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: Many existing
+        openSUSE users, myself included, use Zypper to upgrade from previous releases. The packages
+        are all downloaded from download.opensuse.org, just like ISO images are. Do you have any
+        numbers to give us a rough idea of how much traffic upgrades produce?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: An upgrade generally consumes less bandwidth than
+      a DVD download, because unnecessary stuff isn't downloaded in the first place. It causes more
+      requests on download.opensuse.org (let's say, a thousand requests) instead of the single
+      request for the image. All that runs through MirrorBrain of course.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: Releases typically
+        "go live" around mid-day in Europe and early morning in the United States. Do you have an
+        idea when traffic "peaks" after a release?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: Usually, after 6-10 hours. All traffic that <ulink
+        url="http://download.opensuse.org/">download.opensuse.org</ulink> receives follows a clearly
+      visible circadian rhythm. The release peak also follows this and overlays it.</para>
+    <para><emphasis role="italic"><emphasis role="bold">OMG! SUSE!</emphasis>: This has all been
+        incredibly informative, as it stands right now, are there any other major hurdles or
+        challenges faced when distributing openSUSE?</emphasis></para>
+    <para><emphasis role="bold">Peter</emphasis>: I would like to point out that contributions to
+      MirrorBrain would be important, to keep the project alive and improve it further. It is
+      important to make it more attractive for more users, to strengthen its user base. A
+      contribution could be development (a web frontend is needed, e.g., and IPv6 geolocation),
+      sponsoring of the development of a new feature and fixing of bugs, testing, packaging,
+      documentation, testing the documentation, or lastly (but not least) a donation. Donations can
+      ensure all of the above. We have a <ulink url="http://mirrorbrain.org/donations/">donations
+        link</ulink> on the site and feel free to spread the word.</para>
+    <para>I'd like to take this opportunity to publicly thank Peter for taking time out of his busy
+      schedule to share so much information with us about distibuting a major operating system like
+      openSUSE. You can learn more about MirrorBrain at <ulink url="http://mirrorbrain.org/"
+        >mirrorbrain.org</ulink>.</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!--($ ld: 15.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://opensuse.terrorpup.net/?p=246">Chuck Payne: Time to start writing again</ulink></title>
+    <para>I know since the elections it’s been very quite here. I been on the openSUSE Wave that’s
+      calming down a bit, which is sad, because it been a wonderful ride. It fact lately I feel I am
+      on the downward ebb of Karma. </para>
+    <para>The wave started getting ready for Hackfest/SCALE which took place in L.A. I got to work
+      with a great group of people. Very long hard days, but we made a very big splash at SCALE.
+      Where I got to do a bit of training openSUSE Day, and thanks to Alan Clark, got to help give a
+      talk at SCALE. </para>
+    <para>Coming back from that week, I got sick but couldn’t slow down because of the release of
+      openSUSE 11.4 and working on a Poster, I assume for Linux Magazine in UK. Both were very
+      import. The poster looks great because of Carlos awesome background and the release when
+      great. (...)</para>
+    <para><!--($ ld: 15.3.11 sm $)--></para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://e-tote-kala.blogspot.com/2011/03/attachmate-supportive-friend-of.html">Kostas Koudaras: Attachmate - A supportive friend of the openSUSE Project</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="https://lh4.googleusercontent.com/-RHd1mQJWS0s/TX5b1sDf6pI/AAAAAAAAA8Q/D4kH-fD9cWo/s1600/cip_attachmate-sold.gif"
+          align="center"/>
+      </imageobject>
+    </mediaobject>
+    <para>Today, Jeff Hawn the Chairman and CEO of <ulink url="http://www.attachmate.com/"
+        >Attachmate</ulink> made an announcement <ulink
+        url="http://www.attachmate.com/Press/PressReleases/congratulations-openSUSE-project.htm"
+        >congratulating the openSUSE community on the release of openSUSE 11.4</ulink>. It is the
+      second press release of <ulink url="http://www.attachmate.com/">Attachmate</ulink> after the
+        '<ulink url="http://www.attachmate.com/Press/PressReleases/nov-22-2010-SUSE.htm">Attachmate
+        Corporation Statement on openSUSE project</ulink>' and it shows the intentions of
+      Attachmate's people to support the openSUSE project and community and all together to achieve
+      great things in the Future. -- Kostas Koudaras</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA </ulink></para>
+    <!--($ ld: 15.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/be-proud-of-yourself-geekos.html">Jos Poortvliet: Be proud of yourself, Geekos!</ulink></title>
+    <para>Right now I'm enjoying the post-release stress. Going back and catching up with what was
+      delayed due to the release being priority and all... And enjoying huge discussions on
+      Identi.ca like <ulink url="http://identi.ca/conversation/65860477#notice-66972122">this
+        one</ulink> ;-)</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://3.bp.blogspot.com/-5cGzCcRPd18/TX7ZH6urREI/AAAAAAAABbc/5dbpQYZiR0A/s200/11.4_NET_installer-boot.png"
+          align="right"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">Me proud of the Geeko!</emphasis></para>
+    <para>The article which went out on Friday made me very proud - <ulink
+        url="http://news.opensuse.org/2011/03/12/opensuse-11-4-made-a-splash/">openSUSE 11.4 made a
+        splash</ulink>. The title is really correct - we're gathering info on reviews etc on <ulink
+        url="http://en.opensuse.org/In_the_press">this page</ulink> but it is extremely incomplete -
+      there are so many reviews, articles, <ulink url="http://twitter.com/#!/search/opensuse"
+        >tweets</ulink>, <ulink url="http://bit.ly/e3IAHc">dents</ulink>, <ulink
+        url="http://www.facebook.com/#!/pages/openSUSE/45393742283">facebook</ulink> comments,
+        <ulink url="http://bit.ly/fPsJaZ">video's on youtube</ulink> - it is really great! And well
+      over <emphasis role="bold">100.000 downloads in 24 hours</emphasis>, almost twice what we did
+      for 11.3 - awesome. openSUSE has its momentum back, that's clear. We already wrote that <ulink
+        url="http://news.opensuse.org/2011/01/03/opensuse-finished-2010-big/">in this "end of 2010"
+        article</ulink>, and the subsequent Bretzn and Appstore sprints, the marketing sprint and
+      all the cool stuff that is going on makes me quite certain about this: the openSUSE conference
+      2010 was a real turning point for openSUSE. The Geeko's back in the game!</para>
+    <para><emphasis role="bold">Did we leave?</emphasis>
+    </para>
+    <para>The question that might come up is - did the Geeko ever leave? I had a look at <ulink
+        url="http://opensuse.org/statistics">some statistics</ulink> on our user base.<emphasis
+        role="bold"> openSUSE has 7-8 million users</emphasis>, that's significant! And,
+      interestingly enough, between 30-50% more than Fedora. Ubuntu has no statistics online but
+      once made some noise about numbers - talking somewhere between 6 and 8.</para>
+    <para><emphasis role="bold">So be a proud Geeko! </emphasis></para>
+    <para>Now all these numbers have some uncertainty associated with them, nothing is sure. Yet the
+      numbers of Fedora and openSUSE at least are measured in the same way, so likely you can at
+      least compare them roughly. And I bet Ubuntu has similar statisics on which they based their
+      number - with the usual exaggeration. So even though the numbers aren't entirely clear, it is
+      interesting to see openSUSE ain't exactly insignificant as many seem to believe... Not only do
+      we have amazing technology like <ulink url="http://build.opensuse.org/">OBS</ulink> and <ulink
+        url="http://susestudio.com/">Studio</ulink> but we also have a HUGE user base whom we serve
+      with <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">a pretty awesome
+        distro</ulink>! So, Geeko's, in the communication and marketing department - maybe openSUSE
+      is not well known for that. But we're a leading distro when it comes to what matters - users
+      and technology. Be proud!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink>
+    </para>
+    <!--($ ld: 15.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/03/16/first-survey-on-opensuse-version-naming-is-open-now/">Andreas Jaeger: First Survey on openSUSE Version naming is open now</ulink></title>
+    <para>Following my last blog post on “<ulink
+        url="http://lizards.opensuse.org/2011/03/11/how-to-name-the-distribution-releases/">how to
+        name the distribution release</ulink>“, I’ve opened up a public <ulink
+        url="http://www.surveymonkey.com/s/ZYC5PYZ">survey</ulink> and look forward to your votes.
+      There is also a good discussion going on on the <ulink
+        url="http://lists.opensuse.org/opensuse-project/2011-03/msg00262.html">opensuse-project
+        mailing list</ulink>. </para>
+    <para>This is the first iteration. Coolo and myself discussed to use a second survey with the
+      group of winners on <ulink url="http://connect.opensuse.org"
+      >connect.opensuse.org</ulink>.</para>
+    <!--($ ld: 16.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/03/17/opensuse-and-kraft-on-clt/">Klaas Freitag: openSUSE and Kraft on CLT</ulink></title>
+    <para>First some news about my KDE project <ulink url="http://volle-kraft-voraus.de/"
+        >Kraft</ulink>: </para>
+    <para>A review was posted on <ulink
+        url="http://lizards.opensuse.org/2011/03/17/opensuse-and-kraft-on-clt/Technewsworld.com"
+        >Technewsworld.com</ulink> with title <ulink url="http://bit.ly/f40Pux">Kraft: A No-Nonsense
+        Office Assistant That Gets Straight to Work</ulink>. Nice title, and also the bottomline of
+      the whole article. Good to read, however I am wondering why the author tested Kraft version
+      0.32 instead the current one 0.40 which is out already for ten month. Are there *still* 0.32
+      packages around in the Ubuntu-World? On the <ulink
+        url="http://volle-kraft-voraus.de/Main/Download">download page</ulink> on Kraft’s website,
+      there are good Ubuntu packages linked thanks to Rohan Garg. </para>
+    <para>The only remark in the review was that the list of document types should be editable. It
+      is since 0.40 :-) Anyway, thanks for considering Kraft for a review. </para>
+    <para>On next weekend I will be in Chemnitz on the <ulink
+        url="http://chemnitzer.linux-tage.de/2011/">Chemnitzer Linux Tage</ulink>. I will give a
+      talk titled <ulink url="http://chemnitzer.linux-tage.de/2011/vortraege/800">Linux im Büro von
+        Kleinunternehmen</ulink> (Linux in the small enterprise). Beside other interesting things I
+      will present Kraft of course. It will be a talk for people who are new to Linux but try to get
+      their work done with Linux. I am looking forward as I enjoy these solution focused topics. If
+      you are interested, show up and we talk about Kraft. And, yes, a new release of Kraft is also
+      on the way, it can’t take too long any more. </para>
+    <para>The <ulink url="http://www.opensuse.org/">openSUSE Project</ulink> will have a booth as
+      well and I probably will be around there for the rest of the time together with friends from
+      the project. We will tell you about our cool project, explain how you can participate and show
+      the brand new <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">openSUSE 11.4
+        release</ulink>. It is a nice one. and we think you will like it. I hope to see you there
+      :-) </para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink>
+    </para>
+    <!--($ ld: 17.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.linuxuser.co.uk/reviews/opensuse-11-4-review-kde-4-6-and-tumbleweed-shine/">Linux User &amp; Developer/Koen Vervloesem: openSUSE 11.4 review – KDE 4.6 and Tumbleweed shine</ulink></title>
+    <para>Do you want to run the newest software like KDE 4.6 and LibreOffice 3.3? OpenSUSE 11.4 has
+      it all on offer, and if you’re really impatient there’s even a rolling updates repository in
+      the form of Tumbleweed. Koen Vervloesem investigates… (...)</para>
+    <!--($ ld: 18.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.digitalflow.de/blog/2011/03/opensuse-11-4/">Thomas Schmidt: openSUSE 11.4</ulink></title>
+    <para>After 8 months of work openSUSE 11.4 has been <ulink
+        url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">released</ulink> last week! This
+      has been celebrated with <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/"
+        >release parties</ulink> all around the world. As usual, the new release comes with the
+      latest <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">kernel</ulink>, <ulink
+        url="http://news.opensuse.org/2011/03/07/opensuse-11-4-will-be-first-to-roll-out-with-libreoffice/"
+        >LibreOffice</ulink>, <ulink
+        url="http://news.opensuse.org/2011/03/03/gnome-on-opensuse-11-4/">Gnome</ulink> and <ulink
+        url="http://news.opensuse.org/2011/03/02/opensuse-11-4-and-kde-2/">KDE</ulink>
+      packages.</para>
+    <para>In Nuremberg, we celebrated the release with a party at the Artefakt bar, and had the
+      fabulous <ulink url="http://on.fb.me/g2Ux2X">Ukulele Insanity</ulink> playing live.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://farm6.static.flickr.com/5259/5532944943_f725cf95d3_m.jpg"
+          width="20%" align="right"/>
+      </imageobject>
+    </mediaobject>
+    <para>Althogh the release is considered a very good one by many <ulink
+        url="http://en.opensuse.org/In_the_press">press and user reviews</ulink>, I had some small
+      problems after upgrading to it and want to share with you how I solved those: (...)</para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://anditosan.blogspot.com/2011/03/opensuse-release-party-provo-ut.html">Andres Silva: openSUSE Release Party - Provo, UT</ulink></title>
+    <para>The openSUSE release party was a lot of fun and I was very happy to be there one more
+      time. The Novell facility in Provo, UT is pretty big and had plenty of room to accommodate the
+      few of us that attended. I met a few personalities as well, most of them participants of the
+      SLED version of openSUSE sponsored by Novell. I also had the chance to talk to some of the
+      guys there about what they did as part of the project and felt like my contributions to the
+      project seem to be so much smaller than theirs. People working for XEN, the package manager,
+      Yast and others have put a lot of effort into making openSUSE a great distribution. </para>
+    <para>I am happy for their achievement and their contribution as well. openSUSE would not be my
+      favorite distribution if it wasn't for much of the work that these people do. So a big THANK
+      YOU to all of them. They also had pizza, a few goodies and 2 big screens. That did it for me.
+      I was happy to see openSUSE handling big screens like that. Although with gnome 3 and the
+      resolution, there were some glitches. </para>
+    <para>Anyway, I promised some pics and here they are. They are not the greatest quality, I used
+      my Palm Pre to take the shots and the lighting was not that great for this tiny phone.</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+  </blockquote>
+</sect1>
