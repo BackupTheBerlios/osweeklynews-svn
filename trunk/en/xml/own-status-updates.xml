@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -19,17 +18,16 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-  <!--
+<!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <title>openSUSE Weekly News searches for contributors</title>
       <para></para>
     </blockquote>
-    </sect2> -->
-  <sect2 role="distribution">
+    </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
-    <!--
+<!--
     <blockquote>
       <title>
         <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
@@ -37,65 +35,56 @@
       <para>It’s been a long time since I was in touch with Enlightenment, back in the young days I
         used it as my first alternative Desktop Environment on Windows, before actually daring to
         switch to Linux. </para>
-        </blockquote> -->
-    <itemizedlist>
+        </blockquote> -->    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
-            Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
-            FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title><ulink url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html"
-          >SUSE Studio: Upgrade your older appliances to openSUSE 11.4</ulink></title>
-      <para>Since <ulink url="http://blog.susestudio.com/2011/03/opensuse-114-support.html">rolling
-          out openSUSE 11.4 support</ulink> last week we have been flooded by questions how to
+      <title>
+        <ulink url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html">SUSE Studio: Upgrade your older appliances to openSUSE 11.4</ulink>
+      </title>
+      <para>Since <ulink url="http://blog.susestudio.com/2011/03/opensuse-114-support.html">rolling out openSUSE 11.4 support</ulink> last week we have been flooded by questions how to
         upgrade older openSUSE appliances to 11.4. Today we have an answer — we enabled the 11.4
         upgrade. </para>
       <para>Just open your old 11.3 (or even 11.1 or 11.2) appliance, go to the Start tab and click
         on the “Upgrade” button in the bar at the top.</para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="https://lh6.googleusercontent.com/-Ryt4lL8lzzw/TYC41WIUnSI/AAAAAAAACbs/D5rGgW2xxXs/s400/upgrade-bar.png"
-          />
+          <imagedata fileref="https://lh6.googleusercontent.com/-Ryt4lL8lzzw/TYC41WIUnSI/AAAAAAAACbs/D5rGgW2xxXs/s400/upgrade-bar.png"/>
         </imageobject>
       </mediaobject>
-      <para>After that, we'll perform the magic — upgrading your appliance to 11.4! </para>
+      <para>After that, we&apos;ll perform the magic — upgrading your appliance to 11.4! </para>
       <para>What exactly “magic” means here? We try to change repositories to their 11.4 equivalents
         and sometimes add or remove few packages to ensure everything works smoothly. You can see
         what exactly was done in the log accessible from the bar at the bottom of the Start
         tab.</para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="https://lh6.googleusercontent.com/-9reWEww3YEM/TYC6r3audPI/AAAAAAAACbw/8ofaGp9m8iw/s320/upgrade-bar2.png"
-          />
+          <imagedata fileref="https://lh6.googleusercontent.com/-9reWEww3YEM/TYC6r3audPI/AAAAAAAACbw/8ofaGp9m8iw/s320/upgrade-bar2.png"/>
         </imageobject>
       </mediaobject>
       <para>Sometimes the upgraded appliance will need some more tweaks to make it work. Just
         inspect the log, see what was changed, and apply any additional adjustments. Let us know
-        what you had to do on our <ulink url="http://susestudio.com/forum/">forum</ulink> or <ulink
-          url="mailto:studio-users@suse.de">mailing list</ulink> so we can improve the upgrade in
+        what you had to do on our <ulink url="http://susestudio.com/forum/">forum</ulink> or <ulink url="mailto:studio-users@suse.de">mailing list</ulink> so we can improve the upgrade in
         the future. </para>
       <para>If you are not satisifed with the upgrade, you can always revert to original version by
         clicking the “Undo upgrade” link. </para>
-      <!-- ($ ld: 16.3.11 sm $) -->
-    </blockquote>
+<!-- ($ ld: 16.3.11 sm $) -->    </blockquote>
   </sect2>
   <sect2 role="teamreports">
     <title>Team Report</title>
-    <!--
+<!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -107,8 +96,7 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -256,10 +244,9 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->
-    <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://ifup.org/2011/02/24/build-service-action-menu-ui/">Brandon Philips:
@@ -310,14 +297,12 @@
         </mediaobject>
         <para>What do people think? I still feel like the horizontal layout is the best option but
           some more feedback would be helpful.</para>       
-          </blockquote> -->
-      <formalpara>
+          </blockquote> -->      <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org"
-          >Buildservice</ulink></para>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
     </sect3>
-    <!--
+<!--
     <sect3 role="evergreen">
       <title>Evergreen/Tumbleweed Team</title>
       <blockquote>
@@ -325,8 +310,7 @@
         <para></para>
       </blockquote>
     </sect3>
-    -->
-    <!--
+    --><!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -337,16 +321,14 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
-        <title><ulink
-            url="http://lizards.opensuse.org/2011/03/08/some-updates-on-the-indicator-stack/">Nelson
-            Marques: Some updates on the indicator stack</ulink></title>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/03/08/some-updates-on-the-indicator-stack/">Nelson Marques: Some updates on the indicator stack</ulink>
+        </title>
         <note>
-          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation
-              License.</emphasis></para>
+          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation License.</emphasis></para>
         </note>
         <para>A few achievements:</para>
         <itemizedlist>
@@ -367,13 +349,13 @@
           the indicators, and unless something very critical pops out, GNOME2 will see the indicator
           stack as it is currently.</para>
         <para>It’s maybe now the best time to start looking deeply into GNOME3.</para>
-        <!-- ($ ld: 8.3.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 8.3.11 sm $) -->      </blockquote>
       <blockquote>
-        <title><ulink url="http://lizards.opensuse.org/2011/03/10/gnome-shell-test-drive/"/></title>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/03/10/gnome-shell-test-drive/"/>
+        </title>
         <note>
-          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation
-              License.</emphasis></para>
+          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation License.</emphasis></para>
         </note>
         <para>As many people are aware I’ve used Fedora for quite a long time… and with the release
           of the first ALPHA of Fedora 15 I got this tiny itch to check out GNOME3, namely, the
@@ -477,10 +459,9 @@
           know that most people are already wanting to crucify me, I hope that you can take 1 week
           of your time to test the shell and prove I’m wrong. Maybe then, you will become converts,
           and I’m will for sure rest my head knowing it was worth to write this text.</para>
-        <!-- ($ ld: 10.3.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 10.3.11 sm $) -->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -587,8 +568,7 @@
           openSUSE 11.4. Feedback can go to the related wiki pages or straight to
           opensuse-kde@.</para>
      </blockquote> 
-     </sect3> -->
-    <!--
+     </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -636,14 +616,12 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <!--
+      </sect3> --><!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -658,22 +636,22 @@
           core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we
           now have a GIT core that can be easily updated and which is fully portable.(...)</para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="openfateteam">
+    </sect3> -->    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
-        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet.
-            We are looking for volunteers to implement. </emphasis></para>
+        <para><emphasis role="bold">Features with highest vote, but no one has been assigned to yet. We are looking for volunteers to implement. </emphasis></para>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/120340">decouple download and
-              installation (Score: 346)</ulink></title>
+          <title>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 346)</ulink>
+          </title>
           <para>&quot;Network installation could be improved by running package download and package
             installation in parallel.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/305493">Look at plymouth for splash
-              during boot (Score: 181)</ulink></title>
+          <title>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 181)</ulink>
+          </title>
           <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
             http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
@@ -683,14 +661,16 @@
             okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score:
-              119)</ulink></title>
+          <title>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 119)</ulink>
+          </title>
           <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score:
-              103)</ulink></title>
+          <title>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 106)</ulink>
+          </title>
           <para>&quot;Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
             the distribution community to switching boot loaders, but this stalemate isn&apos;t
@@ -703,126 +683,149 @@
             for the journal so it needs to scan it for every metadata read. (Yeah, really.)
             (...)&quot;</para>
         </blockquote>
-        <!-- ($ ld: 12.3.11 sat *updated* $) -->
-      </sect4>
+<!-- ($ ld: 19.3.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
-            if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311415">Add Peazip as packman has stopped
-              providing packages</ulink></title>
-          <para>&quot;Since packman is no longer providing peazip packages please add this to the
-            distribution</para>
-          <para>http://packman.links2linux.org/package/peazip &quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311597">please add an lldp package</ulink>
+          </title>
+          <para>&quot;please add an lldp package
+</para>
+          <para>http://en.wikipedia.org/wiki/Link_Layer_Discovery_Protocol
+
+</para>
+          <para>see also:
+https://trac.luffy.cx/lldpd/
+or
+http://openlldp.sourceforge.net/ &quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311416">Urban Terror in
-            repos</ulink></title>
-          <para>&quot;Urban Terror is probably most well-known free FPS game. Unfortunatly it&apos;s
-            not in official repos. I propose including it, along with <ulink
-              url="https://features.opensuse.org/Urban%20Terror%20Optimized%20binary%20http:/www.www0.org/w/Optimized_executable;_builds_of_ioq3_engine_for_urt"
-              >modified linux binary</ulink>.&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311603">vm-install to support non-root privileges</ulink>
+          </title>
+          <para>&quot;As you can use virt-manager with non-root account but you cannot create new virtual machines without root privileges with vm-install.
+
+</para>
+          <para>virt-install support non-root privileges so should vm-install that you can use gui to install vms.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311419">Add support WebP</ulink></title>
-          <para>&quot;About WebP:</para>
-          <para>http://en.wikipedia.org/wiki/WebP</para>
-          <para>http://code.google.com/intl/pt-BR/speed/webp/</para>
-          <para>As was done with WebM:</para>
-          <para>https://features.opensuse.org/309589 &quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311661">provide a LiveCD/USB image to crowd-source a HCL</ulink>
+          </title>
+          <para>&quot;SUSE manually maintained a Hardware Compatibility List (HCL) but this has disadvantages:
+</para>
+          <para>- it covers a limited range of hardware
+</para>
+          <para>- parts of it can be outdated or inaccurate
+</para>
+          <para>- it is a lot of effort to maintain
+</para>
+          <para>On the other hand, people want an easy way to know if their hardware works with the current or next release of openSUSE.
+</para>
+          <para>This is why a Live image is proposed that can easily be put to CD or USB-mass-storage and has an easy way (e.g. icon on desktop) to test access to different types of hardware:
+</para>
+          <para>- graphics
+</para>
+          <para>- sound
+</para>
+          <para>- network
+</para>
+          <para>- input
+</para>
+          <para>...
+
+</para>
+          <para>This software could then upload the test results to a public online database in anonymous form. This DB could be the smolt DB or something similar in spirit.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311439">have a decent linear video
-              editor</ulink></title>
-          <para>&quot;When searching why I still switch to Windows, I have little answers but two or
-            three. One of them is having a decent video editor, like this proprietary one:
-            http://www.magix.com/us/ (cost only approx $100), extremely powerfull.We already have
-            some editors (Kdenlive, kino, openshot, openmovie, blender, cinelerra)&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311664">Add Recoll as default desktop search application</ulink>
+          </title>
+          <para>&quot;As Beagle is no longer actively maintained nor included in the standard repositories openSuse no longer provides a default desktop search application. Recoll would be a desirable replacement Reasons for inclusion:
+
+</para>
+          <para>- actively developed
+
+</para>
+          <para>- open source
+
+</para>
+          <para>- QT based gui (though thought of as a KDE app it is QT)
+
+</para>
+          <para>- Gui has a a list and a table mode (and kio and kreunner for KDE4)
+
+</para>
+          <para>- indexing can be real time or manually initiated
+
+</para>
+          <para>- light on cpu usage
+
+</para>
+          <para>- well reviewed (see review links below)
+
+</para>
+          <para>- many formats indexed (...)&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311441">Build a lobby to make hardware
-              vendors more Linux friendly (open build service)</ulink></title>
-          <para>&quot;We all have some gadget with USB cable not seen by openSUSE (for example
-            GPS).</para>
-          <para>* Could we offer to the hardware makers some room on the build service (yes,
-            including for proprietary software).</para>
-          <para>* could we track the Microsoft work. I&apos;m nearly sure that Microsoft push hard
-            to forgive hardware vendors from releasing Linux drivers. Could we make any survey to
-            make this better known?</para>
-          <para>This is exactly where a cross distribution could be good: we all have the same
-            problem.&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311696">Auto-disable trackpad when external mouse detected</ulink>
+          </title>
+          <para>&quot;Give the user the option to request the system automatically disable the trackpad on laptops when an external mouse (USB, Wireless, etc.) is detected.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311442">A OneNote compatible tool is
-              needed</ulink></title>
-          <para>&quot;One of tools I still need almost daily from a Windows perspective is
-            OneNote.</para>
-          <para>My company has adopted it as a note taking standard for internal projects. It is
-            part of the Microsoft Office suite.</para>
-          <para>Until a linux/opensuse/libreoffice/kde solution is provided, I have to rdesktop into
-            a Windows machine to work with OneNote files.</para>
-          <para>Note that I need a tool that allows collaboration with MS OneNote users, not a new
-            tool that offers OneNote like functionality, but not OneNote on disk
-            compatibility.</para>
-          <para>That is OneNote is in part a collaboration tool that allows multiple simultaneous
-            users to open a notebook. (Assuming the notebook is on a fileserver /
-            share.)&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311697">zypper progress indicator</ulink>
+          </title>
+          <para>&quot;Provide an indicator using zypper up or zypper dup to let the user know how far along the process is (preferably by percentage.)&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311443">why do we still use
-              windows</ulink></title>
-          <para>&quot;This is a collector to summarize what are the key features to allow us to
-            remove windows forever.&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311698">Add urfkill daemon to provide DBus API for control killswitch after HAL removed</ulink>
+          </title>
+          <para>&quot;Face to HAL removed, we develop a daemon the name is urfkill, it provide DBus method to userland application for control killswtich.
+</para>
+          <para>Please reference the features from the following wiki page:
+</para>
+          <para>http://www.freedesktop.org/wiki/Software/urfkill
+
+</para>
+          <para>In the future,
+Our plan is use urfkill daemon to replace the rfkill-input kernel module for provide more flexibility wifi hotkey control.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311446">Split Kernel rpms from Tumbleweed
-              repo</ulink></title>
-          <para>&quot;Currently the Tumbleweed repo contains both app and kernel rpms, I propose
-            that the Tumbleweed project be split into 2 repos - kernel and apps. The reason for this
-            being that updating a kernel can be much more problematic/disruptive to an existing
-            install compared to just updating apps.</para>
-          <para>I admit this might be an unwarranted personal concern but it gives me pause when
-            considering using the Tumbleweed repo. Locking the kernel rpms would also lock the oss
-            repo&apos;s kernel updates which would not be a wise move as oss kernel updates have
-            defined pupose (stability, security).&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311700">Show updates in authentication details</ulink>
+          </title>
+          <para>&quot;Show the packages to update in the details of the authentication dialog of the update applet, both for GNOME and KDE.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311477">i18n of demo dvd</ulink></title>
-          <para>&quot;Now that the demo is a dvd, why couldn&apos;t we have more localized langages?
-            now the keyboard works, but not the other parts.</para>
-          <para>If the user asks for langage in YaST and have an internet access atm, the langage is
-            dl from the net, but this is very long and unusefull for a live session :-)&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311736">Report system failures to the user</ulink>
+          </title>
+          <para>&quot;If a daemon crashes the incident is usually reported to the system log, however on a desktop system such errors may go undetected for months.
+</para>
+          <para>openSuSE is in need of an application that notifies the user that something in the background reported an error and what happened, where to find infos about it and so forth.
+the application should monitor all relevant logfile locations (/var/log/messages, ~/.xsession-errors,...).
+
+</para>
+          <para>Development / Beta versions of openSuSE should come with that application enabled by default to catch as much errors as possible during development.&quot;</para>
         </blockquote>
         <blockquote>
-          <title><ulink url="https://features.opensuse.org/311480">YaST: Tickbox for &quot;Check for
-              secure password&quot;</ulink></title>
-          <para>&quot;During installation, when the first user id created, I suggest we add a third
-            tick box to the page. This one should read &quot;Check for secure password&quot; and be
-            enabled by default. Hopefully that will avoid the pop-up window advising the user that
-            cracklib-something is being loaded and whether to accept a password that doesn&apos;t
-            comply with our password guidelines.&quot;</para>
+          <title>
+            <ulink url="https://features.opensuse.org/311805">Add Select All check box to Yast Package Manager</ulink>
+          </title>
+          <para>&quot;The Yast Package Manager only allows you to select packages one at a time. This is very time consuming if you require all of them in a Pattern.&quot;</para>
         </blockquote>
-        <blockquote>
-          <title><ulink url="https://features.opensuse.org/311583">Graphical integration of
-              LibreOffice in openSuse</ulink></title>
-          <para>&quot;Despise of LibO official arrival in openSUSE 11.4, we can still see the old
-            OOo-like icons in Kickoff. Besides, I don&apos;t know if it&apos;s KDE or openSUSE but
-            with Oxygen theme enabled, we got the old OOo documents icons on LibO start screen as in
-            LibO menus.</para>
-          <para>It would be better to integrate LibO filetype &amp; modules icons or
-            openSUSE-stylized/KDE stylized icons.&quot;</para>
-        </blockquote>
-        <!-- ($ ld: 12.3.11 sat *replaced with newer ones* $) -->
-      </sect4>
+<!-- ($ ld: 19.3.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE distribution <ulink
-            url="https://features.opensuse.org/statistic/product/opensuse_dist">in
-          openFATE</ulink></para>
+        <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
+<!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -846,44 +849,41 @@
         <para>Most developers are already concentrated on LO-3.4 release. I hope that the first beta
           packages will be ready in the beginning of April.</para>
      </blockquote>
-    </sect3> -->
-    <sect3 role="testing">
+    </sect3> -->    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
-        <title><ulink url="http://lists.opensuse.org/opensuse-testing/2011-03/msg00007.html">Weekly
-            News for March 5</ulink></title>
+        <title>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-03/msg00007.html">Weekly News for March 5</ulink>
+        </title>
         <para>The Testing Core Team met February 28 and March 7, 2011 at 18:00 UTC.</para>
         <para>In the first meeting, we discussed our experiences with 11.4 RC2, which were mostly
           positive. We then covered the success of Open-Bugs-Day and began our planning for the next
           one, which will be from 00:00 till 23:59 UTC on April 2, 2011. No, that is not a late
-          April Fool's joke. We will check for 11.[123] bugs on 11.4 Please put this date on your
+          April Fool&apos;s joke. We will check for 11.[123] bugs on 11.4 Please put this date on your
           calenders. More details will be forthcoming next week. </para>
         <para>In the March 7 meeting, which was optional due to religious holiday in Bavaria, we
           discussed our experiences with the post-RC2 updates that Bernhard Wiedermann had made
-          available. Most of the discussion centered about the bug that broke a "zypper dup"
+          available. Most of the discussion centered about the bug that broke a &quot;zypper dup&quot;
           upgrade. The workaround was easy, but it was very important to publicize it in the Forums
           and on the wiki page describing the upgrade. That problem is now fixed and is no longer
           presented on the most annoying bugs page. </para>
         <para>The TCT will meet again at 18:00 UTC on March 14 to discuss the 11.4 release. For the
           record, the release has performed well on the 5 systems on which I have installed it. </para>
-        <!-- ($ ld: 11.3.11 sm $) -->
-      </blockquote>
+<!-- ($ ld: 11.3.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink
-              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
-              Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-    <!--
+<!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -939,18 +939,15 @@
             </listitem>
           </itemizedlist></para>
       </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->
-  </sect2>
+      </sect3> -->  </sect2>
 </sect1>
