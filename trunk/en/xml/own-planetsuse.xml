@@ -22,42 +22,44 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://mschlander.wordpress.com/2011/03/12/opensuse-11-4-has-been-released/">Martin Schlander: openSUSE 11.4 has been released</ulink></title>
-    <para>In case you hadn’t heard, openSUSE 11.4 was released this Thursday, and as usual <ulink
-        url="http://opensuse-guide.org/">opensuse-guide.org</ulink> was updated at the same time. </para>
-    <para>I think overall it’s a very good release, besides being the first major distribution to
-      ship KDE SC 4.6, LibreOffice Linux 2.6.37 with free Broadcom wlan drivers (for some recent
-      chips) and other goodies. </para>
-    <para>You can read the announcement <ulink
-        url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">here</ulink> or read the <ulink
-        url="http://en.opensuse.org/Product_highlights">Product highlights</ulink> for a more
-      extensive presentation of the new stuff.</para>
-    <para>As customary I like to also prepare people for the most likely causes of problems:<itemizedlist>
+    <title><ulink url="http://mschlander.wordpress.com/2011/03/12/opensuse-11-4-has-been-released/"
+        >OMG! SUSE!/rtyler: On release day, it is like a big dump truck</ulink></title>
+    <para>Shortly after the initial release of openSUSE 11.4, I posted some <ulink
+        url="http://omgsuse.com/content/rapidly-downloading-opensuse-114-bittorrent">giant
+        BitTorrent links</ulink> to speed up your downloading of openSUSE. Now that the initial
+      flood of downloads has come and gone, I wanted to report back with some statistics shared by
+      openSUSE Contributor <ulink
+        url="http://news.opensuse.org/2008/03/01/people-of-opensuse-marcus-rueckert/">Marcus
+        Rueckert</ulink>.</para>
+    <para><emphasis role="bold"><emphasis role="italic">Note</emphasis></emphasis>: These numbers
+      are for BitTorrent downloads only.</para>
+    <para>As of last Thursday (March 17th), the numbers broke down as follows:<itemizedlist>
         <listitem>
-          <para>PulseAudio is now installed and enabled in KDE installations by default. If it’s
-            causing sound problems, you can disable it in YaST -> Sound -> Other -> PulseAudio
-            Configuration (or run ‘setup-pulseaudio –disable’) or even uninstall it – KDE doesn’t
-            have hard dependencies on it.</para>
+          <para>Full DVD images downloaded: <emphasis role="bold">8228</emphasis></para>
         </listitem>
         <listitem>
-          <para>GStreamer is the new default Phonon backend – enough said. You may want to use
-            phonon-backend-xine or phonon-backend-vlc (from Packman) instead, if Amarok or other
-            Phonon applications misbehave.</para>
-        </listitem>
-        <listitem>
-          <para>The great new KDE Bluetooth tool – BlueDevil – has a missing dependency on
-            obexd-client, which means you’ll need to install obexd-client yourself in order for
-            sending files via Bluetooth to work.</para>
-        </listitem>
-        <listitem>
-          <para>The NetworkManager plasmoid is not perfect. An online update should be along soon
-            improving it significantly. If it’s causing problems you can easily install and use
-            nm-applet (NetworkManager-gnome) instead – with the new oxygen-gtk theme it doesn’t even
-            look bad ;-)</para>
+          <para>Live CD images downloaded: <emphasis role="bold">4009</emphasis></para>
         </listitem>
       </itemizedlist></para>
-    <para>That’s it for me. Have a lot of fun with 11.4.</para>
-    <!-- ($ ld: 13.3.11 sm $) -->
+    <para>If you're not terrifically familiar with the way that BitTorrent works, all users are
+      constantly sharing data with one another but users fall into two buckets:
+        <quote>leechers</quote> and <quote>seeders</quote>. The <quote>leechers</quote> are users
+      who don't <emphasis role="italic">yet</emphasis> have the complete file, while the
+        <quote>seeders</quote> have fully completed their download and are <emphasis role="bold"
+        >only</emphasis> uploading to the other users. In short, having a lot of seeders means you
+      have a good healthy torrent and downloads for new folks will be <emphasis role="italic"
+        >fast</emphasis>.</para>
+    <para>As of last Thursday, both the 32-bit and the 64-bit DVD images had over <emphasis
+        role="bold"><emphasis role="italic">one thousand seeders</emphasis></emphasis>, 20% more
+      seeders than leechers too! That is incredibly awesome!</para>
+    <para>Marcus went on to say:</para>
+    <para><quote>I tested on friday morning and peaked at 11.2MB/s download speed for torrent which
+        is almost max speed of my line.</quote></para>
+    <para>This means if you download the DVD image <emphasis role="italic">right now</emphasis>, you
+      are likely going download openSUSE as fast as technically possible!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!-- ($ ld: 21.3.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://lizards.opensuse.org/2011/03/13/opensuse-11-4-how-it-goes-in-portugal/">Nelson Marques: openSUSE 11.4 :: How it goes in Portugal ?!</ulink></title>
