@@ -22,7 +22,9 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink url="http://lizards.opensuse.org/2011/03/15/opensuse-11-4-wine-a-practical-case/">Nelson Marques: openSUSE 11.4 :: Wine… A practical case…</ulink></title>
+      <title><ulink
+          url="http://lizards.opensuse.org/2011/03/15/opensuse-11-4-wine-a-practical-case/">Nelson
+          Marques: openSUSE 11.4 :: Wine… A practical case…</ulink></title>
       <para>For some time I follow the <ulink url="http://forums.opensuse.org">openSUSE
           Forums</ulink> which provide me a very interesting view about what our users do with
         openSUSE. I’ve noticed there are some relevant questions about Wine once in a while in the
@@ -135,7 +137,9 @@
       <!-- ($ Id: 15.3.11 sm $)-->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://mschlander.wordpress.com/2011/03/17/gnome-networkmanager-applet-in-kde-in-opensuse-11-4/">Martin Schlander: GNOME NetworkManager Applet in KDE in openSUSE 11.4</ulink></title>
+      <title><ulink
+          url="http://mschlander.wordpress.com/2011/03/17/gnome-networkmanager-applet-in-kde-in-opensuse-11-4/"
+          >Martin Schlander: GNOME NetworkManager Applet in KDE in openSUSE 11.4</ulink></title>
       <para>The KDE NetworkManager plasmoid used in openSUSE 11.4 has some issues and rough edges.
         Some of those will be fixed in an online update expected to be out soon. If you want to help
         make the NetworkManager plasmoid better you can read about filing good bug reports against
@@ -174,7 +178,9 @@
       <!--($ Id: 18.3.11 sm $)-->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://www.techrepublic.com/blog/five-tips/five-tips-for-faster-web-browsing/722">TechRepublic/Jack Wallen: Five tips for faster Web browsing</ulink></title>
+      <title><ulink
+          url="http://www.techrepublic.com/blog/five-tips/five-tips-for-faster-web-browsing/722"
+          >TechRepublic/Jack Wallen: Five tips for faster Web browsing</ulink></title>
       <para><emphasis role="bold">Takeaway</emphasis>: If you’re wasting too much time waiting (and
         waiting and waiting) for Web pages to load, give these tips a try. You should see an
         immediate, noticeable boost in speed, making your browsing experience faster and more
@@ -209,7 +215,8 @@
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://seife.kernalert.de/blog/2011/03/17/eglibc-cross-compiling-issue/">Stefan Seyfried: (e)glibc cross compiling issue…</ulink></title>
+      <title><ulink url="http://seife.kernalert.de/blog/2011/03/17/eglibc-cross-compiling-issue/"
+          >Stefan Seyfried: (e)glibc cross compiling issue…</ulink></title>
       <para>While building a brand new powerpc cross-compiler with crosstool-ng (which is great), I
         came about a simple issue which was unexpectedly hard to
         fix:<screen>../misc/syslog.c: In function '__vsyslog_chk':
@@ -273,14 +280,35 @@ T.new.m</screen></para>
       <!-- ($ Id: 18.3.11 sm $) -->
     </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-310-2/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): Samba roles</ulink>
+        <ulink url="http://azouhr.wordpress.com/2011/03/21/simple-udev-manipulations/">Berthold
+          Gunreben: Simple udev Manipulations</ulink>
       </title>
-      <para>&quot;Samba isn&apos;t a single program; rather, it&apos;s a series of interrelated servers and utilities, each of which has its own specific purpose. Understanding the differences between these servers and utilities will help you manage your Samba system. Furthermore, Samba implements a number of different security models, which you must understand to properly integrate Samba into an existing network or to set up a new network with Samba servers at its core. (...)&quot;</para>
-   </blockquote>
-  </sect2> -->
+      <para>When discovering the /sys file system, one can find quite a number of tunables that look
+        interesting and really have effect on system behavior. Especially when experimenting with
+        different values of read ahead for block devices or e.g. setting the stripe_cache_size for
+        raid5, the performance for my software raid was improved a lot. </para>
+      <para>To make that settings permanent, one can try and go for /etc/init.d/boot.local. More
+        elegant however is to add some udev rule that does the necessary changes for you. It turns
+        out, that this is quite easy. For example, the read ahead for block devices is found in
+        /sys/block/*/bdi/read_ahead_kb. To check your current read ahead of /dev/sda, you may
+        use:<screen>cat /sys/block/sda/bdi/read_ahead_kb</screen></para>
+      <para>However you may also want to change that setting. To accomplish that, just echo the
+        desired number into the read
+        ahead:<screen>echo 4100 > /sys/block/sda/bdi/read_ahead_kb</screen></para>
+      <para>To automatically do the setting when the device appears, just add the following file to
+        /etc/udev/rules.d/83-ra.rules:<screen>cat /etc/udev/rules.d/83-ra.rules
+# increase readahead for sd* devices
+ACTION=="add", KERNEL=="sd*", ATTR{bdi/read_ahead_kb}="4100"</screen></para>
+      <para>When adding a udev rule for this, one just needs to know that “==” (two equal signs) is
+        a check, and “=” (one equal sign) is a setting. </para>
+      <para>Note, that some devices may take the read ahead from the underlying device; noteably
+        when using drbd, setting the read ahead on the underlying device will have the desired
+        effect.</para>
+      <!--($ Id: 21.3.11 sm $)-->
+    </blockquote>
+  </sect2>
 </sect1>

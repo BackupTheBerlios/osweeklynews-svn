@@ -259,58 +259,55 @@
       </sect3> -->
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
       <blockquote>
         <title>
-          <ulink url="http://ifup.org/2011/02/24/build-service-action-menu-ui/">Brandon Philips:
-            Build Service Action Menu UI</ulink>
+          <ulink
+            url="http://lizards.opensuse.org/2011/03/21/policy-proposal-for-factory-make-source-of-tar-balls-trackable/"
+            >Adrian Schröter: Policy proposal for Factory: Make source of tar balls
+            trackable</ulink>
         </title>
-        <para><ulink url="http://ifup.org/2011/02/17/fixing-open-build-service-ui-gripes/">Last
-            week</ulink> I wrote a few patches to improve the UI of the build service. The first of
-          these patches were accepted but the removal of the Actions menu wasn&apos;t as well liked.
-          This was the proposal: </para>
-        <para><emphasis role="bold">Current Interface</emphasis></para>
-        <para>The current javascript pop out menu is hard to discover and not really necessary given
-          how much space is available in the UI.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://ifup.org/images/obs-project-before.png"/>
-          </imageobject>
-        </mediaobject>
-        <para><emphasis role="bold">My Suggested Patch</emphasis></para>
-        <para>OBS has other horizontal controls and the vertical space to handle an inline list so I
-          submitted this layout in my patches.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://ifup.org/images/obs/control-horizontal.png"/>
-          </imageobject>
-        </mediaobject>
-        <para>However, in the merge request <ulink
-            url="http://gitorious.org/opensuse/build-service/merge_requests/9">Sascha
-            suggested</ulink> an alternative which I have tried out and taken screenshots of below
-          (ignore the margin issues, I need to fix the css for the bento showleft class which breaks
-          the 960 grid layout).</para>
-        <para><emphasis role="bold">Sascha&apos;s Suggestion</emphasis>
-        </para>
-        <para>What I don&apos;t like about this is that if you visit a project or package with a
-          long description the really useful information about failures and the controls are below
-          the fold and a scroll wheel away.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://ifup.org/images/obs/control-bottom.png"/>
-          </imageobject>
-        </mediaobject>
-        <para><emphasis role="bold">Controls on Top </emphasis></para>
-        <para>I could move the controls to the top above the description but this feels like it
-          takes up a lot of space.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://ifup.org/images/obs/control-top.png"/>
-          </imageobject>
-        </mediaobject>
-        <para>What do people think? I still feel like the horizontal layout is the best option but
-          some more feedback would be helpful.</para>       
-          </blockquote> -->
+        <para>I like to suggest a general policy for openSUSE:Factory project to document from where
+          a tar ball (or any other file from upstream) is comming from. Why that ? It makes it much
+          easier to review version updates and it guarantees that no one can inject some mal code
+          via a modifed tar ball. </para>
+        <para>So far I added the source services <quote>download_url</quote> and
+            <quote>tar_scm</quote> to our OBS instance, which downloads the files and stores them as
+          files via a commit. Some people use them already, some others don’t like them because they
+          store the files with _service: prefix. </para>
+        <para>In last hackweek, I added another way to handle this, which I would like to request as
+          setup and policy for openSUSE:Factory project. You can add a project wide source service,
+          for example the new <quote>download_files</quote> service. That would mean that no needs
+          to add a _service file to the sources anymore. It is enough to add an URL to the spec file
+          Source: tags. The service will automatically download it from there. </para>
+        <para>But that does mean we still have have _service:download_files:osc-0.1.tar.bz2 file
+          names ? Not when we also add the new<quote> trylocal</quote> parameter and use latest osc
+          versions. This parameter will let act osc to execute the services, but name the files
+          without prefix and commit them together with the other files. </para>
+        <para>Where is the advantage then ? The server is still validating that this is an identical
+          file. It downloads it again and compares it. In case it is the same file, nothing will
+          happen. </para>
+        <para>What will happen, when the file differes ? We basically have two options, either we
+          can let the service mark the source as broken or we would store the file with _service:
+          prefix again. </para>
+        <para>The later mode has the advantage that you can still do version upgrades via slow
+          connections and let the server download the files.</para>
+        <para>Please find some more details about new possibilities with the source services <ulink
+            url="http://doc.opensuse.org/products/draft/OBS/obs-reference-guide/cha.obs.source_service.html"
+            >here</ulink>. </para>
+        <para>An example setup for this can be tested via
+          <screen>osc bco home:adrianSuSE:FactoryTest bc</screen></para>
+        <para>and do for example a version downgrade to 1.05 version to see how it works. Please
+          note that you need the osc from openSUSE:Tools:Unstable project for this.</para>
+        <para>We can also apply the still suse-internal spec formater and validator scripts via this
+          way later one. </para>
+        <para>Another advantage of this setup would be the new <quote>update_source</quote> service,
+          which could run in some openSUSE:Factory:AutoUpdate project and tries automatic version
+          upgrades when upstream releases a new version. They could be reviewed and just picked
+          (directly or with additional manual fixes). </para>
+        <para><emphasis role="bold">License</emphasis>: <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+        <!--($ ld: 21.3.11 sm $)-->
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org"
@@ -338,38 +335,46 @@
 
       <para>...</para>
       </sect3> -->
-    <!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
-        <title><ulink
-            url="http://lizards.opensuse.org/2011/03/08/some-updates-on-the-indicator-stack/">Nelson
-            Marques: Some updates on the indicator stack</ulink></title>
-        <note>
-          <para><emphasis role="bold">This Article is licensed under the GNU Free Documentation
-              License.</emphasis></para>
-        </note>
-        <para>A few achievements:</para>
-        <itemizedlist>
-          <listitem>
-            <para>appmenu-gtk – the last upstream update really made wonders, and currently it’s
-              safe to use indicator-appmenu with GTK apps with the expected functionality. If you
-              like OSX styled menu’s, this will make your delight! The really critical bugs known to
-              me were fixed in the last update. Adding it to the default pattern (1 click
-              installer).</para>
-          </listitem>
-          <listitem>
-            <para>dbusmenu – another critical bug solved today, and the Me Menu already works as
-              expected. This was broken for around 2 weeks, it’s now working properly.</para>
-          </listitem>
-        </itemizedlist>
-        <para>With this, one more indicator was enabled (indicator-appmenu) and a few critical bugs
-          have been solved. I’m expecting to talk with Ken later on to check out on the plans for
-          the indicators, and unless something very critical pops out, GNOME2 will see the indicator
-          stack as it is currently.</para>
-        <para>It’s maybe now the best time to start looking deeply into GNOME3.</para>        
+        <title><ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html"
+            >Frédéric Crozat: GNOME 3 Live image, release 0.1.1</ulink></title>
+        <para>As always, another week, another release, aka 0.1.1</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm3.static.flickr.com/2628/3777290817_9d3513c85f_z.jpg"
+              width="20%"/>
+          </imageobject>
+        </mediaobject>
+        <para>This week release is a polish release : <itemizedlist>
+            <listitem>
+              <para>very few package changes</para>
+            </listitem>
+            <listitem>
+              <para>many services are disabled when booting live CD, improving its loading
+                speed</para>
+            </listitem>
+            <listitem>
+              <para>password is no longer asked at all in live CD for root or standard (tux)
+                user</para>
+            </listitem>
+            <listitem>
+              <para>when installing the image on a system (add liveinstall parameter on bootloader),
+                some services are enabled back (apparmor, preload, firewall), thanks to Chris
+                comments</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Another service announcement : my GNOME3 openSUSE 11.3 repository will soon be removed
+          ; packages will be only available for openSUSE 11.4 (same <ulink
+            url="https://build.opensuse.org/project/show?project=home%3Afcrozat%3Agnome3">OBS
+            project</ulink>). Therefore, I strongly suggest to upgrading your system to openSUSE
+          11.4. </para>
+        <para>You know the url to fetch the latest release : <ulink
+            url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
+        <!--($ ld: 21.3.11 sm $)-->
       </blockquote>
-    </sect3> -->
+    </sect3>
     <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
