@@ -23,121 +23,6 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title><ulink
-          url="http://lizards.opensuse.org/2011/03/15/opensuse-11-4-wine-a-practical-case/">Nelson
-          Marques: openSUSE 11.4 :: Wine… A practical case…</ulink></title>
-      <para>For some time I follow the <ulink url="http://forums.opensuse.org">openSUSE
-          Forums</ulink> which provide me a very interesting view about what our users do with
-        openSUSE. I’ve noticed there are some relevant questions about Wine once in a while in the
-        Games forums. </para>
-      <para>A few time ago one of my friends nagged me a lot to do a couple of levels in <ulink
-          url="http://bit.ly/ei1sL7">Lord of the Rings Online</ulink> which has a ‘Free Play’ plan
-        in Europe. People can create an account and play for free the game with some restrictions
-        (contents, equipment, items, etc). Players also have the option of using the online game
-        store to unlock several aspects of the game. I’ve used a free play account for this, as I
-        don’t really dedicate much time to it. </para>
-      <para>I’ve downloaded and installed the game in a Windows 7 computer (abour 10.5GB’s), updated
-        it and it works as expected. My laptop has somehow better hardware and I’ve decided to see
-        how it would run under openSUSE through wine! On <ulink url="http://www.winehq.org/"
-          >WineHQ</ulink> there’s some extensive know-how shared by the community about this game…
-        for my little experiment I’ve used the following:<itemizedlist>
-          <listitem>
-            <para>Lord of the Rings Online installation files pulled from the installer (since I had
-              previously downloaded the game on a Windows machine, I’ve used those files to avoid
-              downloading 10.5GB’s again).</para>
-          </listitem>
-          <listitem>
-            <para>Wine 32 bits (1.3.12, shipped with openSUSE, LotRO requires also
-              wine-gecko);</para>
-          </listitem>
-          <listitem>
-            <para>openSUSE 11.4 x86_64;</para>
-          </listitem>
-          <listitem>
-            <para>ATI FireGL drivers, release 11.2;</para>
-          </listitem>
-          <listitem>
-            <para>PyLotRO Launcher (written in Python, used to launch LOTRO since the normal Turbine
-              .NET launcher has some serious issues);</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>Looking at everything written on WineHQ about LotRO it seems quite a hard task to get
-        this running, luckily it’s actually the opposite… pretty much a quick step, though time
-        consuming due to the size of the game. Here’s the procedures:</para>
-      <para><emphasis role="bold">Installing wine on openSUSE 11.4</emphasis></para>
-      <para>Installing wine on openSUSE is pretty easy (like any other software package). Make sure
-        you are networked and open your favourite terminal emulator and type in the following
-        command: <emphasis role="bold">zypper install wine wine-gecko</emphasis>. Zypp client will
-        pull all the required dependencies and install the software. Please be aware that your
-        system needs to have 3D capable drivers, often proprietary drivers.</para>
-      <para><emphasis role="bold">Installing Lord of the Rings Online</emphasis></para>
-      <para>As I’ve stated previously, I’ve had available the installation cache files from a
-        previous Windows installation which made my life easier (around 10.5GB). If this is not your
-        case, you can look into WineHQ and check how it goes with the installer. An interesting
-        thread can be found <ulink url="http://bit.ly/fNf5iA">here</ulink>. </para>
-      <para>When one installs LOTRO on a Windows Machine it will create a folder on the Desktop
-        called LOTRO_* which will contain a local cache of the files necessary to install the game.
-        Inside of this folder there’s a ‘lotrosetup.exe’ runs the installer. To start the
-        installation is quite easy… open a terminal (with normal user), navigate to the directory
-        where we have the cache files from the installer and run: <emphasis role="bold">wine
-          lotrosetup.exe</emphasis>. The installer window pops up preceded by a small splash screen.
-        Follow the instructions on the screen and wait until it deploys the game (took around 30/40
-        minutes).</para>
-      <para><emphasis role="bold">PyLotRO Launcher for Linux </emphasis></para>
-      <para>There’s ways to run the game and the Turbine launcher (.NET) isn’t really friendly of
-        wine. I’ve decided to go for PyLotRO which is a small launcher written in Python. I’ve made
-        a small test package which is available on my test repository in OBS (<ulink
-          url="http://build.opensuse.org/">openSUSE Build Service</ulink>) and called it
-        python-lotro. You can find it <ulink url="http://bit.ly/e2GLTb">here</ulink>. For openSUSE
-        11.4 it can download this RPM, <ulink url="http://bit.ly/eM96wk"
-          >python-lotro-0.1.14-4.1.noarch.rpm</ulink> and install it with: <emphasis role="bold"
-          >sudo zypper install python-lotro-0.1.14-4.1.noarch.rpm</emphasis>. This will also create
-        a link on your Games menu entry (works in GNOME, never tested on KDE). </para>
-      <para>You have the Linux launcher installer and are a tiny step away from being able to play
-        LoTRO…</para>
-      <para><emphasis role="bold">Updating the Game… </emphasis></para>
-      <para>PyLotRO provides a small interface with the very basic functionality available from the
-        Turbine Launcher. Allows to configure wine debugging output and patch the game amongst other
-        features. Here’s a small screenshot how it’s looks:</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/03/Screenshot-Lord-of-the-Rings-Online-Launcher-for-Linux.png"
-            width="40%"/>
-        </imageobject>
-      </mediaobject>
-      <para>To update the game, it’s only required to hit the ‘<emphasis role="bold"
-          >Tools</emphasis>‘ menu and select ‘<emphasis role="bold">Patch</emphasis>‘. This will
-        access the game contents, download, decrypt and update the game to the latest version. Due
-        to the size of the game it really takes a bit of time, so be patient. </para>
-      <para><emphasis role="bold">WARNING</emphasis>: Before launching the game make sure that you
-        have 3D effects disabled on the Desktop (ex: disable compiz or composite in Kwin). If this
-        step isn’t done, the game might suffer of great performance issues and weird behavior. If
-        something looks fishy, then that’s because you forgot this step. This also made me think in
-        one thing… What impact will Unity and gnome-shell have in cases like this… when the
-        accelerated 3D Desktop will generate performance issues in applications like in this case…
-        something to look for in the nearby future… </para>
-      <para>After the update it’s possible to login into the game, configure the options and give it
-        a go… You will need a game account first than can be created for free (Europe only as far as
-        I am aware, the game seems to be under subscription in the US), make sure you download the
-        European client as well.</para>
-      <para><emphasis role="bold">Gameplay </emphasis></para>
-      <para>The game tries to detect the best configuration for your system (Low in my case)… I’ve
-        forced it to Very High, selected my native resolution and gave it a go. The game is fluid
-        enough, though lags a bit in big cities (ex: Bree), this is somehow something to expect, the
-        same happens in Windows. While I haven’t seen much problems with performance, I’ve disabled
-        dynamic lighting and it’s somehow a bit better. The runs nice and everything seems to work. </para>
-      <para>I know many tutorials talk about winetricks and d3dx9… I’ve not did such things and the
-        game runs very nice with the native wine dll’s without having the need of installing
-        Microsoft’s DirectX files. </para>
-      <para>This was a very pleasant experience, and it really surprised me on the positive.
-        OpenSUSE has a very nice version of wine capable of running at least LotRO and World of
-        Warcraft without any issues! It’s something that is worth trying with openSUSE!</para>
-      <para><emphasis role="bold">Licenses</emphasis>: <ulink
-          url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
-      <!-- ($ Id: 15.3.11 sm $)-->
-    </blockquote>
-    <blockquote>
-      <title><ulink
           url="http://mschlander.wordpress.com/2011/03/17/gnome-networkmanager-applet-in-kde-in-opensuse-11-4/"
           >Martin Schlander: GNOME NetworkManager Applet in KDE in openSUSE 11.4</ulink></title>
       <para>The KDE NetworkManager plasmoid used in openSUSE 11.4 has some issues and rough edges.
@@ -215,69 +100,37 @@
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://seife.kernalert.de/blog/2011/03/17/eglibc-cross-compiling-issue/"
-          >Stefan Seyfried: (e)glibc cross compiling issue…</ulink></title>
-      <para>While building a brand new powerpc cross-compiler with crosstool-ng (which is great), I
-        came about a simple issue which was unexpectedly hard to
-        fix:<screen>../misc/syslog.c: In function '__vsyslog_chk':
-../misc/syslog.c:123: sorry, unimplemented: inlining
-failed in call to 'syslog': function body not available
-../misc/syslog.c:155: sorry, unimplemented: called from here</screen></para>
-      <para>Using different combinations of build helper tools, eglibc, gcc, whatever did not really
-        help. Even the search engine results were full of the same questions but with very little
-        answers, and most of the answers were clearly in the league of cargo cult programming,
-        nothing you’d want to rely on for a toolchain to be used by others. </para>
-      <para>But finally I came across <ulink
-          url="http://sourceware.org/ml/libc-help/2009-02/msg00023.html">this mail from Mike
-          Frysinger</ulink> which finally showed that it can be as easy
-        as<screen>CT_LIBC_GLIBC_EXTRA_CFLAGS="-U_FORTIFY_SOURCE"</screen></para>
-      <para>Of course the question remains why compiling glibc has to be always a major PITA, but
-        that’s something I’d rather not discuss in public…</para>
-      <!-- ($ Id: 17.3.11 sm $) -->
+      <title><ulink url="http://psankar.blogspot.com/2011/03/pre-vs-post-increment-performance.html"
+        >Sankar P: Pre vs Post Increment</ulink></title>
+      <para>While browsing across some open-source projects, I have seen code snippets of
+        type:<screen>for (i = 0; i &lt; n; ++ i )</screen></para>
+      <para>The pre-increment "++ i " confused me as to why one should use it, as post increment is
+        most commonly used. Googling told me that <emphasis role="italic">pre-increment is faster
+          than post increment as the value of i need not be stored to a temporary register before
+          the increment operation</emphasis>. This sounded logical to me and I believed it and used
+        pre-increment in all my loops. I didn't bother to measure it though. (...)</para>
+      <!-- ($ Id: 22.3.11 sm $)-->
     </blockquote>
     <blockquote>
-      <title>Josef Reidinger: Temporary overwrite method for specific task</title>
-      <para>Hi, today I must solve issue with not well structured code. Problem is that one method
-        return last correct version, but in one specific case it needs to return newest version
-        (even incorrect). There is many calls between top level method which know what needs to call
-        and target method which is called from generic code. Now I need to fix it and code is not
-        well tested and quite sensitive to changes ( this fix is fix of another fix :) . So what is
-        the safest way to change it? </para>
-      <para>I decide that the best solution which doesn’t change almost nothing ( but is suitable
-        just for maintenance update, for trunk I create better solution ) is temporary overwrite of
-        target method to change its behavior. Now how to do it? There is simple
-        example:<screen>class T
-  def test
-    puts "test"
-  end
-
-  def lest
-    puts "lest"
-  end
-
-  def m
-    test
-  end
-end
-
-T.new.m
-T.send(:define_method,:m_a) { lest }
-T.send(:alias_method, :m_old, :m)
-T.send(:alias_method, :m, :m_a)
-T.new.m
-T.send(:alias_method, :m, :m_old)
-T.send(:undef_method, :m_a)
-T.send(:undef_method, :m_old)
-T.new.m</screen></para>
-      <para>as you can see after modification class is exact same as before ( except if there is
-        method a, but it is possible to handle it via introspection and dynamic choose of method). I
-        don’t need to change whole stack of calls to add parameter or introduce new singleton class
-        which can have flag. I hope it help someone with his fix of not so well written piece of
-        software.</para>
-      <para><emphasis role="bold">License</emphasis>: <ulink
-          url="http://lizards.opensuse.org/2011/03/18/temporary-overwrite-method-for-specific-task/"
-          >FDL 1.2</ulink></para>
-      <!-- ($ Id: 18.3.11 sm $) -->
+      <title><ulink url="http://azouhr.wordpress.com/2011/03/22/itunes-on-opensuse-11-4/">Berthold
+          Gunreben: iTunes on openSUSE 11.4</ulink></title>
+      <para>In order to use iTunes University, I had to install iTunes on my notebook that is
+        running openSUSE 11.4. It is quite easy to get some old version of iTunes from <ulink
+          url="http://www.oldapps.com/itunes.php">http://www.oldapps.com/itunes.php</ulink> but
+        trying to install it on a 64bit machine with wine always failed.</para>
+      <para>In the end, I could install a 32bit version by doing the following:</para>
+      <programlisting>rm -rf ~/.wine #(don't do this if you have other wine applications installed, it basically kills any previous wine installation)
+export WINEARCH=win32
+wine ~/Downloads/iTunesSetup1021.exe</programlisting>
+      <para>To start iTunes later on, it is sufficient to run the following
+        command:<screen>wine c:/Program\ Files/iTunes/iTunes.exe</screen></para>
+      <para>Unfortunately, with most of the available courses on iTunes University, I get conversion
+        errors. To circumvent this, I just download the respective courses and view them with
+        mplayer:<screen>cd ~/Music/iTunes/iTunes Media/iTunes U/
+mplayer -vo xv &lt;course file></screen></para>
+      <para>This is not too nice, but at least it allows me to view iTunes U courses without the
+        need for an operating system I do not own.</para>
+      <!-- ($ Id: 22.3.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>

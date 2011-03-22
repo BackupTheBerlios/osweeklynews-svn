@@ -56,41 +56,16 @@
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title><ulink url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html"
-          >SUSE Studio: Upgrade your older appliances to openSUSE 11.4</ulink></title>
-      <para>Since <ulink url="http://blog.susestudio.com/2011/03/opensuse-114-support.html">rolling
-          out openSUSE 11.4 support</ulink> last week we have been flooded by questions how to
-        upgrade older openSUSE appliances to 11.4. Today we have an answer — we enabled the 11.4
-        upgrade. </para>
-      <para>Just open your old 11.3 (or even 11.1 or 11.2) appliance, go to the Start tab and click
-        on the “Upgrade” button in the bar at the top.</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="https://lh6.googleusercontent.com/-Ryt4lL8lzzw/TYC41WIUnSI/AAAAAAAACbs/D5rGgW2xxXs/s400/upgrade-bar.png"
-          />
-        </imageobject>
-      </mediaobject>
-      <para>After that, we'll perform the magic — upgrading your appliance to 11.4! </para>
-      <para>What exactly “magic” means here? We try to change repositories to their 11.4 equivalents
-        and sometimes add or remove few packages to ensure everything works smoothly. You can see
-        what exactly was done in the log accessible from the bar at the bottom of the Start
-        tab.</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="https://lh6.googleusercontent.com/-9reWEww3YEM/TYC6r3audPI/AAAAAAAACbw/8ofaGp9m8iw/s320/upgrade-bar2.png"
-          />
-        </imageobject>
-      </mediaobject>
-      <para>Sometimes the upgraded appliance will need some more tweaks to make it work. Just
-        inspect the log, see what was changed, and apply any additional adjustments. Let us know
-        what you had to do on our <ulink url="http://susestudio.com/forum/">forum</ulink> or <ulink
-          url="mailto:studio-users@suse.de">mailing list</ulink> so we can improve the upgrade in
-        the future. </para>
-      <para>If you are not satisifed with the upgrade, you can always revert to original version by
-        clicking the “Undo upgrade” link. </para>
-      <!-- ($ ld: 16.3.11 sm $) -->
+      <title><ulink
+          url="http://blog.susestudio.com/2011/03/new-beta-features-revision-management.html">SUSE
+          Studio: New Beta Features: Revision Management 101</ulink></title>
+      <para>We've been working on ways to make collaboration on SUSE Studio appliances easier. The
+        first step down that road is to make your appliance's build history act live a revision
+        control system. To that end, our beta users will find a few new features available to
+        them:viewing an appliance's complete configuration on one page; the opportunity to branch an
+        appliance by cloning a specific version; and a dynamically generated changelog between each
+        version. (...)</para>
+      <!-- ($ ld: 22.3.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2 role="teamreports">
