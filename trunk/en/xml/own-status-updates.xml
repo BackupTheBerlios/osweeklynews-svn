@@ -283,6 +283,28 @@
             url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
         <!--($ ld: 21.3.11 sm $)-->
       </blockquote>
+      <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2011/03/23/osc-plugin-changes/">Alexander
+            Naumov: osc plugin – changes</ulink></title>
+        <para><ulink url="http://en.opensuse.org/openSUSE:OSC">OSC</ulink> is a console client for
+            <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>. It’s written on
+          python and easy in studying and using packager’s tool. However there are situations when
+          its functionality is not enough; sometimes we need something special. In this case to us
+          will help plug-in mechanism, which in osc is realised very simply.</para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:OSC_plugins">Plugin</ulink> can use all of
+          the features, which already implemented osc, as well as provide an output in a convenient
+          format for you. For example, if I want to check changes in kdelibs4 between openSUSE:11.3
+          and openSUSE:11.4, I can do something like
+          this:<screen>> osc rdiff openSUSE:11.3 kdelibs4 openSUSE:Factory kdelibs4</screen></para>
+        <para>After that I will receive a detailed output about all changes. Yes, that’s great… but
+          not always it’s convenient. For example, in this case output will contain more than 2000
+          strings, and I need time to find, say, a *.changes file if I want quickly to understand
+          that has been changed. In case if I want to transfer output to processing to another
+          program (as often happens in practice), I have to shape this data. Unfortunately osc is
+          not as intelligent and can’t show changes from one file (from *.changes, for example)
+          only…(...)</para>
+        <!--($ ld: 21.3.11 sm $)-->
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org"

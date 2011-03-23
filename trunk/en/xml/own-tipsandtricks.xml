@@ -104,11 +104,11 @@
         >Sankar P: Pre vs Post Increment</ulink></title>
       <para>While browsing across some open-source projects, I have seen code snippets of
         type:<screen>for (i = 0; i &lt; n; ++ i )</screen></para>
-      <para>The pre-increment "++ i " confused me as to why one should use it, as post increment is
-        most commonly used. Googling told me that <emphasis role="italic">pre-increment is faster
-          than post increment as the value of i need not be stored to a temporary register before
-          the increment operation</emphasis>. This sounded logical to me and I believed it and used
-        pre-increment in all my loops. I didn't bother to measure it though. (...)</para>
+      <para>The pre-increment <quote>++ i</quote> confused me as to why one should use it, as post
+        increment is most commonly used. Googling told me that <emphasis role="italic">pre-increment
+          is faster than post increment as the value of i need not be stored to a temporary register
+          before the increment operation</emphasis>. This sounded logical to me and I believed it
+        and used pre-increment in all my loops. I didn't bother to measure it though. (...)</para>
       <!-- ($ Id: 22.3.11 sm $)-->
     </blockquote>
     <blockquote>
