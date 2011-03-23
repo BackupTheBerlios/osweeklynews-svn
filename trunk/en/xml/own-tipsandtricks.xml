@@ -132,6 +132,36 @@ mplayer -vo xv &lt;course file></screen></para>
         need for an operating system I do not own.</para>
       <!-- ($ Id: 22.3.11 sm $) -->
     </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://python4kids.wordpress.com/2011/03/22/increasingly-trivial-questions/"
+          >Python4Kids: New Tutorial - Increasingly Trivial Questions</ulink></title>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
+            >First Hermit Hello, are you a hermit by any chance?</emphasis></ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
+            >Second Hermit Yes that’s right. Are you a hermit?</emphasis></ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
+            >First Hermit Yes, I certainly am.</emphasis></ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
+            >Second Hermit Well I never. What are you getting away from?</emphasis></ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
+            >First Hermit Oh you know, the usual – people, chat, gossip, you
+          know.</emphasis></ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
+            >Second Hermit Oh I certainly do – it was the same with me. I mean there comes a time
+            when you realize there’s no good frittering your life away in idleness and trivial
+            chit-chat.</emphasis></ulink></para>
+      <para>If you remember back a few tutorials ago, we learnt how to <emphasis role="italic"
+          >pickle</emphasis> objects so that we could get them back later. To <emphasis
+          role="italic">pickle</emphasis> the object <emphasis role="italic"
+          >triviaQuestions</emphasis> (which was a <emphasis role="italic">list</emphasis> object)
+        we first imported the <emphasis role="italic">pickle</emphasis> module, then opened a file
+        and <emphasis role="italic">dump</emphasis>ed the object into the file, then <emphasis
+          role="italic">close()</emphasis>d the
+        file:<screen>->code snippet removed to note [1] because I don't want you typ</screen></para>
+      <para>(...)</para>
+      <!--($ Id: 23.3.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
@@ -162,6 +192,14 @@ ACTION=="add", KERNEL=="sd*", ATTR{bdi/read_ahead_kb}="4100"</screen></para>
         when using drbd, setting the read ahead on the underlying device will have the desired
         effect.</para>
       <!--($ Id: 21.3.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blog.encodingit.ch/2011/03/backup-und-restore-mit-linux/">Bits,
+          Bytes and my 5 cents: Backup und Restore mit Linux</ulink></title>
+      <para>Von den bisher vorgestellten Themen in LPIC 201 ist das folgende eines der
+        interessanteren: Backup und Archivierung! Wie in den Artikeln vorher schon erwýhnt, ersetzt
+        RAID nicht wirklich ein Backup und LVM schon gar nicht! Es muss also trotzdem noch eine
+        Lösung her – und um die kýmmern wir uns jetzt! </para>
     </blockquote>
   </sect2>
 </sect1>
