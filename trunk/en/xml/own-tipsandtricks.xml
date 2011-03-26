@@ -109,6 +109,64 @@ mplayer -vo xv &lt;course file&gt;</screen></para>
         file:<screen>-&gt;code snippet removed to note [1] because I don&apos;t want you typ</screen></para>
       <para>(...)</para>
 <!--($ Id: 23.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://dominique.leuenberger.net/blog/?p=151">Dominique Leuenberger: how to
+          fix brp and rpmlint warnings – today: Expression compares a char* pointer with a string
+          literal</ulink></title>
+      <para>After having seen this kind of question several times, I think it could be interesting
+        to start creating a small ‘series of rpmlint errors and their typical fixes”.</para>
+      <para>Interested in it? So welcome to part #1 (this issue). The “series” is not really fledged
+        out, but I will try to write post for various errors / topics, as they come along. Just drop
+        me a note with an error you have seen / experienced in OBS while building a package.</para>
+      <para>So what does it mean, if OBS tells you this:</para>
+      <para> Expression compares a char* pointer with a string literal. Usually a strcmp() was
+        intended by the programmer</para>
+      <para>Let’s have a look at a very simple C program, to show the
+        issue:<screen>#include &lt;stdio.h>
+int main() {   
+char *mytext;   
+mytext = "Help";   
+if (mytext == "Help") {     
+printf("This should raise a warning");   
+}   
+return 0; 
+}</screen></para>
+      <para>Trying to compile this very simple C program, which on first sight many would probably
+        say this is correct, will result in
+        this:<screen>$ gcc test1.c -Wall 
+test1.c: In function ‘main’: 
+test1.c:6:14: warning: comparison with string literal results in unspecified behavior </screen></para>
+      <para>So, even though we had such an easy program, line 6 seems to be an issue for
+        us:<screen>if (mytext == “Help”) {</screen></para>
+      <para>The issue, as simple as it may sound, is the comparison of a pointer (char *) with a
+        literal (“Help”).</para>
+      <para>So how do we fix it? It involves changing the code, thus writing a patch (there are many
+        good helps around for this… I won’t dive into patching here).. Of course, after having
+        written a patch, be a good downstream, send it upstream! What you want to do here is to
+        replace this comparison with strcmp (just as OBS’ error message implied).</para>
+      <para>Look at this code
+        now:<screen>#include &lt;stdio.h> 
+#include &lt;string.h>
+int main() {   
+char *mytext;   
+mytext = "Help";   
+if (strcmp(mytext,"Help")==0) {     
+printf("No warning here\n");   
+}
+return 0; 
+}</screen></para>
+      <para>I changed <emphasis role="italic">“mytext == “Help”</emphasis> to <emphasis
+          role="italic">strcmp(mtext,”Help”)==0</emphasis> (<ulink
+          url="http://linux.die.net/man/3/strcmp">man 3 strcmp</ulink> will explain you why… 0 means
+        the texts are equal, or ’0 difference detected’ can help you remember that). As the code was
+        too simple and strcmp was not yet defined (this of course can also happen in packages you
+        patch), I had to add an additional <emphasis role="italic">#include
+          &lt;string.h&gt;</emphasis>.</para>
+      <para>Not too hard, is it?</para>
+      <para>So what do you think? Such a series of “how to fix my typical brp / lint warnings”
+        useful?</para>
+      <!--($ Id: 26.3.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>

@@ -28,20 +28,97 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://www.vuntz.net/journal/post/2011/03/07/Google-Summer-of-Code-2011-for-GNOME-openSUSE">Vincent Untz: Google Summer of Code 2011 for GNOME</ulink></title>
-    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by/2.0/fr/legalcode">Creatice Commons Attribution 2.0 France (CC-BY 2.0)</ulink></emphasis>.</para>
-    </note>
-    <para>Every once in a while, I fall into a trap that causes me to care about a specific topic. Last week, this happened for the <ulink url="http://www.google-melange.com/gsoc/program/home/google/gsoc2011">Google Summer of Code 2011</ulink>.</para>
-    <para>Twice.</para>
-    <para>I'm apparently going to be a GSoC co-admin for both GNOME and openSUSE, assuming the two organizations get accepted. But I'm not unhappy about that, since GSoC is one really amazing opportunity for free software projects to get useful contributions, but more importantly, to introduce new people to the projects. People who will stay as contributors later on, if we do a good job at making them feel welcome.</para>
-    <para><emphasis role="bold">GNOME</emphasis></para>
-    <para>GNOME has participated to all GSoC, and that's something we're very proud of. The best part is that past students have become highly involved in GSoC in later years, with some of them being the main admins for GNOME. We usually have a team of several admins (at least four), and everybody has experience of GSoC, so organizing our participation is probably easier than for many projects. We've put all of our <ulink url="http://live.gnome.org/SummerOfCode2011">GSoC documentation</ulink> online, and that's really the place to visit if you want to be a mentor or student for GSoC on a GNOME-related project.</para>
-    <para>We've just started collecting <ulink url="http://live.gnome.org/SummerOfCode2011/Ideas">project ideas</ulink>. If you work on something GNOME-related (or a cross-desktop technology), don't hesitate to add your project ideas there. The admin team will triage the list of ideas later on, so don't worry if your idea seems to be lost in a big list of ideas :-) <ulink url="http://cfergeau.blogspot.com/">Christophe</ulink> will send a proper request for ideas in the next few days (if he hasn't already, I haven't read all my mails).</para>
-    <para>With <ulink url="http://www.gnome3.org/">GNOME 3</ulink> just around the corner, there is without a doubt a good opportunity to attract students: those are exciting times for GNOME where a student could make a big difference for 3.2/3.4 with a single project, and become a core actor of the GNOME 3 development, and therefore of the GNOME community!</para>
-    <para><emphasis role="bold">openSUSE</emphasis></para>
-    <para>For openSUSE, things are different: we participated three times (2006, 2008 and 2009), and our application was unfortunately rejected last year. So a few people worked hard in the past few weeks to increase our chances to participate this year (special thanks to <ulink url="http://sysbytes.wordpress.com/">Manu</ulink> who did a good part of the job).</para>
-    <para>We gathered all the <ulink url="http://en.opensuse.org/openSUSE:GSOC_2011">relevant information</ulink> on the wiki and our community already offered many different <ulink url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas">project ideas</ulink> (roughly 40, as of right now). What's exciting is with openSUSE, we offer topics ranging from low-level C code to Ruby on Rails, from infrastructure tools to end-user features, from openSUSE-specific topics to cross-distribution ones, etc. Our list of ideas is extremely broad, and we believe the technologies we cover are exciting for students. Thanks to this preliminary work, we've already got several students contacting us about the projects. Isn't that cool?</para>
-    <para>As the openSUSE Foundation might not be setup in time to receive GSoC money, we're considering various options as to what to do with the money. The two main contenders are leaving the money to Google for future similar initiatives (GSoC or <ulink url="http://code.google.com/gci">Code-In</ulink>, for example), and giving the money to another non-profit organization that we believe is important. We welcome feedback on this, so raise your voice if you have an opinion :-)</para>
-    <!-- ($ ld: 7.3.11 sm $) -->
+    <title><ulink url="http://lizards.opensuse.org/2011/03/24/gsoc-idea-improve-clic-filesystem/">Stephan Kulow: GSOC Idea: Improve Clic Filesystem</ulink></title>
+    <para>I really look for the perfect gsoc student: someone who has a brilliant idea, noone else
+      thought of how to improve linux in general or openSUSE in specific and just needs my
+      guidance.</para>
+    <para>But for those that need some ideas, my best bet is really to rewrite clicfs to make it
+      even better. Right now clicfs is a FUSE filesystem hosting a loop image. So a page read goes
+      from ext4-&gt;loop-&gt;fuse-&gt;clicfs-&gt;CD-&gt;clicfs-&gt;fuse-&gt;loop-&gt;ext4.</para>
+    <para>If it lived in the kernel, it could offer a block device you mount your ext4 on, leaving
+      aside loop and
+      fuse:<screen>modprobe clicfs packfile=/read-only/openSUSE-kde.i586 cowfile=/read-write/.COWfile cowlog=/dev/ttyS0 
+mount /dev/clicfs/0 /mnt 
+chroot /mnt /bin/init</screen></para>
+    <para>Great idea, no? For someone who wants to become famous, it would be the perfect
+      target!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!-- ($ ld: 26.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.digitalflow.de/blog/2011/03/summer-of-code-2011/">Thomas Schmidt:
+        Summer of Code 2011</ulink></title>
+    <para>Google’s <ulink url="http://www.google-melange.com/site/home/site">summer of code
+        2011</ulink> is approaching, and openSUSE.org got <ulink
+        url="http://www.google-melange.com/gsoc/mentor/request/google/gsoc2011/opensuse"
+        >accepted</ulink> as mentoring organization.</para>
+    <para>So now we are searching for students that would like to hack on one of our <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas">proposed projects</ulink> from May
+      23rd – August 22nd (fulltime, 40h/week) being payed by Google (5000$ on success). Sounds like
+      a fair deal, doesn’t it? <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://www.digitalflow.de/blog/wp-includes/images/smilies/icon_wink.gif"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    <para>There are even some days left to propose a new project to hack on! In that case we would
+      try to find a suitable mentor from our community to get you started.</para>
+    <para>There are quite some interesting project proposals on our gsoc2011 wiki page, reaching
+      from build service projects to SUSE Studio tools and distribution specific tools, as well as
+      cross-distribution efforts.</para>
+    <para>I would like to mentor a student in the <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC2011_OBS_Mobile">OBS Mobile</ulink> project which
+      will create a nice interface to use the buildservice from your handheld. So if you are skilled
+      in web technologies (jquery-mobile, rails) please apply and get the chance to hack this summer
+      of code on this exciting project!</para>
+    <para>To get in contact with the openSUSE community please join channel <emphasis role="bold"
+        >#opensuse-project</emphasis> on freenode, or our project mailinglist at
+        <email>opensuse-project@opensuse.org</email> and we will help you to get started.</para>
+    <!--($ ld: 26.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/03/24/gsoc-idea-build-service-plasma-widget-suite/"
+        >Will Stephenson: GSoC Idea: Build Service Plasma Widget Suite</ulink></title>
+    <para>I’m blatantly abusing GSoC for a project that I would like to see in openSUSE but that
+      I’ve never had time to work on. But really it’s a worthwhile thing to have: a set of Plasma
+      widgets that users and developers can add to their workspace to make it easy to see what’s
+      going on in OBS in the projects that matter to them. If you want to work on a fun project with
+      cutting edge technologies such as Qt, QML, Plasma then head on over to the <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#Build_Service_Plasma_Widgets">GSoC 2011
+        Ideas Page</ulink>.</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!--($ ld: 26.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://thefreecountry.wordpress.com/2011/03/25/gsoc-2011/">Alexander Naumov:
+        GSoC 2011</ulink></title>
+    <para><ulink url="http://www.google-melange.com/site/home/site">Google Summer of Code</ulink>
+      (GSoC) is a program for students across the world to hack on interesting Free Software
+      projects and get paid for their work. Historically, the program has brought together over 4500
+      students with over 300 Open Source projects, to create millions of lines of code!</para>
+    <para>Of cource openSUSE hopes to participate in <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011">GSoC</ulink>, while being mentored by
+      experienced members of the community they are working in. We have many different <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas">ideas</ulink> and looking for
+      stundens. This is a good opportunity not only to help openSUSE and have a lot of fun working
+      on interesting project, but also get 5000 $ if your project will be finished successful <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1235253118g"/>
+        </imageobject>
+      </inlinemediaobject><ulink
+        url="http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/faqs#timeline"
+        > Time for hacking</ulink> is from May 23rd to August 22nd.</para>
+    <para>In my opinion one of the most interesting projects is the <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#Build_Service_Plasma_Widgets">Build
+        Service Plasma Widgets</ulink>. It will be very useful, I guess.</para>
+    <para>To get in contact with us please join IRC channel <emphasis role="bold"
+        >#opensuse-project</emphasis> on freenode, or our project’s ML at
+        <email>opensuse-project@opensuse.org</email> and don’t forget – we’re going to help you to
+      start.</para>
+    <!--($ ld: 26.3.11 sm $)-->
   </blockquote>
 </sect1>

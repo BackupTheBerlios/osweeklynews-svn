@@ -378,6 +378,29 @@
             url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
         <!--($ ld: 21.3.11 sm $)-->
       </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-020-is-out.html">Frédéric
+            Crozat: GNOME 3 live image release 0.2.0 is out</ulink></title>
+        <para>This week release is version 0.2.0. It features GNOME 2.91.92, including :<itemizedlist>
+            <listitem>
+              <para>soon to be released Network Manager 0.9 and new UI integrated in GNOME Shell and
+                GNOME Control Center (be careful, it has still rough edges)</para>
+            </listitem>
+            <listitem>
+              <para>a11y support should be improved</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>If you have installed this image or if you use the <ulink
+            url="http://draft.blogger.com/">home:fcrozat:gnome3</ulink> openSUSE and want to upgrade
+          to 2.91.92, you can update using <emphasis role="italic">zypper up</emphasis> (if you
+          still want to keep Network Manager 0.8) or <emphasis role="italic">zypper dup</emphasis>
+          (if you want to switch to NM 0.9). Some packages might be uninstalled in the
+          process.</para>
+        <para>Image is, as always, available at <ulink url="http://gnome3.org/tryit.html"
+            >http://gnome3.org/tryit.html</ulink></para>
+        <!--($ ld: 26.3.11 sm $)-->
+      </blockquote>
     </sect3>
     <!--
     <sect3 role="kdeteam">
@@ -652,31 +675,46 @@
           openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2011/03/01/libreoffice-3-3-1-bugfix-release-available-for-opensuse/">Petr Mladek: LibreOffice 3.3.1 bugfix release available for openSUSE</ulink>
-        </title>
-        <note>
-          <para><emphasis role="bold">This Article is licensed under the <ulink url="http://www.gnu.org/licenses/fdl.txt">GNU Free Documentation License.</ulink></emphasis></para>
-        </note>
-        <para>I’m happy to announce LibreOffice 3.3.1 <emphasis role="italic">bugfix release</emphasis> for <emphasis role="italic">openSUSE</emphasis>. The packages are
-          available in the Build Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/">LibreOffice:Stable</ulink> project. They fix various crashers, usability and
-          translation problems, see the <ulink url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.1.2">libreoffice-3.3.1.2 release news</ulink> for more details. See also some notes <ulink url="http://en.opensuse.org/LibreOffice">about openSUSE LibreOffice build</ulink>.</para>
+        </title>        
+        <para>I’m happy to announce LibreOffice <emphasis role="italic">3.3.2 bugfix
+            release</emphasis> for <emphasis role="italic">openSUSE</emphasis>. The packages are
+          available in the Build Service <ulink
+            url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
+            >LibreOffice:Stable</ulink> project. They fix various crashers, usability and
+          translation problems, see the <ulink
+            url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.2.2"
+            >libreoffice-3.3.2.2 release news</ulink> for more details. See also some notes about
+            <ulink url="http://en.opensuse.org/LibreOffice">openSUSE LibreOffice
+          build</ulink>.</para>
         <para>The openSUSE LO team hopes that you will be happy with this release. Though, any
-          software contains bugs and we kindly ask you to <ulink url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us
+          software contains bugs and we kindly ask you to <ulink
+            url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us
           to fix them in the future releases.</para>
         <para><emphasis role="bold">Other information and plans:</emphasis></para>
-        <para>This version will be in openSUSE-11.4 out of box. We are going to prepare official
-          maintenance update for openSUSE-11.2 and 11.3.</para>
-        <para>There are already several fixes for the LO-3.3.2 bugfix release. You might expect
-          3.3.2-rc1 in the “<ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink>” repositories by the end of the following week.</para>
-        <para>Most developers are already concentrated on LO-3.4 release. I hope that the first beta
-          packages will be ready in the beginning of April.</para>
+        <para>The <emphasis role="italic">3.3.2</emphasis> packages includes <emphasis role="italic"
+            >KDE3</emphasis> support again. Thanks <emphasis role="italic">Lubos Lunak</emphasis>
+          who fixed all known issues and<emphasis role="italic"> Ilya Chernykh</emphasis> who helped
+          with packaging.</para>
+        <para>The <emphasis role="italic">3.3.2</emphasis> release is in a very good shape, so we
+          decided to slow down the bug fixes release cycle. You might expect the <emphasis
+            role="italic">3.3.3</emphasis> bug fix release two months from now.</para>
+        <para><emphasis role="italic">LO-3.4</emphasis> feature freeze is pretty close and we will
+          start producing test packages in the <ulink
+            url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/"
+            >LibreOffice:Unstable</ulink> project. Please, be patient because there are many
+          interesting changes in the build framework. They are good for the future but I expect some
+          problems with packaging. I hope that I will manage to provide something by the end of
+          April.</para>
+        <para><emphasis role="bold">License</emphasis>: <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+        <!--($ Id: 26.3.11 sm $)-->
      </blockquote>
-    </sect3> -->
+    </sect3>
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
