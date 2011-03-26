@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -22,104 +21,55 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink
-          url="http://mschlander.wordpress.com/2011/03/17/gnome-networkmanager-applet-in-kde-in-opensuse-11-4/"
-          >Martin Schlander: GNOME NetworkManager Applet in KDE in openSUSE 11.4</ulink></title>
-      <para>The KDE NetworkManager plasmoid used in openSUSE 11.4 has some issues and rough edges.
-        Some of those will be fixed in an online update expected to be out soon. If you want to help
-        make the NetworkManager plasmoid better you can read about filing good bug reports against
-        it <ulink url="http://userbase.kde.org/NetworkManagement">here</ulink>.</para>
-      <para>If the plasmoid is not working for your needs you can easily and safely use the GNOME
-        NetwokManager applet (nm-applet) in KDE instead. Just follow the steps below (# means run as
-        root, $ means run as normal user):<itemizedlist>
-          <listitem>
-            <para>Upgrade oxygen-gtk – otherwise nm-applet will fail to
-              start:<screen># zypper addrepo -f http://download.opensuse.org/repositories/KDE:/UpdatedApps/openSUSE_11.4 kua
-# zypper install 'oxygen-gtk>=1.0.3'</screen></para>
-          </listitem>
-          <listitem>
-            <para>Install nm-applet:<screen># zypper install NetworkManager-gnome</screen></para>
-          </listitem>
-          <listitem>
-            <para>Remove the KDE
-              applet:<screen># zypper remove NetworkManager-kde4-libs</screen></para>
-          </listitem>
-          <listitem>
-            <para>Make nm-applet autostart on
-              login:<screen>$ ln -s /usr/bin/nm-applet ~/.kde4/Autostart/nm-applet-link</screen></para>
-          </listitem>
-          <listitem>
-            <para>Reboot</para>
-          </listitem>
-        </itemizedlist></para>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://mschlander.files.wordpress.com/2011/03/nm-applet1.png"
-            width="20%"/>
-        </imageobject>
-      </mediaobject>
-      <para>Thanks to oxygen-gtk nm-applet will even integrate quite well in the look and feel of
-        KDE.</para>
-      <!--($ Id: 18.3.11 sm $)-->
-    </blockquote>
+      <title>
+        <ulink url="http://www.linuxuser.co.uk/tutorials/firefox-4-sync-step-by-step/">LinuxUser &amp; Developer/Dmitri Popov: Firefox 4 Sync step-by-step</ulink>
+      </title>
+      <para>Firefox 4′s brand new Sync feature is one of the main attractions of the latest release. It allows you to sync browser data, such as bookmarks, preferences, history, and tabs – but not extensions – across multiple Firefox installations. Here’s how it’s done… (...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://www.techrepublic.com/blog/five-tips/five-tips-for-faster-web-browsing/722"
-          >TechRepublic/Jack Wallen: Five tips for faster Web browsing</ulink></title>
-      <para><emphasis role="bold">Takeaway</emphasis>: If you’re wasting too much time waiting (and
-        waiting and waiting) for Web pages to load, give these tips a try. You should see an
-        immediate, noticeable boost in speed, making your browsing experience faster and more
-        efficient. </para>
-      <para>Everyone wants faster Web browsing. After all, who has time to wait for Web pages to
-        load these days? This is especially true if you’re a tab-junkie like me. When you live with
-        an open browser containing 10 to 15 tabs running at any given time, you know how crucial it
-        is to have as fast a browsing experience as possible. But how do you manage this? Are there
-        tricks to getting more speed when your pipe is maxed out already? You bet your sweet bits
-        and bytes there are. </para>
-      <para>Not every solution will work for every user, and not every solution should even be
-        attempted by every user. However, if you like to eke out as much blood as you can from every
-        turnip, let’s see how you can squeeze a bit more speed from your browsing experience.
-        (...)</para>
-    </blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/424005:using-googles-webp-image-format-with-open-tools-on-linux">Linux.com/Nathan Willis: Using Google&apos;s WebP Image Format with Open Tools on Linux</ulink>
+      </title>
+      <para>Google&apos;s WebM project, the free and open video codec based on VP8, offers tantalizing benefits for fans of Linux and open source: better quality, plus full support in the browser and other applications, thanks to the lack of royalty-demanding patent holders. Often overlooked in the WebM story is the other media format unveiled by Google at the same time: WebP, a lossy still-image format said to provide better-than-JPEG quality at substantially slimmer file sizes. Is <ulink url="http://code.google.com/speed/webp/">WebP</ulink> poised to displace the stodgy old photo format? Let&apos;s take a look at the free tools available for writing, converting, and displaying WebP files to find out. (...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
-      <title><ulink
-          url="http://tuxtweaks.com/2011/03/how-to-hide-secret-messages-in-images-with-linux"
-          >TuxTweaks: How To Hide Secret Messages In Images With Linux</ulink></title>
-      <para>In today's post I'm going to show how to embed a text message into an image file. This
-        type of messaging is known as steganography. Steganography is the practice of hiding secrets
-        in such a way that only the intended message recipient would know to look for your hidden
-        message.</para>
-      <para>In this basic form of secret messaging we'll be adding text onto the end of a file. I'm
-        going to use the following image of Tux for my example. (...)</para>     
-    </blockquote>
-  </sect2> -->
+      <title>
+        <ulink url="http://bashshell.net/utilities/find-basics/">BashShell.net/mike: The 5 Days of find</ulink>
+      </title>
+      <para>Our &quot;5 days of find&quot; tutorial series is in full swing. This short-course includes tutorials, videos and exercises which are rolled out each day in an effort to help admins use the find command more confidently.
+
+    </para>
+      <para>* <ulink url="http://bashshell.net/utilities/find-basics/">The Basics of find</ulink></para>
+      <para>* <ulink url="http://bashshell.net/utilities/find-criteria/">find Criteria</ulink></para>
+      <para>* <ulink url="http://bashshell.net/utilities/using-time-criteria-with-find/">Using Time Criteria with find</ulink></para>
+      <para>* <ulink url="http://bashshell.net/utilities/find-with-multiple-expressions/">find with Multiple Expressions</ulink>
+(...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://psankar.blogspot.com/2011/03/pre-vs-post-increment-performance.html"
-        >Sankar P: Pre vs Post Increment</ulink></title>
+      <title>
+        <ulink url="http://psankar.blogspot.com/2011/03/pre-vs-post-increment-performance.html">Sankar P: Pre vs Post Increment</ulink>
+      </title>
       <para>While browsing across some open-source projects, I have seen code snippets of
         type:<screen>for (i = 0; i &lt; n; ++ i )</screen></para>
       <para>The pre-increment <quote>++ i</quote> confused me as to why one should use it, as post
-        increment is most commonly used. Googling told me that <emphasis role="italic">pre-increment
-          is faster than post increment as the value of i need not be stored to a temporary register
-          before the increment operation</emphasis>. This sounded logical to me and I believed it
-        and used pre-increment in all my loops. I didn't bother to measure it though. (...)</para>
-      <!-- ($ Id: 22.3.11 sm $)-->
-    </blockquote>
+        increment is most commonly used. Googling told me that <emphasis role="italic">pre-increment is faster than post increment as the value of i need not be stored to a temporary register before the increment operation</emphasis>. This sounded logical to me and I believed it
+        and used pre-increment in all my loops. I didn&apos;t bother to measure it though. (...)</para>
+<!-- ($ Id: 22.3.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://azouhr.wordpress.com/2011/03/22/itunes-on-opensuse-11-4/">Berthold
-          Gunreben: iTunes on openSUSE 11.4</ulink></title>
+      <title>
+        <ulink url="http://azouhr.wordpress.com/2011/03/22/itunes-on-opensuse-11-4/">Berthold Gunreben: iTunes on openSUSE 11.4</ulink>
+      </title>
       <para>In order to use iTunes University, I had to install iTunes on my notebook that is
-        running openSUSE 11.4. It is quite easy to get some old version of iTunes from <ulink
-          url="http://www.oldapps.com/itunes.php">http://www.oldapps.com/itunes.php</ulink> but
+        running openSUSE 11.4. It is quite easy to get some old version of iTunes from <ulink url="http://www.oldapps.com/itunes.php">http://www.oldapps.com/itunes.php</ulink> but
         trying to install it on a 64bit machine with wine always failed.</para>
       <para>In the end, I could install a 32bit version by doing the following:</para>
-      <programlisting>rm -rf ~/.wine #(don't do this if you have other wine applications installed, it basically kills any previous wine installation)
+      <programlisting>rm -rf ~/.wine #(don&apos;t do this if you have other wine applications installed, it basically kills any previous wine installation)
 export WINEARCH=win32
 wine ~/Downloads/iTunesSetup1021.exe</programlisting>
       <para>To start iTunes later on, it is sufficient to run the following
@@ -127,48 +77,44 @@ wine ~/Downloads/iTunesSetup1021.exe</programlisting>
       <para>Unfortunately, with most of the available courses on iTunes University, I get conversion
         errors. To circumvent this, I just download the respective courses and view them with
         mplayer:<screen>cd ~/Music/iTunes/iTunes Media/iTunes U/
-mplayer -vo xv &lt;course file></screen></para>
+mplayer -vo xv &lt;course file&gt;</screen></para>
       <para>This is not too nice, but at least it allows me to view iTunes U courses without the
         need for an operating system I do not own.</para>
-      <!-- ($ Id: 22.3.11 sm $) -->
-    </blockquote>
+<!-- ($ Id: 22.3.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://python4kids.wordpress.com/2011/03/22/increasingly-trivial-questions/"
-          >Python4Kids: New Tutorial - Increasingly Trivial Questions</ulink></title>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
-            >First Hermit Hello, are you a hermit by any chance?</emphasis></ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
-            >Second Hermit Yes that’s right. Are you a hermit?</emphasis></ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
-            >First Hermit Yes, I certainly am.</emphasis></ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
-            >Second Hermit Well I never. What are you getting away from?</emphasis></ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
-            >First Hermit Oh you know, the usual – people, chat, gossip, you
-          know.</emphasis></ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5"><emphasis role="italic"
-            >Second Hermit Oh I certainly do – it was the same with me. I mean there comes a time
-            when you realize there’s no good frittering your life away in idleness and trivial
-            chit-chat.</emphasis></ulink></para>
-      <para>If you remember back a few tutorials ago, we learnt how to <emphasis role="italic"
-          >pickle</emphasis> objects so that we could get them back later. To <emphasis
-          role="italic">pickle</emphasis> the object <emphasis role="italic"
-          >triviaQuestions</emphasis> (which was a <emphasis role="italic">list</emphasis> object)
+      <title>
+        <ulink url="http://python4kids.wordpress.com/2011/03/22/increasingly-trivial-questions/">Python4Kids: New Tutorial - Increasingly Trivial Questions</ulink>
+      </title>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">First Hermit Hello, are you a hermit by any chance?</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">Second Hermit Yes that’s right. Are you a hermit?</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">First Hermit Yes, I certainly am.</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">Second Hermit Well I never. What are you getting away from?</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">First Hermit Oh you know, the usual – people, chat, gossip, you know.</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">Second Hermit Oh I certainly do – it was the same with me. I mean there comes a time when you realize there’s no good frittering your life away in idleness and trivial chit-chat.</emphasis>
+        </ulink></para>
+      <para>If you remember back a few tutorials ago, we learnt how to <emphasis role="italic">pickle</emphasis> objects so that we could get them back later. To <emphasis role="italic">pickle</emphasis> the object <emphasis role="italic">triviaQuestions</emphasis> (which was a <emphasis role="italic">list</emphasis> object)
         we first imported the <emphasis role="italic">pickle</emphasis> module, then opened a file
-        and <emphasis role="italic">dump</emphasis>ed the object into the file, then <emphasis
-          role="italic">close()</emphasis>d the
-        file:<screen>->code snippet removed to note [1] because I don't want you typ</screen></para>
+        and <emphasis role="italic">dump</emphasis>ed the object into the file, then <emphasis role="italic">close()</emphasis>d the
+        file:<screen>-&gt;code snippet removed to note [1] because I don&apos;t want you typ</screen></para>
       <para>(...)</para>
-      <!--($ Id: 23.3.11 sm $)-->
-    </blockquote>
+<!--($ Id: 23.3.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://azouhr.wordpress.com/2011/03/21/simple-udev-manipulations/">Berthold
-          Gunreben: Simple udev Manipulations</ulink>
+        <ulink url="http://azouhr.wordpress.com/2011/03/21/simple-udev-manipulations/">Berthold Gunreben: Simple udev Manipulations</ulink>
       </title>
       <para>When discovering the /sys file system, one can find quite a number of tunables that look
         interesting and really have effect on system behavior. Especially when experimenting with
@@ -181,21 +127,27 @@ mplayer -vo xv &lt;course file></screen></para>
         use:<screen>cat /sys/block/sda/bdi/read_ahead_kb</screen></para>
       <para>However you may also want to change that setting. To accomplish that, just echo the
         desired number into the read
-        ahead:<screen>echo 4100 > /sys/block/sda/bdi/read_ahead_kb</screen></para>
+        ahead:<screen>echo 4100 &gt; /sys/block/sda/bdi/read_ahead_kb</screen></para>
       <para>To automatically do the setting when the device appears, just add the following file to
         /etc/udev/rules.d/83-ra.rules:<screen>cat /etc/udev/rules.d/83-ra.rules
 # increase readahead for sd* devices
-ACTION=="add", KERNEL=="sd*", ATTR{bdi/read_ahead_kb}="4100"</screen></para>
+ACTION==&quot;add&quot;, KERNEL==&quot;sd*&quot;, ATTR{bdi/read_ahead_kb}=&quot;4100&quot;</screen></para>
       <para>When adding a udev rule for this, one just needs to know that “==” (two equal signs) is
         a check, and “=” (one equal sign) is a setting. </para>
       <para>Note, that some devices may take the read ahead from the underlying device; noteably
         when using drbd, setting the read ahead on the underlying device will have the desired
         effect.</para>
-      <!--($ Id: 21.3.11 sm $)-->
-    </blockquote>
+<!--($ Id: 21.3.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://blog.encodingit.ch/2011/03/backup-und-restore-mit-linux/">Bits,
-          Bytes and my 5 cents: Backup und Restore mit Linux</ulink></title>
+      <title>
+        <ulink url="http://www.howtoforge.com/how-to-install-apache-solr-and-use-it-with-drupal-and-ispconfig-opensuse-debian">HowtoForge/luisfreitas: How To Install Apache-Solr And Use It With Drupal And ISPConfig (OpenSUSE/Debian)</ulink>
+      </title>
+      <para>Solr is the popular, blazing fast open source enterprise search platform from the Apache Lucene project. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, and rich document (e.g., Word, PDF) handling. I use this on OpenSUSE and Debian (minor tweaks on Debian, just paths to correct but it&apos;s almost the same). Packages from 4 of March 2011. (...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.encodingit.ch/2011/03/backup-und-restore-mit-linux/">Bits, Bytes and my 5 cents: Backup und Restore mit Linux</ulink>
+      </title>
       <para>Von den bisher vorgestellten Themen in LPIC 201 ist das folgende eines der
         interessanteren: Backup und Archivierung! Wie in den Artikeln vorher schon erwýhnt, ersetzt
         RAID nicht wirklich ein Backup und LVM schon gar nicht! Es muss also trotzdem noch eine
