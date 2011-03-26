@@ -1,0 +1,593 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="community">
+  <title>In the Community</title>
+  <!--Put here things relevant to the openSUSE community maybe from * People of openSUSE or elections, votings 1 - 2 posts-->
+  <sect2>
+    <title>Postings from the Community</title>
+    <blockquote>
+      <title><ulink url="http://nowwhatthe.blogspot.com/2011/03/collaboration-imperative.html">Jos Poortvliet: The Collaboration Imperative</ulink></title>
+      <para>As you might have noticed, there is a little bit of a brush-up between GNOME and
+        Canonical with KDE involved from the sidelines (just read <ulink
+          url="http://planet.gnome.org">Planet GNOME</ulink>). <ulink
+          url="http://blogs.gnome.org/bolsh/2011/03/11/lessons-learned/">Dave wrote a reasonable
+          summary of this</ulink> and <ulink
+          url="http://bethesignal.org/blog/2011/03/12/relationship-between-canonical-gnome/">so did
+          Jeff Waugh in his series on the relationship between Canonical and GNOME</ulink>. In three
+        sentences:</para>
+      <para><quote>Canonical gets a lot of criticism for creating a fork of the GNOME experience
+          with Unity, instead of contributing upstream to GNOME Shell. Canonical responds that Unity
+          was meant to be a GNOME project and their contributions are being blocked (giving
+          libindicators as example). Suddenly Aaron Seigo from KDE weighted in, saying GNOME is
+          indeed hard to work with.</quote></para>      
+      <para>I've been reading up on it and to some extend participating in the discussion on <ulink
+          url="http://identi.ca/conversation/65860477#notice-66972122">identi.ca</ulink>. As you
+        know, I'm interested in the subject of collaboration and this is a case where it clearly
+        didn't work out for a variety of reasons. In this blog I won't try to weight in on the topic
+        itself but rather argue that the psychological construct of <quote>the fundamental
+          attribution error</quote> can explain much of the conflict and how to avoid it.</para>
+      <para>But let's start with a sample of the discussion.</para>
+      <para><emphasis role="bold">forming an opinion</emphasis></para>
+      <para>I'm not exactly the type of person who makes up his mind easily. And the stories that
+        came out of this debate were highly conflicting and confusing. According to <ulink
+          url="http://aseigo.blogspot.com/2011/03/collaborations-demise.html?showComment=1299814706744#c1432139034199491817"
+          >this</ulink>, Canonical discourages its employees from contributing upstream. However,
+        Aaron claims <ulink
+          url="http://aseigo.blogspot.com/2011/03/collaborations-demise.html?showComment=1299827142761#c4757710492378664655"
+          >GNOME does not WANT to collaborate</ulink>. And Mark <ulink
+          url="http://www.markshuttleworth.com/archives/661">blogs</ulink>:</para>
+      <para><quote>Jeff also goes on to talk about Ted and Aurelien, who were proposing the app
+          indicators work in GNOME and KDE respectively. KDE apps worked smoothly, Gnome rejected
+          Ted’s proposal.</quote></para>
+      <para>So GNOME is uncooperative? Or does Canonical not get it, as Dave claimed? Is KDE just
+        pushing things without listening? Depends on your point of view - the facts are vague. Read
+        for example <ulink url="http://lists.freedesktop.org/archives/xdg/2010-January/011228.html"
+          >this thread on freedesktop.org about the StatusNotifier (systray) spec</ulink> - there is
+        about a 50% chance you'll decide KDE is the uncooperative one... This thread was referenced
+        several times as proof Party X was inflexible and rude - where X was sometimes GNOME and
+        sometimes KDE!</para>
+      <figure>
+        <title>I say opinions are cool!</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm3.static.flickr.com/2185/2402200306_f8c39a38c3.jpg"
+              width="20%" align="right"/>
+          </imageobject>          
+        </mediaobject>
+      </figure>      
+      <para><emphasis role="italic">Makes you wonder what is going on...</emphasis></para>
+      <para><emphasis role="bold">So what is real?</emphasis></para>
+      <para>A few days ago I had a call with <ulink url="http://bethesignal.org/">Jeff
+        Waugh</ulink>. He <ulink url="http://identi.ca/notice/66923835">offered to talk in a
+          dent</ulink> and I'm glad he did. Of course, as usual the whole situation is more
+        complicated than what you can discuss in 140 characters on twitter. The talk was very
+        enlightening and made me think of a psychological concept.</para>
+      <para><emphasis role="bold">The fundamental attribution error</emphasis></para>
+      <figure>
+        <title>Call it a family trait...</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm3.static.flickr.com/2083/1917067112_07ff936211_m.jpg"
+              width="15%" align="right"/>
+          </imageobject>          
+        </mediaobject>
+      </figure>      
+      <para>People tend to attribute what happens around us in the world to intentions. We believe
+        things happen for a reason. This is quite a strong human tendency already present in very
+        young children. Put a 3 year old in front of a room where stones are moved around by some
+        invisible means like magnets. Ask the kid what is going on and he or she will describe the
+        events in the room in terms of "the blue stone wants to talk to the reevd one". We know stones
+        usually don't really want a lot - so why does the child perceive such intentions? This
+        phenomenon not only forms the base of early religions (attributing 'intentions' to weather,
+        trees or growth of crops) but also results in making conflicts worse. Psychologists call it
+          <ulink url="http://en.wikipedia.org/wiki/Fundamental_attribution_error">"the fundamental
+          attribution error"</ulink> and it is fundamental (hence the name) to our perception of the
+        world.</para>
+      <para>So the reality is, besides that stones and trees don't have 'goals' and 'intentions',
+        that often things happen for other reasons than someone having the intent to do that
+        specific thing. Or in English, if a specification gets critical comments - maybe the
+        respondent might have had other reasons than just wanting to be a jerk. Like being busy,
+        tired or having misunderstood/missed a part of the discussion.</para>
+      <para><emphasis role="bold">Reality applied</emphasis></para>
+      <figure>
+        <title>Reality?</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm1.static.flickr.com/48/172405687_6595d591d7.jpg"
+              width="15%" align="right"/>
+          </imageobject>          
+        </mediaobject>
+      </figure>      
+      <para>The talk with Jeff made clear that the major reason for GNOME not supporting the
+        systemtray spec was timing, not lack of interest The focus of the GNOME project right now is
+        understandably narrow: get GNOME 3 out the door. Something like interoperability, no matter
+        how important, is not on top of the agenda. Jeff said he expects the FD.o systray spec to be
+        supported hopefully in GNOME 3.2! The lesson: sometimes things interfere with cooperation.
+        And the 'other camp', blissfully unaware of the real reasons behind lack of response or rude
+        behavior, attributes it to a lack of willingness and support.</para>
+      <para>As another example, take the adoption of the Galago (notification) specification <ulink
+          url="http://bethesignal.org/blog/2011/03/15/timeline-gnome-user-experience-hackfest-2008/#comment-6027"
+          >and what went wrong according to this message by John Palmieri</ulink>. And about GNOME
+        and Canonical having misunderstandings: <ulink
+          url="http://www.asinen.org/2011/03/battling-misconceptions-what-is-kde/">Stuart Jarvis
+          blogged how hard understanding a Free Software community can be.</ulink></para>
+      <para>Now I'm not going to attempt to unravel all the events that led to this blog as that
+        would simply be impossible. Nor will I attempt to figure out 'who is to blame' as that's
+        pointless (and wrong anyway, as I argued above). What I can do is ask those involved to
+          <emphasis role="bold">think about the fundamental attribution error: if someone looks
+          funny at you, it doesn't mean they hate you</emphasis>. They might have something stuck in
+        their eye!</para>
+      <para><emphasis role="bold">Action</emphasis></para>
+      <para>Ok, so maybe the others don't hate you. That doesn't solve the problem - yet. We all
+        need to step up and do something. What?</para>
+      <para><emphasis role="bold">Make collaboration an explicit focus</emphasis></para>
+      <figure>
+        <title>*snap*</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm1.static.flickr.com/156/355887968_b1647ac3c5.jpg"
+              width="15%" align="right"/>
+          </imageobject>          
+        </mediaobject>
+      </figure>      
+      <para>I <ulink url="http://nowwhatthe.blogspot.com/2011/01/my-way-or-highway.html">wrote about
+          collaboration before</ulink> and at FOSDEM there was a <ulink
+          url="http://nowwhatthe.blogspot.com/2011/02/fosdem-2011.html">cross-distro-collaboration
+          discussion</ulink>. As I said there, a big blocker for more openness is that we simply
+        don't think about collaboration. We need to be aware of the opportunities for and benefits
+        of collaboration. The whole discussion that I started this blog with might be negative and
+        things are all a bit tense right now, but it shines the spotlight on something that needs
+        attention! And positive initiatives like <ulink
+          url="http://distributions.freedesktop.org/wiki/AppStream">Appstream </ulink> are
+        happening. As <ulink
+          url="http://seilo.geekyogre.com/2011/03/quick-update-from-the-world-of-zeitgeist/">Seif
+          Lotfy</ulink> wrote on his blog:</para>
+      <para><quote>And if you haven’t noticed we are working with GNOME Shell, Unity and KDE. So a
+          sense of collaboration is possible ;)</quote></para>
+      <para>It just needs us to take notice! So, Mark, maybe blog about Appstream? It's using Ubuntu
+        Software Center for the GNOME side, after all... Let's also focus on the positive
+        projects!</para>
+      <para><emphasis role="bold">Talk together face to face!</emphasis></para>
+      <para>It is important to talk about concerns and frustrations. Considering the distance
+        Brazil-Australia the best Jeff and I could do was a phone call but it was certainly
+        enlightening. And I bet that you'll notice the same when you finally get to talk to those
+        you've been fighting with on IRC and mailing lists for so long... Even then, realize that
+        one single person does not define his or her whole project. Not everyone in KDE is as jumpy
+        as Aaron; not everyone in GNOME is as French as Vincent Untz. It is important to share the
+        results of a chat as well - blog about it (if your blog is aggregated on your projects'
+        planet), or add results to a wiki or commit logs etcetera. Make sure the positive results
+        persist!</para>
+      <para>Allison <ulink url="http://allisonrandal.com/2011/03/12/a-little-help/">wrote he also
+          wants to start a bit of a discussion</ulink> in the cross-desktop area which I welcome and
+        support. Sounds like something which could make an impact and Allison, if you want my help,
+        let me know what I can do.</para>
+      <para><emphasis role="bold">Take advantage of events to meet</emphasis></para>
+      <para>Don't overlook the opportunity to meet at events. For example, there is the Linux
+        Foundation's <ulink url="http://events.linuxfoundation.org/events/collaboration-summit"
+          >Collaboration Summit in San Fransisco</ulink> in a few weeks. It is <ulink
+          url="http://dot.kde.org/2011/02/05/camp-kde-2011-announced">co-located</ulink> with <ulink
+          url="http://camp.kde.org">Camp KDE</ulink> which seems to me an excellent opportunity for
+        stakeholders to get together. Go a few days before the Collaboration Summit starts so you
+        can get some face to face time with desktop folks.</para>
+      <figure>
+        <title>Time for a group hug?</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm5.static.flickr.com/4115/4915241275_039b049bf6_m.jpg"
+              align="right"/>
+          </imageobject>          
+        </mediaobject>
+      </figure>      
+      <para>Then of course in August, there is the <ulink url="http://desktopsummit.org">Desktop
+          Summit</ulink>. I'm one of the organizers and while collaboration isn't always perfect,
+        the team has a common goal: organize a great event! Like the previous Desktop Summit in Gran
+        Canaria I hope we can make some steps forward. This Desktop Summit will have collaboration
+        even higher on its agenda than the last one and I hope this will have positive
+        effects.</para>
+      <figure>
+        <title>Gran Canaria Desktop Summit</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://farm3.static.flickr.com/2527/3687474115_32e9ce920b.jpg"
+              width="25%" align="right"/>
+          </imageobject>          
+        </mediaobject>
+      </figure>      
+      <para><emphasis role="bold">Doing more, moving forward</emphasis></para>
+      <para>There certainly is more we can do to solve the conflicts. With apologies for the irony
+        here, more blogs trying to analyze the whole thing may simply be fueling the flames more
+        than extinguish them. Talking to people works better. I don't claim there was no talk,
+          <ulink
+          url="http://aseigo.blogspot.com/2011/03/shoot-messenger.html?showComment=1299953909118#c4811840744876232992"
+          >there was</ulink>. However, much communication we do happens over the web. And as we are
+        all aware, that can easily lead to misunderstandings. So the face to face meetings I
+        suggest, as well as an awareness of biases like the fundamental attribution error, can
+        contribute to solving these conflicts in a more effective manner. As long as the results get
+        documented in a few (public!) places and as such don't get forgotten the results of such
+        meetings can be good and long lasting!</para>
+      <para>Personally, I'll stay away from the subject now - I've dented, tweeted and now blogged
+        enough about it. I'll focus on the positive - including the Desktop Summit. And making sure
+        the next openSUSE conference will have as much of a collaborative atmosphere as the last
+        one!</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+      <!--($ ld: 23.3.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://lizards.opensuse.org/2011/03/23/chemnitzer-linuxtage-2011/">Klaas Freitag: Chemnitzer Linuxtage 2011</ulink></title>
+      <para>Last weekend I spent on <ulink url="http://chemnitzer.linux-tage.de/2011/">Chemnitzer
+          Linuxtage 2011</ulink> which is a popular linux event in Chemnitz, Germany. It was the
+        first time I have been there and was very positively surprised. It is a very well organised
+        event, in a building providing the perfect environment and a large amount of volunteers
+        helping to make the whole weekend enjoyable and relaxed. Thanks for that, it really was fun
+        to meet so many people in this all-inclusive atmosphere <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://lizards.opensuse.org/wp-includes/images/smilies/icon_surprised.gif"/>
+          </imageobject>
+        </mediaobject>
+      </para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://robert.fedorapeople.org/events/2011/chemnitzer-linux-tage/024.jpg"
+            width="25%"/>
+        </imageobject>        
+      </mediaobject>
+      <para>openSUSE had a booth there (thanks Fedora for the picture) and we were lucky enough to
+        have brand new 11.4 promo DVDs there which were handed to interested people. openSUSE 11.4
+        in general is very well received at most visitors, they were quite happy with our latest
+        release. That is also true for the feelings for openSUSE all over: I heard so much positive
+        feedback about what we do and how we do it, for example the OBS with the collaboration
+        features, the distribution or the activity all over. People recognize our efforts.</para>
+      <para>I gave a talk about <ulink url="http://volle-kraft-voraus.de">Kraft</ulink>, as people
+        hinted me that there might be the right audience for the topic of Linux in the small
+        business. The interest was huge, the room was more than full and people seemed to like the
+        way I was approaching the challenge. Unfortunately I had to fight with the notebook/beamer
+        phalanx in the beginning (I apologize for that) so that I had to skip the live demo of Kraft
+        in the end. But still I got a lot of interesting discussions afterwards and got some nice
+        contributions already. Thanks for that. </para>
+      <para>On saturday noon there was a <quote>Distribution competition</quote> where I was pulled
+        in to show openSUSE. It went ok for all distros taking part and was fun for us presenting <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://lizards.opensuse.org/wp-includes/images/smilies/icon_smile.gif"/>
+          </imageobject>
+        </mediaobject></para>
+      <para>Booster Michal was giving a workshop about creating packages in the OBS for multiple
+        distributions and a very well <quote>received whats new in 11.4?</quote> talk was given by
+        Sirko in the beginners track. </para>
+      <para>It was a great event, even though I quite exhausted arrived home late on sunday night. I
+        will be there next year again.</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+          url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+      <!--($ ld: 23.3.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://oyranos-cms.blogspot.com/2011/03/oyranos-on-clt-2011.html">Kai-Uwe Berhrmann: Oyranos on CLT 2011</ulink></title>
+      <para>The weekend on Chemnitzer Linux Tage happened in a very nice atmosphere at the TU
+        campus. </para>
+      <para>The Oyranos booth had this year lots of place to show ideas on the hot topics like
+        desktop and print colour management. Unfortunately my long planed co exhibitor could not
+        make it to Chemnitz to show openSUSE-medical. We planed to display medical images on a
+        properly setup 30-bit system as is required by the DICOM specification. Sirko Kemter
+        designed one artistic 2 meter banner and helped with the basic design of the other posters,
+        which we used for the new space. The Oyranos posters included some schematic graphics and
+        the usual "Why do we need colour management" style explanations. For the later one I
+        sketched a comparison of three non colour managed monitors showing the same fashion person.
+        The SVG graphics from the open clip art library was colour converted to three real world
+        monitor profiles. It resembles a typical shop over web situation, where colour counts for
+        selection of the right looking goods.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://3.bp.blogspot.com/-G9og8HNBsB8/TYo211lX37I/AAAAAAAAABk/gaAkHsUEJlI/s400/OyranosCMS-2_UebersichtPlakat_comparision.png"
+            width="25%"/>
+        </imageobject>        
+      </mediaobject>
+      <para>Several visitors allowed me to start the actual SuseStudio created Oyranos LiveCD on
+        their laptops with different success. We used the exhibited measurement devices and a camera
+        target to create custom ICC profiles for use in digikam, Scribus, Inkscape and friends. The
+        LiveCD is still based on openSUSE-11.3 and worked in many but not all cases. I found it
+        impressive how good looked the featured KDE desktop, when the CompICC plug-in launched
+        immediately. Working OpenGL, which is needed for the desktop colour server shader, was still
+        not always available.</para>
+      <para>The newest openSUSE-11.4 version was demonstrated on the neighboring openSUSE booth.
+        openSUSE-11.4 was released only some days ago. The <ulink
+          url="http://software.opensuse.org/">OBS </ulink>color_management repository was updated
+        with the help of Stanislav Brabec just some days before to have nearly all packages build
+        for 11.4. Thus Oyranos workes flawless on 11.4 too.</para>
+      <para>All in all a great weekend with lots of good talks and meeting of old and new
+        friends.</para>
+      <!--($ ld: 26.3.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blog.cornelius-schumacher.de/2011/03/show-us-your-work-on-free-desktop.html">Cornelius Schumacher: Show us your work on the free desktop</ulink></title>
+      <para>The deadline for the <ulink url="https://desktopsummit.org/cfp">Call for
+          Participation</ulink> of the <ulink url="http://www.desktopsummit.org/">Berlin Desktop
+          Summit</ulink> is approaching. The deadline for submitting proposals for presentations and
+        lightning talks is tomorrow. So you still have the chance to submit a presentation and talk
+        about your work on the free desktop at the wonderful event in Berlin that the desktop summit
+        promises to be. It takes place from 6th to 12th August this year and combines the annual
+        conferences of the <ulink url="http://www.kde.org/">KDE</ulink> and <ulink
+          url="http://www.gnome.org/">GNOME</ulink> communities.</para>
+      <para>Some of you might think that your contributions to the free desktop to the event are not
+        relevant enough to warrant submitting a talk. That often is not true. While we will have
+        well-known speakers who have done ground-breaking things on the free desktop, we all have
+        started small, and sometimes especially the small projects, which are still young, are the
+        most interesting ones to hear about. So please don't hesitate to try it, submit a
+        presentation, talk about the projects you are passionate about, share the love for the free
+        desktop with the community. Berlin is the right place for this.</para>
+      <!--($ ld: 26.3.11 sm $)-->
+    </blockquote>
+  </sect2>
+  <!--
+    <sect2>
+    <title>People of openSUSE</title>
+    <blockquote>
+      <title>This Week: xyz</title>
+      <para>Good Guy. Glows in the night.</para>
+    </blockquote>
+    </sect2> -->
+  <!--
+  <sect2>
+    <title>Welcome new openSUSE Members</title>
+    <blockquote>
+      <title>
+        <ulink url="https://users.opensuse.org/show/fcrozat">Frederic Crozat (fcrozat)</ulink>
+      </title>
+      <para>Very active in the openSUSE GNOME Team and Bugzilla.</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink url="https://users.opensuse.org/show/helen-au">Helen South
+        (helen-au)</ulink></title>
+      <para>Helen works inside Marketing and the Editor Team of news.opensuse.org.</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink url="https://users.opensuse.org/show/dominian">Matt Hayes
+        (dominian)</ulink></title>
+      <para>Active in Bugzilla, Wiki and Mailinglists.</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink url="https://users.opensuse.org/show/tsotsos">Angelos Tzotsos
+        (tsotsos)</ulink></title>
+      <para>Active inside the Greek Community and Marketing.</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink url="https://users.opensuse.org/show/bekun">Kai-Uwe Behrmann
+        (bekun)</ulink></title>
+      <para>Kai-Uwe serves as Speaker, Boothman and Developer for the openSUSE Project.</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>Events &amp; Meetings</title>
+    <itemizedlist>
+      <title>Past</title>
+<listitem>
+<para><ulink url="http://news.opensuse.org/2011/03/15/opensuse-kde-team-meeting/">March 16, 2011 : openSUSE KDE Team Meeting</ulink></para>
+</listitem>
+<listitem>
+<para><ulink url="http://news.opensuse.org/2011/03/16/opensuse-11-5-kde-team-planning-meeting/">March 17, 2011 : openSUSE 11.5 KDE Team planning meeting</ulink></para>
+</listitem>
+<listitem>
+<para><ulink url="http://news.opensuse.org/2010/02/09/opensuse-project-meetings/">March 23, 2011 : Project Meeting</ulink></para>
+</listitem>
+    </itemizedlist>
+    <itemizedlist>
+      <title>Upcoming</title>
+      <listitem>
+<para><ulink url="http://news.opensuse.org/2011/01/20/testing-core-team-meeting/">March 28, 2011 : Testing Core Team Meeting</ulink></para>
+</listitem>
+    </itemizedlist>
+    <!-- ($ ld: 25.03.11 th $) -->
+    <para>You can find more informations on other events at: <ulink
+        url="http://news.opensuse.org/category/events/">openSUSE News/Events</ulink>. - <ulink
+        url="http://en.opensuse.org/openSUSE:Ambassadors_events">Local Events</ulink></para>
+  </sect2>
+  <sect2>
+    <title>openSUSE for your Ears</title>
+    <para>The openSUSE Weekly News are available as livestream or podcast in German. You can hear it
+      or download it on <ulink url="http://blog.radiotux.de/podcast">Radiotux</ulink>. </para>
+  </sect2>
+  <!--
+  <sect2>
+    <title>From Ambassadors</title>
+    <blockquote>
+      <title><ulink url="http://www.bryen.com/opensuse-11-4-arrives-in-san-diego/">openSUSE 11.4 Arrives in San Diego</ulink>
+      </title>
+      <para>The latest release of openSUSE 11.4 on Thursday proved to be a very good release day for
+        us around the world. And in celebrating the release day, several of us came to visit San
+        Diego’s Kernel Panic Linux User Group (<ulink url="http://www.kernel-panic.org/"
+          >KPLUG</ulink>). It was a good crowd at the event with the members of KPLUG and friends
+        some of us invited to join the festivities and learn about openSUSE.</para>
+      <para>Representing openSUSE were local openSUSE guru Tony Su, Brazilian Ambassadors Carlos
+        Ribeiro and Izabel Valverde (In town for the recent SCALE and openSUSE Marketing Hackfest in
+        Los Angeles) and myself.</para>
+      <figure>
+        <title>Opening presentation statements</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://www.bryen.com/wp-content/uploads/2011/03/DSC00641-KPLUG-Tony-Bryen-300x199.png"
+            />
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>As most people present weren’t users of openSUSE, we decided to focus our message not
+        just on what is so cool and awesome about openSUSE, but rather on how openSUSE complements
+        the Project itself. I started out by giving a brief overview of what openSUSE represents as
+        a Project and the various things we do in the Project. Tony then continued by giving a live
+        demonstration of KDE and then moved on to an in-depth look at YaST. Occasionally, Carlos
+        also offered useful information about the various features of openSUSE and even helped out
+        with a couple of users after the presentation.</para>
+      <figure>
+        <title>Tony extolls the virtues of YaST</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://www.bryen.com/wp-content/uploads/2011/03/DSC00648-Tony-KPLUG-300x199.png"
+            />
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>A lot of good questions were generated by the audience, and we saw questions focusing on
+        our OBS ervice, SUSE Studio and virtualization. Additionally, people asked questions about
+        the Project itself and how it is sponsored. I think people were generally impressed to learn
+        and understand that our openSUSE Project is truly a community-driven project and that our
+        relationship with our sponsors are collaborative rather than managed.</para>
+      <para>Afterwards, in the grand tradition of openSUSE Launch Parties, we gave out cake and DVDs
+        as well as a bunch of stickers. As I kept near the DVDs to answer questions, I was genuinely
+        pleased to see people not only took DVDs for themselves, but asked if they could also take
+        extra copies to give to their friends.</para>
+      <figure>
+        <title>Every green morsel was delicious!</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://www.bryen.com/wp-content/uploads/2011/03/DSC00628-KPLUG-Cake-300x199.png"
+            />
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>I have to say that the KPLUG folks were truly a nice group of people, and their
+        backgrounds truly very interesting, ranging from systems administrators to piano teacher to
+        retiree who can’t quite give up his love for Linux. It was also a pleasure to meet with
+        Neil, the president of KPLUG.</para>
+      <para>Cake was definitely delish. I only wish I had extra days in San Diego before the KPLUG
+        event so I could have ordered a proper openSUSE photo cake with logo and all. But, once it
+        gets in your stomach, I guess it really doesn’t matter. :-)</para>
+      <para>Hope to have a chance to visit the guys at KPLUG again, the next time I visit San Diego.
+        If you live in the San Diego area, check them out. Next month, they’re doing a presentation
+        of MythTV. Should be very interesting!</para>
+      <para>Next stop, representnin’ GNOME Foundation Accessibility at the CSUN Assistive Technology
+        conference in San Diego this week. I’ll update you all on what happens there.</para>
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://opensuseambassadors.blogspot.com/2011/03/opensuse-114-release-party-next-day.html">Greek openSUSE Ambassadors: openSUSE 11.4 Release Party-The Next day</ulink></title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh6.googleusercontent.com/_EX6cn8rqip4/TX1ywq6uNSI/AAAAAAAAAyU/AV-VhjC4u1k/s320/SAM_0746.JPG"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>Last night the first Release Party for 11.4 of the Greek openSUSE Community took place.
+        We had every reason to celebrate since we have this great distribution that attracted
+        peoples attention from the first day of it's release.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh5.googleusercontent.com/_EX6cn8rqip4/TX1z1A1LVlI/AAAAAAAAAy8/g5RDT6EdV98/s320/SAM_0754.JPG"
+          />
+        </imageobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh4.googleusercontent.com/_EX6cn8rqip4/TX10_m1oTnI/AAAAAAAAAzk/0HiGhXLldHY/s320/SAM_0760.JPG"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>The Party was once again awesome. Many beautiful people gathered to Rock 'n' Roll and
+        celebrate the arrival of openSUSE 11.4. Of course The ambassadors and the other members of
+        the community talked to people about the greatness of the openSUSE Project.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh6.googleusercontent.com/_EX6cn8rqip4/TX11Fq8uePI/AAAAAAAAAzs/s0Rwf8ocSBw/s320/SAM_0761.JPG"
+          />
+        </imageobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh6.googleusercontent.com/_EX6cn8rqip4/TX10Mh_SFqI/AAAAAAAAAzM/SAPtsONGfYs/s320/SAM_0756.JPG"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>We had all kind of freebies for the people to take. We had some serious party equipment
+        like balloons and whistles. Of course we also had 11.3 DVD with instructions stickers for
+        upgrade on. Also we burned a few 11.4 and we had stickers, openSUSE cheat-cubes, openSUSE
+        Calendars and various other openSUSE stuff.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh4.googleusercontent.com/_EX6cn8rqip4/TX10ljqk9TI/AAAAAAAAAzc/FmoXgjojklI/s320/SAM_0758.JPG"
+          />
+        </imageobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh3.googleusercontent.com/_EX6cn8rqip4/TX19HDLZS0I/AAAAAAAAA3w/yn6dK1vHwaE/s320/SAM_0805.JPG"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>All attendants were given a number and in the end of the night we had a draw and gave
+        away 3 openSUSE t-shirts. Also at the end of the night we all sign an openSUSE poster as
+        something for the community to remember from that wild night.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh6.googleusercontent.com/_EX6cn8rqip4/TX1-uhteigI/AAAAAAAAA4w/DXSpksZLWus/s320/SAM_0815.JPG"
+          />
+        </imageobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh6.googleusercontent.com/_EX6cn8rqip4/TX1wt2uhucI/AAAAAAAAAxI/GUjMOAI3DsM/s320/SAM_0733.JPG"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>We proved once again that openSUSE people most of all have fun because openSUSE is more
+        than a more than a product.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh4.googleusercontent.com/_EX6cn8rqip4/TX12q0B7xNI/AAAAAAAAA0g/TPsSuzwxOAg/s320/SAM_0769.JPG"
+          />
+        </imageobject>
+        <imageobject>
+          <imagedata
+            fileref="https://lh4.googleusercontent.com/_EX6cn8rqip4/TX13b7eTrvI/AAAAAAAAA04/zXjC0tsHX_w/s320/SAM_0774.JPG"
+          />
+        </imageobject>
+      </mediaobject>
+      <para>Unfortunately it is impossible to fit all photos from the party here so if you like to
+        see some more go to: <ulink
+          url="https://picasaweb.google.com/warlordfff/OpenSUSE114ReleaseParty#"
+          >https://picasaweb.google.com/warlordfff/OpenSUSE114ReleaseParty#</ulink></para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+          url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>Communication</title>
+    <itemizedlist>
+      <listitem>
+        <para><ulink url="http://lists.opensuse.org/">The Mailinglists</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://forums.opensuse.org">The openSUSE Forums</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+  <sect2>
+    <title>Contributors</title>
+    <itemizedlist>
+      <listitem>
+        <para><ulink url="http://users.opensuse.org">The User Directory</ulink></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+</sect1>

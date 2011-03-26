@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxuser.co.uk/tutorials/firefox-4-sync-step-by-step/">LinuxUser &amp; Developer/Dmitri Popov: Firefox 4 Sync step-by-step</ulink>
+      </title>
+      <para>Firefox 4′s brand new Sync feature is one of the main attractions of the latest release. It allows you to sync browser data, such as bookmarks, preferences, history, and tabs – but not extensions – across multiple Firefox installations. Here’s how it’s done… (...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/424005:using-googles-webp-image-format-with-open-tools-on-linux">Linux.com/Nathan Willis: Using Google&apos;s WebP Image Format with Open Tools on Linux</ulink>
+      </title>
+      <para>Google&apos;s WebM project, the free and open video codec based on VP8, offers tantalizing benefits for fans of Linux and open source: better quality, plus full support in the browser and other applications, thanks to the lack of royalty-demanding patent holders. Often overlooked in the WebM story is the other media format unveiled by Google at the same time: WebP, a lossy still-image format said to provide better-than-JPEG quality at substantially slimmer file sizes. Is <ulink url="http://code.google.com/speed/webp/">WebP</ulink> poised to displace the stodgy old photo format? Let&apos;s take a look at the free tools available for writing, converting, and displaying WebP files to find out. (...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/utilities/find-basics/">BashShell.net/mike: The 5 Days of find</ulink>
+      </title>
+      <para>Our &quot;5 days of find&quot; tutorial series is in full swing. This short-course includes tutorials, videos and exercises which are rolled out each day in an effort to help admins use the find command more confidently.
+
+    </para>
+      <para>* <ulink url="http://bashshell.net/utilities/find-basics/">The Basics of find</ulink></para>
+      <para>* <ulink url="http://bashshell.net/utilities/find-criteria/">find Criteria</ulink></para>
+      <para>* <ulink url="http://bashshell.net/utilities/using-time-criteria-with-find/">Using Time Criteria with find</ulink></para>
+      <para>* <ulink url="http://bashshell.net/utilities/find-with-multiple-expressions/">find with Multiple Expressions</ulink>
+(...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://psankar.blogspot.com/2011/03/pre-vs-post-increment-performance.html">Sankar P: Pre vs Post Increment</ulink>
+      </title>
+      <para>While browsing across some open-source projects, I have seen code snippets of
+        type:<screen>for (i = 0; i &lt; n; ++ i )</screen></para>
+      <para>The pre-increment <quote>++ i</quote> confused me as to why one should use it, as post
+        increment is most commonly used. Googling told me that <emphasis role="italic">pre-increment is faster than post increment as the value of i need not be stored to a temporary register before the increment operation</emphasis>. This sounded logical to me and I believed it
+        and used pre-increment in all my loops. I didn&apos;t bother to measure it though. (...)</para>
+<!-- ($ Id: 22.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://azouhr.wordpress.com/2011/03/22/itunes-on-opensuse-11-4/">Berthold Gunreben: iTunes on openSUSE 11.4</ulink>
+      </title>
+      <para>In order to use iTunes University, I had to install iTunes on my notebook that is
+        running openSUSE 11.4. It is quite easy to get some old version of iTunes from <ulink url="http://www.oldapps.com/itunes.php">http://www.oldapps.com/itunes.php</ulink> but
+        trying to install it on a 64bit machine with wine always failed.</para>
+      <para>In the end, I could install a 32bit version by doing the following:</para>
+      <programlisting>rm -rf ~/.wine #(don&apos;t do this if you have other wine applications installed, it basically kills any previous wine installation)
+export WINEARCH=win32
+wine ~/Downloads/iTunesSetup1021.exe</programlisting>
+      <para>To start iTunes later on, it is sufficient to run the following
+        command:<screen>wine c:/Program\ Files/iTunes/iTunes.exe</screen></para>
+      <para>Unfortunately, with most of the available courses on iTunes University, I get conversion
+        errors. To circumvent this, I just download the respective courses and view them with
+        mplayer:<screen>cd ~/Music/iTunes/iTunes Media/iTunes U/
+mplayer -vo xv &lt;course file&gt;</screen></para>
+      <para>This is not too nice, but at least it allows me to view iTunes U courses without the
+        need for an operating system I do not own.</para>
+<!-- ($ Id: 22.3.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://python4kids.wordpress.com/2011/03/22/increasingly-trivial-questions/">Python4Kids: New Tutorial - Increasingly Trivial Questions</ulink>
+      </title>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">First Hermit Hello, are you a hermit by any chance?</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">Second Hermit Yes that’s right. Are you a hermit?</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">First Hermit Yes, I certainly am.</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">Second Hermit Well I never. What are you getting away from?</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">First Hermit Oh you know, the usual – people, chat, gossip, you know.</emphasis>
+        </ulink></para>
+      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
+          <emphasis role="italic">Second Hermit Oh I certainly do – it was the same with me. I mean there comes a time when you realize there’s no good frittering your life away in idleness and trivial chit-chat.</emphasis>
+        </ulink></para>
+      <para>If you remember back a few tutorials ago, we learnt how to <emphasis role="italic">pickle</emphasis> objects so that we could get them back later. To <emphasis role="italic">pickle</emphasis> the object <emphasis role="italic">triviaQuestions</emphasis> (which was a <emphasis role="italic">list</emphasis> object)
+        we first imported the <emphasis role="italic">pickle</emphasis> module, then opened a file
+        and <emphasis role="italic">dump</emphasis>ed the object into the file, then <emphasis role="italic">close()</emphasis>d the
+        file:<screen>-&gt;code snippet removed to note [1] because I don&apos;t want you typ</screen></para>
+      <para>(...)</para>
+<!--($ Id: 23.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://dominique.leuenberger.net/blog/?p=151">Dominique Leuenberger: how to
+          fix brp and rpmlint warnings – today: Expression compares a char* pointer with a string
+          literal</ulink></title>
+      <para>After having seen this kind of question several times, I think it could be interesting
+        to start creating a small ‘series of rpmlint errors and their typical fixes”.</para>
+      <para>Interested in it? So welcome to part #1 (this issue). The “series” is not really fledged
+        out, but I will try to write post for various errors / topics, as they come along. Just drop
+        me a note with an error you have seen / experienced in OBS while building a package.</para>
+      <para>So what does it mean, if OBS tells you this:</para>
+      <para> Expression compares a char* pointer with a string literal. Usually a strcmp() was
+        intended by the programmer</para>
+      <para>Let’s have a look at a very simple C program, to show the
+        issue:<screen>#include &lt;stdio.h>
+int main() {   
+char *mytext;   
+mytext = "Help";   
+if (mytext == "Help") {     
+printf("This should raise a warning");   
+}   
+return 0; 
+}</screen></para>
+      <para>Trying to compile this very simple C program, which on first sight many would probably
+        say this is correct, will result in
+        this:<screen>$ gcc test1.c -Wall 
+test1.c: In function ‘main’: 
+test1.c:6:14: warning: comparison with string literal results in unspecified behavior </screen></para>
+      <para>So, even though we had such an easy program, line 6 seems to be an issue for
+        us:<screen>if (mytext == “Help”) {</screen></para>
+      <para>The issue, as simple as it may sound, is the comparison of a pointer (char *) with a
+        literal (“Help”).</para>
+      <para>So how do we fix it? It involves changing the code, thus writing a patch (there are many
+        good helps around for this… I won’t dive into patching here).. Of course, after having
+        written a patch, be a good downstream, send it upstream! What you want to do here is to
+        replace this comparison with strcmp (just as OBS’ error message implied).</para>
+      <para>Look at this code
+        now:<screen>#include &lt;stdio.h> 
+#include &lt;string.h>
+int main() {   
+char *mytext;   
+mytext = "Help";   
+if (strcmp(mytext,"Help")==0) {     
+printf("No warning here\n");   
+}
+return 0; 
+}</screen></para>
+      <para>I changed <emphasis role="italic">“mytext == “Help”</emphasis> to <emphasis
+          role="italic">strcmp(mtext,”Help”)==0</emphasis> (<ulink
+          url="http://linux.die.net/man/3/strcmp">man 3 strcmp</ulink> will explain you why… 0 means
+        the texts are equal, or ’0 difference detected’ can help you remember that). As the code was
+        too simple and strcmp was not yet defined (this of course can also happen in packages you
+        patch), I had to add an additional <emphasis role="italic">#include
+          &lt;string.h&gt;</emphasis>.</para>
+      <para>Not too hard, is it?</para>
+      <para>So what do you think? Such a series of “how to fix my typical brp / lint warnings”
+        useful?</para>
+      <!--($ Id: 26.3.11 sm $)-->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://azouhr.wordpress.com/2011/03/21/simple-udev-manipulations/">Berthold Gunreben: Simple udev Manipulations</ulink>
+      </title>
+      <para>When discovering the /sys file system, one can find quite a number of tunables that look
+        interesting and really have effect on system behavior. Especially when experimenting with
+        different values of read ahead for block devices or e.g. setting the stripe_cache_size for
+        raid5, the performance for my software raid was improved a lot. </para>
+      <para>To make that settings permanent, one can try and go for /etc/init.d/boot.local. More
+        elegant however is to add some udev rule that does the necessary changes for you. It turns
+        out, that this is quite easy. For example, the read ahead for block devices is found in
+        /sys/block/*/bdi/read_ahead_kb. To check your current read ahead of /dev/sda, you may
+        use:<screen>cat /sys/block/sda/bdi/read_ahead_kb</screen></para>
+      <para>However you may also want to change that setting. To accomplish that, just echo the
+        desired number into the read
+        ahead:<screen>echo 4100 &gt; /sys/block/sda/bdi/read_ahead_kb</screen></para>
+      <para>To automatically do the setting when the device appears, just add the following file to
+        /etc/udev/rules.d/83-ra.rules:<screen>cat /etc/udev/rules.d/83-ra.rules
+# increase readahead for sd* devices
+ACTION==&quot;add&quot;, KERNEL==&quot;sd*&quot;, ATTR{bdi/read_ahead_kb}=&quot;4100&quot;</screen></para>
+      <para>When adding a udev rule for this, one just needs to know that “==” (two equal signs) is
+        a check, and “=” (one equal sign) is a setting. </para>
+      <para>Note, that some devices may take the read ahead from the underlying device; noteably
+        when using drbd, setting the read ahead on the underlying device will have the desired
+        effect.</para>
+<!--($ Id: 21.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/how-to-install-apache-solr-and-use-it-with-drupal-and-ispconfig-opensuse-debian">HowtoForge/luisfreitas: How To Install Apache-Solr And Use It With Drupal And ISPConfig (OpenSUSE/Debian)</ulink>
+      </title>
+      <para>Solr is the popular, blazing fast open source enterprise search platform from the Apache Lucene project. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, and rich document (e.g., Word, PDF) handling. I use this on OpenSUSE and Debian (minor tweaks on Debian, just paths to correct but it&apos;s almost the same). Packages from 4 of March 2011. (...)</para>
+<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.encodingit.ch/2011/03/backup-und-restore-mit-linux/">Bits, Bytes and my 5 cents: Backup und Restore mit Linux</ulink>
+      </title>
+      <para>Von den bisher vorgestellten Themen in LPIC 201 ist das folgende eines der
+        interessanteren: Backup und Archivierung! Wie in den Artikeln vorher schon erwýhnt, ersetzt
+        RAID nicht wirklich ein Backup und LVM schon gar nicht! Es muss also trotzdem noch eine
+        Lösung her – und um die kýmmern wir uns jetzt! </para>
+    </blockquote>
+  </sect2>
+</sect1>

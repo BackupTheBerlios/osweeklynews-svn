@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/03/21/opensuse-11-4-still-going-strong/">openSUSE 11.4 still going strong</ulink></title>
+    <para>A bit over one week ago, <ulink url="http://news.opensuse.org/2011/03/10/opensuse-11-4/"
+        >we released openSUSE 11.4</ulink> introducing <ulink
+        url="http://en.opensuse.org/Product_highlights">many exciting new features</ulink>. The
+      result was, as we wrote on Friday: <ulink
+        url="http://news.opensuse.org/2011/03/12/opensuse-11-4-made-a-splash/">a big splash</ulink>.
+      The 100.000 downloads in the first 24 hours and large numbers of blogs, articles and reviews
+      all over the world were certainly impressive! So today we have a look at how the stats looked
+      after one week. Did we keep the momentum going?</para>
+    <para><emphasis role="bold">On the numbers</emphasis></para>
+    <para>6 days after our previous report, downloads on bittorrent moved to well over 36.000
+      downloads from the 12.000 in the first 24 hours. Still over 900 people are seeding. Meanwhile,
+      the total number of downloads on <ulink url="http://software.opensuse.org/114/en">the download
+        page</ulink> has exceeded the 300.000 downloads now. Breaking the numbers down a little, we
+      can see what images you are choosing. With over 113.000 downloads, the i586 DVD iso is the
+      most popular, followed by 83.000 downloads for the 64 bit DVD. The live CD’s are going fast as
+      well, with over 37.000 for the KDE (32 &amp; 64 bit) and 31.000 for the GNOME one. Quite a few
+      users are even opting for the networked installation CDs, with about 16.000 downloads as
+      well.</para>
+    <figure id="fig.distrowatch">
+      <title>openSUSE on Distrowatch</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/distrowatch2.gif"
+            align="right"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>After <ulink url="http://blog.susestudio.com/2011/03/opensuse-114-support.html">announcing
+        they had openSUSE 11.4 support from day 1</ulink>, the <ulink url="http://susestudio.com"
+        >SUSE studio</ulink> team let us know last week that they had 1000 appliances build with
+      openSUSE 11.4 in 24 hours. Well, since then, thousands more have been made! On the release
+      day, traffic to the SUSE Studio website spiked by 62%. Right now, SUSE Studio image building
+      still takes significantly longer than usual due to the continued increase in traffic… They
+      also let us know that it is now possible to automatically update your <ulink
+        url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html">current
+        appliance to openSUSE 11.4</ulink> if you want.</para>
+    <para><emphasis role="bold">Party time!</emphasis></para>
+    <para>Right from the launch date on, there were <ulink
+        url="http://en.opensuse.org/openSUSE:Launch_parties_11.4">launch parties</ulink> all around
+      the world. On <ulink url="http://planet.opensuse.org/">planet openSUSE</ulink>, the <ulink
+        url="http://www.myopensuse.hu/node/113">first</ulink>
+      <ulink url="http://thefreecountry.wordpress.com/2011/03/18/release-party-opensuse-11-4/"
+        >reports</ulink>
+      <ulink url="http://anditosan.blogspot.com/2011/03/opensuse-release-party-provo-ut.html"
+        >are</ulink>
+      <ulink url="http://www.digitalflow.de/blog/2011/03/opensuse-11-4/">showing</ulink>
+      <ulink url="http://www.bryen.com/opensuse-11-4-arrives-in-san-diego/">up</ulink> and the
+      pizza-fuelled Dutch release party had a report on <ulink url="http://bit.ly/gNqkOM"
+        >connect.opensuse.org</ulink>!</para>
+    <figure>
+      <title>openSUSE Cake!</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2011/03/opensuse-cake-150x150.jpg"
+            align="right"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>
+    <para>openSUSE Ambassadors in Greece brought their growing community together for a <ulink
+        url="http://opensuseambassadors.blogspot.com/2011/03/opensuse-114-release-party-next-day.html"
+        >release party</ulink> complete with cake. Yum!</para>
+    <figure>
+      <title>Dancing avatars!</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2011/03/secondlife-dancing-300x189.jpg"
+            align="left"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>
+    <para>Among the many creative approaches to launch celebrations perhaps the Geekiest was the
+      virtual launch party on Second Life. A DJ, chat, dancing and balloons allowed the online
+      community to celebrate in style at Geeko’s Place.</para>
+    <para><emphasis role="bold">Reviews and articles</emphasis></para>
+    <para>There are many more reviews now on the web. We have not spend much time updating <ulink
+        url="http://en.opensuse.org/In_the_press">our in-the-press page</ulink> as there is just too
+      much. Just in Spain, for example, 10 major sites published reviews and notices – that is not
+      including blogs and many smaller sites…</para>
+    <para>We do want to point to one particular review, the one by <ulink
+        url="http://www.jupiterbroadcasting.com/?p=6068">The Linux Action</ulink> show. Both
+      gentlemen doing this are usually not huge openSUSE fans so we greatly appreciate their glowing
+      review of 11.4! And, gents, count on us taking care of the thing you were missing: innovation
+      and fancy stuff! There are several great initiatives upcoming as we <ulink
+        url="http://news.opensuse.org/2011/01/03/opensuse-finished-2010-big/">reported in this
+        article about 2010</ulink> and surely, more will come.</para>
+    <para><emphasis role="bold">Novell and Attachmate</emphasis></para>
+    <para>Of course Novell supported our release with a <ulink
+        url="http://www.novell.com/news/press/2011/3/opensuse-114-now-available-with-first-stable-release-of-libreoffice.html"
+        >press announcement</ulink>, mentioning some of our major new features. Chairman and CEO of
+        <ulink url="http://www.attachmate.com/">Attachmate</ulink>, Jeff Hawn, <ulink
+        url="http://www.attachmate.com/Press/PressReleases/congratulations-openSUSE-project.htm"
+        >conveyed congratulations on the release of openSUSE 11.4</ulink> on behalf of his
+      company.</para>
+    <para><emphasis role="bold">Social media stats</emphasis></para>
+    <para>Our Social Media guru Chuck ‘pup’ Payne reports some fantastic participation on our
+      various social networking channels. The top five countries participating in our social pages
+      were the USA, Indonesia (who have created their own page!), Germany, India, and Italy.</para>
+    <para><emphasis role="bold">Change Your Profile Pix</emphasis></para>
+    <para>As a ‘last moment idea’, Chuck posted on the openSUSE page and group that users might like
+      to change their pix to the Geeko character that Carlos had had created. A fun way to celebrate
+      and promote the release. This was very successful, with 20% of users changing their profile
+      pictures to our geeky, suit-wearing lizard!</para>
+    <para><emphasis role="bold">openSUSE Facebook Page</emphasis></para>
+    <para>The stats for the <ulink
+        url="http://www.facebook.com/home.php?ref=home#%21/pages/openSUSE/45393742283">official
+        openSUSE Facebook Page</ulink> were up 148%.</para>
+    <figure>
+      <title>Facebook Interaction</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2011/03/user_part1_facebook1-150x150.png"
+            align="right"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>Weekly and Monthly Active User are on the rise. There was a bit of dip on March 12
+      (Saturday) after the release – must have been all those machines busy downloading and
+      installing! Page Likes are up 122% with postfeed back up 238%. The highest was the day of the
+      release. Post views went up 118% with post feed back being up 441%.</para>
+    <figure>
+      <title>Interactions on Facebook</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2011/03/interaction_march_facebook2-150x150.png"
+            align="right"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para><emphasis role="bold">Twitter</emphasis></para>
+    <para>Chuck set up a feed so that posts would be sent to Twitter. It’s hard to get exact
+      statistics for Twitter, but over on the day we had a lot of #openSUSE tweets flying
+      around.</para>
+    <figure>
+      <title>Twitter Charts</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2011/03/opensuse-twitter-march1-150x150.png"
+            align="left"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>We started mainly twitting and re-tweeting or news. Chuck sent direct tweets to Linux
+      Magazine, Linux Pro Magazine, Linux Journal, which helped because they return retweeted and
+      then created they own tweets with links to they websites. We really appreciated the support
+      from the media!</para>
+    <para><emphasis role="bold">Conclusion</emphasis></para>
+    <para>Social and more traditional media was buzzing with openSUSE activity since the release. We
+      had hundreds of thousands of users downloading the latest openSUSE. We had parties around the
+      world (and more coming up). OpenSUSE 11.4 got a lot of attention!</para>
+    <para><emphasis role="italic">Thanks to Helen &amp; Jos for writing!</emphasis></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
+    <!-- ($ ld: 22.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/03/22/opensuse-accepted-for-google-summer-of-code/">openSUSE accepted for Google Summer of Code!</ulink></title>
+    <para>openSUSE has cleared the first hurdle towards a series of successful Google Summer of Code
+      projects! As was <ulink
+        url="http://omgsuse.com/content/opensuse-be-part-google-summer-code-2011">disclosed last
+        Saturday by OMGSUSE</ulink>: Google has accepted our proposal and we are now <ulink
+        url="http://www.google-melange.com/gsoc/org/show/google/gsoc2011/opensuse">a mentoring
+        organization</ulink>. This means that if you’re interested in working a whole summer
+      FULLTIME on openSUSE and getting paid for it, this is your chance! </para>
+    <figure>
+      <title>This could be a very special summer for you!</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://news.opensuse.org/wp-content/uploads/2011/03/2725050242_ed79fa51cd_m.jpg"
+            align="right" width="20%"/>
+        </imageobject>       
+      </mediaobject>
+    </figure>    
+    <para>Thanks to the ideas on our <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#General_ideas">GSOC 2011 ideas
+        page</ulink> and the mentors who have already stepped up, you’ll have a great start in
+      openSUSE development. While the number of slots is not decided yet, it is now time for you,
+      potential students and mentors, to start fleshing out those ideas and talk to each
+      other!</para>
+    <para><emphasis role="bold">What’s next?</emphasis></para>
+    <para>Already the#opensuse-project IRC channel (on Freenode) is buzzing with activity. Students
+      and mentors are discussing the proposals – and that is exactly what is needed.</para>
+    <para><emphasis role="bold">Timeline</emphasis></para>
+    <para>Check out the <ulink
+        url="http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/timeline"
+        >timeline on the Google Summer of Code site</ulink>. Right now, you need to know the
+      following dates: On <emphasis role="italic">March 28</emphasis> the student application period
+      opens. Yes, that is next week! Students have until <emphasis role="italic">April
+        8th</emphasis> to send in a formal proposal after which the openSUSE GSOC team will review
+      the applications. Then Google will make the final decisions which will be published on the
+        <ulink url="http://www.google-melange.com/gsoc/program/home/google/gsoc2011">GSOC 2011
+        site</ulink> on <emphasis role="italic">April 25th</emphasis>. Mentors should start <ulink
+        url="http://www.google-melange.com/gsoc/org/apply_mentor/google/gsoc2011">registering
+        now</ulink>, and work with their potential students to create good proposals!</para>
+    <para><emphasis role="bold">Students</emphasis></para>
+    <para>If you want to be a student and work on and within openSUSE for this Google Summer of
+      Code, you need to start working on your proposal right away. First up, you should subscribe to
+      the opensuse-project mailinglist. Introduce yourself, and let people know that you are looking
+      for a mentor. If you are keen to dive right in, our development list is
+      opensuse-factory.</para>
+    <para>Next up, that proposal. You might be inspired by something from the <ulink
+        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas">openSUSE GSOC 2011 ideas page</ulink>.
+      There is a list of project suggestions with a variety of abilitities and skill sets including
+      web programming, Python, Perl and Ruby on Rails. Alternatively, suggest and idea of your
+      own!</para>
+    <para>Once you have your idea, start to write! Contact the openSUSE team working in the area
+      you’d like to work on and see if it is something they are interested in. Try to find a mentor,
+      get feedback on your idea and find out if it is doable. In case you based your proposal on an
+      idea from the idea page, contact the mentor (if there is one already) on IRC or by mail. If
+      you have more generic questions you can always ask on the <ulink
+        url="irc://irc.freenode.net/opensuse-project">#opensuse-project</ulink> channel on the
+        <ulink url="http://freenode.net/">Freenode servers</ulink> or mail the opensuse-project
+      mailing list.</para>
+    <para>More info about GSoC you can find on <ulink url="http://www.google-melange.com">this
+        site</ulink>.</para>
+    <para><emphasis role="bold">Mentors</emphasis></para>
+    <para>If you are willing to mentor a student for GSoC 2011 for openSUSE, you should start with
+        <ulink url="mailto:gsoc-mentors+subscribe@opensuse.org">subscribing to the gsoc-mentors
+        mailinglist</ulink>. It’s also a good idea to keep an eye on the project mailing list and
+      IRC channels for students needing mentors. Next up is <ulink
+        url="http://www.google-melange.com/gsoc/org/apply_mentor/google/gsoc2011">registering as a
+        mentor</ulink> on the Google website and contact our admin <ulink
+        url="http://en.opensuse.org/User:Vuntz">Vincent Untz</ulink> to accept you. Ask questions on
+      the GSoC mailinglist please!</para>
+    <para>Of course you will now have to <emphasis role="italic">help your potential student(s) to
+        finish a good proposal</emphasis> and keep them engaged!</para>
+    <para><emphasis role="bold">Time to get started</emphasis></para>
+    <para>So, gear up, friends. It is time for a Summer of writing great Code for openSUSE. Talk to
+      each other, ask questions, don’t be shy – and remember, there are no stupid questions, only
+      stupid answers! If you are unsure if you are able to do do it, please come talk to us in the
+        <ulink url="irc://irc.freenode.net/opensuse-project">#opensuse-project</ulink> channel on
+      the <ulink url="http://freenode.net/">Freenode servers</ulink>. Everyone has to start
+      somewhere, and if it turns out you’re not experienced enough yet or we don’t have a slot for
+      you there is no problem. We can still mentor you, help you out with setting up your
+      development tools, answer your coding or packaging questions and teach you the ropes of
+      working in a Free Software community. So you can’t lose – either way, you can be involved in
+      openSUSE, learn valuable skills and have some fun!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
+    <!--($ ld: 23.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/03/25/linux-foundation-20th-anniversary-of-linux-campaign-and-video-contest/">Linux Foundation 20th Anniversary of Linux Campaign and Video Contest</ulink></title>
+    <para>It’s the 20th Anniversary of Linux in August and the Linux Foundation is kicking off
+      celebrations at <ulink url="http://events.linuxfoundation.org/events/collaboration-summit">The
+        Collaboration Summit</ulink> which takes place April 6-8, 2011 at the Hotel Kabuki in San
+      Francisco. A highlight of the campaign is the annual Video Contest, which this year focuses on
+      the 20 year celebration and will be judged by Linux Torvalds himself.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://news.opensuse.org/wp-content/uploads/2011/03/vintage-8mm-camera-242x300.jpg"
+          width="10%" align="right"/>
+      </imageobject>      
+    </mediaobject>
+    <para>The Linux Foundation has invited members and the community to create their own 20th
+      anniversary videos in advance, which will be featured on the announcement date of April 6.
+      Videos submitted early enough to be available during the first days of the contest will
+      receive additional promotion by The Linux Foundation.</para>
+    <para>This is a fantastic opportunity for video makers in the openSUSE community to get some
+      visibility for their work and their favorite distribution! (Not to mention showing off how
+      easy it is to make awesome videos with openSUSE.) So get started right away, and watch this
+      space for details on how to submit your video.</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">FDL 1.2</ulink></para>
+  </blockquote>
+</sect1>

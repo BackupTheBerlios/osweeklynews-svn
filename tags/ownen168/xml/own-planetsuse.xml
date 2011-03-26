@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://mschlander.wordpress.com/2011/03/12/opensuse-11-4-has-been-released/">OMG! SUSE! team: On release day, it is like a big dump truck</ulink></title>
+    <para>Shortly after the initial release of openSUSE 11.4, I posted some <ulink
+        url="http://omgsuse.com/content/rapidly-downloading-opensuse-114-bittorrent">giant
+        BitTorrent links</ulink> to speed up your downloading of openSUSE. Now that the initial
+      flood of downloads has come and gone, I wanted to report back with some statistics shared by
+      openSUSE Contributor <ulink
+        url="http://news.opensuse.org/2008/03/01/people-of-opensuse-marcus-rueckert/">Marcus
+        Rueckert</ulink>.</para>
+    <para><emphasis role="bold"><emphasis role="italic">Note</emphasis></emphasis>: These numbers
+      are for BitTorrent downloads only.</para>
+    <para>As of last Thursday (March 17th), the numbers broke down as follows:<itemizedlist>
+        <listitem>
+          <para>Full DVD images downloaded: <emphasis role="bold">8228</emphasis></para>
+        </listitem>
+        <listitem>
+          <para>Live CD images downloaded: <emphasis role="bold">4009</emphasis></para>
+        </listitem>
+      </itemizedlist></para>
+    <para>If you're not terrifically familiar with the way that BitTorrent works, all users are
+      constantly sharing data with one another but users fall into two buckets:
+        <quote>leechers</quote> and <quote>seeders</quote>. The <quote>leechers</quote> are users
+      who don't <emphasis role="italic">yet</emphasis> have the complete file, while the
+        <quote>seeders</quote> have fully completed their download and are <emphasis role="bold"
+        >only</emphasis> uploading to the other users. In short, having a lot of seeders means you
+      have a good healthy torrent and downloads for new folks will be <emphasis role="italic"
+        >fast</emphasis>.</para>
+    <para>As of last Thursday, both the 32-bit and the 64-bit DVD images had over <emphasis
+        role="bold"><emphasis role="italic">one thousand seeders</emphasis></emphasis>, 20% more
+      seeders than leechers too! That is incredibly awesome!</para>
+    <para>Marcus went on to say:</para>
+    <para><quote>I tested on friday morning and peaked at 11.2MB/s download speed for torrent which
+        is almost max speed of my line.</quote></para>
+    <para>This means if you download the DVD image <emphasis role="italic">right now</emphasis>, you
+      are likely going download openSUSE as fast as technically possible!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!-- ($ ld: 21.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/03/13/opensuse-11-4-how-it-goes-in-portugal/">OMG! SUSE! team: Search openSUSE, powered by Google</ulink></title>
+    <para>Community member Brandon Philips introduced <emphasis role="bold"><ulink
+          url="http://search.opensuse.org">search.opensuse.org</ulink></emphasis> to the world on
+      the opensuse-project<ulink url="http://en.opensuse.org/openSUSE:Mailing_lists">mailing
+        list</ulink>. The site is a simple, fast Google-powered search engine for openSUSE.org, the
+        <ulink url="http://forums.opensuse.org/">forums</ulink>, the <ulink
+        url="http://en.opensuse.org">wiki</ulink> and the <ulink
+        url="http://en.opensuse.org/openSUSE:Mailing_lists">mailing lists</ulink>.</para>
+    <para>If you're interested in checking out the code behind <ulink
+        url="http://search.opensuse.org">search.opensuse.org</ulink>, head on over to the <ulink
+        url="http://gitorious.org/search-opensuse-org/search-opensuse-org">repository on
+        Gitorious.org</ulink>.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/susesearch_crushed.png" width="50%"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!--($ ld: 22.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/suse-studio-jumps-114-bandwagon">OMG!SUSE! team: SUSE Studio jumps on the 11.4 bandwagon</ulink></title>
+    <para>With the release of <ulink
+        url="http://omgsuse.com/content/tenth-day-opensuse-114-changed-everything">openSUSE
+        11.4</ulink>, I would like to start talking more and more about <ulink
+        url="http://susestudio.com">SUSE Studio</ulink>. While SUSE Studio might not be a terribly
+      useful tool for the average end-user, for power-users and developers it is quite an impressive
+      piece of technology, built on top of openSUSE and <ulink
+        url="http://en.opensuse.org/Portal:KIWI">KIWI</ulink>.</para>
+    <para>For developers, imagine creating an image of the <emphasis role="italic">ideal</emphasis>
+      test machine, complete with repositories from the <ulink url="http://build.opensuse.org"
+        >openSUSE Build Service</ulink> already enabled and all the necessary dependencies already
+      installed. SUSE Studio <emphasis role="bold">does that</emphasis>.</para>
+    <para>For power-users, imagine having a USB stick or a Live CD with your completely
+      personalized, custom version of openSUSE. All set up and ready to go, whenever you need it.
+      SUSE Studio does that.</para>
+    <para>With the initial release of 11.4, <ulink
+        url="http://blog.susestudio.com/2011/03/opensuse-114-support.html">SUSE Studio announced
+        support for 11.4 appliances</ulink>. Which means you could create a custom openSUSE 11.4
+      appliance <emphasis role="italic">while</emphasis> your <ulink
+        url="http://omgsuse.com/content/rapidly-downloading-opensuse-114-bittorrent">ISO was
+        downloading off BitTorrent</ulink>.</para>
+    <para>Now the team has gone a step further, allowing you to <ulink
+        url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html">upgrade
+        existing 11.3 appliances to openSUSE 11.4</ulink>, with a single button click on <ulink
+        url="http://susestudio.com">SUSEStudio.com</ulink>. <emphasis role="italic">See
+        below:</emphasis></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://cdn.omgsuse.com/omg/images/susestudio_upgrade.png" width="50%"/>
+      </imageobject>      
+    </mediaobject>
+    <para>(In case you're wondering, the SUSE Studio mascot is named "Dister" and he's a robot. A
+      friendly robot, with three friendly fingers.)</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!--($ ld: 22.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://omgsuse.com/content/poll-are-you-using-114-yet">OMG!SUSE! team: Poll: Are you using 11.4 yet?</ulink></title>
+    <para>It's been a little over a week since <ulink
+        url="http://omgsuse.com/content/tenth-day-opensuse-114-changed-everything">openSUSE
+        11.4</ulink> was released out into the wild. As with any release of any single piece or
+      collection of software, there will of course be a few <ulink
+        url="http://en.opensuse.org/openSUSE:Most_annoying_bugs_11.4">pretty annoying bugs</ulink>,
+      but have they been enough to hold you back from trying out 11.4?</para>
+    <para>Have you taken the plunge, still cautious?</para>
+    <para><emphasis role="bold">We want to know!</emphasis></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!--($ ld: 23.3.11 sm $)-->
+  </blockquote>
+</sect1>
