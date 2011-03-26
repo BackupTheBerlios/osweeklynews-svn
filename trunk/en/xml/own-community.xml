@@ -281,6 +281,67 @@
           url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
       <!--($ ld: 23.3.11 sm $)-->
     </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://oyranos-cms.blogspot.com/2011/03/oyranos-on-clt-2011.html">Oyranos on CLT
+          2011</ulink></title>
+      <para>The weekend on Chemnitzer Linux Tage happened in a very nice atmosphere at the TU
+        campus. </para>
+      <para>The Oyranos booth had this year lots of place to show ideas on the hot topics like
+        desktop and print colour management. Unfortunately my long planed co exhibitor could not
+        make it to Chemnitz to show openSUSE-medical. We planed to display medical images on a
+        properly setup 30-bit system as is required by the DICOM specification. Sirko Kemter
+        designed one artistic 2 meter banner and helped with the basic design of the other posters,
+        which we used for the new space. The Oyranos posters included some schematic graphics and
+        the usual "Why do we need colour management" style explanations. For the later one I
+        sketched a comparison of three non colour managed monitors showing the same fashion person.
+        The SVG graphics from the open clip art library was colour converted to three real world
+        monitor profiles. It resembles a typical shop over web situation, where colour counts for
+        selection of the right looking goods.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://3.bp.blogspot.com/-G9og8HNBsB8/TYo211lX37I/AAAAAAAAABk/gaAkHsUEJlI/s400/OyranosCMS-2_UebersichtPlakat_comparision.png"
+            width="25%"/>
+        </imageobject>        
+      </mediaobject>
+      <para>Several visitors allowed me to start the actual SuseStudio created Oyranos LiveCD on
+        their laptops with different success. We used the exhibited measurement devices and a camera
+        target to create custom ICC profiles for use in digikam, Scribus, Inkscape and friends. The
+        LiveCD is still based on openSUSE-11.3 and worked in many but not all cases. I found it
+        impressive how good looked the featured KDE desktop, when the CompICC plug-in launched
+        immediately. Working OpenGL, which is needed for the desktop colour server shader, was still
+        not always available.</para>
+      <para>The newest openSUSE-11.4 version was demonstrated on the neighboring openSUSE booth.
+        openSUSE-11.4 was released only some days ago. The <ulink
+          url="http://software.opensuse.org/">OBS </ulink>color_management repository was updated
+        with the help of Stanislav Brabec just some days before to have nearly all packages build
+        for 11.4. Thus Oyranos workes flawless on 11.4 too.</para>
+      <para>All in all a great weekend with lots of good talks and meeting of old and new
+        friends.</para>
+      <!--($ ld: 26.3.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://blog.cornelius-schumacher.de/2011/03/show-us-your-work-on-free-desktop.html"
+          >Cornelius Schumacher: Show us your work on the free desktop</ulink></title>
+      <para>The deadline for the <ulink url="https://desktopsummit.org/cfp">Call for
+          Participation</ulink> of the <ulink url="http://www.desktopsummit.org/">Berlin Desktop
+          Summit</ulink> is approaching. The deadline for submitting proposals for presentations and
+        lightning talks is tomorrow. So you still have the chance to submit a presentation and talk
+        about your work on the free desktop at the wonderful event in Berlin that the desktop summit
+        promises to be. It takes place from 6th to 12th August this year and combines the annual
+        conferences of the <ulink url="http://www.kde.org/">KDE</ulink> and <ulink
+          url="http://www.gnome.org/">GNOME</ulink> communities.</para>
+      <para>Some of you might think that your contributions to the free desktop to the event are not
+        relevant enough to warrant submitting a talk. That often is not true. While we will have
+        well-known speakers who have done ground-breaking things on the free desktop, we all have
+        started small, and sometimes especially the small projects, which are still young, are the
+        most interesting ones to hear about. So please don't hesitate to try it, submit a
+        presentation, talk about the projects you are passionate about, share the love for the free
+        desktop with the community. Berlin is the right place for this.</para>
+      <!--($ ld: 26.3.11 sm $)-->
+    </blockquote>
   </sect2>
   <!--
     <sect2>

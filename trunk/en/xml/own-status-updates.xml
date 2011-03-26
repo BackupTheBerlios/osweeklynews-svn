@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,53 +19,65 @@
 -->
 <sect1 role="status-updates">
   <title>Status Updates</title>
-<!--
+  <!--
   <sect2 role="board">
     <title>Board</title>
     <blockquote>
       <title>openSUSE Weekly News searches for contributors</title>
       <para></para>
     </blockquote>
-    </sect2> -->  <sect2 role="distribution">
+    </sect2> -->
+  <sect2 role="distribution">
     <title>Distribution</title>
-<!--
     <blockquote>
       <title>
-        <ulink url="http://dominique.leuenberger.net/blog/?p=142">Dominique Leuenberger: Enlightenment 1.0.0 for openSUSE</ulink>
+        <ulink url="http://lists.opensuse.org/opensuse-factory/2011-03/msg00701.html">Stephan Kulow:
+          Status: distribution</ulink>
       </title>
-      <para>It’s been a long time since I was in touch with Enlightenment, back in the young days I
-        used it as my first alternative Desktop Environment on Windows, before actually daring to
-        switch to Linux. </para>
-        </blockquote> -->    <itemizedlist>
+      <para>We finally managed to make the legal review steps transparent. So if you submit a
+        package now to factory, a "legal-auto" group is asked to review it - this is done by a
+        script of Jýrgen, which checks if the package was reviewed before. If not, a "legal-team"
+        group is asked to review.</para>
+      <para>So the requests no longer appear to be ignored. In future we plan to do the same with
+        some check-auto and check-manual to review build status and basic checks as soon as
+        possible.</para>
+      <para>Greetings, Stephan P.S. Right now we can't publish new builds as kiwi requires a package
+        that does not exist ;(</para>
+      <!--($ ld: 23.3.11 sm $)-->
+        </blockquote>
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug
+            Reports</ulink></para>
       </listitem>
       <listitem>
-        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
+        <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting
+            FAQ</ulink></para>
       </listitem>
     </itemizedlist>
   </sect2>
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title>
-        <ulink url="http://blog.susestudio.com/2011/03/new-beta-features-revision-management.html">SUSE Studio: New Beta Features: Revision Management 101</ulink>
-      </title>
-      <para>We&apos;ve been working on ways to make collaboration on SUSE Studio appliances easier. The
-        first step down that road is to make your appliance&apos;s build history act live a revision
+      <title><ulink
+          url="http://blog.susestudio.com/2011/03/new-beta-features-revision-management.html">SUSE
+          Studio: New Beta Features: Revision Management 101</ulink></title>
+      <para>We've been working on ways to make collaboration on SUSE Studio appliances easier. The
+        first step down that road is to make your appliance's build history act live a revision
         control system. To that end, our beta users will find a few new features available to
-        them:viewing an appliance&apos;s complete configuration on one page; the opportunity to branch an
+        them:viewing an appliance's complete configuration on one page; the opportunity to branch an
         appliance by cloning a specific version; and a dynamically generated changelog between each
         version. (...)</para>
-<!-- ($ ld: 22.3.11 sm $) -->    </blockquote>
+      <!-- ($ ld: 22.3.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2 role="teamreports">
     <title>Team Report</title>
-<!--
+    <!--
     <sect3 role="artteam">
       <title>Art Team</title>
       <blockquote>
@@ -76,7 +89,8 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -224,11 +238,15 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/03/21/policy-proposal-for-factory-make-source-of-tar-balls-trackable/">Adrian Schröter: Policy proposal for Factory: Make source of tar balls trackable</ulink>
+          <ulink
+            url="http://lizards.opensuse.org/2011/03/21/policy-proposal-for-factory-make-source-of-tar-balls-trackable/"
+            >Adrian Schröter: Policy proposal for Factory: Make source of tar balls
+            trackable</ulink>
         </title>
         <para>I like to suggest a general policy for openSUSE:Factory project to document from where
           a tar ball (or any other file from upstream) is comming from. Why that ? It makes it much
@@ -255,7 +273,9 @@
           prefix again. </para>
         <para>The later mode has the advantage that you can still do version upgrades via slow
           connections and let the server download the files.</para>
-        <para>Please find some more details about new possibilities with the source services <ulink url="http://doc.opensuse.org/products/draft/OBS/obs-reference-guide/cha.obs.source_service.html">here</ulink>. </para>
+        <para>Please find some more details about new possibilities with the source services <ulink
+            url="http://doc.opensuse.org/products/draft/OBS/obs-reference-guide/cha.obs.source_service.html"
+            >here</ulink>. </para>
         <para>An example setup for this can be tested via
           <screen>osc bco home:adrianSuSE:FactoryTest bc</screen></para>
         <para>and do for example a version downgrade to 1.05 version to see how it works. Please
@@ -266,12 +286,13 @@
           which could run in some openSUSE:Factory:AutoUpdate project and tries automatic version
           upgrades when upstream releases a new version. They could be reviewed and just picked
           (directly or with additional manual fixes). </para>
-        <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-<!--($ ld: 21.3.11 sm $)-->      </blockquote>
+        <para><emphasis role="bold">License</emphasis>: <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+        <!--($ ld: 21.3.11 sm $)-->
+      </blockquote>
       <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2011/03/23/osc-plugin-changes/">Alexander Naumov: osc plugin – changes</ulink>
-        </title>
+        <title><ulink url="http://lizards.opensuse.org/2011/03/23/osc-plugin-changes/">Alexander
+            Naumov: osc plugin – changes</ulink></title>
         <para><ulink url="http://en.opensuse.org/openSUSE:OSC">OSC</ulink> is a console client for
             <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>. It’s written on
           python and easy in studying and using packager’s tool. However there are situations when
@@ -281,7 +302,7 @@
           the features, which already implemented osc, as well as provide an output in a convenient
           format for you. For example, if I want to check changes in kdelibs4 between openSUSE:11.3
           and openSUSE:11.4, I can do something like
-          this:<screen>&gt; osc rdiff openSUSE:11.3 kdelibs4 openSUSE:Factory kdelibs4</screen></para>
+          this:<screen>> osc rdiff openSUSE:11.3 kdelibs4 openSUSE:Factory kdelibs4</screen></para>
         <para>After that I will receive a detailed output about all changes. Yes, that’s great… but
           not always it’s convenient. For example, in this case output will contain more than 2000
           strings, and I need time to find, say, a *.changes file if I want quickly to understand
@@ -289,13 +310,15 @@
           program (as often happens in practice), I have to shape this data. Unfortunately osc is
           not as intelligent and can’t show changes from one file (from *.changes, for example)
           only…(...)</para>
-<!--($ ld: 21.3.11 sm $)-->      </blockquote>
+        <!--($ ld: 21.3.11 sm $)-->
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
-        <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
+        <para>Statistics can found at <ulink url="http://build.opensuse.org"
+          >Buildservice</ulink></para>
       </formalpara>
     </sect3>
-<!--
+    <!--
     <sect3 role="evergreen">
       <title>Evergreen/Tumbleweed Team</title>
       <blockquote>
@@ -303,7 +326,8 @@
         <para></para>
       </blockquote>
     </sect3>
-    --><!--
+    -->
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -314,16 +338,17 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html">Frédéric Crozat: GNOME 3 Live image, release 0.1.1</ulink>
-        </title>
+        <title><ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html"
+            >Frédéric Crozat: GNOME 3 Live image, release 0.1.1</ulink></title>
         <para>As always, another week, another release, aka 0.1.1</para>
         <mediaobject>
           <imageobject>
-            <imagedata width="20%" fileref="http://farm3.static.flickr.com/2628/3777290817_9d3513c85f_z.jpg"/>
+            <imagedata fileref="http://farm3.static.flickr.com/2628/3777290817_9d3513c85f_z.jpg"
+              width="20%"/>
           </imageobject>
         </mediaobject>
         <para>This week release is a polish release : <itemizedlist>
@@ -345,12 +370,16 @@
             </listitem>
           </itemizedlist></para>
         <para>Another service announcement : my GNOME3 openSUSE 11.3 repository will soon be removed
-          ; packages will be only available for openSUSE 11.4 (same <ulink url="https://build.opensuse.org/project/show?project=home%3Afcrozat%3Agnome3">OBS project</ulink>). Therefore, I strongly suggest to upgrading your system to openSUSE
+          ; packages will be only available for openSUSE 11.4 (same <ulink
+            url="https://build.opensuse.org/project/show?project=home%3Afcrozat%3Agnome3">OBS
+            project</ulink>). Therefore, I strongly suggest to upgrading your system to openSUSE
           11.4. </para>
-        <para>You know the url to fetch the latest release : <ulink url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
-<!--($ ld: 21.3.11 sm $)-->      </blockquote>
+        <para>You know the url to fetch the latest release : <ulink
+            url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
+        <!--($ ld: 21.3.11 sm $)-->
+      </blockquote>
     </sect3>
-<!--
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -457,7 +486,8 @@
           openSUSE 11.4. Feedback can go to the related wiki pages or straight to
           opensuse-kde@.</para>
      </blockquote> 
-     </sect3> --><!--
+     </sect3> -->
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -505,12 +535,14 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="medical">
       <title>Medical Team</title>
 
       <para>...</para>
-      </sect3> --><!--
+      </sect3> -->
+    <!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -525,7 +557,8 @@
           core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we
           now have a GIT core that can be easily updated and which is fully portable.(...)</para>
       </blockquote>
-    </sect3> -->    <sect3 role="openfateteam">
+    </sect3> -->
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
@@ -571,10 +604,12 @@
             for the journal so it needs to scan it for every metadata read. (Yeah, really.)
             (...)&quot;</para>
         </blockquote>
-<!-- ($ ld: 26.3.11 sat *updated* $) -->      </sect4>
+        <!-- ($ ld: 26.3.11 sat *updated* $) -->
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
-        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment
+            if you get interested.</emphasis></para>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/312048">KDE &quot;System settings&quot; intergration of YaST</ulink>
@@ -598,23 +633,26 @@
             <ulink url="https://features.opensuse.org/312108">openSUSE GNOME Spin - A competitor to Mint, Fusion, Fuduntu and friends...</ulink>
           </title>
           <para>&quot;I&apos;m consulting the openSUSE community regarding the creation of a openSUSE GNOME2 spin featuring some &apos;special&apos; features and with a heavy customization layer, including some testing software.
-The main purpose for this is to present a openSUSE powered competitor to what is happening on other distributions, and to rival strong names such as Mint Linux, Fusion (Fedora), Fuduntu (Fedora) and friends... (...)&quot;</para>
+            The main purpose for this is to present a openSUSE powered competitor to what is happening on other distributions, and to rival strong names such as Mint Linux, Fusion (Fedora), Fuduntu (Fedora) and friends... (...)&quot;</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/312120">Make default KDE theme greenish, to match whole system</ulink>
           </title>
           <para>&quot;We really need to make default KDE theme green, to match whole system greenish appearance. It&apos;s involves just two steps: make default green icon set (like
-http://gnome-look.org/content/show.php/Oxygen-Refit+2+-+Green+Version?content=84683 ) and make default green colours (like
-http://kde-look.org/content/show.php/Ordinary+Green?content=107944 ) &quot;</para>
+            http://gnome-look.org/content/show.php/Oxygen-Refit+2+-+Green+Version?content=84683 ) and make default green colours (like
+            http://kde-look.org/content/show.php/Ordinary+Green?content=107944 ) &quot;</para>
         </blockquote>
-<!-- ($ ld: 26.3.11 sat *replaced with newer ones* $) -->      </sect4>
+        <!-- ($ ld: 26.3.11 sat *replaced with newer ones* $) -->
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
-        <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
+        <para>Statistics for openSUSE distribution <ulink
+            url="https://features.opensuse.org/statistic/product/opensuse_dist">in
+          openFATE</ulink></para>
       </sect4>
     </sect3>
-<!--
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -638,40 +676,44 @@ http://kde-look.org/content/show.php/Ordinary+Green?content=107944 ) &quot;</par
         <para>Most developers are already concentrated on LO-3.4 release. I hope that the first beta
           packages will be ready in the beginning of April.</para>
      </blockquote>
-    </sect3> -->    <sect3 role="testing">
+    </sect3> -->
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-03/msg00008.html">Weekly News for March 19</ulink>
-        </title>
-        <para>The Testing Core Team met March 14, 2011 at 18:00 UTC.</para>
-        <para>Our first item of business was to discuss our experiences with openSUSE 11.4, the new
-          bugs we had found, and the status of the &quot;most annoying bugs&quot;. Most of the latter have
-          been fixed, and none of us had found any serious bugs. </para>
-        <para>We then discussed the plans for the next &quot;Open Bugs Day&quot;, which will be from 00:00 to
-          23:59 UTC, Saturday April 2, 2011. The emphasis will be on identifying those bugs reported
-          for 11.2 and older that are still present in 11.4. We will not attempt to squash these
-          bugs, but to make sure that none have been forgotten. After the release of 11.5 M5, we
-          will have a bug-squashing day. </para>
-        <para>We also discussed changes to the Web application that Bernhard Wiedermann wrote to
-          help in bug selection and processing. The next meeting of the TCT will be on March 28 at
-          17:00 UTC to test that application and do our final preparations for the event. </para>
-        <para>Please plan to join the bug identification effort.</para>
-<!-- ($ ld: 18.3.11 sm $) -->      </blockquote>
+        <title><ulink url="http://lists.opensuse.org/opensuse-testing/2011-03/msg00010.html">Larry
+            Finger: Weekly News for March 26</ulink></title>
+        <para>The Testing Core Team will hold an IRC meeting on March 28, 2011 at 17:00 UTC. The
+          time change reflects that nearly everyone is now on summer time. </para>
+        <para>We will be finalizing our plans for the next "Open Bugs Day", which will be from 00:00
+          to 23:59 UTC, Saturday April 2, 2011. As written before, the emphasis will be on
+          identifying those bugs reported for 11.2 and older that are still present in 11.4. We will
+          not attempt to squash these bugs, but to make sure that none have been forgotten. After
+          the release of 11.5 M5, we will have a bug-squashing day. We will also be testing and
+          commenting on the Web application that Bernhard Wiedermann has written to help in bug
+          selection and processing. </para>
+        <para>This will be the last Weekly News before the event. Please plan to join the bug
+          identification effort. The specific Web links for "Open Bugs Day" are not available to me
+          now; however, you will be able to access them from <ulink
+            url="http://en.opensuse.org/openSUSE:Testing"
+            >http://en.opensuse.org/openSUSE:Testing</ulink>. </para>
+        <!-- ($ ld: 26.3.11 sm $) -->
+      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
-          <para>Daily updated translation statistics are available on the <ulink url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
+          <para>Daily updated translation statistics are available on the <ulink
+              url="http://i18n.opensuse.org/">openSUSE Localization Portal</ulink>.</para>
         </listitem>
         <listitem>
           <para><ulink url="http://i18n.opensuse.org/stats/trunk/toplist.php">Trunk Top-List</ulink>
-            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization Guide</ulink></para>
+            – <ulink url="http://en.opensuse.org/OpenSUSE_Localization_Guide">Localization
+              Guide</ulink></para>
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+    <!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -727,15 +769,18 @@ http://kde-look.org/content/show.php/Ordinary+Green?content=107944 ) &quot;</par
             </listitem>
           </itemizedlist></para>
       </blockquote>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
       <para>...</para>
-    </sect3> --><!--
+    </sect3> -->
+    <!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->  </sect2>
+      </sect3> -->
+  </sect2>
 </sect1>

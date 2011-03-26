@@ -24,53 +24,113 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://blog.cboltz.de/archives/58-Releases!.html">Christian Boltz:
-        Releases!</ulink></title>
-    <para>One blog post, two releases:<itemizedlist>
-        <listitem>
-          <para>I just released <ulink url="http://sf.net/projects/postfixadmin">PostfixAdmin
-              2.3.3</ulink> - a pure bugfix release, see the <ulink
-              url="http://postfixadmin.svn.sourceforge.net/viewvc/postfixadmin/tags/postfixadmin-2.3.3/CHANGELOG.TXT"
-              >Changelog</ulink> for details;-)</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://software.opensuse.org/">openSUSE 11.4</ulink> was released last
-            thursday - with lots of new versions, features, and, most pleasant for me, with AppArmor
-            2.5.1 and working AppArmor utilities :-) See the <ulink
-              url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">official openSUSE Release
-              Announcement</ulink> for details.</para>
-        </listitem>
-      </itemizedlist></para>
-    <!-- ($ ld: 16.3.11 sm $) -->
+    <title><ulink url="http://holger123.wordpress.com/2011/03/23/smb-traffic-analyzer-1-2-3-released/">Holger Hetterich: SMB Traffic Analyzer 1.2.3 released</ulink></title>
+    <para>Should you read this in a blogroll, and <emphasis role="italic"><emphasis role="bold"
+          >think what you read is from outer space</emphasis></emphasis>: This article is about the
+        <emphasis role="bold">SMB Traffic Analyzer project</emphasis>, more information is <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/">here</ulink>.</para>
+    <para>The team is happy to announce the release of <emphasis role="bold">SMB Traffic Analyzer
+        1.2.3</emphasis>. It is loaded with new features and lots of bug fixes, driving SMBTA
+      forward in terms of scalability, performance, and functionality. Let’s dive into and begin
+      with the most important news on <emphasis role="bold">smbtad</emphasis>, the daemon program
+      collecting data. A problem identified by several users was the fact that the created database
+      grows too large after a short time. Well, at this level <emphasis role="bold">smbtad
+      </emphasis>was doing real data mining and stores any single VFS function in it’s database. A
+      copy of a single file that is larger than a megabyte could create more than a hundred entries
+      in the database. <emphasis role="bold">smbtad</emphasis> now solves this issue with a reworked
+      cache subsystem that is implemented as a bi-tree algorithm adding up similar VFS entries for
+      up to 5 seconds, and thus creating an interpolation of the data to be stored. The result is a
+      much smaller database and should make <emphasis role="bold">smbtad</emphasis> much faster. The
+      user can change the time period while smbtad is summing up similar entries, and also force
+      smbtad to do full data mining if wanted. (<emphasis role="bold">bnc#669679</emphasis>).</para>
+    <para>If your main target for using SMB Traffic Analyzer is to generate graphics with <emphasis
+        role="bold">rrddriver</emphasis> or to run <emphasis role="bold">smbtamonitor</emphasis>,
+      there are good news. <emphasis role="bold">The database handling in smbtad can be completely
+        shut down.</emphasis> In this mode, smbtad only acts as a repeater, sending the data to the
+      real-time clients, without the overhead of maintaining the database. The client programs have
+      been adapted for this (<emphasis role="bold">bnc#668193</emphasis>).We have implemented a way
+      to parse data from the VFS module without re-allocating the data in the systems memory. This
+      makes smbtad much faster, reduces memory handling a lot, and much of the underlying code has
+      been simplified (<emphasis role="bold">bnc#671346</emphasis>). The real time monitor code had
+      problems when several smbtamonitor instances where connected, and the throughput display did
+      not work in 1.2.2. As a consequence, we reworked the monitor code, simplified the code a lot,
+      and removed throughput calculation from smbtad, reimplementing it in the <emphasis role="bold"
+        >smbtamonitor</emphasis> client (<emphasis role="bold">bnc#669809</emphasis>).</para>
+    <figure>
+      <title>This picture is showing the HTML output of a fuzzy search done on a SMBTA Stresstest appliance.</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://holger123.files.wordpress.com/2011/03/fuzzy-search.png"
+            width="30%" align="right"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>Due to a bug in the CmakeFile of 1.2.2. both smbtad and smbtatools where unable to install
+      anywhere else than /usr; the installation prefix can now be given with the
+      CMAKE_INSTALL_PREFIX variable (<emphasis role="bold">bnc#673767</emphasis>). The <emphasis
+        role="bold">smbtatorturesrv</emphasis> program, distributing unique filenames and supporting
+      smbtatorture when running networked and in parallel, sometimes crashed on 32bit architectures,
+      fixed in <emphasis role="bold">bnc#667101</emphasis>.</para>
+    <para>Two new functions have been added to smbtatools. First off, there’s now a fuzzy search
+      function in <emphasis role="bold">smbtaquery</emphasis>, allowing to do searches over the
+      whole data set and supports unix wildcards. If the given search pattern is found, the function
+      is identifying the object (<emphasis role="bold">bnc#599145</emphasis>). </para>
+    <figure>
+      <title>SMBTA Stresstest</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://holger123.files.wordpress.com/2011/03/smbtamonitor-1-2-31.png"
+            width="20%" align="left"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>
+    <para>Also, <emphasis role="bold">smbtaquery</emphasis>, now includes a throughput calculation
+      function, to let the<ulink
+        url="http://holger123.files.wordpress.com/2011/03/smbtamonitor-1-2-31.png"> </ulink> user
+      quickly view the data throughput of an object over the last minutes, hours or even days
+        (<emphasis role="bold">bnc#668190</emphasis>). As mentioned before, throughput display in
+        <emphasis role="bold">smbtamonitor</emphasis> did not work in 1.2.2. <emphasis role="bold"
+        >smbtamonitor</emphasis> now does this on it’s own, no longer requesting this calculation
+      work from smbtad, and the interface has been slighty reworked. And finally, it now has
+      keyboard handling.</para>
+    <para>The “top” function of smbtaquery has been reworked to display more information on the
+      entries in the produced list. With every user and share, the domain is listed, and with any
+      file, the corresponding share and domain is shown additionally (<emphasis role="bold"
+        >bnc#668172</emphasis>).</para>
+    <para>The SMBTA documentation has of course been updated to reflect the current state and is
+      already uploaded <ulink url="http://morelias.org/smbta/smbta-guide.html">here</ulink>. <ulink
+        url="http://build.opensuse.org">openSUSE’s Buildservice</ulink> already consumed SMB Traffic
+      Analyzer 1.2.3, and <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/smb-traffic-analyzer-download/"
+        >downloads are available</ulink>. Furthermore, with version 1.2.3, <emphasis role="bold">SMB
+        Traffic Analyzer</emphasis> debuts on <ulink url="http://www.gentoo.org">Gentoo
+        Linux</ulink>, and shall be available in the Gentoo Software directory soon. Of course, SMB
+      Traffic Analyzer should appear in <emphasis role="bold">openSUSE Tumbleweed</emphasis> very
+      soon.</para>
+    <figure>
+      <title>The german ADMIN magazine released an extensive article about SMB Traffic Analyzer</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://holger123.files.wordpress.com/2011/03/admin_02_11_300x407_rgb.jpg"
+            width="10%" align="right"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>
+    <para>In other news, SMB Traffic Analyzer recently got <emphasis role="italic"><emphasis
+          role="bold">print media attention with a six page long, workshop-like
+        article</emphasis></emphasis> about it in the German <ulink
+        url="http://www.admin-magazin.de/">ADMIN Magazine</ulink>. The article is very detailed and
+      really good in showing what SMB Traffic Analyzer can do and how to configure it, and even
+      describes the SMBTA Stresstest appliance! Good stuff, the SMBTA Development team is happy
+      about this work and suggests to buy the magazine if you read German and are interested in SMB
+      Traffic Analyzer. Moreover, we added a new page “<ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/contribute/"
+        >Develop/Contact/Contribute</ulink>” to the homepage, to make it easier for people to get
+      into SMB Traffic Analyzer development, or for users to talk about SMBTA. A new release of the
+      SMBTA Stresstest appliance is ahead, including SMBTA 1.2.3, making it easy to give it a quick
+      test. Stay tuned. </para>
+    <!-- ($ ld: 26.3.11 sm $) -->
   </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/gmusicbrowser/">Packman: gmusicbrowser
-        1.1.6</ulink></title>
-    <para>An open-source jukebox for large collections of mp3/ogg/flac/mpc files</para>
-    <!--($ ld: 17.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/bombono">Packman: bombono
-        1.0.1</ulink></title>
-    <para>DVD authoring program</para>
-    <!--($ ld: 17.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/clementine">Packman: clementine
-        0.6</ulink></title>
-    <para>A cross-platform Music Player based on Amarok 1.4</para>
-    <!--($ ld: 17.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/imageshack-uploader">Packman:
-        imageshack-uploader 2.2.0</ulink></title>
-    <para>Imageshack Uploader</para>
-    <!--($ ld: 18.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://packman.links2linux.org/package/gnash">Packman: gnash
-        0.8.8.99.git20110317.1841</ulink></title>
-    <para>Free Flash movie player</para>
-    <!--($ ld: 18.3.11 sm $)-->
-  </blockquote>
+
 </sect1>
