@@ -25,8 +25,8 @@
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE
       Security Announce</ulink> mailing list.</para>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-03/msg00002.html"
-        >SUSE Security Announcement: Mozilla Firefox (SUSE-SA:2011:013)</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-03/msg00003.html"
+        >SUSE Security Announcement: IBM Java (SUSE-SA:2011:014)</ulink></title>
     <table frame="void">
       <caption>Security Announce</caption>
       <col width="1.02*"/>
@@ -40,21 +40,22 @@
       <tbody>
         <tr>
           <td>Package:</td>
-          <td><emphasis role="bold">MozillaFirefox,MozillaThunderbird,seamonkey</emphasis></td>
+          <td><emphasis role="bold">java-1_6_0-ibm,java-1_5_0-ibm,java-1_4_2-ibm</emphasis></td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>SUSE-SA:2011:013</td>
+          <td>SUSE-SA:2011:014</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Tue, 15 Mar 2011 11:00:00 +0000</td>
+          <td>Tue, 22 Mar 2011 12:00:00 +0000</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.2 openSUSE 11.3 openSUSE 11.4 SLE SDK 10 SP3 SUSE Linux Enterprise Desktop
-            10 SP3 SUSE Linux Enterprise Server 10 SP3 SUSE Linux Enterprise Software Development
-            Kit 11 SP1 SUSE Linux Enterprise Desktop 11 SP1 SUSE Linux Enterprise Server 11 SP1</td>
+          <td>SUSE SLES 9 Open Enterprise Server Novell Linux POS 9 SLE SDK 10 SP3 SUSE Linux
+            Enterprise Desktop 10 SP3 SUSE Linux Enterprise Server 10 SP3 SUSE Linux Enterprise SUSE
+            Linux Enterprise Software Development Kit 11 SP1 SUSE Linux Enterprise Server 11
+            SP1</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
@@ -62,6 +63,58 @@
         </tr>
       </tbody>
     </table>
-    <!--($ ld: 18.3.11 sm $)-->
+    <!--($ ld: 26.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-03/msg00005.html"
+        >SUSE Security Announcement: Linux kernel (SUSE-SA:2011:015)</ulink></title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.02*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td><emphasis role="bold">kernel</emphasis></td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>SUSE-SA:2011:015</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td> Thu, 24 Mar 2011 16:00:00 +0000</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>SLE SDK 10 SP3 SUSE Linux Enterprise Desktop 10 SP3 SUSE Linux Enterprise Server 10
+            SP3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>remote denial of service</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--($ ld: 26.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-03/msg00004.html"
+        >Advance discontinuation notice for openSUSE 11.2</ulink></title>
+    <para>Dear opensuse-security-announce subscribers and openSUSE users, SUSE Security announces
+      that the SUSE Security Team will <emphasis role="bold">stop releasing updates for openSUSE
+        11.2 soon</emphasis>. Having provided security-relevant fixes for the last two releases and
+      two months, we will <emphasis role="bold">stop releasing updates after May 12th
+        2011</emphasis>. Discussions on whether a community driven extension of the maintenance like
+      Evergreen for openSUSE 11.1 are ongoing. As a consequence, the openSUSE 11.2 distribution
+      directory on our server download.opensuse.org will be removed from /distribution/11.2/ to free
+      space on our mirror sites. The 11.2 directory in the update tree /update/11.2 will follow, as
+      soon as all updates have been published. (...)</para>
   </blockquote>
 </sect1>
