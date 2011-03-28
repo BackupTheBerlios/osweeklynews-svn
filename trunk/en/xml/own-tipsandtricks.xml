@@ -22,16 +22,22 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxuser.co.uk/tutorials/firefox-4-sync-step-by-step/">LinuxUser &amp; Developer/Dmitri Popov: Firefox 4 Sync step-by-step</ulink>
+        <ulink
+          url="http://www.unixmen.com/linux-tutorials/documentations-a-howto/1578-upgrade-opensuse-to-114"
+          >Unixmen: Howto upgrade Opensuse to 11.4</ulink>
       </title>
-      <para>Firefox 4′s brand new Sync feature is one of the main attractions of the latest release. It allows you to sync browser data, such as bookmarks, preferences, history, and tabs – but not extensions – across multiple Firefox installations. Here’s how it’s done… (...)</para>
-<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+      <para> How to upgrade Opensuse 11.x to 11.4 ? Unixmen gives the answer... (...)</para>
+<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/424005:using-googles-webp-image-format-with-open-tools-on-linux">Linux.com/Nathan Willis: Using Google&apos;s WebP Image Format with Open Tools on Linux</ulink>
+        <ulink url="http://masterpatricko.blogspot.com/2011/03/opensuse-114-first-steps.html">Tejas
+          Guruswamy: openSUSE 11.4 - first steps</ulink>
       </title>
-      <para>Google&apos;s WebM project, the free and open video codec based on VP8, offers tantalizing benefits for fans of Linux and open source: better quality, plus full support in the browser and other applications, thanks to the lack of royalty-demanding patent holders. Often overlooked in the WebM story is the other media format unveiled by Google at the same time: WebP, a lossy still-image format said to provide better-than-JPEG quality at substantially slimmer file sizes. Is <ulink url="http://code.google.com/speed/webp/">WebP</ulink> poised to displace the stodgy old photo format? Let&apos;s take a look at the free tools available for writing, converting, and displaying WebP files to find out. (...)</para>
-<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+      <para>Finally term is over and I'm on my Easter break, which means I can step up my
+        contributions again. First step was to install the new release on my desktop - openSUSE 11.4
+        looks really, really good! No hassles during installation at all, took about 20mins from
+        DVD. (...)</para>
+<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -53,14 +59,57 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://psankar.blogspot.com/2011/03/pre-vs-post-increment-performance.html">Sankar P: Pre vs Post Increment</ulink>
+        <ulink url="http://dominique.leuenberger.net/blog/?p=178">Dominique Leuenberger: how to fix
+          brp and rpmlint warnings – today:I: Program causes undefined operation(likely same
+          variable used twice and post/pre incremented in the same expression)</ulink>
       </title>
-      <para>While browsing across some open-source projects, I have seen code snippets of
-        type:<screen>for (i = 0; i &lt; n; ++ i )</screen></para>
-      <para>The pre-increment <quote>++ i</quote> confused me as to why one should use it, as post
-        increment is most commonly used. Googling told me that <emphasis role="italic">pre-increment is faster than post increment as the value of i need not be stored to a temporary register before the increment operation</emphasis>. This sounded logical to me and I believed it
-        and used pre-increment in all my loops. I didn&apos;t bother to measure it though. (...)</para>
-<!-- ($ Id: 22.3.11 sm $)-->    </blockquote>
+      <para>It seems the planned series sort of finds an audience, which in turn of course is
+        motivational to keep on writing it. Today, we’ll have a look at this Informational message
+        in BRP
+        checks:<screen>I: Program causes undefined operation
+ (likely same variable used twice and post/pre incremented in the same expression).
+ e.g. x = x++; Split it in two operations.</screen></para>
+      <para>This is currently informational only and is not failing the build, but you might want to
+        address them together with upstream. </para>
+      <para>I assume you do know what “a++” means in C (otherwise, you should start reading
+        C-books), so we just try to reproduce this error in a simple c test
+        case:<screen>#include &lt;stdio.h>
+ 
+int main() {
+ int i=5;
+ i = i++ * ++i;
+ printf("The current value of i is %d\n", i);
+ return 0;
+ }</screen></para>
+      <para>When building this using gcc -Wall test.c, we get this compiler warning (which in turn
+        is what brp translates to the information we’re discussing
+        here)<screen>> gcc -Wall test2.c
+ test.c: In function ‘main’:
+ test.c:5:5: warning: operation on ‘i’ may be undefined</screen></para>
+      <para>So, let’s first see for ourselves what we would expect this to be? Hmm.. already for us,
+        this looks not logic (and I surely hope nobody would write this code). Let’s just see what
+        starting this executable gives shall we?<screen>The current value of i is 37</screen></para>
+      <para>Now, is this surprising? We multiplied, assigned it to i and as a result we get a prime
+        number? By closely analyzing the line you will likely understand what the compiler did. But
+        was this expected? If this is actually what the programmer intended, the code should just be
+        rewritten to be more logical, like:<screen>i = (i+1) ^2 + 1;</screen></para>
+      <para>This is understandable for all of us and does not yield the surprise of what is going
+        on.</para>
+      <para>And that is actually all this warning is about: it requests the programmer to write code
+        that can be understood and does not depend on what the compiler interprets. It might even
+        very well be that the different optimization levels or the usage of different compilers
+        might end up in different results.</para>
+      <para>If you want to read some more about this topic, I suggest to have a look at:<itemizedlist>
+          <listitem>
+            <para><ulink url="http://en.wikipedia.org/wiki/Sequence_point">Wikipedia</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink
+                url="http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html"
+                >http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html</ulink></para>
+          </listitem>
+        </itemizedlist></para>
+<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://azouhr.wordpress.com/2011/03/22/itunes-on-opensuse-11-4/">Berthold Gunreben: iTunes on openSUSE 11.4</ulink>
