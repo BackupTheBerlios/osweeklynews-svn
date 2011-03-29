@@ -22,79 +22,64 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://mschlander.wordpress.com/2011/03/12/opensuse-11-4-has-been-released/">OMG! SUSE! team: On release day, it is like a big dump truck</ulink></title>
-    <para>Shortly after the initial release of openSUSE 11.4, I posted some <ulink
-        url="http://omgsuse.com/content/rapidly-downloading-opensuse-114-bittorrent">giant
-        BitTorrent links</ulink> to speed up your downloading of openSUSE. Now that the initial
-      flood of downloads has come and gone, I wanted to report back with some statistics shared by
-      openSUSE Contributor <ulink
-        url="http://news.opensuse.org/2008/03/01/people-of-opensuse-marcus-rueckert/">Marcus
-        Rueckert</ulink>.</para>
-    <para><emphasis role="bold"><emphasis role="italic">Note</emphasis></emphasis>: These numbers
-      are for BitTorrent downloads only.</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
-    <!-- ($ ld: 21.3.11 sm $) -->
+    <title><ulink url="http://kohei.us/2011/03/28/mdds-0-5-2-released/">Kohei Yoshida: mdds 0.5.2
+        released</ulink></title>
+    <para>I’m happy to announce that version 0.5.2 of <ulink
+        url="http://code.google.com/p/multidimalgorithm/">Multi-Dimensional Data Structure
+        (mdds)</ulink> is available for download from the link below.</para>
+    <para><ulink url="http://multidimalgorithm.googlecode.com/files/mdds_0.5.2.tar.bz2"
+        >http://multidimalgorithm.googlecode.com/files/mdds_0.5.2.tar.bz2</ulink></para>
+    <para>This is a bug fix release. I would like to thank David Tardon for fixing several important
+      bugs as well as implementing some new API’s for flat_segment_tree. In fact, the majority of
+      changes between 0.5.1 and 0.5.2 are from David.</para>
+    <para>Here is the run-down of the major changes since 0.5.1:<itemizedlist>
+        <listitem>
+          <para>flat_segment_tree<itemizedlist>
+              <listitem>
+                <para>fixed a crash on assignment by properly implementing assignment operator().
+                </para>
+              </listitem>
+              <listitem>
+                <para>fixed several bugs in shift_right():</para>
+              </listitem>
+              <listitem>
+                <para>shifting of all existing nodes was not handled properly. </para>
+              </listitem>
+              <listitem>
+                <para>leaf nodes were not properly linked under certain conditions.</para>
+              </listitem>
+              <listitem>
+                <para>shifting with skip node option was not properly skipping the node at insertion
+                  position when the insertion position was at the leftmost node. </para>
+              </listitem>
+              <listitem>
+                <para>implemented min_key(), max_key(), default_value(), clear() and swap().</para>
+              </listitem>
+              <listitem>
+                <para>fixed a bug in operator==() where two different containers were incorrectly
+                  evaluated to be equal. </para>
+              </listitem>
+              <listitem>
+                <para>added quickcheck test code.</para>
+              </listitem>
+            </itemizedlist></para>
+          <para>There is no API-incompatible changes since 0.5.1, so if you are currently using mdds
+            0.5.1, your code should compile with 0.5.2 without any modifications.</para>
+        </listitem>
+      </itemizedlist></para>
+    <!-- ($ ld: 29.3.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/03/13/opensuse-11-4-how-it-goes-in-portugal/">OMG! SUSE! team: Search openSUSE, powered by Google</ulink></title>
-    <para>Community member Brandon Philips introduced <emphasis role="bold"><ulink
-          url="http://search.opensuse.org">search.opensuse.org</ulink></emphasis> to the world on
-      the opensuse-project<ulink url="http://en.opensuse.org/openSUSE:Mailing_lists">mailing
-        list</ulink>. The site is a simple, fast Google-powered search engine for openSUSE.org, the
-        <ulink url="http://forums.opensuse.org/">forums</ulink>, the <ulink
-        url="http://en.opensuse.org">wiki</ulink> and the <ulink
-        url="http://en.opensuse.org/openSUSE:Mailing_lists">mailing lists</ulink>.</para>
-    <para>If you're interested in checking out the code behind <ulink
-        url="http://search.opensuse.org">search.opensuse.org</ulink>, head on over to the <ulink
-        url="http://gitorious.org/search-opensuse-org/search-opensuse-org">repository on
-        Gitorious.org</ulink>.</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://cdn.omgsuse.com/omg/images/susesearch_crushed.png" width="50%"/>
-      </imageobject>      
-    </mediaobject>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
-    <!--($ ld: 22.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://omgsuse.com/content/suse-studio-jumps-114-bandwagon">OMG!SUSE! team: SUSE Studio jumps on the 11.4 bandwagon</ulink></title>
-    <para>With the release of <ulink
-        url="http://omgsuse.com/content/tenth-day-opensuse-114-changed-everything">openSUSE
-        11.4</ulink>, I would like to start talking more and more about <ulink
-        url="http://susestudio.com">SUSE Studio</ulink>. While SUSE Studio might not be a terribly
-      useful tool for the average end-user, for power-users and developers it is quite an impressive
-      piece of technology, built on top of openSUSE and <ulink
-        url="http://en.opensuse.org/Portal:KIWI">KIWI</ulink>.</para>
-    <para>For developers, imagine creating an image of the <emphasis role="italic">ideal</emphasis>
-      test machine, complete with repositories from the <ulink url="http://build.opensuse.org"
-        >openSUSE Build Service</ulink> already enabled and all the necessary dependencies already
-      installed. SUSE Studio <emphasis role="bold">does that</emphasis>.</para>
-    <para>For power-users, imagine having a USB stick or a Live CD with your completely
-      personalized, custom version of openSUSE. All set up and ready to go, whenever you need it.
-      SUSE Studio does that.</para>
-    <para>With the initial release of 11.4, <ulink
-        url="http://blog.susestudio.com/2011/03/opensuse-114-support.html">SUSE Studio announced
-        support for 11.4 appliances</ulink>. Which means you could create a custom openSUSE 11.4
-      appliance <emphasis role="italic">while</emphasis> your <ulink
-        url="http://omgsuse.com/content/rapidly-downloading-opensuse-114-bittorrent">ISO was
-        downloading off BitTorrent</ulink>.</para>
-    <para>Now the team has gone a step further, allowing you to <ulink
-        url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html">upgrade
-        existing 11.3 appliances to openSUSE 11.4</ulink>, with a single button click on <ulink
-        url="http://susestudio.com">SUSEStudio.com</ulink>. <emphasis role="italic">See
-        below:</emphasis></para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://cdn.omgsuse.com/omg/images/susestudio_upgrade.png" width="50%"/>
-      </imageobject>      
-    </mediaobject>
-    <para>(In case you're wondering, the SUSE Studio mascot is named "Dister" and he's a robot. A
-      friendly robot, with three friendly fingers.)</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
-    <!--($ ld: 22.3.11 sm $)-->
+    <title><ulink
+        url="http://oyranos-cms.blogspot.com/2011/03/libre-graphics-meeting-2011-montreal.html"
+        >Kai-Uwe Behrmann: Libre Graphics Meeting 2011 Montreal</ulink></title>
+    <para><ulink url="http://www.libregraphicsmeeting.org/">LGM</ulink> will this year happen in
+      Canada. It is one of the great chances to meet so many of the graphics people out there from
+      the major graphics projects. As more and more artists use libre graphics software the focus
+      shifts from almost a mainly developer event in early years to a mix of artists, users,
+      documentation writers, standardisation people and surely more roles. This gives a unique
+      atmosphere to the event. (...)</para>
+    <!--($ ld: 29.3.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://omgsuse.com/content/poll-are-you-using-114-yet">OMG!SUSE! team: Poll: Are you using 11.4 yet?</ulink></title>

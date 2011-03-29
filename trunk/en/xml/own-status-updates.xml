@@ -60,14 +60,34 @@
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title><ulink url="http://blog.susestudio.com/2011/03/new-beta-features-revision-management.html">SUSE Studio: New Beta Features: Revision Management 101</ulink></title>
-      <para>We've been working on ways to make collaboration on SUSE Studio appliances easier. The
-        first step down that road is to make your appliance's build history act live a revision
-        control system. To that end, our beta users will find a few new features available to
-        them:viewing an appliance's complete configuration on one page; the opportunity to branch an
-        appliance by cloning a specific version; and a dynamically generated changelog between each
-        version. (...)</para>
-      <!-- ($ ld: 22.3.11 sm $) -->
+      <title><ulink
+        url="http://flavio.castelli.name/introducing-dister-a-heroku-like-solution-for-suse-studio"
+        >Flavio Castelli: Introducing dister, a Heroku like solution for SUSE Studio</ulink></title>
+      <para><ulink url="http://susestudio.com">SUSE Studio</ulink> is an awesome tool, with a couple
+        of clicks you can create an openSUSE/SUSE based system and deploy to your hard drive, an usb
+        flash, a live dvd, a VMware/VirtualBox/Xen server and even Amazon EC2 cloud.</para>
+      <para>Suppose you want to create a tailored SUSE Studio appliance to run a Ruby on Rails app,
+        this is a list of things you have to take care of:<itemizedlist>
+          <listitem>
+            <para>install all the gems required by the app (this can be a long list).</para>
+          </listitem>
+          <listitem>
+            <para>install and configure the database used by the app.</para>
+          </listitem>
+          <listitem>
+            <para>install and configure a webserver.</para>
+          </listitem>
+          <listitem>
+            <para>ensure all the required services are started at boot time.</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>You can save some time by cloning <ulink
+          url="http://susegallery.com/a/CZ0T0D/rails-in-a-box">this</ulink> appliance shared on
+          <ulink url="http://susegallery.com/">SUSE Gallery</ulink>, but this is still going to be
+        boring. (...)</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-nc-sa/2.5/it/">CC-BY-NC-SA</ulink></para>
+      <!--($ ld: 29.3.11 sm $)-->
     </blockquote>
   </sect2>
   <sect2 role="teamreports">
