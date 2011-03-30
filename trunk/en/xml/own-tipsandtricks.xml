@@ -43,17 +43,30 @@
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/utilities/find-basics/">BashShell.net/mike: The 5 Days of find</ulink>
+        <ulink
+          url="http://www.unixmen.com/linux-commands/1602-watch-al-jazeera-live-with-one-command"
+          >Unixmen/M. Zinoune (Zinovsky): Watch Al Jazeera Live in Linux with one command</ulink>
       </title>
-      <para>Our &quot;5 days of find&quot; tutorial series is in full swing. This short-course includes tutorials, videos and exercises which are rolled out each day in an effort to help admins use the find command more confidently.
-
-    </para>
-      <para>* <ulink url="http://bashshell.net/utilities/find-basics/">The Basics of find</ulink></para>
-      <para>* <ulink url="http://bashshell.net/utilities/find-criteria/">find Criteria</ulink></para>
-      <para>* <ulink url="http://bashshell.net/utilities/using-time-criteria-with-find/">Using Time Criteria with find</ulink></para>
-      <para>* <ulink url="http://bashshell.net/utilities/find-with-multiple-expressions/">find with Multiple Expressions</ulink>
-(...)</para>
-<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
+      <para>If you are a fun of Aljazeera News channel, this is a nice command that allow you to
+        watch Al Jazeera live in your Linux desktop. I tested the command and is working like a
+        charm.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://cdn.unixmen.com/images/stories/thumbnails/images-stories-videos-aljazeera1-400x225.png"/>
+        </imageobject>        
+      </mediaobject>
+      <para>First check if you have rtmpdump installed, if not install it using the command
+        :<screen>sudo apt-get install rtmpdump</screen></para>
+      <para>Now to start watching Aljazeera live, open terminal and enter the following
+        command</para>
+      <para><emphasis role="bold">To use Mplayer
+        :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y "aljazeera_en_veryhigh" -a "aljazeeraflashlive-live" -o -| mplayer -</emphasis></programlisting></para>
+      <para><emphasis role="bold">To use VLC
+        player:</emphasis><screen>$<emphasis role="bold"><emphasis role="bold"> rtmpdump -v -r  rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y "aljazeera_en_veryhigh" -a "aljazeeraflashlive-live" -o -| vlc -</emphasis></emphasis></screen></para>
+      <para>Enjoy :)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
+          <emphasis role="italic">zypper in rtmpdump</emphasis> instead of sudo apt-get</para>
+<!-- ($ Id: 30.3.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
@@ -221,30 +234,20 @@ return 0;
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://azouhr.wordpress.com/2011/03/21/simple-udev-manipulations/">Berthold Gunreben: Simple udev Manipulations</ulink>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3929346/article.htm"
+          >Serverwatch/Juliet Kemp: Use Linux and WebDAV to Facilitate Online Collaboration</ulink>
       </title>
-      <para>When discovering the /sys file system, one can find quite a number of tunables that look
-        interesting and really have effect on system behavior. Especially when experimenting with
-        different values of read ahead for block devices or e.g. setting the stripe_cache_size for
-        raid5, the performance for my software raid was improved a lot. </para>
-      <para>To make that settings permanent, one can try and go for /etc/init.d/boot.local. More
-        elegant however is to add some udev rule that does the necessary changes for you. It turns
-        out, that this is quite easy. For example, the read ahead for block devices is found in
-        /sys/block/*/bdi/read_ahead_kb. To check your current read ahead of /dev/sda, you may
-        use:<screen>cat /sys/block/sda/bdi/read_ahead_kb</screen></para>
-      <para>However you may also want to change that setting. To accomplish that, just echo the
-        desired number into the read
-        ahead:<screen>echo 4100 &gt; /sys/block/sda/bdi/read_ahead_kb</screen></para>
-      <para>To automatically do the setting when the device appears, just add the following file to
-        /etc/udev/rules.d/83-ra.rules:<screen>cat /etc/udev/rules.d/83-ra.rules
-# increase readahead for sd* devices
-ACTION==&quot;add&quot;, KERNEL==&quot;sd*&quot;, ATTR{bdi/read_ahead_kb}=&quot;4100&quot;</screen></para>
-      <para>When adding a udev rule for this, one just needs to know that “==” (two equal signs) is
-        a check, and “=” (one equal sign) is a setting. </para>
-      <para>Note, that some devices may take the read ahead from the underlying device; noteably
-        when using drbd, setting the read ahead on the underlying device will have the desired
-        effect.</para>
-<!--($ Id: 21.3.11 sm $)-->    </blockquote>
+      <para>The WebDAV protocol enables users to store and share files via HTTP. This is
+        particularly valuable in cases where HTTP is usually read-only, as WebDAV allows writing as
+        well. In addition to accessing documents, users can (with suitable permissions) edit and
+        re-upload them. Think of it as a networked file-system run over HTTP; or as a way of
+        supporting long-distance collaboration on files. The protocol supports locking and
+        versioning information, so once you've accessed the WebDAV folder, you can edit files
+        without risking overwriting other people's edits. These days, there are more and more ways
+        available to undertake online collaboration, but WebDAV remains a useful and straightforward
+        way to share files, especially as it's supported by plenty of software at both server and
+        client end. (...)</para>
+<!--($ Id: 30.3.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.howtoforge.com/how-to-install-apache-solr-and-use-it-with-drupal-and-ispconfig-opensuse-debian">HowtoForge/luisfreitas: How To Install Apache-Solr And Use It With Drupal And ISPConfig (OpenSUSE/Debian)</ulink>
