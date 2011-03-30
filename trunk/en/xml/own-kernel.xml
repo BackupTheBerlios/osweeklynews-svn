@@ -21,33 +21,23 @@
   <title>Kernel Review</title>
   <blockquote>
     <title><ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-Development-of-2-6-39-under-way-series-33-revived-1212988.html">h-online/Thorsten Leemhuis: Kernel Log: Development of 2.6.39 under way, series 33 revived</ulink></title>
-    <para><emphasis role="bold">Among the additions for kernel version .39 are the Xen network
-        backend, support for ipset, and the rudimentary Poulsbo graphics driver; the kernel hackers
-        have now also completely eradicated the BKL. Greg Kroah-Hartman has taken up maintaining the
-        series 33 kernel again because it is the basis of the real-time branch.</emphasis></para>
-    <para>Less than 24ýhours after releasing Linux 2.6.38 <ulink
-        url="http://www.h-online.com/open/features/What-s-new-in-Linux-2-6-38-1205467.html">on
-        Tuesday last week</ulink>, Linus Torvalds started merging the changes for Linux 2.6.39.
-      Among the commits that have already been added is the <ulink
-        url="http://git.kernel.org/linus/f942dc2552b8bfdee607be867b12a8971bb9cd85">Xen network
-        backend</ulink> for Dom0 kernels – however, the storage backend also required for operating
-      a meaningful Dom0 has not yet made it into the kernel.</para>
-    <para>As expected, the last remaining components that use the Big Kernel Lock (BKL) have now
-      been removed, allowing the kernel hackers to completely eradicate the lock via a commit
-      entitled <quote><ulink
-          url="http://git.kernel.org/linus/4ba8216cd90560bc402f52076f64d8546e8aefcb">BKL:That's all,
-          folks</ulink></quote>. Among the <ulink
-        url="http://git.kernel.org/linus/a7b4f989a629493bb4ec4a354def784d440b32c4">new
-        additions</ulink> is the support for the sixth generation of the <ulink
-        url="http://ipset.netfilter.org/">ipset</ulink> program for optimising certain netfilter
-      policies. In the staging area, the developers also <ulink
-        url="http://git.kernel.org/linus/0867b42113ec4eb8646eb361b15cbcfb741ddf5b">added</ulink> a
-        <ulink
-        url="http://www.h-online.com/news/item/Rudimentary-open-source-driver-for-Intel-s-GMA500-Poulsbo-1195125.html"
-        >rudimentary graphics driver</ulink> for the GMA500 graphics chip found in Intel's US15W
-      chip-set, also known as Poulsbo. (...)</para>
-    <!--($ ld: 23.3.11 sm $)-->
+        url="http://www.h-online.com/open/features/Kernel-Log-First-release-candidate-for-Linux-2-6-39-1218465.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: First release candidate for Linux
+      2.6.39</ulink></title>
+    <para><emphasis role="bold">Torvalds said that he considers 2.6.39 more of a solid version with
+        a boring amount of progress – however, with ipset, the Xen network backend, as well as many
+        new and improved drivers, the new kernel, which is expected to be released in late May or
+        early June, does offer numerous improvements which matter to end users.</emphasis></para>
+    <para>Fifteen days after <ulink
+        url="http://www.h-online.com/open/features/What-s-new-in-Linux-2-6-38-1205467.html"
+        >releasing Linux 2.6.38</ulink>, Linus Torvalds has closed the merge window of Linux 2.6.39,
+      and completed the integration of this version's major changes, by <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1119897">issuing 2.6.39-rc1</ulink>. At the
+      end of his release email, Torvalds said <emphasis role="italic"><quote>But on the whole I
+          think this should be one of those 'solid, boring progress' releases.</quote></emphasis>;
+      however, his enthusiasm about the auto-grouping of processes and the VFS optimisations in
+      2.6.38 had been unusually strong.</para>
+    <!--($ ld: 30.3.11 sm $)-->
   </blockquote>
   <!--
   <blockquote>

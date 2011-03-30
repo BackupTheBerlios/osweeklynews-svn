@@ -75,18 +75,95 @@
   <sect2>
     <title>Call for participation</title>
     <blockquote>
-      <title><ulink url="http://www.linuxjournal.com/content/wanted-passionate-geeks">LinuxJournal/Katherine Druckman: Wanted: Passionate Geeks</ulink></title>
-      <para>If you love tinkering with your Linux machine, have ninja sysadmin skills, or are an
-        avid user of open source software in general, <emphasis role="italic">and</emphasis> you
-        love to share your knowledge with others, I'd really like to hear from you.</para>
-      <para>We're looking for a few more passionate techies to join our ranks as contributing
-        LinuxJournal.com authors. We're particularly interested in articles about System
-        Administration, Linux on the desktop, high-performance computing, embedded Linux, web and
-        mobile development, security, and virtualization. If you have an interest in any of these
-        areas, and useful knowledge to share, <ulink url="mailto:webmistress@linuxjournal.com">drop
-          me a line</ulink>. We're always looking for great technical content as well as opinion
-        pieces about the world of open-source software. (...)</para>
-      <!--($ ld: 23.3.11 sm $) -->
+      <title><ulink url="http://blogs.fsfe.org/mario/?p=130">Mario Fux: We need you for Nepomuk
+          (integration)!</ulink></title>
+      <para>First I’d like to thank David Vignoni for his work on the logo for the Randa meeting.
+        It’s the basis for the work of the <ulink url="http://blogs.fsfe.org/mario/?p=121">young
+          informatic trainees</ulink>. But the results are still secret (as even I haven’t seen
+        anything myself but get the first results at the end of this week <inlinemediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://blogs.fsfe.org/mario/wp-includes/images/smilies/icon_wink.gif"/>
+          </imageobject>
+        </inlinemediaobject> .</para>
+      <para>And now to the ideas and proposals (btw this has nothing in common with the <ulink
+          url="http://community.kde.org/GSoC/2011/Ideas">GSoC ideas of KDE</ulink>!). As you
+        probably or hopefully already know the <ulink url="http://nepomuk.kde.org">KDE Nepomuk
+          team</ulink> will have a meeting in <ulink url="http://community.kde.org/Sprints/Randa"
+          >Randa</ulink> this June (from the 1st to the 7th of this month) and we still want
+        application developers to integrate this technology in their application or to work on some
+        interesting and great new ideas. And there will be really good help as <ulink
+          url="http://trueg.wordpress.com/">Sebastian Trýg</ulink> will be in Randa and he is going
+        to do one or the other workshop of Nepomuk basics. And here are some ideas and thoughts of
+        mine to start your imagination engines:</para>
+      <itemizedlist>
+        <listitem>
+          <para>The KDE semantic clipboard. There is <ulink
+              url="http://websvn.kde.org/trunk/playground/base/nepomuk-kde/semclip/">some
+              code</ulink> in the old subversion playground of KDE and in December 2010 I wrote a
+              <ulink url="http://blogs.fsfe.org/mario/thesis_template.pdf">paper</ulink> about this
+            topic. In short, this clipboard enhances to normal one with the capability of knowing
+            what (in the context of meaning) it copy-and-pastes. This clipboard does not just copy
+            numbers and formatting but addresses, geographic coordinates or blbliographic
+            references. Take a look and bring it to a releasable state. There are even some solution
+            proposals in the above mentioned paper.</para>
+        </listitem>
+        <listitem>
+          <para>All of the new <ulink url="http://community.kde.org/KDE_PIM">KDE PIM</ulink>
+            application use Nepomuk technology through their <ulink
+              url="http://community.kde.org/KDE_PIM/Akonadi">Akonadi</ulink> interactions.</para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://www.digikam.org">Digikam</ulink> had (or has?) some capabilities
+            to exchange its information and metadata with the Nepomuk storage. What about tagging
+            your pictures with the contacts (and <ulink
+              url="http://www.semanticdesktop.org/ontologies/pimo/">PIMO::Persons</ulink>) of the
+            new Kaddressbook and projects which are then usable system wide.</para>
+        </listitem>
+        <listitem>
+          <para>And <ulink url="http://amarok.kde.org">Amarok</ulink> had (or again has?) some
+            functions to share it’s music database with Nepomuk and thus make it system wide and not
+            just enclosed in one applicatition.</para>
+        </listitem>
+        <listitem>
+          <para>But there are as well good examples for existing Nepomuk integration: <ulink
+              url="http://bangarangkde.wordpress.com/">Bangarang</ulink>. A multimedia player which
+            remembers what you like, what music and videos you have on your system and where is more
+            information about this media data (in the web).</para>
+        </listitem>
+        <listitem>
+          <para>Another idea could be a (scientific) paper or article collector which understands
+            the connections (or quotations) between the articles and that the strings at the top
+            (authors) are actually persons and the references at the end of the articles are
+            actually links and thus relations to other papers and articles. Take a look at the
+              <ulink url="http://ontoware.org/swrc/">SWRC ontology</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>Yet another project which extensively uses Nepomuk is the new <ulink
+              url="http://community.kde.org/Real-Time_Communication_and_Collaboration">KDE Telepathy
+              framework</ulink>. They don’t just invent yet another represenation of a person and
+            its contacts but use PIMO::Person and thus make connections to them system wide
+            comprehensible and reusable.</para>
+        </listitem>
+        <listitem>
+          <para>And let’s not forget the <ulink url="http://plasma.kde.org">Plasma framework</ulink>
+            and its <ulink url="http://userbase.kde.org/Plasma#Activities">activities</ulink>. But
+            there is more and better information about this on the <ulink
+              url="http://ivan.fomentgroup.org/blog/">site of ivan Cukic</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>Or something completely new. An ontology for TV series, recordings and shows…
+            (Update: Sebastian told me that there is already one: <ulink
+              url="http://sourceforge.net/apps/trac/oscaf/ticket/44">NMM</ulink>. And Bangarang and
+            some other applications use it.)</para>
+        </listitem>
+        <listitem>
+          <para>And there is <ulink url="http://zeitgeist-project.com/">Zeitgeist</ulink> and <ulink
+              url="http://releases.zeitgeist-project.com/qzeitgeist/">QtZeitgeist</ulink>…
+            (...)</para>
+        </listitem>
+      </itemizedlist>
+      <!--($ ld: 30.3.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
