@@ -138,4 +138,45 @@
       start.</para>
     <!--($ ld: 26.3.11 sm $)-->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://michal.hrusecky.net/2011/03/gsoc-2011-ideas-fillup-ng/">Michal
+        Hrusecky: GSoC 2011 Ideas – fillup-ng</ulink></title>
+    <para>My last but not least GSoC idea. This is about actual tool that already exists but is
+      currently a little bit broken and needs rewrite with a bigger picture in mind.</para>
+    <para><emphasis role="bold">What is fillup?</emphasis></para>
+    <para>As this project is named fillup-ng, it is obviously supposed to be replacement for
+      existing utility called fillup. Let’s talk a little bit about what fillup currently does. It
+      is used to parse sysconfig files. These files has syntax similar to shell scripts with only
+      variables definitions. The difference is that comments in these scripts has their meaning. And
+      fillup is used to merge them automatically somehow. Basic operation are following. You’ve got
+      some configuration file on your system and new version cames in from package. What now?
+      Classical solution is not to touch anything and let user resolve it manually. But fillup can
+      do some clever things. Sometimes you want to use values specified with old configuration file
+      and add new settings that wasn’t available in previous version. Sometimes, you want to keep
+      only values that are in both configuration files as old configuration options are not
+      supported anymore. It may happen that you want to replace some variables. Probably not while
+      installing package but when running some graphical tool… If you are interested in more
+      details, take a look at it’s <ulink
+        url="http://www.manpages.unixforum.co.uk/man-pages/linux/suse-linux-10.1/8/fillup-man-page.html"
+        >man page</ulink>.</para>
+    <para>All things mentioned previously can be done with fillup. So why rewriting it? It has one
+      big design disadvantage. It operates on lines. So it can’t handle variables having values over
+      multiple lines. And it has few other issues as well. Why not fix it? Well, sometimes it’s
+      easier to write it from scratch than trying to fix it. And we can also add some more features!
+      Everybody loves new features, don’t you think? Cool feature that this project will have to
+      implement is to provide some abstraction over configuration files. Create plugin system so
+      anybody can extend it with his own configuration file format. So fillup-ng will support
+      multiple configuration types (at least sysconfig files and ini files), will have general API
+      to add new plugins to handle other configuration files. These plugins will be runtime plugable
+      (so plugin with many dependencies can be in different package). And all plugins will try to
+      report if the input file is theirs. One more feature that would be great as we will have more
+      configuration file is to provide list of variables that I want to filter out without
+      specifying all variables I want to keep.</para>
+    <para><emphasis role="bold">Students?</emphasis></para>
+    <para>This project took longer to get students interested than most of the other projects I
+      wrote about. But in the end I also got students wanting to work on this project. And even
+      though it took some time before somebody got interested, now I’ve got two students
+      interested!</para>
+    <!--($ ld: 31.3.11 sm $)-->
+  </blockquote>
 </sect1>

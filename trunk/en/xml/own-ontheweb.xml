@@ -224,11 +224,46 @@
       <!--($ ld: 31.3.11 sm $) -->
     </blockquote>
     <blockquote>
-      <title><ulink url="http://www.unixmen.com/news-today/1579-open-source-kimono-lanterns-to-the-rescue">Unixmen/Anuradha Shukl: Open source Kimono Lanterns to the rescue</ulink></title>
-      <para>The devastation in Japan is heart rending and compels each of one of us to contribute to help improve the situation. Similar thoughts have been running through developers at <ulink url="http://freaklabs.org/">Freaklabs</ulink> . At the <ulink url="http://en.wikipedia.org/wiki/Hackerspace">hackerspace</ulink> they are involved with, a solar rechargeable lantern was designed for garden and patio use. Called the Kimono Lantern, today they are able to put it to better use. Donating the complete design to the open source hardware community, they are indeed standing true to the commitments of the Open Source community.</para>
-      <para>(...)</para>
-      <para><ulink url="http://www.pcworld.com/article/222160/opensource_kimono_lantern_could_help_tsunami_victims.html">Kimono lanterns</ulink> are basically designed for small output but with long battery life. Running on solar cells that are recharged due to exposure to sunlight will glow for 8 hours providing the quake victims much needed night light. As flashlights, and the other standard and regular artificial light sources area premium and essential for critical situations as in makeshift hospital rooms, a Kimono lantern should do the desired needful. Light the pathway and generally offer a comforting glow amid all the darkness. (...)</para>
-      <!-- ($ ld: 26.3.11 sat $) -->    
+      <title><ulink
+          url="http://www.h-online.com/open/news/item/Linux-distributions-to-include-run-directory-1219006.html"
+          >h-online: Linux distributions to include /run/ directory</ulink></title>
+      <para>On the Fedora project's developer list, systemd developer Lennart Poettering has <ulink
+          url="http://thread.gmane.org/gmane.linux.redhat.fedora.devel/146976">announced</ulink> the
+        introduction of a /run directory in the root directory and provided detailed background
+        explanations. Similar to the existing /var/run/ directory, the new directory is designed to
+        allow applications to store the data they require in order to operate. This includes process
+        IDs, socket information, lock files and other data which is required at run-time but can't
+        be stored in /tmp/ because programs such as tmpwatch could potentially delete it from there. </para>
+      <para>However, /var/run/ isn't a readily available choice for tools such as systemd, udev or
+        mdadm that are required early in the boot process, because /var can be implemented as a
+        separate file system to be mounted at a later stage in the start-up process. As a result,
+        these programs have had to resort to such trickery as using the /dev/.udev, /dev/.mdadm,
+        /dev/.systemd or /dev/.mount directories, even though the device directory isn't intended
+        for such data. (...)</para>
+      <!-- ($ ld: 31.3.11 sm $) -->    
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://artax.karlin.mff.cuni.cz/~kendy/blog/archives/monthly/2011-03.html#2011-03-31T11_35_21.htm"
+          >FOSDEM 2011: LibreOffice Online Help (Wikihelp)</ulink></title>
+      <para>I realized I did not post my FOSDEM slides online; this blog post is to fix that ;-) So
+        if you want to learn more about our approach to the on-line help, please have a look here: </para>
+      <para><ulink
+          url="http://artax.karlin.mff.cuni.cz/%7Ekendy/blog/pics/LibreOffice-wikihelp-FOSDEM2011.odp"
+          >LibreOffice Online Help (Wikihelp)</ulink></para>
+      <para> It talks briefly about what we have done to bring the <ulink
+          url="http://help.libreoffice.org">LibreOffice help</ulink> online, and about the future
+        steps. Talking of the future steps, in 3.4, the .xhp files are still the source of the help
+        (check the presentation if you want to know what are the .xhp files), because we did not
+        manage to do the 2nd step - converting the wiki markup back to the native help files. </para>
+      <para> Actually - I would like to mentor a GSoC task for that: </para>
+      <para><ulink
+          url="http://wiki.documentfoundation.org/Development/Gsoc/Ideas#Convert_the_LibreOffice_web_help_.28wikihelp.29_to_platform_specific_help_files"
+          >Convert LibreOffice Help to Platform Specific Help Files</ulink></para>
+      <para> If you are a student interested in Free Software, with free summer, and Python or Perl
+        knowledge (to bind to existing MediaWiki markup parsers), this might be a nice task for
+        you!</para>
+      <!--($ ld: 31.3.11 sm $) -->
     </blockquote>
   </sect2>
   <sect2>
