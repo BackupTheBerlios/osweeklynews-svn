@@ -142,20 +142,29 @@ int main() {
       <para>I will use the following software:
 
     </para>
-      <para>* Web Server: Apache 2.2.17 with PHP 5.3.5, Ruby, and Python
-    </para>
-      <para>* Database Server: MySQL 5.1.53</para>
-      <para>* Mail Server: Postfix
-    </para>
-      <para>* DNS Server: BIND9
-    </para>
-      <para>* FTP Server: proftpd
-    </para>
-      <para>* POP3/IMAP: I will use Maildir format and therefore install Courier-POP3/Courier-IMAP.
-    </para>
-      <para>* Webalizer for web site statistics
-
-</para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para>Web Server: Apache 2.2.17 with PHP 5.3.5, Ruby, and Python </para>
+          </listitem>
+          <listitem>
+            <para>Database Server: MySQL 5.1.53</para>
+          </listitem>
+          <listitem>
+            <para>Mail Server: Postfix </para>
+          </listitem>
+          <listitem>
+            <para>DNS Server: BIND9 </para>
+          </listitem>
+          <listitem>
+            <para>FTP Server: proftpd * POP3/IMAP: I will use Maildir format and therefore install
+              Courier-POP3/Courier-IMAP. </para>
+          </listitem>
+          <listitem>
+            <para>Webalizer for web site statistics </para>
+          </listitem>
+        </itemizedlist>
+      </para>
       <para>Please note that this setup does not work for ISPConfig 3! It is valid for ISPConfig 2 only! (...)</para>
 <!--($ Id: 2.4.11 sat $)-->    </blockquote>
   </sect2>
