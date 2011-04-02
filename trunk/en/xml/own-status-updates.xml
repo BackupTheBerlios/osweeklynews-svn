@@ -27,6 +27,7 @@
     </blockquote>
     </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
+    <!--
     <blockquote>
       <title>
         <ulink url="http://lists.opensuse.org/opensuse-factory/2011-03/msg00701.html">Stephan Kulow: Status: distribution</ulink>
@@ -40,7 +41,7 @@
         possible.</para>
       <para>Greetings, Stephan P.S. Right now we can&apos;t publish new builds as kiwi requires a package
         that does not exist ;(</para>
-<!--($ ld: 23.3.11 sm $)-->    </blockquote>
+    </blockquote> -->
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -246,9 +247,11 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->    
+      <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <blockquote>
+        <!--
+        <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2011/03/21/policy-proposal-for-factory-make-source-of-tar-balls-trackable/">Adrian Schröter: Policy proposal for Factory: Make source of tar balls trackable</ulink>
         </title>
@@ -289,29 +292,7 @@
           upgrades when upstream releases a new version. They could be reviewed and just picked
           (directly or with additional manual fixes). </para>
         <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-<!--($ ld: 21.3.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2011/03/23/osc-plugin-changes/">Alexander Naumov: osc plugin – changes</ulink>
-        </title>
-        <para><ulink url="http://en.opensuse.org/openSUSE:OSC">OSC</ulink> is a console client for
-            <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>. It’s written on
-          python and easy in studying and using packager’s tool. However there are situations when
-          its functionality is not enough; sometimes we need something special. In this case to us
-          will help plug-in mechanism, which in osc is realised very simply.</para>
-        <para><ulink url="http://en.opensuse.org/openSUSE:OSC_plugins">Plugin</ulink> can use all of
-          the features, which already implemented osc, as well as provide an output in a convenient
-          format for you. For example, if I want to check changes in kdelibs4 between openSUSE:11.3
-          and openSUSE:11.4, I can do something like
-          this:<screen>&gt; osc rdiff openSUSE:11.3 kdelibs4 openSUSE:Factory kdelibs4</screen></para>
-        <para>After that I will receive a detailed output about all changes. Yes, that’s great… but
-          not always it’s convenient. For example, in this case output will contain more than 2000
-          strings, and I need time to find, say, a *.changes file if I want quickly to understand
-          that has been changed. In case if I want to transfer output to processing to another
-          program (as often happens in practice), I have to shape this data. Unfortunately osc is
-          not as intelligent and can’t show changes from one file (from *.changes, for example)
-          only…(...)</para>
-<!--($ ld: 21.3.11 sm $)-->      </blockquote>
+      </blockquote> -->
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -336,7 +317,9 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->   
+    <!--
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
@@ -370,28 +353,8 @@
           ; packages will be only available for openSUSE 11.4 (same <ulink url="https://build.opensuse.org/project/show?project=home%3Afcrozat%3Agnome3">OBS project</ulink>). Therefore, I strongly suggest to upgrading your system to openSUSE
           11.4. </para>
         <para>You know the url to fetch the latest release : <ulink url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
-<!--($ ld: 21.3.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-020-is-out.html">Frédéric Crozat: GNOME 3 live image release 0.2.0 is out</ulink>
-        </title>
-        <para>This week release is version 0.2.0. It features GNOME 2.91.92, including :<itemizedlist>
-            <listitem>
-              <para>soon to be released Network Manager 0.9 and new UI integrated in GNOME Shell and
-                GNOME Control Center (be careful, it has still rough edges)</para>
-            </listitem>
-            <listitem>
-              <para>a11y support should be improved</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>If you have installed this image or if you use the <ulink url="http://draft.blogger.com/">home:fcrozat:gnome3</ulink> openSUSE and want to upgrade
-          to 2.91.92, you can update using <emphasis role="italic">zypper up</emphasis> (if you
-          still want to keep Network Manager 0.8) or <emphasis role="italic">zypper dup</emphasis>
-          (if you want to switch to NM 0.9). Some packages might be uninstalled in the
-          process.</para>
-        <para>Image is, as always, available at <ulink url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
-<!--($ ld: 26.3.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
@@ -730,21 +693,20 @@ For a power user it&apos;s a nice feature but for a basic user or a user that wa
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-03/msg00010.html">Larry Finger: Weekly News for March 26</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00000.html">Larry Finger: Weekly News for Weekly News for April 2</ulink>
         </title>
-        <para>The Testing Core Team will hold an IRC meeting on March 28, 2011 at 17:00 UTC. The
-          time change reflects that nearly everyone is now on summer time. </para>
-        <para>We will be finalizing our plans for the next &quot;Open Bugs Day&quot;, which will be from 00:00
-          to 23:59 UTC, Saturday April 2, 2011. As written before, the emphasis will be on
-          identifying those bugs reported for 11.2 and older that are still present in 11.4. We will
-          not attempt to squash these bugs, but to make sure that none have been forgotten. After
-          the release of 11.5 M5, we will have a bug-squashing day. We will also be testing and
-          commenting on the Web application that Bernhard Wiedermann has written to help in bug
-          selection and processing. </para>
-        <para>This will be the last Weekly News before the event. Please plan to join the bug
-          identification effort. The specific Web links for &quot;Open Bugs Day&quot; are not available to me
-          now; however, you will be able to access them from <ulink url="http://en.opensuse.org/openSUSE:Testing">http://en.opensuse.org/openSUSE:Testing</ulink>. </para>
-<!-- ($ ld: 26.3.11 sm $) -->      </blockquote>
+        <para>The Testing Core Team held an IRC meeting on March 28, 2011 at 17:00 UTC. We discussed
+          our plans for the next "Open Bugs Day", which will be from 00:00 to 23:59 UTC, Saturday
+          April 2, 2011. As written before, the emphasis will be on identifying those bugs reported
+          for 11.2 and older that are still present in 11.4. We will not attempt to squash these
+          bugs, but to make sure that none have been forgotten. After the release of 11.5 M5, we
+          will have a bug-squashing day. </para>
+        <para>As I write this, OBD has started. I'm not sure when this will be published, but if it
+          is still April 2, then please join us at irc://irc.opensuse.org/openSUSE-testing. </para>
+        <para>Further information is available at <ulink
+            url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
+            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>.</para>
+<!-- ($ ld: 2.4.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
