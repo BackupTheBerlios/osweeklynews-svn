@@ -95,4 +95,19 @@
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html ">GFDL 1.2</ulink></para>
     <!--($ ld: 31.3.11 sm $)-->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/04/01/introducing-snapper/">Introducing
+        snapper: A tool for managing btrfs snapshots</ulink></title>
+    <para>Today we want to present the current development of snapper, a tool for managing btrfs
+      snapshots.</para>
+    <para>For years we had the request to provide rollbacks for YaST and zypper but things never got
+      far due to various technical problems. With the rise of btrfs snapshots we finally saw the
+      possibility for a usable solution. The basic idea is to create a snapshot before and after
+      running YaST or zypper, compare the two snapshots and finally provide a tool to revert the
+      differences between the two snapshots. That was the birth of snapper. Soon the idea was
+      extended to create hourly snapshots as a backup system against general user mistakes.</para>
+    <para>The tool is now in a state where you can play with it. On the other hand there is still
+      room and time for modifications and new features.</para>
+    <!--($ ld: 1.4.11 sm $)-->
+  </blockquote>
 </sect1>
