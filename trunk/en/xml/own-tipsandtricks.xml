@@ -22,18 +22,15 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.unixmen.com/linux-tutorials/documentations-a-howto/1578-upgrade-opensuse-to-114"
-          >Unixmen: Howto upgrade Opensuse to 11.4</ulink>
+        <ulink url="http://www.unixmen.com/linux-tutorials/documentations-a-howto/1578-upgrade-opensuse-to-114">Unixmen: Howto upgrade Opensuse to 11.4</ulink>
       </title>
       <para> How to upgrade Opensuse 11.x to 11.4 ? Unixmen gives the answer... (...)</para>
 <!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://masterpatricko.blogspot.com/2011/03/opensuse-114-first-steps.html">Tejas
-          Guruswamy: openSUSE 11.4 - first steps</ulink>
+        <ulink url="http://masterpatricko.blogspot.com/2011/03/opensuse-114-first-steps.html">Tejas Guruswamy: openSUSE 11.4 - first steps</ulink>
       </title>
-      <para>Finally term is over and I'm on my Easter break, which means I can step up my
+      <para>Finally term is over and I&apos;m on my Easter break, which means I can step up my
         contributions again. First step was to install the new release on my desktop - openSUSE 11.4
         looks really, really good! No hassles during installation at all, took about 20mins from
         DVD. (...)</para>
@@ -43,9 +40,7 @@
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.unixmen.com/linux-commands/1602-watch-al-jazeera-live-with-one-command"
-          >Unixmen/M. Zinoune (Zinovsky): Watch Al Jazeera Live in Linux with one command</ulink>
+        <ulink url="http://www.unixmen.com/linux-commands/1602-watch-al-jazeera-live-with-one-command">Unixmen/M. Zinoune (Zinovsky): Watch Al Jazeera Live in Linux with one command</ulink>
       </title>
       <para>If you are a fun of Aljazeera News channel, this is a nice command that allow you to
         watch Al Jazeera live in your Linux desktop. I tested the command and is working like a
@@ -53,16 +48,16 @@
       <mediaobject>
         <imageobject>
           <imagedata fileref="http://cdn.unixmen.com/images/stories/thumbnails/images-stories-videos-aljazeera1-400x225.png"/>
-        </imageobject>        
+        </imageobject>
       </mediaobject>
       <para>First check if you have rtmpdump installed, if not install it using the command
         :<screen>sudo apt-get install rtmpdump</screen></para>
       <para>Now to start watching Aljazeera live, open terminal and enter the following
         command</para>
-      <para><emphasis role="bold">To use Mplayer
-        :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y "aljazeera_en_veryhigh" -a "aljazeeraflashlive-live" -o -| mplayer -</emphasis></programlisting></para>
-      <para><emphasis role="bold">To use VLC
-        player:</emphasis><screen>$<emphasis role="bold"><emphasis role="bold"> rtmpdump -v -r  rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y "aljazeera_en_veryhigh" -a "aljazeeraflashlive-live" -o -| vlc -</emphasis></emphasis></screen></para>
+      <para><emphasis role="bold">To use Mplayer :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
+      <para><emphasis role="bold">To use VLC player:</emphasis><screen>$<emphasis role="bold">
+            <emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
+          </emphasis></screen></para>
       <para>Enjoy :)</para>
       <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
           <emphasis role="italic">zypper in rtmpdump</emphasis> instead of sudo apt-get</para>
@@ -72,9 +67,7 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://dominique.leuenberger.net/blog/?p=178">Dominique Leuenberger: how to fix
-          brp and rpmlint warnings – today:I: Program causes undefined operation(likely same
-          variable used twice and post/pre incremented in the same expression)</ulink>
+        <ulink url="http://dominique.leuenberger.net/blog/?p=178">Dominique Leuenberger: how to fix brp and rpmlint warnings – today:I: Program causes undefined operation(likely same variable used twice and post/pre incremented in the same expression)</ulink>
       </title>
       <para>It seems the planned series sort of finds an audience, which in turn of course is
         motivational to keep on writing it. Today, we’ll have a look at this Informational message
@@ -86,17 +79,17 @@
         address them together with upstream. </para>
       <para>I assume you do know what “a++” means in C (otherwise, you should start reading
         C-books), so we just try to reproduce this error in a simple c test
-        case:<screen>#include &lt;stdio.h>
+        case:<screen>#include &lt;stdio.h&gt;
  
 int main() {
  int i=5;
  i = i++ * ++i;
- printf("The current value of i is %d\n", i);
+ printf(&quot;The current value of i is %d\n&quot;, i);
  return 0;
  }</screen></para>
       <para>When building this using gcc -Wall test.c, we get this compiler warning (which in turn
         is what brp translates to the information we’re discussing
-        here)<screen>> gcc -Wall test2.c
+        here)<screen>&gt; gcc -Wall test2.c
  test.c: In function ‘main’:
  test.c:5:5: warning: operation on ‘i’ may be undefined</screen></para>
       <para>So, let’s first see for ourselves what we would expect this to be? Hmm.. already for us,
@@ -117,151 +110,53 @@ int main() {
             <para><ulink url="http://en.wikipedia.org/wiki/Sequence_point">Wikipedia</ulink></para>
           </listitem>
           <listitem>
-            <para><ulink
-                url="http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html"
-                >http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html</ulink></para>
+            <para><ulink url="http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html">http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html</ulink></para>
           </listitem>
         </itemizedlist></para>
 <!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://azouhr.wordpress.com/2011/03/22/itunes-on-opensuse-11-4/">Berthold Gunreben: iTunes on openSUSE 11.4</ulink>
-      </title>
-      <para>In order to use iTunes University, I had to install iTunes on my notebook that is
-        running openSUSE 11.4. It is quite easy to get some old version of iTunes from <ulink url="http://www.oldapps.com/itunes.php">http://www.oldapps.com/itunes.php</ulink> but
-        trying to install it on a 64bit machine with wine always failed.</para>
-      <para>In the end, I could install a 32bit version by doing the following:</para>
-      <programlisting>rm -rf ~/.wine #(don&apos;t do this if you have other wine applications installed, it basically kills any previous wine installation)
-export WINEARCH=win32
-wine ~/Downloads/iTunesSetup1021.exe</programlisting>
-      <para>To start iTunes later on, it is sufficient to run the following
-        command:<screen>wine c:/Program\ Files/iTunes/iTunes.exe</screen></para>
-      <para>Unfortunately, with most of the available courses on iTunes University, I get conversion
-        errors. To circumvent this, I just download the respective courses and view them with
-        mplayer:<screen>cd ~/Music/iTunes/iTunes Media/iTunes U/
-mplayer -vo xv &lt;course file&gt;</screen></para>
-      <para>This is not too nice, but at least it allows me to view iTunes U courses without the
-        need for an operating system I do not own.</para>
-<!-- ($ Id: 22.3.11 sm $) -->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://python4kids.wordpress.com/2011/03/22/increasingly-trivial-questions/">Python4Kids: New Tutorial - Increasingly Trivial Questions</ulink>
-      </title>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
-          <emphasis role="italic">First Hermit Hello, are you a hermit by any chance?</emphasis>
-        </ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
-          <emphasis role="italic">Second Hermit Yes that’s right. Are you a hermit?</emphasis>
-        </ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
-          <emphasis role="italic">First Hermit Yes, I certainly am.</emphasis>
-        </ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
-          <emphasis role="italic">Second Hermit Well I never. What are you getting away from?</emphasis>
-        </ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
-          <emphasis role="italic">First Hermit Oh you know, the usual – people, chat, gossip, you know.</emphasis>
-        </ulink></para>
-      <para><ulink url="http://www.ibras.dk/montypython/episode08.htm#5">
-          <emphasis role="italic">Second Hermit Oh I certainly do – it was the same with me. I mean there comes a time when you realize there’s no good frittering your life away in idleness and trivial chit-chat.</emphasis>
-        </ulink></para>
-      <para>If you remember back a few tutorials ago, we learnt how to <emphasis role="italic">pickle</emphasis> objects so that we could get them back later. To <emphasis role="italic">pickle</emphasis> the object <emphasis role="italic">triviaQuestions</emphasis> (which was a <emphasis role="italic">list</emphasis> object)
-        we first imported the <emphasis role="italic">pickle</emphasis> module, then opened a file
-        and <emphasis role="italic">dump</emphasis>ed the object into the file, then <emphasis role="italic">close()</emphasis>d the
-        file:<screen>-&gt;code snippet removed to note [1] because I don&apos;t want you typ</screen></para>
-      <para>(...)</para>
-<!--($ Id: 23.3.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title><ulink url="http://dominique.leuenberger.net/blog/?p=151">Dominique Leuenberger: how to
-          fix brp and rpmlint warnings – today: Expression compares a char* pointer with a string
-          literal</ulink></title>
-      <para>After having seen this kind of question several times, I think it could be interesting
-        to start creating a small ‘series of rpmlint errors and their typical fixes”.</para>
-      <para>Interested in it? So welcome to part #1 (this issue). The “series” is not really fledged
-        out, but I will try to write post for various errors / topics, as they come along. Just drop
-        me a note with an error you have seen / experienced in OBS while building a package.</para>
-      <para>So what does it mean, if OBS tells you this:</para>
-      <para> Expression compares a char* pointer with a string literal. Usually a strcmp() was
-        intended by the programmer</para>
-      <para>Let’s have a look at a very simple C program, to show the
-        issue:<screen>#include &lt;stdio.h>
-int main() {   
-char *mytext;   
-mytext = "Help";   
-if (mytext == "Help") {     
-printf("This should raise a warning");   
-}   
-return 0; 
-}</screen></para>
-      <para>Trying to compile this very simple C program, which on first sight many would probably
-        say this is correct, will result in
-        this:<screen>$ gcc test1.c -Wall 
-test1.c: In function ‘main’: 
-test1.c:6:14: warning: comparison with string literal results in unspecified behavior </screen></para>
-      <para>So, even though we had such an easy program, line 6 seems to be an issue for
-        us:<screen>if (mytext == “Help”) {</screen></para>
-      <para>The issue, as simple as it may sound, is the comparison of a pointer (char *) with a
-        literal (“Help”).</para>
-      <para>So how do we fix it? It involves changing the code, thus writing a patch (there are many
-        good helps around for this… I won’t dive into patching here).. Of course, after having
-        written a patch, be a good downstream, send it upstream! What you want to do here is to
-        replace this comparison with strcmp (just as OBS’ error message implied).</para>
-      <para>Look at this code
-        now:<screen>#include &lt;stdio.h> 
-#include &lt;string.h>
-int main() {   
-char *mytext;   
-mytext = "Help";   
-if (strcmp(mytext,"Help")==0) {     
-printf("No warning here\n");   
-}
-return 0; 
-}</screen></para>
-      <para>I changed <emphasis role="italic">“mytext == “Help”</emphasis> to <emphasis
-          role="italic">strcmp(mtext,”Help”)==0</emphasis> (<ulink
-          url="http://linux.die.net/man/3/strcmp">man 3 strcmp</ulink> will explain you why… 0 means
-        the texts are equal, or ’0 difference detected’ can help you remember that). As the code was
-        too simple and strcmp was not yet defined (this of course can also happen in packages you
-        patch), I had to add an additional <emphasis role="italic">#include
-          &lt;string.h&gt;</emphasis>.</para>
-      <para>Not too hard, is it?</para>
-      <para>So what do you think? Such a series of “how to fix my typical brp / lint warnings”
-        useful?</para>
-      <!--($ Id: 26.3.11 sm $)-->
-    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.serverwatch.com/tutorials/article.php/3929346/article.htm"
-          >Serverwatch/Juliet Kemp: Use Linux and WebDAV to Facilitate Online Collaboration</ulink>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3929346/article.htm">Serverwatch/Juliet Kemp: Use Linux and WebDAV to Facilitate Online Collaboration</ulink>
       </title>
       <para>The WebDAV protocol enables users to store and share files via HTTP. This is
         particularly valuable in cases where HTTP is usually read-only, as WebDAV allows writing as
         well. In addition to accessing documents, users can (with suitable permissions) edit and
         re-upload them. Think of it as a networked file-system run over HTTP; or as a way of
         supporting long-distance collaboration on files. The protocol supports locking and
-        versioning information, so once you've accessed the WebDAV folder, you can edit files
-        without risking overwriting other people's edits. These days, there are more and more ways
+        versioning information, so once you&apos;ve accessed the WebDAV folder, you can edit files
+        without risking overwriting other people&apos;s edits. These days, there are more and more ways
         available to undertake online collaboration, but WebDAV remains a useful and straightforward
-        way to share files, especially as it's supported by plenty of software at both server and
+        way to share files, especially as it&apos;s supported by plenty of software at both server and
         client end. (...)</para>
 <!--($ Id: 30.3.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/how-to-install-apache-solr-and-use-it-with-drupal-and-ispconfig-opensuse-debian">HowtoForge/luisfreitas: How To Install Apache-Solr And Use It With Drupal And ISPConfig (OpenSUSE/Debian)</ulink>
+        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-11.4-x86_64-ispconfig-2">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 11.4 x86_64 [ISPConfig 2]</ulink>
       </title>
-      <para>Solr is the popular, blazing fast open source enterprise search platform from the Apache Lucene project. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, and rich document (e.g., Word, PDF) handling. I use this on OpenSUSE and Debian (minor tweaks on Debian, just paths to correct but it&apos;s almost the same). Packages from 4 of March 2011. (...)</para>
-<!-- ($ Id: 26.3.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://blog.encodingit.ch/2011/03/backup-und-restore-mit-linux/">Bits, Bytes and my 5 cents: Backup und Restore mit Linux</ulink>
-      </title>
-      <para>Von den bisher vorgestellten Themen in LPIC 201 ist das folgende eines der
-        interessanteren: Backup und Archivierung! Wie in den Artikeln vorher schon erwýhnt, ersetzt
-        RAID nicht wirklich ein Backup und LVM schon gar nicht! Es muss also trotzdem noch eine
-        Lösung her – und um die kýmmern wir uns jetzt! </para>
-    </blockquote>
+      <para>This is a detailed description about how to set up an OpenSUSE 11.4 server (x86_64) that offers all services needed by ISPs and hosters: Apache web server (SSL-capable), Postfix mail server with SMTP-AUTH and TLS, BIND DNS server, Proftpd FTP server, MySQL server, Dovecot POP3/IMAP, Quota, Firewall, etc. In the end you should have a system that works reliably, and if you like you can install the free webhosting control panel ISPConfig 2 (i.e., ISPConfig runs on it out of the box).
+
+</para>
+      <para>I will use the following software:
+
+    </para>
+      <para>* Web Server: Apache 2.2.17 with PHP 5.3.5, Ruby, and Python
+    </para>
+      <para>* Database Server: MySQL 5.1.53</para>
+      <para>* Mail Server: Postfix
+    </para>
+      <para>* DNS Server: BIND9
+    </para>
+      <para>* FTP Server: proftpd
+    </para>
+      <para>* POP3/IMAP: I will use Maildir format and therefore install Courier-POP3/Courier-IMAP.
+    </para>
+      <para>* Webalizer for web site statistics
+
+</para>
+      <para>Please note that this setup does not work for ISPConfig 3! It is valid for ISPConfig 2 only! (...)</para>
+<!--($ Id: 2.4.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
