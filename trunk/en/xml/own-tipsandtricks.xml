@@ -54,10 +54,13 @@
         :<screen>sudo apt-get install rtmpdump</screen></para>
       <para>Now to start watching Aljazeera live, open terminal and enter the following
         command</para>
-      <para><emphasis role="bold">To use Mplayer :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
-      <para><emphasis role="bold">To use VLC player:</emphasis><screen>$<emphasis role="bold">
-            <emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
-          </emphasis></screen></para>
+      <para><emphasis role="bold">To use Mplayer
+        :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y \\
+&quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
+      <para><emphasis role="bold">To use VLC
+        player:</emphasis><screen>$<emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ \\
+-y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
+          </screen></para>
       <para>Enjoy :)</para>
       <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
           <emphasis role="italic">zypper in rtmpdump</emphasis> instead of sudo apt-get</para>
