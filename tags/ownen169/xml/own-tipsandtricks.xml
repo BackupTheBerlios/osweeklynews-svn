@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.unixmen.com/linux-tutorials/documentations-a-howto/1578-upgrade-opensuse-to-114">Unixmen: Howto upgrade Opensuse to 11.4</ulink>
+      </title>
+      <para> How to upgrade Opensuse 11.x to 11.4 ? Unixmen gives the answer... (...)</para>
+<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://masterpatricko.blogspot.com/2011/03/opensuse-114-first-steps.html">Tejas Guruswamy: openSUSE 11.4 - first steps</ulink>
+      </title>
+      <para>Finally term is over and I&apos;m on my Easter break, which means I can step up my
+        contributions again. First step was to install the new release on my desktop - openSUSE 11.4
+        looks really, really good! No hassles during installation at all, took about 20mins from
+        DVD. (...)</para>
+<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.unixmen.com/linux-commands/1602-watch-al-jazeera-live-with-one-command">Unixmen/M. Zinoune (Zinovsky): Watch Al Jazeera Live in Linux with one command</ulink>
+      </title>
+      <para>If you are a fun of Aljazeera News channel, this is a nice command that allow you to
+        watch Al Jazeera live in your Linux desktop. I tested the command and is working like a
+        charm.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://cdn.unixmen.com/images/stories/thumbnails/images-stories-videos-aljazeera1-400x225.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>First check if you have rtmpdump installed, if not install it using the command
+        :<screen>sudo apt-get install rtmpdump</screen></para>
+      <para>Now to start watching Aljazeera live, open terminal and enter the following
+        command</para>
+      <para><emphasis role="bold">To use Mplayer
+        :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y \\
+&quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
+      <para><emphasis role="bold">To use VLC
+        player:</emphasis><screen>$<emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ \\
+-y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
+          </screen></para>
+      <para>Enjoy :)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
+          <emphasis role="italic">zypper in rtmpdump</emphasis> instead of sudo apt-get</para>
+<!-- ($ Id: 30.3.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://dominique.leuenberger.net/blog/?p=178">Dominique Leuenberger: how to fix brp and rpmlint warnings – today:I: Program causes undefined operation(likely same variable used twice and post/pre incremented in the same expression)</ulink>
+      </title>
+      <para>It seems the planned series sort of finds an audience, which in turn of course is
+        motivational to keep on writing it. Today, we’ll have a look at this Informational message
+        in BRP
+        checks:<screen>I: Program causes undefined operation
+ (likely same variable used twice and post/pre incremented in the same expression).
+ e.g. x = x++; Split it in two operations.</screen></para>
+      <para>This is currently informational only and is not failing the build, but you might want to
+        address them together with upstream. </para>
+      <para>I assume you do know what “a++” means in C (otherwise, you should start reading
+        C-books), so we just try to reproduce this error in a simple c test
+        case:<screen>#include &lt;stdio.h&gt;
+ 
+int main() {
+ int i=5;
+ i = i++ * ++i;
+ printf(&quot;The current value of i is %d\n&quot;, i);
+ return 0;
+ }</screen></para>
+      <para>When building this using gcc -Wall test.c, we get this compiler warning (which in turn
+        is what brp translates to the information we’re discussing
+        here)<screen>&gt; gcc -Wall test2.c
+ test.c: In function ‘main’:
+ test.c:5:5: warning: operation on ‘i’ may be undefined</screen></para>
+      <para>So, let’s first see for ourselves what we would expect this to be? Hmm.. already for us,
+        this looks not logic (and I surely hope nobody would write this code). Let’s just see what
+        starting this executable gives shall we?<screen>The current value of i is 37</screen></para>
+      <para>Now, is this surprising? We multiplied, assigned it to i and as a result we get a prime
+        number? By closely analyzing the line you will likely understand what the compiler did. But
+        was this expected? If this is actually what the programmer intended, the code should just be
+        rewritten to be more logical, like:<screen>i = (i+1) ^2 + 1;</screen></para>
+      <para>This is understandable for all of us and does not yield the surprise of what is going
+        on.</para>
+      <para>And that is actually all this warning is about: it requests the programmer to write code
+        that can be understood and does not depend on what the compiler interprets. It might even
+        very well be that the different optimization levels or the usage of different compilers
+        might end up in different results.</para>
+      <para>If you want to read some more about this topic, I suggest to have a look at:<itemizedlist>
+          <listitem>
+            <para><ulink url="http://en.wikipedia.org/wiki/Sequence_point">Wikipedia</ulink></para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html">http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html</ulink></para>
+          </listitem>
+        </itemizedlist></para>
+<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3929346/article.htm">Serverwatch/Juliet Kemp: Use Linux and WebDAV to Facilitate Online Collaboration</ulink>
+      </title>
+      <para>The WebDAV protocol enables users to store and share files via HTTP. This is
+        particularly valuable in cases where HTTP is usually read-only, as WebDAV allows writing as
+        well. In addition to accessing documents, users can (with suitable permissions) edit and
+        re-upload them. Think of it as a networked file-system run over HTTP; or as a way of
+        supporting long-distance collaboration on files. The protocol supports locking and
+        versioning information, so once you&apos;ve accessed the WebDAV folder, you can edit files
+        without risking overwriting other people&apos;s edits. These days, there are more and more ways
+        available to undertake online collaboration, but WebDAV remains a useful and straightforward
+        way to share files, especially as it&apos;s supported by plenty of software at both server and
+        client end. (...)</para>
+<!--($ Id: 30.3.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-11.4-x86_64-ispconfig-2">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 11.4 x86_64 [ISPConfig 2]</ulink>
+      </title>
+      <para>This is a detailed description about how to set up an OpenSUSE 11.4 server (x86_64) that offers all services needed by ISPs and hosters: Apache web server (SSL-capable), Postfix mail server with SMTP-AUTH and TLS, BIND DNS server, Proftpd FTP server, MySQL server, Dovecot POP3/IMAP, Quota, Firewall, etc. In the end you should have a system that works reliably, and if you like you can install the free webhosting control panel ISPConfig 2 (i.e., ISPConfig runs on it out of the box).
+
+</para>
+      <para>I will use the following software:
+
+    </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para>Web Server: Apache 2.2.17 with PHP 5.3.5, Ruby, and Python </para>
+          </listitem>
+          <listitem>
+            <para>Database Server: MySQL 5.1.53</para>
+          </listitem>
+          <listitem>
+            <para>Mail Server: Postfix </para>
+          </listitem>
+          <listitem>
+            <para>DNS Server: BIND9 </para>
+          </listitem>
+          <listitem>
+            <para>FTP Server: proftpd </para>
+          </listitem>
+          <listitem>
+            <para>POP3/IMAP: I will use Maildir format and therefore install
+              Courier-POP3/Courier-IMAP. </para>
+          </listitem>
+          <listitem>
+            <para>Webalizer for web site statistics </para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>Please note that this setup does not work for ISPConfig 3! It is valid for ISPConfig 2 only! (...)</para>
+<!--($ Id: 2.4.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

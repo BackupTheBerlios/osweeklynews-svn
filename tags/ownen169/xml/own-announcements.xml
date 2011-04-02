@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/03/28/opensuse-release-versioning-poll-on-last-three-options/"
+        >Andreas Jaeger: openSUSE Release versioning – Poll on last three options</ulink></title>
+    <para>The poll on SurveyMonkey on how to version the openSUSE distribution release is now
+      closed, you can see the results <ulink
+        url="http://www.surveymonkey.com/sr.aspx?sm=ZMyUjEimqUeLGFeX8Kmq_2baNaoqX9TRhoTN0KA_2fPlQxQ_3d"
+        >here</ulink>. The winner is the “old school” (like currently but only counting the right
+      number until 3), followed by “Fedora style” (just integers) and “Ubuntu style” (2 digits year
+      “.” 2 digits month).</para>
+    <para>The openSUSE members only poll is now live on <ulink
+        url="https://connect.opensuse.org/pg/polls/read/a_jaeger/12979/opensuse-release-versioning"
+        >connect.opensuse.org</ulink> until April 04, 2011. Please <ulink
+        url="https://connect.opensuse.org/pg/polls/read/a_jaeger/12979/opensuse-release-versioning"
+        >select</ulink> your favorite option!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!-- ($ ld: 28.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/03/28/review-opensuse-11-4-and-the-much-improved-xfce-4-8/"
+        >Review – openSUSE 11.4 and the much improved XFCE 4.8</ulink></title>
+    <para>Just a few months ago, the XFCE project announcedý<ulink
+        url="http://www.xfce.org/about/news/?post=1295136000">XFCE 4.8</ulink>,ýthe result of over 2
+      years of hard work. This desktop, one of the four official desktops of <ulink
+        url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">openSUSE 11.4</ulink>, brings many
+      new features. If you’re not having fun in the desktops provided by KDE or GNOME you should
+      have a close look at XFCE (or the lightweight LXDE). To show you how it’s done, I checked out
+      XFCE and wrote about my experience.</para>
+    <figure id="xfce">
+      <title>The default XFCE desktop</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/desktop-300x168.png"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>
+    <para><emphasis role="bold">Testing XFCE 4.8 on openSUSE 11.4</emphasis></para>
+    <para>To test XFCE <xref linkend="xfce"/> I went into <ulink url="http://susestudio.com">SUSE Studio</ulink> and
+      created an XFCE 4.8 image. After some clicking around (slimming a standard GNOME down to XFCE)
+      I had built a hard disk image. If you do this yourself, notice that by default, SUSE Studio
+      does not install ‘recommended’ packages from patterns. This can be enabled – and you surely
+      should do that if you want a decent XFCE!</para>
+    <para>The ability to just write an image to an usb disk and have it resize itself to the size of
+      the whole stick at first boot is awesome. You can just install software and in general won’t
+      notice you work on an USB stick! That is truly a portable OS… (...)</para>    
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!--($ ld: 28.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/03/25/linux-foundation-http://news.opensuse.org/2011/03/30/a-year-of-collaboration-ahead"
+        >A year of Collaboration ahead</ulink></title>
+    <para>The openSUSE Project considers collaboration an important value for a Free Software
+      community. After our <ulink
+        url="http://news.opensuse.org/2010/10/28/opensuse-conference-big-success/">successful
+        openSUSE conference</ulink> which had a strong focus on collaboration, several cool things
+      have started. Now it is time for <emphasis role="bold"><ulink
+          url="http://en.opensuse.org/openSUSE:GSOC_2011">openSUSE bring collaboration to the Google
+          Summer of Code</ulink></emphasis> and we invite students to join us in making Free
+      Software stronger through working with others! For those who don’t know yet, Google Summer of
+      Code is a project by Google to <ulink url="http://en.opensuse.org/openSUSE:Why_GSOC">let
+        students spend their summer time on coding instead of a waiting tables.</ulink></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!--($ ld: 30.3.11 sm $)-->
+  </blockquote>
+</sect1>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://kohei.us/2011/03/28/mdds-0-5-2-released/">Kohei Yoshida: mdds 0.5.2
+        released</ulink></title>
+    <para>I’m happy to announce that version 0.5.2 of <ulink
+        url="http://code.google.com/p/multidimalgorithm/">Multi-Dimensional Data Structure
+        (mdds)</ulink> is available for download from the link below.</para>
+    <para><ulink url="http://multidimalgorithm.googlecode.com/files/mdds_0.5.2.tar.bz2"
+        >http://multidimalgorithm.googlecode.com/files/mdds_0.5.2.tar.bz2</ulink></para>
+    <para>This is a bug fix release. I would like to thank David Tardon for fixing several important
+      bugs as well as implementing some new API’s for flat_segment_tree. In fact, the majority of
+      changes between 0.5.1 and 0.5.2 are from David.</para>
+    <para>Here is the run-down of the major changes since 0.5.1:<itemizedlist>
+        <listitem>
+          <para>flat_segment_tree<itemizedlist>
+              <listitem>
+                <para>fixed a crash on assignment by properly implementing assignment operator().
+                </para>
+              </listitem>
+              <listitem>
+                <para>fixed several bugs in shift_right():</para>
+              </listitem>
+              <listitem>
+                <para>shifting of all existing nodes was not handled properly. </para>
+              </listitem>
+              <listitem>
+                <para>leaf nodes were not properly linked under certain conditions.</para>
+              </listitem>
+              <listitem>
+                <para>shifting with skip node option was not properly skipping the node at insertion
+                  position when the insertion position was at the leftmost node. </para>
+              </listitem>
+              <listitem>
+                <para>implemented min_key(), max_key(), default_value(), clear() and swap().</para>
+              </listitem>
+              <listitem>
+                <para>fixed a bug in operator==() where two different containers were incorrectly
+                  evaluated to be equal. </para>
+              </listitem>
+              <listitem>
+                <para>added quickcheck test code.</para>
+              </listitem>
+            </itemizedlist></para>
+          <para>There is no API-incompatible changes since 0.5.1, so if you are currently using mdds
+            0.5.1, your code should compile with 0.5.2 without any modifications.</para>
+        </listitem>
+      </itemizedlist></para>
+    <!-- ($ ld: 29.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://oyranos-cms.blogspot.com/2011/03/libre-graphics-meeting-2011-montreal.html"
+        >Kai-Uwe Behrmann: Libre Graphics Meeting 2011 Montreal</ulink></title>
+    <para><ulink url="http://www.libregraphicsmeeting.org/">LGM</ulink> will this year happen in
+      Canada. It is one of the great chances to meet so many of the graphics people out there from
+      the major graphics projects. As more and more artists use libre graphics software the focus
+      shifts from almost a mainly developer event in early years to a mix of artists, users,
+      documentation writers, standardisation people and surely more roles. This gives a unique
+      atmosphere to the event. (...)</para>
+    <!--($ ld: 29.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/03/30/gnomeayatana-being-populated/">Nelson
+        Marques: GNOME:Ayatana – being populated</ulink></title>
+    <para>GNOME:Ayatana repository is currently being populated. I’ve asked Dimstar who is reviewing
+      the packages to enable ‘strictest mode’ as it’s a very nice opportunity to learn something
+      more about openSUSE packaging guidelines.</para>
+    <para>As Canonical polishes their software for the release of Ubuntu Natty, their indicator
+      stack will be at best shape also for openSUSE 11.4. More to come in next days.</para>
+    <para>I’ve also enabled openSUSE Tumbleweed builds on my test repository, not really sure if
+      Tumbleweed as some usage for this work, if so, ping me… I don’t mind sharing with them!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html ">GFDL 1.2</ulink></para>
+    <!--($ ld: 31.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/04/01/introducing-snapper/">Introducing
+        snapper: A tool for managing btrfs snapshots</ulink></title>
+    <para>Today we want to present the current development of snapper, a tool for managing btrfs
+      snapshots.</para>
+    <para>For years we had the request to provide rollbacks for YaST and zypper but things never got
+      far due to various technical problems. With the rise of btrfs snapshots we finally saw the
+      possibility for a usable solution. The basic idea is to create a snapshot before and after
+      running YaST or zypper, compare the two snapshots and finally provide a tool to revert the
+      differences between the two snapshots. That was the birth of snapper. Soon the idea was
+      extended to create hourly snapshots as a backup system against general user mistakes.</para>
+    <para>The tool is now in a state where you can play with it. On the other hand there is still
+      room and time for modifications and new features.</para>
+    <!--($ ld: 1.4.11 sm $)-->
+  </blockquote>
+</sect1>

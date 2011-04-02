@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/LiVES">Packman: LiVES
+      1.4.2</ulink></title>
+    <para>Video Editor and VJ Tool</para>
+    <para> </para>
+    <!-- ($ ld: 29.3.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/youtube-dl/220571">Packman: youtube-dl
+        20110329-1</ulink></title>
+    <para>Download Videos from youtube.com</para>
+    <!--($ ld: 30.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/03/29/smb-traffic-analyzer-bug-tracking-moving-from-bnc-to-bso/"
+        >Holger Hetterich: SMB Traffic Analyzer bug tracking moving from BNC to BSO</ulink></title>
+    <para>Hello reader, this article is about the <emphasis role="bold">SMB Traffic Analyzer
+        project</emphasis>, more info is <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/">here</ulink>.</para>
+    <para>Today, we are moving <emphasis role="bold">the full release- and bug tracking</emphasis>
+      from <ulink url="http://bugzilla.novell.com">bugzilla.novell.com</ulink> to <ulink
+        url="http://bugzilla.samba.org">bugzilla.samba.org</ulink>.</para>
+    <para>Thanks to the <emphasis role="bold">bugzilla maintainers at <ulink
+          url="http://www.samba.org/samba/team/">the Samba Team</ulink></emphasis>, SMBTA gained
+      excellent support in the Samba Bugzilla infrastructure:<itemizedlist>
+        <listitem>
+          <para>Product </para>
+          <itemizedlist>
+            <listitem>
+              <para>SMBTA<itemizedlist>
+                  <listitem>
+                    <para>Components<itemizedlist>
+                        <listitem>
+                          <para>vfs_smb_traffic_analyzer</para>
+                        </listitem>
+                        <listitem>
+                          <para>smbtamonitor</para>
+                        </listitem>
+                        <listitem>
+                          <para>smbtaquery</para>
+                        </listitem>
+                        <listitem>
+                          <para>rrddriver</para>
+                        </listitem>
+                        <listitem>
+                          <para>smbtatorture</para>
+                        </listitem>
+                        <listitem>
+                          <para>smbtad</para>
+                        </listitem>
+                      </itemizedlist></para>
+                  </listitem>
+                </itemizedlist></para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by/3.0/">CC-BY</ulink></para>
+    <para><!--($ ld: 30.3.11 sm $)--></para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/clementine">Packman: clementine
+        0.6</ulink></title>
+    <para>A cross-platform Music Player based on Amarok 1.4</para>
+    <!--($ ld: 31.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/DVDStyler">Packman: DVDStyler
+        1.8.2.1</ulink></title>
+    <para>GUI frontend for dvdauthor and other related tools</para>
+    <!--($ ld: 31.3.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://packman.links2linux.org/package/gmerlin">Packman: kmediafactory
+        0.8.0</ulink></title>
+    <para>An easy to use template based dvd authoring tool</para>
+    <!--($ ld: 31.3.11 sm $)-->
+  </blockquote>
+
+</sect1>

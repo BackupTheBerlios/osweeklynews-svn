@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="games" id="games">
+  <title>Games Corner</title>
+  <para>The Section provides the Game of the Week, and Updates in the Game Repository</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata
+        fileref="http://www.linux-community.de/var/ezwebin_site/storage/images/internal/nachrichten/neues-spielzeug/simutrans.png/364956-1-ger-DE/simutrans.png1_medium.png"
+        width="10%" align="center"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title><ulink url="http://www.vuntz.net/journal/post/2011/03/07/Google-Summer-of-Code-2011-for-GNOME-openSUSE">Vincent Untz: Google Summer of Code 2011 for GNOME</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>
+      <table frame="none">
+        <title>Short Intro</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <tbody>
+            <row>
+              <entry>Name of the Game:</entry>
+              <entry>$NAME</entry>
+            </row>
+            <row>
+              <entry>Genre:</entry>
+              <entry>$GENRE</entry>
+            </row>
+            <row>
+              <entry>1-Click-Install</entry>
+              <entry>$1-Click Install URL</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>   
+    </para>
+    <para></para>
+    <!-- ($ ld: 7.3.11 sm $) -->
+  </blockquote>
+</sect1>
