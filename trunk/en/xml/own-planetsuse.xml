@@ -22,92 +22,74 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://kohei.us/2011/03/28/mdds-0-5-2-released/">Kohei Yoshida: mdds 0.5.2
-        released</ulink></title>
-    <para>I’m happy to announce that version 0.5.2 of <ulink
-        url="http://code.google.com/p/multidimalgorithm/">Multi-Dimensional Data Structure
-        (mdds)</ulink> is available for download from the link below.</para>
-    <para><ulink url="http://multidimalgorithm.googlecode.com/files/mdds_0.5.2.tar.bz2"
-        >http://multidimalgorithm.googlecode.com/files/mdds_0.5.2.tar.bz2</ulink></para>
-    <para>This is a bug fix release. I would like to thank David Tardon for fixing several important
-      bugs as well as implementing some new API’s for flat_segment_tree. In fact, the majority of
-      changes between 0.5.1 and 0.5.2 are from David.</para>
-    <para>Here is the run-down of the major changes since 0.5.1:<itemizedlist>
-        <listitem>
-          <para>flat_segment_tree<itemizedlist>
-              <listitem>
-                <para>fixed a crash on assignment by properly implementing assignment operator().
-                </para>
-              </listitem>
-              <listitem>
-                <para>fixed several bugs in shift_right():</para>
-              </listitem>
-              <listitem>
-                <para>shifting of all existing nodes was not handled properly. </para>
-              </listitem>
-              <listitem>
-                <para>leaf nodes were not properly linked under certain conditions.</para>
-              </listitem>
-              <listitem>
-                <para>shifting with skip node option was not properly skipping the node at insertion
-                  position when the insertion position was at the leftmost node. </para>
-              </listitem>
-              <listitem>
-                <para>implemented min_key(), max_key(), default_value(), clear() and swap().</para>
-              </listitem>
-              <listitem>
-                <para>fixed a bug in operator==() where two different containers were incorrectly
-                  evaluated to be equal. </para>
-              </listitem>
-              <listitem>
-                <para>added quickcheck test code.</para>
-              </listitem>
-            </itemizedlist></para>
-          <para>There is no API-incompatible changes since 0.5.1, so if you are currently using mdds
-            0.5.1, your code should compile with 0.5.2 without any modifications.</para>
-        </listitem>
-      </itemizedlist></para>
-    <!-- ($ ld: 29.3.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://oyranos-cms.blogspot.com/2011/03/libre-graphics-meeting-2011-montreal.html"
-        >Kai-Uwe Behrmann: Libre Graphics Meeting 2011 Montreal</ulink></title>
-    <para><ulink url="http://www.libregraphicsmeeting.org/">LGM</ulink> will this year happen in
-      Canada. It is one of the great chances to meet so many of the graphics people out there from
-      the major graphics projects. As more and more artists use libre graphics software the focus
-      shifts from almost a mainly developer event in early years to a mix of artists, users,
-      documentation writers, standardisation people and surely more roles. This gives a unique
-      atmosphere to the event. (...)</para>
-    <!--($ ld: 29.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/03/30/gnomeayatana-being-populated/">Nelson
-        Marques: GNOME:Ayatana – being populated</ulink></title>
-    <para>GNOME:Ayatana repository is currently being populated. I’ve asked Dimstar who is reviewing
-      the packages to enable ‘strictest mode’ as it’s a very nice opportunity to learn something
-      more about openSUSE packaging guidelines.</para>
-    <para>As Canonical polishes their software for the release of Ubuntu Natty, their indicator
-      stack will be at best shape also for openSUSE 11.4. More to come in next days.</para>
-    <para>I’ve also enabled openSUSE Tumbleweed builds on my test repository, not really sure if
-      Tumbleweed as some usage for this work, if so, ping me… I don’t mind sharing with them!</para>
+    <title><ulink url="http://blog.jospoortvliet.com/2011/04/libreoffice.html">Jos Poortvliet:
+        LibreOffice</ulink></title>
+    <para>I just stumbled upon <ulink url="http://www.gnome.org/%7Emichael/blog/2011-03-31.html"
+        >mmeeks blog</ulink> where he mentions some of his favorite projects from the <ulink
+        url="http://wiki.documentfoundation.org/Development/Gsoc/Ideas">LibreOffice GSoC
+        ideas</ulink>. And it made me happy. </para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://2.bp.blogspot.com/-88Cy1AaM0HM/TZdPqCrYfrI/AAAAAAAABdw/yv2wyv4KsDg/s320/openoffice-logo1-300x185.png"
+          width="20%"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">OpenOffice = blegh</emphasis></para>
+    <para>Now I've never been a big fan of OpenOffice. I saw it as a huge pile of legacy code with
+      little future. Part of that was due to the <quote>WE OWN OPENOFFICE</quote> Governance from
+      Sun/Oracle, part due the the slowness and UI horror. And part due to developers saying things
+      like </para>
+    <para><quote><emphasis role="italic">developing OpenOffice is like brushing your teeth with a
+          chainsaw</emphasis></quote></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://3.bp.blogspot.com/-XODnpXc4DIU/TZdPalYv0CI/AAAAAAAABdo/s-BpTewrlqY/s400/libreoffice_Icon.png"
+          width="20%"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">LibreOffice an improvement</emphasis></para>
+    <para>The LibreOffice fork solves the governance issue and focusses strongly on cleaning up the
+      code. Still I felt they still had the <ulink url="http://en.wikipedia.org/wiki/Millstone"
+        >Millstone</ulink> of the old codebase around the neck. I've always seen a lot more future
+      for <ulink url="http://www.calligra-suite.org/">Calligra suite</ulink> which has a modern code
+      base and innovative features, especially since the inception of <ulink
+        url="http://www.kogmbh.com/">KO GmbH</ulink>. For me, LibreOffice did not seem relevant for
+        anything other than bridging the gap until Calligra was end user ready.. </para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://2.bp.blogspot.com/-CwfIo2lwwl4/TZdP5OrMmYI/AAAAAAAABd4/BHnqNupWrjQ/s320/calligra.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para><emphasis role="bold">Light at the end of the tunnel</emphasis></para>
+    <para>So the <ulink url="http://www.gnome.org/~michael/blog/2011-03-31.html">post by
+        Meeks</ulink> lighted up a little spark in me when he mentioned moving over the Canvas to
+      Cairo. Yes, I'm no developer, but I do know that Cairo is a modern technology, good enough to
+      be adopted as the new canvas by the upcoming Qt4 port of <ulink
+        url="http://www.scribus.net/canvas/Scribus">Scribus</ulink> (part of openSUSE 11.4). And it
+      is what GNOME Shell is build upon, not exactly irrelevant either. Meeks also mentions an
+      Android port which would force work on improving performance like it did for Calligra office.
+      So why is this so special? It's not like OO.o didn't have any plans... Well, frankly, the only
+        <emphasis role="italic">improvements</emphasis> I've seen from OO.o over the last years was
+      an addition like Java. Sorry but why oh why add Java to an office suite which is already slow
+      as crap and big as a mountain? Oh, and the discussions about the <quote>awesome UI
+        redesign</quote> (<quote>let's copy the ribbon, badly</quote>). I didn't hear about taking
+      advantage of modern technologies like Cairo. Frankly, the improvements were mostly putting
+      lipstick on a pig, if you ask me.</para>
+    <para><emphasis role="bold">LibreOffice REALLY brings change!</emphasis></para>
+    <para>So now I have the impression that LibreOffice <emphasis role="bold">really</emphasis>
+      represents a change. Sure, it's all perception, I know. I'm sure the OO team did some
+      replacing-of-legacy-stuff. And LibreOffice still has a HUGE amount of work to do. They still
+      have the old code base. But the project is revitalized! With all the new developers and
+      LibreOffice in GSoC, there is change in the air. With <ulink
+        url="http://www.calligra-suite.org/news/calligra-suite-the-first-three-months/">Calligra
+        going incredibly strong as well</ulink> (just see the number of ppl <ulink
+        url="http://blog.cberger.net/2011/04/01/calligra-sprint-spring-2011-day-0/">here</ulink>)
+      the Free Software office space looks to be gearing up to good stuff. <emphasis role="bold">I
+        for one welcome our new Office overlords, evil or not ;-)</emphasis></para>
     <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html ">GFDL 1.2</ulink></para>
-    <!--($ ld: 31.3.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/04/01/introducing-snapper/">Introducing
-        snapper: A tool for managing btrfs snapshots</ulink></title>
-    <para>Today we want to present the current development of snapper, a tool for managing btrfs
-      snapshots.</para>
-    <para>For years we had the request to provide rollbacks for YaST and zypper but things never got
-      far due to various technical problems. With the rise of btrfs snapshots we finally saw the
-      possibility for a usable solution. The basic idea is to create a snapshot before and after
-      running YaST or zypper, compare the two snapshots and finally provide a tool to revert the
-      differences between the two snapshots. That was the birth of snapper. Soon the idea was
-      extended to create hourly snapshots as a backup system against general user mistakes.</para>
-    <para>The tool is now in a state where you can play with it. On the other hand there is still
-      room and time for modifications and new features.</para>
-    <!--($ ld: 1.4.11 sm $)-->
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!-- ($ ld: 3.4.11 sm $) -->
   </blockquote>
 </sect1>
