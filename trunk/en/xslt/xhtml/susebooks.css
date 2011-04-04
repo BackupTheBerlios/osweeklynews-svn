@@ -277,7 +277,7 @@ h2.subtitle
   margin-bottom:.5em;
   margin-top:.5em;
 }
-
+/* --- */
 div.important,div.warning,div.tip,div.caution,div.note
 {
   margin-bottom:2ex;
@@ -297,47 +297,47 @@ div.important,div.warning
   border:1px solid #f60;
 }
 
-div.important h3.title,div.note h3.title
+div.important h3.title,div.note h3.title,div.tip h3.title,div.warning h3.title
 {
-  background-color:#f60;
-  color:#fff;
-  font-size:large;
-  font-style:oblique;
-  padding:3px;
-}
-
-div.warning h3.title
-{
-  background-color:#C00000;
+  /* background-color:#f60; */
   color:#fff;
   font-style:oblique;
   padding:3px;
 }
 
-div.warning table tr.head td,div.warning table tr.head th
+div.important td, div.warning td,div.tip td,div.caution td,div.note td
 {
-/*  background-color:#f60; */
-  background-color:#ed1c24;
+  padding:1em;
+}
+
+div.tip table tr.head td,div.tip table tr.head th,div.note table tr.head td,div.note table tr.head th,div.important table tr.head td,div.important table tr.head th, div.warning table tr.head td,div.warning table tr.head th
+{
   color:#fff;
-  padding:3px;
+  padding: 0.3em  0.3em  0.3em !important;
   vertical-align:middle;
 }
 
 div.important table tr.head td,div.important table tr.head th
 {
   background-color:#ff8000;
-  color:#fff;
-  padding:3px;
-  vertical-align:middle;
 }
 
-div.tip table tr.head td,div.tip table tr.head th,div.note table tr.head td,div.note table tr.head th
+div.note table tr.head td,div.note table tr.head th
 {
   background-color:#690;
-  color:#fff;
-  padding:3px;
-  vertical-align:middle;
 }
+
+div.tip table tr.head td,div.tip table tr.head th {
+  background-color:#690;
+}
+
+div.warning table tr.head td,div.warning table tr.head th
+{
+  background-color:#ed1c24;
+}
+
+
+/* --- */
 
 td img
 {
@@ -605,6 +605,19 @@ span.headerimage img
   padding:4px;
   margin-right:0.75em;
 }
+
+span.section-prev,
+span.section-next
+{
+  font-size:small;
+}
+
+span.section-prev
+{
+  margin-left:4em;
+  margin-right:1em;
+}
+
 
 table img
 {

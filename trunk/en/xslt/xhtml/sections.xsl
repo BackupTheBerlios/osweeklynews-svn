@@ -87,8 +87,59 @@
     </xsl:if>
     
     <xsl:copy-of select="$title"/>
+    
+    <!-- Add navigation to next and previous sections -->
+    <xsl:if test="$level = 1">
+      <xsl:call-template name="generate.section.links">
+        <xsl:with-param name="next" select="following::sect1[1]"/>
+        <xsl:with-param name="prev" select="preceding::sect1[1]"/>
+      </xsl:call-template>
+    </xsl:if>
   </xsl:element>
 </xsl:template>
   
+
+<xsl:template name="generate.section.links">
+  <xsl:param name="next"/>
+  <xsl:param name="prev"/>
   
+  <xsl:message>generate.section.links: <xsl:value-of
+    select="concat(count($next), '|', count($prev))"/> </xsl:message>
+  
+  <xsl:if test="$prev">
+    <span class="section-prev">
+      <xsl:message>prev</xsl:message>
+      <a rel="next">
+        <xsl:attribute name="href">
+          <xsl:call-template name="href.target">
+            <xsl:with-param name="object" select="$prev"/>
+          </xsl:call-template>
+        </xsl:attribute>
+        <xsl:attribute name="title">
+          <xsl:apply-templates select="$prev" mode="object.title.markup.textonly"/>
+        </xsl:attribute>
+        <xsl:text>▲</xsl:text>
+      </a>
+    </span>
+  </xsl:if>
+  
+  <xsl:if test="$next">
+    <span class="section-next">
+      <xsl:message>next</xsl:message>
+      <a rel="next">
+        <xsl:attribute name="href">
+          <xsl:call-template name="href.target">
+            <xsl:with-param name="object" select="$next"/>
+          </xsl:call-template>
+        </xsl:attribute>
+        <xsl:attribute name="title">
+          <xsl:apply-templates select="$next" mode="object.title.markup.textonly"/>
+        </xsl:attribute>
+        <xsl:text>▼</xsl:text>
+      </a>
+    </span>
+  </xsl:if>
+  
+</xsl:template>
+
 </xsl:stylesheet>
