@@ -250,49 +250,14 @@
       </sect3> -->    
       <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-        <!--
         <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/03/21/policy-proposal-for-factory-make-source-of-tar-balls-trackable/">Adrian Schröter: Policy proposal for Factory: Make source of tar balls trackable</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian
+            Schröter: OBS team meeting</ulink>
         </title>
-        <para>I like to suggest a general policy for openSUSE:Factory project to document from where
-          a tar ball (or any other file from upstream) is comming from. Why that ? It makes it much
-          easier to review version updates and it guarantees that no one can inject some mal code
-          via a modifed tar ball. </para>
-        <para>So far I added the source services <quote>download_url</quote> and
-            <quote>tar_scm</quote> to our OBS instance, which downloads the files and stores them as
-          files via a commit. Some people use them already, some others don’t like them because they
-          store the files with _service: prefix. </para>
-        <para>In last hackweek, I added another way to handle this, which I would like to request as
-          setup and policy for openSUSE:Factory project. You can add a project wide source service,
-          for example the new <quote>download_files</quote> service. That would mean that no needs
-          to add a _service file to the sources anymore. It is enough to add an URL to the spec file
-          Source: tags. The service will automatically download it from there. </para>
-        <para>But that does mean we still have have _service:download_files:osc-0.1.tar.bz2 file
-          names ? Not when we also add the new<quote> trylocal</quote> parameter and use latest osc
-          versions. This parameter will let act osc to execute the services, but name the files
-          without prefix and commit them together with the other files. </para>
-        <para>Where is the advantage then ? The server is still validating that this is an identical
-          file. It downloads it again and compares it. In case it is the same file, nothing will
-          happen. </para>
-        <para>What will happen, when the file differes ? We basically have two options, either we
-          can let the service mark the source as broken or we would store the file with _service:
-          prefix again. </para>
-        <para>The later mode has the advantage that you can still do version upgrades via slow
-          connections and let the server download the files.</para>
-        <para>Please find some more details about new possibilities with the source services <ulink url="http://doc.opensuse.org/products/draft/OBS/obs-reference-guide/cha.obs.source_service.html">here</ulink>. </para>
-        <para>An example setup for this can be tested via
-          <screen>osc bco home:adrianSuSE:FactoryTest bc</screen></para>
-        <para>and do for example a version downgrade to 1.05 version to see how it works. Please
-          note that you need the osc from openSUSE:Tools:Unstable project for this.</para>
-        <para>We can also apply the still suse-internal spec formater and validator scripts via this
-          way later one. </para>
-        <para>Another advantage of this setup would be the new <quote>update_source</quote> service,
-          which could run in some openSUSE:Factory:AutoUpdate project and tries automatic version
-          upgrades when upstream releases a new version. They could be reviewed and just picked
-          (directly or with additional manual fixes). </para>
-        <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-      </blockquote> -->
+        <para>Adrian Schröter gives an short Meetinglog from the BuildService Team.</para>
+        <!--($ ld: 7.4.11 sm $)-->
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -317,44 +282,21 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->   
-    <!--
+      </sect3> -->  
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html">Frédéric Crozat: GNOME 3 Live image, release 0.1.1</ulink>
+          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html">Garrett
+            LeSage: GNOME 3</ulink>
         </title>
-        <para>As always, another week, another release, aka 0.1.1</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="20%" fileref="http://farm3.static.flickr.com/2628/3777290817_9d3513c85f_z.jpg"/>
-          </imageobject>
-        </mediaobject>
-        <para>This week release is a polish release : <itemizedlist>
-            <listitem>
-              <para>very few package changes</para>
-            </listitem>
-            <listitem>
-              <para>many services are disabled when booting live CD, improving its loading
-                speed</para>
-            </listitem>
-            <listitem>
-              <para>password is no longer asked at all in live CD for root or standard (tux)
-                user</para>
-            </listitem>
-            <listitem>
-              <para>when installing the image on a system (add liveinstall parameter on bootloader),
-                some services are enabled back (apparmor, preload, firewall), thanks to Chris
-                comments</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>Another service announcement : my GNOME3 openSUSE 11.3 repository will soon be removed
-          ; packages will be only available for openSUSE 11.4 (same <ulink url="https://build.opensuse.org/project/show?project=home%3Afcrozat%3Agnome3">OBS project</ulink>). Therefore, I strongly suggest to upgrading your system to openSUSE
-          11.4. </para>
-        <para>You know the url to fetch the latest release : <ulink url="http://gnome3.org/tryit.html">http://gnome3.org/tryit.html</ulink></para>
+        <para>GNOME 3 has been released! Congratulations to everyone involved in making this
+          happen!</para>
+        <para>I’ve been using the prerelease versions and have found a few tips that are worth
+          mentioning. (...)</para>
+        <!--($ ld: 7.4.11 sm $)-->       
       </blockquote>
-    </sect3> -->
+    </sect3>
 <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
@@ -728,8 +670,9 @@ For a power user it&apos;s a nice feature but for a basic user or a user that wa
             url="http://saigkill.homelinux.net/computer/linux/opensuse/opensuse-blog/76-opensuse-weekly-news-new-navbar-implemented"
             >Sascha Manns: openSUSE Weekly News: New NavBar implemented</ulink></title>
         <para><emphasis role="bold">Good News from the openSUSE Weekly News!</emphasis></para>
-        <para> From the next Issue (170) it will be easier to read the Weekly News. <xref
-            linkend="thomas-schraitle"/>Thomas Schraitle yesterday has implemented the <ulink
+        <para> From the next Issue (170) it will be easier to read the Weekly News. <ulink
+            url="https://connect.opensuse.org/pg/profile/thomas-schraitle">Thomas Schraitle</ulink>
+          yesterday has implemented the <ulink
             url="http://developer.berlios.de/feature/index.php?func=detailfeature&amp;feature_id=5298&amp;group_id=12095"
             >Feature Request #5298</ulink>. The Main Goal of that was to integrate <emphasis
             role="underline">a Navigations Bar</emphasis> for the Weekly News.</para>
@@ -744,6 +687,7 @@ For a power user it&apos;s a nice feature but for a basic user or a user that wa
           our <ulink url="http://developer.berlios.de/feature/?group_id=12095">Feature-Request
             SIte</ulink> on BerliOS. ATM this feature is just implemented in the HTML
           Version.</para>
+        <!--($ ld: 7.4.11 sm $)-->
       </blockquote>
     </sect3>
     <!--
