@@ -24,72 +24,60 @@
     * news.opensuse.org
     * carefully selected other sources-->
   <blockquote>
-    <title><ulink
-        url="http://lizards.opensuse.org/2011/03/28/opensuse-release-versioning-poll-on-last-three-options/"
-        >Andreas Jaeger: openSUSE Release versioning – Poll on last three options</ulink></title>
-    <para>The poll on SurveyMonkey on how to version the openSUSE distribution release is now
-      closed, you can see the results <ulink
-        url="http://www.surveymonkey.com/sr.aspx?sm=ZMyUjEimqUeLGFeX8Kmq_2baNaoqX9TRhoTN0KA_2fPlQxQ_3d"
-        >here</ulink>. The winner is the “old school” (like currently but only counting the right
-      number until 3), followed by “Fedora style” (just integers) and “Ubuntu style” (2 digits year
-      “.” 2 digits month).</para>
-    <para>The openSUSE members only poll is now live on <ulink
-        url="https://connect.opensuse.org/pg/polls/read/a_jaeger/12979/opensuse-release-versioning"
-        >connect.opensuse.org</ulink> until April 04, 2011. Please <ulink
-        url="https://connect.opensuse.org/pg/polls/read/a_jaeger/12979/opensuse-release-versioning"
-        >select</ulink> your favorite option!</para>
+    <title><ulink url="http://news.opensuse.org/2011/04/06/plus-ca-change-plus-cest-la-meme-chose/"
+        >Plus ça change, plus c’est la même chose…</ulink></title>
+    <para>Or in other words, <quote>The more things change, the more they stay the
+      same…</quote></para>
+    <para>openSUSE does not ship major/minor releases, but our numbering/naming scheme – NN.X – has
+      led to a common misperception that a .0 release was major and a .xý release was an update.
+      This created a number of issues, including lack of media attention for .x releases, and user
+      misconceptions about stability of .0 releases.</para>
+    <para>We have traditionally released versions as 11.0, 11.1, 11.2 and so on up to .3.ý (The
+      exception was 11.4 because the Project wasn’t sure what to number the next release.)</para>
+    <para>The only really clear thing was our release cycle timing, as follows:</para>
+    <para><emphasis role="bold"><quote>openSUSE releases on a fixed schedule every 8 months no
+          matter what.ý Therefore, all releases occur in November, July and
+        March.</quote></emphasis></para>
+    <para>There has been a lot of discussion over time within our community about our versioning
+      scheme for distribution releases. We want to ensure our growing community, including users and
+      media, have a clear and correct understanding of our release cycle – so naming or numbering
+      needed to reflect that, and not cause misunderstanding.</para>
+    <para>Recently, the Project took these discussions to a poll, to gauge community feeling about
+      the different options.ý Generally, the community expressed that they wanted a scheme that was
+      uniquely openSUSE’s and reflected our release methodology.ý We looked at other distros for
+      examples, and while we felt many had come up with excellent versioning schemes for their
+      distros, none properly reflected our own cycle.</para>
+    <para>From this discussion and results of the poll, we have come up with the following
+      scheme:</para>
+    <itemizedlist>
+      <listitem>
+        <para>The .x shall henceforth reflect the month of release <itemizedlist>
+            <listitem>
+              <para>1 = November</para>
+            </listitem>
+            <listitem>
+              <para>2 = July</para>
+            </listitem>
+            <listitem>
+              <para>3 = March</para>
+            </listitem>
+          </itemizedlist></para>
+      </listitem>
+      <listitem>
+        <para>We will no longer ship a .0 version.</para>
+      </listitem>
+    </itemizedlist>
+    <para>This solution brings a meaningful rationale to the scheme, without completely revising the
+      look.ý And thus, our next release in November will be 12.1.ý In July 2012, we will ship 12.2
+      and in March 2013, we will ship 12.3.ý Then in November 2013, we will ship 13.1.</para>
+    <para>So as you can see… same great versioning look, now with explanation.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/04/openSUSEVersion.png"/>
+      </imageobject>      
+    </mediaobject>
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!-- ($ ld: 28.3.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://news.opensuse.org/2011/03/28/review-opensuse-11-4-and-the-much-improved-xfce-4-8/"
-        >Review – openSUSE 11.4 and the much improved XFCE 4.8</ulink></title>
-    <para>Just a few months ago, the XFCE project announcedý<ulink
-        url="http://www.xfce.org/about/news/?post=1295136000">XFCE 4.8</ulink>,ýthe result of over 2
-      years of hard work. This desktop, one of the four official desktops of <ulink
-        url="http://news.opensuse.org/2011/03/10/opensuse-11-4/">openSUSE 11.4</ulink>, brings many
-      new features. If you’re not having fun in the desktops provided by KDE or GNOME you should
-      have a close look at XFCE (or the lightweight LXDE). To show you how it’s done, I checked out
-      XFCE and wrote about my experience.</para>
-    <figure id="xfce">
-      <title>The default XFCE desktop</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/03/desktop-300x168.png"/>
-        </imageobject>        
-      </mediaobject>
-    </figure>
-    <para><emphasis role="bold">Testing XFCE 4.8 on openSUSE 11.4</emphasis></para>
-    <para>To test XFCE <xref linkend="xfce"/> I went into <ulink url="http://susestudio.com">SUSE Studio</ulink> and
-      created an XFCE 4.8 image. After some clicking around (slimming a standard GNOME down to XFCE)
-      I had built a hard disk image. If you do this yourself, notice that by default, SUSE Studio
-      does not install ‘recommended’ packages from patterns. This can be enabled – and you surely
-      should do that if you want a decent XFCE!</para>
-    <para>The ability to just write an image to an usb disk and have it resize itself to the size of
-      the whole stick at first boot is awesome. You can just install software and in general won’t
-      notice you work on an USB stick! That is truly a portable OS… (...)</para>    
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 28.3.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://news.opensuse.org/2011/03/25/linux-foundation-http://news.opensuse.org/2011/03/30/a-year-of-collaboration-ahead"
-        >A year of Collaboration ahead</ulink></title>
-    <para>The openSUSE Project considers collaboration an important value for a Free Software
-      community. After our <ulink
-        url="http://news.opensuse.org/2010/10/28/opensuse-conference-big-success/">successful
-        openSUSE conference</ulink> which had a strong focus on collaboration, several cool things
-      have started. Now it is time for <emphasis role="bold"><ulink
-          url="http://en.opensuse.org/openSUSE:GSOC_2011">openSUSE bring collaboration to the Google
-          Summer of Code</ulink></emphasis> and we invite students to join us in making Free
-      Software stronger through working with others! For those who don’t know yet, Google Summer of
-      Code is a project by Google to <ulink url="http://en.opensuse.org/openSUSE:Why_GSOC">let
-        students spend their summer time on coding instead of a waiting tables.</ulink></para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 30.3.11 sm $)-->
+    <!-- ($ ld: 7.4.11 sm $) -->
   </blockquote>
 </sect1>
