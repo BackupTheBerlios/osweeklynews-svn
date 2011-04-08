@@ -28,73 +28,22 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink
-        url="http://michal.hrusecky.net/2011/03/gsoc-2011-ideas-karma-plugin-for-opensuse-connect/"
-        >Michal Hrusecky: GSoC 2011 Ideas – Karma plugin for openSUSE Connect</ulink></title>
-    <para>This post is about one idea for GSoC 2011 regarding openSUSE Connect. I already <ulink
-        url="http://michal.hrusecky.net/2010/08/ideas-about-karma-in-opensuse-connect/">wrote about
-        it</ulink> some time ago, but now is time to elaborate a little bit more.</para>
-    <para>First of all, let me state, that I already found a qualified student, that wants to work
-      on this idea and that has also some good suggestions. So I’m not searching for a student with
-      this post, but I want to share with you the goals of this project and why I think it is
-      important.</para>
-    <para>Let’s start again with what it is all about. We as a openSUSE Project have many
-      contributors. People provide not only code, but they write documentation on our wiki, report
-      bugs, organize release parties, organize booths at conferences and much more. Obviously we
-      should make their effort recognized by public. Usual way how to do it is to assign so called
-      karma points. Basically concept works like that for every contribution you receive some
-      points. And then, anytime you appear somewhere, everybody can see how skilled you are. This
-      works well on forums, but we have many different people and many different kinds of
-      activities. And we want project wide karma somehow.</para>
+    <title><ulink url="http://sysbytes.wordpress.com/2011/04/08/karma-plugin-for-opensuse-connect/"
+        >Kartik Mandaville: Karma Plugin for openSUSEConnect</ulink></title>
+    <para>This post is about an idea for GSoC 2011 regarding openSUSE Connect.</para>
+    <para><emphasis role="bold">Short Description</emphasis> : Karma concept in openSUSE Connect
+      that will collect points from wiki edits, bugzilla entries, planet.opensuse.org posts,
+      distribution changelogs etc and use them in the Connect. Based on Karma, different badges to
+      be given. Different categories – developer karma/marketing karma etc. Also, an option to
+      reward/ transfer Karma points to another user in recognition of his work. API to be
+      implemented to access/ modify Karma points.</para>
+    <para>For those of you who have time to read the long description :</para>
     <para>So basic idea of this project is to create different kinds of karma and collect as many
       information as possible automatically. So we will have wiki karma that will grow with every
       wiki page edit. We will have marketing karma growing bigger with every tweet and blog post.
       Packager karma getting bigger with every change submitted to the openSUSE. So this project
       will be not only about displaying and managing karma points but also about collecting
-      statistics from various different services.</para>
-    <para>One thing that I wanted implemented was ability for group moderators to reward group
-      members for extraordinary work a little bit extra. So for example if some KDE developer will
-      fix really tough bug, KDE people can give him some extra points. But allocating these extra
-      points will not be easy and will definitely need some more thoughts. Main trouble will be how
-      to allocate points that group can redistribute.</para>
-    <para>Other feature I wanted to have was having means how individuals can reward others whose
-      work they appreciate. My original idea was to let people send around their own Karma points.
-      But I was pointed out, that this might not be a good idea. There are few reasons why. First
-      trouble is that people will get karma points of different type than they should have.
-      Ambassador will send some karma points to the great developer and shy developer could earn
-      many marketing points this way even though he prefers to be locked down in the basement. Other
-      problem is that people that didn’t contributed yet or thanked a lot might not have anything
-      left to show how did they liked the work. So other idea proposed by Kartik was using some
-      general thanks you button. While thinking about it, it makes some sense to create separate
-      karma type for that as well.</para>
-    <para>And what to do with karma point once you have some? It should be certainly displayed in
-      the river on the connect so others will know that you did something. But there should be
-      possibility to also use them somehow. Obviously there need to be a banner displaying amount of
-      them that you can put on your web. So your visitors can see how great contributor you are.
-      Other thing that I was thinking about was to create some badges for your avatars that you can
-      buy. Or even allow third party applications to use them somehow using API, so you could buy
-      things, but that sounds like a distant future…</para>
-    <para>So there is a lot of work to do and student who applied has even some more ideas, so I
-      think if this project will get selected, openSUSE Connect will be much more fun <inlinemediaobject>
-        <imageobject>
-          <imagedata fileref="http://michal.hrusecky.net/wp-includes/images/smilies/icon_wink.gif"/>
-        </imageobject>
-      </inlinemediaobject></para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA</ulink></para>
-    <!-- ($ ld: 28.3.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://oyranos-cms.blogspot.com/2011/03/google-summer-of-code-2011-student.html"
-        >Kai-Uwe Behrmann: Google Summer of Code 2011 Student Applications open</ulink></title>
-    <para>This years <ulink url="http://www.google-melange.com/">Google Summer of Code</ulink>
-      program is open for student proposals. <ulink
-        url="http://freedesktop.org/wiki/OpenIcc/GoogleSoC2011">OpenICC</ulink> in collaboration
-      with openPrinting and <ulink
-        url="http://en.opensuse.org/openSUSE:GSOC_2011_Ideas#ICC_Device_Profile_Repository"
-        >openSUSE</ulink> provide mentored projects around colour management. Own ideas from female
-      and male students all around the world are welcome.</para>
-    <!--($ ld: 29.3.11 sm $)-->
+      statistics from various different services. (...)</para>
+    <!-- ($ ld: 8.4.11 sm $) -->
   </blockquote>  
 </sect1>
