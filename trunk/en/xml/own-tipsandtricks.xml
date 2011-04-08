@@ -86,7 +86,7 @@ To begin with, remember that there are two kinds of graphics you can add to your
         be a stable sort on any platform, happens to be implemented in <emphasis role="italic"
           >glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we'd like
         Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
-        important enough to implement properly.</para>
+        important enough to implement properly. (...)</para>
 <!-- ($ Id: 8.4.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
@@ -138,5 +138,18 @@ To begin with, remember that there are two kinds of graphics you can add to your
 </para>
       <para><emphasis role="bold">Note</emphasis>: On SLES11 or SLES11 SP1, by playing with /etc/sysconfig/opendlap, you can use the configuration file (/etc/openldap/slapd.conf) to configure OpenLDAP server but in this case do not use YaST anymore. (...)</para>
 <!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.linux.com/learn/tutorials/428331:ipv6-crash-course-for-linux"
+          >Carla Schroder:  IPv6 Crash Course For Linux </ulink></title>
+      <para> You might be used to working with IPv4 on Linux, but like it or not IPv6 is on its way
+        in. Roll up your sleeves, spit on your palms, and get ready to go to work because this is
+        your crash course in actually using IPv6. It hardly hurts at all. Linux has supported it
+        since the 2.1 kernel, so you shouldn't have to install anything. Make sure you have the
+        ping6, ip, and ifconfig commands.</para>
+      <para> Let's get my favorite nitpick out of the way right now — we do not have IPs, we have IP
+        addresses. IP stands for Internet Protocol. As my wise grandmother used to say, sloppy
+        speech equals sloppy habits, which equals a trip to hell in a handbasket. (...)</para>
+      <!--($ Id: 8.4.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>
