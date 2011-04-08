@@ -27,7 +27,7 @@
     </blockquote>
     </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
-    <!--
+<!--
     <blockquote>
       <title>
         <ulink url="http://lists.opensuse.org/opensuse-factory/2011-03/msg00701.html">Stephan Kulow: Status: distribution</ulink>
@@ -41,8 +41,7 @@
         possible.</para>
       <para>Greetings, Stephan P.S. Right now we can&apos;t publish new builds as kiwi requires a package
         that does not exist ;(</para>
-    </blockquote> -->
-    <itemizedlist>
+    </blockquote> -->    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
@@ -247,17 +246,14 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    
-      <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-        <blockquote>
+      <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian
-            Schröter: OBS team meeting</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian Schröter: OBS team meeting</ulink>
         </title>
         <para>Adrian Schröter gives an short Meetinglog from the BuildService Team.</para>
-        <!--($ ld: 7.4.11 sm $)-->
-      </blockquote>
+<!--($ ld: 7.4.11 sm $)-->      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -282,20 +278,17 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->  
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html">Garrett
-            LeSage: GNOME 3</ulink>
+          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html">Garrett LeSage: GNOME 3</ulink>
         </title>
         <para>GNOME 3 has been released! Congratulations to everyone involved in making this
           happen!</para>
         <para>I’ve been using the prerelease versions and have found a few tips that are worth
           mentioning. (...)</para>
-        <!--($ ld: 7.4.11 sm $)-->       
-      </blockquote>
+<!--($ ld: 7.4.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="kdeteam">
@@ -478,35 +471,35 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 349)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 348)</ulink>
           </title>
-          <para>&quot;Network installation could be improved by running package download and package
-            installation in parallel.&quot;</para>
+          <para>Network installation could be improved by running package download and package
+            installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 182)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 181)</ulink>
           </title>
-          <para>&quot;I wanted to open a fate feature about this when I first heard of plymouth, but
+          <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
             http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
             really makes me think we should go this way.</para>
           <para>Ray&apos;s comment starting with &quot;Every flicker and mode change in the boot
             process takes away from the whole experience.&quot; is especially interesting. Is it
-            okay to track the &quot;don&apos;t show grub by default&quot; here?&quot;</para>
+            okay to track the &quot;don&apos;t show grub by default&quot; here?</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 122)</ulink>
           </title>
-          <para>&quot;We need a replacement for sax2 in 11.3, as a safety measure for when auto
-            configuration fails to detect certain monitors/keyboards/mice. (...)&quot;</para>
+          <para>We need a replacement for sax2 in 11.3, as a safety measure for when auto
+            configuration fails to detect certain monitors/keyboards/mice. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 109)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 115)</ulink>
           </title>
-          <para>&quot;Every single bug or feature that anyone has developed for GRUB 0.97 has been
+          <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
             the distribution community to switching boot loaders, but this stalemate isn&apos;t
             going to go away. The code itself isn&apos;t well written or well maintained. Adding a
@@ -516,13 +509,13 @@
             systems, or even a simple journaled file system, we run into problems (like the reiserfs
             taking forever to load bug) because we don&apos;t have enough memory to do block mapping
             for the journal so it needs to scan it for every metadata read. (Yeah, really.)
-            (...)&quot;</para>
+            (...)</para>
         </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 93)</ulink>
           </title>
-          <para>&quot;We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
+          <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
     </para>
           <para>* reusing popcon will give us results that are directly comparable with Debian and Ubuntu
@@ -531,80 +524,136 @@
     </para>
           <para>* we need a configuration dialog in YaST that is visible enough
     </para>
-          <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)
-&quot;</para>
+          <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 2.4.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 9.4.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312137">Equivalent of nvidia-settings for Nouveau</ulink>
+            <ulink url="https://features.opensuse.org/312189">Need Offline Dictionary/Thesaurus database &amp; GUI</ulink>
           </title>
-          <para>&quot;The open source driver for Nvidia GPU, Nouveau, is more and more performant. It is already fully usable instead of the proprietary driver.
-However, there is no GUI to configure display. SaX2 module is not available anymore in YaST in openSUSE 11.4, and there is no way to make modifications such as defining the dpi.
+          <para>In some cases when dictionary servers go offline or internet connection goes down looking up words becomes difficult
+</para>
+          <para>Hence there arises a need for an offline dictionary GUI and database
+Suggestion:-
+</para>
+          <para>I would like artha and wordnet to be added to the distribution
 
 </para>
-          <para>Developping an equivalent of nvidia-settings for Nouveau would push even more users to switch to open source drivers.&quot;</para>
+          <para>Even if the inclusion of above is not possible I am open for inclusion of any other Offline Dictionary/Thesaurus database &amp; GUI</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312150">weak conflicts/softlocks/no-recommends for patterns</ulink>
+            <ulink url="https://features.opensuse.org/312190">Right click mount .iso</ulink>
           </title>
-          <para>&quot;Installation of a pattern also draws in packages that are not in the pattern but only recommended by those listed in the pattern. For the &quot;minimal&quot; pattern this behavior is not desirable though as one really wants a minimal installation without the optional stuff.
-Current workaround is to add conflicts to the unwanted, recommended packages. That has the disadvantage that explicitly installing such blocked packages requires deinstallation of the pattern.
+          <para>Make it so that one can merely rightclick a disk image to select &quot;mount&quot; to mount it.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312191">Driver management YaST module</ulink>
+          </title>
+          <para>Allow removing, inserting, and blacklisting of drivers via simple YaST module.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312192">Open Mobile Suite</ulink>
+          </title>
+          <para>inclusion of the &quot;Open Mobile Suite&quot; - as phone manager in openSUSE.
+Of course the project needs help but is very promising and really needed a modern computer OS.
 
 </para>
-          <para>Therefore we need some mechanism to block recommended packages. I see several approaches:
-</para>
-          <para>1. introduce a weak-conflicts/soft-locks tag in patterns. This tag must be stronger than the recommends tag of packages.
-</para>
-          <para>2. add a no-recommends tag to the pattern which would cause the resolver to not honor recommends while installing the pattern
-</para>
-          <para>3. add a workaround to yast and hardcode setting the no-recommends flag when the user selects the minimal pattern.&quot;</para>
+          <para>http://series60-remote.sourceforge.net/index.php?module=News&amp;func=display&amp;sid=7 </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312151">make KDE&apos;s &quot;kickoff&quot; launcher menu recognizable in &quot;Add widgets&quot;</ulink>
+            <ulink url="https://features.opensuse.org/312205">Provide anonymous web surfing</ulink>
           </title>
-          <para>&quot;Nearly once a month, one of our users somehow manages to vanish his application launcher menu (aka kickoff), angry asking &quot;Where&apos;s my green start button gone?!&quot;.
+          <para>Anonymous web surfing should be only one, I mean one, click away on a default installation of openSUSE. I would love to see a little desktop applet or browser plugin which enables anonymous surfing for the logged in user.
 </para>
-          <para>Even if he then manages to get to his panel options and find the &quot;Add widgets&quot; function, he&apos;ll never discover &quot;my greenish chameleon symbol&quot; there. He&apos;s usually completely lost at identifying the entry &quot;Application Launcher Menu&quot; as his missing widget, because that only bears that standard, feebly blue/white &quot;K gear&quot; symbol.
+          <para>There are various projects out there to help protecting our privacy such as Tor https://www.torproject.org/ and others like proxies and such. These should be nicely integrated into the system, ie. when setting up network there could be a swith &quot;enable anonymous browsing by default&quot; and such. All parts for such an solution are there, just investigation, planning and integration is needed.
+
 </para>
-          <para>Even if he then manages to remember his missing bit was named like &quot;kick&quot; and types &quot;kick&quot; or &quot;kickoff&quot; in the search field of the &quot;Add widgets&quot; window - he&apos;ll find nothing... Why is that?
-</para>
-          <para>So I&apos;d like to suggest:
-</para>
-          <para>- change the symbol of &quot;Application Launcher Menu&quot;
-in the &quot;Add widgets&quot; list to the green &quot;SUSEgreeter&quot;
-symbol everybody recognizes at once
-</para>
-          <para>- give this entry the keyword &quot;kickoff&quot; so that searching
-for &quot;kick*&quot; would reveal exactly this entry
-</para>
-          <para>Since I&apos;m a systems administrator and not a developer, PLEASE upstream this to KDE4 if it&apos;d be rather their responsibility.&quot;</para>
+          <para>Please note that anonymous internet usage is not illegal. Its like sending a letter in an envelope instead of without.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312174">Kpackagekit: Patches by default, other updates optional</ulink>
+            <ulink url="https://features.opensuse.org/312209">GTK+ client for Smolt</ulink>
           </title>
-          <para>&quot;Since 11.4, the official updater in KDE is now kpackagekit and not kupdateapplet anymore. It gives you by default the notification of patches but also the packages on all the repos enabled.
-For a power user it&apos;s a nice feature but for a basic user or a user that wants to have choice in softwares but just wants the system to work, it&apos;s anoying. Even with few additional repos, it&apos;ll give you a huge amount of updates. (...)&quot;</para>
+          <para>A gtk client for smolt would enable it it to be bundled with the default distribution of openSUSE.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312186">Run certain steps in wizard and Install together</ulink>
+            <ulink url="https://features.opensuse.org/312211">system ICC color management</ulink>
           </title>
-          <para>&quot;About two months I tried LinuxMint and installed in VirtualBox. When you install it, it asks you the bare minimum installation questions like partitioning and license agreement then starts installing. It saves time because you set up things like User as you install. If we could have YaST ask you about the license agreement, then Partitioning, Boot Loader and Software then as the installation runs (as in installing RPMs and formatting partitions) you set up Users, Hardware, read the Release Notes (that part is already done) and the Root password. It would save time and be more efficient.&quot;</para>
+          <para>Add a colour management system (CMS) for assigning ICC device profiles to device + driver configurations. Starting with the monitor profiles some colour management aware graphics applications can already use this feature. These cover Scribus, Krita, Gimp, Inkscape and some more.
+A open source CMS, which has extensive support for setting up ICC profiles for monitors is Oyranos.
+</para>
+          <para>http://www.oyranos.org
+</para>
+          <para>Dependencies:
+</para>
+          <itemizedlist>
+            <listitem>
+              <para>OpenICC profile set</para>
+            </listitem>
+            <listitem>
+              <para>libXcm</para>
+            </listitem>
+            <listitem>
+              <para>libxml2</para>
+            </listitem>
+            <listitem>
+              <para>X11 development libs</para>
+            </listitem>
+            <listitem>
+              <para>xcalib</para>
+            </listitem>
+          </itemizedlist>
+          <para>Optionally are some more dependencies for CUPS, patched SANE, libraw/exiv2, Qt.
+UIs exist as Kolor Manager (KDE control panel) and Synnefo (Qt).
+The library is very modular and can simply be removed if needed.
+
+Most packages (except Synnefo) exist in OBS already.</para>
         </blockquote>
-<!-- ($ ld: 2.4.11 sat *replaced with newer ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312216">deprecate /var/lock</ulink>
+          </title>
+          <para>/var/lock should be deprecated
+
+    </para>
+          <itemizedlist>
+            <listitem>
+              <para>it never was really used properly on SUSE Linux</para>
+            </listitem>
+          </itemizedlist>
+          <itemizedlist>
+            <listitem>
+              <para>using lockdev didn&apos;t really help either as only few programs actually use it and it&apos;s not bug free (should be setuid instead of setgid lock)
+
+</para>
+            </listitem>
+          </itemizedlist>
+          <para>The suggestion would be to patch programs to use flock() on the device fd instead which would solve all problem wrt permissions ans stale lock files.
+
+</para>
+          <para>https://bugzilla.redhat.com/show_bug.cgi?id=581884
+
+</para>
+          <para>http://0pointer.de/blog/projects/locking
+
+</para>
+          <para>http://0pointer.de/blog/projects/locking2 </para>
+        </blockquote>
+<!-- ($ ld: 9.4.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!---
+<!---
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -631,24 +680,21 @@ For a power user it&apos;s a nice feature but for a basic user or a user that wa
           April.</para>
         <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="testing">
+    </sect3> -->    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
           <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00000.html">Larry Finger: Weekly News for Weekly News for April 2</ulink>
         </title>
         <para>The Testing Core Team held an IRC meeting on March 28, 2011 at 17:00 UTC. We discussed
-          our plans for the next "Open Bugs Day", which will be from 00:00 to 23:59 UTC, Saturday
+          our plans for the next &quot;Open Bugs Day&quot;, which will be from 00:00 to 23:59 UTC, Saturday
           April 2, 2011. As written before, the emphasis will be on identifying those bugs reported
           for 11.2 and older that are still present in 11.4. We will not attempt to squash these
           bugs, but to make sure that none have been forgotten. After the release of 11.5 M5, we
           will have a bug-squashing day. </para>
-        <para>As I write this, OBD has started. I'm not sure when this will be published, but if it
+        <para>As I write this, OBD has started. I&apos;m not sure when this will be published, but if it
           is still April 2, then please join us at irc://irc.opensuse.org/openSUSE-testing. </para>
-        <para>Further information is available at <ulink
-            url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
-            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>.</para>
+        <para>Further information is available at <ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>.</para>
 <!-- ($ ld: 2.4.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
@@ -666,31 +712,25 @@ For a power user it&apos;s a nice feature but for a basic user or a user that wa
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
-        <title><ulink
-            url="http://saigkill.homelinux.net/computer/linux/opensuse/opensuse-blog/76-opensuse-weekly-news-new-navbar-implemented"
-            >Sascha Manns: openSUSE Weekly News: New NavBar implemented</ulink></title>
+        <title>
+          <ulink url="http://saigkill.homelinux.net/computer/linux/opensuse/opensuse-blog/76-opensuse-weekly-news-new-navbar-implemented">Sascha Manns: openSUSE Weekly News: New NavBar implemented</ulink>
+        </title>
         <para><emphasis role="bold">Good News from the openSUSE Weekly News!</emphasis></para>
-        <para> From the next Issue (170) it will be easier to read the Weekly News. <ulink
-            url="https://connect.opensuse.org/pg/profile/thomas-schraitle">Thomas Schraitle</ulink>
-          yesterday has implemented the <ulink
-            url="http://developer.berlios.de/feature/index.php?func=detailfeature&amp;feature_id=5298&amp;group_id=12095"
-            >Feature Request #5298</ulink>. The Main Goal of that was to integrate <emphasis
-            role="underline">a Navigations Bar</emphasis> for the Weekly News.</para>
+        <para> From the next Issue (170) it will be easier to read the Weekly News. <ulink url="https://connect.opensuse.org/pg/profile/thomas-schraitle">Thomas Schraitle</ulink>
+          yesterday has implemented the <ulink url="http://developer.berlios.de/feature/index.php?func=detailfeature&amp;feature_id=5298&amp;group_id=12095">Feature Request #5298</ulink>. The Main Goal of that was to integrate <emphasis role="underline">a Navigations Bar</emphasis> for the Weekly News.</para>
         <para> Now the first implementation looks like:</para>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="http://saigkill.homelinux.net/images/NavBar.png" width="40%"/>
+            <imagedata width="40%" fileref="http://saigkill.homelinux.net/images/NavBar.png"/>
           </imageobject>
         </mediaobject>
         <para>So you can skip a Section who you are not interested in.</para>
         <para>If you have a new Feature you want to have implemented in the Weekly News, just visit
-          our <ulink url="http://developer.berlios.de/feature/?group_id=12095">Feature-Request
-            SIte</ulink> on BerliOS. ATM this feature is just implemented in the HTML
+          our <ulink url="http://developer.berlios.de/feature/?group_id=12095">Feature-Request SIte</ulink> on BerliOS. ATM this feature is just implemented in the HTML
           Version.</para>
-        <!--($ ld: 7.4.11 sm $)-->
-      </blockquote>
+<!--($ ld: 7.4.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
