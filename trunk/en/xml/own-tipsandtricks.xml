@@ -22,11 +22,9 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/the-perfect-desktop-opensuse-11.4-gnome"
-          >HowtoForge/Falko Timme: The Perfect Desktop - OpenSUSE 11.4 (GNOME) </ulink>
+        <ulink url="http://www.howtoforge.com/the-perfect-desktop-opensuse-11.4-gnome">HowtoForge/Falko Timme: The Perfect Desktop - OpenSUSE 11.4 (GNOME) </ulink>
       </title>
-      <para>This tutorial shows how you can set up an <ulink url="http://www.opensuse.org/">OpenSUSE
-          11.4</ulink> desktop that is a full-fledged replacement for a Windows desktop, i.e. that
+      <para>This tutorial shows how you can set up an <ulink url="http://www.opensuse.org/">OpenSUSE 11.4</ulink> desktop that is a full-fledged replacement for a Windows desktop, i.e. that
         has all the software that people need to do the things they do on their Windows desktops.
         The advantages are clear: you get a secure system without DRM restrictions that works even
         on old hardware, and the best thing is: all software comes free of charge.</para>
@@ -36,13 +34,13 @@
 <!-- ($ Id: 3.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://masterpatricko.blogspot.com/2011/03/opensuse-114-first-steps.html">Tejas Guruswamy: openSUSE 11.4 - first steps</ulink>
+        <ulink url="http://www.packtpub.com/article/scribus-importing-images">Packt Publishing/Cedric Gemy: Scribus: Importing Images</ulink>
       </title>
-      <para>Finally term is over and I&apos;m on my Easter break, which means I can step up my
-        contributions again. First step was to install the new release on my desktop - openSUSE 11.4
-        looks really, really good! No hassles during installation at all, took about 20mins from
-        DVD. (...)</para>
-<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
+      <para><emphasis role="bold">Importing and exporting:</emphasis></para>
+      <para>The concepts
+
+To begin with, remember that there are two kinds of graphics you can add to your layout. You can have photos, generally taken from a digital camera, downloaded, or bought on some website. Photos will generally be stored in JPEG files, but you can also find PNG, TIFF, or many other file formats. The second kind of graphics is vector drawings such as logos and maps. They are computer-made drawings and are stored as EPS or SVG files. You will certainly need to work with both in most of your documents. (...)</para>
+<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -62,12 +60,8 @@
         :<screen>sudo apt-get install rtmpdump</screen></para>
       <para>Now to start watching Aljazeera live, open terminal and enter the following
         command</para>
-      <para><emphasis role="bold">To use Mplayer
-        :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y \\
-&quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
-      <para><emphasis role="bold">To use VLC
-        player:</emphasis><screen>$<emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ \\
--y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
+      <para><emphasis role="bold">To use Mplayer :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y \\ &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
+      <para><emphasis role="bold">To use VLC player:</emphasis><screen>$<emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ \\ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
           </screen></para>
       <para>Enjoy :)</para>
       <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
@@ -130,56 +124,50 @@ int main() {
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.serverwatch.com/tutorials/article.php/3929346/article.htm">Serverwatch/Juliet Kemp: Use Linux and WebDAV to Facilitate Online Collaboration</ulink>
+        <ulink url="http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-opensuse-11.4-lamp">HowtoForge/Falko Timme: Installing Apache2 With PHP5 And MySQL Support On OpenSUSE 11.4 (LAMP)</ulink>
       </title>
-      <para>The WebDAV protocol enables users to store and share files via HTTP. This is
-        particularly valuable in cases where HTTP is usually read-only, as WebDAV allows writing as
-        well. In addition to accessing documents, users can (with suitable permissions) edit and
-        re-upload them. Think of it as a networked file-system run over HTTP; or as a way of
-        supporting long-distance collaboration on files. The protocol supports locking and
-        versioning information, so once you&apos;ve accessed the WebDAV folder, you can edit files
-        without risking overwriting other people&apos;s edits. These days, there are more and more ways
-        available to undertake online collaboration, but WebDAV remains a useful and straightforward
-        way to share files, especially as it&apos;s supported by plenty of software at both server and
-        client end. (...)</para>
-<!--($ Id: 30.3.11 sm $)-->    </blockquote>
+      <para>LAMP is short for <emphasis role="bold">L</emphasis>inux, <emphasis role="bold">A</emphasis>pache, <emphasis role="bold">M</emphasis>ySQL, <emphasis role="bold">P</emphasis>HP. This tutorial shows how you can install an Apache2 webserver on an OpenSUSE 11.4 server with PHP5 support (mod_php) and MySQL support. (...)</para>
+<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-11.4-x86_64-ispconfig-2">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 11.4 x86_64 [ISPConfig 2]</ulink>
+        <ulink url="http://www.novell.com/communities/node/12703/howto-openldap-24x-replication-sles11sp1">Novell Cool Solutions/fpernet: HOWTO: OpenLDAP 2.4.x Replication on SLES11 SP1</ulink>
       </title>
-      <para>This is a detailed description about how to set up an OpenSUSE 11.4 server (x86_64) that offers all services needed by ISPs and hosters: Apache web server (SSL-capable), Postfix mail server with SMTP-AUTH and TLS, BIND DNS server, Proftpd FTP server, MySQL server, Dovecot POP3/IMAP, Quota, Firewall, etc. In the end you should have a system that works reliably, and if you like you can install the free webhosting control panel ISPConfig 2 (i.e., ISPConfig runs on it out of the box).
+      <para><emphasis role="bold">Introduction</emphasis></para>
+      <para>YaST has a module for the server and the client part of OpenLDAP (plus a very basic LDAP browser / editor).
 
 </para>
-      <para>I will use the following software:
+      <para>On SLES11 we had the following problems regarding the use of the YaST module and OpenLDAP server configuration:
 
     </para>
-      <para>
-        <itemizedlist>
-          <listitem>
-            <para>Web Server: Apache 2.2.17 with PHP 5.3.5, Ruby, and Python </para>
-          </listitem>
-          <listitem>
-            <para>Database Server: MySQL 5.1.53</para>
-          </listitem>
-          <listitem>
-            <para>Mail Server: Postfix </para>
-          </listitem>
-          <listitem>
-            <para>DNS Server: BIND9 </para>
-          </listitem>
-          <listitem>
-            <para>FTP Server: proftpd </para>
-          </listitem>
-          <listitem>
-            <para>POP3/IMAP: I will use Maildir format and therefore install
-              Courier-POP3/Courier-IMAP. </para>
-          </listitem>
-          <listitem>
-            <para>Webalizer for web site statistics </para>
-          </listitem>
-        </itemizedlist>
-      </para>
-      <para>Please note that this setup does not work for ISPConfig 3! It is valid for ISPConfig 2 only! (...)</para>
-<!--($ Id: 2.4.11 sat $)-->    </blockquote>
+      <itemizedlist>
+        <listitem>
+          <para>Database version only to store the configuratio (cn=config).</para>
+        </listitem>
+        <listitem>
+          <para>No way to set up any replication method or mode using this module.</para>
+        </listitem>
+        <listitem>
+          <para>OpenLDAP modules available build in the SLAPD binary.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Then your choices in this SLES11 version:
+
+    </para>
+      <itemizedlist>
+        <listitem>
+          <para>Use the configuration file /etc/openldap/slapd.conf but in this case, forget YaST for ever.</para>
+        </listitem>
+        <listitem>
+          <para>Use YaST to set up a basic OpenLDAP server then use an external tool to set up the rest.</para>
+        </listitem>
+        <listitem>
+          <para>If use of YaST only is mandatory, forget the replication.</para>
+        </listitem>
+      </itemizedlist>
+      <para>An RFE (Request For Enhancements) was created at this time, to be able to set up replication from the YaST module, on SLES11 SP1. They did it! So, let’s check how it works.
+
+</para>
+      <para><emphasis role="bold">Note</emphasis>: On SLES11 or SLES11 SP1, by playing with /etc/sysconfig/opendlap, you can use the configuration file (/etc/openldap/slapd.conf) to configure OpenLDAP server but in this case do not use YaST anymore. (...)</para>
+<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
