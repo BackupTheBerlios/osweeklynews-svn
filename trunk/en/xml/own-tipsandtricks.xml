@@ -72,53 +72,22 @@ To begin with, remember that there are two kinds of graphics you can add to your
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://dominique.leuenberger.net/blog/?p=178">Dominique Leuenberger: how to fix brp and rpmlint warnings – today:I: Program causes undefined operation(likely same variable used twice and post/pre incremented in the same expression)</ulink>
+        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey
+          Stedfast: Optimizing Merge Sort</ulink>
       </title>
-      <para>It seems the planned series sort of finds an audience, which in turn of course is
-        motivational to keep on writing it. Today, we’ll have a look at this Informational message
-        in BRP
-        checks:<screen>I: Program causes undefined operation
- (likely same variable used twice and post/pre incremented in the same expression).
- e.g. x = x++; Split it in two operations.</screen></para>
-      <para>This is currently informational only and is not failing the build, but you might want to
-        address them together with upstream. </para>
-      <para>I assume you do know what “a++” means in C (otherwise, you should start reading
-        C-books), so we just try to reproduce this error in a simple c test
-        case:<screen>#include &lt;stdio.h&gt;
- 
-int main() {
- int i=5;
- i = i++ * ++i;
- printf(&quot;The current value of i is %d\n&quot;, i);
- return 0;
- }</screen></para>
-      <para>When building this using gcc -Wall test.c, we get this compiler warning (which in turn
-        is what brp translates to the information we’re discussing
-        here)<screen>&gt; gcc -Wall test2.c
- test.c: In function ‘main’:
- test.c:5:5: warning: operation on ‘i’ may be undefined</screen></para>
-      <para>So, let’s first see for ourselves what we would expect this to be? Hmm.. already for us,
-        this looks not logic (and I surely hope nobody would write this code). Let’s just see what
-        starting this executable gives shall we?<screen>The current value of i is 37</screen></para>
-      <para>Now, is this surprising? We multiplied, assigned it to i and as a result we get a prime
-        number? By closely analyzing the line you will likely understand what the compiler did. But
-        was this expected? If this is actually what the programmer intended, the code should just be
-        rewritten to be more logical, like:<screen>i = (i+1) ^2 + 1;</screen></para>
-      <para>This is understandable for all of us and does not yield the surprise of what is going
-        on.</para>
-      <para>And that is actually all this warning is about: it requests the programmer to write code
-        that can be understood and does not depend on what the compiler interprets. It might even
-        very well be that the different optimization levels or the usage of different compilers
-        might end up in different results.</para>
-      <para>If you want to read some more about this topic, I suggest to have a look at:<itemizedlist>
-          <listitem>
-            <para><ulink url="http://en.wikipedia.org/wiki/Sequence_point">Wikipedia</ulink></para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html">http://publications.gbdirect.co.uk/c_book/chapter8/sequence_points.html</ulink></para>
-          </listitem>
-        </itemizedlist></para>
-<!-- ($ Id: 28.3.11 sm $)-->    </blockquote>
+      <para>A number of years ago I wrote about the <ulink
+          url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
+        algorithm. One of the advantages of <emphasis role="italic">Merge Sort</emphasis> is that it
+        is a stable sort, meaning that elements that compare as being equal remain in their original
+        order after being sorted.</para>
+      <para>Well, today I had need of employing a stable sorting routine for sorting elements by a
+        ZIndex in <ulink url="http://www.moonlight-project.com">Moonlight</ulink>. Up until today,
+        we had been using <emphasis role="italic">qsort()</emphasis> which, while not guaranteed to
+        be a stable sort on any platform, happens to be implemented in <emphasis role="italic"
+          >glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we'd like
+        Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
+        important enough to implement properly.</para>
+<!-- ($ Id: 8.4.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
