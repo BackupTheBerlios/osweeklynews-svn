@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/the-perfect-desktop-opensuse-11.4-gnome">HowtoForge/Falko Timme: The Perfect Desktop - OpenSUSE 11.4 (GNOME) </ulink>
+      </title>
+      <para>This tutorial shows how you can set up an <ulink url="http://www.opensuse.org/">OpenSUSE 11.4</ulink> desktop that is a full-fledged replacement for a Windows desktop, i.e. that
+        has all the software that people need to do the things they do on their Windows desktops.
+        The advantages are clear: you get a secure system without DRM restrictions that works even
+        on old hardware, and the best thing is: all software comes free of charge.</para>
+      <para>I want to say first that this is not the only way of setting up such a system. There are
+        many ways of achieving this goal but this is the way I take. I do not issue any guarantee
+        that this will work for you! (...)</para>
+<!-- ($ Id: 3.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.packtpub.com/article/scribus-importing-images">Packt Publishing/Cedric Gemy: Scribus: Importing Images</ulink>
+      </title>
+      <para><emphasis role="bold">Importing and exporting:</emphasis></para>
+      <para>The concepts
+
+To begin with, remember that there are two kinds of graphics you can add to your layout. You can have photos, generally taken from a digital camera, downloaded, or bought on some website. Photos will generally be stored in JPEG files, but you can also find PNG, TIFF, or many other file formats. The second kind of graphics is vector drawings such as logos and maps. They are computer-made drawings and are stored as EPS or SVG files. You will certainly need to work with both in most of your documents. (...)</para>
+<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.unixmen.com/linux-commands/1602-watch-al-jazeera-live-with-one-command">Unixmen/M. Zinoune (Zinovsky): Watch Al Jazeera Live in Linux with one command</ulink>
+      </title>
+      <para>If you are a fun of Aljazeera News channel, this is a nice command that allow you to
+        watch Al Jazeera live in your Linux desktop. I tested the command and is working like a
+        charm.</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://cdn.unixmen.com/images/stories/thumbnails/images-stories-videos-aljazeera1-400x225.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>First check if you have rtmpdump installed, if not install it using the command
+        :<screen>sudo apt-get install rtmpdump</screen></para>
+      <para>Now to start watching Aljazeera live, open terminal and enter the following
+        command</para>
+      <para><emphasis role="bold">To use Mplayer :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y \\ &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
+      <para><emphasis role="bold">To use VLC player:</emphasis><screen>$<emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ \\ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
+          </screen></para>
+      <para>Enjoy :)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
+          <emphasis role="italic">zypper in rtmpdump</emphasis> instead of sudo apt-get</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey
+          Stedfast: Optimizing Merge Sort</ulink>
+      </title>
+      <para>A number of years ago I wrote about the <ulink
+          url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
+        algorithm. One of the advantages of <emphasis role="italic">Merge Sort</emphasis> is that it
+        is a stable sort, meaning that elements that compare as being equal remain in their original
+        order after being sorted.</para>
+      <para>Well, today I had need of employing a stable sorting routine for sorting elements by a
+        ZIndex in <ulink url="http://www.moonlight-project.com">Moonlight</ulink>. Up until today,
+        we had been using <emphasis role="italic">qsort()</emphasis> which, while not guaranteed to
+        be a stable sort on any platform, happens to be implemented in <emphasis role="italic"
+          >glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we'd like
+        Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
+        important enough to implement properly. (...)</para>
+<!-- ($ Id: 8.4.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-opensuse-11.4-lamp">HowtoForge/Falko Timme: Installing Apache2 With PHP5 And MySQL Support On OpenSUSE 11.4 (LAMP)</ulink>
+      </title>
+      <para>LAMP is short for <emphasis role="bold">L</emphasis>inux, <emphasis role="bold">A</emphasis>pache, <emphasis role="bold">M</emphasis>ySQL, <emphasis role="bold">P</emphasis>HP. This tutorial shows how you can install an Apache2 webserver on an OpenSUSE 11.4 server with PHP5 support (mod_php) and MySQL support. (...)</para>
+<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.novell.com/communities/node/12703/howto-openldap-24x-replication-sles11sp1">Novell Cool Solutions/fpernet: HOWTO: OpenLDAP 2.4.x Replication on SLES11 SP1</ulink>
+      </title>
+      <para><emphasis role="bold">Introduction</emphasis></para>
+      <para>YaST has a module for the server and the client part of OpenLDAP (plus a very basic LDAP browser / editor).
+
+</para>
+      <para>On SLES11 we had the following problems regarding the use of the YaST module and OpenLDAP server configuration:
+
+    </para>
+      <itemizedlist>
+        <listitem>
+          <para>Database version only to store the configuratio (cn=config).</para>
+        </listitem>
+        <listitem>
+          <para>No way to set up any replication method or mode using this module.</para>
+        </listitem>
+        <listitem>
+          <para>OpenLDAP modules available build in the SLAPD binary.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Then your choices in this SLES11 version:
+
+    </para>
+      <itemizedlist>
+        <listitem>
+          <para>Use the configuration file /etc/openldap/slapd.conf but in this case, forget YaST for ever.</para>
+        </listitem>
+        <listitem>
+          <para>Use YaST to set up a basic OpenLDAP server then use an external tool to set up the rest.</para>
+        </listitem>
+        <listitem>
+          <para>If use of YaST only is mandatory, forget the replication.</para>
+        </listitem>
+      </itemizedlist>
+      <para>An RFE (Request For Enhancements) was created at this time, to be able to set up replication from the YaST module, on SLES11 SP1. They did it! So, let’s check how it works.
+
+</para>
+      <para><emphasis role="bold">Note</emphasis>: On SLES11 or SLES11 SP1, by playing with /etc/sysconfig/opendlap, you can use the configuration file (/etc/openldap/slapd.conf) to configure OpenLDAP server but in this case do not use YaST anymore. (...)</para>
+<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.linux.com/learn/tutorials/428331:ipv6-crash-course-for-linux"
+          >Carla Schroder:  IPv6 Crash Course For Linux </ulink></title>
+      <para> You might be used to working with IPv4 on Linux, but like it or not IPv6 is on its way
+        in. Roll up your sleeves, spit on your palms, and get ready to go to work because this is
+        your crash course in actually using IPv6. It hardly hurts at all. Linux has supported it
+        since the 2.1 kernel, so you shouldn't have to install anything. Make sure you have the
+        ping6, ip, and ifconfig commands.</para>
+      <para> Let's get my favorite nitpick out of the way right now — we do not have IPs, we have IP
+        addresses. IP stands for Internet Protocol. As my wise grandmother used to say, sloppy
+        speech equals sloppy habits, which equals a trip to hell in a handbasket. (...)</para>
+      <!--($ Id: 8.4.11 sm $)-->
+    </blockquote>
+  </sect2>
+</sect1>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://vizzzion.org/blog/2011/04/of-rockstars-unicorns-and-isaac-newton/"
+        >Sebastian Kügler: of rockstars, unicorns and Isaac Newton</ulink></title>
+    <para>A question that has bugged me for some time, is <emphasis role="bold"><quote>how we can
+          bring our creations into the hands of more users</quote></emphasis>, and how we can show
+      the world that a truely open and community developed system can bring great value to more
+      people. How can we overcome the technical barriers that hold back so many people from
+      benefitting from our hard work, all the genius, love and creativity we put into software.
+      Since my first contact with Free software, Linux openSUSE and KDE, we have done some very
+      solid work. We have technically caught up with Microsoft, and are delivering a product that is
+      up to par in many aspects, and better in many more ways. While we have booked immense
+      successes, we have not reached the goal of making the Linux desktop ubiquitous in the desktop
+      market. In a world of iPhones and Android, we even see closed development models based on
+      similar technology as ours being a big success, market-wise, but failing to deliver the full
+      Freedom of a community-driven development model to end users. (...)</para>    
+    <!--($ ld: 7.4.11 sm $)-->    
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://anksos.blogspot.com/2011/04/keep-your-suse-rolling.html">Anastasios
+        Ksouzafeiris: Keep your SUSE rolling!</ulink></title>
+    <para><emphasis role="bold">One of the new features the recent major release of openSUSE brought
+        with it that *really* caught my attention is the ability to turn the distribution into a
+        rolling one, effectively bringing it to the camp of the likes of Gentoo and Arch. As a
+        former long time user of Gentoo I thought I’d install openSUSE and take it for a drive – but
+        most importantly add the Tumbleweed repo to it and see what happens from
+      there.</emphasis></para>
+    <para><ulink url="http://en.wikipedia.org/wiki/Tumbleweed">Tumbleweed</ulink> is the name of the
+      repository that once added to your openSUSE installation allows the whole system to be
+      regularly upgraded to the latest and greatest software, without the need of ever upgrading the
+      OS to a newer, major version of the distribution. The good news is that <quote>latest and
+        greatest</quote> doesn’t mean <quote>bleeding edge</quote>. That may be the case with the
+      openSUSE Factory repo, but not with Tumbleweed. The bad news is that by turning openSUSE into
+      a rolling distro you’ll find yourself re-compiling and re-installing any closed-source drivers
+      you rely on more often than you’re probably used to – and in most cases that entails some
+      extra labor. But that couldn’t possibly stop me from trying Tumbleweed, so I set off to a
+      quest for transforming a local openSUSE 11.4 VMware VM (GNOME edition) into an installation of
+      a rolling distribution. Well, it very soon turned out that I was in for a pretty short yet
+      quite enjoyable quest. Before I go any further, I should point out that I’m no openSUSE
+      expert. I have used the distribution in the past but it never really won me. Despite that, I
+      always enjoy trying out new operating systems in general and Linux distributions in particular
+      – especially when there’s a new version of a popular brand out. I should probably mention here
+      that this time around openSUSE left me with an excellent impression and that’s mainly because
+      of zypper, the distribution’s command-line tool for package management. (...)</para>
+    <!--($ ld: 7.4.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/04/05/smb-traffic-analyzer-sambaxp-conference-2011/"
+        >Holger Hetterich: SMB Traffic Analyzer @ SambaXP conference 2011</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://holger123.files.wordpress.com/2011/01/smbta1281.png?w=128&amp;h=128"
+          depth="128" width="5%"/>
+      </imageobject>
+    </mediaobject>
+    <para>The last time <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/"><emphasis
+          role="bold">SMB Traffic Analyzer</emphasis></ulink> was present at the <ulink
+        url="http://www.sambaxp.org">Samba eXPerience conference</ulink> was in<emphasis role="bold"
+        > 2009</emphasis>. Lots of stuff happened, and we gained a slot<ulink
+        url="http://holger123.files.wordpress.com/2011/01/smbta1281.png">
+      </ulink> at this wonderful conference to take a short look back at <emphasis role="italic"
+          ><emphasis role="bold">what happened since the end of 2009, where we currently are, and
+          where we go to</emphasis></emphasis>. This time, we’ll do a presentation featuring two
+      speakers of the SMBTA team (<emphasis role="italic"><emphasis role="bold"
+        >me</emphasis></emphasis> and <emphasis role="italic"><emphasis role="bold">Benjamin
+          Brunner</emphasis></emphasis>), and will hopefully be able to <emphasis role="italic"
+          ><emphasis role="bold">live-demonstrate </emphasis></emphasis>our latest development, an
+      easy to use and intuitive <emphasis role="italic"><emphasis role="bold">web-interface for
+          smbtaquery, and smbtamonitor, our real time client.</emphasis></emphasis> Get the
+      conference schedule <ulink url="http://sambaxp.org/index.php?id=21">here</ulink>. We’ll be
+      around at the conference and welcome to talk to users and developers! </para>
+    <!--($ ld: 7.4.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/04/06/versionitis/">Andreas Jaeger:
+        Versionitis</ulink></title>
+    <para>The voting on how to do the versioning is over and the <quote>old school</quote> has won
+      by 55 per cent (of 98 participants). Thanks to all that participated in the two votes and the
+      discussion around the topic.</para>
+    <para>As Coolo said in on the <ulink
+        url="http://lists.opensuse.org/opensuse-project/2011-03/msg00516.html">project list</ulink>,
+      we’d like to make a small change to the numbering:</para>
+    <para>We will not have a .0 release but only .1, .2, .3 release. Since we have releases in three
+      months, the November</para>
+    <para> release is always the .1 release, the July release the .2 and the March release the
+      .3.</para>
+    <para>So, the plan is that the next release will be called openSUSE 12.1 and launched on the
+      10th of November, 2011! Two years later – on the 14th of November, 2013 – we will then have
+      the openSUSE 13.1 release.</para>
+    <para>So, the next four releases are called:</para>
+    <itemizedlist>
+      <listitem>
+        <para> November 2011: openSUSE 12.1</para>
+      </listitem>
+      <listitem>
+        <para> July 2012: openSUSE 12.2</para>
+      </listitem>
+      <listitem>
+        <para> March 2013: openSUSE 12.3</para>
+      </listitem>
+      <listitem>
+        <para> November 2013: openSUSE 13.1</para>
+      </listitem>
+    </itemizedlist>
+    <para>Detailed results for logged-in openSUSE members are available at the <ulink
+        url="https://connect.opensuse.org/pg/polls/read/a_jaeger/12979/opensuse-release-versioning"
+        >connect poll page</ulink> and I have reproduced them here as well:</para>
+    <itemizedlist>
+      <listitem>
+        <para>A: “old school”: Like currently but only counting the right number until 3:</para>
+        <para> 55% (54 votes)</para>
+      </listitem>
+      <listitem>
+        <para>B: “Fedora style”: Just integers:</para>
+        <para> 29 % (28 votes)</para>
+      </listitem>
+      <listitem>
+        <para>C: “Ubuntu style”: YY.MM:</para>
+        <para> 16 % (16 votes)</para>
+      </listitem>
+    </itemizedlist>
+    <para>This is also consistent with the <ulink
+        url="http://lizards.opensuse.org/2011/03/28/opensuse-release-versioning-poll-on-last-three-options/"
+        >results of the first public voting</ulink>.</para>
+    <para>Note that openSUSE does not have a major and minor numbering, even if it seems so. There
+      is right now no difference in any way between what we would do for openSUSE 11.4 or 12.0 or
+      12.1 – and no sense to speak about openSUSE 11 or openSUSE 11 family. We also had in the past
+      no process on how to name the next release (when to increase which parts of the
+      number).</para>
+    <para>I think this new versioning is still consistent with the old one but also an improvement
+      since it’s now clear that we change the first digit every two year. The first poll showed that
+      half of our users prefer a date based versioning and the other a consecutive numbering. So,
+      depending on your point of view, you can see this as a mixture of both or as consecutive
+      numbering <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://lizards.opensuse.org/wp-includes/images/smilies/icon_wink.gif"
+          />
+        </imageobject>
+      </inlinemediaobject></para>
+    <para>So, time now to make openSUSE 12.1 a great release!</para>
+    <!--($ ld: 7.4.11 sm $)-->
+  </blockquote>
+</sect1>
