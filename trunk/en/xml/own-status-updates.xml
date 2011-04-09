@@ -54,6 +54,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -82,8 +83,8 @@
           <ulink url="http://susegallery.com/">SUSE Gallery</ulink>, but this is still going to be
         boring. (...)</para>
       <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc-sa/2.5/it/">CC-BY-NC-SA</ulink></para>
-<!--($ ld: 29.3.11 sm $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2 role="teamreports">
     <title>Team Report</title>
 <!--
@@ -290,114 +291,106 @@
           mentioning. (...)</para>
 <!--($ ld: 7.4.11 sm $)-->      </blockquote>
     </sect3>
-<!--
+    
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://kdeatopensuse.wordpress.com/2011/01/30/opensuse-11-4-kde-testing/">KDE at openSUSE: openSUSE 11.4 KDE-testing</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/">Sebastian Kügler: Plasma Active – A Desirable User Experience Encompassing the Device Spectrum</ulink>
         </title>
-        <para>It’s been a while and there was nothing special to report, KDE SC 4.5 just worked. In
-          the meantime KDE SC 4.6 was released and openSUSE offers it in <ulink url="http://en.opensuse.org/KDE_repositories">KDF as well as KR46 repos</ulink>. Big
-          thanks to everybody who is involved in establishing and maintaining those repos – openSUSE
-          really profits a lot from the (openSUSE-)KDE community that makes it possible to provide
-          such a nice and updated KDE distro. </para>
-        <para>Those updating from KDE 4.4 which came with openSUSE 11.3 to 4.6 – please save your
-          plasma* files from ~/.kde4/share/config in case plasma crashes after the update.
-          Submitting them to Novell’s bugzilla would be much appreciated in order to get those
-          crashes fixed for openSUSE 11.4. The same applies to all other issues that come up when
-          updating KDE 4.4 to 4.6, e.g. kdepim-related. </para>
-        <para><emphasis role="bold">KDE SC 4.6</emphasis>
-        </para>
-        <para>KDE 4.6 has some nice fixes, among them <ulink url="http://bugs.kde.org/163707">bko bug 163707</ulink> which prevented KDE from restoring the resolution set in
-          systemsettings on login. This is especially important to openSUSE users since sax2 is gone
-          and display settings moved into the desktop environment. Plasma seems to become more
-          stable with every release – in fact I did not have any major issues with it since ages and
-          bug fixing is pretty fast as well. Dolphin does also not suffer from buggy dbus packages
-          anymore and with the latest strigi packages I do not encounter any crashes on close or
-          when hovering certain files which did crash dolphin before. Thanks to remur_030 who helped
-          the strigi people tracking the latter down for .msi files and thereby found and fixed some
-          general issue in strigi which could cause crashes. </para>
-        <para><emphasis role="bold">Desktop search </emphasis></para>
-        <para>The desktop search does still not justify its name though since basics are still
-          missing, e.g. context given for search results as all other desktop searches do and kerry
-          + beagle already did years ago. <ulink url="http://trueg.wordpress.com/2010/09/10/someone-requested-excerpts-for-query-results/">The feature was shown some months ago</ulink> but is not as such available in KDE 4.6 –
-          thus even in KDE 4.6 all the user gets is a replacement of kfind + tagging which needs a
-          huge database for that simple task. </para>
-        <para>On top of that there are still issues with <ulink url="https://bugs.kde.org/show_bug.cgi?id=246678">virtuoso-t hogging the CPU</ulink>,
-          its database never decreasing in size but only increasing, even if you remove folders from
-          the “to be indexed”-list and the systray-tool used to suspend the indexing vanished as
-          well decreasing transparency to the user of an app which potentially keeps your hard disk
-          and CPU busy. </para>
-        <para>Yes, I know there is always a shortage of manpower but IMHO if an app fails to provide
-          the very basic features regarding the functionality its name advertises, it will not gain
-          any acceptance among users and since every xth user is also a developer it will not
-          attract developers either. Thus the extent of this manpower shortage is self-imposed in
-          case of nepomuk aka desktop search. </para>
-        <para>I think its a bit unfortunate that strigi is always blamed for anything related to the
-          desktop search in KDE although it is just the tool that is used by nepomuk and its usage
-          is up to nepomuk and not strigi itself, i.e. when to start hammering the hard disk, how to
-          handle the results within a database, what results to display when searching, giving the
-          user control and information regarding its activities etc. From my experience strigi devs
-          are quite responsive regarding bugs and questions – although their websites are all pretty
-          much outdated. :) </para>
-        <para>For openSUSE 11.4 there is still one major mystery bug to solve for openSUSE 32-bit
-          NVIDIA users which get <ulink url="https://bugs.kde.org/show_bug.cgi?id=251719">several apps crashing since they updated to KDE &gt;= 4.5</ulink>. </para>
-        <para><emphasis role="bold">Power-management</emphasis>
-        </para>
-        <para>Power-management got worse in KDE 4.6, regressions such as not disabling
-          powermanagement on desktops and thus suspending the display every 10 minutes, the
-          brigtness slider not representing 100% of the brightness supported by the notebook and it
-          still messes with the brightness the user has set. All these were reported some weeks ago
-          already. Let’s hope that KDE SC 4.6.1 fixes those since that seems to be the version that
-          openSUSE 11.4 will ship. </para>
-        <para>Further having a presentation-scheme (no suspend, no dimming etc.) is kind of useless
-          with KDE 4.6 since it will change to the next scheme if the battery hits any limit. Thus
-          you have to permanently watch the status and switch back to the presentation-scheme to be
-          save of a suspending notebook while you watch a movie within the presentation or during
-          some longer discussion which leads to you not moving the mouse for some minutes. </para>
-        <para>Ignoring the scheme the user manually set does indeed make sense but only for the last
-          5% of your battery and in order to avoid the notebook just turning off because there was
-          no power left. </para>
-        <para>openSUSE 11.4 milestones also features a powermanagement bug that makes your hard disk
-          suspend every few minutes, confirmed but no fix so far. </para>
-        <para><emphasis role="bold">Package-management</emphasis>
-        </para>
-        <para>For openSUSE 11.4 we are currently <ulink url="http://en.opensuse.org/openSUSE:KDE_11.4_packagekit">testing kpackagekit/apper</ulink> as a replacement for the unmaintained kupdateapplet.
-          Kpackagekit works ok but it seems that its zypper backend could need some improvements.
-          And the next version of kpackagekit which will be called apper features monochrome systray
-          icons which is fine, but the “security patch available” signal is just a tiny red dot
-          which is hardly visible, especially if your eye-sight is not the best or you are suffering
-          red-green colour blindness. So most issues with kpackagekit are not actually kpackagekit’s
-          fault but either backend-related or touching artists’ taste. </para>
-        <para><emphasis role="bold">Phonon-backends</emphasis>
-        </para>
-        <para>Another application <ulink url="http://en.opensuse.org/openSUSE:KDE_11.4_phonon-backend">to test is the phonon-backend</ulink> to be used in openSUSE 11.4 by default. Should we stay with xine
-          whose backend is apparently unmaintained but has served most users well, switch to the
-          vlc-backend or maybe use the gstreamer-backend? </para>
-        <para>Trying to play some file with amarok and the gstreamer-backend brings up some dialogue
-          (/usr/lib/gst-install-plugins-helper) that asks whether it should search for some package,
-          I guess codecs. If one clicks on “search” kpackagekit opens up and claims instantly that
-          “Getting what provides” finished but does not do anything. This is on 11.3 plus KDE 4.6
-          from KDF, so let’s hope it works better on 11.4. </para>
-        <para>The vlc-backend consumes the double amount of CPU for playing the same mp3 via amarok.
-          8% instead of 4% might not be that much in absolute terms but a 100% waste nonetheless and
-          especially on mobile devices everything that wastes battery should be avoided. Further
-          there seem to be issues playing video via vlc, some apps like dragonplayer. </para>
-        <para><emphasis role="bold">KDE-PIM </emphasis></para>
-        <para>And finally there is of course the always present issue of KDE-PIM. openSUSE 11.4 will
-          ship kdepim 4.4.10 which needs testing. There is especially <ulink url="https://bugs.kde.org/show_bug.cgi?id=185544">one annoying bug which makes kontact crash</ulink> when logging in if the last view before logging out was kmail. So let’s
-          hope this can be fixed before 11.4 gets released.</para>
-        <para>I was really looking forward to KDE-PIM 4.6 since IMAP-support seems a lot better with
-          akonadi, at least for my use-cases which include suspending/resuming. The latter makes
-          KDE-PIM 4.4′s imap slave fail and not recover which works fine with KDE-PIM 4.6. You can
-          get regularly updated packages for the latter off openSUSE’s UNSTABLE KDE repo. </para>
-        <para><emphasis role="bold">Help testing </emphasis></para>
-        <para>Please help testing KDE SC 4.6 from the openSUSE repos in order to make it shine in
-          openSUSE 11.4. Feedback can go to the related wiki pages or straight to
-          opensuse-kde@.</para>
+        <para>Today, I’d like to announce to a wider audience a project we have been working on in
+          and beyond the Plasma team. Its goal is to “<emphasis role="bold">Create a desirable user
+            experience encompassing a spectrum of devices</emphasis>“, and it is called <emphasis
+            role="bold">Plasma Active</emphasis>. A couple of things make Plasma Active special.
+          First, the driver is the <emphasis role="italic">desirable user experience</emphasis>.
+          That means that we want to create something, people want, and people want to use. It means
+          we are less technology-focused, but are taken a user-centered approach. Second, we are not
+          targeting a single device, or a narrowly-defined class of devices. Plasma Active is made
+          to run on a <emphasis role="italic">spectrum of devices</emphasis> that make up the user
+          experience together. Devices change, and so does the way the user interacts with them. By
+          strongly separating data and visualisation / interaction, we do not re-invent the wheel
+          but adapt to the requirements and expectations of a device, and about how devices work
+          together for the user.</para>
+        <para><emphasis role="bold">Running Plasma Active</emphasis></para>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/active-viewpad_thumb.jpg"
+              width="20%"/>
+          </imageobject>          
+        </mediaobject>
+        <para>We have a basic, Plasma-based shell right now, which runs on three target devices —
+          and probably some more, but that’s what we’ve tested so far. It performs well, runs stable
+          and is usable with a touch-screen. While Plasma Tablet is quite fun already, do not expect
+          release quality yet, as it is a snapshot of our efforts. Find the download location for
+          the Balsam Professional live image on the <ulink
+            url="http://community.kde.org/Plasma/Active/Installation#Balsam_Professional_Live_Image"
+            >wiki</ulink>.</para>
+        <para><ulink url="http://www.open-slx.com">open-slx</ulink> has created a Balsam
+          Professional live image based on openSUSE 11.4 running Plasma Active. open-slx (my
+          employer) are developing Plasma Active for openSUSE in the openSUSE Build Service. We’ve
+          also created packages which can be installed online on top of openSUSE 11.4. You can find
+            <ulink url="http://community.kde.org/Plasma/Active/Installation">installation
+            instructions</ulink> in our Wiki, also for Meego.</para>
+        <para>Of course you want to run Plasma Active on a ‘real’ device, we currently recommend
+          either the ExoPC (WeTab), the Lenovo Ideapad, or a Viewsonic Viewpad 10. You can find
+          instructions for devices in the <ulink
+            url="http://community.kde.org/Plasma/Active/Devices">Wiki</ulink></para>
+        <para>Youtube: <ulink url="http://www.youtube.com/watch?v=4GAFfjscVyg"
+            >http://www.youtube.com/watch?v=4GAFfjscVyg</ulink></para>
+        <para><emphasis role="bold">Status</emphasis></para>
+        <para>There is still a long way to go. We’re missing key functionality, default
+          applications, optimizations all over the place, and more. There is nothing fundamental
+          that holds us back to bringing the full experience users expect to tablet devices, based
+          on our well-known, beloved, proven software stack. We are focusing our first release,
+          which is planned for September already, on tablet computers. Since fixing a bunch of
+          showstoppers over the past two weeks, I’ve actually started using Plasma Active for some
+          light reading tasks (mostly web and RSS), and I’ve got to say: It rocks your socks. Being
+          able to use a tablet computer which is based on Free software that you created yourself,
+          is real fun. I’ve also handed it to friends who came by, and while they understood it’s an
+          early prototype, I had a really hard time getting my gadget back. And that is only just
+          the beginning. We have an excellent base to build a complete experience upon. In other
+          words, it’s the perfect time to jump in and become part of something great and to help it
+          also making it something really big.</para>
+        <para><emphasis role="bold">Different goals need different processes</emphasis></para>
+        <mediaobject>
+          <imageobject>
+            <imagedata
+              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/plasma-active-snap1-default_thumb.png"
+              width="30%"/>
+          </imageobject>          
+        </mediaobject>
+        <para>When we put the pieces for Active together, it quickly became clear that if we want to
+          succeed, we also have to <ulink
+            url="http://vizzzion.org/blog/2011/04/of-rockstars-unicorns-and-isaac-newton/"
+            >rethink</ulink> some of our collaboration processes. One of my pet peeves has always
+          been that different essential parts of what the user gets in her hands come from different
+          teams. If we want to put something desirable into the hands of our users we need to pull
+          in the same direction. While we needed different skills, these skills have to align in how
+          they’re applied. This makes communication more natural, leads to a more focused process,
+          and ultimately a better result. It’s clear that such an endeavour will only work if enough
+          people in our communities, and the communities around it think that this is a worthwhile
+          thing to spend their time on, and that we can get the people that do to pull in the same
+          direction. The good news, however is that we’ve been able to create a stable platform to
+          do this, in terms of tools, processes, collaboration models and not at least software.
+          That platform is <ulink url="http://community.kde.org/Plasma/Active"><emphasis role="bold"
+              >Plasma Active</emphasis></ulink>.</para>
+        <para><emphasis role="bold">Sounds interesting?</emphasis></para>
+        <para>If you want to help us shape Plasma Active, and bring its vision to reality, we would
+          like to invite you. Start with having a look at our list of <ulink
+            url="http://community.kde.org/Plasma/Active/Tasks">tasks</ulink>, and if you find
+          something you can help with, tell us, <ulink
+            url="https://mail.kde.org/mailman/listinfo/active">subscribe</ulink> to the Plasma
+          Active mailing list, or join #active on Freenode’s IRC network. We have documented our
+          ideas, concepts and processes in the <ulink url="http://community.kde.org/Plasma/Active"
+            >wiki</ulink>.</para>
+        <para>In the coming weeks, we will keep you updated about Plasma Active’s progress, and we
+          will be able to reveal more of our vision as we give Plasma Active shape by making it
+          become reality.</para>
+        <!--($ ld: 9.4.11 sm $)-->              
      </blockquote> 
-     </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -684,18 +677,25 @@ Most packages (except Synnefo) exist in OBS already.</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00000.html">Larry Finger: Weekly News for Weekly News for April 2</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00006.html">Larry
+            Finger: Weekly News for Weekly News for April 9</ulink>
         </title>
-        <para>The Testing Core Team held an IRC meeting on March 28, 2011 at 17:00 UTC. We discussed
-          our plans for the next &quot;Open Bugs Day&quot;, which will be from 00:00 to 23:59 UTC, Saturday
-          April 2, 2011. As written before, the emphasis will be on identifying those bugs reported
-          for 11.2 and older that are still present in 11.4. We will not attempt to squash these
-          bugs, but to make sure that none have been forgotten. After the release of 11.5 M5, we
-          will have a bug-squashing day. </para>
-        <para>As I write this, OBD has started. I&apos;m not sure when this will be published, but if it
-          is still April 2, then please join us at irc://irc.opensuse.org/openSUSE-testing. </para>
-        <para>Further information is available at <ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>.</para>
-<!-- ($ ld: 2.4.11 sm $) -->      </blockquote>
+        <para>The Testing Core Team will meet on Monday, April 11 at 17:00 UTC on our usual IRC
+          channel. We will be discussing the Open Bugs Day that was held on Saturday April 2. In
+          addition, we will have a post-release discussion of 11.4 to emphasize what was good, and
+          what might be improved during the development of 12.1 between now and its release in
+          November 2011. </para>
+        <para>There was limited participation in Open Bugs Day, with many fewer workers than the
+          previous OBD. We are not sure of the reasons. Perhaps our target of bugs from 11.2 and
+          older versions did not attract as much interest as the previous effort, when we targeted
+          bugs in 11.4. In addition, last Saturday was reported to be a very nice spring day in
+          Nuremberg and that some potential participants chose to be outside rather than sitting at
+          a computer terminal. Despite the relatively few participants, we updated a large number of
+          bugs. Our tool at <ulink url="http://openbugs.zq1.de/">http://openbugs.zq1.de/</ulink>
+          found a total of 1179 open bugs for versions up to 11.2. Of these, 365 were updated in the
+          Bugzilla pages. Some of these were really old. For example, I found several bugs still
+          open from versions 10.0 and 10.1!</para>
+<!-- ($ ld: 9.4.11 sm $) -->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
@@ -726,7 +726,8 @@ Most packages (except Synnefo) exist in OBS already.</para>
         </mediaobject>
         <para>So you can skip a Section who you are not interested in.</para>
         <para>If you have a new Feature you want to have implemented in the Weekly News, just visit
-          our <ulink url="http://developer.berlios.de/feature/?group_id=12095">Feature-Request SIte</ulink> on BerliOS. ATM this feature is just implemented in the HTML
+          our <ulink url="http://developer.berlios.de/feature/?group_id=12095">Feature-Request
+            Site</ulink> on BerliOS. ATM this feature is just implemented in the HTML
           Version.</para>
 <!--($ ld: 7.4.11 sm $)-->      </blockquote>
     </sect3>
