@@ -22,16 +22,24 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/the-perfect-desktop-opensuse-11.4-gnome">HowtoForge/Falko Timme: The Perfect Desktop - OpenSUSE 11.4 (GNOME) </ulink>
+        <ulink
+          url="http://vavai.net/2011/04/opensuse-multi-boot-system-opensuse-fedora-linuxmint-ubuntu-free-doswindows/"
+          >Masim Sugianto: openSUSE Multi Boot System : openSUSE, Fedora, LinuxMint, Ubuntu</ulink>
       </title>
-      <para>This tutorial shows how you can set up an <ulink url="http://www.opensuse.org/">OpenSUSE 11.4</ulink> desktop that is a full-fledged replacement for a Windows desktop, i.e. that
-        has all the software that people need to do the things they do on their Windows desktops.
-        The advantages are clear: you get a secure system without DRM restrictions that works even
-        on old hardware, and the best thing is: all software comes free of charge.</para>
-      <para>I want to say first that this is not the only way of setting up such a system. There are
-        many ways of achieving this goal but this is the way I take. I do not issue any guarantee
-        that this will work for you! (...)</para>
-<!-- ($ Id: 3.5.11 sm $)-->    </blockquote>
+      <para>I’m currently using 5 OS in my Laptop, HP 4421s : FreeDOS/Windows, openSUSE, LinuxMint,
+        Fedora &amp; Ubuntu. The main goals are for testing purpose only but I would prefer to
+        install all of those OS in physical instead of virtual because I’m trying to use different
+        OS for work and daily usage. Our client has various Linux system and I must support them for
+        managing their system. Using multiple Linux OS keep me open minds (:-D ) with the features
+        and native command of each OS. </para>
+      <para>Free DOS bundled and installed automatically with laptop while the others installed
+        manually. openSUSE 11.4 “Celadon” is my first choice, then LinuxMint 10 “Julia”, follows by
+        Fedora 14 “Laughlin” and last (but my be not least :-) ) is Ubuntu LTS 10.04.2 Lucid Lynx.
+        Among the installed OS, LinuxMint and Ubuntu is the winner for setting up grub bootloader.
+        LinuxMint and Ubuntu detected all of OS and added the OS choice into bootloader
+        successfully. openSUSE was only successful for FreeDOS/Windows and Fedora but it fails to
+        detect LinuxMint and Ubuntu, similar thing with Fedora bootloader. (...)</para>
+<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.packtpub.com/article/scribus-importing-images">Packt Publishing/Cedric Gemy: Scribus: Importing Images</ulink>
