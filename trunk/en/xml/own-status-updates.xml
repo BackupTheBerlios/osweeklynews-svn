@@ -283,13 +283,18 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/03/gnome-3-live-image-release-011.html">Garrett LeSage: GNOME 3</ulink>
+          <ulink
+            url="http://lizards.opensuse.org/2011/04/10/gnome3-iso-by-fcrozat-and-ati-radeon-driver-a-quick-easy-fix/"
+            >Nelson Marques: GNOME3 iso by fcrozat and ATI radeon driver… a quick easy fix!</ulink>
         </title>
-        <para>GNOME 3 has been released! Congratulations to everyone involved in making this
-          happen!</para>
-        <para>I’ve been using the prerelease versions and have found a few tips that are worth
-          mentioning. (...)</para>
-<!--($ ld: 7.4.11 sm $)-->      </blockquote>
+        <para>For some time I wanted to check out GNOME3 and gnome-shell… My current chipset is ATI
+          M92 RV710 and while the thermal performance with the proprietary driver is somewhat what I
+          expect, the open source radeon driver does overheat my laptop a lot compared to flgrx. For
+          the time being, fglrx isn’t really a choice because it just borgs the ‘activities’ bar on
+          top… And until ATI fixes their driver, there’s no other choice than running with the
+          standard radeon drm driver, which does provide a very pleasant experience with GNOME3 /
+          gnome-shell. (...)</para>
+<!--($ ld: 12.4.11 sm $)-->      </blockquote>
     </sect3>
     
     <sect3 role="kdeteam">

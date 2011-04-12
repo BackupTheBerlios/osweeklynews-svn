@@ -42,13 +42,21 @@
 <!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.packtpub.com/article/scribus-importing-images">Packt Publishing/Cedric Gemy: Scribus: Importing Images</ulink>
+        <ulink
+          url="http://vavai.net/2011/04/upgrading-zimbra-mail-server-6-x-x-into-zimbra-mail-server-7-x-x/"
+          >Masim Sugianto: Upgrading Zimbra Mail Server 6.x.x into Zimbra Mail Server 7.x.x</ulink>
       </title>
-      <para><emphasis role="bold">Importing and exporting:</emphasis></para>
-      <para>The concepts
-
-To begin with, remember that there are two kinds of graphics you can add to your layout. You can have photos, generally taken from a digital camera, downloaded, or bought on some website. Photos will generally be stored in JPEG files, but you can also find PNG, TIFF, or many other file formats. The second kind of graphics is vector drawings such as logos and maps. They are computer-made drawings and are stored as EPS or SVG files. You will certainly need to work with both in most of your documents. (...)</para>
-<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
+      <para><ulink url="http://www.zimbra.com">Zimbra</ulink> has released Zimbra 7 for about a
+        month and it seems quite stable for production use. As major upgrade to Zimbra 6, Zimbra 7
+        comes with tons of bug fixes and new features including security feature to prevent virus
+        and spam.</para>
+      <para>Does the upgrade process should be applied for production use ? The answer depends on
+        your environment. If an existing system quite stable with minor problem, you may stick with
+        your existing Zimbra system but if you need some features that only provided by Zimbra 7,
+        upgrading may be the best option. I’m currently manages some Zimbra for production mail
+        server system on some client, most of them are corporate with user 100-10k users.
+        (...)</para>
+<!-- ($ Id: 12.4.11 sm $)-->    </blockquote>
   </sect2>
   <!--
   <sect2>
