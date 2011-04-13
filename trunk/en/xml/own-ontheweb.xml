@@ -109,16 +109,33 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.h-online.com/open/news/item/Mozilla-reintegrates-Messaging-1221670.html">h-online: Mozilla reintegrates Messaging</ulink>
+        <ulink
+          url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-39-Part-1-Network-drivers-and-infrastructure-1227053.html"
+          >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 1) - Network drivers and
+          infrastructure</ulink>
       </title>
-      <para>Mitchell Baker, chair of the Mozilla Foundation, has <ulink url="http://blog.lizardwrangler.com/2011/04/04/increasing-mozilla-focus-on-messaging-and-communications-on-the-web-re-integration-of-mozilla-messaging/">announced</ulink> that Mozilla Messaging, a subsidiary <ulink url="http://www.h-online.com/news/item/Mozilla-Messaging-to-coordinate-development-of-Thunderbird-734265.html">created in 2008</ulink> to manage the development of Thunderbird, and other user to user
-        communication tools such as <ulink url="http://www.h-online.com/news/item/Raindrop-Mozilla-s-new-messaging-experiment-837437.html">Raindrop</ulink> messaging client and <ulink url="http://www.h-online.com/news/item/Mozilla-Labs-launches-F1-link-sharing-add-on-1137132.html">F1</ulink> social sharing, is to be absorbed into Mozilla Labs.</para>
-      <para>There is currently a team within Mozilla Labs which works on identity and contact
-        management; the Mozilla Messaging group will be merged with this team. The new
-          <quote>innovation group</quote> within Labs will be lead by current Messaging head David
-        Ascher and focus on <quote>online communications and social interactions on the Web</quote>.
-        (...)</para>
-<!-- ($ ld: 5.4.11 sm $) -->    </blockquote>
+      <para><emphasis role="bold">The addition of ipset support makes it easier to run a firewall,
+          as it means that only one table needs to be modified in order to block a specific IP
+          address. The situation with regard to drivers for WLAN chips continues to improve, with
+          Ralink and Realtek now actively involved in developing the Linux kernel
+          drivers.</emphasis></para>
+      <para>Linus Torvalds' release emails for the <ulink
+          url="http://thread.gmane.org/gmane.linux.kernel/1123040">second</ulink> and <ulink
+          url="http://thread.gmane.org/gmane.linux.kernel/1124982">third</ulink> pre-release
+        versions of Linux kernel 2.6.39 both note a comparative lack of changes. The calm prior to
+        the RC2 release even prompted him to speculate whether the kernel developers were "up to
+        something". More jocularity of this ilk was evident on the release of RC3 on Tuesday, but
+        both emails make it clear that he welcomes the tranquillity and is looking forward to a
+        quiet development cycle.</para>
+      <para>As usual, the bulk of the changes in the next major kernel revision found their way into
+        the main development tree during the merge window. Kernel Log is therefore already in a
+        position to offer a comprehensive overview of the major changes in kernel 2.6.39, scheduled
+        for release in mid to late May. A range of articles will deal with different functional
+        areas of the kernel in turn. The "Coming in 2.6.39" series opens here with the major changes
+        in the network stack and associated drivers. Over the next few weeks, this will be followed
+        by articles covering graphics drivers, storage support, file systems, architecture code,
+        infrastructure and drivers for other hardware. (...)</para>
+<!-- ($ ld: 13.4.11 sm $) -->    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>

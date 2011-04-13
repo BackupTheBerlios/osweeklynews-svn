@@ -89,22 +89,23 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey
-          Stedfast: Optimizing Merge Sort</ulink>
+        <ulink url="http://blog.lowkster.com/2011/04/packaging-python-packages-in-opensuse.html">Low
+          Kian Seong: Packaging python packages in opensuse</ulink>
       </title>
-      <para>A number of years ago I wrote about the <ulink
-          url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
-        algorithm. One of the advantages of <emphasis role="italic">Merge Sort</emphasis> is that it
-        is a stable sort, meaning that elements that compare as being equal remain in their original
-        order after being sorted.</para>
-      <para>Well, today I had need of employing a stable sorting routine for sorting elements by a
-        ZIndex in <ulink url="http://www.moonlight-project.com">Moonlight</ulink>. Up until today,
-        we had been using <emphasis role="italic">qsort()</emphasis> which, while not guaranteed to
-        be a stable sort on any platform, happens to be implemented in <emphasis role="italic"
-          >glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we'd like
-        Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
-        important enough to implement properly. (...)</para>
-<!-- ($ Id: 8.4.11 sm $)-->    </blockquote>
+      <para>While getting one of my packages rejected for inclusion into the python lang repo for
+        openSuSE, the comments made by the reviewer pointed me to find the package: <ulink
+          url="http://pypi.python.org/pypi/py2pack">py2pack</ulink>. </para>
+      <para>This package made the packaging of Python packages on OpenSuSE brain dead easy by doing
+        all of the heavy lifting, creating a sample spec file that really needs very little editing.
+        Install py2pack, and follow this guide, <ulink
+          url="http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way"
+          >http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way</ulink> and
+        put that together with the great openSuSE build service and you will have a great time
+        packaging which is usually a thankless job no one wants to do. </para>
+      <para>Update: Wow the ruby packaging method is about the same too: <ulink
+          url="http://en.opensuse.org/openSUSE:Packaging_Ruby"
+          >http://en.opensuse.org/openSUSE:Packaging_Ruby</ulink></para>
+<!-- ($ Id: 13.4.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>

@@ -22,21 +22,38 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://vizzzion.org/blog/2011/04/of-rockstars-unicorns-and-isaac-newton/"
-        >Sebastian Kügler: of rockstars, unicorns and Isaac Newton</ulink></title>
-    <para>A question that has bugged me for some time, is <emphasis role="bold"><quote>how we can
-          bring our creations into the hands of more users</quote></emphasis>, and how we can show
-      the world that a truely open and community developed system can bring great value to more
-      people. How can we overcome the technical barriers that hold back so many people from
-      benefitting from our hard work, all the genius, love and creativity we put into software.
-      Since my first contact with Free software, Linux openSUSE and KDE, we have done some very
-      solid work. We have technically caught up with Microsoft, and are delivering a product that is
-      up to par in many aspects, and better in many more ways. While we have booked immense
-      successes, we have not reached the goal of making the Linux desktop ubiquitous in the desktop
-      market. In a world of iPhones and Android, we even see closed development models based on
-      similar technology as ours being a big success, market-wise, but failing to deliver the full
-      Freedom of a community-driven development model to end users. (...)</para>    
-    <!--($ ld: 7.4.11 sm $)-->    
+    <title><ulink
+        url="http://vizzzion.org/blog/2011/04/im-going-to-the-kde-ux-sprint-then-tokamak-is-coming-to-me/"
+        >Sebastian Kügler: I’m going to the KDE UX sprint, then Tokamak is coming to
+      me!</ulink></title>
+    <para> On Thursday, I’ll be travelling to Berlin for the KDE UX sprint, which is kindly hosted
+      by relevantive in their office in the heart of Berlin. I’ll be meeting Nuno, Celeste, Hugo and
+      a few others there, and we’ll be making plans. Topics are the human interface guidelines,
+      getting more designers involved with KDE, and of course <ulink
+        url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
+        >Plasma Active</ulink>. </para>
+    <para> A few days after coming back, hell will break loose in Nijmegen, as the Plasma crew holds
+      their Tokamak gathering here. Here means at our new house in Nijmegen in the east of the
+      Netherlands (which is in the west of Europe ;)). I’m really looking forward to having my
+      fellow Plasma hackers here, especially with all the excitement, new ideas and concepts coming
+      along with Plasma Active. I’m sure it will be an epic Tokamak, and a really long one, too.
+      Between first arrivals and least departures, there will be a whopping 12 nights. We’ll likely
+      be doing an Open Day, so if you’re in the region, drop me an email if you’d like to come by to
+      see the magic happen.</para>
+    <para> Speaking of Plasma Active itself, it’s off to a good start. We’ve spent crazy amounts of
+      hours in very little time before I announced it on my blog, and we kicked off a surge of blog
+      posts about this subject — with more to come. I’m really happy with the positive interest it
+      generated so far, very promising.</para>
+    <para> With the past two weeks spending most of my time on documentation, packaging and
+      communication, I got back into hacking mode today, and polished up my small metadata engine I
+      had started writing not long ago. It’s working now, you can query all kinds of resources,
+      either by filename, URL, Nepomuk Identifier or simple query term, and it gives you back a list
+      of Nepomuk resources and their metadata. It’s pretty simple, but very powerful. It already
+      provides most of what you need to write a simple filebrowser, or search widget in Plasma
+      Quick. I’ll write a more detailed blog post (including screenshots) once I’m more happy with
+      it, also visually. The basic metadata engine is already in master, and will be appearing in
+      the next update of the Plasma Active packages, probably tomorrow. Now, back to hacking. =) </para>    
+    <!--($ ld: 13.4.11 sm $)-->    
   </blockquote>
   <blockquote>
     <title><ulink url="http://anksos.blogspot.com/2011/04/keep-your-suse-rolling.html">Anastasios

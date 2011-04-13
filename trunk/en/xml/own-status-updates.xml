@@ -251,10 +251,38 @@
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian Schröter: OBS team meeting</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian
+            Schröter: OBS 2.2.72 released, switch to apache and SSL asýdefault</ulink>
         </title>
-        <para>Adrian Schroter gives a short meeting summary from the Build Service Team.</para>
-<!--($ ld: 7.4.11 sm $)-->      </blockquote>
+        <para>We just released <ulink url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>
+          2.2.72, another alpha release for OBS 2.3. The most significant change to former alpha
+          snapshots is the switch to apache. We do so for a number of reasons:</para>
+        <orderedlist>
+          <listitem>
+            <para>Getting a maintained base again for our default httpd</para>
+          </listitem>
+          <listitem>
+            <para>Using mod_rails (passenger) is more flexible then the static setup before</para>
+          </listitem>
+          <listitem>
+            <para>Optimizations are possible via additional modules (more about that later)</para>
+          </listitem>
+        </orderedlist>
+        <para>We think that some bugs like the invalid occassional empty replies by the api server
+          are solved via this switch as well.</para>
+        <para>The <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">OBS 2.2.72
+            appliance</ulink> is already comming with apache setup. Please note that we use also SSL
+          by default, a default SSL CA is created on bootup and becomes part of your data
+          partition.</para>
+        <para>In case you use <ulink
+            url="http://download.opensuse.org/repositories/openSUSE:/Tools:/Unstable/">the
+            packages</ulink> outside of the appliance, you need to do some configuration steps. But
+          don’t worry, a apache vhost file comes with the packages already and only a few steps need
+          to be done, the README files should reflect this already.</para>
+        <para>lighttpd setups should still work, but please note that lighttpd is running with an
+          own user id (“lighttpd”) and the default is now the generic “wwwrun” user for some
+          directories.</para>
+<!--($ ld: 13.4.11 sm $)-->      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -295,6 +323,22 @@
           standard radeon drm driver, which does provide a very pleasant experience with GNOME3 /
           gnome-shell. (...)</para>
 <!--($ ld: 12.4.11 sm $)-->      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://www.vuntz.net/journal/post/2011/04/13/gnome-panel-is-dead,-long-live-gnome-panel!"
+            >Vincent Untz: gnome-panel is dead, long live gnome-panel!</ulink></title>
+        <para>With GNOME 3, we obviously recommend to users that they should use (and at least try
+          for a few days, it's usually enough to get addicted) our new interface, based on GNOME
+          Shell. That being said, not everybody can use GNOME Shell yet (if you're unlucky with your
+          hardware, for instance), and some people just really want to stay with an interface closer
+          to what GNOME 2 provided. And that's where the fallback mode enters.</para>
+        <para>Sure, the fallback mode is not our target in terms of design, but that doesn't mean
+          it's unloved. It's actually looking quite good with 3.0 and I encourage people to go ahead
+          and try it instead of just proactively hating GNOME 3 because of the changes it brings.
+          You can configure GNOME to always use the fallback mode in the the System Info panel of
+          the System Settings: (...)</para>
+        <!--($ ld: 13.4.11 sm $)-->
+      </blockquote>
     </sect3>
     
     <sect3 role="kdeteam">
