@@ -56,129 +56,104 @@
     <!--($ ld: 13.4.11 sm $)-->    
   </blockquote>
   <blockquote>
-    <title><ulink url="http://anksos.blogspot.com/2011/04/keep-your-suse-rolling.html">Anastasios
-        Ksouzafeiris: Keep your SUSE rolling!</ulink></title>
-    <para><emphasis role="bold">One of the new features the recent major release of openSUSE brought
-        with it that *really* caught my attention is the ability to turn the distribution into a
-        rolling one, effectively bringing it to the camp of the likes of Gentoo and Arch. As a
-        former long time user of Gentoo I thought I’d install openSUSE and take it for a drive – but
-        most importantly add the Tumbleweed repo to it and see what happens from
-      there.</emphasis></para>
-    <para><ulink url="http://en.wikipedia.org/wiki/Tumbleweed">Tumbleweed</ulink> is the name of the
-      repository that once added to your openSUSE installation allows the whole system to be
-      regularly upgraded to the latest and greatest software, without the need of ever upgrading the
-      OS to a newer, major version of the distribution. The good news is that <quote>latest and
-        greatest</quote> doesn’t mean <quote>bleeding edge</quote>. That may be the case with the
-      openSUSE Factory repo, but not with Tumbleweed. The bad news is that by turning openSUSE into
-      a rolling distro you’ll find yourself re-compiling and re-installing any closed-source drivers
-      you rely on more often than you’re probably used to – and in most cases that entails some
-      extra labor. But that couldn’t possibly stop me from trying Tumbleweed, so I set off to a
-      quest for transforming a local openSUSE 11.4 VMware VM (GNOME edition) into an installation of
-      a rolling distribution. Well, it very soon turned out that I was in for a pretty short yet
-      quite enjoyable quest. Before I go any further, I should point out that I’m no openSUSE
-      expert. I have used the distribution in the past but it never really won me. Despite that, I
-      always enjoy trying out new operating systems in general and Linux distributions in particular
-      – especially when there’s a new version of a popular brand out. I should probably mention here
-      that this time around openSUSE left me with an excellent impression and that’s mainly because
-      of zypper, the distribution’s command-line tool for package management. (...)</para>
-    <!--($ ld: 7.4.11 sm $)-->
+    <title><ulink url="http://blog.jospoortvliet.com/2011/04/upcoming.html">Jos Poortvliet:
+        Upcoming...</ulink></title>
+    <para>I've been quite busy over the last few months - after Michael Loeffler left and AJ went on
+      parental leave for 2 months life got crazy. Luckily openSUSE doesn't exactly depend on me and
+      while some things slipped, I don't think big things broke down. Ok, my boss wasn't happy with
+      me as especially internal budget things suffered. I've given those sending me interviews and
+      other writing stuff (like my column for <ulink url="http://www.linuxuser.co.uk/"
+        >LinuxUser</ulink>) a very hard time too. And personally, I'm unhappy with it because I
+      tried to do to many things which resulted in many of them unfinished. </para>
+    <para>back on track But AJ is back, we're getting some processes on track and the 11.4 release
+      worked out great. So it is time to focus again and get things finished. First is the strategy
+      stuff. The openSUSE Board had a few comments we'll look through, then it should go up for
+      voting. Really. I know, it already needs some updating - we'll try to do that first. Once that
+      is done, it's time to vote on it and get it out however. We need to get the DVD's out which we
+      created for GNOME 3 and KDE. For both I spend a lot of time collecting materials to include on
+      the disk and imho the end result is pretty ok. But there's also room for improvement,
+      something for the future... And we have marketing materials to create for the US. There have
+      been only a few suggestions on the marketing ML so it looks like I'm gonna have to lock myself
+      in my room for a day or two to write some stuff... Finally, I have to catch up with mail. With
+      over 2300 unread mails that'll be quite a job but in some folders I'll probably just mark all
+      read... And then it's on to new stuff! </para>
+    <para><emphasis role="bold">Like..</emphasis>. </para>
+    <para>Last Saturday I gave a talk at a FLISOL meeting - and in the preparations for that I
+      updated a number of presentations I have. Will share them with the marketing team and
+      hopefully put them in Git &amp; the wiki with the marketing materials. </para>
+    <para><emphasis role="bold">wiki stuff</emphasis>
+    </para>
+    <para>The openSUSE ambassador talking points have been improving and I'm working on an upcoming
+      features. I've also went through the wiki pages for new contributors, making small changes and
+      adding links there, improving the Junior Jobs pages. Now the openSUSE Boosters are planning to
+      work on that as well, smoothing out the process of getting involved in openSUSE. </para>
+    <para><emphasis role="bold">openhatch </emphasis></para>
+    <para>Once we have that up, I'd like to investigate openSUSE joining openHatch. For that we'd
+      need junior jobs in a variety of areas as well as mentors - but I think I can just start
+      small. We have a convention in Bugzilla which is followed by practically nobody: mark simple
+      bugs with "JJ" so they can be easily found. I'll try and get a few of those on openhatch, see
+      if we can get a contributor or two to chip in. If that works we have a good reason to expand
+      upon that! </para>
+    <para><emphasis role="bold">and a promise </emphasis></para>
+    <para>Finally I promise to work harder on being available &amp; in meetings - I know I missed a
+      few ;-) </para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
+    <!--($ ld: 15.4.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://holger123.wordpress.com/2011/04/05/smb-traffic-analyzer-sambaxp-conference-2011/"
-        >Holger Hetterich: SMB Traffic Analyzer @ SambaXP conference 2011</ulink></title>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://holger123.files.wordpress.com/2011/01/smbta1281.png?w=128&amp;h=128"
-          depth="128" width="5%"/>
-      </imageobject>
-    </mediaobject>
-    <para>The last time <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/"><emphasis
-          role="bold">SMB Traffic Analyzer</emphasis></ulink> was present at the <ulink
-        url="http://www.sambaxp.org">Samba eXPerience conference</ulink> was in<emphasis role="bold"
-        > 2009</emphasis>. Lots of stuff happened, and we gained a slot<ulink
-        url="http://holger123.files.wordpress.com/2011/01/smbta1281.png">
-      </ulink> at this wonderful conference to take a short look back at <emphasis role="italic"
-          ><emphasis role="bold">what happened since the end of 2009, where we currently are, and
-          where we go to</emphasis></emphasis>. This time, we’ll do a presentation featuring two
-      speakers of the SMBTA team (<emphasis role="italic"><emphasis role="bold"
-        >me</emphasis></emphasis> and <emphasis role="italic"><emphasis role="bold">Benjamin
-          Brunner</emphasis></emphasis>), and will hopefully be able to <emphasis role="italic"
-          ><emphasis role="bold">live-demonstrate </emphasis></emphasis>our latest development, an
-      easy to use and intuitive <emphasis role="italic"><emphasis role="bold">web-interface for
-          smbtaquery, and smbtamonitor, our real time client.</emphasis></emphasis> Get the
-      conference schedule <ulink url="http://sambaxp.org/index.php?id=21">here</ulink>. We’ll be
-      around at the conference and welcome to talk to users and developers! </para>
-    <!--($ ld: 7.4.11 sm $)-->
+    <title><ulink url="http://ungethym.blogspot.com/2011/04/contributions-that-matter.html">Thomas
+        Thym: Contributions that matter</ulink></title>
+    <para>In the last days I read two post on planetkde and planetsuse, written by (to me) new
+      contributors with the best intention to help their projects. However the response of the
+      community was not as positive as they would have expected. What happened?3 types of potential
+      new contributors Some lines from <ulink
+        url="http://thym.org/downloads/Akademy2010-Thym-The-7-OS-Principles.pdf">my last years
+        Akademy paper</ulink>.
+      <para>"Krogh, Spaeth and Lakhani analyzed the characters of
+        potential new contributors in mailing lists.[12] Based on that work three types could be found.<itemizedlist>
+          <listitem>
+            <para>Proactive problem-solver: They use the program, find a bug, and work out the
+              solution. In the first mail to the list they send the patch. These people are very
+              successful in communities and often become continuous contributors.</para>
+          </listitem>
+          <listitem>
+            <para>Waiting volunteer: This group offers their abilities to the community and waits
+              until they get a job allocated. In general this character is not very active. Most
+              communities can not integrate them successfully.</para>
+          </listitem>
+          <listitem>
+            <para>Visionary: They use the program and have ideas on how the program should be
+              improved. Although visions and aims are important in communities, the character-type
+              visionary is not successful. In the past his/her visions were not identical with the
+              ideas of the code developers. The resulting costs of conflicts exceed the benefits of
+              the discussion."</para>
+          </listitem>
+        </itemizedlist></para>Even the headline of one of the post gives you a hint which type
+      might be behind the post in question. Visionaries often use words like "it should", "you have
+      to" etc. instead of "I have done" or "I am going to do".</para>
+    <!--($ ld: 15.4.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/04/06/versionitis/">Andreas Jaeger:
-        Versionitis</ulink></title>
-    <para>The voting on how to do the versioning is over and the <quote>old school</quote> has won
-      by 55 per cent (of 98 participants). Thanks to all that participated in the two votes and the
-      discussion around the topic.</para>
-    <para>As Coolo said in on the <ulink
-        url="http://lists.opensuse.org/opensuse-project/2011-03/msg00516.html">project list</ulink>,
-      we’d like to make a small change to the numbering:</para>
-    <para>We will not have a .0 release but only .1, .2, .3 release. Since we have releases in three
-      months, the November</para>
-    <para> release is always the .1 release, the July release the .2 and the March release the
-      .3.</para>
-    <para>So, the plan is that the next release will be called openSUSE 12.1 and launched on the
-      10th of November, 2011! Two years later – on the 14th of November, 2013 – we will then have
-      the openSUSE 13.1 release.</para>
-    <para>So, the next four releases are called:</para>
-    <itemizedlist>
-      <listitem>
-        <para> November 2011: openSUSE 12.1</para>
-      </listitem>
-      <listitem>
-        <para> July 2012: openSUSE 12.2</para>
-      </listitem>
-      <listitem>
-        <para> March 2013: openSUSE 12.3</para>
-      </listitem>
-      <listitem>
-        <para> November 2013: openSUSE 13.1</para>
-      </listitem>
-    </itemizedlist>
-    <para>Detailed results for logged-in openSUSE members are available at the <ulink
-        url="https://connect.opensuse.org/pg/polls/read/a_jaeger/12979/opensuse-release-versioning"
-        >connect poll page</ulink> and I have reproduced them here as well:</para>
-    <itemizedlist>
-      <listitem>
-        <para>A: “old school”: Like currently but only counting the right number until 3:</para>
-        <para> 55% (54 votes)</para>
-      </listitem>
-      <listitem>
-        <para>B: “Fedora style”: Just integers:</para>
-        <para> 29 % (28 votes)</para>
-      </listitem>
-      <listitem>
-        <para>C: “Ubuntu style”: YY.MM:</para>
-        <para> 16 % (16 votes)</para>
-      </listitem>
-    </itemizedlist>
-    <para>This is also consistent with the <ulink
-        url="http://lizards.opensuse.org/2011/03/28/opensuse-release-versioning-poll-on-last-three-options/"
-        >results of the first public voting</ulink>.</para>
-    <para>Note that openSUSE does not have a major and minor numbering, even if it seems so. There
-      is right now no difference in any way between what we would do for openSUSE 11.4 or 12.0 or
-      12.1 – and no sense to speak about openSUSE 11 or openSUSE 11 family. We also had in the past
-      no process on how to name the next release (when to increase which parts of the
-      number).</para>
-    <para>I think this new versioning is still consistent with the old one but also an improvement
-      since it’s now clear that we change the first digit every two year. The first poll showed that
-      half of our users prefer a date based versioning and the other a consecutive numbering. So,
-      depending on your point of view, you can see this as a mixture of both or as consecutive
-      numbering <inlinemediaobject>
-        <imageobject>
-          <imagedata fileref="http://lizards.opensuse.org/wp-includes/images/smilies/icon_wink.gif"
-          />
-        </imageobject>
-      </inlinemediaobject></para>
-    <para>So, time now to make openSUSE 12.1 a great release!</para>
-    <!--($ ld: 7.4.11 sm $)-->
+    <title><ulink url="http://mschlander.wordpress.com/2011/04/14/more-love-for-kdeupdatedapps/"
+        >Martin Schlander: More love for KDE:UpdatedApps</ulink></title>
+    <para>The KDE:UpdatedApps repository for openSUSE (formerly known as KDE:Backports), hasn’t been
+      getting the love it deserves as of late. This repo lets you easily and safely update many KDE
+      applications without needing to do unofficial upgrades of your base libraries or base desktop
+      environment, with the risks and annoyances this involves. </para>
+    <para>After I had been complaining loudly about the state of things for a while, I ended up
+      being given permissions to the repository on the openSUSE BuildService to shut me up, and I’ll
+      attempt to do the janitorial work needed from now on – which basically just means linking
+      relevant package revisions from KDE:Distro:Factory. (...)</para>
+    <!--($ ld: 15.4.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/04/15/calibre-repository-moved/">Thomas
+        Schraitle: Calibre Repository Moved</ulink></title>
+    <para>Maybe not everybody knows it or it may be a bit too late, but nevertheless… the Calibre
+      repository on home:thomas-schraitle:calibre has been moved to <emphasis role="bold"
+        >Documentation:Tools</emphasis>. It was necessary due to some internal reorganisation. The
+      new location is now the official devel project. Have fun! :-)</para>
+    <!--($ ld: 15.4.11 sm $)-->
   </blockquote>
 </sect1>

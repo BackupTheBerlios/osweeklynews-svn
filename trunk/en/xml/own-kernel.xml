@@ -23,22 +23,30 @@
     <title>
       <ulink
         url="http://www.pcworld.com/businesscenter/article/224955/7_free_security_tools_for_linux.html"
-        >PCWorld/Katherine Noyes: Seven Free Security Tools for Linux</ulink>
+        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 1) - Network drivers and
+        infrastructure</ulink>
     </title>
-    <para>One of the big advantages of using Linux is that its security <ulink
-        url="http://www.pcworld.com/businesscenter/article/202452/why_linux_is_more_secure_than_windows.html"
-        >tends to be so much better</ulink> than that of the competing alternatives. That's due in
-      large part to the way Linux assigns permissions, but it's also certainly true that the open
-      source operating system is targeted by malware writers far less frequently than <ulink
-        url="http://www.pcworld.com/businesscenter/article/207196/why_windows_is_bad_for_business.html"
-        >Windows</ulink> is, in particular, simply because it's less widely used and so much more
-      diverse.</para>
-    <para>The fact remains, however, that no operating system is perfectly secure. For business
-      users, in particular, a little extra security assurance is always a good idea, at the very
-      least for your own peace of mind.</para>
-    <para>Here, then, are a few of the best free tools you can use to help keep your Linux systems
-      secure. (...)</para>
-    <!-- ($ ld: 13.4.11 sm $) -->    </blockquote>
+    <para><emphasis role="bold">The addition of ipset support makes it easier to run a firewall, as
+        it means that only one table needs to be modified in order to block a specific IP address.
+        The situation with regard to drivers for WLAN chips continues to improve, with Ralink and
+        Realtek now actively involved in developing the Linux kernel drivers.</emphasis></para>
+    <para>Linus Torvalds' release emails for the <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1123040">second</ulink> and <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1124982">third</ulink> pre-release versions
+      of Linux kernel 2.6.39 both note a comparative lack of changes. The calm prior to the RC2
+      release even prompted him to speculate whether the kernel developers were "up to something".
+      More jocularity of this ilk was evident on the release of RC3 on Tuesday, but both emails make
+      it clear that he welcomes the tranquillity and is looking forward to a quiet development
+      cycle.</para>
+    <para>As usual, the bulk of the changes in the next major kernel revision found their way into
+      the main development tree during the merge window. Kernel Log is therefore already in a
+      position to offer a comprehensive overview of the major changes in kernel 2.6.39, scheduled
+      for release in mid to late May. A range of articles will deal with different functional areas
+      of the kernel in turn. The "Coming in 2.6.39" series opens here with the major changes in the
+      network stack and associated drivers. Over the next few weeks, this will be followed by
+      articles covering graphics drivers, storage support, file systems, architecture code,
+      infrastructure and drivers for other hardware. (...)</para>
+    <!-- ($ ld: 15.4.11 sm $) -->    </blockquote>
   <blockquote>
     <title><ulink url="http://schaiba.wordpress.com/2011/04/02/kernle-weekly-news-02-04-2011/">Rares Aioanei: kernel weekly news – 02.04.2011</ulink></title>
     <para>Rares published the Kernel Review for this Week. Thanks for working on it :-)</para> 
