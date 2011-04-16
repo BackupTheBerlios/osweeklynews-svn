@@ -38,22 +38,7 @@
         added the OS choice into bootloader successfully. openSUSE was only successful for
         FreeDOS/Windows and Fedora but it fails to detect LinuxMint and Ubuntu, similar thing with
         Fedora bootloader. (...)</para>
-<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://vavai.net/2011/04/upgrading-zimbra-mail-server-6-x-x-into-zimbra-mail-server-7-x-x/">Masim Sugianto: Upgrading Zimbra Mail Server 6.x.x into Zimbra Mail Server 7.x.x</ulink>
-      </title>
-      <para><ulink url="http://www.zimbra.com">Zimbra</ulink> has released Zimbra 7 for about a
-        month and it seems quite stable for production use. As major upgrade to Zimbra 6, Zimbra 7
-        comes with tons of bug fixes and new features including security feature to prevent virus
-        and spam.</para>
-      <para>Does the upgrade process should be applied for production use ? The answer depends on
-        your environment. If an existing system quite stable with minor problem, you may stick with
-        your existing Zimbra system but if you need some features that only provided by Zimbra 7,
-        upgrading may be the best option. I’m currently manages some Zimbra for production mail
-        server system on some client, most of them are corporate with user 100-10k users.
-        (...)</para>
-<!-- ($ Id: 12.4.11 sm $)-->    </blockquote>
+<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>    
     <blockquote>
       <title>
         <ulink url="http://www.packtpub.com/article/create-amazing-text-font-effects-with-gimp-2-6">Packt Publishing/Juan Manuel Ferreyra: How To Create Amazing Text and Font Effects in Gimp 2.6</ulink>
@@ -124,33 +109,6 @@
       </title>
       <para>Managing the source code for a software development project is only slightly less important than writing it in the first place. UNIX® and Linux® systems offer a rich selection of version control system (VCS) packages, each of which takes a slightly different approach to this common concern. This article focuses on the Mercurial source code management system, often simply referred to as hg. Mercurial provides a powerful, modern, and light-weight solution for source code control that makes it easy for developers to make and debug their changes to a software project while maintaining a stable, centralized source code repository that all project members can depend upon. (...)</para>
 <!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://artax.karlin.mff.cuni.cz/~kendy/blog/archives/monthly/2011-04.html#2011-04-15T17_01_41.htm"
-          >Jan Holesovsky: LibreOffice build on Windows with ccache for MSVC</ulink></title>
-      <para>I have just revived my <ulink
-          url="http://artax.karlin.mff.cuni.cz/%7Ekendy/blog/archives/monthly/2007-07.html">4 years
-          old hack that adds MSVC support to ccache</ulink>. The use case is a bit limited - you
-        have to use it from inside cygwin; but that is exactly what LibreOffice needs :-) So I have
-        updated LibreOffice's configure.in to be able to handle it well - so far in the
-        libreoffice-3-4 branch, but it will get to master the next time we merge the branch there. </para>
-      <para> How to use it? Download the <ulink
-          url="http://artax.karlin.mff.cuni.cz/%7Ekendy/ccache/">ccache.exe binary</ulink>, put it
-        to eg. your ~/bin (or somewhere else in your PATH), setup the CC and CXX environment
-        variables, and compile as you are used to (./autogen.sh, make, ...), like: </para>
-      <programlisting>CC="ccache C:/PROGRA~1/MICROS~1.0/VC/bin/cl.exe"
-CXX="ccache C:/PROGRA~1/MICROS~1.0/VC/bin/cl.exe"
-./autogen.sh
-make
-</programlisting>
-      <para> And yes, it would be great to do the ccache support as simple as a --enable-ccache
-        configure option - but I did not find time to fine tune it on the other platforms, so I'll
-        go for that only when I find there is a demand for that - drop me a mail ;-) </para>
-      <para> If you want to have a look at the ccache's statistics, run ccache -s. I've done no
-        measurement how much time it saves overall - if are able to do any, please mail me your
-        results too.</para>
-      <!--($ Id: 16.4.11 sm $)-->
-    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
@@ -174,5 +132,20 @@ make
       </title>
       <para><ulink url="http://nginx.net/">Nginx</ulink> (pronounced &quot;engine x&quot;) is a free, open-source, high-performance HTTP server. Nginx is known for its stability, rich feature set, simple configuration, and low resource consumption. This tutorial shows how you can install Nginx on an OpenSUSE 11.4 server with PHP5 support (through <ulink url="http://php-fpm.org/">PHP-FPM</ulink>) and MySQL support. (...)</para>
 <!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://vavai.net/2011/04/upgrading-zimbra-mail-server-6-x-x-into-zimbra-mail-server-7-x-x/">Masim Sugianto: Upgrading Zimbra Mail Server 6.x.x into Zimbra Mail Server 7.x.x</ulink>
+      </title>
+      <para><ulink url="http://www.zimbra.com">Zimbra</ulink> has released Zimbra 7 for about a
+        month and it seems quite stable for production use. As major upgrade to Zimbra 6, Zimbra 7
+        comes with tons of bug fixes and new features including security feature to prevent virus
+        and spam.</para>
+      <para>Does the upgrade process should be applied for production use ? The answer depends on
+        your environment. If an existing system quite stable with minor problem, you may stick with
+        your existing Zimbra system but if you need some features that only provided by Zimbra 7,
+        upgrading may be the best option. I’m currently manages some Zimbra for production mail
+        server system on some client, most of them are corporate with user 100-10k users.
+        (...)</para>
+      <!-- ($ Id: 12.4.11 sm $)-->    </blockquote>
   </sect2>
 </sect1>
