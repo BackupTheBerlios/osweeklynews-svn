@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- This document was created with Syntext Serna Free. -->
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
   <!ENTITY % myentities SYSTEM "entities.ent">
   %myentities;
 ]>
@@ -19,22 +18,111 @@
 -->
 <sect1 role="kernel">
   <title>Kernel Review</title>
-    <blockquote>
+  <blockquote>
     <title>
-      <ulink
-        url="http://www.pcworld.com/businesscenter/article/224955/7_free_security_tools_for_linux.html"
-        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 1) - Network drivers and
-        infrastructure</ulink>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel/1124982">Linus Torvalds: Linux 2.6.39-rc3</ulink>
     </title>
-    <para><emphasis role="bold">The addition of ipset support makes it easier to run a firewall, as
-        it means that only one table needs to be modified in order to block a specific IP address.
-        The situation with regard to drivers for WLAN chips continues to improve, with Ralink and
-        Realtek now actively involved in developing the Linux kernel drivers.</emphasis></para>
-    <para>Linus Torvalds' release emails for the <ulink
-        url="http://thread.gmane.org/gmane.linux.kernel/1123040">second</ulink> and <ulink
-        url="http://thread.gmane.org/gmane.linux.kernel/1124982">third</ulink> pre-release versions
+    <para>It&apos;s been another almost spookily calm week. Usually this kind of
+calmness happens much later in the -rc series (during -rc7 or -rc8,
+say), but I&apos;m not going to complain. I&apos;m just still waiting for the
+other shoe to drop.
+
+</para>
+    <para>And it is possible that this really ended up being a very calm release
+cycle. We certainly didn&apos;t have any big revolutionary changes like the
+name lookup stuff we had last cycle. So I&apos;m quietly optimistic that no
+shoe-drop will happen.
+
+</para>
+    <para>Anyway, not only has it been calm, it&apos;s been pretty normal. Two thirds
+drivers is pretty normal, with the rest being fairly spread out all
+over:
+
+   </para>
+    <para>3.5% Documentation/
+   </para>
+    <para>2.8% arch/arm/
+  </para>
+    <para>10.2% arch/
+   </para>
+    <para>2.0% drivers/media/video/
+   </para>
+    <para>3.3% drivers/media/
+   </para>
+    <para>2.6% drivers/net/wireless/
+  </para>
+    <para>10.3% drivers/net/
+   </para>
+    <para>5.5% drivers/scsi/
+   </para>
+    <para>8.4% drivers/staging/memrar/
+  </para>
+    <para>24.2% drivers/staging/
+   </para>
+    <para>3.5% drivers/video/
+  </para>
+    <para>62.0% drivers/
+   </para>
+    <para>2.0% fs/xfs/linux-2.6/
+   </para>
+    <para>4.3% fs/xfs/
+   </para>
+    <para>9.6% fs/
+   </para>
+    <para>2.2% include/linux/
+   </para>
+    <para>3.7% include/
+   </para>
+    <para>4.4% net/
+   </para>
+    <para>2.5% sound/
+
+</para>
+    <para>and the appended shortlog shows more details if you care. Nothing
+earth-shattering.
+
+</para>
+    <para>Let&apos;s hope the release cycle continues like this. I _like_ it when
+people really seem to follow the whole &quot;big changes during the merge
+window&quot; rules.
+
+</para>
+    <para>Thanks guys,
+
+                   </para>
+    <para>Linus</para>
+<!-- ($ ld: 16.4.11 sat $) -->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel/1126873">Greg KH: Linux 2.6.38.3</ulink>
+    </title>
+    <para>I&apos;m announcing the release of the 2.6.38.3 kernel.
+
+</para>
+    <para>All users of the 2.6.38 kernel series must upgrade.
+
+The updated 2.6.38.y git tree can be found at:
+        </para>
+    <para>git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-2.6.38.y.git
+</para>
+    <para>and can be browsed at the normal kernel.org git web browser:
+        </para>
+    <para>http://git.kernel.org/?p=linux/kernel/git/stable/linux-2.6.38.y.git;a=summary
+
+</para>
+    <para>thanks,
+
+</para>
+    <para>greg k-h</para>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://www.pcworld.com/businesscenter/article/224955/7_free_security_tools_for_linux.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 1) - Network drivers and infrastructure</ulink>
+    </title>
+    <para><emphasis role="bold">The addition of ipset support makes it easier to run a firewall, as it means that only one table needs to be modified in order to block a specific IP address. The situation with regard to drivers for WLAN chips continues to improve, with Ralink and Realtek now actively involved in developing the Linux kernel drivers.</emphasis></para>
+    <para>Linus Torvalds&apos; release emails for the <ulink url="http://thread.gmane.org/gmane.linux.kernel/1123040">second</ulink> and <ulink url="http://thread.gmane.org/gmane.linux.kernel/1124982">third</ulink> pre-release versions
       of Linux kernel 2.6.39 both note a comparative lack of changes. The calm prior to the RC2
-      release even prompted him to speculate whether the kernel developers were "up to something".
+      release even prompted him to speculate whether the kernel developers were &quot;up to something&quot;.
       More jocularity of this ilk was evident on the release of RC3 on Tuesday, but both emails make
       it clear that he welcomes the tranquillity and is looking forward to a quiet development
       cycle.</para>
@@ -42,14 +130,9 @@
       the main development tree during the merge window. Kernel Log is therefore already in a
       position to offer a comprehensive overview of the major changes in kernel 2.6.39, scheduled
       for release in mid to late May. A range of articles will deal with different functional areas
-      of the kernel in turn. The "Coming in 2.6.39" series opens here with the major changes in the
+      of the kernel in turn. The &quot;Coming in 2.6.39&quot; series opens here with the major changes in the
       network stack and associated drivers. Over the next few weeks, this will be followed by
       articles covering graphics drivers, storage support, file systems, architecture code,
       infrastructure and drivers for other hardware. (...)</para>
-    <!-- ($ ld: 15.4.11 sm $) -->    </blockquote>
-  <blockquote>
-    <title><ulink url="http://schaiba.wordpress.com/2011/04/02/kernle-weekly-news-02-04-2011/">Rares Aioanei: kernel weekly news – 02.04.2011</ulink></title>
-    <para>Rares published the Kernel Review for this Week. Thanks for working on it :-)</para> 
-    <!--($ ld: 2.4.11 sm $)-->
-  </blockquote>
+<!-- ($ ld: 15.4.11 sm $) -->  </blockquote>
 </sect1>

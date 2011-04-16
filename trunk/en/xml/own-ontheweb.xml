@@ -26,132 +26,64 @@
       </title>
       <para>Novell today announced the expansion of its Long Term Service Pack Support (LTSS) program for SUSE® Linux Enterprise Server, lengthening customers&apos; access to the company&apos;s <ulink url="http://www.novell.com/linux/support-survey.html">industry-leading Linux* support</ulink> for each service pack release. For the first time, long term support is also provided globally for SUSE Linux Enterprise Server for System z*. Novell further announced the immediate availability of SUSE Linux Enterprise 10 Service Pack 4 (SP4), bundling all previously released patches, fixes and updates for SUSE Linux Enterprise 10, while supporting the newest hardware, storage systems and networking devices, including Intel&apos;s latest Xeon* E7 processor family and AMD&apos;s latest Opteron* processors. (...)</para>
 <!-- ($ ld: 13.4.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.marketwire.com/press-release/Oracle-Announces-Its-Intention-to-Move-OpenOfficeorg-to-a-Community-Based-Project-NASDAQ-ORCL-1428324.htm">Oracle Announces Its Intention to Move OpenOffice.org to a Community-Based Project</ulink>
+      </title>
+      <para>REDWOOD SHORES, CA--(Marketwire - April 15, 2011) - Oracle Corporation (NASDAQ: ORCL) today is announcing its intention to move OpenOffice.org to a purely community-based open source project and to no longer offer a commercial version of Open Office.</para>
+      <para>&quot;Given the breadth of interest in free personal productivity applications and the rapid evolution of personal computing technologies, we believe the OpenOffice.org project would be best managed by an organization focused on serving that broad constituency on a non-commercial basis,&quot; said Edward Screven, Oracle&apos;s Chief Corporate Architect. &quot;We intend to begin working immediately with community members to further the continued success of Open Office. Oracle will continue to strongly support the adoption of open standards-based document formats, such as the Open Document Format (ODF).&quot; (...)</para>
+<!-- ($ ld: 16.4.11 sat $) -->    </blockquote>
   </sect2>
-<!--
   <sect2>
     <title>Call for participation</title>
     <blockquote>
       <title>
-        <ulink url="http://blogs.fsfe.org/mario/?p=130">Mario Fux: We need you for Nepomuk (integration)!</ulink>
+        <ulink url="http://www.communityleadershipsummit.com/">Community Leadership Summit 2011: 23rd-24th July, 2011 – Portland, Oregon</ulink>
       </title>
-      <para>First I’d like to thank David Vignoni for his work on the logo for the Randa meeting.
-        It’s the basis for the work of the <ulink url="http://blogs.fsfe.org/mario/?p=121">young informatic trainees</ulink>. But the results are still secret (as even I haven’t seen
-        anything myself but get the first results at the end of this week <inlinemediaobject>
-          <imageobject>
-            <imagedata fileref="http://blogs.fsfe.org/mario/wp-includes/images/smilies/icon_wink.gif"/>
-          </imageobject>
-        </inlinemediaobject> .</para>
-      <para>And now to the ideas and proposals (btw this has nothing in common with the <ulink url="http://community.kde.org/GSoC/2011/Ideas">GSoC ideas of KDE</ulink>!). As you
-        probably or hopefully already know the <ulink url="http://nepomuk.kde.org">KDE Nepomuk team</ulink> will have a meeting in <ulink url="http://community.kde.org/Sprints/Randa">Randa</ulink> this June (from the 1st to the 7th of this month) and we still want
-        application developers to integrate this technology in their application or to work on some
-        interesting and great new ideas. And there will be really good help as <ulink url="http://trueg.wordpress.com/">Sebastian Trýg</ulink> will be in Randa and he is going
-        to do one or the other workshop of Nepomuk basics. And here are some ideas and thoughts of
-        mine to start your imagination engines:</para>
-      <itemizedlist>
-        <listitem>
-          <para>The KDE semantic clipboard. There is <ulink url="http://websvn.kde.org/trunk/playground/base/nepomuk-kde/semclip/">some code</ulink> in the old subversion playground of KDE and in December 2010 I wrote a
-              <ulink url="http://blogs.fsfe.org/mario/thesis_template.pdf">paper</ulink> about this
-            topic. In short, this clipboard enhances to normal one with the capability of knowing
-            what (in the context of meaning) it copy-and-pastes. This clipboard does not just copy
-            numbers and formatting but addresses, geographic coordinates or blbliographic
-            references. Take a look and bring it to a releasable state. There are even some solution
-            proposals in the above mentioned paper.</para>
-        </listitem>
-        <listitem>
-          <para>All of the new <ulink url="http://community.kde.org/KDE_PIM">KDE PIM</ulink>
-            application use Nepomuk technology through their <ulink url="http://community.kde.org/KDE_PIM/Akonadi">Akonadi</ulink> interactions.</para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://www.digikam.org">Digikam</ulink> had (or has?) some capabilities
-            to exchange its information and metadata with the Nepomuk storage. What about tagging
-            your pictures with the contacts (and <ulink url="http://www.semanticdesktop.org/ontologies/pimo/">PIMO::Persons</ulink>) of the
-            new Kaddressbook and projects which are then usable system wide.</para>
-        </listitem>
-        <listitem>
-          <para>And <ulink url="http://amarok.kde.org">Amarok</ulink> had (or again has?) some
-            functions to share it’s music database with Nepomuk and thus make it system wide and not
-            just enclosed in one applicatition.</para>
-        </listitem>
-        <listitem>
-          <para>But there are as well good examples for existing Nepomuk integration: <ulink url="http://bangarangkde.wordpress.com/">Bangarang</ulink>. A multimedia player which
-            remembers what you like, what music and videos you have on your system and where is more
-            information about this media data (in the web).</para>
-        </listitem>
-        <listitem>
-          <para>Another idea could be a (scientific) paper or article collector which understands
-            the connections (or quotations) between the articles and that the strings at the top
-            (authors) are actually persons and the references at the end of the articles are
-            actually links and thus relations to other papers and articles. Take a look at the
-              <ulink url="http://ontoware.org/swrc/">SWRC ontology</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>Yet another project which extensively uses Nepomuk is the new <ulink url="http://community.kde.org/Real-Time_Communication_and_Collaboration">KDE Telepathy framework</ulink>. They don’t just invent yet another represenation of a person and
-            its contacts but use PIMO::Person and thus make connections to them system wide
-            comprehensible and reusable.</para>
-        </listitem>
-        <listitem>
-          <para>And let’s not forget the <ulink url="http://plasma.kde.org">Plasma framework</ulink>
-            and its <ulink url="http://userbase.kde.org/Plasma#Activities">activities</ulink>. But
-            there is more and better information about this on the <ulink url="http://ivan.fomentgroup.org/blog/">site of ivan Cukic</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>Or something completely new. An ontology for TV series, recordings and shows…
-            (Update: Sebastian told me that there is already one: <ulink url="http://sourceforge.net/apps/trac/oscaf/ticket/44">NMM</ulink>. And Bangarang and
-            some other applications use it.)</para>
-        </listitem>
-        <listitem>
-          <para>And there is <ulink url="http://zeitgeist-project.com/">Zeitgeist</ulink> and <ulink url="http://releases.zeitgeist-project.com/qzeitgeist/">QtZeitgeist</ulink>…
-            (...)</para>
-        </listitem>
-      </itemizedlist>     
-      </blockquote>
-  </sect2> -->  <sect2>
+      <para>The <emphasis role="bold">Community Leadership Summit 2011</emphasis> is the <emphasis role="italic">third</emphasis> incarnation of the popular event designed to bring together community leaders and managers and the projects and organizations that are interested in growing and empowering a strong community.
+
+</para>
+      <para>The event provides an unconference style schedule in which attendees can discuss, debate and explore topics. This is augmented with a range of scheduled talks, panel discussions, networking opportunities and more.
+
+</para>
+      <para>The event provides the first opportunity of its kind to bring together the leading minds in the field with new community builders to discuss topics such as <emphasis role="italic">governance, creating collaborative environments, conflict resolution, transparency, open infrastructure, social networking, commercial investment in community, engineering vs. marketing approaches to community leadership</emphasis> and much more. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-39-Part-1-Network-drivers-and-infrastructure-1227053.html"
-          >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 1) - Network drivers and
-          infrastructure</ulink>
+        <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-39-Part-1-Network-drivers-and-infrastructure-1227053.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 1) - Network drivers and infrastructure</ulink>
       </title>
-      <para><emphasis role="bold">The addition of ipset support makes it easier to run a firewall,
-          as it means that only one table needs to be modified in order to block a specific IP
-          address. The situation with regard to drivers for WLAN chips continues to improve, with
-          Ralink and Realtek now actively involved in developing the Linux kernel
-          drivers.</emphasis></para>
-      <para>Linus Torvalds' release emails for the <ulink
-          url="http://thread.gmane.org/gmane.linux.kernel/1123040">second</ulink> and <ulink
-          url="http://thread.gmane.org/gmane.linux.kernel/1124982">third</ulink> pre-release
+      <para><emphasis role="bold">The addition of ipset support makes it easier to run a firewall, as it means that only one table needs to be modified in order to block a specific IP address. The situation with regard to drivers for WLAN chips continues to improve, with Ralink and Realtek now actively involved in developing the Linux kernel drivers.</emphasis></para>
+      <para>Linus Torvalds&apos; release emails for the <ulink url="http://thread.gmane.org/gmane.linux.kernel/1123040">second</ulink> and <ulink url="http://thread.gmane.org/gmane.linux.kernel/1124982">third</ulink> pre-release
         versions of Linux kernel 2.6.39 both note a comparative lack of changes. The calm prior to
-        the RC2 release even prompted him to speculate whether the kernel developers were "up to
-        something". More jocularity of this ilk was evident on the release of RC3 on Tuesday, but
+        the RC2 release even prompted him to speculate whether the kernel developers were &quot;up to
+        something&quot;. More jocularity of this ilk was evident on the release of RC3 on Tuesday, but
         both emails make it clear that he welcomes the tranquillity and is looking forward to a
         quiet development cycle.</para>
       <para>As usual, the bulk of the changes in the next major kernel revision found their way into
         the main development tree during the merge window. Kernel Log is therefore already in a
         position to offer a comprehensive overview of the major changes in kernel 2.6.39, scheduled
         for release in mid to late May. A range of articles will deal with different functional
-        areas of the kernel in turn. The "Coming in 2.6.39" series opens here with the major changes
+        areas of the kernel in turn. The &quot;Coming in 2.6.39&quot; series opens here with the major changes
         in the network stack and associated drivers. Over the next few weeks, this will be followed
         by articles covering graphics drivers, storage support, file systems, architecture code,
         infrastructure and drivers for other hardware. (...)</para>
 <!-- ($ ld: 13.4.11 sm $) -->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://opensourcetogo.blogspot.com/2011/04/removingconfiguring-facebook-apps-do.html"
-          >Open Source to Go: Removing/Configuring Facebook Apps: Do You Know How?</ulink></title>
+      <title>
+        <ulink url="http://opensourcetogo.blogspot.com/2011/04/removingconfiguring-facebook-apps-do.html">Open Source to Go: Removing/Configuring Facebook Apps: Do You Know How?</ulink>
+      </title>
       <para>I know a number of folks in the community are Facebook users—despite the dire warnings
-        of some about "CIA plots" and the like—but with the dramatic increases in "rogue" apps there
-        and "like-jackings" and such, I'm not sure everyone knows how to remove an application you
-        don't want, or to configure one to limit the information it can access (when it's possible
+        of some about &quot;CIA plots&quot; and the like—but with the dramatic increases in &quot;rogue&quot; apps there
+        and &quot;like-jackings&quot; and such, I&apos;m not sure everyone knows how to remove an application you
+        don&apos;t want, or to configure one to limit the information it can access (when it&apos;s possible
         to do so).</para>
       <para>Facebook seems to want to make this as difficult as possible, by hiding the settings in
-        not-easy-to-locate places, by moving things around, etc. Accordingly, I wrote up <ulink
-          url="http://caffeine.shugendo.org/2011/04/14/configuring-and-removing-facebook-apps-heres-how/"
-          >a quick guide</ulink>, with screen shots, over on my other blog, for those who are
+        not-easy-to-locate places, by moving things around, etc. Accordingly, I wrote up <ulink url="http://caffeine.shugendo.org/2011/04/14/configuring-and-removing-facebook-apps-heres-how/">a quick guide</ulink>, with screen shots, over on my other blog, for those who are
         interested... </para>
-      <!--($ ld: 15.4.11 sm $)-->
-    </blockquote>
+<!--($ ld: 15.4.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
@@ -171,22 +103,49 @@
 <!-- ($ ld: 12.4.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://ostatic.com/blog/kdes-new-project-for-portable-devices">OStatic/Susan Linton: KDE&apos;s New Project for Portable Devices</ulink>
+        <ulink url="http://ostatic.com/blog/testing-plasma-active">OStatic/Susan Linton: Testing Plasma Active</ulink>
       </title>
-      <para>Key KDE developers have been blogging about new projects aimed towards portable devices.
-        As Aaron Seigo <ulink url="http://aseigo.blogspot.com/2011/04/plasma-active-quick.html">says</ulink>, <quote>In a nutshell, Plasma Active is about getting the KDE Platform with Plasma providing a compelling user interface ready for and available on hardware devices outside the usual laptop and desktop form factors.</quote> For us mortals, that means an
-        interface for smartphones, tablets, and handhelds.</para>
-      <para>Dubbed <quote>Plasma Active</quote>, the new initative encompasses several components to
-        build a <quote>data-centric user interface which is not concerned with applications but rather offers intelligently combined data through a context-sensitive recommendation manager.</quote> One might compare it to MeeGO. Marco Martin <ulink url="http://www.notmart.org/index.php/BlaBla/Reactivate">said</ulink> the name of the
-        project gives a hint to its future. He said, <quote>An important thing comes already in the name: it&apos;s Plasma Active and not Plasma Mobile: why? What we are doing right now is exactly a mobile project: tablets to be precise, but stopping there would be a mistake. Our goal is to be sure that if an application is &quot;certified to be active&quot; can run as well in a tablet, as in an handheld device, as in a set top box, as in a type of device we have completely no idea about, once an user interface module specific for its screen size and input method has been added.</quote> (...)</para>
-<!-- ($ ld: 8.4.11 sat $) -->    </blockquote>
+      <para>Yesterday when I <ulink url="http://ostatic.com/blog/kdes-new-project-for-portable-devices">introduced Plasma Active</ulink>, I secretly thought to myself &quot;oh no, so it&apos;s begun.&quot; See, I have this underlying fear that KDE is going to go the way of GNOME 3 and Unity and finding the removal of user choice in upcoming KDE software compilations sowed the seeds. Despite my biased first impressions, I booted the live ISO provided by open-six.
+
+</para>
+      <para>open-six used openSUSE as the basis for <ulink url="http://download.open-slx.com/iso/11.4/plasma-active.i686-1.0.6.iso">it&apos;s live CD</ulink>. It was a bit slow to boot, but truthfully, I didn&apos;t really expect it to finish. Afterall, the list of known working devices is short and I was booting on my regular desktop machine with NVIDIA graphics and two monitors. Well, it did finish booting and it even started the Plasma Active desktop. (The desktop was cloned across the two monitors - which is really best-case scenario without proprietary graphic drivers.)
+
+</para>
+      <para>And darn it all, I really hate to admit this... but my first word, my first thought was, &quot;Wow!&quot; This Plasma Active thing might really be cool on a little netbook or tablet. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://geekybodhi.net/habari/interview-with-vincent-untz-at-gnome-asia-summit-2011">Mayank Sharma: Interview with Vincent Untz at Gnome Asia Summit 2011</ulink>
+      </title>
+      <para><ulink url="http://geekybodhi.net/habari/www.vuntz.net">Vincent Untz</ulink> is the uber-geek release manager for Gnome. We catch him at the <ulink url="http://2011.gnome.asia/">Gnome Asia Summit</ulink> in Bangalore for a quick chat on all things <ulink url="http://gnome3.org/">Gnome 3</ulink> (and some things not).
+
+</para>
+      <para><emphasis role="bold">Mayank Sharma: What&apos;s your role in the GNOME project?</emphasis>
+
+</para>
+      <para>Vincent Untz: My current role is Release Manager of GNOME, which more or less means cheering the release team, because in the release team we all work together, and we are all on the same equal footing.
+
+</para>
+      <para>The release team exists to make sure that we release Gnome on time with the quality we all expect, and to make important decisions when decisions need to be taken, like which new modules are to be part of Gnome, to publish the schedule for the release cycle, and everything that is related to release engineering a big project like Gnome. Because Gnome is actually made of more than 100 modules, so it&apos;s really a lot of coordination between the modules to make sure everything works.
+
+</para>
+      <para>So that&apos;s my main role. I am also maintaining a few modules, and doing many other things. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
   </sect2>
-<!--
   <sect2>
     <title>Warning!</title>
     <blockquote>
-      <title><ulink url="http://www.petur.eu/blog/?p=349">Petur.eu: Linux can be hacked with an USB
-          device</ulink>
+      <title>
+        <ulink url="http://www.theinquirer.net/inquirer/news/2043530/wordpresscom-hacked">the INQUIRER/Asavin Wattanajantra: Wordpress.com gets hacked</ulink>
+      </title>
+      <para>OPEN SOURCE blogging website Wordpress.com suffered a hack attack on its servers, prompting the company behind the popular content management system to issue a warning about passwords.
+
+</para>
+      <para>In a brief but honest note from Automattic, it said that there had been a low-level (root) break-in to several servers, where <ulink url="http://en.blog.wordpress.com/2011/04/13/security/">anything on them could have been revealed</ulink>. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.petur.eu/blog/?p=349">Petur.eu: Linux can be hacked with an USB device</ulink>
       </title>
       <para>I have to admit, over the years I haven’t given openSUSE enough love or credit for being
         the outstanding Linux distribution is it. With that said, I wanted to give some attention to
@@ -194,19 +153,32 @@
         openSUSE 11.4 is KDE, I will be giving a little extra attention to the KDE desktop. Since
         both might well gain some serious ground, when Ubuntu 11.04 is released, it will be nice for
         users to not only know of its existence, but to also know that openSUSE 11.4 is, in fact, a
-        solid distribution worth giving a look. (...)</para>      
-    </blockquote>
-  </sect2>
-  <sect2>
-    <title>LOL</title>
+        solid distribution worth giving a look. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://xkcd.com/874/">XKCD: Time Management</ulink></title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://imgs.xkcd.com/comics/time_management.png" width="50%"/>
-        </imageobject>
-      </mediaobject>
-      <para><emphasis role="bold">License</emphasis>: <ulink
-          url="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</ulink></para>
-    </blockquote>
-  </sect2> --></sect1>
+      <title>
+        <ulink url="http://www.linuxpromagazine.com/Online/News/Adobe-Issues-Security-Advisory-for-Flash-Player">Linux Pro Magazine/Amber Graner: Adobe Issues Security Advisory for Flash Player</ulink>
+      </title>
+      <para><emphasis role="bold">A security advisory warning has been issued by Adobe for a critical vulnerablity in its Flash Player 10.2.153.1 and more.</emphasis>
+
+</para>
+      <para>According <ulink url="http://www.adobe.com/support/security/advisories/apsa11-02.html">to the advisory</ulink>, &quot;A <ulink url="http://www.adobe.com/devnet/security/severity_ratings.html">critical</ulink> vulnerability exists in Flash Player 10.2.153.1 and earlier versions (Adobe Flash Player 10.2.154.25 and earlier for Chrome users) for Windows, Macintosh, Linux and Solaris, Adobe Flash Player 10.2.156.12 and earlier versions for Android, and the Authplay.dll component that ships with Adobe Reader and Acrobat X (10.0.2) and earlier 10.x and 9.x versions for Windows and Macintosh operating systems.&quot;
+
+</para>
+      <para>This vulnerablility could, according to Adobe, cause a crash and potentially allow an attacker to take control of the affected system. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+  </sect2>
+<!--<sect2>
+  <title>LOL</title>
+  <blockquote>
+    <title>
+      <ulink url="http://xkcd.com/874/">XKCD: Time Management</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://imgs.xkcd.com/comics/time_management.png" width="50%"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</ulink></para>
+  </blockquote>
+</sect2>--></sect1>

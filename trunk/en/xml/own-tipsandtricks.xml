@@ -22,9 +22,7 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://vavai.net/2011/04/opensuse-multi-boot-system-opensuse-fedora-linuxmint-ubuntu-free-doswindows/"
-          >Masim Sugianto: openSUSE Multi Boot System : openSUSE, Fedora, LinuxMint, Ubuntu</ulink>
+        <ulink url="http://vavai.net/2011/04/opensuse-multi-boot-system-opensuse-fedora-linuxmint-ubuntu-free-doswindows/">Masim Sugianto: openSUSE Multi Boot System : openSUSE, Fedora, LinuxMint, Ubuntu</ulink>
       </title>
       <para>I’m currently using 5 OS in my Laptop, HP 4421s : FreeDOS/Windows, openSUSE, LinuxMint,
         Fedora &amp; Ubuntu. The main goals are for testing purpose only but I would prefer to
@@ -42,9 +40,7 @@
 <!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink
-          url="http://vavai.net/2011/04/upgrading-zimbra-mail-server-6-x-x-into-zimbra-mail-server-7-x-x/"
-          >Masim Sugianto: Upgrading Zimbra Mail Server 6.x.x into Zimbra Mail Server 7.x.x</ulink>
+        <ulink url="http://vavai.net/2011/04/upgrading-zimbra-mail-server-6-x-x-into-zimbra-mail-server-7-x-x/">Masim Sugianto: Upgrading Zimbra Mail Server 6.x.x into Zimbra Mail Server 7.x.x</ulink>
       </title>
       <para><ulink url="http://www.zimbra.com">Zimbra</ulink> has released Zimbra 7 for about a
         month and it seems quite stable for production use. As major upgrade to Zimbra 6, Zimbra 7
@@ -57,117 +53,98 @@
         server system on some client, most of them are corporate with user 100-10k users.
         (...)</para>
 <!-- ($ Id: 12.4.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.packtpub.com/article/create-amazing-text-font-effects-with-gimp-2-6">Packt Publishing/Juan Manuel Ferreyra: How To Create Amazing Text and Font Effects in Gimp 2.6</ulink>
+      </title>
+      <para>Installing a font to use it with GIMP is a really quick and easy task. Just copy the font files to the <emphasis role="italic">.fonts</emphasis> folder or to your .gimp-[version]/fonts folder in your home directory. Then, restart GIMP.
+
+</para>
+      <para>Once you have your fonts set up, they will be available for you with which to work. GIMP comes with a wide variety of filters and effects. We saw a few of them in action in the previous article on <ulink url="https://www.packtpub.com/article/creating-company-logo-with-gimp-2-6">Creating a Logo</ulink>. Now, we are going to use some of them with just text layers, to give you a clear idea of how to create great looking text starting from a solid-color font. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://everydaylht.com/howtos/desktop/font-hinting-on-opensuse-11-4/">EVERYDAYLHT.com: Font Hinting on openSUSE 11.4</ulink>
+      </title>
+      <para><emphasis role="bold">Warning</emphasis>
+
+</para>
+      <para>Font hinting until very recently has been a patented technology. The patents that lead to subpixel font hinting being turned of by default in the freetype2 library have now expired. It is now turned on by default going forward. Unfortunately openSUSE 11.4 ships with a version that does not have the bytecode intepreter turned on. This howto sets out how to get a version with it enabled.
+
+</para>
+      <para>This howto is for openSUSE 11.4. Click the link for a <ulink url="http://everydaylht.com/howtos/desktop/font-hinting-in-opensuse/">howto for font hinting on openSUSE 11.3</ulink> (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.unixmen.com/linux-commands/1602-watch-al-jazeera-live-with-one-command">Unixmen/M. Zinoune (Zinovsky): Watch Al Jazeera Live in Linux with one command</ulink>
+        <ulink url="http://bashshell.net/shell-scripts/understanding-the-for-loop/">BashShell.net/mike: 10 Days of Loops</ulink>
       </title>
-      <para>If you are a fun of Aljazeera News channel, this is a nice command that allow you to
-        watch Al Jazeera live in your Linux desktop. I tested the command and is working like a
-        charm.</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://cdn.unixmen.com/images/stories/thumbnails/images-stories-videos-aljazeera1-400x225.png"/>
-        </imageobject>
-      </mediaobject>
-      <para>First check if you have rtmpdump installed, if not install it using the command
-        :<screen>sudo apt-get install rtmpdump</screen></para>
-      <para>Now to start watching Aljazeera live, open terminal and enter the following
-        command</para>
-      <para><emphasis role="bold">To use Mplayer :</emphasis><programlisting><emphasis role="bold">$ rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y \\ &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| mplayer -</emphasis></programlisting></para>
-      <para><emphasis role="bold">To use VLC player:</emphasis><screen>$<emphasis role="bold"> rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ \\ -y &quot;aljazeera_en_veryhigh&quot; -a &quot;aljazeeraflashlive-live&quot; -o -| vlc -</emphasis>
-          </screen></para>
-      <para>Enjoy :)</para>
-      <para><emphasis role="bold">Editors Note:</emphasis> For openSUSE you should install via:
-          <emphasis role="italic">zypper in rtmpdump</emphasis> instead of sudo apt-get</para>
-    </blockquote>
-  </sect2> -->
+      <para>Our &quot;10 Days of Loops&quot; tutorial series is in full swing. This short-course includes tutorials and exercises which are rolled out each day in an effort to help admins use loops more confidently.
+
+    </para>
+      <para>* <ulink url="http://bashshell.net/shell-scripts/understanding-the-for-loop/">Understanding the for Loop</ulink>
+    </para>
+      <para>* <ulink url="http://bashshell.net/shell-scripts/for-loop-example/">A for Loop Example</ulink>
+    </para>
+      <para>* <ulink url="http://bashshell.net/shell-scripts/practice-with-while-loops/">Practice with while Loops</ulink>
+    </para>
+      <para>* <ulink url="http://bashshell.net/shell-scripts/understanding-the-while-loop/">Understanding The While Loop</ulink>
+    </para>
+      <para>* <ulink url="http://bashshell.net/shell-scripts/if-then/">if then Statements</ulink>
+(...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.lowkster.com/2011/04/packaging-python-packages-in-opensuse.html">Low
-          Kian Seong: Packaging python packages in opensuse</ulink>
+        <ulink url="http://blog.lowkster.com/2011/04/packaging-python-packages-in-opensuse.html">Low Kian Seong: Packaging python packages in opensuse</ulink>
       </title>
       <para>While getting one of my packages rejected for inclusion into the python lang repo for
-        openSuSE, the comments made by the reviewer pointed me to find the package: <ulink
-          url="http://pypi.python.org/pypi/py2pack">py2pack</ulink>. </para>
+        openSuSE, the comments made by the reviewer pointed me to find the package: <ulink url="http://pypi.python.org/pypi/py2pack">py2pack</ulink>. </para>
       <para>This package made the packaging of Python packages on OpenSuSE brain dead easy by doing
         all of the heavy lifting, creating a sample spec file that really needs very little editing.
-        Install py2pack, and follow this guide, <ulink
-          url="http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way"
-          >http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way</ulink> and
+        Install py2pack, and follow this guide, <ulink url="http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way">http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way</ulink> and
         put that together with the great openSuSE build service and you will have a great time
         packaging which is usually a thankless job no one wants to do. </para>
-      <para>Update: Wow the ruby packaging method is about the same too: <ulink
-          url="http://en.opensuse.org/openSUSE:Packaging_Ruby"
-          >http://en.opensuse.org/openSUSE:Packaging_Ruby</ulink></para>
+      <para>Update: Wow the ruby packaging method is about the same too: <ulink url="http://en.opensuse.org/openSUSE:Packaging_Ruby">http://en.opensuse.org/openSUSE:Packaging_Ruby</ulink></para>
 <!-- ($ Id: 13.4.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/428800:weekend-project-creating-qt-interfaces-with-gimp?utm_medium=twitter&amp;utm_source=twitterfeed">Linux.com/Nathan Willis: Weekend Project: Creating Qt Interfaces with GIMP</ulink>
+      </title>
+      <para>Interface design for GUI applications is seldom easy in open source projects. There are a number of valid reasons: interface designers are scarce in comparison to developers, and usability testing isn&apos;t always possible the way it is for proprietary software shops,for example. But the tools don&apos;t always keep pace with the rest of the platform, either, which is part of why Qt&apos;s <ulink url="http://labs.qt.nokia.com/2010/10/19/exporting-qml-from-photoshop-and-gimp/">GIMP QML Exporter</ulink> is so interesting. Rather than a stand-alone interface builder, it lets the developer design the interface directly in GIMP, and directly export it as usable code. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/aix/library/au-mercurial/index.html?ca=drs-">IBM developerWorks/William von Hagen: Managing source code with Mercurial</ulink>
+      </title>
+      <para>Managing the source code for a software development project is only slightly less important than writing it in the first place. UNIX® and Linux® systems offer a rich selection of version control system (VCS) packages, each of which takes a slightly different approach to this common concern. This article focuses on the Mercurial source code management system, often simply referred to as hg. Mercurial provides a powerful, modern, and light-weight solution for source code control that makes it easy for developers to make and debug their changes to a software project while maintaining a stable, centralized source code repository that all project members can depend upon. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-opensuse-11.4-lamp">HowtoForge/Falko Timme: Installing Apache2 With PHP5 And MySQL Support On OpenSUSE 11.4 (LAMP)</ulink>
+        <ulink url="http://www.unixmen.com/linux-tutorials/1623-9-best-practices-to-secure-your-linux-desktop-and-server">Unixmen/M. Zinoune: 9 Best practices to secure your Linux Desktop &amp; Server | Including installation &amp; Configuration</ulink>
       </title>
-      <para>LAMP is short for <emphasis role="bold">L</emphasis>inux, <emphasis role="bold">A</emphasis>pache, <emphasis role="bold">M</emphasis>ySQL, <emphasis role="bold">P</emphasis>HP. This tutorial shows how you can install an Apache2 webserver on an OpenSUSE 11.4 server with PHP5 support (mod_php) and MySQL support. (...)</para>
-<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
+      <para>There are a few common security practices that every Linux user should follow. Unfortunately, not everybody is linux-logoaware of these. In this post will show you how to secure your home pc or server to the best of your abilities with the best available opensource tools.</para>
+      <para><emphasis role="bold">1- Checking your system for random mailers:</emphasis></para>
+      <para>Mailers like Form Mail are used by hackers to send out spam emails, relay messages that are security risks for yourself and so on. You can find them using the following command:</para>
+      <para><command>find / -name &quot;[Ff]orm[mM]ai*&quot;</command></para>
+      <para>CGIeMail is another one that has similar issues.</para>
+      <para><command>find / -name &quot;[Cc]giemai*&quot;</command></para>
+      <para>Upon finding them, issue the following:</para>
+      <para><command>chmod a-rwx /path/to/filename</command></para>
+      <para>a-rwx = all types, no read, no write, no execute (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.novell.com/communities/node/12703/howto-openldap-24x-replication-sles11sp1">Novell Cool Solutions/fpernet: HOWTO: OpenLDAP 2.4.x Replication on SLES11 SP1</ulink>
+        <ulink url="http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-opensuse-11.4">HowtoForge/Falko Timme: Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support On OpenSUSE 11.4</ulink>
       </title>
-      <para><emphasis role="bold">Introduction</emphasis></para>
-      <para>YaST has a module for the server and the client part of OpenLDAP (plus a very basic LDAP browser / editor).
-
-</para>
-      <para>On SLES11 we had the following problems regarding the use of the YaST module and OpenLDAP server configuration:
-
-    </para>
-      <itemizedlist>
-        <listitem>
-          <para>Database version only to store the configuratio (cn=config).</para>
-        </listitem>
-        <listitem>
-          <para>No way to set up any replication method or mode using this module.</para>
-        </listitem>
-        <listitem>
-          <para>OpenLDAP modules available build in the SLAPD binary.</para>
-        </listitem>
-      </itemizedlist>
-      <para>Then your choices in this SLES11 version:
-
-    </para>
-      <itemizedlist>
-        <listitem>
-          <para>Use the configuration file /etc/openldap/slapd.conf but in this case, forget YaST for ever.</para>
-        </listitem>
-        <listitem>
-          <para>Use YaST to set up a basic OpenLDAP server then use an external tool to set up the rest.</para>
-        </listitem>
-        <listitem>
-          <para>If use of YaST only is mandatory, forget the replication.</para>
-        </listitem>
-      </itemizedlist>
-      <para>An RFE (Request For Enhancements) was created at this time, to be able to set up replication from the YaST module, on SLES11 SP1. They did it! So, let’s check how it works.
-
-</para>
-      <para><emphasis role="bold">Note</emphasis>: On SLES11 or SLES11 SP1, by playing with /etc/sysconfig/opendlap, you can use the configuration file (/etc/openldap/slapd.conf) to configure OpenLDAP server but in this case do not use YaST anymore. (...)</para>
-<!-- ($ Id: 8.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink url="http://www.linux.com/learn/tutorials/428331:ipv6-crash-course-for-linux"
-          >Carla Schroder:  IPv6 Crash Course For Linux </ulink></title>
-      <para> You might be used to working with IPv4 on Linux, but like it or not IPv6 is on its way
-        in. Roll up your sleeves, spit on your palms, and get ready to go to work because this is
-        your crash course in actually using IPv6. It hardly hurts at all. Linux has supported it
-        since the 2.1 kernel, so you shouldn't have to install anything. Make sure you have the
-        ping6, ip, and ifconfig commands.</para>
-      <para> Let's get my favorite nitpick out of the way right now — we do not have IPs, we have IP
-        addresses. IP stands for Internet Protocol. As my wise grandmother used to say, sloppy
-        speech equals sloppy habits, which equals a trip to hell in a handbasket. (...)</para>
-      <!--($ Id: 8.4.11 sm $)-->
-    </blockquote>
+      <para><ulink url="http://nginx.net/">Nginx</ulink> (pronounced &quot;engine x&quot;) is a free, open-source, high-performance HTTP server. Nginx is known for its stability, rich feature set, simple configuration, and low resource consumption. This tutorial shows how you can install Nginx on an OpenSUSE 11.4 server with PHP5 support (through <ulink url="http://php-fpm.org/">PHP-FPM</ulink>) and MySQL support. (...)</para>
+<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
