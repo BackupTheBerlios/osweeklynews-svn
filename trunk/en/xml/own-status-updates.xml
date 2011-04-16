@@ -54,7 +54,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -84,8 +84,7 @@
         boring. (...)</para>
       <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc-sa/2.5/it/">CC-BY-NC-SA</ulink></para>
     </blockquote>
-  </sect2> -->
-  <sect2 role="teamreports">
+  </sect2> -->  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -251,8 +250,7 @@
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian
-            Schröter: OBS 2.2.72 released, switch to apache and SSL asýdefault</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-04/msg00056.html">Adrian Schröter: OBS 2.2.72 released, switch to apache and SSL asýdefault</ulink>
         </title>
         <para>We just released <ulink url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>
           2.2.72, another alpha release for OBS 2.3. The most significant change to former alpha
@@ -270,13 +268,10 @@
         </orderedlist>
         <para>We think that some bugs like the invalid occassional empty replies by the api server
           are solved via this switch as well.</para>
-        <para>The <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">OBS 2.2.72
-            appliance</ulink> is already comming with apache setup. Please note that we use also SSL
+        <para>The <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">OBS 2.2.72 appliance</ulink> is already comming with apache setup. Please note that we use also SSL
           by default, a default SSL CA is created on bootup and becomes part of your data
           partition.</para>
-        <para>In case you use <ulink
-            url="http://download.opensuse.org/repositories/openSUSE:/Tools:/Unstable/">the
-            packages</ulink> outside of the appliance, you need to do some configuration steps. But
+        <para>In case you use <ulink url="http://download.opensuse.org/repositories/openSUSE:/Tools:/Unstable/">the packages</ulink> outside of the appliance, you need to do some configuration steps. But
           don’t worry, a apache vhost file comes with the packages already and only a few steps need
           to be done, the README files should reflect this already.</para>
         <para>lighttpd setups should still work, but please note that lighttpd is running with an
@@ -311,9 +306,7 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://lizards.opensuse.org/2011/04/10/gnome3-iso-by-fcrozat-and-ati-radeon-driver-a-quick-easy-fix/"
-            >Nelson Marques: GNOME3 iso by fcrozat and ATI radeon driver… a quick easy fix!</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/04/10/gnome3-iso-by-fcrozat-and-ati-radeon-driver-a-quick-easy-fix/">Nelson Marques: GNOME3 iso by fcrozat and ATI radeon driver… a quick easy fix!</ulink>
         </title>
         <para>For some time I wanted to check out GNOME3 and gnome-shell… My current chipset is ATI
           M92 RV710 and while the thermal performance with the proprietary driver is somewhat what I
@@ -324,23 +317,21 @@
           gnome-shell. (...)</para>
 <!--($ ld: 12.4.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink
-            url="http://www.vuntz.net/journal/post/2011/04/13/gnome-panel-is-dead,-long-live-gnome-panel!"
-            >Vincent Untz: gnome-panel is dead, long live gnome-panel!</ulink></title>
+        <title>
+          <ulink url="http://www.vuntz.net/journal/post/2011/04/13/gnome-panel-is-dead,-long-live-gnome-panel!">Vincent Untz: gnome-panel is dead, long live gnome-panel!</ulink>
+        </title>
         <para>With GNOME 3, we obviously recommend to users that they should use (and at least try
-          for a few days, it's usually enough to get addicted) our new interface, based on GNOME
-          Shell. That being said, not everybody can use GNOME Shell yet (if you're unlucky with your
+          for a few days, it&apos;s usually enough to get addicted) our new interface, based on GNOME
+          Shell. That being said, not everybody can use GNOME Shell yet (if you&apos;re unlucky with your
           hardware, for instance), and some people just really want to stay with an interface closer
-          to what GNOME 2 provided. And that's where the fallback mode enters.</para>
-        <para>Sure, the fallback mode is not our target in terms of design, but that doesn't mean
-          it's unloved. It's actually looking quite good with 3.0 and I encourage people to go ahead
+          to what GNOME 2 provided. And that&apos;s where the fallback mode enters.</para>
+        <para>Sure, the fallback mode is not our target in terms of design, but that doesn&apos;t mean
+          it&apos;s unloved. It&apos;s actually looking quite good with 3.0 and I encourage people to go ahead
           and try it instead of just proactively hating GNOME 3 because of the changes it brings.
           You can configure GNOME to always use the fallback mode in the the System Info panel of
           the System Settings: (...)</para>
-        <!--($ ld: 13.4.11 sm $)-->
-      </blockquote>
+<!--($ ld: 13.4.11 sm $)-->      </blockquote>
     </sect3>
-    
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -348,9 +339,7 @@
           <ulink url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/">Sebastian Kügler: Plasma Active – A Desirable User Experience Encompassing the Device Spectrum</ulink>
         </title>
         <para>Today, I’d like to announce to a wider audience a project we have been working on in
-          and beyond the Plasma team. Its goal is to “<emphasis role="bold">Create a desirable user
-            experience encompassing a spectrum of devices</emphasis>“, and it is called <emphasis
-            role="bold">Plasma Active</emphasis>. A couple of things make Plasma Active special.
+          and beyond the Plasma team. Its goal is to “<emphasis role="bold">Create a desirable user experience encompassing a spectrum of devices</emphasis>“, and it is called <emphasis role="bold">Plasma Active</emphasis>. A couple of things make Plasma Active special.
           First, the driver is the <emphasis role="italic">desirable user experience</emphasis>.
           That means that we want to create something, people want, and people want to use. It means
           we are less technology-focused, but are taken a user-centered approach. Second, we are not
@@ -363,30 +352,23 @@
         <para><emphasis role="bold">Running Plasma Active</emphasis></para>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/active-viewpad_thumb.jpg"
-              width="40%"/>
-          </imageobject>          
+            <imagedata width="40%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/active-viewpad_thumb.jpg"/>
+          </imageobject>
         </mediaobject>
         <para>We have a basic, Plasma-based shell right now, which runs on three target devices —
           and probably some more, but that’s what we’ve tested so far. It performs well, runs stable
           and is usable with a touch-screen. While Plasma Tablet is quite fun already, do not expect
           release quality yet, as it is a snapshot of our efforts. Find the download location for
-          the Balsam Professional live image on the <ulink
-            url="http://community.kde.org/Plasma/Active/Installation#Balsam_Professional_Live_Image"
-            >wiki</ulink>.</para>
+          the Balsam Professional live image on the <ulink url="http://community.kde.org/Plasma/Active/Installation#Balsam_Professional_Live_Image">wiki</ulink>.</para>
         <para><ulink url="http://www.open-slx.com">open-slx</ulink> has created a Balsam
           Professional live image based on openSUSE 11.4 running Plasma Active. open-slx (my
           employer) are developing Plasma Active for openSUSE in the openSUSE Build Service. We’ve
           also created packages which can be installed online on top of openSUSE 11.4. You can find
-            <ulink url="http://community.kde.org/Plasma/Active/Installation">installation
-            instructions</ulink> in our Wiki, also for Meego.</para>
+            <ulink url="http://community.kde.org/Plasma/Active/Installation">installation instructions</ulink> in our Wiki, also for Meego.</para>
         <para>Of course you want to run Plasma Active on a ‘real’ device, we currently recommend
           either the ExoPC (WeTab), the Lenovo Ideapad, or a Viewsonic Viewpad 10. You can find
-          instructions for devices in the <ulink
-            url="http://community.kde.org/Plasma/Active/Devices">Wiki</ulink></para>
-        <para>Youtube: <ulink url="http://www.youtube.com/watch?v=4GAFfjscVyg"
-            >http://www.youtube.com/watch?v=4GAFfjscVyg</ulink></para>
+          instructions for devices in the <ulink url="http://community.kde.org/Plasma/Active/Devices">Wiki</ulink></para>
+        <para>Youtube: <ulink url="http://www.youtube.com/watch?v=4GAFfjscVyg">http://www.youtube.com/watch?v=4GAFfjscVyg</ulink></para>
         <para><emphasis role="bold">Status</emphasis></para>
         <para>There is still a long way to go. We’re missing key functionality, default
           applications, optimizations all over the place, and more. There is nothing fundamental
@@ -404,15 +386,11 @@
         <para><emphasis role="bold">Different goals need different processes</emphasis></para>
         <mediaobject>
           <imageobject>
-            <imagedata
-              fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/plasma-active-snap1-default_thumb.png"
-              width="40%"/>
-          </imageobject>          
+            <imagedata width="40%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/plasma-active-snap1-default_thumb.png"/>
+          </imageobject>
         </mediaobject>
         <para>When we put the pieces for Active together, it quickly became clear that if we want to
-          succeed, we also have to <ulink
-            url="http://vizzzion.org/blog/2011/04/of-rockstars-unicorns-and-isaac-newton/"
-            >rethink</ulink> some of our collaboration processes. One of my pet peeves has always
+          succeed, we also have to <ulink url="http://vizzzion.org/blog/2011/04/of-rockstars-unicorns-and-isaac-newton/">rethink</ulink> some of our collaboration processes. One of my pet peeves has always
           been that different essential parts of what the user gets in her hands come from different
           teams. If we want to put something desirable into the hands of our users we need to pull
           in the same direction. While we needed different skills, these skills have to align in how
@@ -422,24 +400,21 @@
           thing to spend their time on, and that we can get the people that do to pull in the same
           direction. The good news, however is that we’ve been able to create a stable platform to
           do this, in terms of tools, processes, collaboration models and not at least software.
-          That platform is <ulink url="http://community.kde.org/Plasma/Active"><emphasis role="bold"
-              >Plasma Active</emphasis></ulink>.</para>
+          That platform is <ulink url="http://community.kde.org/Plasma/Active">
+            <emphasis role="bold">Plasma Active</emphasis>
+          </ulink>.</para>
         <para><emphasis role="bold">Sounds interesting?</emphasis></para>
         <para>If you want to help us shape Plasma Active, and bring its vision to reality, we would
-          like to invite you. Start with having a look at our list of <ulink
-            url="http://community.kde.org/Plasma/Active/Tasks">tasks</ulink>, and if you find
-          something you can help with, tell us, <ulink
-            url="https://mail.kde.org/mailman/listinfo/active">subscribe</ulink> to the Plasma
+          like to invite you. Start with having a look at our list of <ulink url="http://community.kde.org/Plasma/Active/Tasks">tasks</ulink>, and if you find
+          something you can help with, tell us, <ulink url="https://mail.kde.org/mailman/listinfo/active">subscribe</ulink> to the Plasma
           Active mailing list, or join #active on Freenode’s IRC network. We have documented our
-          ideas, concepts and processes in the <ulink url="http://community.kde.org/Plasma/Active"
-            >wiki</ulink>.</para>
+          ideas, concepts and processes in the <ulink url="http://community.kde.org/Plasma/Active">wiki</ulink>.</para>
         <para>In the coming weeks, we will keep you updated about Plasma Active’s progress, and we
           will be able to reveal more of our vision as we give Plasma Active shape by making it
           become reality.</para>
-        <!--($ ld: 9.4.11 sm $)-->              
-     </blockquote> 
+<!--($ ld: 9.4.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -513,7 +488,7 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 348)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 346)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
@@ -532,14 +507,14 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 122)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 124)</ulink>
           </title>
           <para>We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 115)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 114)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -555,7 +530,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 93)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 94)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -568,128 +543,89 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 9.4.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 16.4.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312189">Need Offline Dictionary/Thesaurus database &amp; GUI</ulink>
+            <ulink url="https://features.opensuse.org/312224">sshguard enhancements</ulink>
           </title>
-          <para>In some cases when dictionary servers go offline or internet connection goes down looking up words becomes difficult
-</para>
-          <para>Hence there arises a need for an offline dictionary GUI and database
-Suggestion:-
-</para>
-          <para>I would like artha and wordnet to be added to the distribution
+          <para>Package sshguard from repository security should be enhanced to save the chain in a separate file to interact with the SuSEfirewall2. Afterwards it should be save to be included into Factory.
 
 </para>
-          <para>Even if the inclusion of above is not possible I am open for inclusion of any other Offline Dictionary/Thesaurus database &amp; GUI</para>
+          <para>Note from Ludwig: &quot;SuSEfirewall2 wipes all rules and installs them from scratch each time it gets called. So externally installed rules get lost. You could have your program write it&apos;s rules to a script that can be called by SuSEfirewall2 via FW_CUSTOMRULES though.&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312190">Right click mount .iso</ulink>
+            <ulink url="https://features.opensuse.org/312233">New Install Method</ulink>
           </title>
-          <para>Make it so that one can merely rightclick a disk image to select &quot;mount&quot; to mount it.</para>
+          <para>Ability to install from a running system. With the 11.4 release, I was reminded again how stupid it is to require a shutdow to boot to cd/usb to watch files being copied unable to use my system.
+
+</para>
+          <para>We should be able to start the install from a running system. This install should copy all needed files to specified partition(s), perform normal setup tasks, and add an entry to grub. Then -when I&apos;m ready to reboot- I select the new install, which would do a first-boot completing whatever tasks could not be performed during the initial install.
+
+</para>
+          <para>In addition to the obvious &quot;I get to use my system&quot; benefit, there are others. No more buring to cd or usb, just download and run an install file or , for example, openSuse 12.1 could be an option in yast.
+
+</para>
+          <para>The install could be smarter, checking for and installing &quot;favorite&quot; apps (and their settings) or preventing the install of &quot;taboo&quot; apps are two simple examples.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312191">Driver management YaST module</ulink>
+            <ulink url="https://features.opensuse.org/312241">Some post-installation steps in welcome window</ulink>
           </title>
-          <para>Allow removing, inserting, and blacklisting of drivers via simple YaST module.</para>
+          <para>I came up with a idea to add two simple steps to SUSEgreeter. These are installing NVIDIA proprietary drivers and multimedia codecs. I have even written it in C++ and libyui. This is my first serious C++ app, so don&apos;t blame me if it&apos;s crap ;) . My version of SUSEgreeter detects if nouveau drivers are in use and then proposes to install NVIDIA drivers (it downloads &amp; runs http://opensuse-community.org/nvidia.ymp ). The same with multimedia-it searches with zypper if any package with &quot;codec&quot; in name is installed, and if not it downloads one-click multimedia installer (it detects whether you are using KDE or not). Comments are really appreciated. We don&apos;t need to use my app, somebody can add it to original SUSEgreeter. You can download source
+<ulink url="http://www.mediafire.com/?d5fmf6w6bbrmmfm">here</ulink> and
+<ulink url="http://www.mediafire.com/?h6aonpva1bi6b28">here</ulink> is the compiled i586 rpm. And here is how it looks like:
+http://img.susepaste.org/56507867 . One last word: my version is SUSEGreeter (capital G), so it doesn&apos;t conflicts with the orginal.
+
+</para>
+          <para>(BTW: If you deselect &quot;Show this window at startup&quot; and want to start it again, delete ~/.config/SUSEGreeter)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312192">Open Mobile Suite</ulink>
+            <ulink url="https://features.opensuse.org/312245">Include catci software in the next opensuse release</ulink>
           </title>
-          <para>inclusion of the &quot;Open Mobile Suite&quot; - as phone manager in openSUSE.
-Of course the project needs help but is very promising and really needed a modern computer OS.
+          <para>Can the catci software [1] be included in the next opensuse. The reason I ask is to have some monitoring tools available setup and ready to use. Built rpms listed at [2]
+Set it up do it discovers and graphs devices, traffic volume/bandwidth. Some sample graphs at [3]. OpenSUSE setup info listed at [4] </para>
+          <para>[1]
+http://cacti.net/
+</para>
+          <para>From url. -&gt; Cacti is a complete network graphing solution designed to harness the power of RRDTool&apos;s data storage and graphing functionality. Cacti provides a fast poller, advanced graph templating, multiple data acquisition methods, and user management features out of the box. All of this is wrapped in an intuitive, easy to use interface that makes sense for LAN-sized installations up to complex networks with hundreds of devices.
 
 </para>
-          <para>http://series60-remote.sourceforge.net/index.php?module=News&amp;func=display&amp;sid=7 </para>
+          <para>[2] built rpms
+-&gt; </para>
+          <para>http://download.opensuse.org/repositories/home:/worldcitizen/openSUSE_11.4/noarch/
+</para>
+          <para>[3] Some sample graphs:
+</para>
+          <para>- http://cacti.kernel.org/graph_view.php?action=tree&amp;tree_id=2
+</para>
+          <para>- http://cacti.kernel.org/graph_view.php?action=tree&amp;tree_id=3
+
+</para>
+          <para>[4]OpenSUSE setup info
+http://en.opensuse.org/Cacti </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312205">Provide anonymous web surfing</ulink>
+            <ulink url="https://features.opensuse.org/312257">Snapshot/recovery feature with keeping apps</ulink>
           </title>
-          <para>Anonymous web surfing should be only one, I mean one, click away on a default installation of openSUSE. I would love to see a little desktop applet or browser plugin which enables anonymous surfing for the logged in user.
+          <para>Have a look at this picture:
 </para>
-          <para>There are various projects out there to help protecting our privacy such as Tor https://www.torproject.org/ and others like proxies and such. These should be nicely integrated into the system, ie. when setting up network there could be a swith &quot;enable anonymous browsing by default&quot; and such. All parts for such an solution are there, just investigation, planning and integration is needed.
+          <para>http://i.computer-bild.de/imgs/3/3/2/3/4/4/3/Windows-8-Das-sind-die-geheimen-Microsoft-Unterlagen-360x270-066b406e14ab3a75.jpg
+</para>
+          <para>Such a recovery function would be nice for openSUSE 12.1/12.2 and would give openSUSE an advantage against the whole linux-distros and even Mac OS X (Windows will implementate it soon...)
+But it also will benefit for the users. If you delete some config-files and clear my trash-folder, I can easy reset my system to the early post-installation time BUT, at the same time, keep all my private stuff like photos, music, mails, documents and even code files.
+WouldnÂ´t be cool to have such a feature?
+The only thing which prevent this coding-work by myself is the fact, that my knowledge in C and C++ is very limited and canÂ´t solve such a big project.
 
 </para>
-          <para>Please note that anonymous internet usage is not illegal. Its like sending a letter in an envelope instead of without.</para>
+          <para>But we get excellent programmers @Novell/SUSE and our community, so I think it would be a nice feature for the next openSUSE release!</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312209">GTK+ client for Smolt</ulink>
-          </title>
-          <para>A gtk client for smolt would enable it it to be bundled with the default distribution of openSUSE.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312211">system ICC color management</ulink>
-          </title>
-          <para>Add a colour management system (CMS) for assigning ICC device profiles to device + driver configurations. Starting with the monitor profiles some colour management aware graphics applications can already use this feature. These cover Scribus, Krita, Gimp, Inkscape and some more.
-A open source CMS, which has extensive support for setting up ICC profiles for monitors is Oyranos.
-</para>
-          <para>http://www.oyranos.org
-</para>
-          <para>Dependencies:
-</para>
-          <itemizedlist>
-            <listitem>
-              <para>OpenICC profile set</para>
-            </listitem>
-            <listitem>
-              <para>libXcm</para>
-            </listitem>
-            <listitem>
-              <para>libxml2</para>
-            </listitem>
-            <listitem>
-              <para>X11 development libs</para>
-            </listitem>
-            <listitem>
-              <para>xcalib</para>
-            </listitem>
-          </itemizedlist>
-          <para>Optionally are some more dependencies for CUPS, patched SANE, libraw/exiv2, Qt.
-UIs exist as Kolor Manager (KDE control panel) and Synnefo (Qt).
-The library is very modular and can simply be removed if needed.
-
-Most packages (except Synnefo) exist in OBS already.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312216">deprecate /var/lock</ulink>
-          </title>
-          <para>/var/lock should be deprecated
-
-    </para>
-          <itemizedlist>
-            <listitem>
-              <para>it never was really used properly on SUSE Linux</para>
-            </listitem>
-          </itemizedlist>
-          <itemizedlist>
-            <listitem>
-              <para>using lockdev didn&apos;t really help either as only few programs actually use it and it&apos;s not bug free (should be setuid instead of setgid lock)
-
-</para>
-            </listitem>
-          </itemizedlist>
-          <para>The suggestion would be to patch programs to use flock() on the device fd instead which would solve all problem wrt permissions ans stale lock files.
-
-</para>
-          <para>https://bugzilla.redhat.com/show_bug.cgi?id=581884
-
-</para>
-          <para>http://0pointer.de/blog/projects/locking
-
-</para>
-          <para>http://0pointer.de/blog/projects/locking2 </para>
-        </blockquote>
-<!-- ($ ld: 9.4.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 16.4.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -726,8 +662,7 @@ Most packages (except Synnefo) exist in OBS already.</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00006.html">Larry
-            Finger: Weekly News for Weekly News for April 9</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00006.html">Larry Finger: Weekly News for Weekly News for April 9</ulink>
         </title>
         <para>The Testing Core Team will meet on Monday, April 11 at 17:00 UTC on our usual IRC
           channel. We will be discussing the Open Bugs Day that was held on Saturday April 2. In
@@ -762,39 +697,32 @@ Most packages (except Synnefo) exist in OBS already.</para>
       <title>Weekly News Team</title>
       <blockquote>
         <title>
-          <ulink url="http://saigkill.homelinux.net/2011/04/new-available-german-opensuse-podcast/"
-            >Sascha Manns: New available: german openSUSE Podcast</ulink>
+          <ulink url="http://saigkill.homelinux.net/2011/04/new-available-german-opensuse-podcast/">Sascha Manns: New available: german openSUSE Podcast</ulink>
         </title>
         <para>I’m pleased to announce my new german openSUSE Podcast. For listening this Podcast,
           you have two options.</para>
         <orderedlist>
           <listitem>
-            <para>Download it <ulink
-                url="http://saigkill.homelinux.net/podcasts/file/13-saigkills-opensuse-podcast-170"
-                >there</ulink>, or</para>
+            <para>Download it <ulink url="http://saigkill.homelinux.net/podcasts/file/13-saigkills-opensuse-podcast-170">there</ulink>, or</para>
           </listitem>
           <listitem>
-            <para>Add the Feed: <ulink
-                url="http://feeds.feedburner.com/SaigkillsOpensuseWeeklyPodcast"
-                >http://feeds.feedburner.com/SaigkillsOpensuseWeeklyPodcast</ulink></para>
+            <para>Add the Feed: <ulink url="http://feeds.feedburner.com/SaigkillsOpensuseWeeklyPodcast">http://feeds.feedburner.com/SaigkillsOpensuseWeeklyPodcast</ulink></para>
           </listitem>
         </orderedlist>
         <para>Have a lot of fun <inlinemediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://saigkill.homelinux.net/components/com_wordpress/wp/wp-includes/images/smilies/icon_smile.gif"
-              />
+              <imagedata fileref="http://saigkill.homelinux.net/components/com_wordpress/wp/wp-includes/images/smilies/icon_smile.gif"/>
             </imageobject>
           </inlinemediaobject></para>
-          <!--($ ld: 15.4.11 sm $)-->      
-      </blockquote>
+<!--($ ld: 15.4.11 sm $)-->      </blockquote>
     </sect3>
     <sect3 role="tumbleweed">
       <title>Tumbleweed Team</title>
       <blockquote>
-        <title><ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-09-2011.html">Greg
-            Kroah-Hartman: openSUSE Tumbleweed status for the week of April 9, 2011</ulink></title>
-        <para>Here's a short note as to the status of some recent activity in the
+        <title>
+          <ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-09-2011.html">Greg Kroah-Hartman: openSUSE Tumbleweed status for the week of April 9, 2011</ulink>
+        </title>
+        <para>Here&apos;s a short note as to the status of some recent activity in the
           openSUSE:Tumbleweed repo:</para>
         <itemizedlist>
           <listitem>
@@ -811,28 +739,23 @@ Most packages (except Synnefo) exist in OBS already.</para>
             <para>LibreOffice 3.3.2 is in the repository.</para>
           </listitem>
           <listitem>
-            <para>I'm considering adding GNOME:3.0 to openSUSE:Tumbleweed when the openSUSE GNOME
-              developers release it. It's building in a test repository right now pretty
-              successfully, but it might be a few more weeks until it seems "ready" enough.</para>
+            <para>I&apos;m considering adding GNOME:3.0 to openSUSE:Tumbleweed when the openSUSE GNOME
+              developers release it. It&apos;s building in a test repository right now pretty
+              successfully, but it might be a few more weeks until it seems &quot;ready&quot; enough.</para>
           </listitem>
         </itemizedlist>
         <para>Note, it seems that when <emphasis role="italic">any</emphasis> package is added or
           updated in the openSUSE:Tumbleweed repository, LibreOffice rebuilds itself. This can be
           annoying for those on bandwidth-challenged network connections, and seems to be due to the
           dependency chain that the LibreOffice developers have defined in their .spec files.
-          Hopefully this will be resolved for the next major release, but in the meantime, I'll try
+          Hopefully this will be resolved for the next major release, but in the meantime, I&apos;ll try
           to limit library updates in openSUSE:Tumbleweed to once a week at the most unless security
           issues require it.</para>
-        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for
-            Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
-          Any other questions, please ask them on the <ulink
-            url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing
-          list</ulink>.</para>
-        <!--($ ld: 10.4.11 sm $)-->
-      </blockquote>
+        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
+          Any other questions, please ask them on the <ulink url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing list</ulink>.</para>
+<!--($ ld: 10.4.11 sm $)-->      </blockquote>
     </sect3>
-    
-    <!--
+<!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 
