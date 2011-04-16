@@ -31,12 +31,13 @@
         managing their system. Using multiple Linux OS keep me open minds (:-D ) with the features
         and native command of each OS. </para>
       <para>Free DOS bundled and installed automatically with laptop while the others installed
-        manually. openSUSE 11.4 “Celadon” is my first choice, then LinuxMint 10 “Julia”, follows by
-        Fedora 14 “Laughlin” and last (but my be not least :-) ) is Ubuntu LTS 10.04.2 Lucid Lynx.
-        Among the installed OS, LinuxMint and Ubuntu is the winner for setting up grub bootloader.
-        LinuxMint and Ubuntu detected all of OS and added the OS choice into bootloader
-        successfully. openSUSE was only successful for FreeDOS/Windows and Fedora but it fails to
-        detect LinuxMint and Ubuntu, similar thing with Fedora bootloader. (...)</para>
+        manually. openSUSE 11.4 <quote>Celadon</quote> is my first choice, then LinuxMint 10
+          <quote>Julia</quote>, follows by Fedora 14 <quote>Laughlin</quote> and last (but my be not
+        least :-) ) is Ubuntu LTS 10.04.2 Lucid Lynx. Among the installed OS, LinuxMint and Ubuntu
+        is the winner for setting up grub bootloader. LinuxMint and Ubuntu detected all of OS and
+        added the OS choice into bootloader successfully. openSUSE was only successful for
+        FreeDOS/Windows and Fedora but it fails to detect LinuxMint and Ubuntu, similar thing with
+        Fedora bootloader. (...)</para>
 <!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
@@ -123,6 +124,33 @@
       </title>
       <para>Managing the source code for a software development project is only slightly less important than writing it in the first place. UNIX® and Linux® systems offer a rich selection of version control system (VCS) packages, each of which takes a slightly different approach to this common concern. This article focuses on the Mercurial source code management system, often simply referred to as hg. Mercurial provides a powerful, modern, and light-weight solution for source code control that makes it easy for developers to make and debug their changes to a software project while maintaining a stable, centralized source code repository that all project members can depend upon. (...)</para>
 <!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://artax.karlin.mff.cuni.cz/~kendy/blog/archives/monthly/2011-04.html#2011-04-15T17_01_41.htm"
+          >Jan Holesovsky: LibreOffice build on Windows with ccache for MSVC</ulink></title>
+      <para>I have just revived my <ulink
+          url="http://artax.karlin.mff.cuni.cz/%7Ekendy/blog/archives/monthly/2007-07.html">4 years
+          old hack that adds MSVC support to ccache</ulink>. The use case is a bit limited - you
+        have to use it from inside cygwin; but that is exactly what LibreOffice needs :-) So I have
+        updated LibreOffice's configure.in to be able to handle it well - so far in the
+        libreoffice-3-4 branch, but it will get to master the next time we merge the branch there. </para>
+      <para> How to use it? Download the <ulink
+          url="http://artax.karlin.mff.cuni.cz/%7Ekendy/ccache/">ccache.exe binary</ulink>, put it
+        to eg. your ~/bin (or somewhere else in your PATH), setup the CC and CXX environment
+        variables, and compile as you are used to (./autogen.sh, make, ...), like: </para>
+      <programlisting>CC="ccache C:/PROGRA~1/MICROS~1.0/VC/bin/cl.exe"
+CXX="ccache C:/PROGRA~1/MICROS~1.0/VC/bin/cl.exe"
+./autogen.sh
+make
+</programlisting>
+      <para> And yes, it would be great to do the ccache support as simple as a --enable-ccache
+        configure option - but I did not find time to fine tune it on the other platforms, so I'll
+        go for that only when I find there is a demand for that - drop me a mail ;-) </para>
+      <para> If you want to have a look at the ccache's statistics, run ccache -s. I've done no
+        measurement how much time it saves overall - if are able to do any, please mail me your
+        results too.</para>
+      <!--($ Id: 16.4.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
