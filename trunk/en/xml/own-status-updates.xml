@@ -285,15 +285,43 @@
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
     </sect3>
-<!--
     <sect3 role="evergreen">
       <title>Evergreen</title>
       <blockquote>
-        <title></title>
-        <para></para>
+        <title><ulink
+            url="http://www.rosenauer.org/blog/2011/04/17/evergreen-status-after-some-months/"
+            >Wolfgang Rosenauer: Evergreen status after some months</ulink></title>
+        <para>I’ve just noticed that I haven’t written about <ulink
+            url="http://en.opensuse.org/openSUSE:Evergreen">Evergreen</ulink> here since the
+          beginning. I actually did post at least one status update on our list but I think it would
+          be good to give some information to a wider audience (hoping that this blog is read by
+          more people).</para>
+        <para>In general we are in good shape. Up to now we have released around 55 source updates.
+          You can find the list <ulink url="http://en.opensuse.org/openSUSE:Evergreen_11.1"
+            >here</ulink>. So looking back that means that we were able to update almost everything
+          including desktop applications which was not clear in the beginning how that would work
+          out. Also the Packman team decided to support Evergreen by keeping the Essentials
+          repository available. Unfortunately it is not quite usable at the moment since it contains
+          RPM packages signed with keys not supported by the RPM version in 11.1 which means zypper
+          refuses to install those.</para>
+        <para>Another milestone is that it seems we will also support 11.2 when it runs out of
+          Novell’s maintenance on May 12th, 2011. Another community member agreed toý lead the
+          effort. More details on that to come soon.</para>
+        <para>But not everything is working perfectly fine though. Besides some rare cases where
+          community members submitted packages to Evergreen/11.1 all the backporting/packaging work
+          up to now was done by myself. At some points in time I was quite on the limit of my time
+          for the project and there is no redundancy if something bad happens to me. We really need
+          more people contributing to Evergreen. That said it would be really nice if maintainers
+          (especially community maintainers) wouldý prepare updates for 11.1 as well. Obviously
+          there is no obligation in doing so but I somehow think that in some cases they are just
+          missing the fact that Evergreen exists at all.</para>
+        <para>So if anyone out there has interest in helping maintaining 11.1 and/or 11.2 please
+          contact us through our <ulink url="http://lists.rosenauer.org/mailman/listinfo/evergreen"
+            >mailinglist</ulink> or contact me directly.</para>
+        <!--($ ld: 17.4.11 sm $)-->
       </blockquote>
     </sect3>
-    --><!--
+    <!--
     <sect3 role="education">
       <title>Education Team</title>
 
