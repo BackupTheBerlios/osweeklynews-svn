@@ -22,28 +22,28 @@
 <sect1 role="forums">
   <title>openSUSE Forums</title>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/456674-no-sax2-xorg-conf-11-4-x64.html">No Sax2 or xorg.conf - 11.4 x64</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/other-forums/news-announcements/tech-news/457543-gnome-3-0-here.html">Gnome 3.0 is here</ulink></title>
     <para>
-      Sometimes certain tools get deprecated, or become obsolete (to most of us). Up until openSUSE 11.2 we had to configure the X server -for our graphical desktop- by running SaX2 from the console in runlevel 3. Quite a hurdle for new users. After that autodetection and configuration entered openSUSE, so SaX2 is no longer maintained as a component of a default openSUSE install. This thread is opened by a user who does want SaX2 for a reason. There's another thread announcing SaX3, which should provide some basic functions for the X display server's configuration.
+      This message hit the forums, announcing the release of GNOME 3.0, also known as GNOME SHELL about two weeks ago. Like me, lots of users were curious about GNOME 3 on openSUSE, since we already were able to see the preview in openSUSE 11.4. So we all went out into the repos, waiting for packages to appear, and they did. This is where the happy part of the story ends for the moment. Dependency errors all over the place, if one ignored them, a desktopless system was one of the reported results. The GNOME Team made clear, that the packages are not ready for upgrading yet, so the Forums Team put out a warning message, visible to all forums users and visitors. It's strongly advised to wait for the OK sign by the GNOME Team, before using the GNOME STABLE 3.0 repo, since there's still some development going on to make sure we all can have smooth upgrade to GNOME 3.0. The good part is, that GNOME 3.0 LiveCD's, based on openSUSE 11.4 have been released. Impressions for those seem to be positive. 
     </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/456903-nvidia-video-problem-after-dvd-update-11-3x64-11-4-x64.html">Nvidia Video Problem after DVD update 11.3x64 to 11.4 x64</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/458100-updating-kernel-11-4-a.html">Updating kernel 11.4</ulink></title>
     <para>
-      A couple of editions ago I presented a thread about the debate Upgrade vs. Clean Install. Here's an example where users upgraded and ran into trouble. A lot of possible causes are mentioned, if you have trouble like these, read ahead and find some good pointers to what you might do. In the end, all in a linux install that does not do what it should do can be fixed, one just has to know how. 
+      Less than a month after release of openSUSE 11.4, this user wants to run a newer kernel to get the maximum out of his new hardware. The first page of replies already shows the famous "if it ain't broken, don't fix it" phrase, but the thread's starter gets a lot of good advice, where it's pointed out that he/she is pretty much on his/her own when going for the "latest and greatest" of all kernels. It doesn't have to be that way though: switch to the Tumbleweed repos. They serve the latest stable packages concerning kernel etc. Packman also has separate Tumbleweed repos for 11.4. Please find more about Tumbleweed below, and in previous versions of the openSUSE Weekly News.
       </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/456425-should-developers-release-new-version-11-4-suzy.html">Should the developers release a new version of 11.4 Suzy?</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/forums/english/get-technical-help-here/tumbleweed/457487-howto-upgrade-opensuse-11-4-tumbleweed.html">How to upgrade to openSUSE 11.4 Tumbleweed</ulink></title>
     <para>
-      Some question...Some years ago, it became clear that a SuSE release contained a serious bug. It was then when the developpers decided to release new images for download. Today I tend to say most of us answer NO to the question answered in the title. Yet an interesting thread, a firm discussion. Where a lot of background is given by some of our members. 
+      You installed openSUSE 11.4, and looking for newer kernel, latest, yet stable developments? Tumbleweed is there for you. A quote from the openSUSE Portal page: "The Tumbleweed project aims to provide a rolling updates version of openSUSE containing the latest stable versions instead of relying on rigid periodic release cycles. The project does this for users that want the newest, but stable software. The difference to Factory is that Factory is bleeding edge, often experimental, not yet stabilized software that needs more work to become useful. Tumbleweed is newest stable and ready for daily use.". This thread has a very nice HOWTO by our administrator swerdna. Check it out, if the above has risen your curiosity.
       </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/forums/english/get-technical-help-here/install-boot-login/456974-cant-successfully-download-11-4-a.html#post2314186">Can't successfully download 11.4</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/458251-question-about-linux-security-i-found-something-strange.html">Question about linux security - I found something strange</ulink></title>
     <para>
-      Here's a user reporting continuous failure of his DVD download. The causes for this can be many, but there's always a way out. Read some good advice, it may save some time.
+      Linux has a name out there, when it comes to the security part. This thread is opened by a user who thinks he hit a linux security issue, since he can run shell scripts/installers from a USB device. He found out that some script even runs without having the executable flag on, and is worried about being able to install things without having root permissions. Nice explanations about how things work, about what happens if an ordinary user runs installers and about linux security in general. Very interesting read. 
       </para>
-    <!-- ($ ld: 07.04.2011 gl $) -->
+    <!-- ($ ld: 19.04.2011 gl $) -->
   </blockquote>
 </sect1>
