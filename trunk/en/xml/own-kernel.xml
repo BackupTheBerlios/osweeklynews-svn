@@ -20,31 +20,77 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-   <ulink
-    url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-39-Part-1-Network-drivers-and-infrastructure-1227053.html"
-    >h-online/Thorsten Leemhuis: Kernel Log: native KVM tool, new kernels galore</ulink>
-  </title>
-  <para><emphasis role="bold">Dissatisfied with the Qemu code, the developers have created a simple
-    emulation tool for KVM. The latest drivers for Intel graphics chips improve the kernel's support
-    for the video components of various current processors; a wealth of new long-term and stable
-    kernels fix bugs and security holes.</emphasis></para>
-  <para>In late March, Pekka Enberg <ulink url="http://thread.gmane.org/gmane.linux.kernel/1121307"
-    >announced</ulink> on the LKML the development of a native KVM tool. This tool emulates some of
+      <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-39-Part-1-Network-drivers-and-infrastructure-1227053.html">h-online/Thorsten Leemhuis: Kernel Log: native KVM tool, new kernels galore</ulink>
+    </title>
+    <para><emphasis role="bold">Dissatisfied with the Qemu code, the developers have created a simple emulation tool for KVM. The latest drivers for Intel graphics chips improve the kernel&apos;s support for the video components of various current processors; a wealth of new long-term and stable kernels fix bugs and security holes.</emphasis></para>
+    <para>In late March, Pekka Enberg <ulink url="http://thread.gmane.org/gmane.linux.kernel/1121307">announced</ulink> on the LKML the development of a native KVM tool. This tool emulates some of
    the hardware components that guest systems access during operation; in KVM virtualisation, this
    task is nowadays mostly handled by a QEMU derivative, created and maintained as part of the KVM
    project. The KVM code within the kernel works in close co-operation with this emulation code,
    ensuring that the required processor resources are allocated; however, a few hardware components
    such as the interrupt controller are emulated by the KVM kernel code itself, because this
    considerably enhances performance.</para>
-  <para>In his email, Enberg writes that his aim was to create a light-weight and clean KVM
-   emulation implementation that can boot Linux guests. The developer said that the tool is "[...]
-   just a hobby, won't be big and professional like QEMU [...]" – a play on the words Linus Torvalds
+    <para>In his email, Enberg writes that his aim was to create a light-weight and clean KVM
+   emulation implementation that can boot Linux guests. The developer said that the tool is &quot;[...]
+   just a hobby, won&apos;t be big and professional like QEMU [...]&quot; – a play on the words Linus Torvalds
    used in his first email about the development of Linux. (..)</para>
 <!-- ($ ld: 21.4.11 sm $) -->  </blockquote>
- <blockquote>
-  <title><ulink url="http://schaiba.wordpress.com/2011/04/16/kernel-weekly-news-16-04-2011/">Rares
-    Aioanei: kernel weekly news – 16.04.2011</ulink></title>
-  <para>Rares finished his this weekly review from the Kernel.</para>
-  <!--($ ld: 16.4.11 sm $)-->
- </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://schaiba.wordpress.com/2011/04/16/kernel-weekly-news-16-04-2011/">Rares Aioanei: kernel weekly news – 16.04.2011</ulink>
+    </title>
+    <para>Rares finished his this weekly review from the Kernel.</para>
+<!--($ ld: 16.4.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel/1128248">Linus Torvalds: Linux 2.6.39-rc4</ulink>
+    </title>
+    <para>So things have sadly not continued to calm down even further. We had
+more commits in -rc4 than we had in -rc3, and I sincerely hope that
+upward trend doesn&apos;t continue.
+
+</para>
+    <para>That said, so far the only thing that has really caused problems this
+release cycle has been the block layer plugging changes, and as of
+-rc4 the issues we had with MD should hopefully now be behind us. So
+we&apos;re making progress on that front too.
+
+</para>
+    <para>The plugging code still seems to trigger some issue with what looks
+like an infinite stream of disk-change notifications on CD-ROMs - but
+Jens is hopefully going to squish that problem soon. In the meantime,
+you can avoid the problem by either running SMP or having preemption
+enabled.
+
+</para>
+    <para>Other than that? We may have a bit more commits than in -rc3, but it
+hasn&apos;t been _too_ bad. There&apos;s certainly nothing overly exciting:
+aside from the block/MD fixups, we&apos;ve got some filesystem updates
+(btrfs, cifs and ubifs) and some driver updates (the largest chunk of
+which is actually a duplicate driver removal). USB, some KMS, nothing
+really earthshaking.
+
+</para>
+    <para>Shortlog appended for the curious. (...)</para>
+<!--($ ld: 23.4.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel.stable/9103">Paul Gortmaker: Linux 2.6.34.9 has been released</ulink>
+    </title>
+    <para>A new longterm 2.6.34.9 kernel has been released. This release contains
+security fixes and all 2.6.34 users are encouraged to update. This
+continues the 2.6.34 stable series under the new &quot;longterm&quot; name.
+
+</para>
+    <para>Git:
+git://git.kernel.org/pub/scm/linux/kernel/git/longterm/linux-2.6.34.y.git
+
+</para>
+    <para>Gitweb:
+http://git.kernel.org/?p=linux/kernel/git/longterm/linux-2.6.34.y.git
+
+</para>
+    <para>Tarballs/patches:
+ftp://ftp.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.34/ (...)</para>
+<!--($ ld: 23.4.11 sat $)-->  </blockquote>
 </sect1>

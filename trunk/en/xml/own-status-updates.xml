@@ -250,9 +250,7 @@
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://monarchieundalltag.wordpress.com/2011/04/12/obs-2-2-72-released-switch-to-apache-and-ssl-as-default/"
-            >Adrian Schröter: OBS 2.2.72 released, switch to apache and SSL as default</ulink>
+          <ulink url="http://monarchieundalltag.wordpress.com/2011/04/12/obs-2-2-72-released-switch-to-apache-and-ssl-as-default/">Adrian Schröter: OBS 2.2.72 released, switch to apache and SSL as default</ulink>
         </title>
         <para>We just released <ulink url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>
           2.2.72, another alpha release for OBS 2.3. The most significant change to former alpha
@@ -288,17 +286,15 @@
     <sect3 role="evergreen">
       <title>Evergreen</title>
       <blockquote>
-        <title><ulink
-            url="http://www.rosenauer.org/blog/2011/04/17/evergreen-status-after-some-months/"
-            >Wolfgang Rosenauer: Evergreen status after some months</ulink></title>
-        <para>I’ve just noticed that I haven’t written about <ulink
-            url="http://en.opensuse.org/openSUSE:Evergreen">Evergreen</ulink> here since the
+        <title>
+          <ulink url="http://www.rosenauer.org/blog/2011/04/17/evergreen-status-after-some-months/">Wolfgang Rosenauer: Evergreen status after some months</ulink>
+        </title>
+        <para>I’ve just noticed that I haven’t written about <ulink url="http://en.opensuse.org/openSUSE:Evergreen">Evergreen</ulink> here since the
           beginning. I actually did post at least one status update on our list but I think it would
           be good to give some information to a wider audience (hoping that this blog is read by
           more people).</para>
         <para>In general we are in good shape. Up to now we have released around 55 source updates.
-          You can find the list <ulink url="http://en.opensuse.org/openSUSE:Evergreen_11.1"
-            >here</ulink>. So looking back that means that we were able to update almost everything
+          You can find the list <ulink url="http://en.opensuse.org/openSUSE:Evergreen_11.1">here</ulink>. So looking back that means that we were able to update almost everything
           including desktop applications which was not clear in the beginning how that would work
           out. Also the Packman team decided to support Evergreen by keeping the Essentials
           repository available. Unfortunately it is not quite usable at the moment since it contains
@@ -316,12 +312,10 @@
           there is no obligation in doing so but I somehow think that in some cases they are just
           missing the fact that Evergreen exists at all.</para>
         <para>So if anyone out there has interest in helping maintaining 11.1 and/or 11.2 please
-          contact us through our <ulink url="http://lists.rosenauer.org/mailman/listinfo/evergreen"
-            >mailinglist</ulink> or contact me directly.</para>
-        <!--($ ld: 17.4.11 sm $)-->
-      </blockquote>
+          contact us through our <ulink url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailinglist</ulink> or contact me directly.</para>
+<!--($ ld: 17.4.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -362,7 +356,7 @@
           the System Settings: (...)</para>
 <!--($ ld: 13.4.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>      
       <blockquote>
@@ -444,8 +438,7 @@
           will be able to reveal more of our vision as we give Plasma Active shape by making it
           become reality.</para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -526,7 +519,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 181)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 182)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -538,14 +531,14 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 124)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 125)</ulink>
           </title>
           <para>We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 114)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 115)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -574,89 +567,48 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 16.4.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 23.4.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312224">sshguard enhancements</ulink>
+            <ulink url="https://features.opensuse.org/312258">Ubuntu style encrypted home directories</ulink>
           </title>
-          <para>Package sshguard from repository security should be enhanced to save the chain in a separate file to interact with the SuSEfirewall2. Afterwards it should be save to be included into Factory.
+          <para>Ubuntu has a very neat and useful implementation of encryption for users. Using ecryptfs they allow for each user to have his/her data encrypted without requiring one master password being entered at boot time. It is unlocked along with your regular login making it entirely seamless.
 
 </para>
-          <para>Note from Ludwig: &quot;SuSEfirewall2 wipes all rules and installs them from scratch each time it gets called. So externally installed rules get lost. You could have your program write it&apos;s rules to a script that can be called by SuSEfirewall2 via FW_CUSTOMRULES though.&quot;</para>
+          <para>It would be nice to see similar functionality easily available when creating users in openSUSE.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312233">New Install Method</ulink>
+            <ulink url="https://features.opensuse.org/312270">Pulseaudio + Equalizer package</ulink>
           </title>
-          <para>Ability to install from a running system. With the 11.4 release, I was reminded again how stupid it is to require a shutdow to boot to cd/usb to watch files being copied unable to use my system.
+          <para>I&apos;ve recently had a need for a system-wide equalizer. Since I&apos;m already running Suse 11.4 and pulse I looked around a bit and the pulseaudio equalizer seems to fit the bill. I found the repository for 64-bit here:<ulink url="http://download.opensuse.org/repositories/home:/jenewton/openSUSE_11.4/x86_64/">http://download.opensuse.org/repositories/home:/jenewton/openSUSE_11.4/x86_64/</ulink>
+and the git site here:http://gitorious.org/pulseaudio-equalizer.
+Unfortunately the repository has a older version of pulse than I have installed currently.
 
 </para>
-          <para>We should be able to start the install from a running system. This install should copy all needed files to specified partition(s), perform normal setup tasks, and add an entry to grub. Then -when I&apos;m ready to reboot- I select the new install, which would do a first-boot completing whatever tasks could not be performed during the initial install.
-
-</para>
-          <para>In addition to the obvious &quot;I get to use my system&quot; benefit, there are others. No more buring to cd or usb, just download and run an install file or , for example, openSuse 12.1 could be an option in yast.
-
-</para>
-          <para>The install could be smarter, checking for and installing &quot;favorite&quot; apps (and their settings) or preventing the install of &quot;taboo&quot; apps are two simple examples.</para>
+          <para>Please consider this a request for updated pulse rpms that contain the equalizer.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312241">Some post-installation steps in welcome window</ulink>
+            <ulink url="https://features.opensuse.org/312272">Move /sbin/lsinitrd, /sbin/lsmod, /sbin/lspci, /sbin/lspcmcia to %_bindir</ulink>
           </title>
-          <para>I came up with a idea to add two simple steps to SUSEgreeter. These are installing NVIDIA proprietary drivers and multimedia codecs. I have even written it in C++ and libyui. This is my first serious C++ app, so don&apos;t blame me if it&apos;s crap ;) . My version of SUSEgreeter detects if nouveau drivers are in use and then proposes to install NVIDIA drivers (it downloads &amp; runs http://opensuse-community.org/nvidia.ymp ). The same with multimedia-it searches with zypper if any package with &quot;codec&quot; in name is installed, and if not it downloads one-click multimedia installer (it detects whether you are using KDE or not). Comments are really appreciated. We don&apos;t need to use my app, somebody can add it to original SUSEgreeter. You can download source
-<ulink url="http://www.mediafire.com/?d5fmf6w6bbrmmfm">here</ulink> and
-<ulink url="http://www.mediafire.com/?h6aonpva1bi6b28">here</ulink> is the compiled i586 rpm. And here is how it looks like:
-http://img.susepaste.org/56507867 . One last word: my version is SUSEGreeter (capital G), so it doesn&apos;t conflicts with the orginal.
-
+          <para>lsinitrd, lsmod, lspci, lspcmcia are located in /sbin and so only root can access them.
+The &apos;ls&apos; prefix indicates that these programs only list some information which should be accessible by all users.
 </para>
-          <para>(BTW: If you deselect &quot;Show this window at startup&quot; and want to start it again, delete ~/.config/SUSEGreeter)</para>
+          <para>lsusb is in %_bindir (=/usr/bin).
+</para>
+          <para>If you were consequently lsusb also would have to be in /sbin or /usr/sbin ...</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312245">Include catci software in the next opensuse release</ulink>
+            <ulink url="https://features.opensuse.org/312273">fix bug in yast disk</ulink>
           </title>
-          <para>Can the catci software [1] be included in the next opensuse. The reason I ask is to have some monitoring tools available setup and ready to use. Built rpms listed at [2]
-Set it up do it discovers and graphs devices, traffic volume/bandwidth. Some sample graphs at [3]. OpenSUSE setup info listed at [4] </para>
-          <para>[1]
-http://cacti.net/
-</para>
-          <para>From url. -&gt; Cacti is a complete network graphing solution designed to harness the power of RRDTool&apos;s data storage and graphing functionality. Cacti provides a fast poller, advanced graph templating, multiple data acquisition methods, and user management features out of the box. All of this is wrapped in an intuitive, easy to use interface that makes sense for LAN-sized installations up to complex networks with hundreds of devices.
-
-</para>
-          <para>[2] built rpms
--&gt; </para>
-          <para>http://download.opensuse.org/repositories/home:/worldcitizen/openSUSE_11.4/noarch/
-</para>
-          <para>[3] Some sample graphs:
-</para>
-          <para>- http://cacti.kernel.org/graph_view.php?action=tree&amp;tree_id=2
-</para>
-          <para>- http://cacti.kernel.org/graph_view.php?action=tree&amp;tree_id=3
-
-</para>
-          <para>[4]OpenSUSE setup info
-http://en.opensuse.org/Cacti </para>
+          <para>(...) The current functionality is a bug and I have long ago reported it as such. Disks are addressed by logical sectors this millenium. It&apos;s a bug to show an obsolete, not-convertible unit. serves no purpose unit. The fix to that bug is to show the relevant unit. </para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312257">Snapshot/recovery feature with keeping apps</ulink>
-          </title>
-          <para>Have a look at this picture:
-</para>
-          <para>http://i.computer-bild.de/imgs/3/3/2/3/4/4/3/Windows-8-Das-sind-die-geheimen-Microsoft-Unterlagen-360x270-066b406e14ab3a75.jpg
-</para>
-          <para>Such a recovery function would be nice for openSUSE 12.1/12.2 and would give openSUSE an advantage against the whole linux-distros and even Mac OS X (Windows will implementate it soon...)
-But it also will benefit for the users. If you delete some config-files and clear my trash-folder, I can easy reset my system to the early post-installation time BUT, at the same time, keep all my private stuff like photos, music, mails, documents and even code files.
-WouldnÂ´t be cool to have such a feature?
-The only thing which prevent this coding-work by myself is the fact, that my knowledge in C and C++ is very limited and canÂ´t solve such a big project.
-
-</para>
-          <para>But we get excellent programmers @Novell/SUSE and our community, so I think it would be a nice feature for the next openSUSE release!</para>
-        </blockquote>
-<!-- ($ ld: 16.4.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 23.4.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -693,14 +645,12 @@ The only thing which prevent this coding-work by myself is the fact, that my kno
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00008.html">Larry
-            Finger: Weekly News for Weekly News for April 16</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-04/msg00008.html">Larry Finger: Weekly News for Weekly News for April 16</ulink>
         </title>
         <para>The Testing Core Team met on Monday, April 11 at 17:00 UTC on our usual IRC channel. </para>
         <para>Regarding the Open Bugs Day that was held on Saturday April 2, we discussed the
           reasons for the low turnout, the means of disposition of bugs, and the bugs that are still
-          open. To see the distribution of bug type versus release, see <ulink
-            url="http://tinyurl.com/392jnb">http://tinyurl.com/392jnb</ulink>. Even after the large
+          open. To see the distribution of bug type versus release, see <ulink url="http://tinyurl.com/392jnb">http://tinyurl.com/392jnb</ulink>. Even after the large
           number of bugs that were closed, there are still 7 open bugs for 10.0, 14 for 10.1 and 46
           for 10.3. All bugs for 10.2 are closed. </para>
         <para>We next discussed what was good and bad about the 11.4 testing cycle, and what we

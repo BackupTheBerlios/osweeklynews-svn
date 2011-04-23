@@ -22,44 +22,20 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://vavai.net/2011/04/opensuse-multi-boot-system-opensuse-fedora-linuxmint-ubuntu-free-doswindows/">Masim Sugianto: openSUSE Multi Boot System : openSUSE, Fedora, LinuxMint, Ubuntu</ulink>
+        <ulink url="http://linuxblog.darkduck.com/2011/02/how-to-page-numbering-in-open-source.html">DarkDuck: How To: Page Numbering in Open Source Text Processors</ulink>
       </title>
-      <para>I’m currently using 5 OS in my Laptop, HP 4421s : FreeDOS/Windows, openSUSE, LinuxMint,
-        Fedora &amp; Ubuntu. The main goals are for testing purpose only but I would prefer to
-        install all of those OS in physical instead of virtual because I’m trying to use different
-        OS for work and daily usage. Our client has various Linux system and I must support them for
-        managing their system. Using multiple Linux OS keep me open minds (:-D ) with the features
-        and native command of each OS. </para>
-      <para>Free DOS bundled and installed automatically with laptop while the others installed
-        manually. openSUSE 11.4 <quote>Celadon</quote> is my first choice, then LinuxMint 10
-          <quote>Julia</quote>, follows by Fedora 14 <quote>Laughlin</quote> and last (but my be not
-        least :-) ) is Ubuntu LTS 10.04.2 Lucid Lynx. Among the installed OS, LinuxMint and Ubuntu
-        is the winner for setting up grub bootloader. LinuxMint and Ubuntu detected all of OS and
-        added the OS choice into bootloader successfully. openSUSE was only successful for
-        FreeDOS/Windows and Fedora but it fails to detect LinuxMint and Ubuntu, similar thing with
-        Fedora bootloader. (...)</para>
-<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>    
+      <para>Some time ago I made <ulink url="http://www.go2linux.org/linux/2011/02/where-3-times-3-8-899">guest posting</ulink> on <ulink url="http://go2linux.org/">Go2Linux.org</ulink> site comparing Open Source Office applications. That time I complained that it was not obvious for me <emphasis role="bold">how to automatically number pages</emphasis> in the document using some of text processors reviewed there. Have you ever faced this issue? Hope this time I will open the secrets of three different packages and show you how to solve this issue. (...)</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.packtpub.com/article/create-amazing-text-font-effects-with-gimp-2-6">Packt Publishing/Juan Manuel Ferreyra: How To Create Amazing Text and Font Effects in Gimp 2.6</ulink>
+        <ulink url="http://www.linuxjournal.com/content/converting-office-documents">Linux Journal/Johan Thelin: Converting Office Documents</ulink>
       </title>
-      <para>Installing a font to use it with GIMP is a really quick and easy task. Just copy the font files to the <emphasis role="italic">.fonts</emphasis> folder or to your .gimp-[version]/fonts folder in your home directory. Then, restart GIMP.
+      <para>Now and then, office-type documents need to be converted. The latex users have always been able to produce a variety of formats from the command line, but for the OpenOffice/LibreOffice users, manual labor has been the solution. That changes with unoconv. Now you can convert to most file formats directly from the command line.
 
 </para>
-      <para>Once you have your fonts set up, they will be available for you with which to work. GIMP comes with a wide variety of filters and effects. We saw a few of them in action in the previous article on <ulink url="https://www.packtpub.com/article/creating-company-logo-with-gimp-2-6">Creating a Logo</ulink>. Now, we are going to use some of them with just text layers, to give you a clear idea of how to create great looking text starting from a solid-color font. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://everydaylht.com/howtos/desktop/font-hinting-on-opensuse-11-4/">EVERYDAYLHT.com: Font Hinting on openSUSE 11.4</ulink>
-      </title>
-      <para><emphasis role="bold">Warning</emphasis>
-
-</para>
-      <para>Font hinting until very recently has been a patented technology. The patents that lead to subpixel font hinting being turned of by default in the freetype2 library have now expired. It is now turned on by default going forward. Unfortunately openSUSE 11.4 ships with a version that does not have the bytecode intepreter turned on. This howto sets out how to get a version with it enabled.
-
-</para>
-      <para>This howto is for openSUSE 11.4. Click the link for a <ulink url="http://everydaylht.com/howtos/desktop/font-hinting-in-opensuse/">howto for font hinting on openSUSE 11.3</ulink> (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+      <para><emphasis role="bold">Unoconv</emphasis> is handy for many tasks. I commonly use it to convert all documents in a directory to PDFs, or MS Office compatible formats for clients. The beauty of it is that these previously tedious tasks are now one-liners. (...)</para>
+      <para><emphasis role="bold">Editor&apos;s note</emphasis>: unoconv packages for openSUSE can be found in <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=unoconv">OBS</ulink>.</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -86,66 +62,51 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.lowkster.com/2011/04/packaging-python-packages-in-opensuse.html">Low Kian Seong: Packaging python packages in opensuse</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/04/20/keeping-code/">Python4Kids/Brendan Scott: Keeping Code</ulink>
       </title>
-      <para>While getting one of my packages rejected for inclusion into the python lang repo for
-        openSuSE, the comments made by the reviewer pointed me to find the package: <ulink url="http://pypi.python.org/pypi/py2pack">py2pack</ulink>. </para>
-      <para>This package made the packaging of Python packages on OpenSuSE brain dead easy by doing
-        all of the heavy lifting, creating a sample spec file that really needs very little editing.
-        Install py2pack, and follow this guide, <ulink url="http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way">http://en.opensuse.org/openSUSE:Packaging_Python#The_fast_and_automated_way</ulink> and
-        put that together with the great openSuSE build service and you will have a great time
-        packaging which is usually a thankless job no one wants to do. </para>
-      <para>Update: Wow the ruby packaging method is about the same too: <ulink url="http://en.opensuse.org/openSUSE:Packaging_Ruby">http://en.opensuse.org/openSUSE:Packaging_Ruby</ulink></para>
-<!-- ($ Id: 13.4.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linux.com/learn/tutorials/428800:weekend-project-creating-qt-interfaces-with-gimp?utm_medium=twitter&amp;utm_source=twitterfeed">Linux.com/Nathan Willis: Weekend Project: Creating Qt Interfaces with GIMP</ulink>
-      </title>
-      <para>Interface design for GUI applications is seldom easy in open source projects. There are a number of valid reasons: interface designers are scarce in comparison to developers, and usability testing isn&apos;t always possible the way it is for proprietary software shops,for example. But the tools don&apos;t always keep pace with the rest of the platform, either, which is part of why Qt&apos;s <ulink url="http://labs.qt.nokia.com/2010/10/19/exporting-qml-from-photoshop-and-gimp/">GIMP QML Exporter</ulink> is so interesting. Rather than a stand-alone interface builder, it lets the developer design the interface directly in GIMP, and directly export it as usable code. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.ibm.com/developerworks/aix/library/au-mercurial/index.html?ca=drs-">IBM developerWorks/William von Hagen: Managing source code with Mercurial</ulink>
-      </title>
-      <para>Managing the source code for a software development project is only slightly less important than writing it in the first place. UNIX® and Linux® systems offer a rich selection of version control system (VCS) packages, each of which takes a slightly different approach to this common concern. This article focuses on the Mercurial source code management system, often simply referred to as hg. Mercurial provides a powerful, modern, and light-weight solution for source code control that makes it easy for developers to make and debug their changes to a software project while maintaining a stable, centralized source code repository that all project members can depend upon. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+      <para>Well, so far we’ve learnt about storing data (either “flat” in file, or as an object which Python does in pickles which are also data in files, but with some structure) but we don’t know anything about storing the code we are typing. This means that we need to go through the tedium of typing stuff in all the time (or cutting and pasting I guess).  It  is especially tedious when we mistype something.
+
+</para>
+      <para>In order to do some more complex things in Python we really need to be able to store our code somewhere so that typing mistakes we make don’t mean we have to re-type the whole kit and kaboodle. We could, if we really wanted to, open a file from within our Python prompt and write code to the file (as a flat file):</para>
+      <screen> &gt;&gt;&gt; f = open(&apos;textfile.py&apos;,&apos;w&apos;)
+ &gt;&gt;&gt; f.write(&quot;print &apos;This is some python code stored in a file&apos;&quot;)
+ &gt;&gt;&gt; f.close()
+ &gt;&gt;&gt; import textfile
+ This is some python code stored in a file</screen>
+      <para>What has happened here is that we’ve open()ed a file called ‘textfile.py’ (again, we’ve taken the chance that there isn’t already such a file, because open()ing it would delete the existing contents).  We’ve then written the following to the file: print ‘This is some python code stored in a file’ (...)</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.unixmen.com/linux-tutorials/1623-9-best-practices-to-secure-your-linux-desktop-and-server">Unixmen/M. Zinoune: 9 Best practices to secure your Linux Desktop &amp; Server | Including installation &amp; Configuration</ulink>
+        <ulink url="http://linuxadminzone.com/speed-up-large-mysql-backup-dump-restore-process/">Linux Admin Zone/Jagbir Singh: Speed up large MySQL backup, dump, restore processes</ulink>
       </title>
-      <para>There are a few common security practices that every Linux user should follow. Unfortunately, not everybody is linux-logoaware of these. In this post will show you how to secure your home pc or server to the best of your abilities with the best available opensource tools.</para>
-      <para><emphasis role="bold">1- Checking your system for random mailers:</emphasis></para>
-      <para>Mailers like Form Mail are used by hackers to send out spam emails, relay messages that are security risks for yourself and so on. You can find them using the following command:</para>
-      <para><command>find / -name &quot;[Ff]orm[mM]ai*&quot;</command></para>
-      <para>CGIeMail is another one that has similar issues.</para>
-      <para><command>find / -name &quot;[Cc]giemai*&quot;</command></para>
-      <para>Upon finding them, issue the following:</para>
-      <para><command>chmod a-rwx /path/to/filename</command></para>
-      <para>a-rwx = all types, no read, no write, no execute (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+      <para>In general, MySQL is quite fast at restoring data, but I observed that while restoring 20gb of backup its taking more than the usual time. This can happen when you don’t have enough memory or if key_buffer_size is not set high enough, then it can take very long time to re-index the data. In CentOS 5.2 server with 6gb of RAM, I noticed key_buffer_size is set to just 800M which is very low. You should set it at least 20-25% of total RAM. After increasing the value to 2gb, MySQL is able to reload data quite fast.
+
+</para>
+      <para>Though this does trick for me but there are other helpful suggestions also which you can try/check to speed up your backup/restore process, few are as follows: (...)</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-opensuse-11.4">HowtoForge/Falko Timme: Installing Nginx With PHP5 (And PHP-FPM) And MySQL Support On OpenSUSE 11.4</ulink>
+        <ulink url="http://www.linux.com/learn/tutorials/432537-another-ipv6-crash-course-for-linux-real-ipv6-addresses-routing-name-service">Linux.com/Carla Schroder: Another IPv6 Crash Course For Linux: Real IPv6 Addresses, Routing, Name Services</ulink>
       </title>
-      <para><ulink url="http://nginx.net/">Nginx</ulink> (pronounced &quot;engine x&quot;) is a free, open-source, high-performance HTTP server. Nginx is known for its stability, rich feature set, simple configuration, and low resource consumption. This tutorial shows how you can install Nginx on an OpenSUSE 11.4 server with PHP5 support (through <ulink url="http://php-fpm.org/">PHP-FPM</ulink>) and MySQL support. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
+      <para>In the first <ulink url="http://www.linux.com/learn/tutorials/428331-ipv6-crash-course-for-linux">IPv6 for Linux crash course</ulink>, we covered some of the bare basics of IPv6 on Linux. Today we&apos;re going to learn how to use routable IPv6 addresses, some iptables rules to keep our experimentation from leaking out into the world, and about implementing DNS in IPv6.
+
+</para>
+      <para>You can perform all these tests on any two Linux PCs on your LAN without getting in the way of your normal IPv4 activities. Just remember to undo everything that you don&apos;t want to be permanent when you&apos;re finished. Save time and hassle by having SSH set up on all your PCs; then you can park yourself comfortably in one place and run most of these tests over SSH sessions and never get up, except at healthy intervals to prevent embolisms and joint seizures. (...)</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://vavai.net/2011/04/upgrading-zimbra-mail-server-6-x-x-into-zimbra-mail-server-7-x-x/">Masim Sugianto: Upgrading Zimbra Mail Server 6.x.x into Zimbra Mail Server 7.x.x</ulink>
+        <ulink url="http://www.howtoforge.com/virtualization-with-kvm-on-an-opensuse-11.4-server">HowtoForge/Falko Timme: Virtualization With KVM On An OpenSUSE 11.4 Server</ulink>
       </title>
-      <para><ulink url="http://www.zimbra.com">Zimbra</ulink> has released Zimbra 7 for about a
-        month and it seems quite stable for production use. As major upgrade to Zimbra 6, Zimbra 7
-        comes with tons of bug fixes and new features including security feature to prevent virus
-        and spam.</para>
-      <para>Does the upgrade process should be applied for production use ? The answer depends on
-        your environment. If an existing system quite stable with minor problem, you may stick with
-        your existing Zimbra system but if you need some features that only provided by Zimbra 7,
-        upgrading may be the best option. I’m currently manages some Zimbra for production mail
-        server system on some client, most of them are corporate with user 100-10k users.
-        (...)</para>
-      <!-- ($ Id: 12.4.11 sm $)-->    </blockquote>
+      <para>This guide explains how you can install and use KVM for creating and running virtual machines on an OpenSUSE 11.4 server. I will show how to create image-based virtual machines and also virtual machines that use a logical volume (LVM). KVM is short for <emphasis role="bold">Kernel-based Virtual Machine</emphasis> and makes use of hardware virtualization, i.e., you need a CPU that supports hardware virtualization, e.g. Intel VT or AMD-V. (...)</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.novell.com/communities/node/12833/one-click-amazon-ec2-suse-studio">Novell Cool Solutions/Kevin Foster: One Click to Amazon EC2 from SUSE Studio</ulink>
+      </title>
+      <para>What happens when you pair the award-winning image- and appliance-building tool SUSE Studio with the market leader in cloud computing, Amazon Web Services? An ISV or developer&apos;s dream come true! We are proud to announce one-click deployment to Amazon EC2 directly from SUSE Studio. Novell has made it simple to create, test, and deploy your application image or appliance to EC2, providing a complete end-to-end solution for building and deploying cloud images. (...)</para>
+<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
