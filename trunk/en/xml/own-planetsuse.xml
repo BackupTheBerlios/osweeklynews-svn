@@ -23,138 +23,52 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title><ulink
-        url="http://vizzzion.org/blog/2011/04/im-going-to-the-kde-ux-sprint-then-tokamak-is-coming-to-me/"
-        >Sebastian Kügler: I’m going to the KDE UX sprint, then Tokamak is coming to
-      me!</ulink></title>
-    <para> On Thursday, I’ll be travelling to Berlin for the KDE UX sprint, which is kindly hosted
-      by relevantive in their office in the heart of Berlin. I’ll be meeting Nuno, Celeste, Hugo and
-      a few others there, and we’ll be making plans. Topics are the human interface guidelines,
-      getting more designers involved with KDE, and of course <ulink
-        url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
-        >Plasma Active</ulink>. </para>
-    <para> A few days after coming back, hell will break loose in Nijmegen, as the Plasma crew holds
-      their Tokamak gathering here. Here means at our new house in Nijmegen in the east of the
-      Netherlands (which is in the west of Europe ;)). I’m really looking forward to having my
-      fellow Plasma hackers here, especially with all the excitement, new ideas and concepts coming
-      along with Plasma Active. I’m sure it will be an epic Tokamak, and a really long one, too.
-      Between first arrivals and least departures, there will be a whopping 12 nights. We’ll likely
-      be doing an Open Day, so if you’re in the region, drop me an email if you’d like to come by to
-      see the magic happen.</para>
-    <para> Speaking of Plasma Active itself, it’s off to a good start. We’ve spent crazy amounts of
-      hours in very little time before I announced it on my blog, and we kicked off a surge of blog
-      posts about this subject — with more to come. I’m really happy with the positive interest it
-      generated so far, very promising.</para>
-    <para> With the past two weeks spending most of my time on documentation, packaging and
-      communication, I got back into hacking mode today, and polished up my small metadata engine I
-      had started writing not long ago. It’s working now, you can query all kinds of resources,
-      either by filename, URL, Nepomuk Identifier or simple query term, and it gives you back a list
-      of Nepomuk resources and their metadata. It’s pretty simple, but very powerful. It already
-      provides most of what you need to write a simple filebrowser, or search widget in Plasma
-      Quick. I’ll write a more detailed blog post (including screenshots) once I’m more happy with
-      it, also visually. The basic metadata engine is already in master, and will be appearing in
-      the next update of the Plasma Active packages, probably tomorrow. Now, back to hacking. =) </para>    
-    <!--($ ld: 13.4.11 sm $)-->    
+        url="http://www.vuntz.net/journal/post/2011/04/18/Taking-my-release-manager-hat-off">Vincent
+        Untz: Taking my release manager hat off</ulink></title>
+    <para>Back in June 2005, I noticed that we were lacking some <quote>tarballs due</quote> mails
+      for the GNOME 2.11 release cycle and I sent a <ulink
+        url="http://mail.gnome.org/archives/release-team/2005-June/msg00003.html">small mail</ulink>
+      to get this fixed. This is how I got trapped: after this mail got read by <ulink
+        url="http://blogs.gnome.org/markmc/">Mark McLoughlin</ulink>, he suggested I could replace
+      him on the GNOME release team. A few years later, in September 2007, Elijah chose to <ulink
+        url="http://mail.gnome.org/archives/desktop-devel-list/2007-September/msg00612.html">pass
+        his GNOME release manager hat</ulink> to me. And now, in April 2011, it's time for me to
+      pass the baton: <ulink url="http://elleuca.blogspot.com/">Luca Ferretti</ulink> is replacing
+      me on the release team (he joined as a trainee in the past few months), and my good friend
+        <ulink url="http://www.0d.be/">Frederic Peters</ulink> becomes the new GNOME release
+      manager.</para>    
+    <!--($ ld: 23.4.11 sm $)-->    
   </blockquote>
   <blockquote>
-    <title><ulink url="http://blog.jospoortvliet.com/2011/04/upcoming.html">Jos Poortvliet:
-        Upcoming...</ulink></title>
-    <para>I've been quite busy over the last few months - after Michael Loeffler left and AJ went on
-      parental leave for 2 months life got crazy. Luckily openSUSE doesn't exactly depend on me and
-      while some things slipped, I don't think big things broke down. Ok, my boss wasn't happy with
-      me as especially internal budget things suffered. I've given those sending me interviews and
-      other writing stuff (like my column for <ulink url="http://www.linuxuser.co.uk/"
-        >LinuxUser</ulink>) a very hard time too. And personally, I'm unhappy with it because I
-      tried to do to many things which resulted in many of them unfinished. </para>
-    <para>back on track But AJ is back, we're getting some processes on track and the 11.4 release
-      worked out great. So it is time to focus again and get things finished. First is the strategy
-      stuff. The openSUSE Board had a few comments we'll look through, then it should go up for
-      voting. Really. I know, it already needs some updating - we'll try to do that first. Once that
-      is done, it's time to vote on it and get it out however. We need to get the DVD's out which we
-      created for GNOME 3 and KDE. For both I spend a lot of time collecting materials to include on
-      the disk and imho the end result is pretty ok. But there's also room for improvement,
-      something for the future... And we have marketing materials to create for the US. There have
-      been only a few suggestions on the marketing ML so it looks like I'm gonna have to lock myself
-      in my room for a day or two to write some stuff... Finally, I have to catch up with mail. With
-      over 2300 unread mails that'll be quite a job but in some folders I'll probably just mark all
-      read... And then it's on to new stuff! </para>
-    <para><emphasis role="bold">Like..</emphasis>. </para>
-    <para>Last Saturday I gave a talk at a FLISOL meeting - and in the preparations for that I
-      updated a number of presentations I have. Will share them with the marketing team and
-      hopefully put them in Git &amp; the wiki with the marketing materials. </para>
-    <para><emphasis role="bold">wiki stuff</emphasis>
-    </para>
-    <para>The openSUSE ambassador talking points have been improving and I'm working on an upcoming
-      features. I've also went through the wiki pages for new contributors, making small changes and
-      adding links there, improving the Junior Jobs pages. Now the openSUSE Boosters are planning to
-      work on that as well, smoothing out the process of getting involved in openSUSE. </para>
-    <para><emphasis role="bold">openhatch </emphasis></para>
-    <para>Once we have that up, I'd like to investigate openSUSE joining openHatch. For that we'd
-      need junior jobs in a variety of areas as well as mentors - but I think I can just start
-      small. We have a convention in Bugzilla which is followed by practically nobody: mark simple
-      bugs with "JJ" so they can be easily found. I'll try and get a few of those on openhatch, see
-      if we can get a contributor or two to chip in. If that works we have a good reason to expand
-      upon that! </para>
-    <para><emphasis role="bold">and a promise </emphasis></para>
-    <para>Finally I promise to work harder on being available &amp; in meetings - I know I missed a
-      few ;-) </para>
+    <title><ulink
+        url="http://masterpatricko.blogspot.com/2011/04/development-and-build-environments.html"
+        >Tejas Guruswamy: Development and build environments: the search -- part 1</ulink></title>
+    <para>One of the problems I often face is keeping my productive system I use for work, separate
+      from my development environment with broken versions of programs and loads of extra packages
+      installed. </para>
+    <para>For a while my solution was to create virtual machines in <ulink
+        url="http://www.virtualbox.org/">VirtualBox</ulink> - which works great but has a very high
+      overhead for the task. Especially when I am away from my desktop and only have my slightly
+      underpowered laptop (no VT-x extensions, only 2GB RAM), running an entire virtualized system
+      just to try out some packaging changes was painful.</para>
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
-    <!--($ ld: 15.4.11 sm $)-->
+    <!--($ ld: 23.4.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://ungethym.blogspot.com/2011/04/contributions-that-matter.html">Thomas
-        Thym: Contributions that matter</ulink></title>
-    <para>In the last days I read two post on planetkde and planetsuse, written by (to me) new
-      contributors with the best intention to help their projects. However the response of the
-      community was not as positive as they would have expected. What happened?3 types of potential
-      new contributors Some lines from <ulink
-        url="http://thym.org/downloads/Akademy2010-Thym-The-7-OS-Principles.pdf">my last years
-        Akademy paper</ulink>.</para>
-      <para>"Krogh, Spaeth and Lakhani analyzed the characters of
-        potential new contributors in mailing lists.[12] Based on that work three types could be found.<itemizedlist>
-          <listitem>
-            <para>Proactive problem-solver: They use the program, find a bug, and work out the
-              solution. In the first mail to the list they send the patch. These people are very
-              successful in communities and often become continuous contributors.</para>
-          </listitem>
-          <listitem>
-            <para>Waiting volunteer: This group offers their abilities to the community and waits
-              until they get a job allocated. In general this character is not very active. Most
-              communities can not integrate them successfully.</para>
-          </listitem>
-          <listitem>
-            <para>Visionary: They use the program and have ideas on how the program should be
-              improved. Although visions and aims are important in communities, the character-type
-              visionary is not successful. In the past his/her visions were not identical with the
-              ideas of the code developers. The resulting costs of conflicts exceed the benefits of
-              the discussion."</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>Even the headline of one of the post gives you a hint which type might be behind the
-      post in question. Visionaries often use words like <quote>it should</quote>, <quote>you have
-        to</quote> etc. instead of "I have done" or "I am going to do".</para>
-    <!--($ ld: 15.4.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://mschlander.wordpress.com/2011/04/14/more-love-for-kdeupdatedapps/"
-        >Martin Schlander: More love for KDE:UpdatedApps</ulink></title>
-    <para>The KDE:UpdatedApps repository for openSUSE (formerly known as KDE:Backports), hasn’t been
-      getting the love it deserves as of late. This repo lets you easily and safely update many KDE
-      applications without needing to do unofficial upgrades of your base libraries or base desktop
-      environment, with the risks and annoyances this involves. </para>
-    <para>After I had been complaining loudly about the state of things for a while, I ended up
-      being given permissions to the repository on the openSUSE BuildService to shut me up, and I’ll
-      attempt to do the janitorial work needed from now on – which basically just means linking
-      relevant package revisions from KDE:Distro:Factory. (...)</para>
-    <!--($ ld: 15.4.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/04/15/calibre-repository-moved/">Thomas
-        Schraitle: Calibre Repository Moved</ulink></title>
-    <para>Maybe not everybody knows it or it may be a bit too late, but nevertheless… the Calibre
-      repository on home:thomas-schraitle:calibre has been moved to <emphasis role="bold"
-        >Documentation:Tools</emphasis>. It was necessary due to some internal reorganisation. The
-      new location is now the official devel project. Have fun! :-)</para>
-    <!--($ ld: 15.4.11 sm $)-->
+    <title><ulink
+        url="http://masterpatricko.blogspot.com/2011/04/development-and-build-environments_20.html"
+        >Tejas Guruswamy: Development and build environments: schroot on openSUSE -- part
+      2</ulink></title>
+    <para>So in <ulink
+        url="http://masterpatricko.blogspot.com/2011/04/development-and-build-environments.html"
+        >part 1</ulink> I detailed my search for something that would allow my development and
+      productive environments to coexist on the same machine, and how I discovered schroot.</para>
+    <para><ulink url="http://packages.debian.org/search?keywords=schroot">Schroot</ulink> is a
+      "chroot manager" - it allows configuring chroots so that users on the system can run shells
+      and processes in them, and it takes care of all the setup/tear down I described at the end of
+      my previous post. It is a part of the Debian buildtools, for building Debian packages in a
+      safe and repeatable environment, just like openSUSE uses build.</para>
+    <!--($ ld: 23.4.11 sm $)-->
   </blockquote>
 </sect1>

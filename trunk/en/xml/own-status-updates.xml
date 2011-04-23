@@ -329,22 +329,47 @@
 
       <para>...</para>
       </sect3> -->   
-    <!--
     <sect3 role="gnometeam">     
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/04/10/gnome3-iso-by-fcrozat-and-ati-radeon-driver-a-quick-easy-fix/">Nelson Marques: GNOME3 iso by fcrozat and ATI radeon driver… a quick easy fix!</ulink>
+          <ulink url="http://blog.crozat.net/2011/04/gnome-30-available-for-opensuse-114.html">Frédéric Crozat: GNOME 3.0 available for openSUSE 11.4</ulink>
         </title>
-        <para>For some time I wanted to check out GNOME3 and gnome-shell… My current chipset is ATI
-          M92 RV710 and while the thermal performance with the proprietary driver is somewhat what I
-          expect, the open source radeon driver does overheat my laptop a lot compared to flgrx. For
-          the time being, fglrx isn’t really a choice because it just borgs the ‘activities’ bar on
-          top… And until ATI fixes their driver, there’s no other choice than running with the
-          standard radeon drm driver, which does provide a very pleasant experience with GNOME3 /
-          gnome-shell. (...)</para>
+        <para>openSUSE GNOME team has been busy polishing GNOME 3.0 packages for openSUSE 11.4 but
+          here they are, for your pleasure </para>
+        <para>Everything is explained at : http://en.opensuse.org/openSUSE:GNOME_3.0 including : </para>
+        <itemizedlist>
+          <listitem>
+            <para>how to install GNOME 3 using 1-click install from your favorite Web
+              browser,</para>
+          </listitem>
+          <listitem>
+            <para>how to switch from my previous repository (home:fcrozat:gnome3, which will be soon
+              phased out) to the new repository. This is important to continue receiving updates,
+              for instance, if you installed live image on your system.</para>
+          </listitem>
+        </itemizedlist>
+        <para>A new live image will be available shortly, based on this new repository (but this
+          will be for another blog post). Enjoy !</para>
+        <!--($ ld: 23.4.11 sm $)-->
       </blockquote>
-    </sect3> -->
+      <blockquote>
+        <title><ulink
+            url="http://blog.crozat.net/2011/04/gnome-3-live-image-version-110-released.html"
+            >Frédéric Crozat: GNOME 3 Live image version 1.1.0 released</ulink></title>
+        <para>In the past week, we have been working on both GNOME:STABLE:3.0 repository and on
+          creating a GNOME 3 Promo DVD, based on this live image, but with more content on it
+          (LibreOffice, Banshee 2.0, etc..). Because of this, image size has increased a bit
+          (950MB)</para>
+        <para>Good news too, we fixed KMS issues with some Radeon cards people reported when using
+          live image (problem was fixed once the image was installed).</para>
+        <para>This new image (1.1.0) is now based on GNOME:STABLE:3.0 repository and contains all
+          security and bugfix updates for openSUSE 11.4.</para>
+        <para>To download the image, go to <ulink url="http://www.gnome.org/getting-gnome/"
+            >http://www.gnome.org/getting-gnome/</ulink> Enjoy !</para>
+        <!--($ ld: 23.4.11 sm $)-->
+      </blockquote>
+    </sect3>
 <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>      

@@ -36,6 +36,76 @@
       <para><emphasis role="bold">Unoconv</emphasis> is handy for many tasks. I commonly use it to convert all documents in a directory to PDFs, or MS Office compatible formats for clients. The beauty of it is that these previously tedious tasks are now one-liners. (...)</para>
       <para><emphasis role="bold">Editor&apos;s note</emphasis>: unoconv packages for openSUSE can be found in <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=unoconv">OBS</ulink>.</para>
 <!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+        url="http://news.opensuse.org/2011/04/20/opensuse-servers-with-one-click/"
+        >openSUSE servers with one click</ulink></title>
+      <para>Everybody knows openSUSE offers a great desktop experience; but its also a perfect fit for
+        servers! Go download the <ulink url="http://software.opensuse.org/114/en">Installation
+          DVD</ulink> (or use one of the <ulink url="http://en.opensuse.org/Buy_openSUSE">manufactured
+            DVD</ulink>s) and we’ll see how easy YaST makes it to setup a variety of specialized
+        servers.</para>
+      <para>During the course of a normal installation, the opportunity to add servers is slightly
+        hidden. The last step before an actual installation is the Installation Overview. At this
+        point, you can see a list of selected software patterns. Either click the “Software” header,
+        or click “Software…” on the “Change…” menu. At this point, you will be presented with a list
+        of available software patterns, including the Server Functions patterns: simply check off
+        any servers you would like to install and click “OK” to return to your normal installation!
+        (...)</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+      <!--($ ld: 21.4.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://lslezak.blogspot.com/2011/04/installing-latest-intel-graphics-driver.html"
+          >Ladislav Slezak: Installing latest Intel graphics driver to openSUSE 11.4</ulink></title>
+      <para>I have upgraded my home PC to Intel i5-2500K CPU (Sandy Bridge family). The CPU has a
+        new integrated graphics core (Intel HD 3000) and it works out-of-box in openSUSE-11.4
+        including 3D and composition. The only problem I noticed are broken popup menus and buttons
+        in title bars in KDE. Esp. broken popups are very annoying as they are hardly usable, see
+        e.g. <ulink url="https://bugs.freedesktop.org/attachment.cgi?id=45061"
+          >https://bugs.freedesktop.org/attachment.cgi?id=45061</ulink>.</para>
+      <para>Fortunately Intel has released updated X driver version 2.15 which fixes this problem.
+        Here is a step by step how to install the updated driver in openSUSE 11.4.</para>
+      <itemizedlist>
+        <listitem>
+          <para>Install xorg-x11-server-sdk
+            package<programlisting>sudo zypper in xorg-x11-server-sdk</programlisting></para>
+        </listitem>
+        <listitem>
+          <para>Download <ulink
+              url="http://xorg.freedesktop.org/archive/individual/driver/xf86-video-intel-2.15.0.tar.bz2"
+              >http://xorg.freedesktop.org/archive/individual/driver/xf86-video-intel-2.15.0.tar.bz2</ulink></para>
+        </listitem>
+        <listitem>
+          <para>Unpack the
+            archive<programlisting>tar xfjv xf86-video-intel-2.15.0.tar.bz2</programlisting></para>
+        </listitem>
+        <listitem>
+          <para>Now compile the
+            driver:<programlisting>cd xf86-video-intel-2.15.0./configure --prefix=/usr --libdir=/usr/lib64make</programlisting></para>
+          <para>(If you have installed 32-bit system then use /usr/lib path in the second
+            command.)</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Install the driver (will overwrite the files from RPM
+            package)<programlisting>sudo make install</programlisting></para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Restart the X server (simply relogin to a new session)</para>
+        </listitem>
+      </itemizedlist>
+      <para>Voila, now your system should use the new driver and the artifacts in the KDE popups
+        should be gone!</para>
+      <para>Maybe someone can pack the driver into a RPM package in the openSUSE build service, but
+        for me this solution is sufficient... </para>
+      <!--($ ld: 23.4.11 sm $)-->
+    </blockquote>
   </sect2>
   <!--
   <sect2>
