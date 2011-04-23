@@ -16,6 +16,6 @@ source ./.common.sh
 WP=${HTMLDIR}/${BASEXML%.xml}-wp.html
 
 ./own2xhtml-single.sh --output ${WP} \
-  logos.src.path=http://saigkill.homelinux.net/images $@
+  logos.src.path=http://saigkill.homelinux.net/images/ $@
 
 

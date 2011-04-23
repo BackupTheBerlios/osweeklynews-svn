@@ -18,22 +18,24 @@
 -->
 <sect1 role="ontheweb">
   <title>On the Web</title>
-<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  <sect2>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  
+  <!--
+  <sect2>
     <title>Announcements</title>
     <blockquote>
       <title>
         <ulink url="http://www.novell.com/news/press/2011/4/novell-offers-industrys-longest-enterprise-linux-support-program-.html">Novell Offers Industry&apos;s Longest Enterprise Linux Support Program</ulink>
       </title>
       <para>Novell today announced the expansion of its Long Term Service Pack Support (LTSS) program for SUSE® Linux Enterprise Server, lengthening customers&apos; access to the company&apos;s <ulink url="http://www.novell.com/linux/support-survey.html">industry-leading Linux* support</ulink> for each service pack release. For the first time, long term support is also provided globally for SUSE Linux Enterprise Server for System z*. Novell further announced the immediate availability of SUSE Linux Enterprise 10 Service Pack 4 (SP4), bundling all previously released patches, fixes and updates for SUSE Linux Enterprise 10, while supporting the newest hardware, storage systems and networking devices, including Intel&apos;s latest Xeon* E7 processor family and AMD&apos;s latest Opteron* processors. (...)</para>
-<!-- ($ ld: 13.4.11 sat $) -->    </blockquote>
+</blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.marketwire.com/press-release/Oracle-Announces-Its-Intention-to-Move-OpenOfficeorg-to-a-Community-Based-Project-NASDAQ-ORCL-1428324.htm">Oracle Announces Its Intention to Move OpenOffice.org to a Community-Based Project</ulink>
       </title>
-      <para>REDWOOD SHORES, CA--(Marketwire - April 15, 2011) - Oracle Corporation (NASDAQ: ORCL) today is announcing its intention to move OpenOffice.org to a purely community-based open source project and to no longer offer a commercial version of Open Office.</para>
       <para>&quot;Given the breadth of interest in free personal productivity applications and the rapid evolution of personal computing technologies, we believe the OpenOffice.org project would be best managed by an organization focused on serving that broad constituency on a non-commercial basis,&quot; said Edward Screven, Oracle&apos;s Chief Corporate Architect. &quot;We intend to begin working immediately with community members to further the continued success of Open Office. Oracle will continue to strongly support the adoption of open standards-based document formats, such as the Open Document Format (ODF).&quot; (...)</para>
-<!-- ($ ld: 16.4.11 sat $) -->    </blockquote>
-  </sect2>
+</blockquote>
+  </sect2> -->
+  <!--
   <sect2>
     <title>Call for participation</title>
     <blockquote>
@@ -47,8 +49,8 @@
 
 </para>
       <para>The event provides the first opportunity of its kind to bring together the leading minds in the field with new community builders to discuss topics such as <emphasis role="italic">governance, creating collaborative environments, conflict resolution, transparency, open infrastructure, social networking, commercial investment in community, engineering vs. marketing approaches to community leadership</emphasis> and much more. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
-  </sect2>
+</blockquote>
+  </sect2> -->
   <sect2>
     <title>Reports</title>
     <blockquote>
@@ -76,11 +78,13 @@
         offers some solace, it&apos;s a far cry from the fully usable desktop that I want and need. It&apos;s
         also a manifestation of a disturbing trend of equating power computing with the touch-screen
         nonsense of inferior mobile computing, but more about later. </para>
-      <para> I&apos;m looking at all kinds of alternatives. The most prominent one isýKDE4, which has
-        turned great with version 4.6. Featured in <ulink url="http://www.dedoimedo.com/computers/pardus-2011.html">Pardus 2011</ulink> and <ulink url="http://www.dedoimedo.com/computers/opensuse-11sp4-kde.html">openSUSE 11.4</ulink>,
-        it&apos;s a streamlined, well-packaged environment that can almost turn a Gnome head around, back
-        to the glory days when KDE reigned supreme. But there&apos;s another project you may want to
-        test, and it&apos;s called Trinity KDE. </para>
+      <para> I&apos;m looking at all kinds of alternatives. The most prominent one is KDE4, which
+        has turned great with version 4.6. Featured in <ulink
+          url="http://www.dedoimedo.com/computers/pardus-2011.html">Pardus 2011</ulink> and <ulink
+          url="http://www.dedoimedo.com/computers/opensuse-11sp4-kde.html">openSUSE 11.4</ulink>,
+        it&apos;s a streamlined, well-packaged environment that can almost turn a Gnome head around,
+        back to the glory days when KDE reigned supreme. But there&apos;s another project you may
+        want to test, and it&apos;s called Trinity KDE. </para>
 <!-- ($ ld: 17.4.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
@@ -95,6 +99,7 @@
       <para>The best games are a learning experience, an exercise in strategic thinking, memory retention, what-if scenarios and problem solving – not unlike programming itself. Each piece in a game like chess has a limited number of moves, yet the game itself is a world of possibilities, and like a chess player, a programmer has to think ahead, so it isn&apos;t really surprising that many coders approach programming as if it was a game of chess, and are also gamers. (...)</para>
 <!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>Warning!</title>
     <blockquote>
@@ -108,20 +113,8 @@
         both might well gain some serious ground, when Ubuntu 11.04 is released, it will be nice for
         users to not only know of its existence, but to also know that openSUSE 11.4 is, in fact, a
         solid distribution worth giving a look. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxpromagazine.com/Online/News/Adobe-Issues-Security-Advisory-for-Flash-Player">Linux Pro Magazine/Amber Graner: Adobe Issues Security Advisory for Flash Player</ulink>
-      </title>
-      <para><emphasis role="bold">A security advisory warning has been issued by Adobe for a critical vulnerablity in its Flash Player 10.2.153.1 and more.</emphasis>
-
-</para>
-      <para>According <ulink url="http://www.adobe.com/support/security/advisories/apsa11-02.html">to the advisory</ulink>, &quot;A <ulink url="http://www.adobe.com/devnet/security/severity_ratings.html">critical</ulink> vulnerability exists in Flash Player 10.2.153.1 and earlier versions (Adobe Flash Player 10.2.154.25 and earlier for Chrome users) for Windows, Macintosh, Linux and Solaris, Adobe Flash Player 10.2.156.12 and earlier versions for Android, and the Authplay.dll component that ships with Adobe Reader and Acrobat X (10.0.2) and earlier 10.x and 9.x versions for Windows and Macintosh operating systems.&quot;
-
-</para>
-      <para>This vulnerablility could, according to Adobe, cause a crash and potentially allow an attacker to take control of the affected system. (...)</para>
-<!-- ($ Id: 16.4.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
 <!--<sect2>
   <title>LOL</title>
   <blockquote>

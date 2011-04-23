@@ -21,7 +21,7 @@
   <blockquote>
     <title>
    <ulink
-    url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-39-Part-1-Network-drivers-and-infrastructure-1227053.html"
+     url="http://www.h-online.com/open/features/Kernel-Log-native-KVM-tool-new-kernels-galore-1229981.html"
     >h-online/Thorsten Leemhuis: Kernel Log: native KVM tool, new kernels galore</ulink>
   </title>
   <para><emphasis role="bold">Dissatisfied with the Qemu code, the developers have created a simple
@@ -37,9 +37,9 @@
    such as the interrupt controller are emulated by the KVM kernel code itself, because this
    considerably enhances performance.</para>
   <para>In his email, Enberg writes that his aim was to create a light-weight and clean KVM
-   emulation implementation that can boot Linux guests. The developer said that the tool is "[...]
-   just a hobby, won't be big and professional like QEMU [...]" – a play on the words Linus Torvalds
-   used in his first email about the development of Linux. (..)</para>
+      emulation implementation that can boot Linux guests. The developer said that the tool is
+        <quote>[...] just a hobby, won't be big and professional like QEMU [...]</quote> – a play on
+      the words Linus Torvalds used in his first email about the development of Linux. (..)</para>
 <!-- ($ ld: 21.4.11 sm $) -->  </blockquote>
   <blockquote>
     <title><ulink
@@ -48,13 +48,13 @@
     <para><emphasis role="bold">Today, there are open source Linux drivers for all major Wi-Fi
         chips, which was unimaginable five years ago. The constant pressure for open source drivers
         has thus paid off, and this may also work in other areas in the long term.</emphasis></para>
-    <para>"Buy a Centrino notebook, and then the Wi-Fi chipset will work with Linux." Five years
-      ago, such simplifications were more common because a lot of the Wi-Fi components either did
-      not run on Linux or took a lot of tweaking, say, with Ndiswrapper and Driverloader to get the
-      NDIS drivers intended for use with Windows to run on Linux. Internet forums contained
-      thousands of comments on these issues, and people repeatedly said that the Linux kernel needed
-      a stable API for external drivers; otherwise, manufacturers would never offer proper Linux
-      drivers for Wi-Fi hardware.</para>
+    <para><quote>Buy a Centrino notebook, and then the Wi-Fi chipset will work with Linux</quote>.
+      Five years ago, such simplifications were more common because a lot of the Wi-Fi components
+      either did not run on Linux or took a lot of tweaking, say, with Ndiswrapper and Driverloader
+      to get the NDIS drivers intended for use with Windows to run on Linux. Internet forums
+      contained thousands of comments on these issues, and people repeatedly said that the Linux
+      kernel needed a stable API for external drivers; otherwise, manufacturers would never offer
+      proper Linux drivers for Wi-Fi hardware.</para>
     <para>We now know that such a step was not necessary, for all major manufacturers of Wi-Fi
       hardware for PCs and notebooks are currently working on open source drivers maintained within
       work on the Linux kernel.</para>
