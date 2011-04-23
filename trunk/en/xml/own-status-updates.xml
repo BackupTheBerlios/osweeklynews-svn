@@ -672,6 +672,64 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
         </listitem>
       </itemizedlist>
     </sect3>
+    <sect3 role="tumbleweed">
+      <title>Tumbleweed Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-22-2011.html">Greg
+            Kroah-Hartman: openSUSE Tumbleweed status for the week of April 22, 2011</ulink>
+        </title>
+        <para>Here's a short note as to the status of some recent activity in the
+          openSUSE:Tumbleweed repo:</para>
+        <itemizedlist>
+          <listitem>
+            <para>the kernel is at the 2.6.38 release level tracking the upstream stable 2.6.38
+              releases.</para>
+          </listitem>
+          <listitem>
+            <para>lxde (and its sub-packages) was added</para>
+          </listitem>
+          <listitem>
+            <para>calibre was added</para>
+          </listitem>
+          <listitem>
+            <para>other smaller packages were added</para>
+          </listitem>
+          <listitem>
+            <para>KDE update seems stable and working. It's in the openSUSE:Tumbleweed:KDE repo if
+              anyone wants to test it out now. I'll be working next few weeks to merge this into the
+              main openSUSE:Tumbleweed repo as my bandwidth allows.</para>
+          </listitem>
+          <listitem>
+            <para>There is a GNOME 3.0 Tumbleweed repo at openSUSE:Tumbleweed:GNOME. It's properly
+              building right now, but the same caveats remain for the main GNOME 3.0 repo (i.e.
+              network manager issues with KDE, and other minor stuff), so I can't merge it to the
+              main openSUSE:Tumbleweed repo just yet. I'll wait for these changes to settle down,
+              but if you want, feel free to try out the repo for your GNOME 3.0 systems running
+              Tumbleweed. I'll keep it up to date as the changes merge into the main GNOME 3.0
+              repo.</para>
+          </listitem>
+          <listitem>
+            <para>artwork questions were raised with one proposed logo already sent in. More to come
+              in this area hopefully soon.</para>
+          </listitem>
+          <listitem>
+            <para>There were a few "version downgrades" that happened as the upstream project
+              release number was changed to reflect the basesystem release number correctly. This
+              will probably continue to happen as this change is propagated throughout the openSUSE
+              build system to fix up these errors by the various developers. You can safely ignore
+              them when they happen.</para>
+          </listitem>
+        </itemizedlist>
+        <para>As always, if anyone knows of any packages they wish to see added to Tumbleweed,
+          please let me know.</para>
+        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for
+            Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
+          Any other questions, please ask them on the <ulink
+            url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing
+          list</ulink>.</para>
+        <!--($ ld: 23.4.11 sm $)-->      </blockquote>
+    </sect3>
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -694,45 +752,6 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
             </imageobject>
           </inlinemediaobject></para>
 <!--($ ld: 15.4.11 sm $)-->      </blockquote>
-    </sect3>
-    <sect3 role="tumbleweed">
-      <title>Tumbleweed Team</title>
-      <blockquote>
-        <title>
-          <ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-09-2011.html">Greg Kroah-Hartman: openSUSE Tumbleweed status for the week of April 9, 2011</ulink>
-        </title>
-        <para>Here&apos;s a short note as to the status of some recent activity in the
-          openSUSE:Tumbleweed repo:</para>
-        <itemizedlist>
-          <listitem>
-            <para>the kernel is at the 2.6.38 release level</para>
-          </listitem>
-          <listitem>
-            <para>a number of multimedia packages and libraries were updated to their Factory
-              level</para>
-          </listitem>
-          <listitem>
-            <para>Banshee 2 is now in the repository</para>
-          </listitem>
-          <listitem>
-            <para>LibreOffice 3.3.2 is in the repository.</para>
-          </listitem>
-          <listitem>
-            <para>I&apos;m considering adding GNOME:3.0 to openSUSE:Tumbleweed when the openSUSE GNOME
-              developers release it. It&apos;s building in a test repository right now pretty
-              successfully, but it might be a few more weeks until it seems &quot;ready&quot; enough.</para>
-          </listitem>
-        </itemizedlist>
-        <para>Note, it seems that when <emphasis role="italic">any</emphasis> package is added or
-          updated in the openSUSE:Tumbleweed repository, LibreOffice rebuilds itself. This can be
-          annoying for those on bandwidth-challenged network connections, and seems to be due to the
-          dependency chain that the LibreOffice developers have defined in their .spec files.
-          Hopefully this will be resolved for the next major release, but in the meantime, I&apos;ll try
-          to limit library updates in openSUSE:Tumbleweed to once a week at the most unless security
-          issues require it.</para>
-        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
-          Any other questions, please ask them on the <ulink url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing list</ulink>.</para>
-<!--($ ld: 10.4.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="wiki">
