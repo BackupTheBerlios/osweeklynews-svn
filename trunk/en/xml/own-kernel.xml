@@ -20,27 +20,35 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-   <ulink
-     url="http://www.h-online.com/open/features/Kernel-Log-native-KVM-tool-new-kernels-galore-1229981.html"
-    >h-online/Thorsten Leemhuis: Kernel Log: native KVM tool, new kernels galore</ulink>
-  </title>
-  <para><emphasis role="bold">Dissatisfied with the Qemu code, the developers have created a simple
-    emulation tool for KVM. The latest drivers for Intel graphics chips improve the kernel's support
-    for the video components of various current processors; a wealth of new long-term and stable
-    kernels fix bugs and security holes.</emphasis></para>
-  <para>In late March, Pekka Enberg <ulink url="http://thread.gmane.org/gmane.linux.kernel/1121307"
-    >announced</ulink> on the LKML the development of a native KVM tool. This tool emulates some of
-   the hardware components that guest systems access during operation; in KVM virtualisation, this
-   task is nowadays mostly handled by a QEMU derivative, created and maintained as part of the KVM
-   project. The KVM code within the kernel works in close co-operation with this emulation code,
-   ensuring that the required processor resources are allocated; however, a few hardware components
-   such as the interrupt controller are emulated by the KVM kernel code itself, because this
-   considerably enhances performance.</para>
-  <para>In his email, Enberg writes that his aim was to create a light-weight and clean KVM
-      emulation implementation that can boot Linux guests. The developer said that the tool is
-        <quote>[...] just a hobby, won't be big and professional like QEMU [...]</quote> – a play on
-      the words Linus Torvalds used in his first email about the development of Linux. (..)</para>
-<!-- ($ ld: 21.4.11 sm $) -->  </blockquote>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-native-KVM-tool-new-kernels-galore-1229981.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 2.6.39 (Part 2) – Storage and file
+        systems</ulink>
+    </title>
+    <para><emphasis role="bold">Various internal changes to the block layer that were specifically
+        mentioned by Linus Torvalds are designed to enhance performance and scalability. The Ext4
+        file system is also said to offer improvements in this respect. Still classified as
+        experimental, Btrfs now offers Batched Discard functionality, and LIO (Linux-Iscsi.org)
+        includes a loop-back function.</emphasis></para>
+    <para>At the end of last week, Andi Kleen published a <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1129793">series of patches</ulink> that
+      fixes a performance problem between the Virtual File System (VFS) and the security
+      infrastructure; this was an unwanted side effect from the <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-2-6-38-Part-2-File-systems-1192694.html"
+        >optimisation to the VFS</ulink> that was merged in Linux 2.6.38. Torvalds showed <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1129793/focus%3D52980">great
+        interest</ulink> in them and <ulink
+        url="http://git.kernel.org/linus/8c9e80ed276fc4b9c9fadf29d8bf6b3576112f1a">merged
+        one</ulink> into the main development tree; a second fix that is based on the three patches
+      from Kleen <ulink url="http://git.kernel.org/linus/9ade0cf440a1e5800dc68eef2e77b8d9d83a6dff"
+        >followed on Monday</ulink> and fixes the problem in the SELinux codebase. It's still
+      undecided if these or similar patches will make it into a stable kernel 2.6.38, as Torvalds
+      mentioned at one point that he was considering.</para>
+    <para>Torvalds did not yet produce a fifth release candidate for Linux 2.6.39 – but it should
+      emerge in the next few days, as the <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1128248">RC4</ulink> is already more than
+      one week old. (...)</para>
+<!-- ($ ld: 27.4.11 sm $) -->  </blockquote>
   <blockquote>
     <title><ulink
         url="http://www.h-online.com/open/features/Kernel-comment-Perseverance-pays-off-1232036.html"
