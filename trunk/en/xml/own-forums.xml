@@ -22,28 +22,28 @@
 <sect1 role="forums">
   <title>openSUSE Forums</title>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/other-forums/news-announcements/tech-news/457543-gnome-3-0-here.html">Gnome 3.0 is here</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/other-forums/news-announcements/tech-news/457543-gnome-3-0-here.htmlhttp://forums.opensuse.org/english/get-technical-help-here/install-boot-login/458607-windows-opensuse-11-4-dual-boot-problem.html">Windows and openSuse 11.4 dual boot problem</ulink></title>
     <para>
-      This message hit the forums, announcing the release of GNOME 3.0, also known as GNOME SHELL about two weeks ago. Like me, lots of users were curious about GNOME 3 on openSUSE, since we already were able to see the preview in openSUSE 11.4. So we all went out into the repos, waiting for packages to appear, and they did. This is where the happy part of the story ends for the moment. Dependency errors all over the place, if one ignored them, a desktopless system was one of the reported results. The GNOME Team made clear, that the packages are not ready for upgrading yet, so the Forums Team put out a warning message, visible to all forums users and visitors. It's strongly advised to wait for the OK sign by the GNOME Team, before using the GNOME STABLE 3.0 repo, since there's still some development going on to make sure we all can have smooth upgrade to GNOME 3.0. The good part is, that GNOME 3.0 LiveCD's, based on openSUSE 11.4 have been released. Impressions for those seem to be positive. 
+      Dual booting is still very popular. It allows you to use different operating systems for different tasks. Most of the times this works out of the box. However, there are situations, where users cannot access both operating systems, or can access only one of them. In the thread from the title a user cannot manage to get a working situation for his Win7 and openSUSE 11.4, read ahead to see what possible solutions are available.
     </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/458100-updating-kernel-11-4-a.html">Updating kernel 11.4</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/456493-opensuse-11-4-install-hard-drive-like-usb.html">Opensuse 11.4 install from Hard Drive Like usb</ulink></title>
     <para>
-      Less than a month after release of openSUSE 11.4, this user wants to run a newer kernel to get the maximum out of his new hardware. The first page of replies already shows the famous "if it ain't broken, don't fix it" phrase, but the thread's starter gets a lot of good advice, where it's pointed out that he/she is pretty much on his/her own when going for the "latest and greatest" of all kernels. It doesn't have to be that way though: switch to the Tumbleweed repos. They serve the latest stable packages concerning kernel etc. Packman also has separate Tumbleweed repos for 11.4. Please find more about Tumbleweed below, and in previous versions of the openSUSE Weekly News.
+      The last couple of years we've seen an increase of devices that do not have a CD/DVD drive, so installing from traditional media is not possible. This issue was met by using technology that allows copying the install media images to USB devices, which can be used to install on CD/DVD driveless machines. Here we have a user that wants to use an extra internal hard disk to install from. Is this possible? The answer is yes, read the thread to find out how it's done.
       </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/forums/english/get-technical-help-here/tumbleweed/457487-howto-upgrade-opensuse-11-4-tumbleweed.html">How to upgrade to openSUSE 11.4 Tumbleweed</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/458529-gnome-3-11-4-known-issues-workarounds.html">Gnome 3 and 11.4 Known Issues and Workarounds</ulink></title>
     <para>
-      You installed openSUSE 11.4, and looking for newer kernel, latest, yet stable developments? Tumbleweed is there for you. A quote from the openSUSE Portal page: "The Tumbleweed project aims to provide a rolling updates version of openSUSE containing the latest stable versions instead of relying on rigid periodic release cycles. The project does this for users that want the newest, but stable software. The difference to Factory is that Factory is bleeding edge, often experimental, not yet stabilized software that needs more work to become useful. Tumbleweed is newest stable and ready for daily use.". This thread has a very nice HOWTO by our administrator swerdna. Check it out, if the above has risen your curiosity.
+      Now that GNOME 3 is here, and packages for openSUSE 11.4 have been officially released and approved, we see that some users have issues / problems after upgrading. One of our members started a thread to gather these issues / problems and collect workarounds / solutions for those. Although it's far from complete, the thread is giving a good impression of what one can expect when upgrading to GNOME 3. The time does not seem to be ready yet for KDE users that have GNOME installed as well to perform an upgrade yet. We'll follow the developments and let you know.
       </para>
   </blockquote>
   <blockquote>
-    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/458251-question-about-linux-security-i-found-something-strange.html">Question about linux security - I found something strange</ulink></title>
+    <title><ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/458706-upgrade-suse-linux-9-2-opensuse-11-4-a.html">Upgrade SUSE Linux 9.2 to OpenSUSE 11.4?</ulink></title>
     <para>
-      Linux has a name out there, when it comes to the security part. This thread is opened by a user who thinks he hit a linux security issue, since he can run shell scripts/installers from a USB device. He found out that some script even runs without having the executable flag on, and is worried about being able to install things without having root permissions. Nice explanations about how things work, about what happens if an ordinary user runs installers and about linux security in general. Very interesting read. 
+      This title describes a returning question: Can I upgrade version X to version Y. In general, one could say, that this is possible, if versions are not too far apart. In this case: No. Development in linux has made giant leaps forward in such a way, that doing what's suggested in the title would and will only lead to massive trouble. Read the thread to see why.
       </para>
-    <!-- ($ ld: 19.04.2011 gl $) -->
+    <!-- ($ ld: 28.04.2011 gl $) -->
   </blockquote>
 </sect1>
