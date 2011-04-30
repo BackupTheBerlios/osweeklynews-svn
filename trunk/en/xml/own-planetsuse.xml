@@ -22,53 +22,24 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink
-        url="http://www.vuntz.net/journal/post/2011/04/18/Taking-my-release-manager-hat-off">Vincent
-        Untz: Taking my release manager hat off</ulink></title>
-    <para>Back in June 2005, I noticed that we were lacking some <quote>tarballs due</quote> mails
-      for the GNOME 2.11 release cycle and I sent a <ulink
-        url="http://mail.gnome.org/archives/release-team/2005-June/msg00003.html">small mail</ulink>
-      to get this fixed. This is how I got trapped: after this mail got read by <ulink
-        url="http://blogs.gnome.org/markmc/">Mark McLoughlin</ulink>, he suggested I could replace
-      him on the GNOME release team. A few years later, in September 2007, Elijah chose to <ulink
-        url="http://mail.gnome.org/archives/desktop-devel-list/2007-September/msg00612.html">pass
-        his GNOME release manager hat</ulink> to me. And now, in April 2011, it's time for me to
-      pass the baton: <ulink url="http://elleuca.blogspot.com/">Luca Ferretti</ulink> is replacing
-      me on the release team (he joined as a trainee in the past few months), and my good friend
-        <ulink url="http://www.0d.be/">Frederic Peters</ulink> becomes the new GNOME release
-      manager.</para>    
-    <!--($ ld: 23.4.11 sm $)-->    
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://masterpatricko.blogspot.com/2011/04/development-and-build-environments.html"
-        >Tejas Guruswamy: Development and build environments: the search -- part 1</ulink></title>
-    <para>One of the problems I often face is keeping my productive system I use for work, separate
-      from my development environment with broken versions of programs and loads of extra packages
-      installed. </para>
-    <para>For a while my solution was to create virtual machines in <ulink
-        url="http://www.virtualbox.org/">VirtualBox</ulink> - which works great but has a very high
-      overhead for the task. Especially when I am away from my desktop and only have my slightly
-      underpowered laptop (no VT-x extensions, only 2GB RAM), running an entire virtualized system
-      just to try out some packaging changes was painful.</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</ulink></para>
-    <!--($ ld: 23.4.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://masterpatricko.blogspot.com/2011/04/development-and-build-environments_20.html"
-        >Tejas Guruswamy: Development and build environments: schroot on openSUSE -- part
-      2</ulink></title>
-    <para>So in <ulink
-        url="http://masterpatricko.blogspot.com/2011/04/development-and-build-environments.html"
-        >part 1</ulink> I detailed my search for something that would allow my development and
-      productive environments to coexist on the same machine, and how I discovered schroot.</para>
-    <para><ulink url="http://packages.debian.org/search?keywords=schroot">Schroot</ulink> is a
-      "chroot manager" - it allows configuring chroots so that users on the system can run shells
-      and processes in them, and it takes care of all the setup/tear down I described at the end of
-      my previous post. It is a part of the Debian buildtools, for building Debian packages in a
-      safe and repeatable environment, just like openSUSE uses build.</para>
-    <!--($ ld: 23.4.11 sm $)-->
-  </blockquote>
+    <title><ulink url="http://www.kdedevelopers.org/node/4417">Will Stephenson: Tokamak 5: The
+        Pancake Sprint</ulink></title>
+    <para>Flat things are good. I'm at Tokamak 5 in Nijmegen, the KDE sprint where we plough a deep
+      furrow into the future of the Free Desktop and sow KDE seeds that will grow into exciting,
+      novel interfaces and make the stuff we already have even faster and more reliable. </para>
+    <para>So what about the flat things I mentioned? We've just guzzled our way through a stack of
+      pancakes of geological proportions, produced for us by pancake-flipper and KDE allrounder
+        <emphasis role="italic">par excellence</emphasis><ulink url="http://euroquis.nl/bobulate/"
+        >Adriaan de Groot</ulink>. Other good flat things are tablets (I won't call them 'tablet
+      computers' in case I sound old fashioned), which are in evidence here in a variety of makes
+      and models. We're working on several things that will make KDE on tablets as easy and fun to
+      consume as Adriaan's pancakes. </para>
+    <para>I'm here for a few days to make KConfigXT, KDE's proven automatic configuration
+      persistence layer, work with user interfaces programmed in Qt Quick, and to support the <ulink
+        url="http://community.kde.org/Plasma/Active">Plasma Active</ulink> work going on in the
+        <ulink url="https://build.opensuse.org/project/monitor?project=KDE%3AActive">openSUSE Build
+        Service</ulink> with my <ulink url="http://en.opensuse.org/openSUSE:Boosters">geeko
+        skills</ulink>.</para>   
+    <!--($ ld: 30.4.11 sm $)-->    
+  </blockquote> 
 </sect1>

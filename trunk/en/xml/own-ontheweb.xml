@@ -175,6 +175,25 @@ A virtual Easter egg is an intentional hidden message, in-joke or feature in a w
         further into the background. (...)</para>
       <!--($ ld: 30.4.11 sm $)-->
     </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.techrepublic.com/blog/opensource/introduction-to-selinux-dont-let-complexity-scare-you-off/2447">Techrepublic/Vincent Danen: Introduction to SELinux: Don&apos;t let complexity scare you off</ulink>
+      </title>
+      <para>akeaway: Vincent Danen acknowledges that some of the complexity of SELinux is
+        intimidating, but if you spend some time with it, the payoff is heightened security and
+        better control of your system.</para>
+      <para>Most people who know Linux have at least heard about SELinux. SELinux, or
+        Security-Enhanced Linux, was originally developed primarily by the NSA (U.S. National
+        Security Agency), as an implementation of the Flask operating system security architecture.
+        Flask implements MAC (Mandatory Access Control), a means of designating what processes have
+        access to what resources (be they network ports, files, and so on). A lot of work has been
+        done to make SELinux as easy to use as possible, although at first glance it does look
+        hideously complex.</para>
+      <para>Since 2003, SELinux has been integrated into the mainline Linux kernel, and is fully
+        supported in distributions such as Red Hat Enterprise Linux, Fedora, CentOS, Debian
+        (disabled by default), Ubuntu, openSUSE, Hardened Gentoo, and others. On Red Hat Enterprise
+        Linux and Fedora, SELinux is enabled at installation.</para>
+      <!-- ($ Id: 27.4.11 sm $)-->    </blockquote>
   </sect2>
 <!--
   <sect2>

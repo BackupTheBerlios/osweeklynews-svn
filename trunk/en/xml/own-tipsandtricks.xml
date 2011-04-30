@@ -19,34 +19,19 @@
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
   <sect2>
-    <title>For Desktop Users</title>
-    <blockquote>
-      <title>
-        <ulink url="http://www.techrepublic.com/blog/opensource/introduction-to-selinux-dont-let-complexity-scare-you-off/2447">Techrepublic/Vincent Danen: Introduction to SELinux: Don&apos;t let complexity scare you off</ulink>
-      </title>
-      <para>akeaway: Vincent Danen acknowledges that some of the complexity of SELinux is
-        intimidating, but if you spend some time with it, the payoff is heightened security and
-        better control of your system.</para>
-      <para>Most people who know Linux have at least heard about SELinux. SELinux, or
-        Security-Enhanced Linux, was originally developed primarily by the NSA (U.S. National
-        Security Agency), as an implementation of the Flask operating system security architecture.
-        Flask implements MAC (Mandatory Access Control), a means of designating what processes have
-        access to what resources (be they network ports, files, and so on). A lot of work has been
-        done to make SELinux as easy to use as possible, although at first glance it does look
-        hideously complex.</para>
-      <para>Since 2003, SELinux has been integrated into the mainline Linux kernel, and is fully
-        supported in distributions such as Red Hat Enterprise Linux, Fedora, CentOS, Debian
-        (disabled by default), Ubuntu, openSUSE, Hardened Gentoo, and others. On Red Hat Enterprise
-        Linux and Fedora, SELinux is enabled at installation.</para>
-<!-- ($ Id: 27.4.11 sm $)-->    </blockquote>
+    <title>For Desktop Users</title>    
     <blockquote>
       <title>
         <ulink url="http://scribblesandsnaps.wordpress.com/2011/04/26/generate-html-photo-galleries-with-digikam/">Scribbles and Snaps: Generate HTML Photo Galleries with digiKam</ulink>
       </title>
-      <para>Now and then, office-type documents need to be converted. The latex users have always been able to produce a variety of formats from the command line, but for the OpenOffice/LibreOffice users, manual labor has been the solution. That changes with unoconv. Now you can convert to most file formats directly from the command line.
-
-</para>
-      <para><emphasis role="bold">Unoconv</emphasis> is handy for many tasks. I commonly use it to convert all documents in a directory to PDFs, or MS Office compatible formats for clients. The beauty of it is that these previously tedious tasks are now one-liners. (...)</para>
+      <para>There are so many clever ways to share photos on the Web that the idea of creating a
+        static HTML photo gallery may sound positively obsolete. But in certain situations, the
+        ability to turn a bunch of photos into an HTML gallery can come in rather handy. For
+        starters, serving a bunch of static HTML pages is less complicated than setting up a
+        dedicated photo sharing solution, which can be useful if you want to host a photo gallery on
+        your own server. An HTML gallery usually requires less resources, too, so you can host it on
+        modest hardware. Also, you can store an HTML gallery on a USB stick and use it as your photo
+        portfolio you can display even when offline. (...)</para>
 <!-- ($ Id: 27.4.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
@@ -103,7 +88,9 @@ So, in this article we’ll see 2 commands that can help us in keeping under con
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script">Novell Cool Solutions/jmeldrum: jmeldrum&apos;s picture ssh-keygen: password-less SSH login script</ulink>
+        <ulink
+          url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script"
+          >Novell Cool Solutions/jmeldrum: ssh-keygen: password-less SSH login script</ulink>
       </title>
       <para><emphasis role="bold">license</emphasis>: 
 GPLv2
