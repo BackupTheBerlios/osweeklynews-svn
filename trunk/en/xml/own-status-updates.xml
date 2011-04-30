@@ -364,89 +364,38 @@
         <para>To download the image, go to <ulink url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink></para>
 <!--($ ld: 23.4.11 sm $)-->      </blockquote>
     </sect3>
-<!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>      
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/">Sebastian Kügler: Plasma Active – A Desirable User Experience Encompassing the Device Spectrum</ulink>
+          <ulink
+            url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
+            >Aaron Seigo: First KDE Plasma Active app: Calligra office suite</ulink>
         </title>
-        <para>Today, I’d like to announce to a wider audience a project we have been working on in
-          and beyond the Plasma team. Its goal is to “<emphasis role="bold">Create a desirable user experience encompassing a spectrum of devices</emphasis>“, and it is called <emphasis role="bold">Plasma Active</emphasis>. A couple of things make Plasma Active special.
-          First, the driver is the <emphasis role="italic">desirable user experience</emphasis>.
-          That means that we want to create something, people want, and people want to use. It means
-          we are less technology-focused, but are taken a user-centered approach. Second, we are not
-          targeting a single device, or a narrowly-defined class of devices. Plasma Active is made
-          to run on a <emphasis role="italic">spectrum of devices</emphasis> that make up the user
-          experience together. Devices change, and so does the way the user interacts with them. By
-          strongly separating data and visualisation / interaction, we do not re-invent the wheel
-          but adapt to the requirements and expectations of a device, and about how devices work
-          together for the user.</para>
-        <para><emphasis role="bold">Running Plasma Active</emphasis></para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="40%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/active-viewpad_thumb.jpg"/>
-          </imageobject>
-        </mediaobject>
-        <para>We have a basic, Plasma-based shell right now, which runs on three target devices —
-          and probably some more, but that’s what we’ve tested so far. It performs well, runs stable
-          and is usable with a touch-screen. While Plasma Tablet is quite fun already, do not expect
-          release quality yet, as it is a snapshot of our efforts. Find the download location for
-          the Balsam Professional live image on the <ulink url="http://community.kde.org/Plasma/Active/Installation#Balsam_Professional_Live_Image">wiki</ulink>.</para>
-        <para><ulink url="http://www.open-slx.com">open-slx</ulink> has created a Balsam
-          Professional live image based on openSUSE 11.4 running Plasma Active. open-slx (my
-          employer) are developing Plasma Active for openSUSE in the openSUSE Build Service. We’ve
-          also created packages which can be installed online on top of openSUSE 11.4. You can find
-            <ulink url="http://community.kde.org/Plasma/Active/Installation">installation instructions</ulink> in our Wiki, also for Meego.</para>
-        <para>Of course you want to run Plasma Active on a ‘real’ device, we currently recommend
-          either the ExoPC (WeTab), the Lenovo Ideapad, or a Viewsonic Viewpad 10. You can find
-          instructions for devices in the <ulink url="http://community.kde.org/Plasma/Active/Devices">Wiki</ulink></para>
-        <para>Youtube: <ulink url="http://www.youtube.com/watch?v=4GAFfjscVyg">http://www.youtube.com/watch?v=4GAFfjscVyg</ulink></para>
-        <para><emphasis role="bold">Status</emphasis></para>
-        <para>There is still a long way to go. We’re missing key functionality, default
-          applications, optimizations all over the place, and more. There is nothing fundamental
-          that holds us back to bringing the full experience users expect to tablet devices, based
-          on our well-known, beloved, proven software stack. We are focusing our first release,
-          which is planned for September already, on tablet computers. Since fixing a bunch of
-          showstoppers over the past two weeks, I’ve actually started using Plasma Active for some
-          light reading tasks (mostly web and RSS), and I’ve got to say: It rocks your socks. Being
-          able to use a tablet computer which is based on Free software that you created yourself,
-          is real fun. I’ve also handed it to friends who came by, and while they understood it’s an
-          early prototype, I had a really hard time getting my gadget back. And that is only just
-          the beginning. We have an excellent base to build a complete experience upon. In other
-          words, it’s the perfect time to jump in and become part of something great and to help it
-          also making it something really big.</para>
-        <para><emphasis role="bold">Different goals need different processes</emphasis></para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="40%" fileref="http://vizzzion.org/blog/wp-content/uploads/2011/04/plasma-active-snap1-default_thumb.png"/>
-          </imageobject>
-        </mediaobject>
-        <para>When we put the pieces for Active together, it quickly became clear that if we want to
-          succeed, we also have to <ulink url="http://vizzzion.org/blog/2011/04/of-rockstars-unicorns-and-isaac-newton/">rethink</ulink> some of our collaboration processes. One of my pet peeves has always
-          been that different essential parts of what the user gets in her hands come from different
-          teams. If we want to put something desirable into the hands of our users we need to pull
-          in the same direction. While we needed different skills, these skills have to align in how
-          they’re applied. This makes communication more natural, leads to a more focused process,
-          and ultimately a better result. It’s clear that such an endeavour will only work if enough
-          people in our communities, and the communities around it think that this is a worthwhile
-          thing to spend their time on, and that we can get the people that do to pull in the same
-          direction. The good news, however is that we’ve been able to create a stable platform to
-          do this, in terms of tools, processes, collaboration models and not at least software.
-          That platform is <ulink url="http://community.kde.org/Plasma/Active">
-            <emphasis role="bold">Plasma Active</emphasis>
-          </ulink>.</para>
-        <para><emphasis role="bold">Sounds interesting?</emphasis></para>
-        <para>If you want to help us shape Plasma Active, and bring its vision to reality, we would
-          like to invite you. Start with having a look at our list of <ulink url="http://community.kde.org/Plasma/Active/Tasks">tasks</ulink>, and if you find
-          something you can help with, tell us, <ulink url="https://mail.kde.org/mailman/listinfo/active">subscribe</ulink> to the Plasma
-          Active mailing list, or join #active on Freenode’s IRC network. We have documented our
-          ideas, concepts and processes in the <ulink url="http://community.kde.org/Plasma/Active">wiki</ulink>.</para>
-        <para>In the coming weeks, we will keep you updated about Plasma Active’s progress, and we
-          will be able to reveal more of our vision as we give Plasma Active shape by making it
-          become reality.</para>
+        <para>(<emphasis role="bold">Note</emphasis>: This post is about Plasma Active, a community
+          collaboration to bring KDE software to consumer devices. To learn more about Plasma
+          Active, <ulink url="http://aseigo.blogspot.com/2011/04/active-routes.html">read this blog
+            post</ulink>.) </para>
+        <para>Today, Plasma Active is proud to announce our first <ulink
+            url="http://aseigo.blogspot.com/2011/04/plasma-active-active-apps.html">Active
+            App</ulink>, or rather our first Active App <emphasis role="italic">suite</emphasis>.
+          While interacting with what are generally referred to as "office documents" isn't what we
+          may think of as "sexy" it's a very important set of functionality.</para>
+        <para>For Plasma Active, we've joined forces with <ulink
+            url="http://www.calligra-suite.org/">Calligra</ulink> which is a suite of office
+          applications which uses the KDE Platform and has an active mobile and consumer electronics
+          effort.</para>
+        <para>Calligra Active is currently in alpha, but this refers primarily to the touch
+          interface. The file format compatibility with Open Document Format and Microsoft's Office
+          Open XML is some of the best to be found in a mobile form factor. The Calligra team is
+          currently working on a transition of the interface to QtQuick, but Plasma Active is
+          already including the current mobile-targeted interface in <ulink
+            url="http://aseigo.blogspot.com/2011/04/plasma-active-operating-systems.html">the
+            operating system images</ulink>. (...)</para>
+        <!--($ ld: 30.4.11 sm $)-->
       </blockquote>
-    </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
