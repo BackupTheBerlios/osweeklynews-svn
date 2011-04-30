@@ -246,10 +246,9 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->       
-    <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://monarchieundalltag.wordpress.com/2011/04/12/obs-2-2-72-released-switch-to-apache-and-ssl-as-default/">Adrian Schröter: OBS 2.2.72 released, switch to apache and SSL as default</ulink>
@@ -279,8 +278,7 @@
         <para>lighttpd setups should still work, but please note that lighttpd is running with an
           own user id (“lighttpd”) and the default is now the generic “wwwrun” user for some
           directories.</para>
-      </blockquote> -->
-      <formalpara>
+      </blockquote> -->      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -328,8 +326,7 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->   
-    <sect3 role="gnometeam">     
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
@@ -351,12 +348,11 @@
         </itemizedlist>
         <para>A new live image will be available shortly, based on this new repository (but this
           will be for another blog post).</para>
-        <!--($ ld: 23.4.11 sm $)-->
-      </blockquote>
+<!--($ ld: 23.4.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink
-            url="http://blog.crozat.net/2011/04/gnome-3-live-image-version-110-released.html"
-            >Frédéric Crozat: GNOME 3 Live image version 1.1.0 released</ulink></title>
+        <title>
+          <ulink url="http://blog.crozat.net/2011/04/gnome-3-live-image-version-110-released.html">Frédéric Crozat: GNOME 3 Live image version 1.1.0 released</ulink>
+        </title>
         <para>In the past week, we have been working on both GNOME:STABLE:3.0 repository and on
           creating a GNOME 3 Promo DVD, based on this live image, but with more content on it
           (LibreOffice, Banshee 2.0, etc..). Because of this, image size has increased a bit
@@ -365,10 +361,8 @@
           live image (problem was fixed once the image was installed).</para>
         <para>This new image (1.1.0) is now based on GNOME:STABLE:3.0 repository and contains all
           security and bugfix updates for openSUSE 11.4.</para>
-        <para>To download the image, go to <ulink url="http://www.gnome.org/getting-gnome/"
-            >http://www.gnome.org/getting-gnome/</ulink></para>
-        <!--($ ld: 23.4.11 sm $)-->
-      </blockquote>
+        <para>To download the image, go to <ulink url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink></para>
+<!--($ ld: 23.4.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="kdeteam">
@@ -526,7 +520,7 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 346)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 347)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
@@ -545,14 +539,14 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 125)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 127)</ulink>
           </title>
           <para>We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 115)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 116)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -568,7 +562,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 94)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 95)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -581,48 +575,42 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 23.4.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 30.4.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312258">Ubuntu style encrypted home directories</ulink>
+            <ulink url="https://features.opensuse.org/312275">automated bugreporting - whole system</ulink>
           </title>
-          <para>Ubuntu has a very neat and useful implementation of encryption for users. Using ecryptfs they allow for each user to have his/her data encrypted without requiring one master password being entered at boot time. It is unlocked along with your regular login making it entirely seamless.
-
+          <para>It is a nasty jop to report bugs to the openSUSE bugzilla by hand.
 </para>
-          <para>It would be nice to see similar functionality easily available when creating users in openSUSE.</para>
+          <para>A automated bugreporting for the whole openSUSE OS like in KDE (drkonqi) would be great.
+It would save time for the user, improve the frequency of bugreports for the project(I guess many bugs donÂ´t find the way to bugzilla), and a coupling to a stacktrace or logfiles would improve the quality of the bugreports in the openSUSE bugzilla.
+</para>
+          <para>Good for the user, good for the quality of openSUSE, not so good for a developer(-&gt;many work:)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312270">Pulseaudio + Equalizer package</ulink>
+            <ulink url="https://features.opensuse.org/312276">Add a &apos;Skip all&apos; option to YaST&apos;s install error dialog....</ulink>
           </title>
-          <para>I&apos;ve recently had a need for a system-wide equalizer. Since I&apos;m already running Suse 11.4 and pulse I looked around a bit and the pulseaudio equalizer seems to fit the bill. I found the repository for 64-bit here:<ulink url="http://download.opensuse.org/repositories/home:/jenewton/openSUSE_11.4/x86_64/">http://download.opensuse.org/repositories/home:/jenewton/openSUSE_11.4/x86_64/</ulink>
-and the git site here:http://gitorious.org/pulseaudio-equalizer.
-Unfortunately the repository has a older version of pulse than I have installed currently.
-
+          <para>As someone whom regularly uses the KDE OBS&apos; for latest builds, I normally run into the issue that packages are updated faster than when I apply the changes. This causes YaST to constantly pop-up that a given package could not be applied, and then a second pop-up for the action to take.
 </para>
-          <para>Please consider this a request for updated pulse rpms that contain the equalizer.</para>
+          <para>First, can we please cut this down to ONE pop-up, not two? Second, for the actions, can we please have an option to &apos;skip all missing packages&apos; or the like? Obviously, this would have to warn the user that their system may be left in an inconsistent state, but I&apos;d rather that than chasing pop-ups.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312272">Move /sbin/lsinitrd, /sbin/lsmod, /sbin/lspci, /sbin/lspcmcia to %_bindir</ulink>
+            <ulink url="https://features.opensuse.org/312277">Include GNOME Tweak Tool</ulink>
           </title>
-          <para>lsinitrd, lsmod, lspci, lspcmcia are located in /sbin and so only root can access them.
-The &apos;ls&apos; prefix indicates that these programs only list some information which should be accessible by all users.
-</para>
-          <para>lsusb is in %_bindir (=/usr/bin).
-</para>
-          <para>If you were consequently lsusb also would have to be in /sbin or /usr/sbin ...</para>
+          <para>Recently I have tried GNOME 3. There are several settings that you once could customize in GNOME 2 that you can&apos;t do in GNOME 3. There is a package called gnome-tweak-tool, that lets you customize things like the Theme again. This should be included on the distribution DVD (and perhaps Live CD too) for openSUSE 12.1.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312273">fix bug in yast disk</ulink>
+            <ulink url="https://features.opensuse.org/312280">Add gnome-achievements</ulink>
           </title>
-          <para>(...) The current functionality is a bug and I have long ago reported it as such. Disks are addressed by logical sectors this millenium. It&apos;s a bug to show an obsolete, not-convertible unit. serves no purpose unit. The fix to that bug is to show the relevant unit. </para>
+          <para>Hamster can use trophies from <ulink url="https://github.com/tbaugis/gnome-achievements">https://github.com/tbaugis/gnome-achievements</ulink> so we probably want to take a look at packaging this.</para>
         </blockquote>
-<!-- ($ ld: 23.4.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 30.4.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -655,8 +643,7 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
           April.</para>
         <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="testing">     
       <title>Testing Team</title>
       <blockquote>
@@ -675,8 +662,7 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
         <para>Our next meeting will be May 9 at 1700 UTC. This meeting is scheduled to follow the
           release of 12.1 M1.</para>
     </blockquote>
-    </sect3> -->
-    <sect3 role="translationteam">
+    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
@@ -692,10 +678,9 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
       <title>Tumbleweed Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-22-2011.html">Greg
-            Kroah-Hartman: openSUSE Tumbleweed status for the week of April 22, 2011</ulink>
+          <ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-22-2011.html">Greg Kroah-Hartman: openSUSE Tumbleweed status for the week of April 22, 2011</ulink>
         </title>
-        <para>Here's a short note as to the status of some recent activity in the
+        <para>Here&apos;s a short note as to the status of some recent activity in the
           openSUSE:Tumbleweed repo:</para>
         <itemizedlist>
           <listitem>
@@ -712,17 +697,17 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
             <para>other smaller packages were added</para>
           </listitem>
           <listitem>
-            <para>KDE update seems stable and working. It's in the openSUSE:Tumbleweed:KDE repo if
-              anyone wants to test it out now. I'll be working next few weeks to merge this into the
+            <para>KDE update seems stable and working. It&apos;s in the openSUSE:Tumbleweed:KDE repo if
+              anyone wants to test it out now. I&apos;ll be working next few weeks to merge this into the
               main openSUSE:Tumbleweed repo as my bandwidth allows.</para>
           </listitem>
           <listitem>
-            <para>There is a GNOME 3.0 Tumbleweed repo at openSUSE:Tumbleweed:GNOME. It's properly
+            <para>There is a GNOME 3.0 Tumbleweed repo at openSUSE:Tumbleweed:GNOME. It&apos;s properly
               building right now, but the same caveats remain for the main GNOME 3.0 repo (i.e.
-              network manager issues with KDE, and other minor stuff), so I can't merge it to the
-              main openSUSE:Tumbleweed repo just yet. I'll wait for these changes to settle down,
+              network manager issues with KDE, and other minor stuff), so I can&apos;t merge it to the
+              main openSUSE:Tumbleweed repo just yet. I&apos;ll wait for these changes to settle down,
               but if you want, feel free to try out the repo for your GNOME 3.0 systems running
-              Tumbleweed. I'll keep it up to date as the changes merge into the main GNOME 3.0
+              Tumbleweed. I&apos;ll keep it up to date as the changes merge into the main GNOME 3.0
               repo.</para>
           </listitem>
           <listitem>
@@ -730,7 +715,7 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
               in this area hopefully soon.</para>
           </listitem>
           <listitem>
-            <para>There were a few "version downgrades" that happened as the upstream project
+            <para>There were a few &quot;version downgrades&quot; that happened as the upstream project
               release number was changed to reflect the basesystem release number correctly. This
               will probably continue to happen as this change is propagated throughout the openSUSE
               build system to fix up these errors by the various developers. You can safely ignore
@@ -739,14 +724,11 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
         </itemizedlist>
         <para>As always, if anyone knows of any packages they wish to see added to Tumbleweed,
           please let me know.</para>
-        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for
-            Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
-          Any other questions, please ask them on the <ulink
-            url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing
-          list</ulink>.</para>
-        <!--($ ld: 23.4.11 sm $)-->      </blockquote>
+        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
+          Any other questions, please ask them on the <ulink url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing list</ulink>.</para>
+<!--($ ld: 23.4.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -769,8 +751,7 @@ The &apos;ls&apos; prefix indicates that these programs only list some informati
             </imageobject>
           </inlinemediaobject></para>
      </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
 

@@ -22,10 +22,7 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.techrepublic.com/blog/opensource/introduction-to-selinux-dont-let-complexity-scare-you-off/2447"
-          >Techrepublic/Vincent Danen: Introduction to SELinux: Don't let complexity scare you
-          off</ulink>
+        <ulink url="http://www.techrepublic.com/blog/opensource/introduction-to-selinux-dont-let-complexity-scare-you-off/2447">Techrepublic/Vincent Danen: Introduction to SELinux: Don&apos;t let complexity scare you off</ulink>
       </title>
       <para>akeaway: Vincent Danen acknowledges that some of the complexity of SELinux is
         intimidating, but if you spend some time with it, the payoff is heightened security and
@@ -44,9 +41,7 @@
 <!-- ($ Id: 27.4.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink
-          url="http://scribblesandsnaps.wordpress.com/2011/04/26/generate-html-photo-galleries-with-digikam/"
-          >Scribbles and Snaps: Generate HTML Photo Galleries with digiKam</ulink>
+        <ulink url="http://scribblesandsnaps.wordpress.com/2011/04/26/generate-html-photo-galleries-with-digikam/">Scribbles and Snaps: Generate HTML Photo Galleries with digiKam</ulink>
       </title>
       <para>Now and then, office-type documents need to be converted. The latex users have always been able to produce a variety of formats from the command line, but for the OpenOffice/LibreOffice users, manual labor has been the solution. That changes with unoconv. Now you can convert to most file formats directly from the command line.
 
@@ -54,9 +49,10 @@
       <para><emphasis role="bold">Unoconv</emphasis> is handy for many tasks. I commonly use it to convert all documents in a directory to PDFs, or MS Office compatible formats for clients. The beauty of it is that these previously tedious tasks are now one-liners. (...)</para>
 <!-- ($ Id: 27.4.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://www.linuxjournal.com/content/using-styles-scribus"
-          >LinuxJournal/Bruce Byfield: Using Styles in Scribus</ulink></title>
-      <para>If you don't include master pages (which are really styles under another name), then
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/using-styles-scribus">LinuxJournal/Bruce Byfield: Using Styles in Scribus</ulink>
+      </title>
+      <para>If you don&apos;t include master pages (which are really styles under another name), then
         Scribus supports three types of hierarchial styles: lines, character, and paragraph. As in
         any other self-respecting word processor or layout application, these styles allow you to
         apply detailed sets of formatting options quickly, without having to change each instance of
@@ -70,130 +66,56 @@
         key. For paragraph styles, you also have the option of selecting Edit Text from the
         right-click menu of a selected text frame, or selecting Ctrl+T to open the Story
         Editor.</para>
-      <!--($ ld: 27.4.11 sm $)-->
-    </blockquote>
+<!--($ ld: 27.4.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://lslezak.blogspot.com/2011/04/installing-latest-intel-graphics-driver.html"
-          >Ladislav Slezak: Installing latest Intel graphics driver to openSUSE 11.4</ulink></title>
-      <para>I have upgraded my home PC to Intel i5-2500K CPU (Sandy Bridge family). The CPU has a
-        new integrated graphics core (Intel HD 3000) and it works out-of-box in openSUSE-11.4
-        including 3D and composition. The only problem I noticed are broken popup menus and buttons
-        in title bars in KDE. Esp. broken popups are very annoying as they are hardly usable, see
-        e.g. <ulink url="https://bugs.freedesktop.org/attachment.cgi?id=45061"
-          >https://bugs.freedesktop.org/attachment.cgi?id=45061</ulink>.</para>
-      <para>Fortunately Intel has released updated X driver version 2.15 which fixes this problem.
-        Here is a step by step how to install the updated driver in openSUSE 11.4.</para>
-      <itemizedlist>
-        <listitem>
-          <para>Install xorg-x11-server-sdk
-            package<programlisting>sudo zypper in xorg-x11-server-sdk</programlisting></para>
-        </listitem>
-        <listitem>
-          <para>Download <ulink
-              url="http://xorg.freedesktop.org/archive/individual/driver/xf86-video-intel-2.15.0.tar.bz2"
-              >http://xorg.freedesktop.org/archive/individual/driver/xf86-video-intel-2.15.0.tar.bz2</ulink></para>
-        </listitem>
-        <listitem>
-          <para>Unpack the
-            archive<programlisting>tar xfjv xf86-video-intel-2.15.0.tar.bz2</programlisting></para>
-        </listitem>
-        <listitem>
-          <para>Now compile the
-            driver:<programlisting>cd xf86-video-intel-2.15.0./configure --prefix=/usr --libdir=/usr/lib64make</programlisting></para>
-          <para>(If you have installed 32-bit system then use /usr/lib path in the second
-            command.)</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Install the driver (will overwrite the files from RPM
-            package)<programlisting>sudo make install</programlisting></para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Restart the X server (simply relogin to a new session)</para>
-        </listitem>
-      </itemizedlist>
-      <para>Voila, now your system should use the new driver and the artifacts in the KDE popups
-        should be gone!</para>
-      <para>Maybe someone can pack the driver into a RPM package in the openSUSE build service, but
-        for me this solution is sufficient... </para>
-      <!--($ ld: 23.4.11 sm $)-->
-    </blockquote>
+      <title>
+        <ulink url="http://www.unixmen.com/linux-tutorials/1659-31-best-tutorials-of-inkscape">Unixmen/ayesha ahmed: 31 Great Tutorials for Inkscape! </ulink>
+      </title>
+      <para><ulink url="http://www.inkscape.org/">Inkscape</ulink> is an open source vector graphics editor. Inkscape is cross-platform and runs on Unix based OS, Windows and Mac (typically under X11). In this post we have inkscape_logoattempted to gather some best tutorials around the web, categorizing them into various groups, organized from novice users to advance level. If you have not installed inkscape then you can follow the following tutorial. (...)</para>
+<!-- ($ Id: 30.4.11 sat $)-->    </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/shell-scripts/understanding-the-for-loop/">BashShell.net/mike: 10 Days of Loops</ulink>
+        <ulink url="http://www.linuxaria.com/howto/check-your-disk-usage-with-df-and-du?lang=en">Linuxaria: Check your disk usage with df and du</ulink>
       </title>
-      <para>Our &quot;10 Days of Loops&quot; tutorial series is in full swing. This short-course includes tutorials and exercises which are rolled out each day in an effort to help admins use loops more confidently.
+      <para>As system administrator , but also as common user on my PC, one of the more common problem is the fill up at 100% of a filesystem.
+So, in this article we’ll see 2 commands that can help us in keeping under control or check the space used in every filesystem and in his directory.
 
-    </para>
-      <para>* <ulink url="http://bashshell.net/shell-scripts/understanding-the-for-loop/">Understanding the for Loop</ulink>
-    </para>
-      <para>* <ulink url="http://bashshell.net/shell-scripts/for-loop-example/">A for Loop Example</ulink>
-    </para>
-      <para>* <ulink url="http://bashshell.net/shell-scripts/practice-with-while-loops/">Practice with while Loops</ulink>
-    </para>
-      <para>* <ulink url="http://bashshell.net/shell-scripts/understanding-the-while-loop/">Understanding The While Loop</ulink>
-    </para>
-      <para>* <ulink url="http://bashshell.net/shell-scripts/if-then/">if then Statements</ulink>
-(...)</para>
-  </blockquote>
-  </sect2> -->
+</para>
+      <para>df : report file system disk space usage
+
+</para>
+      <para>du: estimate file space usage (...)</para>
+    </blockquote>
+<!-- ($ Id: 30.4.11 sat $)-->  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/04/20/keeping-code/">Python4Kids/Brendan Scott: Keeping Code</ulink>
+        <ulink url="http://net.tutsplus.com/tutorials/other/a-deeper-look-at-mod_rewrite-for-apache/">net tuts+/Joseph Pecoraro: An In Depth Guide to mod_rewrite for Apache</ulink>
       </title>
-      <para>Well, so far we’ve learnt about storing data (either “flat” in file, or as an object which Python does in pickles which are also data in files, but with some structure) but we don’t know anything about storing the code we are typing. This means that we need to go through the tedium of typing stuff in all the time (or cutting and pasting I guess).  It  is especially tedious when we mistype something.
-
-</para>
-      <para>In order to do some more complex things in Python we really need to be able to store our code somewhere so that typing mistakes we make don’t mean we have to re-type the whole kit and kaboodle. We could, if we really wanted to, open a file from within our Python prompt and write code to the file (as a flat file):</para>
-      <screen> &gt;&gt;&gt; f = open(&apos;textfile.py&apos;,&apos;w&apos;)
- &gt;&gt;&gt; f.write(&quot;print &apos;This is some python code stored in a file&apos;&quot;)
- &gt;&gt;&gt; f.close()
- &gt;&gt;&gt; import textfile
- This is some python code stored in a file</screen>
-      <para>What has happened here is that we’ve open()ed a file called ‘textfile.py’ (again, we’ve taken the chance that there isn’t already such a file, because open()ing it would delete the existing contents).  We’ve then written the following to the file: print ‘This is some python code stored in a file’ (...)</para>
-<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
+      <para>When people think of .htaccess configuration, the first thing that might pop into their minds is URL manipulation with mod_rewrite. But they’re often frustrated by mod_rewrite’s complexity. This tutorial will walk you through everything you need to know for the most common mod_rewrite tasks. (...)</para>
+<!-- ($ Id: 30.4.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://linuxadminzone.com/speed-up-large-mysql-backup-dump-restore-process/">Linux Admin Zone/Jagbir Singh: Speed up large MySQL backup, dump, restore processes</ulink>
+        <ulink url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script">Novell Cool Solutions/jmeldrum: jmeldrum&apos;s picture ssh-keygen: password-less SSH login script</ulink>
       </title>
-      <para>In general, MySQL is quite fast at restoring data, but I observed that while restoring 20gb of backup its taking more than the usual time. This can happen when you don’t have enough memory or if key_buffer_size is not set high enough, then it can take very long time to re-index the data. In CentOS 5.2 server with 6gb of RAM, I noticed key_buffer_size is set to just 800M which is very low. You should set it at least 20-25% of total RAM. After increasing the value to 2gb, MySQL is able to reload data quite fast.
+      <para><emphasis role="bold">license</emphasis>: 
+GPLv2
 
 </para>
-      <para>Though this does trick for me but there are other helpful suggestions also which you can try/check to speed up your backup/restore process, few are as follows: (...)</para>
-<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linux.com/learn/tutorials/432537-another-ipv6-crash-course-for-linux-real-ipv6-addresses-routing-name-service">Linux.com/Carla Schroder: Another IPv6 Crash Course For Linux: Real IPv6 Addresses, Routing, Name Services</ulink>
-      </title>
-      <para>In the first <ulink url="http://www.linux.com/learn/tutorials/428331-ipv6-crash-course-for-linux">IPv6 for Linux crash course</ulink>, we covered some of the bare basics of IPv6 on Linux. Today we&apos;re going to learn how to use routable IPv6 addresses, some iptables rules to keep our experimentation from leaking out into the world, and about implementing DNS in IPv6.
+      <para>This utility uses ssh-keygen and ssh_copy_id to create RSA private/public key pairs for use by SSH protocol version 1 and RSA or DSA keys for use by SSH protocol version 2. The public key is then copied onto a remote system. You can now SSH to the remote system without the use of a password from the specified machine.
 
 </para>
-      <para>You can perform all these tests on any two Linux PCs on your LAN without getting in the way of your normal IPv4 activities. Just remember to undo everything that you don&apos;t want to be permanent when you&apos;re finished. Save time and hassle by having SSH set up on all your PCs; then you can park yourself comfortably in one place and run most of these tests over SSH sessions and never get up, except at healthy intervals to prevent embolisms and joint seizures. (...)</para>
-<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.howtoforge.com/virtualization-with-kvm-on-an-opensuse-11.4-server">HowtoForge/Falko Timme: Virtualization With KVM On An OpenSUSE 11.4 Server</ulink>
-      </title>
-      <para>This guide explains how you can install and use KVM for creating and running virtual machines on an OpenSUSE 11.4 server. I will show how to create image-based virtual machines and also virtual machines that use a logical volume (LVM). KVM is short for <emphasis role="bold">Kernel-based Virtual Machine</emphasis> and makes use of hardware virtualization, i.e., you need a CPU that supports hardware virtualization, e.g. Intel VT or AMD-V. (...)</para>
-<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.novell.com/communities/node/12833/one-click-amazon-ec2-suse-studio">Novell Cool Solutions/Kevin Foster: One Click to Amazon EC2 from SUSE Studio</ulink>
-      </title>
-      <para>What happens when you pair the award-winning image- and appliance-building tool SUSE Studio with the market leader in cloud computing, Amazon Web Services? An ISV or developer&apos;s dream come true! We are proud to announce one-click deployment to Amazon EC2 directly from SUSE Studio. Novell has made it simple to create, test, and deploy your application image or appliance to EC2, providing a complete end-to-end solution for building and deploying cloud images. (...)</para>
-<!-- ($ Id: 23.4.11 sat $)-->    </blockquote>
+      <para>If the file /etc/root/.ssh/authorized_keys exists on the destination system, you probably already have it setup.
+
+</para>
+      <para>For more information see the man pages for ssh-keygen and ssh_copy_id. (...)</para>
+<!-- ($ Id: 30.4.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
