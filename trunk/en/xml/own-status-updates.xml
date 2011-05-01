@@ -328,74 +328,111 @@
 
       <para>...</para>
       </sect3> -->    
-    <!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/04/gnome-30-available-for-opensuse-114.html">Frédéric Crozat: GNOME 3.0 available for openSUSE 11.4</ulink>
+          <ulink url="http://blog.crozat.net/2011/04/gnome-3-live-image-120-released-gnome.html"
+            >Frédéric Crozat: GNOME 3 Live image 1.2.0 released / GNOME 3.0.1 for openSUSE
+            11.4</ulink>
         </title>
-        <para>openSUSE GNOME team has been busy polishing GNOME 3.0 packages for openSUSE 11.4 but
-          here they are, for your pleasure </para>
-        <para>Everything is explained at : http://en.opensuse.org/openSUSE:GNOME_3.0 including : </para>
-        <itemizedlist>
-          <listitem>
-            <para>how to install GNOME 3 using 1-click install from your favorite Web
-              browser,</para>
-          </listitem>
-          <listitem>
-            <para>how to switch from my previous repository (home:fcrozat:gnome3, which will be soon
-              phased out) to the new repository. This is important to continue receiving updates,
-              for instance, if you installed live image on your system.</para>
-          </listitem>
-        </itemizedlist>
-        <para>A new live image will be available shortly, based on this new repository (but this
-          will be for another blog post).</para>
+        <para>Hi everyone,</para>
+        <para>two news for this week-end :<itemizedlist>
+            <listitem>
+              <para>GNOME 3.0.1 is now available for openSUSE 11.4, in GNOME:STABLE:3.0 repository.
+                See http://en.opensuse.org/openSUSE:GNOME_3.0 on how to use this repository.</para>
+            </listitem>
+            <listitem>
+              <para>Live image has been regenerated to use GNOME 3.0.1. It is available at
+                http://www.gnome.org/getting-gnome/ (version 1.2.0)</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Oh, I forgot : GNOME3 promo DVDs have been delivered to GNOME Foundation ;)
+          Enjoy!</para>
+        <!--($ ld: 1.5.11 sm $)-->        
       </blockquote>
       <blockquote>
-        <title>
-          <ulink url="http://blog.crozat.net/2011/04/gnome-3-live-image-version-110-released.html">Frédéric Crozat: GNOME 3 Live image version 1.1.0 released</ulink>
-        </title>
-        <para>In the past week, we have been working on both GNOME:STABLE:3.0 repository and on
-          creating a GNOME 3 Promo DVD, based on this live image, but with more content on it
-          (LibreOffice, Banshee 2.0, etc..). Because of this, image size has increased a bit
-          (950MB)</para>
-        <para>Good news too, we fixed KMS issues with some Radeon cards people reported when using
-          live image (problem was fixed once the image was installed).</para>
-        <para>This new image (1.1.0) is now based on GNOME:STABLE:3.0 repository and contains all
-          security and bugfix updates for openSUSE 11.4.</para>
-        <para>To download the image, go to <ulink url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink></para>
-      </blockquote>
-    </sect3> -->
+        <title><ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/">Nelson
+            Marques: Mockup :: GNOME3 and YaST</ulink></title>
+        <para>With the release of GNOME3 I would assume that people are interested in seeing how
+          YaST2 (suggestion: rename it to YaST3 !!) is going to take form with GTK3. Of course this
+          means eventually writing another application in GTK3, hopefully different from the old
+          gnome-control-panel ‘style’ which was actually pretty confusion from the user point of
+          view as it was far too close to gnome-control-center, thus confusing new comers.</para>
+        <para>My suggestion (unaware if it’s possible or not) was probably to explore GNOME3
+          features to serve YaST integrated already with GNOME3. This could be an interesting
+          approach as it would offer integration and some advantages:</para>
+        <para>* Better integration with GNOME3 without having to write(/maintain another
+          application;</para>
+        <para> * Take advantage of YaST2 modular structure;</para>
+        <para> * Present YaST in a prime space in GNOME3, thus offering a
+          openSUSEýdifferentiationýpoint;</para>
+        <para> * No conflicts with possible KDE existing front-ends for YaST2;</para>
+        <para> * Improve users experience.</para>
+        <para>My proposal would be something like (maybe to be served as an extension for
+        gnome-shell). Please neglect my ‘lame’ photo manipulation skills:</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://susepaste.org/images/68933649.png" width="30%"/>
+          </imageobject>          
+        </mediaobject>
+      </blockquote>     
+    </sect3>
     <sect3 role="kdeteam">
       <title>KDE Team</title>      
       <blockquote>
         <title>
           <ulink
             url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
-            >Aaron Seigo: First KDE Plasma Active app: Calligra office suite</ulink>
+            >Sebastian Kügler: Plasma Active at Tokamak 5</ulink>
         </title>
-        <para>(<emphasis role="bold">Note</emphasis>: This post is about Plasma Active, a community
-          collaboration to bring KDE software to consumer devices. To learn more about Plasma
-          Active, <ulink url="http://aseigo.blogspot.com/2011/04/active-routes.html">read this blog
-            post</ulink>.) </para>
-        <para>Today, Plasma Active is proud to announce our first <ulink
-            url="http://aseigo.blogspot.com/2011/04/plasma-active-active-apps.html">Active
-            App</ulink>, or rather our first Active App <emphasis role="italic">suite</emphasis>.
-          While interacting with what are generally referred to as "office documents" isn't what we
-          may think of as "sexy" it's a very important set of functionality.</para>
-        <para>For Plasma Active, we've joined forces with <ulink
-            url="http://www.calligra-suite.org/">Calligra</ulink> which is a suite of office
-          applications which uses the KDE Platform and has an active mobile and consumer electronics
-          effort.</para>
-        <para>Calligra Active is currently in alpha, but this refers primarily to the touch
-          interface. The file format compatibility with Open Document Format and Microsoft's Office
-          Open XML is some of the best to be found in a mobile form factor. The Calligra team is
-          currently working on a transition of the interface to QtQuick, but Plasma Active is
-          already including the current mobile-targeted interface in <ulink
-            url="http://aseigo.blogspot.com/2011/04/plasma-active-operating-systems.html">the
-            operating system images</ulink>. (...)</para>
-        <!--($ ld: 30.4.11 sm $)-->
+        <para>Our two big topics at Tokamak 5 are infrastructural changes and libplasma2, and Plasma
+          Active. In a session yesterday, we discussed the Plasma Active shell, and how we want to
+          interact with it. The discussion was very fruitful, and based on a mockup by Riccardo, we
+          decided to implement a top panel that you can drag out, offering access to the window
+          switcher, the “system tray”, and a couple of other things. That’s quite a big visual
+          change from what we have right now, but it allows us to achieve a number of interaction
+          cleanups. Let’s look in more detail what we’re doing here: <itemizedlist>
+            <listitem>
+              <para><emphasis role="bold">Window switching</emphasis> – The top panel has a
+                horizontal window list, which you can use to switch between app windows and widgets
+                in your workspaces. The window decoration is going away, windows can be closed from
+                the window list. The present windows effect has this already implemented, as a
+                trashcan you can swipe your window into. It works pretty well and is snazzy. </para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">Semantic Resource Visualization</emphasis> – In order to
+                display <emphasis role="italic">things</emphasis> like files, contacts, bookmarks,
+                music, etc. we use separate QML elements for different uses (items in a listview,
+                for example). The data comes directly from Nepomuk. This part is also starting to
+                work, we can list different resources, and based on its type (defined in the
+                ontologies), it will choose a suitable QML file to display this <emphasis
+                  role="italic">Thing</emphasis> in a suitable way and allow for interaction with
+                it. </para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">Storage of bookmarks</emphasis> – As most of the
+                information we use in Plasma Active is coming from Nepomuk, we decided to store the
+                bookmarks in there as well. The NFO Ontology has classes for Bookmark and Bookmark
+                folder, which is what we’re using here. Last night I’ve restructured the
+                metadataengine to make it easier to build special purpose dataengines on top of
+                that. These dataengines allow for easy access and usage in QML / Plasma
+                Quick.</para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">Web Dashboard</emphasis> – I’m doing some work on a nice
+                way to view your bookmarks, as interacting with the web is an important use-case of
+                Plasma Active. We now have (cached) previews of webpages, we can use directly in
+                QML. Combined with the dataengine that lists bookmarks, it’s now easy to implement a
+                bookmarks browser, done entirely in Plasma Quick, shippable as
+                architecture-independent package. Connecting these bits and pieces is next on th
+                list.</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Some of these things are working already, others materialise as we speak, some will
+          surely stay on our list until after Tokamak, so we’ve got something to hack on when
+          everybody’s back. :) (...)</para>
+        <!--($ ld: 1.5.11 sm $)-->
       </blockquote>
     </sect3>
     <!--
