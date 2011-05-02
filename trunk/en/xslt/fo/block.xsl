@@ -18,11 +18,11 @@
       <xsl:if test="title|info/title">
         <fo:block xsl:use-attribute-sets="formal.title.properties">
           <fo:inline><xsl:call-template name="gentext.startquote"/></fo:inline>
-          <xsl:apply-templates select="." mode="object.title.markup"/>
+          <xsl:apply-templates select="title" mode="block.title"/>
         </fo:block>
       </xsl:if>
-      <xsl:apply-templates select="*[local-name(.) != 'title'
-                                   and local-name(.) != 'attribution']"/>
+      <!-- Select everything except title or attribution: -->
+      <xsl:apply-templates select="*[not(self::title) and not(self::attribution)]"/>
     </fo:block>
     <xsl:if test="attribution">
       <fo:block text-align="right">
@@ -33,6 +33,13 @@
     </xsl:if>
     <fo:inline><xsl:call-template name="gentext.endquote"/></fo:inline>
   </fo:block>
+</xsl:template>
+
+
+<xsl:template match="blockquote/title" mode="block.title">
+  <fo:inline role="blockquote-title">
+    <xsl:apply-templates/>
+  </fo:inline>
 </xsl:template>
 
 </xsl:stylesheet>
