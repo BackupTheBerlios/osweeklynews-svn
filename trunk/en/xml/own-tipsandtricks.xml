@@ -89,10 +89,23 @@ So, in this article we’ll see 2 commands that can help us in keeping under con
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://net.tutsplus.com/tutorials/other/a-deeper-look-at-mod_rewrite-for-apache/">net tuts+/Joseph Pecoraro: An In Depth Guide to mod_rewrite for Apache</ulink>
+        <ulink
+          url="http://nbprashanth.wordpress.com/2011/05/02/radio-buttons-combo-boxes-and-event-handling/"
+          >N.B.Prashanth: Radio Buttons, Combo Boxes and Event Handling</ulink>
       </title>
-      <para>When people think of .htaccess configuration, the first thing that might pop into their minds is URL manipulation with mod_rewrite. But they’re often frustrated by mod_rewrite’s complexity. This tutorial will walk you through everything you need to know for the most common mod_rewrite tasks. (...)</para>
-<!-- ($ Id: 30.4.11 sat $)-->    </blockquote>
+      <para>Welcome back! Today we will walk through a slightly bigger example to understand the way
+        event handling works in YUI. We will also learn use two new widgets that we see in almost
+        all the applications we use : Radio Buttons and Combo Boxes.</para>
+      <para>We will create a program that contains a combo box, two radio buttons, a label and a
+        push button. The radio buttons are called immediate and event1. If immediate is selected,
+        the label reflects the selected value of the combo box without clicking the push button. If
+        event1 radio button is selected, the push button has to be clicked for the label to reflect
+        the value of the selected element of the combo box. Simple concept, right?</para>
+      <para>Before we proceed, please note that all the examples found in this blog are available at
+        : <ulink url="https://gitorious.org/libyui">https://gitorious.org/libyui</ulink>. So feel
+        free to compile and see the output for yourself! (ofcourse, only on openSUSE at the moment.)
+        (...)</para>
+<!-- ($ Id: 2.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
