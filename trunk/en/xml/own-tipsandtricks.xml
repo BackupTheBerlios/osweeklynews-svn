@@ -45,22 +45,22 @@
 <!-- ($ Id: 1.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/using-styles-scribus">LinuxJournal/Bruce Byfield: Using Styles in Scribus</ulink>
+        <ulink url="http://stick.gk2.sk/blog/2011/05/adding-yast-menuitem-to-gnome-3-status-menu/"
+          >Pavol Rusnak: Adding YaST menuitem to GNOME 3 status menu</ulink>
       </title>
-      <para>If you don&apos;t include master pages (which are really styles under another name), then
-        Scribus supports three types of hierarchial styles: lines, character, and paragraph. As in
-        any other self-respecting word processor or layout application, these styles allow you to
-        apply detailed sets of formatting options quickly, without having to change each instance of
-        a formatting option individually. However, styles are implemented idiosyncratically in
-        Scribus, so they can take time to learn, even if you are familiar with the basic concept
-        from other applications.</para>
-      <para>One of the conceptual problems you may have is that styles are defined and applied in
-        different places in the editing window. To define and manage styles, you open the Style
-        Manager, by selecting Edit -&gt; Styles or pressing the F3 key. However, to apply styles,
-        you either select Properties from the right-click menu of a selected object or press the F2
-        key. For paragraph styles, you also have the option of selecting Edit Text from the
-        right-click menu of a selected text frame, or selecting Ctrl+T to open the Story
-        Editor.</para>
+      <para>I read a blogpost from Nelson Marques about adding YaST modules icon to GNOME Shell. I
+        kind of liked the idea of YaST integration into GNOME Shell, but I had to share Julian
+        Aloofi’s worries in comments. He came up with a simple idea to just add the YaST menuitem to
+        status menu in the top-right corner. This was very easy to implement because most of the
+        GNOME Shell features are written in Javascript. I created the following simple hack and
+        ended up with this: (...)</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png"
+            width="15%"/>
+        </imageobject>        
+      </mediaobject>
 <!--($ ld: 27.4.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
