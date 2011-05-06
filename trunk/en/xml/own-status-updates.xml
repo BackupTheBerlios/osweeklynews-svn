@@ -283,7 +283,7 @@
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
     </sect3>
-    <!--
+<!--
     <sect3 role="evergreen">
       <title>Evergreen</title>
       <blockquote>
@@ -315,8 +315,7 @@
         <para>So if anyone out there has interest in helping maintaining 11.1 and/or 11.2 please
           contact us through our <ulink url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailinglist</ulink> or contact me directly.</para>
     </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="education">
       <title>Education Team</title>
 
@@ -327,14 +326,11 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/04/gnome-3-live-image-120-released-gnome.html"
-            >Frédéric Crozat: GNOME 3 Live image 1.2.0 released / GNOME 3.0.1 for openSUSE
-            11.4</ulink>
+          <ulink url="http://blog.crozat.net/2011/04/gnome-3-live-image-120-released-gnome.html">Frédéric Crozat: GNOME 3 Live image 1.2.0 released / GNOME 3.0.1 for openSUSE 11.4</ulink>
         </title>
         <para>Hi everyone,</para>
         <para>two news for this week-end :<itemizedlist>
@@ -349,11 +345,11 @@
           </itemizedlist></para>
         <para>Oh, I forgot : GNOME3 promo DVDs have been delivered to GNOME Foundation ;)
           Enjoy!</para>
-        <!--($ ld: 1.5.11 sm $)-->        
-      </blockquote>
+<!--($ ld: 1.5.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/">Nelson
-            Marques: Mockup :: GNOME3 and YaST</ulink></title>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/">Nelson Marques: Mockup :: GNOME3 and YaST</ulink>
+        </title>
         <para>With the release of GNOME3 I would assume that people are interested in seeing how
           YaST2 (suggestion: rename it to YaST3 !!) is going to take form with GTK3. Of course this
           means eventually writing another application in GTK3, hopefully different from the old
@@ -373,18 +369,16 @@
         gnome-shell). Please neglect my ‘lame’ photo manipulation skills:</para>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="http://susepaste.org/images/68933649.png" width="30%"/>
-          </imageobject>          
+            <imagedata width="30%" fileref="http://susepaste.org/images/68933649.png"/>
+          </imageobject>
         </mediaobject>
-      </blockquote>     
+      </blockquote>
     </sect3>
     <sect3 role="kdeteam">
-      <title>KDE Team</title>      
+      <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
-            >Sebastian Kügler: Plasma Active at Tokamak 5</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/">Sebastian Kügler: Plasma Active at Tokamak 5</ulink>
         </title>
         <para>Our two big topics at Tokamak 5 are infrastructural changes and libplasma2, and Plasma
           Active. In a session yesterday, we discussed the Plasma Active shell, and how we want to
@@ -406,8 +400,7 @@
                 music, etc. we use separate QML elements for different uses (items in a listview,
                 for example). The data comes directly from Nepomuk. This part is also starting to
                 work, we can list different resources, and based on its type (defined in the
-                ontologies), it will choose a suitable QML file to display this <emphasis
-                  role="italic">Thing</emphasis> in a suitable way and allow for interaction with
+                ontologies), it will choose a suitable QML file to display this <emphasis role="italic">Thing</emphasis> in a suitable way and allow for interaction with
                 it. </para>
             </listitem>
             <listitem>
@@ -432,10 +425,9 @@
         <para>Some of these things are working already, others materialise as we speak, some will
           surely stay on our list until after Tokamak, so we’ve got something to hack on when
           everybody’s back. :) (...)</para>
-        <!--($ ld: 1.5.11 sm $)-->
-      </blockquote>
+<!--($ ld: 1.5.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -509,7 +501,7 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 347)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 348)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
@@ -535,7 +527,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 116)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 118)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -551,7 +543,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 95)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 97)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -564,42 +556,56 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 30.4.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 7.5.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312275">automated bugreporting - whole system</ulink>
+            <ulink url="https://features.opensuse.org/312292">Improved partitioning suggestions for full encrypted installations</ulink>
           </title>
-          <para>It is a nasty jop to report bugs to the openSUSE bugzilla by hand.
+          <para>Since the full system encryption was enabled in the openSUSE installation, there was every release a problem with the automatic partitioning suggestions.
 </para>
-          <para>A automated bugreporting for the whole openSUSE OS like in KDE (drkonqi) would be great.
-It would save time for the user, improve the frequency of bugreports for the project(I guess many bugs donÂ´t find the way to bugzilla), and a coupling to a stacktrace or logfiles would improve the quality of the bugreports in the openSUSE bugzilla.
+          <para>Concrete: The installation systems always gives me a partition table that waste, don&apos;t use, the greatest part of my harddrive.
 </para>
-          <para>Good for the user, good for the quality of openSUSE, not so good for a developer(-&gt;many work:)</para>
+          <para>So I have to do the modification manual, which was the first time a strange learning and takes a big amount of time.
+
+</para>
+          <para>It would looks much more professional when this little bug would be fixed for the next distro release.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312276">Add a &apos;Skip all&apos; option to YaST&apos;s install error dialog....</ulink>
+            <ulink url="https://features.opensuse.org/312293">Option to disable disk check on certian volumes in YaST</ulink>
           </title>
-          <para>As someone whom regularly uses the KDE OBS&apos; for latest builds, I normally run into the issue that packages are updated faster than when I apply the changes. This causes YaST to constantly pop-up that a given package could not be applied, and then a second pop-up for the action to take.
+          <para>This is one really really really annoying feature in yast. Here is the scenario, you have a machine with a bunch of storage drives, drives that are normally kept full. Everytime you enter something like package management in YaST it pops up a low disk space warning. This warning should only apply for volumes where YaST utilizes for it&apos;s files (such as download cache, home, etc). A HTPC for example often has volumes full to the max.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312294">YaST and GNOME3 :: Mockup</ulink>
+          </title>
+          <para>I&apos;ve written a small text regarding a possible integration of YaST 2 on GNOME3 and provided a simple mockup.
+
 </para>
-          <para>First, can we please cut this down to ONE pop-up, not two? Second, for the actions, can we please have an option to &apos;skip all missing packages&apos; or the like? Obviously, this would have to warn the user that their system may be left in an inconsistent state, but I&apos;d rather that than chasing pop-ups.</para>
+          <para><ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/ ">http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/ </ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312277">Include GNOME Tweak Tool</ulink>
+            <ulink url="https://features.opensuse.org/312299">xz compression for livecd</ulink>
           </title>
-          <para>Recently I have tried GNOME 3. There are several settings that you once could customize in GNOME 2 that you can&apos;t do in GNOME 3. There is a package called gnome-tweak-tool, that lets you customize things like the Theme again. This should be included on the distribution DVD (and perhaps Live CD too) for openSUSE 12.1.</para>
+          <para>Fedora 15 is going to use xz compression for their live cds
+</para>
+          <para><ulink url="http://fedoraproject.org/wiki/Features/LZMA_for_Live_Images">http://fedoraproject.org/wiki/Features/LZMA_for_Live_Images</ulink>
+
+</para>
+          <para>can we also have xz compression for opensuse livecds so more software can be bundled in?</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312280">Add gnome-achievements</ulink>
+            <ulink url="https://features.opensuse.org/312301">add updategrub to the rescue system</ulink>
           </title>
-          <para>Hamster can use trophies from <ulink url="https://github.com/tbaugis/gnome-achievements">https://github.com/tbaugis/gnome-achievements</ulink> so we probably want to take a look at packaging this.</para>
+          <para>the forum user please_try_again published a very clever script available in his home OBS directory and called &quot;updategrub&quot;. This script is extremely usefull for debugging boot problems, but nearly impossible to install from the rescue system, so it should be available right there.</para>
         </blockquote>
-<!-- ($ ld: 30.4.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 7.5.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -663,7 +669,7 @@ It would save time for the user, improve the frequency of bugreports for the pro
         </listitem>
       </itemizedlist>
     </sect3>
-    <!--
+<!--
     <sect3 role="tumbleweed">
       <title>Tumbleweed Team</title>
       <blockquote>
@@ -717,8 +723,7 @@ It would save time for the user, improve the frequency of bugreports for the pro
         <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
           Any other questions, please ask them on the <ulink url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing list</ulink>.</para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
