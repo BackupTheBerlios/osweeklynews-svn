@@ -45,23 +45,28 @@
 <!-- ($ Id: 1.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://stick.gk2.sk/blog/2011/05/adding-yast-menuitem-to-gnome-3-status-menu/"
-          >Pavol Rusnak: Adding YaST menuitem to GNOME 3 status menu</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/05/05/gpick-an-advanced-color-picker/">Nelson
+          Marques: Gpick – An advanced color picker…</ulink>
       </title>
-      <para>I read a blogpost from Nelson Marques about adding YaST modules icon to GNOME Shell. I
-        kind of liked the idea of YaST integration into GNOME Shell, but I had to share Julian
-        Aloofi’s worries in comments. He came up with a simple idea to just add the YaST menuitem to
-        status menu in the top-right corner. This was very easy to implement because most of the
-        GNOME Shell features are written in Javascript. I created the following simple hack and
-        ended up with this: (...)</para>
+      <para>It was brought to my attention through I <ulink
+          url="http://karl-tux-stadt.de/ktuxs/?p=3176">article</ulink> (german) the existence of
+          <ulink url="http://code.google.com/p/gpick/">gpick</ulink>, an advanced and high featured
+        color picker. I’ve taken a quick look at it to make it available for openSUSE as it seems an
+        interesting tool for artists and web designers (maybe GTK3+ themers) and others.</para>
+      <para>To build this package a few files are generated with the <ulink
+          url="http://www.hwaci.com/sw/lemon/">Lemon Parser Generator</ulink> which isn’t really
+        available. I’m contacting upstream regarding the possibility of including the generated
+        files in the tarball, or eventually if that fails, I’ll probably need to include lemon.c,
+        hand compile it and hack scons build to use the local binary to generate those files.
+        (...)</para>
       <mediaobject>
         <imageobject>
           <imagedata
-            fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png"
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/Screenshot-New-palette-Gpick.png"
             width="15%"/>
         </imageobject>        
       </mediaobject>
-<!--($ ld: 27.4.11 sm $)-->    </blockquote>
+<!--($ ld: 6.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.unixmen.com/linux-tutorials/1659-31-best-tutorials-of-inkscape">Unixmen/ayesha ahmed: 31 Great Tutorials for Inkscape! </ulink>
