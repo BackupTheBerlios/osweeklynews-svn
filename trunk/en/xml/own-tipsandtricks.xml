@@ -43,25 +43,6 @@
 <!-- ($ Id: 1.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/05/05/gpick-an-advanced-color-picker/">Nelson Marques: Gpick – An advanced color picker…</ulink>
-      </title>
-      <para>It was brought to my attention through I <ulink url="http://karl-tux-stadt.de/ktuxs/?p=3176">article</ulink> (german) the existence of
-          <ulink url="http://code.google.com/p/gpick/">gpick</ulink>, an advanced and high featured
-        color picker. I’ve taken a quick look at it to make it available for openSUSE as it seems an
-        interesting tool for artists and web designers (maybe GTK3+ themers) and others.</para>
-      <para>To build this package a few files are generated with the <ulink url="http://www.hwaci.com/sw/lemon/">Lemon Parser Generator</ulink> which isn’t really
-        available. I’m contacting upstream regarding the possibility of including the generated
-        files in the tarball, or eventually if that fails, I’ll probably need to include lemon.c,
-        hand compile it and hack scons build to use the local binary to generate those files.
-        (...)</para>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="15%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/Screenshot-New-palette-Gpick.png"/>
-        </imageobject>
-      </mediaobject>
-<!--($ ld: 6.5.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
         <ulink url="http://www.linux.com/learn/tutorials/439773:crash-course-in-audio-recording-with-ardour-daw">Linux.com/Carla Schroder: Weekend Project: Crash Course in Audio Recording With Ardour DAW</ulink>
       </title>
       <para>When you&apos;re ready to move up from simple audio recording applications like GNOME&apos;s Sound Recorder, take a look at the excellent <ulink url="http://ardour.org/">Ardour digital audio workstation</ulink>. Ardour is one of the shining jewels of FOSS, a robust professional-level multi-channel recorder, editor, and mixer. Follow along as we learn the basics by making a simple recording. You will need a computer with a sound card, even a cheapo on-board chip, and a microphone or instrument to plug in to your sound card. (...)</para>
