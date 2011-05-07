@@ -68,7 +68,7 @@
       <para><emphasis role="bold">Editors Note</emphasis>: Ardour packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=Ardour">available from multimedia:apps repo</ulink>.</para>
 <!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
   </sect2>
-  <!--
+<!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
@@ -84,8 +84,7 @@ So, in this article we’ll see 2 commands that can help us in keeping under con
 </para>
       <para>du: estimate file space usage (...)</para>
     </blockquote>
-</sect2> -->
-  <sect2>
+</sect2> -->  <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
@@ -120,23 +119,22 @@ So, in this article we’ll see 2 commands that can help us in keeping under con
       <para>You do not have to debug the whole script, you can just debug the sections giving you the most difficulties. In this example, “set -x” and “set +x” encompass the section that you want to debug. The output shows how this section is sent to screen while the rest of the script functions normally. (...)</para>
 <!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
   </sect2>
-  <sect2>
-    <title>For System Administrators</title>
-    <blockquote>
-      <title>
-        <ulink url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script">Novell Cool Solutions/jmeldrum: ssh-keygen: password-less SSH login script</ulink>
-      </title>
-      <para><emphasis role="bold">license</emphasis>: 
+<!--<sect2>
+  <title>For System Administrators</title>
+  <blockquote>
+    <title>
+      <ulink url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script">Novell Cool Solutions/jmeldrum: ssh-keygen: password-less SSH login script</ulink>
+    </title>
+    <para><emphasis role="bold">license</emphasis>: 
 GPLv2
 
 </para>
-      <para>This utility uses ssh-keygen and ssh_copy_id to create RSA private/public key pairs for use by SSH protocol version 1 and RSA or DSA keys for use by SSH protocol version 2. The public key is then copied onto a remote system. You can now SSH to the remote system without the use of a password from the specified machine.
+    <para>This utility uses ssh-keygen and ssh_copy_id to create RSA private/public key pairs for use by SSH protocol version 1 and RSA or DSA keys for use by SSH protocol version 2. The public key is then copied onto a remote system. You can now SSH to the remote system without the use of a password from the specified machine.
 
 </para>
-      <para>If the file /etc/root/.ssh/authorized_keys exists on the destination system, you probably already have it setup.
+    <para>If the file /etc/root/.ssh/authorized_keys exists on the destination system, you probably already have it setup.
 
 </para>
-      <para>For more information see the man pages for ssh-keygen and ssh_copy_id. (...)</para>
-<!-- ($ Id: 30.4.11 sat $)-->    </blockquote>
-  </sect2>
-</sect1>
+    <para>For more information see the man pages for ssh-keygen and ssh_copy_id. (...)</para>
+  </blockquote>
+</sect2>--></sect1>
