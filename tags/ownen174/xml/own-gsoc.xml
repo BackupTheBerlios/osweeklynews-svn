@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"
+        width="20%" align="center"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title><ulink url="http://cbounta.wordpress.com/2011/04/30/about-gsoc-proposal-fillup-ng/"
+        >Christos Bountalis: About GSoC proposal “fillup-ng”</ulink></title>
+    <para>Recently I have found out that my GSoC proposal was accepted. Therefore, I thought that it
+      would be nice to introduce myself and the project I will work on, to the community.</para>
+    <para><emphasis role="bold">A few words about me</emphasis></para>
+    <para>My name is Christos “mpounta” Bountalis and I am slightly over 24, I live in <ulink
+        url="http://en.wikipedia.org/wiki/Salamis_Island">Salamis</ulink> a small island near Athens
+      in Greece. I am currently in my final year studying towards a BSc degree in Computer Science.
+      I spend my free time programming, listening to music, tweaking my system, hanging out with
+      friends and occasionally playing soccer. I consider GSoC to be a great opportunity for me to
+      join the openSUSE developers community in a more introductory way. and I plan to take
+      advantage of it <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s2.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1263084109g"/>
+        </imageobject>
+      </inlinemediaobject> .</para>
+    <!-- ($ ld: 4.5.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://alex.eftimie.ro/2011/05/05/gsoc-2011-packagekit-and-appstream-integration-for-software-center/"
+        >Alex Eftimie: GSoC 2011: PackageKit and AppStream integration for Software
+      Center</ulink></title>
+    <para>Hi everyone,</para>
+    <para>Just a quick announce that I will be working this summer as a GSoC student, for the
+      openSUSE Project. My mentor will be <ulink url="http://vuntz.net">Vincent Untz</ulink>, the so
+      called <quote>father of GNOME 3</quote>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_smile.gif"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    <para>What I’m aiming to do is modify Ubuntu Software Center to use PackageKit (an universal
+      package management toolkit) as a installation backend, and also integrate it with the
+      AppStream initiative (a cross-distro project for making software installation easier).</para>
+    <para>My full proposal can be read <ulink
+        url="http://swarm.cs.pub.ro/%7Ealexef/gsoc/proposal.html">here (fixed)</ulink>. Feedback and
+      suggestions are, as always, appreciated.</para>
+    <para>I would like to thank <ulink url="http://www.rosedu.org/gsoc">ROSEdu</ulink> (which I am a
+      member of) for the support <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_wink.gif"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    <!--($ ld: 6.5.11 sm $) -->
+  </blockquote>  
+</sect1>

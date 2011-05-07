@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/05/03/vintage/">Nelson Marques:
+        Vintage…</ulink></title>
+    <para>Yesterday I’ve seen in facebook a few photos by Chuck Payne from the Marketing team
+      showing his collection of SuSE materials… I do have a few ‘vintage’ items as well… Back in 98
+      when I tried SuSE Linux 5.3 for the first time, it was somehow expensive to burn DVD’s and I
+      was hanging around on a 56K line back then, so pulling them over the internet was not really
+      an option. (...)</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/DSCN0004.jpg"
+          width="20%"/>
+      </imageobject>      
+    </mediaobject>
+    <!--($ ld: 4.5.11 sm $)-->    
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://kdeatopensuse.wordpress.com/2011/05/05/let-the-user-decide-if-in-doubt/">KDE at
+        openSUSE: Let the user decide if in doubt</ulink></title>
+    <para>If it comes to decisions there is always the aim to just do the right thing. In a lot of
+      cases there is the one right thing. In quite a few cases there is no right thing but the
+      consequences are small enough that it does not really matter which decision one takes. And
+      then there are those use-cases where the only right thing to do is to ask the user because any
+      other decision would just be guessing and lead to RAM and CPU wasting.</para>
+    <para>Yet even in the latter situations some apps are too lazy to ask the user or even claim
+      that not asking the user – not even once – is the best solution – and even more astonishing:
+      for the user’s good. So basically they claim to be smarter than the user or just do not care
+      about the user’s resources or opinion. (...)</para>
+    <!--($ ld: 6.5.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://duncan.mac-vicar.com/opensuse-clients-with-spacewalk">Duncan Mac-Vicar
+        Prett: openSUSE clients with Spacewalk</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://posterous.com/getfile/files.posterous.com/temp-2011-05-06/IpveccbwojlttHFagxHiffEhaJqnqGgIxkwisopffGvdrvmeFniECIhEhpja/40_system_groups.png.scaled500.png"
+          width="20%"/>
+      </imageobject>      
+    </mediaobject>
+    <para>My team has been busy the last months with the release of SUSE Manager, which was received
+      with very good reviews. There is lot of room for improvements, some of them specific to SUSE
+      products/integration but others in Spacewalk itself.</para>
+    <para>There is lot of work to do and lot of patches being reviewed. Lot of them are already
+      upstream.</para>
+    <para>One common question is: if I already have a Spacewalk server, how do I setup openSUSE
+      clients?</para>
+    <para>Thanks to Michael Calmer, we submitted the required packages to a repository in the
+      openSUSE Build Service. You can find the instructions looking for the SUSE section in the
+        <quote>Registering Clients</quote> page of the official Spacewalk wiki.</para>
+    <!--($ ld: 7.5.11 sm $)-->
+  </blockquote> 
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/05/05/gpick-an-advanced-color-picker/">Nelson Marques: Gpick – An advanced color picker…</ulink>
+    </title>
+    <para>It was brought to my attention through I <ulink url="http://karl-tux-stadt.de/ktuxs/?p=3176">article</ulink> (german) the existence of
+      <ulink url="http://code.google.com/p/gpick/">gpick</ulink>, an advanced and high featured
+      color picker. I’ve taken a quick look at it to make it available for openSUSE as it seems an
+      interesting tool for artists and web designers (maybe GTK3+ themers) and others.</para>
+    <para>To build this package a few files are generated with the <ulink url="http://www.hwaci.com/sw/lemon/">Lemon Parser Generator</ulink> which isn’t really
+      available. I’m contacting upstream regarding the possibility of including the generated
+      files in the tarball, or eventually if that fails, I’ll probably need to include lemon.c,
+      hand compile it and hack scons build to use the local binary to generate those files.
+      (...)</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata width="15%" fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/Screenshot-New-palette-Gpick.png"/>
+      </imageobject>
+    </mediaobject>
+    <!--($ ld: 6.5.11 sm $)-->    </blockquote>
+</sect1>

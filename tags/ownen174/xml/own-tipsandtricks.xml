@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/linux-fingernail">LinuxJournal/Joey Bernard: Linux on a Fingernail</ulink>
+      </title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://www.linuxjournal.com/files/linuxjournal.com/ufiles/imagecache/node-page/nodeimage/story/10969pocketf1.inline_2.jpg"/>
+        </imageobject>
+      </mediaobject>
+      <para>This issue of <emphasis role="italic">Linux Journal</emphasis> is all about how to get
+        Linux in your pocket. In this article, I go one better and tell you how to get Linux on your
+        fingernail. Now, before you get too excited, I won&apos;t be discussing some new nano-computer
+        being used by James Bond, unfortunately. Instead, I discuss how to put Linux on a micro-SD
+        card (or any other USB drive, for that matter). Using this, you can run Linux on any machine
+        that can boot off a USB device. </para>
+      <para>One of the first utilities to receive widespread attention and use is UNetbootin (<ulink url="http://unetbootin.sourceforge.net">http://unetbootin.sourceforge.net</ulink>). This
+        application is available under both Linux and Windows. It has built-in support for
+        downloading and installing several Linux distributions, including Ubuntu, Fedora, Debian,
+        PCLinuxOS, Linux Mint, Sabayon Linux, openSUSE, Gentoo, Arch Linux, MEPIS and many others.
+        (...)</para>
+<!-- ($ Id: 1.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/439773:crash-course-in-audio-recording-with-ardour-daw">Linux.com/Carla Schroder: Weekend Project: Crash Course in Audio Recording With Ardour DAW</ulink>
+      </title>
+      <para>When you&apos;re ready to move up from simple audio recording applications like GNOME&apos;s Sound Recorder, take a look at the excellent <ulink url="http://ardour.org/">Ardour digital audio workstation</ulink>. Ardour is one of the shining jewels of FOSS, a robust professional-level multi-channel recorder, editor, and mixer. Follow along as we learn the basics by making a simple recording. You will need a computer with a sound card, even a cheapo on-board chip, and a microphone or instrument to plug in to your sound card. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: Ardour packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=Ardour">available from multimedia:apps repo</ulink>.</para>
+<!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
+  </sect2>
+<!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxaria.com/howto/check-your-disk-usage-with-df-and-du?lang=en">Linuxaria: Check your disk usage with df and du</ulink>
+      </title>
+      <para>As system administrator , but also as common user on my PC, one of the more common problem is the fill up at 100% of a filesystem.
+So, in this article we’ll see 2 commands that can help us in keeping under control or check the space used in every filesystem and in his directory.
+
+</para>
+      <para>df : report file system disk space usage
+
+</para>
+      <para>du: estimate file space usage (...)</para>
+    </blockquote>
+</sect2> -->  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://nbprashanth.wordpress.com/2011/05/02/radio-buttons-combo-boxes-and-event-handling/">N.B.Prashanth: Radio Buttons, Combo Boxes and Event Handling</ulink>
+      </title>
+      <para>Welcome back! Today we will walk through a slightly bigger example to understand the way
+        event handling works in YUI. We will also learn use two new widgets that we see in almost
+        all the applications we use : Radio Buttons and Combo Boxes.</para>
+      <para>We will create a program that contains a combo box, two radio buttons, a label and a
+        push button. The radio buttons are called immediate and event1. If immediate is selected,
+        the label reflects the selected value of the combo box without clicking the push button. If
+        event1 radio button is selected, the push button has to be clicked for the label to reflect
+        the value of the selected element of the combo box. Simple concept, right?</para>
+      <para>Before we proceed, please note that all the examples found in this blog are available at
+        : <ulink url="https://gitorious.org/libyui">https://gitorious.org/libyui</ulink>. So feel
+        free to compile and see the output for yourself! (ofcourse, only on openSUSE at the moment.)
+        (...)</para>
+<!-- ($ Id: 2.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.htmlgoodies.com/beyond/css/how-to-create-custom-select-menus-with-css.html">HTMLGoodies/Arpan Dhandhania: How To Create Custom Select Menus with CSS</ulink>
+      </title>
+      <para>HTML and CSS have come a long way from where they started. In the 90&apos;s, before CSS was formally introduced, the focus was purely on the functionality of web pages. They looked ugly, but no one really complained since they were not aware of what promises CSS would bring. The only way to make the page look beautiful was to use loads of images but the lack of high speed internet connections prevented developers from using that approach since it hampered the user&apos;s experience.
+
+</para>
+      <para>Over the years, as CSS advanced, it enabled the developer to style certain form elements like text fields and textareas. Other elements like select menus, radio buttons and checkboxes were left unstylable. When I first read the discussions about CSS3 on the internet, I became hopeful that it will allow us to style these form elements too. Unfortunately, my wishes were not granted. So until they do, we are forced to use work-around solutions for it. (...)</para>
+<!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/debug-scripts/debug-sections-of-a-script/">BashShell.net/mike: Debug Sections of a Script</ulink>
+      </title>
+      <para>You do not have to debug the whole script, you can just debug the sections giving you the most difficulties. In this example, “set -x” and “set +x” encompass the section that you want to debug. The output shows how this section is sent to screen while the rest of the script functions normally. (...)</para>
+<!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
+  </sect2>
+<!--<sect2>
+  <title>For System Administrators</title>
+  <blockquote>
+    <title>
+      <ulink url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script">Novell Cool Solutions/jmeldrum: ssh-keygen: password-less SSH login script</ulink>
+    </title>
+    <para><emphasis role="bold">license</emphasis>: 
+GPLv2
+
+</para>
+    <para>This utility uses ssh-keygen and ssh_copy_id to create RSA private/public key pairs for use by SSH protocol version 1 and RSA or DSA keys for use by SSH protocol version 2. The public key is then copied onto a remote system. You can now SSH to the remote system without the use of a password from the specified machine.
+
+</para>
+    <para>If the file /etc/root/.ssh/authorized_keys exists on the destination system, you probably already have it setup.
+
+</para>
+    <para>For more information see the man pages for ssh-keygen and ssh_copy_id. (...)</para>
+  </blockquote>
+</sect2>--></sect1>
