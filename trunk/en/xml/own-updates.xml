@@ -24,10 +24,100 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://saigkill.homelinux.net/entry/2011/05/01/calibre-0759-is-checked-in"
-        >Sascha Manns: Calibre 0.7.59 is checked in</ulink></title>
-    <para>We are pleased to announce, that the actual version <emphasis role="bold"
-        >0.7.59</emphasis> are checked in.</para>
-    <!-- ($ ld: 2.5.11 sm $)-->
+    <title><ulink
+        url="http://zoumpis.wordpress.com/2011/05/06/the-first-applet-for-diabetics-is-now-available/"
+        >Rousinopoulos Athanasios-Ilias: The first applet for diabetics is now
+      available!</ulink></title>
+    <para>I am very happy to anounce the first applet for diabetics and kde users also!</para>
+    <para>Well to know more about this applet take a look at the description of the applet :</para>
+    <para>The applet is called <ulink url="http://bit.ly/kOANG5">plasmoid-glucose</ulink> and it is
+      a bloodsugar diary with which you can storeý your bloodsugar readings and show a curve for
+      them.</para>
+    <para>Take a look at the screenshot:</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://kde-apps.org/CONTENT/content-pre1/124864-1.png"/>
+      </imageobject>      
+    </mediaobject>
+    <para>More info about the applet and how to download it you can find at :<itemizedlist>
+        <listitem>
+          <para><ulink url="http://bit.ly/lQuA0S">http://bit.ly/lQuA0S</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink url="http://bit.ly/hMVi1Z">http://bit.ly/hMVi1Z</ulink></para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Hope you using it no matter if you are diabetic or not!</para>
+    <!-- ($ ld: 9.5.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/05/08/smb-traffic-analyzer-1-2-4-supports-multiple-databases-and-delivers-websmbta/"
+        >Holger Hetterich: SMB Traffic Analyzer 1.2.4 supports multiple databases and delivers
+        webSMBTA</ulink></title>
+    <para>If you don’t have a clue what you are reading here, this article is about the<emphasis
+        role="bold"> SMB Traffic Analyzer</emphasis> project, check it’s <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink> for more
+      information about it.</para>
+    <para>The development team is proud to announce the release of <emphasis role="bold">version
+        1.2.4 of SMB Traffic Analyzer</emphasis>. With a much longer development cycle than usual,
+      we took the time to do real ground work on<emphasis role="bold"> SMBTA</emphasis>, and
+      reworked the whole database handling. As a result, SMBTA will from now on access it’s
+      databases via <ulink url="http://libdbi.sourceforge.net/">libDBI</ulink>, a generic database
+      layer. Via libDBI, <emphasis role="bold">SMBTA</emphasis> is potientially able to run with
+        <emphasis role="bold">sqlite, MySQL, and postgresql</emphasis> as database backend. Since
+      both, smbtad and smbtatools have been rewritten to use the libDBI layer, smbtaquery can know
+      run completely independent from smbtad, as it uses<emphasis role="bold"> libDBI</emphasis>
+      directly to access the database (<emphasis role="bold">bso#8065</emphasis>). We have tried
+      hard to crash smbtad in test suites since we made the move to <emphasis role="bold"
+        >libDBI</emphasis>, and moved <emphasis role="italic"><emphasis role="bold">several tens of
+          terabyte</emphasis></emphasis> over samba shares without getting smbtad to fall (we are
+      currently using<emphasis role="bold"> postgresql</emphasis> as database). We strongly believe,
+      since smbtad does not have to function as a network gateway to the database for the clients
+      any more, the move to libDBI will make SMB Traffic Analyzer much more stable. SMB Traffic
+      Analyzer 1.2.4 provides an upgrade path if the user wants to use the sqlite database that has
+      been created with SMBTA version &lt;= 1.2.3.</para>
+    <figure id="fig.websmbta">
+      <title>The object selector of webSMBTA</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://holger123.files.wordpress.com/2011/05/bildschirmfoto.png"
+            width="30%"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>Furthermore,<emphasis role="bold"> SMB Traffic Analyzer 1.2.4</emphasis> debuts <emphasis
+        role="italic"><emphasis role="bold">Benjamin Brunner’s</emphasis></emphasis> work on
+        <emphasis role="bold"><xref linkend="fig.websmbta">webSMBTA</xref></emphasis>, a web
+      interface to all functions of the <emphasis role="bold">smbtaquery</emphasis> program. It is a
+      modern, rails3 based, intuitive interface, that <emphasis role="italic"><emphasis role="bold"
+          >reduces</emphasis></emphasis> object selection <emphasis role="italic"><emphasis
+          role="bold">to a few mouse clicks</emphasis></emphasis>, and makes running statistic
+      functions on the objects a breeze. <emphasis role="bold">webSMBTA</emphasis> automatically
+      retrieves all the objects known in your Samba network, and displays them in a way that gives
+      an idea of the network structure. Out of these lists, you click the object you want to run a
+      function on, and get a descriptive dialog for the function’s options. The output of functions
+      is HTML rendered, and attached to the webSMBTA main page. Our ground work on XML in smbtaquery
+      finally pays off, as <emphasis role="bold">webSMBTA</emphasis> is consuming <emphasis
+        role="italic"><emphasis role="bold">HTML output</emphasis></emphasis> of smbtaquery
+      directly. Once a function has been chosen, it can easily be re-run by clicking it’s reload
+        button,<emphasis role="italic"><emphasis role="bold"/></emphasis> or removed from the
+      page.</para>
+    <para>We have added a new chapter for the documentation on <emphasis role="bold"
+        >webSMBTA,</emphasis> as well as to the <emphasis role="bold">libDBI</emphasis>
+      change.</para>
+    <para>All of smbtatools can now use a single configuration file, serving all of them (<emphasis
+        role="bold">bso#8097</emphasis>). The “top” function of smbtaquery can now operate
+      descending as well as ascending. (<emphasis role="bold">bso#8095</emphasis>).</para>
+    <para>You can download <emphasis role="bold">SMB Traffic Analyzer</emphasis> from the <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/smb-traffic-analyzer-download/"
+        >download page</ulink>. Please be aware that currently binary packages of smbtatools 1.2.4
+      do <emphasis role="bold">not</emphasis> contain the code for webSMBTA, as webSMBTA is in Beta,
+      has not yet been employed with Apache, and is not ready for being packaged. Of course, the
+      1.2.4 source tarball of smbtatools does contain the webSMBTA sources. Nevertheless, you can
+      find a README file in the smbtatools tarball, describing how to run the webinterface by using
+      the internal rails webserver. For more information on <emphasis role="bold">SMB Traffic
+        Analyzer</emphasis>, check it’s<ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/"> homepage</ulink>. </para>
   </blockquote>
 </sect1>
