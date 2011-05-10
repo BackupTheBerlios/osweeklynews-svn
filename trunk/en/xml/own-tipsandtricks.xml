@@ -22,25 +22,26 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/linux-fingernail">LinuxJournal/Joey Bernard: Linux on a Fingernail</ulink>
+        <ulink url="http://jimmac.musichall.cz/log/?p=1177">Jakub Steiner: Wacom Tablets on
+          Dualhead</ulink>
       </title>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="http://www.linuxjournal.com/files/linuxjournal.com/ufiles/imagecache/node-page/nodeimage/story/10969pocketf1.inline_2.jpg"/>
-        </imageobject>
+          <imagedata fileref="http://jimmac.musichall.cz/images/blog/wacom.png" width="10%"/>
+        </imageobject>        
       </mediaobject>
-      <para>This issue of <emphasis role="italic">Linux Journal</emphasis> is all about how to get
-        Linux in your pocket. In this article, I go one better and tell you how to get Linux on your
-        fingernail. Now, before you get too excited, I won&apos;t be discussing some new nano-computer
-        being used by James Bond, unfortunately. Instead, I discuss how to put Linux on a micro-SD
-        card (or any other USB drive, for that matter). Using this, you can run Linux on any machine
-        that can boot off a USB device. </para>
-      <para>One of the first utilities to receive widespread attention and use is UNetbootin (<ulink url="http://unetbootin.sourceforge.net">http://unetbootin.sourceforge.net</ulink>). This
-        application is available under both Linux and Windows. It has built-in support for
-        downloading and installing several Linux distributions, including Ubuntu, Fedora, Debian,
-        PCLinuxOS, Linux Mint, Sabayon Linux, openSUSE, Gentoo, Arch Linux, MEPIS and many others.
-        (...)</para>
-<!-- ($ Id: 1.5.11 sm $)-->    </blockquote>
+      <para>In the past, defining the screen area you want to map to the tablet was a matter of
+        defining the active rectangle with bottomx, bottomy, topx and topy per device using
+        xsetwacom.</para>
+      <para>In Fedora 15 you only need to set the target screen ID with MapToOutput. You can learn
+        the display ID by running xrandr. The tablet devices you get by running xsetwacom list
+        devices. For my setup I
+        use:<programlisting>xsetwacom set "Wacom Cintiq 21UX2 stylus" MapToOutput DVI-I-2
+xsetwacom set "Wacom Cintiq 21UX2 eraser" MapToOutput DVI-I-2</programlisting></para>
+      <para>Hope this helps anyone struggling. This was the TL;DR version, <ulink
+          url="http://linuxwacom.sourceforge.net/index_old.php/howto/main">Wacom project
+          documentation</ulink> is pretty useful.</para>
+<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.linux.com/learn/tutorials/439773:crash-course-in-audio-recording-with-ardour-daw">Linux.com/Carla Schroder: Weekend Project: Crash Course in Audio Recording With Ardour DAW</ulink>
@@ -69,21 +70,21 @@ So, in this article we’ll see 2 commands that can help us in keeping under con
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://nbprashanth.wordpress.com/2011/05/02/radio-buttons-combo-boxes-and-event-handling/">N.B.Prashanth: Radio Buttons, Combo Boxes and Event Handling</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/05/02/baby-steps-with-our-text-editor/"
+          >Python4Kids: New Tutorial - Baby Steps With Our Text Editor</ulink>
       </title>
-      <para>Welcome back! Today we will walk through a slightly bigger example to understand the way
-        event handling works in YUI. We will also learn use two new widgets that we see in almost
-        all the applications we use : Radio Buttons and Combo Boxes.</para>
-      <para>We will create a program that contains a combo box, two radio buttons, a label and a
-        push button. The radio buttons are called immediate and event1. If immediate is selected,
-        the label reflects the selected value of the combo box without clicking the push button. If
-        event1 radio button is selected, the push button has to be clicked for the label to reflect
-        the value of the selected element of the combo box. Simple concept, right?</para>
-      <para>Before we proceed, please note that all the examples found in this blog are available at
-        : <ulink url="https://gitorious.org/libyui">https://gitorious.org/libyui</ulink>. So feel
-        free to compile and see the output for yourself! (ofcourse, only on openSUSE at the moment.)
-        (...)</para>
-<!-- ($ Id: 2.5.11 sm $)-->    </blockquote>
+      <para>In this tutorial we’re going to start using the power of the text editor that I’ve been
+        badgering you about over the last few tutorials.ý We are going to go back to the earlier
+        tutorials and resurrect some of the code there.</para>
+      <para><emphasis role="bold">Exercise:</emphasis></para>
+      <para> Create a new document with your text editor</para>
+      <para> Save the document to a file called trivia.pyý You need to be careful that your text
+        editor doesn’t add ‘.txt’ to the end of the file’s name as some have the habit of
+        doing.</para>
+      <para> copy the following function into the file (<ulink
+          url="http://python4kids.wordpress.com/2010/09/22/trivia-game-part-2/">originally found
+          here</ulink>, with some comments dropped): (...)</para>
+<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.htmlgoodies.com/beyond/css/how-to-create-custom-select-menus-with-css.html">HTMLGoodies/Arpan Dhandhania: How To Create Custom Select Menus with CSS</ulink>

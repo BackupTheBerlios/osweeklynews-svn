@@ -24,31 +24,26 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink
-        url="http://zoumpis.wordpress.com/2011/05/06/the-first-applet-for-diabetics-is-now-available/"
-        >Rousinopoulos Athanasios-Ilias: The first applet for diabetics is now
-      available!</ulink></title>
-    <para>I am very happy to anounce the first applet for diabetics and kde users also!</para>
-    <para>Well to know more about this applet take a look at the description of the applet :</para>
-    <para>The applet is called <ulink url="http://bit.ly/kOANG5">plasmoid-glucose</ulink> and it is
-      a bloodsugar diary with which you can storeý your bloodsugar readings and show a curve for
-      them.</para>
-    <para>Take a look at the screenshot:</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://kde-apps.org/CONTENT/content-pre1/124864-1.png"/>
-      </imageobject>      
-    </mediaobject>
-    <para>More info about the applet and how to download it you can find at :<itemizedlist>
-        <listitem>
-          <para><ulink url="http://bit.ly/lQuA0S">http://bit.ly/lQuA0S</ulink></para>
-        </listitem>
-        <listitem>
-          <para><ulink url="http://bit.ly/hMVi1Z">http://bit.ly/hMVi1Z</ulink></para>
-        </listitem>
-      </itemizedlist></para>
-    <para>Hope you using it no matter if you are diabetic or not!</para>
-    <!-- ($ ld: 9.5.11 sm $)-->
+    <title><ulink url="http://blog.cihar.com/archives/2011/05/09/stardict-dictionaries-opensuse/"
+        >Michal Čihař: StarDict dictionaries for openSUSE</ulink></title>
+    <para>While <ulink
+        url="http://blog.cihar.com/archives/2011/05/09/no-new-dictionaries-tarballs-no-change/"
+        >working</ulink> on <ulink url="http://cihar.com/software/slovnik/">dictionaries for
+        StarDict</ulink> today, I've decided to finally bring them to openSUSE as well.</para>
+    <para>First step was to fix my favorite tool to access them - sdcv. The fixed package is now in
+      my home project and will be hopefully soon accepted to Education project so that it is more
+      visible (see <ulink url="https://build.opensuse.org/request/show/69901">request 69901</ulink>
+      if it is already the case).</para>
+    <para>When I had the tool working, it was time to package <ulink
+        url="http://cihar.com/software/slovnik/">dictionaries</ulink> themselves. It was quite
+      simple task and the rpms are available in <ulink
+        url="https://build.opensuse.org/project/show?project=home%3ANijel%3Astardict">my home
+        project</ulink>.</para>
+    <para>To install packages on openSUSE 11.4 simply
+      do:<programlisting>zypper ar http://download.opensuse.org/repositories/home:/Nijel:/stardict/openSUSE_11.4/ stardict
+zypper ref
+zypper in  stardict-czech  stardict-english-czech  stardict-german-czech</programlisting></para>
+    <!-- ($ ld: 10.5.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink

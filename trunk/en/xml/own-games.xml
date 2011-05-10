@@ -60,28 +60,52 @@
     <para></para>
   </blockquote> -->
   <blockquote>
-    <title><ulink url="http://www.makeuseof.com/tag/super-mario-brothers-fanmade-mario-game-windows/"
-        >MakeUseOf/Justin Pot: Super Mario Brothers X: The Best Fan-Made Mario Game
-      Ever</ulink></title>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2011/04/mario-icon.png"
-          align="right" width="10%"/>
-      </imageobject>      
-    </mediaobject>
-    <para>Check out the ultimate in fan-created Mario goodness: Super Mario Brothers X. This game
-      combines elements from every Mario game ever made into one, and the result is a lot of fun.
-      While the level design is far from perfect you shouldn’t miss out on this free download for
-      Windows.</para>
-    <para>Whether you know it or not, you want to play new 2D Mario levels. Nintendo takes its dear
-      sweet time putting such levels out, so if you need something to hold you over until the
-      inevitable release of New Super Mario Brothers Wii 2, I highly recommend you check out this
-      unofficial fan-built game. It’s free, so you have nothing to lose by trying it out. You might
-      even find things here you like better than Nintendo’s own projects. (...)</para>
-    <para>Editors Note: The refered Site <ulink url="http://www.supermariobrothers.org/"
-        >http://www.supermariobrothers.org/</ulink> has Flash Games too. So it is useable on Linux
-      too.</para>
-    <!--($ ld: 22.4.11 sm $)-->
+    <title><ulink
+        url="http://www.makeuseof.com/tag/super-mario-brothers-fanmade-mario-game-windows/">Nelson
+        Marques: Unknown Horizons, a nice strategy game, now on openSUSE</ulink></title>
+    <para>A few days ago I was wandering on the <ulink url="http://forums.opensuse.org">openSUSE
+        Forums</ulink>, once more in the games section when I saw one more post from one of our
+      users asking for <ulink url="http://www.unknown-horizons.org">Unknown Horizons</ulink>… I’ve
+      search a bit and found 2 entries on OBS (<ulink url="http://build.opensuse.org">openSUSE Build
+        Service</ulink>), one for Fedora packages and another for openSUSE packages.</para>
+    <para>I’ve joined #unknown-horizons on <ulink url="irc://irc.opensuse.org">FreeNode</ulink> and
+      found out that Unknown Horizons is very active and people are very nice. I’ve made a few
+      questions around and offered myself to package this nice game for openSUSE
+      (home:ketheriel:UnknownHorizons). Some of the dependencies are provided by the games
+      repository, to which I want to submit the major releases, and if possible enable builds for
+      Fedora (and friends).</para>
+    <para>A few packages need some tweaks to enable builds for Fedora (allegro, libenet, guichan),
+      and I’m working already on that. Meanwhile for everyone who wants to check out the latest
+      development snapshot of Unknown Horizons, feel free to do so… Currently packaged for:<itemizedlist>
+        <listitem>
+          <para>openSUSE 11.3</para>
+        </listitem>
+        <listitem>
+          <para>openSUSE 11.4</para>
+        </listitem>
+        <listitem>
+          <para>openSUSE Factory</para>
+        </listitem>
+        <listitem>
+          <para>openSUSE Tumbleweed</para>
+        </listitem>
+      </itemizedlist></para>
+    <figure id="fig.uh">
+      <title>Unknown Horizons - Settings Menu - openSUSE 11.4 GNOME3</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/Screenshot-Unknown-Horizons-Alpha.png"
+            width="20%"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>The 1-Click installer can be found on <ulink
+        url="http://www.unknown-horizons.org/download/linux/">Unknown Horizons download
+      page</ulink>. ýThere’s also a nice article (bumping ego) about the new openSUSE packages on
+      <xref linkend="fig.uh">Unknown Horizons</xref> webpage!</para>
+    <para>This is a title that all openSUSE users who like RTS games should try (supports openGL and
+      sdl) and is powered by the <ulink url="http://www.fifengine.de">FIFE Engine</ulink>.</para>
+    <!--($ ld: 10.5.11 sm $)-->
   </blockquote>
 </sect1>
