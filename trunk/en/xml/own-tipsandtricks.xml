@@ -22,33 +22,41 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://jimmac.musichall.cz/log/?p=1177">Jakub Steiner: Wacom Tablets on
-          Dualhead</ulink>
+        <ulink url="http://jimmac.musichall.cz/log/?p=1177">jun auza: 7 Nifty Tricks to Get the Most
+          out of LibreOffice Writer</ulink>
       </title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://jimmac.musichall.cz/images/blog/wacom.png" width="10%"/>
-        </imageobject>        
-      </mediaobject>
-      <para>In the past, defining the screen area you want to map to the tablet was a matter of
-        defining the active rectangle with bottomx, bottomy, topx and topy per device using
-        xsetwacom.</para>
-      <para>In Fedora 15 you only need to set the target screen ID with MapToOutput. You can learn
-        the display ID by running xrandr. The tablet devices you get by running xsetwacom list
-        devices. For my setup I
-        use:<programlisting>xsetwacom set "Wacom Cintiq 21UX2 stylus" MapToOutput DVI-I-2
-xsetwacom set "Wacom Cintiq 21UX2 eraser" MapToOutput DVI-I-2</programlisting></para>
-      <para>Hope this helps anyone struggling. This was the TL;DR version, <ulink
-          url="http://linuxwacom.sourceforge.net/index_old.php/howto/main">Wacom project
-          documentation</ulink> is pretty useful.</para>
-<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
+      <para>Since the death of <ulink
+          url="http://www.junauza.com/2009/05/8-essential-openoffice-extensions.html"
+          >OpenOffice</ulink> and the release of Ubuntu 11.04, LibreOffice has gained a lot of
+        popularity in such a short amount of time. Though there is not much of a difference between
+        LibreOffice Writer and its Oracle-owned predecessor, there are some tricks that can help you
+        get the most out of it. Here's a look at 7 such tricks. (...)</para>
+<!-- ($ Id: 11.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/439773:crash-course-in-audio-recording-with-ardour-daw">Linux.com/Carla Schroder: Weekend Project: Crash Course in Audio Recording With Ardour DAW</ulink>
+        <ulink url="http://www.linuxjournal.com/content/ebook-publishing-using-linux-tools">Linux
+          Journal/Doug Roberts: Ebook Publishing Using Linux Tools</ulink>
       </title>
-      <para>When you&apos;re ready to move up from simple audio recording applications like GNOME&apos;s Sound Recorder, take a look at the excellent <ulink url="http://ardour.org/">Ardour digital audio workstation</ulink>. Ardour is one of the shining jewels of FOSS, a robust professional-level multi-channel recorder, editor, and mixer. Follow along as we learn the basics by making a simple recording. You will need a computer with a sound card, even a cheapo on-board chip, and a microphone or instrument to plug in to your sound card. (...)</para>
-      <para><emphasis role="bold">Editors Note</emphasis>: Ardour packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=Ardour">available from multimedia:apps repo</ulink>.</para>
-<!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
+      <para>Digital books, aka “ebooks” are going to change the publishing world just as iTunes and
+        digital music have changed the music industry. ýAt the moment, Amazon’s Kindle seems to be
+        the biggest fish in the pond. ýWhile the actual numbers are fuzzy, Amazon’s Kindle appears
+        to be driving ebook growth, as suggested by <ulink
+          url="http://www.atrianyc.com/computers-and-technology/amazon-kindle-driving-growth-in-the-e-book-reader-market/"
+          >this</ulink> article.</para>
+      <para>Recent news points to authors making a dramatic shift from traditional publishing houses
+        to self-publishing, as pointed out in <ulink
+          url="http://www.techdirt.com/blog/casestudies/articles/20110321/00183913568/best-selling-author-turns-down-half-million-dollar-publishing-contract-to-self-publish.shtml"
+          >this article</ulink> that describes why Barry Eisler turned down a $500,000 deal from a
+        mainstream publisher, choosing instead to self-publish. ýThis particular article was in fact
+        my own tipping point: I had written a science fiction novel 30 years ago that I was unable
+        to get any of the publishing houses interested in at the time. ýI thought to myself, “Why
+        not?” ýSo I dusted off the old digital manuscript, completely rewrote the story, and
+        recently published it on Amazon’s Kindle publishing site. ýBTW, for more info on how the
+        original digital manuscript migrated from machine to machine over that thirty year period,
+        see the Author’s Note on the home page for my novel, <ulink
+          url="http://parrot-farm.net/Second-Cousins/"><emphasis role="italic">Second
+            Cousins</emphasis></ulink>.</para>
+<!-- ($ Id: 11.5.11 sm $)-->    </blockquote>
   </sect2>
 <!--
   <sect2>

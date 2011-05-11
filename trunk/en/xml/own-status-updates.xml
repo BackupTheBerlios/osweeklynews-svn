@@ -401,54 +401,64 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/04/plasma-active-at-tokamak-5/">Sebastian Kügler: Plasma Active at Tokamak 5</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/05/whats-new-in-plasma-active/">Sebastian
+            Kügler: What’s new in Plasma Active?</ulink>
         </title>
-        <para>Our two big topics at Tokamak 5 are infrastructural changes and libplasma2, and Plasma
-          Active. In a session yesterday, we discussed the Plasma Active shell, and how we want to
-          interact with it. The discussion was very fruitful, and based on a mockup by Riccardo, we
-          decided to implement a top panel that you can drag out, offering access to the window
-          switcher, the “system tray”, and a couple of other things. That’s quite a big visual
-          change from what we have right now, but it allows us to achieve a number of interaction
-          cleanups. Let’s look in more detail what we’re doing here: <itemizedlist>
-            <listitem>
-              <para><emphasis role="bold">Window switching</emphasis> – The top panel has a
-                horizontal window list, which you can use to switch between app windows and widgets
-                in your workspaces. The window decoration is going away, windows can be closed from
-                the window list. The present windows effect has this already implemented, as a
-                trashcan you can swipe your window into. It works pretty well and is snazzy. </para>
-            </listitem>
-            <listitem>
-              <para><emphasis role="bold">Semantic Resource Visualization</emphasis> – In order to
-                display <emphasis role="italic">things</emphasis> like files, contacts, bookmarks,
-                music, etc. we use separate QML elements for different uses (items in a listview,
-                for example). The data comes directly from Nepomuk. This part is also starting to
-                work, we can list different resources, and based on its type (defined in the
-                ontologies), it will choose a suitable QML file to display this <emphasis role="italic">Thing</emphasis> in a suitable way and allow for interaction with
-                it. </para>
-            </listitem>
-            <listitem>
-              <para><emphasis role="bold">Storage of bookmarks</emphasis> – As most of the
-                information we use in Plasma Active is coming from Nepomuk, we decided to store the
-                bookmarks in there as well. The NFO Ontology has classes for Bookmark and Bookmark
-                folder, which is what we’re using here. Last night I’ve restructured the
-                metadataengine to make it easier to build special purpose dataengines on top of
-                that. These dataengines allow for easy access and usage in QML / Plasma
-                Quick.</para>
-            </listitem>
-            <listitem>
-              <para><emphasis role="bold">Web Dashboard</emphasis> – I’m doing some work on a nice
-                way to view your bookmarks, as interacting with the web is an important use-case of
-                Plasma Active. We now have (cached) previews of webpages, we can use directly in
-                QML. Combined with the dataengine that lists bookmarks, it’s now easy to implement a
-                bookmarks browser, done entirely in Plasma Quick, shippable as
-                architecture-independent package. Connecting these bits and pieces is next on th
-                list.</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>Some of these things are working already, others materialise as we speak, some will
-          surely stay on our list until after Tokamak, so we’ve got something to hack on when
-          everybody’s back. :) (...)</para>
-<!--($ ld: 1.5.11 sm $)-->      </blockquote>
+        <para>We’ve been busy bees in the growing Plasma Active team, so it’s time to post some
+          progress updates. In case you forgot, Plasma Active is a KDE project to create a desirable
+          user experience for the device spectrum, with its first focus to create a system suitable
+          for tablet computers. In my <ulink
+            url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
+            >first post</ulink> about Plasma Active, you can see the basic shell running on a 10
+          inch Viewsonic Viewtab. In this post, I’m using a Wetab to demo the current state of
+          Plasma Active. The Wetab is one of our test devices. It’s a nice target device since it’s
+          Intel Atom-based, which makes building Plasma Active a bit easier, and thus shortens our
+          development-testing-deployment cycles considerable. The Wetab can currently be gotten from
+          German Ebay for 219⃽ + shipping, so it’s also quite affordable. </para>
+        <para> Back to the software, though. Our focus in the past weeks has been two-fold, we’ve
+          done a lot of “small fixes” which greatly improve the user experience. The other class of
+          changes is less visible at this point, but still fun and exciting. (...)</para>
+<!--($ ld: 11.5.11 sm $)-->      </blockquote>
+      <blockquote>
+        <title><ulink url="http://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/"
+            >Christoph Feck: Troubleshooting kded4 Bugs</ulink></title>
+        <para>Not just recently, but as long as KDE exists, we are getting bug reports for the KDE
+          process “kded4“. These include:</para>
+        <itemizedlist>
+          <listitem>
+            <para>kded4 crashes</para>
+          </listitem>
+          <listitem>
+            <para>kded4 leaks memory</para>
+          </listitem>
+          <listitem>
+            <para>kded4 eats 100% CPU</para>
+          </listitem>
+          <listitem>
+            <para>kded4 &lt;defunct&gt; process</para>
+          </listitem>
+        </itemizedlist>
+        <para>Before I dive into troubleshooting those problems, let me explain what kded4 does and
+          how it works. (...)</para>
+        <!--($ ld: 11.5.11 sm $)-->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://aseigo.blogspot.com/2011/05/qt5-kde5.html">Aaron Seigo: Qt5 ..
+            KDE5?</ulink></title>
+        <para>As most of those who read my blog have already heard, <ulink
+            url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">Qt5 is on its
+          way</ulink>. The target is 2012 and the focus is QtQuick where there is a high degree of
+          separation between display and data and things are rendered using a hardware accelerated
+          (read: OpenGL) scene graph. This is very much in line with where we are heading with
+          Plasma as well. Exciting times!</para>
+        <para>What does this mean for KDE? Will there be a KDE5 in 2012 as well? What would a KDE5
+          look like? I know these are the questions on some of your minds, if only because some of
+          you have already started asking myself and others about it. ;)</para>
+        <para>The short answer is that we don't know yet, but we're working on it. Not a very
+          satisfying answer is it? Well, short answers are rarely much fun. So here's the slightly
+          longer version.</para>
+        <!--($ ld: 11.5.11 sm $)-->
+      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
