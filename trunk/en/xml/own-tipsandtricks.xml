@@ -22,64 +22,79 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://jimmac.musichall.cz/log/?p=1177">jun auza: 7 Nifty Tricks to Get the Most
-          out of LibreOffice Writer</ulink>
+        <ulink url="http://jimmac.musichall.cz/log/?p=1177">jun auza: 7 Nifty Tricks to Get the Most out of LibreOffice Writer</ulink>
       </title>
-      <para>Since the death of <ulink
-          url="http://www.junauza.com/2009/05/8-essential-openoffice-extensions.html"
-          >OpenOffice</ulink> and the release of Ubuntu 11.04, LibreOffice has gained a lot of
+      <para>Since the death of <ulink url="http://www.junauza.com/2009/05/8-essential-openoffice-extensions.html">OpenOffice</ulink> and the release of Ubuntu 11.04, LibreOffice has gained a lot of
         popularity in such a short amount of time. Though there is not much of a difference between
         LibreOffice Writer and its Oracle-owned predecessor, there are some tricks that can help you
-        get the most out of it. Here's a look at 7 such tricks. (...)</para>
+        get the most out of it. Here&apos;s a look at 7 such tricks. (...)</para>
 <!-- ($ Id: 11.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/ebook-publishing-using-linux-tools">Linux
-          Journal/Doug Roberts: Ebook Publishing Using Linux Tools</ulink>
+        <ulink url="http://www.linuxjournal.com/content/ebook-publishing-using-linux-tools">Linux Journal/Doug Roberts: Ebook Publishing Using Linux Tools</ulink>
       </title>
       <para>Digital books, aka “ebooks” are going to change the publishing world just as iTunes and
         digital music have changed the music industry. ýAt the moment, Amazon’s Kindle seems to be
         the biggest fish in the pond. ýWhile the actual numbers are fuzzy, Amazon’s Kindle appears
-        to be driving ebook growth, as suggested by <ulink
-          url="http://www.atrianyc.com/computers-and-technology/amazon-kindle-driving-growth-in-the-e-book-reader-market/"
-          >this</ulink> article.</para>
+        to be driving ebook growth, as suggested by <ulink url="http://www.atrianyc.com/computers-and-technology/amazon-kindle-driving-growth-in-the-e-book-reader-market/">this</ulink> article.</para>
       <para>Recent news points to authors making a dramatic shift from traditional publishing houses
-        to self-publishing, as pointed out in <ulink
-          url="http://www.techdirt.com/blog/casestudies/articles/20110321/00183913568/best-selling-author-turns-down-half-million-dollar-publishing-contract-to-self-publish.shtml"
-          >this article</ulink> that describes why Barry Eisler turned down a $500,000 deal from a
+        to self-publishing, as pointed out in <ulink url="http://www.techdirt.com/blog/casestudies/articles/20110321/00183913568/best-selling-author-turns-down-half-million-dollar-publishing-contract-to-self-publish.shtml">this article</ulink> that describes why Barry Eisler turned down a $500,000 deal from a
         mainstream publisher, choosing instead to self-publish. ýThis particular article was in fact
         my own tipping point: I had written a science fiction novel 30 years ago that I was unable
         to get any of the publishing houses interested in at the time. ýI thought to myself, “Why
         not?” ýSo I dusted off the old digital manuscript, completely rewrote the story, and
         recently published it on Amazon’s Kindle publishing site. ýBTW, for more info on how the
         original digital manuscript migrated from machine to machine over that thirty year period,
-        see the Author’s Note on the home page for my novel, <ulink
-          url="http://parrot-farm.net/Second-Cousins/"><emphasis role="italic">Second
-            Cousins</emphasis></ulink>.</para>
+        see the Author’s Note on the home page for my novel, <ulink url="http://parrot-farm.net/Second-Cousins/">
+          <emphasis role="italic">Second Cousins</emphasis>
+        </ulink>.</para>
 <!-- ($ Id: 11.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/04/26/installing-gnome-shell-extensions-in-opensuse-11-4.aspx">Hubfolio/Matthew Casperson: Installing Gnome Shell Extensions in OpenSuse 11.4</ulink>
+      </title>
+      <para><ulink url="https://live.gnome.org/GnomeShell/Extensions">Gnome Shell Extensions</ulink> provide a number of official enhancements to the Gnome 3 desktop. There is an RPM called gnome-shell-extenions available in an <ulink url="http://download.opensuse.org/repositories/GNOME:/Factory/openSUSE_Factory/">OpenSuse repo</ulink>, but this did not work for me. Instead you can download and make the extensions for yourself using the following commands. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
   </sect2>
-<!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxaria.com/howto/check-your-disk-usage-with-df-and-du?lang=en">Linuxaria: Check your disk usage with df and du</ulink>
+        <ulink url="http://bashshell.net/commands/linux-stat-command/">BashShell.net/mike: Linux stat Command</ulink>
       </title>
-      <para>As system administrator , but also as common user on my PC, one of the more common problem is the fill up at 100% of a filesystem.
-So, in this article we’ll see 2 commands that can help us in keeping under control or check the space used in every filesystem and in his directory.
+      <para>stat
+</para>
+      <para>The stat utility allows you to see all information about either a file or a directory.  You can use wildcards if you want to see info for more than one object at a time.
 
 </para>
-      <para>df : report file system disk space usage
+      <para><screen>stat process.sh
+File: `process.sh&apos;
+Size: 158           Blocks: 16         IO Block: 4096   regular file
+Device: 305h/773d    Inode: 98134       Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2010-08-18 11:16:37.000000000 -0600
+Modify: 2010-08-16 09:44:57.000000000 -0600
+Change: 2010-08-16 09:44:57.000000000 -0600</screen></para>
+      <para>(...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxaria.com/howto/signals-linux?lang=en">Linuxaria: Signals in Linux</ulink>
+      </title>
+      <para>While i was surfing the net i’ve found this article By Matteo Ferrone about Linux signals, that i want to repost:
 
 </para>
-      <para>du: estimate file space usage (...)</para>
-    </blockquote>
-</sect2> -->  <sect2>
+      <para>A signal is an event sent by the kernel to a running program.
+
+</para>
+      <para>The signals can arrive at any time and software can choose what to do when it arrives: it can decide to ignore it or may decide to execute a signal handler and continue with what he did. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/05/02/baby-steps-with-our-text-editor/"
-          >Python4Kids: New Tutorial - Baby Steps With Our Text Editor</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/05/02/baby-steps-with-our-text-editor/">Python4Kids: New Tutorial - Baby Steps With Our Text Editor</ulink>
       </title>
       <para>In this tutorial we’re going to start using the power of the text editor that I’ve been
         badgering you about over the last few tutorials.ý We are going to go back to the earlier
@@ -89,25 +104,26 @@ So, in this article we’ll see 2 commands that can help us in keeping under con
       <para> Save the document to a file called trivia.pyý You need to be careful that your text
         editor doesn’t add ‘.txt’ to the end of the file’s name as some have the habit of
         doing.</para>
-      <para> copy the following function into the file (<ulink
-          url="http://python4kids.wordpress.com/2010/09/22/trivia-game-part-2/">originally found
-          here</ulink>, with some comments dropped): (...)</para>
+      <para> copy the following function into the file (<ulink url="http://python4kids.wordpress.com/2010/09/22/trivia-game-part-2/">originally found here</ulink>, with some comments dropped): (...)</para>
 <!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.htmlgoodies.com/beyond/css/how-to-create-custom-select-menus-with-css.html">HTMLGoodies/Arpan Dhandhania: How To Create Custom Select Menus with CSS</ulink>
+        <ulink url="http://www.databasejournal.com/features/mysql/three-ways-to-identify-non-matching-records-in-mysql.html">Database Journal/Robert Gravelle: Three Ways to Identify Non-matching Records in MySQL</ulink>
       </title>
-      <para>HTML and CSS have come a long way from where they started. In the 90&apos;s, before CSS was formally introduced, the focus was purely on the functionality of web pages. They looked ugly, but no one really complained since they were not aware of what promises CSS would bring. The only way to make the page look beautiful was to use loads of images but the lack of high speed internet connections prevented developers from using that approach since it hampered the user&apos;s experience.
-
-</para>
-      <para>Over the years, as CSS advanced, it enabled the developer to style certain form elements like text fields and textareas. Other elements like select menus, radio buttons and checkboxes were left unstylable. When I first read the discussions about CSS3 on the internet, I became hopeful that it will allow us to style these form elements too. Unfortunately, my wishes were not granted. So until they do, we are forced to use work-around solutions for it. (...)</para>
-<!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
+      <para>There are many times as a database developer and administrator that you&apos;ll want to know what entities are being excluded from a straight table join. For instance, it would be instructive for management to identify sales people who haven&apos;t received any bonuses, as these might be deemed to be the underperformers. To provide the requestor with the statistics, you&apos;ll have to determine which sales people are absent from the bonuses table. This is commonly referred to as a Non-matching query, although it is sometimes called a Subtract or Set Difference query as well. MySQL provides not one but three standard means of producing non-matching results. I will be presenting each here, along with another that you might not have considered. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/debug-scripts/debug-sections-of-a-script/">BashShell.net/mike: Debug Sections of a Script</ulink>
+        <ulink url="http://www.devx.com/opensource/Article/46936">DevX.com/Jason Gilmore: Mono Development 101: Build Linux Desktop Apps with .NET</ulink>
       </title>
-      <para>You do not have to debug the whole script, you can just debug the sections giving you the most difficulties. In this example, “set -x” and “set +x” encompass the section that you want to debug. The output shows how this section is sent to screen while the rest of the script functions normally. (...)</para>
-<!-- ($ Id: 7.5.11 sat $)-->    </blockquote>
+      <para>I&apos;ve spent the majority of my career focused entirely on open source Web development, having only occasionally dabbled in .NET development. Of course, the great thing about the open source community is that if you do happen to need a particular application, chances are somebody else has already created it. But what if it doesn&apos;t exist, or if an existing application doesn&apos;t work precisely as you believe it should?
+
+</para>
+      <para>I recently encountered this very problem when searching for streaming radio applications (plenty such applications exist, I just don&apos;t like any of them), and concluded that perhaps the only way to scratch this particular itch was to build my own application. This decision immediately prompted two questions: how in the heck are Linux desktop applications built in the first place, and could I harness my minimal .NET experience in the process?
+
+</para>
+      <para>As it turns out, there are quite a few open source solutions, but one in particular happens to be .NET-specific. That solution is <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>, an open source, cross platform C# implementation. In this article I&apos;ll document how I&apos;ve begun using Mono. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
   </sect2>
 <!--<sect2>
   <title>For System Administrators</title>
