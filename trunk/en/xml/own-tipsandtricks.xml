@@ -125,22 +125,13 @@ Change: 2010-08-16 09:44:57.000000000 -0600</screen></para>
       <para>As it turns out, there are quite a few open source solutions, but one in particular happens to be .NET-specific. That solution is <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>, an open source, cross platform C# implementation. In this article I&apos;ll document how I&apos;ve begun using Mono. (...)</para>
 <!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
   </sect2>
-<!--<sect2>
-  <title>For System Administrators</title>
-  <blockquote>
-    <title>
-      <ulink url="http://www.novell.com/communities/node/12811/ssh-keygen-password-less-ssh-login-script">Novell Cool Solutions/jmeldrum: ssh-keygen: password-less SSH login script</ulink>
-    </title>
-    <para><emphasis role="bold">license</emphasis>: 
-GPLv2
-
-</para>
-    <para>This utility uses ssh-keygen and ssh_copy_id to create RSA private/public key pairs for use by SSH protocol version 1 and RSA or DSA keys for use by SSH protocol version 2. The public key is then copied onto a remote system. You can now SSH to the remote system without the use of a password from the specified machine.
-
-</para>
-    <para>If the file /etc/root/.ssh/authorized_keys exists on the destination system, you probably already have it setup.
-
-</para>
-    <para>For more information see the man pages for ssh-keygen and ssh_copy_id. (...)</para>
-  </blockquote>
-</sect2>--></sect1>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.novell.com/communities/node/2332/supportconfig-linux">Novell Cool Solutions/jrecord: supportconfig for Linux</ulink>
+      </title>
+      <para>The <emphasis role="bold">updateSupportutils</emphasis> command compares the current versions of supportutils and its plugins to those installed on your server. Those that are outdated or missing are automatically downloaded and installed. Only those plugins that apply to your server are installed. The command supports creating a weekly or monthly cron entry to automatically check and update the supportutils package and its plugins. Click <ulink url="http://download.opensuse.org/repositories/Novell:/NTS/SLE_10/noarch/">here</ulink> to see a list of the current supportutils and plugin packages. The updateSupportutils command help screen follows: (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>
