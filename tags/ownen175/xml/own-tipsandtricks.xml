@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.junauza.com/2011/05/7-nifty-tricks-to-get-most-out-of.html">jun auza: 7 Nifty Tricks to Get the Most out of LibreOffice Writer</ulink>
+      </title>
+      <para>Since the death of <ulink url="http://www.junauza.com/2009/05/8-essential-openoffice-extensions.html">OpenOffice</ulink> and the release of Ubuntu 11.04, LibreOffice has gained a lot of
+        popularity in such a short amount of time. Though there is not much of a difference between
+        LibreOffice Writer and its Oracle-owned predecessor, there are some tricks that can help you
+        get the most out of it. Here&apos;s a look at 7 such tricks. (...)</para>
+<!-- ($ Id: 11.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/ebook-publishing-using-linux-tools">Linux Journal/Doug Roberts: Ebook Publishing Using Linux Tools</ulink>
+      </title>
+      <para>Digital books, aka “ebooks” are going to change the publishing world just as iTunes and
+        digital music have changed the music industry. ýAt the moment, Amazon’s Kindle seems to be
+        the biggest fish in the pond. ýWhile the actual numbers are fuzzy, Amazon’s Kindle appears
+        to be driving ebook growth, as suggested by <ulink url="http://www.atrianyc.com/computers-and-technology/amazon-kindle-driving-growth-in-the-e-book-reader-market/">this</ulink> article.</para>
+      <para>Recent news points to authors making a dramatic shift from traditional publishing houses
+        to self-publishing, as pointed out in <ulink url="http://www.techdirt.com/blog/casestudies/articles/20110321/00183913568/best-selling-author-turns-down-half-million-dollar-publishing-contract-to-self-publish.shtml">this article</ulink> that describes why Barry Eisler turned down a $500,000 deal from a
+        mainstream publisher, choosing instead to self-publish. ýThis particular article was in fact
+        my own tipping point: I had written a science fiction novel 30 years ago that I was unable
+        to get any of the publishing houses interested in at the time. ýI thought to myself, “Why
+        not?” ýSo I dusted off the old digital manuscript, completely rewrote the story, and
+        recently published it on Amazon’s Kindle publishing site. ýBTW, for more info on how the
+        original digital manuscript migrated from machine to machine over that thirty year period,
+        see the Author’s Note on the home page for my novel, <ulink url="http://parrot-farm.net/Second-Cousins/">
+          <emphasis role="italic">Second Cousins</emphasis>
+        </ulink>.</para>
+<!-- ($ Id: 11.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/04/26/installing-gnome-shell-extensions-in-opensuse-11-4.aspx">Hubfolio/Matthew Casperson: Installing Gnome Shell Extensions in OpenSuse 11.4</ulink>
+      </title>
+      <para><ulink url="https://live.gnome.org/GnomeShell/Extensions">Gnome Shell Extensions</ulink> provide a number of official enhancements to the Gnome 3 desktop. There is an RPM called gnome-shell-extenions available in an <ulink url="http://download.opensuse.org/repositories/GNOME:/Factory/openSUSE_Factory/">OpenSuse repo</ulink>, but this did not work for me. Instead you can download and make the extensions for yourself using the following commands. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.wafaa.eu/entry/pixel-limits-with-the-intel-945gme-1-63.html">Andrew Wafaa: Pixel Limits With The Intel 945GME</ulink>
+      </title>
+      <para>Just a quick post to enlighten those that use an Intel 945GME powered machine of a
+        certain pixel limitation that you may not know about.</para>
+      <para>I&apos;m a full time user of the spiffy new GNOME3 with the fancy gnome-shell mojo. As such
+        it&apos;s on my primary machine, which at the moment is an eeePC 1000HE. Yup, that&apos;s a netbook
+        with a small 10&quot; screen and relatively low resolution of 1024x600 pixels. &#160;As I&apos;m sat at my
+        desk I thought I would use my 17&quot; Dell LCD monitor. So I plugged it in and selected
+          &apos;<emphasis role="italic">System Settings</emphasis>&gt;<emphasis role="italic">Displays</emphasis>&apos; Without any issue it saw my external monitor and allowed me to
+        enable it. I chose not to mirror displays as I&apos;d like to take advantage of the larger
+        screen. (...)</para>
+<!-- ($ Id: 14.5.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/commands/linux-stat-command/">BashShell.net/mike: Linux stat Command</ulink>
+      </title>
+      <para>The stat utility allows you to see all information about either a file or a directory.  You can use wildcards if you want to see info for more than one object at a time.
+
+</para>
+      <para><screen>stat process.sh
+File: `process.sh&apos;
+Size: 158           Blocks: 16         IO Block: 4096   regular file
+Device: 305h/773d    Inode: 98134       Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2010-08-18 11:16:37.000000000 -0600
+Modify: 2010-08-16 09:44:57.000000000 -0600
+Change: 2010-08-16 09:44:57.000000000 -0600</screen></para>
+      <para>(...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxaria.com/howto/signals-linux?lang=en">Linuxaria: Signals in Linux</ulink>
+      </title>
+      <para>While i was surfing the net i’ve found this article By Matteo Ferrone about Linux signals, that i want to repost:
+
+</para>
+      <para>A signal is an event sent by the kernel to a running program.
+
+</para>
+      <para>The signals can arrive at any time and software can choose what to do when it arrives: it can decide to ignore it or may decide to execute a signal handler and continue with what he did. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://python4kids.wordpress.com/2011/05/02/baby-steps-with-our-text-editor/">Python4Kids/Brendan Scott: New Tutorial - Baby Steps With Our Text Editor</ulink>
+      </title>
+      <para>In this tutorial we’re going to start using the power of the text editor that I’ve been
+        badgering you about over the last few tutorials. We are going to go back to the earlier
+        tutorials and resurrect some of the code there.</para>
+      <para><emphasis role="bold">Exercise:</emphasis></para>
+      <para> Create a new document with your text editor</para>
+      <para> Save the document to a file called trivia.py You need to be careful that your text
+        editor doesn’t add ‘.txt’ to the end of the file’s name as some have the habit of
+        doing.</para>
+      <para> copy the following function into the file (<ulink url="http://python4kids.wordpress.com/2010/09/22/trivia-game-part-2/">originally found here</ulink>, with some comments dropped): (...)</para>
+<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.databasejournal.com/features/mysql/three-ways-to-identify-non-matching-records-in-mysql.html">Database Journal/Robert Gravelle: Three Ways to Identify Non-matching Records in MySQL</ulink>
+      </title>
+      <para>There are many times as a database developer and administrator that you&apos;ll want to know what entities are being excluded from a straight table join. For instance, it would be instructive for management to identify sales people who haven&apos;t received any bonuses, as these might be deemed to be the underperformers. To provide the requestor with the statistics, you&apos;ll have to determine which sales people are absent from the bonuses table. This is commonly referred to as a Non-matching query, although it is sometimes called a Subtract or Set Difference query as well. MySQL provides not one but three standard means of producing non-matching results. I will be presenting each here, along with another that you might not have considered. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.devx.com/opensource/Article/46936">DevX.com/Jason Gilmore: Mono Development 101: Build Linux Desktop Apps with .NET</ulink>
+      </title>
+      <para>I&apos;ve spent the majority of my career focused entirely on open source Web development, having only occasionally dabbled in .NET development. Of course, the great thing about the open source community is that if you do happen to need a particular application, chances are somebody else has already created it. But what if it doesn&apos;t exist, or if an existing application doesn&apos;t work precisely as you believe it should?
+
+</para>
+      <para>I recently encountered this very problem when searching for streaming radio applications (plenty such applications exist, I just don&apos;t like any of them), and concluded that perhaps the only way to scratch this particular itch was to build my own application. This decision immediately prompted two questions: how in the heck are Linux desktop applications built in the first place, and could I harness my minimal .NET experience in the process?
+
+</para>
+      <para>As it turns out, there are quite a few open source solutions, but one in particular happens to be .NET-specific. That solution is <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>, an open source, cross platform C# implementation. In this article I&apos;ll document how I&apos;ve begun using Mono. (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.novell.com/communities/node/2332/supportconfig-linux">Novell Cool Solutions/jrecord: supportconfig for Linux</ulink>
+      </title>
+      <para>The <emphasis role="bold">updateSupportutils</emphasis> command compares the current versions of supportutils and its plugins to those installed on your server. Those that are outdated or missing are automatically downloaded and installed. Only those plugins that apply to your server are installed. The command supports creating a weekly or monthly cron entry to automatically check and update the supportutils package and its plugins. Click <ulink url="http://download.opensuse.org/repositories/Novell:/NTS/SLE_10/noarch/">here</ulink> to see a list of the current supportutils and plugin packages. The updateSupportutils command help screen follows: (...)</para>
+<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

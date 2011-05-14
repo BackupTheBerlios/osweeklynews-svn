@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  
+  <!--
+  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">QT Labs/Lars Knoll:
+          Thoughts about Qt 5</ulink>
+      </title>
+      <para>Qt 4.0 was released in June 2005, almost six years ago. A lot has changed in the
+        software industry over these years. While application development back then happened mostly
+        on desktop systems, mobile devices connected to the web have become increasingly popular.
+        User interface technology has moved from static widgets to a fluid touch based experience.
+        Since Qt 4.0 we have released seven minor versions of Qt to stay ahead of development needs,
+        for example by releasing Qt Quick. Within the growing Qt user base, we have had a strong
+        up-take and new needs from embedded and mobile app and UI developers.</para>
+      <para>To also, in the future, be a leading edge development framework across multiple
+        industries, Qt needs to continue to renew itself. Qt 4 has been an evolution, and I have
+        been thinking about what future Qt versions might look like from a technical perspective.
+        Over the last years we have been working on laying the foundations for the next major
+        release. I see Qt Quick, QML Scenegraph and Project Lighthouse– combined with an increased
+        focus on Qt Webkit – as the foundation which we plan to use to move towards a new major
+        release of Qt.</para>
+      <para>Given that Qt is moving into open governance mode in the upcoming months, I wanted to
+        share my thinking with the Qt community in order to kick off the discussions about what I
+        see as the technical architecture for Qt 5. (...)</para>
+          </blockquote> 
+  </sect2>-->
+  <!--
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxfoundation.org/collaborate/workgroups/lsb/fhs">The Filesystem Hierarchy Standard (FHS)</ulink>
+      </title>
+      <para>The LSB workgroup is preparing FHS 3.0, which will be the first FHS release since 2004. As part of that release, we are soliciting contributions from all interested parties.
+
+</para>
+      <para>Our goal is to release FHS 3.0 by July 1 if possible. (...)</para>
+  </blockquote> 
+  </sect2> -->
+  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.zdnet.com/blog/open-source/novell-will-continue-to-support-libreoffice/8866">ZDNet/Steven J. Vaughan-Nichols: Novell will continue to support LibreOffice</ulink>
+      </title>
+      <para>While <ulink url="http://www.zdnet.com/blog/open-source/attachmate-reveals-novell-suse-linux-plans/8771">Attachmate has talked a lot about its plans for Novell</ulink> after it <ulink url="http://www.zdnet.com/blog/open-source/novell-deals-done/8755">bought Novell</ulink>, no one saw <ulink url="http://www.zdnet.com/blog/open-source/is-mono-dead-is-novell-dying/8821">Attachmate closing down Novell’s Mono programming effort</ulink>. Indeed, other than cutting Novell’s work-force by 25%, Attachmate has said little concrete about the company’s open-source plans. I have learned from sources though that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink>, the open-source office suite, will continue to receive <ulink url="http://www.novell.com/">Novell</ulink>’s support. (...)</para>
+<!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/">Christoph Feck: Troubleshooting kded4 Bugs</ulink>
+      </title>
+      <para>Not just recently, but as long as KDE exists, we are getting bug reports for the KDE
+        process “kded4“. These include:</para>
+      <itemizedlist>
+        <listitem>
+          <para>kded4 crashes</para>
+        </listitem>
+        <listitem>
+          <para>kded4 leaks memory</para>
+        </listitem>
+        <listitem>
+          <para>kded4 eats 100% CPU</para>
+        </listitem>
+        <listitem>
+          <para>kded4 &lt;defunct&gt; process</para>
+        </listitem>
+      </itemizedlist>
+      <para>Before I dive into troubleshooting those problems, let me explain what kded4 does and
+        how it works. (...)</para>
+      <!--($ ld: 11.5.11 sm $)-->      </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.zdnet.com/blog/open-source/return-of-the-linux-quiz/8843">ZDNet/Steven J. Vaughan-Nichols: Return of the Linux Quiz</ulink>
+      </title>
+      <para>Hi there, it’s Steven J. Vaughan-Nichols again, ZDNet’s resident Linux expert, with yet another Linux quiz. This test is purely for your amusement and should not be used to determine if you’re ready for your RHCE exam.
+
+</para>
+      <para>Instructions: Click on your answer and then see how many others agree with you. Then click to see the answer and the next question. (...)</para>
+<!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://itmanagement.earthweb.com/osrc/article.php/3933061/Are-Usability-Studies-Hurting-the-Free-Desktop.htm">Datamation/Bruce Byfield: Are Usability Studies Hurting the Free Desktop?</ulink>
+      </title>
+      <para>The recent history of new interfaces on the free desktop is not a happy one. Three years ago, the release of KDE 4.0 resulted in a user revolt whose like had never been seen. This year, the <ulink url="http://itmanagement.earthweb.com/osrc/article.php/3930571/Ubuntu-Unity-vs-GNOME-3-Which-is-Better.htm">releases</ulink> of GNOME 3 and Ubuntu&apos;s Unity have produced similar revolts, but on a smaller scale.
+
+</para>
+      <para>Looking at these reactions, I am starting to wonder: Are the developers of free desktops become obsessed with design principles at the expense of what users actually want? (...)</para>
+<!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">QT Labs/Lars Knoll:
+          Thoughts about Qt 5</ulink>
+      </title>
+      <para>Qt 4.0 was released in June 2005, almost six years ago. A lot has changed in the
+        software industry over these years. While application development back then happened mostly
+        on desktop systems, mobile devices connected to the web have become increasingly popular.
+        User interface technology has moved from static widgets to a fluid touch based experience.
+        Since Qt 4.0 we have released seven minor versions of Qt to stay ahead of development needs,
+        for example by releasing Qt Quick. Within the growing Qt user base, we have had a strong
+        up-take and new needs from embedded and mobile app and UI developers.</para>
+      <para>To also, in the future, be a leading edge development framework across multiple
+        industries, Qt needs to continue to renew itself. Qt 4 has been an evolution, and I have
+        been thinking about what future Qt versions might look like from a technical perspective.
+        Over the last years we have been working on laying the foundations for the next major
+        release. I see Qt Quick, QML Scenegraph and Project Lighthouse– combined with an increased
+        focus on Qt Webkit – as the foundation which we plan to use to move towards a new major
+        release of Qt.</para>
+      <para>Given that Qt is moving into open governance mode in the upcoming months, I wanted to
+        share my thinking with the Qt community in order to kick off the discussions about what I
+        see as the technical architecture for Qt 5. (...)</para>
+      <!-- ($ ld: 10.5.11 sm $) -->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title><ulink url="http://blog.jprosevear.org/2011/05/13/webgl-security/">JP Rosevear:
+        WebGL</ulink></title>
+      <para>Recently Context Information Security Limited gathered a lot of attention for <ulink
+        url="http://contextis.co.uk/resources/blog/webgl/">a blog post on the state of WebGL
+        security</ulink>. For Mozilla, <ulink url="http://en.wikipedia.org/wiki/WebGL"
+          >WebGL</ulink> was first released in Firefox 4, and there are implementations in Chrome,
+        Safari and Opera as well. The blog post outlines an abstract concern that WebGL is
+        inherently insecure because it allows fairly direct access to the hardware, along with two
+        specific attacks, a Denial of Service and a Cross-Domain Image Theft.</para>
+      <para>The Denial of Service attack does not generally endanger user data or privacy, but it
+        can be highly annoying for users, not unlike sites that pop up multiple dialogs or have
+        long-running javascript that hangs the browser. The Khronos WebGL working group has been
+        aware of this type of issue for some time and has discussed it openly. Shader validation can
+        help somewhat, as can <ulink url="http://www.opengl.org/registry/specs/ARB/robustness.txt"
+          >GL_ARB_robustness</ulink>, but the forthcoming GL_ARB_robustness_2 extension will help
+        even more. There are also user confirmation approaches available as well depending on what
+        real world data we uncover over time. (...)</para>
+      <!-- ($ ld: 14.5.11 sm $)-->
+    </blockquote>    
+  </sect2> 
+<!--<sect2>
+  <title>LOL</title>
+  <blockquote>
+    <title>
+      <ulink url="http://xkcd.com/874/">XKCD: Time Management</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://imgs.xkcd.com/comics/time_management.png" width="50%"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</ulink></para>
+  </blockquote>
+</sect2>--></sect1>

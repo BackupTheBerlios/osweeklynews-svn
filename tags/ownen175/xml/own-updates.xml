@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ 
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://blog.cihar.com/archives/2011/05/09/stardict-dictionaries-opensuse/"
+        >Michal Čihař: StarDict dictionaries for openSUSE</ulink></title>
+    <para>While <ulink
+        url="http://blog.cihar.com/archives/2011/05/09/no-new-dictionaries-tarballs-no-change/"
+        >working</ulink> on <ulink url="http://cihar.com/software/slovnik/">dictionaries for
+        StarDict</ulink> today, I've decided to finally bring them to openSUSE as well.</para>
+    <para>First step was to fix my favorite tool to access them - sdcv. The fixed package is now in
+      my home project and will be hopefully soon accepted to Education project so that it is more
+      visible (see <ulink url="https://build.opensuse.org/request/show/69901">request 69901</ulink>
+      if it is already the case).</para>
+    <para>When I had the tool working, it was time to package <ulink
+        url="http://cihar.com/software/slovnik/">dictionaries</ulink> themselves. It was quite
+      simple task and the rpms are available in <ulink
+        url="https://build.opensuse.org/project/show?project=home%3ANijel%3Astardict">my home
+        project</ulink>.</para>
+    <para>To install packages on openSUSE 11.4 simply
+      do:<programlisting>zypper ar http://download.opensuse.org/repositories/home:/Nijel:/stardict/openSUSE_11.4/ stardict
+zypper ref
+zypper in  stardict-czech  stardict-english-czech  stardict-german-czech</programlisting></para>
+    <!-- ($ ld: 10.5.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/05/08/smb-traffic-analyzer-1-2-4-supports-multiple-databases-and-delivers-websmbta/"
+        >Holger Hetterich: SMB Traffic Analyzer 1.2.4 supports multiple databases and delivers
+        webSMBTA</ulink></title>
+    <para>If you don’t have a clue what you are reading here, this article is about the<emphasis
+        role="bold"> SMB Traffic Analyzer</emphasis> project, check it’s <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/">homepage</ulink> for more
+      information about it.</para>
+    <para>The development team is proud to announce the release of <emphasis role="bold">version
+        1.2.4 of SMB Traffic Analyzer</emphasis>. With a much longer development cycle than usual,
+      we took the time to do real ground work on<emphasis role="bold"> SMBTA</emphasis>, and
+      reworked the whole database handling. As a result, SMBTA will from now on access it’s
+      databases via <ulink url="http://libdbi.sourceforge.net/">libDBI</ulink>, a generic database
+      layer. Via libDBI, <emphasis role="bold">SMBTA</emphasis> is potientially able to run with
+        <emphasis role="bold">sqlite, MySQL, and postgresql</emphasis> as database backend. Since
+      both, smbtad and smbtatools have been rewritten to use the libDBI layer, smbtaquery can know
+      run completely independent from smbtad, as it uses<emphasis role="bold"> libDBI</emphasis>
+      directly to access the database (<emphasis role="bold">bso#8065</emphasis>). We have tried
+      hard to crash smbtad in test suites since we made the move to <emphasis role="bold"
+        >libDBI</emphasis>, and moved <emphasis role="italic"><emphasis role="bold">several tens of
+          terabyte</emphasis></emphasis> over samba shares without getting smbtad to fall (we are
+      currently using<emphasis role="bold"> postgresql</emphasis> as database). We strongly believe,
+      since smbtad does not have to function as a network gateway to the database for the clients
+      any more, the move to libDBI will make SMB Traffic Analyzer much more stable. SMB Traffic
+      Analyzer 1.2.4 provides an upgrade path if the user wants to use the sqlite database that has
+      been created with SMBTA version &lt;= 1.2.3.</para>
+    <figure id="fig.websmbta">
+      <title>The object selector of webSMBTA</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://holger123.files.wordpress.com/2011/05/bildschirmfoto.png"
+            width="30%"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>Furthermore,<emphasis role="bold"> SMB Traffic Analyzer 1.2.4</emphasis> debuts <emphasis
+        role="italic"><emphasis role="bold">Benjamin Brunner’s</emphasis></emphasis> work on
+        <emphasis role="bold">webSMBTA</emphasis>, a web
+      interface to all functions of the <emphasis role="bold">smbtaquery</emphasis> program. It is a
+      modern, rails3 based, intuitive interface, that <emphasis role="italic"><emphasis role="bold"
+          >reduces</emphasis></emphasis> object selection <emphasis role="italic"><emphasis
+          role="bold">to a few mouse clicks</emphasis></emphasis>, and makes running statistic
+      functions on the objects a breeze. <emphasis role="bold">webSMBTA</emphasis> automatically
+      retrieves all the objects known in your Samba network, and displays them in a way that gives
+      an idea of the network structure. Out of these lists, you click the object you want to run a
+      function on, and get a descriptive dialog for the function’s options. The output of functions
+      is HTML rendered, and attached to the webSMBTA main page. Our ground work on XML in smbtaquery
+      finally pays off, as <emphasis role="bold">webSMBTA</emphasis> is consuming <emphasis
+        role="italic"><emphasis role="bold">HTML output</emphasis></emphasis> of smbtaquery
+      directly. Once a function has been chosen, it can easily be re-run by clicking it’s reload
+        button,<emphasis role="italic"><emphasis role="bold"/></emphasis> or removed from the
+      page.</para>
+    <para>We have added a new chapter for the documentation on <emphasis role="bold"
+        >webSMBTA,</emphasis> as well as to the <emphasis role="bold">libDBI</emphasis>
+      change.</para>
+    <para>All of smbtatools can now use a single configuration file, serving all of them (<emphasis
+        role="bold">bso#8097</emphasis>). The “top” function of smbtaquery can now operate
+      descending as well as ascending. (<emphasis role="bold">bso#8095</emphasis>).</para>
+    <para>You can download <emphasis role="bold">SMB Traffic Analyzer</emphasis> from the <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/smb-traffic-analyzer-download/"
+        >download page</ulink>. Please be aware that currently binary packages of smbtatools 1.2.4
+      do <emphasis role="bold">not</emphasis> contain the code for webSMBTA, as webSMBTA is in Beta,
+      has not yet been employed with Apache, and is not ready for being packaged. Of course, the
+      1.2.4 source tarball of smbtatools does contain the webSMBTA sources. Nevertheless, you can
+      find a README file in the smbtatools tarball, describing how to run the webinterface by using
+      the internal rails webserver. For more information on <emphasis role="bold">SMB Traffic
+        Analyzer</emphasis>, check it’s<ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/"> homepage</ulink>. </para>
+  </blockquote>
+</sect1>

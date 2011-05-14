@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/archive/opensuse-security-announce/2011-05/msg00003.html">openSUSE 11.2 has reached end of SUSE support - 11.2 Evergreen goes on!</ulink></title>
+    <para>With the release of a kdelibs4 security fix on Thursday 12th of May SUSE has released the
+      last update for openSUSE 11.2. </para>
+    <para>openSUSE 11.2 is now officially discontinued and out of support by SUSE. </para>
+    <para>However the openSUSE Evergreen community effort is going to continue the openSUSE 11.2
+      maintenance similar to 11.1. </para>
+    <para>The overview page of this project, how to activate and use it, and other details, is
+        on:<ulink url="http://en.opensuse.org/openSUSE:Evergreen"
+        >http://en.opensuse.org/openSUSE:Evergreen</ulink> The Evergreen project is lead by openSUSE
+      community member Wolfgang Rosenauer.</para>
+    <para>Here are some security statistics: openSUSE 11.2 was released on November 12th 2009,
+      making it 18 months of security and bugfix support. </para>
+    <para>Some statistics on the released patches (compared to 11.1, which had 7 months
+      more):</para>
+    <para>(As comparison would otherwise be difficult due to the different lifetimes, I did adjust
+      the 11.1 numbers by *18/25)<itemizedlist>
+        <listitem>
+          <para>Total updates: 489 (-19)</para>
+        </listitem>
+        <listitem>
+          <para>Security: 317 (-19)</para>
+        </listitem>
+        <listitem>
+          <para>Recommended: 172 (+ 3)</para>
+        </listitem>
+        <listitem>
+          <para>Optional: 0 (- 3)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Read more: <ulink
+        url="http://lists.opensuse.org/archive/opensuse-security-announce/2011-05/msg00003.html"
+        >http://lists.opensuse.org/archive/opensuse-security-announce/2011-05/msg00003.html</ulink></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!-- ($ ld: 14.5.11 sm $) -->
+  </blockquote>  
+</sect1>
