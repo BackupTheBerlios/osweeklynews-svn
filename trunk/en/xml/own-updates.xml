@@ -40,7 +40,8 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
         url="https://build.opensuse.org/project/show?project=home%3ANijel%3Astardict">my home
         project</ulink>.</para>
     <para>To install packages on openSUSE 11.4 simply
-      do:<programlisting>zypper ar http://download.opensuse.org/repositories/home:/Nijel:/stardict/openSUSE_11.4/ stardict
+      do:<programlisting>zypper ar http://download.opensuse.org/repositories/home:/Nijel:/stardict/openSUSE_11.4/ 
+\stardict
 zypper ref
 zypper in  stardict-czech  stardict-english-czech  stardict-german-czech</programlisting></para>
     <!-- ($ ld: 10.5.11 sm $)-->
