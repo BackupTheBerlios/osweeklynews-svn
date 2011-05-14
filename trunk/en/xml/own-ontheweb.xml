@@ -84,6 +84,27 @@
 </para>
       <para>Looking at these reactions, I am starting to wonder: Are the developers of free desktops become obsessed with design principles at the expense of what users actually want? (...)</para>
 <!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blog.jprosevear.org/2011/05/13/webgl-security/">JP Rosevear:
+          WebGL</ulink></title>
+      <para>Recently Context Information Security Limited gathered a lot of attention for <ulink
+          url="http://contextis.co.uk/resources/blog/webgl/">a blog post on the state of WebGL
+          security</ulink>.ý For Mozilla, <ulink url="http://en.wikipedia.org/wiki/WebGL"
+          >WebGL</ulink> was first released in Firefox 4, and there are implementations in Chrome,
+        Safari and Opera as well.ý The blog post outlines an abstract concern that WebGL is
+        inherently insecure because it allows fairly direct access to the hardware, along with two
+        specific attacks, a Denial of Service and a Cross-Domain Image Theft.</para>
+      <para>The Denial of Service attack does not generally endanger user data or privacy, but it
+        can be highly annoying for users, not unlike sites that pop up multiple dialogs or have
+        long-running javascript that hangs the browser.ý The Khronos WebGL working group has been
+        aware of this type of issue for some time and has discussed it openly.ý Shader validation
+        can help somewhat, as can <ulink
+          url="http://www.opengl.org/registry/specs/ARB/robustness.txt">GL_ARB_robustness</ulink>,
+        but the forthcoming GL_ARB_robustness_2 extension will help even more.ý There are also user
+        confirmation approaches available as well depending on what real world data we uncover over
+        time. (...)</para>
+      <!-- ($ ld: 14.5.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>Warning!</title>
