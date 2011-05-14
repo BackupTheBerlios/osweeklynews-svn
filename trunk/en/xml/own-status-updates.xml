@@ -401,15 +401,12 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/05/whats-new-in-plasma-active/">Sebastian
-            Kügler: What’s new in Plasma Active?</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/05/whats-new-in-plasma-active/">Sebastian Kügler: What’s new in Plasma Active?</ulink>
         </title>
         <para>We’ve been busy bees in the growing Plasma Active team, so it’s time to post some
           progress updates. In case you forgot, Plasma Active is a KDE project to create a desirable
           user experience for the device spectrum, with its first focus to create a system suitable
-          for tablet computers. In my <ulink
-            url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/"
-            >first post</ulink> about Plasma Active, you can see the basic shell running on a 10
+          for tablet computers. In my <ulink url="http://vizzzion.org/blog/2011/04/plasma-active-a-desirable-user-experience-encompassing-the-device-spectrum/">first post</ulink> about Plasma Active, you can see the basic shell running on a 10
           inch Viewsonic Viewtab. In this post, I’m using a Wetab to demo the current state of
           Plasma Active. The Wetab is one of our test devices. It’s a nice target device since it’s
           Intel Atom-based, which makes building Plasma Active a bit easier, and thus shortens our
@@ -420,8 +417,9 @@
           changes is less visible at this point, but still fun and exciting. (...)</para>
 <!--($ ld: 11.5.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink url="http://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/"
-            >Christoph Feck: Troubleshooting kded4 Bugs</ulink></title>
+        <title>
+          <ulink url="http://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/">Christoph Feck: Troubleshooting kded4 Bugs</ulink>
+        </title>
         <para>Not just recently, but as long as KDE exists, we are getting bug reports for the KDE
           process “kded4“. These include:</para>
         <itemizedlist>
@@ -440,25 +438,22 @@
         </itemizedlist>
         <para>Before I dive into troubleshooting those problems, let me explain what kded4 does and
           how it works. (...)</para>
-        <!--($ ld: 11.5.11 sm $)-->
-      </blockquote>
+<!--($ ld: 11.5.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink url="http://aseigo.blogspot.com/2011/05/qt5-kde5.html">Aaron Seigo: Qt5 ..
-            KDE5?</ulink></title>
-        <para>As most of those who read my blog have already heard, <ulink
-            url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">Qt5 is on its
-          way</ulink>. The target is 2012 and the focus is QtQuick where there is a high degree of
+        <title>
+          <ulink url="http://aseigo.blogspot.com/2011/05/qt5-kde5.html">Aaron Seigo: Qt5 .. KDE5?</ulink>
+        </title>
+        <para>As most of those who read my blog have already heard, <ulink url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">Qt5 is on its way</ulink>. The target is 2012 and the focus is QtQuick where there is a high degree of
           separation between display and data and things are rendered using a hardware accelerated
           (read: OpenGL) scene graph. This is very much in line with where we are heading with
           Plasma as well. Exciting times!</para>
         <para>What does this mean for KDE? Will there be a KDE5 in 2012 as well? What would a KDE5
           look like? I know these are the questions on some of your minds, if only because some of
           you have already started asking myself and others about it. ;)</para>
-        <para>The short answer is that we don't know yet, but we're working on it. Not a very
-          satisfying answer is it? Well, short answers are rarely much fun. So here's the slightly
+        <para>The short answer is that we don&apos;t know yet, but we&apos;re working on it. Not a very
+          satisfying answer is it? Well, short answers are rarely much fun. So here&apos;s the slightly
           longer version.</para>
-        <!--($ ld: 11.5.11 sm $)-->
-      </blockquote>
+<!--($ ld: 11.5.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -541,7 +536,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 182)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 183)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -553,14 +548,14 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 127)</ulink>
+            <ulink url="https://features.opensuse.org/308357">Replacement for Sax2 (Score: 129)</ulink>
           </title>
           <para>We need a replacement for sax2 in 11.3, as a safety measure for when auto
             configuration fails to detect certain monitors/keyboards/mice. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 118)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 120)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -576,7 +571,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 97)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 98)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -589,56 +584,66 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 7.5.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 14.5.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312292">Improved partitioning suggestions for full encrypted installations</ulink>
+            <ulink url="https://features.opensuse.org/312308">make yast gtk gui more complete</ulink>
           </title>
-          <para>Since the full system encryption was enabled in the openSUSE installation, there was every release a problem with the automatic partitioning suggestions.
+          <para>The yast2 qt interface have (at least) one very usefull function that is not found in the gtk interface: when there is a problem in an install, being able to force reinstall of all the already installed packages is very handy.
 </para>
-          <para>Concrete: The installation systems always gives me a partition table that waste, don&apos;t use, the greatest part of my harddrive.
-</para>
-          <para>So I have to do the modification manual, which was the first time a strange learning and takes a big amount of time.
+          <para>In qt, it&apos;s enough to clic right and select update all the selected.
 
 </para>
-          <para>It would looks much more professional when this little bug would be fixed for the next distro release.</para>
+          <para>so I would be fine to have the same in gtk (I just had a corrupted kde4 install and could only run gnome)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312293">Option to disable disk check on certian volumes in YaST</ulink>
+            <ulink url="https://features.opensuse.org/312309">Fix Printing in SuSe by Having gutenprint</ulink>
           </title>
-          <para>This is one really really really annoying feature in yast. Here is the scenario, you have a machine with a bunch of storage drives, drives that are normally kept full. Everytime you enter something like package management in YaST it pops up a low disk space warning. This warning should only apply for volumes where YaST utilizes for it&apos;s files (such as download cache, home, etc). A HTPC for example often has volumes full to the max.</para>
+          <para>On Ubuntu there are many many printer drivers on the distribution by default because of the package gutenprint . SuSe has this package in the Repos, but not default. When I tried to set up my printer, nothing but the generic driver was found, but I manually installed gutenprint after 3 hours of searching on Google, and the Driver was there. gutenprint should be there by default.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312294">YaST and GNOME3 :: Mockup</ulink>
+            <ulink url="https://features.opensuse.org/312320">don&apos;t install postfix by default anymore</ulink>
           </title>
-          <para>I&apos;ve written a small text regarding a possible integration of YaST 2 on GNOME3 and provided a simple mockup.
+          <para>postfix slows down system boot and runs on every installation even though it&apos;s not actually needed anymore on the average desktop. Even mutt can send mails without local mta nowadays. Therefore we shouldn&apos;t install postfix anymore by default.
 
 </para>
-          <para><ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/ ">http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/ </ulink></para>
+          <para>cron may need adjustments to report output of cron jobs via other means such as syslog.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312299">xz compression for livecd</ulink>
+            <ulink url="https://features.opensuse.org/312322">cups-pdf Drucker wieder per default installieren</ulink>
           </title>
-          <para>Fedora 15 is going to use xz compression for their live cds
-</para>
-          <para><ulink url="http://fedoraproject.org/wiki/Features/LZMA_for_Live_Images">http://fedoraproject.org/wiki/Features/LZMA_for_Live_Images</ulink>
+          <para>I think that openSUSE should install a pdf-printer as default again.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312327">allow configuration of offline local printer</ulink>
+          </title>
+          <para>Now it&apos;s impossible to configure a local printer is it&apos;s not detectedn why?</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312333">Provide gccgo packages</ulink>
+          </title>
+          <para>It would be awesome to ship gcc 4.6 with support for Google Go (gccgo) with openSUSE 12.1.
 
 </para>
-          <para>can we also have xz compression for opensuse livecds so more software can be bundled in?</para>
+          <para>Debian already provides gccgo for sid: <ulink url="http://packages.debian.org/sid/gccgo">http://packages.debian.org/sid/gccgo</ulink> </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312301">add updategrub to the rescue system</ulink>
+            <ulink url="https://features.opensuse.org/312334">Installing video card drivers from the official</ulink>
           </title>
-          <para>the forum user please_try_again published a very clever script available in his home OBS directory and called &quot;updategrub&quot;. This script is extremely usefull for debugging boot problems, but nearly impossible to install from the rescue system, so it should be available right there.</para>
+          <para>While searching through many pages of information about Linux and OpenSUSE that I found complaining. For the installation of graphics card drivers from the manufacturer. These appear in the repository often result in errors and critical system states.
+</para>
+          <para>I think that when you install an option I should be asking whether to install the drivers or compile a formal closed. When chosen to be the official drivers are able to download the script itself from the pack, and compile the relevant modules into the kernel. Also, the appropriate settings in the xorg configuration. This is mainly on the users complain that they used Ubuntu.</para>
         </blockquote>
-<!-- ($ ld: 7.5.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 14.5.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
