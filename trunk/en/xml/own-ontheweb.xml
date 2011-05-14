@@ -18,11 +18,14 @@
 -->
 <sect1 role="ontheweb">
   <title>On the Web</title>
-<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  <sect2>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  
+  <!--
+  <sect2>
     <title>Announcements</title>
     <blockquote>
       <title>
-        <ulink url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">QT Labs/Lars Knoll: Nokia Announces Qt 5 Plans</ulink>
+        <ulink url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">QT Labs/Lars Knoll:
+          Thoughts about Qt 5</ulink>
       </title>
       <para>Qt 4.0 was released in June 2005, almost six years ago. A lot has changed in the
         software industry over these years. While application development back then happened mostly
@@ -41,8 +44,8 @@
       <para>Given that Qt is moving into open governance mode in the upcoming months, I wanted to
         share my thinking with the Qt community in order to kick off the discussions about what I
         see as the technical architecture for Qt 5. (...)</para>
-<!-- ($ ld: 10.5.11 sm $) -->    </blockquote>
-  </sect2>
+          </blockquote> 
+  </sect2>-->
   <!--
   <sect2>
     <title>Call for participation</title>
@@ -64,6 +67,29 @@
       </title>
       <para>While <ulink url="http://www.zdnet.com/blog/open-source/attachmate-reveals-novell-suse-linux-plans/8771">Attachmate has talked a lot about its plans for Novell</ulink> after it <ulink url="http://www.zdnet.com/blog/open-source/novell-deals-done/8755">bought Novell</ulink>, no one saw <ulink url="http://www.zdnet.com/blog/open-source/is-mono-dead-is-novell-dying/8821">Attachmate closing down Novell’s Mono programming effort</ulink>. Indeed, other than cutting Novell’s work-force by 25%, Attachmate has said little concrete about the company’s open-source plans. I have learned from sources though that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink>, the open-source office suite, will continue to receive <ulink url="http://www.novell.com/">Novell</ulink>’s support. (...)</para>
 <!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/">Christoph Feck: Troubleshooting kded4 Bugs</ulink>
+      </title>
+      <para>Not just recently, but as long as KDE exists, we are getting bug reports for the KDE
+        process “kded4“. These include:</para>
+      <itemizedlist>
+        <listitem>
+          <para>kded4 crashes</para>
+        </listitem>
+        <listitem>
+          <para>kded4 leaks memory</para>
+        </listitem>
+        <listitem>
+          <para>kded4 eats 100% CPU</para>
+        </listitem>
+        <listitem>
+          <para>kded4 &lt;defunct&gt; process</para>
+        </listitem>
+      </itemizedlist>
+      <para>Before I dive into troubleshooting those problems, let me explain what kded4 does and
+        how it works. (...)</para>
+      <!--($ ld: 11.5.11 sm $)-->      </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
@@ -86,11 +112,37 @@
       <para>Looking at these reactions, I am starting to wonder: Are the developers of free desktops become obsessed with design principles at the expense of what users actually want? (...)</para>
 <!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
     <blockquote>
+      <title>
+        <ulink url="http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/">QT Labs/Lars Knoll:
+          Thoughts about Qt 5</ulink>
+      </title>
+      <para>Qt 4.0 was released in June 2005, almost six years ago. A lot has changed in the
+        software industry over these years. While application development back then happened mostly
+        on desktop systems, mobile devices connected to the web have become increasingly popular.
+        User interface technology has moved from static widgets to a fluid touch based experience.
+        Since Qt 4.0 we have released seven minor versions of Qt to stay ahead of development needs,
+        for example by releasing Qt Quick. Within the growing Qt user base, we have had a strong
+        up-take and new needs from embedded and mobile app and UI developers.</para>
+      <para>To also, in the future, be a leading edge development framework across multiple
+        industries, Qt needs to continue to renew itself. Qt 4 has been an evolution, and I have
+        been thinking about what future Qt versions might look like from a technical perspective.
+        Over the last years we have been working on laying the foundations for the next major
+        release. I see Qt Quick, QML Scenegraph and Project Lighthouse– combined with an increased
+        focus on Qt Webkit – as the foundation which we plan to use to move towards a new major
+        release of Qt.</para>
+      <para>Given that Qt is moving into open governance mode in the upcoming months, I wanted to
+        share my thinking with the Qt community in order to kick off the discussions about what I
+        see as the technical architecture for Qt 5. (...)</para>
+      <!-- ($ ld: 10.5.11 sm $) -->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
       <title><ulink url="http://blog.jprosevear.org/2011/05/13/webgl-security/">JP Rosevear:
-          WebGL</ulink></title>
+        WebGL</ulink></title>
       <para>Recently Context Information Security Limited gathered a lot of attention for <ulink
-          url="http://contextis.co.uk/resources/blog/webgl/">a blog post on the state of WebGL
-          security</ulink>. For Mozilla, <ulink url="http://en.wikipedia.org/wiki/WebGL"
+        url="http://contextis.co.uk/resources/blog/webgl/">a blog post on the state of WebGL
+        security</ulink>. For Mozilla, <ulink url="http://en.wikipedia.org/wiki/WebGL"
           >WebGL</ulink> was first released in Firefox 4, and there are implementations in Chrome,
         Safari and Opera as well. The blog post outlines an abstract concern that WebGL is
         inherently insecure because it allows fairly direct access to the hardware, along with two
@@ -104,22 +156,8 @@
         even more. There are also user confirmation approaches available as well depending on what
         real world data we uncover over time. (...)</para>
       <!-- ($ ld: 14.5.11 sm $)-->
-    </blockquote>
-  </sect2>
-  <!--
-  <sect2>
-    <title>Warning!</title>
-    <blockquote>
-      <title><ulink url="http://www.geek.com/articles/games/psn-was-running-on-unpatched-apache-server-with-no-firewall-2011055/">geek.com/Matthew Humphries: PSN was running on unpatched Apache server with no firewal</ulink>l</title>
-      <para>Few gamers will be feeling sorry for Sony and the mess caused with this PSN hacking debacle. But if you were just annoyed by what has happened, be prepared to now start getting a bit angry.
-
-</para>
-      <para>Dr. Gene Spafford, <ulink url="http://www.cerias.purdue.edu/site/people/faculty/view/1">CERIAS Fellow</ulink> and professor of Computer Science at Purdue University, has been talking at a hearing about the PSN security breach held by the House Subcommittee on Commerce, Manufacturing, and Trade. He explained that independent security experts monitor Sony’s systems such as PSN, Qriocity, and SOE and report in an open forum Sony employees view about anything they find.
-
-</para>
-      <para>Those security experts apparently reported some major failings with Sony’s servers some three months before the April 17 hack occurred. These weren’t small issues, they are blatant oversights and laziness on the part of Sony’s engineering team. (...)</para>
-    </blockquote>
-  </sect2> -->
+    </blockquote>    
+  </sect2> 
 <!--<sect2>
   <title>LOL</title>
   <blockquote>
