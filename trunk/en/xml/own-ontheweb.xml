@@ -63,10 +63,36 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/novell-will-continue-to-support-libreoffice/8866">ZDNet/Steven J. Vaughan-Nichols: Novell will continue to support LibreOffice</ulink>
+        <ulink
+          url="http://www.h-online.com/security/news/item/Getting-a-grip-on-Flash-cookies-Adobe-publishes-Flash-10-3-1242645.html"
+          >h-online: Getting a grip on Flash cookies: Adobe publishes Flash 10.3 </ulink>
       </title>
-      <para>While <ulink url="http://www.zdnet.com/blog/open-source/attachmate-reveals-novell-suse-linux-plans/8771">Attachmate has talked a lot about its plans for Novell</ulink> after it <ulink url="http://www.zdnet.com/blog/open-source/novell-deals-done/8755">bought Novell</ulink>, no one saw <ulink url="http://www.zdnet.com/blog/open-source/is-mono-dead-is-novell-dying/8821">Attachmate closing down Novell’s Mono programming effort</ulink>. Indeed, other than cutting Novell’s work-force by 25%, Attachmate has said little concrete about the company’s open-source plans. I have learned from sources though that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink>, the open-source office suite, will continue to receive <ulink url="http://www.novell.com/">Novell</ulink>’s support. (...)</para>
-<!-- ($ ld: 14.5.11 sat $) -->    </blockquote>
+      <para>Adobe has <ulink
+          url="http://kb2.adobe.com/cps/901/cpsid_90194.html?cjsku=47050364&amp;PID=3848922"
+          >published</ulink> version 10.3 of its <ulink url="http://get.adobe.com/flashplayer/"
+          >Flash Player</ulink> for all platforms. This version finally gives users control of their
+        Flash cookies, but only if one of the currently supported web browsers is used: <ulink
+          url="http://www.h-online.com/open/features/What-s-new-in-Firefox-4-0-1212755.html"
+          >Firefoxý4</ulink>, <ulink
+          url="http://www.h-online.com/news/item/Chrome-11-Google-s-web-browser-learns-to-listen-1233908.html"
+          >Chromeý11</ulink>, Internet Explorerý8 (or higher) and, soon, Safari. The new
+        ClearSiteData API allows the browser to <ulink
+          url="http://www.h-online.com/news/item/Chrome-12-Beta-brings-Flash-cookie-protection-1240386.html"
+          >take care</ulink> of Flash cookies (LSOs – Local Shared Objects), which it can manage as
+        though they were normal cookies. Up until this release, users had to visit the <ulink
+          url="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html"
+          >Settings Manager</ulink> on Adobe's website to handle the stubborn Flash cookies.</para>
+      <para>Under Windows, Flash cookies can also be managed via a new entry in the control panel.
+        Here, users will also find all of the settings that concern security and privacy. Flashý10.3
+        now also alerts Mac OSýX users about updates automatically. Developers of VoIP applications
+        can now access echo and noise suppression. Adobe has integrated the Media Measurement
+        analysis function that provides developers with detailed usage statistics in combination
+        with <ulink url="http://www.omniture.com/en/products/online_analytics/sitecatalyst"
+          >SiteCatalyst</ulink>. The update for <ulink
+          url="http://labs.adobe.com/technologies/flashplatformruntimes/incubator/features/">Flash
+          Player Incubator</ulink>, Adobe's test bed for new functions, will be of interest for
+        developers with its JSON support and secure random number generator.</para>
+<!-- ($ ld: 16.5.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/">Christoph Feck: Troubleshooting kded4 Bugs</ulink>

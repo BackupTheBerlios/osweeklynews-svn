@@ -23,36 +23,23 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title><ulink
-        url="http://blog.jospoortvliet.com/2011/05/code-of-conduct-or-anti-harassment.html">Jos
-        Poortvliet: Code of Conduct or anti-harassment policy</ulink></title>
-    <para> I went to LCA 2011 in Januari. There, <ulink url="http://lwn.net/Articles/425661/">a
-        'mild controvercy' (or rather 'nuclear war') developed</ulink> around a <ulink
-        url="http://linuxconfau.blip.tv/file/4851926">keynote</ulink> by <ulink
-        url="http://www.cultofmarkpesce.com/">Mark Pesce</ulink> and <ulink
-        url="http://www.techworld.com.au/article/374877/pesce_sorry_raunchy_pics_linux_conf_au/">how
-        it was handled</ulink> by the conference team. Now personally, I had little issue with
-      Mark's keynote. Ok, there was some harsh language and some explicit imagery, but nothing that
-      offended <emphasis role="italic">me</emphasis>. So when an apology was made during the closing
-      ceremony, I was suprised and later on spoke out with some others against the
-      'censorship'.</para>
-    <para><emphasis role="bold">Changing mind</emphasis></para>
-    <para>But after a while I realized that the point of all this isn't about censorship or Freedom
-      of Speech (vs freedom of 'not being insulted'). Those issues surely play in the wider, public
-      area. I don't want to have laws which allow our government to prosecute anyone who talks about
-      something they don't like! But that is not relevant here. LCA is NOT a public place. It is a
-      conference organized by a team which has <emphasis role="bold">EVERY</emphasis> right to tell
-      us under what condictions we can join! It is <emphasis role="bold">their
-      conference</emphasis>, after all. And yes, one of those conditions is that we are supposed to
-      watch what we say so we ensure a welcoming place for <emphasis role="italic"
-        >everyone</emphasis>. </para>
-    <para>As I've already been convinced that we <emphasis role="bold">do</emphasis> need to think
-      about diversity, openness and anti-harassment after reading <ulink
-        url="http://lwn.net/Articles/417952/">this LWN article about the darker side of open source
-        conferences by Valerie Aurora</ulink>, I've decided to draft up a Code of Conduct for the
-      openSUSE Conference today. </para>
-    <para>You can find the <ulink url="http://en.opensuse.org/openSUSE:Code_of_Conduct">Code of
-        Conduct draft on the wiki</ulink> and would love input! </para>
-    <!--($ ld: 10.5.11 sm $)-->    
+        url="http://lizards.opensuse.org/2011/05/14/atiamd-fglrx-8-850-catalyst-11-5-available-for-opensuse-11-2-11-3-11-4-factory/"
+        >Bruno Friedmann: ATI/AMD fglrx 8.850 Catalyst 11.5 available for openSUSE 11.2, 11.3, 11.4,
+        Factory</ulink></title>
+    <para>Please refer to my <ulink url="http://lizards.opensuse.org/?p=6680">previous
+        article</ulink> where all the installation procedure is explained. </para>
+    <para>At least after a wrong 11.4 version, and a first buggy 11.5 catalyst version, the new one
+      is finally build and ready to install from the repo. Like for 11.3 I’ve clean up all previous
+      version which are not xpic, so everybody can easily know which drivers he has to install. I’ve
+      resigned all rpm with my key. And the tests made show them working. </para>
+    <para>Warning </para>
+    <para>Some instabilities have been reported. In case of crash like no keyboard, mouse, and
+      blackscreen on reboot. Try to shutdown properly your computer with the shutdown poweroff
+      button. On reboot, just add 3 at the end of grub line to restart in console mode. Then with
+      yast or zypper you can always try the previous version. </para>
+    <para>All credits to Sebastian Siebert (freespacer) : <ulink url="http://bit.ly/l6Ddyc">11.5
+        article</ulink> (...)</para>
+    <!--($ ld: 16.5.11 sm $)-->    
   </blockquote>
   <blockquote>
     <title><ulink url="http://people.gnome.org/~michael/blog/2011-05-09-libreoffice-fud.html"
