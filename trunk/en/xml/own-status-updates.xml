@@ -359,30 +359,38 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/">Nelson Marques: Mockup :: GNOME3 and YaST</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/04/30/mockup-gnome3-and-yast/"><ulink
+              url="http://lizards.opensuse.org/2011/05/17/advancing-with-gnomeayatana-repository/"
+              >Nelson Marques: Mockup :: GNOME3 and YaST</ulink></ulink>
         </title>
-        <para>With the release of GNOME3 I would assume that people are interested in seeing how
-          YaST2 (suggestion: rename it to YaST3 !!) is going to take form with GTK3. Of course this
-          means eventually writing another application in GTK3, hopefully different from the old
-          gnome-control-panel ‘style’ which was actually pretty confusion from the user point of
-          view as it was far too close to gnome-control-center, thus confusing new comers.</para>
-        <para>My suggestion (unaware if it’s possible or not) was probably to explore GNOME3
-          features to serve YaST integrated already with GNOME3. This could be an interesting
-          approach as it would offer integration and some advantages:</para>
-        <para>* Better integration with GNOME3 without having to write(/maintain another
-          application;</para>
-        <para> * Take advantage of YaST2 modular structure;</para>
-        <para> * Present YaST in a prime space in GNOME3, thus offering a
-          openSUSEýdifferentiationýpoint;</para>
-        <para> * No conflicts with possible KDE existing front-ends for YaST2;</para>
-        <para> * Improve users experience.</para>
-        <para>My proposal would be something like (maybe to be served as an extension for
-        gnome-shell). Please neglect my ‘lame’ photo manipulation skills:</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata width="30%" fileref="http://susepaste.org/images/68933649.png"/>
-          </imageobject>
-        </mediaobject>
+        <para>Last week I’ve received an email from Bruce Byfield asking a few questions about this
+          project. I’ve replied honestly as I would to anyone, I’ve faced several issues, and it
+          sounded wise to me to hold a bit this. Since the Beta release of Natty that I’m following
+          a technology forum in Portugal (over 150.000 users) and making a few notes on what peoples
+          perceptions are about Unity and Natty. </para>
+        <para>From what I see amongst this segment of the Linux users in my country, it’s
+          interesting… While legacy users are moving away from Ubuntu to other alternatives seeking
+          GNOME3 (no one seems to be moving from GNOME/Unity to KDE), others are satisfied with
+          Unity. The biggest problem with Natty users so far comes regarding Networking issues and
+          hardware compatibility… and once more Ubuntu’s kernels seem to be driving some people to
+          desperation with the classical MCE’s. </para>
+        <para>A few days (4 days ago), Compiz 0.9.5 has been released. I’ve taken a look on the
+          Ubuntu package and the patch level has dropped substantially, which points that upstream
+          has absorbed most of them. Dominique already has 0.9.5 prepared on X11:Compiz (though the
+          version needs a bump on the spec) and I’m going to test them out and start branching them
+          over to GNOME:Ayatana during the next days and depending on the availability of reviews.
+          This should be peaceful. </para>
+        <para>For this repository I’m going to enable a small pattern to provide a simple 1-Click
+          Installer for Compiz alone, this means that people will be able to test the patched
+          version of Compiz in which Unity will be build upon in the future. </para>
+        <para>After Compiz is established on GNOME:Ayatana, I’m going to get back to Unity and
+          prepare Unity2D for deployment (being Unity a task for the future). Now if some people
+          wonder why all of this innactivity? The answer is simple… GNOME3 was being prepared and
+          launched, and it deserved all the spotlights! </para>
+        <para>Now that GNOME3 has proudly established itself on it’s segment and despite the press
+          attacks, the communities I keep tracking, I see what seems to be a substantial increase of
+          interest on GNOME3. I would personally consider GNOME3 launch a success. (...)</para>
+        <!--($ ld: 18.5.11 sm $)-->
       </blockquote>
       <blockquote>
         <title>GNOME Team Meeting</title>
