@@ -144,18 +144,22 @@ Change: 2010-08-16 09:44:57.000000000 -0600</screen></para>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/05/02/baby-steps-with-our-text-editor/">Python4Kids/Brendan Scott: New Tutorial - Baby Steps With Our Text Editor</ulink>
+        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey
+          Stedfast: Optimizing Merge Sort</ulink>
       </title>
-      <para>In this tutorial we’re going to start using the power of the text editor that I’ve been
-        badgering you about over the last few tutorials. We are going to go back to the earlier
-        tutorials and resurrect some of the code there.</para>
-      <para><emphasis role="bold">Exercise:</emphasis></para>
-      <para> Create a new document with your text editor</para>
-      <para> Save the document to a file called trivia.py You need to be careful that your text
-        editor doesn’t add ‘.txt’ to the end of the file’s name as some have the habit of
-        doing.</para>
-      <para> copy the following function into the file (<ulink url="http://python4kids.wordpress.com/2010/09/22/trivia-game-part-2/">originally found here</ulink>, with some comments dropped): (...)</para>
-<!-- ($ Id: 10.5.11 sm $)-->    </blockquote>
+      <para>A number of years ago I wrote about the <ulink
+          url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
+        algorithm. One of the advantages of <emphasis role="italic">Merge Sort</emphasis> is that it
+        is a stable sort, meaning that elements that compare as being equal remain in their original
+        order after being sorted.</para>
+      <para>Well, today I had need of employing a stable sorting routine for sorting elements by a
+        ZIndex in <ulink url="http://www.moonlight-project.com">Moonlight</ulink>. Up until today,
+        we had been using <emphasis role="italic">qsort()</emphasis> which, while not guaranteed to
+        be a stable sort on any platform, happens to be implemented in <emphasis role="italic"
+          >glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we'd like
+        Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
+        important enough to implement properly. (...)</para>
+<!-- ($ Id: 19.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.databasejournal.com/features/mysql/three-ways-to-identify-non-matching-records-in-mysql.html">Database Journal/Robert Gravelle: Three Ways to Identify Non-matching Records in MySQL</ulink>
