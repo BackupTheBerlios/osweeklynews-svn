@@ -393,6 +393,28 @@
         <!--($ ld: 18.5.11 sm $)-->
       </blockquote>
       <blockquote>
+        <title><ulink
+            url="http://lizards.opensuse.org/2011/05/19/unity-2d-to-enter-gnomeayatana-soon/">Nelson
+            Marques: Unity 2D to enter GNOME:Ayatana soon…</ulink></title>
+        <para>In the past days I’ve been packaging and fixing some issues on Unity 2D for inclusion
+          on the GNOME:Ayatana repository in the openSUSE Build Service.</para>
+        <para>This gave me an excellent opportunity to test a few components share by both, Unity
+          and Unity 2D, which is the case of ‘unity-place-applications’ and ‘unity-place-files’,
+          both using Zeitgeist which is already in Factory for the upcoming openSUSE 12.1. We thank
+          the integration of this packages to Federico Quintero. Thanks Fred.</para>
+        <para>A few more additional packages need some care and once they get updated and tested
+          they will be uploaded to GNOME:Ayatana, at which time I will provide an installer
+          (1-Click) for those willing to test Unity-2D. Unity 2D will be the first application to
+          use the indicators I have prepared in the past which all all found working, except 1, the
+          AppMenu (strangely it works on GNOME2 panel without issues).</para>
+        <para>This is how Unity 2D looks like. There are transparencies because I enabled
+          ‘composite’ on metacity, which works very nicely. As far as I could understand, the
+          developers of Unity 2D are also looking into implementing Compiz with Unity 2D, which
+          would be sweet. (...)</para>
+        <!--($ ld: 20.5.11 sm $)-->
+      </blockquote>
+      <!--
+      <blockquote>
         <title>GNOME Team Meeting</title>
         <para>Meeting started by vuntz at 15:34:39 UTC.<itemizedlist>
             <listitem>
@@ -402,7 +424,7 @@
               <para><ulink url="http://community.opensuse.org/meetings/opensuse-gnome/2011/opensuse-gnome.2011-05-05-15.34.log.html">Full Log</ulink></para>
             </listitem>
           </itemizedlist></para>
-      </blockquote>
+      </blockquote>-->
     </sect3>
     <sect3 role="kdeteam">
       <title>KDE Team</title>
