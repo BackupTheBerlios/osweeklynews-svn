@@ -22,8 +22,7 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://dev-loki.blogspot.com/2011/05/whats-orig-addon.html">Pascal Bleser:
-          What's an orig-addon ?</ulink>
+        <ulink url="http://dev-loki.blogspot.com/2011/05/whats-orig-addon.html">Pascal Bleser: What&apos;s an orig-addon ?</ulink>
       </title>
       <para>Funny question eh? :)</para>
       <para>Let me take a step back first. There are quite a few packages that the openSUSE project
@@ -32,160 +31,88 @@
         sponsor of the openSUSE project (Attachmate, formerly Novell) also sponsors almost all the
         IT infrastructure, the fact that Attachmate (and Novell before them) is a business in the
         USA, and that the USA has the most ludicrous legal precedents regarding software patents
-        (hey, the market regulates itself, right ?), puts us into such a situation. It isn't
+        (hey, the market regulates itself, right ?), puts us into such a situation. It isn&apos;t
         different for most other distributions by the way, except for a very few which probably only
         get away with it because they remain rather small and under the radar.</para>
       <para>What am I talking about? Well, packages such as gstreamer-0_10-plugins-bad, MPlayer,
         vlc, xine, libmad, etc... Typically because they contain implementations of multimedia
-        codecs such as for <ulink
-          url="http://dev-loki.blogspot.com/2011/05/open%20http://en.wikipedia.org/wiki/MP3"
-          >MP3</ulink> or <ulink url="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC">H.264</ulink>
+        codecs such as for <ulink url="http://dev-loki.blogspot.com/2011/05/open%20http://en.wikipedia.org/wiki/MP3">MP3</ulink> or <ulink url="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC">H.264</ulink>
         which are heavily covered with software patents.</para>
       <para>The <ulink url="http://packman.links2linux.org">Packman</ulink> project and repository
         provides many of those packages (amongst other things) for openSUSE, hosted in a country
-        where software patents do not apply. Now, don't confuse software patents and copyright:
+        where software patents do not apply. Now, don&apos;t confuse software patents and copyright:
         copyright is well established, precise and there are no groups of people on the planet who
         respect copyright more than open source and Free software developers, specifically because
-        copyrights such as the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>, <ulink
-          url="http://en.wikipedia.org/wiki/BSD_licenses">BSD</ulink> or <ulink
-          url="http://en.wikipedia.org/wiki/Apache_License">ASL</ulink> (to name <ulink
-          url="http://www.opensource.org/licenses/index.html">just a few</ulink>) protect our work
+        copyrights such as the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>, <ulink url="http://en.wikipedia.org/wiki/BSD_licenses">BSD</ulink> or <ulink url="http://en.wikipedia.org/wiki/Apache_License">ASL</ulink> (to name <ulink url="http://www.opensource.org/licenses/index.html">just a few</ulink>) protect our work
         and our ideals. Hence, what we are doing is not illegal in any way. As an example, the
           <ulink url="http://www.underbit.com/products/mad/">mad</ulink> library might be subject to
-        software patent infringement where applicable, but is under the <ulink
-          url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>.</para>
-      <para>Okay, now back to the actual topic. The libraries of the <ulink
-          url="http://gstreamer.freedesktop.org/">gstreamer</ulink> framework are maintained by
-        several contributors of the openSUSE project in the <ulink
-          url="https://build.opensuse.org/project/show?project=multimedia%3Alibs"
-          >multimedia:libs</ulink> project in our famous <ulink
-          url="http://en.opensuse.org/Portal:Build_Service">openSUSE Build Service</ulink>. However,
-        as explained above, the <ulink
-          url="http://download.opensuse.org/repositories/multimedia:/libs">download repositories of
-          multimedia:libs</ulink> may not host the packages that might infringe on software patents
-        (where applicable). So what we are doing, is to <ulink
-          url="http://en.opensuse.org/openSUSE:Build_Service_Tips_and_Tricks#link_and_aggregate"
-          >link</ulink> those packages on our <ulink url="http://pmbs.links2linux.org">Build Service
-          instance at Packman</ulink> (yes, the Build Service can do that, awesome feature :)). The
+        software patent infringement where applicable, but is under the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>.</para>
+      <para>Okay, now back to the actual topic. The libraries of the <ulink url="http://gstreamer.freedesktop.org/">gstreamer</ulink> framework are maintained by
+        several contributors of the openSUSE project in the <ulink url="https://build.opensuse.org/project/show?project=multimedia%3Alibs">multimedia:libs</ulink> project in our famous <ulink url="http://en.opensuse.org/Portal:Build_Service">openSUSE Build Service</ulink>. However,
+        as explained above, the <ulink url="http://download.opensuse.org/repositories/multimedia:/libs">download repositories of multimedia:libs</ulink> may not host the packages that might infringe on software patents
+        (where applicable). So what we are doing, is to <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Tips_and_Tricks#link_and_aggregate">link</ulink> those packages on our <ulink url="http://pmbs.links2linux.org">Build Service instance at Packman</ulink> (yes, the Build Service can do that, awesome feature :)). The
         difference is that on Packman, due to some macros, we do build those parts that potentially
-        infringe on software patents, and also host them in our repository and <ulink
-          url="http://packman.links2linux.org/MIRRORS.html">its mirrors</ulink>. The trick is that
-        they're subpackages that end in "-orig-addon". For example, for the package
-        "gstreamer-0_10-plugins-bad", its companion is "gstreamer-0_10-plugins-bad-addon-orig" (yes,
-        I agree, the suffix "orig-addon" is stupid, too "geeky" and not intuitive in any way.)
+        infringe on software patents, and also host them in our repository and <ulink url="http://packman.links2linux.org/MIRRORS.html">its mirrors</ulink>. The trick is that
+        they&apos;re subpackages that end in &quot;-orig-addon&quot;. For example, for the package
+        &quot;gstreamer-0_10-plugins-bad&quot;, its companion is &quot;gstreamer-0_10-plugins-bad-addon-orig&quot; (yes,
+        I agree, the suffix &quot;orig-addon&quot; is stupid, too &quot;geeky&quot; and not intuitive in any way.)
         (...)</para>
 <!-- ($ Id: 16.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/ebook-publishing-using-linux-tools"
-          >Anastasios Ksouzafeiris: How to install Enlightenment (E17) in openSUSE 11.4</ulink>
+        <ulink url="http://www.linuxjournal.com/content/ebook-publishing-using-linux-tools">Anastasios Ksouzafeiris: How to install Enlightenment (E17) in openSUSE 11.4</ulink>
       </title>
       <para>Hello folks, two days ago I installed on my netbook Enlightenment WM (window manager). A
         very lightweight WM with the minimalistic environment that i like.. After 30 minutes and
-        search actually you can understand how it works, it's really easy if you understand that all
+        search actually you can understand how it works, it&apos;s really easy if you understand that all
         the apps are modules and you have only to load them or unload them.. After this quick
         introduction i think we must go to the installation and see it by your self. (...)</para>
-      <para><ulink url="http://parrot-farm.net/Second-Cousins/"> </ulink>.</para>
+      <para><ulink url="http://parrot-farm.net/Second-Cousins/"/>.</para>
 <!-- ($ Id: 18.5.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/04/26/installing-gnome-shell-extensions-in-opensuse-11-4.aspx">Hubfolio/Matthew Casperson: Installing Gnome Shell Extensions in OpenSuse 11.4</ulink>
-      </title>
-      <para><ulink url="https://live.gnome.org/GnomeShell/Extensions">Gnome Shell Extensions</ulink> provide a number of official enhancements to the Gnome 3 desktop. There is an RPM called gnome-shell-extenions available in an <ulink url="http://download.opensuse.org/repositories/GNOME:/Factory/openSUSE_Factory/">OpenSuse repo</ulink>, but this did not work for me. Instead you can download and make the extensions for yourself using the following commands. (...)</para>
-<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.wafaa.eu/entry/pixel-limits-with-the-intel-945gme-1-63.html">Andrew Wafaa: Pixel Limits With The Intel 945GME</ulink>
-      </title>
-      <para>Just a quick post to enlighten those that use an Intel 945GME powered machine of a
-        certain pixel limitation that you may not know about.</para>
-      <para>I&apos;m a full time user of the spiffy new GNOME3 with the fancy gnome-shell mojo. As such
-        it&apos;s on my primary machine, which at the moment is an eeePC 1000HE. Yup, that&apos;s a netbook
-        with a small 10&quot; screen and relatively low resolution of 1024x600 pixels. &#160;As I&apos;m sat at my
-        desk I thought I would use my 17&quot; Dell LCD monitor. So I plugged it in and selected
-          &apos;<emphasis role="italic">System Settings</emphasis>&gt;<emphasis role="italic">Displays</emphasis>&apos; Without any issue it saw my external monitor and allowed me to
-        enable it. I chose not to mirror displays as I&apos;d like to take advantage of the larger
-        screen. (...)</para>
-<!-- ($ Id: 14.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/commands/linux-stat-command/">BashShell.net/mike: Linux stat Command</ulink>
+        <ulink url="http://bashshell.net/commands/using-nl-to-number-lines/">BashShell.net/mike: Using nl to Number Lines</ulink>
       </title>
-      <para>The stat utility allows you to see all information about either a file or a directory.  You can use wildcards if you want to see info for more than one object at a time.
-
-</para>
-      <para><screen>stat process.sh
-File: `process.sh&apos;
-Size: 158           Blocks: 16         IO Block: 4096   regular file
-Device: 305h/773d    Inode: 98134       Links: 1
-Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
-Access: 2010-08-18 11:16:37.000000000 -0600
-Modify: 2010-08-16 09:44:57.000000000 -0600
-Change: 2010-08-16 09:44:57.000000000 -0600</screen></para>
-      <para>(...)</para>
-<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxaria.com/howto/signals-linux?lang=en">Linuxaria: Signals in Linux</ulink>
-      </title>
-      <para>While i was surfing the net i’ve found this article By Matteo Ferrone about Linux signals, that i want to repost:
-
-</para>
-      <para>A signal is an event sent by the kernel to a running program.
-
-</para>
-      <para>The signals can arrive at any time and software can choose what to do when it arrives: it can decide to ignore it or may decide to execute a signal handler and continue with what he did. (...)</para>
-<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+      <para>The nl utility is use for numbering lines of a text file.    It’s easy to use, and there are only a few options that you need to remember.  Start by creating a file with ten consecutive lines. (...)</para>
+<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey
-          Stedfast: Optimizing Merge Sort</ulink>
+        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey Stedfast: Optimizing Merge Sort</ulink>
       </title>
-      <para>A number of years ago I wrote about the <ulink
-          url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
+      <para>A number of years ago I wrote about the <ulink url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
         algorithm. One of the advantages of <emphasis role="italic">Merge Sort</emphasis> is that it
         is a stable sort, meaning that elements that compare as being equal remain in their original
         order after being sorted.</para>
       <para>Well, today I had need of employing a stable sorting routine for sorting elements by a
         ZIndex in <ulink url="http://www.moonlight-project.com">Moonlight</ulink>. Up until today,
         we had been using <emphasis role="italic">qsort()</emphasis> which, while not guaranteed to
-        be a stable sort on any platform, happens to be implemented in <emphasis role="italic"
-          >glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we'd like
+        be a stable sort on any platform, happens to be implemented in <emphasis role="italic">glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we&apos;d like
         Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
         important enough to implement properly. (...)</para>
 <!-- ($ Id: 19.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.databasejournal.com/features/mysql/three-ways-to-identify-non-matching-records-in-mysql.html">Database Journal/Robert Gravelle: Three Ways to Identify Non-matching Records in MySQL</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/05/17/a-functioning-stand-alone-python-program/">Python4Kids/Brendan Scott: New Tutorial - A Functioning Stand Alone Python Program</ulink>
       </title>
-      <para>There are many times as a database developer and administrator that you&apos;ll want to know what entities are being excluded from a straight table join. For instance, it would be instructive for management to identify sales people who haven&apos;t received any bonuses, as these might be deemed to be the underperformers. To provide the requestor with the statistics, you&apos;ll have to determine which sales people are absent from the bonuses table. This is commonly referred to as a Non-matching query, although it is sometimes called a Subtract or Set Difference query as well. MySQL provides not one but three standard means of producing non-matching results. I will be presenting each here, along with another that you might not have considered. (...)</para>
-<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.devx.com/opensource/Article/46936">DevX.com/Jason Gilmore: Mono Development 101: Build Linux Desktop Apps with .NET</ulink>
-      </title>
-      <para>I&apos;ve spent the majority of my career focused entirely on open source Web development, having only occasionally dabbled in .NET development. Of course, the great thing about the open source community is that if you do happen to need a particular application, chances are somebody else has already created it. But what if it doesn&apos;t exist, or if an existing application doesn&apos;t work precisely as you believe it should?
-
-</para>
-      <para>I recently encountered this very problem when searching for streaming radio applications (plenty such applications exist, I just don&apos;t like any of them), and concluded that perhaps the only way to scratch this particular itch was to build my own application. This decision immediately prompted two questions: how in the heck are Linux desktop applications built in the first place, and could I harness my minimal .NET experience in the process?
-
-</para>
-      <para>As it turns out, there are quite a few open source solutions, but one in particular happens to be .NET-specific. That solution is <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>, an open source, cross platform C# implementation. In this article I&apos;ll document how I&apos;ve begun using Mono. (...)</para>
-<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+      <para>In the last tutorial we created a file using our text editor and saved a function to it.  This file was called trivia.py and in it was the module “trivia”.  We then started Python in a console and import()ed the trivia module.  Once imported, it created a “namespace” and we could access the askQuestion() function from within the trivia namespace by using a dot – trivia.askQuestion().  In order for the module to work properly we had to include an import statement within the module itself so that everything that the module relied upon was imported within the module.  We then manually loaded our data from a pickle file we created and, manually, ran the askQuestion() function on the first question in our data store.   Finally we added docstrings to the function and the module.</para>
+      <para>In this tutorial we’re going to try to do much the same thing again, but without using the Python interpreter.  That is, we will need to take the things we did in the interpreter and implement them in our trivia.py file.  We will have a functioning (although still quite simple) stand alone Python program. (...)</para>
+<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.novell.com/communities/node/2332/supportconfig-linux">Novell Cool Solutions/jrecord: supportconfig for Linux</ulink>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3933691/article.htm">ServerWatch/Joe Brockmeier: Discover Rootkits With Unhide</ulink>
       </title>
-      <para>The <emphasis role="bold">updateSupportutils</emphasis> command compares the current versions of supportutils and its plugins to those installed on your server. Those that are outdated or missing are automatically downloaded and installed. Only those plugins that apply to your server are installed. The command supports creating a weekly or monthly cron entry to automatically check and update the supportutils package and its plugins. Click <ulink url="http://download.opensuse.org/repositories/Novell:/NTS/SLE_10/noarch/">here</ulink> to see a list of the current supportutils and plugin packages. The updateSupportutils command help screen follows: (...)</para>
-<!-- ($ Id: 14.5.11 sat $)-->    </blockquote>
+      <para>If your system has been rooted, you can&apos;t trust utilities like ps to show processes from the rootkit. For ferreting out nasties, you&apos;ll want to check out unhide and unhide.rb.</para>
+      <para>If you&apos;ve ever encountered a rootkit, you know the symptoms -- suddenly a box is sluggish or sending out gobs of network traffic -- but running top and ps aux show nothing that should be the culprit. One quick and dirty way to turn up the offending processes is to use the unhide utility or its Ruby counterpart unhide.rb. It&apos;s a helpful tool to have around for Linux server management. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: unhide_rb packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=unhide">available from OBS&apos;s security repo</ulink>.</para>
+<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
