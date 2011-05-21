@@ -100,4 +100,38 @@
       </tbody>
     </table>
   </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://omgsuse.com/content/yet-another-flash-player-security-update">OMG!SUSE! team: Yet another Flash Player security update</ulink>
+    </title>
+    <para>Security Team member <ulink url="http://www.suse.de/~thomas/">Thomas Biege</ulink>
+      published an advisory this morning more critical security updates in..you guessed it:
+      <emphasis role="bold">flash-player</emphasis>.</para>
+    <para>According to the security announcement this package update affects openSUSE 11.3, 11.4
+      as well as SUSE Enterprise Linux Desktop 10 SP4 and 11 SP1. This announcement also mentions
+      that this is a <emphasis role="bold">remote code execution</emphasis> vulnerability, which
+      means not updating to the latest flash-player package will leave you open to attackers
+      running programs and exploits on your machine!</para>
+    <para>Adobe has posted more <ulink url="http://www.adobe.com/support/security/bulletins/apsb11-12.html">details on this bulletin on their site</ulink> if you&apos;re <emphasis role="italic">that</emphasis>
+      interested in the different issues this fix addresses.</para>
+    <para>For most users, you&apos;ll just need to follow these steps:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Open up <ulink url="http://en.opensuse.org/YaST2-GTK">Yast2</ulink><emphasis role="bold">or</emphasis> click on the &quot;Online Update&quot; applet running in your GNOME or
+          KDE panels</para>
+      </listitem>
+      <listitem>
+        <para>Select the flash-player update and install it</para>
+      </listitem>
+      <listitem>
+        <para>Make sure you restart <emphasis role="bold">
+          <emphasis role="italic">all</emphasis>
+        </emphasis> of your browsers, this will ensure that no program is
+          running the older vulnerable flash-player package</para>
+      </listitem>
+      <listitem>
+        <para>Relax with a Long Island Ice Tea</para>
+      </listitem>
+    </itemizedlist>
+    <!-- ($ ld: 19.5.11 sm $)-->    </blockquote>
 </sect1>

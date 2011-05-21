@@ -67,7 +67,6 @@
         search actually you can understand how it works, it&apos;s really easy if you understand that all
         the apps are modules and you have only to load them or unload them.. After this quick
         introduction i think we must go to the installation and see it by your self. (...)</para>
-      <para><ulink url="http://parrot-farm.net/Second-Cousins/"/>.</para>
 <!-- ($ Id: 18.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
@@ -81,21 +80,6 @@
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
-    <blockquote>
-      <title>
-        <ulink url="http://jeffreystedfast.blogspot.com/2011/04/optimizing-merge-sort.html">Jeffrey Stedfast: Optimizing Merge Sort</ulink>
-      </title>
-      <para>A number of years ago I wrote about the <ulink url="http://jeffreystedfast.blogspot.com/2007/02/merge-sort.html">Merge Sort</ulink>
-        algorithm. One of the advantages of <emphasis role="italic">Merge Sort</emphasis> is that it
-        is a stable sort, meaning that elements that compare as being equal remain in their original
-        order after being sorted.</para>
-      <para>Well, today I had need of employing a stable sorting routine for sorting elements by a
-        ZIndex in <ulink url="http://www.moonlight-project.com">Moonlight</ulink>. Up until today,
-        we had been using <emphasis role="italic">qsort()</emphasis> which, while not guaranteed to
-        be a stable sort on any platform, happens to be implemented in <emphasis role="italic">glibc</emphasis> as a stable sort except in out-of-memory conditions. Since we&apos;d like
-        Moonlight to work on platforms other than Linux+glibc (such as Mac OS or BSD), it has become
-        important enough to implement properly. (...)</para>
-<!-- ($ Id: 19.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://python4kids.wordpress.com/2011/05/17/a-functioning-stand-alone-python-program/">Python4Kids/Brendan Scott: New Tutorial - A Functioning Stand Alone Python Program</ulink>
