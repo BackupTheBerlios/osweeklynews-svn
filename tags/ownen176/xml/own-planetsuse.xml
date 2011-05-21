@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/05/14/atiamd-fglrx-8-850-catalyst-11-5-available-for-opensuse-11-2-11-3-11-4-factory/">Bruno Friedmann: ATI/AMD fglrx 8.850 Catalyst 11.5 available for openSUSE 11.2, 11.3, 11.4, Factory</ulink>
+    </title>
+    <para>Please refer to my <ulink url="http://lizards.opensuse.org/?p=6680">previous article</ulink> where all the installation procedure is explained. </para>
+    <para>At least after a wrong 11.4 version, and a first buggy 11.5 catalyst version, the new one
+      is finally build and ready to install from the repo. Like for 11.3 I’ve clean up all previous
+      version which are not xpic, so everybody can easily know which drivers he has to install. I’ve
+      resigned all rpm with my key. And the tests made show them working. </para>
+    <para>Warning </para>
+    <para>Some instabilities have been reported. In case of crash like no keyboard, mouse, and
+      blackscreen on reboot. Try to shutdown properly your computer with the shutdown poweroff
+      button. On reboot, just add 3 at the end of grub line to restart in console mode. Then with
+      yast or zypper you can always try the previous version. </para>
+    <para>All credits to Sebastian Siebert (freespacer) : <ulink url="http://bit.ly/l6Ddyc">11.5 article</ulink> (...)</para>
+<!--($ ld: 16.5.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/05/16/have-you-burped-yet-today/">Will Stephenson: Have you BURPed yet today?</ulink>
+    </title>
+    <para>Well, have you? ýNot the satisfying expulsion of excess gas, but the simplest way you can
+      materially contribute to openSUSE.</para>
+    <para>I was just hanging in the #active channel, watching my KDE chums make their <ulink url="http://www.youtube.com/watch?v=iA9zaBZysfI">new touchscreen interface</ulink> (video),
+      when somebody complained that <ulink url="http://sourceforge.net/projects/oscaf/files/shared-desktop-ontologies/0.7/">shared-desktop-ontologies</ulink> does not yet contain the latest release needed by KDE git
+      master. ýAnd instead of updating the package myself, I suggested they just BURP:</para>
+    <itemizedlist>
+      <listitem>
+        <para><emphasis role="bold">Branch</emphasis>,</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Update</emphasis>,</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Request</emphasis>,</para>
+      </listitem>
+      <listitem>
+        <para>the <emphasis role="bold">Package</emphasis></para>
+      </listitem>
+    </itemizedlist>
+    <para>And by doing so we all get the latest versions in the devel project and soon in Tumbleweed
+      and openSUSE Factory. ýSo ambassadors, boosters and motivated contributors know how to do that
+      right? ýNow you can use this glib little acronym to persuade friends and colleagues to do the
+      same.</para>
+    <para>Happy BURPing!</para>
+<!--($ ld: 17.5.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://suse.gansert.net/?p=136">Uwe Gansert: SUSE Manager install/setup Screenshots</ulink>
+    </title>
+    <para>Some people fear it takes too much time to do a SUSE Manger setup just for testing. I
+      decided to show the complete workflow just in screenshots to demonstrate it’s easy and will
+      not take longer than maybe 20 minutes – most time just waiting. You can download an eval
+      version <ulink url="http://download.novell.com/Download?buildid=UU3B3_bJH-Q%7E">here</ulink>.
+      You need at least 2GB RAM and 12GB disk space for installation. </para>
+    <para>Let’s go. On the bottom right of each screenshot you have a link that points to the next
+      screenshot, so you can easily click through a complete installation now. (...)</para>
+<!--($ ld: 18.5.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://suse.gansert.net/?p=191">Uwe Gansert: DBus Interface of clementine</ulink>
+    </title>
+    <para><emphasis role="italic">“Without music, life would be a mistake.”</emphasis> – Friedrich
+      Nietzsche</para>
+    <para>I don’t like Amarok2. I really liked the 1.4 version but now, since 2.0, it’s just broken
+      and ugly, so yesterday I switched to <ulink url="http://www.clementine-player.org/">Clementine</ulink>.</para>
+    <para> Everything was better from the start – all the covers were finally shown correctly, the
+      UI is useable, the playing order is always correct, the last.fm plugin is a lot better … and …
+      and … and …</para>
+    <para>All I was missing, was my little <emphasis role="italic">now-playing</emphasis> script for
+      xchat.</para>
+    <para> I did that in <ulink url="http://suse.gansert.net/?p=27">the past</ulink> already for
+      amarok, so I just had to change that a bit. (...)</para>
+<!--($ ld: 18.5.11 sm $)-->  </blockquote>
+</sect1>

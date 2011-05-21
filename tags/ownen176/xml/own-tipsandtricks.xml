@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://dev-loki.blogspot.com/2011/05/whats-orig-addon.html">Pascal Bleser: What&apos;s an orig-addon ?</ulink>
+      </title>
+      <para>Funny question eh? :)</para>
+      <para>Let me take a step back first. There are quite a few packages that the openSUSE project
+        cannot publish on their main infrastructure, not because of legal reasons, but for reasons
+        of potential software patent infringements. That, combined with the fact that the main
+        sponsor of the openSUSE project (Attachmate, formerly Novell) also sponsors almost all the
+        IT infrastructure, the fact that Attachmate (and Novell before them) is a business in the
+        USA, and that the USA has the most ludicrous legal precedents regarding software patents
+        (hey, the market regulates itself, right ?), puts us into such a situation. It isn&apos;t
+        different for most other distributions by the way, except for a very few which probably only
+        get away with it because they remain rather small and under the radar.</para>
+      <para>What am I talking about? Well, packages such as gstreamer-0_10-plugins-bad, MPlayer,
+        vlc, xine, libmad, etc... Typically because they contain implementations of multimedia
+        codecs such as for <ulink url="http://dev-loki.blogspot.com/2011/05/open%20http://en.wikipedia.org/wiki/MP3">MP3</ulink> or <ulink url="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC">H.264</ulink>
+        which are heavily covered with software patents.</para>
+      <para>The <ulink url="http://packman.links2linux.org">Packman</ulink> project and repository
+        provides many of those packages (amongst other things) for openSUSE, hosted in a country
+        where software patents do not apply. Now, don&apos;t confuse software patents and copyright:
+        copyright is well established, precise and there are no groups of people on the planet who
+        respect copyright more than open source and Free software developers, specifically because
+        copyrights such as the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>, <ulink url="http://en.wikipedia.org/wiki/BSD_licenses">BSD</ulink> or <ulink url="http://en.wikipedia.org/wiki/Apache_License">ASL</ulink> (to name <ulink url="http://www.opensource.org/licenses/index.html">just a few</ulink>) protect our work
+        and our ideals. Hence, what we are doing is not illegal in any way. As an example, the
+          <ulink url="http://www.underbit.com/products/mad/">mad</ulink> library might be subject to
+        software patent infringement where applicable, but is under the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>.</para>
+      <para>Okay, now back to the actual topic. The libraries of the <ulink url="http://gstreamer.freedesktop.org/">gstreamer</ulink> framework are maintained by
+        several contributors of the openSUSE project in the <ulink url="https://build.opensuse.org/project/show?project=multimedia%3Alibs">multimedia:libs</ulink> project in our famous <ulink url="http://en.opensuse.org/Portal:Build_Service">openSUSE Build Service</ulink>. However,
+        as explained above, the <ulink url="http://download.opensuse.org/repositories/multimedia:/libs">download repositories of multimedia:libs</ulink> may not host the packages that might infringe on software patents
+        (where applicable). So what we are doing, is to <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Tips_and_Tricks#link_and_aggregate">link</ulink> those packages on our <ulink url="http://pmbs.links2linux.org">Build Service instance at Packman</ulink> (yes, the Build Service can do that, awesome feature :)). The
+        difference is that on Packman, due to some macros, we do build those parts that potentially
+        infringe on software patents, and also host them in our repository and <ulink url="http://packman.links2linux.org/MIRRORS.html">its mirrors</ulink>. The trick is that
+        they&apos;re subpackages that end in &quot;-orig-addon&quot;. For example, for the package
+        &quot;gstreamer-0_10-plugins-bad&quot;, its companion is &quot;gstreamer-0_10-plugins-bad-addon-orig&quot; (yes,
+        I agree, the suffix &quot;orig-addon&quot; is stupid, too &quot;geeky&quot; and not intuitive in any way.)
+        (...)</para>
+<!-- ($ Id: 16.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://anksos.blogspot.com/2011/05/how-to-install-enlightenment-e17-in.html">Anastasios Ksouzafeiris: How to install Enlightenment (E17) in openSUSE 11.4</ulink>
+      </title>
+      <para>Hello folks, two days ago I installed on my netbook Enlightenment WM (window manager). A
+        very lightweight WM with the minimalistic environment that i like.. After 30 minutes and
+        search actually you can understand how it works, it&apos;s really easy if you understand that all
+        the apps are modules and you have only to load them or unload them.. After this quick
+        introduction i think we must go to the installation and see it by your self. (...)</para>
+<!-- ($ Id: 18.5.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/commands/using-nl-to-number-lines/">BashShell.net/mike: Using nl to Number Lines</ulink>
+      </title>
+      <para>The nl utility is use for numbering lines of a text file.    It’s easy to use, and there are only a few options that you need to remember.  Start by creating a file with ten consecutive lines. (...)</para>
+<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://python4kids.wordpress.com/2011/05/17/a-functioning-stand-alone-python-program/">Python4Kids/Brendan Scott: New Tutorial - A Functioning Stand Alone Python Program</ulink>
+      </title>
+      <para>In the last tutorial we created a file using our text editor and saved a function to it.  This file was called trivia.py and in it was the module “trivia”.  We then started Python in a console and import()ed the trivia module.  Once imported, it created a “namespace” and we could access the askQuestion() function from within the trivia namespace by using a dot – trivia.askQuestion().  In order for the module to work properly we had to include an import statement within the module itself so that everything that the module relied upon was imported within the module.  We then manually loaded our data from a pickle file we created and, manually, ran the askQuestion() function on the first question in our data store.   Finally we added docstrings to the function and the module.</para>
+      <para>In this tutorial we’re going to try to do much the same thing again, but without using the Python interpreter.  That is, we will need to take the things we did in the interpreter and implement them in our trivia.py file.  We will have a functioning (although still quite simple) stand alone Python program. (...)</para>
+<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3933691/article.htm">ServerWatch/Joe Brockmeier: Discover Rootkits With Unhide</ulink>
+      </title>
+      <para>If your system has been rooted, you can&apos;t trust utilities like ps to show processes from the rootkit. For ferreting out nasties, you&apos;ll want to check out unhide and unhide.rb.</para>
+      <para>If you&apos;ve ever encountered a rootkit, you know the symptoms -- suddenly a box is sluggish or sending out gobs of network traffic -- but running top and ps aux show nothing that should be the culprit. One quick and dirty way to turn up the offending processes is to use the unhide utility or its Ruby counterpart unhide.rb. It&apos;s a helpful tool to have around for Linux server management. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: unhide_rb packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=unhide">available from OBS&apos;s security repo</ulink>.</para>
+<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>
