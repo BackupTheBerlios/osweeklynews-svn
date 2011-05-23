@@ -22,42 +22,18 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://dev-loki.blogspot.com/2011/05/whats-orig-addon.html">Pascal Bleser: What&apos;s an orig-addon ?</ulink>
+        <ulink url="http://thefreecountry.wordpress.com/2011/05/21/a-bit-about-fluxbox/">Alexander
+          Naumov: A bit about Fluxbox</ulink>
       </title>
-      <para>Funny question eh? :)</para>
-      <para>Let me take a step back first. There are quite a few packages that the openSUSE project
-        cannot publish on their main infrastructure, not because of legal reasons, but for reasons
-        of potential software patent infringements. That, combined with the fact that the main
-        sponsor of the openSUSE project (Attachmate, formerly Novell) also sponsors almost all the
-        IT infrastructure, the fact that Attachmate (and Novell before them) is a business in the
-        USA, and that the USA has the most ludicrous legal precedents regarding software patents
-        (hey, the market regulates itself, right ?), puts us into such a situation. It isn&apos;t
-        different for most other distributions by the way, except for a very few which probably only
-        get away with it because they remain rather small and under the radar.</para>
-      <para>What am I talking about? Well, packages such as gstreamer-0_10-plugins-bad, MPlayer,
-        vlc, xine, libmad, etc... Typically because they contain implementations of multimedia
-        codecs such as for <ulink url="http://dev-loki.blogspot.com/2011/05/open%20http://en.wikipedia.org/wiki/MP3">MP3</ulink> or <ulink url="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC">H.264</ulink>
-        which are heavily covered with software patents.</para>
-      <para>The <ulink url="http://packman.links2linux.org">Packman</ulink> project and repository
-        provides many of those packages (amongst other things) for openSUSE, hosted in a country
-        where software patents do not apply. Now, don&apos;t confuse software patents and copyright:
-        copyright is well established, precise and there are no groups of people on the planet who
-        respect copyright more than open source and Free software developers, specifically because
-        copyrights such as the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>, <ulink url="http://en.wikipedia.org/wiki/BSD_licenses">BSD</ulink> or <ulink url="http://en.wikipedia.org/wiki/Apache_License">ASL</ulink> (to name <ulink url="http://www.opensource.org/licenses/index.html">just a few</ulink>) protect our work
-        and our ideals. Hence, what we are doing is not illegal in any way. As an example, the
-          <ulink url="http://www.underbit.com/products/mad/">mad</ulink> library might be subject to
-        software patent infringement where applicable, but is under the <ulink url="http://en.wikipedia.org/wiki/GPL">GPL</ulink>.</para>
-      <para>Okay, now back to the actual topic. The libraries of the <ulink url="http://gstreamer.freedesktop.org/">gstreamer</ulink> framework are maintained by
-        several contributors of the openSUSE project in the <ulink url="https://build.opensuse.org/project/show?project=multimedia%3Alibs">multimedia:libs</ulink> project in our famous <ulink url="http://en.opensuse.org/Portal:Build_Service">openSUSE Build Service</ulink>. However,
-        as explained above, the <ulink url="http://download.opensuse.org/repositories/multimedia:/libs">download repositories of multimedia:libs</ulink> may not host the packages that might infringe on software patents
-        (where applicable). So what we are doing, is to <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Tips_and_Tricks#link_and_aggregate">link</ulink> those packages on our <ulink url="http://pmbs.links2linux.org">Build Service instance at Packman</ulink> (yes, the Build Service can do that, awesome feature :)). The
-        difference is that on Packman, due to some macros, we do build those parts that potentially
-        infringe on software patents, and also host them in our repository and <ulink url="http://packman.links2linux.org/MIRRORS.html">its mirrors</ulink>. The trick is that
-        they&apos;re subpackages that end in &quot;-orig-addon&quot;. For example, for the package
-        &quot;gstreamer-0_10-plugins-bad&quot;, its companion is &quot;gstreamer-0_10-plugins-bad-addon-orig&quot; (yes,
-        I agree, the suffix &quot;orig-addon&quot; is stupid, too &quot;geeky&quot; and not intuitive in any way.)
-        (...)</para>
-<!-- ($ Id: 16.5.11 sm $)-->    </blockquote>
+      <para><ulink url="http://fluxbox.org/">Fluxbox</ulink> is a highly-configurable window manager
+        for the <ulink url="http://en.wikipedia.org/wiki/X_Window_System">X Window System</ulink>
+        that was based on the Blackbox 0.61.1 code. It has full of features to make an easy, and
+        extremely fast, desktop experience.</para>
+      <para>Fluxbox requires less time for booting and uses considerably fewer system resources
+        than, for example, KDE or GNOME. This suited for situations where system resources,
+        especially memory, are very limited. I use Fluxbox on my ASUS EeePC 701: 900 MHz CPU, 512 Mb
+        RAM and yes – only 4 Gb HDD :/ (...)</para>
+<!-- ($ Id: 23.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://anksos.blogspot.com/2011/05/how-to-install-enlightenment-e17-in.html">Anastasios Ksouzafeiris: How to install Enlightenment (E17) in openSUSE 11.4</ulink>
