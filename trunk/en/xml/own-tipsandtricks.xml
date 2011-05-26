@@ -60,11 +60,30 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/05/17/a-functioning-stand-alone-python-program/">Python4Kids/Brendan Scott: New Tutorial - A Functioning Stand Alone Python Program</ulink>
+        <ulink url="http://log.or.cz/?p=156">Petr Baudis: brmd: A Case for POE</ulink>
       </title>
-      <para>In the last tutorial we created a file using our text editor and saved a function to it.  This file was called trivia.py and in it was the module “trivia”.  We then started Python in a console and import()ed the trivia module.  Once imported, it created a “namespace” and we could access the askQuestion() function from within the trivia namespace by using a dot – trivia.askQuestion().  In order for the module to work properly we had to include an import statement within the module itself so that everything that the module relied upon was imported within the module.  We then manually loaded our data from a pickle file we created and, manually, ran the askQuestion() function on the first question in our data store.   Finally we added docstrings to the function and the module.</para>
-      <para>In this tutorial we’re going to try to do much the same thing again, but without using the Python interpreter.  That is, we will need to take the things we did in the interpreter and implement them in our trivia.py file.  We will have a functioning (although still quite simple) stand alone Python program. (...)</para>
-<!-- ($ Id: 20.5.11 sat $)-->    </blockquote>
+      <para>In <ulink url="http://brmlab.cz/">brmlab</ulink>, we want to <ulink
+          url="http://brmlab.cz/project/brmdoor">track</ulink> who is unlocking the space, whether
+        someone is inside, have some good visual indicator that <ulink
+          url="http://brmlab.cz/project/presentationcenter">live stream</ulink> is on air, and so
+        on. In other words, we have an Arduino with some further hardware, and we want to show
+        whatever is reported by the Arduino on IRC and <ulink url="http://nat.brmlab.cz/brmd/"
+          >web</ulink>, and provide some web-based control (open/closed status override) in the
+        opposite direction too.</para>
+      <para>What to use for a service (we call it brmd) that will bind all these interfaces
+        together? It just needs a lot of boring frontends and simple state maintenance. </para>
+      <para>It turns out that Perl’s <ulink url="http://poe.perl.org/">POE</ulink> framework is
+        ideal for this – most of the code for IRC, HTTP and device read/write is already there, so
+        you just grab the modules, slam them together and you have exactly what you need with
+        minimal effort. Right?It turns out that there are caveats – basically, the idea is correct,
+        aside of getting stuck on a single stupidity of mine, I’d have the whole thing put together
+        in something like half an hour. Unfortunately, the moment you want robustness too, things
+        are getting a lot more complex; to handle the device disappearing, IRC disconnections, not
+        having HTTP socket fds leak away, etc., you suddenly need to either magically know what
+        further modules to hook up or start exeting some manual effort. Still, I like how POE is
+        making it so easy to give a simple state machine many input/output interfaces and when you
+        get used to the idiosyncracies, you can even make it somewhat reliable. (...)</para>
+<!-- ($ Id: 26.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
