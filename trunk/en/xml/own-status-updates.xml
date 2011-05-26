@@ -260,37 +260,14 @@
       </blockquote>
       </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-<!--
       <blockquote>
         <title>
-          <ulink url="http://monarchieundalltag.wordpress.com/2011/04/12/obs-2-2-72-released-switch-to-apache-and-ssl-as-default/">Adrian Schröter: OBS 2.2.72 released, switch to apache and SSL as default</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-05/msg00144.html"
+            >Minutes: Build Service Team Meeting</ulink>
         </title>
-        <para>We just released <ulink url="http://en.opensuse.org/Portal:Build_Service">OBS</ulink>
-          2.2.72, another alpha release for OBS 2.3. The most significant change to former alpha
-          snapshots is the switch to apache. We do so for a number of reasons:</para>
-        <orderedlist>
-          <listitem>
-            <para>Getting a maintained base again for our default httpd</para>
-          </listitem>
-          <listitem>
-            <para>Using mod_rails (passenger) is more flexible then the static setup before</para>
-          </listitem>
-          <listitem>
-            <para>Optimizations are possible via additional modules (more about that later)</para>
-          </listitem>
-        </orderedlist>
-        <para>We think that some bugs like the invalid occassional empty replies by the api server
-          are solved via this switch as well.</para>
-        <para>The <ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">OBS 2.2.72 appliance</ulink> is already comming with apache setup. Please note that we use also SSL
-          by default, a default SSL CA is created on bootup and becomes part of your data
-          partition.</para>
-        <para>In case you use <ulink url="http://download.opensuse.org/repositories/openSUSE:/Tools:/Unstable/">the packages</ulink> outside of the appliance, you need to do some configuration steps. But
-          don’t worry, a apache vhost file comes with the packages already and only a few steps need
-          to be done, the README files should reflect this already.</para>
-        <para>lighttpd setups should still work, but please note that lighttpd is running with an
-          own user id (“lighttpd”) and the default is now the generic “wwwrun” user for some
-          directories.</para>
-      </blockquote> -->      <formalpara>
+        <para>Published minutes from the Buildservice Team Meeting from 25. May 2011.</para>
+      </blockquote>       
+      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
