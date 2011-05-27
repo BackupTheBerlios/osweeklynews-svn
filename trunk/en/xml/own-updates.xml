@@ -24,26 +24,72 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink url="http://blog.cihar.com/archives/2011/05/09/stardict-dictionaries-opensuse/"
-        >Michal Čihař: StarDict dictionaries for openSUSE</ulink></title>
-    <para>While <ulink
-        url="http://blog.cihar.com/archives/2011/05/09/no-new-dictionaries-tarballs-no-change/"
-        >working</ulink> on <ulink url="http://cihar.com/software/slovnik/">dictionaries for
-        StarDict</ulink> today, I've decided to finally bring them to openSUSE as well.</para>
-    <para>First step was to fix my favorite tool to access them - sdcv. The fixed package is now in
-      my home project and will be hopefully soon accepted to Education project so that it is more
-      visible (see <ulink url="https://build.opensuse.org/request/show/69901">request 69901</ulink>
-      if it is already the case).</para>
-    <para>When I had the tool working, it was time to package <ulink
-        url="http://cihar.com/software/slovnik/">dictionaries</ulink> themselves. It was quite
-      simple task and the rpms are available in <ulink
-        url="https://build.opensuse.org/project/show?project=home%3ANijel%3Astardict">my home
-        project</ulink>.</para>
-    <para>To install packages on openSUSE 11.4 simply
-      do:<programlisting>zypper ar http://download.opensuse.org/repositories/home:/Nijel:/stardict/openSUSE_11.4/ 
-\stardict
-zypper ref
-zypper in  stardict-czech  stardict-english-czech  stardict-german-czech</programlisting></para>
+    <title><ulink url="http://lizards.opensuse.org/2011/05/26/7393/">Klaas Freitag: Kraft
+    updated</ulink></title>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/kraft_helps-300x192.png"
+          width="10%"/>
+      </imageobject>
+    </mediaobject>
+    <para>Yesterday I did a new release of <ulink url="http://volle-kraft-voraus.de">Kraft</ulink>,
+      the KDE application to create and manage business documents in the small enterprise. It is
+        <ulink url="http://volle-kraft-voraus.de/Releases">version 0.43</ulink>, the former one was
+      0.42, release in april 2011. Both releases, where the latter is a kind of maintenance release
+      of the first are the result of a comparable high development effort of the underlying code in
+      catalog handling and document lists in Kraft.</para>
+    <para>The document lists consisting of a latest, complete and time sorted view are now fully
+      based on one Qt interview model feeding the views. That was a step because the original code
+      was based on Qt3′s treewidget code. The result is convincing: the time needed to build up all
+      views with a couple of thousand documents went down from around 20 seconds with the old
+      implementation (which of course was not optimized) to almost nothing now. A nice
+      result.</para>
+    <para>The catalog management got also a fundamental change, it can handle an arbitrary depth of
+      catalog chapters now instead of only one. That makes a catalog chapter hirarchie in which
+      templates can be moved around by drag and drop. Complete sub chapters can now be moved now
+      from the catalog to the document quickly to speed up the assembly of documents covering
+      standard workflows. Moreover this change in the underlying catalog data structure was an
+      important prerequisite to implement reading of standard catalog formats such as DATANORM in
+      later releases.</para>
+    <para>Krafts development is still going slowly, but steadily. There are quite some ideas on how
+      to move on with Kraft:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Kraft Mobile – spin off a mobile app working on the new form factors providing useful
+          functionality</para>
+      </listitem>
+      <listitem>
+        <para>support for DATANORM and friends, which would allow reading standard template catalogs
+          provided by suppliers.</para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://techbase.kde.org/Projects/KdeFinance/Alkimia">Alkimia</ulink>
+          support which would head into accounting functionality together with the other KDE
+          financial applications</para>
+      </listitem>
+      <listitem>
+        <para>continue on <ulink url="http://lizards.opensuse.org/2011/01/25/share-your-kraft/"
+            >shared Kraft</ulink>, which utilizes the <ulink url="http://www.owncloud.org">Owncloud
+            project</ulink> as a document and catalog sharing platform</para>
+      </listitem>
+      <listitem>
+        <para>support sub documents and more structured documents in Kraft</para>
+      </listitem>
+      <listitem>
+        <para>more project management capabilities in Kraft</para>
+      </listitem>
+    </itemizedlist>
+    <para>All of these ideas are interesting and quite some work. I haven’t decided yet. If you
+      think you want to influence Krafts future, let me know your arguments, most preferably on the
+        <ulink url="http://sourceforge.net/mailarchive/forum.php?forum_name=kraft-user">Kraft
+        mailinglist</ulink>. If you even feel like you want to work on an interesting KDE
+      application, please let me know, I’d be happy to share everything <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://lizards.opensuse.org/wp-includes/images/smilies/icon_smile.gif"
+          />
+        </imageobject>
+      </inlinemediaobject></para>
     <!-- ($ ld: 10.5.11 sm $)-->
   </blockquote>
   <blockquote>
