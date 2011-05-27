@@ -262,11 +262,10 @@
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-05/msg00144.html"
-            >Minutes: Build Service Team Meeting</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-05/msg00144.html">Minutes: Build Service Team Meeting</ulink>
         </title>
         <para>Published minutes from the Buildservice Team Meeting from 25. May 2011.</para>
-      </blockquote>       
+      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -319,14 +318,12 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/05/gnome-3-live-image-release-130.html">Frédéric
-            Crozat: GNOME 3 Live image release 1.3.0 - VirtualBox, here we come</ulink>
+          <ulink url="http://blog.crozat.net/2011/05/gnome-3-live-image-release-130.html">Frédéric Crozat: GNOME 3 Live image release 1.3.0 - VirtualBox, here we come</ulink>
         </title>
         <para>good news for Virtual Machine addicts : VirtualBox team has fixed issues which were
           preventing VirtualBox to work properly with GNOME Shell. You need VirtualBox release 4.0.8
           (minimum) and GNOME 3 live image release 1.3.0 (it contains updated VirtualBox guest
-          additions, required for openGL). To download the image : <ulink
-            url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink>
+          additions, required for openGL). To download the image : <ulink url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink>
           Enjoy.</para>
 <!--($ ld: 24.5.11 sm $)-->      </blockquote>
       <blockquote>
@@ -560,7 +557,7 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 348)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 349)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
@@ -579,7 +576,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 124)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 127)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -595,7 +592,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 99)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 101)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -608,96 +605,102 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 21.5.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 28.5.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312337">clear /tmp-dir at bootup</ulink>
+            <ulink url="https://features.opensuse.org/312406">Support for ISC DHCP client for IPv6</ulink>
           </title>
-          <para>Please clear the /tmp-dir at boot-up per default.</para>
-          <para>At the moment this has to be activated manually with every new installation, is there a reason for not doing this out of the box?</para>
+          <para>Currently only &quot;dhcp6c&quot; (<ulink url="https://fedorahosted.org/dhcpv6/">https://fedorahosted.org/dhcpv6/</ulink> ) can be selected as a DHCPv6 client in /etc/sysconfig/network/dhcp:
+</para>
+          <para># Which DHCPv6 client should be used?
+</para>
+          <para># Currently only the dhcp6c client is supported.
+</para>
+          <para>#
+DHCLIENT6_BIN=&quot;&quot;
+
+</para>
+          <para>Since this client has been obsoleted by ISC dhcp, the DHCPv6 client of ISC should be used as default and as an alternative.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312338">Add BlueGriffon web editor to the repositories</ulink>
+            <ulink url="https://features.opensuse.org/312407">switch off boot.clock</ulink>
           </title>
-          <para>BlueGriffon is a relatively young project, but it does seem to be very good when compared to some of the other open source tools, not to mention that it&apos;s still a very active project.</para>
+          <para>Nowadays the kernel sets the system time from rtc and a potential local/utc offset is applied in the initrd already. The only task left for boot.clock is to adjust the clock drift. That&apos;s a rather advanced feature not known nor appreciated by the standard auto logging in user. Network installs have ntp enabled anyways. Therefore boot.clock should be switched off by default to have one less script to execute. Anyone who needs the clock drift feature can insserv boot.clock manually.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312339">YaST should warn during install if swap partition is too small for suspending</ulink>
+            <ulink url="https://features.opensuse.org/312412">get rid of $HWCLOCK setting</ulink>
           </title>
-          <para>I made the mistake and installed just 2 GB swap on a laptop with 4 GB ram. I
-just forgot to think about suspending the computer will need an suitable swap
-partition. Now it&apos;s sometimes working an sometimes not...</para>
-          <para>It would be nice and helpful if YaST would warn the user about that problem during the install process.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312340">Push Perl 5.14 to Tumbleweed repository</ulink>
-          </title>
-          <para>Perl 5.14 is here. Please, add new version on Tumbleweed repository.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312343">get rid of /etc/sysconfig/sysctl</ulink>
-          </title>
-          <para>/etc/sysconfig/sysctl and therefore boot.proc and boot.ipconfig should be dropped in favor of directly using /etc/sysctl.conf Distro defaults should be provided via /lib/sysctl.d./*.conf so we don&apos;t produce .rpmnew files on upgrade.
+          <para>The $HWCLOCK variable in /etc/sysconfig/clock stores information that is redundant with /etc/adjtime&apos;s third line. There should be only one place to store that information.
+
+</para>
+          <para>Programs reading /etc/sysconfig/clock:
 
     </para>
-          <orderedlist>
-            <listitem>
-              <para>write script to convert old setings in aaa_base&apos;s %post [ready]</para>
-            </listitem>
-            <listitem>
-              <para>write patch for sysctl to read /lib/sysctl.d/*.conf [ready]</para>
-            </listitem>
-            <listitem>
-              <para>adjust yast modules</para>
-            </listitem>
-          </orderedlist>
-          <para>Affected yast modules:</para>
           <itemizedlist>
             <listitem>
-              <para>security (IP_TCP_SYNCOOKIES, IP_FORWARD, IPV6_FORWARD, ENABLE_SYSRQ)</para>
+              <para>warpclock from mkinitrd</para>
             </listitem>
             <listitem>
-              <para>network (IP_FORWARD, IPV6_FORWARD)</para>
+              <para>/etc/init.d/boot.clock from aaa_base</para>
             </listitem>
             <listitem>
-              <para>tune (ENABLE_SYSRQ)</para>
+              <para>yast2-country</para>
             </listitem>
           </itemizedlist>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312344">Add --conf-foo flag to zypper for all &quot;foo&quot; in /etc/zypp.conf</ulink>
+            <ulink url="https://features.opensuse.org/312427">Add key-mon</ulink>
           </title>
-          <para>[ <ulink url="https://bugzilla.novell.com/show_bug.cgi?id=693765">https://bugzilla.novell.com/show_bug.cgi?id=693765</ulink> ]</para>
-          <para>Flags to override settings in /etc/zypp/zypp.conf, such as --repos-dir, --cache-dir, --raw-cache-dir, have been requested and added piecemeal over time. See for example Bug #441377 and Bug #693740.
-How about solving this once and for all with a generic flag pattern, so that e.g. --conf-sect-foo would be override the setting for config variable `foo&apos; in section [sect] of /etc/zypp/zypp.conf.
-So for example, packagesdir could be overridden via --conf-main-packagesdir. Etc.</para>
-          <para>This is what many other utilities do. For example, OpenSSH does with the &apos;-o&apos; flag (e.g., `-oPort=1234&apos;).</para>
+          <para>There&apos;s already a package in X11:Utilities, it just needs to be pushed to Factory (might need a cleanup, I didn&apos;t check).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312362">AuthorizedKeysCommand patch for openssh OR openssh-lpk</ulink>
+            <ulink url="https://features.opensuse.org/312440">Package libbluray</ulink>
           </title>
-          <para>There has long been a need to combine opensshd authorized keys with ldap. A couple of solutions have come about, and I would love to see one of these make it mainstream with opensuse.
-Here is one patch I have found that is supposedly being implemented on both Fedora and RHEL6 products: <ulink url="https://bugzilla.mindrot.org/show_bug.cgi?id=1663">https://bugzilla.mindrot.org/show_bug.cgi?id=1663</ulink></para>
-          <para>Of course there is the openssh-lpk patch as well.</para>
-          <para><ulink url="http://code.google.com/p/openssh-lpk">http://code.google.com/p/openssh-lpk</ulink></para>
-          <para>My company has standardized on suse some time ago, but by policy we require dual factor authentication (key and password). We can not move to an ldap solution until there is a way to integrate ssh keys into ldap. We are a growing company and it is getting to the stage where it is painful to manage each server individually without a centralized system for authentication.</para>
+          <para>gvfs can use libbluray to access Blu-Ray metadata.
+</para>
+          <para><ulink url="http://www.videolan.org/developers/libbluray.html">http://www.videolan.org/developers/libbluray.html</ulink></para>
+          <para>It should apparently be safe to integrate in openSUSE, according to the webpage.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312364">Qualcomm Gobi Wizard, making mobile broadband simple</ulink>
+            <ulink url="https://features.opensuse.org/312449">Package frogr</ulink>
           </title>
-          <para>My HP un2400 Gobi device is supported and should work. Whether it is due to USB mode switching or that the gobi_loader does not work correctly I do not know. There should be a simple wizard like that which ships under Windows (VZW connection manager) to allow me and other users in the same situation to easily make us of the Mobile Broadband we pay for. This is the final thing keeping me from wiping Windows off my netbook entirely.</para>
+          <para>Frogr is a small application for the GNOME desktop that allows users to manage their accounts in the Flickr image hosting website. It supports all the basic Flickr features, including uploading pictures, adding descriptions, setting tags and managing sets and groups pools.
+
+</para>
+          <para><ulink url="http://live.gnome.org/Frogr">http://live.gnome.org/Frogr</ulink></para>
         </blockquote>
-<!-- ($ ld: 21.5.11 sat *replaced with newer ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312451">Imrpovements on Yast package manager</ulink>
+          </title>
+          <para>It&apos;s very frustating when I&apos;m downloading packages in yast and something fails and lose all I was downloading. It&apos;s also complicated that I have to calculate how long the download of packages will last &apos;cause I can&apos;t pause and resume it later. It would be very nice if the gui yast package manager worked like a download manager allowing pause, resume, restart of failed downloads, preview of size, progress and time and had gui customization for what to do when something fails.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312452">Remastersys for Opensuse or something like that</ulink>
+          </title>
+          <para>Opensuse is very good, it has everything all other big distros have and much more but there&apos;s one thing I miss in it: &quot;Remastersys&quot;. Kiwi and suse studio don&apos;t do the same. Remastersys works offline and turns your installed system into a live cd/dvd that can be ran or installed anywhere. It also has the possibility of building the live cd/dvd including personal data and configuration.I would like to carry my opensuse installation with all its configs to another places with me and to share it with others. Can anyone create something like remastersys or adapt it to opensuse?</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312455">Replace Liberation fonts with ChromeOS core fonts</ulink>
+          </title>
+          <para>The ChromeOS core fonts are basically extended versions of the Liberation fonts under the &quot;SIL Open Font License, Version 1.1&quot;:
+</para>
+          <para><ulink url="http://gsdview.appspot.com/chromeos-localmirror/distfiles/">http://gsdview.appspot.com/chromeos-localmirror/distfiles/</ulink> (most current version is croscorefonts-1.20.1.tar.gz at the time of this writing)
+
+</para>
+          <para>The fontconfig configuration files must be updated to include these fonts. Here&apos;s an initial patch: <ulink url="http://pastebin.com/TkQb9bvM">http://pastebin.com/TkQb9bvM</ulink> </para>
+        </blockquote>
+<!-- ($ ld: 28.5.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
