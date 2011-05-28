@@ -18,19 +18,19 @@
 -->
 <sect1 role="announcements">
   <title>Announcements</title>
-  <!--Put a maximum of 5 announcements from the following sources here: 
+<!--Put a maximum of 5 announcements from the following sources here: 
     * opensuse-announce mailinglist
     * opensuse-project mailinglist
     * news.opensuse.org
-    * carefully selected other sources-->
-  <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/05/25/ready-set-code/"
-      >Ready…Set…Code!</ulink></title>
+    * carefully selected other sources-->  <blockquote>
+    <title>
+      <ulink url="http://news.opensuse.org/2011/05/25/ready-set-code/">Ready…Set…Code!</ulink>
+    </title>
     <para>Yesterday marked the official start of Google Summer of Code’s Coding Period. And openSUSE
       mentors are right in the thick of it working with 16 students seeking to make a better world
       in FOSS.</para>
     <para>openSUSE can take particular pride in GSoC further supporting the openSUSE goal of
-      creating an environment thatý supports not only openSUSE but FOSS in general. Indeed we are
+      creating an environment that supports not only openSUSE but FOSS in general. Indeed we are
       mentoring several projects that directly benefit openSUSE, but there’s also several projects
       that support other projects, like the Arch Linux backend for our Open Build Service, a test
       suite for btrfs, ext4 snapshots in snapper, PackageKit backend in Software Center, and ICC
@@ -50,8 +50,7 @@
           be a part of this effort.</para>
       </blockquote>
     </para>
-    <para>You can see the complete list of student projects we’re working with <ulink
-        url="http://lists.opensuse.org/opensuse-project/2011-04/msg00495.html">here</ulink>.</para>
+    <para>You can see the complete list of student projects we’re working with <ulink url="http://lists.opensuse.org/opensuse-project/2011-04/msg00495.html">here</ulink>.</para>
     <para>Pavol Rusnak, our other openSUSE GSoC organizer, reminds us that there are also some
       long-standing tasks directly beneitting the openSUSE Project which will now be tackled by some
       of our student projects.</para>
@@ -77,15 +76,13 @@
     <para><emphasis role="bold">Stay informed</emphasis></para>
     <para>Students are asked to post weekly reports. You can follow it on their blogs, which are
       aggregated on <ulink url="http://planet.opensuse.org/global/">Planet openSUSE</ulink> or
-      through our <ulink url="mailto:opensuse-project+subscribe@opensuse.org">openSUSE Project
-        mailing list</ulink>.</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!-- ($ ld: 26.5.11 sm $) -->
-  </blockquote>
+      through our <ulink url="mailto:opensuse-project+subscribe@opensuse.org">openSUSE Project mailing list</ulink>.</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+<!-- ($ ld: 26.5.11 sm $) -->  </blockquote>
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/05/26/opensuse-renames-obs/">openSUSE renames
-        OBS</ulink></title>
+    <title>
+      <ulink url="http://news.opensuse.org/2011/05/26/opensuse-renames-obs/">openSUSE renames OBS</ulink>
+    </title>
     <para>The openSUSE Build Service Team has decided to rename its cutting-edge packaging- and
       distribution build technology to Open Build Service. The new name, while maintaining the
       well-known OBS acronym, signals its open and cross-distribution nature.</para>
@@ -102,17 +99,14 @@
       distribution-specific purpose.</para>
     <para>OBS is a unique piece of technology and certainly deserves to be known and used by a wide
       audience. With features like integration with Source Code Management systems including GIT and
-      Subversion and powerful collaborative features has made the public instance on <ulink
-        url="http://build.opensuse.org">build.opensuse.org</ulink> the preferred build technology
+      Subversion and powerful collaborative features has made the public instance on <ulink url="http://build.opensuse.org">build.opensuse.org</ulink> the preferred build technology
       for well over 27,000 users.</para>
     <para><emphasis role="bold">Communication</emphasis></para>
     <para>In highlighting the benefits of OBS to the masses, the over-reaching assumption that the
       service is openSUSE-specfic proved to be a deterrent. It clearly takes additional effort to
-      convince a potential user that despite the name, openSUSE Build Service was not <emphasis
-        role="italic">just</emphasis> for openSUSE. And the distribution-independent technological
+      convince a potential user that despite the name, openSUSE Build Service was not <emphasis role="italic">just</emphasis> for openSUSE. And the distribution-independent technological
       benefits became lost in the confusion. This effect is very apparent in face to face
-      communication as you’ll almost immediately hear others saying <quote>No, I’m a Fedora
-        packager, this has nothing to do with me. Sorry</quote>. when they hear about OBS. This same
+      communication as you’ll almost immediately hear others saying <quote>No, I’m a Fedora packager, this has nothing to do with me. Sorry</quote>. when they hear about OBS. This same
       effect lead to less people reading articles or attending talks on the subject.</para>
     <para>And while this was an undesirable effect for us promoting one of the key features of the
       openSUSE Project, we also recognized this was preventing developers and packagers wanting to
@@ -129,16 +123,13 @@
       has always and continues to be the higher goal of the openSUSE Project.</para>
     <para><emphasis role="bold">Decicion</emphasis></para>
     <para>So after ample deliberation and discussion with all the major stakeholders, the OBS team
-      agreed that it would be beneficial to rename the openSUSE Build Service to <ulink
-        url="http://open-build-service.org/">Open Build Service</ulink>. It is and will remain an
+      agreed that it would be beneficial to rename the openSUSE Build Service to <ulink url="http://open-build-service.org/">Open Build Service</ulink>. It is and will remain an
       openSUSE project, with significant contributions from SUSE and openSUSE community members as
       well as many others from communities like MeeGo and VLC but also be more clear about its
       cross-distribution, cross-project goals and ambitions.</para>
     <para>The branding part of OBS will be adapted to make it easy for projects deploying their own
       OBS to name their OBS while staying connected with the OBS project. We suggest to name a
-      project-specific OBS instance <quote>XXX Open Build Service</quote>, like <quote>VLC Open
-        Build Service</quote>. The new domain name for the project will be <ulink
-        url="http://open-build-service.org/">openbuildservice.org</ulink>.</para>
+      project-specific OBS instance <quote>XXX Open Build Service</quote>, like <quote>VLC Open Build Service</quote>. The new domain name for the project will be <ulink url="http://open-build-service.org/">openbuildservice.org</ulink>.</para>
     <para><emphasis role="bold">Reaction</emphasis></para>
     <para>Of course, we at openSUSE are very happy with this change. And so are our friends and
       users of OBS!</para>
@@ -152,8 +143,7 @@
       Foundation. “As adoption of OBS has increased, it’s a natural step to rename it to reflect its
       open nature and cross-distribution support.”</para>
     <para><emphasis role="bold">Enterprise Support</emphasis></para>
-    <para>As OBS has matured and becomes more widespread, SUSE has <ulink
-        url="http://www.novell.com/prblogs/?p=3787">decided</ulink> to help organizations who want
+    <para>As OBS has matured and becomes more widespread, SUSE has <ulink url="http://www.novell.com/prblogs/?p=3787">decided</ulink> to help organizations who want
       to use and deploy it. SUSE OBS Developer Support brings commercial support options for
       customers and partners that want to run their own instance of the Open Build Service.</para>
     <para>The support offering will be handled via a new OBS Developer Services (DS) program. Under
@@ -162,13 +152,12 @@
       collecting requirements to the OBS software and will input this into the planning process for
       OBS. SUSE will be working with partners to enable and back them to offer implementation and
       consulting services.</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!-- ($ ld: 27.5.11 sm $)-->
-  </blockquote>
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+<!-- ($ ld: 27.5.11 sm $)-->  </blockquote>
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/05/27/fosscomm-2011/">FOSSCOMM
-      2011</ulink></title>
+    <title>
+      <ulink url="http://news.opensuse.org/2011/05/27/fosscomm-2011/">FOSSCOMM 2011</ulink>
+    </title>
     <para><ulink url="http://patras.fosscomm.gr/">FOSSCOMM</ulink> 2011 was held in Patras on the 7
       to 8 May from Patras Linux User Group (PLUG) and the Department of Computer Engineering &amp;
       Information Technology (Computer Laboratory / Computer Center), University of Patras. The
@@ -238,26 +227,24 @@
     </itemizedlist>
     <para><emphasis role="bold">Sunday, May 8</emphasis></para>
     <itemizedlist>
-        <listitem>
-          <para> Presentation by Efstathios Agrapidis for the revolutionary OBS platform that solves
+      <listitem>
+        <para> Presentation by Efstathios Agrapidis for the revolutionary OBS platform that solves
             packaging problems.</para>
-        </listitem>
-        <listitem>
-          <para> Presentation by Efstathios Iossifidis on how we can create an openSUSE distribution
+      </listitem>
+      <listitem>
+        <para> Presentation by Efstathios Iossifidis on how we can create an openSUSE distribution
             with SUSE Studio.</para>
-        </listitem>
-        <listitem>
-          <para> Workshop by Efstathios Agrapidis to create .deb and .rpm packages with OBS.</para>
-        </listitem>
+      </listitem>
+      <listitem>
+        <para> Workshop by Efstathios Agrapidis to create .deb and .rpm packages with OBS.</para>
+      </listitem>
     </itemizedlist>
     <mediaobject>
       <imageobject>
-        <imagedata
-          fileref="https://lh5.googleusercontent.com/-HOknuttVfIQ/TcaSzLg-NkI/AAAAAAAABQQ/PELdBfMoE2Y/s640/SAM_1146.JPG"
-          width="20%"/>
+        <imagedata width="20%" fileref="https://lh5.googleusercontent.com/-HOknuttVfIQ/TcaSzLg-NkI/AAAAAAAABQQ/PELdBfMoE2Y/s640/SAM_1146.JPG"/>
       </imageobject>
     </mediaobject>
-      <para>The openSUSE community booth was one of the largest in the organization and
+    <para>The openSUSE community booth was one of the largest in the organization and
       except the dvds, posters,, flyers, cheat-sheets etc. we co-hosted the booth of the Greek
       community of Gnome, the Enlightenment Project and the amazing people of other communities who
       were there to assist and promote their favorite project and FOSS in general.</para>
@@ -271,8 +258,6 @@
       without power and wifi internet access for the most part.</para>
     <para>More photos can be found in our group on facebook.</para>
     <para>Article by Kostas Koudaras</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 28.5.11 sm $)-->
-  </blockquote>  
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+<!--($ ld: 28.5.11 sm $)-->  </blockquote>
 </sect1>
