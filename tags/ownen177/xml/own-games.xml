@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="games" id="games">
+  <title>Games Corner</title>
+  <para>The Section provides the Game of the Week, and Updates in the Game Repository</para>
+  <!--
+  <blockquote>
+    <title><ulink url="http://www.vuntz.net/journal/post/2011/03/07/Google-Summer-of-Code-2011-for-GNOME-openSUSE">Vincent Untz: Google Summer of Code 2011 for GNOME</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>
+      <table frame="none">
+        <title>Short Intro</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <tbody>
+            <row>
+              <entry>Name of the Game:</entry>
+              <entry>$NAME</entry>
+            </row>
+            <row>
+              <entry>Genre:</entry>
+              <entry>$GENRE</entry>
+            </row>
+            <row>
+              <entry>1-Click-Install</entry>
+              <entry>$1-Click Install URL</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>   
+    </para>
+    <para></para>
+  </blockquote> -->
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/05/09/unknown-horizons-a-nice-strategy-game-now-on-opensuse/"
+        >Nelson Marques: Unknown Horizons, a nice strategy game, now on openSUSE</ulink></title>
+    <para>A few days ago I was wandering on the <ulink url="http://forums.opensuse.org">openSUSE
+        Forums</ulink>, once more in the games section when I saw one more post from one of our
+      users asking for <ulink url="http://www.unknown-horizons.org">Unknown Horizons</ulink>… I’ve
+      search a bit and found 2 entries on OBS (<ulink url="http://build.opensuse.org">openSUSE Build
+        Service</ulink>), one for Fedora packages and another for openSUSE packages.</para>
+    <para>I’ve joined #unknown-horizons on <ulink url="irc://irc.opensuse.org">FreeNode</ulink> and
+      found out that Unknown Horizons is very active and people are very nice. I’ve made a few
+      questions around and offered myself to package this nice game for openSUSE
+      (home:ketheriel:UnknownHorizons). Some of the dependencies are provided by the games
+      repository, to which I want to submit the major releases, and if possible enable builds for
+      Fedora (and friends).</para>
+    <para>A few packages need some tweaks to enable builds for Fedora (allegro, libenet, guichan),
+      and I’m working already on that. Meanwhile for everyone who wants to check out the latest
+      development snapshot of Unknown Horizons, feel free to do so… Currently packaged for:<itemizedlist>
+        <listitem>
+          <para>openSUSE 11.3</para>
+        </listitem>
+        <listitem>
+          <para>openSUSE 11.4</para>
+        </listitem>
+        <listitem>
+          <para>openSUSE Factory</para>
+        </listitem>
+        <listitem>
+          <para>openSUSE Tumbleweed</para>
+        </listitem>
+      </itemizedlist></para>
+    <figure id="fig.uh">
+      <title>Unknown Horizons - Settings Menu - openSUSE 11.4 GNOME3</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/05/Screenshot-Unknown-Horizons-Alpha.png"
+            width="40%"/>
+        </imageobject>        
+      </mediaobject>
+    </figure>    
+    <para>The 1-Click installer can be found on <ulink
+        url="http://www.unknown-horizons.org/download/linux/">Unknown Horizons download
+      page</ulink>. There’s also a nice article (bumping ego) about the new openSUSE packages on
+      Unknown Horizons <xref linkend="fig.uh"/>webpage!</para>
+    <para>This is a title that all openSUSE users who like RTS games should try (supports openGL and
+      sdl) and is powered by the <ulink url="http://www.fifengine.de">FIFE Engine</ulink>.</para>
+    <!--($ ld: 10.5.11 sm $)-->
+  </blockquote>
+</sect1>

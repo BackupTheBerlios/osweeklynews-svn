@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/grabbing-your-music-youtube-do-it-your-way"
+          >Linux Journal/Emre Sevinc: Grabbing Your Music from YouTube: Do It Your Way </ulink>
+      </title>
+      <para>A few months ago my father-in-law said that his company was renewing their computers.
+        When I heard that some second-hand PCs were about to be available, I decided to take some of
+        them, thinking that a few old PCs would not hurt when it comes to enlarging my home network
+        and doing experiments with GNU/Linux. When my father-in-law asked if it would be possible to
+        reformat one of those computers so that he could use it at his home, I jumped at the
+        opportunity to bring another user to the world of GNU/Linux. A few days passed and he was a
+        happy user of his new computer running Ubuntu, and he was enjoying his Firefox while he
+        explored the web. I don’t know what other people think or usability studies say, but he said
+        that he had no problem using the system and he was surprised that I did not have to install
+        an anti-virus. (...)</para>
+<!-- ($ Id: 24.5.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.phacks.net/how-to-use-gnu-screen/">pHacks/Pietra Armaga: How to Use GNU Screen</ulink>
+      </title>
+      <para>On UNIX, GNU Screen is a utility that i cannot live without. I know many console users share the same point of view with me.</para>
+      <para>What is GNU Screen? it is a terminal multiplexer and you can run multiple console-based applications simultaneously. The best part of it is that you can leave it running on remote machines and come back to pick up your console sessions. It’s like VNC or Remote Desktop but for UNIX console. As you know that on UNIX if you run something on a shell and you got disconnected from it then your sessions will also stop. All work will be gone. (...)</para>
+<!-- ($ Id: 27.5.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://log.or.cz/?p=156">Petr Baudis: brmd: A Case for POE</ulink>
+      </title>
+      <para>In <ulink url="http://brmlab.cz/">brmlab</ulink>, we want to <ulink url="http://brmlab.cz/project/brmdoor">track</ulink> who is unlocking the space, whether
+        someone is inside, have some good visual indicator that <ulink url="http://brmlab.cz/project/presentationcenter">live stream</ulink> is on air, and so
+        on. In other words, we have an Arduino with some further hardware, and we want to show
+        whatever is reported by the Arduino on IRC and <ulink url="http://nat.brmlab.cz/brmd/">web</ulink>, and provide some web-based control (open/closed status override) in the
+        opposite direction too.</para>
+      <para>What to use for a service (we call it brmd) that will bind all these interfaces
+        together? It just needs a lot of boring frontends and simple state maintenance. </para>
+      <para>It turns out that Perl’s <ulink url="http://poe.perl.org/">POE</ulink> framework is
+        ideal for this – most of the code for IRC, HTTP and device read/write is already there, so
+        you just grab the modules, slam them together and you have exactly what you need with
+        minimal effort. Right?It turns out that there are caveats – basically, the idea is correct,
+        aside of getting stuck on a single stupidity of mine, I’d have the whole thing put together
+        in something like half an hour. Unfortunately, the moment you want robustness too, things
+        are getting a lot more complex; to handle the device disappearing, IRC disconnections, not
+        having HTTP socket fds leak away, etc., you suddenly need to either magically know what
+        further modules to hook up or start exeting some manual effort. Still, I like how POE is
+        making it so easy to give a simple state machine many input/output interfaces and when you
+        get used to the idiosyncracies, you can even make it somewhat reliable. (...)</para>
+<!-- ($ Id: 26.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://log.or.cz/?p=177">Petr Baudis: Repairing git cherry-pick authorship
+          information</ulink></title>
+      <para>I spent just my last night going through few months worth of patches and cherry-picking
+        the bugfixy ones to <ulink url="http://sourceware.org/glibc/wiki/Release/2.11">glibc’s
+          release/2.11/master</ulink>. But I was tired and didn’t pay attention to git’s messages,
+        so at the end of the evening, I noticed that for all conflicting patches, I have done git
+        commit -a instead of git commit -a -c commitid. This had a definite advantage since the
+        “(cherry picked from commit …)” notices inserted by git cherry-pick -x got preserved, but
+        also a very definitive problem – the author name and date info for each commit was
+        wrong.</para>
+      <para>(Note that AIUI, 1.7.5 cherry-pick might not have this problem anymore. I’m still using
+        1.7.4, content with Debian’s packaged version nowadays.)</para>
+      <para>Due to the -x lines, we still have mapping to original history. Therefore, some
+        scripting should fix this quickly. And sure enough…! Maybe this recipe will come useful to
+        someone:<programlisting>git filter-branch --commit-filter'
+  if [ "$GIT_AUTHOR_NAME" = "Petr Baudis" ]; then
+    # Author of this commit is wrong! We could also simply correct
+    # all commits containing the "cherry picked" notice.
+    cat &gt;/tmp/logm$$ # save log message
+    ocommit="$(sed -n '\''s/^(cherry picked from commit \(.*\))$/\1/p'\'' &lt;/tmp/logm$$)"
+    # Load original authorship information:
+    IFS=: read GIT_AUTHOR_NAME GIT_AUTHOR_EMAIL GIT_AUTHOR_DATE \
+        &lt;&lt;&lt;"$(git log -1 --pretty=format:"%an:%ae:%at" $ocommit)"
+    # Redo the commit:
+    export GIT_AUTHOR_NAME GIT_AUTHOR_EMAIL GIT_AUTHOR_DATE
+    git commit-tree "$@" &lt;/tmp/logm$$
+    rm /tmp/logm$$
+else
+    git commit-tree "$@" # preserve commit intact
+fi' c55cc45ed76603b380489ee8c91ab5dce92e92f1..HEAD</programlisting></para>
+      <para>Note that this requires that /bin/sh is bash (which may NOT be the case on debian!).
+        Otherwise, you need to rewrite the &lt;&lt;&lt; bit.</para>
+      <para>The c55cc45ed… commit is the first wrong cherry-pick. You may omit that altogether if
+        you wish but the complete branch history is going to be rewritten. Also note that you should
+        never rewrite commits that are already pushed out to a public place.</para>
+      <!-- ($ Id: 28.5.11 sm $)-->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/samba-and-share-configuration-through-yast">BeginLinux: SAMBA and Share Configuration Through YaST</ulink>
+      </title>
+      <para>One of the features that makes SUSE relatively simple to manage is that all of the graphical configuration tools are gathered together in the YaST Control Center, (<emphasis role="bold">Y</emphasis>et <emphasis role="bold">a</emphasis>nother <emphasis role="bold">S</emphasis>etup <emphasis role="bold">T</emphasis>ool). You can start YaST from the Computer Menu on your task bar, if you are not authenticated as root you will be prompted for the root password. By selecting Network Services &gt; Samba Server you will start SAMBA configuration tool. The default install will add SAMBA but if it had not been installed it will automatically install it for you with this selection. (...)</para>
+<!-- ($ Id: 27.5.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="forums">
+  <title>openSUSE Forums</title>
+  <blockquote>
+    <title>
+      <ulink url="http://forums.opensuse.org/content/2-new-forum-functionality.html">New Forums functionality</ulink>
+    </title>
+    <para>
+      The openSUSE Forums are moving on. After the new theme, the new layout, now the forums software has new functions. This Article is one of the first in our new section "Articles", there's also a new blog section: "Blogs". The openSUSE Forums already were a place of activity and enthousiasm, these tools will give members even more room for contributing. It's all pretty new, so not much to tell about it yet, I will get back about the new functionality after taking a good look around and seeing what the tools can be used for.
+    </para>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://forums.opensuse.org/english/other-forums/community-fun/surveys-polls/460077-you-distro-hopper.html">Are you a distro hopper?</ulink>
+    </title>
+    <para>
+      For those who wonder what a  "distro hopper" is: a linux user constantly moving from one linux distribution to another, for whatever reason. This thread is a survey/poll by a member interested in whether openSUSE Forums members are distro hoppers. There's not only their votes, the thread also contains comments by users, telling us why they're distro hopping, or not.
+      </para>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://forums.opensuse.org/english/get-technical-help-here/install-boot-login/460348-what-safest-way-upgrade-using-new-installation-while-keeping-existing-home.html">What is safest way to upgrade using new installation while keeping existing Home</ulink>
+    </title>
+    <para>
+      A question where every answer -no doubt- is debatable. Yet there's quite some good advice to give. If you don't know: /home/USERNAME is the place where the user's foldere reside; not only "Documents", but also lots of -mostly hidden- folders that contain the user's preferences, settings, program configurations etc. When upgrading to a new version, or moving to another distribution, one would preferably keep these settings, most certainly the documents. Most linux distributions default to putting /home on a separate partition on harddisk, so that it can be left unformatted, untouched during install or upgrade. Read ahead to see some nice suggestions. Personal remark: this does not make backups redundant.
+      </para>
+  </blockquote>
+  <blockquote>
+    <title>
+    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/tumbleweed/458051-what-packages-repos-do-you-want-see-pulled-into-tumbleweed.html">What packages/repos do you want to see pulled into Tumbleweed?</ulink>
+    </title>
+    <para>
+      Tumbleweed, the inbetween stable and factory openSUSE, is alive and kicking. I'd like to draw your attention to a not so recent thread where one of the intiators of Tumbleweed asks you as an openSUSE user, which packages you would like to see in a Tumbleweed version. Tumbleweed already serves GNOME3 -from a separate repo-, KDE and LXDE as desktop environments, but there might be applications you would like to see in Tumbleweed. This thread gives them an opportunity to let the Tumbleweed maintainers know.
+      </para>
+<!-- ($ ld: 26.05.2011 gl $) -->  </blockquote>
+</sect1>

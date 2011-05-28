@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel.mm/63589">Linus Torvalds: (Short?) merge window reminder</ulink>
+    </title>
+    <para>So I&apos;ve been busily merging stuff, and just wanted to send out a quick
+reminder that I warned people in the 39 announcement that this might
+be a slightly shorter merge window than usual, so that I can avoid
+having to make the -rc1 release from Japan using my slow laptop (doing
+&quot;allyesconfig&quot; builds on that thing really isn&apos;t in the cards, and I
+like to do those to verify things - even if we&apos;ve already had a few
+cases where arch include differences made it less than effective in
+finding problems).</para>
+    <para>(...)</para>
+    <para>PS. The voices in my head also tell me that the numbers are getting
+too big. I may just call the thing 2.8.0. And I almost guarantee that
+this PS is going to result in more discussion than the rest, but when
+the voices tell me to do things, I listen.
+</para>
+<!-- ($ ld: 27.5.11 sat $) -->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-kernel/2011-05/msg00090.html">Michal Marek: announcing kernel.opensuse.org</ulink>
+    </title>
+    <para>The opensuse kernel git trees have a new home at http://kernel.opensuse.org/?a=git . It
+      should be more reliable than gitorious, which sometimes has problems cloning the nearly 1GB
+      repository. We continue to sync to gitorious as well, so nothing should break for anyone. If
+      you want to switch an existing clone to kernel.opensuse.org, however, it&apos;s as simple as
+      <screen>git config remote.origin.url git://kernel.opensuse.org/kernel-source.git</screen></para>
+    <para>and analogously for the kernel.git repository. We will add more stuff to
+      kernel.opensuse.org website in near future, next in the todo list is LXR and either gitweb or
+      cgit. Have fun! Michal</para>
+<!--($ ld: 27.5.11 sm $)-->  </blockquote>
+</sect1>
