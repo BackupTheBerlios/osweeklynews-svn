@@ -36,4 +36,96 @@
       Here are some examples to show some flaws of the current user interface: (...)</para>
     <!-- ($ ld: 24.5.11 sm $) -->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://rxvl.in/post/5826361873/gsoc-2011-ssc-week-1">Ratan Sebastian: GSOC
+        2011: ssc - Week 1</ulink></title>
+    <para>My proposal for a command-line client for Suse Studio has been accepted for this year’s
+      Google Summer of Code. You can see the full proposal <ulink
+        url="http://www.google-melange.com/gsoc/proposal/review/google/gsoc2011/ratan/1"
+        >here</ulink>. In short, the project is pretty self-evident from the title. In case you
+      don’t know what Suse Studio is, its a web service that allows you to design custom ISOs of
+      linux distributions. As you can imagine, designing a custom variant of a linux distro will
+      involve a lot of configuration. This tool aims to ease the hassles involved with using the web
+      interface to make these customisations. The most common use case for this tool as I see it
+      will be modifying default configuration files. The tool will allow you to make all the
+      modifications you want locally in an appliance directory and push the changes when you’re
+      ready. If you want a more thorough view of how it will work please do read the <ulink
+        url="http://www.google-melange.com/gsoc/proposal/review/google/gsoc2011/ratan/1">complete
+        proposal</ulink>.</para>
+    <!--($ ld: 28.5.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://cbounta.wordpress.com/2011/05/27/a-utility-for-merging-configuration-sysconfig-files-week-1-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 1
+        Report</ulink></title>
+    <para>It’s less than a week, that GSoC 2011 coding period have begun. This is my first report
+      for the project.Every Friday I will make a report in this blog to share with you the progress
+      I am making on the project.So what did I do during these first days?</para>
+    <para>First of all I created an online repo on GitHub and I forked the Augeas project. That will
+      permit me to use version control of my project “GIT” during the implementation and retain an
+      online repo where I can commit my changes to, while experimenting with the source code. This
+      gave me the opportunity to practice more with git, create branches merge commit changes etc. I
+      have to admit that until now, I didn’t used a version control system much, but i really don’t
+      know why?!?! Really git is awesome and can save the developer valuable and useful time.</para>
+    <para>Next, I continued with trying out OBS for the first time, the openSUSE Build Service, that
+      just renamed to Open Build Service. Even thought i faced some troubles in the start finding my
+      way around (packaging was a new thing for me, and after using obs I have to say that it is not
+      as hard as I initially believed), with the help of my mentor I think I can understand now
+      better the service and use it. But why use OBS to package so early in the project? Well we
+      thought that by using obs we will be able to create packages (please care they are
+      experimental ) with the changes i make, so other people can try them out if they are
+      interested and maybe help with future debugging.</para>
+    <para>Finally among my initial experiments with Augeas source code, I have created a branch
+      “helloworld” on my git repo, whether i added a simple hw – Hello world command in the augtool
+      that is contained within Augeas. That command prints as you may have guessed <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s2.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1256405099g"/>
+        </imageobject>
+      </inlinemediaobject> , a hello world message on screen. Then i compiled the project by using
+      the sources of the specific branch, and at the end i used obs to create some packages that can
+      be found on my obs repo <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s0.wp.com/wp-includes/images/smilies/icon_biggrin.gif?m=1256405099g"/>
+        </imageobject>
+      </inlinemediaobject> .</para>
+    <para>As I had not any important experience with building software and packages, I occupied
+      myself this week mainly with administration actions. Which however, will help the community
+      and of course everyone interested in my gsoc project, to follow the changes, make suggestions,
+      and contribute with new ideas, but will also help in the latter phase of integrating</para>
+    <para><emphasis role="bold">Conclusion</emphasis></para>
+    <para>The progress of the week 1 in bullets:</para>
+    <itemizedlist>
+      <listitem>
+        <para>created git repo online through GitHub</para>
+      </listitem>
+      <listitem>
+        <para>practice with git</para>
+      </listitem>
+      <listitem>
+        <para>compiling packages from git sources</para>
+      </listitem>
+      <listitem>
+        <para>Learn the basics about using OBS</para>
+      </listitem>
+      <listitem>
+        <para>experimenting with augeas code, and creating a small command as a test</para>
+      </listitem>
+      <listitem>
+        <para>creating openSUSE packages through OBS</para>
+      </listitem>
+    </itemizedlist>
+    <para>The GSoC have just begun, and I have already learned many new and very exciting things.
+      This summer will be very interesting for sure!!! Now i will focus on the actual coding and
+      specifically in the merging procedure that will used in Augeas. Till the next report,</para>
+    <para>Best Regards, Christos Bountalis</para>
+    <para>[1] <ulink url="http://download.opensuse.org/repositories/home:/mpounta/openSUSE_11.4/"
+        >http://download.opensuse.org/repositories/home:/mpounta/openSUSE_11.4/</ulink></para>
+    <para><emphasis role="italic">Notice: This is the first time I compile and package a project
+        with obs, therefore the packages inside the repo are highly experimental and only for
+        testing purposes.</emphasis></para>
+    <!--($ ld: 28.5.11 sm $)-->
+  </blockquote>
 </sect1>

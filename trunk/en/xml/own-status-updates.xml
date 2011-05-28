@@ -66,37 +66,40 @@
       </listitem>
     </itemizedlist>
   </sect2>
-<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://flavio.castelli.name/introducing-dister-a-heroku-like-solution-for-suse-studio">Flavio Castelli: Introducing dister, a Heroku like solution for SUSE Studio</ulink>
+        <ulink
+          url="http://flavio.castelli.name/introducing-dister-a-heroku-like-solution-for-suse-studio"
+            ><ulink url="http://blog.susestudio.com/2011/05/suse-gallery-desktop-client.html">Matt
+            Barringer: SUSE Gallery Desktop Client</ulink></ulink>
       </title>
-      <para><ulink url="http://susestudio.com">SUSE Studio</ulink> is an awesome tool, with a couple
-        of clicks you can create an openSUSE/SUSE based system and deploy to your hard drive, an usb
-        flash, a live dvd, a VMware/VirtualBox/Xen server and even Amazon EC2 cloud.</para>
-      <para>Suppose you want to create a tailored SUSE Studio appliance to run a Ruby on Rails app,
-        this is a list of things you have to take care of:<itemizedlist>
-          <listitem>
-            <para>install all the gems required by the app (this can be a long list).</para>
-          </listitem>
-          <listitem>
-            <para>install and configure the database used by the app.</para>
-          </listitem>
-          <listitem>
-            <para>install and configure a webserver.</para>
-          </listitem>
-          <listitem>
-            <para>ensure all the required services are started at boot time.</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>You can save some time by cloning <ulink url="http://susegallery.com/a/CZ0T0D/rails-in-a-box">this</ulink> appliance shared on
-          <ulink url="http://susegallery.com/">SUSE Gallery</ulink>, but this is still going to be
-        boring. (...)</para>
-      <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc-sa/2.5/it/">CC-BY-NC-SA</ulink></para>
+      <para>When I started working on extending the <ulink url="http://susestudio.com/help/api/v2"
+          >SUSE Studio API</ulink> to support <ulink url="http://susegallery.com/">SUSE
+          Gallery</ulink>, I developed a desktop client at the same time as a testbed. It's been a
+        bit neglected over the last 6 months, as my <ulink
+          url="http://www.entomologist-project.org/">primary after-work project</ulink> takes up a
+        lot of my time, but it's usable nonetheless. In an effort to motivate me to work on it
+        again, and to find other contributors, I'm happy to announce the <ulink
+          url="http://susegallery.sourceforge.net/">SUSE Gallery client</ulink>: </para>
+      <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://2.bp.blogspot.com/-zJwcKp4oxDw/Td98eZljUtI/AAAAAAAAAAU/ofoagp17uJE/s320/suse-gallery-main.png"
+            width="20%"/>
+        </imageobject>
+      </mediaobject>
+      <para>With the Gallery client, you can browse, search, view details, download, write to a CD
+        or USB key, or execute the image directly in a virtual machine. There's rudimentary support
+        for connecting to Testdrive, but the built-in VNC client isn't very reliable , so don't be
+        surprised if it doesn't work. Packages have been built for openSUSE and Fedora, but it
+        should compile on any platform that Qt and LibVNCViewer support (including Windows and Mac).
+        And of course, contributions and bug reports are most welcome!</para>
+      <!--($ ld: 28.5.11 sm $)-->
     </blockquote>
-  </sect2> -->  <sect2 role="teamreports">
+  </sect2>   
+  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -326,58 +329,6 @@
           additions, required for openGL). To download the image : <ulink url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink>
           Enjoy.</para>
 <!--($ ld: 24.5.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2011/05/17/advancing-with-gnomeayatana-repository/">Nelson Marques: Advancing with GNOME:Ayatana repository</ulink>
-        </title>
-        <para>Last week I’ve received an email from Bruce Byfield asking a few questions about this
-          project. I’ve replied honestly as I would to anyone, I’ve faced several issues, and it
-          sounded wise to me to hold a bit this. Since the Beta release of Natty that I’m following
-          a technology forum in Portugal (over 150.000 users) and making a few notes on what peoples
-          perceptions are about Unity and Natty. </para>
-        <para>From what I see amongst this segment of the Linux users in my country, it’s
-          interesting… While legacy users are moving away from Ubuntu to other alternatives seeking
-          GNOME3 (no one seems to be moving from GNOME/Unity to KDE), others are satisfied with
-          Unity. The biggest problem with Natty users so far comes regarding Networking issues and
-          hardware compatibility… and once more Ubuntu’s kernels seem to be driving some people to
-          desperation with the classical MCE’s. </para>
-        <para>A few days (4 days ago), Compiz 0.9.5 has been released. I’ve taken a look on the
-          Ubuntu package and the patch level has dropped substantially, which points that upstream
-          has absorbed most of them. Dominique already has 0.9.5 prepared on X11:Compiz (though the
-          version needs a bump on the spec) and I’m going to test them out and start branching them
-          over to GNOME:Ayatana during the next days and depending on the availability of reviews.
-          This should be peaceful. </para>
-        <para>For this repository I’m going to enable a small pattern to provide a simple 1-Click
-          Installer for Compiz alone, this means that people will be able to test the patched
-          version of Compiz in which Unity will be build upon in the future. </para>
-        <para>After Compiz is established on GNOME:Ayatana, I’m going to get back to Unity and
-          prepare Unity2D for deployment (being Unity a task for the future). Now if some people
-          wonder why all of this innactivity? The answer is simple… GNOME3 was being prepared and
-          launched, and it deserved all the spotlights! </para>
-        <para>Now that GNOME3 has proudly established itself on it’s segment and despite the press
-          attacks, the communities I keep tracking, I see what seems to be a substantial increase of
-          interest on GNOME3. I would personally consider GNOME3 launch a success. (...)</para>
-<!--($ ld: 18.5.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lizards.opensuse.org/2011/05/19/unity-2d-to-enter-gnomeayatana-soon/">Nelson Marques: Unity 2D to enter GNOME:Ayatana soon…</ulink>
-        </title>
-        <para>In the past days I’ve been packaging and fixing some issues on Unity 2D for inclusion
-          on the GNOME:Ayatana repository in the openSUSE Build Service.</para>
-        <para>This gave me an excellent opportunity to test a few components share by both, Unity
-          and Unity 2D, which is the case of ‘unity-place-applications’ and ‘unity-place-files’,
-          both using Zeitgeist which is already in Factory for the upcoming openSUSE 12.1. We thank
-          the integration of this packages to Federico Quintero. Thanks Fred.</para>
-        <para>A few more additional packages need some care and once they get updated and tested
-          they will be uploaded to GNOME:Ayatana, at which time I will provide an installer
-          (1-Click) for those willing to test Unity-2D. Unity 2D will be the first application to
-          use the indicators I have prepared in the past which all all found working, except 1, the
-          AppMenu (strangely it works on GNOME2 panel without issues).</para>
-        <para>This is how Unity 2D looks like. There are transparencies because I enabled
-          ‘composite’ on metacity, which works very nicely. As far as I could understand, the
-          developers of Unity 2D are also looking into implementing Compiz with Unity 2D, which
-          would be sweet. (...)</para>
-<!--($ ld: 20.5.11 sm $)-->      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
@@ -733,7 +684,9 @@ DHCLIENT6_BIN=&quot;&quot;
           April.</para>
         <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
       </blockquote>
-      </sect3> -->    <sect3 role="testing">
+      </sect3> -->    
+    <!--
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
@@ -749,8 +702,8 @@ DHCLIENT6_BIN=&quot;&quot;
         <para>Our next meeting will be Monday, May 23 at 17:00 UTC on our usual IRC channel. This
           meeting was scheduled to occur after the release of 12.1 M1; however, that event is
           delayed. I expect a short discussion. </para>
-<!--($ ld: 21.5.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>

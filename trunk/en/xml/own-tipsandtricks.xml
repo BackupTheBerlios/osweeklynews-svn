@@ -22,7 +22,8 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://thefreecountry.wordpress.com/2011/05/21/a-bit-about-fluxbox/">Linux Journal/Emre Sevinc: Grabbing Your Music from YouTube: Do It Your Way </ulink>
+        <ulink url="http://www.linuxjournal.com/content/grabbing-your-music-youtube-do-it-your-way"
+          >Linux Journal/Emre Sevinc: Grabbing Your Music from YouTube: Do It Your Way </ulink>
       </title>
       <para>A few months ago my father-in-law said that his company was renewing their computers.
         When I heard that some second-hand PCs were about to be available, I decided to take some of
@@ -71,6 +72,44 @@
         making it so easy to give a simple state machine many input/output interfaces and when you
         get used to the idiosyncracies, you can even make it somewhat reliable. (...)</para>
 <!-- ($ Id: 26.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://log.or.cz/?p=177">Petr Baudis: Repairing git cherry-pick authorship
+          information</ulink></title>
+      <para>I spent just my last night going through few months worth of patches and cherry-picking
+        the bugfixy ones to <ulink url="http://sourceware.org/glibc/wiki/Release/2.11">glibc’s
+          release/2.11/master</ulink>. But I was tired and didn’t pay attention to git’s messages,
+        so at the end of the evening, I noticed that for all conflicting patches, I have done git
+        commit -a instead of git commit -a -c commitid. This had a definite advantage since the
+        “(cherry picked from commit …)” notices inserted by git cherry-pick -x got preserved, but
+        also a very definitive problem – the author name and date info for each commit was
+        wrong.</para>
+      <para>(Note that AIUI, 1.7.5 cherry-pick might not have this problem anymore. I’m still using
+        1.7.4, content with Debian’s packaged version nowadays.)</para>
+      <para>Due to the -x lines, we still have mapping to original history. Therefore, some
+        scripting should fix this quickly. And sure enough…! Maybe this recipe will come useful to
+        someone:<programlisting>git filter-branch --commit-filter'
+  if [ "$GIT_AUTHOR_NAME" = "Petr Baudis" ]; then
+    # Author of this commit is wrong! We could also simply correct
+    # all commits containing the "cherry picked" notice.
+    cat &gt;/tmp/logm$$ # save log message
+    ocommit="$(sed -n '\''s/^(cherry picked from commit \(.*\))$/\1/p'\'' &lt;/tmp/logm$$)"
+    # Load original authorship information:
+    IFS=: read GIT_AUTHOR_NAME GIT_AUTHOR_EMAIL GIT_AUTHOR_DATE \
+        &lt;&lt;&lt;"$(git log -1 --pretty=format:"%an:%ae:%at" $ocommit)"
+    # Redo the commit:
+    export GIT_AUTHOR_NAME GIT_AUTHOR_EMAIL GIT_AUTHOR_DATE
+    git commit-tree "$@" &lt;/tmp/logm$$
+    rm /tmp/logm$$
+else
+    git commit-tree "$@" # preserve commit intact
+fi' c55cc45ed76603b380489ee8c91ab5dce92e92f1..HEAD</programlisting></para>
+      <para>Note that this requires that /bin/sh is bash (which may NOT be the case on debian!).
+        Otherwise, you need to rewrite the &lt;&lt;&lt; bit.</para>
+      <para>The c55cc45ed… commit is the first wrong cherry-pick. You may omit that altogether if
+        you wish but the complete branch history is going to be rewritten. Also note that you should
+        never rewrite commits that are already pushed out to a public place.</para>
+      <!-- ($ Id: 28.5.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>

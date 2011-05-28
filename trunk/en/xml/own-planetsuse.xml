@@ -20,75 +20,109 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://lizards.opensuse.org/2011/05/14/atiamd-fglrx-8-850-catalyst-11-5-available-for-opensuse-11-2-11-3-11-4-factory/">Bruno Friedmann: ATI/AMD fglrx 8.850 Catalyst 11.5 available for openSUSE 11.2, 11.3, 11.4, Factory</ulink>
+      <ulink url="http://lizards.opensuse.org/2011/05/27/factory-progress/">Andreas Jaeger: Factory
+        Progress</ulink>
     </title>
-    <para>Please refer to my <ulink url="http://lizards.opensuse.org/?p=6680">previous article</ulink> where all the installation procedure is explained. </para>
-    <para>At least after a wrong 11.4 version, and a first buggy 11.5 catalyst version, the new one
-      is finally build and ready to install from the repo. Like for 11.3 I’ve clean up all previous
-      version which are not xpic, so everybody can easily know which drivers he has to install. I’ve
-      resigned all rpm with my key. And the tests made show them working. </para>
-    <para>Warning </para>
-    <para>Some instabilities have been reported. In case of crash like no keyboard, mouse, and
-      blackscreen on reboot. Try to shutdown properly your computer with the shutdown poweroff
-      button. On reboot, just add 3 at the end of grub line to restart in console mode. Then with
-      yast or zypper you can always try the previous version. </para>
-    <para>All credits to Sebastian Siebert (freespacer) : <ulink url="http://bit.ly/l6Ddyc">11.5 article</ulink> (...)</para>
-<!--($ ld: 16.5.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://lizards.opensuse.org/2011/05/16/have-you-burped-yet-today/">Will Stephenson: Have you BURPed yet today?</ulink>
-    </title>
-    <para>Well, have you? ýNot the satisfying expulsion of excess gas, but the simplest way you can
-      materially contribute to openSUSE.</para>
-    <para>I was just hanging in the #active channel, watching my KDE chums make their <ulink url="http://www.youtube.com/watch?v=iA9zaBZysfI">new touchscreen interface</ulink> (video),
-      when somebody complained that <ulink url="http://sourceforge.net/projects/oscaf/files/shared-desktop-ontologies/0.7/">shared-desktop-ontologies</ulink> does not yet contain the latest release needed by KDE git
-      master. ýAnd instead of updating the package myself, I suggested they just BURP:</para>
+    <para>A lot of things are happening in our Factory distribution that will be released in
+      November 2011 as openSUSE 12.1 and I’d like to point out a few things from the last few weeks
+      that users and developers of factory shouldn’t miss.</para>
+    <para><emphasis role="bold"><emphasis role="underline">Roadmap openSUSE
+        12.1</emphasis></emphasis></para>
+    <para>Stephan “Coolo” Kulow has updated the openSUSE 12.1 <ulink
+        url="http://en.opensuse.org/Roadmap">Roadmap</ulink>, the next milestone is Milestone 1
+      which is delayed and targeted now for release on Tuesday, 30th May. The next paragraphs
+      highlight some of the updates for this versions.</para>
+    <para><emphasis role="bold">GCC 4.6</emphasis></para>
+    <para>The GNU Compiler Collection has been updated to version 4.6, the list of <ulink
+        url="http://gcc.gnu.org/gcc-4.6/changes.html">changes</ulink> includes the following new
+      warning that will be visible while compiling packages for openSUSE Factory:</para>
     <itemizedlist>
       <listitem>
-        <para><emphasis role="bold">Branch</emphasis>,</para>
-      </listitem>
-      <listitem>
-        <para><emphasis role="bold">Update</emphasis>,</para>
-      </listitem>
-      <listitem>
-        <para><emphasis role="bold">Request</emphasis>,</para>
-      </listitem>
-      <listitem>
-        <para>the <emphasis role="bold">Package</emphasis></para>
+        <para>“New -Wunused-but-set-variable and -Wunused-but-set-parameter warnings were added for
+          C, C++, Objective-C and Objective-C++. These warnings diagnose variables respective
+          parameters which are only set in the code and never otherwise used. Usually such variables
+          are useless and often even the value assigned to them is computed needlessly, sometimes
+          expensively. The -Wunused-but-set-variable warning is enabled by default by -Wall flag and
+          -Wunused-but-set-parameter by -Wall -Wextra flags.”</para>
       </listitem>
     </itemizedlist>
-    <para>And by doing so we all get the latest versions in the devel project and soon in Tumbleweed
-      and openSUSE Factory. ýSo ambassadors, boosters and motivated contributors know how to do that
-      right? ýNow you can use this glib little acronym to persuade friends and colleagues to do the
-      same.</para>
-    <para>Happy BURPing!</para>
-<!--($ ld: 17.5.11 sm $)-->  </blockquote>
+    <para>Some packages have been failing by the new GCC due to new warnings and new optimizations
+      and most have been fixed already but please double check that your packages are building and
+      running fine.</para>
+    <para><emphasis role="bold">RPM 4.9</emphasis></para>
+    <para>Michael Schröder <ulink
+        url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00112.html"
+        >announced</ulink><ulink url="http://rpm.org/wiki/Releases/4.9.0">RPM 4.9</ulink> for
+      Factory. He explains the main packager visible changes as:<blockquote>
+        <para>Besides some bug fixes and an update to a newer BerkeleyDB library rpm-4.9.0 contains
+          plugin architecture for dependency generation. In older rpms, the internal dependency
+          generator was pretty much hardcoded in C, so we always used the old external one to
+          generate dependencies. With rpm-4.9.0, the internal generator has become flexible enough
+          so that we can use it.</para>
+        <para>This means for you, that rpm will no longer use the %__find_provides and
+          %__find_requires macros. Some packages redefined those macros to be able to filter the
+          generated dependencies.</para>
+        <para>This will no longer work in rpm-4.9.0. Instead, support for dependency filtering was
+          added to rpm…</para>
+      </blockquote></para>
+    <para><emphasis role="bold">GNOME3</emphasis></para>
+    <para><ulink url="http://gnome3.org">GNOME 3</ulink> has now hit Factory as well and Vincent
+      Untz <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00006.html"
+        >explained</ulink> how to fix failures due to the large push.</para>
+    <para><emphasis role="bold">Linux Kernel 2.6.39</emphasis></para>
+    <para>This update was a “boring” update – nothing broke AFAIK , so I hope it’s a solid version.
+      Users will benefit from the<ulink
+        url="http://www.h-online.com/open/features/Linux-Kernel-2-6-39-Tracking-1219728.html"> new
+        features</ulink> in it. 2.6.39 is the first kernel without the Big Kernel Lock at
+      all!</para>
+    <para><emphasis role="bold">Packaging Changes</emphasis></para>
+    <para>Besides new software, also new ways of handling it get introduced. The following catched
+      my eyes:</para>
+    <para><emphasis role="bold">Rpmlint update</emphasis></para>
+    <para>Ludwig Nussel updated rpmlint to version 1.2 and <ulink
+        url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00118.html">explained</ulink>
+      the new warnings about packaging of rpm packages – and what to do about them.</para>
+    <para><emphasis role="bold">Changing the process of Factory submissions with the Open Build
+        Service</emphasis></para>
+    <para>Now with every submission to Factory scripts are run automatically that do two different
+      reviews before the package goes to human check-in review:</para>
+    <itemizedlist>
+      <listitem>
+        <para>The “legal-auto” review checks the updated package for changes in licenses.</para>
+      </listitem>
+      <listitem>
+        <para>The “factory-auto” review checks that the updated package builds actually in the devel
+          project – and if not, rejects it.</para>
+      </listitem>
+    </itemizedlist>
+    <para>The “legal-auto” review has quite a long backlog at the moment and Jýrgen is working on
+      moving some of the checks to rpmlint or osc checks – so that the packager notices and fixes
+      them before submission to Factory.</para>
+    <para>Also, you can now submit packages to Factory even if you are not the maintainer of the
+      package but in this case the maintainer (packager) gets a review request to review that the
+      package really can go to factory and thus a plea to packagers to handle their review
+      requests.</para>
+    <para><emphasis role="bold">openSUSE Conference</emphasis></para>
+    <para>The <ulink
+        url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/"
+        >openSUSE Conference</ulink> is this year co-located with the SUSE Labs conference. Join us
+      to present and discuss also Factory related topics. The <ulink
+        url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/"
+        >Call for papers</ulink> is open now!</para>
+    <para><emphasis role="italic">I’m interested on feedback on this article – should I start a
+        series?</emphasis></para>
+<!--($ ld: 28.5.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://suse.gansert.net/?p=136">Uwe Gansert: SUSE Manager install/setup Screenshots</ulink>
+      <ulink url="http://www.bryen.com/obs-renamespeaks_volumes/">Bryen Yunashko: OBS—The New Name
+        Speaks Volumes</ulink>
     </title>
-    <para>Some people fear it takes too much time to do a SUSE Manger setup just for testing. I
-      decided to show the complete workflow just in screenshots to demonstrate it’s easy and will
-      not take longer than maybe 20 minutes – most time just waiting. You can download an eval
-      version <ulink url="http://download.novell.com/Download?buildid=UU3B3_bJH-Q%7E">here</ulink>.
-      You need at least 2GB RAM and 12GB disk space for installation. </para>
-    <para>Let’s go. On the bottom right of each screenshot you have a link that points to the next
-      screenshot, so you can easily click through a complete installation now. (...)</para>
-<!--($ ld: 18.5.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://suse.gansert.net/?p=191">Uwe Gansert: DBus Interface of clementine</ulink>
-    </title>
-    <para><emphasis role="italic">“Without music, life would be a mistake.”</emphasis> – Friedrich
-      Nietzsche</para>
-    <para>I don’t like Amarok2. I really liked the 1.4 version but now, since 2.0, it’s just broken
-      and ugly, so yesterday I switched to <ulink url="http://www.clementine-player.org/">Clementine</ulink>.</para>
-    <para> Everything was better from the start – all the covers were finally shown correctly, the
-      UI is useable, the playing order is always correct, the last.fm plugin is a lot better … and …
-      and … and …</para>
-    <para>All I was missing, was my little <emphasis role="italic">now-playing</emphasis> script for
-      xchat.</para>
-    <para> I did that in <ulink url="http://suse.gansert.net/?p=27">the past</ulink> already for
-      amarok, so I just had to change that a bit. (...)</para>
-<!--($ ld: 18.5.11 sm $)-->  </blockquote>
+    <para>In May of 2010, fellow openSUSEan Andreas Jaeger (AJ) and I sat down to review how we can
+      help promote the openSUSE Build Service, also known as OBS. It became quickly apparent to me
+      that while theý service was called “openSUSE Build Service” the name didn’t give enough due
+      credit. The build service’s capabilities meant so much more than simply creating a tool for
+      the openSUSE distribution. Sporting an impressive list of supported distros and architectures
+      that OBS could package for, this was clearly a tool that needed to be marketed beyond just the
+      immediate openSUSE Project community. This was truly a tool for the masses.</para>
+<!--($ ld: 28.5.11 sm $)-->  </blockquote>
 </sect1>
