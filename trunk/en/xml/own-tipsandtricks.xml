@@ -22,20 +22,14 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/grabbing-your-music-youtube-do-it-your-way"
-          >Linux Journal/Emre Sevinc: Grabbing Your Music from YouTube: Do It Your Way </ulink>
+        <ulink url="http://ubuntumanual.org/posts/344/five-cool-kde-widgets-for-your-desktop"
+          >UbuntuManual: Five cool KDE widgets for your desktop! </ulink>
       </title>
-      <para>A few months ago my father-in-law said that his company was renewing their computers.
-        When I heard that some second-hand PCs were about to be available, I decided to take some of
-        them, thinking that a few old PCs would not hurt when it comes to enlarging my home network
-        and doing experiments with GNU/Linux. When my father-in-law asked if it would be possible to
-        reformat one of those computers so that he could use it at his home, I jumped at the
-        opportunity to bring another user to the world of GNU/Linux. A few days passed and he was a
-        happy user of his new computer running Ubuntu, and he was enjoying his Firefox while he
-        explored the web. I don’t know what other people think or usability studies say, but he said
-        that he had no problem using the system and he was surprised that I did not have to install
-        an anti-virus. (...)</para>
-<!-- ($ Id: 24.5.11 sm $)-->    </blockquote>
+      <para>With all the hype around Unity and Gnome 3, KDE fans might be having a lousy time and
+        feel ignored. We are bored with those two anyway ;-). Its time for a change. KDE fans
+        rejoice!! KDE has many very cool and useful widgets which you can add on your KDE desktop or
+        in your taskbar. Lets have a look at the top 5 widgets.  (...)</para>
+<!-- ($ Id: 30.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -115,9 +109,92 @@ fi' c55cc45ed76603b380489ee8c91ab5dce92e92f1..HEAD</programlisting></para>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://beginlinux.com/desktop/opensuse/samba-and-share-configuration-through-yast">BeginLinux: SAMBA and Share Configuration Through YaST</ulink>
+        <ulink
+          url="http://www.phocean.net/2011/05/28/headphones-not-muting-the-speakers-with-a-gigabyte-motherboard.html"
+          >Jean-Christophe Baptiste: Headphones not muting the speakers with a Gigabyte
+          motherboard</ulink>
       </title>
-      <para>One of the features that makes SUSE relatively simple to manage is that all of the graphical configuration tools are gathered together in the YaST Control Center, (<emphasis role="bold">Y</emphasis>et <emphasis role="bold">a</emphasis>nother <emphasis role="bold">S</emphasis>etup <emphasis role="bold">T</emphasis>ool). You can start YaST from the Computer Menu on your task bar, if you are not authenticated as root you will be prompted for the root password. By selecting Network Services &gt; Samba Server you will start SAMBA configuration tool. The default install will add SAMBA but if it had not been installed it will automatically install it for you with this selection. (...)</para>
-<!-- ($ Id: 27.5.11 sat $)-->    </blockquote>
+      <para>It had been months since I had an weired issue with the embedded audio controller of my
+        Gigabyte motherboard.</para>
+      <para>Plugin the headphones on the front panel of my box didn’t mute the output to the
+        speakers, which nullified the purpose of having headphones.</para>
+      <para>I long thought that it was some hardware issue that I would have to sort some day by
+        opening the box and checking the connections.</para>
+      <para>Yesterday, I decided to solve it for good and I started to google… and found out that it
+        was a pure software issue!</para>
+      <para>The culprit sounded to be some unproper settings of the ALSA module and this <ulink
+          url="https://help.ubuntu.com/community/HdaIntelSoundHowto">Ubuntu guide</ulink> just saved
+        me.</para>
+      <para>I carefully followed the steps and it appeared that for my <ulink
+          url="http://www.gigabyte.com/products/product-page.aspx?pid=3258">Gigabyte
+          GA-790FXTA-UD5</ulink>, it was necessaryýto this line:</para>
+      <programlisting>add options snd-hda-intel model=3stack-hp</programlisting>
+      <para>to</para>
+      <programlisting>/etc/modprobe.d/alsa-base.conf</programlisting>
+      <para>Ok, it did not go so smoothly as I picked out randomly models from the list until I find
+        the right one (I had no idea of what was embbeded on my board). I hope this may help, as I
+        have quite a lot of people with similar issues with all kinds of vendors.</para>
+<!-- ($ Id: 30.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://dominique.leuenberger.net/blog/2011/05/how-to-fix-brp-and-rpmlint-warnings-%E2%80%93-today-i-statement-might-be-overflowing-a-buffer-in-strncat/"
+          >Dominique Leuenberger: how to fix brp and rpmlint warnings – today: I: Statement might be
+          overflowing a buffer in strncat.</ulink></title>
+      <para>Malcolm Lewis sent me a link to one of his failing packages, with the idea to bring the
+        next post for this series (which has had a too long break already). So Malcolm: Thank you
+        for the heads up and here we go with another hopefully helpful solution to one of brp error
+        (brp actually stands for Build Root Policy)</para>
+      <para>So, just like before, we have a look at the error, including the specific code parts
+        raising the errors:</para>
+      <blockquote>
+        <para>I: Statement might be overflowing a buffer in strncat. Common mistake:</para>
+        <para> BAD: strncat(buffer,charptr,sizeof(buffer)) is wrong, it takes the left over size as
+          3rd argument</para>
+        <para> GOOD: strncat(buffer,charptr,sizeof(buffer)-strlen(buffer)-1) </para>
+      </blockquote>
+      <para>Ok, so the error is very helpful with even telling us what is a bad use of strncat and
+        what a good use of it would look like. For completeness, let’s see what the compiler itself
+        reports on this error:</para>
+      <blockquote>
+        <para>In function ‘strncat’,</para>
+        <para> inlined from ‘gtkui_icmp_redir’ at ec_gtk_mitm.c:173:14:</para>
+        <para> /usr/include/bits/string3.h:152:3: warning: call to __builtin___strncat_chk might
+          overflow destination buffer [enabled by default] </para>
+      </blockquote>
+      <para>Let’s see what <emphasis role="bold"><ulink url="http://linux.die.net/man/3/strncat">man
+            3 strncat</ulink></emphasis> tells us about the usage of strncat.</para>
+      <blockquote>
+        <para><emphasis role="bold">Synopsis</emphasis></para>
+        <para>#include char *strcat(char *dest, const char *src); char *strncat(char *dest, const
+          char *src, size_t n);</para>
+        <para><emphasis role="bold">Description</emphasis></para>
+        <para> The strcat() function appends the src string to the dest string overwriting the ‘\0′
+          character at the end of dest, and then adds a terminating ‘\0′ character. The strings may
+          not overlap, and the dest string must have enough space for the result.</para>
+        <para>The strncat() function is similar, except that it will use at most n characters from
+          src. Since the result is always terminated with ‘\0′, at most n+1 characters are written.
+        </para>
+      </blockquote>
+      <para>The package suggested by Malcolm contains this code (snipped together):</para>
+      <para>#define PARAMS_LEN 50 static char params[PARAMS_LEN];</para>
+      <para> strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), PARAMS_LEN); strncat(params,
+        "/", PARAMS_LEN); strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), PARAMS_LEN);</para>
+      <para>This is not an uncommon error at all. We create a buffer, 50 chars long, we concatenate
+        text into the buffer and specify a max length of PARAMS_LEN. What is not taken into account
+        here is that the string in params is getting longer, and we do not account for this when
+        adding text to it. And additionally the leading \0 is ignored as well.</para>
+      <para>Translating the BRP Result’s suggestion stating how we should write this code, we will
+        result in this:</para>
+      <para>#define PARAMS_LEN 50 static char params[PARAMS_LEN];</para>
+      <para> strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)),
+        sizeof(params)-strlen(params)-1); strncat(params, "/", sizeof(params)-strlen(params)-1);
+        strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)),
+        sizeof(params)-strlen(params)-1);</para>
+      <para>sizeof(params) is what we had there before, and equals to PARAMS_LEN. But we now also
+        take into account that we already do have some characters stored in params and also account
+        for a trailing NULL byte.</para>
+      <para>And with this simple fix, the error vanished.</para>
+      <!--($ Id: 30.5.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>
