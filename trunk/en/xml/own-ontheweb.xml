@@ -68,33 +68,65 @@
     <blockquote>
       <title>
         <ulink
-          url="http://www.zdnet.com/blog/open-source/where-novell-suse-linux-goes-from-here/8951"
-          >ZDNET/Steven J. Vaughan-Nichols &amp; Paula Rooney: Where Novell &amp; SUSE Linux goes
-          from here</ulink>
+          url="http://www.zdnet.com/blog/open-source/where-novell-suse-linux-goes-from-here/8951">
+          Aaron Seigo: Plasma Active: Quick Catch-Up! </ulink>
       </title>
-      <para><ulink url="http://www.zdnet.com/blog/open-source/novell-deals-done/8755">Attachmate’s
-          purchase of Novell is done</ulink>, and now we’re beginning to see it plans develop for
-        the open-source power. First, and foremost, <ulink url="http://www.attachmate.com"
-          >Attachmate</ulink> is dividing up <ulink url="http://www.novell.com/home/"
-        >Novell</ulink>’s programs into three nominally independent divisions. These are <ulink
-          url="http://www.netiq.com">NetIQ</ulink>, which gets Novell identity and security programs
-        and some of Novell data center solutions; Novell, which will manage the company’s older
-        technologies such as <ulink url="http://www.novell.com/products/openenterpriseserver"
-          >NetWare</ulink>; and <ulink url="http://www.novell.com/linux/">SUSE</ulink>, which will
-        produce SUSE Linux and oversee the <ulink url="http://www.opensuse.org/en">openSUSE</ulink>
-        community Linux distribution. (...)</para>
-<!-- ($ ld: 24.5.11 sm $) -->    </blockquote>
+      <para>(<emphasis role="bold">Note</emphasis>: This post is about Plasma Active, a community
+        collaboration to bring KDE software to consumer devices. To learn more about Plasma Active,
+          <ulink url="http://aseigo.blogspot.com/2011/04/active-routes.html">read this blog
+          post</ulink>.) </para>
+      <para>We've been a bit quiet lately around the Plasma Active farm. This is mostly due to us
+        being rather busy, both with technical as well as organizational tasks. On the technology
+        front, things continue to plow forward at a very brisk pace with <ulink
+          url="http://community.kde.org/Plasma/Active/Contour">Contour</ulink> shaping up with every
+        passing day and libplasma2 (a big part of the Plasma Quick track) zipping ahead nicely. </para>
+      <para>Organizationally, we're learning new lessons every day as to how to best coordinate
+        efforts between companies currently involved and reaching out to ones that should be
+        involved. <ulink url="http://www.basyskom.com/">Basyskom</ulink> sent a bunch of people to
+        the recent MeeGo conf, and the response was fantastic, including some <ulink
+          url="http://www.ubergizmo.com/2011/05/basyskom-shows-off-new-meego-ui-design/"
+          >bloggers</ulink><ulink
+          url="http://www.netbooknews.com/26445/basyskom-demos-meego-user-interface-contour-peregrine/"
+          >writing</ulink> about the demo that was on offer.</para>
+      <para>There's also been some learning-as-we-grow happening that has hampered outbound
+        communication somewhat. For some of the people involved, this is their very first open
+        source experience. For others, this is their first foray into the interesting world of
+        devices. While it is terrific to expand our merry band of freedom makers, it also has meant
+        some learning curves.</para>
+      <para>Amongst all that, code is getting written, the user experience design continues to
+        mature and new operating system images are being spun. All is good in the land of technical
+        progress. Marco is hanging out at my place for a couple days prior to the upcoming Platform
+        11 meeting (which starts Wednesday) and we're getting some work done at a nice pace. </para>
+      <para>Today we're working on Share-Like-Connect and building integration points in Contour for
+        it.I am, however, behind on posting news about new Active Apps as well, which I'm going to
+        remedy in a moment.</para>
+<!-- ($ ld: 31.5.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.anselmolsm.org/blog/meego-conf-2011-san-francisco/">anselmolsm: Meego
-          Conf 2011 – San Francisco</ulink>
+        <ulink url="http://aseigo.blogspot.com/2011/05/plasma-active-marble-to-go.html"> Aaron
+          Seigo: Plasma Active: Marble To Go! </ulink>
       </title>
-      <para>I am in San Francisco (again! =), now for the MeeGo Conference 2011. The event is about
-        to begin with the keynote “The Future of MeeGo Starts Now” presented by the president of
-        Linux Foundation, Jim Zemlin. This time, I’m going to present a talk in the event too! The
-        talk is today and the topic is “Writing applications for multiple MeeGo devices”. There are
-        other talks by openBossa/INdT guys, check the schedule! (...)</para>
-<!--($ ld: 24.5.11 sm $)-->    </blockquote>
+      <para>(<emphasis role="bold">Note</emphasis>: This post is about Plasma Active, a community
+        collaboration to bring KDE software to consumer devices. To learn more about Plasma Active,
+          <ulink url="http://aseigo.blogspot.com/2011/04/active-routes.html">read this blog
+          post</ulink>.) </para>
+      <para>What is an Active App? It's a project built with Qt and/or KDE libraries that fits into
+        the spirit and use cases of Plasma Active. That means it needs to be touch friendly,
+        preferably present the user interface with QtQuick, have a nice separation between data and
+        visualization where appropriate and integrate well with the platform.</para>
+      <para>In the Plasma Active meta-project, which includes things like Contour and live OS
+        images, we're building up a small army of such apps in the hopes that those projects can
+        learn from each other and us from them. It will also help ensure that when someone goes to
+        use a Plasma Active device, they don't just have the Contour user experience but also a host
+        of useful stand-alone applications as well.</para>
+      <para>I announced our first Active App a couple weeks back: <ulink
+          url="http://community.kde.org/Calligra">Calligra</ulink>. Today, we add another to the
+        books: <ulink url="http://edu.kde.org/marble/">Marble</ulink>!Marble has already had a
+        mobile version for some time, and since mapping is very important functionality for devices
+        you carry around with you it was only natural for Plasma Active to meet Marble.</para>
+      <para>There is a project going on right now to provide a QtQuick interface to Marble, and we
+        will be including this effort in the live images as it matures.</para>
+<!--($ ld: 31.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.sinny.in/?q=node/13">Sinny Kumari (ksinny): What Next In Plasma Media

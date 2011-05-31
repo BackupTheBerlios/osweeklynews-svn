@@ -20,15 +20,59 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://www.bryen.com/obs-renamespeaks_volumes/">Bryen Yunashko: OBS—The New Name
-        Speaks Volumes</ulink>
+      <ulink url="http://www.bryen.com/obs-renamespeaks_volumes/">Sascha Peilicke: The times they
+        are a changin’</ulink>
     </title>
-    <para>In May of 2010, fellow openSUSEan Andreas Jaeger (AJ) and I sat down to review how we can
-      help promote the openSUSE Build Service, also known as OBS. It became quickly apparent to me
-      that while theý service was called “openSUSE Build Service” the name didn’t give enough due
-      credit. The build service’s capabilities meant so much more than simply creating a tool for
-      the openSUSE distribution. Sporting an impressive list of supported distros and architectures
-      that OBS could package for, this was clearly a tool that needed to be marketed beyond just the
-      immediate openSUSE Project community. This was truly a tool for the masses.</para>
-<!--($ ld: 28.5.11 sm $)-->  </blockquote>
+    <para>Everything changes, so do our packages. But change needs to be explained in order to
+      become relevant. Regarding packaging, this involves the art of writing good changelog entries.
+      Here is an example from an otherwise very capable packager:</para>
+      <para>Spec files updates:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Changes in License.</para>
+        </listitem>
+        <listitem>
+          <para>Updates in Group:, Summary: and %description entries.</para>
+        </listitem>
+        <listitem>
+          <para>Updates in %build section for lib64 compilation.</para>
+        </listitem>
+        <listitem>
+          <para>Minor other updates.</para>
+        </listitem>
+      </itemizedlist>
+    <para>More often, a reviewer stumbles upon those classics:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Fixed build</para>
+      </listitem>
+      <listitem>
+        <para>Fixed dependencies</para>
+      </listitem>
+      <listitem>
+        <para>Changed license to $FOO</para>
+      </listitem>
+    </itemizedlist>
+    <para>These lines surely took some time to write but they explain only what was changed, not
+      why. The ‘what’ is easily visible from the diff of the old and new package version (kindly
+      provided by the Open Build Service), but it’s the ‘why’ that matters. Your benevolent Factory
+      review team kindly overlooks such insignificant matters most of the time, but you may leave
+      your users baffled. Changelogs usually serve a purpose, for the package reviewer it’s ‘Why
+      should I take the time to look at this at all and why does it belong into Factory?’. For the
+      user it’s simply, ‘Dang, yet another update, why’s that for?’. You better provide some good
+      answers for those questions or your carefully crafted fix may remain misjudged. As a reference
+      you may use guides that others have written. They’re mostly about VCS commit messages, but
+      it’s the same thing:</para>
+    <itemizedlist>
+      <listitem>
+        <para><ulink url="http://who-t.blogspot.com/2009/12/on-commit-messages.html"
+            >http://who-t.blogspot.com/2009/12/on-commit-messages.html</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://lbrandy.com/blog/2009/03/writing-better-commit-messages/"
+            >http://lbrandy.com/blog/2009/03/writing-better-commit-messages</ulink></para>
+      </listitem>
+    </itemizedlist>
+    <para>Happy changelog writing! </para>
+<!--($ ld: 31.5.11 sm $)-->  </blockquote>
 </sect1>
