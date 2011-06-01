@@ -349,9 +349,70 @@
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-buildservice/2011-05/msg00144.html">Minutes: Build Service Team Meeting</ulink>
+          <ulink
+            url="http://lizards.opensuse.org/2011/05/31/some-updates-on-the-banshee-repositories/"
+            >Nelson Marques: Some updates on the Banshee repositories…</ulink>
         </title>
-        <para>Published minutes from the Buildservice Team Meeting from 25. May 2011.</para>
+        <para>Sometime ago Gabriel asked me if I could give him help with the Banshee repositories
+          for openSUSE; This repositories have many users hanging around and some packages are
+          enabled on other projects, which makes them somehow sensible to deep changes.</para>
+        <para>Today I’ve pushed to openSUSE:Factory Banshee 2.0.1 (latest stable release) and a few
+          packages which live in the Banshee repository. I’ve also submitted a deletion request to
+          ipod-sharp which is no longer maintained and was replaced in the past for libgpod.</para>
+        <para>I’ve fixed the pending issues I’ve seen on the Banshee repository and Banshee 2.0.1
+          and disabled SLE 11 builds (not requiring all the dependencies). The repository serves now
+          the following platforms (banshee and banshee-community-extensions):<itemizedlist>
+            <listitem>
+              <para>SLE 11 SP1;</para>
+            </listitem>
+            <listitem>
+              <para>openSUSE 11.3;</para>
+            </listitem>
+            <listitem>
+              <para>openSUSE 11.4;</para>
+            </listitem>
+            <listitem>
+              <para>openSUSE Factory;</para>
+            </listitem>
+            <listitem>
+              <para>openSUSE Tumbleweed (new).</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>On Banshee:Unstable (which should hold the unstable releases, currently 2.1.0) I’ll be
+          introducing some changes during the next days which will feature:<itemizedlist>
+            <listitem>
+              <para>Package being renamed to ‘banshee’, thus dropping the current banshee-1;</para>
+            </listitem>
+            <listitem>
+              <para>Migration to pkgconfig() calls for &gt;= 1130;</para>
+            </listitem>
+            <listitem>
+              <para>Packages banshee and banshee-core get merged into banshee (currently banshee had
+                only 4 documentation files);</para>
+            </listitem>
+            <listitem>
+              <para>New sub-package banshee-common to hold all the architecture independent files
+                (ex: text files, icons, etc);</para>
+            </listitem>
+            <listitem>
+              <para> A few cleanups on the spec file for unsupported platforms (SLE11 and SLE11SP1
+                do not meet the requirements for this version and superior).</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Once this is implemented and tested I will look into Banshee:Alpha and see the best
+          way to start building daily/weekly snapshots using the OBS magic available and some magic
+          tricks hidden in Dimstar’s sleeve which kindly accepted my request to give me a hand on
+          such evil task.</para>
+        <para>In the future, on the next stable release (2.2.0), I’ll move the changes from
+          Banshee:Unstable to Banshee and hopefully change the development repository to Banshee (as
+          if Factory has the latest stable release it makes no sense in having Banshee’s development
+          repository in Banshee:Unstable) and synch all at once.</para>
+        <para>Users subscribed to Banshee:Unstable repository might see some turbulence during the
+          next days, while users subscribing now through the 1-Click installer will already be
+          installing Banshee with the changes described above.</para>
+        <para><emphasis role="bold">License</emphasis>: <ulink
+            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+        <!--($ ld: 1.6.11 sm $)-->
       </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>

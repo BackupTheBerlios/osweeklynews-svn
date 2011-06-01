@@ -105,5 +105,67 @@
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
     <!-- ($ ld: 27.5.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/05/31/opensuse-and-world-ipv6-day/">openSUSE
+        and World IPv6 Day</ulink></title>
+    <para>In a little over a week it will be <ulink url="http://isoc.org/wp/worldipv6day/">World
+        IPv6 day</ulink>. This day is meant to call attention to the fact that IPv4 addresses have
+      run out and the web has to move on to IPv6. openSUSE will be part of this initiative, joining
+      the ranks of Google, Yahoo and Facebook in making sure its infrastructure is IPv6 capable on
+      June 8th.</para>
+    <para><emphasis role="bold">IPv4 and IPv6</emphasis></para>
+    <para>An IP address is the ‘address’ of a device connected to the web. Be it a web server,
+      smartphone, laptop or printer – if they are on a network, they need an address. Using these
+      addresses computers can make sure packets arrive at the right place. The human-readable
+      addresses like <ulink
+        url="http://news.opensuse.org/2011/05/31/opensuse-and-world-ipv6-day/openbuildservice.org"
+        >http://openbuildservice.org</ulink> are translated at your provider to an IP address
+      through a name server. Currently, the web runs on ‘IPv4′. IPv4 provides 4 blocks of 3 numbers
+      or 32 bits, adding up to a little over 4 billion addresses. With many households having many
+      Internet-capable devices these days this is not enough. The successor of IPv4, IPv6, offers
+      128 bits (in decimal a 3 with 38 zeroes) and is thus a lot more ready for the future.</para>
+    <para>Since the beginning of this year, the <ulink url="http://www.iana.org/numbers/">Internet
+        Assigned Numbers Authority</ulink> which hands out IP addresses to providers to assign to
+      devices, is out of IPv4 addresses. The Asian/Pacific “RIR” (Regional Internet registries) ran
+      out on April 15. Most local providers and the other regional registries still have a small
+      pool of unassigned IP numbers. Unfortunately, with the quickly growing number of devices and
+      the world population increasing its access to the Internet, especially providers in the
+      quickly growing developing countries, the days of the iconic IPv4 numbering system is
+      numbered.</para>
+    <para><emphasis role="bold">Separation of worlds</emphasis></para>
+    <para>However, IPv4 and IPv6 offer separate worlds. An IPv4 server can not talk to an IPv6
+      client and the other way around. Many users still have IPv4 only routers and modems at home
+      and can’t even join the IPv6 world if they wanted to. This is especially true for older
+      routers and modems – like those in countries which adopted the web early, like in Europe and
+      the US. As most users there already have Internet, the need for new addresses is less dire.
+      This has limited the uptake of IPv6 by the web, especially since offering both IPv4 and IPv6
+      can result in problems for IPv4 only users. So major providers and users like Facebook and
+      Google, Amazon and the many other important sites on the web don’t offer IPv6 connectivity
+      yet. Meanwhile, in China, India and other quickly developing countries, things are decidedly
+      different. IPv6 will be crucial if China is to connect it’s vast population to the web. If
+      everyone in South America wants a smartphone, a netbook and a desktop – IPv4 won’t cut it. So
+      there, IPv6 services are quickly coming up.</para>
+    <para>We have to take steps to ensure we don’t create a gap between the quickly developing
+      countries and the West. This means making sure our infrastructure is ready for IPv6! This is
+      what World IPv6 Day is all about. On that day, major websites and providers around the world
+      will test out their IPv6 infrastructure and make sure they are available for everyone.</para>
+    <para><emphasis role="bold">We’ll be ready</emphasis></para>
+    <para>The <ulink url="http://en.opensuse.org/openSUSE:Services_team">openSUSE sysadmin</ulink>
+      team is working hard to bring IPv6 services up. They started a few weeks ago and plan to be
+      ready on June 8th, the World IPv6 day. On that day, all external servers will be reachable via
+      both IPv4 and IPv6. This includes our <ulink url="http://en.opensuse.org/Main_Page"
+        >wiki</ulink>, <ulink url="http://forums.opensuse.org">forums</ulink>, <ulink
+        url="http://news.opensuse.org">news</ulink>, <ulink url="http://doc.opensuse.org"
+        >documentation</ulink> and of course <ulink url="http://openbuildservice.org"
+      >OBS</ulink>.</para>
+    <para>If you want to help out, there are a few things you can do. First of all, you can check
+      the <ulink url="http://isoc.org/wp/worldipv6day/participants-dashboard/">participants
+        dashboard</ulink> to see how we are doing. Furthermore, you can <ulink
+        url="http://test-ipv6.com/">check if you and your provider are IPv6 ready</ulink> and if you
+      are, visit our servers and see for yourself!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!--($ ld: 1.6.11 sm $)-->
   </blockquote>  
 </sect1>
