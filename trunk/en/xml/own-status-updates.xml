@@ -466,14 +466,49 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.crozat.net/2011/05/gnome-3-live-image-release-130.html">Frédéric Crozat: GNOME 3 Live image release 1.3.0 - VirtualBox, here we come</ulink>
+          <ulink url="http://linuxart.com/log/archives/2011/05/31/adwaita-gnome-3-theme-for-chrome/"
+            >Garrett LeSage: Adwaita (GNOME 3 theme) for Chrome</ulink>
         </title>
-        <para>good news for Virtual Machine addicts : VirtualBox team has fixed issues which were
-          preventing VirtualBox to work properly with GNOME Shell. You need VirtualBox release 4.0.8
-          (minimum) and GNOME 3 live image release 1.3.0 (it contains updated VirtualBox guest
-          additions, required for openGL). To download the image : <ulink url="http://www.gnome.org/getting-gnome/">http://www.gnome.org/getting-gnome/</ulink>
-          Enjoy.</para>
-<!--($ ld: 24.5.11 sm $)-->      </blockquote>
+        <para>Like many of you, I split my time between two excellent browsers: <ulink
+            url="http://firefox.com/">Firefox</ulink> and <ulink url="http://google.com/chrome"
+            >Chrome</ulink>. Neither feels really all so native in <ulink url="http://gnome.org/"
+            >GNOME3</ulink> —although Firefox, as it mimics GTK+2 by default, fits in just a little
+          better. Every time I started Chrome, however, I felt a bit frustrated with how much of a
+          sore thumb it stuck out and decided to do something about it.</para>
+        <para>Notes:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Chrome’s theming isn’t <emphasis role="italic">too</emphasis> flexible, so the
+              tabs are probably about as close as they’re going to get.</para>
+          </listitem>
+          <listitem>
+            <para>Due to <ulink url="http://code.google.com/p/chromium/issues/detail?id=57292">a bug
+                in Chrome</ulink>, custom scrollbars do not work in iframes. I have made a
+              workaround (thanks to CSS :not() magic) so that you still will have scrollbars
+              whenever iframes need them. (This matters quite a bit for some web apps, such as
+              Google Mail.)</para>
+          </listitem>
+          <listitem>
+            <para>There’s <ulink url="http://code.google.com/p/chromium/issues/detail?id=81701">a
+                bug in some builds of Chromium</ulink> that prevent it from accessing the Chrome Web
+              Store. The issue tracker mentions some work-around, and future builds openSUSE builds
+              of Chromium will have the fix soon.</para>
+          </listitem>
+          <listitem>
+            <para>I’ve released the git repos of each on github: <ulink
+                url="https://github.com/garrett/adwaita-chrome">adwaita-chrome</ulink> and <ulink
+                url="https://github.com/garrett/adwaita-chrome-scrollbar"
+                >adwaita-chrome-scrollbar</ulink></para>
+          </listitem>
+        </itemizedlist>
+        <para>Unfortunately, I haven’t spent the time to make Firefox fit in a little better. It
+          would take a bit more effort. <ulink
+            url="https://bugzilla.mozilla.org/show_bug.cgi?id=627699">Hopefully the Firefox GTK+3
+            port</ulink> is coming along nicely? (:</para>
+        <para>(Alternatively, someone would score some huge hero points by making Adwaita for GTK+2
+          resemble the GTK+3 version, instead of Clearlooks. This would also make other GTK+2 theme
+          using apps fit in a bit better too, such as LibreOffice.)</para>
+<!--($ ld: 2.6.11 sm $)-->      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
