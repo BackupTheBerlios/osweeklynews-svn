@@ -105,6 +105,26 @@
       <para>Most PC users have used a networked printer at one time or other. Soon, printing documents over the Internet may become just as commonplace. Especially if Google has its way.</para>
       <para>Google’s long-awaited <ulink url="http://code.google.com/apis/cloudprint/docs/overview.html">Cloud Print</ulink> service was unveiled as a beta earlier this year. The service allows users to setup a printer and then print to it over the internet. This includes being able to print from a mobile device to a remote internet-connected PC anywhere in the world. (...)</para>
 <!-- ($ ld: 3.6.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.h-online.com/security/news/item/Skype-protocol-being-reverse-engineered-1254721.html"
+          >h-online: Skype protocol being reverse engineered</ulink></title>
+      <para>A freelance researcher named Efim Bushmanov has created a site named "<ulink
+          url="http://skype-open-source.blogspot.com/">skype-open-source</ulink>" and says that he
+        is reverse engineering the VoIP service Skype "to make skype open source". Skype's
+        proprietary protocols have allowed the company to maintain control over its peer-to-peer
+        voice and video communications network and have been the subject of various types of
+        research over the years.</para>
+      <para>Bushmanov is not taking a clean room approach, where a researcher examines the network
+        inputs and outputs of the software. He has instead opted for the potentially riskier process
+          of <ulink
+          url="http://skype-open-source.blogspot.com/2011/06/when-binary-files-is-not-just-general.html"
+          >modifying</ulink> the Skype binary files to remove autoupdate, obfuscation and
+        anti-debugging measures. Bushmanov may also be taking a risk by redistributing these
+        modified files; they are easier to decompile and it is easier to trace and log what the code
+        does, but they are still Skype's intellectual property.</para>
+      <!-- ($ ld: 3.6.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
