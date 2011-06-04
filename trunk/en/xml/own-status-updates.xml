@@ -44,84 +44,67 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/05/27/factory-progress/">Andreas Jaeger: Factory Progress</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/06/03/factory-progress-2011-06-03/">Andreas
+          Jaeger: Factory Progress 2011-06-03</ulink>
       </title>
-      <para>A lot of things are happening in our Factory distribution that will be released in
-        November 2011 as openSUSE 12.1 and I’d like to point out a few things from the last few weeks
-        that users and developers of factory shouldn’t miss.</para>
-      <para><emphasis role="bold">
-          <emphasis role="underline">Roadmap openSUSE 12.1</emphasis>
-        </emphasis></para>
-      <para>Stephan “Coolo” Kulow has updated the openSUSE 12.1 <ulink url="http://en.opensuse.org/Roadmap">Roadmap</ulink>, the next milestone is Milestone 1
-        which is delayed and targeted now for release on Tuesday, 30th May. The next paragraphs
-        highlight some of the updates for this versions.</para>
-      <para><emphasis role="bold">GCC 4.6</emphasis></para>
-      <para>The GNU Compiler Collection has been updated to version 4.6, the list of <ulink url="http://gcc.gnu.org/gcc-4.6/changes.html">changes</ulink> includes the following new
-        warning that will be visible while compiling packages for openSUSE Factory:</para>
-      <itemizedlist>
-        <listitem>
-          <para>“New -Wunused-but-set-variable and -Wunused-but-set-parameter warnings were added for
-            C, C++, Objective-C and Objective-C++. These warnings diagnose variables respective
-            parameters which are only set in the code and never otherwise used. Usually such variables
-            are useless and often even the value assigned to them is computed needlessly, sometimes
-            expensively. The -Wunused-but-set-variable warning is enabled by default by -Wall flag and
-            -Wunused-but-set-parameter by -Wall -Wextra flags.”</para>
-        </listitem>
-      </itemizedlist>
-      <para>Some packages have been failing by the new GCC due to new warnings and new optimizations
-        and most have been fixed already but please double check that your packages are building and
-        running fine.</para>
-      <para><emphasis role="bold">RPM 4.9</emphasis></para>
-      <para>Michael Schröder <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00112.html">announced</ulink><ulink url="http://rpm.org/wiki/Releases/4.9.0">RPM 4.9</ulink> for
-        Factory. He explains the main packager visible changes as:<blockquote>
-          <para>Besides some bug fixes and an update to a newer BerkeleyDB library rpm-4.9.0 contains
-            plugin architecture for dependency generation. In older rpms, the internal dependency
-            generator was pretty much hardcoded in C, so we always used the old external one to
-            generate dependencies. With rpm-4.9.0, the internal generator has become flexible enough
-            so that we can use it.</para>
-          <para>This means for you, that rpm will no longer use the %__find_provides and
-            %__find_requires macros. Some packages redefined those macros to be able to filter the
-            generated dependencies.</para>
-          <para>This will no longer work in rpm-4.9.0. Instead, support for dependency filtering was
-            added to rpm…</para>
-        </blockquote></para>
-      <para><emphasis role="bold">GNOME3</emphasis></para>
-      <para><ulink url="http://gnome3.org">GNOME 3</ulink> has now hit Factory as well and Vincent
-        Untz <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00006.html">explained</ulink> how to fix failures due to the large push.</para>
-      <para><emphasis role="bold">Linux Kernel 2.6.39</emphasis></para>
-      <para>This update was a “boring” update – nothing broke AFAIK , so I hope it’s a solid version.
-        Users will benefit from the<ulink url="http://www.h-online.com/open/features/Linux-Kernel-2-6-39-Tracking-1219728.html"> new features</ulink> in it. 2.6.39 is the first kernel without the Big Kernel Lock at
-        all!</para>
-      <para><emphasis role="bold">Packaging Changes</emphasis></para>
-      <para>Besides new software, also new ways of handling it get introduced. The following catched
-        my eyes:</para>
-      <para><emphasis role="bold">Rpmlint update</emphasis></para>
-      <para>Ludwig Nussel updated rpmlint to version 1.2 and <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00118.html">explained</ulink>
-        the new warnings about packaging of rpm packages – and what to do about them.</para>
-      <para><emphasis role="bold">Changing the process of Factory submissions with the Open Build Service</emphasis></para>
-      <para>Now with every submission to Factory scripts are run automatically that do two different
-        reviews before the package goes to human check-in review:</para>
-      <itemizedlist>
-        <listitem>
-          <para>The “legal-auto” review checks the updated package for changes in licenses.</para>
-        </listitem>
-        <listitem>
-          <para>The “factory-auto” review checks that the updated package builds actually in the devel
-            project – and if not, rejects it.</para>
-        </listitem>
-      </itemizedlist>
-      <para>The “legal-auto” review has quite a long backlog at the moment and Jýrgen is working on
-        moving some of the checks to rpmlint or osc checks – so that the packager notices and fixes
-        them before submission to Factory.</para>
-      <para>Also, you can now submit packages to Factory even if you are not the maintainer of the
-        package but in this case the maintainer (packager) gets a review request to review that the
-        package really can go to factory and thus a plea to packagers to handle their review
-        requests.</para>
-      <para><emphasis role="bold">openSUSE Conference</emphasis></para>
-      <para>The <ulink url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/">openSUSE Conference</ulink> is this year co-located with the SUSE Labs conference. Join us
-        to present and discuss also Factory related topics. The <ulink url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/">Call for papers</ulink> is open now!</para>
-      <para><emphasis role="italic">I’m interested on feedback on this article – should I start a series?</emphasis></para>
-<!--($ ld: 28.5.11 sm $)-->    </blockquote>
+      <para>This week saw the <ulink
+          url="http://news.opensuse.org/2011/06/01/first-step-towards-12-1-with-milestone-1/"
+          >release</ulink> of the first milestone of openSUSE 12.1 and work on factory is
+        continuing, I’ve found the following changes important:</para>
+      <para><emphasis role="bold">GNU C Library (glibc) 2.13</emphasis></para>
+      <para>We’ve updated glibc from version 2.11 to 2.13 which brings many bug fixes and AFAIK no
+        major breakages to packages. The package itself got cleaned up a little bit as well, so
+        please report any problems.</para>
+      <para><emphasis role="bold">GO Programming Language</emphasis></para>
+      <para>Factory now contains a compiler for the GO language which is “is an expressive,
+        concurrent, garbage collected systems programming language that is type safe and memory
+        safe.”. More details about GO are available on the<ulink
+          url="http://en.opensuse.org/openSUSE:Packaging_Go"> openSUSE Wiki</ulink>, the devel
+        project with additional packages is <ulink
+          url="https://build.opensuse.org/project/show?project=devel%3Alanguages%3Ago"
+          >devel:languages:go</ulink>.</para>
+      <para><emphasis role="bold">Packaging: Source Processing</emphasis></para>
+      <para>The usage of <ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00037.html"
+        >_service</ulink> files in Factory confused many packagers and resulted in broken packages
+        so that these will be deprecated. As a replacement, Adrian implemented now a new <ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00359.html">source processing
+          method and asks for testers</ulink>.</para>
+      <para><emphasis role="bold">Packaging: Adding useful Provides to cups
+        drivers</emphasis></para>
+      <para>Vincent “updated python-cups to a new version, and it is now shippingfiles to
+        automatically add Provides tag to packages that are shippingcups drivers.”. This allows
+        desktop packages to install the right printer driver – or users to do it via zypper.
+        Packages with<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00158.html"
+          > cups drivers just need to add</ulink> a “BuildRequires: python-cups”.</para>
+      <para><emphasis role="bold">Open Build Service Improvement</emphasis></para>
+      <para>The “<ulink url="https://build.opensuse.org/home/my_work">My Work</ulink>” view has been
+        updated to better show packages that are in review state and need your review. I suggest
+        everybody to check out the page and cleanup your list.</para>
+      <para><emphasis role="bold">Multiple Buildroots with osc</emphasis></para>
+      <para>If you like to use more than one build at the same time, there are several options like
+        pointed out on the <ulink
+          url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00010.html"
+          >opensuse-packaging mailing list</ulink>:<itemizedlist>
+          <listitem>
+            <para>Use of the environment variable OSC_BUILD_ROOT to define a build root.</para>
+          </listitem>
+          <listitem>
+            <para>Editing of the osc config file ~/.oscrc and setting build-root to contain the
+              variables %(repo), %(arch),  %(project) or %(package).</para>
+          </listitem>
+        </itemizedlist></para>
+      <para><emphasis role="bold">Correction on auto-legal build service check</emphasis></para>
+      <para>Jürgen corrected my <ulink
+          url="http://lizards.opensuse.org/2011/05/27/factory-progress/">report</ulink> from last
+        week: He would love to see the checks for auto-legal moved and welcomes any help.</para>
+      <para><emphasis role="bold">Thanks</emphasis></para>
+      <para>Thanks for the words of encouragement to my first blog post. I’ll try to continue this
+        series. If there’s anything you think should be added to it, please contact me via email at
+        aj at opensuse dot org.</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+          url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+<!--($ ld: 4.6.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -135,6 +118,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -158,8 +142,8 @@
         surprised if it doesn&apos;t work. Packages have been built for openSUSE and Fedora, but it
         should compile on any platform that Qt and LibVNCViewer support (including Windows and Mac).
         And of course, contributions and bug reports are most welcome!</para>
-<!--($ ld: 28.5.11 sm $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -486,6 +470,50 @@
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
+        <title><ulink url="http://vizzzion.org/blog/2011/05/im-going-to-randa/">Sebastian Kügler: I’m
+          going to Randa</ulink></title>
+        <para>Tonight I’ll board a sleeper train which will get me to Randa, Switzerland by tomorrow
+          morning. I’m travelling to that small village in the Swiss Alps to participate in the <ulink
+            url="http://community.kde.org/KDE_Core/Platform_11">Platform11 sprint</ulink>. </para>
+        <para>What is this platform11 sprint about? (Randa’s trainstation only has 2 platforms, one
+          towards Zermatt, one towards Visp. That’s probably not it.) The wiki page about the sprint
+          makes it more clear, however:</para>
+        <blockquote>
+          <para> To examine the current state and near future of the KDE Platform (kdelibs and
+            kdebase-runtime), particularly as it relates to the growing usage of it in new contexts such
+            as mobile or on Windows and MacOS and its traditional usage as a set of conveniences and
+            consistency creators for KDE application development.</para>
+          <para>The sprint will aim to create an actionable, multi-year roadmap for kdelibs and
+            kdebase-runtime and will examine issues of modularity, topicality and the inherent dichotomy
+            between the KDE Platform as an application development framework (similar to Qt) and as a
+            stand-alone platform to target (similar to, e.g. Windows, MacOS, etc.) </para>
+        </blockquote>
+        <para> To me, this sprint marks an interesting point in the lifecycle of KDE 4, as we are now
+          rethinking the structure of our platform. </para>
+        <para><emphasis role="bold">Platform or Frameworks?</emphasis></para>
+        <para>Last week, we had an interesting discussion wether the development libraries KDE software
+          bases upon are called a platform or frameworks. I personally prefer to think of it in terms of
+          frameworks, because that has a less exclusive nature to it. A platform sounds very much
+          monolithic, while frameworks give a modular impression — and indeed, one of the goals of the
+          Platform 11 sprint is modularity of our "platform".</para>
+        <para><emphasis role="bold">Plasma Active and Platform11</emphasis></para>
+        <para>One of the goals for me for participating in Platform 11 is to make our development
+          frameworks more suitable for building non-desktop systems. There have already been efforts
+          that work into this direction for quite some time (the platform build-time profiles come to
+          mind, or recent work on libplasma2), but we haven’t yet had a focused meeting where we sat
+          together to discuss our platform as a whole. That will likely mean a bit of restructuring in
+          our libraries, deprecating some overly old stuff, and examining where we’re lacking a
+          consistent API for modern needs. Geolocation comes to mind here, and <ulink
+            url="http://lwn.net/Articles/436937/">rumours</ulink> are that there’s an exile-kiwi coming
+          with plans to Randa.</para>
+        <para>Last night, during dinner Kim asked me what I’m looking forward to in Randa other than
+          technical and community bits. My answer was “watching the mountains”. As I’m living in the
+          Netherlands, mountains are not a normal thing in sight, and the magnitude of those Swiss Alps
+          keeps astonishing me. I’m also looking forward to those idle moments staring at the
+          mountains.</para>
+        <!--($ ld: 1.6.11 sm $)-->
+      </blockquote>
+      <blockquote>
         <title>
           <ulink url="http://vizzzion.org/blog/2011/06/kollaboration-in-at-platform-11/">Sebastian Kügler: kollaboration in at platform 11</ulink>
         </title>
@@ -547,6 +575,7 @@
           application developers. We will need to do lots of additional work to sort out details and
           find the best solutions to the key questions, but that&apos;s what we are here for. So I&apos;m
           looking forward to the next few days, and all the results we&apos;ll create.</para>
+        <!--($ ld: 3.6.11 sm $)-->
       </blockquote>
     </sect3>
 <!--

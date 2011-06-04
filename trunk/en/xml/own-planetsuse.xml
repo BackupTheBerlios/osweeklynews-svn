@@ -20,8 +20,8 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://www.bryen.com/obs-renamespeaks_volumes/">Sascha Peilicke: The times they
-        are a changin’</ulink>
+      <ulink url="https://saschpe.wordpress.com/2011/05/30/669/">Sascha Peilicke: The times they are
+        a changin’</ulink>
     </title>
     <para>Everything changes, so do our packages. But change needs to be explained in order to
       become relevant. Regarding packaging, this involves the art of writing good changelog entries.
@@ -75,48 +75,4 @@
     </itemizedlist>
     <para>Happy changelog writing! </para>
 <!--($ ld: 31.5.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title><ulink url="http://vizzzion.org/blog/2011/05/im-going-to-randa/">Sebastian Kügler: I’m
-        going to Randa</ulink></title>
-    <para>Tonight I’ll board a sleeper train which will get me to Randa, Switzerland by tomorrow
-      morning. I’m travelling to that small village in the Swiss Alps to participate in the <ulink
-        url="http://community.kde.org/KDE_Core/Platform_11">Platform11 sprint</ulink>. </para>
-    <para>What is this platform11 sprint about? (Randa’s trainstation only has 2 platforms, one
-      towards Zermatt, one towards Visp. That’s probably not it.) The wiki page about the sprint
-      makes it more clear, however:</para>
-    <blockquote>
-      <para> To examine the current state and near future of the KDE Platform (kdelibs and
-        kdebase-runtime), particularly as it relates to the growing usage of it in new contexts such
-        as mobile or on Windows and MacOS and its traditional usage as a set of conveniences and
-        consistency creators for KDE application development.</para>
-      <para>The sprint will aim to create an actionable, multi-year roadmap for kdelibs and
-        kdebase-runtime and will examine issues of modularity, topicality and the inherent dichotomy
-        between the KDE Platform as an application development framework (similar to Qt) and as a
-        stand-alone platform to target (similar to, e.g. Windows, MacOS, etc.) </para>
-    </blockquote>
-    <para> To me, this sprint marks an interesting point in the lifecycle of KDE 4, as we are now
-      rethinking the structure of our platform. </para>
-    <para><emphasis role="bold">Platform or Frameworks?</emphasis></para>
-    <para>Last week, we had an interesting discussion wether the development libraries KDE software
-      bases upon are called a platform or frameworks. I personally prefer to think of it in terms of
-      frameworks, because that has a less exclusive nature to it. A platform sounds very much
-      monolithic, while frameworks give a modular impression — and indeed, one of the goals of the
-      Platform 11 sprint is modularity of our "platform".</para>
-    <para><emphasis role="bold">Plasma Active and Platform11</emphasis></para>
-    <para>One of the goals for me for participating in Platform 11 is to make our development
-      frameworks more suitable for building non-desktop systems. There have already been efforts
-      that work into this direction for quite some time (the platform build-time profiles come to
-      mind, or recent work on libplasma2), but we haven’t yet had a focused meeting where we sat
-      together to discuss our platform as a whole. That will likely mean a bit of restructuring in
-      our libraries, deprecating some overly old stuff, and examining where we’re lacking a
-      consistent API for modern needs. Geolocation comes to mind here, and <ulink
-        url="http://lwn.net/Articles/436937/">rumours</ulink> are that there’s an exile-kiwi coming
-      with plans to Randa.</para>
-    <para>Last night, during dinner Kim asked me what I’m looking forward to in Randa other than
-      technical and community bits. My answer was “watching the mountains”. As I’m living in the
-      Netherlands, mountains are not a normal thing in sight, and the magnitude of those Swiss Alps
-      keeps astonishing me. I’m also looking forward to those idle moments staring at the
-      mountains.</para>
-    <!--($ ld: 1.6.11 sm $)-->
-  </blockquote>
 </sect1>

@@ -132,21 +132,21 @@
           src. Since the result is always terminated with ‘\0′, at most n+1 characters are written.
         </para>
       </blockquote>
-      <para>The package suggested by Malcolm contains this code (snipped together):</para>
-      <para>#define PARAMS_LEN 50 static char params[PARAMS_LEN];</para>
-      <para> strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), PARAMS_LEN); strncat(params,
-        &quot;/&quot;, PARAMS_LEN); strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), PARAMS_LEN);</para>
+      <para>The package suggested by Malcolm contains this code (snipped
+        together):<screen>#define PARAMS_LEN 50 static char params[PARAMS_LEN]; 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), PARAMS_LEN); 
+strncat(params, "/", PARAMS_LEN); 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), PARAMS_LEN);</screen></para>
       <para>This is not an uncommon error at all. We create a buffer, 50 chars long, we concatenate
         text into the buffer and specify a max length of PARAMS_LEN. What is not taken into account
         here is that the string in params is getting longer, and we do not account for this when
         adding text to it. And additionally the leading \0 is ignored as well.</para>
       <para>Translating the BRP Result’s suggestion stating how we should write this code, we will
-        result in this:</para>
-      <para>#define PARAMS_LEN 50 static char params[PARAMS_LEN];</para>
-      <para> strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)),
-        sizeof(params)-strlen(params)-1); strncat(params, &quot;/&quot;, sizeof(params)-strlen(params)-1);
-        strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)),
-        sizeof(params)-strlen(params)-1);</para>
+        result in
+        this:<screen>#define PARAMS_LEN 50 static char params[PARAMS_LEN]; 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), sizeof(params)-strlen(params)-1); 
+strncat(params, "/", sizeof(params)-strlen(params)-1); 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), sizeof(params)-strlen(params)-1);</screen></para>
       <para>sizeof(params) is what we had there before, and equals to PARAMS_LEN. But we now also
         take into account that we already do have some characters stored in params and also account
         for a trailing NULL byte.</para>
