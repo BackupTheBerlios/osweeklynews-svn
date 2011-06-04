@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink
+        url="http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html"
+        >Kai-Uwe Behrmann: OpenICC and basICColor profile packages</ulink></title>
+    <para>Originally I wanted to have most packages ready for Montreal. But it was good to not
+      announce them. Now they are slowly rolling out. </para>
+    <para>Today came the <ulink
+        url="http://lists.freedesktop.org/archives/openicc/2011q2/004133.html"
+        >basICColor_Offset_2009 package 1.1.1</ulink> shortly after <ulink
+        url="http://lists.freedesktop.org/archives/openicc/2011q2/004130.html">OpenICC Data package
+        1.2.0</ulink>. Both form now a fairly distributable and stable usable set of ICC profiles
+      with completely free licenses. </para>
+    <para>ICC Examin had some issues in the CinePaint plugin. So I decided to first fix that and as
+      well finish the started ICC v4 support in ICC Examin. Most of that should work already in
+        <ulink url="http://www.oyranos.org/scm">git</ulink>. </para>
+    <!-- ($ ld: 30.5.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/05/28/smb-traffic-analyzer-1-2-5-released/">Holger
+        Hetterich: SMB Traffic Analyzer 1.2.5 released</ulink></title>
+    <para><emphasis role="italic">Just in case you’re wondering what this article is about, check
+        out the <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic
+          Analyzer project</ulink> to get more information.</emphasis></para>
+    <para>The team is proud to release <emphasis role="bold">SMB Traffic Analyzer version
+        1.2.5</emphasis>. Among numerous changes and enhancements, this release brings <ulink
+        url="http://morelias.org/smbta/smbta-guide.html#_websmbta">a huge documentation update on
+        webSMBTA</ulink>, thanks to Benjamin of the SMBTA team. In <emphasis role="bold"
+        >smbtaquery</emphasis>, we had a bug that caused the “from..to” and “since” time modifiers
+      on functions not to work (bso#8169). Furthermore, this release fixes an error condition on
+      smbtad which we encountered during the SambaXP conference, when a directory was created that
+      already existed. Packages for Gentoo Linux and openSUSE should be available very soon, and
+      with release 1.2.5, we’ve sub-packaged webSMBTA. The “one click install” optioný for openSUSE
+      will install all required repositories such as rails3 to run webSMBTA from the apache
+      webserver. We have added installation instructions to the source tarball.</para>
+    <para>SMB Traffic Analyzer 1.2.5<emphasis role="bold"> makes changes to the database being used
+        by SMBTA</emphasis>. We provide an <emphasis role="bold">upgrade path</emphasis> from
+      whichever version of SMBTA you are coming from. Just run “smbtaquery -C” and follow the
+      instructions.</para>
+    <para>Checkout the <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic
+        Analyzer homepage</ulink> to get more information and download options. </para>
+    <!-- ($ ld: 30.5.11 sm $)-->
+  </blockquote>
+</sect1>

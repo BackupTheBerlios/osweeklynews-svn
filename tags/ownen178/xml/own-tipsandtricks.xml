@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://ubuntumanual.org/posts/344/five-cool-kde-widgets-for-your-desktop">UbuntuManual: Five cool KDE widgets for your desktop! </ulink>
+      </title>
+      <para>With all the hype around Unity and Gnome 3, KDE fans might be having a lousy time and
+        feel ignored. We are bored with those two anyway ;-). Its time for a change. KDE fans
+        rejoice!! KDE has many very cool and useful widgets which you can add on your KDE desktop or
+        in your taskbar. Lets have a look at the top 5 widgets. (...)</para>
+<!-- ($ Id: 30.5.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.tricksmachine.com/2011/05/4-things-to-do-after-you-install-kde.html">Tricksmachine/Vishal Gaikar: 4 Things to Do After You Install KDE</ulink>
+      </title>
+      <para><emphasis role="bold">KDE</emphasis> is a free and <ulink url="http://www.tricksmachine.com/tag/open-source">open source</ulink> desktop workspace,
+        application suite, and development environment for Unix-like operating systems such as
+        Linux. Its applications are also available for <ulink url="http://www.tricksmachine.com/tag/mac-os-x">Mac OS X</ulink> and <ulink url="http://www.tricksmachine.com/category/computer-tricks">Windows</ulink>. One of the
+        most impressive features of KDE is its flexibility. You can customize KDE to look and feel
+        however you want.</para>
+      <para>The KDE workspace is a unique experience not found with any other desktop environment or
+          <ulink url="http://www.tricksmachine.com/tag/operating-system">operating system</ulink>.
+        It is called Plasma and is fully integrated with a widget system and is easily themeable.
+        When you first install KDE, it will already look beautiful, but half of the fun of a free
+        and open source workspace is tweaking. These are simple customizations you can do to make
+        your KDE desktop truly yours. (...)</para>
+<!--($ Id: 31.5.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/script-of-the-week/script-of-the-week-changing-terminal-color/">BashShell.net/Mike: Script of the Week: Changing Terminal Color</ulink>
+      </title>
+      <para>term_color.sh</para>
+      <para>This simple script can be run in a tty to that you can change the color to be more easily read.  Note that the tty uses 8 colors so you will not get the most beautiful output.  The 8 colors are; black, white, red, blue,green, yellow, magenta, and cyan.  (perform as normal user not root)</para>
+      <para>You do not want to mess up your root account so use a test account to try this. (...)</para>
+<!-- ($ Id: 3.6.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/get-the-most-out-of-phpmyadmins-visual-query-designer/">Wazi/Colin Beckingham: Get the Most Out of phpMyAdmin’s Visual Query Designer</ulink>
+      </title>
+      <para>Database programmers and administrators often need to design SQL queries against database structures with which they’re not intimately familiar. By using a visual query designer, programmers and admins can cut down on coding errors and save time. FOSS tool <ulink url="http://olex.openlogic.com/packages/phpmyadmin">phpMyAdmin</ulink> offers a simple builder that can help anyone design <ulink url="http://olex.openlogic.com/packages/mysql">MySQL</ulink> queries. Here’s how to get started designing basic queries visually in phpMyAdmin.
+
+(...)</para>
+<!-- ($ Id: 3.6.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://dominique.leuenberger.net/blog/2011/05/how-to-fix-brp-and-rpmlint-warnings-%E2%80%93-today-i-statement-might-be-overflowing-a-buffer-in-strncat/">Dominique Leuenberger: how to fix brp and rpmlint warnings – today: I: Statement might be overflowing a buffer in strncat.</ulink>
+      </title>
+      <para>Malcolm Lewis sent me a link to one of his failing packages, with the idea to bring the
+        next post for this series (which has had a too long break already). So Malcolm: Thank you
+        for the heads up and here we go with another hopefully helpful solution to one of brp error
+        (brp actually stands for Build Root Policy)</para>
+      <para>So, just like before, we have a look at the error, including the specific code parts
+        raising the errors:</para>
+      <blockquote>
+        <para>I: Statement might be overflowing a buffer in strncat. Common mistake:</para>
+        <para> BAD: strncat(buffer,charptr,sizeof(buffer)) is wrong, it takes the left over size as
+          3rd argument</para>
+        <para> GOOD: strncat(buffer,charptr,sizeof(buffer)-strlen(buffer)-1) </para>
+      </blockquote>
+      <para>Ok, so the error is very helpful with even telling us what is a bad use of strncat and
+        what a good use of it would look like. For completeness, let’s see what the compiler itself
+        reports on this error:</para>
+      <blockquote>
+        <para>In function ‘strncat’,</para>
+        <para> inlined from ‘gtkui_icmp_redir’ at ec_gtk_mitm.c:173:14:</para>
+        <para> /usr/include/bits/string3.h:152:3: warning: call to __builtin___strncat_chk might
+          overflow destination buffer [enabled by default] </para>
+      </blockquote>
+      <para>Let’s see what <emphasis role="bold">
+        <ulink url="http://linux.die.net/man/3/strncat">man 3 strncat</ulink>
+      </emphasis> tells us about the usage of strncat.</para>
+      <blockquote>
+        <para><emphasis role="bold">Synopsis</emphasis></para>
+        <para>#include char *strcat(char *dest, const char *src); char *strncat(char *dest, const
+          char *src, size_t n);</para>
+        <para><emphasis role="bold">Description</emphasis></para>
+        <para> The strcat() function appends the src string to the dest string overwriting the ‘\0′
+          character at the end of dest, and then adds a terminating ‘\0′ character. The strings may
+          not overlap, and the dest string must have enough space for the result.</para>
+        <para>The strncat() function is similar, except that it will use at most n characters from
+          src. Since the result is always terminated with ‘\0′, at most n+1 characters are written.
+        </para>
+      </blockquote>
+      <para>The package suggested by Malcolm contains this code (snipped
+        together):<screen>#define PARAMS_LEN 50 static char params[PARAMS_LEN]; 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), PARAMS_LEN); 
+strncat(params, "/", PARAMS_LEN); 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), PARAMS_LEN);</screen></para>
+      <para>This is not an uncommon error at all. We create a buffer, 50 chars long, we concatenate
+        text into the buffer and specify a max length of PARAMS_LEN. What is not taken into account
+        here is that the string in params is getting longer, and we do not account for this when
+        adding text to it. And additionally the leading \0 is ignored as well.</para>
+      <para>Translating the BRP Result’s suggestion stating how we should write this code, we will
+        result in
+        this:<screen>#define PARAMS_LEN 50 static char params[PARAMS_LEN]; 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), sizeof(params)-strlen(params)-1); 
+strncat(params, "/", sizeof(params)-strlen(params)-1); 
+strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), sizeof(params)-strlen(params)-1);</screen></para>
+      <para>sizeof(params) is what we had there before, and equals to PARAMS_LEN. But we now also
+        take into account that we already do have some characters stored in params and also account
+        for a trailing NULL byte.</para>
+      <para>And with this simple fix, the error vanished.</para>
+      <!--($ Id: 30.5.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.phocean.net/2011/05/28/headphones-not-muting-the-speakers-with-a-gigabyte-motherboard.html">Jean-Christophe Baptiste: Headphones not muting the speakers with a Gigabyte motherboard</ulink>
+      </title>
+      <para>It had been months since I had an weired issue with the embedded audio controller of my
+        Gigabyte motherboard.</para>
+      <para>Plugin the headphones on the front panel of my box didn’t mute the output to the
+        speakers, which nullified the purpose of having headphones.</para>
+      <para>I long thought that it was some hardware issue that I would have to sort some day by
+        opening the box and checking the connections.</para>
+      <para>Yesterday, I decided to solve it for good and I started to google… and found out that it
+        was a pure software issue!</para>
+      <para>The culprit sounded to be some unproper settings of the ALSA module and this <ulink url="https://help.ubuntu.com/community/HdaIntelSoundHowto">Ubuntu guide</ulink> just saved
+        me.</para>
+      <para>I carefully followed the steps and it appeared that for my <ulink url="http://www.gigabyte.com/products/product-page.aspx?pid=3258">Gigabyte GA-790FXTA-UD5</ulink>, it was necessaryýto this line:</para>
+      <programlisting>add options snd-hda-intel model=3stack-hp</programlisting>
+      <para>to</para>
+      <programlisting>/etc/modprobe.d/alsa-base.conf</programlisting>
+      <para>Ok, it did not go so smoothly as I picked out randomly models from the list until I find
+        the right one (I had no idea of what was embbeded on my board). I hope this may help, as I
+        have quite a lot of people with similar issues with all kinds of vendors.</para>
+      <para><emphasis role="bold">Editors Note:</emphasis>openSUSE Users should use <emphasis
+          role="bold"><emphasis role="italic">/etc/modprobe.d/50-sound.conf</emphasis></emphasis>
+        instead.</para>
+<!-- ($ Id: 4.6.11 sm $)-->    </blockquote>
+  </sect2>
+</sect1>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title>
+      <ulink url="https://saschpe.wordpress.com/2011/05/30/669/">Sascha Peilicke: The times they are
+        a changin’</ulink>
+    </title>
+    <para>Everything changes, so do our packages. But change needs to be explained in order to
+      become relevant. Regarding packaging, this involves the art of writing good changelog entries.
+      Here is an example from an otherwise very capable packager:</para>
+      <para>Spec files updates:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Changes in License.</para>
+        </listitem>
+        <listitem>
+          <para>Updates in Group:, Summary: and %description entries.</para>
+        </listitem>
+        <listitem>
+          <para>Updates in %build section for lib64 compilation.</para>
+        </listitem>
+        <listitem>
+          <para>Minor other updates.</para>
+        </listitem>
+      </itemizedlist>
+    <para>More often, a reviewer stumbles upon those classics:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Fixed build</para>
+      </listitem>
+      <listitem>
+        <para>Fixed dependencies</para>
+      </listitem>
+      <listitem>
+        <para>Changed license to $FOO</para>
+      </listitem>
+    </itemizedlist>
+    <para>These lines surely took some time to write but they explain only what was changed, not
+      why. The ‘what’ is easily visible from the diff of the old and new package version (kindly
+      provided by the Open Build Service), but it’s the ‘why’ that matters. Your benevolent Factory
+      review team kindly overlooks such insignificant matters most of the time, but you may leave
+      your users baffled. Changelogs usually serve a purpose, for the package reviewer it’s ‘Why
+      should I take the time to look at this at all and why does it belong into Factory?’. For the
+      user it’s simply, ‘Dang, yet another update, why’s that for?’. You better provide some good
+      answers for those questions or your carefully crafted fix may remain misjudged. As a reference
+      you may use guides that others have written. They’re mostly about VCS commit messages, but
+      it’s the same thing:</para>
+    <itemizedlist>
+      <listitem>
+        <para><ulink url="http://who-t.blogspot.com/2009/12/on-commit-messages.html"
+            >http://who-t.blogspot.com/2009/12/on-commit-messages.html</ulink></para>
+      </listitem>
+      <listitem>
+        <para><ulink url="http://lbrandy.com/blog/2009/03/writing-better-commit-messages/"
+            >http://lbrandy.com/blog/2009/03/writing-better-commit-messages</ulink></para>
+      </listitem>
+    </itemizedlist>
+    <para>Happy changelog writing! </para>
+<!--($ ld: 31.5.11 sm $)-->  </blockquote>
+</sect1>
