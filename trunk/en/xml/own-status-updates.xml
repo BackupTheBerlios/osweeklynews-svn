@@ -40,26 +40,23 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  
-  <sect2 role="distribution">
+    </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/05/27/factory-progress/">Andreas Jaeger: Factory
-          Progress</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/05/27/factory-progress/">Andreas Jaeger: Factory Progress</ulink>
       </title>
       <para>A lot of things are happening in our Factory distribution that will be released in
         November 2011 as openSUSE 12.1 and I’d like to point out a few things from the last few weeks
         that users and developers of factory shouldn’t miss.</para>
-      <para><emphasis role="bold"><emphasis role="underline">Roadmap openSUSE
-        12.1</emphasis></emphasis></para>
-      <para>Stephan “Coolo” Kulow has updated the openSUSE 12.1 <ulink
-        url="http://en.opensuse.org/Roadmap">Roadmap</ulink>, the next milestone is Milestone 1
+      <para><emphasis role="bold">
+          <emphasis role="underline">Roadmap openSUSE 12.1</emphasis>
+        </emphasis></para>
+      <para>Stephan “Coolo” Kulow has updated the openSUSE 12.1 <ulink url="http://en.opensuse.org/Roadmap">Roadmap</ulink>, the next milestone is Milestone 1
         which is delayed and targeted now for release on Tuesday, 30th May. The next paragraphs
         highlight some of the updates for this versions.</para>
       <para><emphasis role="bold">GCC 4.6</emphasis></para>
-      <para>The GNU Compiler Collection has been updated to version 4.6, the list of <ulink
-        url="http://gcc.gnu.org/gcc-4.6/changes.html">changes</ulink> includes the following new
+      <para>The GNU Compiler Collection has been updated to version 4.6, the list of <ulink url="http://gcc.gnu.org/gcc-4.6/changes.html">changes</ulink> includes the following new
         warning that will be visible while compiling packages for openSUSE Factory:</para>
       <itemizedlist>
         <listitem>
@@ -75,9 +72,7 @@
         and most have been fixed already but please double check that your packages are building and
         running fine.</para>
       <para><emphasis role="bold">RPM 4.9</emphasis></para>
-      <para>Michael Schröder <ulink
-        url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00112.html"
-        >announced</ulink><ulink url="http://rpm.org/wiki/Releases/4.9.0">RPM 4.9</ulink> for
+      <para>Michael Schröder <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00112.html">announced</ulink><ulink url="http://rpm.org/wiki/Releases/4.9.0">RPM 4.9</ulink> for
         Factory. He explains the main packager visible changes as:<blockquote>
           <para>Besides some bug fixes and an update to a newer BerkeleyDB library rpm-4.9.0 contains
             plugin architecture for dependency generation. In older rpms, the internal dependency
@@ -92,23 +87,18 @@
         </blockquote></para>
       <para><emphasis role="bold">GNOME3</emphasis></para>
       <para><ulink url="http://gnome3.org">GNOME 3</ulink> has now hit Factory as well and Vincent
-        Untz <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00006.html"
-          >explained</ulink> how to fix failures due to the large push.</para>
+        Untz <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00006.html">explained</ulink> how to fix failures due to the large push.</para>
       <para><emphasis role="bold">Linux Kernel 2.6.39</emphasis></para>
       <para>This update was a “boring” update – nothing broke AFAIK , so I hope it’s a solid version.
-        Users will benefit from the<ulink
-          url="http://www.h-online.com/open/features/Linux-Kernel-2-6-39-Tracking-1219728.html"> new
-          features</ulink> in it. 2.6.39 is the first kernel without the Big Kernel Lock at
+        Users will benefit from the<ulink url="http://www.h-online.com/open/features/Linux-Kernel-2-6-39-Tracking-1219728.html"> new features</ulink> in it. 2.6.39 is the first kernel without the Big Kernel Lock at
         all!</para>
       <para><emphasis role="bold">Packaging Changes</emphasis></para>
       <para>Besides new software, also new ways of handling it get introduced. The following catched
         my eyes:</para>
       <para><emphasis role="bold">Rpmlint update</emphasis></para>
-      <para>Ludwig Nussel updated rpmlint to version 1.2 and <ulink
-        url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00118.html">explained</ulink>
+      <para>Ludwig Nussel updated rpmlint to version 1.2 and <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00118.html">explained</ulink>
         the new warnings about packaging of rpm packages – and what to do about them.</para>
-      <para><emphasis role="bold">Changing the process of Factory submissions with the Open Build
-        Service</emphasis></para>
+      <para><emphasis role="bold">Changing the process of Factory submissions with the Open Build Service</emphasis></para>
       <para>Now with every submission to Factory scripts are run automatically that do two different
         reviews before the package goes to human check-in review:</para>
       <itemizedlist>
@@ -128,15 +118,10 @@
         package really can go to factory and thus a plea to packagers to handle their review
         requests.</para>
       <para><emphasis role="bold">openSUSE Conference</emphasis></para>
-      <para>The <ulink
-        url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/"
-        >openSUSE Conference</ulink> is this year co-located with the SUSE Labs conference. Join us
-        to present and discuss also Factory related topics. The <ulink
-          url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/"
-          >Call for papers</ulink> is open now!</para>
-      <para><emphasis role="italic">I’m interested on feedback on this article – should I start a
-        series?</emphasis></para>
-      <!--($ ld: 28.5.11 sm $)-->  </blockquote>    
+      <para>The <ulink url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/">openSUSE Conference</ulink> is this year co-located with the SUSE Labs conference. Join us
+        to present and discuss also Factory related topics. The <ulink url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/">Call for papers</ulink> is open now!</para>
+      <para><emphasis role="italic">I’m interested on feedback on this article – should I start a series?</emphasis></para>
+<!--($ ld: 28.5.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -154,35 +139,27 @@
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://flavio.castelli.name/introducing-dister-a-heroku-like-solution-for-suse-studio"
-            ><ulink url="http://blog.susestudio.com/2011/05/suse-gallery-desktop-client.html">Matt
-            Barringer: SUSE Gallery Desktop Client</ulink></ulink>
+        <ulink url="http://flavio.castelli.name/introducing-dister-a-heroku-like-solution-for-suse-studio">
+          <ulink url="http://blog.susestudio.com/2011/05/suse-gallery-desktop-client.html">Matt Barringer: SUSE Gallery Desktop Client</ulink>
+        </ulink>
       </title>
-      <para>When I started working on extending the <ulink url="http://susestudio.com/help/api/v2"
-          >SUSE Studio API</ulink> to support <ulink url="http://susegallery.com/">SUSE
-          Gallery</ulink>, I developed a desktop client at the same time as a testbed. It's been a
-        bit neglected over the last 6 months, as my <ulink
-          url="http://www.entomologist-project.org/">primary after-work project</ulink> takes up a
-        lot of my time, but it's usable nonetheless. In an effort to motivate me to work on it
-        again, and to find other contributors, I'm happy to announce the <ulink
-          url="http://susegallery.sourceforge.net/">SUSE Gallery client</ulink>: </para>
+      <para>When I started working on extending the <ulink url="http://susestudio.com/help/api/v2">SUSE Studio API</ulink> to support <ulink url="http://susegallery.com/">SUSE Gallery</ulink>, I developed a desktop client at the same time as a testbed. It&apos;s been a
+        bit neglected over the last 6 months, as my <ulink url="http://www.entomologist-project.org/">primary after-work project</ulink> takes up a
+        lot of my time, but it&apos;s usable nonetheless. In an effort to motivate me to work on it
+        again, and to find other contributors, I&apos;m happy to announce the <ulink url="http://susegallery.sourceforge.net/">SUSE Gallery client</ulink>: </para>
       <mediaobject>
         <imageobject>
-          <imagedata
-            fileref="http://2.bp.blogspot.com/-zJwcKp4oxDw/Td98eZljUtI/AAAAAAAAAAU/ofoagp17uJE/s320/suse-gallery-main.png"
-            width="20%"/>
+          <imagedata width="20%" fileref="http://2.bp.blogspot.com/-zJwcKp4oxDw/Td98eZljUtI/AAAAAAAAAAU/ofoagp17uJE/s320/suse-gallery-main.png"/>
         </imageobject>
       </mediaobject>
       <para>With the Gallery client, you can browse, search, view details, download, write to a CD
-        or USB key, or execute the image directly in a virtual machine. There's rudimentary support
-        for connecting to Testdrive, but the built-in VNC client isn't very reliable , so don't be
-        surprised if it doesn't work. Packages have been built for openSUSE and Fedora, but it
+        or USB key, or execute the image directly in a virtual machine. There&apos;s rudimentary support
+        for connecting to Testdrive, but the built-in VNC client isn&apos;t very reliable , so don&apos;t be
+        surprised if it doesn&apos;t work. Packages have been built for openSUSE and Fedora, but it
         should compile on any platform that Qt and LibVNCViewer support (including Windows and Mac).
         And of course, contributions and bug reports are most welcome!</para>
-      <!--($ ld: 28.5.11 sm $)-->
-    </blockquote>
-  </sect2>   
+<!--($ ld: 28.5.11 sm $)-->    </blockquote>
+  </sect2>
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -349,9 +326,7 @@
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://lizards.opensuse.org/2011/05/31/some-updates-on-the-banshee-repositories/"
-            >Nelson Marques: Some updates on the Banshee repositories…</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/05/31/some-updates-on-the-banshee-repositories/">Nelson Marques: Some updates on the Banshee repositories…</ulink>
         </title>
         <para>Sometime ago Gabriel asked me if I could give him help with the Banshee repositories
           for openSUSE; This repositories have many users hanging around and some packages are
@@ -410,10 +385,8 @@
         <para>Users subscribed to Banshee:Unstable repository might see some turbulence during the
           next days, while users subscribing now through the 1-Click installer will already be
           installing Banshee with the changes described above.</para>
-        <para><emphasis role="bold">License</emphasis>: <ulink
-            url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-        <!--($ ld: 1.6.11 sm $)-->
-      </blockquote>
+        <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+<!--($ ld: 1.6.11 sm $)-->      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -466,13 +439,9 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://linuxart.com/log/archives/2011/05/31/adwaita-gnome-3-theme-for-chrome/"
-            >Garrett LeSage: Adwaita (GNOME 3 theme) for Chrome</ulink>
+          <ulink url="http://linuxart.com/log/archives/2011/05/31/adwaita-gnome-3-theme-for-chrome/">Garrett LeSage: Adwaita (GNOME 3 theme) for Chrome</ulink>
         </title>
-        <para>Like many of you, I split my time between two excellent browsers: <ulink
-            url="http://firefox.com/">Firefox</ulink> and <ulink url="http://google.com/chrome"
-            >Chrome</ulink>. Neither feels really all so native in <ulink url="http://gnome.org/"
-            >GNOME3</ulink> —although Firefox, as it mimics GTK+2 by default, fits in just a little
+        <para>Like many of you, I split my time between two excellent browsers: <ulink url="http://firefox.com/">Firefox</ulink> and <ulink url="http://google.com/chrome">Chrome</ulink>. Neither feels really all so native in <ulink url="http://gnome.org/">GNOME3</ulink> —although Firefox, as it mimics GTK+2 by default, fits in just a little
           better. Every time I started Chrome, however, I felt a bit frustrated with how much of a
           sore thumb it stuck out and decided to do something about it.</para>
         <para>Notes:</para>
@@ -482,29 +451,22 @@
               tabs are probably about as close as they’re going to get.</para>
           </listitem>
           <listitem>
-            <para>Due to <ulink url="http://code.google.com/p/chromium/issues/detail?id=57292">a bug
-                in Chrome</ulink>, custom scrollbars do not work in iframes. I have made a
+            <para>Due to <ulink url="http://code.google.com/p/chromium/issues/detail?id=57292">a bug in Chrome</ulink>, custom scrollbars do not work in iframes. I have made a
               workaround (thanks to CSS :not() magic) so that you still will have scrollbars
               whenever iframes need them. (This matters quite a bit for some web apps, such as
               Google Mail.)</para>
           </listitem>
           <listitem>
-            <para>There’s <ulink url="http://code.google.com/p/chromium/issues/detail?id=81701">a
-                bug in some builds of Chromium</ulink> that prevent it from accessing the Chrome Web
+            <para>There’s <ulink url="http://code.google.com/p/chromium/issues/detail?id=81701">a bug in some builds of Chromium</ulink> that prevent it from accessing the Chrome Web
               Store. The issue tracker mentions some work-around, and future builds openSUSE builds
               of Chromium will have the fix soon.</para>
           </listitem>
           <listitem>
-            <para>I’ve released the git repos of each on github: <ulink
-                url="https://github.com/garrett/adwaita-chrome">adwaita-chrome</ulink> and <ulink
-                url="https://github.com/garrett/adwaita-chrome-scrollbar"
-                >adwaita-chrome-scrollbar</ulink></para>
+            <para>I’ve released the git repos of each on github: <ulink url="https://github.com/garrett/adwaita-chrome">adwaita-chrome</ulink> and <ulink url="https://github.com/garrett/adwaita-chrome-scrollbar">adwaita-chrome-scrollbar</ulink></para>
           </listitem>
         </itemizedlist>
         <para>Unfortunately, I haven’t spent the time to make Firefox fit in a little better. It
-          would take a bit more effort. <ulink
-            url="https://bugzilla.mozilla.org/show_bug.cgi?id=627699">Hopefully the Firefox GTK+3
-            port</ulink> is coming along nicely? (:</para>
+          would take a bit more effort. <ulink url="https://bugzilla.mozilla.org/show_bug.cgi?id=627699">Hopefully the Firefox GTK+3 port</ulink> is coming along nicely? (:</para>
         <para>(Alternatively, someone would score some huge hero points by making Adwaita for GTK+2
           resemble the GTK+3 version, instead of Clearlooks. This would also make other GTK+2 theme
           using apps fit in a bit better too, such as LibreOffice.)</para>
@@ -525,8 +487,7 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/06/kollaboration-in-at-platform-11/">Sebastian
-            Kügler: kollaboration in at platform 11</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/06/kollaboration-in-at-platform-11/">Sebastian Kügler: kollaboration in at platform 11</ulink>
         </title>
         <para>(What? We’re back to tacky K-Names? Don’t worry, just using the K to reminisce us of
           our roots. :-)) The Platform 11 sprint in Randa is now in full swing, while relatively
@@ -534,7 +495,7 @@
           one of the other 3.5 sprints happening in the same building, at the same time), we’re
           very, very busy. It’s basically work until collapse, sleep and start again. Kevin is
           applying his kanban magic to manage the sprint and get everybody focused and
-            synched. <emphasis role="italic">Kanban Magic</emphasis> means that we’re using a wall
+            synched.&#160;<emphasis role="italic">Kanban Magic</emphasis>&#160;means that we’re using a wall
           and a lot of post-it notes with tasks and topics on them, and we move those post its
           through different stages indicated by swimming lanes on the wall, froom waiting through
           design, review to done. The first note has just passed the review stage and is now in done
@@ -543,7 +504,7 @@
           sure you’re impatiently waiting for results to pour onto the Internet. While our first
           focus is on personal interaction and using the facetime and “high personal bandwidth” to
           solve hard problems, you can get at least an overall impression of the direction of our
-          work, as we’re tracking our results on the wiki.</para>
+          work, as we’re tracking our results on the&#160;wiki.</para>
         <para>What is really good and healthy to see is the number of different stakeholders
           (sometimes represented by the same person wearing multiple hats). This way we can make
           ‘reasonably sure’ that we take different point of views into account, and find solutions
@@ -560,43 +521,35 @@
           in to get us all together for a focused meeting to improve our foundations. Thanks to you
           all! We are certainly justifying the energy, passion and resources made available to us by
           working very hard to produce good results!</para>
-        <!--($ ld: 3.6.11 sm $)-->
-      </blockquote>
+<!--($ ld: 3.6.11 sm $)-->      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://blog.cornelius-schumacher.de/2011/06/platform-11-at-randa.html"
-            >Cornelius Schumacher: Platform 11 at Randa</ulink>
+          <ulink url="http://blog.cornelius-schumacher.de/2011/06/platform-11-at-randa.html">Cornelius Schumacher: Platform 11 at Randa</ulink>
         </title>
-        <para>I'm at the <ulink url="http://community.kde.org/KDE_Core/Platform_11">Platform
-            11</ulink> sprint at <ulink url="http://community.kde.org/Sprints/Randa/2011"
-            >Randa</ulink>. We are here to discuss and shape the future of the KDE platform. It's
-          the first meeting of this kind since<ulink
-            url="http://ervin.ipsquad.net/images/xtrysil_swamp_group.jpg.pagespeed.ic.9qkfyQKo_S.jpg"
-            >Trysil</ulink> five years ago. Four people who were at Trysil also made it to Randa,
-          including a respectable <ulink
-            url="http://www.linux-community.de/var/ezwebin_site/storage/images/internal/artikel/print-artikel/linuxuser/2003/09/kde-entwickler-innen-und-ihre-plaene-fuer-die-kde-konferenz-in-nove-hrady/david_at_fosdem.jpg/1234634-1-ger-DE/david_at_fosdem.jpg.jpg"
-            >dinosaur</ulink>, but it's great to also have new and very new faces around.</para>
+        <para>I&apos;m at the&#160;<ulink url="http://community.kde.org/KDE_Core/Platform_11">Platform 11</ulink>&#160;sprint at&#160;<ulink url="http://community.kde.org/Sprints/Randa/2011">Randa</ulink>. We are here to discuss and shape the future of the KDE platform. It&apos;s
+          the first meeting of this kind since<ulink url="http://ervin.ipsquad.net/images/xtrysil_swamp_group.jpg.pagespeed.ic.9qkfyQKo_S.jpg">Trysil</ulink>&#160;five years ago. Four people who were at Trysil also made it to Randa,
+          including a respectable&#160;<ulink url="http://www.linux-community.de/var/ezwebin_site/storage/images/internal/artikel/print-artikel/linuxuser/2003/09/kde-entwickler-innen-und-ihre-plaene-fuer-die-kde-konferenz-in-nove-hrady/david_at_fosdem.jpg/1234634-1-ger-DE/david_at_fosdem.jpg.jpg">dinosaur</ulink>, but it&apos;s great to also have new and very new faces around.</para>
         <mediaobject>
           <imageobject>
             <imagedata fileref="http://4.bp.blogspot.com/-LBupQby2udQ/TeiFHsEZkLI/AAAAAAAAAKY/_DH-HlJingA/s320/IMG_2595.JPG"/>
           </imageobject>
         </mediaobject>
-        <para>Randa is a great location. It's a small village in the south of Switzerland, in the
+        <para>Randa is a great location. It&apos;s a small village in the south of Switzerland, in the
           middle of the mountains. The Swiss railroad system did an impressive job of bringing us to
           Randa on a steep and winding track. Now we are surrounded by thousands of meters of
           mountains, and there is snow and glaciers, but no escape. Perfect time to focus on the KDE
           platform.</para>
         <para>Yesterday we did a brainstorming and collection of topics to discuss, and started to
           go into projects in smaller breakout groups. A Kanban board keeps us on track and moving.
-          There is a lot to discuss, but it's already pretty clear, that there is a solid base of
+          There is a lot to discuss, but it&apos;s already pretty clear, that there is a solid base of
           consensus on many of the core questions, how to make kdelibs more modular, how to better
           seperate and define the framework and the platform, how to lower the barrier for
           application developers. We will need to do lots of additional work to sort out details and
-          find the best solutions to the key questions, but that's what we are here for. So I'm
-          looking forward to the next few days, and all the results we'll create.</para>
+          find the best solutions to the key questions, but that&apos;s what we are here for. So I&apos;m
+          looking forward to the next few days, and all the results we&apos;ll create.</para>
       </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -728,14 +681,14 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 349)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 352)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 183)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 184)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -747,7 +700,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 127)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 128)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -776,102 +729,86 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 28.5.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 4.6.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312406">Support for ISC DHCP client for IPv6</ulink>
+            <ulink url="https://features.opensuse.org/312458">Provide Apple Filing Protocol access</ulink>
           </title>
-          <para>Currently only &quot;dhcp6c&quot; (<ulink url="https://fedorahosted.org/dhcpv6/">https://fedorahosted.org/dhcpv6/</ulink> ) can be selected as a DHCPv6 client in /etc/sysconfig/network/dhcp:
-</para>
-          <para># Which DHCPv6 client should be used?
-</para>
-          <para># Currently only the dhcp6c client is supported.
-</para>
-          <para>#
-DHCLIENT6_BIN=&quot;&quot;
-
-</para>
-          <para>Since this client has been obsoleted by ISC dhcp, the DHCPv6 client of ISC should be used as default and as an alternative.</para>
+          <para>There doesn&apos;t appear to be much support for the AFP protocol in the distribution.</para>
+          <para>Wishes:</para>
+          <para>- allow dolphin to mount afp://</para>
+          <para>- package afpfs-ng</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312407">switch off boot.clock</ulink>
+            <ulink url="https://features.opensuse.org/312460">port issetugid() syscall to linux</ulink>
           </title>
-          <para>Nowadays the kernel sets the system time from rtc and a potential local/utc offset is applied in the initrd already. The only task left for boot.clock is to adjust the clock drift. That&apos;s a rather advanced feature not known nor appreciated by the standard auto logging in user. Network installs have ntp enabled anyways. Therefore boot.clock should be switched off by default to have one less script to execute. Anyone who needs the clock drift feature can insserv boot.clock manually.</para>
+          <para>BSD has a issetugid() syscall that allows programs and libraries to reliably determine whether they were started in a setuid context:</para>
+          <para><ulink url="http://www.manpagez.com/man/2/issetugid/">http://www.manpagez.com/man/2/issetugid/</ulink></para>
+          <para>This or a similar syscall would be valuable on Linux too, especially in the advent of fscaps where the traditional uid != euid check doesn&apos;t work anymore.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312412">get rid of $HWCLOCK setting</ulink>
+            <ulink url="https://features.opensuse.org/312463">YAST - decouple joystick config and yast2-sound</ulink>
           </title>
-          <para>The $HWCLOCK variable in /etc/sysconfig/clock stores information that is redundant with /etc/adjtime&apos;s third line. There should be only one place to store that information.
-
-</para>
-          <para>Programs reading /etc/sysconfig/clock:
-
-    </para>
-          <itemizedlist>
+          <para>yast2-sound is very usable for everybody who have a sound-card but when it is installed it add a joystick config option that I think is not useful for most of the users and nowadays most of the sound card dont have joystick input so I think we can separate yast2-sound from joystick. It will reduce the number of option in the yast control panel too.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312466">Separate user and kernel log messages</ulink>
+          </title>
+          <para>SUSE used blogd to separate kernel and user log messages during boot. With systemd now everything is written to the kernel ring buffer. We should separate those again.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312467">Package gnome prepaid manager</ulink>
+          </title>
+          <para><ulink url="https://honk.sigxcpu.org/piki/projects/ppm/">https://honk.sigxcpu.org/piki/projects/ppm/</ulink></para>
+          <para>Prepaid-manager-applet (ppm) is an applet for the GNOME Desktop that allows you to check and top up the balance of GSM mobile prepaid SIM cards.</para>
+          <para>Looks like a nice small tool.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312468">Project Bretzn app-store to be integrated into opensuse 12.1</ulink>
+          </title>
+          <para><ulink url="http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/">http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/</ulink></para>
+          <para>Purpose:</para>
+          <orderedlist>
             <listitem>
-              <para>warpclock from mkinitrd</para>
+              <para>Make it easy for developers to release an application</para>
             </listitem>
             <listitem>
-              <para>/etc/init.d/boot.clock from aaa_base</para>
+              <para>Make it easy for developers to market and for users to learn about that application</para>
             </listitem>
             <listitem>
-              <para>yast2-country</para>
+              <para>Make it easy for users to install the application</para>
             </listitem>
-          </itemizedlist>
+          </orderedlist>
+          <para>Project Bretzn consists of three parts: the
+building of the package, the
+publishing of the application, the
+marketing to the users and the
+feedback cycle back to the developer. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312427">Add key-mon</ulink>
+            <ulink url="https://features.opensuse.org/312471">LightDM as the default Display Manager</ulink>
           </title>
-          <para>There&apos;s already a package in X11:Utilities, it just needs to be pushed to Factory (might need a cleanup, I didn&apos;t check).</para>
+          <para>Using LightDM as the default Display Manager for Gnome, KDE and XFCE we will be reducing possible Display Manager issues to just 1 source.
+Ubuntu is already using it and others distro will probably follow this idea.</para>
+          <para>KDE/Qt LightDM is already in progree:</para>
+          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTUxNg">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTUxNg</ulink> </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312440">Package libbluray</ulink>
+            <ulink url="https://features.opensuse.org/312473">Zypper / Package maneger: download repo data in paralel</ulink>
           </title>
-          <para>gvfs can use libbluray to access Blu-Ray metadata.
-</para>
-          <para><ulink url="http://www.videolan.org/developers/libbluray.html">http://www.videolan.org/developers/libbluray.html</ulink></para>
-          <para>It should apparently be safe to integrate in openSUSE, according to the webpage.</para>
+          <para>Now Packcage manager starts slowly if I have many repos, because it downloads many small files one by one with same delay. So downloading repositories data in paralel will speed up starting of package manager.</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312449">Package frogr</ulink>
-          </title>
-          <para>Frogr is a small application for the GNOME desktop that allows users to manage their accounts in the Flickr image hosting website. It supports all the basic Flickr features, including uploading pictures, adding descriptions, setting tags and managing sets and groups pools.
-
-</para>
-          <para><ulink url="http://live.gnome.org/Frogr">http://live.gnome.org/Frogr</ulink></para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312451">Imrpovements on Yast package manager</ulink>
-          </title>
-          <para>It&apos;s very frustating when I&apos;m downloading packages in yast and something fails and lose all I was downloading. It&apos;s also complicated that I have to calculate how long the download of packages will last &apos;cause I can&apos;t pause and resume it later. It would be very nice if the gui yast package manager worked like a download manager allowing pause, resume, restart of failed downloads, preview of size, progress and time and had gui customization for what to do when something fails.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312452">Remastersys for Opensuse or something like that</ulink>
-          </title>
-          <para>Opensuse is very good, it has everything all other big distros have and much more but there&apos;s one thing I miss in it: &quot;Remastersys&quot;. Kiwi and suse studio don&apos;t do the same. Remastersys works offline and turns your installed system into a live cd/dvd that can be ran or installed anywhere. It also has the possibility of building the live cd/dvd including personal data and configuration.I would like to carry my opensuse installation with all its configs to another places with me and to share it with others. Can anyone create something like remastersys or adapt it to opensuse?</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312455">Replace Liberation fonts with ChromeOS core fonts</ulink>
-          </title>
-          <para>The ChromeOS core fonts are basically extended versions of the Liberation fonts under the &quot;SIL Open Font License, Version 1.1&quot;:
-</para>
-          <para><ulink url="http://gsdview.appspot.com/chromeos-localmirror/distfiles/">http://gsdview.appspot.com/chromeos-localmirror/distfiles/</ulink> (most current version is croscorefonts-1.20.1.tar.gz at the time of this writing)
-
-</para>
-          <para>The fontconfig configuration files must be updated to include these fonts. Here&apos;s an initial patch: <ulink url="http://pastebin.com/TkQb9bvM">http://pastebin.com/TkQb9bvM</ulink> </para>
-        </blockquote>
-<!-- ($ ld: 28.5.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 4.6.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -881,26 +818,21 @@ DHCLIENT6_BIN=&quot;&quot;
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
         <title>
-          <ulink url="http://people.gnome.org/~michael/blog/2011-06-03-libreoffice-3-4-0.html"
-            >Michael Meeks: LibreOffice progress to 3.4.0</ulink>
+          <ulink url="http://people.gnome.org/~michael/blog/2011-06-03-libreoffice-3-4-0.html">Michael Meeks: LibreOffice progress to 3.4.0</ulink>
         </title>
-        <para>Today we <ulink url="http://www.libreoffice.org/download/">released 3.4.0</ulink>,
-          there is a great list of new features, <ulink
-            url="http://www.libreoffice.org/download/3-4-new-features-and-fixes/">specific to
-            LibreOffice</ulink> available (expertly assembled by Marc Pere and others). Each should
+        <para>Today we&#160;<ulink url="http://www.libreoffice.org/download/">released 3.4.0</ulink>,
+          there is a great list of new features,&#160;<ulink url="http://www.libreoffice.org/download/3-4-new-features-and-fixes/">specific to LibreOffice</ulink>&#160;available (expertly assembled by Marc Pere and others). Each should
           also be credited so some of the depth of the (code) developer community is apparent, this
-          is of course in addition to our extensive <ulink
-            url="http://www.libreoffice.org/credits.html">credits page</ulink> (kept up to date by a
+          is of course in addition to our extensive&#160;<ulink url="http://www.libreoffice.org/credits.html">credits page</ulink>&#160;(kept up to date by a
           volunteer of course). This is the first major release containing code from many of our new
           volunteers which is exciting. Of course, there are some great improvements there, I like
-          the named range / data-pilot work that makes it easy to extend the data range you're
+          the named range / data-pilot work that makes it easy to extend the data range you&apos;re
           working on without manually editing perhaps ten data-pilots depending on it but there are
           a load more. Some of the changes are invisible, and/or behind the scenes - so I thought
-          I'd expand on them here.</para>
-        <!--($ ld: 3.6.11 sm $)-->
-      </blockquote>
-      </sect3>
-    <!--
+          I&apos;d expand on them here.</para>
+<!--($ ld: 3.6.11 sm $)-->      </blockquote>
+    </sect3>
+<!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
@@ -918,8 +850,7 @@ DHCLIENT6_BIN=&quot;&quot;
           meeting was scheduled to occur after the release of 12.1 M1; however, that event is
           delayed. I expect a short discussion. </para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="translationteam">
+    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
