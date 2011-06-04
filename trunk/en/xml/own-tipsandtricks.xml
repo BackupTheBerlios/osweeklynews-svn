@@ -67,31 +67,6 @@
 
 (...)</para>
 <!-- ($ Id: 3.6.11 sat $)-->    </blockquote>
-  </sect2>
-  <sect2>
-    <title>For System Administrators</title>
-    <blockquote>
-      <title>
-        <ulink url="http://www.phocean.net/2011/05/28/headphones-not-muting-the-speakers-with-a-gigabyte-motherboard.html">Jean-Christophe Baptiste: Headphones not muting the speakers with a Gigabyte motherboard</ulink>
-      </title>
-      <para>It had been months since I had an weired issue with the embedded audio controller of my
-        Gigabyte motherboard.</para>
-      <para>Plugin the headphones on the front panel of my box didn’t mute the output to the
-        speakers, which nullified the purpose of having headphones.</para>
-      <para>I long thought that it was some hardware issue that I would have to sort some day by
-        opening the box and checking the connections.</para>
-      <para>Yesterday, I decided to solve it for good and I started to google… and found out that it
-        was a pure software issue!</para>
-      <para>The culprit sounded to be some unproper settings of the ALSA module and this <ulink url="https://help.ubuntu.com/community/HdaIntelSoundHowto">Ubuntu guide</ulink> just saved
-        me.</para>
-      <para>I carefully followed the steps and it appeared that for my <ulink url="http://www.gigabyte.com/products/product-page.aspx?pid=3258">Gigabyte GA-790FXTA-UD5</ulink>, it was necessaryýto this line:</para>
-      <programlisting>add options snd-hda-intel model=3stack-hp</programlisting>
-      <para>to</para>
-      <programlisting>/etc/modprobe.d/alsa-base.conf</programlisting>
-      <para>Ok, it did not go so smoothly as I picked out randomly models from the list until I find
-        the right one (I had no idea of what was embbeded on my board). I hope this may help, as I
-        have quite a lot of people with similar issues with all kinds of vendors.</para>
-<!-- ($ Id: 30.5.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://dominique.leuenberger.net/blog/2011/05/how-to-fix-brp-and-rpmlint-warnings-%E2%80%93-today-i-statement-might-be-overflowing-a-buffer-in-strncat/">Dominique Leuenberger: how to fix brp and rpmlint warnings – today: I: Statement might be overflowing a buffer in strncat.</ulink>
@@ -118,8 +93,8 @@
           overflow destination buffer [enabled by default] </para>
       </blockquote>
       <para>Let’s see what <emphasis role="bold">
-          <ulink url="http://linux.die.net/man/3/strncat">man 3 strncat</ulink>
-        </emphasis> tells us about the usage of strncat.</para>
+        <ulink url="http://linux.die.net/man/3/strncat">man 3 strncat</ulink>
+      </emphasis> tells us about the usage of strncat.</para>
       <blockquote>
         <para><emphasis role="bold">Synopsis</emphasis></para>
         <para>#include char *strcat(char *dest, const char *src); char *strncat(char *dest, const
@@ -151,6 +126,34 @@ strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), sizeof(params)-strlen(par
         take into account that we already do have some characters stored in params and also account
         for a trailing NULL byte.</para>
       <para>And with this simple fix, the error vanished.</para>
-<!--($ Id: 30.5.11 sm $)-->    </blockquote>
+      <!--($ Id: 30.5.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.phocean.net/2011/05/28/headphones-not-muting-the-speakers-with-a-gigabyte-motherboard.html">Jean-Christophe Baptiste: Headphones not muting the speakers with a Gigabyte motherboard</ulink>
+      </title>
+      <para>It had been months since I had an weired issue with the embedded audio controller of my
+        Gigabyte motherboard.</para>
+      <para>Plugin the headphones on the front panel of my box didn’t mute the output to the
+        speakers, which nullified the purpose of having headphones.</para>
+      <para>I long thought that it was some hardware issue that I would have to sort some day by
+        opening the box and checking the connections.</para>
+      <para>Yesterday, I decided to solve it for good and I started to google… and found out that it
+        was a pure software issue!</para>
+      <para>The culprit sounded to be some unproper settings of the ALSA module and this <ulink url="https://help.ubuntu.com/community/HdaIntelSoundHowto">Ubuntu guide</ulink> just saved
+        me.</para>
+      <para>I carefully followed the steps and it appeared that for my <ulink url="http://www.gigabyte.com/products/product-page.aspx?pid=3258">Gigabyte GA-790FXTA-UD5</ulink>, it was necessaryýto this line:</para>
+      <programlisting>add options snd-hda-intel model=3stack-hp</programlisting>
+      <para>to</para>
+      <programlisting>/etc/modprobe.d/alsa-base.conf</programlisting>
+      <para>Ok, it did not go so smoothly as I picked out randomly models from the list until I find
+        the right one (I had no idea of what was embbeded on my board). I hope this may help, as I
+        have quite a lot of people with similar issues with all kinds of vendors.</para>
+      <para><emphasis role="bold">Editors Note:</emphasis>openSUSE Users should use <emphasis
+          role="bold"><emphasis role="italic">/etc/modprobe.d/50-sound.conf</emphasis></emphasis>
+        instead.</para>
+<!-- ($ Id: 4.6.11 sm $)-->    </blockquote>
   </sect2>
 </sect1>
