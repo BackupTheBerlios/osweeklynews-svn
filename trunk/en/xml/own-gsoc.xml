@@ -28,119 +28,185 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-06/msg00002.html">Mihnea
-        Dobrescu-Balaur: Bug Reporting Tool - weekly report #2</ulink></title>
-    <para>The update this week brings us the system data gathering module along with some
-      sub-modules for various information to be gathered for the system. </para>
-    <para>The concept envisioned is something like this: there will be a 'gather.d/' folder, where
-      programs can install their own relevant data gathering modules. At the moment, we have these:
-      lsmod, uname, release, cpu-model, amount of RAM and video card model. </para>
-    <para>These small modules parse the relevant data from the corresponding locations and all the
-      data gets put together in a dictionary by gather.py. We opted for this version because we can
-      use the dictionary to export the data as JSON, or ini-style, or whatever feels appropriate.
-      Also, because of this, the data will be easily parseable for the maintainers who read our bug
-      reports. </para>
-    <para>As usual, you can find the code here: <ulink
-        url="https://github.com/mihneadb/Suse-Bug-Reporter"
-        >https://github.com/mihneadb/Suse-Bug-Reporter</ulink></para>
-    <para>Will get back to you next week! (last week with exams).</para>
-    <para>Mihnea DB</para>
-    <!-- ($ ld: 4.6.11 sm $) -->
+    <title><ulink url="http://rxvl.in/post/6175434117">Ratan Sebastian: GSOC 2011: ssc - Week
+        2</ulink></title>
+    <para>In terms of user functionality, searching for software, templates, appliances and packages
+      has been implemented this week. The actual api calls are performed by handler classes like
+      SSC::Handler::Appliance which exposes public methods like list, show, repositories and
+      installed_software. I’m trying to follow a template that allows any command of the type ssc to
+      map directly to Class#action(arguments) with minimum modification along the way. The command
+      line arguments (—option value) are parsed into an options hash that keeps getting passed down
+      the stack and used as necessary. Right now I’m not happy about exposing data that is
+      unnecessary for certain functions via this hash but it makes sense to have the checking of
+      data in the handler action rather than at the top level which makes that inevitable. </para>
+    <para>There’s been some abstraction and refactoring to make way for having the .sscrc file what
+      will hold the appliance configuration in the appliance directory. Right now there isn’t a lot
+      of validation of options and the parser merely merges options from .sscrc and the command line
+      to pass into the various handlers. </para>
+    <para>One tiny useful takeaway from this week has been learning about the Method class. Its very
+      useful in meta-programming. For instance when calling methods with the Class#send method it
+      would be useful to make sure that you’re passing the correct number of arguments. The
+      Method#arity method can be used to check the number of arguments that a method takes before
+      passing arguments to it. </para>
+    <para>Next week I’m going to be focusing on the structure of the appliance directory and
+      handling those commands that work locally.</para>
+    <!-- ($ ld: 6.6.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
-      <ulink
-        url="http://cbounta.wordpress.com/2011/06/03/a-utility-for-merging-configuration-sysconfig-files-week-2-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week
-        2 Report</ulink></title>
-    <para>This is my second report about my gsoc project, well what is new: This week I occupied my
-      self with augeas, it is the first time I try to use and expand an already existing library and
-      utility. Even thought Augeas is very well documented and the people in their community are
-      very helpful, i had some problems combining my thoughts and ideas with the existing code,
-      because i was trying to find out the best way to avoid code duplication etc. That was at least
-      at the start, now at the end of the week I can say that I am more familiar with the Augeas API
-      and this will certainly help me in the coming weeks.</para>
-    <para>As long as it concerns the actual merging procedure, i began coding an implementation i
-      have thought. Unfortunately, the approach i used was not sufficient generalized to work with
-      all the configuration files. Therefor i had, to erase most of the coding i did these days.
-      However, from every negative thing comes a positive, in this case, I was able to find a better
-      solution that rise some new problems, however i hope I will be able to find out an answer for
-      them in the following days and implement the right code.</para>
-    <para>Finally, a merge tool command was added in augtool that is able to use the aug_merge
-      command i added in the library, the particular command will accept a source and a dest
-      tree/path and will then try to combine them according to the flags that i will add as
-      enumeration. The final conclusion I must speed up things a bit  cause there are unexpected
-      problems that may occur at the implementation at any time.</para>
-    <!-- ($ ld: 4.6.11 sm $)-->
+      <ulink url="http://sysbytes.wordpress.com/2011/06/06/sax3-gsoc-2011-work-report/">Manu Gupta:
+        SaX3 – GSoC 2011 – Work Report</ulink></title>
+    <para>This week I worked on SaX3 internal UI architecture, offcourse we will be using libyui but
+      we wanted to make it as flexible as possible so that the UI Library can be replaced by anybody
+      and still keep SaX usable, for that we implemented the factory pattern and most of the code
+      was working. Finally, we have something working and the screenshots below show that SaX3 is
+      working in graphical mode and ncurses mode.</para>
+    <para>I am adding screenshots of the launcher that will launch various configuration modules
+      such as keyboard, mouse, graphic card etc etc . Also this is just a start and by the time I
+      present my next report I week, this will be much cleaner and you can play around more with it.
+      Right now it does not do anything so dont get surprised.</para>
+    <para>
+      <informaltable frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <tbody>
+            <row>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref="http://sysbytes.files.wordpress.com/2011/06/sax3.png" width="50%"/>
+                  </imageobject>
+                </mediaobject>
+              </entry>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref="http://sysbytes.files.wordpress.com/2011/06/sax3-ncurses.png" width="50%"/>
+                  </imageobject>
+                </mediaobject>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </para>
+    <para>Source code can be found at <ulink url="http://github.com/manugupt1/sax3"
+        >github.com/manugupt1/sax3</ulink> The working branch is newui1.</para>
+    <para>cmake is a bit messy, I will update it in the following week and a bit of other clean up
+      tasks and try some other stuff like localisation in it.</para>
+    <!-- ($ ld: 6.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://redache.wordpress.com/2011/06/03/entomologist-weekly-report-2/">David
-        Williams: Redache's Programming Blog</ulink></title>
-    <para>This week I’ve been focusing on implementing the tabbed interface for Entomologist so that
-      trackers are separated out into individual tabs. There are a few things still left to complete
-      (primarily deletion of a tracker) but they do work!. I’d planned to also add the statistics
-      element to the User Interface but I’ve not been able to move on to that and the work required
-      to get statistics from a bug tracker will be more than I thought. This is why I’d added a
-      second week to this specific part of my UI work as I knew that there is a potential for
-      problems to arise. Once this work is completed I will then implement a “New Comment” interface
-      that is a separate window from the main UI that allows a user to view past comments and upload
-      new comments (The current expanded panel will remain as a “quick view” mode for past
-      comments).</para>
-    <para>The current timeline for the project can be found here.</para>
-    <para>This work will conclude hopefully by the end of next week as I would really like to start
-      working on the TODO list as soon as possible and as highlighted in the timeline, hopefully
-      iCal support can be added so that Entomologist can manage TODO lists of bugs with a wide
-      variety of different Calendars.</para>
-    <para>The main things that have tripped me up this week is getting lost in MainWindow.cpp as it
-      is quite a large file to focus on and sometimes things that should be obvious weren’t quite so
-      obvious.</para>
-    <para>I’ll update this post with screenshots of the changes once I’ve managed to finish the Look
-      and Feel changes for the Tabs.</para>
-    <!--($ ld: 4.6.11 sm $)-->
+      <ulink url="http://nbprashanth.wordpress.com/2011/06/06/gsoc-report/">N.B.Prashanth: GsoC
+        Report – 1</ulink></title>
+    <para>This is my GsoC report for the first two weeks (May 23 – June 04). Iwill also in brief
+      state the goals of the project and the future plans.My project for this years GsoC is
+      “Separating libYUI” for the OpenSUSEorganization. My mentor for the project is Martin Vidner
+      and theabstract can be found at: <ulink
+        url="http://www.google-melange.com/gsoc/project/google/gsoc2011/nbprashanth/22003"
+        >http://www.google-melange.com/gsoc/project/google/gsoc2011/nbprashanth/22003</ulink></para>
+    <para>Let me begin by laying out the main goals of this project. The projectaims to:<orderedlist>
+        <listitem>
+          <para>Separate YUI from the YaST framework.</para>
+        </listitem>
+        <listitem>
+          <para>Port YUI to other major Operating Systems such as Ubuntu and Fedora.</para>
+        </listitem>
+        <listitem>
+          <para>Remove the libzypp dependency for the gtk pluging and hence making YUI
+            SUSE-independent.</para>
+        </listitem>
+        <listitem>
+          <para>Improve documentation with doxygen.</para>
+        </listitem>
+        <listitem>
+          <para>Provide small tutorials.</para>
+        </listitem>
+        <listitem>
+          <para>To provide a large and non-trivial example to show the capability of YUI.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>The work done so far is listed below :<orderedlist>
+        <listitem>
+          <para>libYUI has been successfully compiled on Ubuntu 11.04 and Fedora 15.</para>
+        </listitem>
+        <listitem>
+          <para>Initial packages for libYUI along with ncurses and Qt plugins havebeen made. They
+            are available in my gitorious account: gitorious.org/libyui</para>
+        </listitem>
+        <listitem>
+          <para>Small scale examples are being added to this blog. I will try tomaintain a weekly
+            schedule.</para>
+        </listitem>
+        <listitem>
+          <para>Currently, I am trying to eliminate the libzypp dependency for the Gtk plugin. This
+            is important as libzypp is highly OpenSUSEcentric.</para>
+        </listitem>
+        <listitem>
+          <para>The packages are currently in the testing phase. So all interestedpeople, please
+            feel free to test and post any bugs you may find in thecomments section. Please note,
+            this is an initial version.</para>
+        </listitem>
+        <listitem>
+          <para>Patches have been made for small bugs like “long long” warnings andenumeration
+            ending with a ‘,’. More serious bugs, if reported will betended to when
+            encountered.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>Another important change that I would like to implement is the use of auniform build
+      system. Currently, some parts use CMake while others useautotools. Though this does not make
+      much of a difference to the outsideworld, I think it will be easier for developers and porters
+      in the longrun. But this will be done later on unless there is an urgent need forit.</para>
+    <para>Since my end semester exams ended on May 27th, no work was done duringthe first week of
+      GsoC. Hence, this can be regarded as a summary of mywork for the second week (May 29 – June
+      04). Also, please note that Iwill maintain weekly reports on the blog henceforth.</para>
+    <para>Please feel free to add comments and suggestions below.</para>
+    <!--($ ld: 6.6.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-06/msg00003.html">Marcus
-        Hüwe: osc code cleanup - summary of week 2</ulink></title>
-    <para>here's a small summary of the 2nd (coding) week. Thisweek I spent most of my time with
-      working on an OO-style classfor doing http requests:<itemizedlist>
+    <title><ulink url="http://blog.jospoortvliet.com/2011/06/gsoc-mentoring.html">Jos Poortvliet:
+        GSOC mentoring</ulink></title>
+    <para>Dave Neary has written an <ulink
+        url="http://blogs.gnome.org/bolsh/2011/05/31/effective-mentoring-programs/">interesting
+        blogpost on 'effective mentoring'</ulink>.</para>
+    <para>If you don't feel like reading the whole thing (it's big, yes) I can give you some
+      highlights on common issues that make mentoring less effective:<itemizedlist>
         <listitem>
-          <para>it's possible to switch the http(s) implementation without touching anylibrary
-            code</para>
-        </listitem>
-        <listitem>
-          <para>supports response validation (if a schema was specified for the request)</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>Currently I'm still working on the "remote models":<itemizedlist>
-        <listitem>
-          <para>decided to use <ulink url="http://lxml.de/objectify.html">lxml.objectify</ulink>:<itemizedlist>
+          <para>communication. Apprentices often expect their mentor to check in, the mentor expects
+            apprentices to ask questions if they have any. This means it is a wise thing to contact
+            your apprentice and:<itemizedlist>
               <listitem>
-                <para>goal is to encapsulate the xml logic solely into the object itself</para>
+                <para>ask how it is going, if they need any help</para>
               </listitem>
               <listitem>
-                <para>example
-                  workflow:<screen>prj = RemoteProject('some_name')
-prj.title = 'dummy'
-prj.description = 'foo bar'
-repo =prj.add_repository(name='openSUSE_Factory')
-repo.add_path(project='openSUSE:Factory',
-      repository='standard')
-repo.add_arch('i586')
-# change arch to x86_64
-repo.arch[0] = 'x86_64'repo.save()</screen></para>
+                <para>tell them they have to be pro-active: ask questions and give you reports. Just
+                  to correct their perception if they expected YOU to ask them! Make clear it has to
+                  be pull from their side, it won't be push from yours. Their GSOC project is their
+                  responsibility.</para>
               </listitem>
             </itemizedlist></para>
         </listitem>
-      </itemizedlist></para>
-    <para>Minor stuff:<itemizedlist>
         <listitem>
-          <para>decided to use the "logging" module: this way we can easily add "debug" and "info"
-            etc. messages and it's up tothe "client" which messages it wants to display (I'm not
-            talking aboutthe messages which are displayed when "osc up" is called or something
-            likethat)</para>
+          <para>Mentoring doesn't stop in August: realize YOU are the friendly face to the project
+            for the student/apprentice. Please be prepared to keep talking to the students and help
+            them, even (especially!) if GSOC is over! And tell them so.</para>
+        </listitem>
+        <listitem>
+          <para>Regular meeting are really important. Have a weekly IRC chat and just talk. Both
+            about personal things (get to know each other!) and about the project.</para>
+        </listitem>
+        <listitem>
+          <para>And please tell the students to help each other and others. That is both a learning
+            experience for them, AND they understand others who are new better than anyone!</para>
         </listitem>
       </itemizedlist></para>
-    <!--($ ld: 4.6.11 sm $)-->
+    <para>If you have questions, please ask on the mentor mailinglist, not only on IRC. Others can
+      learn from the answers. Others here includes me, btw, I love to know what issues you bump
+      into!</para>
+    <para>Good luck mentoring and remember, we want the students to STAY, not just fire some code at
+      us and go again ;-)</para>
+    <!--($ ld: 6.6.11 sm $)-->
   </blockquote>
 </sect1>

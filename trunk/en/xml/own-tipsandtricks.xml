@@ -22,13 +22,21 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://ubuntumanual.org/posts/344/five-cool-kde-widgets-for-your-desktop">UbuntuManual: Five cool KDE widgets for your desktop! </ulink>
+        <ulink url="http://ubuntumanual.org/posts/344/five-cool-kde-widgets-for-your-desktop"
+          >Linuxaria: Ekiga and SIP to replace Skype</ulink>
       </title>
-      <para>With all the hype around Unity and Gnome 3, KDE fans might be having a lousy time and
-        feel ignored. We are bored with those two anyway ;-). Its time for a change. KDE fans
-        rejoice!! KDE has many very cool and useful widgets which you can add on your KDE desktop or
-        in your taskbar. Lets have a look at the top 5 widgets. (...)</para>
-<!-- ($ Id: 30.5.11 sm $)-->    </blockquote>
+      <para>In a <ulink
+          url="http://www.linuxaria.com/article/skype-to-microsoft-its-time-to-know-xmppjingle?lang=en"
+          >former article</ulink> I’ve talked about the XMPP:Jingle protocol to find a good
+        replacement for Skype.</para>
+      <para>Some people asked me about <ulink url="http://ekiga.org/">Ekiga</ulink>, is this a good
+        software or not ? and how you can use it ?</para>
+      <para>Ekiga (formely known as GnomeMeeting) is an open source SoftPhone, Video Conferencing
+        and Instant Messenger application over the Internet.It supports HD sound quality and video
+        up to DVD size and quality.It is interoperable with many other standard compliant softwares,
+        hardwares and service providers as it uses both the major telephony standards (SIP and
+        H.323). (...)</para>
+<!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.tricksmachine.com/2011/05/4-things-to-do-after-you-install-kde.html">Tricksmachine/Vishal Gaikar: 4 Things to Do After You Install KDE</ulink>
@@ -61,12 +69,15 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/get-the-most-out-of-phpmyadmins-visual-query-designer/">Wazi/Colin Beckingham: Get the Most Out of phpMyAdmin’s Visual Query Designer</ulink>
+        <ulink
+          url="http://dominique.leuenberger.net/blog/2011/06/gobject-introspection-based-typelib-provides-and-requires/"
+          >Dominique Leuenberger: GObject Introspection based typelib Provides and Requires</ulink>
       </title>
-      <para>Database programmers and administrators often need to design SQL queries against database structures with which they’re not intimately familiar. By using a visual query designer, programmers and admins can cut down on coding errors and save time. FOSS tool <ulink url="http://olex.openlogic.com/packages/phpmyadmin">phpMyAdmin</ulink> offers a simple builder that can help anyone design <ulink url="http://olex.openlogic.com/packages/mysql">MySQL</ulink> queries. Here’s how to get started designing basic queries visually in phpMyAdmin.
-
-(...)</para>
-<!-- ($ Id: 3.6.11 sat $)-->    </blockquote>
+      <para>In a constant battle to improve the quality of the packages provided by the openSUSE
+        GNOME Team, we have been working hard on additional automatism in adding Provides and
+        Requires symbols to our packages. This will make it less common to be able to install a
+        package without the needed libraries. (...)</para>
+<!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://dominique.leuenberger.net/blog/2011/05/how-to-fix-brp-and-rpmlint-warnings-%E2%80%93-today-i-statement-might-be-overflowing-a-buffer-in-strncat/">Dominique Leuenberger: how to fix brp and rpmlint warnings – today: I: Statement might be overflowing a buffer in strncat.</ulink>
@@ -132,28 +143,17 @@ strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), sizeof(params)-strlen(par
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.phocean.net/2011/05/28/headphones-not-muting-the-speakers-with-a-gigabyte-motherboard.html">Jean-Christophe Baptiste: Headphones not muting the speakers with a Gigabyte motherboard</ulink>
+        <ulink
+          url="http://obsforandroid.wordpress.com/2011/06/03/create-my-first-demo-app-with-jquery-mobile-alpha-4-rails-3/"
+          >Justine Leng: Create my first demo app with jQuery Mobile Alpha 4</ulink>
       </title>
-      <para>It had been months since I had an weired issue with the embedded audio controller of my
-        Gigabyte motherboard.</para>
-      <para>Plugin the headphones on the front panel of my box didn’t mute the output to the
-        speakers, which nullified the purpose of having headphones.</para>
-      <para>I long thought that it was some hardware issue that I would have to sort some day by
-        opening the box and checking the connections.</para>
-      <para>Yesterday, I decided to solve it for good and I started to google… and found out that it
-        was a pure software issue!</para>
-      <para>The culprit sounded to be some unproper settings of the ALSA module and this <ulink url="https://help.ubuntu.com/community/HdaIntelSoundHowto">Ubuntu guide</ulink> just saved
-        me.</para>
-      <para>I carefully followed the steps and it appeared that for my <ulink url="http://www.gigabyte.com/products/product-page.aspx?pid=3258">Gigabyte GA-790FXTA-UD5</ulink>, it was necessaryýto this line:</para>
-      <programlisting>add options snd-hda-intel model=3stack-hp</programlisting>
-      <para>to</para>
-      <programlisting>/etc/modprobe.d/alsa-base.conf</programlisting>
-      <para>Ok, it did not go so smoothly as I picked out randomly models from the list until I find
-        the right one (I had no idea of what was embbeded on my board). I hope this may help, as I
-        have quite a lot of people with similar issues with all kinds of vendors.</para>
-      <para><emphasis role="bold">Editors Note:</emphasis>openSUSE Users should use <emphasis
-          role="bold"><emphasis role="italic">/etc/modprobe.d/50-sound.conf</emphasis></emphasis>
-        instead.</para>
-<!-- ($ Id: 4.6.11 sm $)-->    </blockquote>
+      <para>The promising <ulink url="http://jquerymobile.com/">jQuery Mobile</ulink> project is now
+        in its first Alpha 4.1 release! What better time to give it a spin with our (err… my) <ulink
+          url="http://rubyonrails.org/">favorite web framework</ulink>?! The principle if simple:
+        you include jQuery Mobile on the page, format your markup to conform to its requirements and
+        reap the benefits. Yay, let’s write a (very contrived) <ulink
+          url="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</ulink>
+        application with Rails 3 and jQuery Mobile! (...)</para>
+<!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
   </sect2>
 </sect1>

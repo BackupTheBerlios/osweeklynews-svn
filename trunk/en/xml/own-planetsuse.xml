@@ -20,59 +20,32 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="https://saschpe.wordpress.com/2011/05/30/669/">Sascha Peilicke: The times they are
-        a changin’</ulink>
+      <ulink
+        url="http://alex.eftimie.ro/2011/06/04/packagekit-backend-for-software-center-week-1-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: week 1 report</ulink>
     </title>
-    <para>Everything changes, so do our packages. But change needs to be explained in order to
-      become relevant. Regarding packaging, this involves the art of writing good changelog entries.
-      Here is an example from an otherwise very capable packager:</para>
-      <para>Spec files updates:</para>
-      <itemizedlist>
-        <listitem>
-          <para>Changes in License.</para>
-        </listitem>
-        <listitem>
-          <para>Updates in Group:, Summary: and %description entries.</para>
-        </listitem>
-        <listitem>
-          <para>Updates in %build section for lib64 compilation.</para>
-        </listitem>
-        <listitem>
-          <para>Minor other updates.</para>
-        </listitem>
-      </itemizedlist>
-    <para>More often, a reviewer stumbles upon those classics:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Fixed build</para>
-      </listitem>
-      <listitem>
-        <para>Fixed dependencies</para>
-      </listitem>
-      <listitem>
-        <para>Changed license to $FOO</para>
-      </listitem>
-    </itemizedlist>
-    <para>These lines surely took some time to write but they explain only what was changed, not
-      why. The ‘what’ is easily visible from the diff of the old and new package version (kindly
-      provided by the Open Build Service), but it’s the ‘why’ that matters. Your benevolent Factory
-      review team kindly overlooks such insignificant matters most of the time, but you may leave
-      your users baffled. Changelogs usually serve a purpose, for the package reviewer it’s ‘Why
-      should I take the time to look at this at all and why does it belong into Factory?’. For the
-      user it’s simply, ‘Dang, yet another update, why’s that for?’. You better provide some good
-      answers for those questions or your carefully crafted fix may remain misjudged. As a reference
-      you may use guides that others have written. They’re mostly about VCS commit messages, but
-      it’s the same thing:</para>
-    <itemizedlist>
-      <listitem>
-        <para><ulink url="http://who-t.blogspot.com/2009/12/on-commit-messages.html"
-            >http://who-t.blogspot.com/2009/12/on-commit-messages.html</ulink></para>
-      </listitem>
-      <listitem>
-        <para><ulink url="http://lbrandy.com/blog/2009/03/writing-better-commit-messages/"
-            >http://lbrandy.com/blog/2009/03/writing-better-commit-messages</ulink></para>
-      </listitem>
-    </itemizedlist>
-    <para>Happy changelog writing! </para>
-<!--($ ld: 31.5.11 sm $)-->  </blockquote>
+    <para>This week was a good week for coding, and the best part about it: most of my changes are
+      now in s-c’s upstream trunk. </para>
+    <para>I started out trying to populate s-c database with only a few applications; this meant
+      updating the update-software-center tool, and also changing some bits on the database update
+      module. I was glad to discover that some functionality I have planned to develop in week 6
+      (parsing AppStream app-data xmls) was already there, thus making my job easier :-)
+      (...)</para>
+<!--($ ld: 6.6.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title><ulink url="http://my.opera.com/miki100/blog/show.dml/30928312">Mikolaj Siuda: Sonar
+        color scheme for KDE</ulink></title>
+    <para>I always thought why GNOME in openSUSE has (and had) green theme(Sonar), while KDE sticks
+      with default color scheme, which isn't bad, but...We could also change it to integrate with
+      the openSUSE style.I made a quick Sonar color scheme and here is what it looks like:</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://files.myopera.com/miki100/blog/KDE_Sonar.jpg"/>
+      </imageobject>
+    </mediaobject>
+    <para>You can find my Sonar color scheme here: <ulink url="http://pastebin.com/BiapkPxn">http://pastebin.com/BiapkPxn</ulink> . Save it as
+      "Sonar.colors" and import in "System settings". I know that it isn't perfect, but it matches
+      original pretty good (you can see Gimp in the screnshot).Hope you like it!</para>
+    <!--($ ld: 6.6.11 sm $)-->
+  </blockquote>
 </sect1>
