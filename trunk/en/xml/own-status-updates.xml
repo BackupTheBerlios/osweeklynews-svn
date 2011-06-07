@@ -423,38 +423,53 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://linuxart.com/log/archives/2011/05/31/adwaita-gnome-3-theme-for-chrome/">Garrett LeSage: Adwaita (GNOME 3 theme) for Chrome</ulink>
+          <ulink url="http://dominique.leuenberger.net/blog/2011/06/libproxy-0-4-7-released/"
+            >Dominique Leuenberger: Libproxy 0.4.7 released</ulink>
         </title>
-        <para>Like many of you, I split my time between two excellent browsers: <ulink url="http://firefox.com/">Firefox</ulink> and <ulink url="http://google.com/chrome">Chrome</ulink>. Neither feels really all so native in <ulink url="http://gnome.org/">GNOME3</ulink> —although Firefox, as it mimics GTK+2 by default, fits in just a little
-          better. Every time I started Chrome, however, I felt a bit frustrated with how much of a
-          sore thumb it stuck out and decided to do something about it.</para>
-        <para>Notes:</para>
-        <itemizedlist>
-          <listitem>
-            <para>Chrome’s theming isn’t <emphasis role="italic">too</emphasis> flexible, so the
-              tabs are probably about as close as they’re going to get.</para>
-          </listitem>
-          <listitem>
-            <para>Due to <ulink url="http://code.google.com/p/chromium/issues/detail?id=57292">a bug in Chrome</ulink>, custom scrollbars do not work in iframes. I have made a
-              workaround (thanks to CSS :not() magic) so that you still will have scrollbars
-              whenever iframes need them. (This matters quite a bit for some web apps, such as
-              Google Mail.)</para>
-          </listitem>
-          <listitem>
-            <para>There’s <ulink url="http://code.google.com/p/chromium/issues/detail?id=81701">a bug in some builds of Chromium</ulink> that prevent it from accessing the Chrome Web
-              Store. The issue tracker mentions some work-around, and future builds openSUSE builds
-              of Chromium will have the fix soon.</para>
-          </listitem>
-          <listitem>
-            <para>I’ve released the git repos of each on github: <ulink url="https://github.com/garrett/adwaita-chrome">adwaita-chrome</ulink> and <ulink url="https://github.com/garrett/adwaita-chrome-scrollbar">adwaita-chrome-scrollbar</ulink></para>
-          </listitem>
-        </itemizedlist>
-        <para>Unfortunately, I haven’t spent the time to make Firefox fit in a little better. It
-          would take a bit more effort. <ulink url="https://bugzilla.mozilla.org/show_bug.cgi?id=627699">Hopefully the Firefox GTK+3 port</ulink> is coming along nicely? (:</para>
-        <para>(Alternatively, someone would score some huge hero points by making Adwaita for GTK+2
-          resemble the GTK+3 version, instead of Clearlooks. This would also make other GTK+2 theme
-          using apps fit in a bit better too, such as LibreOffice.)</para>
-<!--($ ld: 2.6.11 sm $)-->      </blockquote>
+        <para>Today we released version 0.4.7 of libproxy. This version add support for Gnome 3
+          GSettings and bugfixes. Enjoy !</para>
+        <para><emphasis role="bold">ChangeLog:</emphasis><itemizedlist>
+            <listitem>
+              <para>Support/require xulrunner 2.0+</para>
+            </listitem>
+            <listitem>
+              <para>Support linking againgst libwebkit-gtk3 (-DWITH_WEBKIT3=ON)</para>
+            </listitem>
+            <listitem>
+              <para>Port to gsettings for gnome3. (-DWITH_GNOME3=ON[default])</para>
+            </listitem>
+            <listitem>
+              <para>Issues closed:<itemizedlist>
+                  <listitem>
+                    <para>#149: always test for the right python noarch module path</para>
+                  </listitem>
+                  <listitem>
+                    <para>#155: Cannot compile with Firefox 4</para>
+                  </listitem>
+                  <listitem>
+                    <para>#156: libproxy should build against webkitgtk-3.0</para>
+                  </listitem>
+                  <listitem>
+                    <para>#158: Won’t compile w/ xulrunner 2.0 final</para>
+                  </listitem>
+                  <listitem>
+                    <para>#159: libproxy fails with autoconfiguration “<ulink
+                        url="http://proxy.domain.com%E2%80%9D"
+                      >http://proxy.domain.com”</ulink></para>
+                  </listitem>
+                  <listitem>
+                    <para>#131: GSettings-based GNOME plugin</para>
+                  </listitem>
+                  <listitem>
+                    <para>#150: SUSE sysconfig/proxy config support</para>
+                  </listitem>
+                </itemizedlist></para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Packages for opoenSUSE Factory are already in their works and have been submitted for
+          inclusion. That means that we will finally get all the apps supporting libproxy read the
+          gnome3 proxy settings for us again.</para>
+<!--($ ld: 7.6.11 sm $)-->      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
@@ -485,41 +500,26 @@
       </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/06/kollaboration-in-at-platform-11/">Sebastian Kügler: kollaboration in at platform 11</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/06/there-is-no-kde5/">Sebastian Kügler: There is
+            no KDE5</ulink>
         </title>
-        <para>(What? We’re back to tacky K-Names? Don’t worry, just using the K to reminisce us of
-          our roots. :-)) The Platform 11 sprint in Randa is now in full swing, while relatively
-          little code is being written by the 24-ish people here (and the occasional visitors from
-          one of the other 3.5 sprints happening in the same building, at the same time), we’re
-          very, very busy. It’s basically work until collapse, sleep and start again. Kevin is
-          applying his kanban magic to manage the sprint and get everybody focused and
-            synched.&#160;<emphasis role="italic">Kanban Magic</emphasis>&#160;means that we’re using a wall
-          and a lot of post-it notes with tasks and topics on them, and we move those post its
-          through different stages indicated by swimming lanes on the wall, froom waiting through
-          design, review to done. The first note has just passed the review stage and is now in done
-          state: our first accomplishment. :-)</para>
-        <para>As we’re working on issues central to how we all (KDE and Qt hackers) develop, I’m
-          sure you’re impatiently waiting for results to pour onto the Internet. While our first
-          focus is on personal interaction and using the facetime and “high personal bandwidth” to
-          solve hard problems, you can get at least an overall impression of the direction of our
-          work, as we’re tracking our results on the&#160;wiki.</para>
-        <para>What is really good and healthy to see is the number of different stakeholders
-          (sometimes represented by the same person wearing multiple hats). This way we can make
-          ‘reasonably sure’ that we take different point of views into account, and find solutions
-          that work for us all. One might expect that this results in endless discussions, but in
-          practise, most of us are on the same page, and where we’re not, we’re taking the time to
-          sync up and see how much common ground we have, and how we can take advantage of that.
-          There are people from up and downstream, from subcommmunities and companies, and people
-          that all have different stakes in the KDE platforms and frameworks.</para>
-        <para>A big thanks goes to those who made this sprint possible: first of course to all the
-          participants who are focused, motivated and working hard to produce good results. Then of
-          course to Mario and his excellent team of volunteers who make sure we’re fed, warm, safe
-          and taken care of. There is a number of sponsors without which this sprint would not have
-          been possible, those are the Raiffeisen bank, Swisscom and openSUSE who generously chipped
-          in to get us all together for a focused meeting to improve our foundations. Thanks to you
-          all! We are certainly justifying the energy, passion and resources made available to us by
-          working very hard to produce good results!</para>
-<!--($ ld: 3.6.11 sm $)-->      </blockquote>
+        <para>…and in retrospect, adding to the confusion, there is not even a KDE4. *cue puzzled
+          faces*</para>
+        <para>Let me explain this. About 1.5 years ago, we’ve <ulink
+            url="http://dot.kde.org/2009/11/24/repositioning-kde-brand">repositioned</ulink> the
+          brand “KDE” to reflect how our community is structured. In short, KDE is the community
+          (unversioned :-)), the workspaces are called Plasma Desktop, Plasma Netbook, etc. Then we
+          have the KDE development platform. In the future we will be referring to these as the
+            <emphasis role="bold">KDE Frameworks</emphasis>, since that communicates more accurately
+          the results of the ongoing process of modularisation. And then we have of course the KDE
+          Applications, which all have their own names or brands.  </para>
+        <para>In essence, this means there is no KDE 5, and there will never be. During the sprint
+          here in Randa, we’ve spent a lot of thinking about the future of the KDE Frameworks, and
+          we will be forthcoming with plans to further modularize these frameworks, which consist of
+          what’s currently found in the kdelibs, kdesupport, kdepimlibs, kde-runtime and
+          kdepim-runtime modules. We’re already working on turning our meeting notes, minutes and
+          results into something digestable and understandable, so stay tuned. </para>
+<!--($ ld: 7.6.11 sm $)-->      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://blog.cornelius-schumacher.de/2011/06/platform-11-at-randa.html">Cornelius Schumacher: Platform 11 at Randa</ulink>
@@ -596,70 +596,81 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> --><!--
+    </sect3> -->
     <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-medical/2011-05/msg00008.html">Thanasis Rous: Medical Report</ulink>
+          <ulink
+            url="http://zoumpis.wordpress.com/2011/06/06/announcement-of-opensuse-medical-11-4-release/"
+            >Rousinopoulos Athanasios-Ilias: Announcement of openSUSE Medical 11.4 Release</ulink>
         </title>
-        <para>Report from FOSSCOMM (Patras,Greece) Conference </para>
-        <para>As a distro tester and openSUSE Ambassador, I &apos;m very happy to report what took place
-          in the conference (it was my first conference as an ambassador and member of openSUSE
-          Medical Team)</para>
-        <para>So the conference lasted 2 days</para>
-        <para><emphasis role="bold">1st Day : Booth and presentation</emphasis></para>
-        <para>We set up the booth as an openSUSE Community. All the related stuff (about Medical and
-          openSUSE) was available around the booth. </para>
-        <para>Furthermore me and Stathis Iosifidis we presented the openSUSE Medical project as well
-          as the applications which are available via the openSUSE Medical Distro.</para>
-        <para>I would like to note that we presented the following applications :<itemizedlist>
-            <listitem>
-              <para>openEMR</para>
-            </listitem>
-            <listitem>
-              <para>GNUMed</para>
-            </listitem>
-            <listitem>
-              <para>FreeMedForms</para>
-            </listitem>
-            <listitem>
-              <para>FreeDiams</para>
-            </listitem>
-            <listitem>
-              <para>TEMPO</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>And finally we presented the new application for diabetics (which is available in the
-          medical repository) &quot; plasmoid-glucose &quot;</para>
-        <para>The presentation is available at: <ulink url="http://dl.dropbox.com/u/28782593/opensuse_medical_FOSSCOMM2011_001.odp">http://dl.dropbox.com/u/28782593/opensuse_medical_FOSSCOMM2011_001.odp</ulink></para>
-        <para>The presentation was really interesting, people (doctors)ýduring the presentation
-          asked us about the distro, the project and how to setup and use the applications in
-          general.</para>
-        <para><emphasis role="bold">2nd Day : Feedback and Booth support</emphasis></para>
-        <para>During the second day , we informed the people (via the booth) about the openSUSE
-          Medical project and it&apos;s applications and features. Many people asked us about the aim of
-          the project, and how to use the application. </para>
-        <para>In addition with the questions people were surprised with the whole idea of the
-          project and that are able to use this kind of applications as FOSS software.</para>
-        <para>According to me it&apos;s very important to present and show the openSUSE Medical project
-          to doctors and students, because this project will be alive only with the collaboration of
-          developers and medical students+doctors.</para>
-        <para><emphasis role="bold">Feedback :</emphasis></para>
-        <para>Something new for a FOSS conference , many people are interested in this
-          project!</para>
-        <para>You can take a look at the photos of the presentation and the booth as well :<orderedlist>
-            <listitem>
-              <para><ulink url="https://picasaweb.google.com/warlordfff/Fosscomm2011?feat=email#5604329377592278226">https://picasaweb.google.com/warlordfff/Fosscomm2011?feat=email#5604329377592278226</ulink></para>
-            </listitem>
-            <listitem>
-              <para><ulink url="https://picasaweb.google.com/friedmann.bruno/Fosscomm2011Patras#5604405914900277234">https://picasaweb.google.com/friedmann.bruno/Fosscomm2011Patras#5604405914900277234</ulink>
-                (Me and Stathis , you can take a look and in the other photos as well)</para>
-            </listitem>
-          </orderedlist></para>
-        <para>Have a lot of fun! Rousinopoulos Athanasios-Ilias</para>
+        <orderedlist>
+          <listitem>
+            <para>What is openSUSE Medical Project?</para>
+            <para>The openSUSE Medical project supports the use of openSUSE in doctor's practices
+              and other clinical environments. We try to collect and update software. As base for
+              packaging we use: List of Open Source Healthcare Software List. After we have packaged
+              enough software we will try to create an openSUSE based Distribution out of it.</para>
+          </listitem>
+          <listitem>
+            <para>Where can i find more info about the project?</para>
+            <para><ulink url="http://en.opensuse.org/Portal:Medical"
+                >http://en.opensuse.org/Portal:Medical</ulink></para>
+          </listitem>
+          <listitem>
+            <para>What's new in this release?</para>
+            <para>openSUSE 11.4 Repositories :<itemizedlist>
+                <listitem>
+                  <para>openSUSE 11.4 Updates remove</para>
+                </listitem>
+                <listitem>
+                  <para>openSUSE 11.4 OSS,</para>
+                </listitem>
+                <listitem>
+                  <para>education 11.4,</para>
+                </listitem>
+                <listitem>
+                  <para>Nvidia 11.4,</para>
+                </listitem>
+                <listitem>
+                  <para>Libre Office Stable 11.4,</para>
+                </listitem>
+                <listitem>
+                  <para>11.4 Wireless,</para>
+                </listitem>
+                <listitem>
+                  <para>Medical 11.4,</para>
+                </listitem>
+                <listitem>
+                  <para>non-ossd</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+          <listitem>
+            <para>New features that will impress you!</para>
+          </listitem>
+          <listitem>
+            <para>Where can i download it ?</para>
+            <para><ulink url="http://susegallery.com/a/UbPYJM/opensuse-medical-114"
+                >http://susegallery.com/a/UbPYJM/opensuse-medical-114</ulink></para>
+            <para>Also available at : OVF image , VMware Image , Live CD/DVD</para>
+          </listitem>
+          <listitem>
+            <para>Ok , i would like to make some comments or contribute in the project , what do i
+              have to do?</para>
+            <para>Comments are great, you can sent us with an Email to:<ulink
+                url="mailto:opensuse-medical@opensuse.org">opensuse-medical@opensuse.org</ulink>. </para>
+            <para>If this don’t run directly, then you must subscribe the List (mail to <ulink
+                url="mailto:opensuse-medical+subscribe@opensuse.org"
+                >opensuse-medical+subscribe@opensuse.org</ulink>). </para>
+            <para>Feel free to express your opinion!</para>
+          </listitem>
+        </orderedlist>
+        <!--($ ld: 7.6.11 sm $)-->
       </blockquote>
-    </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>

@@ -41,55 +41,59 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://aseigo.blogspot.com/2011/05/plasma-active-quick-catch-up.html"> Aaron Seigo: Plasma Active: Quick Catch-Up! </ulink>
+        <ulink
+          url="http://www.h-online.com/open/features/Novell-s-open-source-legacy-wake-up-little-SuSE-1254835.html"
+          > Novell's open source legacy – wake up, little SuSE! </ulink>
       </title>
-      <para>(<emphasis role="bold">Note</emphasis>: This post is about Plasma Active, a community
-        collaboration to bring KDE software to consumer devices. To learn more about Plasma Active,
-          <ulink url="http://aseigo.blogspot.com/2011/04/active-routes.html">read this blog post</ulink>.) </para>
-      <para>We&apos;ve been a bit quiet lately around the Plasma Active farm. This is mostly due to us
-        being rather busy, both with technical as well as organizational tasks. On the technology
-        front, things continue to plow forward at a very brisk pace with <ulink url="http://community.kde.org/Plasma/Active/Contour">Contour</ulink> shaping up with every
-        passing day and libplasma2 (a big part of the Plasma Quick track) zipping ahead nicely. </para>
-      <para>Organizationally, we&apos;re learning new lessons every day as to how to best coordinate
-        efforts between companies currently involved and reaching out to ones that should be
-        involved. <ulink url="http://www.basyskom.com/">Basyskom</ulink> sent a bunch of people to
-        the recent MeeGo conf, and the response was fantastic, including some <ulink url="http://www.ubergizmo.com/2011/05/basyskom-shows-off-new-meego-ui-design/">bloggers</ulink><ulink url="http://www.netbooknews.com/26445/basyskom-demos-meego-user-interface-contour-peregrine/">writing</ulink> about the demo that was on offer.</para>
-      <para>There&apos;s also been some learning-as-we-grow happening that has hampered outbound
-        communication somewhat. For some of the people involved, this is their very first open
-        source experience. For others, this is their first foray into the interesting world of
-        devices. While it is terrific to expand our merry band of freedom makers, it also has meant
-        some learning curves.</para>
-      <para>Amongst all that, code is getting written, the user experience design continues to
-        mature and new operating system images are being spun. All is good in the land of technical
-        progress. Marco is hanging out at my place for a couple days prior to the upcoming Platform
-        11 meeting (which starts Wednesday) and we&apos;re getting some work done at a nice pace. </para>
-      <para>Today we&apos;re working on Share-Like-Connect and building integration points in Contour for
-        it.I am, however, behind on posting news about new Active Apps as well, which I&apos;m going to
-        remedy in a moment.</para>
-<!-- ($ ld: 31.5.11 sm $) -->    </blockquote>
+      <para>Novell's unrequited romance with Linux and free software is over. Having completed
+          its<ulink
+          url="http://www.h-online.com/news/item/Novell-deal-completed-Update-1233824.html">$2.2
+          billion takeover</ulink>, Attachmate is dividing the spoils. Novell and its legacy
+        networking business will survive in Utah. NetIQ will inherit Novell's identity and security
+        management solutions, and SUSE has been given autonomy and control of Novell's open source
+        projects from its base in Nuremberg.</para>
+      <para>Mono has been cast adrift, and the worst aspects of <ulink
+          url="http://www.groklaw.net/article.php?story=20110420141724403">Novell's attempt to sell
+          off a large part of its patent portfolio</ulink> to a consortium led by Microsoft have
+        been scuppered by the US Department of Justice and the German Federal Cartel Office. But
+        there are still questions left to answer. (...)</para>
+<!-- ($ ld: 7.6.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://aseigo.blogspot.com/2011/05/plasma-active-marble-to-go.html"> Aaron Seigo: Plasma Active: Marble To Go! </ulink>
+        <ulink url="http://www.linuxjournal.com/content/open-source-office-software-sector-heats">
+          Linux Journal/Susan Linton: The Open Source Office Software Sector Heats Up</ulink>
       </title>
-      <para>(<emphasis role="bold">Note</emphasis>: This post is about Plasma Active, a community
-        collaboration to bring KDE software to consumer devices. To learn more about Plasma Active,
-          <ulink url="http://aseigo.blogspot.com/2011/04/active-routes.html">read this blog post</ulink>.) </para>
-      <para>What is an Active App? It&apos;s a project built with Qt and/or KDE libraries that fits into
-        the spirit and use cases of Plasma Active. That means it needs to be touch friendly,
-        preferably present the user interface with QtQuick, have a nice separation between data and
-        visualization where appropriate and integrate well with the platform.</para>
-      <para>In the Plasma Active meta-project, which includes things like Contour and live OS
-        images, we&apos;re building up a small army of such apps in the hopes that those projects can
-        learn from each other and us from them. It will also help ensure that when someone goes to
-        use a Plasma Active device, they don&apos;t just have the Contour user experience but also a host
-        of useful stand-alone applications as well.</para>
-      <para>I announced our first Active App a couple weeks back: <ulink url="http://community.kde.org/Calligra">Calligra</ulink>. Today, we add another to the
-        books: <ulink url="http://edu.kde.org/marble/">Marble</ulink>!Marble has already had a
-        mobile version for some time, and since mapping is very important functionality for devices
-        you carry around with you it was only natural for Plasma Active to meet Marble.</para>
-      <para>There is a project going on right now to provide a QtQuick interface to Marble, and we
-        will be including this effort in the live images as it matures.</para>
-<!--($ ld: 31.5.11 sm $)-->    </blockquote>
+      <para>The world of LibreOffice and OpenOffice(.org) has been heating up recently with several
+        exciting and, at times, bewildering developments. The Document Foundation remains very
+        active as is LibreOffice development, but Oracle has given up on OpenOffice and slapped
+        LibreOffice in the face by giving it to Apache. Perhaps the most important announcement was
+        the release of LibreOffice 3.4.0.</para>
+      <para>The recent release of LibreOffice 3.4 demonstrates the very philosophical differences in
+        community projects and those stifled by commercial interests. LibreOffice development has
+        been happening at an unprecedented pace while OpenOffice lagged behind and lost many of its
+        previous users. Even under Sun development was tightly controlled, but Oracle increased the
+        bonds. In contrast, according to the <ulink
+          url="http://blog.documentfoundation.org/2011/06/03/the-document-foundation-announces-libreoffice-3-4-0/"
+          >release announcement</ulink>, LibreOffice now has 120 happy developers committing
+        approximately 20 changes per day. Cedric Bosdonnat <ulink
+          url="http://cedric.bosdonnat.free.fr/wordpress/?p=803">puts</ulink> the number of
+        contributors at 223. Italo Vignoli is quoted as saying, "We care for our developers, and it
+        shows."</para>
+      <para>Just before LibreOffice 3.4 was released Oracle <ulink
+          url="http://blogs.oracle.com/trond/entry/statements_on_openoffice_org_contribution"
+          >announced</ulink> that it was donating OpenOffice to the Apache Software Foundation.
+        Pundit have speculated all around the spectrum of how that will affect the office suite with
+        some thinking it will certainly benefit while others think it will most likely wane even
+        further. The Document Foundation <ulink
+          url="http://blog.documentfoundation.org/2011/06/01/statement-about-oracles-move-to-donate-openoffice-org-assets-to-the-apache-foundation/"
+          >expressed</ulink> disappointment that a reunification of the two projects will probably
+        not occur but offered their best wishes for OpenOffice. They were upbeat about including
+        OpenOffice code since the Apache license is <ulink
+          url="http://www.fsf.org/blogs/licensing/new-license-recommendations-guide"
+          >compatible</ulink> with the GNU Lesser General Public License under which LibreOffice is
+        released. Given these facts, "the event is neutral for The Document Foundation."
+        (...)</para>
+<!--($ ld: 7.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.ubuntuvibes.com/2011/05/opensuse-workstations-used-for.html">Ubuntu Vibes/Nitesh: OpenSUSE Workstations Used for Rendering Real Facial Expressions in L.A. Noire (By Rockstar Games)</ulink>
