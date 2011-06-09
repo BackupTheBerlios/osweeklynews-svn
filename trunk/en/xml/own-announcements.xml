@@ -276,5 +276,159 @@
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
     <!--($ ld: 8.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/06/08/opensuse-conference-looking-for-sponsors/">openSUSE
+        conference looking for sponsors</ulink></title>
+    <para>Like the previous years, the openSUSE conference team is looking for sponsors. The <ulink
+        url="http://en.opensuse.org/Portal:Conference">conference</ulink> has grown 35% last year
+        and we expect it to grow even more this year so financial help is needed!</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/05/RWX3-300x127.png"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">openSUSE Conference</emphasis></para>
+    <para>Now in its third year, the openSUSE Conference has become one of the most dynamic and
+      collaborative events in the FOSS world, by bringing together both openSUSE contributors and
+      other members of the open source community. Last year we welcomed participants from Fedora,
+      Debian, the GNOME project and numerous others, creating a rich environment for innovation.
+      Topics for the openSUSE Conference range from technical talks about packaging, Open Build
+      Service and development tools to more community-oriented discussions about our future and
+      direction. With over 35% more attendees than in 2009, last year’s conference was a resounding
+      success and this year promises to be even greater with an expected number of 500
+      attendees.</para>
+    <para><emphasis role="bold">Sponsors needed</emphasis></para>
+    <para>To make this event possible, the community needs help. Sponsorship is required for travel
+      costs for speakers and attendees as well as facilities costs. As the openSUSE community is
+      very international, we want to support people from Brazil, India, Australia and many other
+      countries to come to Nuremberg. By securing sponsorships, companies can demonstrate their
+      support for the community and garner valuable brand recognition. If you are interested in
+      sponsoring this event, please see the <ulink
+        url="http://en.opensuse.org/images/1/1f/OpenSUSEandSUSELabs2011SponsorshipBrochureWebsite.pdf"
+        >online sponsorship brochure</ulink> or contact us for more information on the sponsor
+      benefits and offerings. If you know someone who might be interested in sponsoring, please help
+      us reach out to them!</para>
+    <para>Our contact person is: </para>
+    <para>Izabel Valverde <email>izabelvalverde@opensuse.org</email></para>
+    <para>Sponsorship manager </para>
+    <para>openSUSE Conference Organization</para>
+    <para><emphasis role="bold">This year: Read, Write, Execute and SUSE LABS</emphasis></para>
+    <para>In 2011, the theme of the combined openSUSE and SUSE Labs Conference is <ulink
+        url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/"
+        >RWX, the UNIX acronym for Read-Write-Execute</ulink>. To bring this theme to life, the
+      sessions at oSC 2011 will have a strong focus on getting decisions made and work done in
+      small, collaborative teams. Again many visitors from other projects will be invited and by
+      co-locating with the SUSE Labs Conference, the larger number of community members at the
+      conference will greatly increase its impact.</para>
+    <para><emphasis role="bold">SUSE Labs</emphasis></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/05/Zentr_impress-300x148.jpg"/>
+      </imageobject>
+    </mediaobject>
+    <para>The SUSE Labs Conference is a SUSE internal conference that has been organized by SUSE
+      engineers for SUSE engineers for many years. Most SUSE technical employees travel to meet once
+      a year and exchange ideas, share their work and learn from each other. The topics for the SUSE
+      Labs Conference tend to be very technical, ranging from Kernel, Samba and GCC to high
+      performance networking technology.</para>
+    <para><emphasis role="bold">Place and date</emphasis></para>
+    <para>The openSUSE Conference and SUSE Labs Coference 2011 takes place in Nuremberg, Germany at
+      Zentrifuge Nurenberg, from September 11 to September 14. Zentrifuge is an independent cultural
+      center providing room for art and music performances and exibitions. This location gives the
+      openSUSE Conference a culturally rich, creative environment, challenging visitors to bring
+      their best!</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <para><!--($ ld: 9.6.11 sm $)--></para>
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/06/09/world-ipv6-day-results/">World IPv6 Day
+        Results</ulink></title>
+    <para>Yesterday was World IPv6 Day and openSUSE <ulink
+        url="http://news.opensuse.org/2011/05/31/opensuse-and-world-ipv6-day/">participated</ulink>
+      in it. We hope the experiment was as successful for the other participants as it was for
+      us!</para>
+    <para>Here is a short status update from the openSUSE infrastructure. openSUSE has currently two
+      major server locations and we tested IPv6 at both separately. Note that there are more
+      openSUSE infrastructure locations, including the server which runs the popular <ulink
+        url="http://news.opensuse.org/2011/06/09/planet.opensuse.org">planet.opensuse.org</ulink>
+      (which supports IPv6 as well now)!</para>
+    <para><emphasis role="bold">Nürnberg</emphasis></para>
+    <para>In Nürnberg, Germany, the following main services were enabled:</para>
+    <itemizedlist>
+      <listitem>
+        <para>download.opensuse.org</para>
+      </listitem>
+      <listitem>
+        <para>build.opensuse.org</para>
+      </listitem>
+      <listitem>
+        <para>lists.opensuse.org</para>
+      </listitem>
+      <listitem>
+        <para>{many_web_sites}.opensuse.org</para>
+      </listitem>
+    </itemizedlist>
+    <para>Just two services did not make it in time: the torrent tracker and the email servers. Our
+      current tracker software does not support IPv6 – and the dedicated new tracker needs more love
+      from our packager. The mail servers are provided by our ISP so we left them as they
+      were.</para>
+    <para>All our other services are <emphasis role="bold">RUNNNING on IPv4+IPv6</emphasis> and
+        <emphasis role="bold">WILL STAY on IPv4+IPv6</emphasis> even if the IPv6 day is over now. We
+      have seen an increase from ~1% IPv6 bandwidth usage to ~7% bandwidth usage today, which is
+      impressive and encouraging!</para>
+    <para><emphasis role="bold">Provo</emphasis></para>
+    <para>In Provo, US, the following main services were enabled:</para>
+    <itemizedlist>
+      <listitem>
+        <para>{lang}.opensuse.org wikis</para>
+      </listitem>
+      <listitem>
+        <para>forums.opensuse.org</para>
+      </listitem>
+      <listitem>
+        <para>lizards and news.opensuse.org</para>
+      </listitem>
+    </itemizedlist>
+    <para>Currently these services provide IPv6, but we are facing two kinds of problems, proving
+      how useful the World IPv6 day was for us:</para>
+    <orderedlist>
+      <listitem>
+        <para>Native IPv6 users reported problems which are MTU related. Manually lowering the MTU
+          on the client side fixed their problems, but this is something that we are working on
+          closely together with our ISP.</para>
+      </listitem>
+      <listitem>
+        <para>Some sites are not accessible from some clients. But clients from the same subnet did
+          not have the problems. More mysterious: the problematic clients can reach other servers
+          without problems. This is currently the problem which needs some deep
+          investigation.</para>
+      </listitem>
+    </orderedlist>
+    <para>We are currently discussing whether we can solve these issues quickly or have to disable
+      IPv6 again for our servers in Provo.</para>
+    <para>The following problems were solved during World IPv6 day:</para>
+    <itemizedlist>
+      <listitem>
+        <para>One package on our openSUSE distribution needed patches: the apache2-mod_geoip package
+          used on download.opensuse.org</para>
+      </listitem>
+      <listitem>
+        <para>we found two packages (vsftpd and torrent-seeder) which can’t handle IPv4 and IPv6 at
+          the same time</para>
+      </listitem>
+    </itemizedlist>
+    <para>In conclusion, the world IPv6 day participation showed openSUSE to be quite ready for IPv6
+      – and we will work on fixing the few problems we encountered.</para>
+    <para>I’d like to mention two people especially and thank them for their hard work, great help
+      and enthusiasm:</para>
+    <para><emphasis role="italic">Christian Deckelmann</emphasis> (who provides us with the needed
+      infrastructure, resources and knowledge) and <emphasis role="italic">Markus Rýckert</emphasis>
+      (who handled all the configuration changes and patches that are needed on our servers).</para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!--($ ld: 9.6.11 sm $)-->
   </blockquote>  
 </sect1>

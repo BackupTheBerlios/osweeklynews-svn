@@ -155,5 +155,33 @@ strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), sizeof(params)-strlen(par
           url="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</ulink>
         application with Rails 3 and jQuery Mobile! (...)</para>
 <!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://stick.gk2.sk/blog/2011/06/ps1-tricks/">Pavol Rusnak: PS1
+          tricks</ulink></title>
+      <para>Many of you know already about this feature, but some of you don’t so I wanted to share
+        it with you. I just changed mine PS1 configuration in ~/.bashrc to look like
+        this:<programlisting>export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export PS1='\[\033[1;37m\][\[\033[1;32m\]\u\[\033[0m\]@\h\[\033[0m\] $? \[\033[1;34m\]\w\[\033[0;35m\]$(__git_ps1 " %s")\[\033[1;37m\]]\[\033[0m\] '</programlisting></para>
+      <para>Take a look at the following picture to see how it works:</para>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/06/ps1tricks-300x125.png"/>
+        </imageobject>
+      </mediaobject>
+      <para>or check the <ulink url="http://youtube.com/watch?v=AKNgtHnKgJc">video on
+          youtube</ulink>.</para>
+      <para>The number between user@host and the current working directory is the exit status of the
+        most recently executed command (or pipeline). This is great because you don’t have to type
+        echo $? everytime you want to find it out. The __git_ps1 magic will print git branch name if
+        you are inside of the git repository. Furthermore it will add special characters indicating
+        the state of the repo: % – untracked files present, + – new files added, * – some tracked
+        files changed, $ – there is something in the stash (see git stash --help). Pretty cool,
+        right?</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink
+          url="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC-BY-NC-ND</ulink></para>
+      <para><!--($ Id: 9.6.11 sm $)--></para>
+    </blockquote>
   </sect2>
 </sect1>
