@@ -22,14 +22,11 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://ubuntumanual.org/posts/344/five-cool-kde-widgets-for-your-desktop"
-          >Linuxaria: Ekiga and SIP to replace Skype</ulink>
+        <ulink url="http://ubuntumanual.org/posts/344/five-cool-kde-widgets-for-your-desktop">Linuxaria: Ekiga and SIP to replace Skype</ulink>
       </title>
-      <para>In a <ulink
-          url="http://www.linuxaria.com/article/skype-to-microsoft-its-time-to-know-xmppjingle?lang=en"
-          >former article</ulink> I’ve talked about the XMPP:Jingle protocol to find a good
+      <para>In a&#160;<ulink url="http://www.linuxaria.com/article/skype-to-microsoft-its-time-to-know-xmppjingle?lang=en">former article</ulink>&#160;I’ve talked about the XMPP:Jingle protocol to find a good
         replacement for Skype.</para>
-      <para>Some people asked me about <ulink url="http://ekiga.org/">Ekiga</ulink>, is this a good
+      <para>Some people asked me about&#160;<ulink url="http://ekiga.org/">Ekiga</ulink>, is this a good
         software or not ? and how you can use it ?</para>
       <para>Ekiga (formely known as GnomeMeeting) is an open source SoftPhone, Video Conferencing
         and Instant Messenger application over the Internet.It supports HD sound quality and video
@@ -37,141 +34,60 @@
         hardwares and service providers as it uses both the major telephony standards (SIP and
         H.323). (...)</para>
 <!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.tricksmachine.com/2011/05/4-things-to-do-after-you-install-kde.html">Tricksmachine/Vishal Gaikar: 4 Things to Do After You Install KDE</ulink>
-      </title>
-      <para><emphasis role="bold">KDE</emphasis> is a free and <ulink url="http://www.tricksmachine.com/tag/open-source">open source</ulink> desktop workspace,
-        application suite, and development environment for Unix-like operating systems such as
-        Linux. Its applications are also available for <ulink url="http://www.tricksmachine.com/tag/mac-os-x">Mac OS X</ulink> and <ulink url="http://www.tricksmachine.com/category/computer-tricks">Windows</ulink>. One of the
-        most impressive features of KDE is its flexibility. You can customize KDE to look and feel
-        however you want.</para>
-      <para>The KDE workspace is a unique experience not found with any other desktop environment or
-          <ulink url="http://www.tricksmachine.com/tag/operating-system">operating system</ulink>.
-        It is called Plasma and is fully integrated with a widget system and is easily themeable.
-        When you first install KDE, it will already look beautiful, but half of the fun of a free
-        and open source workspace is tweaking. These are simple customizations you can do to make
-        your KDE desktop truly yours. (...)</para>
-<!--($ Id: 31.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/script-of-the-week/script-of-the-week-changing-terminal-color/">BashShell.net/Mike: Script of the Week: Changing Terminal Color</ulink>
+        <ulink url="http://linuxaria.com/howto/5-grep-like-commands?lang=en">Linuxaria: 5 grep like commands</ulink>
       </title>
-      <para>term_color.sh</para>
-      <para>This simple script can be run in a tty to that you can change the color to be more easily read.  Note that the tty uses 8 colors so you will not get the most beautiful output.  The 8 colors are; black, white, red, blue,green, yellow, magenta, and cyan.  (perform as normal user not root)</para>
-      <para>You do not want to mess up your root account so use a test account to try this. (...)</para>
-<!-- ($ Id: 3.6.11 sat $)-->    </blockquote>
+      <para>Everyone knows (and loves) grep, I’ve also wrote an <ulink url="http://linuxaria.com/pills/grep-per-principianti">article</ulink> on it, but today we’ll see other small utility that have some things in common with it.</para>
+      <para>In particular I’ll show you: ﻿pgrep, ﻿grepcidr, ngrep, pdfgrep and ﻿taggrepper.</para>
+      <para>All are command line tools to be used with your favorite shell, I’ll show you some example for every command. (...)</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</ulink></para>
+<!-- ($ Id: 10.6.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://dominique.leuenberger.net/blog/2011/06/gobject-introspection-based-typelib-provides-and-requires/"
-          >Dominique Leuenberger: GObject Introspection based typelib Provides and Requires</ulink>
+        <ulink url="http://dominique.leuenberger.net/blog/2011/06/gobject-introspection-based-typelib-provides-and-requires/">Dominique Leuenberger: GObject Introspection based typelib Provides and Requires</ulink>
       </title>
       <para>In a constant battle to improve the quality of the packages provided by the openSUSE
         GNOME Team, we have been working hard on additional automatism in adding Provides and
         Requires symbols to our packages. This will make it less common to be able to install a
         package without the needed libraries. (...)</para>
 <!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://dominique.leuenberger.net/blog/2011/05/how-to-fix-brp-and-rpmlint-warnings-%E2%80%93-today-i-statement-might-be-overflowing-a-buffer-in-strncat/">Dominique Leuenberger: how to fix brp and rpmlint warnings – today: I: Statement might be overflowing a buffer in strncat.</ulink>
-      </title>
-      <para>Malcolm Lewis sent me a link to one of his failing packages, with the idea to bring the
-        next post for this series (which has had a too long break already). So Malcolm: Thank you
-        for the heads up and here we go with another hopefully helpful solution to one of brp error
-        (brp actually stands for Build Root Policy)</para>
-      <para>So, just like before, we have a look at the error, including the specific code parts
-        raising the errors:</para>
-      <blockquote>
-        <para>I: Statement might be overflowing a buffer in strncat. Common mistake:</para>
-        <para> BAD: strncat(buffer,charptr,sizeof(buffer)) is wrong, it takes the left over size as
-          3rd argument</para>
-        <para> GOOD: strncat(buffer,charptr,sizeof(buffer)-strlen(buffer)-1) </para>
-      </blockquote>
-      <para>Ok, so the error is very helpful with even telling us what is a bad use of strncat and
-        what a good use of it would look like. For completeness, let’s see what the compiler itself
-        reports on this error:</para>
-      <blockquote>
-        <para>In function ‘strncat’,</para>
-        <para> inlined from ‘gtkui_icmp_redir’ at ec_gtk_mitm.c:173:14:</para>
-        <para> /usr/include/bits/string3.h:152:3: warning: call to __builtin___strncat_chk might
-          overflow destination buffer [enabled by default] </para>
-      </blockquote>
-      <para>Let’s see what <emphasis role="bold">
-        <ulink url="http://linux.die.net/man/3/strncat">man 3 strncat</ulink>
-      </emphasis> tells us about the usage of strncat.</para>
-      <blockquote>
-        <para><emphasis role="bold">Synopsis</emphasis></para>
-        <para>#include char *strcat(char *dest, const char *src); char *strncat(char *dest, const
-          char *src, size_t n);</para>
-        <para><emphasis role="bold">Description</emphasis></para>
-        <para> The strcat() function appends the src string to the dest string overwriting the ‘\0′
-          character at the end of dest, and then adds a terminating ‘\0′ character. The strings may
-          not overlap, and the dest string must have enough space for the result.</para>
-        <para>The strncat() function is similar, except that it will use at most n characters from
-          src. Since the result is always terminated with ‘\0′, at most n+1 characters are written.
-        </para>
-      </blockquote>
-      <para>The package suggested by Malcolm contains this code (snipped
-        together):<screen>#define PARAMS_LEN 50 static char params[PARAMS_LEN]; 
-strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), PARAMS_LEN); 
-strncat(params, "/", PARAMS_LEN); 
-strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), PARAMS_LEN);</screen></para>
-      <para>This is not an uncommon error at all. We create a buffer, 50 chars long, we concatenate
-        text into the buffer and specify a max length of PARAMS_LEN. What is not taken into account
-        here is that the string in params is getting longer, and we do not account for this when
-        adding text to it. And additionally the leading \0 is ignored as well.</para>
-      <para>Translating the BRP Result’s suggestion stating how we should write this code, we will
-        result in
-        this:<screen>#define PARAMS_LEN 50 static char params[PARAMS_LEN]; 
-strncat(params, gtk_entry_get_text(GTK_ENTRY(entry1)), sizeof(params)-strlen(params)-1); 
-strncat(params, "/", sizeof(params)-strlen(params)-1); 
-strncat(params, gtk_entry_get_text(GTK_ENTRY(entry2)), sizeof(params)-strlen(params)-1);</screen></para>
-      <para>sizeof(params) is what we had there before, and equals to PARAMS_LEN. But we now also
-        take into account that we already do have some characters stored in params and also account
-        for a trailing NULL byte.</para>
-      <para>And with this simple fix, the error vanished.</para>
-      <!--($ Id: 30.5.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://obsforandroid.wordpress.com/2011/06/03/create-my-first-demo-app-with-jquery-mobile-alpha-4-rails-3/"
-          >Justine Leng: Create my first demo app with jQuery Mobile Alpha 4</ulink>
+        <ulink url="http://obsforandroid.wordpress.com/2011/06/03/create-my-first-demo-app-with-jquery-mobile-alpha-4-rails-3/">Justine Leng: Create my first demo app with jQuery Mobile Alpha 4</ulink>
       </title>
       <para>The promising <ulink url="http://jquerymobile.com/">jQuery Mobile</ulink> project is now
-        in its first Alpha 4.1 release! What better time to give it a spin with our (err… my) <ulink
-          url="http://rubyonrails.org/">favorite web framework</ulink>?! The principle if simple:
+        in its first Alpha 4.1 release! What better time to give it a spin with our (err… my) <ulink url="http://rubyonrails.org/">favorite web framework</ulink>?! The principle if simple:
         you include jQuery Mobile on the page, format your markup to conform to its requirements and
-        reap the benefits. Yay, let’s write a (very contrived) <ulink
-          url="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</ulink>
+        reap the benefits. Yay, let’s write a (very contrived) <ulink url="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</ulink>
         application with Rails 3 and jQuery Mobile! (...)</para>
 <!-- ($ Id: 6.6.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://stick.gk2.sk/blog/2011/06/ps1-tricks/">Pavol Rusnak: PS1
-          tricks</ulink></title>
+      <title>
+        <ulink url="http://stick.gk2.sk/blog/2011/06/ps1-tricks/">Pavol Rusnak: PS1 tricks</ulink>
+      </title>
       <para>Many of you know already about this feature, but some of you don’t so I wanted to share
         it with you. I just changed mine PS1 configuration in ~/.bashrc to look like
         this:<programlisting>export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
-export PS1='\[\033[1;37m\][\[\033[1;32m\]\u\[\033[0m\]@\h\[\033[0m\] $? \[\033[1;34m\]\w\[\033[0;35m\]$(__git_ps1 " %s")\[\033[1;37m\]]\[\033[0m\] '</programlisting></para>
+export PS1=&apos;\[\033[1;37m\][\[\033[1;32m\]\u\[\033[0m\]@\h\[\033[0m\] $? \[\033[1;34m\]\w\[\033[0;35m\]$(__git_ps1 &quot; %s&quot;)\[\033[1;37m\]]\[\033[0m\] &apos;</programlisting></para>
       <para>Take a look at the following picture to see how it works:</para>
       <mediaobject>
         <imageobject>
           <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/06/ps1tricks-300x125.png"/>
         </imageobject>
       </mediaobject>
-      <para>or check the <ulink url="http://youtube.com/watch?v=AKNgtHnKgJc">video on
-          youtube</ulink>.</para>
+      <para>or check the <ulink url="http://youtube.com/watch?v=AKNgtHnKgJc">video on youtube</ulink>.</para>
       <para>The number between user@host and the current working directory is the exit status of the
         most recently executed command (or pipeline). This is great because you don’t have to type
         echo $? everytime you want to find it out. The __git_ps1 magic will print git branch name if
@@ -179,9 +95,20 @@ export PS1='\[\033[1;37m\][\[\033[1;32m\]\u\[\033[0m\]@\h\[\033[0m\] $? \[\033[1
         the state of the repo: % – untracked files present, + – new files added, * – some tracked
         files changed, $ – there is something in the stash (see git stash --help). Pretty cool,
         right?</para>
-      <para><emphasis role="bold">License</emphasis>: <ulink
-          url="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC-BY-NC-ND</ulink></para>
+      <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC-BY-NC-ND</ulink></para>
       <para><!--($ Id: 9.6.11 sm $)--></para>
     </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://everydaylht.com/howtos/system-administration/undelete-files-on-an-ext3-or-ext4-file-system/">EveryDayLHT: Undelete Files on an ext3 or ext4 File System</ulink>
+      </title>
+      <para>So you’ve been futzing round in the file system, and been over vigorous with the rm command and deleted a crucial file that you or (more scarily) a significant other, can’t live without. What to do? After that initial hot flush has died down, you must be calm, and work fast. You have three options: (...)</para>
+<!--($ Id: 10.6.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/using-and-understanding-ipv6-on-opensuse-11">BeginLinux: Using and Understanding IPv6 on openSUSE 11</ulink>
+      </title>
+      <para>So IPv6 has been around a while now but do we know any benefits? We may know that it is 128bits long and too difficult to type but if that is all then we do ourselves a little injustice in not knowing how easy IPv6 can make our lives. So let us take a look at some of the automation features of IPv6 including auto-address assignment, router discovery and why we do not need a broadcast address. (...)</para>
+<!--($ Id: 10.6.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
