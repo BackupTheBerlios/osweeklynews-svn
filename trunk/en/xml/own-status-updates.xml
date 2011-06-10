@@ -44,12 +44,9 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/06/03/factory-progress-2011-06-03/">Andreas
-          Jaeger: Factory Progress 2011-06-03</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/06/03/factory-progress-2011-06-03/">Andreas Jaeger: Factory Progress 2011-06-03</ulink>
       </title>
-      <para>This week saw the <ulink
-          url="http://news.opensuse.org/2011/06/01/first-step-towards-12-1-with-milestone-1/"
-          >release</ulink> of the first milestone of openSUSE 12.1 and work on factory is
+      <para>This week saw the&#160;<ulink url="http://news.opensuse.org/2011/06/01/first-step-towards-12-1-with-milestone-1/">release</ulink>&#160;of the first milestone of openSUSE 12.1 and work on factory is
         continuing, I’ve found the following changes important:</para>
       <para><emphasis role="bold">GNU C Library (glibc) 2.13</emphasis></para>
       <para>We’ve updated glibc from version 2.11 to 2.13 which brings many bug fixes and AFAIK no
@@ -58,52 +55,39 @@
       <para><emphasis role="bold">GO Programming Language</emphasis></para>
       <para>Factory now contains a compiler for the GO language which is “is an expressive,
         concurrent, garbage collected systems programming language that is type safe and memory
-        safe.”. More details about GO are available on the<ulink
-          url="http://en.opensuse.org/openSUSE:Packaging_Go"> openSUSE Wiki</ulink>, the devel
-        project with additional packages is <ulink
-          url="https://build.opensuse.org/project/show?project=devel%3Alanguages%3Ago"
-          >devel:languages:go</ulink>.</para>
+        safe.”. More details about GO are available on the<ulink url="http://en.opensuse.org/openSUSE:Packaging_Go"> openSUSE Wiki</ulink>, the devel
+        project with additional packages is&#160;<ulink url="https://build.opensuse.org/project/show?project=devel%3Alanguages%3Ago">devel:languages:go</ulink>.</para>
       <para><emphasis role="bold">Packaging: Source Processing</emphasis></para>
-      <para>The usage of <ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00037.html"
-        >_service</ulink> files in Factory confused many packagers and resulted in broken packages
-        so that these will be deprecated. As a replacement, Adrian implemented now a new <ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00359.html">source processing
-          method and asks for testers</ulink>.</para>
-      <para><emphasis role="bold">Packaging: Adding useful Provides to cups
-        drivers</emphasis></para>
+      <para>The usage of&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00037.html">_service</ulink>&#160;files in Factory confused many packagers and resulted in broken packages
+        so that these will be deprecated. As a replacement, Adrian implemented now a new&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00359.html">source processing method and asks for testers</ulink>.</para>
+      <para><emphasis role="bold">Packaging: Adding useful Provides to cups drivers</emphasis></para>
       <para>Vincent “updated python-cups to a new version, and it is now shippingfiles to
         automatically add Provides tag to packages that are shippingcups drivers.”. This allows
         desktop packages to install the right printer driver – or users to do it via zypper.
-        Packages with<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00158.html"
-          > cups drivers just need to add</ulink> a “BuildRequires: python-cups”.</para>
+        Packages with<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00158.html">&#160;cups drivers just need to add</ulink>&#160;a “BuildRequires: python-cups”.</para>
       <para><emphasis role="bold">Open Build Service Improvement</emphasis></para>
-      <para>The “<ulink url="https://build.opensuse.org/home/my_work">My Work</ulink>” view has been
+      <para>The&#160;“<ulink url="https://build.opensuse.org/home/my_work">My Work</ulink>”&#160;view has been
         updated to better show packages that are in review state and need your review. I suggest
         everybody to check out the page and cleanup your list.</para>
       <para><emphasis role="bold">Multiple Buildroots with osc</emphasis></para>
       <para>If you like to use more than one build at the same time, there are several options like
-        pointed out on the <ulink
-          url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00010.html"
-          >opensuse-packaging mailing list</ulink>:<itemizedlist>
+        pointed out on the&#160;<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00010.html">opensuse-packaging mailing list</ulink>:<itemizedlist>
           <listitem>
             <para>Use of the environment variable OSC_BUILD_ROOT to define a build root.</para>
           </listitem>
           <listitem>
             <para>Editing of the osc config file ~/.oscrc and setting build-root to contain the
-              variables %(repo), %(arch),  %(project) or %(package).</para>
+              variables %(repo), %(arch),&#160; %(project) or %(package).</para>
           </listitem>
         </itemizedlist></para>
       <para><emphasis role="bold">Correction on auto-legal build service check</emphasis></para>
-      <para>Jürgen corrected my <ulink
-          url="http://lizards.opensuse.org/2011/05/27/factory-progress/">report</ulink> from last
+      <para>Jürgen corrected my&#160;<ulink url="http://lizards.opensuse.org/2011/05/27/factory-progress/">report</ulink>&#160;from last
         week: He would love to see the checks for auto-legal moved and welcomes any help.</para>
       <para><emphasis role="bold">Thanks</emphasis></para>
       <para>Thanks for the words of encouragement to my first blog post. I’ll try to continue this
         series. If there’s anything you think should be added to it, please contact me via email at
         aj at opensuse dot org.</para>
-      <para><emphasis role="bold">License</emphasis>: <ulink
-          url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+      <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
 <!--($ ld: 4.6.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
@@ -118,7 +102,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -143,8 +127,7 @@
         should compile on any platform that Qt and LibVNCViewer support (including Windows and Mac).
         And of course, contributions and bug reports are most welcome!</para>
     </blockquote>
-  </sect2> -->
-  <sect2 role="teamreports">
+  </sect2> -->  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -423,8 +406,7 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://dominique.leuenberger.net/blog/2011/06/libproxy-0-4-7-released/"
-            >Dominique Leuenberger: Libproxy 0.4.7 released</ulink>
+          <ulink url="http://dominique.leuenberger.net/blog/2011/06/libproxy-0-4-7-released/">Dominique Leuenberger: Libproxy 0.4.7 released</ulink>
         </title>
         <para>Today we released version 0.4.7 of libproxy. This version add support for Gnome 3
           GSettings and bugfixes. Enjoy !</para>
@@ -453,9 +435,7 @@
                     <para>#158: Won’t compile w/ xulrunner 2.0 final</para>
                   </listitem>
                   <listitem>
-                    <para>#159: libproxy fails with autoconfiguration “<ulink
-                        url="http://proxy.domain.com%E2%80%9D"
-                      >http://proxy.domain.com”</ulink></para>
+                    <para>#159: libproxy fails with autoconfiguration “<ulink url="http://proxy.domain.com%E2%80%9D">http://proxy.domain.com”</ulink></para>
                   </listitem>
                   <listitem>
                     <para>#131: GSettings-based GNOME plugin</para>
@@ -485,28 +465,22 @@
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
-        <title><ulink url="http://linux42.org/stories/More+Polka,+please?id=14358">Cornelius
-            Schumacher: More Polka, please</ulink></title>
-        <para>After <ulink
-            url="http://blog.cornelius-schumacher.de/2011/03/its-not-address-book.html">blogging
-            about Polka</ulink>, my experiment with a radically new take on an address book, I got a
-          lot of great feedback. I appreciate all the comments, questions, and encouragement. Two
-          people made me particularly happy, as they not only sent feedback, but also contributed
-          some welcome work. Sascha Manns built <ulink
-            url="https://build.opensuse.org/package/show?package%3Dpolka%26project%3DKDE:Extra"
-            >packages</ulink>, and Saleel Velankar created a beautiful logo. Free software
+        <title>
+          <ulink url="http://linux42.org/stories/More+Polka,+please?id=14358">Cornelius Schumacher: More Polka, please</ulink>
+        </title>
+        <para>After&#160;<ulink url="http://blog.cornelius-schumacher.de/2011/03/its-not-address-book.html">blogging about Polka</ulink>, my experiment with a radically new take on an&#160;address book, I got a
+          lot of great feedback. I appreciate all the comments,&#160;questions, and encouragement. Two
+          people made me particularly happy, as they not&#160;only sent feedback, but also contributed
+          some welcome work. Sascha Manns built&#160;<ulink url="https://build.opensuse.org/package/show?package%3Dpolka%26project%3DKDE:Extra">packages</ulink>, and Saleel Velankar created a beautiful logo. Free&#160;software
           rocks.</para>
-        <!--($ ld: 6.6.11 sm $)-->
-      </blockquote>
+<!--($ ld: 6.6.11 sm $)-->      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/06/there-is-no-kde5/">Sebastian Kügler: There is
-            no KDE5</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/06/there-is-no-kde5/">Sebastian Kügler: There is no KDE5</ulink>
         </title>
         <para>…and in retrospect, adding to the confusion, there is not even a KDE4. *cue puzzled
           faces*</para>
-        <para>Let me explain this. About 1.5 years ago, we’ve <ulink
-            url="http://dot.kde.org/2009/11/24/repositioning-kde-brand">repositioned</ulink> the
+        <para>Let me explain this. About 1.5 years ago, we’ve <ulink url="http://dot.kde.org/2009/11/24/repositioning-kde-brand">repositioned</ulink> the
           brand “KDE” to reflect how our community is structured. In short, KDE is the community
           (unversioned :-)), the workspaces are called Plasma Desktop, Plasma Netbook, etc. Then we
           have the KDE development platform. In the future we will be referring to these as the
@@ -545,8 +519,7 @@
           application developers. We will need to do lots of additional work to sort out details and
           find the best solutions to the key questions, but that&apos;s what we are here for. So I&apos;m
           looking forward to the next few days, and all the results we&apos;ll create.</para>
-        <!--($ ld: 3.6.11 sm $)-->
-      </blockquote>
+<!--($ ld: 3.6.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -596,30 +569,26 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->
-    <sect3 role="medical">
+    </sect3> -->    <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://zoumpis.wordpress.com/2011/06/06/announcement-of-opensuse-medical-11-4-release/"
-            >Rousinopoulos Athanasios-Ilias: Announcement of openSUSE Medical 11.4 Release</ulink>
+          <ulink url="http://zoumpis.wordpress.com/2011/06/06/announcement-of-opensuse-medical-11-4-release/">Rousinopoulos Athanasios-Ilias: Announcement of openSUSE Medical 11.4 Release</ulink>
         </title>
         <orderedlist>
           <listitem>
             <para>What is openSUSE Medical Project?</para>
-            <para>The openSUSE Medical project supports the use of openSUSE in doctor's practices
+            <para>The openSUSE Medical project supports the use of openSUSE in doctor&apos;s practices
               and other clinical environments. We try to collect and update software. As base for
               packaging we use: List of Open Source Healthcare Software List. After we have packaged
               enough software we will try to create an openSUSE based Distribution out of it.</para>
           </listitem>
           <listitem>
             <para>Where can i find more info about the project?</para>
-            <para><ulink url="http://en.opensuse.org/Portal:Medical"
-                >http://en.opensuse.org/Portal:Medical</ulink></para>
+            <para><ulink url="http://en.opensuse.org/Portal:Medical">http://en.opensuse.org/Portal:Medical</ulink></para>
           </listitem>
           <listitem>
-            <para>What's new in this release?</para>
+            <para>What&apos;s new in this release?</para>
             <para>openSUSE 11.4 Repositories :<itemizedlist>
                 <listitem>
                   <para>openSUSE 11.4 Updates remove</para>
@@ -652,25 +621,20 @@
           </listitem>
           <listitem>
             <para>Where can i download it ?</para>
-            <para><ulink url="http://susegallery.com/a/UbPYJM/opensuse-medical-114"
-                >http://susegallery.com/a/UbPYJM/opensuse-medical-114</ulink></para>
+            <para><ulink url="http://susegallery.com/a/UbPYJM/opensuse-medical-114">http://susegallery.com/a/UbPYJM/opensuse-medical-114</ulink></para>
             <para>Also available at : OVF image , VMware Image , Live CD/DVD</para>
           </listitem>
           <listitem>
             <para>Ok , i would like to make some comments or contribute in the project , what do i
               have to do?</para>
-            <para>Comments are great, you can sent us with an Email to:<ulink
-                url="mailto:opensuse-medical@opensuse.org">opensuse-medical@opensuse.org</ulink>. </para>
-            <para>If this don’t run directly, then you must subscribe the List (mail to <ulink
-                url="mailto:opensuse-medical+subscribe@opensuse.org"
-                >opensuse-medical+subscribe@opensuse.org</ulink>). </para>
+            <para>Comments are great, you can sent us with an Email to:<ulink url="mailto:opensuse-medical@opensuse.org">opensuse-medical@opensuse.org</ulink>. </para>
+            <para>If this don’t run directly, then you must subscribe the List (mail to <ulink url="mailto:opensuse-medical+subscribe@opensuse.org">opensuse-medical+subscribe@opensuse.org</ulink>). </para>
             <para>Feel free to express your opinion!</para>
           </listitem>
         </orderedlist>
-        <!--($ ld: 7.6.11 sm $)-->
-      </blockquote>
+<!--($ ld: 7.6.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -691,14 +655,14 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 352)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 354)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 184)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 186)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -710,7 +674,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 128)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 131)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -726,7 +690,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 101)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 102)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -739,86 +703,44 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 4.6.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 11.6.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312458">Provide Apple Filing Protocol access</ulink>
+            <ulink url="https://features.opensuse.org/312475">Linux administrative toolkit</ulink>
           </title>
-          <para>There doesn&apos;t appear to be much support for the AFP protocol in the distribution.</para>
-          <para>Wishes:</para>
-          <para>- allow dolphin to mount afp://</para>
-          <para>- package afpfs-ng</para>
+          <para>Create Linux administrative toolkit to provide multiple distribution administrative tool.
+This set should contains cli, cui and gui tools.</para>
+          <para>Also prepare documentation of usability to help creating similar tools.</para>
+          <para>Also add metapackage to install each tool from this set.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312460">port issetugid() syscall to linux</ulink>
+            <ulink url="https://features.opensuse.org/312476">automatic daily fstrim for SSD</ulink>
           </title>
-          <para>BSD has a issetugid() syscall that allows programs and libraries to reliably determine whether they were started in a setuid context:</para>
-          <para><ulink url="http://www.manpagez.com/man/2/issetugid/">http://www.manpagez.com/man/2/issetugid/</ulink></para>
-          <para>This or a similar syscall would be valuable on Linux too, especially in the advent of fscaps where the traditional uid != euid check doesn&apos;t work anymore.</para>
+          <para>As SSD are becoming more affordable they are also becoming more widespread on laptop and desktop computer. Modern SSD supports the TRIM functionality. This functionality delays costly erase operation to speed up performance ; these erase operations are then executed by batch (this is SSD equivalent to defragmentation).</para>
+          <para>SSD can only run at their full potential if this functionality is also supported by kernel and/or userland on the OS. Sadly TRIM support by kernel is not optimal yet. Erase operation are not launched automaticaly and this impacts overall SSD performance.</para>
+          <para>A cron script written at setup phase could launch fstrim program each night; this program performs the erase operation needed not to struggle the SSD.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312463">YAST - decouple joystick config and yast2-sound</ulink>
+            <ulink url="https://features.opensuse.org/312489">Search for GUI applications in YaST</ulink>
           </title>
-          <para>yast2-sound is very usable for everybody who have a sound-card but when it is installed it add a joystick config option that I think is not useful for most of the users and nowadays most of the sound card dont have joystick input so I think we can separate yast2-sound from joystick. It will reduce the number of option in the yast control panel too.</para>
+          <para>Now YaST allow to see mixed packages: applications, libraries, extentions for programs...
+For new users it would be very friedly interface, wich has feature to filter only Applications (programs with GUI). Process of filtering could be based on searching for /usr/share/applications/*.desktop in RPM.</para>
+          <para>(Maybe additionally: extract icons, related to *.desktop files)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312466">Separate user and kernel log messages</ulink>
+            <ulink url="https://features.opensuse.org/312491">Explicit IPv6 support for YaST printer module</ulink>
           </title>
-          <para>SUSE used blogd to separate kernel and user log messages during boot. With systemd now everything is written to the kernel ring buffer. We should separate those again.</para>
+          <para>Currently there is not any kind of special IPv6 support in yast2-printer. Currently IPv6 works only where it is compatible to IPv4 but there are cases where IPv6 needs special handling: For example the tests whether or not a remote host is accessible run &quot;ping IP-address or hostname&quot; which fails if IP-address is an IPv6 address because for IPv6 ping6 must be used. See Bug #<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=697833">697833</ulink></para>
+          <para>Unfortunately ping6 cannot be used for IPv4 addresses so that yast2-printer needs to implement special distinction of cases in particular if a hostname is given depending on whether or not this hostname has an IPv4 or IPv6 address or both.</para>
+          <para>Probably there are some more special distinction of cases needed to distinguish between IPv4 and IPv6 stuff.</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312467">Package gnome prepaid manager</ulink>
-          </title>
-          <para><ulink url="https://honk.sigxcpu.org/piki/projects/ppm/">https://honk.sigxcpu.org/piki/projects/ppm/</ulink></para>
-          <para>Prepaid-manager-applet (ppm) is an applet for the GNOME Desktop that allows you to check and top up the balance of GSM mobile prepaid SIM cards.</para>
-          <para>Looks like a nice small tool.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312468">Project Bretzn app-store to be integrated into opensuse 12.1</ulink>
-          </title>
-          <para><ulink url="http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/">http://news.opensuse.org/2010/10/26/from-the-developer-to-the-user-and-back-announcing-project-bretzn/</ulink></para>
-          <para>Purpose:</para>
-          <orderedlist>
-            <listitem>
-              <para>Make it easy for developers to release an application</para>
-            </listitem>
-            <listitem>
-              <para>Make it easy for developers to market and for users to learn about that application</para>
-            </listitem>
-            <listitem>
-              <para>Make it easy for users to install the application</para>
-            </listitem>
-          </orderedlist>
-          <para>Project Bretzn consists of three parts: the
-building of the package, the
-publishing of the application, the
-marketing to the users and the
-feedback cycle back to the developer. (...)</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312471">LightDM as the default Display Manager</ulink>
-          </title>
-          <para>Using LightDM as the default Display Manager for Gnome, KDE and XFCE we will be reducing possible Display Manager issues to just 1 source.
-Ubuntu is already using it and others distro will probably follow this idea.</para>
-          <para>KDE/Qt LightDM is already in progree:</para>
-          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTUxNg">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTUxNg</ulink> </para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312473">Zypper / Package maneger: download repo data in paralel</ulink>
-          </title>
-          <para>Now Packcage manager starts slowly if I have many repos, because it downloads many small files one by one with same delay. So downloading repositories data in paralel will speed up starting of package manager.</para>
-        </blockquote>
-<!-- ($ ld: 4.6.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 11.6.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -846,15 +768,13 @@ Ubuntu is already using it and others distro will probably follow this idea.</pa
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-05/msg00006.html">Larry
-            Finger: Weekly News for June 4 </ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-05/msg00006.html">Larry Finger: Weekly News for June 4 </ulink>
         </title>
         <para>With the release of openSUSE 12.1 MS1, it is time to start testing. </para>
         <para>The Testing Core Team will have an IRC meeting at 17:00 UTC, June 6 on our usual
           channel. At this writing, the only agenda item is our experiences with MS1.</para>
-        <!--($ ld: 4.6.11 sm $)-->
-      </blockquote>
-    </sect3> 
+<!--($ ld: 4.6.11 sm $)-->      </blockquote>
+    </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
