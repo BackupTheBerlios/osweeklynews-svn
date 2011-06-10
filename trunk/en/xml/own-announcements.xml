@@ -430,5 +430,128 @@
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
     <!--($ ld: 9.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://news.opensuse.org/2011/06/09/new-leadership-inside-the-medical-project/">New
+        Leadership inside the Medical Project</ulink></title>
+    <para>During the first openSUSE Conference in 2009, the idea was born to start a project to
+      package and publish software for medical purposes. Since then, many packages were built and
+      updated: software from the FreeMedForms project, OpenEMR, GnuMed, software for viewing images
+      in DICOMM format and recently, a plasmoid for diabetics.</para>
+    <para>The first stable release (v 0.0.6) was released on November 2010, based on openSUSE 11.3
+      and as contestant in the “<ulink
+        url="http://www.novell.com/promo/suse/the-disters-contest.html">The
+      Disters</ulink>“-Contest. This release was produced with <ulink url="http://susestudio.com/"
+        >Susestudio</ulink>, and published via <ulink url="http://susegallery.com/browse"
+        >Susegallery</ulink>.</para>
+    <para>The goal of this openSUSE derivative was to give medical people all they need in their
+      daily work. So the image contained OpenOffice, KMyMoney, mail, calendering and all other basic
+      office tools. And of course the content from the <ulink
+        url="http://download.opensuse.org/repositories/medical/">medical repository</ulink>. There
+      was some press attention in <ulink url="http://lwn.net/Articles/415542/rss">Linux Weekly
+        News</ulink> and<ulink
+        url="http://linuxtoday.com/news_story.php3?ltsn=2010-11-17-001-35-OS-SS-RL"
+        >Linuxtoday</ulink>!</para>
+    <para><emphasis role="bold">Provided Software</emphasis></para>
+    <para>openSUSE Medical provides tools from the <ulink url="http://www.freemedforms.com/en/start"
+          ><emphasis role="bold">FreeMedForms Project</emphasis></ulink>. FreeMedForms is a
+        <emphasis role="bold">Electronic Medical Record Application</emphasis>. There doctors can
+      manage clients data and diagnostic information. The second Application from this Project is
+      FreeDiams, a <emphasis role="bold">electronic prescriber.</emphasis> And FreeICD helps to find
+      the right <emphasis role="bold">ICD Code</emphasis>.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://en.opensuse.org/images/thumb/6/64/Freemedforms_screenshot.png/200px-Freemedforms_screenshot.png"
+          depth="99" width="200"/>
+      </imageobject>
+    </mediaobject>
+    <para>The <emphasis role="bold"><ulink url="http://wiki.gnumed.de/bin/view/Gnumed"
+          >GNUmed</ulink></emphasis> project builds free, libre open source <emphasis role="bold"
+        >Electronic Medical Record</emphasis> software in multiple languages to assist and improve
+      longitudinal care (specifically in ambulatory settings, i.e. multi-professional practices and
+      clinics). It is made available at no charge and is capable of running on GNU/Linux, Windows
+      and Mac OS X. It is developed by a handful of medical doctors and programmers from all over
+      the world. It can be useful to anyone documenting the health of patients including, but not
+      limited to,ýdoctors, physical therapists, occupational therapists, acupuncturists, nurses and
+      psychologists.</para>
+    <para><emphasis role="bold"><ulink url="http://code.google.com/p/tempo/"
+        >TEMPO</ulink></emphasis> is open source software for <emphasis role="bold">3D visualization
+        of brain electrical activity</emphasis>. TEMPO accepts EEG file in standard EDF format and
+      creates animated sequence of topographic maps. Topographic maps are generated over a 3D head
+      model and the user is able to navigate around the head and examine maps from different points
+      of view. Most mapping parameters are adjustable through the graphical user interface. Also,
+      individual topographic maps could be saved in PNG format for future examination or
+      publishing.</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://en.opensuse.org/images/thumb/f/fa/Tempo.png/200px-Tempo.png"
+          depth="150" width="200"/>
+      </imageobject>
+    </mediaobject>
+    <para>The software from the <emphasis role="bold"><ulink url="http://www.oyranos.org/">Oyranos
+          Project</ulink></emphasis> is also part of the medical repository and in openSUSE Medical.
+      It allows medical professionals to view medical file formats like DICOMM Files.</para>
+    <para>The newest addition to the medical repository is <ulink url="http://bit.ly/lQuA0S"
+        >plasmoid-glucose</ulink>, a KDE Plasmoid for diabetics.</para>
+    <para>The openSUSE medical project has been a success. The SUSE gallery image has been
+      downloaded well over 1400 times and was cloned by 162 users so they could provide their own
+      variations of openSUSE Medical!</para>
+    <para>The team is very much interested in more feedback, however. Especially when it comes to
+      real-life usage of openSUSE Medical. Feedback from professionals in the field using the
+      software can be very valuable in improving it and would be highly appreciated. So if you study
+      medicine, work at a pharmacy or are a doctor and you use or might use openSUSE Medical, please
+      let us know! You could tell the whole team by <ulink
+        url="mailto:opensuse-medical+subscribe@opensuse.org">subscribing to the openSUSE Medical
+        mailing list</ulink> which is very low-trafic (3-4 mails per week) or contact one of the
+      team members like <ulink url="mailto:saigkill@opensuse.org">Sascha Manns</ulink> directly. Of
+      course you are also very much welcome on the <ulink
+        url="irc://irc.opensuse.org/opensuse-medical">openSUSE Medical IRC channel</ulink> and can
+      join the <ulink url="http://on.fb.me/clGDk7">facebook page</ulink>!</para>
+    <para><emphasis role="bold">New leadership and project plans</emphasis></para>
+    <para>Today, the team announces a shift in leadership and a road map for the future.</para>
+    <para>Two years after the start of this project, the former team leader Sascha Manns has stepped
+      down and Thanasis Rous will take over. Last November, the first official release was published
+      with a range of desktop and server packages. openSUSE medical is now part of the <ulink
+        url="http://www.linux.com/community/groups/viewgroup/1264-Medical+Task+Force">Linux Medical
+        Taskforce</ulink> and has exciting plans for the future. These include:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Importing more applications dealing with diabetes care and diabetics</para>
+      </listitem>
+      <listitem>
+        <para>Importing applications that would be useful for medical students (some educational
+          applications like Kalzium are already added)</para>
+      </listitem>
+      <listitem>
+        <para>Bug testing applications (maybe create a new mailing list for this purpose e.g
+          “opensuse-medical-bugs”)</para>
+      </listitem>
+      <listitem>
+        <para>Translating the included applications into more languages</para>
+      </listitem>
+    </itemizedlist>
+    <para>The new leader Anastasios yesterday has released the new image under <ulink
+        url="http://susegallery.com/a/UbPYJM/opensuse-medical-114">susegallery</ulink>. Also
+      available at : OVF image, VMware Image, Live CD/DVD.</para>
+    <para><emphasis role="bold">More information and helping out</emphasis></para>
+    <para>Anyone interested in the project can read more about it at the <ulink
+        url="http://en.opensuse.org/Portal:Medical">Medical wiki portal</ulink>.</para>
+    <para>There are many ways to help with working in the project – you don’t need to be a developer
+      or packager, nor do you need to be a medical specialist, though of course these skill sets are
+      very welcome. If you’re not sure how to help, sign up to the mailing list and introduce
+      yourself. If you’re a user of this software and would like to see it develop in certain
+      directions, this is also a great place to get your ideas heard.</para>
+    <para>If you want to get involved, subscribe to the mailing list with “<ulink
+        url="mailto:opensuse-medical+subscribe@opensuse.org"
+        >opensuse-medical+subscribe@opensuse.org</ulink>“. We very much welcome your
+      feedback!</para>
+    <para>Have a lot of fun :-)</para>
+    <para><emphasis role="italic">Contributed by Sascha Manns, Athanasios-Ilias Rousinopoulos and
+        Jos Poortvliet.</emphasis></para>
+    <para><emphasis role="bold">License</emphasis>: <ulink
+        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
+    <!--($ ld: 10.6.11 sm $)-->
   </blockquote>  
 </sect1>
