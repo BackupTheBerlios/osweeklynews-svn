@@ -44,51 +44,19 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/06/03/factory-progress-2011-06-03/">Andreas Jaeger: Factory Progress 2011-06-03</ulink>
+        <ulink url="http://blog.crozat.net/2011/06/road-to-systemd-for-opensuse-121.html">Frédéric
+          Crozat: The road to systemd for openSUSE 12.1</ulink>
       </title>
-      <para>This week saw the&#160;<ulink url="http://news.opensuse.org/2011/06/01/first-step-towards-12-1-with-milestone-1/">release</ulink>&#160;of the first milestone of openSUSE 12.1 and work on factory is
-        continuing, I’ve found the following changes important:</para>
-      <para><emphasis role="bold">GNU C Library (glibc) 2.13</emphasis></para>
-      <para>We’ve updated glibc from version 2.11 to 2.13 which brings many bug fixes and AFAIK no
-        major breakages to packages. The package itself got cleaned up a little bit as well, so
-        please report any problems.</para>
-      <para><emphasis role="bold">GO Programming Language</emphasis></para>
-      <para>Factory now contains a compiler for the GO language which is “is an expressive,
-        concurrent, garbage collected systems programming language that is type safe and memory
-        safe.”. More details about GO are available on the<ulink url="http://en.opensuse.org/openSUSE:Packaging_Go"> openSUSE Wiki</ulink>, the devel
-        project with additional packages is&#160;<ulink url="https://build.opensuse.org/project/show?project=devel%3Alanguages%3Ago">devel:languages:go</ulink>.</para>
-      <para><emphasis role="bold">Packaging: Source Processing</emphasis></para>
-      <para>The usage of&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00037.html">_service</ulink>&#160;files in Factory confused many packagers and resulted in broken packages
-        so that these will be deprecated. As a replacement, Adrian implemented now a new&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-05/msg00359.html">source processing method and asks for testers</ulink>.</para>
-      <para><emphasis role="bold">Packaging: Adding useful Provides to cups drivers</emphasis></para>
-      <para>Vincent “updated python-cups to a new version, and it is now shippingfiles to
-        automatically add Provides tag to packages that are shippingcups drivers.”. This allows
-        desktop packages to install the right printer driver – or users to do it via zypper.
-        Packages with<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-05/msg00158.html">&#160;cups drivers just need to add</ulink>&#160;a “BuildRequires: python-cups”.</para>
-      <para><emphasis role="bold">Open Build Service Improvement</emphasis></para>
-      <para>The&#160;“<ulink url="https://build.opensuse.org/home/my_work">My Work</ulink>”&#160;view has been
-        updated to better show packages that are in review state and need your review. I suggest
-        everybody to check out the page and cleanup your list.</para>
-      <para><emphasis role="bold">Multiple Buildroots with osc</emphasis></para>
-      <para>If you like to use more than one build at the same time, there are several options like
-        pointed out on the&#160;<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00010.html">opensuse-packaging mailing list</ulink>:<itemizedlist>
-          <listitem>
-            <para>Use of the environment variable OSC_BUILD_ROOT to define a build root.</para>
-          </listitem>
-          <listitem>
-            <para>Editing of the osc config file ~/.oscrc and setting build-root to contain the
-              variables %(repo), %(arch),&#160; %(project) or %(package).</para>
-          </listitem>
-        </itemizedlist></para>
-      <para><emphasis role="bold">Correction on auto-legal build service check</emphasis></para>
-      <para>Jürgen corrected my&#160;<ulink url="http://lizards.opensuse.org/2011/05/27/factory-progress/">report</ulink>&#160;from last
-        week: He would love to see the checks for auto-legal moved and welcomes any help.</para>
-      <para><emphasis role="bold">Thanks</emphasis></para>
-      <para>Thanks for the words of encouragement to my first blog post. I’ll try to continue this
-        series. If there’s anything you think should be added to it, please contact me via email at
-        aj at opensuse dot org.</para>
-      <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-<!--($ ld: 4.6.11 sm $)-->    </blockquote>
+      <para><ulink url="http://www.freedesktop.org/wiki/Software/systemd">systemd</ulink> is coming
+        for next openSUSE (12.1) scheduled next fall. </para>
+      <para>I'll help for <ulink url="http://en.opensuse.org/SDB:Systemd">systemd integration in
+          openSUSE Factory</ulink> and will act as an interface between you (openSUSE testers,
+        packagers, developers) and systemd upstream. </para>
+      <para>As you might guess, switching boot manager is not a trivial task and issues will be
+        found. So, we want to have as much feedback and testing as possible, to try to tackle as
+        much (if not all) issues in time for 12.1. (...)</para>
+      <!--($ ld: 11.6.11 sm $)-->
+    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -289,8 +257,10 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->    
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
+      <!--
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2011/05/31/some-updates-on-the-banshee-repositories/">Nelson Marques: Some updates on the Banshee repositories…</ulink>
@@ -352,8 +322,8 @@
         <para>Users subscribed to Banshee:Unstable repository might see some turbulence during the
           next days, while users subscribing now through the 1-Click installer will already be
           installing Banshee with the changes described above.</para>
-        <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-<!--($ ld: 1.6.11 sm $)-->      </blockquote>
+        <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>     
+        </blockquote> -->
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -450,6 +420,24 @@
           inclusion. That means that we will finally get all the apps supporting libproxy read the
           gnome3 proxy settings for us again.</para>
 <!--($ ld: 7.6.11 sm $)-->      </blockquote>
+      <blockquote>
+        <title><ulink url="http://www.marques.so/2011/06/a-few-more-things-working/">Nelson Marques:
+            A few more things working…</ulink></title>
+        <para>A few days ago there was a new release of <ulink url="http://launchpad.net/unity-2d"
+            >Unity 2D</ulink> which fixed a few things, starting with the AppMenu integration. It’s
+          finally working with the previous packages. A few updates have also happened, just to
+          mention a few:</para>
+        <para>* libzeitgeist was updated to version 0.3.10;</para>
+        <para> * zeitgeist-datahub was updated to version 0.7.0;</para>
+        <para> * ubuntu-mono-icon-theme package was added;</para>
+        <para> * light-themes package was added (includes Ambiance and Radiance);</para>
+        <para> * unity-asset-pool package was added (includes unity-icon-theme and some unity
+          artwork which is required);</para>
+        <para>Adittionally during this weekend I’m working on the <ulink
+            url="http://launchpad.net/ayatana-scrollbar">Ayatana Scrollbar</ulink> which seems to be
+          a pleasant feature that Canonical has created.</para>
+        <!--($ ld: 11.6.11 sm $)-->
+      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
@@ -494,32 +482,6 @@
           kdepim-runtime modules. We’re already working on turning our meeting notes, minutes and
           results into something digestable and understandable, so stay tuned. </para>
 <!--($ ld: 7.6.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://blog.cornelius-schumacher.de/2011/06/platform-11-at-randa.html">Cornelius Schumacher: Platform 11 at Randa</ulink>
-        </title>
-        <para>I&apos;m at the&#160;<ulink url="http://community.kde.org/KDE_Core/Platform_11">Platform 11</ulink>&#160;sprint at&#160;<ulink url="http://community.kde.org/Sprints/Randa/2011">Randa</ulink>. We are here to discuss and shape the future of the KDE platform. It&apos;s
-          the first meeting of this kind since<ulink url="http://ervin.ipsquad.net/images/xtrysil_swamp_group.jpg.pagespeed.ic.9qkfyQKo_S.jpg">Trysil</ulink>&#160;five years ago. Four people who were at Trysil also made it to Randa,
-          including a respectable&#160;<ulink url="http://www.linux-community.de/var/ezwebin_site/storage/images/internal/artikel/print-artikel/linuxuser/2003/09/kde-entwickler-innen-und-ihre-plaene-fuer-die-kde-konferenz-in-nove-hrady/david_at_fosdem.jpg/1234634-1-ger-DE/david_at_fosdem.jpg.jpg">dinosaur</ulink>, but it&apos;s great to also have new and very new faces around.</para>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://4.bp.blogspot.com/-LBupQby2udQ/TeiFHsEZkLI/AAAAAAAAAKY/_DH-HlJingA/s320/IMG_2595.JPG"/>
-          </imageobject>
-        </mediaobject>
-        <para>Randa is a great location. It&apos;s a small village in the south of Switzerland, in the
-          middle of the mountains. The Swiss railroad system did an impressive job of bringing us to
-          Randa on a steep and winding track. Now we are surrounded by thousands of meters of
-          mountains, and there is snow and glaciers, but no escape. Perfect time to focus on the KDE
-          platform.</para>
-        <para>Yesterday we did a brainstorming and collection of topics to discuss, and started to
-          go into projects in smaller breakout groups. A Kanban board keeps us on track and moving.
-          There is a lot to discuss, but it&apos;s already pretty clear, that there is a solid base of
-          consensus on many of the core questions, how to make kdelibs more modular, how to better
-          seperate and define the framework and the platform, how to lower the barrier for
-          application developers. We will need to do lots of additional work to sort out details and
-          find the best solutions to the key questions, but that&apos;s what we are here for. So I&apos;m
-          looking forward to the next few days, and all the results we&apos;ll create.</para>
-<!--($ ld: 3.6.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -746,6 +708,7 @@ For new users it would be very friedly interface, wich has feature to filter onl
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -762,18 +725,31 @@ For new users it would be very friedly interface, wich has feature to filter onl
           working on without manually editing perhaps ten data-pilots depending on it but there are
           a load more. Some of the changes are invisible, and/or behind the scenes - so I thought
           I&apos;d expand on them here.</para>
-<!--($ ld: 3.6.11 sm $)-->      </blockquote>
-    </sect3>
+    </blockquote> 
+    </sect3> -->
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-05/msg00006.html">Larry Finger: Weekly News for June 4 </ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-06/msg00011.html">Larry
+            Finger: Weekly News for June 11 </ulink>
         </title>
-        <para>With the release of openSUSE 12.1 MS1, it is time to start testing. </para>
-        <para>The Testing Core Team will have an IRC meeting at 17:00 UTC, June 6 on our usual
-          channel. At this writing, the only agenda item is our experiences with MS1.</para>
-<!--($ ld: 4.6.11 sm $)-->      </blockquote>
+        <para>The Testing Core Team held an IRC meeting at 17:00 UTC, June 6 on our usual channel. </para>
+        <para>We first discussed our experiences with 12.1-MS1. The KDE Live CD has the login
+          problem (Bug #687781) and is nearly unusable. The bug report lists some workarounds. I
+          used the Gnome Live CD for the initial install. When I added the KDE Desktop to that
+          configuration, I could then log into the KDE desktop normally. </para>
+        <para>Next, we discussed what might be changed to increase testing participation so that the
+          workload might be diversified. We think there is increased testing with the RC1-2
+          releases, but many of the bugs reported at this stage are not fixed by the time that the
+          Gold Master is frozen. We realize that there is little opportunity to stretch the timing
+          of the release schedule, thus we need to attract users at an earlier stage. As some
+          testers might be reluctant to try the Milestone releases, we are proposing that MS6 be
+          relabeled as a "Beta". We would then have MS1-5, Beta, and RC1-2 as the stages. The
+          relative timing of the steps would be the same, only that one stage would be renamed. </para>
+        <para>Our next IRC meeting will be on June 27, 2011 at 17:00 UTC when we hope to be
+          discussing MS2. </para>
+<!--($ ld: 11.6.11 sm $)-->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
