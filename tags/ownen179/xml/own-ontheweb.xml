@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.fsf.org/blogs/community/skype-replacement-projects">Free Software Foundation/Brett Smith: Two new projects can help free software replace Skype</ulink>
+      </title>
+      <para>Skype has been in the news a lot lately: Microsoft agreed to buy the company, their
+        network has gone down twice recently, and they&apos;re threatening to take unspecified action
+        against developers who try to write free software to make calls on their system. This all
+        merely adds insult to injury; <ulink url="http://www.fsf.org/blogs/rms/microsoft-skype">the software has always been nonfree</ulink>, and that&apos;s why a free software replacement for
+        Skype has been on <ulink url="http://www.fsf.org/campaigns/priority-projects/#skypereplacement">our High Priority Projects list</ulink> since October 2008. Lots of people use software like <ulink url="http://directory.fsf.org/project/ekiga/">Ekiga</ulink> and <ulink url="http://directory.fsf.org/project/twinkle/">Twinkle</ulink> to make simple VoIP calls,
+        but they&apos;re still missing some features, and that prevents people from making the switch to
+        using free software. Thankfully, a couple of new projects aim to close this gap, and both
+        have made some promising progress over the last month.</para>
+      <para>GNU Free Call wants to help people easily connect with each other without relying on any
+        one centralized network. To do that, they&apos;re creating a peer-to-peer calling network, along
+        with client software for traditional desktop computers and mobile devices. The project
+        recently released stable call server software, <ulink url="http://planet.gnu.org/gnutelephony/?p=18">GNU SIP Witch 1.0</ulink>, and now the team
+        is beginning to focus its efforts on building the client software.</para>
+      <para><ulink url="http://sites.google.com/site/webrtc/">WebRTC</ulink> is coordinating an
+        effort to let people call each other and hold videoconferences just by visiting a Web site.
+        If they&apos;re successful, Web developers will be able to add these features to their sites just
+        by using some relatively simple JavaScript code. Even better, the audio and video codecs
+        WebRTC uses have free software implementations, and come with patent licenses that offer
+        legal protection to users and developers. This project is still in its early stages; right
+        now, the effort is focused on adding the necessary support to different browsers.</para>
+      <para>If either of these projects interests you, they could both benefit from your help. The
+          <ulink url="http://www.gnutelephony.org/">GNU Telephony wiki</ulink> suggests several ways
+        you can get involved with the GNU Free Call project. Since WebRTC is focused on browser
+        support right now, the best way to contribute is to get it integrated with your favorite
+        free browser, like <ulink url="http://www.gnu.org/software/gnuzilla/">GNU IceCat</ulink> or
+        others based on Firefox. Both projects offer a great opportunity to get involved and help
+        important work in the free software community.</para>
+      <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nd/3.0/">CC-BY-ND</ulink></para>
+<!-- ($ ld: 9.6.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxfoundation.org/news-media/announcements/2011/06/linux-foundation-announces-new-linux-training-scholarships-student-">The Linux Foundation Announces New Linux Training Scholarships, Student Day at LinuxCon</ulink>
+      </title>
+      <para>SAN FRANCISCO, June 7, 2011 – The Linux Foundation, the nonprofit organization dedicated to accelerating the growth of Linux, today announced its new <ulink url="http://training.linuxfoundation.org/linuxtrainingscholarships">Linux Training Scholarship Program</ulink> and Linux Learners’ Student Day.</para>
+      <para>The Student Day will take place at<ulink url="http://events.linuxfoundation.org/events/linuxcon"> LinuxCon</ulink> in Vancouver, B.C. on August 16, 2011 and includes transportation on the “LinuxCon or Bust” bus for students and faculty traveling from Corvallis and Portland, Ore.</para>
+      <para>Both programs are aimed at training the next-generation of Linux developers as Linux approaches its 20th anniversary. (...)</para>
+<!-- ($ ld: 10.6.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxcertification.co.za/linux-system-administration-training-manual">Linux Certification/Mark Matthews: Free Creative Commons LPI Level 1 Linux Training Manual Released</ulink>
+      </title>
+      <para>Last year (2010), in August, I was engaged as one of the authors to write the recently released, &quot;Linux System Administration, LPI Certification Level 1&quot; manual. The training manual has been released under a creative commons license and is free for users to redsitribute and use.</para>
+      <para>Besides myself the other authors were Chris Brown, author of the O&apos;Reilly book &quot;Suse Linux&quot;  and Brian Ssennoga a system administrator from Uganda. The book was officially launched at the recent e-learning conference held in Tanzania. (...)</para>
+<!-- ($ ld: 10.6.11 sat $) -->    </blockquote>
+  </sect2>
+<!--
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.h-online.com/open/news/item/GNOME-and-KDE-2011-Desktop-Summit-programme-published-1246775.html">h-online/Chris von Eitzen: GNOME and KDE 2011 Desktop Summit programme published</ulink>
+      </title>
+      <para>The GNOME Foundation and KDE e.V. boards have published the <ulink url="https://www.desktopsummit.org/program">programme</ulink> for this year&apos;s <ulink url="https://www.desktopsummit.org/about">Desktop Summit</ulink>. Following the opening keynote, attendees can visit one of four different rooms, each with a variety of tracks including community, applications, platforms, tablets, development and accessibility &amp; help.</para>
+      <para>The 2011 event will take place over the course of a week from 6 to 12 August at the <ulink url="http://www.hu-berlin.de/standardseite-en">Humboldt University</ulink> in Berlin, Germany; it is open to developers, community members and users alike. The joint conference is supported locally by the Berlin Senate and the TSB Innovation Agency Berlin GmbH, and is expected to bring together more than one thousand core contributors, open source leaders and representatives from government, education and corporate environments. (...)</para>
+    </blockquote>
+  </sect2> -->  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.h-online.com/open/features/Novell-s-open-source-legacy-wake-up-little-SuSE-1254835.html"> Novell&apos;s open source legacy – wake up, little SuSE! </ulink>
+      </title>
+      <para>Novell&apos;s unrequited romance with Linux and free software is over. Having completed
+          its<ulink url="http://www.h-online.com/news/item/Novell-deal-completed-Update-1233824.html">$2.2 billion takeover</ulink>, Attachmate is dividing the spoils. Novell and its legacy
+        networking business will survive in Utah. NetIQ will inherit Novell&apos;s identity and security
+        management solutions, and SUSE has been given autonomy and control of Novell&apos;s open source
+        projects from its base in Nuremberg.</para>
+      <para>Mono has been cast adrift, and the worst aspects of&#160;<ulink url="http://www.groklaw.net/article.php?story=20110420141724403">Novell&apos;s attempt to sell off a large part of its patent portfolio</ulink>&#160;to a consortium led by Microsoft have
+        been scuppered by the US Department of Justice and the German Federal Cartel Office. But
+        there are still questions left to answer. (...)</para>
+<!-- ($ ld: 7.6.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/open-source-office-software-sector-heats"> Linux Journal/Susan Linton: The Open Source Office Software Sector Heats Up</ulink>
+      </title>
+      <para>The world of LibreOffice and OpenOffice(.org) has been heating up recently with several
+        exciting and, at times, bewildering developments. The Document Foundation remains very
+        active as is LibreOffice development, but Oracle has given up on OpenOffice and slapped
+        LibreOffice in the face by giving it to Apache. Perhaps the most important announcement was
+        the release of LibreOffice 3.4.0.</para>
+      <para>The recent release of LibreOffice 3.4 demonstrates the very philosophical differences in
+        community projects and those stifled by commercial interests. LibreOffice development has
+        been happening at an unprecedented pace while OpenOffice lagged behind and lost many of its
+        previous users. Even under Sun development was tightly controlled, but Oracle increased the
+        bonds. In contrast, according to the <ulink url="http://blog.documentfoundation.org/2011/06/03/the-document-foundation-announces-libreoffice-3-4-0/">release announcement</ulink>, LibreOffice now has 120 happy developers committing
+        approximately 20 changes per day. Cedric Bosdonnat <ulink url="http://cedric.bosdonnat.free.fr/wordpress/?p=803">puts</ulink> the number of
+        contributors at 223. Italo Vignoli is quoted as saying, &quot;We care for our developers, and it
+        shows.&quot;</para>
+      <para>Just before LibreOffice 3.4 was released Oracle <ulink url="http://blogs.oracle.com/trond/entry/statements_on_openoffice_org_contribution">announced</ulink> that it was donating OpenOffice to the Apache Software Foundation.
+        Pundit have speculated all around the spectrum of how that will affect the office suite with
+        some thinking it will certainly benefit while others think it will most likely wane even
+        further. The Document Foundation <ulink url="http://blog.documentfoundation.org/2011/06/01/statement-about-oracles-move-to-donate-openoffice-org-assets-to-the-apache-foundation/">expressed</ulink> disappointment that a reunification of the two projects will probably
+        not occur but offered their best wishes for OpenOffice. They were upbeat about including
+        OpenOffice code since the Apache license is <ulink url="http://www.fsf.org/blogs/licensing/new-license-recommendations-guide">compatible</ulink> with the GNU Lesser General Public License under which LibreOffice is
+        released. Given these facts, &quot;the event is neutral for The Document Foundation.&quot;
+        (...)</para>
+<!--($ ld: 7.6.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://obsforandroid.wordpress.com/2011/06/03/a-close-look-at-jquery-mobile/">Justine Leng: A close look at jQuery Mobile</ulink>
+      </title>
+      <para>An early Alpha of the jQuery Mobile library was released late last year. A couple of
+        months ago, jQuery Mobile 1.0 Alpha 4.1 came out. Given the popularity of the jQuery library
+        for traditional desktop web development, most web developers may be very excited about its
+        mobile releases. But what exactly is jQuery Mobile, and what are the cases in which you’d
+        consider using it? (...)</para>
+<!-- ($ ld: 3.6.11 sat $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.karlitschek.de/2011/06/yesterday-apple-announced-their-new.html">Frank Karlitschek: Welcome to the cloud age, Apple</ulink>
+      </title>
+      <para>Yesterday Apple announced their new internet service called iCloud. They finally have
+        features which are essential for people who live in a connected world and have more than one
+        device. I can&apos;t help myself but to compare this features with the stuff we are doing in KDE
+        with the ownCloud project since last year.</para>
+      <para>It seems that we support everything iCloud is doing and a bit more if you look into the
+        feature set. And we have a fundamentally more advanced vision and architecture. (...)</para>
+      <!-- ($ ld: 9.6.11 sm $) -->    </blockquote>
+  </sect2>
+<!--
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://omgsuse.com/content/yet-another-flash-player-security-update">OMG!SUSE! team: Yet another Flash Player security update</ulink>
+      </title>
+      <para>Security Team member <ulink url="http://www.suse.de/~thomas/">Thomas Biege</ulink>
+        published an advisory this morning more critical security updates in..you guessed it:
+        <emphasis role="bold">flash-player</emphasis>.</para>
+      <para>According to the security announcement this package update affects openSUSE 11.3, 11.4
+        as well as SUSE Enterprise Linux Desktop 10 SP4 and 11 SP1. This announcement also mentions
+        that this is a <emphasis role="bold">remote code execution</emphasis> vulnerability, which
+        means not updating to the latest flash-player package will leave you open to attackers
+        running programs and exploits on your machine!</para>
+      <para>Adobe has posted more <ulink url="http://www.adobe.com/support/security/bulletins/apsb11-12.html">details on this bulletin on their site</ulink> if you&apos;re <emphasis role="italic">that</emphasis>
+        interested in the different issues this fix addresses.</para>
+      <para>For most users, you&apos;ll just need to follow these steps:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Open up <ulink url="http://en.opensuse.org/YaST2-GTK">Yast2</ulink><emphasis role="bold">or</emphasis> click on the &quot;Online Update&quot; applet running in your GNOME or
+            KDE panels</para>
+        </listitem>
+        <listitem>
+          <para>Select the flash-player update and install it</para>
+        </listitem>
+        <listitem>
+          <para>Make sure you restart <emphasis role="bold">
+            <emphasis role="italic">all</emphasis>
+          </emphasis> of your browsers, this will ensure that no program is
+            running the older vulnerable flash-player package</para>
+        </listitem>
+        <listitem>
+          <para>Relax with a Long Island Ice Tea</para>
+        </listitem>
+      </itemizedlist>
+          </blockquote>
+  </sect2> --><!--<sect2>
+  <title>LOL</title>
+  <blockquote>
+    <title>
+      <ulink url="http://xkcd.com/874/">XKCD: Time Management</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://imgs.xkcd.com/comics/time_management.png" width="50%"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</ulink></para>
+  </blockquote>
+</sect2>--></sect1>

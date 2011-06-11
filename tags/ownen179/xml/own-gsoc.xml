@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"
+        width="20%" align="center"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title><ulink url="http://rxvl.in/post/6175434117">Ratan Sebastian: GSOC 2011: ssc - Week
+        2</ulink></title>
+    <para>In terms of user functionality, searching for software, templates, appliances and packages
+      has been implemented this week. The actual api calls are performed by handler classes like
+      SSC::Handler::Appliance which exposes public methods like list, show, repositories and
+      installed_software. I’m trying to follow a template that allows any command of the type ssc to
+      map directly to Class#action(arguments) with minimum modification along the way. The command
+      line arguments (—option value) are parsed into an options hash that keeps getting passed down
+      the stack and used as necessary. Right now I’m not happy about exposing data that is
+      unnecessary for certain functions via this hash but it makes sense to have the checking of
+      data in the handler action rather than at the top level which makes that inevitable. </para>
+    <para>There’s been some abstraction and refactoring to make way for having the .sscrc file what
+      will hold the appliance configuration in the appliance directory. Right now there isn’t a lot
+      of validation of options and the parser merely merges options from .sscrc and the command line
+      to pass into the various handlers. </para>
+    <para>One tiny useful takeaway from this week has been learning about the Method class. Its very
+      useful in meta-programming. For instance when calling methods with the Class#send method it
+      would be useful to make sure that you’re passing the correct number of arguments. The
+      Method#arity method can be used to check the number of arguments that a method takes before
+      passing arguments to it. </para>
+    <para>Next week I’m going to be focusing on the structure of the appliance directory and
+      handling those commands that work locally.</para>
+    <!-- ($ ld: 6.6.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://sysbytes.wordpress.com/2011/06/06/sax3-gsoc-2011-work-report/">Manu Gupta:
+        SaX3 – GSoC 2011 – Work Report</ulink></title>
+    <para>This week I worked on SaX3 internal UI architecture, offcourse we will be using libyui but
+      we wanted to make it as flexible as possible so that the UI Library can be replaced by anybody
+      and still keep SaX usable, for that we implemented the factory pattern and most of the code
+      was working. Finally, we have something working and the screenshots below show that SaX3 is
+      working in graphical mode and ncurses mode.</para>
+    <para>I am adding screenshots of the launcher that will launch various configuration modules
+      such as keyboard, mouse, graphic card etc etc . Also this is just a start and by the time I
+      present my next report I week, this will be much cleaner and you can play around more with it.
+      Right now it does not do anything so dont get surprised.</para>
+    <para>
+      <informaltable frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <tbody>
+            <row>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref="http://sysbytes.files.wordpress.com/2011/06/sax3.png" width="50%"/>
+                  </imageobject>
+                </mediaobject>
+              </entry>
+              <entry>
+                <mediaobject>
+                  <imageobject>
+                    <imagedata fileref="http://sysbytes.files.wordpress.com/2011/06/sax3-ncurses.png" width="50%"/>
+                  </imageobject>
+                </mediaobject>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </para>
+    <para>Source code can be found at <ulink url="http://github.com/manugupt1/sax3"
+        >github.com/manugupt1/sax3</ulink> The working branch is newui1.</para>
+    <para>cmake is a bit messy, I will update it in the following week and a bit of other clean up
+      tasks and try some other stuff like localisation in it.</para>
+    <!-- ($ ld: 6.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://nbprashanth.wordpress.com/2011/06/06/gsoc-report/">N.B.Prashanth: GsoC
+        Report – 1</ulink></title>
+    <para>This is my GsoC report for the first two weeks (May 23 – June 04). Iwill also in brief
+      state the goals of the project and the future plans.My project for this years GsoC is
+      “Separating libYUI” for the OpenSUSEorganization. My mentor for the project is Martin Vidner
+      and theabstract can be found at: <ulink
+        url="http://www.google-melange.com/gsoc/project/google/gsoc2011/nbprashanth/22003"
+        >http://www.google-melange.com/gsoc/project/google/gsoc2011/nbprashanth/22003</ulink></para>
+    <para>Let me begin by laying out the main goals of this project. The projectaims to:<orderedlist>
+        <listitem>
+          <para>Separate YUI from the YaST framework.</para>
+        </listitem>
+        <listitem>
+          <para>Port YUI to other major Operating Systems such as Ubuntu and Fedora.</para>
+        </listitem>
+        <listitem>
+          <para>Remove the libzypp dependency for the gtk pluging and hence making YUI
+            SUSE-independent.</para>
+        </listitem>
+        <listitem>
+          <para>Improve documentation with doxygen.</para>
+        </listitem>
+        <listitem>
+          <para>Provide small tutorials.</para>
+        </listitem>
+        <listitem>
+          <para>To provide a large and non-trivial example to show the capability of YUI.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>The work done so far is listed below :<orderedlist>
+        <listitem>
+          <para>libYUI has been successfully compiled on Ubuntu 11.04 and Fedora 15.</para>
+        </listitem>
+        <listitem>
+          <para>Initial packages for libYUI along with ncurses and Qt plugins havebeen made. They
+            are available in my gitorious account: gitorious.org/libyui</para>
+        </listitem>
+        <listitem>
+          <para>Small scale examples are being added to this blog. I will try tomaintain a weekly
+            schedule.</para>
+        </listitem>
+        <listitem>
+          <para>Currently, I am trying to eliminate the libzypp dependency for the Gtk plugin. This
+            is important as libzypp is highly OpenSUSEcentric.</para>
+        </listitem>
+        <listitem>
+          <para>The packages are currently in the testing phase. So all interestedpeople, please
+            feel free to test and post any bugs you may find in thecomments section. Please note,
+            this is an initial version.</para>
+        </listitem>
+        <listitem>
+          <para>Patches have been made for small bugs like “long long” warnings andenumeration
+            ending with a ‘,’. More serious bugs, if reported will betended to when
+            encountered.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>Another important change that I would like to implement is the use of auniform build
+      system. Currently, some parts use CMake while others useautotools. Though this does not make
+      much of a difference to the outsideworld, I think it will be easier for developers and porters
+      in the longrun. But this will be done later on unless there is an urgent need forit.</para>
+    <para>Since my end semester exams ended on May 27th, no work was done duringthe first week of
+      GsoC. Hence, this can be regarded as a summary of mywork for the second week (May 29 – June
+      04). Also, please note that Iwill maintain weekly reports on the blog henceforth.</para>
+    <para>Please feel free to add comments and suggestions below.</para>
+    <!--($ ld: 6.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.jospoortvliet.com/2011/06/gsoc-mentoring.html">Jos Poortvliet:
+        GSOC mentoring</ulink></title>
+    <para>Dave Neary has written an <ulink
+        url="http://blogs.gnome.org/bolsh/2011/05/31/effective-mentoring-programs/">interesting
+        blogpost on 'effective mentoring'</ulink>.</para>
+    <para>If you don't feel like reading the whole thing (it's big, yes) I can give you some
+      highlights on common issues that make mentoring less effective:<itemizedlist>
+        <listitem>
+          <para>communication. Apprentices often expect their mentor to check in, the mentor expects
+            apprentices to ask questions if they have any. This means it is a wise thing to contact
+            your apprentice and:<itemizedlist>
+              <listitem>
+                <para>ask how it is going, if they need any help</para>
+              </listitem>
+              <listitem>
+                <para>tell them they have to be pro-active: ask questions and give you reports. Just
+                  to correct their perception if they expected YOU to ask them! Make clear it has to
+                  be pull from their side, it won't be push from yours. Their GSOC project is their
+                  responsibility.</para>
+              </listitem>
+            </itemizedlist></para>
+        </listitem>
+        <listitem>
+          <para>Mentoring doesn't stop in August: realize YOU are the friendly face to the project
+            for the student/apprentice. Please be prepared to keep talking to the students and help
+            them, even (especially!) if GSOC is over! And tell them so.</para>
+        </listitem>
+        <listitem>
+          <para>Regular meeting are really important. Have a weekly IRC chat and just talk. Both
+            about personal things (get to know each other!) and about the project.</para>
+        </listitem>
+        <listitem>
+          <para>And please tell the students to help each other and others. That is both a learning
+            experience for them, AND they understand others who are new better than anyone!</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>If you have questions, please ask on the mentor mailinglist, not only on IRC. Others can
+      learn from the answers. Others here includes me, btw, I love to know what issues you bump
+      into!</para>
+    <para>Good luck mentoring and remember, we want the students to STAY, not just fire some code at
+      us and go again ;-)</para>
+    <!--($ ld: 6.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://obsforandroid.wordpress.com/2011/06/10/obs-mobile-package-page-makeover/"
+        >Justine Leng: [Seeking Feedback] OBS mobile: project / package page
+      makeover</ulink></title>
+    <para>In this post, I would like to discuss some ideas I’ve had on improving the project /
+      package view pages in the OBS mobile client, and seek users’ feedback. (Please also <ulink
+        url="http://obsforandroid.wordpress.com/2011/06/09/obs-mobile-request-page-makeover/">take a
+        look</ulink> at my proposal on the request page makeover.)</para>
+    <para>On the OBS mobile client’s homepage, the “List of All Projects” displays as
+    follows:</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://obsforandroid.files.wordpress.com/2011/06/package1.png"
+          width="20%"/>
+      </imageobject>
+    </mediaobject>
+    <!--($ ld: 11.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://alex.eftimie.ro/2011/06/10/packagekit-backend-for-software-center-week-2-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: week 2 report</ulink></title>
+    <para>A week of fail and win has almost ended.</para>
+    <para>On the fail part, I had a hard time building pygobject, gobject-introspection and glib
+      from git.gnome.org. At first I’ve trying pulling from git, configuring and building, without
+      luck. Then I switched to jhbuild, which after a few sanitychecks, bootstraps and
+      configuration, worked; a day after I found that I’m on the stable branch (-2-28/gnome-3) which
+      wasn’t good enough for my aim at patching master, and have switched branches to master, trying
+      build -n. Of course it didn’t work until I hacked PKG_CONFIG_PATH to include paths such as
+      /usr/share/pkgconfig, /usr/lib/pkgconfig and /usr/lib/i386-linux-gnu/pkgconfig – with help
+      from walters on #introspection. This week my hard drive was about to die – because of a <ulink
+        url="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/397096">bug in the kernel driver
+        for ata</ulink>, it was reset every 30 seconds, causing everything to freeze. Different
+      liveCDs have failed, the symptoms were ambigous and hard to reproduce – almost an entire day
+      of fun.</para>
+    <para>On the win side, I figured out the hdd problem, and locked the kernel version to 2.6.38-9
+      for now. Hacked pygobject, posted patch in bugzilla B-), I’m one <ulink
+        url="https://mail.gnome.org/archives/python-hackers-list/2011-June/msg00005.html"
+        >step</ulink> further into making packagekit python bindings work; also I used the remaining
+      time to push forward some <ulink
+        url="https://code.launchpad.net/~alexeftimie/software-center/backend-refactor">more</ulink>
+      preparation refactor on software-center.</para>
+    <para>I have also updated the GSoC <ulink
+        url="http://swarm.cs.pub.ro/%7Ealexef/gsoc/gsoc-calendar.html">timeline</ulink> – I’ll try
+      to keep it up to date.</para>
+    <para>For the next week, same objectives remain.</para>
+    <para>PS: If you’re a python hacker and feel like helping out <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_smile.gif"/>
+        </imageobject>
+      </inlinemediaobject> , please check this <ulink
+        url="http://swarm.cs.pub.ro/~alexef/gsoc/gsoc-calendar.html">bug</ulink> report out.</para>
+    <!--($ ld: 11.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://cbounta.wordpress.com/2011/06/10/a-utility-for-merging-configuration-sysconfig-files-week-3-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 3
+        Report</ulink></title>
+    <para>This my regular weekly post on my GSoC project. Even though this week I had to give my
+      last exams for my bachelor degree and some days of the week I had to spent them on reading, I
+      did some progress on the actual project. First of all, I created my first patch for Augeas,
+      yes this is my first patch not for this particular project, but in general. Every week I found
+      my self, reading learning and carrying out new things, this is the coolest and most exciting
+      thing in the GSoC experience until now. (...)</para>
+    <!--($ ld: 11.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/06/10/gsoc-summary-of-week-3/">Marcus Hüwe:
+        [gsoc] summary of week 3</ulink></title>
+    <para>here’s a small summary of the 3rd (coding) week. This week I spent most of my time with
+      developing the remote model classes. The goal  was to put most of the code into a base class
+      from which all remote models will be derived (if you’re interested how it works have a look at
+      it). So far we have classes for:</para>
+    <itemizedlist>
+      <listitem>
+        <para>a remote project (RemoteProject – manages project metadata)</para>
+      </listitem>
+      <listitem>
+        <para>a remote package (RemotePackage – manages package metadata)</para>
+      </listitem>
+      <listitem>
+        <para>a request (Request)</para>
+      </listitem>
+    </itemizedlist>
+    <para>TODO for this week:</para>
+    <itemizedlist>
+      <listitem>
+        <para>add exception handling to the httprequest.py module</para>
+      </listitem>
+      <listitem>
+        <para>add a RemoteFile class which can be used to access a remote file</para>
+        <para> like a buildlog, prjconf or a source file</para>
+      </listitem>
+      <listitem>
+        <para>add a BuildResult class:</para>
+        <para> - get the build results for a project or package</para>
+        <para> - get the buildlog of a package</para>
+        <para> - get the binary/binaries from the api</para>
+      </listitem>
+    </itemizedlist>
+    <!--($ ld: 11.6.11 sm $)-->
+  </blockquote>
+</sect1>
