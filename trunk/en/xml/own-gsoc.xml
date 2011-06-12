@@ -50,116 +50,106 @@
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://sysbytes.wordpress.com/2011/06/06/sax3-gsoc-2011-work-report/">Manu Gupta:
-        SaX3 – GSoC 2011 – Work Report</ulink></title>
-    <para>This week I worked on SaX3 internal UI architecture, offcourse we will be using libyui but
-      we wanted to make it as flexible as possible so that the UI Library can be replaced by anybody
-      and still keep SaX usable, for that we implemented the factory pattern and most of the code
-      was working. Finally, we have something working and the screenshots below show that SaX3 is
-      working in graphical mode and ncurses mode.</para>
-    <para>I am adding screenshots of the launcher that will launch various configuration modules
-      such as keyboard, mouse, graphic card etc etc . Also this is just a start and by the time I
-      present my next report I week, this will be much cleaner and you can play around more with it.
-      Right now it does not do anything so dont get surprised.</para>
-    <para>
-      <informaltable frame="all">
-        <tgroup cols="2">
-          <colspec colname="c1" colnum="1"/>
-          <colspec colname="c2" colnum="2"/>
-          <tbody>
-            <row>
-              <entry>
-                <mediaobject>
-                  <imageobject>
-                    <imagedata fileref="http://sysbytes.files.wordpress.com/2011/06/sax3.png" width="50%"/>
-                  </imageobject>
-                </mediaobject>
-              </entry>
-              <entry>
-                <mediaobject>
-                  <imageobject>
-                    <imagedata fileref="http://sysbytes.files.wordpress.com/2011/06/sax3-ncurses.png" width="50%"/>
-                  </imageobject>
-                </mediaobject>
-              </entry>
-            </row>
-          </tbody>
-        </tgroup>
-      </informaltable>
-    </para>
-    <para>Source code can be found at <ulink url="http://github.com/manugupt1/sax3"
-        >github.com/manugupt1/sax3</ulink> The working branch is newui1.</para>
-    <para>cmake is a bit messy, I will update it in the following week and a bit of other clean up
-      tasks and try some other stuff like localisation in it.</para>
-    <!-- ($ ld: 6.6.11 sm $)-->
+      <ulink url="http://redache.wordpress.com/2011/06/10/entomologist-ui-changes-weekly-report-3/"
+        >David Williams: Entomologist UI changes Weekly Report 3</ulink></title>
+    <para>This week I’ve been working on tidying up the tab changes and it has been going a lot
+      slower than I’d like. It feels like I’m only now getting really used to the code and my speed
+      is picking up as I work through it. The biggest problem I’ve had is QtDesigner and trying to
+      drag and drop widgets into layouts and have them continue to resize correctly. Very much a
+      banging head against a wall process.</para>
+    <para>Apart from that I’ve improved the tabs themselves as before they were populated by tab
+      index in relation to a list index for each tab widget which would then select from the bugs
+      database based on that id (If I add my bug tracker first then that will probably have an ID of
+      one) but this would not facilitate easy delete as the relation between tracker id and tab id
+      would break. I’ve replaced it with a more sensible SQL query that bases it on the name of the
+      tracker (The actual query is something like WHERE bug.tracker_id IN (SELECT tracker.id FROM
+      trackers WHERE tracker.name = var)). I spent a while trying to see if there were ways to make
+      it even more succinct but my knowledge of SQL isn’t that great and most of my googling
+      returned solutions similar to the one I had come up with. </para>
+    <para>I’ve also added favicons to the tabs to make them look nicer and it also lets you see the
+    tracker type at a glance. You can see an image below:</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata
+          fileref="http://redache.files.wordpress.com/2011/06/screen-shot-2011-06-08-at-20-07-17.png"
+          width="30%"/>
+      </imageobject>
+    </mediaobject>
+    <para>Over the next week (hopefully I’ll get it done before monday) I want to get the tabs
+      finished and the stats/tracker lists finished so I can move on to the new comments dialog. I
+      don’t want to spend forever on these simple things as I want to move on to the TODO stuff as
+      soon as I can get there.</para>
+    <para>I’d also like feedback on what you think the TODO list should integrate with. I’ve seen a
+      request for Remember the Milk integration and Google Calendar/iCal will be supported too. If
+      there are any services that you’d like to see used either comment on this post or e-mail
+      me/file a feature request on the <ulink url="http://trac.entomologist-project.org"
+        >Entomologist Bug Tracker</ulink> and I will take it into consideration (which means I’ll
+      try my best to integrate it before the end of summer <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1306912051g"/>
+        </imageobject>
+      </inlinemediaobject> ). </para>
+    <para>There’s still work to do on the tabs as filtering doesn’t work yet and neither do the
+      context menus for the bugs lists. This is why I added buffer weeks into my timeline, for the
+      times where issues would arise and I didn’t have time to fix things in time. So next week is
+      more of the same but with an end point <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1306912051g"/>
+        </imageobject>
+      </inlinemediaobject> .</para>
+    <!-- ($ ld: 12.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://nbprashanth.wordpress.com/2011/06/06/gsoc-report/">N.B.Prashanth: GsoC
-        Report – 1</ulink></title>
-    <para>This is my GsoC report for the first two weeks (May 23 – June 04). Iwill also in brief
-      state the goals of the project and the future plans.My project for this years GsoC is
-      “Separating libYUI” for the OpenSUSEorganization. My mentor for the project is Martin Vidner
-      and theabstract can be found at: <ulink
-        url="http://www.google-melange.com/gsoc/project/google/gsoc2011/nbprashanth/22003"
-        >http://www.google-melange.com/gsoc/project/google/gsoc2011/nbprashanth/22003</ulink></para>
-    <para>Let me begin by laying out the main goals of this project. The projectaims to:<orderedlist>
-        <listitem>
-          <para>Separate YUI from the YaST framework.</para>
-        </listitem>
-        <listitem>
-          <para>Port YUI to other major Operating Systems such as Ubuntu and Fedora.</para>
-        </listitem>
-        <listitem>
-          <para>Remove the libzypp dependency for the gtk pluging and hence making YUI
-            SUSE-independent.</para>
-        </listitem>
-        <listitem>
-          <para>Improve documentation with doxygen.</para>
-        </listitem>
-        <listitem>
-          <para>Provide small tutorials.</para>
-        </listitem>
-        <listitem>
-          <para>To provide a large and non-trivial example to show the capability of YUI.</para>
-        </listitem>
-      </orderedlist></para>
-    <para>The work done so far is listed below :<orderedlist>
-        <listitem>
-          <para>libYUI has been successfully compiled on Ubuntu 11.04 and Fedora 15.</para>
-        </listitem>
-        <listitem>
-          <para>Initial packages for libYUI along with ncurses and Qt plugins havebeen made. They
-            are available in my gitorious account: gitorious.org/libyui</para>
-        </listitem>
-        <listitem>
-          <para>Small scale examples are being added to this blog. I will try tomaintain a weekly
-            schedule.</para>
-        </listitem>
-        <listitem>
-          <para>Currently, I am trying to eliminate the libzypp dependency for the Gtk plugin. This
-            is important as libzypp is highly OpenSUSEcentric.</para>
-        </listitem>
-        <listitem>
-          <para>The packages are currently in the testing phase. So all interestedpeople, please
-            feel free to test and post any bugs you may find in thecomments section. Please note,
-            this is an initial version.</para>
-        </listitem>
-        <listitem>
-          <para>Patches have been made for small bugs like “long long” warnings andenumeration
-            ending with a ‘,’. More serious bugs, if reported will betended to when
-            encountered.</para>
-        </listitem>
-      </orderedlist></para>
-    <para>Another important change that I would like to implement is the use of auniform build
-      system. Currently, some parts use CMake while others useautotools. Though this does not make
-      much of a difference to the outsideworld, I think it will be easier for developers and porters
-      in the longrun. But this will be done later on unless there is an urgent need forit.</para>
-    <para>Since my end semester exams ended on May 27th, no work was done duringthe first week of
-      GsoC. Hence, this can be regarded as a summary of mywork for the second week (May 29 – June
-      04). Also, please note that Iwill maintain weekly reports on the blog henceforth.</para>
-    <para>Please feel free to add comments and suggestions below.</para>
-    <!--($ ld: 6.6.11 sm $)-->
+      <ulink
+        url="http://cbounta.wordpress.com/2011/06/10/a-utility-for-merging-configuration-sysconfig-files-week-3-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 3
+        Report</ulink></title>
+    <para>This my regular weekly post on my GSoC project. Even though this week I had to give my
+      last exams for my bachelor degree and some days of the week I had to spent them on reading, I
+      did some progress on the actual project. First of all, I created my first patch for Augeas,
+      yes this is my first patch not for this particular project, but in general. Every week I found
+      my self, reading learning and carrying out new things, this is the coolest and most exciting
+      thing in the GSoC experience until now.</para>
+    <para>Back to the actual patch, below you can see the description of the patch:<blockquote>
+        <para>Subject: [PATCH] Added aug_find_lense function to find and return used for loading a
+          specific file</para>
+        <para>Aug_find_lense is a function that accepts a path of a file, and tries to find the
+          lense that was used to load this file in Augeas. Returns either a string representing the
+          lense if it is located succesfully either null if the lense could not be found, or the
+          file is not loaded in augeas.</para>
+      </blockquote></para>
+    <para>As i had told you before, i am working on a merge method for augtool as well. This command
+      works like this,</para>
+    <para>merge destination merging-parameters files-to-be-merged</para>
+    <para>example:</para>
+    <para>merge /etc/hosts/ (merging-parameters) /tmp/myfile1 /tmp/myfile2 ….. /tmp/myfile3</para>
+    <para>Until now I am able to use the aug_find lense to locate the lense used for the destination
+      file. Then i have implemented an extra function that can use the name of the lense to load the
+      files-to-merged to augeas. This permits me to have all these files in tree form used by
+      Augeas. The plan now is to finish the code with aug_process_tree function[1] that will try to
+      match the destination with the files-to-be-merged, and will then call the right function
+      according to merging-parameters if a match is found.</para>
+    <para><emphasis role="bold">What is next? </emphasis></para>
+    <para>By having a merge command in augtool, that can load files in the way I mentioned above, i
+      now have a test basis that will permit me to implement and test the merging functions. This
+      must be done in the next two weeks, so i can be in the initial schedule. I am quite
+      optimistic, things will go as planned. This week among with the coding there has been quite a
+      lot of research on tree pattern matching algoriths, I am grateful that there are always nice
+      people in open source communities that provide help and tips. I am back to coding… <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1307715965g"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    <para>Kind Regards,</para>
+    <para>Christos</para>
+    <para>[1] Work in Progress – The aug_process_tree function will be like: int
+      aug_process_trees(struct augeas *aug, const char *dest, void (*process)(struct augeas *aug,
+      const char *first, const char *second, void* data), void* data,const char *sources,…);</para>
+    <!--($ ld: 12.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://blog.jospoortvliet.com/2011/06/gsoc-mentoring.html">Jos Poortvliet:
