@@ -28,29 +28,25 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://rxvl.in/post/6175434117">Ratan Sebastian: GSOC 2011: ssc - Week
-        2</ulink></title>
-    <para>In terms of user functionality, searching for software, templates, appliances and packages
-      has been implemented this week. The actual api calls are performed by handler classes like
-      SSC::Handler::Appliance which exposes public methods like list, show, repositories and
-      installed_software. I’m trying to follow a template that allows any command of the type ssc to
-      map directly to Class#action(arguments) with minimum modification along the way. The command
-      line arguments (—option value) are parsed into an options hash that keeps getting passed down
-      the stack and used as necessary. Right now I’m not happy about exposing data that is
-      unnecessary for certain functions via this hash but it makes sense to have the checking of
-      data in the handler action rather than at the top level which makes that inevitable. </para>
-    <para>There’s been some abstraction and refactoring to make way for having the .sscrc file what
-      will hold the appliance configuration in the appliance directory. Right now there isn’t a lot
-      of validation of options and the parser merely merges options from .sscrc and the command line
-      to pass into the various handlers. </para>
-    <para>One tiny useful takeaway from this week has been learning about the Method class. Its very
-      useful in meta-programming. For instance when calling methods with the Class#send method it
-      would be useful to make sure that you’re passing the correct number of arguments. The
-      Method#arity method can be used to check the number of arguments that a method takes before
-      passing arguments to it. </para>
-    <para>Next week I’m going to be focusing on the structure of the appliance directory and
-      handling those commands that work locally.</para>
-    <!-- ($ ld: 6.6.11 sm $) -->
+    <title><ulink url="http://nbprashanth.wordpress.com/2011/06/11/gsoc-report-2/">N.B.Prashanth:
+        GsoC Report – 2</ulink></title>
+    <para>Hi. The last week was full of changes for libYUI. To start off, the packages are no longer
+      being built locally and the build process is now handled by OBS. This makes libYUI available
+      on a wide range of operating systems and architectures. Currently, the build at OBS is being
+      done for Fedora 14/15 as well as Ubuntu 10.10/11.04 for both x86 and x86_64 architectures.
+      Interested people can find the OBS repository at <ulink
+        url="http://download.opensuse.org/repositories/home:/nbprashanth/"
+        >http://download.opensuse.org/repositories/home:/nbprashanth/</ulink>. This means that the
+      binaries will no longer be availalbe at the gitorious repository(<ulink
+        url="http://gitorious.org/libyui">gitorious.org/libyui</ulink>).</para>
+    <para>Secondly, the initial documentation for the library is hosted at <ulink
+        url="http://doc.opensuse.org/projects/libyui/HEAD/"
+        >http://doc.opensuse.org/projects/libyui/HEAD/</ulink>. This documentation is subjected to
+      frequent updates and will change regularly (weekly updates planned). Again, to avoid
+      duplications, the gitorious repository will not contain the documentation anymore.</para>
+    <para>People who test the new packages are requested to submit bug reports (here or at OBS) in
+      order to help improve libYUI.</para>
+    <!-- ($ ld: 12.6.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
