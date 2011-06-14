@@ -28,78 +28,60 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://nbprashanth.wordpress.com/2011/06/11/gsoc-report-2/">N.B.Prashanth:
-        GsoC Report – 2</ulink></title>
-    <para>Hi. The last week was full of changes for libYUI. To start off, the packages are no longer
-      being built locally and the build process is now handled by OBS. This makes libYUI available
-      on a wide range of operating systems and architectures. Currently, the build at OBS is being
-      done for Fedora 14/15 as well as Ubuntu 10.10/11.04 for both x86 and x86_64 architectures.
-      Interested people can find the OBS repository at <ulink
-        url="http://download.opensuse.org/repositories/home:/nbprashanth/"
-        >http://download.opensuse.org/repositories/home:/nbprashanth/</ulink>. This means that the
-      binaries will no longer be availalbe at the gitorious repository(<ulink
-        url="http://gitorious.org/libyui">gitorious.org/libyui</ulink>).</para>
-    <para>Secondly, the initial documentation for the library is hosted at <ulink
-        url="http://doc.opensuse.org/projects/libyui/HEAD/"
-        >http://doc.opensuse.org/projects/libyui/HEAD/</ulink>. This documentation is subjected to
-      frequent updates and will change regularly (weekly updates planned). Again, to avoid
-      duplications, the gitorious repository will not contain the documentation anymore.</para>
-    <para>People who test the new packages are requested to submit bug reports (here or at OBS) in
-      order to help improve libYUI.</para>
-    <!-- ($ ld: 12.6.11 sm $) -->
+    <title><ulink url="http://sysbytes.wordpress.com/2011/06/12/sax3-gsoc-2011-weekly-report-2/"
+        >Manu Gupta: SaX3 – GSoC 2011 – Weekly Report 2</ulink></title>
+    <para>This is my 2nd report, this week not to show much for the users, but we did a quite
+      interesteing things. SaX is now module oriented.So, if anyone wants to write a module for SaX3
+      it is possible now. Besides the important things which I did was.<orderedlist>
+        <listitem>
+          <para>Learn the augeas C api</para>
+        </listitem>
+        <listitem>
+          <para>Submitted a  .desktop lens for augeas</para>
+        </listitem>
+        <listitem>
+          <para>It is module oriented</para>
+        </listitem>
+        <listitem>
+          <para>Tried out Doxygen</para>
+        </listitem>
+        <listitem>
+          <para>SaX3 is now localised.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>The launcher is now complete <mediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1304368896g"/>
+        </imageobject>
+      </mediaobject> Again, the source code is here<ulink url="http://github.com/manugupt1/sax3"
+        >http://github.com./manugupt1/sax3</ulink> Regarding modules, If anyone wants to check out
+      how modules work, they work using .desktop files  in /usr/share/sax3/modules.d. If you will
+      remove it we can remove it from the launcher.</para>
+    <!-- ($ ld: 14.6.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://redache.wordpress.com/2011/06/10/entomologist-ui-changes-weekly-report-3/"
-        >David Williams: Entomologist UI changes Weekly Report 3</ulink></title>
-    <para>This week I’ve been working on tidying up the tab changes and it has been going a lot
-      slower than I’d like. It feels like I’m only now getting really used to the code and my speed
-      is picking up as I work through it. The biggest problem I’ve had is QtDesigner and trying to
-      drag and drop widgets into layouts and have them continue to resize correctly. Very much a
-      banging head against a wall process.</para>
-    <para>Apart from that I’ve improved the tabs themselves as before they were populated by tab
-      index in relation to a list index for each tab widget which would then select from the bugs
-      database based on that id (If I add my bug tracker first then that will probably have an ID of
-      one) but this would not facilitate easy delete as the relation between tracker id and tab id
-      would break. I’ve replaced it with a more sensible SQL query that bases it on the name of the
-      tracker (The actual query is something like WHERE bug.tracker_id IN (SELECT tracker.id FROM
-      trackers WHERE tracker.name = var)). I spent a while trying to see if there were ways to make
-      it even more succinct but my knowledge of SQL isn’t that great and most of my googling
-      returned solutions similar to the one I had come up with. </para>
-    <para>I’ve also added favicons to the tabs to make them look nicer and it also lets you see the
-    tracker type at a glance. You can see an image below:</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://redache.files.wordpress.com/2011/06/screen-shot-2011-06-08-at-20-07-17.png"
-          width="30%"/>
-      </imageobject>
-    </mediaobject>
-    <para>Over the next week (hopefully I’ll get it done before monday) I want to get the tabs
-      finished and the stats/tracker lists finished so I can move on to the new comments dialog. I
-      don’t want to spend forever on these simple things as I want to move on to the TODO stuff as
-      soon as I can get there.</para>
-    <para>I’d also like feedback on what you think the TODO list should integrate with. I’ve seen a
-      request for Remember the Milk integration and Google Calendar/iCal will be supported too. If
-      there are any services that you’d like to see used either comment on this post or e-mail
-      me/file a feature request on the <ulink url="http://trac.entomologist-project.org"
-        >Entomologist Bug Tracker</ulink> and I will take it into consideration (which means I’ll
-      try my best to integrate it before the end of summer <inlinemediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1306912051g"/>
-        </imageobject>
-      </inlinemediaobject> ). </para>
-    <para>There’s still work to do on the tabs as filtering doesn’t work yet and neither do the
-      context menus for the bugs lists. This is why I added buffer weeks into my timeline, for the
-      times where issues would arise and I didn’t have time to fix things in time. So next week is
-      more of the same but with an end point <inlinemediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1306912051g"/>
-        </imageobject>
-      </inlinemediaobject> .</para>
-    <!-- ($ ld: 12.6.11 sm $)-->
+      <ulink url="http://rxvl.in/post/6481353758/gsoc-2011-ssc-week-3">Ratan Sebastian: GSOC 2011:
+        ssc - Week 3</ulink></title>
+    <para>This week I was working on the local storage feature of the client. As proposed we were
+      going to add and remove packages, repositories and files with a git-like workflow.
+      i.e. <screen>ssc package add gnuchess</screen>would make a local record of the intention to
+      add that package and on <screen>ssc commit</screen>the changes would actually be
+      pushed.</para>
+    <para>In order to facilitate this I’m abstracting all the directory management to a
+      DirectoryManager module. Which abstracts methods to save, read and diff from local sources.
+      Right now the syntax I’ve chosen is YAML. For instance the software file in the appliance
+      directory - which catalogues the changes made to the appliance’s software - stores names of
+      installed packages. Unless the ssc command is invoked with the -r | --remoteoption, it will
+      display the packages in that file. In addition when ssc package add gnuchess is run with out
+      the -r option, it will make and addition add gnuchess to the software file. Similarly for
+      remove. I am having some problems figuring out how to integrate patterns into this
+      architecture so any help on that front would be appreciated.</para>
+    <para>That’s it for this week. I’m going to be working on pretty much the same thing next week.
+      Extending and refactoring this functionality. So hopefully we will have a more usable version
+      then.Thank you for reading.</para>
+    <!-- ($ ld: 14.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title>

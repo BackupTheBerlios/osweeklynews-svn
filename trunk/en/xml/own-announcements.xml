@@ -29,84 +29,118 @@
   </important>
   <blockquote>
     <title><ulink
-        url="http://news.opensuse.org/2011/06/06/get-your-fresh-kernels-from-opensuse-and-test-linux-3-0/"
-        >Get your fresh kernels from openSUSE and test Linux 3.0!</ulink></title>
-    <para>The openSUSE kernel developers have recently announced that the <ulink
-        url="http://en.opensuse.org/Kernel">kernel</ulink> git trees have moved to <ulink
-        url="http://kernel.opensuse.org/git">kernel.opensuse.org/git</ulink>, providing better
-      reliability than gitorious. Gitorious had trouble with cloning the nearly 1GB repository
-      sometimes, but the developers will keep syncing to gitorious so nothing should break.
-      Moreover, <ulink url="http://kernel.opensuse.org/">kernel.opensuse.org</ulink> offers an easy
-      interface to install openSUSE kernels on a variety of openSUSE releases.</para>
-    <para>More things are planned for kernel.opensuse.org including the introduction <ulink
-        url="http://lxr.linux.no/">LXR</ulink>. <ulink url="http://hjemli.net/git/cgit/about/"
-        >cgit</ulink> was already added during the writing of this article!</para>
-    <para><emphasis role="bold">What is there – daily fresh kernels!</emphasis></para>
-    <para><ulink url="http://kernel.opensuse.org">kernel.opensuse.org</ulink> offers an interface
-      for users to find a specific version of a kernel for openSUSE. As <ulink
-        url="http://en.opensuse.org/Kernel">the wiki</ulink> states, there is a number of different
-      kernels build for openSUSE. This includes the default kernel (usable for desktops and
-      real-hardware servers), the desktop kernel, optimized for desktop usage and a number of more
-      specialized kernels including Xen and EC2 ready kernels, debug, trace and of course a vanilla
-      (standard kernel.org) kernel. On kernel.opensuse.org you can find (links to) repositories for
-      all current openSUSE and SLE releases with up to date versions of all the mentioned kernels
-      and more. Most of these are build daily to keep ‘em fresh!</para>
-    <para><emphasis role="bold">Follow upstream</emphasis></para>
-    <para>If you want to follow upstream kernel development closely, <ulink
-        url="http://kernel.opensuse.org/branches/vanilla">vanilla</ulink> is probably your thing.
-      This will turn into the upcoming <emphasis role="bold">Linux 3.0 kernel</emphasis>! If you
-      feel adventurous and want to test patches that are not yet ready to go in the mainline kernel,
-      check the <ulink url="http://kernel.opensuse.org/branches/linux-next">linux-next
-        branch</ulink>. These are patches which will go into ‘Linux 3.1′, the upcoming+1 version of
-      the Linux kernel.</para>
-    <para><emphasis role="bold">Or track openSUSE</emphasis></para>
-    <para>Or, you might want to test what is coming in the next openSUSE release via the <ulink
-        url="http://kernel.opensuse.org/branches/master">‘master branch’</ulink>. This will give you
-      a kernel that is ahead even of the Factory kernel! Each of those kernels is build for a large
-      number of build targets including openSUSE 11.2, 11.3, 11.4 and a number of SLE versions.
-      Clicking on Packages (under the Tools menu top-right) and then the kernel branch you like (the
-      kernel from openSUSE 11.4, SLES10_SP3, linus’ git tree ‘vanilla’, etc) will show you the
-      repository and how to add it. These kernels are build daily, so tracking what the kernel
-      developers are up to is easy as pie!</para>
-    <para>Michal Marek, working on kernel.opensuse.org told us that:</para>
-    <blockquote>
-      <para>master, openSUSE-11.3, openSUSE-11.4, vanilla, stable and linux-next should work on any
-        of 11.3, 11.4 and Factory. I fixed the spec files now so that the packages also install on
-        11.2, but that release is out of support, anyway.</para>
-    </blockquote>
-    <para><emphasis role="bold">How to use it</emphasis></para>
-    <para>To add a specific kernel to openSUSE, click on the branch you are looking for and then on
-        <emphasis role="italic">packages</emphasis> under the Tools menu. You will then see the
-      zypper command which will help you add this kernel to your openSUSE installation.</para>
-    <para>By default, the kernel will replace your old kernel. If you want to be keep the old one as
-      a fallback, go to /etc/zypp/zypp.conf and uncomment the line starting with "multiversion =".
-      For the vanilla and linux-next branches, this is not needed, the default configuration puts
-      Linus’ kernel-vanilla next to your default kernel-desktop in parallel. Having the kernel
-      available as option the boot menu and not replacing your current kernel protects you from
-      issues with the latest piece of technology you are testing out!</para>
-    <figure id="fig.git">
-      <title>openSUSE kernel commit activity overview</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/06/kernel-activity-300x120.png"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>If you want to get the source code of the kernel branch, or browse its git tree, click on
-        <emphasis role="italic">GIT Clone</emphasis> or <emphasis role="italic">GIT
-        Browse</emphasis> under the Tools menu to get the commands for cloning the repository to
-      your drive or see the code. You can also follow development and see what patches are added by
-      who in the <emphasis role="italic"><xref linkend="fig.git"></xref>GIT Browse</emphasis> page. For example, <ulink
-        url="http://kernel.opensuse.org/cgit/kernel/log/?h=master">this link</ulink> brings you to a
-      page showing the latest activity of the openSUSE kernel developers in Factory.</para>
-    <para><emphasis role="bold">More coming</emphasis></para>
-    <para>For developers, the site provides a <ulink url="http://kernel.opensuse.org/cgit">git
-        viewer based on cgit</ulink>. An LXR source code browser is planned in the future. <ulink
-        url="http://lxr.linux.no/">LXR</ulink> is a tool that displays source files with links to
-      function, macro and type definitions and usage.</para>
+        url="http://news.opensuse.org/2011/06/14/opensuse-conference-and-rw-sessions-the-bof/"
+        >openSUSE Conference and RW sessions – the BoF</ulink></title>
+    <para><inlinegraphic fileref="http://farm2.static.flickr.com/1233/928122581_043479bfd5_m.jpg"
+      /></para>
+    <para>The openSUSE conference team adopted the UNIX acronym <emphasis role="bold"
+      >RWX</emphasis> for this year’s conference. The goal with this theme is to emphasize the
+      stronger focus on getting-things-done and hands-on sessions. So, what sessions are we talking
+      about? In this article we’ll dive into one type of interactive session: the <ulink
+        url="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)">BoF</ulink>.</para>
+    <para><emphasis role="bold">Definition</emphasis></para>
+    <para>Wikipedia <ulink url="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)"
+        >defines</ulink> a BoF as ‘an informal discussion group’, ‘often formed in an ad-hoc
+      manner’. It also describes a BoF as ‘an informal meet-up at conferences, where the attendees
+      group together based on a shared interest and carry out discussions without any pre-planned
+      agenda’.</para>
+    <para>The central concepts are informal, shared interests and ad-hoc. What is not mentioned are
+      goals, the why of such a session. But based on the concepts, you can get an idea. The informal
+      factor means everyone is equal and can and should voice their opinions. The shared interests
+      mean you get together people who care about a particular subject. The ad-hoc factor merely
+      re-inforces the other two. A BoF is very much like meeting for dinner: you talk as friends
+      about whatever interests you! That is not to say a BoF can’t have goals. Often, BoFs have a
+      number of things the participants want to discuss. The person organizing the BoF is usually
+      the person who puts one or more topics forward, but everyone is free to bring up other issues.
+      This is central to the concept of a BoF – discuss things.</para>
+    <para><emphasis role="bold">Why?</emphasis></para>
+    <para><inlinegraphic fileref="http://farm3.static.flickr.com/2363/2311306708_5a29c44a0b_m.jpg"
+      /></para>
+    <para>Free Software communities work online in a collaborative fashion. That’s marketing speak
+      for: we work together, alone. While each of us sits behind his computer, either alone or with
+      others in an office, we form one team. We communicate over mail, IRC and other online
+      channels.</para>
+    <para>For asking questions, basic decision making or just getting work done, this is excellent.
+      For socializing, it is less optimal, but you’ll still find plenty of social interactions
+      especially in IRC channels. It gets much harder however, when complicated issues surface. If
+      decisions have to be made about processes or fundamental technical directions, the online
+      aspect gets in the way. You quickly run into misunderstandings and while our hacker culture
+      compels us to fairly direct (‘rude’) communication, still emotions can run wild.</para>
+    <para>At the conference, <emphasis role="bold">Cédric Bosdonnat</emphasis> wants to discuss
+      using statistics from the LibreOffice git repositories to show information about contributions
+      and contributors. He will first present the way statistics are extracted from the repository
+      and then pose the question how to turn these rough statistics into valuable, meaningful
+      numbers. How do you relate the lines-of-code added to the complexity of a change? How can one
+      decide, from the stats, if someone is a long-term contributor? A core developer?</para>
+    <para><emphasis role="bold">This is where face to face meetings help</emphasis>. Getting to know
+      each other over dinner or during a party is a powerful enabler for future online
+      communication. But it is also the perfect moment to make those <emphasis role="bold">hard
+        decisions!</emphasis> And that is where the BoF comes in.</para>
+    <para><emphasis role="bold">How?</emphasis></para>
+    <para><inlinegraphic fileref="http://farm1.static.flickr.com/49/171249238_1421d15dca_m.jpg"
+      /></para>
+    <para>Discussions about future directions or day to day business like improving a review process
+      or working together more efficiently – all things done better in person. In a BoF, a team
+      working together on-line meets and discusses these things, face to face, in an open manner.
+      Not completely unstructured, mind you, but still very open. The organizer of the BoF is there
+      merely to start up the discussion and possibly facilitate it. Facilitate by making sure some
+      decisions are actually taken. And recorded!</para>
+    <para>A typical BoF starts with a short ‘hi all, thanks for coming’, and if needed an
+      introduction of the participants. Then, it is time to find the subjects of the discussion at
+      hand. The organizer can coin a few things he or she things need to be discussed and others can
+      chime in. From there on, it’s a matter of actually going over the subjects one by one.</para>
+    <para><emphasis role="bold">Jean-Daniel Dodin</emphasis> is involved with testing in openSUSE.
+      At the conference, he wants to have a BoF centered around improving the process of testing
+      multimedia applications. Many of these applications don’t work as expected or not at all. How
+      can we ensure applications are tested reliably and don’t end up on a user’s desktop just if
+      theycompile but only after they are proven to actually work?</para>
+    <para>The <emphasis role="bold">challenge</emphasis> now is to keep the discussion from going in
+      all directions – something which is fine at a dinner but not productive at a BoF. Gently
+      reminding the team of what the goal of the current topic is is usually sufficient. You all
+      share the same goals, after all. The second challenge is to make sure decisions are
+      taken and recorded. Creating the typical action list of who does what is the best way to go.
+      It might make sense, with a large BoF team, to have one person lead the discussion while
+      someone else takes notes.</para>
+    <para>Know that the person organizing the BoF does not have to be a ‘team leader’, nor a ‘great
+      communicator’! Every attendee is equally responsible for the quality and results of the
+      discussion. Organizing the BoF is merely a technical detail – not a huge deal at all, and
+      anyone can do it.</para>
+    <para><emphasis role="bold">Responsibilities and tools</emphasis></para>
+    <para>Organizing a BoF is surprisingly simple if the right people turn up. For that, a <emphasis
+        role="bold">clear description</emphasis> is usually enough. A title like “Factory review
+      process discussion” will most likely attract those involved with review of packages in Factory
+      and interested in improving the process. If the review process has had hickups in the last few
+      months it is highly unlikely that the discussion won’t be attended or not attract the right
+      people. Nor is it likely to not have ‘enough to talk about’. The problem is usually more one
+      of getting sidetracked and not actually finishing discussing the topic with a proper todo
+      list!</para>
+    <para>What do you need to organize a BoF? Almost nothing. Pen and paper (for the todo!) will
+      usually suffice. A whiteboard might be nice for more complicated problems like mapping out a
+      new API, creating a flow diagram of a process or simply noting down the agreed-upon topics for
+      the BoF. Otherwise, just talk! Introduce the topic quickly and ask for opinions will fire it
+      off easily.</para>
+    <para><emphasis role="bold">Scheduling BoF’s</emphasis></para>
+    <para><inlinegraphic fileref="http://farm3.static.flickr.com/2797/4537737867_3ebfc19183_m.jpg"
+      /></para>
+    <para>Usually, BoF’s are scheduled ‘on the spot’ using a big whiteboard in the main hall of the
+      conference or on an open wiki page. That can lead to two similar BoF’s or two BoF’s targeting
+      the same team at the same time, however. It also means you might not have a spot at a decent
+      time. Which might result in being forced to plan a BoF in the time slot of a talk about the
+      same subject . This is why the openSUSE CfP team asks you to plan BoF’s in advance!</para>
+    <para>The biggest perceived problem with planning a BoF is the inherent contradiction in
+      ‘planning’ and ‘BoF’. Yes, you might not know now what will be an issue 3 months from now.
+      However, you don’t have to nail the agenda down today, that would indeed run counter to the
+      whole concept of a BoF. If you think your team will benefit from having a good, open
+      discussion about what you do and how you (want to) do it, simply send in a quick proposal to
+      the openSUSE Conference Paper Committee. It is no problem if something more urgent pops up and
+      you discuss that instead of following the initial description. The main reason for ‘planning’
+      (part of) the BoF’s beforehand is to allow the CfP team to try and schedule things in such a
+      way there is little overlap with talks and other BoF’s and to allow teams to reserve a
+      room.</para>
+    <para>So go to the conference page and add a BoF!</para>
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 7.6.11 sm $)-->
+    <!--($ ld: 14.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://news.opensuse.org/2011/06/07/time-to-vote-on-the-opensuse-strategy/"
