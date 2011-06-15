@@ -376,50 +376,38 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://dominique.leuenberger.net/blog/2011/06/libproxy-0-4-7-released/">Dominique Leuenberger: Libproxy 0.4.7 released</ulink>
+          <ulink url="http://stick.gk2.sk/blog/2011/06/gnome-shell-extension-yast-status-menu/"
+            >Pavol Rusnak: GNOME-Shell Extension: YaST (item in) Status Menu</ulink>
         </title>
-        <para>Today we released version 0.4.7 of libproxy. This version add support for Gnome 3
-          GSettings and bugfixes. Enjoy !</para>
-        <para><emphasis role="bold">ChangeLog:</emphasis><itemizedlist>
-            <listitem>
-              <para>Support/require xulrunner 2.0+</para>
-            </listitem>
-            <listitem>
-              <para>Support linking againgst libwebkit-gtk3 (-DWITH_WEBKIT3=ON)</para>
-            </listitem>
-            <listitem>
-              <para>Port to gsettings for gnome3. (-DWITH_GNOME3=ON[default])</para>
-            </listitem>
-            <listitem>
-              <para>Issues closed:<itemizedlist>
-                  <listitem>
-                    <para>#149: always test for the right python noarch module path</para>
-                  </listitem>
-                  <listitem>
-                    <para>#155: Cannot compile with Firefox 4</para>
-                  </listitem>
-                  <listitem>
-                    <para>#156: libproxy should build against webkitgtk-3.0</para>
-                  </listitem>
-                  <listitem>
-                    <para>#158: Won’t compile w/ xulrunner 2.0 final</para>
-                  </listitem>
-                  <listitem>
-                    <para>#159: libproxy fails with autoconfiguration “<ulink url="http://proxy.domain.com%E2%80%9D">http://proxy.domain.com”</ulink></para>
-                  </listitem>
-                  <listitem>
-                    <para>#131: GSettings-based GNOME plugin</para>
-                  </listitem>
-                  <listitem>
-                    <para>#150: SUSE sysconfig/proxy config support</para>
-                  </listitem>
-                </itemizedlist></para>
-            </listitem>
-          </itemizedlist></para>
-        <para>Packages for opoenSUSE Factory are already in their works and have been submitted for
-          inclusion. That means that we will finally get all the apps supporting libproxy read the
-          gnome3 proxy settings for us again.</para>
-<!--($ ld: 7.6.11 sm $)-->      </blockquote>
+        <para>This is just a short follow-up to my older blogpost <ulink
+            url="http://stick.gk2.sk/blog/2011/05/adding-yast-menuitem-to-gnome-3-status-menu/"
+            >Adding YaST menuitem to GNOME 3 status menu</ulink>. Few minutes ago <ulink
+            url="http://www.wafaa.eu/">Andy</ulink> asked me if I could create a proper gnome-shell
+          extension so I went ahead and did it. <inlinemediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
+            </imageobject>
+          </inlinemediaobject></para>
+        <para>I’ve set a <ulink
+            url="https://gitorious.org/opensuse/gnome-shell-extension-yast-status-menu">git repo on
+            Gitorious</ulink> and also built the package in my <ulink url="http://bit.ly/lVV2VS"
+            >home:prusnak</ulink> project. If there will be interest from our GNOME Team, I will
+          create a submit request to some GNOME devel project and Factory as well.</para>
+        <para>If you don’t know this yet, you have to install
+          theýgnome-shell-extension-yast-status-menu and then either logout and login or press
+          Alt+F2 and type “r” (which will restart gnome-shell).</para>
+        <para>Enjoy! <inlinemediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
+            </imageobject>
+          </inlinemediaobject></para>
+        <para><inlinegraphic
+            fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png"
+            width="20%"/></para>
+        <!--($ ld: 15.6.11 sm $)-->
+      </blockquote>
       <blockquote>
         <title><ulink url="http://www.marques.so/2011/06/a-few-more-things-working/">Nelson Marques:
             A few more things working…</ulink></title>
