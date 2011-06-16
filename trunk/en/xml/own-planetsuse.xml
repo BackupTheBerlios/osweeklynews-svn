@@ -20,18 +20,20 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink
-        url="http://alex.eftimie.ro/2011/06/04/packagekit-backend-for-software-center-week-1-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: week 1 report</ulink>
+      <ulink url="http://jimmac.musichall.cz/log/?p=1181">Jakub Steiner: Killing Mode Switch</ulink>
     </title>
-    <para>This week was a good week for coding, and the best part about it: most of my changes are
-      now in s-c’s upstream trunk. </para>
-    <para>I started out trying to populate s-c database with only a few applications; this meant
-      updating the update-software-center tool, and also changing some bits on the database update
-      module. I was glad to discover that some functionality I have planned to develop in week 6
-      (parsing AppStream app-data xmls) was already there, thus making my job easier :-)
-      (...)</para>
-<!--($ ld: 6.6.11 sm $)-->  </blockquote>
+    <para>As Allan already mentioned in one of his useful summaries, I’ve been pondering how how to
+      improve the layout of the application picker in shell’s overview. While the mockup he showed
+      does address the small click target problem, it still felt out of place with relation to the
+      dash. I tried to apply different lipstick on it, but there was something inherently wrong with
+      the layout and the overview lost its clean, “no boxes” feel.</para>
+    <para>The reason for the windows/applications toggle was easy extensibility. We thought of using
+      shell to access people/contacts in the same way as we access applications. We thought to
+      present documents in a better way without exposing the filesystem here as well. We thought the
+      orthogonal arrangement ala Sony’s XMB would be fun on touch devices. Over time, I have come to
+      the conclusion that extending the scope of shell might do more harm than good. I’ve never been
+      a fan of all-in-one solutions ala iTunes. (...)</para>
+<!--($ ld: 16.6.11 sm $)-->  </blockquote>
   <blockquote>
     <title><ulink url="http://my.opera.com/miki100/blog/show.dml/30928312">Mikolaj Siuda: Sonar
         color scheme for KDE</ulink></title>

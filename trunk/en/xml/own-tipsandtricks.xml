@@ -38,6 +38,18 @@
         on documents (of nearly any sort). But how can you make best use of those tools? These tips
         will help you collaborate with the best of them. (...)</para>
 <!-- ($ Id: 12.6.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.linuxjournal.com/content/tweaking-text-scribus">Tweaking text in
+          Scribus</ulink></title>
+      <para>In word processors, users generally settle for an appearance that is good enough. By
+        contrast, in a design application like Scribus, you have the tools to adjust the layout
+        until it is exactly the way you want.</para>
+      <para>That is especially true for text. Scribus not only provides tools for general management
+        of the available fonts, but also for micro-managing everything from the size and shape of
+        fonts to the spaces between characters and words and how a word is hyphenated at the end of
+        a line. (...)</para>
+      <!-- ($ Id: 16.6.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -101,10 +113,33 @@
     </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://everydaylht.com/howtos/system-administration/undelete-files-on-an-ext3-or-ext4-file-system/">EveryDayLHT: Undelete Files on an ext3 or ext4 File System</ulink>
+        <ulink
+          url="http://www.marques.so/2011/06/opensuse-11-4-with-gnome2-for-the-cool-kids-a-brief-howto/"
+          >Nelson Marques: openSUSE 11.4 with GNOME2 for the ‘cool kids’… a brief howto!</ulink>
       </title>
-      <para>So you’ve been futzing round in the file system, and been over vigorous with the rm command and deleted a crucial file that you or (more scarily) a significant other, can’t live without. What to do? After that initial hot flush has died down, you must be calm, and work fast. You have three options: (...)</para>
-<!--($ Id: 10.6.11 sat $)-->    </blockquote>
+      <para>In the past I’ve written a small howto in Portuguese to perform a openSUSE 11.4 GNOME2
+        featured installation in Portuguese. Until today I still receive lots of feedback and some
+        personal emails from Portuguese and Brazilian (mostly) users about it.</para>
+      <para>I’ve always preached that the nice of openSUSE was the fact of allowing the users to
+        install a vast number of repositories and running an updated application layer on top of a
+        powerful and reliable base. This article isn’t really about ‘installing’ openSUSE, but
+        instead it’s focused on the post install configuration of kinky repositories and stuff that
+        by the traditional reasons isn’t provided as standard in openSUSE.</para>
+      <para>This document will cover the following aspects:<orderedlist>
+          <listitem>
+            <para>Installation of sub-pixel font rendering (from a OBS user repository);</para>
+          </listitem>
+          <listitem>
+            <para>Installation of latest development release of Wine (1.3.21);</para>
+          </listitem>
+          <listitem>
+            <para>Installation of the most common multimedia codecs from Packman Essentials;</para>
+          </listitem>
+        </orderedlist></para>
+      <para>At the end, the user should have a working openSUSE 11.4 GNOME2 Desktop with very cool
+        sub-pixel font rendering (this really kicks ass) and have an idea of the potential that
+        openSUSE can deploy for customized systems. (...)</para>
+<!--($ Id: 16.6.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://beginlinux.com/desktop/opensuse/using-and-understanding-ipv6-on-opensuse-11">BeginLinux: Using and Understanding IPv6 on openSUSE 11</ulink>
