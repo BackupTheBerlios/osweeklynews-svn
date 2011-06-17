@@ -143,43 +143,126 @@
     <!--($ ld: 14.6.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/06/07/time-to-vote-on-the-opensuse-strategy/"
-        >Time to vote on the openSUSE Strategy!</ulink></title>
-    <para>Over the last year an openSUSE strategy discussion has been ongoing. Beginning this year
-      things went quiet for a while as everyone was busy with the openSUSE 11.4 release and now the
-      conference but we’re at the final stage and want to finish this. Time to vote!</para>
-    <para><emphasis role="bold">Forward</emphasis></para>
-    <para>The openSUSE board has reviewed the text and after fixing one or two typo’s and updating
-      it to the latest state of affairs, they have asked Thomas Thym from the strategy team to start
-      a vote among <ulink url="http://en.opensuse.org/openSUSE:Members">openSUSE Membership</ulink>.
-      So every <ulink url="http://en.opensuse.org/openSUSE:Members">Member</ulink> can go to <ulink
-        url="http://bit.ly/kZaAC2">connect</ulink> and vote on the proposal!</para>
-    <para>We’re not asking everyone if they think it is a perfect fit for themselves – we’re a
-      diverse community and we’ll never fully agree on anything. But this proposal has seen lots of
-        <ulink url="http://en.opensuse.org/Portal:Strategy">thought</ulink>, <ulink
-        url="http://lwn.net/Articles/392467/">discussion</ulink>, <ulink
-        url="https://lite.co-ment.com/text/lNPCgzeGHdV/view/">revision</ulink>, <ulink
-        url="http://news.opensuse.org/2010/10/07/opensuse-strategy-the-third-and-fourth-part-of-the-trilogy/"
-        >input</ulink> – it is arguably the best we could come up with to describe who we are and
-      where we want to go. So the question is – do we agree this describes us? Is it good enough for
-      us to support? Can we move on with this?</para>
-    <para><emphasis role="bold">Results</emphasis></para>
-    <para>You can find the result of our one-and-a-half year discussion on the <ulink
-        url="http://en.opensuse.org/openSUSE:Strategy">openSUSE Strategy wiki page</ulink>. Note
-      that the <ulink url="http://en.opensuse.org/openSUSE:Strategy_Community_Statement">Community
-        Statement</ulink> is an integral part of it.</para>
-    <para>This is the start of our Strategy document, describing our <emphasis role="italic"
-        >mission</emphasis>:<blockquote>
-        <para>The openSUSE project is a worldwide effort that promotes the use of Linux everywhere.
-          The openSUSE community develops and maintains a packaging and distribution infrastructure
-          which provides the foundation for the world’s most flexible and powerful Linux
-          distribution. Our community works together in an open, transparent and friendly manner as
-          part of the global Free and Open Source Software community. </para>
-      </blockquote>So, if you’re an openSUSE Member, it is time to <ulink
-        url="http://en.opensuse.org/openSUSE:Strategy">read the document one more time</ulink> and
-        <ulink url="http://bit.ly/kZaAC2">cast your vote</ulink>!</para>
-    <para>Note that the voting page is only accessible to logged in openSUSE Members and the results
-      are hidden until June 30th.</para>
+    <title><ulink url="http://news.opensuse.org/2011/06/16/opensuse-and-online-services/">openSUSE
+        and online services</ulink></title>
+    <para>The ‘cloud’ has been a buzzword for quite a while. While some are still rather cynical
+      towards the concept, products like mobile phones with Android have shown the value of putting
+      your data in that huge, amorphous network of servers somewhere. Apple recently introduced
+      their new cloud service and Microsoft has their cloud too. So with the other major players
+      talking cloudy, what does Linux have?</para>
+    <para><inlinegraphic fileref="http://farm2.static.flickr.com/1165/644335254_4b8a712be5_m.jpg"
+        align="right"/></para>
+    <para><emphasis role="bold">Variety</emphasis></para>
+    <para>Let’s define Cloud technology as ‘related to putting data online &amp; sharing among
+      devices’ which is a reasonable definition for our purposes. There is a huge number of
+      technologies connecting openSUSE users to online services. However there is a distinction to
+      be made between commercial or proprietary operating systems and ours. We don’t create a vendor
+      lock-in scenario because we focus on tools that freely connect you to your choice of publicly
+      available services. This is a key distinction because we’re not owning or controlling the
+      cloud that you place your data in. You, the user, get to decide the place where it best fits
+      your needs and comfort level. Today and tomorrow we will highlight some of them here, starting
+      with integration in our every day applications.</para>
+    <para><emphasis role="bold">Integration with online services</emphasis></para>
+    <para>openSUSE brings online services like <ulink url="http://facebook.com">Facebook</ulink>,
+        <ulink url="http://flickr.com">Flickr</ulink> and <ulink url="http://youtube.com"
+        >Youtube</ulink> to your desktop in a variety of applications. New applications like <ulink
+        url="http://www.umplayer.com/">UMPlayer</ulink> and <ulink url="http://tomahawk-player.org/"
+        >Tomahawk</ulink> go out of their way to deeply integrate <ulink url="http://twitter.com"
+        >twitter</ulink> or <ulink url="http://last.fm">last.fm</ulink>, with Tomahawk even able to
+      play music over a jabber (google-talk) chat connection. Of course, old-timers like <ulink
+        url="http://banshee.fm/">Banshee</ulink> and Amarok also feature music from music stores,
+      pod casts and other on-line services.</para>
+      <para>
+        <table frame="all">
+          <title>Install Tomahawk</title>
+          <tgroup cols="2">
+            <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+            <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ulink url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.4/tomahawk.ymp">
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                      </imageobject>
+                    </inlinemediaobject>
+                  </ulink>
+                </entry>
+                <entry>
+                  <ulink url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.3/tomahawk.ymp">
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                      </imageobject>
+                    </inlinemediaobject></ulink>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </para>
+    <para>
+      <table frame="all">
+        <title>Install UMPlayer</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <tbody>
+            <row>
+              <entry>
+                <ulink url="http://software.opensuse.org/ymp/home:stecue/openSUSE_11.4/umplayer.ymp">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                </ulink>
+              </entry>
+              <entry>
+                <ulink url="http://software.opensuse.org/ymp/home:stecue/openSUSE_11.3/umplayer.ymp">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                </ulink>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </para>
+    <para>Image viewers have engaged online services for a while. <ulink
+        url="http://f-spot.org/Features">F-Spot</ulink> can export to <ulink
+        url="http://www.flickr.com/">Flickr</ulink>, <ulink url="http://www.23hq.com/">23</ulink>,
+        <ulink url="http://picasaweb.google.com/">Picasa Web</ulink> or <ulink
+        url="http://www.smugmug.com/">SmugMug</ulink>. <ulink url="http://yorba.org/shotwell/"
+        >Shotwell</ulink> can even export to Youtube. KDE applications <ulink
+        url="http://www.digikam.org/drupal/about/features9x">Digikam</ulink> and it’s companion
+      Showfoto add <ulink url="http://facebook.com">Facebook</ulink>, <ulink
+        url="http://piwigo.org/">piwigo</ulink>, <ulink url="http://www.shwup.com/">shwup</ulink>,
+        <ulink url="http://www.zooomr.com/">zooomr</ulink> and some other sites to the list. They
+      can also export to a HTML gallery and put the images with the locations they were taken at on
+      Google Maps. This is shared KDE infrastructure so you can expect image viewer <ulink
+        url="http://gwenview.sourceforge.net/">Gwenview</ulink> and even screenshot application
+        <ulink url="http://www.elpauer.org/?p=509">ksnapshot</ulink> to be able to directly share
+      over these services.</para>
+    <para>It’s not just media tools which integrate with online services. <ulink
+        url="http://www.libreoffice.org/">LibreOffice</ulink> can export and import documents from
+      online office suites like <ulink url="http://docs.google.com">Google Docs</ulink> and <ulink
+        url="http://zoho.com">Zoho</ulink>. And of course, mail/agenda/news clients like <ulink
+        url="http://projects.gnome.org/evolution">Evolution</ulink> and <ulink
+        url="http://pim.kde.org">KDE PIM</ulink> have offered integration with online services like
+      mail or calendaring forever. Feed readers like <ulink url="http://liferea.sourceforge.net/"
+        >Liferea</ulink> offer syncing your news feed with <ulink url="http://www.google.com/reader"
+        >Google Reader</ulink> and <ulink url="http://tt-rss.org/">TinyTinyRSS</ulink>.</para>
+    <para>Besides integrating with existing services, Free Software projects are starting their own.
+      Prominent examples are GNOME’s <ulink url="http://projects.gnome.org/tomboy/">Tomboy</ulink>
+      which synchronizes your notes between instances using an online service.</para>
+    <para><emphasis role="bold">More</emphasis></para>
+    <para>But there is more available for openSUSE. There are several file sharing and syncing
+      services out there. Look for an article about those tomorrow!</para>
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
     <!--($ ld: 8.6.11 sm $)-->
