@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink url="https://lkml.org/lkml/2011/6/13/375">Linus Torvalds: Linux 3.0-rc3</ulink>
+    </title>
+    <para>.. and this time even with a timely tar-ball, since I&apos;m not traveling any more.
+
+</para>
+    <para>What do we have in it? More than in -rc2. I&apos;m clearly not the only one
+who was in Japan for LinuxCon, or something else just made people wake
+up.</para>
+    <para>There&apos;s a lot of small one-liners, but a few bigger chunks too: Radeon
+DRI updates, some btrfs updates, and fixing Sparc LEON support (and
+supporting PCI). Smaller updates to nilfs2 and ceph, and s390 and arm.
+Other than that, it&apos;s mostly random driver updates all over.
+
+</para>
+    <para>I&apos;m including the shortlog, which is fairly self-explanatory: small
+random changes, nothing hugely interesting. It will matter to people
+only if it happens to fix that one small nagging issue you had.
+
+</para>
+    <para>But as usual, I&apos;ll ask people to give it a good testing,
+
+                       </para>
+    <para>Linus (...)</para>
+<!-- ($ ld: 18.6.11 sat $) -->  </blockquote>
+    <blockquote>
+        <title><ulink url="http://schaiba.wordpress.com/2011/06/18/kernel-weekly-news-18-06-2011/"
+                >Rares Aioanei: kernel weekly news – 18.06.2011</ulink></title>
+        <para>Rares gives his weekly Kernel News from this week.</para>
+        <!--($ ld: 18.6.11 sm $)-->
+    </blockquote>
+</sect1>
