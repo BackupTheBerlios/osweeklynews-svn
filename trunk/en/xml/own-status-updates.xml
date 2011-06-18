@@ -405,42 +405,22 @@
               <para><ulink url="http://community.opensuse.org/meetings/opensuse-gnome/2011/opensuse-gnome.2011-05-05-15.34.log.html">Full Log</ulink></para>
             </listitem>
           </itemizedlist></para>
-      </blockquote>-->    </sect3>
-    <!--
+          </blockquote>-->    
+    </sect3>
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://linux42.org/stories/More+Polka,+please?id=14358">Cornelius Schumacher: More Polka, please</ulink>
-        </title>
-        <para>After&#160;<ulink url="http://blog.cornelius-schumacher.de/2011/03/its-not-address-book.html">blogging about Polka</ulink>, my experiment with a radically new take on an&#160;address book, I got a
-          lot of great feedback. I appreciate all the comments,&#160;questions, and encouragement. Two
-          people made me particularly happy, as they not&#160;only sent feedback, but also contributed
-          some welcome work. Sascha Manns built&#160;<ulink url="https://build.opensuse.org/package/show?package%3Dpolka%26project%3DKDE:Extra">packages</ulink>, and Saleel Velankar created a beautiful logo. Free&#160;software
-          rocks.</para>
-      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://vizzzion.org/blog/2011/06/there-is-no-kde5/">Sebastian Kügler: There is no KDE5</ulink>
-        </title>
-        <para>…and in retrospect, adding to the confusion, there is not even a KDE4. *cue puzzled
-          faces*</para>
-        <para>Let me explain this. About 1.5 years ago, we’ve <ulink url="http://dot.kde.org/2009/11/24/repositioning-kde-brand">repositioned</ulink> the
-          brand “KDE” to reflect how our community is structured. In short, KDE is the community
-          (unversioned :-)), the workspaces are called Plasma Desktop, Plasma Netbook, etc. Then we
-          have the KDE development platform. In the future we will be referring to these as the
-            <emphasis role="bold">KDE Frameworks</emphasis>, since that communicates more accurately
-          the results of the ongoing process of modularisation. And then we have of course the KDE
-          Applications, which all have their own names or brands.  </para>
-        <para>In essence, this means there is no KDE 5, and there will never be. During the sprint
-          here in Randa, we’ve spent a lot of thinking about the future of the KDE Frameworks, and
-          we will be forthcoming with plans to further modularize these frameworks, which consist of
-          what’s currently found in the kdelibs, kdesupport, kdepimlibs, kde-runtime and
-          kdepim-runtime modules. We’re already working on turning our meeting notes, minutes and
-          results into something digestable and understandable, so stay tuned. </para>
+        <title>Will Stephenson: KDE 4.7 Beta coming to Factory</title>
+        <para>Next week the current beta of KDE 4.7 will land in openSUSE Factory. The major change
+          that this brings is the full ports of KMail and KOrganizer to Akonadi.  These have just
+          been released as part of KDE 4.6, but there may still be regressions, such as the
+          inability to read mail.  While openSUSE does not recommend using Factory for production
+          machines, we would like to emphasize that if you do use KDE PIM on Factory as your main
+          mail client, be prepared to help us troubleshoot it.</para>
+        <para>submitted via our etherpad: <ulink url="http://os-news.ietherpad.com/2?"
+            >http://os-news.ietherpad.com/2?</ulink></para>
       </blockquote>
     </sect3>
-    -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
