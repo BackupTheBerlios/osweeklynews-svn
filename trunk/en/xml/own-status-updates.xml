@@ -44,19 +44,16 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.crozat.net/2011/06/road-to-systemd-for-opensuse-121.html">Frédéric
-          Crozat: The road to systemd for openSUSE 12.1</ulink>
+        <ulink url="http://blog.crozat.net/2011/06/road-to-systemd-for-opensuse-121.html">Frédéric Crozat: The road to systemd for openSUSE 12.1</ulink>
       </title>
       <para><ulink url="http://www.freedesktop.org/wiki/Software/systemd">systemd</ulink> is coming
         for next openSUSE (12.1) scheduled next fall. </para>
-      <para>I'll help for <ulink url="http://en.opensuse.org/SDB:Systemd">systemd integration in
-          openSUSE Factory</ulink> and will act as an interface between you (openSUSE testers,
+      <para>I&apos;ll help for <ulink url="http://en.opensuse.org/SDB:Systemd">systemd integration in openSUSE Factory</ulink> and will act as an interface between you (openSUSE testers,
         packagers, developers) and systemd upstream. </para>
       <para>As you might guess, switching boot manager is not a trivial task and issues will be
         found. So, we want to have as much feedback and testing as possible, to try to tackle as
         much (if not all) issues in time for 12.1. (...)</para>
-      <!--($ ld: 11.6.11 sm $)-->
-    </blockquote>
+<!--($ ld: 11.6.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -257,10 +254,9 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    
-    <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2011/05/31/some-updates-on-the-banshee-repositories/">Nelson Marques: Some updates on the Banshee repositories…</ulink>
@@ -323,8 +319,7 @@
           next days, while users subscribing now through the 1-Click installer will already be
           installing Banshee with the changes described above.</para>
         <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>     
-        </blockquote> -->
-      <formalpara>
+        </blockquote> -->      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -376,43 +371,31 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://stick.gk2.sk/blog/2011/06/gnome-shell-extension-yast-status-menu/"
-            >Pavol Rusnak: GNOME-Shell Extension: YaST (item in) Status Menu</ulink>
+          <ulink url="http://stick.gk2.sk/blog/2011/06/gnome-shell-extension-yast-status-menu/">Pavol Rusnak: GNOME-Shell Extension: YaST (item in) Status Menu</ulink>
         </title>
-        <para>This is just a short follow-up to my older blogpost <ulink
-            url="http://stick.gk2.sk/blog/2011/05/adding-yast-menuitem-to-gnome-3-status-menu/"
-            >Adding YaST menuitem to GNOME 3 status menu</ulink>. Few minutes ago <ulink
-            url="http://www.wafaa.eu/">Andy</ulink> asked me if I could create a proper gnome-shell
+        <para>This is just a short follow-up to my older blogpost <ulink url="http://stick.gk2.sk/blog/2011/05/adding-yast-menuitem-to-gnome-3-status-menu/">Adding YaST menuitem to GNOME 3 status menu</ulink>. Few minutes ago <ulink url="http://www.wafaa.eu/">Andy</ulink> asked me if I could create a proper gnome-shell
           extension so I went ahead and did it. <inlinemediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
+              <imagedata fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
             </imageobject>
           </inlinemediaobject></para>
-        <para>I’ve set a <ulink
-            url="https://gitorious.org/opensuse/gnome-shell-extension-yast-status-menu">git repo on
-            Gitorious</ulink> and also built the package in my <ulink url="http://bit.ly/lVV2VS"
-            >home:prusnak</ulink> project. If there will be interest from our GNOME Team, I will
+        <para>I’ve set a <ulink url="https://gitorious.org/opensuse/gnome-shell-extension-yast-status-menu">git repo on Gitorious</ulink> and also built the package in my <ulink url="http://bit.ly/lVV2VS">home:prusnak</ulink> project. If there will be interest from our GNOME Team, I will
           create a submit request to some GNOME devel project and Factory as well.</para>
         <para>If you don’t know this yet, you have to install
           theýgnome-shell-extension-yast-status-menu and then either logout and login or press
           Alt+F2 and type “r” (which will restart gnome-shell).</para>
         <para>Enjoy! <inlinemediaobject>
             <imageobject>
-              <imagedata
-                fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
+              <imagedata fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
             </imageobject>
           </inlinemediaobject></para>
-        <para><inlinegraphic
-            fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png"
-            width="20%"/></para>
-        <!--($ ld: 15.6.11 sm $)-->
-      </blockquote>
+        <para><inlinegraphic fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png" width="20%"/></para>
+<!--($ ld: 15.6.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink url="http://www.marques.so/2011/06/a-few-more-things-working/">Nelson Marques:
-            A few more things working…</ulink></title>
-        <para>A few days ago there was a new release of <ulink url="http://launchpad.net/unity-2d"
-            >Unity 2D</ulink> which fixed a few things, starting with the AppMenu integration. It’s
+        <title>
+          <ulink url="http://www.marques.so/2011/06/a-few-more-things-working/">Nelson Marques: A few more things working…</ulink>
+        </title>
+        <para>A few days ago there was a new release of <ulink url="http://launchpad.net/unity-2d">Unity 2D</ulink> which fixed a few things, starting with the AppMenu integration. It’s
           finally working with the previous packages. A few updates have also happened, just to
           mention a few:</para>
         <para>* libzeitgeist was updated to version 0.3.10;</para>
@@ -421,11 +404,9 @@
         <para> * light-themes package was added (includes Ambiance and Radiance);</para>
         <para> * unity-asset-pool package was added (includes unity-icon-theme and some unity
           artwork which is required);</para>
-        <para>Adittionally during this weekend I’m working on the <ulink
-            url="http://launchpad.net/ayatana-scrollbar">Ayatana Scrollbar</ulink> which seems to be
+        <para>Adittionally during this weekend I’m working on the <ulink url="http://launchpad.net/ayatana-scrollbar">Ayatana Scrollbar</ulink> which seems to be
           a pleasant feature that Canonical has created.</para>
-        <!--($ ld: 11.6.11 sm $)-->
-      </blockquote>
+<!--($ ld: 11.6.11 sm $)-->      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
@@ -523,9 +504,7 @@
       <title>Medical Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="hhttp://zoumpis.wordpress.com/2011/06/06/announcement-of-opensuse-medical-11-4-no2/"
-            >Rousinopoulos Athanasios-Ilias: Announcement of openSUSE Medical 11.4- No2</ulink>
+          <ulink url="hhttp://zoumpis.wordpress.com/2011/06/06/announcement-of-opensuse-medical-11-4-no2/">Rousinopoulos Athanasios-Ilias: Announcement of openSUSE Medical 11.4- No2</ulink>
         </title>
         <orderedlist>
           <listitem>
@@ -607,14 +586,14 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 354)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 355)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 186)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 187)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -626,7 +605,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 131)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 132)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -642,7 +621,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 102)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 103)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -655,50 +634,45 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 11.6.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 18.6.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312475">Linux administrative toolkit</ulink>
+            <ulink url="https://features.opensuse.org/312503">tuxguitar</ulink>
           </title>
-          <para>Create Linux administrative toolkit to provide multiple distribution administrative tool.
-This set should contains cli, cui and gui tools.</para>
-          <para>Also prepare documentation of usability to help creating similar tools.</para>
-          <para>Also add metapackage to install each tool from this set.</para>
+          <para>Since openSUSE 11.4 the program &quot;tuxguitar&quot; (<ulink url="http://tuxguitar.herac.com.ar">http://tuxguitar.herac.com.ar</ulink> ) isn&apos;t available any more - not even in a &quot;home&quot; repository.</para>
+          <para>I&apos;d very much appreciate if it was to be found anywhere ready to install.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312476">automatic daily fstrim for SSD</ulink>
+            <ulink url="https://features.opensuse.org/312506">check for already existing IP address to avoid collision</ulink>
           </title>
-          <para>As SSD are becoming more affordable they are also becoming more widespread on laptop and desktop computer. Modern SSD supports the TRIM functionality. This functionality delays costly erase operation to speed up performance ; these erase operations are then executed by batch (this is SSD equivalent to defragmentation).</para>
-          <para>SSD can only run at their full potential if this functionality is also supported by kernel and/or userland on the OS. Sadly TRIM support by kernel is not optimal yet. Erase operation are not launched automaticaly and this impacts overall SSD performance.</para>
-          <para>A cron script written at setup phase could launch fstrim program each night; this program performs the erase operation needed not to struggle the SSD.</para>
+          <para>When setting a static IP address, YaST should check if the specified IP address is already in use on the network.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312489">Search for GUI applications in YaST</ulink>
+            <ulink url="https://features.opensuse.org/312523">libraw1394</ulink>
           </title>
-          <para>Now YaST allow to see mixed packages: applications, libraries, extentions for programs...
-For new users it would be very friedly interface, wich has feature to filter only Applications (programs with GUI). Process of filtering could be based on searching for /usr/share/applications/*.desktop in RPM.</para>
-          <para>(Maybe additionally: extract icons, related to *.desktop files)</para>
+          <para>Please update to the current libraw1394 2.0.7:
+</para>
+          <para><ulink url="http://www.kernel.org/pub/linux/libs/ieee1394/">http://www.kernel.org/pub/linux/libs/ieee1394/</ulink></para>
+          <para>The latest version to be found in opensuse repositories is 2.0.5, which for example isn&apos;t sufficient for use with some Firewire Audio-Hardware in combination with latest kernels (aka juju-stack only).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312491">Explicit IPv6 support for YaST printer module</ulink>
+            <ulink url="https://features.opensuse.org/312539">Number of filters provided in kmail</ulink>
           </title>
-          <para>Currently there is not any kind of special IPv6 support in yast2-printer. Currently IPv6 works only where it is compatible to IPv4 but there are cases where IPv6 needs special handling: For example the tests whether or not a remote host is accessible run &quot;ping IP-address or hostname&quot; which fails if IP-address is an IPv6 address because for IPv6 ping6 must be used. See Bug #<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=697833">697833</ulink></para>
-          <para>Unfortunately ping6 cannot be used for IPv4 addresses so that yast2-printer needs to implement special distinction of cases in particular if a hostname is given depending on whether or not this hostname has an IPv4 or IPv6 address or both.</para>
-          <para>Probably there are some more special distinction of cases needed to distinguish between IPv4 and IPv6 stuff.</para>
+          <para>I wish I could define more than 8 conditions in kmail filters</para>
         </blockquote>
-<!-- ($ ld: 11.6.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 18.6.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
+<!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -716,13 +690,11 @@ For new users it would be very friedly interface, wich has feature to filter onl
           a load more. Some of the changes are invisible, and/or behind the scenes - so I thought
           I&apos;d expand on them here.</para>
     </blockquote> 
-    </sect3> -->
-    <sect3 role="testing">
+    </sect3> -->    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-06/msg00011.html">Larry
-            Finger: Weekly News for June 11 </ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-06/msg00011.html">Larry Finger: Weekly News for June 11 </ulink>
         </title>
         <para>The Testing Core Team held an IRC meeting at 17:00 UTC, June 6 on our usual channel. </para>
         <para>We first discussed our experiences with 12.1-MS1. The KDE Live CD has the login
@@ -735,7 +707,7 @@ For new users it would be very friedly interface, wich has feature to filter onl
           Gold Master is frozen. We realize that there is little opportunity to stretch the timing
           of the release schedule, thus we need to attract users at an earlier stage. As some
           testers might be reluctant to try the Milestone releases, we are proposing that MS6 be
-          relabeled as a "Beta". We would then have MS1-5, Beta, and RC1-2 as the stages. The
+          relabeled as a &quot;Beta&quot;. We would then have MS1-5, Beta, and RC1-2 as the stages. The
           relative timing of the steps would be the same, only that one stage would be renamed. </para>
         <para>Our next IRC meeting will be on June 27, 2011 at 17:00 UTC when we hope to be
           discussing MS2. </para>
