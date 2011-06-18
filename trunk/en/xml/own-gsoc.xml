@@ -84,201 +84,72 @@
     <!-- ($ ld: 14.6.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title>
-      <ulink
-        url="http://cbounta.wordpress.com/2011/06/10/a-utility-for-merging-configuration-sysconfig-files-week-3-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 3
+    <title><ulink
+        url="http://fridrich.blogspot.com/2011/06/libreoffice-visio-import-filter-shaping.html"
+        >Fridrich Strba: LibreOffice Visio import filter - shaping up the baby</ulink></title>
+    <para>Maybe you were asking yourself what happened in the Google Summer of Code Visio Import
+      filter project since <ulink
+        url="http://fridrich.blogspot.com/2011/06/libreoffice-visio-import-filter-first.html">last
+        week</ulink>. But even if you did not ask yourself this necessary question, here is some
+      update about the baby:</para>
+    <para>The focus this week was mainly on shaping the baby up. <ulink
+        url="http://www.derivativezero.com/blog/">Eilidh</ulink> added to her blog a photo and an
+      "About" line and then she got exhausted and decided to rest by coding. And it is like this
+      that she implemented polylines, ellipses and circular arcs.</para>
+    <para>And since the images speak louder then any words, enjoy the look: (...)</para>
+    <!--($ ld: 18.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://cbounta.wordpress.com/2011/06/17/a-utility-for-merging-configuration-sysconfig-files-week-4-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 4
         Report</ulink></title>
-    <para>This my regular weekly post on my GSoC project. Even though this week I had to give my
-      last exams for my bachelor degree and some days of the week I had to spent them on reading, I
-      did some progress on the actual project. First of all, I created my first patch for Augeas,
-      yes this is my first patch not for this particular project, but in general. Every week I found
-      my self, reading learning and carrying out new things, this is the coolest and most exciting
-      thing in the GSoC experience until now.</para>
-    <para>Back to the actual patch, below you can see the description of the patch:<blockquote>
-        <para>Subject: [PATCH] Added aug_find_lense function to find and return used for loading a
-          specific file</para>
-        <para>Aug_find_lense is a function that accepts a path of a file, and tries to find the
-          lense that was used to load this file in Augeas. Returns either a string representing the
-          lense if it is located succesfully either null if the lense could not be found, or the
-          file is not loaded in augeas.</para>
-      </blockquote></para>
-    <para>As i had told you before, i am working on a merge method for augtool as well. This command
-      works like this,</para>
-    <para>merge destination merging-parameters files-to-be-merged</para>
-    <para>example:</para>
-    <para>merge /etc/hosts/ (merging-parameters) /tmp/myfile1 /tmp/myfile2 ….. /tmp/myfile3</para>
-    <para>Until now I am able to use the aug_find lense to locate the lense used for the destination
-      file. Then i have implemented an extra function that can use the name of the lense to load the
-      files-to-merged to augeas. This permits me to have all these files in tree form used by
-      Augeas. The plan now is to finish the code with aug_process_tree function[1] that will try to
-      match the destination with the files-to-be-merged, and will then call the right function
-      according to merging-parameters if a match is found.</para>
-    <para><emphasis role="bold">What is next? </emphasis></para>
-    <para>By having a merge command in augtool, that can load files in the way I mentioned above, i
-      now have a test basis that will permit me to implement and test the merging functions. This
-      must be done in the next two weeks, so i can be in the initial schedule. I am quite
-      optimistic, things will go as planned. This week among with the coding there has been quite a
-      lot of research on tree pattern matching algoriths, I am grateful that there are always nice
-      people in open source communities that provide help and tips. I am back to coding… <inlinemediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1307715965g"/>
-        </imageobject>
-      </inlinemediaobject></para>
-    <para>Kind Regards,</para>
-    <para>Christos</para>
-    <para>[1] Work in Progress – The aug_process_tree function will be like: int
-      aug_process_trees(struct augeas *aug, const char *dest, void (*process)(struct augeas *aug,
-      const char *first, const char *second, void* data), void* data,const char *sources,…);</para>
-    <!--($ ld: 12.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://blog.jospoortvliet.com/2011/06/gsoc-mentoring.html">Jos Poortvliet:
-        GSOC mentoring</ulink></title>
-    <para>Dave Neary has written an <ulink
-        url="http://blogs.gnome.org/bolsh/2011/05/31/effective-mentoring-programs/">interesting
-        blogpost on 'effective mentoring'</ulink>.</para>
-    <para>If you don't feel like reading the whole thing (it's big, yes) I can give you some
-      highlights on common issues that make mentoring less effective:<itemizedlist>
+    <para>This is the 4rth week report, a lot of coding this week, you can see some code on my
+      project github under branch working. Yes the code there is still not stable, but I am
+      improving it constantly. Till this moment, i didn’t have any feedback except from my mentor,
+      so if you check it out and have some suggestion or something, please feel free to contact me. </para>
+    <para><emphasis role="bold">What is new in few words?</emphasis></para>
+    <para>There have been improvements in many of the functions i did, several new functions have
+      been added in my augeas branch repo, i try to split things up as much as possible, to help me
+      debug things. </para>
+    <para>Functions Changed/Added:</para>
+    <para>
+      <itemizedlist>
         <listitem>
-          <para>communication. Apprentices often expect their mentor to check in, the mentor expects
-            apprentices to ask questions if they have any. This means it is a wise thing to contact
-            your apprentice and:<itemizedlist>
-              <listitem>
-                <para>ask how it is going, if they need any help</para>
-              </listitem>
-              <listitem>
-                <para>tell them they have to be pro-active: ask questions and give you reports. Just
-                  to correct their perception if they expected YOU to ask them! Make clear it has to
-                  be pull from their side, it won't be push from yours. Their GSOC project is their
-                  responsibility.</para>
-              </listitem>
-            </itemizedlist></para>
+          <para> aug_find_lense</para>
         </listitem>
         <listitem>
-          <para>Mentoring doesn't stop in August: realize YOU are the friendly face to the project
-            for the student/apprentice. Please be prepared to keep talking to the students and help
-            them, even (especially!) if GSOC is over! And tell them so.</para>
+          <para> aug_load_file</para>
         </listitem>
         <listitem>
-          <para>Regular meeting are really important. Have a weekly IRC chat and just talk. Both
-            about personal things (get to know each other!) and about the project.</para>
+          <para> tree_child_sort_label</para>
         </listitem>
         <listitem>
-          <para>And please tell the students to help each other and others. That is both a learning
-            experience for them, AND they understand others who are new better than anyone!</para>
+          <para> aug_process_tree</para>
         </listitem>
-      </itemizedlist></para>
-    <para>If you have questions, please ask on the mentor mailinglist, not only on IRC. Others can
-      learn from the answers. Others here includes me, btw, I love to know what issues you bump
-      into!</para>
-    <para>Good luck mentoring and remember, we want the students to STAY, not just fire some code at
-      us and go again ;-)</para>
-    <!--($ ld: 6.6.11 sm $)-->
+        <listitem>
+          <para> int label_compare</para>
+        </listitem>
+        <listitem>
+          <para>merge command in augtool was changed a bit too.</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para><emphasis role="bold">What is next?</emphasis></para>
+    <para>The basic steps for tree matching have already been implemented, the goal now is to finish
+      it and actually include the merging functions too. The tree matching is the most complex part
+      as far i have understood in this project. By completing it, the other steps in the initial
+      schedule will be implemented easier.</para>
+    <!--($ ld: 18.6.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://obsforandroid.wordpress.com/2011/06/10/obs-mobile-package-page-makeover/"
-        >Justine Leng: [Seeking Feedback] OBS mobile: project / package page
-      makeover</ulink></title>
-    <para>In this post, I would like to discuss some ideas I’ve had on improving the project /
-      package view pages in the OBS mobile client, and seek users’ feedback. (Please also <ulink
-        url="http://obsforandroid.wordpress.com/2011/06/09/obs-mobile-request-page-makeover/">take a
-        look</ulink> at my proposal on the request page makeover.)</para>
-    <para>On the OBS mobile client’s homepage, the “List of All Projects” displays as
-    follows:</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://obsforandroid.files.wordpress.com/2011/06/package1.png"
-          width="20%"/>
-      </imageobject>
-    </mediaobject>
-    <!--($ ld: 11.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://alex.eftimie.ro/2011/06/10/packagekit-backend-for-software-center-week-2-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: week 2 report</ulink></title>
-    <para>A week of fail and win has almost ended.</para>
-    <para>On the fail part, I had a hard time building pygobject, gobject-introspection and glib
-      from git.gnome.org. At first I’ve trying pulling from git, configuring and building, without
-      luck. Then I switched to jhbuild, which after a few sanitychecks, bootstraps and
-      configuration, worked; a day after I found that I’m on the stable branch (-2-28/gnome-3) which
-      wasn’t good enough for my aim at patching master, and have switched branches to master, trying
-      build -n. Of course it didn’t work until I hacked PKG_CONFIG_PATH to include paths such as
-      /usr/share/pkgconfig, /usr/lib/pkgconfig and /usr/lib/i386-linux-gnu/pkgconfig – with help
-      from walters on #introspection. This week my hard drive was about to die – because of a <ulink
-        url="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/397096">bug in the kernel driver
-        for ata</ulink>, it was reset every 30 seconds, causing everything to freeze. Different
-      liveCDs have failed, the symptoms were ambigous and hard to reproduce – almost an entire day
-      of fun.</para>
-    <para>On the win side, I figured out the hdd problem, and locked the kernel version to 2.6.38-9
-      for now. Hacked pygobject, posted patch in bugzilla B-), I’m one <ulink
-        url="https://mail.gnome.org/archives/python-hackers-list/2011-June/msg00005.html"
-        >step</ulink> further into making packagekit python bindings work; also I used the remaining
-      time to push forward some <ulink
-        url="https://code.launchpad.net/~alexeftimie/software-center/backend-refactor">more</ulink>
-      preparation refactor on software-center.</para>
-    <para>I have also updated the GSoC <ulink
-        url="http://swarm.cs.pub.ro/%7Ealexef/gsoc/gsoc-calendar.html">timeline</ulink> – I’ll try
-      to keep it up to date.</para>
-    <para>For the next week, same objectives remain.</para>
-    <para>PS: If you’re a python hacker and feel like helping out <inlinemediaobject>
-        <imageobject>
-          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_smile.gif"/>
-        </imageobject>
-      </inlinemediaobject> , please check this <ulink
-        url="http://swarm.cs.pub.ro/~alexef/gsoc/gsoc-calendar.html">bug</ulink> report out.</para>
-    <!--($ ld: 11.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://cbounta.wordpress.com/2011/06/10/a-utility-for-merging-configuration-sysconfig-files-week-3-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 3
-        Report</ulink></title>
-    <para>This my regular weekly post on my GSoC project. Even though this week I had to give my
-      last exams for my bachelor degree and some days of the week I had to spent them on reading, I
-      did some progress on the actual project. First of all, I created my first patch for Augeas,
-      yes this is my first patch not for this particular project, but in general. Every week I found
-      my self, reading learning and carrying out new things, this is the coolest and most exciting
-      thing in the GSoC experience until now. (...)</para>
-    <!--($ ld: 11.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/06/10/gsoc-summary-of-week-3/">Marcus Hüwe:
-        [gsoc] summary of week 3</ulink></title>
-    <para>here’s a small summary of the 3rd (coding) week. This week I spent most of my time with
-      developing the remote model classes. The goal  was to put most of the code into a base class
-      from which all remote models will be derived (if you’re interested how it works have a look at
-      it). So far we have classes for:</para>
-    <itemizedlist>
-      <listitem>
-        <para>a remote project (RemoteProject – manages project metadata)</para>
-      </listitem>
-      <listitem>
-        <para>a remote package (RemotePackage – manages package metadata)</para>
-      </listitem>
-      <listitem>
-        <para>a request (Request)</para>
-      </listitem>
-    </itemizedlist>
-    <para>TODO for this week:</para>
-    <itemizedlist>
-      <listitem>
-        <para>add exception handling to the httprequest.py module</para>
-      </listitem>
-      <listitem>
-        <para>add a RemoteFile class which can be used to access a remote file</para>
-        <para> like a buildlog, prjconf or a source file</para>
-      </listitem>
-      <listitem>
-        <para>add a BuildResult class:</para>
-        <para> - get the build results for a project or package</para>
-        <para> - get the buildlog of a package</para>
-        <para> - get the binary/binaries from the api</para>
-      </listitem>
-    </itemizedlist>
-    <!--($ ld: 11.6.11 sm $)-->
+    <title><ulink url="http://obsforandroid.wordpress.com/2011/06/17/6-17-2011-weekly-report/"
+        >Justine Leng: 6.17.2011 Weekly Report</ulink></title>
+    <para>This week, I primarily focused on accumulating community feedback on my <ulink
+        url="http://obsforandroid.wordpress.com/2011/06/09/obs-mobile-request-page-makeover/"
+        >request page makeover suggestions</ulink>, and refining the features accordingly.</para>
+    <para>So based on the limited but helpful user feedback I received, I’ve made the following
+      changes: (...)</para>
+    <!--($ ld: 18.6.11 sm $)-->
   </blockquote>
 </sect1>

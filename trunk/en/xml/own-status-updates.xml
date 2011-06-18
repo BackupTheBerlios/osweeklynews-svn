@@ -40,8 +40,10 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  <sect2 role="distribution">
+    </sect2> -->  
+  <sect2 role="distribution">
     <title>Distribution</title>
+    <!--
     <blockquote>
       <title>
         <ulink url="http://blog.crozat.net/2011/06/road-to-systemd-for-opensuse-121.html">Frédéric Crozat: The road to systemd for openSUSE 12.1</ulink>
@@ -53,7 +55,8 @@
       <para>As you might guess, switching boot manager is not a trivial task and issues will be
         found. So, we want to have as much feedback and testing as possible, to try to tackle as
         much (if not all) issues in time for 12.1. (...)</para>
-<!--($ ld: 11.6.11 sm $)-->    </blockquote>
+      </blockquote>
+      -->
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -391,22 +394,6 @@
           </inlinemediaobject></para>
         <para><inlinegraphic fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png" width="20%"/></para>
 <!--($ ld: 15.6.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://www.marques.so/2011/06/a-few-more-things-working/">Nelson Marques: A few more things working…</ulink>
-        </title>
-        <para>A few days ago there was a new release of <ulink url="http://launchpad.net/unity-2d">Unity 2D</ulink> which fixed a few things, starting with the AppMenu integration. It’s
-          finally working with the previous packages. A few updates have also happened, just to
-          mention a few:</para>
-        <para>* libzeitgeist was updated to version 0.3.10;</para>
-        <para> * zeitgeist-datahub was updated to version 0.7.0;</para>
-        <para> * ubuntu-mono-icon-theme package was added;</para>
-        <para> * light-themes package was added (includes Ambiance and Radiance);</para>
-        <para> * unity-asset-pool package was added (includes unity-icon-theme and some unity
-          artwork which is required);</para>
-        <para>Adittionally during this weekend I’m working on the <ulink url="http://launchpad.net/ayatana-scrollbar">Ayatana Scrollbar</ulink> which seems to be
-          a pleasant feature that Canonical has created.</para>
-<!--($ ld: 11.6.11 sm $)-->      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
@@ -419,6 +406,7 @@
             </listitem>
           </itemizedlist></para>
       </blockquote>-->    </sect3>
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -430,7 +418,7 @@
           people made me particularly happy, as they not&#160;only sent feedback, but also contributed
           some welcome work. Sascha Manns built&#160;<ulink url="https://build.opensuse.org/package/show?package%3Dpolka%26project%3DKDE:Extra">packages</ulink>, and Saleel Velankar created a beautiful logo. Free&#160;software
           rocks.</para>
-<!--($ ld: 6.6.11 sm $)-->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://vizzzion.org/blog/2011/06/there-is-no-kde5/">Sebastian Kügler: There is no KDE5</ulink>
@@ -450,8 +438,9 @@
           what’s currently found in the kdelibs, kdesupport, kdepimlibs, kde-runtime and
           kdepim-runtime modules. We’re already working on turning our meeting notes, minutes and
           results into something digestable and understandable, so stay tuned. </para>
-<!--($ ld: 7.6.11 sm $)-->      </blockquote>
+      </blockquote>
     </sect3>
+    -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
@@ -500,7 +489,9 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->    <sect3 role="medical">
+    </sect3> -->    
+    <!--
+    <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
         <title>
@@ -563,8 +554,8 @@
             <para>Feel free to express your opinion!</para>
           </listitem>
         </orderedlist>
-<!--($ ld: 7.6.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
@@ -580,7 +571,8 @@
           core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we
           now have a GIT core that can be easily updated and which is fully portable.(...)</para>
       </blockquote>
-    </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->    
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <sect4>
         <title>Top voted Features</title>
@@ -690,7 +682,9 @@
           a load more. Some of the changes are invisible, and/or behind the scenes - so I thought
           I&apos;d expand on them here.</para>
     </blockquote> 
-    </sect3> -->    <sect3 role="testing">
+    </sect3> -->    
+    <!--
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
@@ -711,8 +705,8 @@
           relative timing of the steps would be the same, only that one stage would be renamed. </para>
         <para>Our next IRC meeting will be on June 27, 2011 at 17:00 UTC when we hope to be
           discussing MS2. </para>
-<!--($ ld: 11.6.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>

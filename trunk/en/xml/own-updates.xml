@@ -25,15 +25,6 @@
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
     <title><ulink
-        url="http://saigkill.homelinux.net/entry/2011/06/10/skrooge-090-available-for-opensuse"
-        >Sascha Manns: Skrooge 0.9.0 available for openSUSE</ulink></title>
-    <para>Just now i'm finished the last things for the <ulink url="http://skrooge.org/node/117"
-        >skrooge</ulink> package and made the update to <emphasis role="bold">0.9.0</emphasis>.
-      (...)</para>
-    <!-- ($ ld: 11.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
         url="http://saigkill.homelinux.net/entry/2011/06/16/bleachbit-088-checked-in-into-opensuse-build-service"
         >Sascha Manns: bleachbit 0.8.8 checked in into openSUSE Build Service</ulink></title>
     <para>BleachBit quickly frees disk space and tirelessly guards your privacy. Free cache, delete
@@ -64,5 +55,57 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
         >7-zip</ulink> does just a wonderful job at unpacking RPMs even if they use LZMA payload.
       (...)</para>
     <!--($ ld: 17.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/06/17/atiamd-fglrx-8-861-catalyst-11-6-available-for-opensuse-11-2-11-3-11-4-factory/"
+        >Bruno Friedmann: ATI/AMD fglrx 8.861 Catalyst 11.6 available for openSUSE 11.2, 11.3, 11.4,
+        Factory</ulink></title>
+    <para>Please refer to my <ulink url="http://lizards.opensuse.org/?p=6680">previous
+        article</ulink> where all the installation procedure is explained.</para>
+    <itemizedlist>
+      <listitem>
+        <para>Quick resume :</para>
+      </listitem>
+      <listitem>
+        <para>There’s no full changelog about them, but <ulink
+            url="http://www2.ati.com/relnotes/Catalyst_11.6_Linux_Installer.pdf">Catalyst 11.6
+            installer</ulink> (pdf)</para>
+      </listitem>
+      <listitem>
+        <para>Get the cheat-sheet <ulink
+            url="http://www.sebastian-siebert.de/downloads/ati-catalyst-11.6-cheat-sheet.pdf">11.6
+            version</ulink></para>
+      </listitem>
+      <listitem>
+        <para>Kernel supported up to 3.0x version</para>
+      </listitem>
+      <listitem>
+        <para>Should be the latest version supporting 11.2</para>
+      </listitem>
+      <listitem>
+        <para>Wrong (to my point of view) create an xorg.conf file which is unneeded if you work
+          with /etc/xorg.conf.d/50-device.conf and have driver "fglrx" inside</para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      <warning>
+        <para>Some instabilities could happen. In case of crash like no keyboard, mouse, and
+          blackscreen on reboot. Try to shutdown properly your computer with the shutdown poweroff
+          button (or remote ssh). On reboot, just add 3 at the end of grub line to restart in
+          console mode. Then with yast or zypper you can always remove the actual version and try
+          the previous version available in the repos. </para>
+        <para>All credits to Sebastian Siebert (freespacer) : <ulink url="http://bit.ly/ljP3a7">11.6
+            article</ulink> (German) </para>
+      </warning>
+    </para>
+    <para><emphasis role="bold">What about tumbleweed, factory?</emphasis></para>
+    <para>Users have reported that version 8.861 of catalyst 11.6 compile correctly under Tumbleweed
+      with 2.6.39 kernel and the driver is ready for kernel 3.0x, so until xorg change too much and
+      then AMD support for the new version, installing the 11.4 version should work </para>
+    <para>For factory, I’ve build a repository (see previous article) that can be used, and fglrx
+      build.</para>
+    <para> The new package are called SUSE121 &amp; no more SUSEFACTORY. (...)</para>
+    <!--($ ld: 18.6.11 sm $)-->
   </blockquote>
 </sect1>

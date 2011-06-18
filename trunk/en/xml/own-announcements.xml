@@ -176,27 +176,29 @@
         <table frame="all">
           <title>Install Tomahawk</title>
           <tgroup cols="2">
-            <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+            <colspec colname="c1" colnum="1" colwidth="1.02*"/>
             <colspec colname="c2" colnum="2" colwidth="1.0*"/>
             <tbody>
               <row>
                 <entry>
-                  <ulink url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.4/tomahawk.ymp">
-                    <inlinemediaobject>
-                      <imageobject>
-                        <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                      </imageobject>
-                    </inlinemediaobject>
-                  </ulink>
-                </entry>
+                <ulink
+                  url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.4/tomahawk.ymp">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                    </imageobject>
+                  </inlinemediaobject>
+                </ulink>
+                <para><emphasis role="bold">openSUSE 11.4</emphasis></para></entry>
                 <entry>
-                  <ulink url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.3/tomahawk.ymp">
-                    <inlinemediaobject>
-                      <imageobject>
-                        <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                      </imageobject>
-                    </inlinemediaobject></ulink>
-                </entry>
+                <ulink
+                  url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.3/tomahawk.ymp">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                    </imageobject>
+                  </inlinemediaobject></ulink>
+                <para><emphasis role="bold">openSUSE 11.3</emphasis></para></entry>
               </row>
             </tbody>
           </tgroup>
@@ -218,7 +220,7 @@
                     </imageobject>
                   </inlinemediaobject>
                 </ulink>
-              </entry>
+                <para><emphasis role="bold">openSUSE 11.4</emphasis></para></entry>
               <entry>
                 <ulink url="http://software.opensuse.org/ymp/home:stecue/openSUSE_11.3/umplayer.ymp">
                   <inlinemediaobject>
@@ -227,7 +229,7 @@
                     </imageobject>
                   </inlinemediaobject>
                 </ulink>
-              </entry>
+                <para><emphasis role="bold">openSUSE 11.3</emphasis></para></entry>
             </row>
           </tbody>
         </tgroup>
@@ -265,283 +267,246 @@
       services out there. Look for an article about those tomorrow!</para>
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 8.6.11 sm $)-->
+    <!--($ ld: 16.6.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://news.opensuse.org/2011/06/08/opensuse-conference-looking-for-sponsors/">openSUSE
-        conference looking for sponsors</ulink></title>
-    <para>Like the previous years, the openSUSE conference team is looking for sponsors. The <ulink
-        url="http://en.opensuse.org/Portal:Conference">conference</ulink> has grown 35% last year
-        and we expect it to grow even more this year so financial help is needed!</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/05/RWX3-300x127.png"/>
-      </imageobject>
-    </mediaobject>
-    <para><emphasis role="bold">openSUSE Conference</emphasis></para>
-    <para>Now in its third year, the openSUSE Conference has become one of the most dynamic and
-      collaborative events in the FOSS world, by bringing together both openSUSE contributors and
-      other members of the open source community. Last year we welcomed participants from Fedora,
-      Debian, the GNOME project and numerous others, creating a rich environment for innovation.
-      Topics for the openSUSE Conference range from technical talks about packaging, Open Build
-      Service and development tools to more community-oriented discussions about our future and
-      direction. With over 35% more attendees than in 2009, last year’s conference was a resounding
-      success and this year promises to be even greater with an expected number of 500
-      attendees.</para>
-    <para><emphasis role="bold">Sponsors needed</emphasis></para>
-    <para>To make this event possible, the community needs help. Sponsorship is required for travel
-      costs for speakers and attendees as well as facilities costs. As the openSUSE community is
-      very international, we want to support people from Brazil, India, Australia and many other
-      countries to come to Nuremberg. By securing sponsorships, companies can demonstrate their
-      support for the community and garner valuable brand recognition. If you are interested in
-      sponsoring this event, please see the <ulink
-        url="http://en.opensuse.org/images/1/1f/OpenSUSEandSUSELabs2011SponsorshipBrochureWebsite.pdf"
-        >online sponsorship brochure</ulink> or contact us for more information on the sponsor
-      benefits and offerings. If you know someone who might be interested in sponsoring, please help
-      us reach out to them!</para>
-    <para>Our contact person is: </para>
-    <para>Izabel Valverde <email>izabelvalverde@opensuse.org</email></para>
-    <para>Sponsorship manager </para>
-    <para>openSUSE Conference Organization</para>
-    <para><emphasis role="bold">This year: Read, Write, Execute and SUSE LABS</emphasis></para>
-    <para>In 2011, the theme of the combined openSUSE and SUSE Labs Conference is <ulink
-        url="http://news.opensuse.org/2011/05/16/opensuse-conference-2011-to-be-creative-and-open/"
-        >RWX, the UNIX acronym for Read-Write-Execute</ulink>. To bring this theme to life, the
-      sessions at oSC 2011 will have a strong focus on getting decisions made and work done in
-      small, collaborative teams. Again many visitors from other projects will be invited and by
-      co-locating with the SUSE Labs Conference, the larger number of community members at the
-      conference will greatly increase its impact.</para>
-    <para><emphasis role="bold">SUSE Labs</emphasis></para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://news.opensuse.org/wp-content/uploads/2011/05/Zentr_impress-300x148.jpg"/>
-      </imageobject>
-    </mediaobject>
-    <para>The SUSE Labs Conference is a SUSE internal conference that has been organized by SUSE
-      engineers for SUSE engineers for many years. Most SUSE technical employees travel to meet once
-      a year and exchange ideas, share their work and learn from each other. The topics for the SUSE
-      Labs Conference tend to be very technical, ranging from Kernel, Samba and GCC to high
-      performance networking technology.</para>
-    <para><emphasis role="bold">Place and date</emphasis></para>
-    <para>The openSUSE Conference and SUSE Labs Coference 2011 takes place in Nuremberg, Germany at
-      Zentrifuge Nurenberg, from September 11 to September 14. Zentrifuge is an independent cultural
-      center providing room for art and music performances and exibitions. This location gives the
-      openSUSE Conference a culturally rich, creative environment, challenging visitors to bring
-      their best!</para>
+    <title><ulink url="http://news.opensuse.org/2011/06/17/opensuse-and-your-own-cloud/">openSUSE
+        and online storage and syncing</ulink></title>
+    <para>The ‘cloud’ has been a buzzword for quite a while. While some are still rather cynical
+      towards the concept, products like <ulink url="http://www.android.com/">mobile phones with
+        Android</ulink> have shown the value of putting your data in that <ulink
+        url="http://xkcd.com/908/">huge, amorphous network of servers somewhere</ulink>. Apple
+      recently <ulink url="http://www.apple.com/icloud/">introduced their new cloud service</ulink>
+      and Microsoft has their <ulink url="http://www.microsoft.com/cloud">cloud</ulink> too. So with
+      the other major players talking cloudy, what does Linux have?</para>
+    <para><inlinegraphic fileref="http://farm2.static.flickr.com/1165/644335254_4b8a712be5_m.jpg"
+      /></para>
+    <para><emphasis role="bold">Variety</emphasis></para>
+    <para>Let’s define Cloud technology as ‘related to putting data online &amp; sharing among
+      devices’ which is a reasonable definition for our purposes. There is a huge number of
+      technologies connecting openSUSE users to online services. However there is a distinction to
+      be made between commercial or proprietary operating systems and ours. We don’t create a vendor
+      lock-in scenario because we focus on tools that freely connect you to your choice of publicly
+      available services. This is a key distinction because we’re not owning or controlling the
+      cloud that you place your data in. You, the user, get to decide the place where it best fits
+      your needs and comfort level. Yesterday we <ulink
+        url="http://news.opensuse.org/2011/06/16/opensuse-and-online-services/">highlighted
+        integration in our every day applications</ulink>. Today we focus on file syncing services
+      and especially the cool Free Software project ownCloud!</para>
+    <para><emphasis role="bold">File sharing and syncing services</emphasis></para>
+    <para>A file sharing and syncing service helps you keep the files on several computers in sync
+      and allows you to share such files with others on the web. This is indeed what Apple recently
+      introduced, but others have gone before.</para>
+    <para><ulink url="https://spideroak.com/">SpiderOak</ulink> offers such an online space for
+      synchronizing files. Just drop the files in a specific folder on your drive and you can share
+      them between your computers, mobile devices and even with other people. SpiderOak is included
+      in the openSUSE repositories since openSUSE 11.3.</para>
+    <para>The popular <ulink url="http://dropbox.com">Dropbox</ulink> service offers a similar
+      online space, and even comes with integration in the <ulink
+        url="http://live.gnome.org/Nautilus">Nautilus file manager</ulink>!</para>
+    <para>But both services depend on proprietary server components and need a proprietary daemon to
+      run on your system. Dropbox also doesn’t encrypt the data on the server, something Spideroak
+      at least does. SpiderOak also promised to at some point open source their client software.
+      Still, the server side and web interface will remain closed. Luckily there are Free Software
+      solutions out there, two of them I’ll talk about here.</para>
+    <para><emphasis role="bold">Introducing iFolder</emphasis></para>
+    <para><inlinegraphic
+        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/iFolder2clean_filmgrain_picture-300x212.png"
+      /></para>
+    <para><ulink url="http://www.kablink.org/ifolder">iFolder</ulink> is a Free Software file
+      storage, backup and sharing solution written in C# and Mono. iFolder comes with a desktop
+      client which allows you to manage your iFolders. iFolders can be located on any number of
+      servers, each having a number of folders which you can manage independently. Each folder can
+      be your own or shared with others and files dropped or modified in them will be synced right
+      away. iFolder, like Dropbox and SpiderOak, has clients for Windows, Mac and Linux and new is a
+      web interface so you can access your files anywhere and share them with others on-line.</para>
+    <para>iFolder does have some powerful capabilities, especially for corporate environments. For
+      example, unlike most competing solutions it only transfers modified portions of files instead
+      of the whole file, saving you some bandwidth. iFolder also offers integration with LDAP, disk
+      quotas, and limits to the number of iFolders each user has. It integrates in the Desktop with
+      a Nautilus plugin which allows you to turn any folder into a shared iFolder and iFolder has
+      fully encypted file transfer and storage. Finally, a big plus of iFolder is the excellent
+      documentation which you can find <ulink url="http://ifolder.com/ifolder/documentation"
+        >here</ulink>.</para>
+    <para>So unlike Dropbox and SpiderOak, iFolder is fully Free Software and the source is <ulink
+        url="http://community.ifolder.com/ssf/a/c/p_name/ss_forum/p_action/1/action/view_permalink/entityType/folderEntry/entryId/4244"
+        >hosted on sourceforge</ulink> and can be found <ulink
+        url="http://sourceforge.net/projects/ifolder/">here</ulink>. With 9 commits in the last 2
+      months it is not a hugely active project and the last release is from November 2009. Still bug
+      fixes are being added and lots of improvements were landed in 2010. You can find more
+      up-to-date versions by <ulink
+        url="http://software.opensuse.org/search?q=ifolder&amp;baseproject=ALL&amp;lang=en"
+        >searching on OBS</ulink>. And it should be noted that this <emphasis role="italic"
+        >‘old’</emphasis> version of iFolder has been offering all the features of Dropbox and
+      SpiderOak, fully open and free, for years!</para>
+    <para><emphasis role="bold">introducing ownCloud</emphasis></para>
+    <para><inlinegraphic
+        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/owncloud-logo-300x148.png"
+        width="20%"/></para>
+    <para><ulink url="http://owncloud.org/">ownCloud</ulink> is an exciting and much more active
+      project, developing file synchronization technology on a Free Software base. However, ownCloud
+      is far more ambitious as you can read in <ulink
+        url="http://blog.karlitschek.de/2011/06/yesterday-apple-announced-their-new.html">this
+        recent blogpost</ulink> by lead developer Frank Karlitschek. Frank welcomed Apple to the
+      Cloud, giving a feature comparision between ownCloud and their cloud offering. He mentioned
+      that:</para>
+    <blockquote>
+      <para>Apple finally [has] features which are essential for people who live in a connected
+        world and have more than one device</para>
+    </blockquote>
+    <para>Furthermore, after having a look at what Apple came up with, he concludes:</para>
+    <blockquote>
+      <para>It seems that we support everything iCloud is doing and a bit more if you look into the
+        feature set. And we have a fundamentally more advanced vision and architecture.</para>
+    </blockquote>
+    <para>ownCloud offers all the basics of accessing files via a variety of means including a web
+      interface and WebDAV. WebDAV support means integration in both <ulink
+        url="http://live.gnome.org/Nautilus">Nautilus</ulink> and <ulink
+        url="http://dolphin.kde.org/">Dolphin</ulink>, as well as all KDE and most GNOME
+      applications. ownCloud can synchronize application data like Bookmarks and settings and allows
+      you to listen to your online music collection in a few ways including from <ulink
+        url="http://ampache.org/">Ampache</ulink> and via the web interface. The same goes for
+      movies and photo’s while PIM syncing is in the works.</para>
+    <para><inlinegraphic
+        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/ownCloud_Login-300x173.jpg"
+      /></para>
+    <para>Above and beyond iCloud, work is going on in ownCloud to offer versioning of all files
+      through it’s git backend and the ability to share your files with whomever you want. More
+      importantly, ownCloud is extensible. It is possible to write addons to ownCloud like RSS
+      readers, todo lists and note syncing or even collaborative gaming. And ownCloud doesn’t limit
+      you with DRM or digital fingerprints, allowing you to put your music and movies online without
+      restrictions. Finally, where Apple’s cloud just works with Apple devices (as we’ve come to
+      expect from them), ownCloud is not so picky, working with Windows, Mac and Linux as well as
+      Android, MeeGo and of course the iPhone. This is possible because ownCloud uses open standards
+      and works with Free Software where possible, including the mentioned webDav, HTML5, <ulink
+        url="http://www.freedesktop.org/wiki/Specifications/open-collaboration-services">Open
+        Collaboration Services</ulink> and <ulink url="http://ampache.org/">Ampache</ulink>. An
+      access library for applications, to offer better integration with ownCloud, is already
+      available and part of the latest openSUSE.</para>
+    <para><emphasis role="bold">Upcoming</emphasis></para>
+    <para>And more is <ulink
+        url="http://owncloudtest.blogspot.com/2011/06/owncloud-20-just-merged-with.html">coming in
+        ownCloud 2.0</ulink>, scheduled for later this year. The UI has been completely redesigned
+      and there is now media support to play audio and video via the web interface. The mentioned
+      Ampache support, developed by Robin Appelman, will have a nice effect: the awesome <ulink
+        url="http://tomahawk-player.org/">Tomahawk music player</ulink> we <ulink
+        url="http://news.opensuse.org/2011/06/16/opensuse-and-online-services/">mentioned
+        yesterday</ulink> has Ampache support and thus will be able to play music directly from your
+      ownCloud 2.0 server!</para>
+    <para>Moreover, user management has been improved as well, and you will be able to extend
+      ownCloud with new functionality via apps and plugins! Finally, ownCloud aims to support not
+      only Chromium and Firefox but also lesser used browsers like Konqueror. A really exciting
+      feature is being worked on by a <ulink url="http://code.google.com/soc/">GSOC</ulink> student:
+      git versioning of files! There is some UI work to be done, which will then allow you to go
+      back in time and see earlier versions of your files.</para>
+    <para>Aaron, one of the ownCloud developers, gives <ulink
+        url="http://owncloudtest.blogspot.com/2011/06/owncloud-20-just-merged-with.html">his
+        thoughts</ulink> on where ownCLoud should go:</para>
+    <blockquote>
+      <para>With this, we can not only compete with Apple &amp; Google, we can leave them behind or
+        integrate with them from our own camp. There’s no reason you shouldn’t be able to play your
+        music from the cloud in Amarok or Tomahawk, view your calendar events on your iPhone and in
+        Kontact and access all of your files from Android or webOS or Gnome or Windows or OS X. You
+        should also be able to back up your home directory and keep it in sync between multiple
+        computers</para>
+    </blockquote>
+    <para><emphasis role="bold">Control</emphasis></para>
+    <para>The most important feature of ownCloud, however, is control. In Frank’s words:</para>
+    <blockquote>
+      <para>You don't have to put your private data into the hosting center of a big company</para>
+    </blockquote>
+    <para>You can install ownCloud on your own server, your desktop at home, a company server but
+      also at a hosting provider supporting PHP, or run it as appliance in some cloud service under
+      your direct control. Because it is Free Software, you fully own your data and only <emphasis
+        role="italic">you</emphasis> can determine what happens with it.</para>
+    <para>All this doesn’t have to mean ownCloud is hard to set up. The upcoming 2.0 version will
+      make it drastically easier to deploy but the current 1.2 release can also be had in a number
+      of very easy ways.</para>
+    <para><emphasis role="bold">Get ownCloud</emphasis></para>
+    <para>You can install owncloud on your own server or even desktop using the <ulink
+        url="http://software.opensuse.org/search?q=owncloud&amp;baseproject=ALL">openSUSE
+        repositories on OBS</ulink>. Be sure to read <ulink
+        url="http://owncloud.org/index.php/Installation#openSUSE">the documentation</ulink> on
+      starting and managing your ownCloud. You can also use the how-to on <ulink
+        url="http://owncloudtest.blogspot.com/2011/06/getting-your-owncloud.html">Aaron’s
+        blog</ulink> to get the latest and freshest version installed from source! After following
+      the basic installation steps, you just have to go to <ulink
+        url="http://127.0.0.1/owncloud/index.php">127.0.0.1</ulink> in your browser to complete the
+      setup from the web interface.</para>
+    <para>However, your ownCloud can be had easier. You can use the excellent <ulink
+        url="http://susegallery.com/a/TadMax/owncloud-in-a-box">ownCloud-in-a-box SUSE Studio
+        image</ulink> to download a virtual image of ownCloud and start running it right away. It
+      gets even more interesting with the <ulink url="http://aws.amazon.com/ec2/">Amazon Elastic
+        Cloud Computing</ulink> support of SUSE Studio. Deploying your image on the Amazon cloud
+        <ulink url="http://blog.susestudio.com/2011/05/its-never-been-so-ec2-access-cloud.html">is
+        easy as pie</ulink>. You could use <ulink url="http://aws.amazon.com/ec2/instance-types/"
+        >microinstance</ulink> for which even a <ulink url="http://aws.amazon.com/free/">free 1-year
+        subscription</ulink> is available. Yes, that’s right, you can have <emphasis role="italic"
+        >your</emphasis> openSUSE ownCloud under <emphasis role="italic">your</emphasis> full
+      control on Amazon EC2 for <emphasis role="bold">FREE</emphasis> for one year!</para>
+    <para>If running your own Appliance on EC2, another provider or your own hardware is still a tad
+      complicated, there is an even easier option: <ulink
+        url="https://www.packagecloud.com/?au=owncloud">packagecloud.com</ulink>. They offer
+      ownCloud hosting (including a free option, yup) with their convenient web interface. Yes,
+      again, full control over your own data and easy to use.</para>
+    <para>
+      <table frame="all">
+        <title>Install ownCloud</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <thead>
+            <row>
+              <entry>
+                <ulink
+                  url="http://software.opensuse.org/ymp/server:php:applications/openSUSE_11.4/owncloud.ymp">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                    </imageobject>
+                  </inlinemediaobject></ulink>
+                <para>openSUSE 11.4</para></entry>
+              <entry>
+                <ulink
+                  url="http://software.opensuse.org/ymp/server:php:applications/openSUSE_11.3/owncloud.ymp">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
+                    </imageobject>
+                  </inlinemediaobject></ulink><para>openSUSE 11.3</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry/>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </para>
+    <para><emphasis role="bold">Helping out</emphasis></para>
+    <para><inlinegraphic
+        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/owncloud_studio-300x173.png"
+      /></para>
+    <para>ownCloud is a Free Software project, which means you can get involved. The team is looking
+      for anyone who has some skills in (or wants to learn) PHP, C++, HTML, CSS &amp; Javascript.
+      Drop by #owncloud on freenode or send an email to owncloud on kde.org and get involved
+      today!</para>
+    <para><emphasis role="bold">Conclusion</emphasis></para>
+    <para>Frank closes his blog with:</para>
+    <blockquote>
+      <para>I think ownCloud has the potential to become the cloud storage solution for people who
+        donýt like vendor lock-ins and care about freedom and privacy</para>
+    </blockquote>
+    <para>We would like to go a step further and claim that the wide variety of hosting options for
+      ownCloud offers not only more security and privacy but also far more flexibility and, in time,
+      lower prices than what Google, Apple, Microsoft and the other ‘big boys’ bring to the table.
+      Combined with the excellent integration openSUSE desktops already offer with online services,
+      openSUSE has a sunny future in the cloud.</para>
     <para><emphasis role="bold">License</emphasis>: <ulink
         url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <para><!--($ ld: 9.6.11 sm $)--></para>
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/06/09/world-ipv6-day-results/">World IPv6 Day
-        Results</ulink></title>
-    <para>Yesterday was World IPv6 Day and openSUSE <ulink
-        url="http://news.opensuse.org/2011/05/31/opensuse-and-world-ipv6-day/">participated</ulink>
-      in it. We hope the experiment was as successful for the other participants as it was for
-      us!</para>
-    <para>Here is a short status update from the openSUSE infrastructure. openSUSE has currently two
-      major server locations and we tested IPv6 at both separately. Note that there are more
-      openSUSE infrastructure locations, including the server which runs the popular <ulink
-        url="http://news.opensuse.org/2011/06/09/planet.opensuse.org">planet.opensuse.org</ulink>
-      (which supports IPv6 as well now)!</para>
-    <para><emphasis role="bold">Nürnberg</emphasis></para>
-    <para>In Nürnberg, Germany, the following main services were enabled:</para>
-    <itemizedlist>
-      <listitem>
-        <para>download.opensuse.org</para>
-      </listitem>
-      <listitem>
-        <para>build.opensuse.org</para>
-      </listitem>
-      <listitem>
-        <para>lists.opensuse.org</para>
-      </listitem>
-      <listitem>
-        <para>{many_web_sites}.opensuse.org</para>
-      </listitem>
-    </itemizedlist>
-    <para>Just two services did not make it in time: the torrent tracker and the email servers. Our
-      current tracker software does not support IPv6 – and the dedicated new tracker needs more love
-      from our packager. The mail servers are provided by our ISP so we left them as they
-      were.</para>
-    <para>All our other services are <emphasis role="bold">RUNNNING on IPv4+IPv6</emphasis> and
-        <emphasis role="bold">WILL STAY on IPv4+IPv6</emphasis> even if the IPv6 day is over now. We
-      have seen an increase from ~1% IPv6 bandwidth usage to ~7% bandwidth usage today, which is
-      impressive and encouraging!</para>
-    <para><emphasis role="bold">Provo</emphasis></para>
-    <para>In Provo, US, the following main services were enabled:</para>
-    <itemizedlist>
-      <listitem>
-        <para>{lang}.opensuse.org wikis</para>
-      </listitem>
-      <listitem>
-        <para>forums.opensuse.org</para>
-      </listitem>
-      <listitem>
-        <para>lizards and news.opensuse.org</para>
-      </listitem>
-    </itemizedlist>
-    <para>Currently these services provide IPv6, but we are facing two kinds of problems, proving
-      how useful the World IPv6 day was for us:</para>
-    <orderedlist>
-      <listitem>
-        <para>Native IPv6 users reported problems which are MTU related. Manually lowering the MTU
-          on the client side fixed their problems, but this is something that we are working on
-          closely together with our ISP.</para>
-      </listitem>
-      <listitem>
-        <para>Some sites are not accessible from some clients. But clients from the same subnet did
-          not have the problems. More mysterious: the problematic clients can reach other servers
-          without problems. This is currently the problem which needs some deep
-          investigation.</para>
-      </listitem>
-    </orderedlist>
-    <para>We are currently discussing whether we can solve these issues quickly or have to disable
-      IPv6 again for our servers in Provo.</para>
-    <para>The following problems were solved during World IPv6 day:</para>
-    <itemizedlist>
-      <listitem>
-        <para>One package on our openSUSE distribution needed patches: the apache2-mod_geoip package
-          used on download.opensuse.org</para>
-      </listitem>
-      <listitem>
-        <para>we found two packages (vsftpd and torrent-seeder) which can’t handle IPv4 and IPv6 at
-          the same time</para>
-      </listitem>
-    </itemizedlist>
-    <para>In conclusion, the world IPv6 day participation showed openSUSE to be quite ready for IPv6
-      – and we will work on fixing the few problems we encountered.</para>
-    <para>I’d like to mention two people especially and thank them for their hard work, great help
-      and enthusiasm:</para>
-    <para><emphasis role="italic">Christian Deckelmann</emphasis> (who provides us with the needed
-      infrastructure, resources and knowledge) and <emphasis role="italic">Markus Rýckert</emphasis>
-      (who handled all the configuration changes and patches that are needed on our servers).</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 9.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://news.opensuse.org/2011/06/09/new-leadership-inside-the-medical-project/">New
-        Leadership inside the Medical Project</ulink></title>
-    <para>During the first openSUSE Conference in 2009, the idea was born to start a project to
-      package and publish software for medical purposes. Since then, many packages were built and
-      updated: software from the FreeMedForms project, OpenEMR, GnuMed, software for viewing images
-      in DICOMM format and recently, a plasmoid for diabetics.</para>
-    <para>The first stable release (v 0.0.6) was released on November 2010, based on openSUSE 11.3
-      and as contestant in the “<ulink
-        url="http://www.novell.com/promo/suse/the-disters-contest.html">The
-      Disters</ulink>“-Contest. This release was produced with <ulink url="http://susestudio.com/"
-        >SUSE Studio</ulink>, and published via <ulink url="http://susegallery.com/browse">SUSE
-        Gallery</ulink>.</para>
-    <para>The goal of this openSUSE derivative was to give medical people all they need in their
-      daily work. So the image contained OpenOffice, KMyMoney, mail, calendering and all other basic
-      office tools. And of course the content from the <ulink
-        url="http://download.opensuse.org/repositories/medical/">medical repository</ulink>. There
-      was some press attention in <ulink url="http://lwn.net/Articles/415542/rss">Linux Weekly
-        News</ulink> and<ulink
-        url="http://linuxtoday.com/news_story.php3?ltsn=2010-11-17-001-35-OS-SS-RL"
-        >Linuxtoday</ulink>!</para>
-    <para><emphasis role="bold">Provided Software</emphasis></para>
-    <para>openSUSE Medical provides tools from the <ulink url="http://www.freemedforms.com/en/start"
-          ><emphasis role="bold">FreeMedForms Project</emphasis></ulink>. FreeMedForms is a
-        <emphasis role="bold">Electronic Medical Record Application</emphasis>. There doctors can
-      manage clients data and diagnostic information. The second Application from this Project is
-      FreeDiams, a <emphasis role="bold">electronic prescriber.</emphasis> And FreeICD helps to find
-      the right <emphasis role="bold">ICD Code</emphasis>.</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://en.opensuse.org/images/thumb/6/64/Freemedforms_screenshot.png/200px-Freemedforms_screenshot.png"
-          depth="99" width="200"/>
-      </imageobject>
-    </mediaobject>
-    <para>The <emphasis role="bold"><ulink url="http://wiki.gnumed.de/bin/view/Gnumed"
-          >GNUmed</ulink></emphasis> project builds free, libre open source <emphasis role="bold"
-        >Electronic Medical Record</emphasis> software in multiple languages to assist and improve
-      longitudinal care (specifically in ambulatory settings, i.e. multi-professional practices and
-      clinics). It is made available at no charge and is capable of running on GNU/Linux, Windows
-      and Mac OS X. It is developed by a handful of medical doctors and programmers from all over
-      the world. It can be useful to anyone documenting the health of patients including, but not
-      limited to,ýdoctors, physical therapists, occupational therapists, acupuncturists, nurses and
-      psychologists.</para>
-    <para><emphasis role="bold"><ulink url="http://code.google.com/p/tempo/"
-        >TEMPO</ulink></emphasis> is open source software for <emphasis role="bold">3D visualization
-        of brain electrical activity</emphasis>. TEMPO accepts EEG file in standard EDF format and
-      creates animated sequence of topographic maps. Topographic maps are generated over a 3D head
-      model and the user is able to navigate around the head and examine maps from different points
-      of view. Most mapping parameters are adjustable through the graphical user interface. Also,
-      individual topographic maps could be saved in PNG format for future examination or
-      publishing.</para>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="http://en.opensuse.org/images/thumb/f/fa/Tempo.png/200px-Tempo.png"
-          depth="150" width="200"/>
-      </imageobject>
-    </mediaobject>
-    <para>The software from the <emphasis role="bold"><ulink url="http://www.oyranos.org/">Oyranos
-          Project</ulink></emphasis> is also part of the medical repository and in openSUSE Medical.
-      It allows medical professionals to view medical file formats like DICOMM Files.</para>
-    <para>The newest addition to the medical repository is <ulink url="http://bit.ly/lQuA0S"
-        >plasmoid-glucose</ulink>, a KDE Plasmoid for diabetics.</para>
-    <para>The openSUSE medical project has been a success. The SUSE gallery image has been
-      downloaded well over 1400 times and was cloned by 162 users so they could provide their own
-      variations of openSUSE Medical!</para>
-    <para>The team is very much interested in more feedback, however. Especially when it comes to
-      real-life usage of openSUSE Medical. Feedback from professionals in the field using the
-      software can be very valuable in improving it and would be highly appreciated. So if you study
-      medicine, work at a pharmacy or are a doctor and you use or might use openSUSE Medical, please
-      let us know! You could tell the whole team by <ulink
-        url="mailto:opensuse-medical+subscribe@opensuse.org">subscribing to the openSUSE Medical
-        mailing list</ulink> which is very low-trafic (3-4 mails per week) or contact one of the
-      team members like <ulink url="mailto:saigkill@opensuse.org">Sascha Manns</ulink> directly. Of
-      course you are also very much welcome on the <ulink
-        url="irc://irc.opensuse.org/opensuse-medical">openSUSE Medical IRC channel</ulink> and can
-      join the <ulink url="http://on.fb.me/clGDk7">facebook page</ulink>!</para>
-    <para><emphasis role="bold">New leadership and project plans</emphasis></para>
-    <para>Today, the team announces a shift in leadership and a road map for the future.</para>
-    <para>Two years after the start of this project, the former team leader Sascha Manns has stepped
-      down and Thanasis Rous will take over. Last November, the first official release was published
-      with a range of desktop and server packages. openSUSE medical is now part of the <ulink
-        url="http://www.linux.com/community/groups/viewgroup/1264-Medical+Task+Force">Linux Medical
-        Taskforce</ulink> and has exciting plans for the future. These include:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Importing more applications dealing with diabetes care and diabetics</para>
-      </listitem>
-      <listitem>
-        <para>Importing applications that would be useful for medical students (some educational
-          applications like Kalzium are already added)</para>
-      </listitem>
-      <listitem>
-        <para>Bug testing applications (maybe create a new mailing list for this purpose e.g
-          “opensuse-medical-bugs”)</para>
-      </listitem>
-      <listitem>
-        <para>Translating the included applications into more languages</para>
-      </listitem>
-    </itemizedlist>
-    <para>The new leader Athanasios-Ilias yesterday has released the new image under <ulink
-        url="http://susegallery.com/a/UbPYJM/opensuse-medical-114">SUSE Gallery</ulink>. Also
-      available at : OVF image, VMware Image, Live CD/DVD.</para>
-    <para><emphasis role="bold">More information and helping out</emphasis></para>
-    <para>Anyone interested in the project can read more about it at the <ulink
-        url="http://en.opensuse.org/Portal:Medical">Medical wiki portal</ulink>.</para>
-    <para>There are many ways to help with working in the project – you don’t need to be a developer
-      or packager, nor do you need to be a medical specialist, though of course these skill sets are
-      very welcome. If you’re not sure how to help, sign up to the mailing list and introduce
-      yourself. If you’re a user of this software and would like to see it develop in certain
-      directions, this is also a great place to get your ideas heard.</para>
-    <para>If you want to get involved, subscribe to the mailing list with “<ulink
-        url="mailto:opensuse-medical+subscribe@opensuse.org"
-        >opensuse-medical+subscribe@opensuse.org</ulink>“. We very much welcome your
-      feedback!</para>
-    <para>Have a lot of fun :-)</para>
-    <para><emphasis role="italic">Contributed by Sascha Manns, Athanasios-Ilias Rousinopoulos and
-        Jos Poortvliet.</emphasis></para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 10.6.11 sm $)-->
+    <para><!--($ ld: 18.6.11 sm $)--></para>
   </blockquote>  
 </sect1>
