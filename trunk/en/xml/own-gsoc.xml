@@ -28,60 +28,49 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://sysbytes.wordpress.com/2011/06/12/sax3-gsoc-2011-weekly-report-2/"
-        >Manu Gupta: SaX3 – GSoC 2011 – Weekly Report 2</ulink></title>
-    <para>This is my 2nd report, this week not to show much for the users, but we did a quite
-      interesteing things. SaX is now module oriented.So, if anyone wants to write a module for SaX3
-      it is possible now. Besides the important things which I did was.<orderedlist>
-        <listitem>
-          <para>Learn the augeas C api</para>
-        </listitem>
-        <listitem>
-          <para>Submitted a  .desktop lens for augeas</para>
-        </listitem>
-        <listitem>
-          <para>It is module oriented</para>
-        </listitem>
-        <listitem>
-          <para>Tried out Doxygen</para>
-        </listitem>
-        <listitem>
-          <para>SaX3 is now localised.</para>
-        </listitem>
-      </orderedlist></para>
-    <para>The launcher is now complete <mediaobject>
-        <imageobject>
-          <imagedata
-            fileref="http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1304368896g"/>
-        </imageobject>
-      </mediaobject> Again, the source code is here<ulink url="http://github.com/manugupt1/sax3"
-        >http://github.com./manugupt1/sax3</ulink> Regarding modules, If anyone wants to check out
-      how modules work, they work using .desktop files  in /usr/share/sax3/modules.d. If you will
-      remove it we can remove it from the launcher.</para>
-    <!-- ($ ld: 14.6.11 sm $) -->
+    <title><ulink url="http://rxvl.in/post/6688635893">Ratan Sebastian: GSOC 2011: ssc - Week
+        4</ulink></title>
+    <para>The DirectoryManager module has been polished and it now handles duplicate entries in the
+      software and repositories files. The app now handles errors better and crashes more gracefully
+      with meaningful error messages. As for functionality, I’ve added package banning and
+      unbanning. Also package importing has been included in the current release.</para>
+    <para>I’ve started work on the file handling of the app. Currently it works similar to the
+      packages or repositories with the difference that the file in question is copied over to
+      &lt;appliance_directory&gt;/files. Adding and removing these files will be simple enough
+      within the current framework. And with some work time-stamp information can be incorporated to
+      do more efficient syncs. I hope to have that done by next week and follow up with a basic
+      implementation of the commit command in the week after that so that we can have a first usable
+      version of the client.</para>
+    <para>If you want to check out the application now, you can take it for a spin using <ulink
+        url="http://dl.dropbox.com/u/546252/ssc_releases/ssc-0.1.0.gem">the gem</ulink>. Use with
+      caution, and all that. It shouldn’t do anything catastrophic, but, I wouldn’t use it with
+      anything other than a test appliance at this point. Download it from <ulink
+        url="http://dl.dropbox.com/u/546252/ssc_releases/ssc-0.1.0.gem">here</ulink>. Install it
+      with <ulink url="http://rubygems.org">rubygems</ulink> (gem install ssc-0.1.0.gem) and run ssc
+      help to see the usage instructions.</para>
+    <!-- ($ ld: 20.6.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://rxvl.in/post/6481353758/gsoc-2011-ssc-week-3">Ratan Sebastian: GSOC 2011:
-        ssc - Week 3</ulink></title>
-    <para>This week I was working on the local storage feature of the client. As proposed we were
-      going to add and remove packages, repositories and files with a git-like workflow.
-      i.e. <screen>ssc package add gnuchess</screen>would make a local record of the intention to
-      add that package and on <screen>ssc commit</screen>the changes would actually be
-      pushed.</para>
-    <para>In order to facilitate this I’m abstracting all the directory management to a
-      DirectoryManager module. Which abstracts methods to save, read and diff from local sources.
-      Right now the syntax I’ve chosen is YAML. For instance the software file in the appliance
-      directory - which catalogues the changes made to the appliance’s software - stores names of
-      installed packages. Unless the ssc command is invoked with the -r | --remoteoption, it will
-      display the packages in that file. In addition when ssc package add gnuchess is run with out
-      the -r option, it will make and addition add gnuchess to the software file. Similarly for
-      remove. I am having some problems figuring out how to integrate patterns into this
-      architecture so any help on that front would be appreciated.</para>
-    <para>That’s it for this week. I’m going to be working on pretty much the same thing next week.
-      Extending and refactoring this functionality. So hopefully we will have a more usable version
-      then.Thank you for reading.</para>
-    <!-- ($ ld: 14.6.11 sm $)-->
+      <ulink url="http://rxvl.in/post/6481353758/gsoc-2011-ssc-week-3">Marcus Hüwe: [gsoc] osc code
+        cleanup – summary of week 4</ulink></title>
+    <para>here’s a small summary of the 4th (coding) week. I spent most of the time with writing the
+      RemoteFile classes and the BuildResult class (+ testcases of course:) ).</para>
+    <para>TODO for this week:</para>
+    <itemizedlist>
+      <listitem>
+        <para>improve RemoteFile classes</para>
+      </listitem>
+      <listitem>
+        <para>add APIInfo class:</para>
+        <para> - resolve url-like parameters (api://foo/bar repo/arch)</para>
+        <para> - raise an exception if required parameters are missing</para>
+        <para> - initialize optional parameters with the config default</para>
+        <para> - encapsulate “context-sensitivity” logic (sometimes parameters should be read from
+          the working copy (like apiurl, project or package))</para>
+      </listitem>
+    </itemizedlist>
+    <!-- ($ ld: 20.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink

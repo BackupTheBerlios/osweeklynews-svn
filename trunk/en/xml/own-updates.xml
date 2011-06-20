@@ -24,21 +24,30 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
   <blockquote>
-    <title><ulink
-        url="http://saigkill.homelinux.net/entry/2011/06/16/bleachbit-088-checked-in-into-opensuse-build-service"
-        >Sascha Manns: bleachbit 0.8.8 checked in into openSUSE Build Service</ulink></title>
-    <para>BleachBit quickly frees disk space and tirelessly guards your privacy. Free cache, delete
-      cookies, clear Internet history, shred temporary files, delete logs, and discard junk you
-      didn't know was there. Designed for Linux and Windows systems, it wipes clean 90 applications
-      including Firefox, Internet Explorer, Adobe Flash, Google Chrome, Opera, Safari,andý<ulink
-        url="http://bleachbit.sourceforge.net/features">more</ulink>. Beyond simply deleting files,
-      BleachBit includes advanced features such as shredding files to prevent recovery, wiping free
-      disk space to hide traces of files deleted by other applications, and vacuuming Firefox to
-      make it faster. Better than free, BleachBit is open source.</para>
-    <para> Now i've checked in <ulink url="http://bleachbit.sourceforge.net/">bleachbit</ulink> in
-        <emphasis role="bold">version 0.8.8</emphasis>.</para>
-    <para> What's happend since the last version? (...)</para>
-    <!--($ ld: 17.6.11 sm $)-->
+    <title><ulink url="http://blog.cboltz.de/archives/60-patch2mail-1.1.html">Christian Boltz:
+        patch2mail 1.1</ulink></title>
+    <para>I just released patch2mail 1.1 which will send you a mail when updates are available for
+      your openSUSE system.</para>
+    <para>Changes:</para>
+    <itemizedlist>
+      <listitem>
+        <para>patch2mail will now also send notifications for package updates, not only for patches
+          (configurable in /etc/sysconfig/patch2mail)</para>
+      </listitem>
+      <listitem>
+        <para>include a note about package manager updates (they can hide other updates)</para>
+      </listitem>
+      <listitem>
+        <para>older distributions are still supported of course - just make sure to install the
+          package for the correct distribution. However the new features listed above are only
+          supported on 11.1 and newer.</para>
+      </listitem>
+    </itemizedlist>
+    <para> You can <ulink
+        url="http://software.opensuse.org/search?q=patch2mail&amp;baseproject=ALL&amp;include_home=true"
+        >download patch2mail</ulink> from the openSUSE build service.</para>
+    <para>I have also submitted the new version to Factory (SR 74130).</para>
+    <!--($ ld: 20.6.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink

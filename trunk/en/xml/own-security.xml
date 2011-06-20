@@ -100,4 +100,41 @@
       </tbody>
     </table>
   </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://thetoms-random-thoughts.blogspot.com/2011/06/suse-manager-security-update.html"
+        >Thomas Biege: SUSE Manager Security Update</ulink></title>
+    <para>Last Friday we released a security update for SUSE Manager. It eliminates four
+      vulnerabilities which I will describe in detail here:<orderedlist>
+        <listitem>
+          <para>CSRF (CVE-2009-4139): This is the most dangerous issue fixed by this update. It was
+            found during a penetration-test executed by me before we released the SUSE Manager. You
+            may wonder why we released the fix after the "gold master" (GM) and why it has a CVE-ID
+            from 2009. Red Hat was informed about this issue in 2009 already and after some back and
+            forth we decided to release it together with Red Hat and not earlier. But not only the
+            release date was coordinated, we also coordinate fixing and testing.</para>
+        </listitem>
+        <listitem>
+          <para>The default SSL ciphersuite configuration that comes with our apache2 package (this
+            also affects the SM proxy) was made up to support as much and as old client as possible.
+            This results in a config that is insecure because it support "export ciphers", SSLv2,
+            short keys, etc. If you install this update before you configured your SM you will have
+            a up-to-date and secure config. Use sslscan to verify your setup. If it is still
+            insecure go to /etc/apache2/ssl-global.conf and change it to something like:</para>
+          <para>
+            <programlisting id="comment_text_0">ssl_protocols TLSv1 ssl_ciphers ALL:!aNULL:!eNULL:!SSLv2:!LOW:!EXP:!MD5:@STRENGTH</programlisting>
+          </para>
+        </listitem>
+        <listitem>
+          <para>Open Redirect (CVE-2011-1594): A hidden field named "url_bounce" allows HTTP
+            redirects and therefore phishing attacks. Found during penetration-test, released after
+            GM because it was too minor to hold release.</para>
+        </listitem>
+        <listitem>
+          <para>XML remote denial of service (CVE-2011-1755): jabber2 server can be dos'ed ("billion
+            laughs attack"), not found by us.</para>
+        </listitem>
+      </orderedlist></para>
+    <!--($ ld: 20.6.11 sm $)-->
+  </blockquote>
 </sect1>

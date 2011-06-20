@@ -255,72 +255,81 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->    
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-<!--
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/05/31/some-updates-on-the-banshee-repositories/">Nelson Marques: Some updates on the Banshee repositories…</ulink>
+          <ulink url="http://lists.opensuse.org/archive/opensuse-buildservice/2011-06/msg00134.html"
+            >OBS 2.3 Beta 2</ulink>
         </title>
-        <para>Sometime ago Gabriel asked me if I could give him help with the Banshee repositories
-          for openSUSE; This repositories have many users hanging around and some packages are
-          enabled on other projects, which makes them somehow sensible to deep changes.</para>
-        <para>Today I’ve pushed to openSUSE:Factory Banshee 2.0.1 (latest stable release) and a few
-          packages which live in the Banshee repository. I’ve also submitted a deletion request to
-          ipod-sharp which is no longer maintained and was replaced in the past for libgpod.</para>
-        <para>I’ve fixed the pending issues I’ve seen on the Banshee repository and Banshee 2.0.1
-          and disabled SLE 11 builds (not requiring all the dependencies). The repository serves now
-          the following platforms (banshee and banshee-community-extensions):<itemizedlist>
+        <para>This OBS 2.3 release is now feature complete. We changed a bit more then expected:<itemizedlist>
             <listitem>
-              <para>SLE 11 SP1;</para>
+              <para>New source service mode handling is default now. Server side services get
+                applied when listing in expand mode, like with source links.</para>
             </listitem>
             <listitem>
-              <para>openSUSE 11.3;</para>
+              <para>Configuration UI to setup OBS instance name and description.</para>
             </listitem>
             <listitem>
-              <para>openSUSE 11.4;</para>
+              <para>MeeGo.com is pre-configured now.</para>
             </listitem>
             <listitem>
-              <para>openSUSE Factory;</para>
+              <para>backend daemons have integrated runtime management</para>
             </listitem>
             <listitem>
-              <para>openSUSE Tumbleweed (new).</para>
+              <para>A large number of bugfixes</para>
             </listitem>
           </itemizedlist></para>
-        <para>On Banshee:Unstable (which should hold the unstable releases, currently 2.1.0) I’ll be
-          introducing some changes during the next days which will feature:<itemizedlist>
+        <para><emphasis role="bold">Current State</emphasis></para>
+        <para>Open tasks for next weeks are:<itemizedlist>
             <listitem>
-              <para>Package being renamed to ‘banshee’, thus dropping the current banshee-1;</para>
+              <para>Get documentation in a better shape so that we can switch openSUSE maintenance
+                using the new mechanisms.</para>
             </listitem>
             <listitem>
-              <para>Migration to pkgconfig() calls for &gt;= 1130;</para>
-            </listitem>
-            <listitem>
-              <para>Packages banshee and banshee-core get merged into banshee (currently banshee had
-                only 4 documentation files);</para>
-            </listitem>
-            <listitem>
-              <para>New sub-package banshee-common to hold all the architecture independent files
-                (ex: text files, icons, etc);</para>
-            </listitem>
-            <listitem>
-              <para> A few cleanups on the spec file for unsupported platforms (SLE11 and SLE11SP1
-                do not meet the requirements for this version and superior).</para>
+              <para>There are absolute zero known regressions known atm. So really everything should
+                be at least as good as in OBS 2.1.x :) Feel free to run it on your production
+                system, we do it also on build.opensuse.org :)</para>
             </listitem>
           </itemizedlist></para>
-        <para>Once this is implemented and tested I will look into Banshee:Alpha and see the best
-          way to start building daily/weekly snapshots using the OBS magic available and some magic
-          tricks hidden in Dimstar’s sleeve which kindly accepted my request to give me a hand on
-          such evil task.</para>
-        <para>In the future, on the next stable release (2.2.0), I’ll move the changes from
-          Banshee:Unstable to Banshee and hopefully change the development repository to Banshee (as
-          if Factory has the latest stable release it makes no sense in having Banshee’s development
-          repository in Banshee:Unstable) and synch all at once.</para>
-        <para>Users subscribed to Banshee:Unstable repository might see some turbulence during the
-          next days, while users subscribing now through the 1-Click installer will already be
-          installing Banshee with the changes described above.</para>
-        <para><emphasis role="bold">License</emphasis>: <ulink url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>     
-        </blockquote> -->      <formalpara>
+        <para><emphasis role="bold">The call for help</emphasis></para>
+        <para>There are still a number of areas where some clean up is needed. For example we have<itemizedlist>
+            <listitem>
+              <para>20 FIXME2.2 lines in the code (means that read access handling code needs
+                checking)</para>
+            </listitem>
+            <listitem>
+              <para>10 FIXME2.3 lines in the code (maintenance code needs a revisit here)</para>
+            </listitem>
+            <listitem>
+              <para>Unknown state of Cross architecture builds. It would be nice if someone can help
+                so that the OBS Appliance can build for arm architectures out of the box.</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>You can stop here when you read already Beta 1 announcement ,)</para>
+        <para><emphasis role="bold">OBS 2.3 main features</emphasis></para>
+        <para>The main features of this release are <itemizedlist>
+            <listitem>
+              <para>Full distribution maintenance support. This includes support for the workflow in
+                OBS and also the patch channel generation. This functionality can be used at full
+                glance with coordination and review teams or just in parts.</para>
+            </listitem>
+            <listitem>
+              <para>Read access protection for projects (as planned for OBS 2.2)</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Apart from that we have many smaller improvements, esp. in the area of request
+          handling and the webui integration.</para>
+        <para><emphasis role="bold">Download it</emphasis></para>
+        <para>As usual, you find current packages or an appliance in openSUSE:Tools:Unstable
+          project. OBS 2.3 Beta 2 is tagged as version 2.2.84. </para>
+        <para>Please read here for usage details for the appliance:<ulink
+            url="http://en.opensuse.org/openSUSE:Build_Service_Appliance"
+            >http://en.opensuse.org/openSUSE:Build_Service_Appliance</ulink> (...)</para>
+        <!--($ ld: 20.6.11 sm $)-->
+        </blockquote>
+      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
