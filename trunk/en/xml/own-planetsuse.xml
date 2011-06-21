@@ -20,20 +20,34 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://jimmac.musichall.cz/log/?p=1181">Jakub Steiner: Killing Mode Switch</ulink>
+      <ulink url="http://lizards.opensuse.org/2011/06/20/1-2-3-cloud/">Robert Schweikert: 1-2-3
+        Cloud</ulink>
     </title>
-    <para>As Allan already mentioned in one of his useful summaries, I’ve been pondering how how to
-      improve the layout of the application picker in shell’s overview. While the mockup he showed
-      does address the small click target problem, it still felt out of place with relation to the
-      dash. I tried to apply different lipstick on it, but there was something inherently wrong with
-      the layout and the overview lost its clean, “no boxes” feel.</para>
-    <para>The reason for the windows/applications toggle was easy extensibility. We thought of using
-      shell to access people/contacts in the same way as we access applications. We thought to
-      present documents in a better way without exposing the filesystem here as well. We thought the
-      orthogonal arrangement ala Sony’s XMB would be fun on touch devices. Over time, I have come to
-      the conclusion that extending the scope of shell might do more harm than good. I’ve never been
-      a fan of all-in-one solutions ala iTunes. (...)</para>
-<!--($ ld: 16.6.11 sm $)-->  </blockquote>
+    <para>Towards the end of last year there was an article in openSUSE news “announcing” the cloud
+      efforts in the openSUSE project and on OBS. Well, cloud is still all the rage (see Jos’
+      contribution to openSUSE News issue 180) and people just cannot stop talking about cloud
+      computing.</para>
+    <para>Using openSUSE as a host for your cloud infrastructure is also making great progress. We
+      have 3 cloud projects in OBS and hopefully these cover your favorite cloud infrastructure
+      code, Virtualization:Cloud:Eucalyptus, Virtualization:Cloud:OpenNebula, and
+      Virtualization:Cloud:OpenStack. The projects provide repositories for Eucalyptus, OpenNebula,
+      and OpenStack, respectively.</para>
+    <para>We attempt to make it relatively easy to get a cloud up and running. In this process
+      OpenNebula and OpenStack have progressed the most. Eucalyptus is working, but due to an issue
+      with Eucalyptus and openSSL 1.0 and later (the version in openSUSE) automation has to wait
+      until these issues are resolved.</para>
+    <para>For OpenNebula we now have a <ulink url="http://kiwi.berlios.de">KIWI</ulink><ulink
+        url="http://en.opensuse.org/SDB:KIWI_Cookbook_ONebula_Cloud">example</ulink> that shows how
+      one can get a cloud setup from scratch in less than 2 hours, including the image build. The
+      example contains a firstboot workflow for the head node, and self configuration of cloud
+      nodes.</para>
+    <para>For OpenStack <ulink url="http://susegallery.com/browse">SUSE Gallery</ulink> images are
+      in the works and will be published in the near future.</para>
+    <para>All repositories provide packages you can install on running openSUSE systems. If you are
+      interested in using openSUSE as the underlying OS for your cloud or if you want to contribute
+      to the cloud projects, subscribe to the cloud mailing list <ulink
+        url="mailto:opensuse-cloud@opensuse.org">opensuse-cloud@opensuse.org</ulink></para>
+<!--($ ld: 21.6.11 sm $)-->  </blockquote>
   <blockquote>
     <title><ulink
       url="http://fridrich.blogspot.com/2010/05/experimental-evolution-installer-for.html"

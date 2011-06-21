@@ -432,12 +432,34 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://obsforandroid.wordpress.com/2011/06/13/11-things-ive-learned-about-git/">Justine Leng: 11 Things I’ve Learned about Git</ulink>
+        <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html"
+          >Fridrich Strba: Bounding Box of an SVG Elliptical Arc</ulink>
       </title>
-      <para>Now that I’ve spent a few weeks with Git, I decided to record some of the things I
-        learned while moving from Subversion (a centralized version control system) to Git (a
-        distributed version control system). (...)</para>
-<!-- ($ Id: 14.6.11 sm $)-->    </blockquote>
+      <para>We all love ODF, the best and the most vendor-neutral file-format in the Universe and
+        its surroundings. But for sure, we have some spots where we would prefer it to be somehow
+        less cumbersome. My favourite spot is the need to compute the bounding box of the path
+        element when one writes the draw:path into an OpenDocument Graphics file. Without proper
+        svg:x, svg:y, svg:height, svg:width and svg:viewBox values the path will not be correctly
+        placed.</para>
+      <para>Computing bounding boxes is not so complicated work when everything is a polygon (which
+        is the case in the internal model of basegfx module), but it becomes a bit more complicated
+        if an application wants to generate paths including elliptical arcs.</para>
+      <para>I hit this problem about a year ago when I was working during <ulink
+          url="http://fridrich.blogspot.com/2010/06/hackweek-v-day-1.html">my hackweek</ulink> on an
+        improvement of <ulink url="http://libwpg.sourceforge.net">libwpg</ulink>. I tried first to
+        implement the bounding box of an elliptical arc the lazy hacker way, by googling for what
+        other people did. And to my surprise, there is a huge vacuum in what concerns computation of
+        a bounding box of the "A" element of an SVG path. So, I settled for the lazy hacker's plan
+        B: I abandoned the idea by saying I will handle it later, in the first moment, and by
+        implementing a <ulink
+          url="http://cgit.freedesktop.org/libreoffice/filters/commit/?id=bcca44ddb4b046ce133896be1b47efcee70bd163"
+          >suboptimal solution</ulink> in the second time. But, since <ulink
+          url="http://www.derivativezero.com/blog/">Eilidh</ulink> did some spectacular progress
+        last week in handling elliptic arcs, my lazyness became the bottle-neck of the progress. So,
+        it was time to remember those nice times when I was warming the benches of the University,
+        dust off my knowledge of mathematical analysis and analytical algebra (or the lack thereof),
+        and try to compute the bounding box of an elliptical arc myself.</para>
+<!-- ($ Id: 21.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://python4kids.wordpress.com/2011/06/14/review-formatting-silly-sentences/">Python4Kids/Brendan Scott: Review, Formatting Silly Sentences</ulink>
