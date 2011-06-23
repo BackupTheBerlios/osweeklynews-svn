@@ -381,26 +381,49 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://stick.gk2.sk/blog/2011/06/gnome-shell-extension-yast-status-menu/">Pavol Rusnak: GNOME-Shell Extension: YaST (item in) Status Menu</ulink>
+          <ulink url="http://www.marques.so/2011/06/conspiracy-theories-and-gnome2/">Nelson Marques:
+            GNOME3 and openSUSE 12.1 – A conspiracy theory!</ulink>
         </title>
-        <para>This is just a short follow-up to my older blogpost <ulink url="http://stick.gk2.sk/blog/2011/05/adding-yast-menuitem-to-gnome-3-status-menu/">Adding YaST menuitem to GNOME 3 status menu</ulink>. Few minutes ago <ulink url="http://www.wafaa.eu/">Andy</ulink> asked me if I could create a proper gnome-shell
-          extension so I went ahead and did it. <inlinemediaobject>
-            <imageobject>
-              <imagedata fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
-            </imageobject>
-          </inlinemediaobject></para>
-        <para>I’ve set a <ulink url="https://gitorious.org/opensuse/gnome-shell-extension-yast-status-menu">git repo on Gitorious</ulink> and also built the package in my <ulink url="http://bit.ly/lVV2VS">home:prusnak</ulink> project. If there will be interest from our GNOME Team, I will
-          create a submit request to some GNOME devel project and Factory as well.</para>
-        <para>If you don’t know this yet, you have to install
-          theýgnome-shell-extension-yast-status-menu and then either logout and login or press
-          Alt+F2 and type “r” (which will restart gnome-shell).</para>
-        <para>Enjoy! <inlinemediaobject>
-            <imageobject>
-              <imagedata fileref="http://stick.gk2.sk/blog/wp-includes/images/smilies/icon_smile.gif"/>
-            </imageobject>
-          </inlinemediaobject></para>
-        <para><inlinegraphic fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/05/gnome3-menu-yast.png" width="20%"/></para>
-<!--($ ld: 15.6.11 sm $)-->      </blockquote>
+        <para>This text is based on a personal interpretation of several events, and as such it
+          reflects one of several potential interpretations, MINE!</para>
+        <para>On the last <ulink url="http://en.opensuse.org/openSUSE:GNOME_team">GNOME
+            Team</ulink><ulink
+            url="http://community.opensuse.org/meetings/opensuse-gnome/2011/opensuse-gnome.2011-06-16-15.32.html"
+            >meeting</ulink> there was a small topic to check if it would be interesting to have a
+          GNOME2 spin for the upcoming 12.1 release of <ulink url="http://www.opensuse.org"
+            >openSUSE</ulink>. It was decided not to provide a GNOME2 spin and somehow this suggests
+          that GNOME2 is dead for openSUSE (unless someone takes the job in).</para>
+        <para>One of the interesting things that poped during this meeting was the fact that <ulink
+            url="http://www.gnome3.org">GNOME3</ulink> has a ‘fallback mode’, or at least that’s how
+          it became to be knownýamongýGNOME users, press and competitors. It’s not really hard to
+          understand that ‘fallback’ became a connotative form that throws in a lot of negative
+          energy, much in the way that it seems to be an unwanted ‘feature’.</para>
+        <para>I believe that <ulink url="http://en.opensuse.org/User:Vuntz">Vincent Untz</ulink>
+          proposed a very interesting plan regarding this “GNOME3 vs GNOME2″ possibilities: provide
+          an alternative Desktop option where the feature known as ‘fallback mode’ can be presented
+          as an attractive option to the standard GNOME Shell for users who seek ‘classic’ looks.
+          It’s somehow unclear to me how we will achieve this, but I’m sure that a few ideas might
+          have been already on the forge for testing.</para>
+        <para>The <ulink url="http://www.fedoraproject.org">Fedora Project</ulink> has taken a
+          different approach and it seems that <ulink
+            url="http://ostatic.com/blog/how-would-you-like-gnome-2-32-on-fedora-15">GNOME2 is
+            making it’s way into Fedora 15</ulink>, the most controversial release of the Fedora
+          Project, nevertheless one of their greatest, maybe only surpassed by Fedora 13. This
+          initiative is called ‘BlueBubble’ and lead by Fedora Ambassador and Packager <ulink
+            url="http://fedoraproject.org/wiki/User:Nushio">Juan Moreno</ulink>, to whom I wish all
+          the success with his work, as I’m sure that many Fedora users will be thrilled with such
+          option available.</para>
+        <para>Back into the openSUSE world I also recognize a huge amount of value, and though it
+          might become a complicate task to strike down the current idea people have about the
+          ‘fallback mode’ (clearly a huge failure from whoever decided to call it ‘fallback mode’)
+          and try to make it a more useful feature towards the classic GNOME2 Desktop, thus
+          promoting among our users that upgrading to GNOME3 is the way! With openSUSE there won’t
+          be a 10th year for GNOME2 life cycle! The future lies only with GNOME3 which has shown
+          great potential and stability on it’s initial release, specially if we compare it to the
+          initial release of it’s main competitors, <ulink url="http://www.kde.org">KDE4</ulink> and
+            <ulink url="http://launchpad.net/unity">Unity</ulink>.</para>
+        <para>openSUSE and GNOME3 lead the way now!</para>
+<!--($ ld: 23.6.11 sm $)-->      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>
@@ -416,14 +439,127 @@
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
-        <title>Will Stephenson: KDE 4.7 Beta coming to Factory</title>
-        <para>Next week the current beta of KDE 4.7 will land in openSUSE Factory. The major change
-          that this brings is the full ports of KMail and KOrganizer to Akonadi.&#160; These have just
-          been released as part of KDE 4.6, but there may still be regressions, such as the
-          inability to read mail.&#160; While openSUSE does not recommend using Factory for production
-          machines, we would like to emphasize that if you do use KDE PIM on Factory as your main
-          mail client, be prepared to help us troubleshoot it.</para>
-        <para>submitted via our etherpad: <ulink url="http://os-news.ietherpad.com/2">http://os-news.ietherpad.com/2?</ulink></para>
+        <title><ulink url="http://vizzzion.org/blog/2011/06/plasma-active-updates/">Sebastian
+            Kügler: Plasma Active Updates</ulink></title>
+        <para><emphasis role="bold">Plasma Active Updates</emphasis></para>
+        <para>During the past weeks, we’ve been kind of silent around Plasma Active. This doesn’t
+          mean we’ve just been sitting on our lazy bums, but that we’ve poured a lot of work into
+          various aspects of the Plasma Active user experience. Let me details these changes to give
+          you some idea of where we are. But first off, …</para>
+        <para><emphasis role="bold">What is Plasma Active?</emphasis></para>
+        <para>Plasma Active is a KDE project building a touch-friendly user experience for the
+          device spectrum. You can compare it to the KDE Software Compilation, Plasma Active
+          provides a workspace and applications. The first focused target devices are tablets, such
+          as the ExoPC, also known as WeTab. Plasma Active builds on top of KDE frameworks such as
+          the Plasma libraries and the Nepomuk Semantic Desktop, offering a touch-friendly interface
+          taylored to use-cases of the specific device. Components of Plasma Active are re-usable
+          across different devices, bringing many well-known apps to new devices. The user interface
+          used on a specific device can differ across devices, making sure it fits the devices
+          characteristics and use-cases.</para>
+        <para><emphasis role="bold">How is Plasma Active developed?</emphasis></para>
+        <para>Plasma Active is fully community-developed and builds on existing KDE frameworks.
+          Re-using technologies such as Plasma, we already have quite some usefl apps to run on
+          Plasma Active, more apps are relatively easy to write or to port to Plasma Active. (I’ll
+          explain more about this in a later blog.) One very nice thing is that Plasma Active by
+          design is “ultimately hackable”, it uses components that many people know already, many
+          aspects of the system can even be directly changed on the device by opening it’s QML files
+          with the description of the user interfaces.</para>
+        <para>Plasma Active’s development happens in KDE’s Git infrastructure, communication can be
+          followed on the active@kde.org mailinglist, our IRC channel (#active on irc.freenode.net)
+          is welcoming and open for everyone. This doesn’t mean that there’s no commercial
+          investment in Plasma Active, or that it’s impossible to participate in Plasma Active as a
+          commercially interested partner, it’s just that the foundation is in the hands of a Free
+          software project — KDE — leveling the playing field for everybody else. Two good examples
+          for commercial partners in Plasma Active are basysKom and open-slx. <ulink
+            url="http://www.basyskom.com">BasysKom</ulink> contributes design and development effort
+          into the Contour shell, which forms the basic workspace for Plasma Active. <ulink
+            url="http://www.open-slx.com">open-slx</ulink> (my employer :)) invests into development
+          of Plasma Active core components, system integration, packaging, testing and deployment.
+          As such, we continously work on turning Plasma Active from Git Repo into something
+          end-user ready — which is also our mission, we want to bring Plasma Active to the masses.
+          For this, we’re releasing regularly updated <ulink url="http://open-slx.com/?Downloads"
+            >Live Images of Balsam Professional</ulink> running Plasma Active, and we’re working
+          hard on making these images also installable. You can test those images in a virtual
+          machine (you’ll want one that supports composited graphics, such as Virtual Box), or
+          directly on the device. The Balsam Professional Live Image boots out of the box on the
+          ExoPC / WeTab, and we’re working on support for more diverse hardware.</para>
+        <para>To keep track of our different focus points, we’ve created a map of the different
+          “tracks” we follow with our development.</para>
+        <para><inlinegraphic
+            fileref="http://vizzzion.org/blog/wp-content/uploads/2011/06/activeroutes.png"/></para>
+        <para><emphasis role="bold">Where is Plasma Active Today?</emphasis></para>
+        <para>System-wise, the current status is that we have a <ulink
+            url="http://open-slx.com/?Downloads">bootable live image (Balsam Professional)</ulink>
+          with a touch-friendly shell, a bunch of apps that can be used. Boot performance is a bit
+          on the slow side right now (but improving, there are some changes to the boot process
+          planned), runtime performance is pretty good already, as you can see in the videos that
+          we’ve posted already. At open-slx we are working on refining the image in terms of
+          preconfiguration, performance and so on. We’re also quite close to making the image
+          installable, so you can easily install it once (as dualboot on your device, if you wish)
+          and then keep tracking Plasma Active development just by updating your packages
+          regularly.</para>
+        <para>During the Meego conference in San Francisco, basysKom demoed parts of Plasma Active
+          and the Contour shell. A video has been recorded which gives a good idea of which
+          direction we’re going: <ulink url="http://www.youtube.com/watch?v=i3abBR1qLn0"
+            >http://www.youtube.com/watch?v=i3abBR1qLn0</ulink></para>
+        <para>On the software side, we’re working on a bunch of different things </para>
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Resource visualization</emphasis>: As we’re using Nepomuk as
+              the underlying data structure, we’ve implemented data-driven widgets that represent
+              “Things” in the Nepomuk store. These can be local files, online resources, but also
+              abstract things like tags, for example. These “Resource delegates” as we call them
+              form basic building blocks of your assets in Plasma Active. </para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">Web-browser and web-integration</emphasis>: As “The Web” is
+              one of the most important use-cases for Plasma Active, we’re spending quite some time
+              now on making this work really well. After shopping around, we decided that our best
+              bet on the web-browser would be a touch-friendly version of Rekonq, using QML. We’ve
+              already made some progress towards that direction, but we’re not there yet. </para>
+          </listitem>
+          <listitem>
+            <para><emphasis role="bold">Share-Like-Connect</emphasis>: Share-Like-Connect will bring
+              ubiquitous (just *had* to use this word once ;)) social networking and sharing to
+              Plasma Active. I’ll not go into details here since this topic is way too awesome, so
+              we’ll dedicate a separate post to it. </para>
+          </listitem>
+        </itemizedlist>
+        <para>From my personal point of view as a user, I must say that Plasma Active is becoming a
+          rock star. It’s already quite usable for surfing the web, reading news or email. It is not
+          stable software yet, more comparable to an Alpha state (there are quite some bugs left to
+          be squished, and it’s not feature complete). Our progress is very noticeable, however,
+          which is promising for our first targeted released end of September.</para>
+        <para><emphasis role="bold">More info…</emphasis></para>
+        <para>If you’d like to know more about Plasma Active, or follow its development, the
+          following resources are interesting: </para>
+        <itemizedlist>
+          <listitem>
+            <para><ulink url="http://community.kde.org/Plasma/Active">Plasma Active</ulink> on the
+              community.kde.org wiki</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://community.kde.org/Plasma/Active/Contour">Contour shell</ulink>
+              on the community.kde.org wiki</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="http://vizzzion.org/blog/category/active/">My blog posts</ulink> about
+              Plasma Active (including screencasts)</para>
+          </listitem>
+          <listitem>
+            <para>our mailing list: active@kde.org (<ulink
+                url="https://mail.kde.org/mailman/listinfo/active">Subscription page</ulink>, <ulink
+                url="http://mail.kde.org/pipermail/active/">archives</ulink>) </para>
+          </listitem>
+          <listitem>
+            <para>#active channel on IRC (irc.freenode.net)</para>
+          </listitem>
+          <listitem>
+            <para><ulink url="https://build.opensuse.org/project/show?project=KDE%3AActive">Plasma
+                Active OBS</ulink> project</para>
+          </listitem>
+        </itemizedlist>
+        <!--($ ld: 23.6.11 sm $)-->
       </blockquote>
     </sect3>
 <!--

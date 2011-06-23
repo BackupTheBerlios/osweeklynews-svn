@@ -56,4 +56,87 @@
     <para>We are looking forward to seeing you at the openSUSE Summer Camp Greece!</para>
     <!--($ ld: 21.6.11 sm $)-->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/06/22/opensuse-releases-milestone-2/">openSUSE
+        releases milestone 2</ulink></title>
+    <para><inlinegraphic
+        fileref="http://lizards.opensuse.org/wp-content/uploads/2011/06/geeko-cast-my-vote.png"
+        width="20%"/></para>
+    <para>About 3 weeks after the <ulink
+        url="http://news.opensuse.org/2011/06/01/first-step-towards-12-1-with-milestone-1/">first
+        milestone for openSUSE 12.1</ulink>, today the second milestone has been made available.
+      Following the <ulink url="http://en.opensuse.org/openSUSE:Roadmap">Roadmap</ulink>, this is
+      the second of 6 milestone until the openSUSE 12.1 release in November.</para>
+    <para><emphasis role="bold">Milestones</emphasis></para>
+    <para>openSUSE is developed in a repository called <ulink
+        url="http://opensuse.org/Portal:Factory">Factory</ulink>. Packages flow from the <ulink
+        url="http://nl.opensuse.org/openSUSE:Build_Service_Collaboration#Devel_Project_maintainer.27s_workflow"
+        >devel projects</ulink> into Factory upon OK from the <ulink
+        url="http://en.opensuse.org/openSUSE:Release_team">release team</ulink> following the <ulink
+        url="http://en.opensuse.org/openSUSE:Factory_development_model">Factory Development
+        Model</ulink>. During the <ulink url="http://en.opensuse.org/openSUSE:Roadmap">development
+        cycle</ulink> (<ulink url="http://www.suse.de/%7Ecoolo/opensuse_12.1/">more detailed
+        model</ulink>) periodic releases are made available for testing – these are the milestones.
+      Six of them become available. After some several freezes go into effect, the component freeze
+      just before the fourth milestone for instance. And about a couple of weeks after the last
+      milestone the first of two Release Candidates is made ready for testing. The final openSUSE
+      12.1 release is expected on November 11th.</para>
+    <para><emphasis role="bold">Progress since the previous milestone</emphasis></para>
+    <para>The first milestone had a huge number of changes and improvements on top of the latest
+      openSUSE release. Again, many packages have been updated. You can check the latest package
+      versions on <ulink url="http://en.opensuse.org/openSUSE:Factory_versions">this page</ulink>.
+      What are the major changes?</para>
+    <itemizedlist>
+      <listitem>
+        <para>Firefox 5 RC</para>
+      </listitem>
+      <listitem>
+        <para>Horde4 packages (php5-pear-horde)</para>
+      </listitem>
+      <listitem>
+        <para>“The Board”</para>
+      </listitem>
+      <listitem>
+        <para>rawstudio</para>
+      </listitem>
+      <listitem>
+        <para>llvm/clang 3.0 snapshot</para>
+      </listitem>
+      <listitem>
+        <para>many smaller updates to KDE and GNOME applications and desktops</para>
+      </listitem>
+    </itemizedlist>
+    <para>Also nspluginwrapper is now updated which will allow a more stable Flash plugin on 64bit
+      platforms. With this change you can now watch two flash videos at the same time. And over 100
+      new packages have been added, including extensions for Banshee, some small tools like <ulink
+        url="http://software.opensuse.org/search?q=dds2tar">DDS2tar</ulink> and <ulink
+        url="http://brainfuck.tk/">brainfuck interpreter</ulink>, Cdecl (turns C/C++ gibberish into
+      English), cint (small C/C++ interpreter) and a number of other devel and language
+      tools.</para>
+    <para><emphasis role="bold">systemd</emphasis></para>
+    <para>On the openSUSE <ulink url="http://lists.opensuse.org/opensuse-project/">project</ulink>
+      and <ulink url="http://lists.opensuse.org/opensuse-factory/">factory</ulink> mailing lists a
+      discussion is taking place centered around the new systemd init system. After <ulink
+        url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00210.html">the introduction of
+        the road to systemd for openSUSE 12.1</ulink> by <ulink
+        url="http://blog.crozat.net/2011/06/road-to-systemd-for-opensuse-121.html">Frederic
+        Crozat</ulink>, issues, complaints and limitations of systemd are being discussed and
+      dissected. Changing an init system is an invasive change and systemd has ambitions beyond just
+      replacing sysV not everyone always agrees with. Work will be needed to ensure a stable and
+      usable init system for 12.1 and the team welcomes help and bugreports!</para>
+    <para><emphasis role="bold">Helping out easier than ever!</emphasis></para>
+    <para>As expected from a development release, there is still a lot of work to do, so your input
+      at this early stage will be a huge help in making the final release into the beautifully
+      polished work that we aim for. openSUSE 12.1 Milestone 2 has a <ulink
+        url="http://en.opensuse.org/openSUSE:Most_annoying_bugs_12.1_dev">list of most annoying bugs
+        here</ulink>, please add issues you find and help fix them. As Will Stephenson <ulink
+        url="http://lizards.opensuse.org/2011/05/16/have-you-burped-yet-today/">recently
+        blogged</ulink>, fixing an issue is a matter of <emphasis role="bold">BURP</emphasis>ing on
+        <ulink url="http://build.opensuse.org">build.opensuse.org</ulink>! Find a how-to <ulink
+        url="http://en.opensuse.org/openSUSE:Build_Service_Collaboration#Example_with_web_interface"
+        >here</ulink>.</para>
+    <para>So go and see for yourself what the next version of openSUSE has in store for you at our
+        <ulink url="http://software.opensuse.org/developer">download center</ulink>.</para>
+    <!--($ ld: 23.6.11 sm $)-->
+  </blockquote>
 </sect1>
