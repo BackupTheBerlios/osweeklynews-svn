@@ -22,418 +22,41 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.linux.com/learn/tutorials/459107-weekend-project-use-rapid-photo-downloader-for-photo-management"
-          > Linux.com/Nathan Willis: Weekend Project: Use Rapid Photo Downloader for Photo
-          Management </ulink>
+        <ulink url="http://www.linux.com/learn/tutorials/459107-weekend-project-use-rapid-photo-downloader-for-photo-management"> Linux.com/Nathan Willis: Weekend Project: Use Rapid Photo Downloader for Photo Management </ulink>
       </title>
       <para>Often the most impressive thing about the open source community is getting to watch
-        someone step up to work on a task that's far from fun or glamorous in the traditional sense.
-        A good example of that phenomenon is Damon Lynch's <ulink
-          url="http://www.damonlynch.net/rapid/index.html">Rapid Photo Downloader</ulink> (RPD), a
+        someone step up to work on a task that&apos;s far from fun or glamorous in the traditional sense.
+        A good example of that phenomenon is Damon Lynch&apos;s <ulink url="http://www.damonlynch.net/rapid/index.html">Rapid Photo Downloader</ulink> (RPD), a
         utility that takes the pain out of what many projects overlook: getting your newly shot
-        material off of the camera's memory card and into your computer. Despite the name, RPD
+        material off of the camera&apos;s memory card and into your computer. Despite the name, RPD
         handles both photos and video, and although its speed <emphasis role="italic">is</emphasis>
         impressive, how it really makes your life easier is by keeping you and your storage
         organized. (...)</para>
-<!-- ($ Id: 19.6.11 sm $)-->    
-    </blockquote>
+<!-- ($ Id: 19.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/tweaking-text-scribus">LinuxJournal/Bruce Byfield: Tweaking text in Scribus</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/encrypting-an-enterprise-desktop-with-truecrypt/">Wazi/Mayank Sharma: Encrypting an Enterprise Desktop with TrueCrypt</ulink>
       </title>
-      <para>In word processors, users generally settle for an appearance that is good enough. By
-        contrast, in a design application like Scribus, you have the tools to adjust the layout
-        until it is exactly the way you want.</para>
-      <para>That is especially true for text. Scribus not only provides tools for general management
-        of the available fonts, but also for micro-managing everything from the size and shape of
-        fonts to the spaces between characters and words and how a word is hyphenated at the end of
-        a line. (...)</para>
-<!-- ($ Id: 16.6.11 sm $)-->    
-    </blockquote>
-    <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/06/16/opensuse-and-online-services/">Jos
-          Poortvliet: openSUSE and online services</ulink></title>
-    <para>The ‘cloud’ has been a buzzword for quite a while. While some are still rather cynical
-      towards the concept, products like mobile phones with Android have shown the value of putting
-      your data in that huge, amorphous network of servers somewhere. Apple recently introduced
-      their new cloud service and Microsoft has their cloud too. So with the other major players
-      talking cloudy, what does Linux have?</para>
-    <para><inlinegraphic fileref="http://farm2.static.flickr.com/1165/644335254_4b8a712be5_m.jpg"
-        align="right"/></para>
-    <para><emphasis role="bold">Variety</emphasis></para>
-    <para>Let’s define Cloud technology as ‘related to putting data online &amp; sharing among
-      devices’ which is a reasonable definition for our purposes. There is a huge number of
-      technologies connecting openSUSE users to online services. However there is a distinction to
-      be made between commercial or proprietary operating systems and ours. We don’t create a vendor
-      lock-in scenario because we focus on tools that freely connect you to your choice of publicly
-      available services. This is a key distinction because we’re not owning or controlling the
-      cloud that you place your data in. You, the user, get to decide the place where it best fits
-      your needs and comfort level. Today and tomorrow we will highlight some of them here, starting
-      with integration in our every day applications.</para>
-    <para><emphasis role="bold">Integration with online services</emphasis></para>
-    <para>openSUSE brings online services like <ulink url="http://facebook.com">Facebook</ulink>,
-        <ulink url="http://flickr.com">Flickr</ulink> and <ulink url="http://youtube.com"
-        >Youtube</ulink> to your desktop in a variety of applications. New applications like <ulink
-        url="http://www.umplayer.com/">UMPlayer</ulink> and <ulink url="http://tomahawk-player.org/"
-        >Tomahawk</ulink> go out of their way to deeply integrate <ulink url="http://twitter.com"
-        >twitter</ulink> or <ulink url="http://last.fm">last.fm</ulink>, with Tomahawk even able to
-      play music over a jabber (google-talk) chat connection. Of course, old-timers like <ulink
-        url="http://banshee.fm/">Banshee</ulink> and Amarok also feature music from music stores,
-      pod casts and other on-line services.</para>
-      <para>
-        <table frame="all">
-          <title>Install Tomahawk</title>
-          <tgroup cols="2">
-            <colspec colname="c1" colnum="1" colwidth="1.02*"/>
-            <colspec colname="c2" colnum="2" colwidth="1.0*"/>
-            <tbody>
-              <row>
-                <entry>
-                <ulink
-                  url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.4/tomahawk.ymp">
-                  <inlinemediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                    </imageobject>
-                  </inlinemediaobject>
-                </ulink>
-                <para><emphasis role="bold">openSUSE 11.4</emphasis></para></entry>
-                <entry>
-                <ulink
-                  url="http://software.opensuse.org/ymp/home:pansenmann:tomahawk-player/openSUSE_11.3/tomahawk.ymp">
-                  <inlinemediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                    </imageobject>
-                  </inlinemediaobject></ulink>
-                <para><emphasis role="bold">openSUSE 11.3</emphasis></para></entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-      </para>
-    <para>
-      <table frame="all">
-        <title>Install UMPlayer</title>
-        <tgroup cols="2">
-          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
-          <tbody>
-            <row>
-              <entry>
-                <ulink url="http://software.opensuse.org/ymp/home:stecue/openSUSE_11.4/umplayer.ymp">
-                  <inlinemediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                    </imageobject>
-                  </inlinemediaobject>
-                </ulink>
-                <para><emphasis role="bold">openSUSE 11.4</emphasis></para></entry>
-              <entry>
-                <ulink url="http://software.opensuse.org/ymp/home:stecue/openSUSE_11.3/umplayer.ymp">
-                  <inlinemediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                    </imageobject>
-                  </inlinemediaobject>
-                </ulink>
-                <para><emphasis role="bold">openSUSE 11.3</emphasis></para></entry>
-            </row>
-          </tbody>
-        </tgroup>
-      </table>
-    </para>
-    <para>Image viewers have engaged online services for a while. <ulink
-        url="http://f-spot.org/Features">F-Spot</ulink> can export to <ulink
-        url="http://www.flickr.com/">Flickr</ulink>, <ulink url="http://www.23hq.com/">23</ulink>,
-        <ulink url="http://picasaweb.google.com/">Picasa Web</ulink> or <ulink
-        url="http://www.smugmug.com/">SmugMug</ulink>. <ulink url="http://yorba.org/shotwell/"
-        >Shotwell</ulink> can even export to Youtube. KDE applications <ulink
-        url="http://www.digikam.org/drupal/about/features9x">Digikam</ulink> and it’s companion
-      Showfoto add <ulink url="http://facebook.com">Facebook</ulink>, <ulink
-        url="http://piwigo.org/">piwigo</ulink>, <ulink url="http://www.shwup.com/">shwup</ulink>,
-        <ulink url="http://www.zooomr.com/">zooomr</ulink> and some other sites to the list. They
-      can also export to a HTML gallery and put the images with the locations they were taken at on
-      Google Maps. This is shared KDE infrastructure so you can expect image viewer <ulink
-        url="http://gwenview.sourceforge.net/">Gwenview</ulink> and even screenshot application
-        <ulink url="http://www.elpauer.org/?p=509">ksnapshot</ulink> to be able to directly share
-      over these services.</para>
-    <para>It’s not just media tools which integrate with online services. <ulink
-        url="http://www.libreoffice.org/">LibreOffice</ulink> can export and import documents from
-      online office suites like <ulink url="http://docs.google.com">Google Docs</ulink> and <ulink
-        url="http://zoho.com">Zoho</ulink>. And of course, mail/agenda/news clients like <ulink
-        url="http://projects.gnome.org/evolution">Evolution</ulink> and <ulink
-        url="http://pim.kde.org">KDE PIM</ulink> have offered integration with online services like
-      mail or calendaring forever. Feed readers like <ulink url="http://liferea.sourceforge.net/"
-        >Liferea</ulink> offer syncing your news feed with <ulink url="http://www.google.com/reader"
-        >Google Reader</ulink> and <ulink url="http://tt-rss.org/">TinyTinyRSS</ulink>.</para>
-    <para>Besides integrating with existing services, Free Software projects are starting their own.
-      Prominent examples are GNOME’s <ulink url="http://projects.gnome.org/tomboy/">Tomboy</ulink>
-      which synchronizes your notes between instances using an online service.</para>
-    <para><emphasis role="bold">More</emphasis></para>
-    <para>But there is more available for openSUSE. There are several file sharing and syncing
-      services out there. Look for an article about those tomorrow!</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <!--($ ld: 16.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://news.opensuse.org/2011/06/17/opensuse-and-your-own-cloud/">Jos
-          Poortvliet: openSUSE and online storage and syncing</ulink></title>
-    <para>The ‘cloud’ has been a buzzword for quite a while. While some are still rather cynical
-      towards the concept, products like <ulink url="http://www.android.com/">mobile phones with
-        Android</ulink> have shown the value of putting your data in that <ulink
-        url="http://xkcd.com/908/">huge, amorphous network of servers somewhere</ulink>. Apple
-      recently <ulink url="http://www.apple.com/icloud/">introduced their new cloud service</ulink>
-      and Microsoft has their <ulink url="http://www.microsoft.com/cloud">cloud</ulink> too. So with
-      the other major players talking cloudy, what does Linux have?</para>
-    <para><inlinegraphic fileref="http://farm2.static.flickr.com/1165/644335254_4b8a712be5_m.jpg"
-      /></para>
-    <para><emphasis role="bold">Variety</emphasis></para>
-    <para>Let’s define Cloud technology as ‘related to putting data online &amp; sharing among
-      devices’ which is a reasonable definition for our purposes. There is a huge number of
-      technologies connecting openSUSE users to online services. However there is a distinction to
-      be made between commercial or proprietary operating systems and ours. We don’t create a vendor
-      lock-in scenario because we focus on tools that freely connect you to your choice of publicly
-      available services. This is a key distinction because we’re not owning or controlling the
-      cloud that you place your data in. You, the user, get to decide the place where it best fits
-      your needs and comfort level. Yesterday we <ulink
-        url="http://news.opensuse.org/2011/06/16/opensuse-and-online-services/">highlighted
-        integration in our every day applications</ulink>. Today we focus on file syncing services
-      and especially the cool Free Software project ownCloud!</para>
-    <para><emphasis role="bold">File sharing and syncing services</emphasis></para>
-    <para>A file sharing and syncing service helps you keep the files on several computers in sync
-      and allows you to share such files with others on the web. This is indeed what Apple recently
-      introduced, but others have gone before.</para>
-    <para><ulink url="https://spideroak.com/">SpiderOak</ulink> offers such an online space for
-      synchronizing files. Just drop the files in a specific folder on your drive and you can share
-      them between your computers, mobile devices and even with other people. SpiderOak is included
-      in the openSUSE repositories since openSUSE 11.3.</para>
-    <para>The popular <ulink url="http://dropbox.com">Dropbox</ulink> service offers a similar
-      online space, and even comes with integration in the <ulink
-        url="http://live.gnome.org/Nautilus">Nautilus file manager</ulink>!</para>
-    <para>But both services depend on proprietary server components and need a proprietary daemon to
-      run on your system. Dropbox also doesn’t encrypt the data on the server, something Spideroak
-      at least does. SpiderOak also promised to at some point open source their client software.
-      Still, the server side and web interface will remain closed. Luckily there are Free Software
-      solutions out there, two of them I’ll talk about here.</para>
-    <para><emphasis role="bold">Introducing iFolder</emphasis></para>
-    <para><inlinegraphic
-        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/iFolder2clean_filmgrain_picture-300x212.png"
-      /></para>
-    <para><ulink url="http://www.kablink.org/ifolder">iFolder</ulink> is a Free Software file
-      storage, backup and sharing solution written in C# and Mono. iFolder comes with a desktop
-      client which allows you to manage your iFolders. iFolders can be located on any number of
-      servers, each having a number of folders which you can manage independently. Each folder can
-      be your own or shared with others and files dropped or modified in them will be synced right
-      away. iFolder, like Dropbox and SpiderOak, has clients for Windows, Mac and Linux and new is a
-      web interface so you can access your files anywhere and share them with others on-line.</para>
-    <para>iFolder does have some powerful capabilities, especially for corporate environments. For
-      example, unlike most competing solutions it only transfers modified portions of files instead
-      of the whole file, saving you some bandwidth. iFolder also offers integration with LDAP, disk
-      quotas, and limits to the number of iFolders each user has. It integrates in the Desktop with
-      a Nautilus plugin which allows you to turn any folder into a shared iFolder and iFolder has
-      fully encypted file transfer and storage. Finally, a big plus of iFolder is the excellent
-      documentation which you can find <ulink url="http://ifolder.com/ifolder/documentation"
-        >here</ulink>.</para>
-    <para>So unlike Dropbox and SpiderOak, iFolder is fully Free Software and the source is <ulink
-        url="http://community.ifolder.com/ssf/a/c/p_name/ss_forum/p_action/1/action/view_permalink/entityType/folderEntry/entryId/4244"
-        >hosted on sourceforge</ulink> and can be found <ulink
-        url="http://sourceforge.net/projects/ifolder/">here</ulink>. With 9 commits in the last 2
-      months it is not a hugely active project and the last release is from November 2009. Still bug
-      fixes are being added and lots of improvements were landed in 2010. You can find more
-      up-to-date versions by <ulink
-        url="http://software.opensuse.org/search?q=ifolder&amp;baseproject=ALL&amp;lang=en"
-        >searching on OBS</ulink>. And it should be noted that this <emphasis role="italic"
-        >‘old’</emphasis> version of iFolder has been offering all the features of Dropbox and
-      SpiderOak, fully open and free, for years!</para>
-    <para><emphasis role="bold">introducing ownCloud</emphasis></para>
-    <para><inlinegraphic
-        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/owncloud-logo-300x148.png"
-        width="20%"/></para>
-    <para><ulink url="http://owncloud.org/">ownCloud</ulink> is an exciting and much more active
-      project, developing file synchronization technology on a Free Software base. However, ownCloud
-      is far more ambitious as you can read in <ulink
-        url="http://blog.karlitschek.de/2011/06/yesterday-apple-announced-their-new.html">this
-        recent blogpost</ulink> by lead developer Frank Karlitschek. Frank welcomed Apple to the
-      Cloud, giving a feature comparision between ownCloud and their cloud offering. He mentioned
-      that:</para>
-    <blockquote>
-      <para>Apple finally [has] features which are essential for people who live in a connected
-        world and have more than one device</para>
-    </blockquote>
-    <para>Furthermore, after having a look at what Apple came up with, he concludes:</para>
-    <blockquote>
-      <para>It seems that we support everything iCloud is doing and a bit more if you look into the
-        feature set. And we have a fundamentally more advanced vision and architecture.</para>
-    </blockquote>
-    <para>ownCloud offers all the basics of accessing files via a variety of means including a web
-      interface and WebDAV. WebDAV support means integration in both <ulink
-        url="http://live.gnome.org/Nautilus">Nautilus</ulink> and <ulink
-        url="http://dolphin.kde.org/">Dolphin</ulink>, as well as all KDE and most GNOME
-      applications. ownCloud can synchronize application data like Bookmarks and settings and allows
-      you to listen to your online music collection in a few ways including from <ulink
-        url="http://ampache.org/">Ampache</ulink> and via the web interface. The same goes for
-      movies and photo’s while PIM syncing is in the works.</para>
-    <para><inlinegraphic
-        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/ownCloud_Login-300x173.jpg"
-      /></para>
-    <para>Above and beyond iCloud, work is going on in ownCloud to offer versioning of all files
-      through it’s git backend and the ability to share your files with whomever you want. More
-      importantly, ownCloud is extensible. It is possible to write addons to ownCloud like RSS
-      readers, todo lists and note syncing or even collaborative gaming. And ownCloud doesn’t limit
-      you with DRM or digital fingerprints, allowing you to put your music and movies online without
-      restrictions. Finally, where Apple’s cloud just works with Apple devices (as we’ve come to
-      expect from them), ownCloud is not so picky, working with Windows, Mac and Linux as well as
-      Android, MeeGo and of course the iPhone. This is possible because ownCloud uses open standards
-      and works with Free Software where possible, including the mentioned webDav, HTML5, <ulink
-        url="http://www.freedesktop.org/wiki/Specifications/open-collaboration-services">Open
-        Collaboration Services</ulink> and <ulink url="http://ampache.org/">Ampache</ulink>. An
-      access library for applications, to offer better integration with ownCloud, is already
-      available and part of the latest openSUSE.</para>
-    <para><emphasis role="bold">Upcoming</emphasis></para>
-    <para>And more is <ulink
-        url="http://owncloudtest.blogspot.com/2011/06/owncloud-20-just-merged-with.html">coming in
-        ownCloud 2.0</ulink>, scheduled for later this year. The UI has been completely redesigned
-      and there is now media support to play audio and video via the web interface. The mentioned
-      Ampache support, developed by Robin Appelman, will have a nice effect: the awesome <ulink
-        url="http://tomahawk-player.org/">Tomahawk music player</ulink> we <ulink
-        url="http://news.opensuse.org/2011/06/16/opensuse-and-online-services/">mentioned
-        yesterday</ulink> has Ampache support and thus will be able to play music directly from your
-      ownCloud 2.0 server!</para>
-    <para>Moreover, user management has been improved as well, and you will be able to extend
-      ownCloud with new functionality via apps and plugins! Finally, ownCloud aims to support not
-      only Chromium and Firefox but also lesser used browsers like Konqueror. A really exciting
-      feature is being worked on by a <ulink url="http://code.google.com/soc/">GSOC</ulink> student:
-      git versioning of files! There is some UI work to be done, which will then allow you to go
-      back in time and see earlier versions of your files.</para>
-    <para>Aaron, one of the ownCloud developers, gives <ulink
-        url="http://owncloudtest.blogspot.com/2011/06/owncloud-20-just-merged-with.html">his
-        thoughts</ulink> on where ownCLoud should go:</para>
-    <blockquote>
-      <para>With this, we can not only compete with Apple &amp; Google, we can leave them behind or
-        integrate with them from our own camp. There’s no reason you shouldn’t be able to play your
-        music from the cloud in Amarok or Tomahawk, view your calendar events on your iPhone and in
-        Kontact and access all of your files from Android or webOS or Gnome or Windows or OS X. You
-        should also be able to back up your home directory and keep it in sync between multiple
-        computers</para>
-    </blockquote>
-    <para><emphasis role="bold">Control</emphasis></para>
-    <para>The most important feature of ownCloud, however, is control. In Frank’s words:</para>
-    <blockquote>
-      <para>You don't have to put your private data into the hosting center of a big company</para>
-    </blockquote>
-    <para>You can install ownCloud on your own server, your desktop at home, a company server but
-      also at a hosting provider supporting PHP, or run it as appliance in some cloud service under
-      your direct control. Because it is Free Software, you fully own your data and only <emphasis
-        role="italic">you</emphasis> can determine what happens with it.</para>
-    <para>All this doesn’t have to mean ownCloud is hard to set up. The upcoming 2.0 version will
-      make it drastically easier to deploy but the current 1.2 release can also be had in a number
-      of very easy ways.</para>
-    <para><emphasis role="bold">Get ownCloud</emphasis></para>
-    <para>You can install owncloud on your own server or even desktop using the <ulink
-        url="http://software.opensuse.org/search?q=owncloud&amp;baseproject=ALL">openSUSE
-        repositories on OBS</ulink>. Be sure to read <ulink
-        url="http://owncloud.org/index.php/Installation#openSUSE">the documentation</ulink> on
-      starting and managing your ownCloud. You can also use the how-to on <ulink
-        url="http://owncloudtest.blogspot.com/2011/06/getting-your-owncloud.html">Aaron’s
-        blog</ulink> to get the latest and freshest version installed from source! After following
-      the basic installation steps, you just have to go to <ulink
-        url="http://127.0.0.1/owncloud/index.php">127.0.0.1</ulink> in your browser to complete the
-      setup from the web interface.</para>
-    <para>However, your ownCloud can be had easier. You can use the excellent <ulink
-        url="http://susegallery.com/a/TadMax/owncloud-in-a-box">ownCloud-in-a-box SUSE Studio
-        image</ulink> to download a virtual image of ownCloud and start running it right away. It
-      gets even more interesting with the <ulink url="http://aws.amazon.com/ec2/">Amazon Elastic
-        Cloud Computing</ulink> support of SUSE Studio. Deploying your image on the Amazon cloud
-        <ulink url="http://blog.susestudio.com/2011/05/its-never-been-so-ec2-access-cloud.html">is
-        easy as pie</ulink>. You could use <ulink url="http://aws.amazon.com/ec2/instance-types/"
-        >microinstance</ulink> for which even a <ulink url="http://aws.amazon.com/free/">free 1-year
-        subscription</ulink> is available. Yes, that’s right, you can have <emphasis role="italic"
-        >your</emphasis> openSUSE ownCloud under <emphasis role="italic">your</emphasis> full
-      control on Amazon EC2 for <emphasis role="bold">FREE</emphasis> for one year!</para>
-    <para>If running your own Appliance on EC2, another provider or your own hardware is still a tad
-      complicated, there is an even easier option: <ulink
-        url="https://www.packagecloud.com/?au=owncloud">packagecloud.com</ulink>. They offer
-      ownCloud hosting (including a free option, yup) with their convenient web interface. Yes,
-      again, full control over your own data and easy to use.</para>
-    <para>
-      <table frame="all">
-        <title>Install ownCloud</title>
-        <tgroup cols="2">
-          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
-          <thead>
-            <row>
-              <entry>
-                <ulink
-                  url="http://software.opensuse.org/ymp/server:php:applications/openSUSE_11.4/owncloud.ymp">
-                  <inlinemediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                    </imageobject>
-                  </inlinemediaobject></ulink>
-                <para>openSUSE 11.4</para></entry>
-              <entry>
-                <ulink
-                  url="http://software.opensuse.org/ymp/server:php:applications/openSUSE_11.3/owncloud.ymp">
-                  <inlinemediaobject>
-                    <imageobject>
-                      <imagedata fileref="http://files.opensuse.org/opensuse/en/f/f1/Oneclick.png"/>
-                    </imageobject>
-                  </inlinemediaobject></ulink><para>openSUSE 11.3</para>
-              </entry>
-            </row>
-          </thead>
-          <tbody>
-            <row>
-              <entry/>
-              <entry/>
-            </row>
-          </tbody>
-        </tgroup>
-      </table>
-    </para>
-    <para><emphasis role="bold">Helping out</emphasis></para>
-    <para><inlinegraphic
-        fileref="http://news.opensuse.org/wp-content/uploads/2011/06/owncloud_studio-300x173.png"
-      /></para>
-    <para>ownCloud is a Free Software project, which means you can get involved. The team is looking
-      for anyone who has some skills in (or wants to learn) PHP, C++, HTML, CSS &amp; Javascript.
-      Drop by #owncloud on freenode or send an email to owncloud on kde.org and get involved
-      today!</para>
-    <para><emphasis role="bold">Conclusion</emphasis></para>
-    <para>Frank closes his blog with:</para>
-    <blockquote>
-      <para>I think ownCloud has the potential to become the cloud storage solution for people who
-        donýt like vendor lock-ins and care about freedom and privacy</para>
-    </blockquote>
-    <para>We would like to go a step further and claim that the wide variety of hosting options for
-      ownCloud offers not only more security and privacy but also far more flexibility and, in time,
-      lower prices than what Google, Apple, Microsoft and the other ‘big boys’ bring to the table.
-      Combined with the excellent integration openSUSE desktops already offer with online services,
-      openSUSE has a sunny future in the cloud.</para>
-    <para><emphasis role="bold">License</emphasis>: <ulink
-        url="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html">GFDL 1.2</ulink></para>
-    <para><!--($ ld: 18.6.11 sm $)--></para>
-  </blockquote>  
+      <para>Everyone has secrets. Some of yours probably live on your computer. If you want to keep digital information private, locking it behind a password won’t really keep it secure. The only real solution is encryption, which scrambles the contents of files, making them unintelligible to anyone without the digital key to unscramble them. <ulink url="http://olex.openlogic.com/packages/truecrypt">TrueCrypt</ulink> can encrypt and decrypt files, documents, and even entire filesystems. The app also provides on-the-fly encryption for enhanced security, which means it can automatically encrypt and decrypt data before reading and writing it, so it’s never on your hard drive in human-readable format.</para>
+      <para>TrueCrypt is designed to use modern hardware and its multiple cores to speed up encryption and decryption. Besides Linux, it also runs on Windows and Mac operating systems.</para>
+      <para>Of course TrueCrypt is not your only encryption alternative. <ulink url="http://olex.openlogic.com/packages/gnupg">GNU Privacy Guard</ulink> (GPG) is free software’s answer to <ulink url="http://olex.openlogic.com/packages/pgp">Pretty Good Privacy</ulink> (PGP), the industry standard for encrypting all types of data on the computer. But GPG is a suite of tools that allow you to encrypt and digitally sign arbitrary data such as files and emails, while TrueCrypt offers convenience and the advantage of deniability. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/458715:things-you-cant-do-with-a-gui-finding-stuff-on-linux">Linux.com/Carla Schroder: Things You Can&apos;t Do With a GUI: Finding Stuff on Linux</ulink>
+        <ulink url="http://www.linuxjournal.com/content/how-fast-can-you-type-develop-tiny-utility-bash-find-out">Linux Journal/Emre Sevinc: How Fast Can You Type? Develop a Tiny Utility in Bash to Find Out</ulink>
       </title>
-      <para>What&apos;s better, a graphical interface or the Linux command line? Both of them. They blend seamlessly on Linux so you don&apos;t have to choose. A good graphical user interface (GUI) has a logical, orderly flow, helps guide you to making the right command choices, and is reasonably fast and efficient. Since this describes a minority of all GUIs, I still live on the command line a lot. The CLI has three advantages: it&apos;s faster for many operations, it&apos;s scriptable, and it is many times more flexible. Linux&apos;s Unix heritage means you can string together commands in endless ways so they do exactly what you want. (...)</para>
-<!-- ($ Id: 18.6.11 sat $)-->    </blockquote>
+      <para>If you spend most of your time typing on your keyboard (and I hope you don’t use that mouse very frequently, if you care for your wrists, that is), getting up to speed and practicing to become a better and faster typist is well worth the time and effort. And measuring something is the first step to improve it.</para>
+      <para>There are tons of applications which test your typing abilities and help you improve it, but wouldn’t it be nice to have a basic idea about your typing performance using nothing but good old Bash? After all, this is about DIY (Do It Yourself) approach and having fun; two notions that Linux Journal readers know very well. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html"
-          >Fridrich Strba: Bounding Box of an SVG Elliptical Arc</ulink>
+        <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">Fridrich Strba: Bounding Box of an SVG Elliptical Arc</ulink>
       </title>
       <para>We all love ODF, the best and the most vendor-neutral file-format in the Universe and
         its surroundings. But for sure, we have some spots where we would prefer it to be somehow
@@ -444,17 +67,13 @@
       <para>Computing bounding boxes is not so complicated work when everything is a polygon (which
         is the case in the internal model of basegfx module), but it becomes a bit more complicated
         if an application wants to generate paths including elliptical arcs.</para>
-      <para>I hit this problem about a year ago when I was working during <ulink
-          url="http://fridrich.blogspot.com/2010/06/hackweek-v-day-1.html">my hackweek</ulink> on an
+      <para>I hit this problem about a year ago when I was working during <ulink url="http://fridrich.blogspot.com/2010/06/hackweek-v-day-1.html">my hackweek</ulink> on an
         improvement of <ulink url="http://libwpg.sourceforge.net">libwpg</ulink>. I tried first to
         implement the bounding box of an elliptical arc the lazy hacker way, by googling for what
         other people did. And to my surprise, there is a huge vacuum in what concerns computation of
-        a bounding box of the "A" element of an SVG path. So, I settled for the lazy hacker's plan
+        a bounding box of the &quot;A&quot; element of an SVG path. So, I settled for the lazy hacker&apos;s plan
         B: I abandoned the idea by saying I will handle it later, in the first moment, and by
-        implementing a <ulink
-          url="http://cgit.freedesktop.org/libreoffice/filters/commit/?id=bcca44ddb4b046ce133896be1b47efcee70bd163"
-          >suboptimal solution</ulink> in the second time. But, since <ulink
-          url="http://www.derivativezero.com/blog/">Eilidh</ulink> did some spectacular progress
+        implementing a <ulink url="http://cgit.freedesktop.org/libreoffice/filters/commit/?id=bcca44ddb4b046ce133896be1b47efcee70bd163">suboptimal solution</ulink> in the second time. But, since <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> did some spectacular progress
         last week in handling elliptic arcs, my lazyness became the bottle-neck of the progress. So,
         it was time to remember those nice times when I was warming the benches of the University,
         dust off my knowledge of mathematical analysis and analytical algebra (or the lack thereof),
@@ -462,18 +81,18 @@
 <!-- ($ Id: 21.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/06/14/review-formatting-silly-sentences/">Python4Kids/Brendan Scott: Review, Formatting Silly Sentences</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/rewriting-history-with-git/">Wazi/Johan Thelin: Rewriting History with Git</ulink>
       </title>
-      <para>We have been covering lots of new concepts very quickly. So now is the time to slow down a bit and go over some of the things we’ve already done, to have a look at them in a little more depth. In particular I want to try to give you some direction on how to make these code samples your own. (...)</para>
-<!-- ($ Id: 18.6.11 sat $)-->    </blockquote>
+      <para>The <ulink url="http://olex.openlogic.com/packages/git">Git</ulink> versioning system allows you to manage large-scale distributed code development projects with thousands of parallel branches. Its powerful checkout, merge, push, and pull capabilities help you work with code branches and clones. Sometimes you, as a contributor, might like to polish a branch you’ve checked out and reduce the number of commits you made before merging it with the master branch. One of Git’s nicer features is that it lets you rewrite history.</para>
+      <para>Rewriting history is not about changing the end result, but about making things cleaner and clearer. For instance, you can remove commits from the times when you added and later removed debug outputs, or merge the fixes you made to a feature with the commit that added the actual feature. The overall goal is to simplify history for the person who merges your branch into the master branch.</para>
+      <para>In Git, each repository is a clone of your project’s entire history. This means that your local repository has the same information as the master branch, or any other developer’s branch. All repositories share the common history, and no branch, from Git’s point of view, represents the “true” history. Therefore you should never rewrite history after you’ve pushed or shared your branch. If you do, other branches will contain alternate versions of the same development history, and your merging could get messy. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://obsforandroid.wordpress.com/2011/06/21/mysql-5-5-in-opensuse-buildservice/"
-          >Justine Leng: MySQL 5.5 in openSUSE buildservice</ulink>
+        <ulink url="http://obsforandroid.wordpress.com/2011/06/21/mysql-5-5-in-opensuse-buildservice/">Justine Leng: MySQL 5.5 in openSUSE buildservice</ulink>
       </title>
       <para>I heard the recently released MySQL 5.5 was a million times faster and had a trillion
         new features. Since MySQL 5.5 is the latest hottest thing that everyone’s talking about, I
@@ -481,10 +100,9 @@
 <!--($ Id: 22.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://ostatic.com/blog/so-you-just-deleted-your-production-database-what-now">OStatic/Jon Buys: So You Just Deleted Your Production Database - What Now</ulink>
+        <ulink url="http://beginlinux.com/desktop/opensuse/auto-configure-ipv6-for-your-network">BeginLinux: Auto-configure IPv6 for your Network</ulink>
       </title>
-      <para>It doesn’t matter how it happened, it doesn’t matter why, blame can (and probably will) be placed later. What matters now is that your production MySQL database was just deleted from the filesystem while the MySQL daemon was running. The good news is that the server, somehow, is still running fine, and the system is still up. The bad news is that the directory where MySQL stores the database is now empty.</para>
-      <para>Take a deep breath, you are running Linux, here is what to do: (...)</para>
-<!-- ($ Id: 18.6.11 sat $)-->    </blockquote>
+      <para>One major feature of IPv6 is its ability to auto-configure the host portion of the IP address using the MAC address from the Network Card. We may have seen this already with the local-link address, however, in this tutorial will look at configuring the RAdvD on openSUSE 11 to advertise the Network Prefix and default gateway so we can work with global addresses without any configuration on the hosts. This will differ from DHCP as we do not need to configure the RAdvD with the host addresses. These will come from the hosts own MAC address helping us reach Zero configuration networking. Or at least very little configuration. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
