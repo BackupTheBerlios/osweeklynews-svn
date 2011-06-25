@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"
+        width="20%" align="center"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title><ulink url="http://rxvl.in/post/6688635893">Ratan Sebastian: GSOC 2011: ssc - Week
+        4</ulink></title>
+    <para>The DirectoryManager module has been polished and it now handles duplicate entries in the
+      software and repositories files. The app now handles errors better and crashes more gracefully
+      with meaningful error messages. As for functionality, I’ve added package banning and
+      unbanning. Also package importing has been included in the current release.</para>
+    <para>I’ve started work on the file handling of the app. Currently it works similar to the
+      packages or repositories with the difference that the file in question is copied over to
+      &lt;appliance_directory&gt;/files. Adding and removing these files will be simple enough
+      within the current framework. And with some work time-stamp information can be incorporated to
+      do more efficient syncs. I hope to have that done by next week and follow up with a basic
+      implementation of the commit command in the week after that so that we can have a first usable
+      version of the client.</para>
+    <para>If you want to check out the application now, you can take it for a spin using <ulink
+        url="http://dl.dropbox.com/u/546252/ssc_releases/ssc-0.1.0.gem">the gem</ulink>. Use with
+      caution, and all that. It shouldn’t do anything catastrophic, but, I wouldn’t use it with
+      anything other than a test appliance at this point. Download it from <ulink
+        url="http://dl.dropbox.com/u/546252/ssc_releases/ssc-0.1.0.gem">here</ulink>. Install it
+      with <ulink url="http://rubygems.org">rubygems</ulink> (gem install ssc-0.1.0.gem) and run ssc
+      help to see the usage instructions.</para>
+    <!-- ($ ld: 20.6.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/06/19/gsoc-osc-code-cleanup-summary-of-week-4/"
+        >Marcus Hüwe: [gsoc] osc code cleanup – summary of week 4</ulink></title>
+    <para>here’s a small summary of the 4th (coding) week. I spent most of the time with writing the
+      RemoteFile classes and the BuildResult class (+ testcases of course:) ).</para>
+    <para>TODO for this week:</para>
+    <itemizedlist>
+      <listitem>
+        <para>improve RemoteFile classes</para>
+      </listitem>
+      <listitem>
+        <para>add APIInfo class:</para>
+        <para> - resolve url-like parameters (api://foo/bar repo/arch)</para>
+        <para> - raise an exception if required parameters are missing</para>
+        <para> - initialize optional parameters with the config default</para>
+        <para> - encapsulate “context-sensitivity” logic (sometimes parameters should be read from
+          the working copy (like apiurl, project or package))</para>
+      </listitem>
+    </itemizedlist>
+    <!-- ($ ld: 20.6.11 sm $)-->
+  </blockquote>
+</sect1>

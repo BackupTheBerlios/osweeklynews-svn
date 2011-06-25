@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/459107-weekend-project-use-rapid-photo-downloader-for-photo-management"> Linux.com/Nathan Willis: Weekend Project: Use Rapid Photo Downloader for Photo Management </ulink>
+      </title>
+      <para>Often the most impressive thing about the open source community is getting to watch
+        someone step up to work on a task that&apos;s far from fun or glamorous in the traditional sense.
+        A good example of that phenomenon is Damon Lynch&apos;s <ulink url="http://www.damonlynch.net/rapid/index.html">Rapid Photo Downloader</ulink> (RPD), a
+        utility that takes the pain out of what many projects overlook: getting your newly shot
+        material off of the camera&apos;s memory card and into your computer. Despite the name, RPD
+        handles both photos and video, and although its speed <emphasis role="italic">is</emphasis>
+        impressive, how it really makes your life easier is by keeping you and your storage
+        organized. (...)</para>
+      <para><emphasis role="bold">Editor's note</emphasis>: Rapid Photo Downloader packages for
+        openSUSE are available via <ulink url="http://bit.ly/lkbkX8">OBS</ulink>.</para>
+<!-- ($ Id: 19.6.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/encrypting-an-enterprise-desktop-with-truecrypt/">Wazi/Mayank Sharma: Encrypting an Enterprise Desktop with TrueCrypt</ulink>
+      </title>
+      <para>Everyone has secrets. Some of yours probably live on your computer. If you want to keep digital information private, locking it behind a password won’t really keep it secure. The only real solution is encryption, which scrambles the contents of files, making them unintelligible to anyone without the digital key to unscramble them. <ulink url="http://olex.openlogic.com/packages/truecrypt">TrueCrypt</ulink> can encrypt and decrypt files, documents, and even entire filesystems. The app also provides on-the-fly encryption for enhanced security, which means it can automatically encrypt and decrypt data before reading and writing it, so it’s never on your hard drive in human-readable format.</para>
+      <para>TrueCrypt is designed to use modern hardware and its multiple cores to speed up encryption and decryption. Besides Linux, it also runs on Windows and Mac operating systems.</para>
+      <para>Of course TrueCrypt is not your only encryption alternative. <ulink url="http://olex.openlogic.com/packages/gnupg">GNU Privacy Guard</ulink> (GPG) is free software’s answer to <ulink url="http://olex.openlogic.com/packages/pgp">Pretty Good Privacy</ulink> (PGP), the industry standard for encrypting all types of data on the computer. But GPG is a suite of tools that allow you to encrypt and digitally sign arbitrary data such as files and emails, while TrueCrypt offers convenience and the advantage of deniability. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/how-fast-can-you-type-develop-tiny-utility-bash-find-out">Linux Journal/Emre Sevinc: How Fast Can You Type? Develop a Tiny Utility in Bash to Find Out</ulink>
+      </title>
+      <para>If you spend most of your time typing on your keyboard (and I hope you don’t use that mouse very frequently, if you care for your wrists, that is), getting up to speed and practicing to become a better and faster typist is well worth the time and effort. And measuring something is the first step to improve it.</para>
+      <para>There are tons of applications which test your typing abilities and help you improve it, but wouldn’t it be nice to have a basic idea about your typing performance using nothing but good old Bash? After all, this is about DIY (Do It Yourself) approach and having fun; two notions that Linux Journal readers know very well. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">Fridrich Strba: Bounding Box of an SVG Elliptical Arc</ulink>
+      </title>
+      <para>We all love ODF, the best and the most vendor-neutral file-format in the Universe and
+        its surroundings. But for sure, we have some spots where we would prefer it to be somehow
+        less cumbersome. My favourite spot is the need to compute the bounding box of the path
+        element when one writes the draw:path into an OpenDocument Graphics file. Without proper
+        svg:x, svg:y, svg:height, svg:width and svg:viewBox values the path will not be correctly
+        placed.</para>
+      <para>Computing bounding boxes is not so complicated work when everything is a polygon (which
+        is the case in the internal model of basegfx module), but it becomes a bit more complicated
+        if an application wants to generate paths including elliptical arcs.</para>
+      <para>I hit this problem about a year ago when I was working during <ulink url="http://fridrich.blogspot.com/2010/06/hackweek-v-day-1.html">my hackweek</ulink> on an
+        improvement of <ulink url="http://libwpg.sourceforge.net">libwpg</ulink>. I tried first to
+        implement the bounding box of an elliptical arc the lazy hacker way, by googling for what
+        other people did. And to my surprise, there is a huge vacuum in what concerns computation of
+        a bounding box of the &quot;A&quot; element of an SVG path. So, I settled for the lazy hacker&apos;s plan
+        B: I abandoned the idea by saying I will handle it later, in the first moment, and by
+        implementing a <ulink url="http://cgit.freedesktop.org/libreoffice/filters/commit/?id=bcca44ddb4b046ce133896be1b47efcee70bd163">suboptimal solution</ulink> in the second time. But, since <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> did some spectacular progress
+        last week in handling elliptic arcs, my lazyness became the bottle-neck of the progress. So,
+        it was time to remember those nice times when I was warming the benches of the University,
+        dust off my knowledge of mathematical analysis and analytical algebra (or the lack thereof),
+        and try to compute the bounding box of an elliptical arc myself.</para>
+<!-- ($ Id: 21.6.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/rewriting-history-with-git/">Wazi/Johan Thelin: Rewriting History with Git</ulink>
+      </title>
+      <para>The <ulink url="http://olex.openlogic.com/packages/git">Git</ulink> versioning system allows you to manage large-scale distributed code development projects with thousands of parallel branches. Its powerful checkout, merge, push, and pull capabilities help you work with code branches and clones. Sometimes you, as a contributor, might like to polish a branch you’ve checked out and reduce the number of commits you made before merging it with the master branch. One of Git’s nicer features is that it lets you rewrite history.</para>
+      <para>Rewriting history is not about changing the end result, but about making things cleaner and clearer. For instance, you can remove commits from the times when you added and later removed debug outputs, or merge the fixes you made to a feature with the commit that added the actual feature. The overall goal is to simplify history for the person who merges your branch into the master branch.</para>
+      <para>In Git, each repository is a clone of your project’s entire history. This means that your local repository has the same information as the master branch, or any other developer’s branch. All repositories share the common history, and no branch, from Git’s point of view, represents the “true” history. Therefore you should never rewrite history after you’ve pushed or shared your branch. If you do, other branches will contain alternate versions of the same development history, and your merging could get messy. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://obsforandroid.wordpress.com/2011/06/21/mysql-5-5-in-opensuse-buildservice/">Justine Leng: MySQL 5.5 in openSUSE buildservice</ulink>
+      </title>
+      <para>I heard the recently released MySQL 5.5 was a million times faster and had a trillion
+        new features. Since MySQL 5.5 is the latest hottest thing that everyone’s talking about, I
+        decided to get it and see what it’s really like. (...)</para>
+<!--($ Id: 22.6.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/auto-configure-ipv6-for-your-network">BeginLinux: Auto-configure IPv6 for your Network</ulink>
+      </title>
+      <para>One major feature of IPv6 is its ability to auto-configure the host portion of the IP address using the MAC address from the Network Card. We may have seen this already with the local-link address, however, in this tutorial will look at configuring the RAdvD on openSUSE 11 to advertise the Network Prefix and default gateway so we can work with global addresses without any configuration on the hosts. This will differ from DHCP as we do not need to configure the RAdvD with the host addresses. These will come from the hosts own MAC address helping us reach Zero configuration networking. Or at least very little configuration. (...)</para>
+<!-- ($ Id: 24.6.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

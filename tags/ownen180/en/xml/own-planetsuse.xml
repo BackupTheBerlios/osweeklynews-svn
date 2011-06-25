@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/06/20/1-2-3-cloud/">Robert Schweikert: 1-2-3
+        Cloud</ulink>
+    </title>
+    <para>Towards the end of last year there was an article in openSUSE news “announcing” the cloud
+      efforts in the openSUSE project and on OBS. Well, cloud is still all the rage (see Jos’
+      contribution to openSUSE News issue 180) and people just cannot stop talking about cloud
+      computing.</para>
+    <para>Using openSUSE as a host for your cloud infrastructure is also making great progress. We
+      have 3 cloud projects in OBS and hopefully these cover your favorite cloud infrastructure
+      code, Virtualization:Cloud:Eucalyptus, Virtualization:Cloud:OpenNebula, and
+      Virtualization:Cloud:OpenStack. The projects provide repositories for Eucalyptus, OpenNebula,
+      and OpenStack, respectively.</para>
+    <para>We attempt to make it relatively easy to get a cloud up and running. In this process
+      OpenNebula and OpenStack have progressed the most. Eucalyptus is working, but due to an issue
+      with Eucalyptus and openSSL 1.0 and later (the version in openSUSE) automation has to wait
+      until these issues are resolved.</para>
+    <para>For OpenNebula we now have a <ulink url="http://kiwi.berlios.de">KIWI</ulink><ulink
+        url="http://en.opensuse.org/SDB:KIWI_Cookbook_ONebula_Cloud">example</ulink> that shows how
+      one can get a cloud setup from scratch in less than 2 hours, including the image build. The
+      example contains a firstboot workflow for the head node, and self configuration of cloud
+      nodes.</para>
+    <para>For OpenStack <ulink url="http://susegallery.com/browse">SUSE Gallery</ulink> images are
+      in the works and will be published in the near future.</para>
+    <para>All repositories provide packages you can install on running openSUSE systems. If you are
+      interested in using openSUSE as the underlying OS for your cloud or if you want to contribute
+      to the cloud projects, subscribe to the cloud mailing list <ulink
+        url="mailto:opensuse-cloud@opensuse.org">opensuse-cloud@opensuse.org</ulink></para>
+<!--($ ld: 21.6.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title><ulink url="http://obsforandroid.wordpress.com/2011/06/21/opensuse-buildservice-101/"
+        >Justine Leng: openSUSE buildservice 101</ulink></title>
+    <para>One of the reasons that Novell created this community-based openSUSE project was to invite
+      contributions from independent developers. It also unveiled a new online service that
+      automatically builds binary packages from source code. The openSUSE buildservice initially
+      focused on building packages for the SUSE variants — openSUSE, SLES, and SLED — but the tool
+      was later extended to support packages for other major distributions, such as Red Hat, Fedora,
+      Mandriva, Debian, and Ubuntu. (...)</para>
+    <!--($ ld: 22.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://anditosan.blogspot.com/2011/06/custom-setups-for-revolutionized.html"
+        >Andres Silva: Custom Setups for Revolutionized Desktop</ulink></title>
+    <para>Ok my friends. Here is the thing: An idea came up recently in the artwork mailing list to
+      make openSUSE a little different than other times in the graphical aspect. The idea would be
+      to add different default plasma widgets, as well as to make subtle changes to the panels. A
+      friend also suggested that it would be cool to create a more socially integrated widget. I
+      thought of one that was included in the Kickoff menu. Added to one of the tabs in there, there
+      could exist a simple update tracker for different social networks, such as Facebook, Twitter,
+      or Google Blogs. Whatever the service that may be, it doesn't matter. The main idea is to add
+      something social to the default desktop in KDE under the new release of openSUSE. (...)</para>
+    <!--($ ld: 24.6.11 sm $)-->
+  </blockquote>
+</sect1>

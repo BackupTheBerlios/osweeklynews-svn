@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="security">
+  <title>Security Updates</title>
+  <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
+    refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-06/msg00008.html">SUSE
+        Security Announcement: openSUSE-SU-2011:0688-1: important: opera</ulink>
+    </title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.06*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">opera</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0688-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Fri, 24 Jun 2011 15:08:26 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4, openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>Framesets allow web pages to hold other pages inside them.</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-06/msg00011.html">SUSE
+        Security Announcement: openSUSE-SU-2011:0693-1: important: subversion security
+        udpate</ulink>
+    </title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">subversion</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0693-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Fri, 24 Jun 2011 21:08:19 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>CVE-2011-1752: The mod_dav_svn Apache HTTPD servermodule can be crashed though when
+            asked to deliverbaselined WebDAV resources.- CVE-2011-1783: The mod_dav_svn Apache HTTPD
+            server modulecan trigger a loop which consumes all available memory onthe system.-
+            CVE-2011-1921: The mod_dav_svn Apache HTTPD server modulemay leak to remote users the
+            file contents of filesconfigured to be unreadable by those users.- CVE-2011-0715: Remote
+            attackers could crash an svn serverby causing a NULL deref</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-06/msg00012.html">SUSE
+        Security Announcement: openSUSE-SU-2011:0695-1: important: subversion: security
+        udpate</ulink>
+    </title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">subversion</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0695-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Fri, 24 Jun 2011 21:08:24 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>CVE-2011-1752: The mod_dav_svn Apache HTTPD servermodule can be crashed though when
+            asked to deliverbaselined WebDAV resources.- CVE-2011-1783: The mod_dav_svn Apache HTTPD
+            server modulecan trigger a loop which consumes all available memory onthe system.-
+            CVE-2011-1921: The mod_dav_svn Apache HTTPD server modulemay leak to remote users the
+            file contents of filesconfigured to be unreadable by those users</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+</sect1>
