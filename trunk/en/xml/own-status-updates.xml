@@ -68,32 +68,20 @@
       </listitem>
     </itemizedlist>
   </sect2>
-<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title>
-        <ulink url="http://flavio.castelli.name/introducing-dister-a-heroku-like-solution-for-suse-studio">
-          <ulink url="http://blog.susestudio.com/2011/05/suse-gallery-desktop-client.html">Matt Barringer: SUSE Gallery Desktop Client</ulink>
-        </ulink>
+      <title><ulink url="http://blog.susestudio.com/2011/06/we-updated-all-opensuse-11.html">Dominik
+          Mayer: Update for openSUSE 11.4 AMIs on EC2</ulink>
       </title>
-      <para>When I started working on extending the <ulink url="http://susestudio.com/help/api/v2">SUSE Studio API</ulink> to support <ulink url="http://susegallery.com/">SUSE Gallery</ulink>, I developed a desktop client at the same time as a testbed. It&apos;s been a
-        bit neglected over the last 6 months, as my <ulink url="http://www.entomologist-project.org/">primary after-work project</ulink> takes up a
-        lot of my time, but it&apos;s usable nonetheless. In an effort to motivate me to work on it
-        again, and to find other contributors, I&apos;m happy to announce the <ulink url="http://susegallery.sourceforge.net/">SUSE Gallery client</ulink>: </para>
-      <mediaobject>
-        <imageobject>
-          <imagedata width="20%" fileref="http://2.bp.blogspot.com/-zJwcKp4oxDw/Td98eZljUtI/AAAAAAAAAAU/ofoagp17uJE/s320/suse-gallery-main.png"/>
-        </imageobject>
-      </mediaobject>
-      <para>With the Gallery client, you can browse, search, view details, download, write to a CD
-        or USB key, or execute the image directly in a virtual machine. There&apos;s rudimentary support
-        for connecting to Testdrive, but the built-in VNC client isn&apos;t very reliable , so don&apos;t be
-        surprised if it doesn&apos;t work. Packages have been built for openSUSE and Fedora, but it
-        should compile on any platform that Qt and LibVNCViewer support (including Windows and Mac).
-        And of course, contributions and bug reports are most welcome!</para>
+      <para>We updated all openSUSE 11.4 public AMIs on Amazon EC2! (All built with SUSE Studio.) If
+        you are using 11.4 on EC2 we highly recommend switching to those updated AMIs. We ran into
+        some disk space related problems with the old ones and re-released these with 5GB of virtual
+        disk space to ensure there is enough space for your software packages. (...)</para>
+      <!--($ ld: 25.6.11 sm $)-->
     </blockquote>
-  </sect2> -->  <sect2 role="teamreports">
+  </sect2>   
+  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -773,25 +761,34 @@ I&apos;d really prefer if this line could be added to the /etc/filesystems file.
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
-<!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://people.gnome.org/~michael/blog/2011-06-03-libreoffice-3-4-0.html">Michael Meeks: LibreOffice progress to 3.4.0</ulink>
-        </title>
-        <para>Today we&#160;<ulink url="http://www.libreoffice.org/download/">released 3.4.0</ulink>,
-          there is a great list of new features,&#160;<ulink url="http://www.libreoffice.org/download/3-4-new-features-and-fixes/">specific to LibreOffice</ulink>&#160;available (expertly assembled by Marc Pere and others). Each should
-          also be credited so some of the depth of the (code) developer community is apparent, this
-          is of course in addition to our extensive&#160;<ulink url="http://www.libreoffice.org/credits.html">credits page</ulink>&#160;(kept up to date by a
-          volunteer of course). This is the first major release containing code from many of our new
-          volunteers which is exciting. Of course, there are some great improvements there, I like
-          the named range / data-pilot work that makes it easy to extend the data range you&apos;re
-          working on without manually editing perhaps ten data-pilots depending on it but there are
-          a load more. Some of the changes are invisible, and/or behind the scenes - so I thought
-          I&apos;d expand on them here.</para>
-    </blockquote> 
-    </sect3> -->
+        <title><ulink
+          url="http://lizards.opensuse.org/2011/06/21/libreoffice-3-3-3-bugfix-release-available-for-opensuse/"
+          >Petr Mladek: LibreOffice 3.3.3 bugfix release available for openSUSE</ulink></title>
+        <para>I’m happy to announce LibreOffice <emphasis role="italic">3.3.3 bugfix release</emphasis>
+          for <emphasis role="italic">openSUSE</emphasis>. The packages are available in the Build
+          Service <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
+            >LibreOffice:Stable</ulink> project. They fix various crashers, usability and translation
+          problems, see the <ulink
+            url="http://cgit.freedesktop.org/libreoffice/build/plain/NEWS?id=libreoffice-3.3.3.1"
+            >libreoffice-3.3.3.1 release news</ulink> for more details. See also some notes about <ulink
+              url="http://en.opensuse.org/LibreOffice">openSUSE LibreOffice build</ulink>.</para>
+        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any software
+          contains bugs and we kindly ask you to <ulink
+            url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help us to
+          fix them in the future releases.</para>
+        <para><emphasis role="bold">Other information and plans:</emphasis></para>
+        <para>The bugfix release 3.3.4 is planed two months from now. Though, I would rather provide
+          LO-3.4.2 packages instead.</para>
+        <para>I am already working on the LO-3.4 packages. They are more complicated because there were
+          significant changes in the build stuff. You might expect something within the next few weeks
+          in the <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/"
+            >LibreOffice:Unstable</ulink> project.</para>
+        <!--($ ld: 22.6.11 sm $)-->
+      </blockquote>
+    </sect3> 
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
