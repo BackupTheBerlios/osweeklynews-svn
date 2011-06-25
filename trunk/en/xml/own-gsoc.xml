@@ -52,8 +52,8 @@
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://rxvl.in/post/6481353758/gsoc-2011-ssc-week-3">Marcus Hüwe: [gsoc] osc code
-        cleanup – summary of week 4</ulink></title>
+      <ulink url="http://lizards.opensuse.org/2011/06/19/gsoc-osc-code-cleanup-summary-of-week-4/"
+        >Marcus Hüwe: [gsoc] osc code cleanup – summary of week 4</ulink></title>
     <para>here’s a small summary of the 4th (coding) week. I spent most of the time with writing the
       RemoteFile classes and the BuildResult class (+ testcases of course:) ).</para>
     <para>TODO for this week:</para>
@@ -71,74 +71,5 @@
       </listitem>
     </itemizedlist>
     <!-- ($ ld: 20.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://fridrich.blogspot.com/2011/06/libreoffice-visio-import-filter-shaping.html"
-        >Fridrich Strba: LibreOffice Visio import filter - shaping up the baby</ulink></title>
-    <para>Maybe you were asking yourself what happened in the Google Summer of Code Visio Import
-      filter project since <ulink
-        url="http://fridrich.blogspot.com/2011/06/libreoffice-visio-import-filter-first.html">last
-        week</ulink>. But even if you did not ask yourself this necessary question, here is some
-      update about the baby:</para>
-    <para>The focus this week was mainly on shaping the baby up. <ulink
-        url="http://www.derivativezero.com/blog/">Eilidh</ulink> added to her blog a photo and an
-      "About" line and then she got exhausted and decided to rest by coding. And it is like this
-      that she implemented polylines, ellipses and circular arcs.</para>
-    <para>And since the images speak louder then any words, enjoy the look: (...)</para>
-    <!--($ ld: 18.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://cbounta.wordpress.com/2011/06/17/a-utility-for-merging-configuration-sysconfig-files-week-4-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 4
-        Report</ulink></title>
-    <para>This is the 4rth week report, a lot of coding this week, you can see some code on my
-      project github under branch working. Yes the code there is still not stable, but I am
-      improving it constantly. Till this moment, i didn’t have any feedback except from my mentor,
-      so if you check it out and have some suggestion or something, please feel free to contact me. </para>
-    <para><emphasis role="bold">What is new in few words?</emphasis></para>
-    <para>There have been improvements in many of the functions i did, several new functions have
-      been added in my augeas branch repo, i try to split things up as much as possible, to help me
-      debug things. </para>
-    <para>Functions Changed/Added:</para>
-    <para>
-      <itemizedlist>
-        <listitem>
-          <para> aug_find_lense</para>
-        </listitem>
-        <listitem>
-          <para> aug_load_file</para>
-        </listitem>
-        <listitem>
-          <para> tree_child_sort_label</para>
-        </listitem>
-        <listitem>
-          <para> aug_process_tree</para>
-        </listitem>
-        <listitem>
-          <para> int label_compare</para>
-        </listitem>
-        <listitem>
-          <para>merge command in augtool was changed a bit too.</para>
-        </listitem>
-      </itemizedlist>
-    </para>
-    <para><emphasis role="bold">What is next?</emphasis></para>
-    <para>The basic steps for tree matching have already been implemented, the goal now is to finish
-      it and actually include the merging functions too. The tree matching is the most complex part
-      as far i have understood in this project. By completing it, the other steps in the initial
-      schedule will be implemented easier.</para>
-    <!--($ ld: 18.6.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://obsforandroid.wordpress.com/2011/06/17/6-17-2011-weekly-report/"
-        >Justine Leng: 6.17.2011 Weekly Report</ulink></title>
-    <para>This week, I primarily focused on accumulating community feedback on my <ulink
-        url="http://obsforandroid.wordpress.com/2011/06/09/obs-mobile-request-page-makeover/"
-        >request page makeover suggestions</ulink>, and refining the features accordingly.</para>
-    <para>So based on the limited but helpful user feedback I received, I’ve made the following
-      changes: (...)</para>
-    <!--($ ld: 18.6.11 sm $)-->
   </blockquote>
 </sect1>
