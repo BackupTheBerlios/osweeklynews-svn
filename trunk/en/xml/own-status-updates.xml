@@ -363,41 +363,69 @@
       </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://www.marques.so/2011/06/conspiracy-theories-and-gnome2/">Nelson Marques: GNOME3 and openSUSE 12.1 – A conspiracy theory!</ulink>
-        </title>
-        <para>This text is based on a personal interpretation of several events, and as such it
-          reflects one of several potential interpretations, MINE!</para>
-        <para>On the last <ulink url="http://en.opensuse.org/openSUSE:GNOME_team">GNOME Team</ulink><ulink url="http://community.opensuse.org/meetings/opensuse-gnome/2011/opensuse-gnome.2011-06-16-15.32.html">meeting</ulink> there was a small topic to check if it would be interesting to have a
-          GNOME2 spin for the upcoming 12.1 release of <ulink url="http://www.opensuse.org">openSUSE</ulink>. It was decided not to provide a GNOME2 spin and somehow this suggests
-          that GNOME2 is dead for openSUSE (unless someone takes the job in).</para>
-        <para>One of the interesting things that poped during this meeting was the fact that <ulink url="http://www.gnome3.org">GNOME3</ulink> has a ‘fallback mode’, or at least that’s how
-          it became to be knownýamongýGNOME users, press and competitors. It’s not really hard to
-          understand that ‘fallback’ became a connotative form that throws in a lot of negative
-          energy, much in the way that it seems to be an unwanted ‘feature’.</para>
-        <para>I believe that <ulink url="http://en.opensuse.org/User:Vuntz">Vincent Untz</ulink>
-          proposed a very interesting plan regarding this “GNOME3 vs GNOME2″ possibilities: provide
-          an alternative Desktop option where the feature known as ‘fallback mode’ can be presented
-          as an attractive option to the standard GNOME Shell for users who seek ‘classic’ looks.
-          It’s somehow unclear to me how we will achieve this, but I’m sure that a few ideas might
-          have been already on the forge for testing.</para>
-        <para>The <ulink url="http://www.fedoraproject.org">Fedora Project</ulink> has taken a
-          different approach and it seems that <ulink url="http://ostatic.com/blog/how-would-you-like-gnome-2-32-on-fedora-15">GNOME2 is making it’s way into Fedora 15</ulink>, the most controversial release of the Fedora
-          Project, nevertheless one of their greatest, maybe only surpassed by Fedora 13. This
-          initiative is called ‘BlueBubble’ and lead by Fedora Ambassador and Packager <ulink url="http://fedoraproject.org/wiki/User:Nushio">Juan Moreno</ulink>, to whom I wish all
-          the success with his work, as I’m sure that many Fedora users will be thrilled with such
-          option available.</para>
-        <para>Back into the openSUSE world I also recognize a huge amount of value, and though it
-          might become a complicate task to strike down the current idea people have about the
-          ‘fallback mode’ (clearly a huge failure from whoever decided to call it ‘fallback mode’)
-          and try to make it a more useful feature towards the classic GNOME2 Desktop, thus
-          promoting among our users that upgrading to GNOME3 is the way! With openSUSE there won’t
-          be a 10th year for GNOME2 life cycle! The future lies only with GNOME3 which has shown
-          great potential and stability on it’s initial release, specially if we compare it to the
-          initial release of it’s main competitors, <ulink url="http://www.kde.org">KDE4</ulink> and
-            <ulink url="http://launchpad.net/unity">Unity</ulink>.</para>
-        <para>openSUSE and GNOME3 lead the way now!</para>
-<!--($ ld: 23.6.11 sm $)-->      </blockquote>
+        <title><ulink url="http://www.marques.so/2011/06/banshee-2-1-0-for-opensuse/">Nelson Marques:
+          Banshee 2.1.0 for openSUSE</ulink></title>
+        <para><inlinegraphic
+          fileref="http://www.marques.so/wp-content/uploads/2011/06/Screenshot-Banshee-Media-Player.png"
+        /></para>
+        <para>I’ve finally updated Banshee to 2.1.0 on Banshee:Unstable. Unfortunatly this took longer
+          than I expected because of the changes involved on this package. From this version on the
+          package was renamed to ‘<emphasis role="bold">banshee</emphasis>‘ (previously banshee-1), and
+          there’s also a few changes in the sub-packages which should be transparent to most
+          users.</para>
+        <para>My advice for the users who are subscribed to this repository is to remove current
+          installed packages, which can be done through: </para>
+        <programlisting>rpm -e `rpm -qa | grep banshee-1`</programlisting>
+        <para>and then install again the repository through the 1-Click installer (make sure the mirror
+          you’re downloading from is already updated).</para>
+        <para>For users who want to subscribe for the repository to check out this nice version of
+          Banshee, you can do it through the following steps (using openSUSE 11.4 example):</para>
+        <orderedlist>
+          <listitem><para>Install the repository:
+            <programlisting>zypper ar http://download.opensuse.org/repositories/Banshee:/Unstable/Banshee_openSUSE_11.4/Banshee:Unstable.repo</programlisting></para></listitem>
+          <listitem><para>Install Banshee 2.1.0:
+            <programlisting>zypper install banshee banshee-core</programlisting></para></listitem>
+        </orderedlist>
+        <para>Banshee 2.1.0 won’t be available for SLE11 and SLE11SP1 due to dependencies (ex:
+          gstreamer). This version is also being submitted to Factory on the next days. This version
+          introduces:</para>
+        <itemizedlist>
+          <listitem>
+            <para>eMusic Store;</para>
+          </listitem>
+          <listitem>
+            <para>ArtworkManager enhancements;</para>
+          </listitem>
+          <listitem>
+            <para>51 notable bug fixes.</para>
+          </listitem>
+        </itemizedlist>
+        <!--($ ld: 26.6.11 sm $)-->
+      </blockquote>
+      <blockquote>
+        <title><ulink url="http://www.marques.so/2011/06/new-package-submitted-to-gnomeapps-synapse/"
+          >Nelson Marques: New package submitted to GNOME:Apps – Synapse</ulink></title>
+        <para><inlinegraphic
+          fileref="http://www.marques.so/wp-content/uploads/2011/06/Screenshot-synapse.png"/></para>
+        <para>I’ve written about <ulink url="http://launchpad.net/synapse-project">synapse</ulink> in
+          the past and it was one of the applications I wanted to add to GNOME:Ayatana. With the awesome
+          work from several people from the openSUSE GNOME Team, most of the dependencies are now
+          provided in Factory, so it’s really a nice time to submit this application to GNOME:Apps and
+          hope it ends up in openSUSE Factory/openSUSE 11.2.</para>
+        <para>Synapse is a semantic launcher that allows to search for applications, locations, files,
+          etc. It is written in Vala and uses the Zeitgeist engine. It’s really a cool application and
+          it’s battle tested with GNOME 3. The only less positive part is the fact it’s not yet ported
+          to GTK3. It can provide an awesome alternative to the “ALT+F2″ macro.</para>
+        <para>Hope everyone enjoys… and I know that a few people were already waiting for an opportunity
+          to give it a test ride… Let’s see how the review goes (unless something strange happens, it
+          should get green light).</para>
+        <para><inlinegraphic fileref="http://www.marques.so/wp-content/uploads/2011/06/Screenshot1.png"
+        /></para>
+        <para>Anyone who gives it a test ride and wants to deploy some feedback, it will be gladly
+          accepted! My test package is available on my <ulink url="http://bit.ly/lIE0OZ">home
+            project</ulink> in OBS (and hopefully available soon in GNOME:Apps).</para>
+        <!--($ ld: 26.6.11 sm $)-->
+      </blockquote>
 <!--
       <blockquote>
         <title>GNOME Team Meeting</title>

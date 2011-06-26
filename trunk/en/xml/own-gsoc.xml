@@ -28,27 +28,23 @@
     </imageobject>
   </mediaobject>
   <blockquote>
-    <title><ulink url="http://rxvl.in/post/6688635893">Ratan Sebastian: GSOC 2011: ssc - Week
-        4</ulink></title>
-    <para>The DirectoryManager module has been polished and it now handles duplicate entries in the
-      software and repositories files. The app now handles errors better and crashes more gracefully
-      with meaningful error messages. As for functionality, I’ve added package banning and
-      unbanning. Also package importing has been included in the current release.</para>
-    <para>I’ve started work on the file handling of the app. Currently it works similar to the
-      packages or repositories with the difference that the file in question is copied over to
-      &lt;appliance_directory&gt;/files. Adding and removing these files will be simple enough
-      within the current framework. And with some work time-stamp information can be incorporated to
-      do more efficient syncs. I hope to have that done by next week and follow up with a basic
-      implementation of the commit command in the week after that so that we can have a first usable
-      version of the client.</para>
-    <para>If you want to check out the application now, you can take it for a spin using <ulink
-        url="http://dl.dropbox.com/u/546252/ssc_releases/ssc-0.1.0.gem">the gem</ulink>. Use with
-      caution, and all that. It shouldn’t do anything catastrophic, but, I wouldn’t use it with
-      anything other than a test appliance at this point. Download it from <ulink
-        url="http://dl.dropbox.com/u/546252/ssc_releases/ssc-0.1.0.gem">here</ulink>. Install it
-      with <ulink url="http://rubygems.org">rubygems</ulink> (gem install ssc-0.1.0.gem) and run ssc
-      help to see the usage instructions.</para>
-    <!-- ($ ld: 20.6.11 sm $) -->
+    <title><ulink
+        url="http://redache.wordpress.com/2011/06/25/entomologist-ui-changes-weekly-report-5/">David
+        Williams: Entomologist UI changes Weekly Report #4</ulink></title>
+    <para>This week has been a bad one for getting work done as I managed to lose a lot of my work
+      mid week. I’ve spent the rest of the week trying to get back to where I was and finishing up
+      the New Comments Dialog. I also repeated the mantra “commit often” to remind myself to do it
+      so much more often than I do to ensure I can’t lose work when QT Creator decides to delete
+      things.</para>
+    <para>The New Comments Dialog is at its first iteration and I am going to spend the next 2 – 3
+      days fixing any bugs and resolving some issues with the tabbed interface. Then on Monday I
+      will start the TODO lists in earnest and get back to being on track with my timeline. </para>
+    <para>Luckily time is something I do have and I think I gave myself plenty of breathing space in
+      the timeline I submitted with my GSoC application. I’d rather take my time and get things done
+      properly with breathing room than cram in as much functionality as possible into the 12 weeks
+      and then end it with a massive chunk of badly written and probably broken code. This breathing
+      room helped me this week.</para>
+    <!-- ($ ld: 26.6.11 sm $) -->
   </blockquote>
   <blockquote>
     <title>
