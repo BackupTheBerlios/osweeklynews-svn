@@ -20,34 +20,21 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://lizards.opensuse.org/2011/06/20/1-2-3-cloud/">Robert Schweikert: 1-2-3
-        Cloud</ulink>
+      <ulink
+        url="http://lizards.opensuse.org/2011/06/27/facebook-bans-kdes-photo-uploaded-all-uploaded-content-inaccessible/"
+        >Will Stephenson: Facebook bans KDE’s photo uploader; all uploaded content
+        inaccessible.</ulink>
     </title>
-    <para>Towards the end of last year there was an article in openSUSE news “announcing” the cloud
-      efforts in the openSUSE project and on OBS. Well, cloud is still all the rage (see Jos’
-      contribution to openSUSE News issue 180) and people just cannot stop talking about cloud
-      computing.</para>
-    <para>Using openSUSE as a host for your cloud infrastructure is also making great progress. We
-      have 3 cloud projects in OBS and hopefully these cover your favorite cloud infrastructure
-      code, Virtualization:Cloud:Eucalyptus, Virtualization:Cloud:OpenNebula, and
-      Virtualization:Cloud:OpenStack. The projects provide repositories for Eucalyptus, OpenNebula,
-      and OpenStack, respectively.</para>
-    <para>We attempt to make it relatively easy to get a cloud up and running. In this process
-      OpenNebula and OpenStack have progressed the most. Eucalyptus is working, but due to an issue
-      with Eucalyptus and openSSL 1.0 and later (the version in openSUSE) automation has to wait
-      until these issues are resolved.</para>
-    <para>For OpenNebula we now have a <ulink url="http://kiwi.berlios.de">KIWI</ulink><ulink
-        url="http://en.opensuse.org/SDB:KIWI_Cookbook_ONebula_Cloud">example</ulink> that shows how
-      one can get a cloud setup from scratch in less than 2 hours, including the image build. The
-      example contains a firstboot workflow for the head node, and self configuration of cloud
-      nodes.</para>
-    <para>For OpenStack <ulink url="http://susegallery.com/browse">SUSE Gallery</ulink> images are
-      in the works and will be published in the near future.</para>
-    <para>All repositories provide packages you can install on running openSUSE systems. If you are
-      interested in using openSUSE as the underlying OS for your cloud or if you want to contribute
-      to the cloud projects, subscribe to the cloud mailing list <ulink
-        url="mailto:opensuse-cloud@opensuse.org">opensuse-cloud@opensuse.org</ulink></para>
-<!--($ ld: 21.6.11 sm $)-->  </blockquote>
+    <para>So in my head there’s a little Walter Sobchak beating on my conscience and shouting “This
+      is what you get when you trust Facebook with your data, Will”. </para>
+    <para>The reason is that I upload photos to Facebook using KDE’s shared uploader and this has
+      fallen victim to the whims of FB’s purge of its app biosphere. Unless the original developer
+      can convince them that the app is not spammy, offering a bad experience or having the wrong
+      attitude, the app, my photos (all archived elsewhere of course), but most importantly, all the
+      kind comments from my friends and contacts that represent FB’s only value, get sent to the
+      farm. </para>
+    <para>This is what you get when you trust one company with stuff you care about. Will.</para>
+<!--($ ld: 28.6.11 sm $)-->  </blockquote>
   <blockquote>
     <title><ulink url="http://obsforandroid.wordpress.com/2011/06/21/opensuse-buildservice-101/"
         >Justine Leng: openSUSE buildservice 101</ulink></title>

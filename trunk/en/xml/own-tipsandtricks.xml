@@ -94,12 +94,25 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://obsforandroid.wordpress.com/2011/06/21/mysql-5-5-in-opensuse-buildservice/">Justine Leng: MySQL 5.5 in openSUSE buildservice</ulink>
+        <ulink url="http://www.linuxjournal.com/content/accessing-remote-files-easy-and-secure"
+          >LinuxJournal/Johan Tehlin: Accessing Remote Files Easily and Securely</ulink>
       </title>
-      <para>I heard the recently released MySQL 5.5 was a million times faster and had a trillion
-        new features. Since MySQL 5.5 is the latest hottest thing that everyone’s talking about, I
-        decided to get it and see what it’s really like. (...)</para>
-<!--($ Id: 22.6.11 sm $)-->    </blockquote>
+      <para>The secure shell, ssh, and its companion, scp, are tools that I use more or less on a
+        daily basis. Being able to move files between machines without having to setup SAMBA or NFS
+        is very handy when working with multiple systems. All that you need is to enable the secure
+        shell daemon - sshd.</para>
+      <para>Before we go into the details of the sshfs, let's run through a quick re-cap of ssh. The
+        secure shell daemon runs on port 22 by default. It makes it possible to run an encrypted
+        shell session. With the -Y flag, you can even run X11-forwarding, allowing you to run X11,
+        i.e. graphical, programs on the remote machine and displaying the windows on the terminal
+        that you are sitting at.</para>
+      <para>You can configure sshd through the /etc/ssh/sshd_config file (that is the location on my
+        Kubuntu machine). Here, you can disable root access, older protocols, X11 forwarding, etc.
+        The notion is that the more limits you put on the remote access, the more secure your system
+        is from potential attacks. You might also want to tune your hosts.allow and hosts.deny files
+        if you plan to expose sshd to the Internet. There are many guides on hardening servers and
+        ssh, so I will not go into details.</para>
+<!--($ Id: 28.6.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://beginlinux.com/desktop/opensuse/auto-configure-ipv6-for-your-network">BeginLinux: Auto-configure IPv6 for your Network</ulink>
