@@ -131,4 +131,35 @@
     <para>All hail the KDE!!! \o/</para>
     <!-- ($ ld: 28.6.11 sm $)-->
   </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://alex.eftimie.ro/2011/06/28/packagekit-backend-for-software-center-late-week-4-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: late week 4 report</ulink></title>
+    <para>Since third week’s report was no report – basically because I was delayed by missing parts
+      in the architecture (the saga hasn’t finished yet), I’m posting this late 4th week
+      report:</para>
+    <para><inlinegraphic
+        fileref="http://alex.eftimie.ro/wp-content/uploads/2011/06/Workspace-1_003-300x166.png"
+      /></para>
+    <para>Yep, the PK InstallBackend is shaping up <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_biggrin.gif"/>
+        </imageobject>
+      </inlinemediaobject> !</para>
+    <para>Unfortunately, the only machine running this code is mine, the reason being this chain of
+      dependencies:</para>
+    <para>- static Python bindings for PK are dead</para>
+    <para>- PK gi depends on pygobject invoke-rewrite branch of J5 (which isn’t</para>
+    <para> yet merged into master, but will make it to 3.2 release);</para>
+    <para>- PK gi breaks statically loaded glib in software-center master; therefore, the -gtk3 port
+      of software-center should be used;</para>
+    <para>- software-center-gtk3 isn’t ready for merging into trunk – experimental design changes
+      towards a friendlier 5.0 are being done.</para>
+    <para>Therefore I’m testing the install/remove routines on the small modules, such as the
+      PendingView in the above screenshot, waiting for components stabilization.</para>
+    <para>Next week – and probably until week 6 report, I will continue work on the install parts
+      and start developing the PK PackageInfo class.</para>
+    <para>PS: I’m undecided if I should make my reports biweekly or milestone based :-/</para>
+    <!--($ ld: 29.6.11 sm $)-->
+  </blockquote>
 </sect1>
