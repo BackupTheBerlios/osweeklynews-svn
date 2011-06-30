@@ -71,14 +71,85 @@
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
-      <title><ulink url="http://blog.susestudio.com/2011/06/we-updated-all-opensuse-11.html">Dominik
-          Mayer: Update for openSUSE 11.4 AMIs on EC2</ulink>
+      <title><ulink
+          url="http://holger123.wordpress.com/2011/06/29/smbta-stresstest-0-0-4-appliance-features-smb-traffic-analyzer-1-2-5-and-runs-websmbta-out-of-the-box/"
+          >Holger Hetterich: SMBTA Stresstest 0.0.4 appliance features SMB Traffic Analyzer 1.2.5
+          and runs webSMBTA out of the box</ulink>
       </title>
-      <para>We updated all openSUSE 11.4 public AMIs on Amazon EC2! (All built with SUSE Studio.) If
-        you are using 11.4 on EC2 we highly recommend switching to those updated AMIs. We ran into
-        some disk space related problems with the old ones and re-released these with 5GB of virtual
-        disk space to ensure there is enough space for your software packages. (...)</para>
-      <!--($ ld: 25.6.11 sm $)-->
+      <para>
+        <figure>
+          <title>A browser showing webSMBTA, connected to a SMBTA Stresstest 0.0.4 virtual machine.</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata
+                fileref="http://holger123.files.wordpress.com/2011/06/smbta-websmbta-vm1.png"
+                width="30%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </para>
+      <para>Ever wanted to just try <ulink
+          url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer</ulink>
+          to<emphasis role="bold"> see what it can do for you</emphasis>, but have been hindered
+          by<emphasis role="italic"><emphasis role="bold">the hassle of setup and
+            configuration?</emphasis></emphasis> Today the SMBTA team released<ulink
+          url="http://susegallery.com/a/tLEB1d/smbta-stresstest-smbtad"> SMBTA Stresstest
+          0.0.4</ulink>, a complete self containing appliance to be run by your virtualization
+        software, such as <ulink url="http://www.vmware.com/">vmware</ulink> or <ulink
+          url="http://www.virtualbox.org/">VirtualBox</ulink>.</para>
+      <para><emphasis role="italic"><emphasis role="bold">It has never been easier to give SMBTA a
+      try.</emphasis></emphasis></para>
+      <figure id="smbtamonitor">
+        <title>An instance of the smbtamonitor real time program running against SMBTA Stresstest 0.0.4 in VirtualBox.</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://holger123.files.wordpress.com/2011/06/smbta-monitor-vm.png"
+              width="30%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <para>Just <ulink url="http://susegallery.com/a/tLEB1d/smbta-stresstest-smbtad">download the
+          OVF image</ulink> we provide via <ulink url="http://susegallery.com/browse">SUSE
+          Gallery</ulink>, setup your virtual machine to have network access, and point your web
+        browser to the hostname or IP adress of your virtual machine. Also, you can run all real
+        time clients such as the <xref linkend="smbtamonitor"/>smbtamonitor program, or our
+        interface to rrdtool, rrddriver, against SMBTA Stresstest 0.0.4. It has an open port for
+        real time clients on port number 3491.</para>
+      <para>At the very first connect to webSMBTA, a configuration dialog will appear, asking the
+        user to which database the connection has to be made. To run with SMBTA Stresstest 0.0.4,
+        just fill out the form exactly like given in the screenshot.</para>
+      <para>
+        <figure id="websmbta">
+          <title>At the very first connection to webSMBTA, use these parameters to connect to the database in SMBTA Stresstest.</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://holger123.files.wordpress.com/2011/06/websmbta-config.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </para>
+      <para>SMBTA Stresstest 0.0.4 comes with a preinstalled<ulink url="http://www.samba.org">
+          Samba</ulink> server, is configured to host three shares on that server, and generates
+        constant data traffic by six users that are running <ulink
+          url="http://morelias.org/smbta/smbta-guide.html#_smbtatorture">smbtatorture</ulink>
+        instances, a program we developed to test SMBTA. Thanks to the hard work of <emphasis
+          role="bold">Benjamin Brunner</emphasis> on this release, the <ulink
+          url="http://morelias.org/smbta/smbta-guide.html#_websmbta">webSMBTA component</ulink><xref
+          linkend="websmbta"/> is running out of the box in this release, hosted by an Apache
+        webserver.</para>
+      <para>This release is based on our latest and greatest <ulink
+          url="http://holger123.wordpress.com/2011/05/28/smb-traffic-analyzer-1-2-5-released/"
+          >stable release of SMB Traffic Analyzer, version 1.2.5</ulink>, and the rest of the
+        software stack based on <ulink url="http://www.opensuse.org">openSUSE 11.4</ulink>. Needless
+        to say: This release of SMBTA Stresstest was created with the fabulous <ulink
+          url="http://susestudio.com/">SUSE Studio</ulink>!</para>
+      <para>You can <ulink url="http://susegallery.com/a/tLEB1d/smbta-stresstest-smbtad">download
+          the SMBTA Stresstest appliance</ulink> from <ulink url="http://susestudio.com/">SUSE
+          Studio</ulink>, more information on the <ulink
+          url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer
+          project</ulink> is <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/"
+          >available here</ulink>.</para>
+      <!--($ ld: 30.6.11 sm $)-->
     </blockquote>
   </sect2>   
   <sect2 role="teamreports">
@@ -470,118 +541,46 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/06/plasma-active-updates/">Sebastian Kügler: Plasma Active Updates</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/06/new-plasma-active-window-switcher/">Sebastian
+            Kügler: New Plasma Active Window Switcher</ulink>
         </title>
-        <para><emphasis role="bold">Plasma Active Updates</emphasis></para>
-        <para>During the past weeks, we’ve been kind of silent around Plasma Active. This doesn’t
-          mean we’ve just been sitting on our lazy bums, but that we’ve poured a lot of work into
-          various aspects of the Plasma Active user experience. Let me details these changes to give
-          you some idea of where we are. But first off, …</para>
-        <para><emphasis role="bold">What is Plasma Active?</emphasis></para>
-        <para>Plasma Active is a KDE project building a touch-friendly user experience for the
-          device spectrum. You can compare it to the KDE Software Compilation, Plasma Active
-          provides a workspace and applications. The first focused target devices are tablets, such
-          as the ExoPC, also known as WeTab. Plasma Active builds on top of KDE frameworks such as
-          the Plasma libraries and the Nepomuk Semantic Desktop, offering a touch-friendly interface
-          taylored to use-cases of the specific device. Components of Plasma Active are re-usable
-          across different devices, bringing many well-known apps to new devices. The user interface
-          used on a specific device can differ across devices, making sure it fits the devices
-          characteristics and use-cases.</para>
-        <para><emphasis role="bold">How is Plasma Active developed?</emphasis></para>
-        <para>Plasma Active is fully community-developed and builds on existing KDE frameworks.
-          Re-using technologies such as Plasma, we already have quite some usefl apps to run on
-          Plasma Active, more apps are relatively easy to write or to port to Plasma Active. (I’ll
-          explain more about this in a later blog.) One very nice thing is that Plasma Active by
-          design is “ultimately hackable”, it uses components that many people know already, many
-          aspects of the system can even be directly changed on the device by opening it’s QML files
-          with the description of the user interfaces.</para>
-        <para>Plasma Active’s development happens in KDE’s Git infrastructure, communication can be
-          followed on the active@kde.org mailinglist, our IRC channel (#active on irc.freenode.net)
-          is welcoming and open for everyone. This doesn’t mean that there’s no commercial
-          investment in Plasma Active, or that it’s impossible to participate in Plasma Active as a
-          commercially interested partner, it’s just that the foundation is in the hands of a Free
-          software project — KDE — leveling the playing field for everybody else. Two good examples
-          for commercial partners in Plasma Active are basysKom and open-slx. <ulink url="http://www.basyskom.com">BasysKom</ulink> contributes design and development effort
-          into the Contour shell, which forms the basic workspace for Plasma Active. <ulink url="http://www.open-slx.com">open-slx</ulink> (my employer :)) invests into development
-          of Plasma Active core components, system integration, packaging, testing and deployment.
-          As such, we continously work on turning Plasma Active from Git Repo into something
-          end-user ready — which is also our mission, we want to bring Plasma Active to the masses.
-          For this, we’re releasing regularly updated <ulink url="http://open-slx.com/?Downloads">Live Images of Balsam Professional</ulink> running Plasma Active, and we’re working
-          hard on making these images also installable. You can test those images in a virtual
-          machine (you’ll want one that supports composited graphics, such as Virtual Box), or
-          directly on the device. The Balsam Professional Live Image boots out of the box on the
-          ExoPC / WeTab, and we’re working on support for more diverse hardware.</para>
-        <para>To keep track of our different focus points, we’ve created a map of the different
-          “tracks” we follow with our development.</para>
-        <para><inlinegraphic fileref="http://vizzzion.org/blog/wp-content/uploads/2011/06/activeroutes.png"/></para>
-        <para><emphasis role="bold">Where is Plasma Active Today?</emphasis></para>
-        <para>System-wise, the current status is that we have a <ulink url="http://open-slx.com/?Downloads">bootable live image (Balsam Professional)</ulink>
-          with a touch-friendly shell, a bunch of apps that can be used. Boot performance is a bit
-          on the slow side right now (but improving, there are some changes to the boot process
-          planned), runtime performance is pretty good already, as you can see in the videos that
-          we’ve posted already. At open-slx we are working on refining the image in terms of
-          preconfiguration, performance and so on. We’re also quite close to making the image
-          installable, so you can easily install it once (as dualboot on your device, if you wish)
-          and then keep tracking Plasma Active development just by updating your packages
-          regularly.</para>
-        <para>During the Meego conference in San Francisco, basysKom demoed parts of Plasma Active
-          and the Contour shell. A video has been recorded which gives a good idea of which
-          direction we’re going: <ulink url="http://www.youtube.com/watch?v=i3abBR1qLn0">http://www.youtube.com/watch?v=i3abBR1qLn0</ulink></para>
-        <para>On the software side, we’re working on a bunch of different things </para>
-        <itemizedlist>
-          <listitem>
-            <para><emphasis role="bold">Resource visualization</emphasis>: As we’re using Nepomuk as
-              the underlying data structure, we’ve implemented data-driven widgets that represent
-              “Things” in the Nepomuk store. These can be local files, online resources, but also
-              abstract things like tags, for example. These “Resource delegates” as we call them
-              form basic building blocks of your assets in Plasma Active. </para>
-          </listitem>
-          <listitem>
-            <para><emphasis role="bold">Web-browser and web-integration</emphasis>: As “The Web” is
-              one of the most important use-cases for Plasma Active, we’re spending quite some time
-              now on making this work really well. After shopping around, we decided that our best
-              bet on the web-browser would be a touch-friendly version of Rekonq, using QML. We’ve
-              already made some progress towards that direction, but we’re not there yet. </para>
-          </listitem>
-          <listitem>
-            <para><emphasis role="bold">Share-Like-Connect</emphasis>: Share-Like-Connect will bring
-              ubiquitous (just *had* to use this word once ;)) social networking and sharing to
-              Plasma Active. I’ll not go into details here since this topic is way too awesome, so
-              we’ll dedicate a separate post to it. </para>
-          </listitem>
-        </itemizedlist>
-        <para>From my personal point of view as a user, I must say that Plasma Active is becoming a
-          rock star. It’s already quite usable for surfing the web, reading news or email. It is not
-          stable software yet, more comparable to an Alpha state (there are quite some bugs left to
-          be squished, and it’s not feature complete). Our progress is very noticeable, however,
-          which is promising for our first targeted released end of September.</para>
-        <para><emphasis role="bold">More info…</emphasis></para>
-        <para>If you’d like to know more about Plasma Active, or follow its development, the
-          following resources are interesting: </para>
-        <itemizedlist>
-          <listitem>
-            <para><ulink url="http://community.kde.org/Plasma/Active">Plasma Active</ulink> on the
-              community.kde.org wiki</para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://community.kde.org/Plasma/Active/Contour">Contour shell</ulink>
-              on the community.kde.org wiki</para>
-          </listitem>
-          <listitem>
-            <para><ulink url="http://vizzzion.org/blog/category/active/">My blog posts</ulink> about
-              Plasma Active (including screencasts)</para>
-          </listitem>
-          <listitem>
-            <para>our mailing list: active@kde.org (<ulink url="https://mail.kde.org/mailman/listinfo/active">Subscription page</ulink>, <ulink url="http://mail.kde.org/pipermail/active/">archives</ulink>) </para>
-          </listitem>
-          <listitem>
-            <para>#active channel on IRC (irc.freenode.net)</para>
-          </listitem>
-          <listitem>
-            <para><ulink url="https://build.opensuse.org/project/show?project=KDE%3AActive">Plasma Active OBS</ulink> project</para>
-          </listitem>
-        </itemizedlist>
-<!--($ ld: 23.6.11 sm $)-->      </blockquote>
+        <para>Last week, Marco and I have integrated a new window switcher into Plasma Active. We
+          had designed and started to implement this rather central component of the shell during
+          the Tokamak sprint a couple of weeks ago, now it finally made its way into Active, so you
+          can update your system to the latest packages and enjoy it. (In order for it to work
+          correctly, you’ll have to delete your plasma-tablet-appletsrc file, as we do not update
+          these automatically at this stage of development). The new window switcher works very
+          well, and is quite snazzy on top of that. It also contains an application launcher! I’ve
+          recorded a small <ulink url="http://www.youtube.com/watch?v=IgdnuxcUcWg">demo
+            video</ulink> showing these new features. Look at: <ulink
+            url="http://www.youtube.com/watch?v=IgdnuxcUcWg"
+            >http://www.youtube.com/watch?v=IgdnuxcUcWg</ulink></para>
+        <para><emphasis role="bold">Window Strip</emphasis></para>
+        <para>The idea is to have a non-modal interface, which means that the window switcher does
+          not block, but allows to interact with other applications that are currently in focus. For
+          this, we use a panel which can be dragged down partly or completely from the top,
+          revealing a strip of windows that is horizontally flickable with the finger. This way, it
+          works for only a few windows, but also scales quite well for those that want to have more
+          apps open at the same time.</para>
+        <para>The implementation is a bit hacky, but only in the background. It is in fact a
+          combination of QML and KWin’s compositing effects. We are basically catching move events,
+          "polishing" these into a more straight stream of events which we then pass to KWin, asking
+          the window manager to paint thumbnails of the windows at a given position. While we didn’t
+          know if it would work at all when we came up with this design, luckily it turned out to be
+          nice and very usable.</para>
+        <para><emphasis role="bold">App Launcher</emphasis></para>
+        <para>The new panel also has an app launcher, which allows you to launch an app. As the user
+          might potentially have lots of apps installed, there’s a "tag cloud" which lists
+          categories of apps (you tap on one and it shows only apps in the category), and a search
+          field you can use to find apps. (There’s a theming problem which affects readability in
+          the tag cloud, we’ll fix that shortly.) As the number of apps available might not fit into
+          the available screen space, you can flick the apps grid horizontally to reveal more
+          apps.</para>
+        <para>These features have already been merged into the KDE:Active packages on the Open Build
+          Service, and you’ll be able to try them on your device with the next <ulink
+            url="http://open-slx.com/?Downloads">Balsam Professional Live image</ulink>. </para>
+        <para>What do you think about these new pieces in the UI?</para>
+<!--($ ld: 30.6.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
