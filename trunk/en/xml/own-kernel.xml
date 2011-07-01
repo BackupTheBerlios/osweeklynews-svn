@@ -20,48 +20,24 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-            <ulink
-                url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-0-Part-2-Filesystems-1263681.html"
-                >h-online/Thorsten Leemhuis: Kernel Log: Coming in 3.0 (Part 2) -
-                Filesystems</ulink>
-        </title>
-        <para><emphasis role="bold">The kernel hackers have optimised the Btrfs code and extended it
-                to include new functions; a substantially improved tool for testing the experimental
-                filesystem is soon to be released. Ext4 now supports the "punch hole" technology for
-                deallocating unused memory areas within a file.</emphasis></para>
-        <para>Early this week, Linus Torvalds released a new pre-release (RC) for Linux 3.0. In the
-            release mail for the <ulink url="http://article.gmane.org/gmane.linux.kernel/1157753"
-                >fourth RC</ulink>, he mentions some more extensive changes to the DRM subsystem.
-            Among those changes are <ulink
-                url="http://thread.gmane.org/gmane.comp.video.dri.devel/58481">patches </ulink>that
-            improve support for the graphics core of AMD's recently introduced Llano, which was
-            introduced between <ulink
-                url="http://www.h-online.com/open/features/Kernel-Log-Llano-support-union-filesystems-1260710.html"
-                >RC2 and RC3</ulink>.</para>
-        <para>The Kernel Log is taking the development progress of Linux 3.0 as an opportunity to
-            continue its "Coming in 3.0" mini series with a description of the advancements in terms
-            of filesystems. Partý1 of the mini-series discussed the changes to the <ulink
-                url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-0-Part-1-Networking-1257847.html"
-                >network drivers and infrastructure</ulink>; over the coming weeks, further articles
-            will discuss the kernel's graphics drivers, architecture code, storage support,
-            infrastructure and other hardware drivers.</para>
-<!-- ($ ld: 22.6.11 sm $) -->  </blockquote>
-    <blockquote>
-        <title><ulink url="https://lkml.org/lkml/2011/6/21/2">Linus Torvalds: Linux
-            3.0-rc4</ulink></title>
-        <para>Mostly the usual small driver one- (or few-) liners, and some bigger changes to drm
-            (and md). But also two new smallish drivers (net/usb/kalmia.c, and the ADP8870 backlight
-            driver). Some filesystem fixes (btrfs, cifs, afs, xfs, nfsd). </para>
-        <para>And a couple of performance regressions: rcu doesn't need threads (and avoiding them
-            fixes a performance problem under certain loads) and the conversion from spinlocks to
-            mutexes for the anon_vma locking ended up causing a scalability issue that required
-            fixing.  (...)</para>
-        <!-- ($ ld: 22.6.11 sm $)-->
-    </blockquote>
-    <!--
+      <ulink url="https://lkml.org/lkml/2011/6/27/396">Linus Torvalds: Linux 3.0-rc5</ulink>
+    </title>
+    <para>Nothing terribly exciting here.</para>
+    <para>The most noteworthy thing may be that only about a quarter of the
+changes are in drivers, filesystem changes actually account for more
+(40%): btrfs, cifs, ext4, jbd2, nfs are all present and accounted for.</para>
+    <para>On the driver side, there&apos;s some gpu updates, infiniband, mmc, sound
+and some SCSI target fixes.</para>
+    <para>And the normal random smattering of changes all around. Like some
+long-standing compile failure (admittedly you need to enable some
+esoteric resource counting options and disable NUMA to trigger it, but
+still). I think there&apos;s a few more lurking in staging, with fixes yet
+to be merged.</para>
+    <para>The appended shortlog is fairly readable. (...)</para>
+<!-- ($ ld: 2.7.11 sm $) -->  </blockquote>
+<!--
     <blockquote>
         <title><ulink url="http://schaiba.wordpress.com/2011/06/18/kernel-weekly-news-18-06-2011/"
                 >Rares Aioanei: kernel weekly news – 18.06.2011</ulink></title>
         <para>Rares gives his weekly Kernel News from this week.</para>
-    </blockquote> -->
-</sect1>
+    </blockquote> --></sect1>
