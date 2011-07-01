@@ -151,6 +151,32 @@
           >available here</ulink>.</para>
       <!--($ ld: 30.6.11 sm $)-->
     </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://blog.susestudio.com/2011/06/using-autoyast-for-customizing-your.html">SUSE
+          Studio: Using AutoYaST for customizing your appliance on first boot</ulink></title>
+      <para>When building appliances with SUSE Studio, I was often challenged with finding a way to
+        configuring an appliance on first boot. The most common use cases like locale, time zone and
+        network configuration are being offered by Studio already.</para>
+      <para><inlinegraphic
+          fileref="http://3.bp.blogspot.com/-jAoJzRg6ZIA/TgxR_1f9qJI/AAAAAAAAAkg/fXPg4KzhxaU/s320/ask-on-firstboot.png"
+        /></para>
+      <para>Selecting these options will make Studio include the required packages and configuration
+        to guide the user through a YaST workflow on first boot.</para>
+      <para>But is there an easy way for further customizing your application on first boot? Yes,
+        there is! Enter <emphasis role="bold">AutoYaST</emphasis> and it's powerful "Ask the user
+        for values during installation" feature.</para>
+      <para>Switch to the Configuration tab, select Scripts and check the "Run AutoYaST profile on
+        appliance's first boot" option.</para>
+      <para><inlinegraphic
+          fileref="http://2.bp.blogspot.com/-UOJTJl54NU8/TgxVJQ42_nI/AAAAAAAAAko/tfjYTaxSLkk/s320/autoyast-firstboot.png"
+        /></para>
+      <para>Next we need to create the AutoYaST profile, which will be run on first boot. The
+        profile format is an ASCII XML file.</para>
+      <para>Here is a simple example, that will create a simple ask dialoge "Enter the user for this
+        machine" and promt for input. The result will be writen to /tmp/answer_user. (...)</para>
+      <!--($ ld: 1.7.11 sm $)-->
+    </blockquote>
   </sect2>   
   <sect2 role="teamreports">
     <title>Team Reports</title>
