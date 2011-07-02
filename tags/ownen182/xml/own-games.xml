@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="games" role="games">
+  <title>Games Corner</title>
+  <para>The Section provides the Game of the Week, and Updates in the Game Repository</para>
+<!--
+  <blockquote>
+    <title><ulink url="http://www.vuntz.net/journal/post/2011/03/07/Google-Summer-of-Code-2011-for-GNOME-openSUSE">Vincent Untz: Google Summer of Code 2011 for GNOME</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>
+      <table frame="none">
+        <title>Short Intro</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <tbody>
+            <row>
+              <entry>Name of the Game:</entry>
+              <entry>$NAME</entry>
+            </row>
+            <row>
+              <entry>Genre:</entry>
+              <entry>$GENRE</entry>
+            </row>
+            <row>
+              <entry>1-Click-Install</entry>
+              <entry>$1-Click Install URL</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>   
+    </para>
+    <para></para>
+  </blockquote> -->  <blockquote>
+    <title>
+      <ulink
+        url="http://www.marques.so/2011/07/unknown-horizons-2011-2-available-for-opensuse-all-supported-and-fedora-1415/"
+        >Nelson Marques: Unknown Horizons 2011.2 – available for openSUSE (all supported) and Fedora
+        14/15</ulink>
+    </title>
+    <para>It was released a few hours ago <ulink url="http://www.unknown-horizons.org">Unknown
+        Horizons</ulink>, the popular Real Time Strategy game which uses the <ulink
+        url="http://www.fifengine.de">FIFE Engine</ulink> and is written in <ulink
+        url="http://www.python.org">Python</ulink>. This game is available on the <ulink
+        url="https://build.opensuse.org/project/show?project=games">openSUSE games
+        repository</ulink> which provides builds for:</para>
+    <itemizedlist>
+      <listitem>
+        <para>openSUSE 11.3</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE 11.4</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE Factory</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE Tumbleweed</para>
+      </listitem>
+      <listitem>
+        <para>Fedora 14</para>
+      </listitem>
+      <listitem>
+        <para>Fedora 15</para>
+      </listitem>
+    </itemizedlist>
+    <para>Users subscribed to the games repository and with Unknown Horizons installed will have
+      automatic updates, while everyone else using openSUSE who wants to check out this wonderful
+      game in openGL can pretty much use one of the 1-Click installers on <ulink
+        url="http://software.opensuse.org">openSUSE Software</ulink> page..</para>
+    <para>This new version introduces new media content, bugfixes and improvements on gameplay, game
+      balance, etc. Here’s a few of those changes taken from the changelog:</para>
+    <programlisting>Gameplay and Balancing
+* New features
+   + option to disable edge scrolling with mouse
+   + basic customizable trade routes for ships
+   + pirates with home position sail around and chase player ship
+   + improvements to random map generation time
+   + improvements to savegame loading time
+   + scenario chooser interface after winning a scenario
+   + improvements to pathfinding speed on sea tiles
+   + randomized playlist of background music
+   + first version of production overview widget
+   + display hint to tell players that roads can be dragged when detecting that
+     they build them one-by-one
+
+User Interface
+* Additions and new features
+   + ship name label and dynamic spacing in trade / exchange widget
+   + settings for multiplayer connection (network)
+   + display settlement name as heading in some buildings
+   + added tooltips to several buttons and labels
+   + display tax rate as label
+   + highlight background of currently selected tab
+   + first version of tab 'build related fields' for e.g. farm and lumberjack
+
+Media Content
+* New files and features
+   + building: sugarcane field
+   + building: tavern
+   + building: half-timbered house
+   + icon: up and down arrows, small rect-shaped delete button
+   + icon: svg application icon without text for use in small icons
+   + icon: grayscale version of speed_* minimap panel buttons
+   + icon: small 16px versions of more resources
+   + unit: lumberjack
+   + simple script that helps adding names to the database</programlisting>
+    <para>Enjoy Unknown Horizons on openSUSE!</para>
+<!--($ ld: 2.7.11 sm $)-->  
+  </blockquote>
+</sect1>

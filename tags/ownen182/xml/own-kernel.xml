@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink url="https://lkml.org/lkml/2011/6/27/396">Linus Torvalds: Linux 3.0-rc5</ulink>
+    </title>
+    <para>Nothing terribly exciting here.</para>
+    <para>The most noteworthy thing may be that only about a quarter of the
+changes are in drivers, filesystem changes actually account for more
+(40%): btrfs, cifs, ext4, jbd2, nfs are all present and accounted for.</para>
+    <para>On the driver side, there&apos;s some gpu updates, infiniband, mmc, sound
+and some SCSI target fixes.</para>
+    <para>And the normal random smattering of changes all around. Like some
+long-standing compile failure (admittedly you need to enable some
+esoteric resource counting options and disable NUMA to trigger it, but
+still). I think there&apos;s a few more lurking in staging, with fixes yet
+to be merged.</para>
+    <para>The appended shortlog is fairly readable. (...)</para>
+<!-- ($ ld: 2.7.11 sm $) -->  </blockquote>
+    <blockquote>
+        <title><ulink url="http://schaiba.wordpress.com/2011/07/02/kernel-weekly-news-02-07-2011/"
+                >Rares Aioanei: kernel weekly news – 02.07.2011</ulink></title>
+        <para>Rares gives his weekly Kernel News from this week.</para>
+    </blockquote>
+</sect1>

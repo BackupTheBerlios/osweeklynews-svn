@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="security">
+  <title>Security Updates</title>
+  <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
+    refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-06/msg00015.html">SUSE
+        Security Announcement: openSUSE-SU-2011:0706-1: important: java-1_6_0-openjdk</ulink>
+    </title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">java-1_6_0-openjdk</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0706-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Tue, 28 Jun 2011 13:08:22 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4, openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>* S6213702, CVE-2011-0872: (so) non-blocking sockets withTCP urgent disabled get still
+            selected for read ops (win)* S6618658, CVE-2011-0865: Vulnerability in deserialization*
+            S7012520, CVE-2011-0815: Heap overflow vulnerability inFileDialog.show()* S7013519,
+            CVE-2011-0822, CVE-2011-0862: Integer overflowsin 2D code* S7013969, CVE-2011-0867:
+            NetworkInterface.toString canreveal bindings* S7013971, CVE-2011-0869: Vulnerability in
+            SAAJ* S7016340, CVE-2011-0870: Vulnerability in SAAJ* S7016495, CVE-2011-0868: Crash in
+            Java 2D transforming animage with scale close to zero* S7020198, CVE-2011-0871:
+            ImageIcon creates Component withnull acc* S7020373, CVE-2011-0864: JSR rewriting can
+            overflowmemory address size</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-06/msg00018.html">SUSE
+        Security Announcement: openSUSE-SU-2011:0724-1: important: MozillaThunderbird: Update to
+        Thunderbird 3.1.11</ulink>
+    </title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">Update to Thunderbird 3.1.11</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0724-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Thu, 30 Jun 2011 21:08:16 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.3 openSUSE 11.4</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>* MFSA 2011-19/CVE-2011-2374 CVE-2011-2376 CVE-2011-2364CVE-2011-2365 Miscellaneous
+            memory safety hazards* MFSA 2011-20/CVE-2011-2373 (bmo#617247)
+            Use-after-freevulnerability when viewing XUL document with scriptdisabled* MFSA
+            2011-21/CVE-2011-2377 (bmo#638018, bmo#639303)Memory corruption due to
+            multipart/x-mixed-replaceimages* MFSA 2011-22/CVE-2011-2371 (bmo#664009) Integeroverflow
+            and arbitrary code execution inArray.reduceRight()* MFSA 2011-23/CVE-2011-0083
+            CVE-2011-0085 CVE-2011-2363Multiple dangling pointer vulnerabilities* MFSA
+            2011-24/CVE-2011-2362 (bmo#616264) Cookieisolation error</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <!--
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-06/msg00012.html">SUSE
+        Security Announcement: openSUSE-SU-2011:0695-1: important: subversion: security
+        udpate</ulink>
+    </title>
+    <table frame="void">
+      <caption>Security Announce</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">subversion</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0695-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Fri, 24 Jun 2011 21:08:24 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>CVE-2011-1752: The mod_dav_svn Apache HTTPD servermodule can be crashed though when
+            asked to deliverbaselined WebDAV resources.- CVE-2011-1783: The mod_dav_svn Apache HTTPD
+            server modulecan trigger a loop which consumes all available memory onthe system.-
+            CVE-2011-1921: The mod_dav_svn Apache HTTPD server modulemay leak to remote users the
+            file contents of filesconfigured to be unreadable by those users</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote> -->
+</sect1>

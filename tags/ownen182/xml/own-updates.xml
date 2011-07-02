@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+  <!--* Gnome
+* KDE
+* XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+  <blockquote>
+    <title><ulink url="http://www.andreas-demmer.de/en/2011/07/01/plasmanotify-fur-firefox-4-und-5"
+        >Andreas Demmer: PlasmaNotify for Firefox 4 and 5</ulink></title>
+    <para>I just upgraded my <ulink
+        url="https://addons.mozilla.org/en-US/firefox/addon/plasmanotify/">Firefox addon
+        PlasmaNotify</ulink>, so that it can be installed on Firefox 4 and 5. I committed the
+      changes to Mozilla so that the Addon should upgrade itself within the next view days. I
+      promise to be quicker on the next Firefox major releases!</para>
+    <para>Impatient users may download the addon in advance <ulink
+        url="http://www.linuxmag.de/plasmanotify-0.3.2-fx-linux.xpi">over here</ulink>.</para>
+    <para>The addon itself is inteded for Linux and integrates the Firefox download notifications
+      into the <ulink url="http://www.kde.org">KDE</ulink> Plasma notifications.</para>
+    <!--($ ld: 2.7.11 sm $)-->
+  </blockquote>
+</sect1>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC 
+  "-//OASIS//DTD DocBook XML V4.5//EN" 
+  "http://www.docbook.org/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"
+        width="20%" align="center"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title><ulink
+        url="http://redache.wordpress.com/2011/06/25/entomologist-ui-changes-weekly-report-5/">David
+        Williams: Entomologist UI changes Weekly Report #5</ulink></title>
+    <para>This week has been a bad one for getting work done as I managed to lose a lot of my work
+      mid week. I’ve spent the rest of the week trying to get back to where I was and finishing up
+      the New Comments Dialog. I also repeated the mantra “commit often” to remind myself to do it
+      so much more often than I do to ensure I can’t lose work when QT Creator decides to delete
+      things.</para>
+    <para>The New Comments Dialog is at its first iteration and I am going to spend the next 2 – 3
+      days fixing any bugs and resolving some issues with the tabbed interface. Then on Monday I
+      will start the TODO lists in earnest and get back to being on track with my timeline. </para>
+    <para>Luckily time is something I do have and I think I gave myself plenty of breathing space in
+      the timeline I submitted with my GSoC application. I’d rather take my time and get things done
+      properly with breathing room than cram in as much functionality as possible into the 12 weeks
+      and then end it with a massive chunk of badly written and probably broken code. This breathing
+      room helped me this week.</para>
+    <!-- ($ ld: 26.6.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://nbprashanth.wordpress.com/2011/06/27/gsoc-report-%E2%80%93-3/"
+        >N.B.Prashanth: GsoC Report – 3</ulink></title>
+    <para>Yes. Sorry. It is another report. But i ll try my best to keep this one short though. <inlinemediaobject>
+        <imageobject>
+          <imagedata
+            fileref="http://s2.wp.com/wp-includes/images/smilies/icon_razz.gif?m=1301511873g"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    <para>Last week was all about the GTK plugin. This plugin was different from the other plugins
+      and was dependent on libzypp. And libzypp was dependent on libsatsolver and that was dependent
+      on…. well, you get the point. The libzypp dependecy had to be removed and that was my
+      job.</para>
+    <para>Most of the time was spent in analysing how (and why) libzypp was used by the plugin. Once
+      i figured that out and got the plugin to compile without libzypp, I was faced with more
+      problems. Initial builds were fine on my Fedora box (F15). But when I built it on OBS, the F14
+      build failed. After reading the logs, i found out that gdk-pixbuf package by default installs
+      itself in a different location in F14. This broke the build on F14. </para>
+    <para>The Deb builds were more problematic. They failed on my build system (ubuntu 11.04). CMake
+      seemed to have difficulties in finding GTK includes and libs. After trying to tweak the code
+      and check for alternatives using pkg-config, i finally stumbled on to a link where i found out
+      that this was a known issue with CMake on Ubuntu 11.04.</para>
+    <para>Well, after this it seemed to be a waste to carry on with CMake when 50% of the builds
+      failed. So i started off on a quest to convert the packages to autotools. Now, the GTK plugin
+      completely uses autotools and works fine on Ubuntu 11.04 and F15. I am in the process of
+      converting the other packages to use autotools as well for the sake of uniformity and
+      maintainability. But that would ofc, depend on the approval of the respective package
+      maintainers.</para>
+    <para>Another change this week is the removal of the git repo at gitorious.org/libyui/libyui.
+      This space will be filled by the official libyui repository once the svn-git conversion is
+      complete. The old repo can be found at gitorious.org/libyui/gsoc2011. I ll be maintaining all
+      project related files there including the source packages that have been converted to
+      autotools and examples. I am no expert at autotools. Infact, i had to do quite a bit of
+      studying to replace cmake. So if anyone with a good autotools background finds any flaws with
+      the packages, please leave a comment below.</para>
+    <para>The documentation would be the next task. At present, the documentation is generated by a
+      makefile using doxygen. This is not linked to the documentation servers at openSUSE and hence,
+      there are no weekly updates yet. This would be implemented once the YUI repo is shifted to
+      git.</para>
+    <para>The GTK package will be added to OBS soon.</para>
+    <!-- ($ ld: 28.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://pinguimengenheiro.blogspot.com/2011/06/gsoc-podcast-subscription.html"
+        >Lucas Lira Gomes: Podcast Subscription Synchronisation</ulink></title>
+    <para>It’s been two weeks since my last update about progress on gpodder integration with
+      Amarok, so here we go.Amarok is now fully capable to receive podcasts from gpodder.net and to
+      synchronize them with your own local podcasts, and the other way around. Every podcast, from
+      gpodder.net, will be synchronized with it respective, from local podcasts, using the playlist
+      synchronisation implemented in the first part of this project.Now, take a look at some
+      screenshots and free your imagination:</para>
+    <para>
+      <figure id="gpodder1">
+        <title>Immediately after Amarok initialization.</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://1.bp.blogspot.com/-JEjM5DXWCZ4/TgkXFxMFurI/AAAAAAAAADU/etkMf3EkeiI/s640/amarok_before_sync.jpeg"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </para>
+    <para>Notice that when Amarok started there is only one podcast on local podcasts.</para>
+    <figure id="gpodder2">
+      <title>Right after the subscription synchronisation process ends.</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://3.bp.blogspot.com/-iVV-PP6isQk/TgkXFNiKEyI/AAAAAAAAADQ/OEOdxkIZZz0/s640/amarok_after_sync.jpeg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>After some necessary delay, gpodder service promptly synchronized all podcasts, from gpodder.net, with your local podcasts, thereby adding the missing ones.</para>
+    <figure id="gpodder3">
+      <title>Removal of a subscription from local podcasts.</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://1.bp.blogspot.com/-agI7JkE6lPA/TgkXEiNpQPI/AAAAAAAAADM/h5QRLWn1Ivo/s640/amarok_after_delete.jpeg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>If you try to remove a local podcast, that is synced with a gpodder podcast, then Amarok will ask you if you want to remove it from your gpodder.net subscriptions too. In a similar manner, once you add a new podcast, to your local podcasts, you will be asked if you want to add it to your gpodder.net subscriptions too.</para>
+    <para>So, remember to keep in touch with this blog. Next week, I will be back to update you with fresh news.</para>
+    <para>All hail the KDE!!! \o/</para>
+    <!-- ($ ld: 28.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://alex.eftimie.ro/2011/06/28/packagekit-backend-for-software-center-late-week-4-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: late week 4 report</ulink></title>
+    <para>Since third week’s report was no report – basically because I was delayed by missing parts
+      in the architecture (the saga hasn’t finished yet), I’m posting this late 4th week
+      report:</para>
+    <para><inlinegraphic
+        fileref="http://alex.eftimie.ro/wp-content/uploads/2011/06/Workspace-1_003-300x166.png"
+      /></para>
+    <para>Yep, the PK InstallBackend is shaping up <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_biggrin.gif"/>
+        </imageobject>
+      </inlinemediaobject> !</para>
+    <para>Unfortunately, the only machine running this code is mine, the reason being this chain of
+      dependencies:</para>
+    <para>- static Python bindings for PK are dead</para>
+    <para>- PK gi depends on pygobject invoke-rewrite branch of J5 (which isn’t</para>
+    <para> yet merged into master, but will make it to 3.2 release);</para>
+    <para>- PK gi breaks statically loaded glib in software-center master; therefore, the -gtk3 port
+      of software-center should be used;</para>
+    <para>- software-center-gtk3 isn’t ready for merging into trunk – experimental design changes
+      towards a friendlier 5.0 are being done.</para>
+    <para>Therefore I’m testing the install/remove routines on the small modules, such as the
+      PendingView in the above screenshot, waiting for components stabilization.</para>
+    <para>Next week – and probably until week 6 report, I will continue work on the install parts
+      and start developing the PK PackageInfo class.</para>
+    <para>PS: I’m undecided if I should make my reports biweekly or milestone based :-/</para>
+    <!--($ ld: 29.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-06/msg00197.html"
+        >N.B.Prashanth: GsoC Weekly Report - "Separating libYUI"</ulink></title>
+    <para>I would like to summarize my progress so far. I am working on the libYUI project as
+      mentioned above.(...)</para>
+    <!--($ ld: 29.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://cbounta.wordpress.com/2011/07/01/a-utility-for-merging-configuration-sysconfig-files-%E2%80%93-week-6-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 6
+        Report</ulink></title>
+    <para>This is my 6th report concerning the progress of my gsoc project. First of all, I want to
+      apologize because of the 5th report that is missing from last week. Due to some events, for me
+      it was almost impossible to concentrate on work. Even though i did some things, it was not
+      enough to create a report on. The previous week made me get out of schedule at least for a
+      week, i will try to catch up this time by working more on weekends starting from this one.
+      Even though in my initial plan there were about two weeks free time in the schedule that i
+      could use in occasions like this.</para>
+    <para>Anyway, what’s up with the progress. As I have described in previous post, I am currently
+      working on the matching code / algorithm. Some major improvements took place on the
+      aug_process_tree method, which will be responsible for matching the initial tree with those
+      coming as parameters. The tree traversal algorithm is now working completely, some issues
+      however still exist in the matching of the tree nodes. Hopefully, i will be able to resolve
+      this issues very soon, maybe even in the next couple of days.</para>
+    <para>Also, some basic drafts of the merging functions were added. Each function will complete
+      the appropriate actions that must be carried , and will also represent each of the merging
+      parameters /merging flags that will be used.</para>
+    <para>Finally, small changes and improvements took place in few other functions as well in the
+      code. The plan for the next days is to complete the matching of the tree nodes and the
+      merging. At least to a point where more more debugging tests would be able to be carried
+      out.</para>
+    <!--($ ld: 2.7.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://redache.wordpress.com/2011/07/01/entomologist-ui-changes-weekly-report-6/">David
+        Williams: Entomologist UI changes Weekly Report #6</ulink></title>
+    <para>This week has been a bit productive but there still isn’t that much to show for the work I
+      have done as it’s primarily related to drag and drop in the TODO list. The start of the week
+      was spent bolstering the code I had worked on for the tabbed interface and ensuring that I
+      caught as many bugs as I could find. The later part of the week has been focused on the TODO
+      list. </para>
+    <para>The idea behind the TODO list is a way to categorize bugs with your own scheme and then
+      assign them to certain completion dates. This could then be used to track roadmaps etc and
+      over time I plan to add cloud integration so that they can be synced with Google Calendar etc.
+      The main focus right now is getting it to work within the context of entomologist and once
+      that is done focus on the cloud integration aspect.</para>
+    <para>So far the drag and drop doesn’t work but it’s getting there and once it is complete I
+      will tidy the code and the TODO list as a first iteration should be finished (since drag and
+      drop being completed is the same as finishing most of the functionality). </para>
+    <para>What am I going to do next week?:</para>
+    <para> - Finish the first iteration.</para>
+    <para> - Move forwards with the second iteration and implement prefpanes for each list (with
+      options like name,date etc.)</para>
+    <para> - Start Cloud integration (If there’s time left at the end of the week!).</para>
+    <para>I need to take some time to try and document what I’ve done too which would involve making
+      comments I’ve written better and maybe putting together a small “Hackers Guide to
+      Entomologist”. If I have time left over I will definitely do this work before the end of the
+      Summer. </para>
+    <!--($ ld: 2.7.11 sm $)-->
+  </blockquote>
+</sect1>
