@@ -50,158 +50,79 @@
     <para></para>
   </blockquote> -->  <blockquote>
     <title>
-      <ulink url="http://www.marques.so/2011/06/world-of-warcraft-in-opensuse-11-4-awesome-experience/">Nelson Marques: World of Warcraft in openSUSE 11.4 – awesome experience!</ulink>
+      <ulink
+        url="http://www.marques.so/2011/07/unknown-horizons-2011-2-available-for-opensuse-all-supported-and-fedora-1415/"
+        >Nelson Marques: Unknown Horizons 2011.2 – available for openSUSE (all supported) and Fedora
+        14/15</ulink>
     </title>
-    <para>With the long summer nights ahead I’ve decided to enable my subscription of World of
-      Warcraft and update it to Cataclysm. World of Warcraft classic was awesome, and I’ve seen my
-      best days as a player during The Burning Crusade… the Wrath of the Lich Kingýexpansionýsucked
-      and I like to dub it as a ‘beggarsýexpansion’… where casuals could have some fancy epic gear
-      even without knowing how to play!</para>
-    <para>The first requirement for World of Warcraft under Linux is wine… This is one of the best
-      things in openSUSE, the wine builds done by Marcus Meissner which live under the <ulink url="http://download.opensuse.org/repositories/Emulators:/Wine/openSUSE_11.4/">Emulators:Wine</ulink> repository. To install this repository in openSUSE 11.4, the easy way:<orderedlist>
-        <listitem>
-          <para>Install the Repository and change it’s priority (we want to have this with higher
-            priority than openSUSE normal repositories (default is 99 for openSUSE repositories, and
-            the lower the number the higher the priority is):
-            <programlisting>zypper ar -f http://download.opensuse.org/repositories/Emulators:/Wine/openSUSE_11.4/ Wine
+    <para>It was released a few hours ago <ulink url="http://www.unknown-horizons.org">Unknown
+        Horizons</ulink>, the popular Real Time Strategy game which uses the <ulink
+        url="http://www.fifengine.de">FIFE Engine</ulink> and is written in <ulink
+        url="http://www.python.org">Python</ulink>. This game is available on the <ulink
+        url="https://build.opensuse.org/project/show?project=games">openSUSE games
+        repository</ulink> which provides builds for:</para>
+    <itemizedlist>
+      <listitem>
+        <para>openSUSE 11.3</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE 11.4</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE Factory</para>
+      </listitem>
+      <listitem>
+        <para>openSUSE Tumbleweed</para>
+      </listitem>
+      <listitem>
+        <para>Fedora 14</para>
+      </listitem>
+      <listitem>
+        <para>Fedora 15</para>
+      </listitem>
+    </itemizedlist>
+    <para>Users subscribed to the games repository and with Unknown Horizons installed will have
+      automatic updates, while everyone else using openSUSE who wants to check out this wonderful
+      game in openGL can pretty much use one of the 1-Click installers on <ulink
+        url="http://software.opensuse.org">openSUSE Software</ulink> page..</para>
+    <para>This new version introduces new media content, bugfixes and improvements on gameplay, game
+      balance, etc. Here’s a few of those changes taken from the changelog:</para>
+    <programlisting>Gameplay and Balancing
+* New features
+   + option to disable edge scrolling with mouse
+   + basic customizable trade routes for ships
+   + pirates with home position sail around and chase player ship
+   + improvements to random map generation time
+   + improvements to savegame loading time
+   + scenario chooser interface after winning a scenario
+   + improvements to pathfinding speed on sea tiles
+   + randomized playlist of background music
+   + first version of production overview widget
+   + display hint to tell players that roads can be dragged when detecting that
+     they build them one-by-one
 
-zypper mr -p 75 -r Wine</programlisting></para>
-        </listitem>
-        <listitem>
-          <para>Install Wine (we also want wine-gecko):
-            <programlisting>zypper install wine wine-gecko</programlisting></para>
-        </listitem>
-        <listitem>
-          <para>I had World of Warcraft installed on a windows partition on my PC hard-drive, and
-            since I don’t really care to download the awesome 21GB’s again, I’ve decided to use that
-            installation. At first I had my drive auto-mounted through fstab, which generated a few
-            issues (login always failed). As explained <emphasis role="bold">here</emphasis>, I’ve
-            made the necessary changes mounting the drive and now it works fine.</para>
-        </listitem>
-        <listitem>
-          <para>Running through wine (I’ve made a small shell script for this). It is imperative
-            that we run the game with the <emphasis role="bold">-opengl</emphasis> switch :
-            <programlisting>#!/bin/sh
+User Interface
+* Additions and new features
+   + ship name label and dynamic spacing in trade / exchange widget
+   + settings for multiplayer connection (network)
+   + display settlement name as heading in some buildings
+   + added tooltips to several buttons and labels
+   + display tax rate as label
+   + highlight background of currently selected tab
+   + first version of tab 'build related fields' for e.g. farm and lumberjack
 
-WoW_INSTALL="/mnt/windows/World of Warcraft/"
-BINARY="Wow.exe"
-ARGS="-opengl"
-
-cd $WOW_INSTALL &amp;&amp; wine $BINARY $ARGS</programlisting></para>
-        </listitem>
-      </orderedlist></para>
-    <mediaobject>
-      <imageobject>
-        <imagedata
-          fileref="http://www.marques.so/wp-content/uploads/2011/06/Screenshot-World-of-Warcraft.png"
-          width="20%"/>
-      </imageobject>
-    </mediaobject>
-    <para>The game runs fine, the biggest improvement I saw was the drop of latency values, from
-      130/140 in Windows to 66/70 in Linux, while the FPS values are pretty much the same.
-      Everything works and I look forward to level this char fast enough to see some cool 25 men
-      Raids in Linux!</para>
-<!--($ ld: 9.6.11 sm $)-->  
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://www.junauza.com/2011/06/3-ways-to-play-windows-games-on-linux.html"
-        >Techsource/Jun Auza: 3 Ways to Play Windows Games on Linux</ulink></title>
-    <para>We've already ranted a lot about the sorry <ulink
-        url="http://www.junauza.com/2011/05/state-of-gaming-on-linux.html">state of gaming on
-        Linux</ulink>. However, we were also kind enough to tell you some of the <ulink
-        url="http://www.junauza.com/2011/04/top-5-paid-games-for-linux.html">best paid games for
-        Linux</ulink>. Many of the games were indie games, which are great for casual gamers
-      expecting to kill some time. But, if you are a hardcore gamer who dual boots to Windows solely
-      for the purpose of playing games, there are some nice ways in which you could stop yourself
-      from hitting that dreaded reboot button. (...)</para>
-    <!--
-    <para>Here are 3 ways to play those coveted Windows game right from your Linux desktop: <orderedlist>
-        <listitem>
-          <para><emphasis role="bold">WINE</emphasis></para>
-          <mediaobject>
-            <imageobject>
-              <imagedata
-                fileref="http://3.bp.blogspot.com/-udeyh4NkDkY/TfCf3_BhA5I/AAAAAAAARdQ/trOXc30PRbM/s320/windows-games-on-Linux-1.jpg"
-                align="left" width="5%"/>
-            </imageobject>
-          </mediaobject>
-          <para>Wine is a free and open-source software that lets users run various kinds of Windows
-            applications on Unix-like operating systems. Many users, including some developers often
-            mistake Wine for an emulator. That however, is a longstanding myth within the software
-            community. In fact, Wine stands for 'Wine is not an emulator', thus repudiating any such
-            hollow accusations from the skeptics. </para>
-          <para>With Wine, users can run all kinds of games including the latest 3D ones without any
-            significant drop in performance. Popular Windows games that run flawlessly on Linux
-            using Wine include blockbuster titles like Final Fantasy XI Online, Guild Wars, Fallout
-            3.x, Left 4 Dead, Starcraft II and more. You may also see this list: <ulink
-              url="http://www.junauza.com/2008/06/10-best-windows-games-that-can-be.html">10 Best
-              Windows Games That Can Be Played on Linux</ulink></para>
-          <para>Apart from running games, Wine can run various types of applications that are
-            available only on Windows platforms. Users can also install popular proprietary software
-            like Adobe Photoshop, iTunes and Steam. </para>
-          <para>Wine is a project which began its journey in 1993 and since then, it has been hugely
-            popular with the Linux community. According to a survey, there are about 1.5 million
-            currently using Wine. Having said that, Wine suffers from a lot of shortcomings, but
-            thanks to the hard work of the developers they are being overcome one by one. Installing
-            Wine and playing Games: To install Wine, all you have to do is go to your package
-            manager (eg: Ubuntu Software Center, Synaptic etc.) and search for 'wine'. Once you
-            install wine, installing games isn't much of a problem. Just insert the game CD/DVD and
-            click on 'setup.exe'. If the game is perfectly compatible (you may cross check with
-              <ulink url="http://appdb.winehq.org/index.php">Wine DB</ulink> first), then the rest
-            of the process is exactly the same as on Windows. </para>
-        </listitem>
-        <listitem>
-          <para><emphasis role="bold">PlayonLinux</emphasis></para>
-          <mediaobject>
-            <imageobject>
-              <imagedata
-                fileref="http://3.bp.blogspot.com/-tOMFLLYJUc4/TfCf4ZPnOtI/AAAAAAAARdg/9t4PM8Jlva8/s320/windows-games-on-Linux-3.jpg"
-                align="left" width="5%"/>
-            </imageobject>
-          </mediaobject>
-          <para>PlayonLinux is a graphical front-end for Wine, which aims at simplifying the
-            installation of Windows-based games and applications on Linux. PlayonLinux includes a
-            database of most of the popular Windows applications out there. Whenever you search for
-            particular software, let's say Left 4 Dead, PlayonLinux will automatically download the
-            appropriate Wine version that works best with the game. What's more, it will also
-            install any additional software that's needed for the game or application to work
-            properly. The database is constantly updated and it even includes some of the latest
-            games like Portal 2. Despite the gaming-oriented name of the project, PlayonLinux also
-            helps users install applications like IE 6, Firefox (Windows version), <ulink
-              url="http://www.junauza.com/2010/07/how-to-install-itunes-on-ubuntu-linux.html">iTunes
-              on Linux</ulink>, etc. Apart from making things easy for Linux users, the team has
-            also created a Mac counterpart of the software and is titled PlayonMac.</para>
-          <para>Installing PlayonLinux: Installing PlayonLinux is very simple. Just go to the <ulink
-              url="http://www.playonlinux.com/en/download.html">download page</ulink> and choose the
-            appropriate file for your distribution.</para>
-        </listitem>
-        <listitem>
-          <para><emphasis role="bold">Crossover Games</emphasis></para>
-          <mediaobject>
-            <imageobject>
-              <imagedata
-                fileref="http://3.bp.blogspot.com/-z4w0xJMdQwc/TfCf4Gkwa9I/AAAAAAAARdY/nUkN8urJYlQ/s320/windows-games-on-Linux-2.jpg"
-                align="left" width="5%"/>
-            </imageobject>
-          </mediaobject>
-          <para>Crossover Games is part of the Crossover suite of mixed-source applications that
-            enable Linux and Mac users to install and use Windows-based applications. The suite,
-            developed by Codeweavers, consists of modified, proprietary versions of the
-            aforementioned Wine. Apart from acting as a user-friendly front-end to Wine, Crossover
-            Games incorporates various patches and user-friendly configuration tools that makes it
-            appealing to Windows migrants. The suite claims to fully support games like
-            Counter-Strike, Half-Life 2, World of Warcraft, Call of Duty 2, Guild Wars and more. The
-            most impressive thing about this software is that it provides professional support to
-            its users. </para>
-          <para>Installing/Buying Crossover Games: Crossover Games is already available in the
-            Ubuntu Software Center as a trial version. You can download the trial version, install
-            an application of your choice and then register (buy) the suite online. To download,
-            just go to Ubuntu Software Center and click on the 'For Purchase' tab. Finally, if your
-            inner Stallman doesn't slap your wrist every time you buy proprietary software, the
-            official website can be found <ulink
-              url="http://www.codeweavers.com/products/crossover/">HERE</ulink>. </para>
-        </listitem>
-      </orderedlist></para> -->
-    <!--($ ld: 9.6.11 sm $)-->
+Media Content
+* New files and features
+   + building: sugarcane field
+   + building: tavern
+   + building: half-timbered house
+   + icon: up and down arrows, small rect-shaped delete button
+   + icon: svg application icon without text for use in small icons
+   + icon: grayscale version of speed_* minimap panel buttons
+   + icon: small 16px versions of more resources
+   + unit: lumberjack
+   + simple script that helps adding names to the database</programlisting>
+    <para>Enjoy Unknown Horizons on openSUSE!</para>
+<!--($ ld: 2.7.11 sm $)-->  
   </blockquote>
 </sect1>

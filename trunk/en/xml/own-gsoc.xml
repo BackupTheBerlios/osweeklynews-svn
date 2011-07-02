@@ -30,7 +30,7 @@
   <blockquote>
     <title><ulink
         url="http://redache.wordpress.com/2011/06/25/entomologist-ui-changes-weekly-report-5/">David
-        Williams: Entomologist UI changes Weekly Report #4</ulink></title>
+        Williams: Entomologist UI changes Weekly Report #5</ulink></title>
     <para>This week has been a bad one for getting work done as I managed to lose a lot of my work
       mid week. I’ve spent the rest of the week trying to get back to where I was and finishing up
       the New Comments Dialog. I also repeated the mantra “commit often” to remind myself to do it
@@ -168,5 +168,60 @@
     <para>I would like to summarize my progress so far. I am working on the libYUI project as
       mentioned above.(...)</para>
     <!--($ ld: 29.6.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://cbounta.wordpress.com/2011/07/01/a-utility-for-merging-configuration-sysconfig-files-%E2%80%93-week-6-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 6
+        Report</ulink></title>
+    <para>This is my 6th report concerning the progress of my gsoc project. First of all, I want to
+      apologize because of the 5th report that is missing from last week. Due to some events, for me
+      it was almost impossible to concentrate on work. Even though i did some things, it was not
+      enough to create a report on. The previous week made me get out of schedule at least for a
+      week, i will try to catch up this time by working more on weekends starting from this one.
+      Even though in my initial plan there were about two weeks free time in the schedule that i
+      could use in occasions like this.</para>
+    <para>Anyway, what’s up with the progress. As I have described in previous post, I am currently
+      working on the matching code / algorithm. Some major improvements took place on the
+      aug_process_tree method, which will be responsible for matching the initial tree with those
+      coming as parameters. The tree traversal algorithm is now working completely, some issues
+      however still exist in the matching of the tree nodes. Hopefully, i will be able to resolve
+      this issues very soon, maybe even in the next couple of days.</para>
+    <para>Also, some basic drafts of the merging functions were added. Each function will complete
+      the appropriate actions that must be carried , and will also represent each of the merging
+      parameters /merging flags that will be used.</para>
+    <para>Finally, small changes and improvements took place in few other functions as well in the
+      code. The plan for the next days is to complete the matching of the tree nodes and the
+      merging. At least to a point where more more debugging tests would be able to be carried
+      out.</para>
+    <!--($ ld: 2.7.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://redache.wordpress.com/2011/07/01/entomologist-ui-changes-weekly-report-6/">David
+        Williams: Entomologist UI changes Weekly Report #6</ulink></title>
+    <para>This week has been a bit productive but there still isn’t that much to show for the work I
+      have done as it’s primarily related to drag and drop in the TODO list. The start of the week
+      was spent bolstering the code I had worked on for the tabbed interface and ensuring that I
+      caught as many bugs as I could find. The later part of the week has been focused on the TODO
+      list. </para>
+    <para>The idea behind the TODO list is a way to categorize bugs with your own scheme and then
+      assign them to certain completion dates. This could then be used to track roadmaps etc and
+      over time I plan to add cloud integration so that they can be synced with Google Calendar etc.
+      The main focus right now is getting it to work within the context of entomologist and once
+      that is done focus on the cloud integration aspect.</para>
+    <para>So far the drag and drop doesn’t work but it’s getting there and once it is complete I
+      will tidy the code and the TODO list as a first iteration should be finished (since drag and
+      drop being completed is the same as finishing most of the functionality). </para>
+    <para>What am I going to do next week?:</para>
+    <para> - Finish the first iteration.</para>
+    <para> - Move forwards with the second iteration and implement prefpanes for each list (with
+      options like name,date etc.)</para>
+    <para> - Start Cloud integration (If there’s time left at the end of the week!).</para>
+    <para>I need to take some time to try and document what I’ve done too which would involve making
+      comments I’ve written better and maybe putting together a small “Hackers Guide to
+      Entomologist”. If I have time left over I will definitely do this work before the end of the
+      Summer. </para>
+    <!--($ ld: 2.7.11 sm $)-->
   </blockquote>
 </sect1>

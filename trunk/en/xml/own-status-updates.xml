@@ -42,20 +42,169 @@
     </blockquote>
     </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
-<!--
     <blockquote>
       <title>
-        <ulink url="http://blog.crozat.net/2011/06/road-to-systemd-for-opensuse-121.html">Frédéric Crozat: The road to systemd for openSUSE 12.1</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/07/01/factory-progress-2011-07-01/">Andreas
+          Jaeger: Factory Progress 2011-07-01</ulink>
       </title>
-      <para><ulink url="http://www.freedesktop.org/wiki/Software/systemd">systemd</ulink> is coming
-        for next openSUSE (12.1) scheduled next fall. </para>
-      <para>I&apos;ll help for <ulink url="http://en.opensuse.org/SDB:Systemd">systemd integration in openSUSE Factory</ulink> and will act as an interface between you (openSUSE testers,
-        packagers, developers) and systemd upstream. </para>
-      <para>As you might guess, switching boot manager is not a trivial task and issues will be
-        found. So, we want to have as much feedback and testing as possible, to try to tackle as
-        much (if not all) issues in time for 12.1. (...)</para>
+      <para>Here’s with some delay the next incarnation of Factory Progress. I’ve noticed the
+        following changes that might interest people using and developing openSUSE Factory:</para>
+      <para><emphasis role="bold">Package changes</emphasis></para>
+      <para><emphasis role="bold">Linux 3.0</emphasis></para>
+      <para>Linux kernel 3.0 rc5 is currently on its way to factory and the header files (in package
+        linux-glibc-devel) have already been updated for it. If your software reads the Linux kernel
+        version, please check that it can cope with the two digits instead of the three of the new
+        version. Best would be to not read the version at all.</para>
+      <para><emphasis role="bold">systemd</emphasis></para>
+      <para>Frederic has proposed a “<ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00210.html">Road to systemd for
+          openSUSE 12.1″</ulink>. Systemd is a replacement of the SysVinit scripts that we have been
+        using and improving in the past with many new – including some controversial – ideas. Check
+        his blog post for additional references about systemd. The majority of the distributions are
+        moving to systemd as well and standarizing on it, will allow to share some more code and
+        development in this area.</para>
+      <para>We’re now in phase 1 – which means: Get systemd running as an option. Once this is
+        working satisfactory, we can switch the default (phase 2) and decide what to do with
+        SysVinit support.</para>
+      <para><emphasis role="bold">No static glibc libraries</emphasis></para>
+      <para>The C library glibc now does not come anymore with static libraries, those are in the
+        new glibc-devel-static subpackage.</para>
+      <para><emphasis role="bold">Python 3.2</emphasis></para>
+      <para>The python3 package is now at version 3.2, the most important change in Python 3.2 is
+        the implementation of “PEP 384, a stable ABI for extension modules” which means that with
+        3.2 and upwards there won’t be any API breakages for modules which is really important
+        developer wise.</para>
+      <para>Another big improvement is the new GIL (Global Interpreter Lock) implementation which
+        will speed up threaded Python code. Python 3.2 also introduces “futures” library which is
+        used for concurrent programming, this will be useful more multi-core Python
+        development.</para>
+      <para><emphasis role="bold">Tomoyo</emphasis></para>
+      <para>Tomoyo is a MAC (Mandatory Access Control) implementation for Linux – so an alternative
+        to AppArmor and SELinux. openSUSE’s Linux kernel does now come with the module and also the
+        tools were updated to support this.</para>
+      <para><emphasis role="bold">Policy and tool changes</emphasis></para>
+      <para><emphasis role="bold">New Source Service mode activated and recompression of tar
+          balls</emphasis></para>
+      <para>The<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00028.html"> new
+          source service mode has been activated</ulink>, it is recommended to update to osc 0.132
+        version as available in the openSUSE:Tools project to work with source services. Now the
+        download URL given in source link is checked, so it has to be accurate. If you downloaded
+        and recompressed a tarball, read Coolo’s <ulink
+          url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00182.html">policy
+          change</ulink>: “please don’t recompress tarballs unless it saves &gt;1MB for
+        download.”.</para>
+      <para>He also mentions:</para>
+      <blockquote>
+        <para>What will become policy sooner or later is that you should not have incorrect source
+          URLs behind Source*, so _if_ you have to recompress, don’t lie in the</para>
+        <para> Source line, but put the original tar as comment and use local file names in
+          Source:</para>
       </blockquote>
-      -->    <itemizedlist>
+      <para><emphasis role="bold">Dropping a package from Factory</emphasis></para>
+      <para>Vincent explained  <ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00177.html">How/why/when to
+          drop a package from Factory</ulink>.</para>
+      <para><emphasis role="bold">Release notes in FATE</emphasis></para>
+      <para>To make it easier to write release notes, it helps a lot, if you (= the so-called
+        stakeholders) would provide a release notes snippet in the future using openFATE. We can
+        then collect all those release notes and edit them.</para>
+      <para><emphasis role="bold">Other interesting bits</emphasis></para>
+      <para><emphasis role="bold">openSUSE Conference</emphasis></para>
+      <para>The call for papers is continuing to run, please submit session proposals at the <ulink
+          url="http://conference.opensuse.org/indico/">conference site</ulink>. If you like to learn
+        what a BoF is, read this <ulink
+          url="http://news.opensuse.org/2011/06/14/opensuse-conference-and-rw-sessions-the-bof/"
+          >article</ulink>.</para>
+      <!--($ ld: 2.7.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://blog.crozat.net/2011/07/status-update-on-systemd-for-opensuse.html"
+          >Frédéric Crozat: Status update on systemd for openSUSE Factory</ulink></title>
+      <para>here is a update on the work done on systemd for Factory :</para>
+      <para><itemizedlist>
+          <listitem>
+            <para>basic support for systemctl in chkconfig and insserv is done : it is pending
+              review by maintainer before integration</para>
+          </listitem>
+          <listitem>
+            <para>support for --root in systemctl was merged upstream and will be used by
+              chkconfig/insserv patches above.</para>
+          </listitem>
+          <listitem>
+            <para>a patch has been submitted to upstream systemd to parse insserv.conf : this patch
+              only handles the "system facility" part of insserv.conf and automatically adds
+              depencies specified in the file</para>
+          </listitem>
+          <listitem>
+            <para>quick investigation on Yast2 to adapt runlevel editor for systemctl support : we
+              really need help from other people, as I don't have any knowledge of Yast internal and
+              it seems the yast dbus client part might be missing some parts, needed for runlevel
+              editor to talk with systemd.</para>
+          </listitem>
+          <listitem>
+            <para>no work done on /usr as separate partition : it is not a systemd issue in itself
+              but from other programs which might be using data from /usr before /usr is available.
+              The best solution would be to mount /usr from initrd =&gt; help needed !!</para>
+          </listitem>
+          <listitem>
+            <para>(open)SUSE is using unofficial LSB target named $ALL which is supposed to put
+              services requiring it at the end of the boot sequence (or at the beginning of shutdown
+              sequence); After discussing with upstream : on a static boot system (sysvinit), it is
+              easy to resolve such dependencies, but it isn't on a dynamic system (systemd). There
+              is a ugly hack to handle that (creating a ALL.target file which is starting after
+              default.target is done) but it would be probably better to just fix the 4 initscripts
+              which are still using $ALL ( amazon-late, stoppreload, Susefirewall2_setup and
+              vboxes). I'll open bug for them.</para>
+          </listitem>
+          <listitem>
+            <para>X-Interactive support in systemd is not working properly : it will only work
+              before getty is started and is broken if you try to start a service after boot. We
+              need to transition packages which are still using X-Interactive to
+              systemd-ask-password (which takes care of the async conversation). Only two packages
+              need to be ported :<itemizedlist>
+                <listitem>
+                  <para>apache2, when querying password for SSL certificate : apache allows to start
+                    a script to handle the password request. We only need to plug the script and
+                    configuration part in our package</para>
+                  <para> and get it used when booting with systemd.</para>
+                </listitem>
+                <listitem>
+                  <para>openvpn : this one is a bit complex because we can either write a daemon
+                    which would do the interface between systemd and openvpn management interface or
+                    we can try to patch openvpn to have a similar feature as apache and get this
+                    patch upstreamed. The latter has the preference of systemd upstream.</para>
+                </listitem>
+                <listitem>
+                  <para>For both packages, help is welcome.</para>
+                </listitem>
+                <listitem>
+                  <para>For compability with sysvinit, support for from /etc/insserv.conf in systemd
+                    was not added, so we could remove X-Interactive from openvpn/httpd sysvinit
+                    scripts but still have the function when booting from /sbin/init, thanks to
+                    /etc/insserv.conf list.</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+          <listitem>
+            <para>/etc/init.d/kbd was not handled properly : this should be fixed inFactory today or
+              tomorrow, with systemd taking care of setting up keyboard properly. However, we might
+              need to improve /etc/sysconfig/keyboard parsing in systemd. More tests are needed (and
+              of course, help is welcome).</para>
+          </listitem>
+          <listitem>
+            <para>discussion in progress on opensuse-packaging mailing list and upstream on a set of
+              cross distribution RPM macros to handle systemd unit files. </para>
+          </listitem>
+        </itemizedlist>As you can see, we still have some work to do, but we need everybody help :
+        either on the issues I mentioned (feel free to say "I want to help on this" here) or to do
+        more tests or even to start creating .service files (but we still need to fix the issues
+        listed above). </para>
+      <para> Thanks everybody for your attention.</para>
+      <para> I would be great if we could get the ball moving and maybe get one of the next Factory
+        milestone be a "systemd" test release but to reach this point, we need YOU !</para>
+      <!--($ ld: 2.7.11 sm $)-->
+    </blockquote>
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
@@ -312,8 +461,10 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->    
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
+      <!--
       <blockquote>
         <title>
           <ulink url="http://lists.opensuse.org/archive/opensuse-buildservice/2011-06/msg00134.html">OBS 2.3 Beta 2</ulink>
@@ -380,7 +531,8 @@
         <para>As usual, you find current packages or an appliance in openSUSE:Tools:Unstable
           project. OBS 2.3 Beta 2 is tagged as version 2.2.84. </para>
         <para>Please read here for usage details for the appliance:<ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">http://en.opensuse.org/openSUSE:Build_Service_Appliance</ulink> (...)</para>
-<!--($ ld: 20.6.11 sm $)-->      </blockquote>
+      </blockquote>
+      -->
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -788,6 +940,7 @@
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
+    <!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -807,8 +960,9 @@
         <para>I am already working on the LO-3.4 packages. They are more complicated because there were
           significant changes in the build stuff. You might expect something within the next few weeks
           in the <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink> project.</para>
-<!--($ ld: 22.6.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>      
+    </sect3> -->
+    <!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
@@ -821,8 +975,8 @@
         <para>Next, we will discussing the draft of an Email requesting that 12.1-MS6 be renamed to
           12.1-Beta. We feel that there will be more testing of a release by that name than for
           MS6.</para>
-<!-- ($ ld: 25.6.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
