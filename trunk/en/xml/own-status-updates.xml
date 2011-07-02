@@ -962,21 +962,25 @@
           in the <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink> project.</para>
       </blockquote>      
     </sect3> -->
-    <!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/">Larry Finger: Weekly News for June 25 </ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00000.html">Larry
+            Finger: Weekly News for July 2</ulink>
         </title>
-        <para>The Testing Core Team will hold an IRC meeting at 17:00 UTC, June 27 on our usual
-          channel. </para>
-        <para>Next, we will be discussing our experiences with 12.1-MS2. </para>
-        <para>Next, we will discussing the draft of an Email requesting that 12.1-MS6 be renamed to
-          12.1-Beta. We feel that there will be more testing of a release by that name than for
-          MS6.</para>
+        <para>The Testing Core Team held an IRC meeting at 17:00 UTC, June 27 on our usual
+          channel. </para>
+        <para>We discussed our experiences with openSUSE 12.1 MS2. The main problems that were
+          encountered was the failure of the KDE NetworkManager applet to detect any network devices
+          (Bug # 702461), and the inability to shut down the system from the GUI (Bug #702220). The
+          workaround for the network applet problem is to install nmk-applet, the Gnome version,
+          which works perfectly. The workaround for the shutdown problem is to bring up an alternate
+          terminal using CTRL-ALT-F1 and shutdown or reboot from there. </para>
+        <para>We also discussed the draft text of our request to rename MS6 to Beta in hopes of
+          increasing the number of testers in the critical late stages of testing.</para>
       </blockquote>
-    </sect3> -->
+    </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
