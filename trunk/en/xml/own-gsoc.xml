@@ -29,22 +29,36 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink
-        url="http://alex.eftimie.ro/2011/07/02/packagekit-backend-for-software-center-short-week-5-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: short week 5 report</ulink></title>
-    <para>This week I continued work on the install backend, especially connecting the PackageKit
-      transaction signals to the software-center’s TransactionWatcher (also abstracted by me some
-      time ago).</para>
-    <para>The challenge stands in differences from PackageKit and AptDaemon, such as in AD, after
-      preparing a transaction and manually commiting it,ýýone has access to the transaction object,
-      and can watch for progress changes; in PK, after a transaction is launched, there are two ways
-      of getting access to it: first by listening to a TransactionListChanged signal in D-Bus and
-      second by watching the objects returned by the progress_callback callback.</para>
-    <para>The current approach, helped closely by <emphasis role="italic">hue-see
-      </emphasis>(hughsie)ýon #PackageKit is to get the transactions from the callback and listen to
-      the gobject notify::&lt;property&gt; signals.</para>
-    <para>More to come next week, stay tuned!</para>
-    <!-- ($ ld: 3.7.11 sm $)-->
+      <ulink url="http://rxvl.in/post/7219106912/gsoc-2011-ssc-week-6">Ratan Sebastian: GSOC 2011:
+        ssc Week 6</ulink></title>
+    <para>Most of the work this week has gone into the File Handler. Adding and removing files in
+      appliances has been implemented although there is a lot of work left to be done to make this
+      robust. Right now its pretty basic. However I’m going to ease up on adding functionality right
+      now to make the app more robust and usable. The mid-term evaluations are coming up and the
+      plan is to have a usable app that is community tested by then. Not to say that new features
+      won’t be added over the next two weeks, but it will be a second priority. In making the app
+      more stable, the following things will be addressed:<orderedlist>
+        <listitem>
+          <para>Ruby 1.8.7 (backward) compatibility</para>
+        </listitem>
+        <listitem>
+          <para>Extended test-suite including integration tests which require a network
+            connection</para>
+        </listitem>
+        <listitem>
+          <para>Better error handling.</para>
+        </listitem>
+        <listitem>
+          <para>A method to roll back changes in case of failure.</para>
+        </listitem>
+        <listitem>
+          <para>Documentation.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>That will be the focus over the next two weeks building up to the mid-term evaluation.
+      Thank you for reading. As always you can check out the core <ulink
+        url="http://gitorious.org/ssc/ssc">here</ulink></para>
+    <!-- ($ ld: 4.7.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://pinguimengenheiro.blogspot.com/2011/06/gsoc-podcast-subscription.html"
