@@ -44,8 +44,7 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/07/01/factory-progress-2011-07-01/">Andreas
-          Jaeger: Factory Progress 2011-07-01</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/07/01/factory-progress-2011-07-01/">Andreas Jaeger: Factory Progress 2011-07-01</ulink>
       </title>
       <para>Here’s with some delay the next incarnation of Factory Progress. I’ve noticed the
         following changes that might interest people using and developing openSUSE Factory:</para>
@@ -56,9 +55,7 @@
         version, please check that it can cope with the two digits instead of the three of the new
         version. Best would be to not read the version at all.</para>
       <para><emphasis role="bold">systemd</emphasis></para>
-      <para>Frederic has proposed a “<ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00210.html">Road to systemd for
-          openSUSE 12.1″</ulink>. Systemd is a replacement of the SysVinit scripts that we have been
+      <para>Frederic has proposed a “<ulink url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00210.html">Road to systemd for openSUSE 12.1″</ulink>. Systemd is a replacement of the SysVinit scripts that we have been
         using and improving in the past with many new – including some controversial – ideas. Check
         his blog post for additional references about systemd. The majority of the distributions are
         moving to systemd as well and standarizing on it, will allow to share some more code and
@@ -83,15 +80,11 @@
         to AppArmor and SELinux. openSUSE’s Linux kernel does now come with the module and also the
         tools were updated to support this.</para>
       <para><emphasis role="bold">Policy and tool changes</emphasis></para>
-      <para><emphasis role="bold">New Source Service mode activated and recompression of tar
-          balls</emphasis></para>
-      <para>The<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00028.html"> new
-          source service mode has been activated</ulink>, it is recommended to update to osc 0.132
+      <para><emphasis role="bold">New Source Service mode activated and recompression of tar balls</emphasis></para>
+      <para>The<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00028.html"> new source service mode has been activated</ulink>, it is recommended to update to osc 0.132
         version as available in the openSUSE:Tools project to work with source services. Now the
         download URL given in source link is checked, so it has to be accurate. If you downloaded
-        and recompressed a tarball, read Coolo’s <ulink
-          url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00182.html">policy
-          change</ulink>: “please don’t recompress tarballs unless it saves &gt;1MB for
+        and recompressed a tarball, read Coolo’s <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-06/msg00182.html">policy change</ulink>: “please don’t recompress tarballs unless it saves &gt;1MB for
         download.”.</para>
       <para>He also mentions:</para>
       <blockquote>
@@ -101,25 +94,20 @@
           Source:</para>
       </blockquote>
       <para><emphasis role="bold">Dropping a package from Factory</emphasis></para>
-      <para>Vincent explained  <ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00177.html">How/why/when to
-          drop a package from Factory</ulink>.</para>
+      <para>Vincent explained  <ulink url="http://lists.opensuse.org/opensuse-factory/2011-06/msg00177.html">How/why/when to drop a package from Factory</ulink>.</para>
       <para><emphasis role="bold">Release notes in FATE</emphasis></para>
       <para>To make it easier to write release notes, it helps a lot, if you (= the so-called
         stakeholders) would provide a release notes snippet in the future using openFATE. We can
         then collect all those release notes and edit them.</para>
       <para><emphasis role="bold">Other interesting bits</emphasis></para>
       <para><emphasis role="bold">openSUSE Conference</emphasis></para>
-      <para>The call for papers is continuing to run, please submit session proposals at the <ulink
-          url="http://conference.opensuse.org/indico/">conference site</ulink>. If you like to learn
-        what a BoF is, read this <ulink
-          url="http://news.opensuse.org/2011/06/14/opensuse-conference-and-rw-sessions-the-bof/"
-          >article</ulink>.</para>
-      <!--($ ld: 2.7.11 sm $)-->
-    </blockquote>
+      <para>The call for papers is continuing to run, please submit session proposals at the <ulink url="http://conference.opensuse.org/indico/">conference site</ulink>. If you like to learn
+        what a BoF is, read this <ulink url="http://news.opensuse.org/2011/06/14/opensuse-conference-and-rw-sessions-the-bof/">article</ulink>.</para>
+<!--($ ld: 2.7.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://blog.crozat.net/2011/07/status-update-on-systemd-for-opensuse.html"
-          >Frédéric Crozat: Status update on systemd for openSUSE Factory</ulink></title>
+      <title>
+        <ulink url="http://blog.crozat.net/2011/07/status-update-on-systemd-for-opensuse.html">Frédéric Crozat: Status update on systemd for openSUSE Factory</ulink>
+      </title>
       <para>here is a update on the work done on systemd for Factory :</para>
       <para><itemizedlist>
           <listitem>
@@ -132,12 +120,12 @@
           </listitem>
           <listitem>
             <para>a patch has been submitted to upstream systemd to parse insserv.conf : this patch
-              only handles the "system facility" part of insserv.conf and automatically adds
+              only handles the &quot;system facility&quot; part of insserv.conf and automatically adds
               depencies specified in the file</para>
           </listitem>
           <listitem>
             <para>quick investigation on Yast2 to adapt runlevel editor for systemctl support : we
-              really need help from other people, as I don't have any knowledge of Yast internal and
+              really need help from other people, as I don&apos;t have any knowledge of Yast internal and
               it seems the yast dbus client part might be missing some parts, needed for runlevel
               editor to talk with systemd.</para>
           </listitem>
@@ -150,11 +138,11 @@
             <para>(open)SUSE is using unofficial LSB target named $ALL which is supposed to put
               services requiring it at the end of the boot sequence (or at the beginning of shutdown
               sequence); After discussing with upstream : on a static boot system (sysvinit), it is
-              easy to resolve such dependencies, but it isn't on a dynamic system (systemd). There
+              easy to resolve such dependencies, but it isn&apos;t on a dynamic system (systemd). There
               is a ugly hack to handle that (creating a ALL.target file which is starting after
               default.target is done) but it would be probably better to just fix the 4 initscripts
               which are still using $ALL ( amazon-late, stoppreload, Susefirewall2_setup and
-              vboxes). I'll open bug for them.</para>
+              vboxes). I&apos;ll open bug for them.</para>
           </listitem>
           <listitem>
             <para>X-Interactive support in systemd is not working properly : it will only work
@@ -196,14 +184,13 @@
               cross distribution RPM macros to handle systemd unit files. </para>
           </listitem>
         </itemizedlist>As you can see, we still have some work to do, but we need everybody help :
-        either on the issues I mentioned (feel free to say "I want to help on this" here) or to do
+        either on the issues I mentioned (feel free to say &quot;I want to help on this&quot; here) or to do
         more tests or even to start creating .service files (but we still need to fix the issues
         listed above). </para>
       <para> Thanks everybody for your attention.</para>
       <para> I would be great if we could get the ball moving and maybe get one of the next Factory
-        milestone be a "systemd" test release but to reach this point, we need YOU !</para>
-      <!--($ ld: 2.7.11 sm $)-->
-    </blockquote>
+        milestone be a &quot;systemd&quot; test release but to reach this point, we need YOU !</para>
+<!--($ ld: 2.7.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -461,10 +448,9 @@
           makes us proud and we will do this smarter, faster, better and stronger in 2011.
           Promised!</para>
       </blockquote>
-      </sect3> -->    
-    <sect3 role="buildserviceteam">
+      </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://lists.opensuse.org/archive/opensuse-buildservice/2011-06/msg00134.html">OBS 2.3 Beta 2</ulink>
@@ -532,8 +518,7 @@
           project. OBS 2.3 Beta 2 is tagged as version 2.2.84. </para>
         <para>Please read here for usage details for the appliance:<ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">http://en.opensuse.org/openSUSE:Build_Service_Appliance</ulink> (...)</para>
       </blockquote>
-      -->
-      <formalpara>
+      -->      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -856,14 +841,14 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 356)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 357)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 187)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 188)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -875,13 +860,13 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 154)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 156)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 135)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 136)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -910,10 +895,18 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 2.7.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 9.7.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312602">Add NTP.br in openSUSE Linux 12.1</ulink>
+          </title>
+          <para>Add NTP.br in
+openSUSE Linux 12.1 :
+http://www.ceptro.br/CEPTRO/EnglishHome#NTP_br_Brazilian_Legal_Time_over</para>
+        </blockquote>
         <blockquote>
           <title>
             <ulink url="https://features.opensuse.org/312585">Iceweasel instead of Firefox</ulink>
@@ -940,7 +933,7 @@
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
+<!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -961,22 +954,20 @@
           significant changes in the build stuff. You might expect something within the next few weeks
           in the <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Unstable/">LibreOffice:Unstable</ulink> project.</para>
       </blockquote>      
-    </sect3> -->
-    <sect3 role="testing">
+    </sect3> -->    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00000.html">Larry
-            Finger: Weekly News for July 2</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00000.html">Larry Finger: Weekly News for July 2</ulink>
         </title>
         <para>The Testing Core Team held an IRC meeting at 17:00 UTC, June 27 on our usual
-          channel. </para>
+          channel.&#160;</para>
         <para>We discussed our experiences with openSUSE 12.1 MS2. The main problems that were
           encountered was the failure of the KDE NetworkManager applet to detect any network devices
           (Bug # 702461), and the inability to shut down the system from the GUI (Bug #702220). The
           workaround for the network applet problem is to install nmk-applet, the Gnome version,
           which works perfectly. The workaround for the shutdown problem is to bring up an alternate
-          terminal using CTRL-ALT-F1 and shutdown or reboot from there. </para>
+          terminal using CTRL-ALT-F1 and shutdown or reboot from there.&#160;</para>
         <para>We also discussed the draft text of our request to rename MS6 to Beta in hopes of
           increasing the number of testers in the critical late stages of testing.</para>
       </blockquote>
