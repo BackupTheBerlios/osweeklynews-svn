@@ -20,24 +20,24 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-      <ulink url="https://lkml.org/lkml/2011/6/27/396">Linus Torvalds: Linux 3.0-rc5</ulink>
+      <ulink url="https://lkml.org/lkml/2011/7/4/320">Linus Torvalds: Linux 3.0-rc6</ulink>
     </title>
-    <para>Nothing terribly exciting here.</para>
-    <para>The most noteworthy thing may be that only about a quarter of the
-changes are in drivers, filesystem changes actually account for more
-(40%): btrfs, cifs, ext4, jbd2, nfs are all present and accounted for.</para>
-    <para>On the driver side, there&apos;s some gpu updates, infiniband, mmc, sound
-and some SCSI target fixes.</para>
-    <para>And the normal random smattering of changes all around. Like some
-long-standing compile failure (admittedly you need to enable some
-esoteric resource counting options and disable NUMA to trigger it, but
-still). I think there&apos;s a few more lurking in staging, with fixes yet
-to be merged.</para>
-    <para>The appended shortlog is fairly readable. (...)</para>
-<!-- ($ ld: 2.7.11 sm $) -->  </blockquote>
-    <blockquote>
-        <title><ulink url="http://schaiba.wordpress.com/2011/07/02/kernel-weekly-news-02-07-2011/"
-                >Rares Aioanei: kernel weekly news – 02.07.2011</ulink></title>
-        <para>Rares gives his weekly Kernel News from this week.</para>
-    </blockquote>
+    <para>and a happy Independence Day to all the US kernel people out there.</para>
+    <para>There is not a lot to be said about -rc6. The biggest part by far is
+the inclusion of the intel isci driver - I was admittedly a bit
+doubtful about it, but it&apos;s not like it is going to cause regressions
+for any existing Linux users, so whatever.</para>
+    <para>And quite frankly, Christoph Hellwig has now _twice_ said good things
+about that driver, which is pretty unusual. It might mean that the
+driver is great. Of course, it&apos;s way more likely that space aliens are
+secretly testing their happy drugs on Christoph. Or maybe he&apos;s just
+naturally mellowing.</para>
+    <para>Other than the isci driver, the rest really is just lots of random
+small stuff. It&apos;s getting to the point where I&apos;m thinking I should
+just release 3.0, because it&apos;s been pretty quiet, and the fixes
+haven&apos;t been earth-shakingly exciting. Some drm (radeon and intel)
+fixes might be noticeable to more people, the rest would tend to be
+pretty esoteric.</para>
+    <para>And so, I&apos;m off to make s&apos;mores, (...)</para>
+<!-- ($ ld: 8.7.11 sat $) -->  </blockquote>
 </sect1>
