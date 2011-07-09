@@ -904,30 +904,83 @@
             <ulink url="https://features.opensuse.org/312602">Add NTP.br in openSUSE Linux 12.1</ulink>
           </title>
           <para>Add NTP.br in
-openSUSE Linux 12.1 :
-http://www.ceptro.br/CEPTRO/EnglishHome#NTP_br_Brazilian_Legal_Time_over</para>
+<ulink url="http://en.opensuse.org/Main_Page">openSUSE Linux 12.1</ulink> :
+<ulink url="http://www.ceptro.br/CEPTRO/EnglishHome#NTP_br_Brazilian_Legal_Time_over">http://www.ceptro.br/CEPTRO/EnglishHome#NTP_br_Brazilian_Legal_Time_over</ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312585">Iceweasel instead of Firefox</ulink>
+            <ulink url="https://features.opensuse.org/312608">Add Android SDK to the distribution</ulink>
           </title>
-          <para>With the new scheme of version numbers at Mozilla (called by myself &quot;the idiot scheme&quot;) and the result, that the add-on-developers need to do a major-port every 3-6 months, I think it&apos;s necessary to drop Firefox and set Iceweasel instead as default.</para>
+          <para>For a more easy installation and benefits in a systemwide install.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312586">Add locales support for groff papersize</ulink>
+            <ulink url="https://features.opensuse.org/312610">Include slab in 12.1 fallback</ulink>
           </title>
-          <para>Groff&apos;s papersize definition in font description don&apos;t allow usage of locale variables, even if it will benefit from that. So let&apos;s extend the definition for a new keyword &apos;locale&apos;, which will query the setting from existing locale variables (LC_PAPER, LANG or LC_ALL).</para>
+          <para>If you hold down the alt key and right click anywhere on the panels, you&apos;ll find it&apos;s the same stuff when it comes to customizing the panels and applets. Since slab is an applet and menu, it is possible to include and integrate slab with GNOME 3.2 if it retains fall back mode. Or at least include slab in the repos so it can be installed and one can tweak GNOME fallback to have it. It would be complementary to how Ubuntu included the Ubuntu Classic Desktop for those either unable to run Unity or didn&apos;t like Unity.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312589">Continuous button look Oxygen in hole KDE also Yast and KPackageKit</ulink>
+            <ulink url="https://features.opensuse.org/312617">drop libxcrypt</ulink>
           </title>
-          <para>The buttons of the KPackageKit and the buttons of Yast are in the standard installation not in the Oxygen look like the rest of KDE.</para>
-          <para>This can bee solved: type in a console kdesu qtconfig under Select GUI Style: choose the option Oxygen to change the look of Yast The same for KPackageKit: type qtconfig and select the Oxygen style.</para>
-          <para>But it would be very easy to have this setting in the standad installation? The Oxygen look is set by default at the hole KDE, why not in the KPackageKit and Yast? Make the look auf Suse homogen and deliver in the standard installation the Oxygen look.</para>
+          <para>libxcrypt is nowadays mostly superfluous as glibc supports sha256 and sha512 itself. blowfish and the gensalt functions can be patched in via crypt_blowfish addon.</para>
+          <para>Needed adjustments:</para>
+          <para>- glibc</para>
+          <para>- pam</para>
+          <para>- pam-modules (pam_unix2)</para>
+          <para>- pwdutils</para>
+          <para>- yast2-core</para>
+          <para>Disadvantage:
+we currently lose support for bigcrypt.</para>
         </blockquote>
-<!-- ($ ld: 2.7.11 sat *replaced with newer ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312618">Add and improve the integration of all programs of the GNOME Office in LXDE/12.1</ulink>
+          </title>
+          <para>Add and improve the integration of all programs of the GNOME Office in LXDE/openSUSE Linux 12.1:</para>
+          <itemizedlist>
+            <listitem>
+              <para><ulink url="http://abisource.com/">AbiWord</ulink> - word processor</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://projects.gnome.org/evince/">Evince</ulink> - document viewer</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://projects.gnome.org/evolution/">Evolution</ulink> - groupware and e-mail application</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://projects.gnome.org/gnumeric/">Gnumeric</ulink> - spreadsheet</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://inkscape.org/">Inkscape</ulink> - vector graphics editor</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://ease-project.org/">Ease</ulink> - presentation tool (recently initiated project)</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://www.gimp.org/">GIMP</ulink> - raster graphics editor</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="https://launchpad.net/simple-scan">Simple Scan</ulink> - graphical scanner frontend</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://live.gnome.org/Dia/">Dia</ulink> - diagram editor</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://www.gnucash.org/">GnuCash</ulink> - accounting software</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://live.gnome.org/Planner/">Planner</ulink> - project management tool</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://glom.sourceforge.net/">Glom</ulink> - similar to FileMaker</para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://www.gnome-db.org/">GNOME-DB</ulink></para>
+            </listitem>
+          </itemizedlist>
+        </blockquote>
+<!-- ($ ld: 9.7.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
