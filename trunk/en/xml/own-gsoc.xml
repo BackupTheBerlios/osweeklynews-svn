@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1 PUBLIC 
-  "-//OASIS//DTD DocBook XML V4.5//EN" 
-  "http://www.docbook.org/xml/4.5/docbookx.dtd"
-[
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -23,195 +20,166 @@
   <title>Google Summer of Code</title>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"
-        width="20%" align="center"/>
+      <imagedata width="20%" align="center" fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"/>
     </imageobject>
   </mediaobject>
   <blockquote>
     <title>
-      <ulink url="http://rxvl.in/post/7219106912/gsoc-2011-ssc-week-6">Ratan Sebastian: GSOC 2011:
-        ssc Week 6</ulink></title>
-    <para>Most of the work this week has gone into the File Handler. Adding and removing files in
-      appliances has been implemented although there is a lot of work left to be done to make this
-      robust. Right now its pretty basic. However I’m going to ease up on adding functionality right
-      now to make the app more robust and usable. The mid-term evaluations are coming up and the
-      plan is to have a usable app that is community tested by then. Not to say that new features
-      won’t be added over the next two weeks, but it will be a second priority. In making the app
-      more stable, the following things will be addressed:<orderedlist>
-        <listitem>
-          <para>Ruby 1.8.7 (backward) compatibility</para>
-        </listitem>
-        <listitem>
-          <para>Extended test-suite including integration tests which require a network
-            connection</para>
-        </listitem>
-        <listitem>
-          <para>Better error handling.</para>
-        </listitem>
-        <listitem>
-          <para>A method to roll back changes in case of failure.</para>
-        </listitem>
-        <listitem>
-          <para>Documentation.</para>
-        </listitem>
-      </orderedlist></para>
-    <para>That will be the focus over the next two weeks building up to the mid-term evaluation.
-      Thank you for reading. As always you can check out the core <ulink
-        url="http://gitorious.org/ssc/ssc">here</ulink></para>
-    <!-- ($ ld: 4.7.11 sm $)-->
-  </blockquote>
+      <ulink url="http://alex.eftimie.ro/2011/07/02/packagekit-backend-for-software-center-short-week-5-report/">Alex Eftimie: PackageKit backend for Software Center: short week 5 report</ulink>
+    </title>
+    <para>This week I continued work on the install backend, especially connecting the PackageKit transaction signals to the software-center’s TransactionWatcher (also abstracted by me some time ago).</para>
+    <para>The challenge stands in differences from PackageKit and AptDaemon, such as in AD, after preparing a transaction and manually commiting it,  one has access to the transaction object, and can watch for progress changes; in PK, after a transaction is launched, there are two ways of getting access to it: first by listening to a TransactionListChanged signal in D-Bus and second by watching the objects returned by the progress_callback callback.</para>
+    <para>The current approach, helped closely by hue-see (hughsie) on #PackageKit is to get the transactions from the callback and listen to the gobject notify::&lt;property&gt; signals.</para>
+    <para>More to come next week, stay tuned!
+</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
   <blockquote>
-    <title><ulink url="http://pinguimengenheiro.blogspot.com/2011/06/gsoc-podcast-subscription.html"
-        >Lucas Lira Gomes: Podcast Subscription Synchronisation</ulink></title>
-    <para>It’s been two weeks since my last update about progress on gpodder integration with
-      Amarok, so here we go.Amarok is now fully capable to receive podcasts from gpodder.net and to
-      synchronize them with your own local podcasts, and the other way around. Every podcast, from
-      gpodder.net, will be synchronized with it respective, from local podcasts, using the playlist
-      synchronisation implemented in the first part of this project.Now, take a look at some
-      screenshots and free your imagination:</para>
-    <para>
-      <figure id="gpodder1">
-        <title>Immediately after Amarok initialization.</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="http://1.bp.blogspot.com/-JEjM5DXWCZ4/TgkXFxMFurI/AAAAAAAAADU/etkMf3EkeiI/s640/amarok_before_sync.jpeg"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
+    <title>
+      <ulink url="http://alex.eftimie.ro/2011/07/08/packagekit-backend-for-software-center-week-6-report/">Alex Eftimie: PackageKit backend for Software Center: week 6 report</ulink>
+    </title>
+    <para>Hi everyone, for this week report I would like to show you a screencast with the packagekit-backend branch of software-center: (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://rxvl.in/post/7219106912/gsoc-2011-ssc-week-6">Ratan Sebastian: GSOC 2011: ssc Week 6</ulink>
+    </title>
+    <para>Most of the work this week has gone into the File Handler. Adding and removing files in appliances has been implemented although there is a lot of work left to be done to make this robust. Right now its pretty basic. However I’m going to ease up on adding functionality right now to make the app more robust and usable. The mid-term evaluations are coming up and the plan is to have a usable app that is community tested by then. Not to say that new features won’t be added over the next two weeks, but it will be a second priority. In making the app more stable, the following things will be addressed:</para>
+    <orderedlist>
+      <listitem>
+        <para>Ruby 1.8.7 (backward) compatibility</para>
+      </listitem>
+      <listitem>
+        <para>Extended test-suite including integration tests which require a network connection</para>
+      </listitem>
+      <listitem>
+        <para>Better error handling.</para>
+      </listitem>
+      <listitem>
+        <para>A method to roll back changes in case of failure.</para>
+      </listitem>
+      <listitem>
+        <para>Documentation.</para>
+      </listitem>
+    </orderedlist>
+    <para>That will be the focus over the next two weeks building up to the mid-term evaluation. Thank you for reading. As always you can check out the core <ulink url="http://gitorious.org/ssc/ssc">here</ulink>.</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://nbprashanth.wordpress.com/2011/07/04/yui-moves-to-sourceforge/">N.B.Prashanth: YUI moves to SourceForge</ulink>
+    </title>
+    <para>Over the last month, libYUI has significantly expanded. It is an independent framework and is avalable outside the SUSE framework making it accessible to a wide audience. This has resulted in the project having distributed content on the web. For example, the source code is maintained at gitorious.org (currently svn.opensuse.org) and the documentation at docs.opensuse.org etc. YUI does not have it’s own mailing list and the issues are still being dealt with on the yast ML. Considering all this, we thought that it would be good to have a central place where from all the resources can be accessed. Thus, we bring to you, <ulink url="http://sourceforge.net/projects/libyui/">sourceforge.net/projects/libyui/</ulink>.</para>
+    <para>This means that :</para>
+    <orderedlist>
+      <listitem>
+        <para>YUI has it’s own bug tracker. Any bugs/feature requests should be reported at the sourceforge page.</para>
+      </listitem>
+      <listitem>
+        <para>YUI will not maintain it’s source code at SF as we are already porting the code to gitorious.org.</para>
+      </listitem>
+      <listitem>
+        <para>Current release tarballs can be found at the SF downloads page.</para>
+      </listitem>
+      <listitem>
+        <para>Mailing List for YUI can be found at libyui-devel@lists.sourceforge.net. This can be used for all YUI (not YaST) related discussions.</para>
+      </listitem>
+      <listitem>
+        <para>Webpage for YUI along with examples and links to external resources will be up soon.</para>
+      </listitem>
+      <listitem>
+        <para>Forum for YUI related topics is available at SF.</para>
+      </listitem>
+    </orderedlist>
+    <para>So, stay tuned to sourceforge to keep track of YUI!</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/07/04/gsoc-osc-code-cleanup-%E2%80%93-summary-of-week-6/">Marcus Hüwe: [gsoc] osc code cleanup – summary of week 6</ulink>
+    </title>
+    <para>here’s a small summary of the 6th (coding) week. Unfortunately I had
+to spent more time with university stuff than I expected – that’s why
+I didn’t finish the complete todo for this week.
+I did some code restructuring and started to work on the class for the
+source route.</para>
+    <para>TODO:</para>
+    <para>- rewrite the project and package working copy classes:</para>
+    <itemizedlist>
+      <listitem>
+        <para>the new working copy format will be incompatible with the current
+    format.</para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>the basic layout will look like this:</para>
+      </listitem>
+    </itemizedlist>
+    <para>prj</para>
+    <para>|</para>
+    <para>—&gt; .osc/ (stores prj _and_ pkg metadata)</para>
+    <para>|</para>
+    <para>—&gt; pkg1</para>
+    <para>#       |</para>
+    <para>#        —&gt; &lt;files&gt;
     </para>
-    <para>Notice that when Amarok started there is only one podcast on local podcasts.</para>
-    <figure id="gpodder2">
-      <title>Right after the subscription synchronisation process ends.</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://3.bp.blogspot.com/-iVV-PP6isQk/TgkXFNiKEyI/AAAAAAAAADQ/OEOdxkIZZz0/s640/amarok_after_sync.jpeg"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>After some necessary delay, gpodder service promptly synchronized all podcasts, from gpodder.net, with your local podcasts, thereby adding the missing ones.</para>
-    <figure id="gpodder3">
-      <title>Removal of a subscription from local podcasts.</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://1.bp.blogspot.com/-agI7JkE6lPA/TgkXEiNpQPI/AAAAAAAAADM/h5QRLWn1Ivo/s640/amarok_after_delete.jpeg"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>If you try to remove a local podcast, that is synced with a gpodder podcast, then Amarok will ask you if you want to remove it from your gpodder.net subscriptions too. In a similar manner, once you add a new podcast, to your local podcasts, you will be asked if you want to add it to your gpodder.net subscriptions too.</para>
-    <para>So, remember to keep in touch with this blog. Next week, I will be back to update you with fresh news.</para>
-    <para>All hail the KDE!!! \o/</para>
-    <!-- ($ ld: 28.6.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://alex.eftimie.ro/2011/06/28/packagekit-backend-for-software-center-late-week-4-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: late week 4 report</ulink></title>
-    <para>Since third week’s report was no report – basically because I was delayed by missing parts
-      in the architecture (the saga hasn’t finished yet), I’m posting this late 4th week
-      report:</para>
-    <para><inlinegraphic
-        fileref="http://alex.eftimie.ro/wp-content/uploads/2011/06/Workspace-1_003-300x166.png"
-      /></para>
-    <para>Yep, the PK InstallBackend is shaping up <inlinemediaobject>
-        <imageobject>
-          <imagedata fileref="http://alex.eftimie.ro/wp-includes/images/smilies/icon_biggrin.gif"/>
-        </imageobject>
-      </inlinemediaobject> !</para>
-    <para>Unfortunately, the only machine running this code is mine, the reason being this chain of
-      dependencies:</para>
-    <para>- static Python bindings for PK are dead</para>
-    <para>- PK gi depends on pygobject invoke-rewrite branch of J5 (which isn’t</para>
-    <para> yet merged into master, but will make it to 3.2 release);</para>
-    <para>- PK gi breaks statically loaded glib in software-center master; therefore, the -gtk3 port
-      of software-center should be used;</para>
-    <para>- software-center-gtk3 isn’t ready for merging into trunk – experimental design changes
-      towards a friendlier 5.0 are being done.</para>
-    <para>Therefore I’m testing the install/remove routines on the small modules, such as the
-      PendingView in the above screenshot, waiting for components stabilization.</para>
-    <para>Next week – and probably until week 6 report, I will continue work on the install parts
-      and start developing the PK PackageInfo class.</para>
-    <para>PS: I’m undecided if I should make my reports biweekly or milestone based :-/</para>
-    <!--($ ld: 29.6.11 sm $)-->
-  </blockquote>
+    <para>…</para>
+    <para>|</para>
+    <para>—&gt; pkgN</para>
+    <para>#       |</para>
+    <para>#        —&gt; &lt;files&gt;</para>
+    <para>So all metadata is stored in the prj/.osc dir instead of prj/pkg/.osc
+    The advantage is that we can support a complete package
+    “restore” (without the need to download the package again):</para>
+    <para>cd prj; rm -r pkg; osc revert/restore pkg;</para>
+    <para>(that’s possible because the metadata is stored in the prj/.osc
+    dir).</para>
+    <itemizedlist>
+      <listitem>
+        <para>to convert old project/package working copies to the new format
+    the “osc repairwc” command can be used (at least that’s the plan)</para>
+      </listitem>
+    </itemizedlist>
+    <para>Feedback is always welcome.</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-06/msg00197.html"
-        >N.B.Prashanth: GsoC Weekly Report - "Separating libYUI"</ulink></title>
-    <para>I would like to summarize my progress so far. I am working on the libYUI project as
-      mentioned above.(...)</para>
-    <!--($ ld: 29.6.11 sm $)-->
-  </blockquote>
+    <title>
+      <ulink url="http://sysbytes.wordpress.com/2011/07/08/sax3-get-your-hands-dirt/">Manu Gupta: SaX3 – Get your hands dirty</ulink>
+    </title>
+    <para>Its been a long time I posted anything, but things look promising now, SaX3 is moving forward and 2 of its module have been completed, the keyboard module and the mouse module, so please test it and give me your feedbacks and if there are any bugs. BUGS will certainly be squashed, I dont know about UI changes. Suggestions are welcome. I plan to work on touchpads next. (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://cbounta.wordpress.com/2011/07/01/a-utility-for-merging-configuration-sysconfig-files-%E2%80%93-week-6-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 6
-        Report</ulink></title>
-    <para>This is my 6th report concerning the progress of my gsoc project. First of all, I want to
-      apologize because of the 5th report that is missing from last week. Due to some events, for me
-      it was almost impossible to concentrate on work. Even though i did some things, it was not
-      enough to create a report on. The previous week made me get out of schedule at least for a
-      week, i will try to catch up this time by working more on weekends starting from this one.
-      Even though in my initial plan there were about two weeks free time in the schedule that i
-      could use in occasions like this.</para>
-    <para>Anyway, what’s up with the progress. As I have described in previous post, I am currently
-      working on the matching code / algorithm. Some major improvements took place on the
-      aug_process_tree method, which will be responsible for matching the initial tree with those
-      coming as parameters. The tree traversal algorithm is now working completely, some issues
-      however still exist in the matching of the tree nodes. Hopefully, i will be able to resolve
-      this issues very soon, maybe even in the next couple of days.</para>
-    <para>Also, some basic drafts of the merging functions were added. Each function will complete
-      the appropriate actions that must be carried , and will also represent each of the merging
-      parameters /merging flags that will be used.</para>
-    <para>Finally, small changes and improvements took place in few other functions as well in the
-      code. The plan for the next days is to complete the matching of the tree nodes and the
-      merging. At least to a point where more more debugging tests would be able to be carried
-      out.</para>
-    <!--($ ld: 2.7.11 sm $)-->
-  </blockquote>
+    <title>
+      <ulink url="http://cbounta.wordpress.com/2011/07/08/a-utility-for-merging-configuration-sysconfig-files-%E2%80%93-week-7-report/">Christos Bountalis: A utility for merging configuration / sysconfig files – Week 7 Report</ulink>
+    </title>
+    <para>This is the 7th week report for my GSoC project. During the implementation of the matching procedures, i talked in my last blog post, there were some new developments concerning the project. That made the actual matching procedure halt for a while, because there are no effective way at the moment to test the matching progress in the actual implementation. Where is the problem? The problem that occurred is the handling of the special comments that are used in many of the sysconfig files. These comments may appear next to simple description comments but contain useful information that are then interpreted by the program, such information could be for example the type of a variable etc. So what now? This week I am trying to find an effective way to deal with this problem, the initial idea i have is to modify the sysconfig lens, used by Augeas, in order to represent the sysconfig files in a tree form (with more levels that the current) that will be suitable for the matching/sorting algorithms i have already implemented. (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
   <blockquote>
-    <title><ulink
-      url="http://redache.wordpress.com/2011/06/25/entomologist-ui-changes-weekly-report-5/">David
-      Williams: Entomologist UI changes Weekly Report #5</ulink></title>
-    <para>This week has been a bad one for getting work done as I managed to lose a lot of my work
-      mid week. I’ve spent the rest of the week trying to get back to where I was and finishing up
-      the New Comments Dialog. I also repeated the mantra “commit often” to remind myself to do it
-      so much more often than I do to ensure I can’t lose work when QT Creator decides to delete
-      things.</para>
-    <para>The New Comments Dialog is at its first iteration and I am going to spend the next 2 – 3
-      days fixing any bugs and resolving some issues with the tabbed interface. Then on Monday I
-      will start the TODO lists in earnest and get back to being on track with my timeline. </para>
-    <para>Luckily time is something I do have and I think I gave myself plenty of breathing space in
-      the timeline I submitted with my GSoC application. I’d rather take my time and get things done
-      properly with breathing room than cram in as much functionality as possible into the 12 weeks
-      and then end it with a massive chunk of badly written and probably broken code. This breathing
-      room helped me this week.</para>
-    <!-- ($ ld: 26.6.11 sm $) -->
-  </blockquote>
+    <title>
+      <ulink url="http://forums.opensuse.org/english/other-forums/community-fun/opensuse-wiki-discussions/">Justine Leng: git commit</ulink>
+    </title>
+    <para>Finally committed and pushed a batch of changes I had made on request views and project/page views to the master branch. See diffs on Gitorious: <ulink url="https://gitorious.org/~justineleng/opensuse/justineleng-build-service">https://gitorious.org/~justineleng/opensuse/justineleng-build-service</ulink> (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
   <blockquote>
-    <title><ulink
-        url="http://redache.wordpress.com/2011/07/01/entomologist-ui-changes-weekly-report-6/">David
-        Williams: Entomologist UI changes Weekly Report #6</ulink></title>
-    <para>This week has been a bit productive but there still isn’t that much to show for the work I
-      have done as it’s primarily related to drag and drop in the TODO list. The start of the week
-      was spent bolstering the code I had worked on for the tabbed interface and ensuring that I
-      caught as many bugs as I could find. The later part of the week has been focused on the TODO
-      list. </para>
-    <para>The idea behind the TODO list is a way to categorize bugs with your own scheme and then
-      assign them to certain completion dates. This could then be used to track roadmaps etc and
-      over time I plan to add cloud integration so that they can be synced with Google Calendar etc.
-      The main focus right now is getting it to work within the context of entomologist and once
-      that is done focus on the cloud integration aspect.</para>
-    <para>So far the drag and drop doesn’t work but it’s getting there and once it is complete I
-      will tidy the code and the TODO list as a first iteration should be finished (since drag and
-      drop being completed is the same as finishing most of the functionality). </para>
-    <para>What am I going to do next week?:</para>
-    <para> - Finish the first iteration.</para>
-    <para> - Move forwards with the second iteration and implement prefpanes for each list (with
-      options like name,date etc.)</para>
-    <para> - Start Cloud integration (If there’s time left at the end of the week!).</para>
-    <para>I need to take some time to try and document what I’ve done too which would involve making
-      comments I’ve written better and maybe putting together a small “Hackers Guide to
-      Entomologist”. If I have time left over I will definitely do this work before the end of the
-      Summer. </para>
-    <!--($ ld: 2.7.11 sm $)-->
-  </blockquote>
+    <title>
+      <ulink url="http://verybin.tumblr.com/post/7194777955/weekly-report-3">Eric Yang: Porting Wubi to OpenSUSE [weekly report #3]</ulink>
+    </title>
+    <para>the windows’ side of this app works fine now, that means the tool will do the preparation work like download and check iso image, create virtual disk file, create installation entry and so on. the left work is done after reboot — the real installation progress, that’s the main part I was/am focusing on.</para>
+    <para>during the past week, I was focusing on modification of boot settings, as there is no detailed log info for boot progress, the project did not evolve very smoothly:( problem is that installer can not create loop device successfully after reboot. I will try my best to solve this problem in this week.</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://redache.wordpress.com/2011/07/08/entomologist-ui-changes-weekly-report-7/">David Williams: Entomologist UI Changes Weekly Report #7</ulink>
+    </title>
+    <para>This week I&apos;ve been focused on adding TODO list functionality to Entomologist.
+I haven&apos;t quite finished the implementation but it is nearing basic completion.
+Once I&apos;ve finished the UI/core functionality I will then work on adding cloud
+connection features so that the lists can be synced with various calendar
+services/WebDAV servers.</para>
+    <para>My plan for next week is to:</para>
+    <para>- Finish up the UI/core functionality.</para>
+    <para>- Start the cloud integration once this is wholly complete.</para>
+    <para>By this time next week I&apos;ll hopefully have much more to show off to coincide
+with the Midterm point :).</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
 </sect1>

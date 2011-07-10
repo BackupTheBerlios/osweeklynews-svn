@@ -20,20 +20,47 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink
-        url="http://lizards.opensuse.org/2011/06/27/facebook-bans-kdes-photo-uploaded-all-uploaded-content-inaccessible/"
-        >Will Stephenson: Facebook bans KDE’s photo uploader; all uploaded content
-        inaccessible.</ulink>
+      <ulink url="http://log.or.cz/?p=188">Petr Baudis: I use 6to4 – why are my applications still preferring IPv4?</ulink>
     </title>
-    <para>So in my head there’s a little Walter Sobchak beating on my conscience and shouting “This
-      is what you get when you trust Facebook with your data, Will”. </para>
-    <para>The reason is that I upload photos to Facebook using KDE’s shared uploader and this has
-      fallen victim to the whims of FB’s purge of its app biosphere. Unless the original developer
-      can convince them that the app is not spammy, offering a bad experience or having the wrong
-      attitude, the app, my photos (all archived elsewhere of course), but most importantly, all the
-      kind comments from my friends and contacts that represent FB’s only value, get sent to the
-      farm. </para>
-    <para>This is what you get when you trust one company with stuff you care about. Will.</para>
-    <!--($ ld: 28.6.11 sm $)-->
-  </blockquote>
+    <para>I found out about this curious behavior almost a month ago during <ulink url="http://www.worldipv6day.org/">the World IPv6 Day</ulink>. I was surprised about this, even though I really shouldn’t be, given that I was fixing some bugs in the glibc implementation of this mechanism only few months earlier. ;-)</para>
+    <para>If you are not bothering with tunnel brokers anymore and are using 6to4 for your IPv6 connectivity like me, you might have noticed that your applications still prefer IPv4, disappontingly. You can use getent ahosts <ulink url="http://www.brmlab.cz/">www.brmlab.cz</ulink> (or a different host) to see the list of addresses in the order your applications will most likely try to connect by default.</para>
+    <para>The key mechanism in play here is the <ulink url="http://www.ietf.org/rfc/rfc3484.txt">RFC3484</ulink> <ulink url="http://www.kernel.org/doc/man-pages/online/pages/man3/getaddrinfo.3.html">getaddrinfo(3)</ulink> address selection mechanism; on GNU/Linux system, it is described (and configurable) in /etc/gai.conf. The aim of the mechanism is to choose the most suitable pair of source and destination addresses; this is the place where we can choose whether to prefer IPv4 or IPv6, that if we can talk to localhost, we should do it that way, or to talk to link-local addresses using link-local addresses too. (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://blog.jospoortvliet.com/2011/07/getting-new-ms-fonts-in-libreoffice-or.html">Jos Poortvliet: Getting the new MS fonts in LibreOffice - or rather, forget about it</ulink>
+    </title>
+    <para>Personal learning point of the day: when on the website of a company with dubious business and legal practices <emphasis role="bold">READ the fineprint</emphasis>...</para>
+    <para>I already wrote most of the following blog (actually more, including making screenshots) before I discovered the fineprint leading me to write the above...
+
+</para>
+    <para><emphasis role="bold">The Font Issue</emphasis></para>
+    <para>If you get a document with fonts you don&apos;t have, the result can be bad. Layout will surely not be proper and for some reason LO and Caligra pick a horrible replacement on my computer - Alien Leage, see screenshot. Guaranteed to make any normal document unreadable. And the idiotic &apos;reading mode&apos; of LO makes it impossible to change the font until you&apos;ve saved the file somewhere. The benefit of that mode always escaped me in MS Office, at least I knew how to turn it off... (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://www.marques.so/2011/07/the-%C2%ABbanshee%C2%BB-incident-a-horror-tale-by-nmarques/">Nelson Marques: The «Banshee» incident…</ulink>
+    </title>
+    <para>The latest unstable version of Banshee (2.1.0) introduced quite a few changes and one of the most visible was the replacement of NDesk.DBus by DBus. This change came with a huge pedagogic charge on me…</para>
+    <para>Since the changes with this version of Banshee were so deep, I’ve decided to re-write the spec and cleanup as much as I could and ditch as much expressions as possible for old unsupported platforms. This went fine but on the first builds failed heavily by not finding a required assembly file from dbus-sharp-glib.</para>
+    <para>My first investigations provided me some really accurate information:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Local tests on the dbus-sharp-glib packages showed evidence that the dependencies required were working properly (rpm -qp –requires/provides).</para>
+      </listitem>
+      <listitem>
+        <para>OBS showed evidence that both devel and normal package were installed.</para>
+      </listitem>
+      <listitem>
+        <para>A simple “rpm -qa –last” inside of the build root cage showed evidence that though the devel package was installed the normal package wasn’t…</para>
+      </listitem>
+    </itemizedlist>
+    <para>And so the nightmare begun… Without having much clues on where to look for and with my helpers/mentors busy with far more important stuff it dragged for some time and started to grind my mind… (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://tml-blog.blogspot.com/2011/07/i-am-just-debugging-well-not-really-i.html">Tor Lillqvist: First debugging session of LibreOffice code on iOS (simulator)</ulink>
+    </title>
+    <para>I am just debugging (well, not really, I am not expecting anything to actually do much interesting) for the first time cross-compiled LibreOffice code on the iOS Simulator. (So yeah, technically instruction-set-wise this is not cross-compiled, as the Simulator runs i386 code, too, but under a simulated iOS environment.) Not really that exciting, but still, couldn&apos;t help blogging. No, there is still nothing to &quot;beta test&quot;, there is still no actual LibreOffice UI showing up or even any code to draw a single pixel on iOS.</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
 </sect1>

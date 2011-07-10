@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
 <!ENTITY % myentities SYSTEM "entities.ent">
 %myentities;
 ]>
@@ -18,23 +18,30 @@
 -->
 <sect1 role="updates">
   <title>New/Updated Applications @ openSUSE</title>
-  <!--* Gnome
+<!--* Gnome
 * KDE
 * XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
 
-Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
-  <blockquote>
-    <title><ulink url="http://www.andreas-demmer.de/en/2011/07/01/plasmanotify-fur-firefox-4-und-5"
-        >Andreas Demmer: PlasmaNotify for Firefox 4 and 5</ulink></title>
-    <para>I just upgraded my <ulink
-        url="https://addons.mozilla.org/en-US/firefox/addon/plasmanotify/">Firefox addon
-        PlasmaNotify</ulink>, so that it can be installed on Firefox 4 and 5. I committed the
-      changes to Mozilla so that the Addon should upgrade itself within the next view days. I
-      promise to be quicker on the next Firefox major releases!</para>
-    <para>Impatient users may download the addon in advance <ulink
-        url="http://www.linuxmag.de/plasmanotify-0.3.2-fx-linux.xpi">over here</ulink>.</para>
-    <para>The addon itself is inteded for Linux and integrates the Firefox download notifications
-      into the <ulink url="http://www.kde.org">KDE</ulink> Plasma notifications.</para>
-    <!--($ ld: 2.7.11 sm $)-->
-  </blockquote>
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
+    <title>
+      <ulink url="Michael Chang: New package cairo-compmgr">Michael Chang: New package cairo-compmgr</ulink>
+    </title>
+    <para>I am glad to introduce cairo composite manager(CCM) to factory. As the
+name suggests, it&apos;s an X Window composite manager that uses Cairo for
+rendering.
+
+</para>
+    <para>Some aspects I like it and hopfully you also agree with.
+</para>
+    <para>1. It is completely coded in Glib Object. Awesome.
+</para>
+    <para>2. It can work with any EWMH compliant window manager (Metacity,
+Openbox, etc.). A good replacement for xcompmgr.
+</para>
+    <para>3. Basically, you can run it without too much hardware requirement as
+it can run in 2D environment.
+</para>
+    <para>4. Regardless of it&apos;s simplicity compared to other composite manager,
+it also provides expandable via plugin. (...)</para>
+<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
 </sect1>
