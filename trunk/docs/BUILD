@@ -24,7 +24,7 @@ via zypper or YaST:
 * susedoc-buildbook
 
 For doing that you have to add the following Repositories:
-* https://build.opensuse.org/project/packages?project=home:/thomas-schraitle/openSUSE_11.4
+* https://build.opensuse.org/project/show?project=Documentation%3ATools
 * Standard 11.4 Repository
 
 The susedoc package contains lots of dependencies to other packages. Usually we
