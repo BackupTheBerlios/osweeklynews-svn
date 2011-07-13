@@ -20,12 +20,16 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title>
-      <ulink url="http://log.or.cz/?p=188">Petr Baudis: I use 6to4 – why are my applications still preferring IPv4?</ulink>
+      <ulink
+        url="http://www.marques.so/2011/07/packaging-applications-with-icons-and-hicolor-macros-with-opensuse/"
+        >Nelson Marques: Packaging applications with icons and ‘hicolor’ macros with
+        openSUSE</ulink>
     </title>
-    <para>I found out about this curious behavior almost a month ago during <ulink url="http://www.worldipv6day.org/">the World IPv6 Day</ulink>. I was surprised about this, even though I really shouldn’t be, given that I was fixing some bugs in the glibc implementation of this mechanism only few months earlier. ;-)</para>
-    <para>If you are not bothering with tunnel brokers anymore and are using 6to4 for your IPv6 connectivity like me, you might have noticed that your applications still prefer IPv4, disappontingly. You can use getent ahosts <ulink url="http://www.brmlab.cz/">www.brmlab.cz</ulink> (or a different host) to see the list of addresses in the order your applications will most likely try to connect by default.</para>
-    <para>The key mechanism in play here is the <ulink url="http://www.ietf.org/rfc/rfc3484.txt">RFC3484</ulink> <ulink url="http://www.kernel.org/doc/man-pages/online/pages/man3/getaddrinfo.3.html">getaddrinfo(3)</ulink> address selection mechanism; on GNU/Linux system, it is described (and configurable) in /etc/gai.conf. The aim of the mechanism is to choose the most suitable pair of source and destination addresses; this is the place where we can choose whether to prefer IPv4 or IPv6, that if we can talk to localhost, we should do it that way, or to talk to link-local addresses using link-local addresses too. (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>The forums are a wonderful tool and often provide first hand feedback for things that are
+      somehow interesting and many times don’t make their way into the bugzilla. There was a few
+      users which complained about Chromium not displaying the icons on the window list in GNOME.
+      I’ve taken a quick look into the package and found the following: (...)</para>
+<!-- ($ ld: 13.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://blog.jospoortvliet.com/2011/07/getting-new-ms-fonts-in-libreoffice-or.html">Jos Poortvliet: Getting the new MS fonts in LibreOffice - or rather, forget about it</ulink>

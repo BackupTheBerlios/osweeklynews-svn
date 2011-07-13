@@ -24,24 +24,29 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
     <title>
-      <ulink url="Michael Chang: New package cairo-compmgr">Michael Chang: New package cairo-compmgr</ulink>
-    </title>
-    <para>I am glad to introduce cairo composite manager(CCM) to factory. As the
-name suggests, it&apos;s an X Window composite manager that uses Cairo for
-rendering.
-
-</para>
-    <para>Some aspects I like it and hopfully you also agree with.
-</para>
-    <para>1. It is completely coded in Glib Object. Awesome.
-</para>
-    <para>2. It can work with any EWMH compliant window manager (Metacity,
-Openbox, etc.). A good replacement for xcompmgr.
-</para>
-    <para>3. Basically, you can run it without too much hardware requirement as
-it can run in 2D environment.
-</para>
-    <para>4. Regardless of it&apos;s simplicity compared to other composite manager,
-it also provides expandable via plugin. (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+            <ulink url="http://lizards.opensuse.org/2011/07/12/zippl-again-now-in-the-package/"
+                >Klaas Freitag: Zippl again – now in the package</ulink>
+        </title>
+        <para>Some might remember my hackweek project Zippl. I <ulink
+                url="http://lizards.opensuse.org/2010/06/11/zippl-a-lightweigth-presentation-tool/"
+                >blogged about it</ulink> more than a year ago. Zippl is a lightweigt presentation
+            tool, a bit like prezi, a hipp tool for that purpose, where all ‘slides’ sit on one
+            large canvas and during the presentation a kind of camera moves over the canvas.</para>
+        <para>I liked the idea and did Zippl as I wanted to play with Qt’s QGraphicsView. It takes a
+            simple xml file as input which describes the presentation and animates it as shown in
+            the video in my <ulink
+                url="http://lizards.opensuse.org/2010/06/11/zippl-a-lightweigth-presentation-tool/"
+                >older blog</ulink>.</para>
+        <para>First I thought it doesn’t make sense to continue that project. But recently, somebody
+            asked if I have built in the feature back to the previous spot as I promised almost a
+            year ago, as he wanted to do a presentation with Zippl. I couldn’t believe, and so I
+            spent an evening in the weekend to polish Zippl a bit. And because its easy with OBS, I
+            quickly built an rpm package for various openSUSEs.</para>
+        <para>Now that I worked on it a bit again I found it could also make sense on tablet
+            devices, for example to run cool Hello New User animations or small presentations for
+            ant Tilly to get some sponsorship for the new bike. Could be fun.If you want to check
+            it, please install from <ulink
+                url="http://download.opensuse.org/repositories/home:/kfreitag/">my home
+                repository</ulink>.</para>
+<!-- ($ ld: 13.7.11 sm $)-->  </blockquote>
 </sect1>
