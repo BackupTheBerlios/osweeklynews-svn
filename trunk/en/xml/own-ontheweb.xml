@@ -22,12 +22,26 @@
     <title>Announcements</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxfoundation.org/news-media/announcements/2011/07/toyota-joins-linux-foundation">Toyota Joins Linux Foundation</ulink>
+        <ulink
+          url="http://www.linuxfoundation.org/news-media/announcements/2011/07/basyskom-codero-gluster-and-nixu-open-join-linux-foundation"
+          >Linux Foundation: basysKom, Codero, Gluster and Nixu Open Join The Linux
+          Foundation</ulink>
       </title>
-      <para>Toyota looks towards open innovation and collaboration to help transform auto industry</para>
-      <para>SAN FRANCISCO, July 5, 2011 – The Linux Foundation, the nonprofit organization dedicated to accelerating the growth of Linux, today announced that Toyota is its newest member.</para>
-      <para>A major shift is underway in the automotive industry. Carmakers are using new technologies to deliver on consumer expectations for the same connectivity in their cars as they’ve come to expect in their homes and offices. From dashboard computing to In-Vehicle-Infotainment (IVI), automobiles are becoming the latest wireless devices – on wheels. (...)</para>
-<!-- ($ ld: 8.7.11 sat $) -->    </blockquote>
+      <para>Linux Foundation’s newest members represent Linux’s ubiquity and adaptability across
+        industries</para>
+      <para>SAN FRANCISCO, Calif., July 13 2011 – The Linux Foundation, the nonprofit organization
+        dedicated to accelerating the growth of Linux, today announced that four new members are
+        joining the organization: basysKom, Codero, Gluster and Nixu Open.</para>
+      <para>These four companies represent the diverse environments in which Linux is accelerating
+        technology innovation. The Linux operating system today powers the majority of the world’s
+        stock exchanges, websites and supercomputers. It is also the foundation for next-generation
+        mobile devices and embedded systems, while enabling new innovations such as the smart grid
+        and highly visible technology advancements such as IBM’s Watson Supercomputer.</para>
+      <para>Today’s new Linux Foundation members represent three distinct opportunities for the
+        Linux operating system: to ensure security and application development across mobile and
+        embedded systems, as a key component of hosted IT and web services, and as the foundation
+        for storage in today’s maturing enterprise. (...)</para>
+<!-- ($ ld: 14.7.11 sm $) -->    </blockquote>
   </sect2>
 <!--<sect2>
   <title>Call for participation</title>
@@ -40,13 +54,59 @@ Here’s a chance to show off your talent using a great drawing program made esp
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.v3.co.uk/v3-uk/v3-co-uk-labs-blog/2086291/office-365-mac-linux">V3.co.uk: Office 365 on Mac and Linux</ulink>
+        <ulink
+          url="http://www.datamation.com/open-source/choosing-the-best-linux-desktop-kde-unity-gnome-1.html"
+          >Datamation/Bruce Byfield: Choosing the Best Linux Desktop: KDE, Unity, GNOME</ulink>
       </title>
-      <para>When I <ulink url="http://www.v3.co.uk/v3-uk/review/2083033/microsoft-office-365-review">reviewed Microsoft&apos;s Office 365 last week</ulink>, I tested the cloud-based productivity suite on Windows PCs, running either Windows 7 or Windows XP.</para>
-      <para>To recap, Office 365 provides access to cloud-hosted versions of Exchange and SharePoint, plus Microsoft&apos;s Lync telephony client and web-based versions of Word, Excel, PowerPoint and OneNote.</para>
-      <para>However, with most of the capabilities of Office 365 provided through a browser, it should be possible for users on other platforms, such as Mac or Linux, to gain access to Office features.</para>
-      <para>To find out, I tried accessing my test account on an Apple iMac and a PC running Ubuntu with a version of Firefox. (...)</para>
-<!-- ($ ld: 8.7.11 sat $) -->    </blockquote>
+      <para>The perfect desktop would be the one you design yourself. Failing that, which of the
+        main Linux desktops is right for you?</para>
+      <para>A few months ago, this question came to a choice between GNOME and KDE. Now, with the
+        introduction of GNOME 3 and Ubuntu's Unity, the question has become more complex.</para>
+      <para>Should you accept the latest innovation, or go with a desktop that proves itself? A
+        simple desktop, or a complex one with all sorts of customization? One that doesn't change,
+        regardless of whether you are using a mobile device or a workstation, or one that changes to
+        fit the limitations or advantages of each computing device? (...)</para>
+<!-- ($ ld: 14.7.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://labs.qt.nokia.com/2011/07/14/qtquick-particles-2-0/">Qt Labs:
+          QtQuick.Particles 2.0</ulink></title>
+      <para>Some people may remember the old Qt.labs.particles module. It was left in labs because
+        we thought we could create a better particle system later, and didn’t want to tie ourselves
+        into that first attempt (but of course, we had to have a particle system somewhere; it’s a
+        modern essential!). With the graphical power of scenegraph, the shader fairies are now
+        creating that better system. As it’s in the unreleased and unstable Qt5 though, it’s still
+        only labs quality – but that doesn’t stop me from sharing it on labs <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://labs.qt.nokia.com/wp-includes/images/smilies/icon_smile.gif"
+            />
+          </imageobject>
+        </mediaobject> Check out the image of Plasma Patrol below to get a feel for some of its
+        capabilities (and checkout qt5.git to see it in action). (...)</para>
+      <!--($ ld: 14.7.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://blog.gapinthecloud.com/2011/07/13/gsoc-copy-cut-and-paste-shared-files-in-owncloud/"
+          >Michael Gapczynski: GSoC: Copy, Cut, and Paste Shared Files in ownCloud</ulink></title>
+      <para>As usual I ran into a couple more issues this past week that prevented me from
+        completing many of the items on my Todo list. I also forgot to finish a couple of things
+        like copying files, because it isn’t part of the web frontend.</para>
+      <para>First, I’d like to take some time responding to Lukas’s comment to last week’s post.
+        I’ve spent a while debating whether or not to store all file records in the database or
+        continue with the current solution with only recording folders and any files that differ
+        compared to their parent folder. I’ve decided that it is best to stick with current solution
+        because ownCloud isn’t designed nor wants to support a large number of users, but only small
+        groups. Lukas also suggested some additional permissions or rules instead of the current
+        read or write. Well, protected files are what every user has in their own directory. Private
+        files with links are what the public link app can already do using a token for the link.
+        Eventually this will be part of sharing files and offer the same functionality in one
+        interface. Shared files right now are pulled directly out of the owner’s file system, but
+        you have limited power when dealing with those files and can’t physically delete them, only
+        unshare the files from yourself. Creating copies of the files would require a huge rewrite
+        and it doesn’t seem to be worth the effort. If you’re still confused about how sharing files
+        work and where your files are going please continue to ask questions. (...)</para>
+      <!--($ ld: 14.7.11 sm $) -->
+    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
