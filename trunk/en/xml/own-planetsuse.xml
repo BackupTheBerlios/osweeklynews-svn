@@ -32,15 +32,21 @@
 <!-- ($ ld: 13.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://blog.jospoortvliet.com/2011/07/getting-new-ms-fonts-in-libreoffice-or.html">Jos Poortvliet: Getting the new MS fonts in LibreOffice - or rather, forget about it</ulink>
+      <ulink url="http://kohei.us/2011/07/14/mdds-0-5-3-released/">Kohei Yoshida: mdds 0.5.3
+        released</ulink>
     </title>
-    <para>Personal learning point of the day: when on the website of a company with dubious business and legal practices <emphasis role="bold">READ the fineprint</emphasis>...</para>
-    <para>I already wrote most of the following blog (actually more, including making screenshots) before I discovered the fineprint leading me to write the above...
-
-</para>
-    <para><emphasis role="bold">The Font Issue</emphasis></para>
-    <para>If you get a document with fonts you don&apos;t have, the result can be bad. Layout will surely not be proper and for some reason LO and Caligra pick a horrible replacement on my computer - Alien Leage, see screenshot. Guaranteed to make any normal document unreadable. And the idiotic &apos;reading mode&apos; of LO makes it impossible to change the font until you&apos;ve saved the file somewhere. The benefit of that mode always escaped me in MS Office, at least I knew how to turn it off... (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>I’m happy to announce that version 0.5.3 of <ulink
+        url="http://code.google.com/p/multidimalgorithm/">Multi-Dimensional Data Structure
+        (mdds)</ulink> is available for download from the link below.</para>
+    <para><ulink url="http://multidimalgorithm.googlecode.com/files/mdds_0.5.3.tar.bz2"
+        >http://multidimalgorithm.googlecode.com/files/mdds_0.5.3.tar.bz2</ulink></para>
+    <para>This is a bug fix release. In fact, the only change since 0.5.2 is in mixed_type_matrix,
+      and in particular in its filled storage implementation. I’ve completely re-worked the fill
+      storage backend of <emphasis role="bold">mixed_type_matrix</emphasis> in order to boost its
+      performance on instantiation, whose effect will be evident when creating and destroying a
+      large number of filled matrix objects.</para>
+    <para>There is no API-incompatible change in this release.</para>
+<!-- ($ ld: 15.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://www.marques.so/2011/07/the-%C2%ABbanshee%C2%BB-incident-a-horror-tale-by-nmarques/">Nelson Marques: The «Banshee» incident…</ulink>

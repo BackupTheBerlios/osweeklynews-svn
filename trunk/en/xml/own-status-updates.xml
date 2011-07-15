@@ -42,6 +42,41 @@
     </blockquote>
     </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
+    <blockquote>
+      <title><ulink
+          url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/"
+          >Michal Marek: Improved Kernel Package Retention in 12.1</ulink></title>
+      <para>A long awaited feature of the openSUSE update stack is finally here!Since some time, it
+        has been possible to tell libzypp to not delete oldkernels on update:</para>
+      <para>
+        <programlisting>multiversion = provides:multiversion(kernel)</programlisting>
+      </para>
+      <para>in <emphasis role="italic">/etc/zypp/zypp.conf</emphasis>. That way, you don’t have to
+        worry that abrand new -rc kernel from Factory makes your system unbootable. This
+        howeversolves one problem and brings another one – you have to manually delete theold kernel
+        so that your /boot partition does not fill up. openSUSE 12.1 willprovide a solution to this,
+        you will be able to tell what kernels you want tokeep after an update, other kernels will be
+        deleted. The configuration is thesame file, <emphasis role="italic"
+          >/etc/zypp/zypp.conf</emphasis>:</para>
+      <para>
+        <programlisting>## Comma separated list of kernel packages to keep installed in parallel, if the
+## above multiversion variable is set. Packages can be specified as
+## 2.6.32.12-0.7 - Exact version to keep
+## latest        - Keep kernel with the highest version number
+## latest-N      - Keep kernel with the Nth highest version number
+## running       - Keep the running kernel
+## oldest        - Keep kernel with the lowest version number (the GA kernel)
+## oldest+N      - Keep kernel with the Nth lowest version number
+##
+## Default: Do not delete any kernels if multiversion = provides:multiversion(kernel) is set
+multiversion.kernels = latest,running
+</programlisting>
+      </para>
+      <para>If you configure this and the above multiversion variable, then after eachkernel update,
+        during a subsequent reboot, a script will compare the list ofinstalled kernels with the
+        multiversion.kernels setting and delete those thatare no longer needed. (...)</para>
+      <!-- ($ ld: 15.7.11 sm $)-->
+    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
