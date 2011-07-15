@@ -22,32 +22,38 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.mygnulinux.com/?p=1117">mygnulinux.com/tetris4: Remotely manage your KDE system from your Android Phone</ulink>
+        <ulink url="http://scribblesandsnaps.wordpress.com/2011/07/11/process-photos-with-digikams-batch-queue-manager-and-a-bash-script/">Scribbles and Snaps: Process Photos with digiKam’s Batch Queue Manager and a Bash Script</ulink>
       </title>
-      <para>To achieve this, you are going to need a VNC server running on the host computer, and a VNC viewer running on your Android phone. This may sound complicated to some, but its really easy. Just follow this simple how-to! :) (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
+      <para>One of digiKam’s lesser known features is the ability to link scripts to notifications. At first sight, this may seem like a rather obscure functionality, but it can be put to some clever uses. Say, you want to keep a portfolio of selected photos on a mobile device. Resizing multiple photos to a specified size to make it easier to view them on the mobile device and transferring the processed photos from digiKam to the mobile device manually is not very practical. And this is where the ability to trigger scripts via notifications can come in handy. You can attach a simple Bash script to the Batch <emphasis role="italic">queue completed</emphasis> notification, so it’s triggered automatically when the Batch Queue Manager tool is done processing photos. (...)</para>
+<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/07/03/installing-android-x86-in-virtualbox.aspx">Hubfolio/Matthew Casperson: Installing Android x86 in VirtualBox</ulink>
+        <ulink url="http://www.howtoforge.com/enabling-compiz-fusion-on-an-opensuse-gnome-11.4-desktop-nvidia-geforce-8100">HowtoForge/Falko Timme: Enabling Compiz Fusion On An OpenSUSE GNOME 11.4 Desktop (NVIDIA GeForce 8100)</ulink>
       </title>
-      <para>In a <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/06/27/running-android-apps-on-linux.aspx">previous post</ulink> I showed you how to install and configure the Android SDK emulator to boot up quickly. What you may have found out by now is that the emulator is slow. In fact it is only any good if you have the kind of PC that can render the entire Transformers movie in a few minutes.</para>
-      <para>If you are just interested in running Android applications on your desktop PC, a project called <ulink url="http://www.android-x86.org/">Android x86</ulink> provides a copy of the Android operating system compiled for x86 processors. The latest release is Android 2.2, which is a little bit behind Honeycomb (Android 3), but is still capable of running almost all Android applications. (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
+      <para>This tutorial shows how you can enable <ulink url="http://www.compiz-fusion.org/">Compiz Fusion</ulink> on an OpenSUSE 11.4 GNOME desktop (the system must have a 3D-capable graphics card - I&apos;m using an NVIDIA GeForce 8100 here). With Compiz Fusion you can use beautiful 3D effects like wobbly windows or a desktop cube on your desktop. (...)</para>
+<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/shell-scripts/understanding-functions/">BashShell.net/mike: Understanding Functions</ulink>
+        <ulink url="http://bashshell.net/shell-scripts/alter-your-environment-with-functions/">BashShell.net/mike: Alter Your Environment with Functions</ulink>
       </title>
-      <para>A function can help you modularize your script.  Because the function is executed in the context of the same shell, it does not create a new child process, this makes functions faster as they access the information in RAM.  This also will save on resources as you use functions.  Functions are a script within a script which can be defined by the user and stored in memory, allowing you to reuse the function repeatedly.  This also provides  a modular aspect that allows you to debug one function at a time be disabling functions. (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
+      <para>You can use functions to alter the environment of the user.  These functions can be added into the .bash_profile of an individual user or in the system wide /etc/profile.  It is best to verify the functions have no detrimental impact by using a normal user first as a test base.  You will need to enter the functions in the .bash_profile in the following format.  In this example two functions have been used and can be called with “dfh” or “duh”. (...)</para>
+<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://linuxaria.com/howto/the-dd-command-on-linux-terminal?lang=en">Linuxaria/linuxari: The dd command on Linux terminal.</ulink>
+        <ulink url="http://bashshell.net/shell-scripts/using-functions-in-a-library/">BashShell.net/mike: Using Functions in a Library</ulink>
       </title>
-      <para>dd seem an unfriendly command, but if you start to use it, you’ll see that it’s a powerful command able to do many different things, backup a partition, CD or USB stick for example or do some simple tests on the speed of your disks or your CPU. (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
+      <para>Function Library</para>
+      <para>Another way of using functions is when you create more complicated scripts is to create functions that you place in a library so that you can source them from other scripts.    These library functions can be called from a script using “source” or the “dot” command. (...)</para>
+<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxnov.com/command-line-du-disk-usage-commands-tips/">LinuxNov: Command Line | du Disk Usage Commands | Tips</ulink>
+      </title>
+      <para>du is a disk usage command allows you to easily know file and directory sizes, also you can view file and directory sizes decreasing starting by biggest file, otherwise increasing by smallest file. (...)</para>
+<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
