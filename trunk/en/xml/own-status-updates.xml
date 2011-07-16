@@ -43,21 +43,20 @@
     </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
-      <title><ulink
-          url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/"
-          >Michal Marek: Improved Kernel Package Retention in 12.1</ulink></title>
+      <title>
+        <ulink url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/">Michal Marek: Improved Kernel Package Retention in 12.1</ulink>
+      </title>
       <para>A long awaited feature of the openSUSE update stack is finally here!Since some time, it
         has been possible to tell libzypp to not delete oldkernels on update:</para>
       <para>
         <programlisting>multiversion = provides:multiversion(kernel)</programlisting>
       </para>
-      <para>in <emphasis role="italic">/etc/zypp/zypp.conf</emphasis>. That way, you don’t have to
+      <para>in&#160;<emphasis role="italic">/etc/zypp/zypp.conf</emphasis>. That way, you don’t have to
         worry that abrand new -rc kernel from Factory makes your system unbootable. This
         howeversolves one problem and brings another one – you have to manually delete theold kernel
         so that your /boot partition does not fill up. openSUSE 12.1 willprovide a solution to this,
         you will be able to tell what kernels you want tokeep after an update, other kernels will be
-        deleted. The configuration is thesame file, <emphasis role="italic"
-          >/etc/zypp/zypp.conf</emphasis>:</para>
+        deleted. The configuration is thesame file,&#160;<emphasis role="italic">/etc/zypp/zypp.conf</emphasis>:</para>
       <para>
         <programlisting>## Comma separated list of kernel packages to keep installed in parallel, if the
 ## above multiversion variable is set. Packages can be specified as
@@ -75,8 +74,7 @@ multiversion.kernels = latest,running
       <para>If you configure this and the above multiversion variable, then after eachkernel update,
         during a subsequent reboot, a script will compare the list ofinstalled kernels with the
         multiversion.kernels setting and delete those thatare no longer needed. (...)</para>
-      <!-- ($ ld: 15.7.11 sm $)-->
-    </blockquote>
+<!-- ($ ld: 15.7.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -576,7 +574,7 @@ ping DimStar or me :-)</para>
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 357)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 358)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
@@ -595,13 +593,13 @@ ping DimStar or me :-)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 156)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 157)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 136)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 139)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -617,7 +615,7 @@ ping DimStar or me :-)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 103)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 104)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -630,92 +628,112 @@ ping DimStar or me :-)</para>
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 9.7.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 16.7.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312602">Add NTP.br in openSUSE Linux 12.1</ulink>
+            <ulink url="https://features.opensuse.org/312622">add DVB-USB drivers to kernel</ulink>
           </title>
-          <para>Add NTP.br in
-<ulink url="http://en.opensuse.org/Main_Page">openSUSE Linux 12.1</ulink> :
-<ulink url="http://www.ceptro.br/CEPTRO/EnglishHome#NTP_br_Brazilian_Legal_Time_over">http://www.ceptro.br/CEPTRO/EnglishHome#NTP_br_Brazilian_Legal_Time_over</ulink></para>
+          <para>For whatever reason, the dvb-USB drivers are not shipped with openSUSE. Drivers are available (see e.g. <ulink url="http://www.linuxquestions.org/questions/showthread.php?p=4265470#post4265470">http://www.linuxquestions.org/questions/showthread.php?p=4265470#post4265470</ulink> ) but at least not in 11.4, which makes use of DVBT-Sticks quite complicated.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312608">Add Android SDK to the distribution</ulink>
+            <ulink url="https://features.opensuse.org/312627">opensuse 12.1 to use kernel 3.1</ulink>
           </title>
-          <para>For a more easy installation and benefits in a systemwide install.</para>
+          <para>I would like consideration to be given to the likely release of kernel 3.1 around the 19th of October, less than a week after RC1 opensuse 12.1 gets published.
+</para>
+          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTY2MA">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTY2MA</ulink></para>
+          <para>kernel 3.1 will bring a few noteworthy advantages -
+solution for kernel power regressions:</para>
+          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTYwMQ">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTYwMQ</ulink></para>
+          <para>possibility of support for Intels Cedar Trail platform:</para>
+          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTYyNw">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTYyNw</ulink></para>
+          <para>better KVM virtualisation support:</para>
+          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTU3NQ">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTU3NQ</ulink></para>
+          <para>better Nouveau DRM support for fermi:</para>
+          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTYzNQ">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTYzNQ</ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312610">Include slab in 12.1 fallback</ulink>
+            <ulink url="openSUSE Linux 12.1: Increased variety of packages, all packages...">openSUSE Linux 12.1: Increased variety of packages, all packages...</ulink>
           </title>
-          <para>If you hold down the alt key and right click anywhere on the panels, you&apos;ll find it&apos;s the same stuff when it comes to customizing the panels and applets. Since slab is an applet and menu, it is possible to include and integrate slab with GNOME 3.2 if it retains fall back mode. Or at least include slab in the repos so it can be installed and one can tweak GNOME fallback to have it. It would be complementary to how Ubuntu included the Ubuntu Classic Desktop for those either unable to run Unity or didn&apos;t like Unity.</para>
+          <para>openSUSE Linux 12.1: Increased variety of packages, all packages in the system and all repositories (official and unofficial) stable and updated.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312617">drop libxcrypt</ulink>
+            <ulink url="https://features.opensuse.org/312629">openSUSE Linux: Make it Global (Worldwide) in the World</ulink>
           </title>
-          <para>libxcrypt is nowadays mostly superfluous as glibc supports sha256 and sha512 itself. blowfish and the gensalt functions can be patched in via crypt_blowfish addon.</para>
-          <para>Needed adjustments:</para>
-          <para>- glibc</para>
-          <para>- pam</para>
-          <para>- pam-modules (pam_unix2)</para>
-          <para>- pwdutils</para>
-          <para>- yast2-core</para>
-          <para>Disadvantage:
-we currently lose support for bigcrypt.</para>
+          <para>openSUSE Linux: Make it Global (Worldwide) in the World.</para>
+          <para>Making the project&apos;s origins openSUSE Linux, which was founded by Novell, with the support of the community, truly Global (Worldwide) as it is on the project website:</para>
+          <para><ulink url="http://en.opensuse.org/Main_Page">http://en.opensuse.org/Main_Page</ulink> .</para>
+          <para><ulink url="http://distrowatch.com/table.php?distribution=debian">Debian</ulink> has its origin in DistroWatch as Global, and has the slogan:</para>
+          <para>The Universal Operating System.</para>
+          <para>OpenSUSE Linux distributions is one of the world and used by users of various profiles: Desktop, Computer Graphics, audio and video editing, developers, servers, among other areas, in different architectures and multiple languages, which makes openSUSE Linux can also be like Debian, a Linux distribution on
+<ulink url="http://distrowatch.com/table.php?distribution=suse">DistroWatch</ulink> global source and all that is talked about in openSUSE Linux world.</para>
+          <para>A new slogan for the openSUSE Linux: Linux Global for open minds.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312618">Add and improve the integration of all programs of the GNOME Office in LXDE/12.1</ulink>
+            <ulink url="https://features.opensuse.org/312630">openSUSE Linux 12.1: Make it Long Term Support (LTS)</ulink>
           </title>
-          <para>Add and improve the integration of all programs of the GNOME Office in LXDE/openSUSE Linux 12.1:</para>
+          <para>openSUSE Linux 12.1:
+
+Make it
+<ulink url="https://wiki.ubuntu.com/LTS">Long Term Support (LTS)</ulink> . </para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312631">openSUSE Linux 12.1: Follow all specifications (minimum requirements)...</ulink>
+          </title>
+          <para>openSUSE Linux 12.1: Follow all specifications (minimum requirements) of the
+<ulink url="http://en.wikipedia.org/wiki/United_Linux">United Linux</ulink> :
+
+    </para>
           <itemizedlist>
             <listitem>
-              <para><ulink url="http://abisource.com/">AbiWord</ulink> - word processor</para>
+              <para><ulink url="http://en.wikipedia.org/wiki/Linux_kernel">Linux kernel</ulink> 2.4.18 or higher</para>
             </listitem>
             <listitem>
-              <para><ulink url="http://projects.gnome.org/evince/">Evince</ulink> - document viewer</para>
+              <para><ulink url="http://en.wikipedia.org/wiki/GNU_C_Library">GNU C Library</ulink> 2.2.5</para>
             </listitem>
             <listitem>
-              <para><ulink url="http://projects.gnome.org/evolution/">Evolution</ulink> - groupware and e-mail application</para>
+              <para><ulink url="http://en.wikipedia.org/wiki/Linux_Standard_Base">Linux Standard Base</ulink> compliant (
+    <ulink url="http://en.wikipedia.org/wiki/Linux_Standard_Base">LSB</ulink> 4.1 (or higher)).</para>
             </listitem>
             <listitem>
-              <para><ulink url="http://projects.gnome.org/gnumeric/">Gnumeric</ulink> - spreadsheet</para>
+              <para>OpenI18N (formerly LI18NUX) compliant (
+    <ulink url="http://en.wikipedia.org/wiki/Internationalization_and_localization">internationalization and localization</ulink> )</para>
             </listitem>
             <listitem>
-              <para><ulink url="http://inkscape.org/">Inkscape</ulink> - vector graphics editor</para>
+              <para><ulink url="http://en.wikipedia.org/wiki/GB18030">GB18030</ulink> compliant (the standard
+    <ulink url="http://en.wikipedia.org/wiki/CJK">CJK</ulink> <ulink url="http://en.wikipedia.org/wiki/Character_encoding">character encoding</ulink> used in
+    <ulink url="http://en.wikipedia.org/wiki/China">China</ulink> )</para>
             </listitem>
             <listitem>
-              <para><ulink url="http://ease-project.org/">Ease</ulink> - presentation tool (recently initiated project)</para>
+              <para><ulink url="http://en.wikipedia.org/wiki/GNU_Compiler_Collection">GCC</ulink> 3.1</para>
             </listitem>
             <listitem>
-              <para><ulink url="http://www.gimp.org/">GIMP</ulink> - raster graphics editor</para>
+              <para><ulink url="http://en.wikipedia.org/wiki/XFree86">XFree86</ulink> 4.2</para>
             </listitem>
             <listitem>
-              <para><ulink url="https://launchpad.net/simple-scan">Simple Scan</ulink> - graphical scanner frontend</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://live.gnome.org/Dia/">Dia</ulink> - diagram editor</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://www.gnucash.org/">GnuCash</ulink> - accounting software</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://live.gnome.org/Planner/">Planner</ulink> - project management tool</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://glom.sourceforge.net/">Glom</ulink> - similar to FileMaker</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://www.gnome-db.org/">GNOME-DB</ulink></para>
+              <para><ulink url="http://en.wikipedia.org/wiki/KDE">KDE</ulink> 3.0</para>
             </listitem>
           </itemizedlist>
+          <para>Techniques for internationalization and localization (I18N and L10N), among others.
+
+All versions of these specifications (minimum requirements) must be stable and always updated.
+
+For that improve support for Asian languages, among other languages​​.</para>
         </blockquote>
-<!-- ($ ld: 9.7.11 sat *replaced with newer ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312632">openSUSE Linux 12.1/LXDE: Create files with the right click mouse on my...</ulink>
+          </title>
+          <para>openSUSE Linux 12.1/LXDE: Create files with the right click mouse on my desktop programs installed on your system.</para>
+        </blockquote>
+<!-- ($ ld: 16.7.11 sat *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
