@@ -25,161 +25,330 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink url="http://alex.eftimie.ro/2011/07/02/packagekit-backend-for-software-center-short-week-5-report/">Alex Eftimie: PackageKit backend for Software Center: short week 5 report</ulink>
+      <ulink
+        url="http://alex.eftimie.ro/2011/07/02/packagekit-backend-for-software-center-short-week-5-report/"
+        >Marcus Hüwe: osc code cleanup – summary of week 7</ulink>
     </title>
-    <para>This week I continued work on the install backend, especially connecting the PackageKit transaction signals to the software-center’s TransactionWatcher (also abstracted by me some time ago).</para>
-    <para>The challenge stands in differences from PackageKit and AptDaemon, such as in AD, after preparing a transaction and manually commiting it,  one has access to the transaction object, and can watch for progress changes; in PK, after a transaction is launched, there are two ways of getting access to it: first by listening to a TransactionListChanged signal in D-Bus and second by watching the objects returned by the progress_callback callback.</para>
-    <para>The current approach, helped closely by hue-see (hughsie) on #PackageKit is to get the transactions from the callback and listen to the gobject notify::&lt;property&gt; signals.</para>
-    <para>More to come next week, stay tuned!
-</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para> Here’s a small summary of the 7th (coding) week. This week I spentmost my time with the
+      project and package classes which manage osc’sworking copies.</para>
+    <para>Done:<itemizedlist>
+        <listitem>
+          <para>basic working copy layout</para>
+        </listitem>
+        <listitem>
+          <para>checks to detect broken/corrupt working copies</para>
+        </listitem>
+        <listitem>
+          <para>locking support (in order to lock a working copy (for instance whendoing a commit or
+            an update))</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>TODO:<itemizedlist>
+        <listitem>
+          <para>add “core” methods like update, commit, diff etc.</para>
+        </listitem>
+        <listitem>
+          <para>(auto-) repair methods (to fix broken working copies)</para>
+        </listitem>
+      </itemizedlist></para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://alex.eftimie.ro/2011/07/08/packagekit-backend-for-software-center-week-6-report/">Alex Eftimie: PackageKit backend for Software Center: week 6 report</ulink>
+      <ulink url="http://obsforandroid.wordpress.com/2011/07/14/mid-term-project-review/">Justine
+        Leng: Mid-term Project Review</ulink>
     </title>
-    <para>Hi everyone, for this week report I would like to show you a screencast with the packagekit-backend branch of software-center: (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>Completed:<itemizedlist>
+        <listitem>
+          <para>Set up a local development instance of the build service webclient</para>
+        </listitem>
+        <listitem>
+          <para>Created a <ulink
+              url="https://gitorious.org/~justineleng/opensuse/justineleng-build-service">local
+              branch</ulink> of the project on Gitorious</para>
+        </listitem>
+        <listitem>
+          <para>Accumulated community feedback on mobile view changes and enhancements, which
+            provides general directions and specs for development for the next few weeks</para>
+        </listitem>
+        <listitem>
+          <para>Coded changes in views (code for mobile view UI is practically done;</para>
+        </listitem>
+        <listitem>
+          <para>just need to implement actions for those views in controller)</para>
+        </listitem>
+        <listitem>
+          <para>Committed and pushed a batch of changes to master branch</para>
+        </listitem>
+        <listitem>
+          <para>Kept detailed documentation in project <ulink
+              url="http://obsforandroid.wordpress.com/">blog</ulink> and <ulink
+              url="http://en.opensuse.org/openSUSE:GSOC2011_OBS_Mobile">Wiki</ulink></para>
+        </listitem>
+      </itemizedlist></para>
+    <para>In the end, the OBS mobile request views will look probably like this: (...)</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://rxvl.in/post/7219106912/gsoc-2011-ssc-week-6">Ratan Sebastian: GSOC 2011: ssc Week 6</ulink>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00037.html">N B
+        Prashanth: GsoC Midterm Consolidated Report - Separating libYUI</ulink>
     </title>
-    <para>Most of the work this week has gone into the File Handler. Adding and removing files in appliances has been implemented although there is a lot of work left to be done to make this robust. Right now its pretty basic. However I’m going to ease up on adding functionality right now to make the app more robust and usable. The mid-term evaluations are coming up and the plan is to have a usable app that is community tested by then. Not to say that new features won’t be added over the next two weeks, but it will be a second priority. In making the app more stable, the following things will be addressed:</para>
-    <orderedlist>
-      <listitem>
-        <para>Ruby 1.8.7 (backward) compatibility</para>
-      </listitem>
-      <listitem>
-        <para>Extended test-suite including integration tests which require a network connection</para>
-      </listitem>
-      <listitem>
-        <para>Better error handling.</para>
-      </listitem>
-      <listitem>
-        <para>A method to roll back changes in case of failure.</para>
-      </listitem>
-      <listitem>
-        <para>Documentation.</para>
-      </listitem>
-    </orderedlist>
-    <para>That will be the focus over the next two weeks building up to the mid-term evaluation. Thank you for reading. As always you can check out the core <ulink url="http://gitorious.org/ssc/ssc">here</ulink>.</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>I would like to summarize my progress so far. I am working on thelibyui project as
+      mentioned above. (...)</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://nbprashanth.wordpress.com/2011/07/04/yui-moves-to-sourceforge/">N.B.Prashanth: YUI moves to SourceForge</ulink>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00038.html">Mihnea
+        Dobrescu-Balaur: Suse Bug Reporter - GSoC midterm reports</ulink>
     </title>
-    <para>Over the last month, libYUI has significantly expanded. It is an independent framework and is avalable outside the SUSE framework making it accessible to a wide audience. This has resulted in the project having distributed content on the web. For example, the source code is maintained at gitorious.org (currently svn.opensuse.org) and the documentation at docs.opensuse.org etc. YUI does not have it’s own mailing list and the issues are still being dealt with on the yast ML. Considering all this, we thought that it would be good to have a central place where from all the resources can be accessed. Thus, we bring to you, <ulink url="http://sourceforge.net/projects/libyui/">sourceforge.net/projects/libyui/</ulink>.</para>
-    <para>This means that :</para>
-    <orderedlist>
-      <listitem>
-        <para>YUI has it’s own bug tracker. Any bugs/feature requests should be reported at the sourceforge page.</para>
-      </listitem>
-      <listitem>
-        <para>YUI will not maintain it’s source code at SF as we are already porting the code to gitorious.org.</para>
-      </listitem>
-      <listitem>
-        <para>Current release tarballs can be found at the SF downloads page.</para>
-      </listitem>
-      <listitem>
-        <para>Mailing List for YUI can be found at libyui-devel@lists.sourceforge.net. This can be used for all YUI (not YaST) related discussions.</para>
-      </listitem>
-      <listitem>
-        <para>Webpage for YUI along with examples and links to external resources will be up soon.</para>
-      </listitem>
-      <listitem>
-        <para>Forum for YUI related topics is available at SF.</para>
-      </listitem>
-    </orderedlist>
-    <para>So, stay tuned to sourceforge to keep track of YUI!</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>The expected/requested functionalities for the project are done. I'mtalking about the CLI
+      version of the tool.Its main functionalities are splitted in four categories at the moment:
+      (...)</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lizards.opensuse.org/2011/07/04/gsoc-osc-code-cleanup-%E2%80%93-summary-of-week-6/">Marcus Hüwe: [gsoc] osc code cleanup – summary of week 6</ulink>
+      <ulink url="http://www.sebastianoliva.com/en/2011/07/gsoc-midterm-report/">Sebastian Oliva:
+        GSOC, midterm reports</ulink>
     </title>
-    <para>here’s a small summary of the 6th (coding) week. Unfortunately I had
-to spent more time with university stuff than I expected – that’s why
-I didn’t finish the complete todo for this week.
-I did some code restructuring and started to work on the class for the
-source route.</para>
-    <para>TODO:</para>
-    <para>- rewrite the project and package working copy classes:</para>
-    <itemizedlist>
-      <listitem>
-        <para>the new working copy format will be incompatible with the current
-    format.</para>
-      </listitem>
-    </itemizedlist>
-    <itemizedlist>
-      <listitem>
-        <para>the basic layout will look like this:</para>
-      </listitem>
-    </itemizedlist>
-    <para>prj</para>
-    <para>|</para>
-    <para>—&gt; .osc/ (stores prj _and_ pkg metadata)</para>
-    <para>|</para>
-    <para>—&gt; pkg1</para>
-    <para>#       |</para>
-    <para>#        —&gt; &lt;files&gt;
-    </para>
+    <para>This is my mid-term report for my GSoC project for the openSUSE project. As for now, I
+      have a basic working web service, using Python and MongoDB. I have implemented the JSON device
+      properties specification by the OpenICC group. The web service still needs improvements on
+      look, and to improve error handling.</para>
+    <para>The code is available on <ulink url="https://gitorious.org/gsoc-2011/gsoc-2011"
+        >gitorious.org/gsoc-2011/gsoc-2011\</ulink></para>
+    <para>The objectives are now:<itemizedlist>
+        <listitem>
+          <para>Creating a Gnome/GTK, and a KDE client to submit and retrieve profiles
+            automatically</para>
+        </listitem>
+        <listitem>
+          <para>Performance profiling</para>
+        </listitem>
+        <listitem>
+          <para>Improving look and feel</para>
+        </listitem>
+        <listitem>
+          <para>Improving the search algorithm</para>
+        </listitem>
+        <listitem>
+          <para>100% test coverage and more testing</para>
+        </listitem>
+        <listitem>
+          <para>Clearing up requirements to apply for infrastructure support on the openSUSE project
+            (including creating an snazzy project name </para>
+        </listitem>
+      </itemizedlist></para>
+    <para>That’s it for the midterms, feel free to comment or contacting me,</para>
+    <para>Regards, Sebastian</para>
+    <!-- ($ ld: 16.7.11 sm $)-->
   </blockquote>
   <blockquote>
-    <para>…</para>
-    <para>|</para>
-    <para>—&gt; pkgN</para>
-    <para>#       |</para>
-    <para>#        —&gt; &lt;files&gt;</para>
-    <para>So all metadata is stored in the prj/.osc dir instead of prj/pkg/.osc
-    The advantage is that we can support a complete package
-    “restore” (without the need to download the package again):</para>
-    <para>cd prj; rm -r pkg; osc revert/restore pkg;</para>
-    <para>(that’s possible because the metadata is stored in the prj/.osc
-    dir).</para>
-    <itemizedlist>
-      <listitem>
-        <para>to convert old project/package working copies to the new format
-    the “osc repairwc” command can be used (at least that’s the plan)</para>
-      </listitem>
-    </itemizedlist>
-    <para>Feedback is always welcome.</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00043.html">Eric
+        Yang: Porting Wubi to OpenSUSE [midterm report]</ulink>
+    </title>
+    <para>here is an overview of my project:work has been done:<itemizedlist>
+        <listitem>
+          <para>wubi program has been modified so that it could do the first installationstage work
+            for openSUSE, including iso image download/validation, creationof related files in
+            windows, and collection information for automaticinstallation.</para>
+          <para>after the windows program running and exit, there will be an install entry inwindows
+            boot menu, the automatic installation would follow that entry.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Work to do:<itemizedlist>
+        <listitem>
+          <para>patch the init program so that it could recognize virtual disks which areregular
+            files under widows.</para>
+        </listitem>
+        <listitem>
+          <para>create customized autoyast control file to support automatic installation.</para>
+        </listitem>
+      </itemizedlist>Current Ptoblem:<itemizedlist>
+        <listitem>
+          <para>the "init" program in initrd is a single binary program (in Ubuntu it's a shell
+            script), which is hard to patch on the fly.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>if you have any suggestion or comment, please do not hesitate to send me:)</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://sysbytes.wordpress.com/2011/07/08/sax3-get-your-hands-dirt/">Manu Gupta: SaX3 – Get your hands dirty</ulink>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00057.html">Ratan
+        Sebastian: SSC Project mid-term reports</ulink>
     </title>
-    <para>Its been a long time I posted anything, but things look promising now, SaX3 is moving forward and 2 of its module have been completed, the keyboard module and the mouse module, so please test it and give me your feedbacks and if there are any bugs. BUGS will certainly be squashed, I dont know about UI changes. Suggestions are welcome. I plan to work on touchpads next. (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>The following is the mid-term report for the SSC (Suse Studio Comandline Client)
+      Project</para>
+    <para>Tasks completed:<itemizedlist>
+        <listitem>
+          <para>Framework for the command line client including argument parser andhandlers for the
+            various accessible "objects"(repos, packages, files,templates) in Suse Studio.</para>
+        </listitem>
+        <listitem>
+          <para>Directory management utilities: The app requires the creation andmanagement of an
+            appliance directory for local caching of changesuntil ready to be pushed to
+            Studio.</para>
+        </listitem>
+        <listitem>
+          <para>Test suite for those actions that are independent of the web API</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Tasks to be completed:<itemizedlist>
+        <listitem>
+          <para>The update, status and commit commands: These would be the commandsthat make use of
+            the locally cached information from the appliancedirectory. This is the last remaining
+            feature in the app.</para>
+        </listitem>
+        <listitem>
+          <para>Integration tests: Tests that include requests to the web API.Without tests of this
+            nature it is not possible to affectively testlarge portions of the app.</para>
+        </listitem>
+        <listitem>
+          <para>Documentation: code level and sample use cases.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Please do <ulink url="http://gitourious.org/ssc/ssc">checkout the code</ulink> and do a '$
+      rake install' to installthe gem. You can then try '$ ssc help' to see the usage
+      instructions.</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://cbounta.wordpress.com/2011/07/08/a-utility-for-merging-configuration-sysconfig-files-%E2%80%93-week-7-report/">Christos Bountalis: A utility for merging configuration / sysconfig files – Week 7 Report</ulink>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00058.html">Christos
+        Bountalis: Utility of merging configuration sysconfig files -Midterm-</ulink>
     </title>
-    <para>This is the 7th week report for my GSoC project. During the implementation of the matching procedures, i talked in my last blog post, there were some new developments concerning the project. That made the actual matching procedure halt for a while, because there are no effective way at the moment to test the matching progress in the actual implementation. Where is the problem? The problem that occurred is the handling of the special comments that are used in many of the sysconfig files. These comments may appear next to simple description comments but contain useful information that are then interpreted by the program, such information could be for example the type of a variable etc. So what now? This week I am trying to find an effective way to deal with this problem, the initial idea i have is to modify the sysconfig lens, used by Augeas, in order to represent the sysconfig files in a tree form (with more levels that the current) that will be suitable for the matching/sorting algorithms i have already implemented. (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>This e-mail is a brief summary of the progress in the project till this moment as part of
+      the midterm evaluation. </para>
+    <para>What is done until done:<itemizedlist>
+        <listitem>
+          <para>created and retaining a git repo for testing purposes</para>
+        </listitem>
+        <listitem>
+          <para>learn the basic of obs that will be needed of the integration in opensuseand created
+            the appropriate repo</para>
+        </listitem>
+        <listitem>
+          <para>Getting familiar with the Augeas procedures,api etc</para>
+        </listitem>
+        <listitem>
+          <para>created a find lens procedure and created my first patch :)</para>
+        </listitem>
+        <listitem>
+          <para>Created the tree traversal and tree matching functions</para>
+        </listitem>
+        <listitem>
+          <para>Modified the augtool of Augeas, in order to be able to carry the above
+            actions </para>
+        </listitem>
+        <listitem>
+          <para>Created some other utility functions necessary for the above</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>So what is to do till the end of the GSoC:<itemizedlist>
+        <listitem>
+          <para>Finish the matching procedures.</para>
+        </listitem>
+        <listitem>
+          <para>Test and work on the sysconfig lens used by Augeas.</para>
+        </listitem>
+        <listitem>
+          <para>Integrate the utility in opensuse</para>
+        </listitem>
+        <listitem>
+          <para>Finish the documentation</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>This is all i can think at the moment, you can find more information in the previous
+      messages i sent in this list as well as in my blog <ulink url="http://cbounta.wordpress.com/"
+        >http://cbounta.wordpress.com/</ulink> I am back to work cause time is ticking and there are
+      many things to be done :) </para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://forums.opensuse.org/english/other-forums/community-fun/opensuse-wiki-discussions/">Justine Leng: git commit</ulink>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00061.html">Nikolay
+        Rysev: Archlinux backend for Open Build Service midterm reports</ulink>
     </title>
-    <para>Finally committed and pushed a batch of changes I had made on request views and project/page views to the master branch. See diffs on Gitorious: <ulink url="https://gitorious.org/~justineleng/opensuse/justineleng-build-service">https://gitorious.org/~justineleng/opensuse/justineleng-build-service</ulink> (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>Sorry for the long silence, I had some problems with my health, butnow all is ok.This mail
+      is brief midterm report for «Archlinux backend for OBS».</para>
+    <para>What is done:<itemizedlist>
+        <listitem>
+          <para>Arch module for build which can:<itemizedlist>
+              <listitem>
+                <para>parse PKGBUILDs and extract dependencies</para>
+              </listitem>
+              <listitem>
+                <para>parse .PKGINFO files from .pkg.tar.?z pakages and get info about it</para>
+              </listitem>
+            </itemizedlist></para>
+        </listitem>
+        <listitem>
+          <para>Helper script, which gets repository metadata and prints informationabout packages
+            in build corresponding format (package metadata parsingfunctions are also in arch
+            module, so anyone can use them if needed)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>What is needed now for ability to build packages:<itemizedlist>
+        <listitem>
+          <para>Setup build environment in init_buildsystem</para>
+        </listitem>
+        <listitem>
+          <para>Support for calling makepkg in build script</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>What is also to be done:<itemizedlist>
+        <listitem>
+          <para>Integration into OBS</para>
+        </listitem>
+        <listitem>
+          <para>Documentation</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>You can find the code in my <ulink
+        url="https://gitorious.org/~madgnu/opensuse/madgnu-archlinux-build">repository on
+        gitorious</ulink>.If you have any questions or suggestions — welcome!</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://verybin.tumblr.com/post/7194777955/weekly-report-3">Eric Yang: Porting Wubi to OpenSUSE [weekly report #3]</ulink>
+      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00067.html">David
+        Williams: Entomologist UI Changes - Midterm Reporter</ulink>
     </title>
-    <para>the windows’ side of this app works fine now, that means the tool will do the preparation work like download and check iso image, create virtual disk file, create installation entry and so on. the left work is done after reboot — the real installation progress, that’s the main part I was/am focusing on.</para>
-    <para>during the past week, I was focusing on modification of boot settings, as there is no detailed log info for boot progress, the project did not evolve very smoothly:( problem is that installer can not create loop device successfully after reboot. I will try my best to solve this problem in this week.</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://redache.wordpress.com/2011/07/08/entomologist-ui-changes-weekly-report-7/">David Williams: Entomologist UI Changes Weekly Report #7</ulink>
-    </title>
-    <para>This week I&apos;ve been focused on adding TODO list functionality to Entomologist.
-I haven&apos;t quite finished the implementation but it is nearing basic completion.
-Once I&apos;ve finished the UI/core functionality I will then work on adding cloud
-connection features so that the lists can be synced with various calendar
-services/WebDAV servers.</para>
-    <para>My plan for next week is to:</para>
-    <para>- Finish up the UI/core functionality.</para>
-    <para>- Start the cloud integration once this is wholly complete.</para>
-    <para>By this time next week I&apos;ll hopefully have much more to show off to coincide
-with the Midterm point :).</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <para>You can find my midterm report at <ulink
+        url="http://redache.wordpress.com/2011/07/14/midterm-report-things-completed-so-far/"
+        >http://redache.wordpress.com/2011/07/14/midterm-report-things-completed-so-far/</ulink> and
+      the text below. I really recommend reading the blog post as it has screenshots of everything
+      :).</para>
+    <para>This report is a summary of all the work that I've completed so far for my Summer of Code
+      and what is to come :).</para>
+    <para>Porting Entomologist to Windows and Mac OS X:Entomologist works mostly flawlessly on Mac
+      OS X. Windows was an awkward platform to port for and it still doesn't function as well as it
+      could but once we hit version 1.0 a lot of the problems can be addressed.</para>
+    <para>Tabbed Interface for selecting Trackers:</para>
+    <para>This took a few weeks to complete as it was awkward to get everything to work correctly, I
+      also had the learning curve/understanding new code slowing me down whilst doing it. Overall
+      I'm pretty happy with how it looks and how it works.</para>
+    <para>New Comments Dialog:</para>
+    <para>Next on the list was creating a New Comments Dialog. The goal was to make it easier to
+      select a bug and see the comments and add new comments for that specific bug. The dialog works
+      by either highlighting a bug in the table and hitting Ctrl + Shift + N(Cmd + Shift + N on a
+      Mac) or by clicking the new comments button in the expanded comments dialog. If no bug is
+      highlighted it defaults to opening the first bug in the list.</para>
+    <para>ToDo Lists:</para>
+    <para>This is probably the most helpful feature I've worked on throughout the project. It has
+      been a bit of a learning curve and I think I'm starting to 'Get' QT and I can definitely see
+      why QT is usually classed as better than GTK. This feature still isn't finished but it is
+      nearly all there and I'm currently working on the mechanism to add new ToDoLists. Once that's
+      completed the first basic iteration will be there and it should be useful in that
+      state.</para>
+    <para>Post Midterm Plans:</para>
+    <para>Post midterm I want to add cloud sync to the ToDoLists so you can sync the items to
+      whichever tracker you feel is appropriate. This should help in organising data and
+      recording milestones through bugs :). I think I'll start by having it export to
+      calendar formats that can be read by normal desktop viewers and they can handle the sync. But
+      the plan is to add that service integration to entomologist itself.</para>
+    <para>After that work is completed I will look at how we can integrate QML into Entomologist so
+      the trackers that it supports can be extended by using QML. This would take a lot of work away
+      from Matt as he won't have to add new trackers, the users that want them can use QML to define
+      them and they can submit them as an extension :). I think this is the best way to manage most
+      bug trackers as there are a lot of different ones out there.</para>
+    <para>So that's it for the work completed so far. Hopefully at the end we'll reach version 1.0
+      of Entomologist and move on with adding shiny new things :).</para>
+<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
 </sect1>
