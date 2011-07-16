@@ -32,6 +32,15 @@
       </title>
       <para>This tutorial shows how you can enable <ulink url="http://www.compiz-fusion.org/">Compiz Fusion</ulink> on an OpenSUSE 11.4 GNOME desktop (the system must have a 3D-capable graphics card - I&apos;m using an NVIDIA GeForce 8100 here). With Compiz Fusion you can use beautiful 3D effects like wobbly windows or a desktop cube on your desktop. (...)</para>
 <!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://chenthill.wordpress.com/2011/07/15/exchange-webservices-offline-addressbook/"
+          >Chenthill P: Exchange WebServices Offline AddressBook</ulink></title>
+      <para>It is now possible to download GAL contents for offline usage through exchange web
+        services in Evolution. Offline GAL is termed as Offline Address-book (OAB) in Exchange
+        WebServices and it may contain one or more Offline Address-lists (OAL). (...)</para>
+      <!--($ Id: 16.7.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -59,20 +68,19 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/migrate-from-svn-to-git-easily-with-git-svn/">Wazi/Juliet Kemp: Migrate from SVN to Git easily with git-svn</ulink>
+        <ulink
+          url="http://saigkill.homelinux.net/entry/2011/07/15/how-to-use-three-open-build-service-source-services-to-simplify-the-packaging"
+          >Sascha Manns: How to use three Open Build Service Source Services to simplify the
+          packaging</ulink>
       </title>
-      <para>So, you’re interested in trying out <ulink url="http://olex.openlogic.com/packages/git">Git</ulink> – or you’ve even tried it for your own private projects and liked it – but at work, the existing repositories all use <ulink url="http://olex.openlogic.com/packages/subversion">Subversion</ulink>. Maybe you plan to switch over to Git, but you want a commitment-free tryout before you take the plunge and switch wholesale. Fear not: git-svn is here to help you. (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://drdobbs.com/tools/231000894">Dr. Dobb&apos;s/Stefan Wörthmüller: Introducing Multithreading to Mature Desktop Applications</ulink>
-      </title>
-      <para><emphasis role="bold">A crash course tutorial</emphasis></para>
-      <para>Today, all programs must parallelize tasks if they are to enjoy the power available through multicore processors. Until recently, though, parallel programming was the domain of server programmers and their scientific counterparts. Now, programmers from other domains are faced with the problem of migrating existing applications from serial to multithreaded architectures.</para>
-      <para>The good news is that you do not have to migrate your whole application. The migration can be done step by step, and a large portion of the code does not need to be migrated at all: Most programs spend 80 to 90 percent of their runtime in 5 to 10 percent of their code. If your application has 100,000 lines of code, it&apos;s probably sufficient to parallelize 5,000 to 10,000 lines to get most of the lift of parallelism. Still, that&apos;s a lot of work.</para>
-      <para>This article shows how to introduce multithreading to mature desktop applications written in C and C++. These applications usually have some attributes that make it more difficult to introduce multithreading: They often consist of old code with many nooks and crannies whose functions are undocumented and unknown, or they are GUI applications with a single main thread. Let&apos;s explore how to migrate these applications. (...)</para>
-    </blockquote>
+      <para>This is a short HowTo about using the OBS Source Services.Sometimes a packager has a
+        package who changes the Sourcecode very often. So the packager has to choose: On the first
+        hand he can checkout the code from git or svn makes a tar.gz or bz2 from it or he can use
+        the Source Services from the Buildservice. But how to do that? In the following Example i'm
+        using calligra from the KDE:Active Repository. (...)</para>
+<!-- ($ Id: 16.7.11 sm $)-->    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
@@ -82,19 +90,6 @@
       <para>Today I want to introduce a new feature of SLES11 SP2. Usually you use AutoYaST to do fresh installations of a system including formatting the partitions and do all kind of new-system configuration in your AutoYaST XML.
 With SLES11 SP2 you’ll have the option of doing unattended upgrades of a previously installed systems too.</para>
       <para>Imagine you have a running SLES10 SP4 and want to upgrade it now to SLES11 SP2 with AutoYaST, what are the steps to do that? (...)</para>
-<!-- ($ Id: 10.7.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.techrepublic.com/blog/opensource/how-to-remove-duplicate-files-without-wasting-time/2667">TechRepublic/Marco Fioretti: How to remove duplicate files without wasting time</ulink>
-      </title>
-      <para>Duplicate files can enter in your computer in many ways. No matter how it happened, they should be removed as soon as possible. Waste is waste: why should you tolerate it? It’s not just a matter of principle: duplicates make your backups, not to mention indexing with Nepomuk or similar engines, take more time than it’s really necessary. So let’s get rid of them. (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxjournal.com/content/safer-access-without-passwords">Linux Journal/Johan Thelin: Safer Access without Passwords</ulink>
-      </title>
-      <para>How do you make sure that your passwords are safe? You can make them longer, complicate them by adding odd characters, making sure to use different passwords for each user account that you have. Or, you can simply skip them all together.</para>
-      <para>The secure shell, ssh, is a key tool in any Linux user&apos;s toolbox. As soon as you have more than one machine to interact with, ssh is the obvious choice. (...)</para>
-<!-- ($ Id: 8.7.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
 </sect1>

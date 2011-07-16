@@ -48,29 +48,19 @@
     <para>There is no API-incompatible change in this release.</para>
 <!-- ($ ld: 15.7.11 sm $)-->  </blockquote>
   <blockquote>
-    <title>
-      <ulink url="http://www.marques.so/2011/07/the-%C2%ABbanshee%C2%BB-incident-a-horror-tale-by-nmarques/">Nelson Marques: The «Banshee» incident…</ulink>
-    </title>
-    <para>The latest unstable version of Banshee (2.1.0) introduced quite a few changes and one of the most visible was the replacement of NDesk.DBus by DBus. This change came with a huge pedagogic charge on me…</para>
-    <para>Since the changes with this version of Banshee were so deep, I’ve decided to re-write the spec and cleanup as much as I could and ditch as much expressions as possible for old unsupported platforms. This went fine but on the first builds failed heavily by not finding a required assembly file from dbus-sharp-glib.</para>
-    <para>My first investigations provided me some really accurate information:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Local tests on the dbus-sharp-glib packages showed evidence that the dependencies required were working properly (rpm -qp –requires/provides).</para>
-      </listitem>
-      <listitem>
-        <para>OBS showed evidence that both devel and normal package were installed.</para>
-      </listitem>
-      <listitem>
-        <para>A simple “rpm -qa –last” inside of the build root cage showed evidence that though the devel package was installed the normal package wasn’t…</para>
-      </listitem>
-    </itemizedlist>
-    <para>And so the nightmare begun… Without having much clues on where to look for and with my helpers/mentors busy with far more important stuff it dragged for some time and started to grind my mind… (...)</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://tml-blog.blogspot.com/2011/07/i-am-just-debugging-well-not-really-i.html">Tor Lillqvist: First debugging session of LibreOffice code on iOS (simulator)</ulink>
-    </title>
-    <para>I am just debugging (well, not really, I am not expecting anything to actually do much interesting) for the first time cross-compiled LibreOffice code on the iOS Simulator. (So yeah, technically instruction-set-wise this is not cross-compiled, as the Simulator runs i386 code, too, but under a simulated iOS environment.) Not really that exciting, but still, couldn&apos;t help blogging. No, there is still nothing to &quot;beta test&quot;, there is still no actual LibreOffice UI showing up or even any code to draw a single pixel on iOS.</para>
-<!-- ($ ld: 10.7.11 sat $)-->  </blockquote>
+    <title><ulink url="http://kohei.us/2011/07/15/mdds-moves-to-git/">Kohei Yoshida: mdds moves to
+      git</ulink></title>
+    <para>Following the announcement that <ulink
+      url="http://www.infoq.com/news/2011/07/google-git">Google Code finally gets git
+      support</ulink>, I’ve migrated my mddssource code repository from the old mercurial one to
+      a new git one. For anyone who has the old mercurial repository of <ulink
+        url="http://code.google.com/p/multidimalgorithm/">mdds</ulink> checked out, please switch
+      to the new git repo. Refer to <ulink
+        url="http://code.google.com/p/multidimalgorithm/source/checkout">this page</ulink> on how
+      to check out the new git-based mdds repository.</para>
+    <para>As for doing the actual migration, <ulink
+      url="http://hivelogic.com/articles/converting-from-mercurial-to-git/">this blog
+      post</ulink> was very helpful.</para>
+    <!-- ($ Id: 16.7.11 sm $)-->
+  </blockquote>
 </sect1>
