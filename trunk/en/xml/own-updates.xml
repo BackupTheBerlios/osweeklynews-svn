@@ -24,29 +24,44 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
     <title>
-            <ulink url="http://lizards.opensuse.org/2011/07/12/zippl-again-now-in-the-package/"
-                >Klaas Freitag: Zippl again – now in the package</ulink>
+            <ulink
+                url="http://lizards.opensuse.org/2011/07/17/steampunk-beautiful-theme-for-kdm-and-ksplash/"
+                >Richard Bos: Steampunk beautiful theme for KDM and ksplash</ulink>
         </title>
-        <para>Some might remember my hackweek project Zippl. I <ulink
-                url="http://lizards.opensuse.org/2010/06/11/zippl-a-lightweigth-presentation-tool/"
-                >blogged about it</ulink> more than a year ago. Zippl is a lightweigt presentation
-            tool, a bit like prezi, a hipp tool for that purpose, where all ‘slides’ sit on one
-            large canvas and during the presentation a kind of camera moves over the canvas.</para>
-        <para>I liked the idea and did Zippl as I wanted to play with Qt’s QGraphicsView. It takes a
-            simple xml file as input which describes the presentation and animates it as shown in
-            the video in my <ulink
-                url="http://lizards.opensuse.org/2010/06/11/zippl-a-lightweigth-presentation-tool/"
-                >older blog</ulink>.</para>
-        <para>First I thought it doesn’t make sense to continue that project. But recently, somebody
-            asked if I have built in the feature back to the previous spot as I promised almost a
-            year ago, as he wanted to do a presentation with Zippl. I couldn’t believe, and so I
-            spent an evening in the weekend to polish Zippl a bit. And because its easy with OBS, I
-            quickly built an rpm package for various openSUSEs.</para>
-        <para>Now that I worked on it a bit again I found it could also make sense on tablet
-            devices, for example to run cool Hello New User animations or small presentations for
-            ant Tilly to get some sponsorship for the new bike. Could be fun.If you want to check
-            it, please install from <ulink
-                url="http://download.opensuse.org/repositories/home:/kfreitag/">my home
-                repository</ulink>.</para>
-<!-- ($ ld: 13.7.11 sm $)-->  </blockquote>
+        <para>I created packages for the nice KDM and ksplash theme <ulink
+                url="http://kde-look.org/content/show.php/SteampunK+KSplash+Theme?content=142138"
+                >Steampunk</ulink>. For this theme a matching <ulink
+                url="http://kde-look.org/content/show.php/Brownpunk?content=135108">color
+                scheme</ulink>,<ulink
+                url="http://kde-look.org/content/show.php/Steampunk:+Map+O'+World?content=25265"
+                >wallpaper</ulink> and <ulink
+                url="http://kde-look.org/content/show.php/SteamPunk?content=140755">mouse
+                theme</ulink> exist and those are packed in the same rpm. <ulink
+                url="http://www.youtube.com/watch?v=f3ubaXe8wDE">Youtube shows the theme in
+                action</ulink> for Kubuntu, the version in the rpm is distribution neutral. The rpm
+            can be obtained from the <ulink
+                url="http://software.opensuse.org/search?q=steampunk&amp;baseproject=openSUSE%3A11.4&amp;lang=nl&amp;include_home=true&amp;exclude_debug=true"
+                >home:rbos repository</ulink>, I hope you enjoy the theme.</para>
+<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
+    <blockquote>
+        <title><ulink url="http://lizards.opensuse.org/2011/07/17/new-package-squidview-available/"
+                >Bruno Friedmann: new package squidview available</ulink></title>
+        <para><emphasis role="bold">squidview</emphasis></para>
+        <para>squidview is one of the software, I’ve always build and installed on each squid proxy
+            server I build for me or customers. It’s small, stable, and usefull. So it was a clear
+            real nice candidate to be use to improve my <ulink url="http://openbuild-system.org/"
+                >obs</ulink> and packager skiil.</para>
+        <para>I would like to thanks T1loc, yaloki, mrdocs, coolo, alin, and all others great
+            packagers around, for helping and teaching me during the process.</para>
+        <para><emphasis role="bold">Introduction</emphasis></para>
+        <para>Squidview is an interactive console program which monitors and displays squid logs in
+            a nice fashion, and may then go deeper with searching and reporting functions.</para>
+        <para>(If you don’t know what squid is or does this program is probably not for you.)</para>
+        <para>To use squidview you must at least have read access to squid’s access.log file. You
+            may need to see your administrator for this. Squidview uses this text log file for all
+            operations. It does not generate its own database for tasks.</para>
+        <para>homepage <ulink url="http://www.rillion.net/squidview/"
+                >www.rillion.net/squidview</ulink> (...)</para>
+        <!-- ($ ld: 18.7.11 sm $)-->
+    </blockquote>
 </sect1>

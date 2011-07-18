@@ -44,37 +44,66 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/">Michal Marek: Improved Kernel Package Retention in 12.1</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/07/18/factory-progress-2011-07-18/">Andreas
+          Jaeger: Factory Progress 2011-07-18</ulink>
       </title>
-      <para>A long awaited feature of the openSUSE update stack is finally here!Since some time, it
-        has been possible to tell libzypp to not delete oldkernels on update:</para>
-      <para>
-        <programlisting>multiversion = provides:multiversion(kernel)</programlisting>
-      </para>
-      <para>in&#160;<emphasis role="italic">/etc/zypp/zypp.conf</emphasis>. That way, you don’t have to
-        worry that abrand new -rc kernel from Factory makes your system unbootable. This
-        howeversolves one problem and brings another one – you have to manually delete theold kernel
-        so that your /boot partition does not fill up. openSUSE 12.1 willprovide a solution to this,
-        you will be able to tell what kernels you want tokeep after an update, other kernels will be
-        deleted. The configuration is thesame file,&#160;<emphasis role="italic">/etc/zypp/zypp.conf</emphasis>:</para>
-      <para>
-        <programlisting>## Comma separated list of kernel packages to keep installed in parallel, if the
-## above multiversion variable is set. Packages can be specified as
-## 2.6.32.12-0.7 - Exact version to keep
-## latest        - Keep kernel with the highest version number
-## latest-N      - Keep kernel with the Nth highest version number
-## running       - Keep the running kernel
-## oldest        - Keep kernel with the lowest version number (the GA kernel)
-## oldest+N      - Keep kernel with the Nth lowest version number
-##
-## Default: Do not delete any kernels if multiversion = provides:multiversion(kernel) is set
-multiversion.kernels = latest,running
-</programlisting>
-      </para>
-      <para>If you configure this and the above multiversion variable, then after eachkernel update,
-        during a subsequent reboot, a script will compare the list ofinstalled kernels with the
-        multiversion.kernels setting and delete those thatare no longer needed. (...)</para>
-<!-- ($ ld: 15.7.11 sm $)-->    </blockquote>
+      <para>I’ve noticed the following changes that might interest people using and developing
+        openSUSE Factory:</para>
+      <para><emphasis role="bold">Package changes</emphasis></para>
+      <para><emphasis role="bold">GNOME 3.1.3</emphasis></para>
+      <para>The GNOME team plans to have GNOME 3.2 in for openSUSE 12.1 and thus have updated to the
+        current development release 3.1.3. They have also started removing old GNOME 2 packages that
+        are not needed anymore.</para>
+      <para><emphasis role="bold">systemd</emphasis></para>
+      <para>Frederic gave an <ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00288.html">update</ulink> on
+        systemd integration. The graphical bootloader allows now to switch during boot between
+        systemd, SysVinit and also shell code.</para>
+      <para>Also, Lennart Poettering wrote in his “systemd for developers” series about <ulink
+          url="http://0pointer.de/blog/projects/socket-activation2.html">socket
+        activation</ulink> where he uses cups as example.</para>
+      <para><emphasis role="bold">hal</emphasis></para>
+      <para>The hal daemon has been dropped from Factory after all users with clean spec files have
+        been changed to work with the successors of hal like udisk and udev.</para>
+      <para><emphasis role="bold">samba</emphasis></para>
+      <para>Samba is getting updated to <ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00261.html">3.6.0</ulink>, one
+        of its major <ulink url="http://ftp.samba.org/pub/samba/rc/WHATSNEW-3-6-0rc2.txt"
+          >features</ulink> is full SMB2 support.</para>
+      <para><emphasis role="bold">Linux Kernel Headers</emphasis></para>
+      <para>Linux kernel 2.6.38 removed the Video for Linux v1 support and also the file
+        linux/videodev.h. Since we now use the Linux Kernel 3.0, applications using the old
+        interface need to be converted. A replacement is libv4l1-videodev.h from libv4l-dev &gt;=
+        0.8.4.</para>
+      <para><emphasis role="bold">Keeping old kernel(s) while installing new ones</emphasis></para>
+      <para>Michal Marek descripes in his <ulink
+          url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/"
+          >blog </ulink>how it’s possible to configure which kernels to keep installed when a new
+        one gets installed. With a simple change to the zypp configuration, you can define e.g. that
+        you always like to keep the latest running kernel when you install a new one.</para>
+      <para><emphasis role="bold">Upcoming Features</emphasis></para>
+      <para>A new page called “<ulink url="http://en.opensuse.org/openSUSE:Upcoming_features"
+          >upcoming features</ulink>” has been created to point out new features for the next
+        release. Please help updating the page with new information.</para>
+      <para><emphasis role="bold">Policy and tool changes</emphasis></para>
+      <para><emphasis role="bold">Directories not owned by a package</emphasis></para>
+      <para>We have now enabled a build time check that all directories are owned by a package and
+        this hit <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-07/msg00011.html">49
+          package</ulink>s, most of them are fixed by now but packagers should fix the remaining
+        onw.</para>
+      <para><emphasis role="bold">Other interesting bits</emphasis></para>
+      <para><emphasis role="bold">openSUSE 11.4 Milestone 3</emphasis></para>
+      <para>Coolo announced that <ulink
+          url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00227.html">milestone 3 is
+          delayed</ulink> due to some kernel bugs which the testing team encountered with their
+        daily testing scripts.  On 2011-07-18 the 3.0 RC7 kernel was checked in and should fix
+        this.</para>
+      <para><emphasis role="bold">openSUSE Conference</emphasis></para>
+      <para>The call for papers is continuing to run, please submit session proposals at the <ulink
+          url="http://conference.opensuse.org/indico/">conference site</ulink>. Also, <ulink
+          url="http://news.opensuse.org/2011/07/14/opensuse-conference-registration-open/"
+          >registration</ulink> is open now.</para>
+<!-- ($ ld: 18.7.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>

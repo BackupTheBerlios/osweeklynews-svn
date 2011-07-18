@@ -26,67 +26,70 @@
   <blockquote>
     <title>
       <ulink
-        url="http://alex.eftimie.ro/2011/07/02/packagekit-backend-for-software-center-short-week-5-report/"
-        >Marcus Hüwe: osc code cleanup – summary of week 7</ulink>
+        url="http://alex.eftimie.ro/2011/07/17/packagekit-backend-for-software-center-short-week-7-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: short week 7 report</ulink>
     </title>
-    <para> Here’s a small summary of the 7th (coding) week. This week I spentmost my time with the
-      project and package classes which manage osc’sworking copies.</para>
+    <para>Short weekly report is short, this week’s achievements:<itemizedlist>
+        <listitem>
+          <para>fixed the install/remove simulation bits (it can now tell what packages will be
+            removed after applying changes)</para>
+        </listitem>
+        <listitem>
+          <para>improved PackageInfo testing (works with both AptCache and PackageKit)</para>
+        </listitem>
+        <listitem>
+          <para>found the problem with dynamic/static libs conflict: it is gio statically
+            loaded from gtk and then Gio dynamically loaded from PackageKitGlib; loading Gio before
+            everything seems to fix the conflict for now;</para>
+        </listitem>
+        <listitem>
+          <para>got another <ulink
+              url="http://code.launchpad.net/~alexeftimie/software-center/backend-refactor"
+              >round</ulink> of refactor changes into trunk, thanks to mvo; this way my PK branch is
+            one step closer to merging into software-center</para>
+        </listitem>
+      </itemizedlist></para>
+<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lizards.opensuse.org/2011/07/17/gsoc-osc-code-cleanup-–-summary-of-week-8/"
+        >Marcus Hüwe: osc code cleanup – summary of week 8</ulink>
+    </title>
+    <para>Here’s a small summary of the 8th (coding) week. This week I spentmost of my time with
+      rewriting the working copy code.</para>
     <para>Done:<itemizedlist>
         <listitem>
-          <para>basic working copy layout</para>
+          <para>added support to add and delete packages</para>
         </listitem>
         <listitem>
-          <para>checks to detect broken/corrupt working copies</para>
+          <para>added some “abstractions” for the tracking file format:currently packages and files
+            are tracked in a xml file</para>
         </listitem>
         <listitem>
-          <para>locking support (in order to lock a working copy (for instance whendoing a commit or
-            an update))</para>
+          <para>thought about the package update algorithm. Basicallyit’ll work like this (verfy
+            simplified version):<itemizedlist>
+              <listitem>
+                <para>perform update in a tmpdir (phase 1)</para>
+              </listitem>
+              <listitem>
+                <para>if the tmp update finished, copy/rename all files tothe wc (phase 2)</para>
+                <para>Advantage:If the update is interrupted in phase 1 the wc wasn’t touchedat all
+                  and nothing should be broken.If the update is interrupted in phase 2 the wc is
+                  _inconsistent_but a subsequent “update” call can resume the update and
+                  everythingshould be consistent afterwards (in this case only files
+                  arecopied/renamed)</para>
+              </listitem>
+            </itemizedlist></para>
         </listitem>
       </itemizedlist></para>
     <para>TODO:<itemizedlist>
         <listitem>
-          <para>add “core” methods like update, commit, diff etc.</para>
-        </listitem>
-        <listitem>
-          <para>(auto-) repair methods (to fix broken working copies)</para>
+          <para>implement update + commit algorithm</para>
         </listitem>
       </itemizedlist></para>
-<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://obsforandroid.wordpress.com/2011/07/14/mid-term-project-review/">Justine
-        Leng: Mid-term Project Review</ulink>
-    </title>
-    <para>Completed:<itemizedlist>
-        <listitem>
-          <para>Set up a local development instance of the build service webclient</para>
-        </listitem>
-        <listitem>
-          <para>Created a <ulink
-              url="https://gitorious.org/~justineleng/opensuse/justineleng-build-service">local
-              branch</ulink> of the project on Gitorious</para>
-        </listitem>
-        <listitem>
-          <para>Accumulated community feedback on mobile view changes and enhancements, which
-            provides general directions and specs for development for the next few weeks</para>
-        </listitem>
-        <listitem>
-          <para>Coded changes in views (code for mobile view UI is practically done;</para>
-        </listitem>
-        <listitem>
-          <para>just need to implement actions for those views in controller)</para>
-        </listitem>
-        <listitem>
-          <para>Committed and pushed a batch of changes to master branch</para>
-        </listitem>
-        <listitem>
-          <para>Kept detailed documentation in project <ulink
-              url="http://obsforandroid.wordpress.com/">blog</ulink> and <ulink
-              url="http://en.opensuse.org/openSUSE:GSOC2011_OBS_Mobile">Wiki</ulink></para>
-        </listitem>
-      </itemizedlist></para>
-    <para>In the end, the OBS mobile request views will look probably like this: (...)</para>
-<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
+    <para>If everything works as expected most parts of working copy codecleanup should be finished
+      after this week.</para>
+<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00037.html">N B
