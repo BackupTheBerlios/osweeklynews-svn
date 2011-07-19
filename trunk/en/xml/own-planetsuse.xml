@@ -44,21 +44,33 @@
 <!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://kohei.us/2011/07/14/mdds-0-5-3-released/">Kohei Yoshida: mdds 0.5.3
-        released</ulink>
+      <ulink url="http://lizards.opensuse.org/2011/07/19/lxde-and-gtk3/">Andrea Florio: LXDE and
+        gtk3</ulink>
     </title>
-    <para>I’m happy to announce that version 0.5.3 of <ulink
-        url="http://code.google.com/p/multidimalgorithm/">Multi-Dimensional Data Structure
-        (mdds)</ulink> is available for download from the link below.</para>
-    <para><ulink url="http://multidimalgorithm.googlecode.com/files/mdds_0.5.3.tar.bz2"
-        >http://multidimalgorithm.googlecode.com/files/mdds_0.5.3.tar.bz2</ulink></para>
-    <para>This is a bug fix release. In fact, the only change since 0.5.2 is in mixed_type_matrix,
-      and in particular in its filled storage implementation. I’ve completely re-worked the fill
-      storage backend of <emphasis role="bold">mixed_type_matrix</emphasis> in order to boost its
-      performance on instantiation, whose effect will be evident when creating and destroying a
-      large number of filled matrix objects.</para>
-    <para>There is no API-incompatible change in this release.</para>
-<!-- ($ ld: 15.7.11 sm $)-->  </blockquote>
+    <para>GTK3 will slowly replace the “old” gtk2, and of course, if we don’t want to be left behind
+      we have to move to gtk3 eventually.</para>
+    <para>Even if slowly (we need horse power! –> yes we need you too!!) LXDE is being ported too.
+      Nothing has been released yet, but a good deal of work is actually into git
+      repositories.</para>
+    <para><emphasis role="bold">X11:lxde:gtk3 project</emphasis></para>
+    <para>Thanks to <ulink url="http://build.opensuse.org/">openSUSE Build Service</ulink> (public
+      instance of the <ulink url="http://openbuildservice.org/">Open Build Service</ulink>) we are
+      currently able to get git code and build it auto-magically (thanks god you created obs
+      _services </para>
+    <para>Right now, only five packages don’t want to build with gtk3 and they are: <emphasis
+        role="bold">gpicview, libfm, lxmusic, lxpanel, pcmanfm</emphasis>. Everything else builds
+      fine. As a side note, lxdm gtk greeter build but seems to crasch.</para>
+    <para>Please test those packages and report in our mailing list or even better upstream your
+      issues.</para>
+    <para>To conclude, right now i don’t feel comfortable to push into factory gtk3 packages, so
+      12.1 most probably will stuck with the well know stable gtk2 packages.</para>
+    <para>Also, i’m actually working to use obs, to provide gtk3 enabled git nightly build not only
+      to openSUSE (actually only &gt;= 11.4) but also to<emphasis role="bold"> Fedora
+      15</emphasis> (already building with many successful packages) and <emphasis role="bold"
+        >Ubuntu/Debian</emphasis>. So if you are .deb packagers, please let me know, i need your
+      help. Contact me and the lxde team using our mailing list<emphasis role="bold"
+        >opensue-lxde@opensuse.org</emphasis></para>
+<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title><ulink url="http://kohei.us/2011/07/15/mdds-moves-to-git/">Kohei Yoshida: mdds moves to
       git</ulink></title>

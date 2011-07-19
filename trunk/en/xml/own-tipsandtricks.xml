@@ -46,10 +46,16 @@
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/shell-scripts/alter-your-environment-with-functions/">BashShell.net/mike: Alter Your Environment with Functions</ulink>
+        <ulink url="http://cgoncalves.blogspot.com/2011/07/ssh-connection-automation.html">Carlos
+          Gonçalves: SSH connection automation</ulink>
       </title>
-      <para>You can use functions to alter the environment of the user.  These functions can be added into the .bash_profile of an individual user or in the system wide /etc/profile.  It is best to verify the functions have no detrimental impact by using a normal user first as a test base.  You will need to enter the functions in the .bash_profile in the following format.  In this example two functions have been used and can be called with “dfh” or “duh”. (...)</para>
-<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
+      <para>Part of my daily routine envolves accessing and managing a considered amount of remote
+        servers through the SSH protocol. I use screen a lot to ease the job by having a couple of
+        windows opened on each server, so avoiding multiple connections to the same server. By using
+        screen not only helps me grouping server windows altogether in one console window/tab but
+        also is a time saver in those days when network connection is not in its glory days allowing
+        me to reattach it and carrying on being productive (*sighs*). (...)</para>
+<!-- ($ Id: 19.7.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://bashshell.net/shell-scripts/using-functions-in-a-library/">BashShell.net/mike: Using Functions in a Library</ulink>
