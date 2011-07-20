@@ -181,75 +181,18 @@
     </sect3>
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-<!--
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/archive/opensuse-buildservice/2011-06/msg00134.html">OBS 2.3 Beta 2</ulink>
+          <ulink url="http://stick.gk2.sk/blog/2011/07/version-sorting-in-ruby/">Pavol Rusnak:
+            Version sorting in Ruby</ulink>
         </title>
-        <para>This OBS 2.3 release is now feature complete. We changed a bit more then expected:<itemizedlist>
-            <listitem>
-              <para>New source service mode handling is default now. Server side services get
-                applied when listing in expand mode, like with source links.</para>
-            </listitem>
-            <listitem>
-              <para>Configuration UI to setup OBS instance name and description.</para>
-            </listitem>
-            <listitem>
-              <para>MeeGo.com is pre-configured now.</para>
-            </listitem>
-            <listitem>
-              <para>backend daemons have integrated runtime management</para>
-            </listitem>
-            <listitem>
-              <para>A large number of bugfixes</para>
-            </listitem>
-          </itemizedlist></para>
-        <para><emphasis role="bold">Current State</emphasis></para>
-        <para>Open tasks for next weeks are:<itemizedlist>
-            <listitem>
-              <para>Get documentation in a better shape so that we can switch openSUSE maintenance
-                using the new mechanisms.</para>
-            </listitem>
-            <listitem>
-              <para>There are absolute zero known regressions known atm. So really everything should
-                be at least as good as in OBS 2.1.x :) Feel free to run it on your production
-                system, we do it also on build.opensuse.org :)</para>
-            </listitem>
-          </itemizedlist></para>
-        <para><emphasis role="bold">The call for help</emphasis></para>
-        <para>There are still a number of areas where some clean up is needed. For example we have<itemizedlist>
-            <listitem>
-              <para>20 FIXME2.2 lines in the code (means that read access handling code needs
-                checking)</para>
-            </listitem>
-            <listitem>
-              <para>10 FIXME2.3 lines in the code (maintenance code needs a revisit here)</para>
-            </listitem>
-            <listitem>
-              <para>Unknown state of Cross architecture builds. It would be nice if someone can help
-                so that the OBS Appliance can build for arm architectures out of the box.</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>You can stop here when you read already Beta 1 announcement ,)</para>
-        <para><emphasis role="bold">OBS 2.3 main features</emphasis></para>
-        <para>The main features of this release are <itemizedlist>
-            <listitem>
-              <para>Full distribution maintenance support. This includes support for the workflow in
-                OBS and also the patch channel generation. This functionality can be used at full
-                glance with coordination and review teams or just in parts.</para>
-            </listitem>
-            <listitem>
-              <para>Read access protection for projects (as planned for OBS 2.2)</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>Apart from that we have many smaller improvements, esp. in the area of request
-          handling and the webui integration.</para>
-        <para><emphasis role="bold">Download it</emphasis></para>
-        <para>As usual, you find current packages or an appliance in openSUSE:Tools:Unstable
-          project. OBS 2.3 Beta 2 is tagged as version 2.2.84. </para>
-        <para>Please read here for usage details for the appliance:<ulink url="http://en.opensuse.org/openSUSE:Build_Service_Appliance">http://en.opensuse.org/openSUSE:Build_Service_Appliance</ulink> (...)</para>
-      </blockquote>
-      -->      <formalpara>
+        <para>Today I needed to implement “human sort” for a list of distributions we support in
+            the <ulink url="http://openbuildservice.org/">Open Build Service</ulink>. I wanted to
+          sort them alphabetically but at the same time the newest ones at the top. I ended up with
+          the following code: (...)</para>
+        <!-- ($ ld: 20.7.11 sm $)-->
+      </blockquote>  
+      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -308,24 +251,29 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3>
+      </sect3> -->
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/archive/opensuse-kde/2011-07/msg00087.html">Ismail Doenmez: Heads up for openSUSE 11.4 users: MySQL security update breaks akonadi</ulink>
+          <ulink
+            url="http://lizards.opensuse.org/2011/07/19/new-namespace-for-kde-apps-maintained-by-upstream/"
+            >Javier Llorente: New namespace for KDE apps maintained by upstream</ulink>
         </title>
-        <para>aj bringed it to my attention that MySQL security update on 11.4 [0] has possibly broken akonadi and hence KMail2 and such.</para>
-        <para>I&apos;ll let you know when this is fixed, you might want to postpone updating to 4.7rc1 if you use KMail in your day-to-day work.</para>
-        <para>[0] <ulink url="https://bugzilla.novell.com/show_bug.cgi?id=676973#c9">https://bugzilla.novell.com/show_bug.cgi?id=676973#c9</ulink></para>
+        <para>After some discussion in <ulink url="irc://irc.opensuse.org/opensuse-kde"
+            >#opensuse-kde</ulink>, darix has created the KDE:Apps namespace for KDE apps maintained
+          by their upstream, so that they can serve fresh packages for all distributions supported
+          by the <ulink url="http://build.opensuse.org/">Build Service</ulink> (which includes
+          openSUSE, SUSE Linux Enterprise, Fedora, RHEL, Debian and Ubuntu).</para>
+        <para>As the first to join in, we warmly welcome the <ulink
+            url="http://kmymoney2.sourceforge.net/">KMyMoney project</ulink>!</para>
+        <para>Got questions? Feel free to contact the openSUSE/KDE Team on the mailing list <ulink
+            url="http://lists.opensuse.org/opensuse-kde/">opensuse-kde@opensuse.org</ulink> or in
+            IRC: <ulink url="irc://irc.opensuse.org/opensuse-kde"
+          >#opensuse-kde</ulink> (irc.freenode.net).</para>
+        <!--($ ld: 20.7.11 sm $)-->
       </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://lists.opensuse.org/archive/opensuse-kde/2011-07/msg00099.html">Ismail Doenmez: KDE 4.7 rc2 is building in KDE:Unstable:SC</ulink>
-        </title>
-        <para>KDE team is releasing like a mad man so we can&apos;t be left behind can we? KUSC is now building 4.7 rc2, I&apos;ll keep an eye on build failures and let you know when it finishes. </para>
-      </blockquote>
-    </sect3> -->
+    </sect3>
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
