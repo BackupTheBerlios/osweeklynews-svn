@@ -117,20 +117,24 @@
       </listitem>
     </itemizedlist>
   </sect2>
-<!--<sect2 role="susestudio">
+<sect2 role="susestudio">
   <title>SUSE Studio</title>
   <blockquote><title>
-      <ulink url="http://blog.susestudio.com/2011/06/using-autoyast-for-customizing-your.html">SUSE Studio: Using AutoYaST for customizing your appliance on first boot</ulink>
-    </title><para>When building appliances with SUSE Studio, I was often challenged with finding a way to
-        configuring an appliance on first boot. The most common use cases like locale, time zone and
-        network configuration are being offered by Studio already.</para><para><inlinegraphic fileref="http://3.bp.blogspot.com/-jAoJzRg6ZIA/TgxR_1f9qJI/AAAAAAAAAkg/fXPg4KzhxaU/s320/ask-on-firstboot.png"/></para><para>Selecting these options will make Studio include the required packages and configuration
-        to guide the user through a YaST workflow on first boot.</para><para>But is there an easy way for further customizing your application on first boot? Yes,
-        there is! Enter&#160;<emphasis role="bold">AutoYaST</emphasis>&#160;and it&apos;s powerful &quot;Ask the user
-        for values during installation&quot; feature.</para><para>Switch to the Configuration tab, select Scripts and check the &quot;Run AutoYaST profile on
-        appliance&apos;s first boot&quot; option.</para><para><inlinegraphic fileref="http://2.bp.blogspot.com/-UOJTJl54NU8/TgxVJQ42_nI/AAAAAAAAAko/tfjYTaxSLkk/s320/autoyast-firstboot.png"/></para><para>Next we need to create the AutoYaST profile, which will be run on first boot. The
-        profile format is an ASCII XML file.</para><para>Here is a simple example, that will create a simple ask dialoge &quot;Enter the user for this
-        machine&quot; and promt for input. The result will be writen to /tmp/answer_user. (...)</para>($ ld: 1.7.11 sm $)</blockquote>
-</sect2>-->  <sect2 role="teamreports">
+        <ulink url="http://blog.susestudio.com/2011/07/suse-studio-for-big-iron.html">SUSE Studio
+          for the big iron</ulink>
+      </title>
+      <para>After a couple of months of hard work we are now happy to introduce the next version
+          of <ulink url="http://www.suse.com/products/susestudio/">SUSE Studio</ulink> for onsite
+        installation. It comes in two editions, the Standard Edition, including everything you need
+        to create, share, maintain, and configure your software and virtual appliances, and the
+        Advanced Edition, which additionally supports workloads for System z, the big iron.
+        (...)</para>
+      <para><emphasis role="bold">Other Sources</emphasis>: <ulink
+          url="http://www.linux.com/news/enterprise/biz-enterprise/471591:suse-ships-studio-12"
+          >Linux.com</ulink></para>
+      <!--($ ld: 21.7.11 sm $)--></blockquote>
+</sect2> 
+  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
