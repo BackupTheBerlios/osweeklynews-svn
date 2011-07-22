@@ -21,39 +21,40 @@
   <blockquote>
     <title>
       <ulink
-        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-0-Part-4-Drivers-1276887.html"
-        >h-online/Thorsten Leemhuis: Kernel Log: Coming in 3.0 (Part 4) - Drivers</ulink>
+        url="http://www.h-online.com/open/news/item/Real-time-patches-for-the-Linux-kernel-take-a-major-step-forward-1282492.html"
+        >h-online/Real-time patches for the Linux kernel take a major step forward</ulink>
     </title>
-    <para><emphasis role="bold">Along with better support for new chipsets and graphics cores from
-        AMD and Intel, not to mention drivers for Microsoft's Kinect and DVB-T2, Linux 3.0 once
-        again offers a number of workarounds for a wide range of hardware
-      problems.</emphasis></para>
-    <para>In the opening minutes of Tuesday morning, Linus Torvalds released another pre-release
-      version of Linux 3.0. In his release mail, Linus says that "Things have been pretty quiet, but
-      there's enough new stuff here that I wanted to do another -rc". The developer had previously
-      said that the sixth release candidate might perhaps have been the last.</para>
-    <para>Should Torvalds not issue another rc, Linux 3.0 could appear later this week or early next
-      week. As Linux 3.0 slowly nears completion, the kernel log finishes the "Coming in 3.0"
-      mini-series with a description of changes to drivers, including those for audio, graphics,
-      multimedia, and storage hardware. The first part of the series dealt with changes to network
-      drivers and infrastructure, while the second part focused on filesystems, and the
-      third discussed platform-specific code, virtualisation, and general infrastructure.</para>
-<!-- ($ ld: 13.7.11 sm $) -->  </blockquote>
+    <para>Thomas Gleixner has released the first test version of a real-time (RT) Linux kernel based
+      on a current release candidate of Linux kernel version 3.0; having been <ulink
+        url="http://www.h-online.com/news/item/Linux-kernel-3-0-slightly-delayed-1282429.html"
+        >slightly delayed</ulink>, version 3.0 is due to be <ulink
+        url="http://thread.gmane.org/gmane.linux.rt.user/6861">released</ulink> any day now. With
+      version 3.0-rc7-rt0, the developers have taken the biggest step towards a modern basis for
+        the <ulink url="https://rt.wiki.kernel.org/index.php/Main_Page">RT kernel</ulink>, a kernel
+      that is chiefly maintained by Gleixner and several other developers – the current stable
+      kernel with real-time capabilities is still based on the Linux 2.6.33 series, which Greg
+      Kroah-Hartman has <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Further-problems-with-UEFI-1281549.html"
+        >continued to maintain</ulink> specifically for the RT developers. (...)</para>
+<!-- ($ ld: 22.7.11 sm $) -->  </blockquote>
   <blockquote>
-    <title><ulink url="https://lkml.org/lkml/2011/7/11/427">Linus Torvalds: Linux
-      3.0-rc7</ulink></title>
-    <para>I think I said -rc6 might be the last -rc. I lied.</para>
-    <para>Things have been pretty quiet, but there's enough new stuff here thatI wanted to do
-      another -rc, and we still have some issues with the RCUchanges causing problems when RCU
-      events happen before the schedulerhas been fully initialized etc. So -rc7 is out there,
-      although itmight not have mirrored out to the public sites quite yet.</para>
-    <para>I also ended up re-generating the -rc6 files (fat-fingered the releasescript), so the -rc6
-      patches and tar-balls look all brand spanking newtoo! Two releases for the price of
-      one!</para>
-    <para>There's not a whole lot to say about it - the appended shortlog givesa reasonable
-      overview. Random drivers (we're back to the usual "twothirds drivers" statistics), some media
-      and cifs updates, and somevmscan corner case improvements. Linus</para>
-    <!--($ ld: 13.7.11 sm $) -->
+    <title><ulink url="http://lwn.net/Articles/452040/rss">LWN: The 3.0 kernel is
+      out</ulink></title>
+    <para>Linus has <ulink url="http://lwn.net/Articles/452531/">announced</ulink> the release of
+      the 3.0 kernel. "As already mentioned several times, there are no special landmark features or
+      incompatibilities related to the version number change, it's simply a way to drop an
+      inconvenient numbering system in honor of twenty years of Linux. In fact, the 3.0 merge window
+      was calmer than most, and apart from some excitement from RCU I'd have called it really
+      smooth." Beyond the numbering scheme change, this kernel includes <ulink
+        url="http://lwn.net/Articles/429925/">POSIX alarm timer support</ulink>, a <ulink
+        url="http://lwn.net/Articles/437981/">just-in-time compiler</ulink> for BPF packet filters,
+      a new sendmmsg() system call, <ulink url="http://lwn.net/Articles/420799/">ICMP
+        sockets</ulink>, the merging of the Xen backend driver (completing the long process of
+      getting Xen Dom0 support into the kernel), <ulink url="http://lwn.net/Articles/407495/"
+        >namespace file descriptors</ulink>, and more. See the <ulink
+        url="http://kernelnewbies.org/Linux_3.0">KernelNewbies 3.0 page</ulink> for lots of
+      details.</para>
+    <!--($ ld: 22.7.11 sm $) -->
   </blockquote>
   <blockquote>
     <title><ulink url="http://schaiba.wordpress.com/2011/07/16/kernel-weekly-news-16-07-2011/">Rares

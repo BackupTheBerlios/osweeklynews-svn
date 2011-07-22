@@ -59,17 +59,31 @@ Here’s a chance to show off your talent using a great drawing program made esp
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.datamation.com/open-source/choosing-the-best-linux-desktop-kde-unity-gnome-1.html">Datamation/Bruce Byfield: Choosing the Best Linux Desktop: KDE, Unity, GNOME</ulink>
+        <ulink
+          url="http://www.datamation.com/open-source/choosing-the-best-linux-desktop-kde-unity-gnome-1.html"
+          >Michael Gapczynski (MTGap): Testers needed for sharing files with ownCloud</ulink>
       </title>
-      <para>The perfect desktop would be the one you design yourself. Failing that, which of the
-        main Linux desktops is right for you?</para>
-      <para>A few months ago, this question came to a choice between GNOME and KDE. Now, with the
-        introduction of GNOME 3 and Ubuntu&apos;s Unity, the question has become more complex.</para>
-      <para>Should you accept the latest innovation, or go with a desktop that proves itself? A
-        simple desktop, or a complex one with all sorts of customization? One that doesn&apos;t change,
-        regardless of whether you are using a mobile device or a workstation, or one that changes to
-        fit the limitations or advantages of each computing device? (...)</para>
-<!-- ($ ld: 14.7.11 sm $) -->    </blockquote>
+      <para>I have good news this week. First, I’m still here because I passed the mid-term
+        evaluation for Google Summer of Code. Thanks for passing me Robin. Second, I was successful
+        in completing my goal last week and now have everything setup so others can start
+        experimenting with sharing files.</para>
+      <para>Besides general bug fixing this past week I’ve also refactored OC_SHARE, which is the
+        class that handles the database records of all shared files in ownCloud. It started to get a
+        little messy and I was unhappy with the quality of code so I rewrote many of the functions
+        and moved some of the error handling into OC_FILESTORAGE_SHARED where it should belong. I
+        also commented all of the functions so other developers can use OC_SHARE in their own apps
+        and understand what it is doing. I’ve also added two hooks to OC_SHARE: post_delete and
+        post_rename. These are triggered by OC_FILESYSTEM when files are deleted, renamed, or moved.
+        The database gets updated when these actions occur in order to avoid any missing shared
+        items.</para>
+      <para>The backend for sharing is pretty much complete so I can now focus on the user interface
+        for the rest of the summer. The only part that needs updating is the permissions system. I
+        was having a difficult time deciding on what to do with permissions and ended up going with
+        only read and write, without the ability to permanently delete files. I’ve changed my mind
+        now and will expand the options to more specific permissions that you can assign users. I
+        was worried before that this would make the user interface too complex, but I now believe I
+        can still achieve simplicity with the user experience.</para>
+<!-- ($ ld: 22.7.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://labs.qt.nokia.com/2011/07/14/qtquick-particles-2-0/">Qt Labs: QtQuick.Particles 2.0</ulink>
