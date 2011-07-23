@@ -20,9 +20,10 @@
   <title>Security Updates</title>
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
-  <!--
   <blockquote>
-    <title>SUSE Security Announcement: MozillaFirefox,MozillaThunderbird (SUSE-SA:2011:028)<ulink url="http://lists.opensuse.org/archive/opensuse-security-announce/2011-07/msg00001.html"/></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00005.html"
+        >openSUSE-SU-2011:0762-1: critical: mariadb: Fixed missing innodb support after last
+        update</ulink></title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
       <col width="1.08*"/>
@@ -37,31 +38,33 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">MozillaFirefox,MozillaThunderbird</emphasis>
+            <emphasis role="bold">mariadb</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>SUSE-SA:2011:028</td>
+          <td>openSUSE-SU-2011:0762-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Tue, 05 Jul 2011 14:00:00 +0000</td>
+          <td>Tue, 19 Jul 2011 01:06:05 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.3, openSUSE, 11.4, SLE SDK 10 SP3, SUSE Linux Enterprise Server 10 SP3, SUSE Linux Enterprise Teradata 10 SP3, SUSE Linux Enterprise Software Development Kit 11 SP1, SUSE Linux Enterprise Desktop 11 SP1, SUSE Linux Enterprise Server 11 SP1, SUSE Linux Enterprise Desktop 10 SP4, SLE SDK 10 SP4, SUSE Linux Enterprise Server 10 SP4</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>remote code execution</td>
+          <td>Fixed missing innodb support after last update</td>
         </tr>
       </tbody>
     </table>
 </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/archive/opensuse-security-announce/2011-07/msg00002.html">SUSE Security Announcement: bind remote denial of service (SUSE-SA:2011:029)</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00006.html"
+        >openSUSE-SU-2011:0788-1: important: bind: fixing remote Denial of Service
+        (CVE-2011-2464)</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -82,15 +85,15 @@
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>SUSE-SA:2011:029</td>
+          <td>openSUSE-SU-2011:0788-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Fri, 08 Jul 2011 16:00:00 +0000</td>
+          <td>Tue, 19 Jul 2011 01:06:51 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.3, openSUSE 11.4, SUSE Linux Enterprise Software Development Kit 11 SP1, SUSE Linux Enterprise Desktop 11 SP1, SUSE Linux Enterprise Server 11 SP1, SUSE Linux Enterprise Desktop 10 SP4, SLE SDK 10 SP4, SUSE Linux Enterprise Server 10 SP4</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
@@ -98,5 +101,48 @@
         </tr>
       </tbody>
     </table>
-  </blockquote> -->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00006.html"
+        >openSUSE-SU-2011:0803-1: important: kvm</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">kvm</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0803-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Tue, 19 Jul 2011 05:08:14 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>A privileged guest user could cause a buffer overflow inthe virtio subsystem of the
+            host, therefore crashing theguest or potentially execute arbitrary code on the
+            host(CVE-2011-2212, CVE-2011-2512).</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
 </sect1>

@@ -35,49 +35,4 @@
       Samba network: (...)</para>
     <!-- ($ ld: 23.7.11 sm $)-->
   </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://lizards.opensuse.org/2011/07/19/lxde-and-gtk3/">Andrea Florio: LXDE and
-        gtk3</ulink>
-    </title>
-    <para>GTK3 will slowly replace the “old” gtk2, and of course, if we don’t want to be left behind
-      we have to move to gtk3 eventually.</para>
-    <para>Even if slowly (we need horse power! –> yes we need you too!!) LXDE is being ported too.
-      Nothing has been released yet, but a good deal of work is actually into git
-      repositories.</para>
-    <para><emphasis role="bold">X11:lxde:gtk3 project</emphasis></para>
-    <para>Thanks to <ulink url="http://build.opensuse.org/">openSUSE Build Service</ulink> (public
-      instance of the <ulink url="http://openbuildservice.org/">Open Build Service</ulink>) we are
-      currently able to get git code and build it auto-magically (thanks god you created obs
-      _services </para>
-    <para>Right now, only five packages don’t want to build with gtk3 and they are: <emphasis
-        role="bold">gpicview, libfm, lxmusic, lxpanel, pcmanfm</emphasis>. Everything else builds
-      fine. As a side note, lxdm gtk greeter build but seems to crasch.</para>
-    <para>Please test those packages and report in our mailing list or even better upstream your
-      issues.</para>
-    <para>To conclude, right now i don’t feel comfortable to push into factory gtk3 packages, so
-      12.1 most probably will stuck with the well know stable gtk2 packages.</para>
-    <para>Also, i’m actually working to use obs, to provide gtk3 enabled git nightly build not only
-      to openSUSE (actually only &gt;= 11.4) but also to<emphasis role="bold"> Fedora
-      15</emphasis> (already building with many successful packages) and <emphasis role="bold"
-        >Ubuntu/Debian</emphasis>. So if you are .deb packagers, please let me know, i need your
-      help. Contact me and the lxde team using our mailing list<emphasis role="bold"
-        >opensue-lxde@opensuse.org</emphasis></para>
-<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title><ulink url="http://kohei.us/2011/07/15/mdds-moves-to-git/">Kohei Yoshida: mdds moves to
-      git</ulink></title>
-    <para>Following the announcement that <ulink
-      url="http://www.infoq.com/news/2011/07/google-git">Google Code finally gets git
-      support</ulink>, I’ve migrated my mddssource code repository from the old mercurial one to
-      a new git one. For anyone who has the old mercurial repository of <ulink
-        url="http://code.google.com/p/multidimalgorithm/">mdds</ulink> checked out, please switch
-      to the new git repo. Refer to <ulink
-        url="http://code.google.com/p/multidimalgorithm/source/checkout">this page</ulink> on how
-      to check out the new git-based mdds repository.</para>
-    <para>As for doing the actual migration, <ulink
-      url="http://hivelogic.com/articles/converting-from-mercurial-to-git/">this blog
-      post</ulink> was very helpful.</para>
-    <!-- ($ Id: 16.7.11 sm $)-->
-  </blockquote>
 </sect1>

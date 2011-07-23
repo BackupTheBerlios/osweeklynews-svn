@@ -22,25 +22,43 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://scribblesandsnaps.wordpress.com/2011/07/11/process-photos-with-digikams-batch-queue-manager-and-a-bash-script/">Scribbles and Snaps: Process Photos with digiKam’s Batch Queue Manager and a Bash Script</ulink>
+        <ulink
+          url="http://www.unixmen.com/linux-tutorials/1823-how-to-make-your-own-20th-century-fox-and-lionsgate-intro-with-blender-25-"
+          >Unixmen/M. Zinoune: How to make your own 20th Century Fox and LIONSGATE intro with
+          Blender 2.5 in 5 min</ulink>
       </title>
-      <para>One of digiKam’s lesser known features is the ability to link scripts to notifications. At first sight, this may seem like a rather obscure functionality, but it can be put to some clever uses. Say, you want to keep a portfolio of selected photos on a mobile device. Resizing multiple photos to a specified size to make it easier to view them on the mobile device and transferring the processed photos from digiKam to the mobile device manually is not very practical. And this is where the ability to trigger scripts via notifications can come in handy. You can attach a simple Bash script to the Batch <emphasis role="italic">queue completed</emphasis> notification, so it’s triggered automatically when the Batch Queue Manager tool is done processing photos. (...)</para>
-<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
+      <para>This is an easy tutorial on how to make your own 20th Century Fox and  LIONSGATE styled
+        intro using Blender 2.5. It is very easy you just need to donwload the templates blender and
+        follow the instructions, it shouldn't take more than 5-10 minutes to edit it.  To do this,
+        you need to have Blender 2.5 or above installed in your system, if you are an ubuntu or
+        LinuxMint  user, you can install the latest release of blender using PPA from<ulink
+          url="http://www.unixmen.com/linux-tutorials/1714-blender-257-is-released-with-a-new-design-multiple-windows-support-and-more"
+          > this link</ulink>. (...)</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/enabling-compiz-fusion-on-an-opensuse-gnome-11.4-desktop-nvidia-geforce-8100">HowtoForge/Falko Timme: Enabling Compiz Fusion On An OpenSUSE GNOME 11.4 Desktop (NVIDIA GeForce 8100)</ulink>
+        <ulink
+          url="http://www.linux.com/learn/tutorials/470411:screencasting-stars-of-the-linux-world"
+          >Linux.com/Nathan Willis: Screencasting Stars of the Linux World</ulink>
       </title>
-      <para>This tutorial shows how you can enable <ulink url="http://www.compiz-fusion.org/">Compiz Fusion</ulink> on an OpenSUSE 11.4 GNOME desktop (the system must have a 3D-capable graphics card - I&apos;m using an NVIDIA GeForce 8100 here). With Compiz Fusion you can use beautiful 3D effects like wobbly windows or a desktop cube on your desktop. (...)</para>
-<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://chenthill.wordpress.com/2011/07/15/exchange-webservices-offline-addressbook/"
-          >Chenthill P: Exchange WebServices Offline AddressBook</ulink></title>
-      <para>It is now possible to download GAL contents for offline usage through exchange web
-        services in Evolution. Offline GAL is termed as Offline Address-book (OAB) in Exchange
-        WebServices and it may contain one or more Offline Address-lists (OAL). (...)</para>
-      <!--($ Id: 16.7.11 sm $)-->
-    </blockquote>
+      <para>Are you still taking screenshots? That is sooo last decade. Today if you want to
+        showcase your application, your gaming skills, or even your astonishing new desktop
+        wallpaper collection, you need a screen recorder (or screencasting tool) to capture
+        full-motion video and audio of your desktop. You'll find several solid options, but which
+        one works best for you depends a lot on the type of content you need to capture, and what
+        you intend to do with it.For starters, the output produced by the tool varies considerably.
+        Some alternatives give you a wide choice of video and audio codecs, others just one. But if
+        that one (say, Flash) is the one you need, producing it directly is much quicker than having
+        to save an intermediary file and crank it through a video editor. It also may be important
+        to select just a portion of the screen rather than your whole display, or to choose a
+        specific frame-rate (high for games, low for bandwidth-saving demos). Finally, there are
+        always special features that vary between utilities, such as whether or not they can capture
+        OpenGL content or be started remotely by script. (...)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> Both recordMyDesktop and Istanbul are
+        available via OBS.</para>
+      <para>http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=recordMyDesktop</para>
+      <para>http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=Istanbul</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -58,17 +76,30 @@
 <!-- ($ Id: 19.7.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/shell-scripts/using-functions-in-a-library/">BashShell.net/mike: Using Functions in a Library</ulink>
+        <ulink
+          url="http://www.jveweb.net/en/archives/2011/06/split-and-merge-files-from-the-command-line.html"
+          >Juan Valencia: Split and merge files from the command line</ulink>
       </title>
-      <para>Function Library</para>
-      <para>Another way of using functions is when you create more complicated scripts is to create functions that you place in a library so that you can source them from other scripts.    These library functions can be called from a script using “source” or the “dot” command. (...)</para>
-<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
+      <para>Although some file archivers offer us the option of split the files, this can be easily
+        accomplished with two commands: split and cat. (...)</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxnov.com/command-line-du-disk-usage-commands-tips/">LinuxNov: Command Line | du Disk Usage Commands | Tips</ulink>
+        <ulink url="http://paskov.biz/blog/?p=724">Vladimir Paskov: Using the rpm command –
+          part1</ulink>
       </title>
-      <para>du is a disk usage command allows you to easily know file and directory sizes, also you can view file and directory sizes decreasing starting by biggest file, otherwise increasing by smallest file. (...)</para>
-<!-- ($ Id: 15.7.11 sat $)-->    </blockquote>
+      <para>RPM is a package management system widely used in various GNU/Linux distributions such
+        as: openSUSE, RedHat, CentOS and Fedora. All this distributions provides various package
+        management tools build around librpm (This library allows programs to make use of a rpm
+        database or rpm packages without using the rpm command ) or making direct use of
+        the rpm command. Examples of this includes: zypper – openSUSE package management tool andyum
+        – Fedora and Red Hat package management tool. This tools provides easy to use functionality
+        for installing, removing, searching, repository management etc, but they lack some
+        functionality provided by the rpm command such as listing the contents of a package, finding
+        what package provides some file etc.</para>
+      <para>This article will show you how you can use the rpm command to preform various package
+        management task , such as installing, removing, querying the rpm database, etc…</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
@@ -87,17 +118,80 @@
       <para>I have put together a simple tool called <ulink
           url="https://github.com/robertknight/Qt-Inspector">Qt Inspector</ulink>.</para>
 <!-- ($ Id: 22.7.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://python4kids.wordpress.com/2011/07/18/tkinter-tinkering-graphical-user-interfaces/"
+          >Python4Kids/Brendan Scott: Tkinter tinkering (Graphical User Interfaces)</ulink></title>
+      <para>Man     Shut up! (It goes quiet next door) That’s better.He walks to a side wall and
+        hangs his club on a hook beneath big old-fashioned art-nouveau sign clearly labelled `The
+        Burlington Wall-banger’. He goes across to bed and gets in. In the bed are a party of four
+        Japanese businessmen in suits with lapel badges, two lady American tourists with rain hats
+        and cameras, three other moustached English gentlemen in pyjamas, four Tour De France
+        riders, three Swedish businessmen, and Winston Churchill.</para>
+      <para>So far we have been dealing with a command line interface for working with our Python
+        programs.  While command lines are good for a lot of things, they’re usually pretty bad for
+        interfacing with a general user of the program who doesn’t know how the various pieces
+        work.  What we are going to look at now is a different way of presenting the program to a
+        user (and probably a way that you are more familiar with) – GUIs.   GUI stands for
+        “Graphical User Interface”. (...)</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://olex.openlogic.com/wazi/2011/tips-for-using-vim-as-an-ide/"
+          >Wazi/Juliet Kemp: Tips for using Vim as an IDE</ulink></title>
+      <para><ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink> isn’t just a great
+        editor; it’s also a hugely flexible, configurable, and extendable application. You can even
+        set up Vim as an integrated development environment (IDE), giving you all the advantages of
+        a dedicated text editor together with the ability to check syntax, jump between tags,
+        autocomplete, and do all the other useful things you get from a modern IDE. These Vim tips
+        and tricks will get you editing like a pro. (...)</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://net.tutsplus.com/tutorials/ruby/how-to-build-a-shortlink-app-with-ruby-and-redis/"
+          >net.tutsplus.com/Charlie Somerville: How to Build a Shortlink App with Ruby and
+          Redis</ulink></title>
+      <para>In this tutorial, we’ll be building a quick shortlink web app with Ruby, the <ulink
+          url="http://www.sinatrarb.com/">Sinatra</ulink> web framework, and the<ulink
+          url="http://redis.io/">Redis</ulink> database. By the conclusion of this tutorial, you’ll
+        end up with a dead simple, high performance shortlink webapp that’s super easy to scale.
+        (...)</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://suse.gansert.net/?p=239">Uwe Gansert: Unattended Upgrade with AutoYaST</ulink>
+        <ulink
+          url="http://www.linux.com/learn/tutorials/469597-weekend-project-keep-out-repeat-offenders-with-fail2ban-on-linux"
+          >Linux.com/Jack Wallen: Weekend Project: Keep Out Repeat Offenders with Fail2ban on
+          Linux</ulink>
       </title>
-      <para>Today I want to introduce a new feature of SLES11 SP2. Usually you use AutoYaST to do fresh installations of a system including formatting the partitions and do all kind of new-system configuration in your AutoYaST XML.
-With SLES11 SP2 you’ll have the option of doing unattended upgrades of a previously installed systems too.</para>
-      <para>Imagine you have a running SLES10 SP4 and want to upgrade it now to SLES11 SP2 with AutoYaST, what are the steps to do that? (...)</para>
+      <para>Tired of automated attacks on your systems? Want to beef up security a bit by denying
+        would-be attackers a third or fourth chance? Then you need <ulink
+          url="http://www.fail2ban.org/">Fail2ban</ulink>. Fail2ban watches logs and then bans IP
+        addresses, based on too many password failures, by updating the firewall rules. Specific
+        rules can be defined by the user and multiple log files can be monitored. This weekend,
+        let's get started on improving security with Fail2ban. (...)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> Fail2ban packages for openSUSE are
+        available from OBS</para>
+      <para>http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=fail2ban</para>
+      <!--($ Id: 23.7.11 sm $)-->
     </blockquote>
-  </sect2> -->
+    <blockquote>
+      <title><ulink
+          url="http://www.linux.com/learn/tutorials/470979-who-and-what-is-on-my-network-probing-your-network-with-linux"
+          >Linux.com/Carla Schroder: Who and What Is On My Network? Probing Your Network with
+          Linux</ulink></title>
+      <para>In <ulink
+          url="http://www.linux.com/component/content/article/174-tutorials/443706-whose-fault-is-it-when-your-internet-dies-troubleshooting-networks-with-linux"
+          >Whose Fault is it When Your Internet Dies? Troubleshooting Networks with Linux</ulink> we
+        learned some basic network troubleshooting commands. Today we're going to explore the fine
+        fun world of network discovery and find out who is on our network without ever leaving our
+        comfortable chairs.</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+  </sect2>
 </sect1>
