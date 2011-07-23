@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.unixmen.com/linux-tutorials/1823-how-to-make-your-own-20th-century-fox-and-lionsgate-intro-with-blender-25-"
+          >Unixmen/M. Zinoune: How to make your own 20th Century Fox and LIONSGATE intro with
+          Blender 2.5 in 5 min</ulink>
+      </title>
+      <para>This is an easy tutorial on how to make your own 20th Century Fox and  LIONSGATE styled
+        intro using Blender 2.5. It is very easy you just need to donwload the templates blender and
+        follow the instructions, it shouldn't take more than 5-10 minutes to edit it.  To do this,
+        you need to have Blender 2.5 or above installed in your system, if you are an ubuntu or
+        LinuxMint  user, you can install the latest release of blender using PPA from<ulink
+          url="http://www.unixmen.com/linux-tutorials/1714-blender-257-is-released-with-a-new-design-multiple-windows-support-and-more"
+          > this link</ulink>. (...)</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.linux.com/learn/tutorials/470411:screencasting-stars-of-the-linux-world"
+          >Linux.com/Nathan Willis: Screencasting Stars of the Linux World</ulink>
+      </title>
+      <para>Are you still taking screenshots? That is sooo last decade. Today if you want to
+        showcase your application, your gaming skills, or even your astonishing new desktop
+        wallpaper collection, you need a screen recorder (or screencasting tool) to capture
+        full-motion video and audio of your desktop. You'll find several solid options, but which
+        one works best for you depends a lot on the type of content you need to capture, and what
+        you intend to do with it.For starters, the output produced by the tool varies considerably.
+        Some alternatives give you a wide choice of video and audio codecs, others just one. But if
+        that one (say, Flash) is the one you need, producing it directly is much quicker than having
+        to save an intermediary file and crank it through a video editor. It also may be important
+        to select just a portion of the screen rather than your whole display, or to choose a
+        specific frame-rate (high for games, low for bandwidth-saving demos). Finally, there are
+        always special features that vary between utilities, such as whether or not they can capture
+        OpenGL content or be started remotely by script. (...)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> Both recordMyDesktop and Istanbul are
+        available via OBS.</para>
+      <para>http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=recordMyDesktop</para>
+      <para>http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=Istanbul</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://cgoncalves.blogspot.com/2011/07/ssh-connection-automation.html">Carlos
+          Gonçalves: SSH connection automation</ulink>
+      </title>
+      <para>Part of my daily routine envolves accessing and managing a considered amount of remote
+        servers through the SSH protocol. I use screen a lot to ease the job by having a couple of
+        windows opened on each server, so avoiding multiple connections to the same server. By using
+        screen not only helps me grouping server windows altogether in one console window/tab but
+        also is a time saver in those days when network connection is not in its glory days allowing
+        me to reattach it and carrying on being productive (*sighs*). (...)</para>
+<!-- ($ Id: 19.7.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.jveweb.net/en/archives/2011/06/split-and-merge-files-from-the-command-line.html"
+          >Juan Valencia: Split and merge files from the command line</ulink>
+      </title>
+      <para>Although some file archivers offer us the option of split the files, this can be easily
+        accomplished with two commands: split and cat. (...)</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://paskov.biz/blog/?p=724">Vladimir Paskov: Using the rpm command –
+          part1</ulink>
+      </title>
+      <para>RPM is a package management system widely used in various GNU/Linux distributions such
+        as: openSUSE, RedHat, CentOS and Fedora. All this distributions provides various package
+        management tools build around librpm (This library allows programs to make use of a rpm
+        database or rpm packages without using the rpm command ) or making direct use of
+        the rpm command. Examples of this includes: zypper – openSUSE package management tool andyum
+        – Fedora and Red Hat package management tool. This tools provides easy to use functionality
+        for installing, removing, searching, repository management etc, but they lack some
+        functionality provided by the rpm command such as listing the contents of a package, finding
+        what package provides some file etc.</para>
+      <para>This article will show you how you can use the rpm command to preform various package
+        management task , such as installing, removing, querying the rpm database, etc…</para>
+<!-- ($ Id: 23.7.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://kdemonkey.blogspot.com/2011/07/qt-inspector.html">Robert Knight: Qt
+          Inspector</ulink>
+      </title>
+      <para>Whilst debugging a widget layout problem a few days ago, I was looking around for a tool
+        to view the structure of a Qt application without having to recompile it, or in other words,
+        Firebug / Web Inspector for Qt widgets.  I found the <ulink
+          url="http://blogs.kde.org/node/799">KSpy</ulink> tool in the KDE repositories which is in
+        need of some love and there are a variety of tools to aid in runtime debugging and
+        modification of QML but not much in the way of tools for QWidget-based interfaces.  Please
+        let me know in the comments if I missed any.</para>
+      <para>I have put together a simple tool called <ulink
+          url="https://github.com/robertknight/Qt-Inspector">Qt Inspector</ulink>.</para>
+<!-- ($ Id: 22.7.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://python4kids.wordpress.com/2011/07/18/tkinter-tinkering-graphical-user-interfaces/"
+          >Python4Kids/Brendan Scott: Tkinter tinkering (Graphical User Interfaces)</ulink></title>
+      <para>Man     Shut up! (It goes quiet next door) That’s better.He walks to a side wall and
+        hangs his club on a hook beneath big old-fashioned art-nouveau sign clearly labelled `The
+        Burlington Wall-banger’. He goes across to bed and gets in. In the bed are a party of four
+        Japanese businessmen in suits with lapel badges, two lady American tourists with rain hats
+        and cameras, three other moustached English gentlemen in pyjamas, four Tour De France
+        riders, three Swedish businessmen, and Winston Churchill.</para>
+      <para>So far we have been dealing with a command line interface for working with our Python
+        programs.  While command lines are good for a lot of things, they’re usually pretty bad for
+        interfacing with a general user of the program who doesn’t know how the various pieces
+        work.  What we are going to look at now is a different way of presenting the program to a
+        user (and probably a way that you are more familiar with) – GUIs.   GUI stands for
+        “Graphical User Interface”. (...)</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://olex.openlogic.com/wazi/2011/tips-for-using-vim-as-an-ide/"
+          >Wazi/Juliet Kemp: Tips for using Vim as an IDE</ulink></title>
+      <para><ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink> isn’t just a great
+        editor; it’s also a hugely flexible, configurable, and extendable application. You can even
+        set up Vim as an integrated development environment (IDE), giving you all the advantages of
+        a dedicated text editor together with the ability to check syntax, jump between tags,
+        autocomplete, and do all the other useful things you get from a modern IDE. These Vim tips
+        and tricks will get you editing like a pro. (...)</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://net.tutsplus.com/tutorials/ruby/how-to-build-a-shortlink-app-with-ruby-and-redis/"
+          >net.tutsplus.com/Charlie Somerville: How to Build a Shortlink App with Ruby and
+          Redis</ulink></title>
+      <para>In this tutorial, we’ll be building a quick shortlink web app with Ruby, the <ulink
+          url="http://www.sinatrarb.com/">Sinatra</ulink> web framework, and the<ulink
+          url="http://redis.io/">Redis</ulink> database. By the conclusion of this tutorial, you’ll
+        end up with a dead simple, high performance shortlink webapp that’s super easy to scale.
+        (...)</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.linux.com/learn/tutorials/469597-weekend-project-keep-out-repeat-offenders-with-fail2ban-on-linux"
+          >Linux.com/Jack Wallen: Weekend Project: Keep Out Repeat Offenders with Fail2ban on
+          Linux</ulink>
+      </title>
+      <para>Tired of automated attacks on your systems? Want to beef up security a bit by denying
+        would-be attackers a third or fourth chance? Then you need <ulink
+          url="http://www.fail2ban.org/">Fail2ban</ulink>. Fail2ban watches logs and then bans IP
+        addresses, based on too many password failures, by updating the firewall rules. Specific
+        rules can be defined by the user and multiple log files can be monitored. This weekend,
+        let's get started on improving security with Fail2ban. (...)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> Fail2ban packages for openSUSE are
+        available from OBS</para>
+      <para>http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=fail2ban</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.linux.com/learn/tutorials/470979-who-and-what-is-on-my-network-probing-your-network-with-linux"
+          >Linux.com/Carla Schroder: Who and What Is On My Network? Probing Your Network with
+          Linux</ulink></title>
+      <para>In <ulink
+          url="http://www.linux.com/component/content/article/174-tutorials/443706-whose-fault-is-it-when-your-internet-dies-troubleshooting-networks-with-linux"
+          >Whose Fault is it When Your Internet Dies? Troubleshooting Networks with Linux</ulink> we
+        learned some basic network troubleshooting commands. Today we're going to explore the fine
+        fun world of network discovery and find out who is on our network without ever leaving our
+        comfortable chairs.</para>
+      <!--($ Id: 23.7.11 sm $)-->
+    </blockquote>
+  </sect2>
+</sect1>

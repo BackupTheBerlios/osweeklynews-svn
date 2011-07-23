@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="games" role="games">
+  <title>Games Corner</title>
+  <para>The Section provides the Game of the Week, and Updates in the Game Repository</para>
+<!--
+  <blockquote>
+    <title><ulink url="http://www.vuntz.net/journal/post/2011/03/07/Google-Summer-of-Code-2011-for-GNOME-openSUSE">Vincent Untz: Google Summer of Code 2011 for GNOME</ulink></title>
+    <note><para><emphasis role="bold">This Article is licensed under the <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creatice CommonsAttribution-ShareAlike 3.0 Unported License</ulink></emphasis>.</para>
+    </note>
+    <para>
+      <table frame="none">
+        <title>Short Intro</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <tbody>
+            <row>
+              <entry>Name of the Game:</entry>
+              <entry>$NAME</entry>
+            </row>
+            <row>
+              <entry>Genre:</entry>
+              <entry>$GENRE</entry>
+            </row>
+            <row>
+              <entry>1-Click-Install</entry>
+              <entry>$1-Click Install URL</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>   
+    </para>
+    <para></para>
+  </blockquote> -->  <blockquote>
+    <title>
+      <ulink url="http://www.linuxjournal.com/content/linux-gaming-openclonk">Linux Journal/Michael
+        Reed: Linux Gaming: OpenClonk</ulink>
+    </title>
+    <para>Until recently, I had presumed that a Clonk was the sound that my hard drive made just
+      before I realized that I hadn't backed it up properly. However, in this case, a Clonk is a
+      tiny chap who can jump, climb and fire weapons in the service of reaching his
+      goal. OpenClonk runs on Linux and is the latest in a series of side-view platform games that
+      started life as a DOS shareware series.</para>
+    <para><inlinegraphic
+        fileref="http://www.linuxjournal.com/files/linuxjournal.com/ufiles/u1013687/openclonk2_resize.jpg"
+      /></para>
+    <para>Although, superficially, <ulink url="http://www.openclonk.org/">OpenClonk</ulink> could be
+      classified as a platform game, the pace is thoughtful rather than breakneck. It borrows its
+      control system from first person shooters, and the familiar WASD key cluster is teamed with
+      mouse control for movement and aiming respectively.</para>
+    <para>The graphics make use of 3D hardware rendering even though the view is strictly side-on
+      and 2D. Although it makes use of 3D acceleration, it doesn't need a powerhouse graphics card
+      to run, and it rendered perfectly well on my Core Duo with integrated Intel graphics chipset.
+      I suspect it would have run even more smoothly with a lesser processor and a more powerful,
+      dedicated graphics card.</para>
+    <para><emphasis role="bold">Editors Note</emphasis>: This Game is available in our <ulink
+        url="http://download.opensuse.org/repositories/games/openSUSE_11.4">games</ulink>
+      Repository.</para>
+<!--($ ld: 13.7.11 sm $)-->  
+  </blockquote>
+</sect1>

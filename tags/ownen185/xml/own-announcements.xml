@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <important>
+    <para>The Articles inside this Section are in full. If you are already knowing the stuff in
+      news.opensuse.org, then you can skip this section through using the TOC.</para>
+  </important>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://news.opensuse.org/2011/07/22/a-new-milestone-on-the-cloud-opensuse-releases-milestone-3/"
+        >A new milestone on the cloud: openSUSE releases milestone 3</ulink>
+    </title>
+    <para>Just a few days ago the third of six milestones on the road ftoopenSUSE 12.1 has been
+        made <ulink url="http://software.opensuse.org/developer/en">available</ulink> for testing
+      before it goes to final release November 11th, 2011.  (Yes, 11-11-11!)</para>
+    <para><emphasis role="bold">Main changes on this milestone</emphasis></para>
+    <para>The third milestone has a huge number of changes and improvements on top of the latest
+      openSUSE release. And many packages have been updated or upgraded. You can check the latest
+      package versions on <ulink
+        url="http://en.opensuse.org/index.php?title=openSUSE:Factory_versions&amp;diff=cur&amp;oldid=40501"
+        >this page</ulink>. What are the major changes?<itemizedlist>
+        <listitem>
+          <para>Firefox 5</para>
+        </listitem>
+        <listitem>
+          <para>MozillaThunderbird 5.0</para>
+        </listitem>
+        <listitem>
+          <para>aaa_base 12.1</para>
+        </listitem>
+        <listitem>
+          <para>Kernel 3.0 rc7</para>
+        </listitem>
+        <listitem>
+          <para>Python3   3.2</para>
+        </listitem>
+        <listitem>
+          <para>Sysstat 10.0.1</para>
+        </listitem>
+        <listitem>
+          <para>LibreOffice 3.3.3.1</para>
+        </listitem>
+        <listitem>
+          <para>Tomboy 1.7.1</para>
+        </listitem>
+        <listitem>
+          <para>Tracker 0.11.0</para>
+        </listitem>
+        <listitem>
+          <para>many smaller updates to KDE and GNOME applications and desktops</para>
+        </listitem>
+      </itemizedlist></para>
+    <para><emphasis role="bold">Systemd needs your feedback</emphasis></para>
+    <para>The team welcomes help and bugreports as we prepare for the first release of openSUSE to
+      use systemd.</para>
+    <para><emphasis role="bold">Hands on to help out easier than ever!</emphasis></para>
+    <para>Your input at this early development stage is a great opportunity to collaborate in making
+      the final release into the polished work we always prosecute for. openSUSE 12.1 Milestone 3
+      has a <ulink url="http://en.opensuse.org/openSUSE:Most_annoying_bugs_12.1_dev">list of most
+        annoying bugs here</ulink>, please add issues you find and help fix them. As Will Stephenson
+        has <ulink url="http://lizards.opensuse.org/2011/05/16/have-you-burped-yet-today/">already
+        blogged</ulink>, fixing an issue is a matter of<emphasis role="bold">BURP</emphasis>ing
+        on <ulink url="http://build.opensuse.org/">build.opensuse.org</ulink>! Find a how-to <ulink
+        url="http://en.opensuse.org/openSUSE:Build_Service_Collaboration#Example_with_web_interface"
+        >here</ulink>.</para>
+    <para>So go and see for yourself what the next version of openSUSE has in store for you at
+        our <ulink url="http://software.opensuse.org/developer">download center</ulink>.</para>
+    <!-- ($ ld: 22.7.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://news.opensuse.org/2011/07/22/last-call-for-opensuse-conference-papers/"
+        >Last Call for openSUSE Conference Papers!</ulink>
+    </title>
+    <para>With the days closing in on us before the next great openSUSE Conference in Nuremberg,
+      Germany 11-14 September, 2011, we’re seeing a lot of awesome papers being submitted to the
+      Conference Program Committee.  But there’s still time for you to submit that awesome session
+      you’ve dreamed of. The deadline to <ulink
+        url="http://conference.opensuse.org/indico//conferenceDisplay.py?confId=2">submit your
+        paper</ulink>is <ulink
+        url="http://www.timeanddate.com/worldclock/fixedtime.html?day=25&amp;month=7&amp;year=2011&amp;hour=0&amp;min=0&amp;sec=0&amp;p1=0"
+        >midnight July 25th</ulink>.</para>
+    <para><emphasis role="bold">What We Are Looking For:</emphasis></para>
+    <para>This year’s Conference theme is RWX³.  That means its an open conference in which we all
+      get to roll up our sleeves and get involved!  We’re looking for that great session that talks
+      about FOSS projects, openSUSE Community growth, and  workshops that empower our users and
+      contributors to do more awesome stuff.</para>
+    <para><emphasis role="bold">Types of Sessions you can apply for</emphasis><itemizedlist>
+        <listitem>
+          <para>Presentation</para>
+        </listitem>
+        <listitem>
+          <para><ulink
+              url="http://news.opensuse.org/2011/06/14/opensuse-conference-and-rw-sessions-the-bof/"
+              >Birds of a Feather (BoF)</ulink></para>
+        </listitem>
+        <listitem>
+          <para><ulink
+              url="http://news.opensuse.org/2011/07/13/opensuse-and-rw-sessions-the-workshop/"
+              >Workshops</ulink></para>
+        </listitem>
+        <listitem>
+          <para>Hacksessions</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>As you can see, the possibilities are endless.  And this year’s conference, which is
+      always free, is extra special because we’ll be moving to our new location, Zentrifuge, and
+      co-hosting with the SUSE Labs Conerence.  That’s two for the price of one and one is
+      FREE!</para>
+    <para><emphasis role="bold">What’s Next</emphasis><itemizedlist>
+        <listitem>
+          <para>Submit your proposal <ulink
+              url="http://conference.opensuse.org/indico//conferenceDisplay.py?confId=2"
+              >here</ulink></para>
+        </listitem>
+        <listitem>
+          <para>The Program Committee will be reviewing all submissions and making their votes
+            before August 1.</para>
+        </listitem>
+        <listitem>
+          <para>After August 5, we will announce the accepted proposals and contact you with the
+            status of your proposal.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Remember, the deadline is this <emphasis role="bold">Sunday, July 24th</emphasis>!</para>
+    <!-- ($ ld: 23.7.11 sm $)-->
+  </blockquote>
+</sect1>

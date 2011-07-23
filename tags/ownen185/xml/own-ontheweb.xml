@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://dot.kde.org/2011/07/19/intel-collabora-and-suse-be-main-sponsors-desktop-summit"
+          >Intel, Collabora and SUSE to be main sponsors of the Desktop Summit</ulink>
+      </title>
+      <para>We are pleased to announce that the Desktop Summit 2011 in Berlin will be supported by
+        Intel as the Platinum sponsor. The event organizers also welcome Collabora and SUSE as Gold
+        partners, and are delighted with the community spirit of these generous corporate partners.
+        Mirko Boehm, lead organizer of the Desktop Summit, said: "Their support is essential for the
+        Desktop Summit's efforts to bring together Free Software developers from all around the
+        world to work in a collaborative spirit on the next generation desktop technology."
+        (...)</para>
+<!-- ($ ld: 23.7.11 sm $) -->    </blockquote>
+  </sect2>
+<!--<sect2>
+  <title>Call for participation</title>
+  <blockquote><title>
+      <ulink url="http://blog.worldlabel.com/2011/tux-paint-kids-summer-drawing-contest.html">Tux Paint Kids Summer Drawing Contest</ulink>
+    </title><para><emphasis role="bold">Grab <ulink url="http://www.tuxpaint.org/">Tux Paint</ulink>, make a cool drawing, win one of 3 <ulink url="http://one.laptop.org/">OLPC laptops</ulink>, one of 10 <ulink url="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick">Sugar-on-a-stick</ulink> and other awesome prizes!</emphasis></para><para>The 2011 <ulink url="http://www.tuxpaint.org/">Tux Paint</ulink> Summer Drawing Contest is sponsored by Worldlabel.com and is open to all children aged 3 to 12 who live anywhere in the World!
+
+Here’s a chance to show off your talent using a great drawing program made especially for kids. Tux Paint is an award-winning drawing program you can download to your computer. Tux Paint was recently awarded <ulink url="http://sourceforge.net/blog/potm-201106/">SourceForge.net Project of the Month</ulink>. It will run on all versions of Windows (including Tablet PC), Mac OS X 10.4 and up, Linux, FreeBSD and NetBSD. And it’s FREE! (...)</para> ($ ld: 2.7.11 sat $) </blockquote>
+</sect2>-->  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.datamation.com/open-source/choosing-the-best-linux-desktop-kde-unity-gnome-1.html"
+          >Michael Gapczynski (MTGap): Testers needed for sharing files with ownCloud</ulink>
+      </title>
+      <para>I have good news this week. First, I’m still here because I passed the mid-term
+        evaluation for Google Summer of Code. Thanks for passing me Robin. Second, I was successful
+        in completing my goal last week and now have everything setup so others can start
+        experimenting with sharing files.</para>
+      <para>Besides general bug fixing this past week I’ve also refactored OC_SHARE, which is the
+        class that handles the database records of all shared files in ownCloud. It started to get a
+        little messy and I was unhappy with the quality of code so I rewrote many of the functions
+        and moved some of the error handling into OC_FILESTORAGE_SHARED where it should belong. I
+        also commented all of the functions so other developers can use OC_SHARE in their own apps
+        and understand what it is doing. I’ve also added two hooks to OC_SHARE: post_delete and
+        post_rename. These are triggered by OC_FILESYSTEM when files are deleted, renamed, or moved.
+        The database gets updated when these actions occur in order to avoid any missing shared
+        items.</para>
+      <para>The backend for sharing is pretty much complete so I can now focus on the user interface
+        for the rest of the summer. The only part that needs updating is the permissions system. I
+        was having a difficult time deciding on what to do with permissions and ended up going with
+        only read and write, without the ability to permanently delete files. I’ve changed my mind
+        now and will expand the options to more specific permissions that you can assign users. I
+        was worried before that this would make the user interface too complex, but I now believe I
+        can still achieve simplicity with the user experience. (...)</para>
+<!-- ($ ld: 22.7.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.zdnet.com/blog/open-source/suse-studio-12-ships-suse-linux-chief-to-roll-out-full-cloud-strategy-soon/9260"
+          >ZDNet/Paula Rooney: SUSE Studio 1.2 ships, SUSE Linux chief to roll out full cloud
+          strategy soon</ulink>
+      </title>
+      <para>The newly independent SUSE Linux unit unveiled the first leg of its cloud platform
+        today: SUSE Studio Version 1.2.</para>
+      <para>The development platform, which has been on the market for two years, helps SUSE Linux
+        customers build, update and manage applications. Version 1.2 allows customers to better
+        build, update and manage applications across physical, virtual and cloud environments
+        including public clouds as well as x86 and System Z mainframe systems.</para>
+      <para>In a recent interview, SUSE’s new chief, a 20-year Attachmate and Novell vet, said he is
+        preparing to roll out a full-fledged cloud strategy for the No 2 Linux distribution, even as
+        his on-the-job training continues. Top Linux distributor Red Hat has unveiled a
+        comprehensive cloud strategy in recent months. (...)</para>
+<!--($ ld: 23.7.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.datamation.com/open-source/suse-joins-xamarin-for-mono.html"
+          >Datamation/Sean Michael Kerner: SUSE Joins Xamarin for Mono</ulink>
+      </title>
+      <para>Mono isn't dead, and SUSE isn't giving up on it entirely either. Attachmate's SUSE Linux
+        division today officially announced a deal with startup Xamarin for support and ongoing
+        development of Mono.</para>
+      <para>Xamarin is a company founded by former Novell employees including Nat Friedman and Mono
+        founder Miguel de Icaza. The pair founded the company afterAttachmate laid off an
+        undisclosed number of Mono developers in May, following their acquisition of Novell.</para>
+      <para>"What we're announcing is that SUSE and Xamarin have entered into a partnering
+        agreement, which will make sure that we are able to effectively support customers using
+        Mono-based products," Holger Dyroff VP Product Management at SUSE told InternetNews.com. "As
+        part of the partnership we are granting Xamarin a broad intellectual property license."
+        (...)</para>
+<!--($ ld: 23.7.11 sm $) -->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.zdnet.com/blog/open-source/top-five-linux-contributor-microsoft/9254"
+          >ZDNet/Steven J. Vaughan-Nichols: Top Five Linux Contributor: Microsoft</ulink>
+      </title>
+      <para>Cats and dogs; apples and oranges; Linux and Microsoft. Two of these three things do not
+        go together. Would you believe that Microsoft—yes Microsoft—was the fifth largest
+        contributor to the soon to be released <ulink
+          url="http://www.zdnet.com/blog/open-source/new-name-same-linux/9016">Linux 3.0
+          kernel</ulink>? Believe it.</para>
+      <para>In a Linux Weekly News story, currently only available to subscribers, an analysis of
+        Linux 3.0 contributors reveals that Microsoft was the fifth largest corporate contributer to
+        Linux 3.0. While only 15h overall, that still puts Microsoft behind only Red Hat, Intel,
+        Novell, and IBM in contributing new code to this version of Linux. (...)</para>
+      <!-- ($ ld: 23.7.11 sm $) -->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://digitizor.com/2011/07/20/microsoft-video-linuxs-20th-birthday/"
+          >digitizor.com/Ricky: Microsoft Makes A Video For Linux’s 20th Birthday</ulink></title>
+      <para>The Linux Foundation is celebrating 20 years of Linux and as a part of the celebration,
+        they are accepting videos as part of a video contest. One of the video submission came form
+        none other than Microsoft itself.</para>
+      <!--($ ld: 23.7.11 sm $) -->
+    </blockquote>
+  </sect2>
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://www.zdnet.co.uk/blogs/mapping-babel-10017967/how-linux-saved-my-computer-from-windows-update-10023470/"
+          >ZDNet UK/Jack Clark: How Linux saved my computer from Windows Update</ulink>
+      </title>
+      <para>If it wasn't for Linux, a Windows Update crash would have forced me to format my drive
+        and reinstall everything. On Friday I got home from work, powered up my HP Pavilion DV6
+        6055ea laptop and watched as it promptly shut down to churn through Windows Update. It got
+        30 percent of the way through then the blue screen of death (BSOD) appeared.</para>
+<!-- ($ ld: 23.7.11 sm $) -->    </blockquote>
+  </sect2>
+<!--
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://omgsuse.com/content/yet-another-flash-player-security-update">OMG!SUSE! team: Yet another Flash Player security update</ulink>
+      </title>
+      <para>Security Team member <ulink url="http://www.suse.de/~thomas/">Thomas Biege</ulink>
+        published an advisory this morning more critical security updates in..you guessed it:
+        <emphasis role="bold">flash-player</emphasis>.</para>
+      <para>According to the security announcement this package update affects openSUSE 11.3, 11.4
+        as well as SUSE Enterprise Linux Desktop 10 SP4 and 11 SP1. This announcement also mentions
+        that this is a <emphasis role="bold">remote code execution</emphasis> vulnerability, which
+        means not updating to the latest flash-player package will leave you open to attackers
+        running programs and exploits on your machine!</para>
+      <para>Adobe has posted more <ulink url="http://www.adobe.com/support/security/bulletins/apsb11-12.html">details on this bulletin on their site</ulink> if you&apos;re <emphasis role="italic">that</emphasis>
+        interested in the different issues this fix addresses.</para>
+      <para>For most users, you&apos;ll just need to follow these steps:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Open up <ulink url="http://en.opensuse.org/YaST2-GTK">Yast2</ulink><emphasis role="bold">or</emphasis> click on the &quot;Online Update&quot; applet running in your GNOME or
+            KDE panels</para>
+        </listitem>
+        <listitem>
+          <para>Select the flash-player update and install it</para>
+        </listitem>
+        <listitem>
+          <para>Make sure you restart <emphasis role="bold">
+            <emphasis role="italic">all</emphasis>
+          </emphasis> of your browsers, this will ensure that no program is
+            running the older vulnerable flash-player package</para>
+        </listitem>
+        <listitem>
+          <para>Relax with a Long Island Ice Tea</para>
+        </listitem>
+      </itemizedlist>
+          </blockquote>
+  </sect2> --><!--<sect2>
+  <title>LOL</title>
+  <blockquote>
+    <title>
+      <ulink url="http://xkcd.com/874/">XKCD: Time Management</ulink>
+    </title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://imgs.xkcd.com/comics/time_management.png" width="50%"/>
+      </imageobject>
+    </mediaobject>
+    <para><emphasis role="bold">License</emphasis>: <ulink url="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC</ulink></para>
+  </blockquote>
+</sect2>--></sect1>

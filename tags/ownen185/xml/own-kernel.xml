@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://www.h-online.com/open/news/item/Real-time-patches-for-the-Linux-kernel-take-a-major-step-forward-1282492.html"
+        >h-online/Real-time patches for the Linux kernel take a major step forward</ulink>
+    </title>
+    <para>Thomas Gleixner has released the first test version of a real-time (RT) Linux kernel based
+      on a current release candidate of Linux kernel version 3.0; having been <ulink
+        url="http://www.h-online.com/news/item/Linux-kernel-3-0-slightly-delayed-1282429.html"
+        >slightly delayed</ulink>, version 3.0 is due to be <ulink
+        url="http://thread.gmane.org/gmane.linux.rt.user/6861">released</ulink> any day now. With
+      version 3.0-rc7-rt0, the developers have taken the biggest step towards a modern basis for
+        the <ulink url="https://rt.wiki.kernel.org/index.php/Main_Page">RT kernel</ulink>, a kernel
+      that is chiefly maintained by Gleixner and several other developers – the current stable
+      kernel with real-time capabilities is still based on the Linux 2.6.33 series, which Greg
+      Kroah-Hartman has <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Further-problems-with-UEFI-1281549.html"
+        >continued to maintain</ulink> specifically for the RT developers. (...)</para>
+<!-- ($ ld: 22.7.11 sm $) -->  </blockquote>
+  <blockquote>
+    <title><ulink url="https://lkml.org/lkml/2011/7/21/455">Linus Torvalds: Linux 3.0
+        release</ulink></title>
+    <para>So there it is. Gone are the 2.6.&lt;bignum> days, and 3.0 is out.</para>
+    <para>This obviously also opens the merge window for the next kernel, whichwill be 3.1. The
+      stable team will take the third digit, so 3.0.1 willbe the first stable release based on
+      3.0.</para>
+    <para>As already mentioned several times, there are no special landmarkfeatures or
+      incompatibilities related to the version number change,it's simply a way to drop an
+      inconvenient numbering system in honor oftwenty years of Linux. In fact, the 3.0 merge window
+      was calmer thanmost, and apart from some excitement from RCU I'd have called itreally smooth.
+      Which is not to say that there may not be bugs, but ifanything, there are hopefully fewer than
+      usual, rather than the normal".0" problems. (...)</para>
+    <!--($ ld: 23.7.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.h-online.com/open/features/What-s-new-in-Linux-3-0-1279552.html"
+        >h-online/Thorsten Leemhuis: What's new in Linux 3.0</ulink></title>
+    <para><emphasis role="bold">The transition to the Linux kernel's 'third decade' sees numerous
+        changes to the Btrfs filesystem. The kernel now includes all the major components needed to
+        host guest systems under Xen and includes many new and revised drivers.</emphasis></para>
+    <para>Linus Torvalds and his collaborators have taken just two months to <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1170070">complete</ulink> the latest kernel.
+      The most notable change, however, is cosmetic rather than technical – the transition from
+      version 2.6.39 to 3.0. This not been taken as a cue to insert major changes, however, and the
+      new kernel is in fact a perfectly normal version increment, following the pattern set for the
+      2.6 series.</para>
+    <para>New features in Linux 3.0 include the addition of a storage backend for Xen, which means
+      that the kernel now contains all the major components required to run as Dom0 – the merger of
+      Xen support appeared tantalisingly close six years ago, but it has taken until now for it to
+      actually happen. There have also been a number of changes to the Btrfs filesystem and to
+      graphics drivers. Kernel developers have as ever also added several new drivers and have
+      improved many existing drivers. (...)</para>
+    <!--($ ld: 23.7.11 sm $) -->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="https://plus.google.com/102150693225130002912/posts/2BXkWyrY4jH">Linus
+        Torvalds: Linux 3.0 Delayed for Late Breaking Patch</ulink></title>
+    <para>Why do we always find the subtle bugs just before a release?</para>
+    <para>Looks like I won't be releasing 3.0 today, just because Hugh found this incredibly subtle
+      pathname lookup bug. We have a patch, we understand the problem, and it looks
+      ObviouslyCorrect(tm), but I don't think I want to release 3.0 just a couple of hours after
+      applying it.</para>
+    <para>Of course, the bug is so hard to see that Hugh needs weeks to reproduce it even with his
+      stress test, so we could just ignore it and backport the fix later. But I really hate making
+      releases with known issues even if it's almost certainly a "nobody will ever hit this in
+      practice" issue</para>
+    <para>.Oh well.</para>
+    <!--($ ld: 23.7.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="https://lkml.org/lkml/2011/7/20/371">Linus Torvalds: Note on Linux 3.0 and
+        the 3.1 merge window</ulink></title>
+    <para>As everybody knows by now, not only did I do an -rc7 last week insteadof releasing 3.0
+      (due to some worries about the RCU code), but I endedup also not doing the 3.0 on Monday
+      because of a pathname lookup bugand then some _more_ RCU issues.</para>
+    <para>Anyway, those should all be resolved and the fixes merged now, and I'mnot really all that
+      nervous about the pathname lookup issue - I thinkthat got nailed, and the patch for that was
+      literally just moving asingle line (and adding a comment).</para>
+    <para>The RCU issues worries me a bit, but everything says it's all good,and the biggest issues
+      were with the new RCU_BOOST feature that reallyneither defaults to on, nor is suggested right
+      now. So I think we'reok, and I'm planning on doing 3.0 tomorrow. (...)</para>
+    <!--($ ld: 23.7.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://schaiba.wordpress.com/2011/07/23/kernel-weekly-news-23-07-2011/">Rares
+        Aioanei: kernel weekly news – 23.07.2011</ulink></title>
+    <para>Rares gives his weekly Kernel Review.</para>
+    <!--($ ld: 23.7.11 sm $)-->
+  </blockquote>
+</sect1>
