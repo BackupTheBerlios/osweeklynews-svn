@@ -92,21 +92,76 @@
 <!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00037.html">N B
-        Prashanth: GsoC Midterm Consolidated Report - Separating libYUI</ulink>
+      <ulink
+        url="http://cbounta.wordpress.com/2011/07/22/a-utility-for-merging-configuration-sysconfig-files-week-9-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 9
+        Report</ulink>
     </title>
-    <para>I would like to summarize my progress so far. I am working on thelibyui project as
-      mentioned above. (...)</para>
-<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
+    <para>Exciting news for the project this week. After solving the problem with the comments and
+      the tree representation of the sysconfig files in Augeas, there was a big leap in the
+      project’s progress. By having test data and through debugging i was able to complete the match
+      algorithm.The program is now able to traverse through two trees / files, make the necessary
+      matches between the nodes of these two trees and provide the appropriate information to the
+      later stages. That of merging.</para>
+    <para>What exactly have been done in the previous week:<itemizedlist>
+        <listitem>
+          <para>Tree representation of sysconfig files</para>
+        </listitem>
+        <listitem>
+          <para>Matching between two trees nodes completed</para>
+        </listitem>
+        <listitem>
+          <para>Sorting of labels (Small Fixes)</para>
+        </listitem>
+        <listitem>
+          <para>tree_compare function complete</para>
+        </listitem>
+        <listitem>
+          <para>Tree traversal of aug_process_trees ( revisited)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>What is for next week:<itemizedlist>
+        <listitem>
+          <para>Finish merging functions for aug_process_trees ( I feel optimistic that i will
+            surely complete this next week due to the reason that matching was completed)</para>
+        </listitem>
+        <listitem>
+          <para>Create first beta packages</para>
+        </listitem>
+        <listitem>
+          <para>Test Test Test</para>
+        </listitem>
+        <listitem>
+          <para>Improve code</para>
+        </listitem>
+      </itemizedlist></para>
+<!-- ($ ld: 23.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/archive/opensuse-project/2011-07/msg00038.html">Mihnea
-        Dobrescu-Balaur: Suse Bug Reporter - GSoC midterm reports</ulink>
+      <ulink url="http://redache.wordpress.com/2011/07/23/entomologist-ui-changes-weekly-report-9/"
+        >David Williams: Entomologist UI Changes - Weekly Report #9</ulink>
     </title>
-    <para>The expected/requested functionalities for the project are done. I'mtalking about the CLI
-      version of the tool.Its main functionalities are splitted in four categories at the moment:
-      (...)</para>
-<!-- ($ ld: 16.7.11 sm $)-->  </blockquote>
+    <para>This week I’ve been working on finishing up the ToDo Lists, which did entail writing a new
+      Item Delegate for the list as the previous method of checking which widget had been clicked
+      was less than optimal!. I have finished the ToDo List and it will hopefully be merged on
+      Monday into an experimental branch that I can go through and ensure that everything works as
+      expected. This will then all be pulled together as a possible version 1.0 of Entomologist,
+      which is great news!.</para>
+    <para>I am currently researching possibilities for integrating Cloud Services into the ToDo List
+      and I plan on targeting an iCal/WebDAV compatible format export to begin with. Once this basic
+      step is in place I can then look at integrating with various web services and generic
+      iCal/WebDAV support for servers that use these.</para>
+    <para>This all leads on to how long I have left of my GSoC, which by my count is 5 weeks(!) of
+      GSoC Time,but I would like to stick to the soft pencils down date as much as possible so the
+      final week can be spent ensuring everything works properly. I want to look at the addition of
+      QML after I’ve integrated some Cloud Sync aspects as I think this would be a really excellent
+      feature to have.</para>
+    <para>Here’s a screenshot of the ToDo List on OS X Lion (Which also shows that nothing has to be
+      done to Entomologist’s code base to make it compatible):</para>
+    <para><inlinegraphic
+        fileref="http://redache.files.wordpress.com/2011/07/screen-shot-2011-07-23-at-02-21-41.png"
+        width="30%"/></para>
+<!-- ($ ld: 23.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://www.sebastianoliva.com/en/2011/07/gsoc-midterm-report/">Sebastian Oliva:

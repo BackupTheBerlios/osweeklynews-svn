@@ -326,72 +326,67 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> --><!--
+    </sect3> -->
     <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
         <title>
-          <ulink url="hhttp://zoumpis.wordpress.com/2011/06/06/announcement-of-opensuse-medical-11-4-no2/">Rousinopoulos Athanasios-Ilias: Announcement of openSUSE Medical 11.4- No2</ulink>
+          <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/">Rousinopoulos
+            Athanasios-Ilias: openSUSE Medical Meeting</ulink>
         </title>
-        <orderedlist>
-          <listitem>
-            <para>What is openSUSE Medical Project?</para>
-            <para>The openSUSE Medical project supports the use of openSUSE in doctor&apos;s practices
-              and other clinical environments. We try to collect and update software. As base for
-              packaging we use: List of Open Source Healthcare Software List. After we have packaged
-              enough software we will try to create an openSUSE based Distribution out of it.</para>
-          </listitem>
-          <listitem>
-            <para>Where can i find more info about the project?</para>
-            <para><ulink url="http://en.opensuse.org/Portal:Medical">http://en.opensuse.org/Portal:Medical</ulink></para>
-          </listitem>
-          <listitem>
-            <para>What&apos;s new in this release?</para>
-            <para>openSUSE 11.4 Repositories :<itemizedlist>
+        <para>We are pleased to announce the first openSUSE medical Meeting.</para>
+        <para><emphasis role="bold">Time and meeting place</emphasis><itemizedlist>
+            <listitem>
+              <para>2011-07-27 21:00 UTC/GMT +3 hours</para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">#opensuse-medical</emphasis> at freenode</para>
+            </listitem>
+          </itemizedlist></para>
+        <para><emphasis role="bold">Topics</emphasis><itemizedlist>
+            <listitem>
+              <para>Welcome</para>
+            </listitem>
+            <listitem>
+              <para>News and Announcements<itemizedlist>
+                  <listitem>
+                    <para>
+                      <programlisting>New Leadership , Plans and Thoughts
+Report From openSUSE Collaboration Camp (15-17 of July 2011 , Greece)  
+openSUSE Conference Participation ( 11-14 of September 2011, Nürnberg) 
+openSUSE Medical 11.4 Feedback
+openSUSE Medical Mailing list Brainstorms and Ideas (Andre Massing)</programlisting>
+                    </para>
+                  </listitem>
+                </itemizedlist></para>
+            </listitem>
+            <listitem>
+              <para>Milestones</para>
+              <itemizedlist>
                 <listitem>
-                  <para>openSUSE 11.4 Updates remove</para>
+                  <para>
+                    <programlisting>Milestone 1 : Add new software in the distro (aka packaging new software)
+Milestone 2 : New applications development (Qt/KDE ones)
+Milestone 3 : Translation of included applications (openEMR,GnuMed, FreemedForms) 
+Milestone 3 : Translation of the non-imported software (openmolar,sheltler Manager)
+Milestone 3 : Build the new release of the Distro with KIWI toolset
+Milestone 4 : openSUSE Medical Artwork
+Milestone 5 : Setting the release dates for the new release of the distro (openSUSE Medical Beta 1,Beta 2,RC,Final Release) </programlisting>
+                  </para>
                 </listitem>
-                <listitem>
-                  <para>openSUSE 11.4 OSS,</para>
-                </listitem>
-                <listitem>
-                  <para>education 11.4,</para>
-                </listitem>
-                <listitem>
-                  <para>Nvidia 11.4,</para>
-                </listitem>
-                <listitem>
-                  <para>Libre Office Stable 11.4,</para>
-                </listitem>
-                <listitem>
-                  <para>11.4 Wireless,</para>
-                </listitem>
-                <listitem>
-                  <para>Medical 11.4,</para>
-                </listitem>
-                <listitem>
-                  <para>non-ossd</para>
-                </listitem>
-              </itemizedlist></para>
-          </listitem>
-          <listitem>
-            <para>New features that will impress you!</para>
-          </listitem>
-          <listitem>
-            <para>Where can i download it ?</para>
-            <para><ulink url="http://susegallery.com/a/UbPYJM/opensuse-medical-114">http://susegallery.com/a/UbPYJM/opensuse-medical-114</ulink></para>
-            <para>Also available at : OVF image , VMware Image , Live CD/DVD</para>
-          </listitem>
-          <listitem>
-            <para>Ok , i would like to make some comments or contribute in the project , what do i
-              have to do?</para>
-            <para>Comments are great, you can sent us with an Email to:<ulink url="mailto:opensuse-medical@opensuse.org">opensuse-medical@opensuse.org</ulink>. </para>
-            <para>If this don’t run directly, then you must subscribe the List (mail to <ulink url="mailto:opensuse-medical+subscribe@opensuse.org">opensuse-medical+subscribe@opensuse.org</ulink>). </para>
-            <para>Feel free to express your opinion!</para>
-          </listitem>
-        </orderedlist>
+              </itemizedlist>
+            </listitem>
+          </itemizedlist><itemizedlist>
+            <listitem>
+              <para>Open Floor - General Discuss</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>More informations at: <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/"
+            >http://en.opensuse.org/openSUSE:Medical_meetings/</ulink></para>
+        <!-- ($ ld: 23.7.11 sm $)-->
       </blockquote>
-    </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -412,14 +407,16 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 358)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation
+              (Score: 360)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 188)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
+              boot (Score: 187)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -431,13 +428,13 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 157)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 159)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 139)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 140)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -453,7 +450,8 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 104)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score:
+              106)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -466,112 +464,72 @@
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 16.7.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 23.7.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312622">add DVB-USB drivers to kernel</ulink>
+            <ulink url="https://features.opensuse.org/312622">Preserve Running Kernel On Kernel
+              Update by Default</ulink>
           </title>
-          <para>For whatever reason, the dvb-USB drivers are not shipped with openSUSE. Drivers are available (see e.g. <ulink url="http://www.linuxquestions.org/questions/showthread.php?p=4265470#post4265470">http://www.linuxquestions.org/questions/showthread.php?p=4265470#post4265470</ulink> ) but at least not in 11.4, which makes use of DVBT-Sticks quite complicated.</para>
+          <para>My suggestion is to enable multiversion kernel &amp; preserve running kernel for
+            safer kernel updates, to reduce support problems when new kernels won't boot. This is
+            now possible for 12.1 by 1 line change to zypp.conf.Since Online Update was first
+            introduced (SuSE 7.1?) it replaced the running kernel by default, which can lead to
+            problems booting. For a while multiversion kernel has been supported by libzypp (1 line
+            edit in zypp.conf). The drawback with multiversion was manual deletion required of
+            unwanted kernel packages (see <ulink
+              url="http://lists.opensuse.org/opensuse-kernel/2011-07/msg00056.html"
+              >http://lists.opensuse.org/opensuse-kernel/2011-07/msg00056.html</ulink> ). Now in
+            Factory 12.1 M3 Michel Marek has included &amp; announced - kernel package retention
+            options (see
+            http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/ ).The
+            default is sane, to preserve the Lastest &amp; Running Kernels. So lets use it and make
+            12.1 kernel updates safer for all, and by default do the right thing!</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312627">opensuse 12.1 to use kernel 3.1</ulink>
+            <ulink url="https://features.opensuse.org/312649">Automatically add keys to the
+              ssh-agent at X11 login</ulink>
           </title>
-          <para>I would like consideration to be given to the likely release of kernel 3.1 around the 19th of October, less than a week after RC1 opensuse 12.1 gets published.
-</para>
-          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTY2MA">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTY2MA</ulink></para>
-          <para>kernel 3.1 will bring a few noteworthy advantages -
-solution for kernel power regressions:</para>
-          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTYwMQ">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTYwMQ</ulink></para>
-          <para>possibility of support for Intels Cedar Trail platform:</para>
-          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTYyNw">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTYyNw</ulink></para>
-          <para>better KVM virtualisation support:</para>
-          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTU3NQ">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTU3NQ</ulink></para>
-          <para>better Nouveau DRM support for fermi:</para>
-          <para><ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=OTYzNQ">http://www.phoronix.com/scan.php?page=news_item&amp;px=OTYzNQ</ulink></para>
+          <para>I'd like to have a simple way to have the ssh-agent load a number of keys
+            automatically when I log in to the system. The simplest way in my opinion would be a
+            directory, say ~/.ssh/ssh-add/, where the user can copy all the keys he wants to
+            add. </para>
+          <para>Currently ssh-agent is already started when the user logs in using X11 by
+            /etc/X11/xdm/sys.xsession. /etc/X11/xinit/xinitrc which runs a bit later also executes
+            scripts in /etc/X11/xinit/xinitrc.d/. To me this seems the perfect place to add a small
+            script containing the following
+            lines:<screen>#!/bin/bash if test -S
+"$SSH_AUTH_SOCK" -a \ -x
+"$SSH_ASKPASS" -a \ -d ~/.ssh/ssh-add;
+  then ssh-add ~/.ssh/ssh-add/* &lt;
+  /dev/null fi</screen></para>
+          <para>In fact, I use this script for a few years now. And I am sick of adding it to
+            /etc/X11/xinit/xinitrc.d/ after each distribution update.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="openSUSE Linux 12.1: Increased variety of packages, all packages...">openSUSE Linux 12.1: Increased variety of packages, all packages...</ulink>
+            <ulink url="https://features.opensuse.org/312659">openSUSE Linux 12.1/LXDE: Add support
+              for the XZ Utils in Xarchiver</ulink>
           </title>
-          <para>openSUSE Linux 12.1: Increased variety of packages, all packages in the system and all repositories (official and unofficial) stable and updated.</para>
+          <para>openSUSE Linux 12.1/LXDE: Add support for the <ulink
+              url="http://en.wikipedia.org/wiki/XZ_Utils">XZ Utils</ulink> in <ulink
+              url="http://en.wikipedia.org/wiki/Xarchiver">Xarchiver</ulink> .</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312629">openSUSE Linux: Make it Global (Worldwide) in the World</ulink>
+            <ulink url="https://features.opensuse.org/312629">Enhance YaST=System=BootLoader</ulink>
           </title>
-          <para>openSUSE Linux: Make it Global (Worldwide) in the World.</para>
-          <para>Making the project&apos;s origins openSUSE Linux, which was founded by Novell, with the support of the community, truly Global (Worldwide) as it is on the project website:</para>
-          <para><ulink url="http://en.opensuse.org/Main_Page">http://en.opensuse.org/Main_Page</ulink> .</para>
-          <para><ulink url="http://distrowatch.com/table.php?distribution=debian">Debian</ulink> has its origin in DistroWatch as Global, and has the slogan:</para>
-          <para>The Universal Operating System.</para>
-          <para>OpenSUSE Linux distributions is one of the world and used by users of various profiles: Desktop, Computer Graphics, audio and video editing, developers, servers, among other areas, in different architectures and multiple languages, which makes openSUSE Linux can also be like Debian, a Linux distribution on
-<ulink url="http://distrowatch.com/table.php?distribution=suse">DistroWatch</ulink> global source and all that is talked about in openSUSE Linux world.</para>
-          <para>A new slogan for the openSUSE Linux: Linux Global for open minds.</para>
+          <para>If I need to do a bisection to find a kernel fault, the number of kernels in the
+            GRUB list gets very large.</para>
+          <para>The existing code handles the edit of /boot/grub/menu.lst; however, the kernels and
+            modules that correspond to a deleted entry are orphaned. A manual cleanup of /boot and
+            /lib/modules is tedious. An optional delete of the kernel files and modules would
+            eliminate the tedium.</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312630">openSUSE Linux 12.1: Make it Long Term Support (LTS)</ulink>
-          </title>
-          <para>openSUSE Linux 12.1:
-
-Make it
-<ulink url="https://wiki.ubuntu.com/LTS">Long Term Support (LTS)</ulink> . </para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312631">openSUSE Linux 12.1: Follow all specifications (minimum requirements)...</ulink>
-          </title>
-          <para>openSUSE Linux 12.1: Follow all specifications (minimum requirements) of the
-<ulink url="http://en.wikipedia.org/wiki/United_Linux">United Linux</ulink> :
-
-    </para>
-          <itemizedlist>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/Linux_kernel">Linux kernel</ulink> 2.4.18 or higher</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/GNU_C_Library">GNU C Library</ulink> 2.2.5</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/Linux_Standard_Base">Linux Standard Base</ulink> compliant (
-    <ulink url="http://en.wikipedia.org/wiki/Linux_Standard_Base">LSB</ulink> 4.1 (or higher)).</para>
-            </listitem>
-            <listitem>
-              <para>OpenI18N (formerly LI18NUX) compliant (
-    <ulink url="http://en.wikipedia.org/wiki/Internationalization_and_localization">internationalization and localization</ulink> )</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/GB18030">GB18030</ulink> compliant (the standard
-    <ulink url="http://en.wikipedia.org/wiki/CJK">CJK</ulink> <ulink url="http://en.wikipedia.org/wiki/Character_encoding">character encoding</ulink> used in
-    <ulink url="http://en.wikipedia.org/wiki/China">China</ulink> )</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/GNU_Compiler_Collection">GCC</ulink> 3.1</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/XFree86">XFree86</ulink> 4.2</para>
-            </listitem>
-            <listitem>
-              <para><ulink url="http://en.wikipedia.org/wiki/KDE">KDE</ulink> 3.0</para>
-            </listitem>
-          </itemizedlist>
-          <para>Techniques for internationalization and localization (I18N and L10N), among others.
-
-All versions of these specifications (minimum requirements) must be stable and always updated.
-
-For that improve support for Asian languages, among other languages​​.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312632">openSUSE Linux 12.1/LXDE: Create files with the right click mouse on my...</ulink>
-          </title>
-          <para>openSUSE Linux 12.1/LXDE: Create files with the right click mouse on my desktop programs installed on your system.</para>
-        </blockquote>
-<!-- ($ ld: 16.7.11 sat *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 23.7.11 sm *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -592,20 +550,34 @@ For that improve support for Asian languages, among other languages​​.</para
   <title>Testing Team</title>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00018.html">Larry Finger: Weekly News for July 16</ulink>
-    </title>
-    <para>The Testing Core Team will hold an IRC meeting at 17:00 UTC, July 18 on Channel
-          #opensuse-testing on the Freenode IRC Network.
-          irc://irc.freenode.net/opensuse-testing.</para>
-    <para>The agenda calls for discussion of our experiences with 12.1 MS3. As this release will
-          likely not be available until next week, our discussion may be limited.</para>
-    <para>Our second agenda item will concern our request to rename MS6 to Beta in hopes of
-          increasing the number of testers in the critical late stages of testing. Our request was
-          posted to the opensuse-project mailing list and has been discussed on opensuse-testing and
-          opensuse-factory. Most of the comments have been favorable, and Stephan Kulow, the Release
-          Manager, has agreed to make the name change although he doubts that it will make much
-          difference. Coolo also asked how we will measure the effect of this change. If you have
-          ideas on this matter, please forward them to the TCT.</para>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00031.html">Larry
+            Finger: Weekly News for July 23</ulink>
+        </title>
+        <para>The Testing Core Team held an IRC meeting at 17:00 UTC, July 18 on Channel
+          #opensuse-testing on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. </para>
+        <para>Our first agenda item was for discussion of our experiences with 12.1 MS3. As this
+          release was not available at that time, our discussion was limited. </para>
+        <para>Our second agenda item concerned our request to rename MS6 to Beta in hopes of
+          increasing the number of testers in the critical late stages of testing. As reported last
+          week, Stephan Kulow, the Release Manager, has agreed to make the name change although he
+          doubts that it will make much difference. He also asked how we will measure the effect of
+          this change. </para>
+        <para>We then discussed what metrics we might use to test the effectiveness of the name
+          change. Thus far, only the number of downloads and the number of bug reports have been
+          proposed. If you have any other suggestions, please send them to me. An interesting look
+          at the number of bugs reported against release can be seen at http://tinyurl.com/3mbrine
+          for all versions since 11.2. The decrease in bugs against the Final makes it look as if we
+          are doing something right. Of course, all statistics are lies! </para>
+        <para>Our final item of discussion was planning our next Open Bugs Day, which will be held
+          on August 21, 2011 from 0:00 to 23:59 UTC. This date is 10 days after the scheduled
+          release of 12.1 MS4. The emphasis will be on testing whether bugs reported for 11.4 are
+          still in 12.1. They will be fixed if possible, or updated to reflect the fact that they
+          still exist. All individuals interested in making 12.1 be an exceptionally good release
+          are welcome. As we get closer to the date, more specific instructions will be posted. As
+          usual, we will have special on-line tools to help you select a bug for investigation. </para>
+        <para>Our next IRC meeting will be at 17:00 UTC, July 25 on Channel #opensuse-testing on the
+          Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
+          experiences with MS3, now that it has been released.</para>
   </blockquote>
 </sect3>    
     <sect3 role="translationteam">
