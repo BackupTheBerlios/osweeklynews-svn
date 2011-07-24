@@ -25,31 +25,48 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink
-        url="http://alex.eftimie.ro/2011/07/17/packagekit-backend-for-software-center-short-week-7-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: short week 7 report</ulink>
+      <ulink url="http://rxvl.in/post/7967401920/gsoc-2011-ssc-week-9">Ratan Sebastian: GSOC 2011:
+        ssc Week 9</ulink>
     </title>
-    <para>Short weekly report is short, this week’s achievements:<itemizedlist>
+    <para>Tasks completed this week:<orderedlist>
         <listitem>
-          <para>fixed the install/remove simulation bits (it can now tell what packages will be
-            removed after applying changes)</para>
+          <para>Replacing of ArgumentParser with Thor. I’d given a mid-week update about <ulink
+              url="http://lists.opensuse.org/opensuse-project/2011-07/msg00098.html">this</ulink> on
+            the mailing list. Please check there for complete details.</para>
         </listitem>
         <listitem>
-          <para>improved PackageInfo testing (works with both AptCache and PackageKit)</para>
+          <para>Implementing the general commands (checkout, commit and status). As a direct
+            consequence of using thor for the command line parsing, we get to use the invoke method
+            to call other actions. This made writing these commands quite easy.</para>
         </listitem>
         <listitem>
-          <para>found the problem with dynamic/static libs conflict: it is gio statically
-            loaded from gtk and then Gio dynamically loaded from PackageKitGlib; loading Gio before
-            everything seems to fix the conflict for now;</para>
+          <para>Started on refactoring the DirectoryManager module. The NewDirectoryManager is
+            currently in use in the general commands and will gradually replace the older version
+            which is a mess of helper functions right now. There will be separate classes for
+            handling each of the local storage files (for software, repositories and files) deriving
+            from a parent LocalStorageFile class which implements the
+            generic #read and#save methods.</para>
         </listitem>
         <listitem>
-          <para>got another <ulink
-              url="http://code.launchpad.net/~alexeftimie/software-center/backend-refactor"
-              >round</ulink> of refactor changes into trunk, thanks to mvo; this way my PK branch is
-            one step closer to merging into software-center</para>
+          <para>The gem is now hosted on rubygems.org . So, you can install it with gem install ssc.
+            Use the fantastic thor generated usage instructions to help you use the app.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>The tasks for next week are:<itemizedlist>
+        <listitem>
+          <para>Write integration tests</para>
+        </listitem>
+        <listitem>
+          <para>Implement a command to get information about installed packages from the currently
+            run system.</para>
+        </listitem>
+        <listitem>
+          <para>Commands for Appliance building and build status reporting.</para>
         </listitem>
       </itemizedlist></para>
-<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
+    <para>If you have any suggestions for features. Please do write in on the studio-users mailing
+      list.</para>
+<!-- ($ ld: 24.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://lizards.opensuse.org/2011/07/17/gsoc-osc-code-cleanup-–-summary-of-week-8/"
