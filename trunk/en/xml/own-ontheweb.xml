@@ -48,29 +48,21 @@ Here’s a chance to show off your talent using a great drawing program made esp
       <title>
         <ulink
           url="http://blog.gapinthecloud.com/2011/07/21/gsoc-testers-needed-for-sharing-files-with-owncloud/"
-          >Michael Gapczynski (MTGap): Testers needed for sharing files with ownCloud</ulink>
+          >h-online: SUSE and Microsoft renew the Novell deal</ulink>
       </title>
-      <para>I have good news this week. First, I’m still here because I passed the mid-term
-        evaluation for Google Summer of Code. Thanks for passing me Robin. Second, I was successful
-        in completing my goal last week and now have everything setup so others can start
-        experimenting with sharing files.</para>
-      <para>Besides general bug fixing this past week I’ve also refactored OC_SHARE, which is the
-        class that handles the database records of all shared files in ownCloud. It started to get a
-        little messy and I was unhappy with the quality of code so I rewrote many of the functions
-        and moved some of the error handling into OC_FILESTORAGE_SHARED where it should belong. I
-        also commented all of the functions so other developers can use OC_SHARE in their own apps
-        and understand what it is doing. I’ve also added two hooks to OC_SHARE: post_delete and
-        post_rename. These are triggered by OC_FILESYSTEM when files are deleted, renamed, or moved.
-        The database gets updated when these actions occur in order to avoid any missing shared
-        items.</para>
-      <para>The backend for sharing is pretty much complete so I can now focus on the user interface
-        for the rest of the summer. The only part that needs updating is the permissions system. I
-        was having a difficult time deciding on what to do with permissions and ended up going with
-        only read and write, without the ability to permanently delete files. I’ve changed my mind
-        now and will expand the options to more specific permissions that you can assign users. I
-        was worried before that this would make the user interface too complex, but I now believe I
-        can still achieve simplicity with the user experience. (...)</para>
-<!-- ($ ld: 22.7.11 sm $) -->    </blockquote>
+      <para><ulink url="http://microsoft.com/">Microsoft</ulink> and <ulink
+          url="http://www.suse.com/">SUSE</ulink> have <ulink
+          url="http://www.microsoft.com/Presspass/press/2011/jul11/07-25MSSUSEExtensionPR.mspx"
+          >renewed</ulink> the interoperability deal which has existed between Microsoft and Novell
+        for the last five years. That agreement saw collaboration between the two companies over
+        Windows and Linux interoperation and support. The new accord sees the relationship extended
+        four years through to 1 Jan 2016. The renewal of the deal confirms that the newly
+        independent SUSE business unit of <ulink
+          url="http://www.h-online.com/news/item/Novell-deal-completed-Update-1233824.html"
+          >Attachmate</ulink> will not be moving away from its controversial tie-up with Microsoft.
+        The controversy around this centred around the intellectual property protection offered by
+        Microsoft to SUSE's customers which some believe is GPL incompatible. (...)</para>
+<!-- ($ ld: 26.7.11 sm $) -->    </blockquote>
     <blockquote>
       <title>
         <ulink

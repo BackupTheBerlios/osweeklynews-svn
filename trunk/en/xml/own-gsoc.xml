@@ -69,44 +69,26 @@
 <!-- ($ ld: 24.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lizards.opensuse.org/2011/07/17/gsoc-osc-code-cleanup-–-summary-of-week-8/"
-        >Marcus Hüwe: osc code cleanup – summary of week 8</ulink>
+      <ulink url="http://nbprashanth.wordpress.com/2011/07/26/gsoc-progress/">N.B.Prashanth: GSoC
+        Progress (libYI)</ulink>
     </title>
-    <para>Here’s a small summary of the 8th (coding) week. This week I spentmost of my time with
-      rewriting the working copy code.</para>
-    <para>Done:<itemizedlist>
-        <listitem>
-          <para>added support to add and delete packages</para>
-        </listitem>
-        <listitem>
-          <para>added some “abstractions” for the tracking file format:currently packages and files
-            are tracked in a xml file</para>
-        </listitem>
-        <listitem>
-          <para>thought about the package update algorithm. Basicallyit’ll work like this (verfy
-            simplified version):<itemizedlist>
-              <listitem>
-                <para>perform update in a tmpdir (phase 1)</para>
-              </listitem>
-              <listitem>
-                <para>if the tmp update finished, copy/rename all files tothe wc (phase 2)</para>
-                <para>Advantage:If the update is interrupted in phase 1 the wc wasn’t touchedat all
-                  and nothing should be broken.If the update is interrupted in phase 2 the wc is
-                  _inconsistent_but a subsequent “update” call can resume the update and
-                  everythingshould be consistent afterwards (in this case only files
-                  arecopied/renamed)</para>
-              </listitem>
-            </itemizedlist></para>
-        </listitem>
-      </itemizedlist></para>
-    <para>TODO:<itemizedlist>
-        <listitem>
-          <para>implement update + commit algorithm</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>If everything works as expected most parts of working copy codecleanup should be finished
-      after this week.</para>
-<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
+    <para>Last week has been quite dull after the mid term evaluations. The week started off with me
+      trying to improve the documentation and a home page for it. While the latter went pretty
+      smooth, the documentation is quite baffling. Most of the source code was quite well documented
+      and small hacks with the Doxyfile seemed to produce the proper results. Nevertheless, there
+      were cases (quite a few) where the results seemed out of place. While struggling with the
+      docs, I also started working on the libyui-gtk-pkg package. This package provides the libzypp
+      plugin for the libyui-gtk module. This has been separated from libyui-gtk package so as to
+      make it platform independent. I am nearly there on getting this package to compile. A day or
+      two should be sufficient, I guess.</para>
+    <para>By the end of last week, I switched over to writing examples for YUI in the hope that it
+      would give me further insight into what a developer might expect from the docs. After a few
+      not-so-great ideas, I settled on an IRC client written with YUI. The library to manage the IRC
+      protocol is self-implemented and is complete. At this point in time, it handles only
+      conversations and a single channel. This is very small compared to the span of the IRC
+      protocol. But since the main aspect of the example is to showcase YUI as a UI library, I guess
+      the features are sufficient.</para>
+<!-- ($ ld: 26.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink

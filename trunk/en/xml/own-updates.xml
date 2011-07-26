@@ -24,25 +24,53 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
     <title>
-            <ulink
-                url="http://lizards.opensuse.org/2011/07/17/steampunk-beautiful-theme-for-kdm-and-ksplash/"
-                >Richard Bos: Steampunk beautiful theme for KDM and ksplash</ulink>
+            <ulink url="http://mvidner.blogspot.com/2011/07/ruby-dbus-070-works-with-192-again.html"
+                >Martin Vidner: ruby-dbus 0.7.0 works with 1.9.2 again</ulink>
         </title>
-        <para>I created packages for the nice KDM and ksplash theme <ulink
-                url="http://kde-look.org/content/show.php/SteampunK+KSplash+Theme?content=142138"
-                >Steampunk</ulink>. For this theme a matching <ulink
-                url="http://kde-look.org/content/show.php/Brownpunk?content=135108">color
-                scheme</ulink>,<ulink
-                url="http://kde-look.org/content/show.php/Steampunk:+Map+O'+World?content=25265"
-                >wallpaper</ulink> and <ulink
-                url="http://kde-look.org/content/show.php/SteamPunk?content=140755">mouse
-                theme</ulink> exist and those are packed in the same rpm. <ulink
-                url="http://www.youtube.com/watch?v=f3ubaXe8wDE">Youtube shows the theme in
-                action</ulink> for Kubuntu, the version in the rpm is distribution neutral. The rpm
-            can be obtained from the <ulink
-                url="http://software.opensuse.org/search?q=steampunk&amp;baseproject=openSUSE%3A11.4&amp;lang=nl&amp;include_home=true&amp;exclude_debug=true"
-                >home:rbos repository</ulink>, I hope you enjoy the theme.</para>
-<!-- ($ ld: 18.7.11 sm $)-->  </blockquote>
+        <para>I have made a new release of <ulink url="https://trac.luon.net/ruby-dbus/"
+                >ruby-dbus</ulink>, a <ulink url="http://www.ruby-lang.org/">Ruby language</ulink>
+            binding for the <ulink url="http://www.freedesktop.org/wiki/Software/dbus">D-Bus IPC
+                system</ulink>.<itemizedlist>
+                <listitem>
+                    <para>Added ASystemBus and ASessionBus, non-singletons useful in tests and
+                        threads.</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed handling of multibyte strings (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/8">Issue#8</ulink>, by
+                        Takayuki YAMAGUCHI).</para>
+                </listitem>
+                <listitem>
+                    <para>Allow reopening of a dbus_interface declaration (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/9">Issue#9</ulink>, by
+                        T. YAMAGUCHI).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed ruby-1.9.2 compatibility again (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/12"
+                        >Issue#12</ulink>).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed authentication on BSD (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/11">Issue#11</ulink>,
+                        by Jonathan Walker).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed exiting a nested event loop for synchronous calls (<ulink
+                            url="https://lists.luon.net/pipermail/ruby-dbus-devel/2011-March/000410.html"
+                            >reported</ulink> by Timo Warns).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed introspection calls leaking reply handlers.</para>
+                </listitem>
+                <listitem>
+                    <para>"rake test" now works, doing what was called "rake env:test"</para>
+                </listitem>
+            </itemizedlist></para>
+        <para>Get <ulink url="https://rubygems.org/gems/ruby-dbus">a gem from
+                RubyGems.org</ulink> or <ulink url="http://s.opensu.se/bs/rubygem-ruby-dbus">an rpm
+                from the openSUSE Build Service</ulink>.</para>
+<!-- ($ ld: 26.7.11 sm $)-->  </blockquote>
     <blockquote>
         <title><ulink url="http://lizards.opensuse.org/2011/07/17/new-package-squidview-available/"
                 >Bruno Friedmann: new package squidview available</ulink></title>
