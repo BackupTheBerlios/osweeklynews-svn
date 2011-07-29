@@ -92,49 +92,14 @@
   <blockquote>
     <title>
       <ulink
-        url="http://cbounta.wordpress.com/2011/07/22/a-utility-for-merging-configuration-sysconfig-files-week-9-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 9
+        url="http://cbounta.wordpress.com/2011/07/29/a-utility-for-merging-configuration-sysconfig-files-–-week-10-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 10
         Report</ulink>
     </title>
-    <para>Exciting news for the project this week. After solving the problem with the comments and
-      the tree representation of the sysconfig files in Augeas, there was a big leap in the
-      project’s progress. By having test data and through debugging i was able to complete the match
-      algorithm.The program is now able to traverse through two trees / files, make the necessary
-      matches between the nodes of these two trees and provide the appropriate information to the
-      later stages. That of merging.</para>
-    <para>What exactly have been done in the previous week:<itemizedlist>
-        <listitem>
-          <para>Tree representation of sysconfig files</para>
-        </listitem>
-        <listitem>
-          <para>Matching between two trees nodes completed</para>
-        </listitem>
-        <listitem>
-          <para>Sorting of labels (Small Fixes)</para>
-        </listitem>
-        <listitem>
-          <para>tree_compare function complete</para>
-        </listitem>
-        <listitem>
-          <para>Tree traversal of aug_process_trees ( revisited)</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>What is for next week:<itemizedlist>
-        <listitem>
-          <para>Finish merging functions for aug_process_trees ( I feel optimistic that i will
-            surely complete this next week due to the reason that matching was completed)</para>
-        </listitem>
-        <listitem>
-          <para>Create first beta packages</para>
-        </listitem>
-        <listitem>
-          <para>Test Test Test</para>
-        </listitem>
-        <listitem>
-          <para>Improve code</para>
-        </listitem>
-      </itemizedlist></para>
-<!-- ($ ld: 23.7.11 sm $)-->  </blockquote>
+    <para>Hello again, this is my report for the 10th week of GSoC. Unfortunately i wasn’t able to
+      create the beta packages i was hoping. There are still some issues to be resolved within the
+      aug_process_tree that hopefully will be solved this weekend.  (...)</para>
+<!-- ($ ld: 29.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://redache.wordpress.com/2011/07/23/entomologist-ui-changes-weekly-report-9/"
