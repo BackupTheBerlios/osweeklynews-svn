@@ -44,8 +44,7 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/07/18/factory-progress-2011-07-18/">Andreas
-          Jaeger: Factory Progress 2011-07-18</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/07/18/factory-progress-2011-07-18/">Andreas Jaeger: Factory Progress 2011-07-18</ulink>
       </title>
       <para>I’ve noticed the following changes that might interest people using and developing
         openSUSE Factory:</para>
@@ -55,54 +54,40 @@
         current development release 3.1.3. They have also started removing old GNOME 2 packages that
         are not needed anymore.</para>
       <para><emphasis role="bold">systemd</emphasis></para>
-      <para>Frederic gave an <ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00288.html">update</ulink> on
+      <para>Frederic gave an&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00288.html">update</ulink>&#160;on
         systemd integration. The graphical bootloader allows now to switch during boot between
         systemd, SysVinit and also shell code.</para>
-      <para>Also, Lennart Poettering wrote in his “systemd for developers” series about <ulink
-          url="http://0pointer.de/blog/projects/socket-activation2.html">socket
-        activation</ulink> where he uses cups as example.</para>
+      <para>Also, Lennart Poettering wrote in his “systemd for developers” series about&#160;<ulink url="http://0pointer.de/blog/projects/socket-activation2.html">socket activation</ulink>&#160;where he uses cups as example.</para>
       <para><emphasis role="bold">hal</emphasis></para>
       <para>The hal daemon has been dropped from Factory after all users with clean spec files have
         been changed to work with the successors of hal like udisk and udev.</para>
       <para><emphasis role="bold">samba</emphasis></para>
-      <para>Samba is getting updated to <ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00261.html">3.6.0</ulink>, one
-        of its major <ulink url="http://ftp.samba.org/pub/samba/rc/WHATSNEW-3-6-0rc2.txt"
-          >features</ulink> is full SMB2 support.</para>
+      <para>Samba is getting updated to&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00261.html">3.6.0</ulink>, one
+        of its major&#160;<ulink url="http://ftp.samba.org/pub/samba/rc/WHATSNEW-3-6-0rc2.txt">features</ulink>&#160;is full SMB2 support.</para>
       <para><emphasis role="bold">Linux Kernel Headers</emphasis></para>
       <para>Linux kernel 2.6.38 removed the Video for Linux v1 support and also the file
         linux/videodev.h. Since we now use the Linux Kernel 3.0, applications using the old
         interface need to be converted. A replacement is libv4l1-videodev.h from libv4l-dev &gt;=
         0.8.4.</para>
       <para><emphasis role="bold">Keeping old kernel(s) while installing new ones</emphasis></para>
-      <para>Michal Marek descripes in his <ulink
-          url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/"
-          >blog </ulink>how it’s possible to configure which kernels to keep installed when a new
+      <para>Michal Marek descripes in his&#160;<ulink url="http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/">blog&#160;</ulink>how it’s possible to configure which kernels to keep installed when a new
         one gets installed. With a simple change to the zypp configuration, you can define e.g. that
         you always like to keep the latest running kernel when you install a new one.</para>
       <para><emphasis role="bold">Upcoming Features</emphasis></para>
-      <para>A new page called “<ulink url="http://en.opensuse.org/openSUSE:Upcoming_features"
-          >upcoming features</ulink>” has been created to point out new features for the next
+      <para>A new page called “<ulink url="http://en.opensuse.org/openSUSE:Upcoming_features">upcoming features</ulink>” has been created to point out new features for the next
         release. Please help updating the page with new information.</para>
       <para><emphasis role="bold">Policy and tool changes</emphasis></para>
       <para><emphasis role="bold">Directories not owned by a package</emphasis></para>
       <para>We have now enabled a build time check that all directories are owned by a package and
-        this hit <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-07/msg00011.html">49
-          package</ulink>s, most of them are fixed by now but packagers should fix the remaining
+        this hit&#160;<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-07/msg00011.html">49 package</ulink>s, most of them are fixed by now but packagers should fix the remaining
         onw.</para>
       <para><emphasis role="bold">Other interesting bits</emphasis></para>
       <para><emphasis role="bold">openSUSE 11.4 Milestone 3</emphasis></para>
-      <para>Coolo announced that <ulink
-          url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00227.html">milestone 3 is
-          delayed</ulink> due to some kernel bugs which the testing team encountered with their
-        daily testing scripts.  On 2011-07-18 the 3.0 RC7 kernel was checked in and should fix
+      <para>Coolo announced that&#160;<ulink url="http://lists.opensuse.org/opensuse-factory/2011-07/msg00227.html">milestone 3 is delayed</ulink>&#160;due to some kernel bugs which the testing team encountered with their
+        daily testing scripts.&#160; On 2011-07-18 the 3.0 RC7 kernel was checked in and should fix
         this.</para>
       <para><emphasis role="bold">openSUSE Conference</emphasis></para>
-      <para>The call for papers is continuing to run, please submit session proposals at the <ulink
-          url="http://conference.opensuse.org/indico/">conference site</ulink>. Also, <ulink
-          url="http://news.opensuse.org/2011/07/14/opensuse-conference-registration-open/"
-          >registration</ulink> is open now.</para>
+      <para>The call for papers is continuing to run, please submit session proposals at the&#160;<ulink url="http://conference.opensuse.org/indico/">conference site</ulink>. Also,&#160;<ulink url="http://news.opensuse.org/2011/07/14/opensuse-conference-registration-open/">registration</ulink>&#160;is open now.</para>
 <!-- ($ ld: 18.7.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
@@ -117,23 +102,21 @@
       </listitem>
     </itemizedlist>
   </sect2>
-<sect2 role="susestudio">
-  <title>SUSE Studio</title>
-  <blockquote><title>
-        <ulink url="http://blog.susestudio.com/2011/07/suse-studio-for-big-iron.html">SUSE Studio
-          for the big iron</ulink>
+  <sect2 role="susestudio">
+    <title>SUSE Studio</title>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.susestudio.com/2011/07/suse-studio-for-big-iron.html">SUSE Studio for the big iron</ulink>
       </title>
       <para>After a couple of months of hard work we are now happy to introduce the next version
-          of <ulink url="http://www.suse.com/products/susestudio/">SUSE Studio</ulink> for onsite
+          of&#160;<ulink url="http://www.suse.com/products/susestudio/">SUSE Studio</ulink>&#160;for onsite
         installation. It comes in two editions, the Standard Edition, including everything you need
         to create, share, maintain, and configure your software and virtual appliances, and the
         Advanced Edition, which additionally supports workloads for System z, the big iron.
         (...)</para>
-      <para><emphasis role="bold">Related Article</emphasis>: <ulink
-          url="http://www.h-online.com/open/news/item/SUSE-ships-Studio-1-2-1283016.html"
-          >h-online.com</ulink></para>
-      <!--($ ld: 21.7.11 sm $)--></blockquote>
-</sect2> 
+      <para><emphasis role="bold">Related Article</emphasis>: <ulink url="http://www.h-online.com/open/news/item/SUSE-ships-Studio-1-2-1283016.html">h-online.com</ulink></para>
+<!--($ ld: 21.7.11 sm $)-->    </blockquote>
+  </sect2>
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -148,13 +131,11 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="boosters">
+    </sect3> -->    <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
         <title>
-          <ulink url="http://blog.hennevogel.de/what-are-the-boosters-up-to-6/">Henne Vogelsang:
-            What are the boosters up to?</ulink>
+          <ulink url="http://blog.hennevogel.de/what-are-the-boosters-up-to-6/">Henne Vogelsang: What are the boosters up to?</ulink>
         </title>
         <para><emphasis role="bold">Members 1st</emphasis></para>
         <para>This time around the Boosters took on a milestone for the benefit of the Membership
@@ -162,40 +143,34 @@
           into the openSUSE Project. Because of its history and relatively young age the project is
           trying very hard to avoid hierarchies, policies and rules. It emphasizes the creative, a
           bit chaotic, side of the FOSS ways for openSUSE to get things done, quickly. Everyone that
-          is participating is equal, everyone that is participating is following the same <ulink
-            url="http://en.opensuse.org/openSUSE:Guiding_principles">Guiding Principles.</ulink> The
-          only formal structure is a a group of <emphasis role="italic"><ulink
-              url="http://en.wikipedia.org/wiki/Primus_inter_pares">“Primus inter
-            pares”</ulink></emphasis>, that is elected to provide guidance according to the
-          principles: The <ulink url="http://en.opensuse.org/openSUSE:Board">Board</ulink>.</para>
+          is participating is equal, everyone that is participating is following the same&#160;<ulink url="http://en.opensuse.org/openSUSE:Guiding_principles">Guiding Principles.</ulink>&#160;The
+          only formal structure is a a group of&#160;<emphasis role="italic">
+            <ulink url="http://en.wikipedia.org/wiki/Primus_inter_pares">“Primus inter pares”</ulink>
+          </emphasis>, that is elected to provide guidance according to the
+          principles: The&#160;<ulink url="http://en.opensuse.org/openSUSE:Board">Board</ulink>.</para>
         <para>But how do you identify who is participating? How do you get affiliated with the
-          project? Who is a <emphasis role="italic">membe</emphasis>r? The Board came up with this
-          definition: Everyone who contributes<emphasis role="bold">continued and
-            substantial </emphasis>to the project. As you can imagine there are a million and one
+          project? Who is a&#160;<emphasis role="italic">membe</emphasis>r? The Board came up with this
+          definition: Everyone who contributes<emphasis role="bold">continued and substantial&#160;</emphasis>to the project. As you can imagine there are a million and one
           ways to contribute to a huge project like ours, so judging if someones contributions
-            are<emphasis role="bold">continued and substantial </emphasis>can only be done on a case
-          by case basis. The <ulink url="http://en.opensuse.org/openSUSE:Membership_officials"
-            >Membership Officials</ulink> are tasked by the Board to do this evaluation.</para>
+            are<emphasis role="bold">continued and substantial&#160;</emphasis>can only be done on a case
+          by case basis. The&#160;<ulink url="http://en.opensuse.org/openSUSE:Membership_officials">Membership Officials</ulink>&#160;are tasked by the Board to do this evaluation.</para>
         <para>The process to become a member is dead easy. You tell the Membership Officials that
           you want to be a Member and what you have done so far. They will then evaluate your
           contributions and vote on your request. Once your request gets more then four positive
           votes, you’re a Member. If you get four negative votes you get rejected. (...)</para>
-        <!-- ($ ld: 19.7.11 sm $)-->
-      </blockquote>
+<!-- ($ ld: 19.7.11 sm $)-->      </blockquote>
     </sect3>
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
       <blockquote>
         <title>
-          <ulink url="http://stick.gk2.sk/blog/2011/07/version-sorting-in-ruby/">Pavol Rusnak:
-            Version sorting in Ruby</ulink>
+          <ulink url="http://stick.gk2.sk/blog/2011/07/version-sorting-in-ruby/">Pavol Rusnak: Version sorting in Ruby</ulink>
         </title>
         <para>Today I needed to implement “human sort” for a list of distributions we support in
-            the <ulink url="http://openbuildservice.org/">Open Build Service</ulink>. I wanted to
+            the&#160;<ulink url="http://openbuildservice.org/">Open Build Service</ulink>. I wanted to
           sort them alphabetically but at the same time the newest ones at the top. I ended up with
           the following code: (...)</para>
-        <!-- ($ ld: 20.7.11 sm $)-->
-      </blockquote>  
+<!-- ($ ld: 20.7.11 sm $)-->      </blockquote>
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -244,8 +219,7 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
@@ -255,28 +229,20 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> -->
-    <sect3 role="kdeteam">
+      </sect3> -->    <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink
-            url="http://lizards.opensuse.org/2011/07/19/new-namespace-for-kde-apps-maintained-by-upstream/"
-            >Javier Llorente: New namespace for KDE apps maintained by upstream</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/07/19/new-namespace-for-kde-apps-maintained-by-upstream/">Javier Llorente: New namespace for KDE apps maintained by upstream</ulink>
         </title>
-        <para>After some discussion in <ulink url="irc://irc.opensuse.org/opensuse-kde"
-            >#opensuse-kde</ulink>, darix has created the KDE:Apps namespace for KDE apps maintained
+        <para>After some discussion in&#160;<ulink url="irc://irc.opensuse.org/opensuse-kde">#opensuse-kde</ulink>, darix has created the KDE:Apps namespace for KDE apps maintained
           by their upstream, so that they can serve fresh packages for all distributions supported
-          by the <ulink url="http://build.opensuse.org/">Build Service</ulink> (which includes
+          by the&#160;<ulink url="http://build.opensuse.org/">Build Service</ulink>&#160;(which includes
           openSUSE, SUSE Linux Enterprise, Fedora, RHEL, Debian and Ubuntu).</para>
-        <para>As the first to join in, we warmly welcome the <ulink
-            url="http://kmymoney2.sourceforge.net/">KMyMoney project</ulink>!</para>
-        <para>Got questions? Feel free to contact the openSUSE/KDE Team on the mailing list <ulink
-            url="http://lists.opensuse.org/opensuse-kde/">opensuse-kde@opensuse.org</ulink> or in
-            IRC: <ulink url="irc://irc.opensuse.org/opensuse-kde"
-          >#opensuse-kde</ulink> (irc.freenode.net).</para>
-        <!--($ ld: 20.7.11 sm $)-->
-      </blockquote>
+        <para>As the first to join in, we warmly welcome the&#160;<ulink url="http://kmymoney2.sourceforge.net/">KMyMoney project</ulink>!</para>
+        <para>Got questions? Feel free to contact the openSUSE/KDE Team on the mailing list&#160;<ulink url="http://lists.opensuse.org/opensuse-kde/">opensuse-kde@opensuse.org</ulink>&#160;or in
+            IRC:&#160;<ulink url="irc://irc.opensuse.org/opensuse-kde">#opensuse-kde</ulink>&#160;(irc.freenode.net).</para>
+<!--($ ld: 20.7.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -326,13 +292,11 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->
-    <sect3 role="medical">
+    </sect3> -->    <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
         <title>
-          <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/">Rousinopoulos
-            Athanasios-Ilias: openSUSE Medical Meeting</ulink>
+          <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/">Rousinopoulos Athanasios-Ilias: openSUSE Medical Meeting</ulink>
         </title>
         <para>We are pleased to announce the first openSUSE medical Meeting.</para>
         <para><emphasis role="bold">Time and meeting place</emphasis><itemizedlist>
@@ -340,7 +304,7 @@
               <para>2011-07-27 21:00 UTC/GMT +3 hours</para>
             </listitem>
             <listitem>
-              <para><emphasis role="bold">#opensuse-medical</emphasis> at freenode</para>
+              <para><emphasis role="bold">#opensuse-medical</emphasis>&#160;at freenode</para>
             </listitem>
           </itemizedlist></para>
         <para><emphasis role="bold">Topics</emphasis><itemizedlist>
@@ -365,13 +329,13 @@ openSUSE Medical Mailing list Brainstorms and Ideas (Andre Massing)</programlist
               <itemizedlist>
                 <listitem>
                   <para>
-                    <programlisting>Milestone 1 : Add new software in the distro (aka packaging new software)
-Milestone 2 : New applications development (Qt/KDE ones)
-Milestone 3 : Translation of included applications (openEMR,GnuMed, FreemedForms) 
-Milestone 3 : Translation of the non-imported software (openmolar,sheltler Manager)
-Milestone 3 : Build the new release of the Distro with KIWI toolset
-Milestone 4 : openSUSE Medical Artwork
-Milestone 5 : Setting the release dates for the new release of the distro (openSUSE Medical Beta 1,Beta 2,RC,Final Release) </programlisting>
+                    <programlisting>Milestone 1&#160;: Add new software in the distro (aka packaging new software)
+Milestone 2&#160;: New applications development (Qt/KDE ones)
+Milestone 3&#160;: Translation of included applications (openEMR,GnuMed, FreemedForms) 
+Milestone 3&#160;: Translation of the non-imported software (openmolar,sheltler Manager)
+Milestone 3&#160;: Build the new release of the Distro with KIWI toolset
+Milestone 4&#160;: openSUSE Medical Artwork
+Milestone 5&#160;: Setting the release dates for the new release of the distro (openSUSE Medical Beta 1,Beta 2,RC,Final Release) </programlisting>
                   </para>
                 </listitem>
               </itemizedlist>
@@ -381,12 +345,10 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
               <para>Open Floor - General Discuss</para>
             </listitem>
           </itemizedlist></para>
-        <para>More informations at: <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/"
-            >http://en.opensuse.org/openSUSE:Medical_meetings/</ulink></para>
-        <!-- ($ ld: 23.7.11 sm $)-->
-      </blockquote>
+        <para>More informations at: <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/">http://en.opensuse.org/openSUSE:Medical_meetings/</ulink></para>
+<!-- ($ ld: 23.7.11 sm $)-->      </blockquote>
     </sect3>
-    <!--
+<!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -407,16 +369,14 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation
-              (Score: 360)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 361)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during
-              boot (Score: 187)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 187)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -428,13 +388,13 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 159)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 160)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 140)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 141)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -450,8 +410,7 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score:
-              106)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 108)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
 
@@ -464,78 +423,53 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
     </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 23.7.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 30.7.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312647">Preserve Running Kernel On Kernel
-              Update by Default</ulink>
+            <ulink url="https://features.opensuse.org/312673">Enable Sub-Pixel-Hinting</ulink>
           </title>
-          <para>My suggestion is to enable multiversion kernel &amp; preserve running kernel for
-            safer kernel updates, to reduce support problems when new kernels won't boot. This is
-            now possible for 12.1 by 1 line change to zypp.conf.Since Online Update was first
-            introduced (SuSE 7.1?) it replaced the running kernel by default, which can lead to
-            problems booting. For a while multiversion kernel has been supported by libzypp (1 line
-            edit in zypp.conf). The drawback with multiversion was manual deletion required of
-            unwanted kernel packages (see <ulink
-              url="http://lists.opensuse.org/opensuse-kernel/2011-07/msg00056.html"
-              >http://lists.opensuse.org/opensuse-kernel/2011-07/msg00056.html</ulink> ). Now in
-            Factory 12.1 M3 Michel Marek has included &amp; announced - kernel package retention
-            options (see
-            http://lizards.opensuse.org/2011/07/14/improved-kernel-package-retention-in-12-1/ ).The
-            default is sane, to preserve the Lastest &amp; Running Kernels. So lets use it and make
-            12.1 kernel updates safer for all, and by default do the right thing!</para>
+          <para>To improve the look of fonts, enable the Sub-Pixel-Hinting.
+The patents that lead to subpixel font hinting being turned of by default in the freetype2 library have now expired!</para>
+          <para>So please enable this feature in version 12.1.
+Ubuntu (since 10.4?) has already enabled it.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312649">Automatically add keys to the
-              ssh-agent at X11 login</ulink>
+            <ulink url="https://features.opensuse.org/312675">openSUSE Linux 12.1/LXDE: Create a screenshot program with the features...</ulink>
           </title>
-          <para>I'd like to have a simple way to have the ssh-agent load a number of keys
-            automatically when I log in to the system. The simplest way in my opinion would be a
-            directory, say ~/.ssh/ssh-add/, where the user can copy all the keys he wants to
-            add. </para>
-          <para>Currently ssh-agent is already started when the user logs in using X11 by
-            /etc/X11/xdm/sys.xsession. /etc/X11/xinit/xinitrc which runs a bit later also executes
-            scripts in /etc/X11/xinit/xinitrc.d/. To me this seems the perfect place to add a small
-            script containing the following
-            lines:<screen>#!/bin/bash if test -S
-"$SSH_AUTH_SOCK" -a \ -x
-"$SSH_ASKPASS" -a \ -d ~/.ssh/ssh-add;
-  then ssh-add ~/.ssh/ssh-add/* &lt;
-  /dev/null fi</screen></para>
-          <para>In fact, I use this script for a few years now. And I am sick of adding it to
-            /etc/X11/xinit/xinitrc.d/ after each distribution update.</para>
+          <para>openSUSE Linux 12.1/LXDE: Create a
+<ulink url="http://en.wikipedia.org/wiki/Screenshot">screenshot</ulink> program with the features of
+<ulink url="http://goodies.xfce.org/projects/applications/xfce4-screenshooter">xfce4-screenshooter</ulink> for
+<ulink url="http://en.wikipedia.org/wiki/LXDE">LXDE</ulink>.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312659">openSUSE Linux 12.1/LXDE: Add support
-              for the XZ Utils in Xarchiver</ulink>
+            <ulink url="https://features.opensuse.org/312680">Free professional CAD CAM solution - DraftSight for Linux</ulink>
           </title>
-          <para>openSUSE Linux 12.1/LXDE: Add support for the <ulink
-              url="http://en.wikipedia.org/wiki/XZ_Utils">XZ Utils</ulink> in <ulink
-              url="http://en.wikipedia.org/wiki/Xarchiver">Xarchiver</ulink> .</para>
+          <para>I tested all available in SUSE repositories CAD CAM solutions but no one of them is enough good. Searching for sulution elsewhere I found the &apos;DraftSight: The Free CAD software for your DWG files&apos;.
+This is a product of Dasault Systems and is free for single user use. The Linux version of the software looks very professional and I found it working perfectly.</para>
+          <para>So please if possible contact them and agree to make possible to provide from Yast their free Linux version. This software will be the really useful fully functional free native Linux CAD CAM solution for SUSE.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312671">Enhance YaST=System=BootLoader</ulink>
+            <ulink url="https://features.opensuse.org/312687">XML tags for external script parameters needed in Autoyast</ulink>
           </title>
-          <para>If I need to do a bisection to find a kernel fault, the number of kernels in the
-            GRUB list gets very large.</para>
-          <para>The existing code handles the edit of /boot/grub/menu.lst; however, the kernels and
-            modules that correspond to a deleted entry are orphaned. A manual cleanup of /boot and
-            /lib/modules is tedious. An optional delete of the kernel files and modules would
-            eliminate the tedium.</para>
+          <para>AutoYaST allows to specify pre, chroot, post, init scripts via location tags as URI.
+At the moment it is not possible to handover parameters to scripts specified by a location tag.</para>
+          <para>At various customer scenarios it turned out to be needful to have this feature cause scripts could be
+written for a broader usage.</para>
+          <para>A new tag is needed which fulfills this task.</para>
         </blockquote>
-<!-- ($ ld: 23.7.11 sm *replaced with newer ones* $) -->      </sect4>
+<!-- ($ ld: 30.7.11 sm *replaced with newer ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
       </sect4>
     </sect3>
-    <!--
+<!--
     <sect3 role="oooteam">
       <title>OpenOffice/LibreOffice Team</title>
       <blockquote>
@@ -545,13 +479,11 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-    </sect3> -->
-<sect3 role="testing">
-  <title>Testing Team</title>
-  <blockquote>
-    <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00031.html">Larry
-            Finger: Weekly News for July 23</ulink>
+    </sect3> -->    <sect3 role="testing">
+      <title>Testing Team</title>
+      <blockquote>
+        <title>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00031.html">Larry Finger: Weekly News for July 23</ulink>
         </title>
         <para>The Testing Core Team held an IRC meeting at 17:00 UTC, July 18 on Channel
           #opensuse-testing on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. </para>
@@ -578,10 +510,11 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
         <para>Our next IRC meeting will be at 17:00 UTC, July 25 on Channel #opensuse-testing on the
           Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
           experiences with MS3, now that it has been released.</para>
-  </blockquote>
+      </blockquote>
       <blockquote>
-        <title><ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00032.html">Larry
-            Finger: Testing Core Team Planning Open Bugs Day on August 21, 2011</ulink></title>
+        <title>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00032.html">Larry Finger: Testing Core Team Planning Open Bugs Day on August 21, 2011</ulink>
+        </title>
         <para>The Testing Core Team is planning an Open Bugs Day, to be held on August 21, 2011 from
           0:00 to 23:59 UTC - 10 days after the scheduled release of 12.1 MS4. The emphasis will be
           on testing whether bugs reported for 11.4 are still in 12.1. They will be fixed if
@@ -589,10 +522,10 @@ Milestone 5 : Setting the release dates for the new release of the distro (open
           in making 12.1 be an exceptionally good release are welcome. As we get closer to the date,
           more specific instructions will be posted. As usual, we will have special on-line tools to
           help you select a bug for investigation. Coordination of the bug testing will be through
-          the TCT's IRC channel on the Freenode IRC Network.
-          irc://irc.freenode.net/opensuse-testing. </para>
+          the TCT&apos;s IRC channel on the Freenode IRC Network.
+          irc://irc.freenode.net/opensuse-testing.&#160;</para>
       </blockquote>
-</sect3>    
+    </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
