@@ -40,8 +40,10 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  <sect2 role="distribution">
+    </sect2> -->  
+  <sect2 role="distribution">
     <title>Distribution</title>
+    <!--
     <blockquote>
       <title>
         <ulink url="http://lizards.opensuse.org/2011/07/18/factory-progress-2011-07-18/">Andreas Jaeger: Factory Progress 2011-07-18</ulink>
@@ -88,7 +90,7 @@
         this.</para>
       <para><emphasis role="bold">openSUSE Conference</emphasis></para>
       <para>The call for papers is continuing to run, please submit session proposals at the&#160;<ulink url="http://conference.opensuse.org/indico/">conference site</ulink>. Also,&#160;<ulink url="http://news.opensuse.org/2011/07/14/opensuse-conference-registration-open/">registration</ulink>&#160;is open now.</para>
-<!-- ($ ld: 18.7.11 sm $)-->    </blockquote>
+    </blockquote> -->
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -102,6 +104,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -115,8 +118,8 @@
         Advanced Edition, which additionally supports workloads for System z, the big iron.
         (...)</para>
       <para><emphasis role="bold">Related Article</emphasis>: <ulink url="http://www.h-online.com/open/news/item/SUSE-ships-Studio-1-2-1283016.html">h-online.com</ulink></para>
-<!--($ ld: 21.7.11 sm $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -131,7 +134,9 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-    </sect3> -->    <sect3 role="boosters">
+      </sect3> -->    
+    <!--
+    <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
         <title>
@@ -158,10 +163,11 @@
           you want to be a Member and what you have done so far. They will then evaluate your
           contributions and vote on your request. Once your request gets more then four positive
           votes, you’re a Member. If you get four negative votes you get rejected. (...)</para>
-<!-- ($ ld: 19.7.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
+      <!--
       <blockquote>
         <title>
           <ulink url="http://stick.gk2.sk/blog/2011/07/version-sorting-in-ruby/">Pavol Rusnak: Version sorting in Ruby</ulink>
@@ -170,7 +176,7 @@
             the&#160;<ulink url="http://openbuildservice.org/">Open Build Service</ulink>. I wanted to
           sort them alphabetically but at the same time the newest ones at the top. I ended up with
           the following code: (...)</para>
-<!-- ($ ld: 20.7.11 sm $)-->      </blockquote>
+      </blockquote> -->
       <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
@@ -229,7 +235,9 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> -->    <sect3 role="kdeteam">
+      </sect3> -->    
+    <!--
+    <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
@@ -242,8 +250,8 @@
         <para>As the first to join in, we warmly welcome the&#160;<ulink url="http://kmymoney2.sourceforge.net/">KMyMoney project</ulink>!</para>
         <para>Got questions? Feel free to contact the openSUSE/KDE Team on the mailing list&#160;<ulink url="http://lists.opensuse.org/opensuse-kde/">opensuse-kde@opensuse.org</ulink>&#160;or in
             IRC:&#160;<ulink url="irc://irc.opensuse.org/opensuse-kde">#opensuse-kde</ulink>&#160;(irc.freenode.net).</para>
-<!--($ ld: 20.7.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
@@ -292,7 +300,9 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->    <sect3 role="medical">
+    </sect3> -->    
+    <!--
+    <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
         <title>
@@ -346,8 +356,8 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
             </listitem>
           </itemizedlist></para>
         <para>More informations at: <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/">http://en.opensuse.org/openSUSE:Medical_meetings/</ulink></para>
-<!-- ($ ld: 23.7.11 sm $)-->      </blockquote>
-    </sect3>
+</blockquote>
+    </sect3> -->
 <!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
@@ -483,33 +493,32 @@ written for a broader usage.</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00031.html">Larry Finger: Weekly News for July 23</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00047.html">Larry
+            Finger: Weekly News for July 30</ulink>
         </title>
-        <para>The Testing Core Team held an IRC meeting at 17:00 UTC, July 18 on Channel
-          #opensuse-testing on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. </para>
-        <para>Our first agenda item was for discussion of our experiences with 12.1 MS3. As this
-          release was not available at that time, our discussion was limited. </para>
-        <para>Our second agenda item concerned our request to rename MS6 to Beta in hopes of
-          increasing the number of testers in the critical late stages of testing. As reported last
-          week, Stephan Kulow, the Release Manager, has agreed to make the name change although he
-          doubts that it will make much difference. He also asked how we will measure the effect of
-          this change. </para>
-        <para>We then discussed what metrics we might use to test the effectiveness of the name
-          change. Thus far, only the number of downloads and the number of bug reports have been
-          proposed. If you have any other suggestions, please send them to me. An interesting look
-          at the number of bugs reported against release can be seen at http://tinyurl.com/3mbrine
-          for all versions since 11.2. The decrease in bugs against the Final makes it look as if we
-          are doing something right. Of course, all statistics are lies! </para>
-        <para>Our final item of discussion was planning our next Open Bugs Day, which will be held
-          on August 21, 2011 from 0:00 to 23:59 UTC. This date is 10 days after the scheduled
-          release of 12.1 MS4. The emphasis will be on testing whether bugs reported for 11.4 are
-          still in 12.1. They will be fixed if possible, or updated to reflect the fact that they
-          still exist. All individuals interested in making 12.1 be an exceptionally good release
-          are welcome. As we get closer to the date, more specific instructions will be posted. As
-          usual, we will have special on-line tools to help you select a bug for investigation. </para>
-        <para>Our next IRC meeting will be at 17:00 UTC, July 25 on Channel #opensuse-testing on the
-          Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
-          experiences with MS3, now that it has been released.</para>
+        <para>The Testing Core Team held an IRC meeting at 17:00 UTC, July 25 on Channel
+          #opensuse-testing on the Freenode IRC Network.
+          irc://irc.freenode.net/opensuse-testing. </para>
+        <para>Our first agenda item was for discussion of our experiences with 12.1 MS3. The test of
+          a patched plasmoid applet that fixes at least part of Bug #702461 was reported. The new
+          version recognized the network devices; however, it was unable to make a wireless
+          connection. Networking with a wire-connected device was OK. Wireless worked fine on a
+          Gnome desktop. Another member of the TCT reported putting MS3 on a laptop and not having
+          any problems. It seems that putting the 3.0-series of kernels on 12.1 has not caused any
+          new problems other than the difficulty with 3.0-rc6 that delayed MS3. This matches my
+          testing of the mainline kernels. </para>
+        <para>Our second agenda item concerned our upcoming Open Bugs Day to be held on August 21,
+          2011 from 0:00 to 23:59 UTC. This date is 10 days after the scheduled release of 12.1 MS4.
+          The emphasis will be on testing whether bugs reported for 11.4 are still in 12.1. They
+          will be fixed if possible, or updated to reflect the fact that they still exist. All
+          individuals interested in making 12.1 be an exceptionally good release are welcome. As we
+          get closer to the date, more specific instructions will be posted. As usual, we will have
+          special on-line tools to help you select a bug for investigation. In preparation for OBD,
+          we discussed our plans for publicizing the event, and updated the web page for the event,
+          which is at </para>
+        <para>Our next IRC meeting will be at 17:00 UTC, August 15 on Channel #opensuse-testing on
+          the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
+          experiences with MS4 and finish the planning for Open Bugs Day.</para>
       </blockquote>
       <blockquote>
         <title>

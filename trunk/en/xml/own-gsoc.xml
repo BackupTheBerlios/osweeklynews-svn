@@ -102,28 +102,25 @@
 <!-- ($ ld: 29.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://redache.wordpress.com/2011/07/23/entomologist-ui-changes-weekly-report-9/"
-        >David Williams: Entomologist UI Changes - Weekly Report #9</ulink>
+      <ulink
+        url="http://alex.eftimie.ro/2011/07/29/packagekit-backend-for-software-center-short-week-9-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: short week 9 report</ulink>
     </title>
-    <para>This week I’ve been working on finishing up the ToDo Lists, which did entail writing a new
-      Item Delegate for the list as the previous method of checking which widget had been clicked
-      was less than optimal!. I have finished the ToDo List and it will hopefully be merged on
-      Monday into an experimental branch that I can go through and ensure that everything works as
-      expected. This will then all be pulled together as a possible version 1.0 of Entomologist,
-      which is great news!.</para>
-    <para>I am currently researching possibilities for integrating Cloud Services into the ToDo List
-      and I plan on targeting an iCal/WebDAV compatible format export to begin with. Once this basic
-      step is in place I can then look at integrating with various web services and generic
-      iCal/WebDAV support for servers that use these.</para>
-    <para>This all leads on to how long I have left of my GSoC, which by my count is 5 weeks(!) of
-      GSoC Time,but I would like to stick to the soft pencils down date as much as possible so the
-      final week can be spent ensuring everything works properly. I want to look at the addition of
-      QML after I’ve integrated some Cloud Sync aspects as I think this would be a really excellent
-      feature to have.</para>
-    <para>Here’s a screenshot of the ToDo List on OS X Lion (Which also shows that nothing has to be
-      done to Entomologist’s code base to make it compatible):</para>
-    <para><inlinegraphic
-        fileref="http://redache.files.wordpress.com/2011/07/screen-shot-2011-07-23-at-02-21-41.png"
-        width="30%"/></para>
-<!-- ($ ld: 23.7.11 sm $)-->  </blockquote>
+    <para>It’s nice to write to you again. I’ve been having a 10 days vacation (that’s why there was
+      no week 8 report), enjoyed it and now I’m back with fresh forces.</para>
+    <para>This short (started slowly on Tuesday) week’s activity regards:<itemizedlist>
+        <listitem>
+          <para>almost fixing a bug that prevents my PackageKit software-center from prime time:
+            package information isn’t correctly refreshed after an installation/removal</para>
+        </listitem>
+        <listitem>
+          <para>starting work on the openSUSE integration (the corresponding Distro class, removal
+            of forgotten apt related imports, dependency identification and testing).</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>I will continue work on this side and <emphasis role="italic">hope</emphasis> that by the
+      end of the next week, will have everything working and up for testing in openSUSE.</para>
+    <para>NB: I will have to provide for testing a trunk version of pygobject since a release is
+      delayed by another awaited merge;</para>
+<!-- ($ ld: 30.7.11 sm $)-->  </blockquote>
 </sect1>
