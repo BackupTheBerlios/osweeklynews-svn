@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata width="20%" align="center" fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title>
+      <ulink url="http://rxvl.in/post/7967401920/gsoc-2011-ssc-week-9">Ratan Sebastian: GSOC 2011:
+        ssc Week 9</ulink>
+    </title>
+    <para>Tasks completed this week:<orderedlist>
+        <listitem>
+          <para>Replacing of ArgumentParser with Thor. I’d given a mid-week update about <ulink
+              url="http://lists.opensuse.org/opensuse-project/2011-07/msg00098.html">this</ulink> on
+            the mailing list. Please check there for complete details.</para>
+        </listitem>
+        <listitem>
+          <para>Implementing the general commands (checkout, commit and status). As a direct
+            consequence of using thor for the command line parsing, we get to use the invoke method
+            to call other actions. This made writing these commands quite easy.</para>
+        </listitem>
+        <listitem>
+          <para>Started on refactoring the DirectoryManager module. The NewDirectoryManager is
+            currently in use in the general commands and will gradually replace the older version
+            which is a mess of helper functions right now. There will be separate classes for
+            handling each of the local storage files (for software, repositories and files) deriving
+            from a parent LocalStorageFile class which implements the
+            generic #read and#save methods.</para>
+        </listitem>
+        <listitem>
+          <para>The gem is now hosted on rubygems.org . So, you can install it with gem install ssc.
+            Use the fantastic thor generated usage instructions to help you use the app.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>The tasks for next week are:<itemizedlist>
+        <listitem>
+          <para>Write integration tests</para>
+        </listitem>
+        <listitem>
+          <para>Implement a command to get information about installed packages from the currently
+            run system.</para>
+        </listitem>
+        <listitem>
+          <para>Commands for Appliance building and build status reporting.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>If you have any suggestions for features. Please do write in on the studio-users mailing
+      list.</para>
+<!-- ($ ld: 24.7.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://nbprashanth.wordpress.com/2011/07/26/gsoc-progress/">N.B.Prashanth: GSoC
+        Progress (libYI)</ulink>
+    </title>
+    <para>Last week has been quite dull after the mid term evaluations. The week started off with me
+      trying to improve the documentation and a home page for it. While the latter went pretty
+      smooth, the documentation is quite baffling. Most of the source code was quite well documented
+      and small hacks with the Doxyfile seemed to produce the proper results. Nevertheless, there
+      were cases (quite a few) where the results seemed out of place. While struggling with the
+      docs, I also started working on the libyui-gtk-pkg package. This package provides the libzypp
+      plugin for the libyui-gtk module. This has been separated from libyui-gtk package so as to
+      make it platform independent. I am nearly there on getting this package to compile. A day or
+      two should be sufficient, I guess.</para>
+    <para>By the end of last week, I switched over to writing examples for YUI in the hope that it
+      would give me further insight into what a developer might expect from the docs. After a few
+      not-so-great ideas, I settled on an IRC client written with YUI. The library to manage the IRC
+      protocol is self-implemented and is complete. At this point in time, it handles only
+      conversations and a single channel. This is very small compared to the span of the IRC
+      protocol. But since the main aspect of the example is to showcase YUI as a UI library, I guess
+      the features are sufficient.</para>
+<!-- ($ ld: 26.7.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://cbounta.wordpress.com/2011/07/29/a-utility-for-merging-configuration-sysconfig-files-–-week-10-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 10
+        Report</ulink>
+    </title>
+    <para>Hello again, this is my report for the 10th week of GSoC. Unfortunately i wasn’t able to
+      create the beta packages i was hoping. There are still some issues to be resolved within the
+      aug_process_tree that hopefully will be solved this weekend.  (...)</para>
+<!-- ($ ld: 29.7.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://alex.eftimie.ro/2011/07/29/packagekit-backend-for-software-center-short-week-9-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: short week 9 report</ulink>
+    </title>
+    <para>It’s nice to write to you again. I’ve been having a 10 days vacation (that’s why there was
+      no week 8 report), enjoyed it and now I’m back with fresh forces.</para>
+    <para>This short (started slowly on Tuesday) week’s activity regards:<itemizedlist>
+        <listitem>
+          <para>almost fixing a bug that prevents my PackageKit software-center from prime time:
+            package information isn’t correctly refreshed after an installation/removal</para>
+        </listitem>
+        <listitem>
+          <para>starting work on the openSUSE integration (the corresponding Distro class, removal
+            of forgotten apt related imports, dependency identification and testing).</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>I will continue work on this side and <emphasis role="italic">hope</emphasis> that by the
+      end of the next week, will have everything working and up for testing in openSUSE.</para>
+    <para>NB: I will have to provide for testing a trunk version of pygobject since a release is
+      delayed by another awaited merge;</para>
+<!-- ($ ld: 30.7.11 sm $)-->  </blockquote>
+</sect1>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="security">
+  <title>Security Updates</title>
+  <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
+    refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00013.html"
+        >openSUSE-SU-2011:0845-1: important: compat-openssl097g</ulink></title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">compat-openssl097g</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0845-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Wed, 27 Jul 2011 16:08:25 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>CVE-2008-5077 CVE-2009-0590 CVE-2009-0789CVE-2009-3555 CVE-2010-4180</td>
+        </tr>
+      </tbody>
+    </table>
+</blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00015.html"
+        >openSUSE-SU-2011:0852-1: important: freetype: Fixed several off-by-one / length checks
+        missing</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">freetype</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0852-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Thu, 28 Jul 2011 00:08:34 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>Fixed several off-by-one / length checks missing</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <!--
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00008.html"
+        >openSUSE-SU-2011:0803-1: important: kvm</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">kvm</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:0803-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Tue, 19 Jul 2011 05:08:14 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>A privileged guest user could cause a buffer overflow inthe virtio subsystem of the
+            host, therefore crashing theguest or potentially execute arbitrary code on the
+            host(CVE-2011-2212, CVE-2011-2512).</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote> -->
+</sect1>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <!--
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.unixmen.com/linux-tutorials/1823-how-to-make-your-own-20th-century-fox-and-lionsgate-intro-with-blender-25-">Unixmen/M. Zinoune: How to make your own 20th Century Fox and LIONSGATE intro with Blender 2.5 in 5 min</ulink>
+      </title>
+      <para>This is an easy tutorial on how to make your own 20th Century Fox and&#160; LIONSGATE styled
+        intro using Blender 2.5. It is very easy you just need to donwload the templates blender and
+        follow the instructions, it shouldn&apos;t take more than 5-10 minutes to edit it.&#160; To do this,
+        you need to have Blender 2.5 or above installed in your system, if you are an ubuntu or
+        LinuxMint&#160; user, you can install the latest release of blender using PPA from<ulink url="http://www.unixmen.com/linux-tutorials/1714-blender-257-is-released-with-a-new-design-multiple-windows-support-and-more">&#160;this link</ulink>. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/470411:screencasting-stars-of-the-linux-world">Linux.com/Nathan Willis: Screencasting Stars of the Linux World</ulink>
+      </title>
+      <para>Are you still taking screenshots? That is sooo last decade. Today if you want to
+        showcase your application, your gaming skills, or even your astonishing new desktop
+        wallpaper collection, you need a screen recorder (or screencasting tool) to capture
+        full-motion video and audio of your desktop. You&apos;ll find several solid options, but which
+        one works best for you depends a lot on the type of content you need to capture, and what
+        you intend to do with it.For starters, the output produced by the tool varies considerably.
+        Some alternatives give you a wide choice of video and audio codecs, others just one. But if
+        that one (say, Flash) is the one you need, producing it directly is much quicker than having
+        to save an intermediary file and crank it through a video editor. It also may be important
+        to select just a portion of the screen rather than your whole display, or to choose a
+        specific frame-rate (high for games, low for bandwidth-saving demos). Finally, there are
+        always special features that vary between utilities, such as whether or not they can capture
+        OpenGL content or be started remotely by script. (...)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis> Both <ulink url="http://bit.ly/qoyFx6">recordMyDesktop</ulink> and <ulink url="http://bit.ly/p94swf">Istanbul</ulink> are
+        available via OBS.</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="https://scribblesandsnaps.wordpress.com/2011/07/25/quick-tip-a-simple-python-script-to-launch-digikam/">Scribbles and Snaps: Quick Tip: A Simple Python Script to Launch digiKam</ulink>
+      </title>
+      <para>I store all my photos on a Linux server and mount the remote directory containing all the photos on my local machine using sshfs (see <ulink url="http://scribblesandsnaps.wordpress.com/2011/03/13/manage-photos-from-multiple-digikam-installations/">Manage Photos from Multiple digiKam Installations</ulink>). This way, I can access my photos from multiple digiKam installations. This setup works like a charm, except for one thing: when I inadvertently launch digiKam before I mount the remote directory, the application doesn’t show photos from remote albums. What’s worse, after I mount the remote directory and restart digiKam, it takes the application a long time to rescan all remote albums. To fix this annoyance, I wrote a simple Python script: (...)</para>
+<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://rollingprogrammer.com/2011/07/25/finch-instant-message-from-the-shellcommand-line/">RollingProgrammer();: Finch: instant message from the shell / command line</ulink>
+      </title>
+      <para>Here’s a little trivia for everyone out there: Did you know that Pidgin also makes a text-based version of their popular instant messaging client?</para>
+      <para>The application is called Finch, and it feels exactly the same as its GUI based brother Pidgin but… you know… in a shell. (...)</para>
+<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://linuxaria.com/article/chage-uses-to-control-your-users-on-linux?lang=en">Linuxaria: chage : control your users “age” on Linux</ulink>
+      </title>
+      <para>If you think that the operations about users are only: creation, deletion and change of the passwords you are in error, in the standard GNU/Linux system about authentication and authorization of users there are some interesting flags regarding the age of an account.</para>
+      <para>These parameters are usually ignored, but can be very useful in particular situations, or to help enforce internal policies on the use of personal accounts.</para>
+      <para>All these parameters are stored in /etc/shadow can be viewed and modified with the command chage (...)</para>
+<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.techradar.com/news/software/operating-systems/19-ways-to-do-your-bit-for-open-source-980764">techradar/Neil Bothwick:19 ways to do your bit for open source</ulink>
+      </title>
+      <para>It&apos;s undoubtedly good to give back to a community you take so much from.</para>
+      <para>And in doing so, you can also help improve the software that you use every day, both for
+        your benefit and for everyone else.</para>
+      <para>Here are 19 ways you can help open source projects.</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3937741/Monitor-Progress-With-Pipe-Viewer.htm">ServerWatch/Joe Brockmeier: Monitor Progress With Pipe Viewer</ulink>
+      </title>
+      <para>One of the most frustrating things when doing system administration is having no idea how long a process will take to finish or how much progress it&apos;s made. To get a better look at what&apos;s going on, try the <ulink url="http://www.ivarch.com/programs/pv.shtml">Pipe Viewer</ulink> utility.</para>
+      <para>Pipe Viewer, or just pv when you&apos;re invoking it at the command line or in scripts, is a utility for monitoring data flowing through a pipeline. It gives you an idea of how fast the data is moving through the pipeline, how long it&apos;s taken so far, and when it will be finished. It&apos;s the digital answer to the administrative question, &quot;are we there yet?&quot; (...)</para>
+      <para><emphasis role="bold">Editors Note:</emphasis>
+        Pipe Viewer  (pv) packages for openSUSE are  <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=pv">available from Contrib repo</ulink>.</para>
+<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/configuring-iscsi-and-adding-isns-servers">BeginLinux: Configuring iSCSI and adding iSNS Servers</ulink>
+      </title>
+      <para>In previous tutorials we&apos;ve learned SUSE has made life very easy for System Administrators having developed graphical tools to manage many system components including the iSCSI target. As with most things in life there is a price to pay for this ease: YaST only writes to the configuration files and the changes do not come into force until the service is restarted. Command Line knowledge lifts us out of troublesome pit and gives us full control of our systems. Additionally we will add in ISNS (Internet Storage Name Service) to locate ISCSI Targets on our network. (...)</para>
+<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

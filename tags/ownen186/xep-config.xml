@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ======================================================= -->
+<!-- RenderX XEP Configuration                               -->
+<!-- ======================================================= -->
+
+<config xmlns="http://www.renderx.com/XEP/config" xml:base="/usr/share/xep/">
+
+  <!-- ======================================================= -->
+  <!-- Formatter options                                       -->
+  <!-- ======================================================= -->
+  <options>
+    <!-- See also the /usr/bin/xep script  -->
+    <option name="LICENSE" value="file:///etc/xep/license.xml"/>
+    <option name="BROKENIMAGE" value="images/404.gif"/>
+    <option name="TMPDIR" value="none"/>
+    <option name="LOGO" value="images/logo-renderx.svg"/>
+    <option name="STAMP_PNG" value="images/stamp-renderx.png"/>
+    
+    <!-- Backend options -->
+    <generator-options format="PDF">
+      <!-- <option name="COMPRESS" value="false"/> -->
+       <option name="PDF_VERSION" value="1.4"/> 
+    </generator-options>
+  </options>
+
+  <!-- ======================================================= -->
+  <!-- Fonts                                                   -->
+  <!-- ======================================================= -->
+  
+  <fonts xml:base="fonts/"  default-family="Helvetica">
+    
+    <!-- Base Adobe fonts. -->
+    <font-group label="Base 14" embed="false" subset="false" initial-encoding="standard">
+      <font-family name="Courier">
+        <font><font-data afm="Courier.afm"/></font>
+        <font style="oblique"><font-data afm="Courier-Oblique.afm"/></font>
+        <font weight="bold"><font-data afm="Courier-Bold.afm"/></font>
+        <font weight="bold" style="oblique"><font-data afm="Courier-BoldOblique.afm"/></font>
+      </font-family>
+
+      <font-family name="Helvetica">
+        <font><font-data afm="Helvetica.afm"/></font>
+        <font style="oblique"><font-data afm="Helvetica-Oblique.afm"/></font>
+        <font weight="bold"><font-data afm="Helvetica-Bold.afm"/></font>
+        <font weight="bold" style="oblique"><font-data afm="Helvetica-BoldOblique.afm"/></font>
+      </font-family>
+
+      <font-family name="Times" ligatures="&#xFB01; &#xFB02;">
+        <font><font-data afm="Times-Roman.afm"/></font>
+        <font style="italic"><font-data afm="Times-Italic.afm"/></font>
+        <font weight="bold"><font-data afm="Times-Bold.afm"/></font>
+        <font weight="bold" style="italic"><font-data afm="Times-BoldItalic.afm"/></font>
+      </font-family>
+
+      <font-family name="Symbol">
+        <font><font-data afm="Symbol.afm"/></font>
+      </font-family>
+
+      <font-family name="ZapfDingbats"> 
+        <font><font-data afm="ZapfDingbats.afm"/></font>
+      </font-family>
+    </font-group>
+
+    <!-- Other Type1 fonts -->
+    <font-group label="Assorted Type 1" embed="true">
+      <font-family name="OmegaSerifIPA">
+        <font><font-data afm="IPA.afm" pfa="IPA.pfa" glyph-list="IPA.glyphs"/></font>
+      </font-family>   
+      <font-alias name="OmegaIPA" value="OmegaSerifIPA"/>
+      <font-alias name="Phonetic" value="OmegaSerifIPA"/>
+    </font-group>
+
+    <font-group label="DejaVu" 
+      embed="true" subset="true" 
+      initial-encoding="standard"
+      xml:base="file:///usr/share/fonts/truetype/">
+      <font-family name="DejaVuSansCondensed" 
+        ligatures="&#xFB00; &#xFB01; &#xFB02; &#xFB03; &#xFB04; &#xFB05;">
+        <font>
+          <font-data ttf="DejaVuSansCondensed.ttf"/>
+        </font>
+        <font style="oblique">
+          <font-data ttf="DejaVuSansCondensed-Oblique.ttf"/>
+        </font>
+        <font weight="bold">
+          <font-data ttf="DejaVuSansCondensed-Bold.ttf"/>
+        </font>
+        <font style="oblique" weight="bold">
+          <font-data ttf="DejaVuSansCondensed-BoldOblique.ttf"/>
+        </font>
+      </font-family>
+      <font-family name="DejaVuSans" 
+        ligatures="&#xFB00; &#xFB01; &#xFB02; &#xFB03; &#xFB04; &#xFB05;">
+        <font>
+          <font-data ttf="DejaVuSans.ttf"/>
+        </font>
+        <font style="oblique">
+          <font-data ttf="DejaVuSans-Oblique.ttf"/>
+        </font>
+        <font weight="bold">
+          <font-data ttf="DejaVuSans-Bold.ttf"/>
+        </font>
+        <font style="oblique" weight="bold">
+          <font-data ttf="DejaVuSans-BoldOblique.ttf"/>
+        </font>
+      </font-family>
+      <font-family name="DejaVuSerif" 
+        ligatures="&#xFB00; &#xFB01; &#xFB02; &#xFB03; &#xFB04; &#xFB05;">
+        <font>
+          <font-data ttf="DejaVuSerif.ttf"/>
+        </font>
+        <font style="italic">
+          <font-data ttf="DejaVuSerif-Italic.ttf"/>
+        </font>
+        <font weight="bold">
+          <font-data ttf="DejaVuSerif-Bold.ttf"/>
+        </font>
+        <font style="oblique" weight="bold">
+          <font-data ttf="DejaVuSans-BoldItalic.ttf"/>
+        </font>
+      </font-family>
+      <font-family name="DejaVu Sans Mono">
+        <font>
+          <font-data ttf="DejaVuSansMono.ttf"/>
+        </font>
+        <font style="oblique">
+          <font-data ttf="DejaVuSansMono-Oblique.ttf"/>
+        </font>
+        <font weight="bold">
+          <font-data ttf="DejaVuSansMono-Bold.ttf"/>
+        </font>
+        <font style="oblique" weight="bold">
+          <font-data ttf="DejaVuSansMono-BoldOblique.ttf"/>
+        </font>
+      </font-family>
+      
+    </font-group>
+    <!-- Required aliases -->
+    <font-alias name="DejaVu Sans Condensed" value="DejaVuSansCondensed"/>   
+    <font-alias name="monospace" value="DejaVu Sans Mono"/>
+    <font-alias name="sans-serif" value="DejaVu Sans Condensed"/>
+    <font-alias name="serif" value="DejaVuSerif"/>    
+    <font-alias name="cursive" value="DejaVuSerif"/>
+    <font-alias name="fantasy" value="DejaVuSerif"/>
+  </fonts>
+
+  <!-- ======================================================= -->
+  <!-- Language-specific data: hyphenation, line breaking, etc -->
+  <!-- ======================================================= -->
+  <languages default-language="en-US" xml:base="hyphen/">
+  
+    <language name="English (US)" codes="none en-US eng-US">
+      <hyphenation pattern="hyphen.tex"/>
+    </language>
+
+    <language name="English (UK)" codes="en-GB eng-GB en eng">
+      <hyphenation pattern="ukhyphen.tex"/>
+    </language>
+
+    <language name="Russian" codes="ru rus">
+      <hyphenation pattern="ruhyphal.tex" encoding="koi8-r"/>
+    </language>
+
+    <language name="French" codes="fr fra fre">
+      <hyphenation pattern="frhyph_rx.tex"/>
+    </language>
+         
+    <language name="German" codes="de deu ger">
+      <hyphenation pattern="dehyph_rx.tex"/>
+    </language>
+
+    <language name="Spanish" codes="es esl spa">
+      <hyphenation pattern="eshyph_rx.tex"/>
+    </language>
+    
+    <language name="Polish" codes="pl pol">
+      <hyphenation pattern="plhyph_rx.tex"/>
+    </language>    
+  </languages>
+    
+</config>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+  <title>New/Updated Applications @ openSUSE</title>
+<!--* Gnome
+* KDE
+* XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
+    <title>
+            <ulink url="http://mvidner.blogspot.com/2011/07/ruby-dbus-070-works-with-192-again.html"
+                >Martin Vidner: ruby-dbus 0.7.0 works with 1.9.2 again</ulink>
+        </title>
+        <para>I have made a new release of <ulink url="https://trac.luon.net/ruby-dbus/"
+                >ruby-dbus</ulink>, a <ulink url="http://www.ruby-lang.org/">Ruby language</ulink>
+            binding for the <ulink url="http://www.freedesktop.org/wiki/Software/dbus">D-Bus IPC
+                system</ulink>.<itemizedlist>
+                <listitem>
+                    <para>Added ASystemBus and ASessionBus, non-singletons useful in tests and
+                        threads.</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed handling of multibyte strings (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/8">Issue#8</ulink>, by
+                        Takayuki YAMAGUCHI).</para>
+                </listitem>
+                <listitem>
+                    <para>Allow reopening of a dbus_interface declaration (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/9">Issue#9</ulink>, by
+                        T. YAMAGUCHI).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed ruby-1.9.2 compatibility again (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/12"
+                        >Issue#12</ulink>).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed authentication on BSD (<ulink
+                            url="https://github.com/mvidner/ruby-dbus/issues/11">Issue#11</ulink>,
+                        by Jonathan Walker).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed exiting a nested event loop for synchronous calls (<ulink
+                            url="https://lists.luon.net/pipermail/ruby-dbus-devel/2011-March/000410.html"
+                            >reported</ulink> by Timo Warns).</para>
+                </listitem>
+                <listitem>
+                    <para>Fixed introspection calls leaking reply handlers.</para>
+                </listitem>
+                <listitem>
+                    <para>"rake test" now works, doing what was called "rake env:test"</para>
+                </listitem>
+            </itemizedlist></para>
+        <para>Get <ulink url="https://rubygems.org/gems/ruby-dbus">a gem from
+                RubyGems.org</ulink> or <ulink url="http://s.opensu.se/bs/rubygem-ruby-dbus">an rpm
+                from the openSUSE Build Service</ulink>.</para>
+<!-- ($ ld: 26.7.11 sm $)-->  </blockquote>
+</sect1>
