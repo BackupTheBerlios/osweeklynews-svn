@@ -25,50 +25,39 @@
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
     <title>
             <ulink url="http://mvidner.blogspot.com/2011/07/ruby-dbus-070-works-with-192-again.html"
-                >Martin Vidner: ruby-dbus 0.7.0 works with 1.9.2 again</ulink>
+                >Bruno Friedmann: ATI/AMD fglrx 8.872 Catalyst 11.7 available for openSUSE 11.3,
+                11.4, 12.1 (Factory)</ulink>
         </title>
-        <para>I have made a new release of <ulink url="https://trac.luon.net/ruby-dbus/"
-                >ruby-dbus</ulink>, a <ulink url="http://www.ruby-lang.org/">Ruby language</ulink>
-            binding for the <ulink url="http://www.freedesktop.org/wiki/Software/dbus">D-Bus IPC
-                system</ulink>.<itemizedlist>
+        <para>I’ve rebuild and published the new rpms last wednesday, but didnt find the time to
+            give some news here.</para>
+        <para>Please refer to my <ulink url="http://lizards.opensuse.org/?p=6680">previous
+                article</ulink> where all the installation procedure is explained.<itemizedlist>
                 <listitem>
-                    <para>Added ASystemBus and ASessionBus, non-singletons useful in tests and
-                        threads.</para>
+                    <para>Quick résumé :</para>
                 </listitem>
                 <listitem>
-                    <para>Fixed handling of multibyte strings (<ulink
-                            url="https://github.com/mvidner/ruby-dbus/issues/8">Issue#8</ulink>, by
-                        Takayuki YAMAGUCHI).</para>
+                    <para>There’s no full changelog about them, but <ulink
+                            url="http://www2.ati.com/relnotes/Catalyst_11.7_Linux_Installer.pdf"
+                            >Catalyst 11.7 installer</ulink> (pdf)</para>
                 </listitem>
                 <listitem>
-                    <para>Allow reopening of a dbus_interface declaration (<ulink
-                            url="https://github.com/mvidner/ruby-dbus/issues/9">Issue#9</ulink>, by
-                        T. YAMAGUCHI).</para>
+                    <para>Get the cheat-sheet <ulink
+                            url="http://www.sebastian-siebert.de/downloads/ati-catalyst-11.7-cheat-sheet.pdf"
+                            >11.6 version</ulink></para>
                 </listitem>
                 <listitem>
-                    <para>Fixed ruby-1.9.2 compatibility again (<ulink
-                            url="https://github.com/mvidner/ruby-dbus/issues/12"
-                        >Issue#12</ulink>).</para>
+                    <para>Kernel supported up to 3.0x version</para>
                 </listitem>
                 <listitem>
-                    <para>Fixed authentication on BSD (<ulink
-                            url="https://github.com/mvidner/ruby-dbus/issues/11">Issue#11</ulink>,
-                        by Jonathan Walker).</para>
+                    <para>Removed support of openSUSE 11.2, if you are still using it with Evergreen
+                        project, the repository still exist with older version</para>
                 </listitem>
                 <listitem>
-                    <para>Fixed exiting a nested event loop for synchronous calls (<ulink
-                            url="https://lists.luon.net/pipermail/ruby-dbus-devel/2011-March/000410.html"
-                            >reported</ulink> by Timo Warns).</para>
-                </listitem>
-                <listitem>
-                    <para>Fixed introspection calls leaking reply handlers.</para>
-                </listitem>
-                <listitem>
-                    <para>"rake test" now works, doing what was called "rake env:test"</para>
+                    <para>Wrong (to my point of view) create an xorg.conf file which is unneeded if
+                        you work with /etc/xorg.conf.d/50-device.conf and have driver
+                        "fglrx&amp;quot inside</para>
                 </listitem>
             </itemizedlist></para>
-        <para>Get <ulink url="https://rubygems.org/gems/ruby-dbus">a gem from
-                RubyGems.org</ulink> or <ulink url="http://s.opensu.se/bs/rubygem-ruby-dbus">an rpm
-                from the openSUSE Build Service</ulink>.</para>
-<!-- ($ ld: 26.7.11 sm $)-->  </blockquote>
+        <para>(...)</para>
+<!-- ($ ld: 2.8.11 sm $)-->  </blockquote>
 </sect1>

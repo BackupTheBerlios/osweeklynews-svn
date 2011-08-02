@@ -26,68 +26,57 @@
   <blockquote>
     <title>
       <ulink url="http://rxvl.in/post/7967401920/gsoc-2011-ssc-week-9">Ratan Sebastian: GSOC 2011:
-        ssc Week 9</ulink>
+        ssc Week 10</ulink>
     </title>
     <para>Tasks completed this week:<orderedlist>
         <listitem>
-          <para>Replacing of ArgumentParser with Thor. I’d given a mid-week update about <ulink
-              url="http://lists.opensuse.org/opensuse-project/2011-07/msg00098.html">this</ulink> on
-            the mailing list. Please check there for complete details.</para>
+          <para>Implemented checkout of an existing appliance from Studio. ssc checkout
+            --appliance-id=APPLIANCE_ID now works.</para>
         </listitem>
         <listitem>
-          <para>Implementing the general commands (checkout, commit and status). As a direct
-            consequence of using thor for the command line parsing, we get to use the invoke method
-            to call other actions. This made writing these commands quite easy.</para>
+          <para>Integration tests for the appliance, package and repository handlers. (Currently at
+            about 50% test coverage).</para>
         </listitem>
         <listitem>
-          <para>Started on refactoring the DirectoryManager module. The NewDirectoryManager is
-            currently in use in the general commands and will gradually replace the older version
-            which is a mess of helper functions right now. There will be separate classes for
-            handling each of the local storage files (for software, repositories and files) deriving
-            from a parent LocalStorageFile class which implements the
-            generic #read and#save methods.</para>
+          <para>Completed the refactoring and migration to the New DirectoryManager module.</para>
         </listitem>
         <listitem>
-          <para>The gem is now hosted on rubygems.org . So, you can install it with gem install ssc.
-            Use the fantastic thor generated usage instructions to help you use the app.</para>
+          <para>Added the build and build_status commands</para>
         </listitem>
       </orderedlist></para>
     <para>The tasks for next week are:<itemizedlist>
         <listitem>
-          <para>Write integration tests</para>
+          <para>Improving test coverage and removing all the deprecated and unused methods.</para>
         </listitem>
         <listitem>
-          <para>Implement a command to get information about installed packages from the currently
-            run system.</para>
+          <para>Writing unit tests for the helper modules.</para>
         </listitem>
         <listitem>
-          <para>Commands for Appliance building and build status reporting.</para>
+          <para>Writing usage examples for the app to help new users.\u0000</para>
         </listitem>
       </itemizedlist></para>
     <para>If you have any suggestions for features. Please do write in on the studio-users mailing
       list.</para>
-<!-- ($ ld: 24.7.11 sm $)-->  </blockquote>
+<!-- ($ ld: 2.8.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://nbprashanth.wordpress.com/2011/07/26/gsoc-progress/">N.B.Prashanth: GSoC
-        Progress (libYI)</ulink>
+      <ulink url="http://lizards.opensuse.org/2011/08/01/gsoc-osc-code-cleanup-summary-of-week-10/"
+        >Marcus Hüwe: [gsoc] osc code cleanup – summary of week 10</ulink>
     </title>
-    <para>Last week has been quite dull after the mid term evaluations. The week started off with me
-      trying to improve the documentation and a home page for it. While the latter went pretty
-      smooth, the documentation is quite baffling. Most of the source code was quite well documented
-      and small hacks with the Doxyfile seemed to produce the proper results. Nevertheless, there
-      were cases (quite a few) where the results seemed out of place. While struggling with the
-      docs, I also started working on the libyui-gtk-pkg package. This package provides the libzypp
-      plugin for the libyui-gtk module. This has been separated from libyui-gtk package so as to
-      make it platform independent. I am nearly there on getting this package to compile. A day or
-      two should be sufficient, I guess.</para>
-    <para>By the end of last week, I switched over to writing examples for YUI in the hope that it
-      would give me further insight into what a developer might expect from the docs. After a few
-      not-so-great ideas, I settled on an IRC client written with YUI. The library to manage the IRC
-      protocol is self-implemented and is complete. At this point in time, it handles only
-      conversations and a single channel. This is very small compared to the span of the IRC
-      protocol. But since the main aspect of the example is to showcase YUI as a UI library, I guess
-      the features are sufficient.</para>
+    <para>Here’s a small summary of the 10th (coding) week. This week I spentmost of my time with
+      working on the package working copy class’commit method. This also involved some code
+      refactoring.Basically commit and update are handled as “transactions” and allrelevant
+      transaction data is stored in a single xml file(pkg/.osc/_transaction/state). This way an
+      update/commit is more orless an atomic operation.</para>
+    <para>For more information have a look at [1] (class XMLTransactionState+ subclasses and
+      commit/update method).</para>
+    <para>TODO:<itemizedlist>
+        <listitem>
+          <para>add update and commit methods for the project class</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>[1] <ulink url="https://gitorious.org/osc2/osc2/blobs/master/osc/wc/package.py"
+        >https://gitorious.org/osc2/osc2/blobs/master/osc/wc/package.py</ulink></para>
 <!-- ($ ld: 26.7.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
