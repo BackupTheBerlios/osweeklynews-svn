@@ -20,18 +20,17 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-      <ulink url="http://www.techrepublic.com/blog/opensource/linux-30-more-important-than-you-think/2730">TechRepublic/Jack Wallen: Linux 3.0: More important than you think</ulink>
+      <ulink
+        url="http://www.techrepublic.com/blog/opensource/linux-30-more-important-than-you-think/2730"
+        >lwn.net/Greg Kroah-Hartmann: The 3.0.1 Stable Update is Out</ulink>
     </title>
-    <para><emphasis role="bold">Takeaway:&#160;Linux turns 3.0 and does so with little to no fanfare. Read why Jack Wallen believes this might be one of the more significant (and fanfare-worth) releases of the Linux kernel to date.</emphasis></para>
-    <para>Ah vacation. It was a week of blissful lounging around a breezy beach side and playing in
-      a water-filled world where I was no longer at the top of the food chain. There were no
-      computers, no talk of networking this, security that, or anything in between. But then the
-      hard reality of the world wormed its way back into my mind and I now find myself trying hard
-      to get back into some sort of groove…an open source kind of groove (of course).</para>
-    <para>And although it’s officially next month (the month of my forty-fourth birthday, thank you
-      very much) Linux is about to turn 3.0. And although Linus Torvalds himself has said this is
-      not a big deal, it is. Why? Because of the very fact it is not a big deal. (...)</para>
-<!-- ($ ld: 26.7.11 sm $) -->  </blockquote>
+    <para>I'm announcing the release of the 3.0.1 kernel.  All users of the 3.0 kernel series must
+      upgrade.  The updated 3.0.y git tree can be found at:
+      git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-3.0.y.git and can be browsed at the
+      normal kernel.org git web browser: <ulink
+        url="http://git.kernel.org/?p=linux/kernel/git/stable/linux-3.0.y.git;a=summary"
+        >http://git.kernel.org/?p=linux/kernel/git/stable/linux-3.0.y.git;a=summary</ulink></para>
+<!-- ($ ld: 5.8.11 sm $) -->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;px=OTcwMg">Phoronix/Michael Larabel: Linux 3.0 Real-Time Kernel Released</ulink>
