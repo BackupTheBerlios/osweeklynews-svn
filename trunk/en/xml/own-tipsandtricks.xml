@@ -18,65 +18,55 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
-  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.unixmen.com/linux-tutorials/1823-how-to-make-your-own-20th-century-fox-and-lionsgate-intro-with-blender-25-">Unixmen/M. Zinoune: How to make your own 20th Century Fox and LIONSGATE intro with Blender 2.5 in 5 min</ulink>
+        <ulink url="http://www.banym.de/security/use-ssh-for-more-secure-browsing-in-public-networks">Dominik Zajac: Use SSH for more secure browsing in public networks</ulink>
       </title>
-      <para>This is an easy tutorial on how to make your own 20th Century Fox and&#160; LIONSGATE styled
-        intro using Blender 2.5. It is very easy you just need to donwload the templates blender and
-        follow the instructions, it shouldn&apos;t take more than 5-10 minutes to edit it.&#160; To do this,
-        you need to have Blender 2.5 or above installed in your system, if you are an ubuntu or
-        LinuxMint&#160; user, you can install the latest release of blender using PPA from<ulink url="http://www.unixmen.com/linux-tutorials/1714-blender-257-is-released-with-a-new-design-multiple-windows-support-and-more">&#160;this link</ulink>. (...)</para>
-    </blockquote>
+      <para>In the time of free wifi and free internet connections in every hotel, bar or cafe you should be sure your connections are secure. In some cases you can’t trust the connection but you need to go online and read some mails or share some documents. In this case some basic tools like SSH and Firefox can help you to build an secure connection to an known computer in the internet you can trust (for example your own root server).</para>
+      <para>To make more clear what I am talking about i created this small diagram to make it more easy for me to explain what I am doing with this SSH connection and how I can benefit from it. (...)</para>
+<!-- ($ Id: 5.8.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linux.com/learn/tutorials/470411:screencasting-stars-of-the-linux-world">Linux.com/Nathan Willis: Screencasting Stars of the Linux World</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/how-to-create-an-ebook-with-openoffice-org/">Wazi/Dmitry Kaglik: How To Create an Ebook with OpenOffice.org</ulink>
       </title>
-      <para>Are you still taking screenshots? That is sooo last decade. Today if you want to
-        showcase your application, your gaming skills, or even your astonishing new desktop
-        wallpaper collection, you need a screen recorder (or screencasting tool) to capture
-        full-motion video and audio of your desktop. You&apos;ll find several solid options, but which
-        one works best for you depends a lot on the type of content you need to capture, and what
-        you intend to do with it.For starters, the output produced by the tool varies considerably.
-        Some alternatives give you a wide choice of video and audio codecs, others just one. But if
-        that one (say, Flash) is the one you need, producing it directly is much quicker than having
-        to save an intermediary file and crank it through a video editor. It also may be important
-        to select just a portion of the screen rather than your whole display, or to choose a
-        specific frame-rate (high for games, low for bandwidth-saving demos). Finally, there are
-        always special features that vary between utilities, such as whether or not they can capture
-        OpenGL content or be started remotely by script. (...)</para>
-      <para><emphasis role="bold">Editors Note:</emphasis> Both <ulink url="http://bit.ly/qoyFx6">recordMyDesktop</ulink> and <ulink url="http://bit.ly/p94swf">Istanbul</ulink> are
-        available via OBS.</para>
-    </blockquote>
-  </sect2> -->
+      <para>Do you want to see your name on the front page of a book? It’s easier than you might think. First, write the book. Next, follow these simple steps to prepare an ebook using the free OpenOffice.org desktop publishing application.</para>
+      <para>Publishing ebooks today can be a DIY business. If you write for a specific audience, you can create a successful book without the help of big companies, and get your work into the hands of readers who can download ebooks from popular sites such as Amazon CreateSpace, Lulu, or Lightning Source.</para>
+      <para>Let’s assume you’ve already written the book you want to publish. Your work might be in plain text format or written using a word processing application. No matter where it starts out, import it into OOo Writer and use that program’s rich set of tools to create a file for publication. (...)</para>
+<!-- ($ Id: 5.8.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux.com/learn/tutorials/477968-advanced-layering-techniques-on-linux-with-gimp">Linux.com/Jack Wallen: Advanced Layering Techniques on Linux with GIMP</ulink>
+      </title>
+      <para>The <ulink url="http://www.gimp.org/">GNU Image Manipulation Program</ulink> (GIMP) is one of the most powerful image editing tools available. It is, effectively, the Photoshop of the open source world; and with that kind of title comes a level of power most never take advantage of. One feature that should be a must-use for all digital artists is the layer. Using layers not only makes work easier, it gives digital art more depth and more flexibility.</para>
+      <para>What I want to do is to illustrate some of the more advanced methods for using layering in GIMP. Once these techniques have been mastered, creating and editing digital masterpieces will be so much easier. I will assume the basics of layers is understood (such as how to add, copy, and delete layers), so the 101-level layer steps will not be discussed.(...)</para>
+<!-- ($ Id: 5.8.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="https://scribblesandsnaps.wordpress.com/2011/07/25/quick-tip-a-simple-python-script-to-launch-digikam/">Scribbles and Snaps: Quick Tip: A Simple Python Script to Launch digiKam</ulink>
+        <ulink url="http://bashshell.net/utilities/line-addressing-in-sed/">BashShell.net/Mike: Line Addressing in sed</ulink>
       </title>
-      <para>I store all my photos on a Linux server and mount the remote directory containing all the photos on my local machine using sshfs (see <ulink url="http://scribblesandsnaps.wordpress.com/2011/03/13/manage-photos-from-multiple-digikam-installations/">Manage Photos from Multiple digiKam Installations</ulink>). This way, I can access my photos from multiple digiKam installations. This setup works like a charm, except for one thing: when I inadvertently launch digiKam before I mount the remote directory, the application doesn’t show photos from remote albums. What’s worse, after I mount the remote directory and restart digiKam, it takes the application a long time to rescan all remote albums. To fix this annoyance, I wrote a simple Python script: (...)</para>
-<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+      <para><emphasis role="bold">Line Addressing</emphasis></para>
+      <para>Line addressing allows you to select the lines that you want to work with.  Addressing can use regular expressions to determine the lines or list numbers for the lines in the format of a number.  If two numbers are used separated by a comma then it becomes a range.(...)</para>
+<!-- ($ Id: 5.8.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://rollingprogrammer.com/2011/07/25/finch-instant-message-from-the-shellcommand-line/">RollingProgrammer();: Finch: instant message from the shell / command line</ulink>
+        <ulink url="http://linuxaria.com/pills/be-nice-with-your-process-on-linux?lang=en">Linuxaria: Be nice with your process on Linux</ulink>
       </title>
-      <para>Here’s a little trivia for everyone out there: Did you know that Pidgin also makes a text-based version of their popular instant messaging client?</para>
-      <para>The application is called Finch, and it feels exactly the same as its GUI based brother Pidgin but… you know… in a shell. (...)</para>
-<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+      <para>On Linux there is a way to set/change the priority of processes, the user can act to give greater or lesser priority to its own processes.</para>
+      <para>For example you are running a backup with rsync or doing a tar, but you do not want these processes use all your CPU, in these cases you can make use of the nice command. (...)</para>
+<!-- ($ Id: 5.8.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://linuxaria.com/article/chage-uses-to-control-your-users-on-linux?lang=en">Linuxaria: chage : control your users “age” on Linux</ulink>
+        <ulink url="http://flossstuff.wordpress.com/2011/07/09/how-bash-shell-interprets-a-command/">Ankur Aggarwal: How Bash Shell interprets a command ??</ulink>
       </title>
-      <para>If you think that the operations about users are only: creation, deletion and change of the passwords you are in error, in the standard GNU/Linux system about authentication and authorization of users there are some interesting flags regarding the age of an account.</para>
-      <para>These parameters are usually ignored, but can be very useful in particular situations, or to help enforce internal policies on the use of personal accounts.</para>
-      <para>All these parameters are stored in /etc/shadow can be viewed and modified with the command chage (...)</para>
-<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+      <para>In this previous part of this article we learned about  types of shells . In most of the Linux distributions , bash shell is the default shell. So we are going to discuss the working of bash shell in this article . Fasten your seat belts and get ready for the bash ride :D (...)</para>
+    </blockquote>
   </sect2>
-  <!--
+<!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
@@ -88,23 +78,14 @@
         your benefit and for everyone else.</para>
       <para>Here are 19 ways you can help open source projects.</para>
     </blockquote>
-  </sect2> -->
-  <sect2>
+  </sect2> -->  <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.serverwatch.com/tutorials/article.php/3937741/Monitor-Progress-With-Pipe-Viewer.htm">ServerWatch/Joe Brockmeier: Monitor Progress With Pipe Viewer</ulink>
+        <ulink url="http://www.serverwatch.com/tutorials/article.php/3937996/Try-collectlfor-System-Monitoring.htm">ServerWatch/Joe Brockmeier: Try collectl for System Monitoring</ulink>
       </title>
-      <para>One of the most frustrating things when doing system administration is having no idea how long a process will take to finish or how much progress it&apos;s made. To get a better look at what&apos;s going on, try the <ulink url="http://www.ivarch.com/programs/pv.shtml">Pipe Viewer</ulink> utility.</para>
-      <para>Pipe Viewer, or just pv when you&apos;re invoking it at the command line or in scripts, is a utility for monitoring data flowing through a pipeline. It gives you an idea of how fast the data is moving through the pipeline, how long it&apos;s taken so far, and when it will be finished. It&apos;s the digital answer to the administrative question, &quot;are we there yet?&quot; (...)</para>
-      <para><emphasis role="bold">Editors Note:</emphasis>
-        Pipe Viewer  (pv) packages for openSUSE are  <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=pv">available from Contrib repo</ulink>.</para>
-<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://beginlinux.com/desktop/opensuse/configuring-iscsi-and-adding-isns-servers">BeginLinux: Configuring iSCSI and adding iSNS Servers</ulink>
-      </title>
-      <para>In previous tutorials we&apos;ve learned SUSE has made life very easy for System Administrators having developed graphical tools to manage many system components including the iSCSI target. As with most things in life there is a price to pay for this ease: YaST only writes to the configuration files and the changes do not come into force until the service is restarted. Command Line knowledge lifts us out of troublesome pit and gives us full control of our systems. Additionally we will add in ISNS (Internet Storage Name Service) to locate ISCSI Targets on our network. (...)</para>
-<!-- ($ Id: 29.7.11 sat $)-->    </blockquote>
+      <para>Most Linux system administrators are familiar with sar for collecting system status data. However, there&apos;s a few ways that sar shows its age and doesn&apos;t quite live up to expectations. If you&apos;re looking for a newer utility that also handles NFS, Slab data and sub-second intervals, <ulink url="http://collectl.sourceforge.net/">collectl</ulink> may better fit the bill.</para>
+      <para>The collectl utility was written by Mark Seger, and it is dual-licensed under the Artistic License and GNU General Public License (GPL). It&apos;s written in Perl and does a bit more than <ulink url="http://collectl.sourceforge.net/Architecture.html">just read from /proc and copy data to the terminal</ulink>. (...)</para>
+<!-- ($ Id: 5.8.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
