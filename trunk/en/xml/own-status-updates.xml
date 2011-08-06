@@ -44,8 +44,7 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal
-          Marek: Mounting /usr in the initrd</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal Marek: Mounting /usr in the initrd</ulink>
       </title>
       <para>I changed the openSUSE mkinitrd to mount the /usr filesystem in the initrd, if /usr is a
         separate partition. I hope this will calm down some heated discussions about systemd, udev,
@@ -60,8 +59,9 @@
         file.</para>
 <!--($ ld: 5.8.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://lizards.opensuse.org/2011/08/05/factory-progress-2011-08-05/"
-          >Andreas Jaeger: Factory Progress 2011-08-05</ulink></title>
+      <title>
+        <ulink url="http://lizards.opensuse.org/2011/08/05/factory-progress-2011-08-05/">Andreas Jaeger: Factory Progress 2011-08-05</ulink>
+      </title>
       <para>The last few weeks have seen some a lot of package updates thus keeping our review and
         checkin team busy. I’d like to mention Sascha Peilicke who reviewed alone this week lots of
         packages. Have a look at just two numbers: In all of July we had 1001 check-ins and just
@@ -71,13 +71,12 @@
         packages now. Thanks Ciaran and Christoper for your legal review!</para>
       <para><emphasis role="bold">Policy</emphasis></para>
       <para><emphasis role="bold">Detailed changes</emphasis></para>
-      <para>Coolo <ulink url="http://lists.opensuse.org/opensuse-packaging/2011-07/msg00096.html"
-          >explained</ulink> the current policy on how detailed the changes entry in packages should be:<blockquote>
+      <para>Coolo&#160;<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-07/msg00096.html">explained</ulink>&#160;the current policy on how detailed the changes entry in packages should be:<blockquote>
           <para>I repeat what I said before so everyone is on the same page:</para>
           <para>Version numbers are per se no information and we want to offer users an easy,
             standarized way to find out what changed. But it’s not the packager’s job to collect
             upstream NEWS. So if the upstream project does not offer a summary, then say so in the
-            .changes file, so also the user knows. If the upstream  project does not provide a
+            .changes file, so also the user knows. If the upstream&#160; project does not provide a
             summary but a detailed web page, then a link is fine too.</para>
         </blockquote></para>
       <para><emphasis role="bold">Major Package checkins</emphasis></para>
@@ -88,30 +87,25 @@
       <para>So far, the new kontact 2.0 version has not been submitted for Factory and you can get
         it from the KDE repositories. Btw. the openSUSE KDE developers have made the sqlite backend
         the default for akonadi since the upstream default of mysql caused too many problems. If
-        you’re running already kmail2 and like to switch follow<ulink
-          url="http://lists.opensuse.org/opensuse-kde/2011-07/msg00268.html">Ismail’s
-        advice</ulink> to change in ~/.config/akonadi/akonadiserverrc the line Driver=QMYSQL to
+        you’re running already kmail2 and like to switch follow<ulink url="http://lists.opensuse.org/opensuse-kde/2011-07/msg00268.html">Ismail’s advice</ulink>&#160;to change in ~/.config/akonadi/akonadiserverrc the line Driver=QMYSQL to
         Driver=QSQLITE.</para>
       <para><emphasis role="bold">New packages</emphasis></para>
       <para>New packages include quassel (an irc client) clementine (an amarok competitor) shorewall
         (new firewall). Also amarok was updated to 2.4.3 and thunderbird got updated together with
         enigmail.</para>
       <para><emphasis role="bold">Mounting /usr in the initrd</emphasis></para>
-      <para><ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal
-          Marek</ulink> updated mkinitrd to mount /usr in the initrd. In the past, we had to move
+      <para><ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal Marek</ulink>&#160;updated mkinitrd to mount /usr in the initrd. In the past, we had to move
         quite a lot libraries and binaries from /usr to the rootpartition to allow having /usr as
         separate partition that can be mounted in all supported scenarios, like via nfs. This led to
         changes in many places and testing that everything worked as well. With mounting from the
         initrd, we do not need to move binaries and libraries anymore around.</para>
-      <para>Michal calls for testers on his <ulink
-          url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">blog</ulink> and
+      <para>Michal calls for testers on his&#160;<ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">blog</ulink>&#160;and
         is also going to enhance the initrd to support all cases. Right now the simple cases work
         but support for booting from nfs is not supported yet.</para>
       <para><emphasis role="bold">Other interesting bits</emphasis></para>
       <para><emphasis role="bold">openSUSE Conference</emphasis></para>
       <para>Please register now for the conference!</para>
-      <!--($ ld: 6.8.11 sm $)-->
-    </blockquote>
+<!--($ ld: 6.8.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -572,13 +566,11 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00047.html">Larry
-            Finger: Weekly News for August 06</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-08/msg00002.html">Larry Finger: Weekly News for August 06</ulink>
         </title>
-        <para>In last week's discussion of our upcoming Open Bugs Day to be held on August 21, 2011
+        <para>In last week&apos;s discussion of our upcoming Open Bugs Day to be held on August 21, 2011
           from 0:00 to 23:59 UTC, I failed to supply the URL for the web page describing the event,
-          which is<ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
-            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. </para>
+          which is<ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>.&#160;</para>
         <para>Our next IRC meeting will be at 17:00 UTC, August 15 on Channel #opensuse-testing on
           the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
           experiences with MS4 and finish the planning for Open Bugs Day.</para>
