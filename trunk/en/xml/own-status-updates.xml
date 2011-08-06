@@ -40,28 +40,24 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  
-  <sect2 role="distribution">
+    </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Mounting
-          /usr in the initrd</ulink>
+        <ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Mounting /usr in the initrd</ulink>
       </title>
       <para>I changed the openSUSE mkinitrd to mount the /usr filesystem in the initrd, if /usr is a
         separate partition. I hope this will calm down some heated discussions about systemd, udev,
         etc. It’s not 100% ready yet, some setups like root or /usr on nfs or md might not work as
         expected (*), but the common usecases should be covered. Try updating mkinitrd from
-          the <ulink url="http://download.opensuse.org/repositories/Base:/System/openSUSE_Factory/"
-          >Base:System project</ulink> and let me know if it works for you. Before testing it, you
+          the&#160;<ulink url="http://download.opensuse.org/repositories/Base:/System/openSUSE_Factory/">Base:System project</ulink>&#160;and let me know if it works for you. Before testing it, you
         should do a backup of your initrd:</para>
       <para>
         <programlisting># cp /boot/initrd-`uname -r`{,.orig}</programlisting>
       </para>
       <para>and create a section in /boot/grub/menu.lst pointing to the /boot/initrd-*.orig
         file.</para>
-      <!--($ ld: 5.8.11 sm $)-->
-    </blockquote>
+<!--($ ld: 5.8.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -75,7 +71,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -90,8 +86,7 @@
         (...)</para>
       <para><emphasis role="bold">Related Article</emphasis>: <ulink url="http://www.h-online.com/open/news/item/SUSE-ships-Studio-1-2-1283016.html">h-online.com</ulink></para>
     </blockquote>
-  </sect2> -->
-  <sect2 role="teamreports">
+  </sect2> -->  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -105,8 +100,7 @@
           couple of screenshot’s I’ve used in the past, including also information requests about
           where that very same wallpaper could be found. I’m happy people liked my choice. </para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="boosters">
       <title>Boosters Team</title>
       <blockquote>
@@ -135,10 +129,9 @@
           contributions and vote on your request. Once your request gets more then four positive
           votes, you’re a Member. If you get four negative votes you get rejected. (...)</para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="buildserviceteam">
+    </sect3> -->    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
-      <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://stick.gk2.sk/blog/2011/07/version-sorting-in-ruby/">Pavol Rusnak: Version sorting in Ruby</ulink>
@@ -147,8 +140,7 @@
             the&#160;<ulink url="http://openbuildservice.org/">Open Build Service</ulink>. I wanted to
           sort them alphabetically but at the same time the newest ones at the top. I ended up with
           the following code: (...)</para>
-      </blockquote> -->
-      <formalpara>
+      </blockquote> -->      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -206,8 +198,7 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -222,8 +213,7 @@
         <para>Got questions? Feel free to contact the openSUSE/KDE Team on the mailing list&#160;<ulink url="http://lists.opensuse.org/opensuse-kde/">opensuse-kde@opensuse.org</ulink>&#160;or in
             IRC:&#160;<ulink url="irc://irc.opensuse.org/opensuse-kde">#opensuse-kde</ulink>&#160;(irc.freenode.net).</para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -271,8 +261,7 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->    
-    <!--
+    </sect3> --><!--
     <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
@@ -328,8 +317,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </itemizedlist></para>
         <para>More informations at: <ulink url="http://en.opensuse.org/openSUSE:Medical_meetings/">http://en.opensuse.org/openSUSE:Medical_meetings/</ulink></para>
 </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -404,7 +392,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-        <!-- ($ ld: 5.8.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 5.8.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
@@ -462,7 +450,55 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
             <ulink url="http://en.wikipedia.org/wiki/IPCop">IPCop</ulink> and
             <ulink url="http://en.wikipedia.org/wiki/IPFire">IPFire</ulink> , after this union of features, it would create a new Firewall, more stable, secure, efficient, current, complete, modern, flexible, integrated, manageable, easy and fast to use, dynamic and interactive: SUSEfirewall3. (...)</para>
         </blockquote>
-        <!-- ($ ld: 5.8.11 sat *replaced with latest ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312714">openSUSE Linux 12.1: Create a new AppArmor</ulink>
+          </title>
+          <para>My suggestion is to join all the features of
+<ulink url="http://en.wikipedia.org/wiki/AppArmor">AppArmor 2.3</ulink> ,with
+<ulink url="http://en.wikipedia.org/wiki/SELinux">SELinux</ulink> , the
+<ulink url="http://wiki.mandriva.com/en/msec">MSEC</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/TOMOYO_Linux">TOMOYO Linux</ulink> and
+<ulink url="http://en.wikipedia.org/wiki/Grsecurity">grsecurity</ulink> , after this union of features, it would create a new AppArmor 3, more everything that was spoken in the feature:
+<ulink url="https://features.opensuse.org/312708">312708</ulink>.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312715">openSUSE Linux 12.1: Create a new YaST</ulink>
+          </title>
+          <para>My suggestion is to join all the features of
+<ulink url="http://en.wikipedia.org/wiki/YaST">YaST2</ulink> ,with
+<ulink url="http://en.wikipedia.org/wiki/Webmin">Webmin</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Horde_%28software%29">Horde</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/ISPConfig">ISPConfig</ulink> ,
+<ulink url="http://en.wikipedia.org/wiki/Froxlor">Froxlor</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/SysCP">SysCP</ulink> , the
+<ulink url="http://wiki.mandriva.com/en/Mandriva%20Control%20Center">MCC</ulink> , the
+<ulink url="http://www.mikrotik.com/software.html">RouterOS</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/FreeRADIUS">FreeRADIUS</ulink> , the
+<ulink url="http://code.google.com/p/sagu-pro/">SAGU-PRO</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/OpenNMS">OpenNMS</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Cacti_%28software%29">Cacti</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/CiscoWorks">CiscoWorks</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Collectd">Collectd</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Nagios">Nagios</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Zentyal">Zentyal</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/SME_Server">SME Server</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/N2rrd">N2RRD</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Observium">Observium</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Munin_%28network_monitoring_application%29">Munin</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Multi_Router_Traffic_Grapher">MRTG</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/RRDtool">RRDtool</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/TclMon">TclMon</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Zabbix">Zabbix</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/IspCP">ispCP</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/NetXMS">NetXMS</ulink> , the
+<ulink url="http://en.wikipedia.org/wiki/Isyvmon">Isyvmon</ulink> , the
+<ulink url="http://www.zarafa.com/">Zarafa</ulink> and
+<ulink url="http://en.wikipedia.org/wiki/Mandriva_Directory_Server">MDS</ulink> , after this union of features, it would create a new YaST3, more everything that was spoken in the feature:
+<ulink url="https://features.opensuse.org/312708">312708</ulink>.</para>
+        </blockquote>
+<!-- ($ ld: 6.8.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -482,12 +518,11 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00047.html">Larry
-            Finger: Weekly News for July 30</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-07/msg00047.html">Larry Finger: Weekly News for July 30</ulink>
         </title>
         <para>The Testing Core Team held an IRC meeting at 17:00 UTC, July 25 on Channel
           #opensuse-testing on the Freenode IRC Network.
-          irc://irc.freenode.net/opensuse-testing. </para>
+          irc://irc.freenode.net/opensuse-testing.&#160;</para>
         <para>Our first agenda item was for discussion of our experiences with 12.1 MS3. The test of
           a patched plasmoid applet that fixes at least part of Bug #702461 was reported. The new
           version recognized the network devices; however, it was unable to make a wireless
@@ -495,7 +530,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           Gnome desktop. Another member of the TCT reported putting MS3 on a laptop and not having
           any problems. It seems that putting the 3.0-series of kernels on 12.1 has not caused any
           new problems other than the difficulty with 3.0-rc6 that delayed MS3. This matches my
-          testing of the mainline kernels. </para>
+          testing of the mainline kernels.&#160;</para>
         <para>Our second agenda item concerned our upcoming Open Bugs Day to be held on August 21,
           2011 from 0:00 to 23:59 UTC. This date is 10 days after the scheduled release of 12.1 MS4.
           The emphasis will be on testing whether bugs reported for 11.4 are still in 12.1. They
@@ -504,7 +539,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           get closer to the date, more specific instructions will be posted. As usual, we will have
           special on-line tools to help you select a bug for investigation. In preparation for OBD,
           we discussed our plans for publicizing the event, and updated the web page for the event,
-          which is at </para>
+          which is at&#160;</para>
         <para>Our next IRC meeting will be at 17:00 UTC, August 15 on Channel #opensuse-testing on
           the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
           experiences with MS4 and finish the planning for Open Bugs Day.</para>
