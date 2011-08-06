@@ -25,7 +25,7 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink url="http://rxvl.in/post/7967401920/gsoc-2011-ssc-week-9">Ratan Sebastian: GSOC 2011:
+      <ulink url="http://rxvl.in/post/8339259286/gsoc-2011-ssc-week-10">Ratan Sebastian: GSOC 2011:
         ssc Week 10</ulink>
     </title>
     <para>Tasks completed this week:<orderedlist>
@@ -60,7 +60,8 @@
 <!-- ($ ld: 2.8.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lizards.opensuse.org/2011/08/01/gsoc-osc-code-cleanup-summary-of-week-10/"
+      <ulink
+        url="http://obsforandroid.wordpress.com/2011/08/01/implement-sorting-functions-for-requests/"
         >Justine Leng: Implement sorting functions for Requests</ulink>
     </title>
     <para>One of the goals for this OBS Mobile Project to make the list of requests sortable, by
@@ -68,36 +69,54 @@
 <!-- ($ ld: 5.8.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink
-        url="http://cbounta.wordpress.com/2011/07/29/a-utility-for-merging-configuration-sysconfig-files-–-week-10-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 10
-        Report</ulink>
+      <ulink url="http://obsforandroid.wordpress.com/2011/08/05/new-features-added-to-requests/"
+        >Justine Leng: New Features Added to Requests</ulink>
     </title>
-    <para>Hello again, this is my report for the 10th week of GSoC. Unfortunately i wasn’t able to
-      create the beta packages i was hoping. There are still some issues to be resolved within the
-      aug_process_tree that hopefully will be solved this weekend.  (...)</para>
-<!-- ($ ld: 29.7.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink
-        url="http://alex.eftimie.ro/2011/07/29/packagekit-backend-for-software-center-short-week-9-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: short week 9 report</ulink>
-    </title>
-    <para>It’s nice to write to you again. I’ve been having a 10 days vacation (that’s why there was
-      no week 8 report), enjoyed it and now I’m back with fresh forces.</para>
-    <para>This short (started slowly on Tuesday) week’s activity regards:<itemizedlist>
+    <para>I would like to share some exciting progress on the OBS Mobile Project:<orderedlist>
         <listitem>
-          <para>almost fixing a bug that prevents my PackageKit software-center from prime time:
-            package information isn’t correctly refreshed after an installation/removal</para>
+          <para>Request state has been added to each request;</para>
         </listitem>
         <listitem>
-          <para>starting work on the openSUSE integration (the corresponding Distro class, removal
-            of forgotten apt related imports, dependency identification and testing).</para>
+          <para>Sorting functions have been implemented for Requests;</para>
+        </listitem>
+        <listitem>
+          <para>A search filter has been added to the Request page.</para>
+        </listitem>
+      </orderedlist></para>
+    <para>Now, when the user logs into the list of requests, the user will not only be able to see
+      the state of each request, but also sort requests based on 4 criteria:<itemizedlist>
+        <listitem>
+          <para>request date</para>
+        </listitem>
+        <listitem>
+          <para>requester’s name</para>
+        </listitem>
+        <listitem>
+          <para>target project/package</para>
+        </listitem>
+        <listitem>
+          <para>request state</para>
         </listitem>
       </itemizedlist></para>
-    <para>I will continue work on this side and <emphasis role="italic">hope</emphasis> that by the
-      end of the next week, will have everything working and up for testing in openSUSE.</para>
-    <para>NB: I will have to provide for testing a trunk version of pygobject since a release is
-      delayed by another awaited merge;</para>
-<!-- ($ ld: 30.7.11 sm $)-->  </blockquote>
+    <para><inlinegraphic fileref="http://obsforandroid.files.wordpress.com/2011/08/sort1.png"
+        width="20%"/></para>
+<!-- ($ ld: 06.08.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://redache.wordpress.com/2011/08/06/entomologist-ui-changes-weekly-report-11/"
+        >David Williams: Entomologist UI Changes – Weekly report #11</ulink></title>
+    <para>This week has involved trying to get the UI in place for ToDo List
+      exporting/configuration. The work should now be finished and I’ve begun trying to implement
+      Remember the Milk exporting which is made a bit complicated by how they accept API requests
+      but I hope to have this finished as soon as possible. I don’t really have that much to talk
+      about this week as nothing huge has changed but I will keep working on integrating the
+      services.</para>
+    <para>What I hope to achieve is Google Calendar, Remember The Milk and WebDAV server integration
+      by the Soft Pencils Down Date, which I believe is the 19th of August. I think it’s perfectly
+      achievable to get these features to a finished state by then and I’ll continue working on
+      having them integrated. As I’ve previously mentioned I would like to use the final week as a
+      time to merge and test everything to try and uncover any bugs I’ve missed whilst adding these
+      features.</para>
+    <!-- ($ ld: 06.08.11 sm $)-->
+  </blockquote>
 </sect1>
