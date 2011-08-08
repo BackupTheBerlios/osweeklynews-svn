@@ -25,39 +25,22 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink url="http://rxvl.in/post/8339259286/gsoc-2011-ssc-week-10">Ratan Sebastian: GSOC 2011:
-        ssc Week 10</ulink>
+      <ulink url="http://sysbytes.wordpress.com/2011/08/07/sax3-monitor-module-completed/">Manu
+        Gupta: SaX3 – Monitor Module completed</ulink>
     </title>
-    <para>Tasks completed this week:<orderedlist>
-        <listitem>
-          <para>Implemented checkout of an existing appliance from Studio. ssc checkout
-            --appliance-id=APPLIANCE_ID now works.</para>
-        </listitem>
-        <listitem>
-          <para>Integration tests for the appliance, package and repository handlers. (Currently at
-            about 50% test coverage).</para>
-        </listitem>
-        <listitem>
-          <para>Completed the refactoring and migration to the New DirectoryManager module.</para>
-        </listitem>
-        <listitem>
-          <para>Added the build and build_status commands</para>
-        </listitem>
-      </orderedlist></para>
-    <para>The tasks for next week are:<itemizedlist>
-        <listitem>
-          <para>Improving test coverage and removing all the deprecated and unused methods.</para>
-        </listitem>
-        <listitem>
-          <para>Writing unit tests for the helper modules.</para>
-        </listitem>
-        <listitem>
-          <para>Writing usage examples for the app to help new users.</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>If you have any suggestions for features. Please do write in on the studio-users mailing
-      list.</para>
-<!-- ($ ld: 2.8.11 sm $)-->  </blockquote>
+    <para>As part of GSoC Project, I am working on SaX3 and I have completed the monitor
+      module.</para>
+    <para>You can get the latest repo from my home repository<ulink
+        url="http://download.opensuse.org/repositories/home:/manugupt1/"
+        >http://download.opensuse.org/repositories/home:/manugupt1/</ulink></para>
+    <para><emphasis role="bold">Please test it thoroughly,and let me know if common troubleshooting
+        use cases for a single monitor is supported. If there is anything missing let me know.
+        Xinerama is not supported</emphasis></para>
+    <para>For both factory and 11.4.</para>
+    <para>Next up is touchpad, which I will finish by this thursday. And will begin pencil downs the
+      following week onwards.</para>
+    <!-- ($ ld: 8.8.11 sm $)-->
+  </blockquote>
   <blockquote>
     <title>
       <ulink
