@@ -43,47 +43,58 @@
   </blockquote>
   <blockquote>
     <title>
-      <ulink
-        url="http://obsforandroid.wordpress.com/2011/08/01/implement-sorting-functions-for-requests/"
-        >Justine Leng: Implement sorting functions for Requests</ulink>
+      <ulink url="http://lizards.opensuse.org/2011/08/08/gsoc-osc-code-cleanup-summary-of-week-11/"
+        >Marcus Hüwe: osc code cleanup – summary of week 11</ulink>
     </title>
-    <para>One of the goals for this OBS Mobile Project to make the list of requests sortable, by
-      date/time, requester, target project/package, and request state.(...)</para>
-<!-- ($ ld: 5.8.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://obsforandroid.wordpress.com/2011/08/05/new-features-added-to-requests/"
-        >Justine Leng: New Features Added to Requests</ulink>
-    </title>
-    <para>I would like to share some exciting progress on the OBS Mobile Project:<orderedlist>
+    <para>Here’s a small summary of the 11th (coding) week. This week I spent most of my time with
+      working on the wc code.</para>
+    <para>DONE:<itemizedlist>
         <listitem>
-          <para>Request state has been added to each request;</para>
+          <para>project wc: added commit and update methods</para>
         </listitem>
         <listitem>
-          <para>Sorting functions have been implemented for Requests;</para>
-        </listitem>
-        <listitem>
-          <para>A search filter has been added to the Request page.</para>
-        </listitem>
-      </orderedlist></para>
-    <para>Now, when the user logs into the list of requests, the user will not only be able to see
-      the state of each request, but also sort requests based on 4 criteria:<itemizedlist>
-        <listitem>
-          <para>request date</para>
-        </listitem>
-        <listitem>
-          <para>requester’s name</para>
-        </listitem>
-        <listitem>
-          <para>target project/package</para>
-        </listitem>
-        <listitem>
-          <para>request state</para>
+          <para>lots of wc code refactoring</para>
         </listitem>
       </itemizedlist></para>
-    <para><inlinegraphic fileref="http://obsforandroid.files.wordpress.com/2011/08/sort1.png"
+    <para>TODO:<itemizedlist>
+        <listitem>
+          <para>project wc: commit only specific files for a package instead of the complete package
+            (the package wc class already supports this) (use case: osc ci pkg1/file pkg1/foo
+            pkg2/bar pkg3)</para>
+        </listitem>
+        <listitem>
+          <para>convert old working copies to the new format</para>
+        </listitem>
+        <listitem>
+          <para>package wc: update: add support to specify stuff like “expand”, “linkrev”
+            etc.</para>
+        </listitem>
+        <listitem>
+          <para>project wc: add a revert method (to restore a package wc with state ‘!’)</para>
+        </listitem>
+        <listitem>
+          <para>project/package wc: support diff</para>
+        </listitem>
+        <listitem>
+          <para>package wc: implement a pull method (does the same as “osc pull”)</para>
+        </listitem>
+      </itemizedlist></para>
+<!-- ($ ld: 8.8.11 sm $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://obsforandroid.wordpress.com/2011/08/08/sorting-elements-with-jquery-mobile-controlgroup-buttons-vs-radio-buttons/"
+        >Justine Leng: Sorting elements with jQuery Mobile: controlgroup buttons vs. radio
+        buttons</ulink>
+    </title>
+    <para>After implementing a prototype for sorting functions in Requests, I needed to refine the
+      UI and get the sorting buttons to work correctly with jQuery Mobile. The problem was when I
+      clicked on a button to re-order the list of requests, the action would complete properly, but
+      the selected button would not be highlighted.</para>
+    <para>This is the ideal view I would like to have:</para>
+    <para><inlinegraphic fileref="http://obsforandroid.files.wordpress.com/2011/08/prototype.png"
         width="20%"/></para>
-<!-- ($ ld: 06.08.11 sm $)-->  </blockquote>
+<!-- ($ ld: 08.08.11 sm $)-->  </blockquote>
   <blockquote>
     <title><ulink
         url="http://redache.wordpress.com/2011/08/06/entomologist-ui-changes-weekly-report-11/"

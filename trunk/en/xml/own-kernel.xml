@@ -20,13 +20,27 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-      <ulink url="http://lwn.net/Articles/454216/">lwn.net/Greg Kroah-Hartmann: The 3.0.1 Stable Update is Out</ulink>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-First-release-candidate-for-Linux-3-1-1319559.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: First release candidate for Linux 3.1</ulink>
     </title>
-    <para>I&apos;m announcing the release of the 3.0.1 kernel.  All users of the 3.0 kernel series must
-      upgrade.  The updated 3.0.y git tree can be found at:
-      git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-3.0.y.git and can be browsed at the
-      normal kernel.org git web browser: <ulink url="http://git.kernel.org/?p=linux/kernel/git/stable/linux-3.0.y.git;a=summary">http://git.kernel.org/?p=linux/kernel/git/stable/linux-3.0.y.git;a=summary</ulink></para>
-<!-- ($ ld: 5.8.11 sm $) -->  </blockquote>
+    <para><emphasis role="bold">Expected to be released in about two months, the next kernel version
+        will offer optimised virtualisation, add bad block management components to the software
+        RAID code and include an extended Nouveau driver for NVIDIA's Fermi graphics chips. Several
+        developers have been criticised for their clumsy use of Git in this development
+        cycle.</emphasis></para>
+    <para>Linus Torvalds has issued the first release candidate of Linux 3.1, closing the merge
+      window of this version, whose final release is expected in late September or early October, 17
+      days after the release of Linux 3.0. Therefore, the first phase in the Linux development cycle
+      was three days longer than usual. This was caused by the diving holiday Torvalds is currently
+      taking in Hawaii; he is providing an impression of his trip on Google Plus.</para>
+    <para>Kernel development has now entered the stabilising phase, which Torvalds and his
+      co-developers mainly use to fix bugs; no further major changes are usually integrated in this
+      phase, and the most important advancements of Linux 3.1 can therefore already be outlined. For
+      instance, the code for software RAIDs will, on some RAID levels, be able to handle media that
+      contain defective blocks. (...)</para>
+    <!-- ($ ld: 9.8.11 sm $) -->
+  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://schaiba.wordpress.com/2011/08/06/kernel-weekly-news-06-08-2011/">Rares Aioanei: kernel weekly news – 06.08.2011</ulink>
