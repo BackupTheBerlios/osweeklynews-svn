@@ -25,21 +25,55 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink url="http://sysbytes.wordpress.com/2011/08/07/sax3-monitor-module-completed/">Manu
-        Gupta: SaX3 – Monitor Module completed</ulink>
+      <ulink url="http://sysbytes.wordpress.com/2011/08/07/sax3-monitor-module-completed/">Christos
+        Bountalis: A utility for merging configuration / sysconfig files – Week 11 Report</ulink>
     </title>
-    <para>As part of GSoC Project, I am working on SaX3 and I have completed the monitor
-      module.</para>
-    <para>You can get the latest repo from my home repository<ulink
-        url="http://download.opensuse.org/repositories/home:/manugupt1/"
-        >http://download.opensuse.org/repositories/home:/manugupt1/</ulink></para>
-    <para><emphasis role="bold">Please test it thoroughly,and let me know if common troubleshooting
-        use cases for a single monitor is supported. If there is anything missing let me know.
-        Xinerama is not supported</emphasis></para>
-    <para>For both factory and 11.4.</para>
-    <para>Next up is touchpad, which I will finish by this thursday. And will begin pencil downs the
-      following week onwards.</para>
-    <!-- ($ ld: 8.8.11 sm $)-->
+    <para>A bit late this week’s report. But not without a reason, the last weeks i have been
+      working hard in order to fulfill the initial goals of this project. After lot’s of coding /
+      compiling / testing this week and of course mind storming i can now share with you very good
+      and exciting news.</para>
+    <para>What is done this week:<itemizedlist>
+        <listitem>
+          <para>aug_process_trees is finally done!! That means we can now proceed to the final goal
+            that of implementing the merging functions.</para>
+        </listitem>
+        <listitem>
+          <para>moved whole code to Augeas version 0.9. Added necessary code and fixed already
+            existing.</para>
+        </listitem>
+        <listitem>
+          <para>tree_get_children (fixed)</para>
+        </listitem>
+        <listitem>
+          <para>tree_compare_children (re worked)</para>
+        </listitem>
+        <listitem>
+          <para>tree_match_combine (added)</para>
+        </listitem>
+        <listitem>
+          <para>tree_match_lower_level(added)</para>
+        </listitem>
+        <listitem>
+          <para>tree_child_sort_label(fixed)</para>
+        </listitem>
+        <listitem>
+          <para>debug_print_treeArray(added)</para>
+        </listitem>
+        <listitem>
+          <para>debug_print_treeMatchArray(added)</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>What is to be done:<itemizedlist>
+        <listitem>
+          <para>Finish Merging Functions</para>
+        </listitem>
+        <listitem>
+          <para>Create First Beta Packages</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>That is all in a few lines, as GSoC is getting closer to the end, the time available for
+      completing the project is getting less. So I better get back to coding…</para>
+    <!-- ($ ld: 10.8.11 sm $)-->
   </blockquote>
   <blockquote>
     <title>
