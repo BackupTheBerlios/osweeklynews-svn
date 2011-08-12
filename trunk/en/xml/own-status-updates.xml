@@ -40,10 +40,9 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  
-  <sect2 role="distribution">
+    </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
-    <!--
+<!--
     <blockquote>
       <title>
         <ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal Marek: Mounting /usr in the initrd</ulink>
@@ -107,8 +106,7 @@
       <para><emphasis role="bold">Other interesting bits</emphasis></para>
       <para><emphasis role="bold">openSUSE Conference</emphasis></para>
       <para>Please register now for the conference!</para>
-    </blockquote> -->
-    <itemizedlist>
+    </blockquote> -->    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
@@ -248,29 +246,19 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> -->
-    <sect3 role="kdeteam">
+      </sect3> -->    <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/08/plasma-active-contour-demo/">Sebastian
-            Kügler: Plasma Active</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/08/plasma-active-contour-demo/">Sebastian Kügler: Plasma Active</ulink>
         </title>
-        <para><ulink
-            url="http://www.meegoexperts.com/2011/08/video-demo-contour-running-plasma-active-meego-desktop-summit/"
-            >MeegoExperts</ulink> has done an interview here at the <ulink
-            url="http://vizzzion.org/blog/2011/08/plasma-active-contour-demo/">Desktop
-            Summit</ulink> in Berlin with Fania and Marco. The video explains concepts and user
-          experience in <ulink url="http://community.kde.org/Plasma/Active">Plasma
-            Active</ulink>‘s <ulink url="http://community.kde.org/Plasma/Active/Contour"
-            >Contour</ulink> Shell. Have a look yourself to learn about this next-generation user
+        <para><ulink url="http://www.meegoexperts.com/2011/08/video-demo-contour-running-plasma-active-meego-desktop-summit/">MeegoExperts</ulink>&#160;has done an interview here at the&#160;<ulink url="http://vizzzion.org/blog/2011/08/plasma-active-contour-demo/">Desktop Summit</ulink>&#160;in Berlin with Fania and Marco. The video explains concepts and user
+          experience in&#160;<ulink url="http://community.kde.org/Plasma/Active">Plasma Active</ulink>‘s&#160;<ulink url="http://community.kde.org/Plasma/Active/Contour">Contour</ulink>&#160;Shell. Have a look yourself to learn about this next-generation user
           experience for consumer devices, based on our beloved Free Software stack.</para>
-        <para>See the video on <ulink url="http://www.youtube.com/watch?v=n_aCSetmdL8"
-            >Youtube</ulink>.</para>
-        <!--($ ld: 10.8.11 sm $)-->
-      </blockquote>
-    </sect3> 
-    <!--
+        <para>See the video on <ulink url="http://www.youtube.com/watch?v=n_aCSetmdL8">Youtube</ulink>.</para>
+<!--($ ld: 10.8.11 sm $)-->      </blockquote>
+    </sect3>
+<!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -420,7 +408,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 143)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 145)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -449,113 +437,63 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 5.8.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 13.8.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312689">SUSE Distribution for embedded devices</ulink>
+            <ulink url="https://features.opensuse.org/312718">Package Installations should be chroot aware!</ulink>
           </title>
-          <para>A SUSE Distribution for embedded devices, size less or equal 128 MB (text-only installation), requiring less than 256 MB of RAM (operating with for example routing functions).</para>
-          <para>Should perhaps contain a pattern, installing all features needed for use as a router operation system like m0n0wall, fli4l, styx or pfsense.</para>
+          <para>Debian does this already! Prove if package installation or upgrade is done in a chroot. Rationale: Every time I refresh my openSUSE-Tumbleweed installation from a chroot I get this error:</para>
+          <para>Installing: filesystem-12.1-26.1 [error] Installation of filesystem-12.1-26.1 failed: (with --nodeps --force) Error: Subprocess failed. Error: RPM failed: error: unpacking of archive failed on file /proc: cpio: chown failed - Read-only file system</para>
+          <para>Of cause I bind mount /proc read only! In a chroot doing a mount of /proc is recommended for many purposes. For example an installation attempt of gentoo stage will fail without /proc mounted. As this /proc mounting is a standard procedure I prioritize this feature as mandatory ...</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312690">YaST Software Management -- Install from cache</ulink>
+            <ulink url="https://features.opensuse.org/312723">Provide i386 version of valgrind on amd64 hosts</ulink>
           </title>
-          <para>Since Software Management allows users the option to save downloaded packages, it would be nice to also give the option of installing a saved RPM.</para>
+          <para>Current status:</para>
+          <para>$ uname -m
+x86_64</para>
+          <para>$ valgrind ./a.out</para>
+          <para>valgrind: failed to start tool &apos;memcheck&apos; for platform &apos;x86-linux&apos;: No such file or directory</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312691">Package dbus-c++</ulink>
+            <ulink url="https://features.opensuse.org/312725">Kmail Backup + Recover</ulink>
           </title>
-          <para>http://sourceforge.net/apps/mediawiki/dbus-cplusplus/</para>
-          <para>This provides C++ bindings for dbus.</para>
-          <para>This is an optional dependency for gnote.</para>
+          <para>I would like to have a Backup-button (and Recover) for Kmail (and other programs).
+It could easily copy all necesary data-files into a backup-folder.</para>
+          <para>Maybe selective backup (or selective recover) could be useful as some of the configurations are no longer desired.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312694">Font Rendering esp. KDE</ulink>
+            <ulink url="https://features.opensuse.org/312726">opensuse 12.1 to implement Owncloud support</ulink>
           </title>
-          <para>Improve the font rendering on opensuse especially on KDE. Bring it upto the standards of ubuntu at least.</para>
+          <para>Having Owncloud 2.0 support to:</para>
+          <para>&gt; Create a self-hosted instance</para>
+          <para>&gt; Template for easy web-hosted instance</para>
+          <para>&gt; Upload files from dolphin etc</para>
+          <para>&gt; Use docs/music/video/bookmarks from opensuse Apps</para>
+          <para>Would be awesome!</para>
+          <para><ulink url="http://news.opensuse.org/2011/06/17/opensuse-and-your-own-cloud/">http://news.opensuse.org/2011/06/17/opensuse-and-your-own-cloud/</ulink></para>
+          <para>Can we have it please?</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312708">openSUSE Linux 12.1: Create a new firewall</ulink>
+            <ulink url="https://features.opensuse.org/312728">Package Software Center with PackageKit backend</ulink>
           </title>
-          <para>My suggestion is to join all the features of
-            <ulink url="http://en.opensuse.org/SuSEfirewall2">SuSEfirewall2</ulink> , with
-            <ulink url="http://fedoraproject.org/wiki/Features/DynamicFirewall">Dynamic Firewall</ulink> ,
-            <ulink url="https://fedoraproject.org/wiki/FirewallD/">FirewallD</ulink> and
-            <ulink url="http://fedoraproject.org/wiki/SystemConfig/firewall">system-config-firewall</ulink> of Fedora Linux,
-            <ulink url="http://wiki.mandriva.com/en/Projects/Interactive_Firewall">Interactive Firewall</ulink> of Mandriva Linux,
-            <ulink url="http://www.gentoo.org/proj/en/dynfw.xml">dynfw</ulink> of Gentoo Linux,
-            <ulink url="http://en.wikipedia.org/wiki/Uncomplicated_Firewall">ufw</ulink> of Ubuntu Linux, the
-            <ulink url="http://en.wikipedia.org/wiki/Shorewall">Shorewall</ulink> , the
-            <ulink url="http://en.wikipedia.org/wiki/Firestarter_%28firewall%29">Firestarter</ulink> , the
-            <ulink url="http://kmyfirewall/">Kmyfirewall</ulink> , the
-            <ulink url="http://en.wikipedia.org/wiki/PF_%28firewall%29">PF (firewall)</ulink> , the
-            <ulink url="http://vuurmuur.sourceforge.net/">Vuurmuur</ulink> , the
-            <ulink url="http://www.fwbuilder.org/">Firewall Builder</ulink> , the
-            <ulink url="http://www.astaro.com/products/astaro-security-gateway-software-appliance">Astaro Security Gateway Software Appliance</ulink> , the
-            <ulink url="http://www.manageengine.com/products/firewall/">Firewall Analyzer</ulink> , the
-            <ulink url="http://www.smoothwall.org/">Smoothwall</ulink> , the
-            <ulink url="http://en.wikipedia.org/wiki/ClearOS">ClearOS</ulink> , the
-            <ulink url="http://en.wikipedia.org/wiki/Endian_Firewall">Endian Firewall</ulink> , the
-            <ulink url="http://en.wikipedia.org/wiki/Cisco_IOS">Cisco IOS</ulink> , the
-            <ulink url="http://en.wikipedia.org/wiki/IPCop">IPCop</ulink> and
-            <ulink url="http://en.wikipedia.org/wiki/IPFire">IPFire</ulink> , after this union of features, it would create a new Firewall, more stable, secure, efficient, current, complete, modern, flexible, integrated, manageable, easy and fast to use, dynamic and interactive: SUSEfirewall3. (...)</para>
+          <para>As a result of 2011 GSoC - PackageKit backend and AppStream integration for Software Center, software-center and dependencies need to be packaged for testing in openSUSE.</para>
+          <para>The list of dependencies is:</para>
+          <para>- pygobject (master branch, git.gnome.org)</para>
+          <para>- PackageKit - 0.6.16 or newer</para>
+          <para>- software-center itself (pk branch, soon to be master, <ulink url="https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend">https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend</ulink> )</para>
+          <para>- python-piston-mini (<ulink url="https://code.launchpad.net/piston-mini-client">https://code.launchpad.net/piston-mini-client</ulink>)</para>
+          <para>Other dependencies:</para>
+          <para>- po4a (needed by software-center setup.py)</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312714">openSUSE Linux 12.1: Create a new AppArmor</ulink>
-          </title>
-          <para>My suggestion is to join all the features of
-<ulink url="http://en.wikipedia.org/wiki/AppArmor">AppArmor 2.3</ulink> ,with
-<ulink url="http://en.wikipedia.org/wiki/SELinux">SELinux</ulink> , the
-<ulink url="http://wiki.mandriva.com/en/msec">MSEC</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/TOMOYO_Linux">TOMOYO Linux</ulink> and
-<ulink url="http://en.wikipedia.org/wiki/Grsecurity">grsecurity</ulink> , after this union of features, it would create a new AppArmor 3, more everything that was spoken in the feature:
-<ulink url="https://features.opensuse.org/312708">312708</ulink>.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312715">openSUSE Linux 12.1: Create a new YaST</ulink>
-          </title>
-          <para>My suggestion is to join all the features of
-<ulink url="http://en.wikipedia.org/wiki/YaST">YaST2</ulink> ,with
-<ulink url="http://en.wikipedia.org/wiki/Webmin">Webmin</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Horde_%28software%29">Horde</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/ISPConfig">ISPConfig</ulink> ,
-<ulink url="http://en.wikipedia.org/wiki/Froxlor">Froxlor</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/SysCP">SysCP</ulink> , the
-<ulink url="http://wiki.mandriva.com/en/Mandriva%20Control%20Center">MCC</ulink> , the
-<ulink url="http://www.mikrotik.com/software.html">RouterOS</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/FreeRADIUS">FreeRADIUS</ulink> , the
-<ulink url="http://code.google.com/p/sagu-pro/">SAGU-PRO</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/OpenNMS">OpenNMS</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Cacti_%28software%29">Cacti</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/CiscoWorks">CiscoWorks</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Collectd">Collectd</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Nagios">Nagios</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Zentyal">Zentyal</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/SME_Server">SME Server</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/N2rrd">N2RRD</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Observium">Observium</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Munin_%28network_monitoring_application%29">Munin</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Multi_Router_Traffic_Grapher">MRTG</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/RRDtool">RRDtool</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/TclMon">TclMon</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Zabbix">Zabbix</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/IspCP">ispCP</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/NetXMS">NetXMS</ulink> , the
-<ulink url="http://en.wikipedia.org/wiki/Isyvmon">Isyvmon</ulink> , the
-<ulink url="http://www.zarafa.com/">Zarafa</ulink> and
-<ulink url="http://en.wikipedia.org/wiki/Mandriva_Directory_Server">MDS</ulink> , after this union of features, it would create a new YaST3, more everything that was spoken in the feature:
-<ulink url="https://features.opensuse.org/312708">312708</ulink>.</para>
-        </blockquote>
-<!-- ($ ld: 6.8.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 13.8.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
