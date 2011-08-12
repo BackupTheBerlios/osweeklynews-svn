@@ -20,13 +20,13 @@
   <title>Security Updates</title>
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
-  <!--
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00013.html"
-        >openSUSE-SU-2011:0845-1: important: compat-openssl097g</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00004.html"
+        >openSUSE-SU-2011:0884-1: important: apache2-mod_fcgid: fixed possible stack overflow due to
+        wrong pointer arithmetic (CVE-2010-3872)</ulink></title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
-      <col width="1.08*"/>
+      <col width="1.1*"/>
       <col width="1.0*"/>
       <thead>
         <tr>
@@ -38,33 +38,33 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">compat-openssl097g</emphasis>
+            <emphasis role="bold">apache2-mod_fcgid</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:0845-1</td>
+          <td>openSUSE-SU-2011:0884-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Wed, 27 Jul 2011 16:08:25 +0200 (CEST)</td>
+          <td>Wed, 10 Aug 2011 13:08:16 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.4 openSUSE 11.3</td>
+          <td>openSUSE 11.3</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>CVE-2008-5077 CVE-2009-0590 CVE-2009-0789CVE-2009-3555 CVE-2010-4180</td>
+          <td>A possible stack overflow in apache2-mod_fcgid due to wrong pointer arithmetic has
+            been fixed. CVE-2010-3872 has been assigned to this issue.</td>
         </tr>
       </tbody>
     </table>
 </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00015.html"
-        >openSUSE-SU-2011:0852-1: important: freetype: Fixed several off-by-one / length checks
-        missing</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00008.html"
+        >openSUSE-SU-2011:0897-1: critical: flash-player</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -80,16 +80,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">freetype</emphasis>
+            <emphasis role="bold">flash-player</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:0852-1</td>
+          <td>openSUSE-SU-2011:0897-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Thu, 28 Jul 2011 00:08:34 +0200 (CEST)</td>
+          <td>Fri, 12 Aug 2011 05:08:25 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -97,11 +97,14 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>Fixed several off-by-one / length checks missing</td>
+          <td>An update that fixes 13 vulnerabilities is now available. It includes one version
+            update.</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
+  >
+  <!--
   <blockquote>
     <title>
       <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00008.html"
