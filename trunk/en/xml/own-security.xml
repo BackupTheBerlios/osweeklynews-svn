@@ -103,12 +103,11 @@
       </tbody>
     </table>
   </blockquote>
-  >
-  <!--
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-07/msg00008.html"
-        >openSUSE-SU-2011:0803-1: important: kvm</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00012.html"
+        >openSUSE-SU-2011:0902-1: important: ecryptfs-utils: Update to fix various symlink race
+        attacks</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -124,16 +123,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">kvm</emphasis>
+            <emphasis role="bold">ecryptfs-utils</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:0803-1</td>
+          <td> openSUSE-SU-2011:0902-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Tue, 19 Jul 2011 05:08:14 +0200 (CEST)</td>
+          <td>Fri, 12 Aug 2011 21:08:14 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -141,11 +140,9 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>A privileged guest user could cause a buffer overflow inthe virtio subsystem of the
-            host, therefore crashing theguest or potentially execute arbitrary code on the
-            host(CVE-2011-2212, CVE-2011-2512).</td>
+          <td>fixes several security problems</td>
         </tr>
       </tbody>
     </table>
-  </blockquote> -->
+  </blockquote>
 </sect1>

@@ -513,14 +513,35 @@ It could easily copy all necesary data-files into a backup-folder.</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-08/msg00002.html">Larry Finger: Weekly News for August 06</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-08/msg00004.html">Larry
+            Finger: Weekly News for August 13</ulink>
         </title>
-        <para>In last week&apos;s discussion of our upcoming Open Bugs Day to be held on August 21, 2011
-          from 0:00 to 23:59 UTC, I failed to supply the URL for the web page describing the event,
-          which is<ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>.&#160;</para>
-        <para>Our next IRC meeting will be at 17:00 UTC, August 15 on Channel #opensuse-testing on
-          the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
-          experiences with MS4 and finish the planning for Open Bugs Day.</para>
+        <para>This is a reminder that the Testing Core Team will be holding our 3rd Open Bugs Day on
+          August 21, 2011 from 0:00 to 23:59 UTC, The web page describing the event is <ulink
+            url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
+            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. The emphasis will be on finding
+          what open bugs found in 11.4 are still present in 12.1 MS4. </para>
+        <para>Although there are no Media that indicate they are MS4, it is possible to upgrade an
+          MS3 installation to what is the equivalent of MS4. The procedure is to delete all existing
+          repos and select the repos at <itemizedlist>
+            <listitem>
+              <para><ulink url="http://download.opensuse.org/factory/repo/oss"
+                  >http://download.opensuse.org/factory/repo/oss</ulink></para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://download.opensuse.org/factory/repo/non-oss"
+                  >http://download.opensuse.org/factory/repo/non-oss</ulink></para>
+            </listitem>
+            <listitem>
+              <para><ulink url="http://download.opensuse.org/factory/repo/debug"
+                  >http://download.opensuse.org/factory/repo/debug</ulink></para>
+            </listitem>
+          </itemizedlist>Our next IRC meeting will be at 17:00 UTC, August 15 on Channel
+          #opensuse-testing on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We
+          will discuss our experiences with MS4 and finish the planning for Open Bugs Day. </para>
+        <para>The last one is optional. Once these repos are selected (and enabled), then do 'sudo
+          zypper dup'. Although the result announces itself as MS3, it really is MS4. </para>
+        <!--($ ld: 13.8.11 sm $)-->
       </blockquote>
     </sect3>
     <sect3 role="translationteam">
