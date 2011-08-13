@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://vizzzion.org/blog/2011/08/desktop-summit-thoughts/">Sebastian Kügler:
+        Desktop Summit Thoughts</ulink></title>
+    <para>I’ve been to the <ulink url="http://desktopsummit.org/">Desktop Summit</ulink> in Berlin
+      for the past few days, we’re now around the middle of the event, after the conference, before
+      the workshop and BoF sessions, so I thought I might share some thoughts I’ve gathered in idle
+      moments in the past few days.</para>
+    <para><emphasis role="bold">boredom and diversity</emphasis></para>
+    <para>Last night, the build system BoF was planned, a team session where we look at the way how
+      we develop our software. I have to admit that to me, this is quite a boring (but nevertheless
+      very important topic). As it also affects the way we release software, I’ve put my release
+      team hat on and joined the session. I was a bit afraid that since it’s not the most sexy topic
+      in the world, that little people would show and we end up with incomplete or broken ways to
+      release the KDE SC, and KDE Frameworks in the future. My worries were ungrounded as quite some
+      people showed up and we made good progress on all the topic we talked about. (If you’re
+      interested what we talked about, keep an eye on the kde-core-devel and kde-buildsystem
+      mailinglists.) What struck me is that in KDE, there’s enough people who feel responsible, even
+      for boring topics. When I shared my (ungrounded) concerns with Stephen Kelly, he looked at me
+      with this empty expression on his face and told me “but that’s exciting, it’s the way we build
+      our software!”, and given his enthusiasm, I believe him (even if I don’t exactly personally
+      share his excitement). Diversity makes us strong. (...)</para>
+    <!--($ ld: 10.08.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://emmes.livejournal.com/9967.html">Matthias Hopf: SUSE graphical
+        benchmark test</ulink></title>
+    <para>We at SUSE needed to know whether we had some severe regressions regarding graphics
+      performance during enablement of intel SandyBridge graphics - and it turned out that it was
+      not commonly understood <emphasis role="italic">what</emphasis> graphics performance is
+      actually composed of. Some were only interested in core X commands (xterm users :-) , some
+      only in render performance (office users :-) , some in low-core 3D graphics (compiz users :-)
+      , some in hardcore 3D graphics (gamers :-) .</para>
+    <para>So finally I put together a standardized graphical benchmark with aspects for all users.
+      And no, it won't output a single number, because that would be meaningless for everybody. But
+      it makes it easy to compare different aspects between different graphics cards and drivers,
+      and there are some surprising results. But more about the results later.</para>
+    <para>The sources for the benchmark are now on gitorious, and the <ulink
+        url="https://gitorious.org/performance-frameworks/pages/GraphicalBenchmark">Wiki
+        entry</ulink> describes its usage. It's currently somewhat tailored to SLE11SP1, so you
+      might run into minor issues when running it on a different OS version. And of course, it's not
+      very polished yet .</para>
+    <!--($ ld: 12.08.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://holger123.wordpress.com/2011/08/11/smb-traffic-analyzer-opensuse-conference/"
+        >Holger Hetterich: SMB Traffic Analyzer @ openSUSE conference</ulink></title>
+    <para>Should you read this article in a blog roll, here is a clue what it is about: a) the
+        <ulink url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMB Traffic Analyzer
+        project (SMBTA)</ulink>, b) <ulink url="http://conference.opensuse.org/">the openSUSE
+        conference</ulink>, and c) <ulink
+        url="http://holger123.wordpress.com/2011/08/11/smb-traffic-analyzer-opensuse-conference/www.samba.org"
+        >Samba</ulink>.</para>
+    <para>You guess it, we finally got a slot for a presentation at the wonderful <ulink
+        url="http://conference.opensuse.org/">openSUSE conference</ulink> for <ulink
+        url="http://holger123.wordpress.com/smb-traffic-analyzer/">SMBTA</ulink>. To me, it is
+      remarkable to see a project like SMBTA being presented at OSC because it is not really
+      something related to openSUSE. It’s not that SMBTA improves your boot time, or discusses
+      details of the <ulink url="https://build.opensuse.org/">buildservice</ulink>, or makes your
+      life with the openSUSE distribution better in any way. SMBTA is very likely not even
+      interesting to the casual user, except for some administrators.</para>
+    <para>That said, SMBTA was born inside of the openSUSE infrastructure, growing to a project used
+      on different distributions and operating systems, such as Solaris. And the one thing we can
+      really say is that we exploited all the services that make up openSUSE to the core. We used
+      the openSUSE Buildservice from the beginning, and we use appliances created by <ulink
+        url="http://susestudio.com/">SUSE Studio</ulink> for both demoing and developing
+      SMBTA.</para>
+    <para>With the recent release of <ulink
+        url="http://www.samba.org/samba/news/releases/3.6.0.html">Samba 3.6.0, among it’s top
+        changes like full SMB2 support and other major features</ulink>, it is also prime time for
+      SMBTA. The<emphasis role="bold"> Virtual File System layer</emphasis> module that supports our
+      current infrastructure is included in this release of the Samba CIFS server and that marks
+        <emphasis role="bold">a milestone</emphasis> for our project. SMBTA is already used in
+      production at some sites, and the release of Samba 3.6.0 will hopefully forward this
+      trend.</para>
+    <para>Benjamin Brunner and me will give an introduction talk to SMB Traffic Analyzer at the
+      openSUSE conference and most likely <emphasis role="bold">live-demo</emphasis> the software
+      chain. We’ll welcome anyone interested to join our presentation at OSC!</para>
+    <!--$ ld: 12.08.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://vizzzion.org/blog/2011/08/board-business/">Sebastian Kügler: Board
+        Business</ulink></title>
+    <para> Tonight, the new board of directors of KDE e.V. went out for dinner, generously (!)
+      treated by our constituency. </para>
+    <para>It was a nice and relaxed dinner, gave us some good opportunity to brief Lydia (our newest
+      board member) on how we work, boring stuff like where we store our documents, what to expect
+      from our bi-weekly conference calls, what granularity of emailing we found to be productive,
+      and so on. One official thing we always have to do (according to German foundation
+      regulations, so-called “Vereinsrecht”) is appointing roles. Cornelius was volunteered as
+      president, Frank as treasurer, both accepted their new and old responsibilities. I promoted
+      from regular board member to vice president (which really only has a a theoretical meaning).
+      The vote was, as usual a formal thing and we got it done between dumpling 2 and 3 on my plate,
+      it took all of 3 minutes. Serious, effective, yet duely diligent. :P </para>
+    <para>We also used the opportunity to talk about non-board stuff, about our other projects in
+      KDE (we’re also pretty active in the community outside of the board chores), private going
+      ons, random fun things. I came back happy about our team, and looking forward to our work in
+      the coming year. Just right. </para>
+    <para>Earlier this afternoon, we met with the GNOME board. There were also some personal changes
+      in the new GNOME board, I especially enjoyed Ryan Lortie (desrt) having joined the board of
+      directors of the GNOME foundation. I’ve met Ryan at several occasions in the past, and always
+      found that we got a good click, enough differences to keep conversations interesting, but very
+      much one the same line of communication. One of the topics was communications across the
+      boards, and we thought that having some kind of ‘open communication channel’ for situtations
+      which might turn unproductive would be good. Ryan and me volunteered, and we took immediate
+      opportunity and went out for an afternoon drink, which I very much enjoyed. </para>
+    <para>While going to our dinner appointment, I had really two things in mind, love and hate. Not
+      sure why those two words sprang to my mind, but I really <emphasis role="italic"
+        >hate</emphasis> saying goodbye to the people I <emphasis role="italic">love</emphasis>.
+      Even if it’s very much a temporary thing (our meetings in the Plasma team have become pretty
+      frequent, especially with Plasma Active One being on the horizon), having people leave after
+      an intensive week of excellent collaboration always makes me kind of sad. That’s of course
+      just an indication of how much I enjoy working in this excellent team, or maybe just a sign of
+      exhaustion after a week of pushing the Free desktop to the next level with peers who are as
+      passionate about this as I am. Tomorrow in the afternoon, I’ll take a train back home to the
+      Netherlands, and will commence putting our plans (and continuation, tweaks thereof) to action.
+      Exhausted after week of frantic Free software conferencing, but just as energized as if it
+      were my first Akademy.</para>
+    <para>The coming weekend will be used for catching up on sleep, then next weekend, I’ll be at
+        <ulink url="http://froscon.de">Froscon</ulink>, where I’ll be presenting Plasma Active. Be
+      there if you want to touch it yourself. :) </para>
+    <!--($ ld: 12.08.11 sm $-->
+  </blockquote>
+</sect1>
