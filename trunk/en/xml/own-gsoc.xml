@@ -27,55 +27,27 @@
     <title>
       <ulink
         url="http://cbounta.wordpress.com/2011/08/09/a-utility-for-merging-configuration-sysconfig-files-–-week-11-report/"
-        >Christos Bountalis: A utility for merging configuration / sysconfig files – Week 11
-        Report</ulink>
+        >Alex Eftimie: PackageKit backend for Software Center: week 11 status report</ulink>
     </title>
-    <para>A bit late this week’s report. But not without a reason, the last weeks i have been
-      working hard in order to fulfill the initial goals of this project. After lot’s of coding /
-      compiling / testing this week and of course mind storming i can now share with you very good
-      and exciting news.</para>
-    <para>What is done this week:<itemizedlist>
+    <para>This week in three short achievements:<itemizedlist>
         <listitem>
-          <para>aug_process_trees is finally done!! That means we can now proceed to the final goal
-            that of implementing the merging functions.</para>
+          <para>personal <ulink url="https://features.opensuse.org/312728">OBS project</ulink>
+            (playing around, tutored by DimStar), work in progress</para>
         </listitem>
         <listitem>
-          <para>moved whole code to Augeas version 0.9. Added necessary code and fixed already
-            existing.</para>
+          <para>code tide-up, <ulink
+              url="https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend/+merge/71446"
+              >ready for merging</ulink> into master</para>
         </listitem>
         <listitem>
-          <para>tree_get_children (fixed)</para>
-        </listitem>
-        <listitem>
-          <para>tree_compare_children (re worked)</para>
-        </listitem>
-        <listitem>
-          <para>tree_match_combine (added)</para>
-        </listitem>
-        <listitem>
-          <para>tree_match_lower_level(added)</para>
-        </listitem>
-        <listitem>
-          <para>tree_child_sort_label(fixed)</para>
-        </listitem>
-        <listitem>
-          <para>debug_print_treeArray(added)</para>
-        </listitem>
-        <listitem>
-          <para>debug_print_treeMatchArray(added)</para>
+          <para>features, usage and testing <ulink
+              url="https://wiki.ubuntu.com/SoftwareCenter/PackagekitBackend">documentation</ulink>,
+            work in progress</para>
         </listitem>
       </itemizedlist></para>
-    <para>What is to be done:<itemizedlist>
-        <listitem>
-          <para>Finish Merging Functions</para>
-        </listitem>
-        <listitem>
-          <para>Create First Beta Packages</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>That is all in a few lines, as GSoC is getting closer to the end, the time available for
-      completing the project is getting less. So I better get back to coding…</para>
-    <!-- ($ ld: 10.8.11 sm $)-->
+    <para>I’m now focusing on the gtk3 part, and also documenting things around. Packaging has
+      decreased priority, waiting for the pygobject release. And done. </para>
+    <!-- ($ ld: 14.8.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-08/msg00029.html">Marcus

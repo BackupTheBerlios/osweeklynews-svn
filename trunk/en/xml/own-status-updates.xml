@@ -42,71 +42,46 @@
     </blockquote>
     </sect2> -->  <sect2 role="distribution">
     <title>Distribution</title>
-<!--
     <blockquote>
       <title>
-        <ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal Marek: Mounting /usr in the initrd</ulink>
+        <ulink
+          url="http://masterpatricko.blogspot.com/2011/08/redshift-and-backintime-in-factory.html"
+          >Tejas Guruswamy: redshift and backintime in Factory</ulink>
       </title>
-      <para>I changed the openSUSE mkinitrd to mount the /usr filesystem in the initrd, if /usr is a
-        separate partition. I hope this will calm down some heated discussions about systemd, udev,
-        etc. It’s not 100% ready yet, some setups like root or /usr on nfs or md might not work as
-        expected (*), but the common usecases should be covered. Try updating mkinitrd from
-          the&#160;<ulink url="http://download.opensuse.org/repositories/Base:/System/openSUSE_Factory/">Base:System project</ulink>&#160;and let me know if it works for you. Before testing it, you
-        should do a backup of your initrd:</para>
-      <para>
-        <programlisting># cp /boot/initrd-`uname -r`{,.orig}</programlisting>
-      </para>
-      <para>and create a section in /boot/grub/menu.lst pointing to the /boot/initrd-*.orig
-        file.</para>
+      <para>Well, it's been a long while since my last news ... but I've got some nice news to
+        report - my submissions of redshift and backintime were accepted into openSUSE Factory. So
+        these useful programs will be part of the next openSUSE release, hooray!</para>
+      <para><ulink url="http://jonls.dk/redshift/">Redshift</ulink> is a little command-line (and
+        GTK) utility which reduces screen brightness at night (via colour temperature, so your
+        screen becomes more red). Given your location in the world, it automatically calculates
+        sunset and sunrise and gradually ramps up/down the brightness at the right times. I find it
+        makes working at night easier on the eyes, and wrote a little plasmoid to control it easily
+        from the desktop, which I will also release when I get some time. For previous openSUSE
+        versions one can download and install redshift from its OBS devel project, <ulink
+          url="http://download.opensuse.org/repositories/X11:/Utilities"
+        >X11:Utilities</ulink>.</para>
+      <para><ulink url="http://backintime.le-web.org/">Backintime</ulink> is a backup program,
+        effectively a rsync frontend, with GUIs for KDE and GNOME. Once configured with which
+        folders you want to back up, and where you want to back up to, it can automatically take
+        backups based on a schedule. Also a very nice feature is that on filesystems that support it
+        (not FAT), it uses hardlinks to the previous backup, so each backup is a full backup but
+        only changed files take up space on the backup disk. Each backup is just a normal copy of
+        all the folders, so no special software is needed for recovery, but backintime offers a GUI
+        that allows you to easily navigate through all your backed up versions of a folder. IMO it's
+        the best userfriendly but complete backup software for Linux desktops. backintime used to be
+        packaged by packman and now lives on the OBS in <ulink
+          url="http://download.opensuse.org/repositories/Archiving:/Backup/"
+          >Archiving:Backup</ulink>.</para>
+      <para><inlinegraphic
+          fileref="http://3.bp.blogspot.com/-VuwTIKnMVSQ/TkZqVRBNHYI/AAAAAAAAAAg/uRLpcyZkU9U/s320/backintime.png"
+        /></para>
+      <para>Enjoy! If you have other interesting programs that aren't in openSUSE remember that
+        anyone can contribute to Factory now, so if you are willing to maintain them, go ahead and
+        submit them on the OBS! My next target is byobu, a set of preconfigured GNU screen profiles
+        (I never figured out how to write hardstatus lines!) </para>
+      <!-- ($ ld: 14.8.11 sm $)-->
     </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://lizards.opensuse.org/2011/08/05/factory-progress-2011-08-05/">Andreas Jaeger: Factory Progress 2011-08-05</ulink>
-      </title>
-      <para>The last few weeks have seen some a lot of package updates thus keeping our review and
-        checkin team busy. I’d like to mention Sascha Peilicke who reviewed alone this week lots of
-        packages. Have a look at just two numbers: In all of July we had 1001 check-ins and just
-        from August 1st to 4th we had already 276 checkins.</para>
-      <para>The legal team has also gone through the long list of new packages and package updates
-        during the legal reviews and reduced this week the list from over 100 packages to 12
-        packages now. Thanks Ciaran and Christoper for your legal review!</para>
-      <para><emphasis role="bold">Policy</emphasis></para>
-      <para><emphasis role="bold">Detailed changes</emphasis></para>
-      <para>Coolo&#160;<ulink url="http://lists.opensuse.org/opensuse-packaging/2011-07/msg00096.html">explained</ulink>&#160;the current policy on how detailed the changes entry in packages should be:<blockquote>
-          <para>I repeat what I said before so everyone is on the same page:</para>
-          <para>Version numbers are per se no information and we want to offer users an easy,
-            standarized way to find out what changed. But it’s not the packager’s job to collect
-            upstream NEWS. So if the upstream project does not offer a summary, then say so in the
-            .changes file, so also the user knows. If the upstream&#160; project does not provide a
-            summary but a detailed web page, then a link is fine too.</para>
-        </blockquote></para>
-      <para><emphasis role="bold">Major Package checkins</emphasis></para>
-      <para><emphasis role="bold">Desktops</emphasis></para>
-      <para/>
-      <para>GNOME saw another step to the stable GNOME 3.2.0 with the GNOME 3.1.4 testing release
-        getting pushed into Factory. KDE’s new release 4.7 is now also in Factory.</para>
-      <para>So far, the new kontact 2.0 version has not been submitted for Factory and you can get
-        it from the KDE repositories. Btw. the openSUSE KDE developers have made the sqlite backend
-        the default for akonadi since the upstream default of mysql caused too many problems. If
-        you’re running already kmail2 and like to switch follow<ulink url="http://lists.opensuse.org/opensuse-kde/2011-07/msg00268.html">Ismail’s advice</ulink>&#160;to change in ~/.config/akonadi/akonadiserverrc the line Driver=QMYSQL to
-        Driver=QSQLITE.</para>
-      <para><emphasis role="bold">New packages</emphasis></para>
-      <para>New packages include quassel (an irc client) clementine (an amarok competitor) shorewall
-        (new firewall). Also amarok was updated to 2.4.3 and thunderbird got updated together with
-        enigmail.</para>
-      <para><emphasis role="bold">Mounting /usr in the initrd</emphasis></para>
-      <para><ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">Michal Marek</ulink>&#160;updated mkinitrd to mount /usr in the initrd. In the past, we had to move
-        quite a lot libraries and binaries from /usr to the rootpartition to allow having /usr as
-        separate partition that can be mounted in all supported scenarios, like via nfs. This led to
-        changes in many places and testing that everything worked as well. With mounting from the
-        initrd, we do not need to move binaries and libraries anymore around.</para>
-      <para>Michal calls for testers on his&#160;<ulink url="http://lizards.opensuse.org/2011/08/03/mounting-usr-in-the-initrd/">blog</ulink>&#160;and
-        is also going to enhance the initrd to support all cases. Right now the simple cases work
-        but support for booting from nfs is not supported yet.</para>
-      <para><emphasis role="bold">Other interesting bits</emphasis></para>
-      <para><emphasis role="bold">openSUSE Conference</emphasis></para>
-      <para>Please register now for the conference!</para>
-    </blockquote> -->    <itemizedlist>
+    <itemizedlist>
       <title>Important Links</title>
       <listitem>
         <para><ulink url="http://tinyurl.com/392jnb">Detailed Bugzilla Report</ulink></para>
