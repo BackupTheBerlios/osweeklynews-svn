@@ -225,13 +225,92 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/08/plasma-active-contour-demo/">Sebastian Kügler: Plasma Active</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/08/release-team-changes/">Sebastian Kügler:
+            Release Team Changes</ulink>
         </title>
-        <para><ulink url="http://www.meegoexperts.com/2011/08/video-demo-contour-running-plasma-active-meego-desktop-summit/">MeegoExperts</ulink>&#160;has done an interview here at the&#160;<ulink url="http://vizzzion.org/blog/2011/08/plasma-active-contour-demo/">Desktop Summit</ulink>&#160;in Berlin with Fania and Marco. The video explains concepts and user
-          experience in&#160;<ulink url="http://community.kde.org/Plasma/Active">Plasma Active</ulink>‘s&#160;<ulink url="http://community.kde.org/Plasma/Active/Contour">Contour</ulink>&#160;Shell. Have a look yourself to learn about this next-generation user
-          experience for consumer devices, based on our beloved Free Software stack.</para>
-        <para>See the video on <ulink url="http://www.youtube.com/watch?v=n_aCSetmdL8">Youtube</ulink>.</para>
-<!--($ ld: 10.8.11 sm $)-->      </blockquote>
+        <para><emphasis role="bold">Release Team Changes</emphasis></para>
+        <para>During the Desktop Summit in Berlin, we had a session in which we had a good look at
+          how KDE’s release team performs, which points we can improve on, how, and who will
+          implement these changes. For example: <itemizedlist>
+            <listitem>
+              <para>Make our output more predictable and thus downstreams’ lives easier</para>
+            </listitem>
+            <listitem>
+              <para>Reduce the risk of something going wrong, the <ulink
+                  url="http://en.wikipedia.org/wiki/Bus_number">bus number problem</ulink></para>
+            </listitem>
+            <listitem>
+              <para>Make our work more efficient</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Let’s take a step back first, though.</para>
+        <para><emphasis role="bold">A bit of history: from Coolo &amp; Dirk to TWG to Release
+            Team</emphasis></para>
+        <para>In KDE 3, Coolo and Dirk managed KDE’s releases. When KDE4 was started, we also wanted
+          to promote this in a more suitable fashion, we started doing more proactive PR work, and
+          generally improved our communication to our users (potential or not). In 2005, the
+          Technical Working Group was conceived, which was meant to handle the releases of KDE4. The
+          Technical Working Group didn’t quite work out since it didn’t bring the structural changes
+          we needed in order to release KDE4. In late 2006 we we decided that it didn’t work,
+          disbanded the TWG and conceived the release team, a self-organized team of volunteers.
+          Conceptually, the release team started as a place for people to go who wanted to make
+          releases happen. We found module maintainers for our released modules who would coordinate
+          towards the app teams and, and a few core people who know how all that stuff works to put
+          things together. We got our release process on the rails again. Interestingly, the release
+          team is very informal, we never ended up appointing anyone release manager, or
+          end-responsible — it has also never been necessary, it seems. Lesson here: shared
+          responsibility works well for us.</para>
+        <para>A quick unscientific count of the whole KDE 4 series (including pre-releases) brought
+          me to 88 releases done by the release team in its current form.</para>
+<!--($ ld: 16.8.11 sm $)-->      </blockquote>
+      <blockquote>
+        <title><ulink
+            url="http://vizzzion.org/blog/2011/08/installing-plasma-active-on-the-exopc-wetab/"
+            >Sebastian Kügler: Installing Plasma Active on the ExoPC (“WeTab”)</ulink></title>
+        <para>If you own an ExoPC, and you’re eager to know how to get Plasma Active, our new
+          workspace and set of applications for consumer devices to run on it, this blog article
+          will help you get going. </para>
+        <para><emphasis role="bold">Note:</emphasis> Plasma Active is in alpha state right now, it
+          is basically usable, but you will find many rough edges. You should not try this unless
+          you consider yourself an early adopter, or if you mind fiddling with bits and pieces. We
+          are working towards an end-user ready product, but we’re not yet there.</para>
+        <para><emphasis role="bold">What to pick?</emphasis></para>
+        <para>There are a few different options to choose from, I’ll quickly explain which to choose
+          under which circumstances. <itemizedlist>
+            <listitem>
+              <para><emphasis role="bold">MeeGo:</emphasis> Works well overall, but is lacking in
+                key areas, for example we do not have a UI to connect to wireless networks yet, and
+                as the device doesn’t have Ethernet (and cables are lame on mobile devices anyway).
+                You can work around this with a <ulink
+                  url="http://www.notmart.org/index.php/BlaBla/Wireless_on_Plasma_Active_MeeGo_"
+                  >trick</ulink> Marco explains. </para>
+              <para><emphasis role="italic">Choose this option if you want to run and develop for
+                  MeeGo</emphasis></para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">Balsam Professional</emphasis>: Download the Balsam
+                Professional live images from <ulink url="http://download.open-slx.com/iso/11.4/"
+                  >open-slx</ulink>. This live image provides a fully functional live system without
+                too much hassle. </para>
+              <para><emphasis role="italic">Choose this option if you want to try Plasma
+                  Active</emphasis></para>
+            </listitem>
+            <listitem>
+              <para><emphasis role="bold">openSUSE</emphasis>: Install Plasma Active on top of
+                openSUSE 11.4, it uses the Active packages created by open-slx (me, my employer),
+                but is a bit more laborious to install. </para>
+              <para><emphasis role="italic">Choose this option if you want to run the full
+                  experience on your ExoPC, or track progress and hack on Plasma
+                Active</emphasis></para>
+            </listitem>
+          </itemizedlist></para>
+        <para>I will explain here how you can get to a state-of-the-art Plasma Active, using what
+          will eventually become the Tablet Edition of Balsam Professional. Balsam Professional is,
+          unlike openSUSE, focused on end-users and the user experience on consumer-level devices.
+          Balsam Professional is based on openSUSE, so you might well be familiar with many of the
+          tools already. (...)</para>
+        <!--($ ld: 16.8.11 sm $)-->
+      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
