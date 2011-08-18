@@ -129,18 +129,44 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/supercharge-nagios-with-plugins/">Wazi/Juliet Kemp: Supercharge Nagios with Plugins</ulink>
+        <ulink
+          url="http://obsforandroid.wordpress.com/2011/08/16/install-broadcom-sta-wireless-driver-in-opensuse-11-4-and-other-linux-distros/"
+          >Justine Leng: Install Broadcom STA wireless driver in openSUSE 11.4 (and other Linux
+          distros)</ulink>
       </title>
-      <para><ulink url="http://olex.openlogic.com/packages/nagios">Nagios</ulink> is a great application for monitoring your systems, allowing you to set alert levels and trip actions when those levels are reached. The software uses a plugin-based structure; even the most simple functions (such as check_ssh and check_disk) are plugins. This makes Nagios incredibly flexible; if there’s something you want to monitor, and you can think of a way to write it, you can write a plugin, hook it into Nagios, and start running it. But even better than that: for most things you might want to monitor, someone has already done written the plugin for you. (...)</para>
-<!-- ($ Id: 12.8.11 sat $)-->    </blockquote>
+      <para>Broadcom is a real nag. Buying a laptop with Broadcom wireless network card never
+        bothered me until I installed several Linux distros and things started to go less smoothly…
+        especially when you do not have wired ethernet nearby and wireless is all you get.</para>
+      <para>On the other hand, installing the Broadcom wireless driver for different Linux distros
+        is a great learning experience.</para>
+      <para>Previously, I talked about<ulink
+          url="http://developify.wordpress.com/2011/08/12/activate-broadcom-sta-wireless-driver-in-fedora-14/"
+          >how to activate the Broadcom STA wireless driver in Fedora 14</ulink>. It turns out the
+        activation is slightly different in openSUSE.</para>
+      <para>The following works on openSUSE 11.3, 11.4, Mint 10 Julia, Ubuntu 10.x, Kubuntu 10.x,
+        and LMDE. (...)</para>
+<!-- ($ Id: 18.8.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://aim4r.blogspot.com/2011/08/nmap-pentesters-one-step-shop-to.html">Houcem Hachicha: Nmap : The Pentester&apos;s One Step Shop to Network Domination </ulink>
+        <ulink
+          url="http://obsforandroid.wordpress.com/2011/08/16/live-upgrade-opensuse-11-3-to-11-4/"
+          >Justine Leng: Live Upgrade openSUSE 11.3 to 11.4 </ulink>
       </title>
-      <para>Nmap is one of the best security software in the world. It is free and open source. It is actively developed and new features and improvements are added to it on a daily basis.
-Originally, Nmap is a network portscanner. The tool has then been extended to perform service and OS identification. With the addition of the Nmap Scripting Engine (NSE) back in 2008, Nmap is today capable of performing vulnerability scanning and even exploitation.
-In this blog, I&apos;ll try to describe some of the Nmap capabilities that can be harnessed in blackbox penetration testing. (...)</para>
-<!-- ($ Id: 12.8.11 sat $)-->    </blockquote>
+      <para>Doing a live upgrade in openSUSE to the latest version has certain advantages:<itemizedlist>
+          <listitem>
+            <para>You only download the packages that need to be upgraded, saving a lot of
+              bandwidth.</para>
+          </listitem>
+          <listitem>
+            <para>During the upgrade you can still use your system (although this is not
+              recommended); the only downtime will be the reboot after the upgrade.</para>
+          </listitem>
+          <listitem>
+            <para>You do not have to write an ISO image to a DVD. You could also boot from 1) the
+              Internet; or 2) a USB key, and install the rest from the Internet (...)</para>
+          </listitem>
+        </itemizedlist></para>
+<!-- ($ Id: 18.8.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://flossstuff.wordpress.com/2011/08/07/using-a-file-as-a-storage-device/">Flossstuff/Ankur Aggarwal: Using A File As A Storage Device</ulink>

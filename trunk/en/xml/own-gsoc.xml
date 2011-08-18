@@ -50,56 +50,38 @@
     <!-- ($ ld: 14.8.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-08/msg00029.html">Marcus
-        Hüwe: osc code cleanup - summary of week 11</ulink></title>
-    <para>Here's a small summary of the 11th (coding) week. This week I spent most of my time with
-      working on the wc code.</para>
-    <para>DONE:<itemizedlist>
-        <listitem>
-          <para>project wc: added commit and update methods</para>
-        </listitem>
-        <listitem>
-          <para>lots of wc code refactoring</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>TODO:<itemizedlist>
-        <listitem>
-          <para>project wc: commit only specific files for a package instead of the complete package
-            (the package wc class already supports this) (use case: osc ci pkg1/file pkg1/foo
-            pkg2/bar pkg3)</para>
-        </listitem>
-        <listitem>
-          <para>convert old working copies to the new format</para>
-        </listitem>
-        <listitem>
-          <para>package wc: update: add support to specify stuff like "expand", "linkrev"
-            etc.</para>
-        </listitem>
-        <listitem>
-          <para>project wc: add a revert method (to restore a package wc with state '!')</para>
-        </listitem>
-        <listitem>
-          <para>project/package wc: support diff</para>
-        </listitem>
-        <listitem>
-          <para>package wc: implement a pull method (does the same as "osc pull")</para>
-        </listitem>
-      </itemizedlist></para>
-    <!--($ ld: 13.8.11 sm $)-->
+    <title><ulink url="http://sysbytes.wordpress.com/2011/08/17/sax3-touchpad-module/">Manu Gupta:
+        SaX3 – Touchpad module</ulink></title>
+    <para>Actually this report is 2 days late, those who have already added my repository and
+      updated it should have the sax3-touchpad module. </para>
+    <para>For others, you can get it here <ulink
+        url="http://download.opensuse.org/repositories/home:/manugupt1/"
+        >http://download.opensuse.org/repositories/home:/manugupt1/</ulink>.</para>
+    <para>From now on, I will focus a lot on fixing issues and polishing the UI, specially the
+      touchpad one and yes offcourse clean some code. I have moved to code.google.com but the
+      transition is not complete yet.</para>
+    <!--($ ld: 18.8.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-08/msg00032.html">Sebastian
-        Oliva: JSON Weekly report</ulink></title>
-    <para>Hello, First of all, I'm sorry for the large delay on updating my previous report. </para>
-    <para>I've spent most of the time improving the performance of the classes, adding multiple
-      profiles support, and on styling the admin, profile and other pages. </para>
-    <para>I have also done performance testing, having responses averaging 50ms/request response
-      times on a testing server, with 200 concurrent requests. I expect higher performance on a
-      deployment configuration. </para>
-    <para>on the To Do List is: Creating at least an offline submitting client (either GTK or QT).
-      Finishing the administrative pages configurations. Adding authentication on submitting
-      profiles.</para>
-    <!--($ ld: 13.8.11 sm $)-->
+    <title><ulink url="http://nbprashanth.wordpress.com/2011/08/18/libyui-ported/">N.B.Prashanth:
+        libYUI Ported</ulink></title>
+    <para>As most of you reading this post would know, separating libYUI was one of the topics for
+      GSoC 2011 by openSUSE. Over the last three months, a lot of work has gone into the project. As
+      the deadline approaches, we am happy to announce that libYUI is an independent
+      framework!</para>
+    <para>Let me summarize the changes that have taken place over the last three months. For
+      starters, libYUI is available over a range of platforms. Major platforms like Fedora, Ubuntu
+      and Debian have ready made binaries available at OBS -<ulink
+        url="http://download.opensuse.org/repositories/home:/nbprashanth/">
+        http://download.opensuse.org/repositories/home:/nbprashanth/</ulink>. Recently, Michal
+      Hrušecký even ported the library to Gentoo! – <ulink
+        url="http://nbprashanth.wordpress.com/2011/08/18/libyui-ported/michal.hrusecky.net/2011/08/libyui-in-gentoo/"
+        >michal.hrusecky.net/2011/08/libyui-in-gentoo/</ulink>. The source has been completely
+      detached from SUSE-centric technologies. So if binaries are not available for your distro,
+      don’t fret. You can always download the source and install from – <ulink
+        url="http://sourceforge.net/projects/libyui/files/"
+        >http://sourceforge.net/projects/libyui/files/</ulink>.</para>
+    <!--($ ld: 18.8.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-08/msg00034.html">Aditya
