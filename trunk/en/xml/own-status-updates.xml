@@ -44,11 +44,9 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://masterpatricko.blogspot.com/2011/08/redshift-and-backintime-in-factory.html"
-          >Tejas Guruswamy: redshift and backintime in Factory</ulink>
+        <ulink url="http://masterpatricko.blogspot.com/2011/08/redshift-and-backintime-in-factory.html">Tejas Guruswamy: redshift and backintime in Factory</ulink>
       </title>
-      <para>Well, it's been a long while since my last news ... but I've got some nice news to
+      <para>Well, it&apos;s been a long while since my last news ... but I&apos;ve got some nice news to
         report - my submissions of redshift and backintime were accepted into openSUSE Factory. So
         these useful programs will be part of the next openSUSE release, hooray!</para>
       <para><ulink url="http://jonls.dk/redshift/">Redshift</ulink> is a little command-line (and
@@ -57,9 +55,7 @@
         sunset and sunrise and gradually ramps up/down the brightness at the right times. I find it
         makes working at night easier on the eyes, and wrote a little plasmoid to control it easily
         from the desktop, which I will also release when I get some time. For previous openSUSE
-        versions one can download and install redshift from its OBS devel project, <ulink
-          url="http://download.opensuse.org/repositories/X11:/Utilities"
-        >X11:Utilities</ulink>.</para>
+        versions one can download and install redshift from its OBS devel project, <ulink url="http://download.opensuse.org/repositories/X11:/Utilities">X11:Utilities</ulink>.</para>
       <para><ulink url="http://backintime.le-web.org/">Backintime</ulink> is a backup program,
         effectively a rsync frontend, with GUIs for KDE and GNOME. Once configured with which
         folders you want to back up, and where you want to back up to, it can automatically take
@@ -67,25 +63,20 @@
         (not FAT), it uses hardlinks to the previous backup, so each backup is a full backup but
         only changed files take up space on the backup disk. Each backup is just a normal copy of
         all the folders, so no special software is needed for recovery, but backintime offers a GUI
-        that allows you to easily navigate through all your backed up versions of a folder. IMO it's
+        that allows you to easily navigate through all your backed up versions of a folder. IMO it&apos;s
         the best userfriendly but complete backup software for Linux desktops. backintime used to be
-        packaged by packman and now lives on the OBS in <ulink
-          url="http://download.opensuse.org/repositories/Archiving:/Backup/"
-          >Archiving:Backup</ulink>.</para>
-      <para><inlinegraphic
-          fileref="http://3.bp.blogspot.com/-VuwTIKnMVSQ/TkZqVRBNHYI/AAAAAAAAAAg/uRLpcyZkU9U/s320/backintime.png"
-        /></para>
-      <para>Enjoy! If you have other interesting programs that aren't in openSUSE remember that
+        packaged by packman and now lives on the OBS in <ulink url="http://download.opensuse.org/repositories/Archiving:/Backup/">Archiving:Backup</ulink>.</para>
+      <para><inlinegraphic fileref="http://3.bp.blogspot.com/-VuwTIKnMVSQ/TkZqVRBNHYI/AAAAAAAAAAg/uRLpcyZkU9U/s320/backintime.png"/></para>
+      <para>Enjoy! If you have other interesting programs that aren&apos;t in openSUSE remember that
         anyone can contribute to Factory now, so if you are willing to maintain them, go ahead and
         submit them on the OBS! My next target is byobu, a set of preconfigured GNU screen profiles
         (I never figured out how to write hardstatus lines!) </para>
-      <!-- ($ ld: 14.8.11 sm $)-->
-    </blockquote>
+<!-- ($ ld: 14.8.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://jaegerandi.blogspot.com/2011/08/updating-glibc-to-214-with-some.html">Andreas
-          Jaeger: Updating glibc to 2.14 with some libtirpc fun</ulink></title>
-      <para>The GNU C Library (glibc) version 2.14 was released on the 31th of May but we haven't
+      <title>
+        <ulink url="http://jaegerandi.blogspot.com/2011/08/updating-glibc-to-214-with-some.html">Andreas Jaeger: Updating glibc to 2.14 with some libtirpc fun</ulink>
+      </title>
+      <para>The GNU C Library (glibc) version 2.14 was released on the 31th of May but we haven&apos;t
         switched to it for openSUSE yet since one of the major changes was the obsoletion of the
         sunrpc code in glibc and that caused problems. The TI-RPC library (libtirpc) is the proposed
         replacement of the sunrpc code. One benefit of the TI-RPC library is that it supports -
@@ -93,16 +84,15 @@
         couple of Open Source projects like autofs or nfs. Unfortunately some code in libtirpc seems
         to be broken, like the NIS support. The package missed also some header files to make it a
         full replacement but those can be easily copied over from glibc. So, building everything
-        with libtirpc instead of glibc' sunrpc code was not possible, and the libtirpc developers
+        with libtirpc instead of glibc&apos; sunrpc code was not possible, and the libtirpc developers
         seemed not to be interested in helping here. </para>
-      <para>So, I've took now the same route that Fedora did and reenabled the sunrpc code in glibc
+      <para>So, I&apos;ve took now the same route that Fedora did and reenabled the sunrpc code in glibc
         again and thus everything works as before. I encourage everybody that has packages that work
         with libtirpc to switch to it - and help changing apps and libtirpc itself as needed so that
-        eventually we really can obsolete glibc's sunrpc code. </para>
-      <para>Today, the updated glibc has been submitted and checked into openSUSE's Factory
+        eventually we really can obsolete glibc&apos;s sunrpc code. </para>
+      <para>Today, the updated glibc has been submitted and checked into openSUSE&apos;s Factory
         distribution and thus will be in openSUSE 12.1. (...)</para>
-      <!--($ ld: 19.8.11 sm $)-->
-    </blockquote>
+<!--($ ld: 19.8.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -120,26 +110,19 @@
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.susestudio.com/2011/08/one-click-webyast-12-in-studio.html">SUSE
-          Studio: One-click WebYaST 1.2 in Studio</ulink>
+        <ulink url="http://blog.susestudio.com/2011/08/one-click-webyast-12-in-studio.html">SUSE Studio: One-click WebYaST 1.2 in Studio</ulink>
       </title>
-      <para>Some days ago SUSE released a new version of WebYaST, <ulink
-          url="http://www.suse.com/products/susestudio/features/webyast-remote-application-management.html"
-          >WebYaST 1.2</ulink>. It provides better performance, a polished layout and new role
+      <para>Some days ago SUSE released a new version of WebYaST, <ulink url="http://www.suse.com/products/susestudio/features/webyast-remote-application-management.html">WebYaST 1.2</ulink>. It provides better performance, a polished layout and new role
         management. </para>
       <para>For those of you who are not familiar with WebYaST. It is an easy-to-use, web-based
         configuration and administration tool. That means that you can configure hardware, network,
         services, security, and many more in a browser. </para>
-      <para>Since we offer a one-click configuration for WebYaST <ulink
-          url="http://blog.susestudio.com/2010/09/one-click-webyast.html">for a while</ulink> we
+      <para>Since we offer a one-click configuration for WebYaST <ulink url="http://blog.susestudio.com/2010/09/one-click-webyast.html">for a while</ulink> we
         decided to upgrade it to 1.2. If you want to add WebYaST 1.2 to your appliance, you just
         need to go to the configuration tab of and click on the appliance icon. Then scroll down to
-        the 'Additional options' and check the 'Enable WebYaST' checkbox. </para>
-      <para><inlinegraphic
-          fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"
-        /></para>
-      <!-- ($ ld: 18.8.11 sm $)-->
-    </blockquote>
+        the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
+      <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
+<!-- ($ ld: 18.8.11 sm $)-->    </blockquote>
   </sect2>
   <sect2 role="teamreports">
     <title>Team Reports</title>
@@ -257,8 +240,7 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/08/release-team-changes/">Sebastian Kügler:
-            Release Team Changes</ulink>
+          <ulink url="http://vizzzion.org/blog/2011/08/release-team-changes/">Sebastian Kügler: Release Team Changes</ulink>
         </title>
         <para><emphasis role="bold">Release Team Changes</emphasis></para>
         <para>During the Desktop Summit in Berlin, we had a session in which we had a good look at
@@ -268,16 +250,14 @@
               <para>Make our output more predictable and thus downstreams’ lives easier</para>
             </listitem>
             <listitem>
-              <para>Reduce the risk of something going wrong, the <ulink
-                  url="http://en.wikipedia.org/wiki/Bus_number">bus number problem</ulink></para>
+              <para>Reduce the risk of something going wrong, the <ulink url="http://en.wikipedia.org/wiki/Bus_number">bus number problem</ulink></para>
             </listitem>
             <listitem>
               <para>Make our work more efficient</para>
             </listitem>
           </itemizedlist></para>
         <para>Let’s take a step back first, though.</para>
-        <para><emphasis role="bold">A bit of history: from Coolo &amp; Dirk to TWG to Release
-            Team</emphasis></para>
+        <para><emphasis role="bold">A bit of history: from Coolo &amp; Dirk to TWG to Release Team</emphasis></para>
         <para>In KDE 3, Coolo and Dirk managed KDE’s releases. When KDE4 was started, we also wanted
           to promote this in a more suitable fashion, we started doing more proactive PR work, and
           generally improved our communication to our users (potential or not). In 2005, the
@@ -296,9 +276,9 @@
           me to 88 releases done by the release team in its current form.</para>
 <!--($ ld: 16.8.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink
-            url="http://vizzzion.org/blog/2011/08/installing-plasma-active-on-the-exopc-wetab/"
-            >Sebastian Kügler: Installing Plasma Active on the ExoPC (“WeTab”)</ulink></title>
+        <title>
+          <ulink url="http://vizzzion.org/blog/2011/08/installing-plasma-active-on-the-exopc-wetab/">Sebastian Kügler: Installing Plasma Active on the ExoPC (“WeTab”)</ulink>
+        </title>
         <para>If you own an ExoPC, and you’re eager to know how to get Plasma Active, our new
           workspace and set of applications for consumer devices to run on it, this blog article
           will help you get going. </para>
@@ -313,27 +293,20 @@
               <para><emphasis role="bold">MeeGo:</emphasis> Works well overall, but is lacking in
                 key areas, for example we do not have a UI to connect to wireless networks yet, and
                 as the device doesn’t have Ethernet (and cables are lame on mobile devices anyway).
-                You can work around this with a <ulink
-                  url="http://www.notmart.org/index.php/BlaBla/Wireless_on_Plasma_Active_MeeGo_"
-                  >trick</ulink> Marco explains. </para>
-              <para><emphasis role="italic">Choose this option if you want to run and develop for
-                  MeeGo</emphasis></para>
+                You can work around this with a <ulink url="http://www.notmart.org/index.php/BlaBla/Wireless_on_Plasma_Active_MeeGo_">trick</ulink> Marco explains. </para>
+              <para><emphasis role="italic">Choose this option if you want to run and develop for MeeGo</emphasis></para>
             </listitem>
             <listitem>
               <para><emphasis role="bold">Balsam Professional</emphasis>: Download the Balsam
-                Professional live images from <ulink url="http://download.open-slx.com/iso/11.4/"
-                  >open-slx</ulink>. This live image provides a fully functional live system without
+                Professional live images from <ulink url="http://download.open-slx.com/iso/11.4/">open-slx</ulink>. This live image provides a fully functional live system without
                 too much hassle. </para>
-              <para><emphasis role="italic">Choose this option if you want to try Plasma
-                  Active</emphasis></para>
+              <para><emphasis role="italic">Choose this option if you want to try Plasma Active</emphasis></para>
             </listitem>
             <listitem>
               <para><emphasis role="bold">openSUSE</emphasis>: Install Plasma Active on top of
                 openSUSE 11.4, it uses the Active packages created by open-slx (me, my employer),
                 but is a bit more laborious to install. </para>
-              <para><emphasis role="italic">Choose this option if you want to run the full
-                  experience on your ExoPC, or track progress and hack on Plasma
-                Active</emphasis></para>
+              <para><emphasis role="italic">Choose this option if you want to run the full experience on your ExoPC, or track progress and hack on Plasma Active</emphasis></para>
             </listitem>
           </itemizedlist></para>
         <para>I will explain here how you can get to a state-of-the-art Plasma Active, using what
@@ -341,8 +314,7 @@
           unlike openSUSE, focused on end-users and the user experience on consumer-level devices.
           Balsam Professional is based on openSUSE, so you might well be familiar with many of the
           tools already. (...)</para>
-        <!--($ ld: 16.8.11 sm $)-->
-      </blockquote>
+<!--($ ld: 16.8.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -469,14 +441,14 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 361)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 360)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 188)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 187)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -494,7 +466,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 145)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 144)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -523,63 +495,56 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 13.8.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 20.8.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312718">Package Installations should be chroot aware!</ulink>
+            <ulink url="https://features.opensuse.org/312734">Button to create DHCP server configuration from zero</ulink>
           </title>
-          <para>Debian does this already! Prove if package installation or upgrade is done in a chroot. Rationale: Every time I refresh my openSUSE-Tumbleweed installation from a chroot I get this error:</para>
-          <para>Installing: filesystem-12.1-26.1 [error] Installation of filesystem-12.1-26.1 failed: (with --nodeps --force) Error: Subprocess failed. Error: RPM failed: error: unpacking of archive failed on file /proc: cpio: chown failed - Read-only file system</para>
-          <para>Of cause I bind mount /proc read only! In a chroot doing a mount of /proc is recommended for many purposes. For example an installation attempt of gentoo stage will fail without /proc mounted. As this /proc mounting is a standard procedure I prioritize this feature as mandatory ...</para>
+          <para>After manually configuring DHCP in expert mode, sometime I would like to remove all configuration and start from zero in guided mode.</para>
+          <para>Button in expert mode for removing configuration and starting &quot;de nouveau&quot; would benefit.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312723">Provide i386 version of valgrind on amd64 hosts</ulink>
+            <ulink url="https://features.opensuse.org/312744">Make live ISO of installed system with friendly GUI</ulink>
           </title>
-          <para>Current status:</para>
-          <para>$ uname -m
-x86_64</para>
-          <para>$ valgrind ./a.out</para>
-          <para>valgrind: failed to start tool &apos;memcheck&apos; for platform &apos;x86-linux&apos;: No such file or directory</para>
+          <para>If someone wants to create a remaster of openSUSE, he can use SUSE Studio to create something new or kiwi. Kiwi is easy for advanced users.</para>
+          <para>A tool like remastersys (Ubuntu) or mylivecd (PCLinuxOS), are quite easy for a new user.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312725">Kmail Backup + Recover</ulink>
+            <ulink url="https://features.opensuse.org/312747">Backport fix for Okular printing in KDE4 for KDE 4.7</ulink>
           </title>
-          <para>I would like to have a Backup-button (and Recover) for Kmail (and other programs).
-It could easily copy all necesary data-files into a backup-folder.</para>
-          <para>Maybe selective backup (or selective recover) could be useful as some of the configurations are no longer desired.</para>
+          <para>Please include this patch <ulink url="http://commits.kde.org/okular/e001fbab55aceef62ad9ca2bb87a170dacfe3fdd">http://commits.kde.org/okular/e001fbab55aceef62ad9ca2bb87a170dacfe3fdd</ulink></para>
+          <para>Kevin Kofler 2011-07-27 23:50:46 wrote:
+I forgot to put in a FIXED-IN tag, so let&apos;s make it clear: This fix will be in
+4.8.0.
+4.7.0 has already been released, and the fix requires new APIs in the Okular
+core, so I&apos;m probably not supposed to backport it for 4.7.x.</para>
+          <para>See <ulink url="https://bugs.kde.org/show_bug.cgi?id=181290#c118">https://bugs.kde.org/show_bug.cgi?id=181290#c118</ulink> </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312726">opensuse 12.1 to implement Owncloud support</ulink>
+            <ulink url="https://features.opensuse.org/312750">Make Yast2 stay open after installing packages</ulink>
           </title>
-          <para>Having Owncloud 2.0 support to:</para>
-          <para>&gt; Create a self-hosted instance</para>
-          <para>&gt; Template for easy web-hosted instance</para>
-          <para>&gt; Upload files from dolphin etc</para>
-          <para>&gt; Use docs/music/video/bookmarks from opensuse Apps</para>
-          <para>Would be awesome!</para>
-          <para><ulink url="http://news.opensuse.org/2011/06/17/opensuse-and-your-own-cloud/">http://news.opensuse.org/2011/06/17/opensuse-and-your-own-cloud/</ulink></para>
-          <para>Can we have it please?</para>
+          <para>As we all know YaST2 is the best control center around and as title says, can we make it even better by keeping it open after one or more packages are installed? (just like Synaptic for e.g.).</para>
+          <para>I know this can be done adjusting some setting <ulink url="http://dl.dropbox.com/u/10573557/SUSE%20Misc/yast-at-close-action.jpeg">http://dl.dropbox.com/u/10573557/SUSE%20Misc/yast-at-close-action.jpeg</ulink> but i was thinking if it is possible to make it a default setting for versions to come.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312728">Package Software Center with PackageKit backend</ulink>
+            <ulink url="https://features.opensuse.org/312754">Let&apos;s kick SuSEGreeter, and create a shiny new website instead</ulink>
           </title>
-          <para>As a result of 2011 GSoC - PackageKit backend and AppStream integration for Software Center, software-center and dependencies need to be packaged for testing in openSUSE.</para>
-          <para>The list of dependencies is:</para>
-          <para>- pygobject (master branch, git.gnome.org)</para>
-          <para>- PackageKit - 0.6.16 or newer</para>
-          <para>- software-center itself (pk branch, soon to be master, <ulink url="https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend">https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend</ulink> )</para>
-          <para>- python-piston-mini (<ulink url="https://code.launchpad.net/piston-mini-client">https://code.launchpad.net/piston-mini-client</ulink>)</para>
-          <para>Other dependencies:</para>
-          <para>- po4a (needed by software-center setup.py)</para>
+          <para>See this discussion before reply:</para>
+          <para><ulink url="http://lists.opensuse.org/opensuse-marketing/2011-07/msg00039.html">http://lists.opensuse.org/opensuse-marketing/2011-07/msg00039.html</ulink>
+</para>
+          <para>========================================================
+
+</para>
+          <para>The goal is to create a start page for our delivered browser instead of SuSEGreeter.</para>
         </blockquote>
-<!-- ($ ld: 13.8.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 20.8.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -599,36 +564,29 @@ It could easily copy all necesary data-files into a backup-folder.</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-08/msg00004.html">Larry
-            Finger: Weekly News for August 13</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-08/msg00004.html">Larry Finger: Weekly News for August 13</ulink>
         </title>
         <para>This is a reminder that the Testing Core Team will be holding our 3rd Open Bugs Day on
-          August 21, 2011 from 0:00 to 23:59 UTC, The web page describing the event is <ulink
-            url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
-            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. The emphasis will be on finding
+          August 21, 2011 from 0:00 to 23:59 UTC, The web page describing the event is <ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. The emphasis will be on finding
           what open bugs found in 11.4 are still present in 12.1 MS4. </para>
         <para>Although there are no Media that indicate they are MS4, it is possible to upgrade an
           MS3 installation to what is the equivalent of MS4. The procedure is to delete all existing
           repos and select the repos at <itemizedlist>
             <listitem>
-              <para><ulink url="http://download.opensuse.org/factory/repo/oss"
-                  >http://download.opensuse.org/factory/repo/oss</ulink></para>
+              <para><ulink url="http://download.opensuse.org/factory/repo/oss">http://download.opensuse.org/factory/repo/oss</ulink></para>
             </listitem>
             <listitem>
-              <para><ulink url="http://download.opensuse.org/factory/repo/non-oss"
-                  >http://download.opensuse.org/factory/repo/non-oss</ulink></para>
+              <para><ulink url="http://download.opensuse.org/factory/repo/non-oss">http://download.opensuse.org/factory/repo/non-oss</ulink></para>
             </listitem>
             <listitem>
-              <para><ulink url="http://download.opensuse.org/factory/repo/debug"
-                  >http://download.opensuse.org/factory/repo/debug</ulink></para>
+              <para><ulink url="http://download.opensuse.org/factory/repo/debug">http://download.opensuse.org/factory/repo/debug</ulink></para>
             </listitem>
           </itemizedlist>Our next IRC meeting will be at 17:00 UTC, August 15 on Channel
           #opensuse-testing on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We
           will discuss our experiences with MS4 and finish the planning for Open Bugs Day. </para>
-        <para>The last one is optional. Once these repos are selected (and enabled), then do 'sudo
-          zypper dup'. Although the result announces itself as MS3, it really is MS4. </para>
-        <!--($ ld: 13.8.11 sm $)-->
-      </blockquote>
+        <para>The last one is optional. Once these repos are selected (and enabled), then do &apos;sudo
+          zypper dup&apos;. Although the result announces itself as MS3, it really is MS4. </para>
+<!--($ ld: 13.8.11 sm $)-->      </blockquote>
     </sect3>
     <sect3 role="translationteam">
       <title>Translation Team</title>
