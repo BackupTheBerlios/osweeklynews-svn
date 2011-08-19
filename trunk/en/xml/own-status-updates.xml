@@ -81,6 +81,28 @@
         (I never figured out how to write hardstatus lines!) </para>
       <!-- ($ ld: 14.8.11 sm $)-->
     </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://jaegerandi.blogspot.com/2011/08/updating-glibc-to-214-with-some.html">Andreas
+          Jaeger: Updating glibc to 2.14 with some libtirpc fun</ulink></title>
+      <para>The GNU C Library (glibc) version 2.14 was released on the 31th of May but we haven't
+        switched to it for openSUSE yet since one of the major changes was the obsoletion of the
+        sunrpc code in glibc and that caused problems. The TI-RPC library (libtirpc) is the proposed
+        replacement of the sunrpc code. One benefit of the TI-RPC library is that it supports -
+        unlike the old sunrpc code in glibc - IPv6. libtirpc is used successfully already by a
+        couple of Open Source projects like autofs or nfs. Unfortunately some code in libtirpc seems
+        to be broken, like the NIS support. The package missed also some header files to make it a
+        full replacement but those can be easily copied over from glibc. So, building everything
+        with libtirpc instead of glibc' sunrpc code was not possible, and the libtirpc developers
+        seemed not to be interested in helping here. </para>
+      <para>So, I've took now the same route that Fedora did and reenabled the sunrpc code in glibc
+        again and thus everything works as before. I encourage everybody that has packages that work
+        with libtirpc to switch to it - and help changing apps and libtirpc itself as needed so that
+        eventually we really can obsolete glibc's sunrpc code. </para>
+      <para>Today, the updated glibc has been submitted and checked into openSUSE's Factory
+        distribution and thus will be in openSUSE 12.1. (...)</para>
+      <!--($ ld: 19.8.11 sm $)-->
+    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
