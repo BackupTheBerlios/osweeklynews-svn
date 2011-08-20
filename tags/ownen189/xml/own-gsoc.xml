@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata width="20%" align="center" fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://alex.eftimie.ro/2011/08/13/packagekit-backend-for-software-center-week-11-status-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: week 11 status report</ulink>
+    </title>
+    <para>This week in three short achievements:<itemizedlist>
+        <listitem>
+          <para>personal <ulink url="https://features.opensuse.org/312728">OBS project</ulink>
+            (playing around, tutored by DimStar), work in progress</para>
+        </listitem>
+        <listitem>
+          <para>code tide-up, <ulink
+              url="https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend/+merge/71446"
+              >ready for merging</ulink> into master</para>
+        </listitem>
+        <listitem>
+          <para>features, usage and testing <ulink
+              url="https://wiki.ubuntu.com/SoftwareCenter/PackagekitBackend">documentation</ulink>,
+            work in progress</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>I’m now focusing on the gtk3 part, and also documenting things around. Packaging has
+      decreased priority, waiting for the pygobject release. And done. </para>
+    <!-- ($ ld: 14.8.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://sysbytes.wordpress.com/2011/08/17/sax3-touchpad-module/">Manu Gupta:
+        SaX3 – Touchpad module</ulink></title>
+    <para>Actually this report is 2 days late, those who have already added my repository and
+      updated it should have the sax3-touchpad module. </para>
+    <para>For others, you can get it here <ulink
+        url="http://download.opensuse.org/repositories/home:/manugupt1/"
+        >http://download.opensuse.org/repositories/home:/manugupt1/</ulink>.</para>
+    <para>From now on, I will focus a lot on fixing issues and polishing the UI, specially the
+      touchpad one and yes offcourse clean some code. I have moved to code.google.com but the
+      transition is not complete yet.</para>
+    <!--($ ld: 18.8.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://nbprashanth.wordpress.com/2011/08/18/libyui-ported/">N.B.Prashanth:
+        libYUI Ported</ulink></title>
+    <para>As most of you reading this post would know, separating libYUI was one of the topics for
+      GSoC 2011 by openSUSE. Over the last three months, a lot of work has gone into the project. As
+      the deadline approaches, we am happy to announce that libYUI is an independent
+      framework!</para>
+    <para>Let me summarize the changes that have taken place over the last three months. For
+      starters, libYUI is available over a range of platforms. Major platforms like Fedora, Ubuntu
+      and Debian have ready made binaries available at OBS -<ulink
+        url="http://download.opensuse.org/repositories/home:/nbprashanth/">
+        http://download.opensuse.org/repositories/home:/nbprashanth/</ulink>. Recently, Michal
+      Hrušecký even ported the library to Gentoo! – <ulink
+        url="http://nbprashanth.wordpress.com/2011/08/18/libyui-ported/michal.hrusecky.net/2011/08/libyui-in-gentoo/"
+        >michal.hrusecky.net/2011/08/libyui-in-gentoo/</ulink>. The source has been completely
+      detached from SUSE-centric technologies. So if binaries are not available for your distro,
+      don’t fret. You can always download the source and install from – <ulink
+        url="http://sourceforge.net/projects/libyui/files/"
+        >http://sourceforge.net/projects/libyui/files/</ulink>.</para>
+    <!--($ ld: 18.8.11 sm $)-->
+  </blockquote>
+</sect1>

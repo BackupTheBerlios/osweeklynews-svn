@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink url="http://michal.hrusecky.net/2011/08/libyui-in-gentoo/">Michal Hrušecký: libyui
+        in Gentoo</ulink></title>
+    <para>Some time ago I wrote a blog post about <ulink
+        url="http://michal.hrusecky.net/2011/06/osc-client-in-gentoo/">osc in Gentoo</ulink>. As I
+      already stated there, we’ve got some pretty cool technologies in openSUSE and I would like to
+      promote them everywhere. And as I’m also partially Gentoo user and I have many Gentoo friends,
+      I’m trying to make some of the coolest openSUSE technologies available on Gentoo. One of the
+      cool things we’ve got is libYUI. (...)</para>
+    <!--($ ld: 18.08.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/08/19/opensuse-lxde-logo-contest-starting-now/">Andrea
+        Florio: openSUSE-LXDE logo contest starting now!</ulink></title>
+    <para>As recently announced <ulink
+        url="http://lizards.opensuse.org/2011/08/12/looking-for-artists-artworks-and-graphics-for-lxde/"
+        >here</ulink>, the LXDE team is looking for graphics contributors. Trying to involve as much
+      people as possible i created a graphic contest! Is time for you, cool graphics, to create a
+      logo for the openSUSE-LXDE team!</para>
+    <para>The contest will start tomorrow, everyone is welcome to join! All the rules are in <ulink
+        url="http://en.opensuse.org/openSUSE:LXDE_Logo_Contest">our wiki</ulink>! </para>
+    <para>So? what are you waiting for??? </para>
+    <para>Is just the right time to <emphasis role="bold">Have a lot of fun…</emphasis></para>
+    <!--($ ld: 19.08.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.marques.so/2011/08/a-brief-update-on-things/">Nelson Marques: A
+        brief update on things…</ulink></title>
+    <para>I’ve been a bit away from openSUSE in the last months (mainly this summer) and this is
+      related to several things that are happening in my personal life. During this time I’ve kept a
+      look in several packages I maintain for GNOME, but haven’t been doing anything related to
+      openSUSE.</para>
+    <para>As many people know, the international pressures in Portugal are placing much demanding
+      things on every citizen, mainly on the working force. I still don’t see the shackles around my
+      hands, but it’s pretty much obvious they exist and they are around my wrists. It’s time to
+      rethink the strategy for the life I wanted to live and move out to living it.</para>
+    <para>No changes to be announced except that some weight I shouldered is going to be dropped,
+      this is the case of GNOME:Ayatana, which I will discuss with Vincent once he’s around, but
+      from my side the proposal is simple, salvage all the packages that are requirements to other
+      packages and might have some utility in the distro, all the others, just a plain and simple
+      nuke them. It served it’s purposes, but I no longer have the time or will to continue
+      maintaining stuff, some that worked, others that never worked. In a way I was wrong, openSUSE
+      users are far better with the traditional choices, ex: GNOME, than with other alternative
+      choices.</para>
+    <!--$ ld: 20.08.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://vizzzion.org/blog/2011/08/release-team-changes/">Sebastian Kügler: Release Team Changes</ulink>
+    </title>
+    <para><emphasis role="bold">Release Team Changes</emphasis></para>
+    <para>During the Desktop Summit in Berlin, we had a session in which we had a good look at
+      how KDE’s release team performs, which points we can improve on, how, and who will
+      implement these changes. For example: <itemizedlist>
+        <listitem>
+          <para>Make our output more predictable and thus downstreams’ lives easier</para>
+        </listitem>
+        <listitem>
+          <para>Reduce the risk of something going wrong, the <ulink url="http://en.wikipedia.org/wiki/Bus_number">bus number problem</ulink></para>
+        </listitem>
+        <listitem>
+          <para>Make our work more efficient</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>Let’s take a step back first, though.</para>
+    <para><emphasis role="bold">A bit of history: from Coolo &amp; Dirk to TWG to Release Team</emphasis></para>
+    <para>In KDE 3, Coolo and Dirk managed KDE’s releases. When KDE4 was started, we also wanted
+      to promote this in a more suitable fashion, we started doing more proactive PR work, and
+      generally improved our communication to our users (potential or not). In 2005, the
+      Technical Working Group was conceived, which was meant to handle the releases of KDE4. The
+      Technical Working Group didn’t quite work out since it didn’t bring the structural changes
+      we needed in order to release KDE4. In late 2006 we we decided that it didn’t work,
+      disbanded the TWG and conceived the release team, a self-organized team of volunteers.
+      Conceptually, the release team started as a place for people to go who wanted to make
+      releases happen. We found module maintainers for our released modules who would coordinate
+      towards the app teams and, and a few core people who know how all that stuff works to put
+      things together. We got our release process on the rails again. Interestingly, the release
+      team is very informal, we never ended up appointing anyone release manager, or
+      end-responsible — it has also never been necessary, it seems. Lesson here: shared
+      responsibility works well for us.</para>
+    <para>A quick unscientific count of the whole KDE 4 series (including pre-releases) brought
+      me to 88 releases done by the release team in its current form.</para>
+    <!--($ ld: 16.8.11 sm $)-->      </blockquote>
+</sect1>

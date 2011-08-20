@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink url="http://www.kroah.com/log/linux/longterm-proposal-08-2011.html">Greg Kroah-Hartman: Future of the -longterm kernel releases.</ulink>
+    </title>
+    <para><emphasis role="bold">tl;dr;</emphasis><itemizedlist>
+        <listitem>
+          <para>-stable kernel releases stay the same</para>
+        </listitem>
+        <listitem>
+          <para>this proposal is how we pick the -longterm releases</para>
+        </listitem>
+        <listitem>
+          <para>-longterm kernels will be picked every year, and maintained for 2 years before being
+            dropped.</para>
+        </listitem>
+        <listitem>
+          <para>the same Documentation/stable<emphasis role="italic">kernel</emphasis>rules.txt will
+            apply for -longterm kernels, as before.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para><emphasis role="bold">History:</emphasis></para>
+    <para>2.6.16 became a &quot;longterm&quot; kernel because my day job (at SUSE) picked the 2.6.16 kernel
+      for its &quot;enterprise&quot; release and it made things a lot easier for me to keep working at
+      applying bugfixes and other stable patches to it to make my job simpler (applying a known-good
+      bunch of patches in one stable update was easier than a set of smaller patches that were only
+      tested by a smaller group of people.)</para>
+    <para>Seeing that this worked well, a cabal of developers got together at a few different Linux
+      conferences and determined that based on their future distro release cycles, we could all aim
+      for standardizing on the 2.6.32 kernel, saving us all time and energy in the long run. We
+      turned around and planted the proper seeds within the different organizations and
+      low-and-behold, project managers figured that this was their idea and sold it to the rest of
+      the groups and made it happen. Right now all of the major &quot;enterprise&quot; and &quot;stable&quot; distro
+      releases are based on the 2.6.32 kernel, making this trial a huge success.</para>
+    <para>Last year, two different community members (Andi and Paul) asked me if they could maintain
+      the 2.6.34 and 2.6.35 kernels as -longterm kernel releases as their companies needed this type
+      of support. I agreed, and they have done a great job at this.</para>
+    <para>Andi reports that the 2.6.35 kernel is being used by a number of different distros, but
+      they will be phased out as their support lifetime expires. There are also a number of embedded
+      users of the kernel as well as some individual ones. So that -longterm kernel is having a lot
+      of benefit for a wide range of users.</para>
+    <para>Today:</para>
+    <para>Now that 2.6.32 is over a year and a half, and the enterprise distros are off doing their
+      thing with their multi-year upgrade cycles, there&apos;s no real need from the distros for a new
+      longterm kernel release. But it turns out that the distros are not the only user of the
+      kernel, other groups and companies have been approaching me over the past year, asking how
+      they could pick the next longterm kernel, or what the process is in determining this.</para>
+    <para>To keep this all out in the open, let&apos;s figure out what to do here. Consumer devices have
+      a 1-2 year lifespan, and want and need the experience of the kernel community maintaining
+      their &quot;base&quot; kernel for them. There is no real &quot;enterprise&quot; embedded distro out there from
+      what I can see. montaVista and WindRiver have some offerings in this area, but they are not
+      that widely used and are usually more &quot;deep embedded&quot;. There&apos;s also talk that the CELF group
+      and Linaro are wanting to do something on a &quot;longterm&quot; basis, and are fishing around for how
+      to properly handle this with the community to share the workload. Android also is another huge
+      player here, upgrading their kernel every major release, and they could use the support of a
+      longterm kernel as well.</para>
+    <para id="para_bao_efu_hd"><emphasis role="bold">Proposal:</emphasis></para>
+    <para>Here&apos;s a first cut at a proposal, let me know if you like it, hate it, would work for you
+      and your company, or not at all:<itemizedlist>
+        <listitem>
+          <para>a new -longterm kernel is picked every year.</para>
+        </listitem>
+        <listitem>
+          <para>a -longterm kernel is maintained for 2 years and then dropped.</para>
+        </listitem>
+        <listitem>
+          <para>-stable kernels keep the same schedule that they have been (dropping the last one
+            after a new release happens.) These releases are best for products that require new
+            hardware updates (desktop distros, community distros, fast-moving embedded distros (like
+            Yocto)).</para>
+        </listitem>
+        <listitem>
+          <para>the normal -stable rules apply to these -longterm kernels as described in
+              Documentation/stable<emphasis role="italic">kernel</emphasis>rules.txt</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>This means that there are 2 -longterm kernels being maintained at the same time, and one
+      -stable kernel. I&apos;m volunteering to do this work, as it&apos;s pretty much what I&apos;m doing today
+      anyway, and I have all of the scripts and workflow down.</para>
+    <para><emphasis role="bold">Public Notifications:</emphasis></para>
+    <para>The current kernel.org site doesn&apos;t properly show what is and is not being maintained as a
+      -stable and -longterm kernel. I have a proposal for how to fix this involving &apos;git notes&apos;, I
+      just need to sit down and do the work with the kernel.org admins to get this running
+      properly.</para>
+    <para><emphasis role="bold">Thoughts?</emphasis></para>
+    <para>Feel free to comment on the <ulink url="https://plus.google.com/111049168280159033135/posts/VyWdYvHnAS2">google+ thread</ulink>
+      about this, or on the <ulink url="https://lkml.org/lkml/2011/8/15/5">lkml</ulink>
+      thread.</para>
+<!-- ($ ld: 15.8.11 sm $) -->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel/1179341">Linus Torvalds: Linux 3.1-rc2</ulink>
+    </title>
+    <para>Hey, nice calm first week after the merge window. Good job. Or maybe
+people are just being lazy, and everybody is on vacation. Whatever.
+Don&apos;t tell me. I&apos;m reasonably happy, I want to stay that way.</para>
+    <para>That said, I would be happy if it calmed down further. 300+ commits
+for -rc2 is good, but please make me even happier for -rc3 by ONLY
+sending me real fixes. Think of it as &quot;fairly late in the -rc series&quot;,
+because I really want to compensate for the merge window being fairly
+chaotic. (...)</para>
+<!-- ($ ld: 19.8.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-1-Part-1-Networking-1323463.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 3.1 - Part 1 - Networking</ulink>
+    </title>
+    <para><emphasis role="bold">Among the most important advancements of Linux 3.1 are improvements for all major Wi-Fi drivers and virtualisation optimisations. </emphasis></para>
+    <para>One week after <ulink url="http://www.h-online.com/open/features/Kernel-Log-First-release-candidate-for-Linux-3-1-1319559.html">issuing</ulink> Linux 3.1-rc1, Linus Torvalds<ulink url="http://thread.gmane.org/gmane.linux.kernel/1179341"> presented</ulink> the second
+      release candidate of Linux 3.1 late on Sunday night. The new version has been taken as an
+      opportunity to <ulink url="http://git.kernel.org/linus/93ee7a9340d64f20295aacc3fb6a22b759323280">rename</ulink>
+      the kernel, which had been christened &quot;Sneaky Weasel&quot; <ulink url="http://www.h-online.com/news/item/First-release-candidate-of-Linux-3-0-available-1252280.html">at the end of May</ulink>; its new name is &quot;Wet Seal&quot;. Torvalds didn&apos;t provide any
+      background reasons for his choice of name – it could be to do with the diving course he <ulink url="https://plus.google.com/102150693225130002912/posts/RLmbspKyr68">attended</ulink> as a
+        <ulink url="http://en.wikipedia.org/wiki/Divemaster">divemaster</ulink>.</para>
+    <para>In his release email for the second release candidate, Torvalds was pleased to report that
+      the merge window had been &quot;pretty normal&quot;. From now until the final release of Linux 3.1, only
+      corrections and minor improvements that don&apos;t present any risk – apart from rare exceptions –
+      will now be accepted into the Linux main development branch. </para>
+<!-- ($ ld: 18.8.11 sm $) -->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://schaiba.wordpress.com/2011/08/20/kernel-weekly-news-20-08-2011/">Rares
+        Aioanei: kernel weekly news – 20.08.2011</ulink>
+    </title>
+    <para>Rares gives his weekly Kernel Review with openSUSE Flavor.</para>
+  </blockquote>
+</sect1>
