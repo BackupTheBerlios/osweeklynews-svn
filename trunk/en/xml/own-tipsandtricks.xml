@@ -147,9 +147,9 @@
       <para>You may have already wondered why you can't use the full disc space on an ext2/3/4
         partition? You already seen something like this, where the used and available blocks don't
         fit the number of blocks on the
-        device/partition:<screen>Filesystem     1K-blocks   Used ýý Available Use%
-      ýMounted on /dev/sdc1       ý 15391664 ý38184  ý 14571608   ý ýý 1%
-      ý/mnt</screen></para>
+        device/partition:<screen>Filesystem                 1K-blocks   Used    Available Use%
+Mounted on /dev/sdc1       15391664    38184   14571608  1%
+/mnt</screen></para>
       <para>The reason is: if you create an ext filesystem (no matter if with mkfs or YaST), 5 % of
         the filesystem get reserved for the super-user to allow e.g. root daemons to continue to
         write to the partition after unprivileged processes stopped because the partition is

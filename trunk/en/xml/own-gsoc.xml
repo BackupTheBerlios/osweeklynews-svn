@@ -26,7 +26,7 @@
   <blockquote>
     <title>
       <ulink
-        url="http://cbounta.wordpress.com/2011/08/09/a-utility-for-merging-configuration-sysconfig-files-–-week-11-report/"
+        url="http://alex.eftimie.ro/2011/08/13/packagekit-backend-for-software-center-week-11-status-report/"
         >Alex Eftimie: PackageKit backend for Software Center: week 11 status report</ulink>
     </title>
     <para>This week in three short achievements:<itemizedlist>
@@ -82,38 +82,5 @@
         url="http://sourceforge.net/projects/libyui/files/"
         >http://sourceforge.net/projects/libyui/files/</ulink>.</para>
     <!--($ ld: 18.8.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-project/2011-08/msg00034.html">Aditya
-        Dani: Test Suite for btrfs - Weekly Update</ulink></title>
-    <para>This is a summary of the work that I did in the last week.(Week # 10) </para>
-    <para>The test no. 256 was modified to add support for memory mapped i/o operations. Thus, now
-      in the test the files are created using both direct i/o as well as memory mapped i/o. </para>
-    <para>A new test, test no. 257 was added which handles large file creation and modification of
-      upto 1GB. </para>
-    <para>Both the tests 256 and 257 were modified to handle any snapshot supported generic file
-      system. You can find the latest made changes <ulink
-        url="https://github.com/adityadani/xfstests/commits/">here</ulink>.</para>
-    <!--($ ld: 13.8.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink
-        url="http://redache.wordpress.com/2011/08/12/entomologist-ui-changes-weekly-report-12/"
-        >David John Williams: Entomologist UI Changes - Weekly Report #12</ulink></title>
-    <para>This week I’ve been working at getting Remember the Milk integration finished. Right now
-      Lists can be added to Remember the Milk and I’m in the middle of implementing update/delete
-      functionality. </para>
-    <para>It has been a hard week as I’ve never had to use a web based API before and the Remember
-      the Milk one doesn’t seem like the easiest to get to grips with (its beta form is probably
-      indicative of this). The main time consumer now is getting the update/delete functionality
-      which isn’t an issue with Remember The Milks API but one of trying to find the right solution
-      that is generic enough to be used with other services so I avoid large chunks of code that are
-      specific to a single service.</para>
-    <para>For the final week I will continue working on integrating Remember the Milk,Google
-      Calendar and WebDAV and over the remaining 10 days I will try and get these services fully
-      integrated. The final week of GSoC will hopefully be spent on preparing a 1.0 release and any
-      code addition will be kept to a minimum (with a hope that there won’t be any outside of
-      merging). </para>
-    <!--($ ld: 13.8.11 sm $)-->
   </blockquote>
 </sect1>
