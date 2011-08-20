@@ -51,6 +51,20 @@
       </title>
       <para>During <ulink url="https://www.desktopsummit.org/welcome-second-desktop-summit">Desktop Summit</ulink> in Berlin some people asked me how to make wireless sharing work. Connection sharing allows to use a computer as gateway for other computers, NM does that by routing all IP packages from one network interface to the default route of your computer (yes, that is a Masquerate configuration). For example, you can configure your notebook to access Internet through ethernet cable and create a wifi shared connection to allow other computers to access Internet using your notebook&apos;s default route. Your notebook will act like an access point. (...)</para>
 <!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://maketecheasier.com/three-great-mindmapping-tools-for-the-linux-desktop/2011/08/19"
+          >MakeTechEasier/scottnesbitt: Three Great Mindmapping Tools for the Linux
+        Desktop</ulink></title>
+      <para>Sometimes, you run into a problem that you just can’t work through with mental brute
+        force alone. Brainstorming with others works, but that’s not always an option.</para>
+      <para>One popular and effective way of beating a problem or releasing your creativity is
+        mindmapping. While you can go old school and use pen and paper, there is quite a bit of
+        mindmapping software out there for the desktop and on the web.</para>
+      <para>There are a number of really solid mindmapping tools for the Linux desktop. Let’s take a
+        closer look at three of them. (...)</para>
+      <!-- ($ Id: 20.8.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -70,6 +84,20 @@
       <para>Nowadays, few enterprise websites run without <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink>, the dynamic scripting language that serves as the “P” in the <ulink url="http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29">LAMP</ulink> stack. Coding PHP applications is relatively easy thanks to the abundance of high-quality PHP frameworks available. Here’s a high-level overview of several of these open source frameworks, noting their scalability, maturity, licenses, and commercial support. While they may differ in many ways, they have one thing in common: they cost nothing to try and to use.</para>
       <para>PHP frameworks not only make web development fast and easy but also standardize and streamline the whole development process. They are much more than just snippets of code or libraries you can reuse. They guide you through the whole development process, from laying out file structures to building data connectors and performing unit tests. All of these popular frameworks are object-oriented and follow the Model-View-Controller (<ulink url="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</ulink>) design philosophy. (...)</para>
 <!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://psankar.blogspot.com/2011/08/introducing-find-many-strings-chrome.html">Sankar
+          P: Introducing Find Many Strings - A chrome extension</ulink></title>
+      <para>Of late, I have been reading a lot of code via browser. Sometimes, when evaluating a
+        patch or when reading through open source project sources, I find it very hard to track how
+        variables move across functions/loops. </para>
+      <para>If I am using VIM, I can happily use CTAGS for this. Chrome highlights all the
+        occurrences of the text that you searched for in yellow color. However when you search for
+        another string, the old highlights disappear. It would have been nicer if any new string
+        search starts highlighting in a different color. I could not find any plugin for achieving
+        this, So, I wrote my own Chrome extension for this. (...)</para>
+      <!--($ Id: 20.8.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
@@ -112,5 +140,25 @@
       </title>
       <para>In SMB/CIFS parlance, a domain is similar to a workgroup: It&apos;s a collection of related computers, typically existing on a single local network. A domain, however, features a special computer known as a domain controller that manages logons for all the servers in the domain. It also provides a few additional services. Samba can function as a domain controller, but you need to set several Samba options for it to do so. (...)</para>
 <!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://dkukawka.blogspot.com/2011/08/how-to-get-your-full-disc-space-back-on.html"
+          >Danny Kukawka: How to get your full disc space back on ext filesystems</ulink></title>
+      <para>You may have already wondered why you can't use the full disc space on an ext2/3/4
+        partition? You already seen something like this, where the used and available blocks don't
+        fit the number of blocks on the
+        device/partition:<screen>Filesystem     1K-blocks   Used ýý Available Use%
+      ýMounted on /dev/sdc1       ý 15391664 ý38184  ý 14571608   ý ýý 1%
+      ý/mnt</screen></para>
+      <para>The reason is: if you create an ext filesystem (no matter if with mkfs or YaST), 5 % of
+        the filesystem get reserved for the super-user to allow e.g. root daemons to continue to
+        write to the partition after unprivileged processes stopped because the partition is
+        full.While this perfectly make sense on system partitions as '/', it makes no sense on data
+        partitions or external media (in the most cases). By this you get e.g. on an external
+        2TB/1.8TiB drive 100GByte/~92GiB, which you can't use as normal user. But you can get this
+        space back. Either you set the number of reserved blocks to zero when you create the file
+        system: (...)</para>
+      <!--($ Id: 20.8.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>
