@@ -18,7 +18,9 @@
 -->
 <sect1 role="ontheweb">
   <title>On the Web</title>
-<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  <sect2>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  
+  <!--
+  <sect2>
     <title>Announcements</title>
     <blockquote>
       <title>
@@ -28,8 +30,8 @@
       <para><emphasis role="bold">The First Free Software SMB2 Server</emphasis></para>
       <para>Samba 3.6 includes the first Free Software implementation of Microsoft&apos;s new SMB2 file serving protocol. SMB2 within Samba is implemented with a brand new asynchronous server architecture, allowing Samba to display the performance enhancements SMB2 brings to Microsoft networking technology.</para>
       <para>Samba&apos;s new SMB2 server has been tested by major vendors and has been able to double the performance of some network applications when run in conjunction with Microsoft Windows 7® clients. (...)</para>
-<!-- ($ ld: 12.8.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
 <!--
   <sect2>
     <title>Call for participation</title>
@@ -39,7 +41,9 @@
       </title>
       <para>We are pleased to announce the Desktop Summit social events, bringing even more excitement and fun to the Conference program. The social events vary from sports to parties, and will take place throughout the week in different locations in Berlin. They will provide opportunities for attendees to get together informally while enjoying foods and drinks provided by our sponsors—Intel, Collabora, SUSE, Igalia and corporate partner, c-base. (...)</para>
     </blockquote>
-  </sect2>-->  <sect2>
+    </sect2>-->  
+  <!--
+  <sect2>
     <title>Reports</title>
     <blockquote>
       <title>
@@ -56,14 +60,14 @@
         release of KDE&apos;s libraries and runtime requirements,&quot; will have an &quot;emphasis... on
         modularity, dependency clarity/simplification and increasing quality to the next level.&quot;
         (...)</para>
-<!-- ($ ld: 8.8.11 sm $) -->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.zdnet.com/blog/open-source/cisco-and-twitter-join-linux-patent-protection-pool/9372">ZDNet/Steven J. Vaughan-Nichols: Cisco and Twitter join Linux patent protection pool</ulink>
       </title>
       <para>In case you’ve been under a rock for the last decade, you might not know that today’s technology wars aren’t over who has the best prices, the most features, or the greatest quality. No, in 2011, instead of working on innovating, tech. giants like Apple, Microsoft, and Oracle, are now wasting their resources on intellectual property (IP) lawsuits. So, perhaps it should come as no surprise that networking powerhouse <ulink url="http://www.cisco.com/">Cisco</ulink> and social networking force <ulink url="http://www.twitter.com/">Twitter</ulink>, is joining the Linux patent protection group, the <ulink url="http://www.openinventionnetwork.com/">Open Invention Network (OIN)</ulink>. (...)</para>
-<!-- ($ ld: 12.8.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
@@ -73,38 +77,6 @@
       <para>The Linux kernel development process may be getting a little tweaking if a proposal by -stable kernel maintainer Greg Kroah-Hartman is accepted; tweaking needed to meet growing commercial interest in Linux.</para>
       <para>The proposal is simple, on the surface and all the way down: Currently, the 2.6.32 kernel is maintained as a -longterm kernel, a kernel release that is maintained as a stable release with bug fixes and patches for a relatively lengthy period of time. This is opposed to the official -stable release of the Linux kernel, which is the kernel release most suitable for general use, and is dropped when the next release is moved into the -stable category. (The current -stable release, for example, is the 3.0.1 kernel.) (...)</para>
 <!-- ($ ld: 19.8.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink url="http://linuxblog.darkduck.com/2011/08/opensuse-114-kde-where-desktop.html"
-          >Darkduck: OpenSuSE 11.4 KDE: Where Desktop Environment Matters</ulink></title>
-      <para>I have already <ulink
-          url="http://linuxblog.darkduck.com/2011/03/4-disappointments-from-opensuse-114.html"
-          >reviewed <emphasis role="bold">OpenSuSE 11.4</emphasis></ulink>. That was review of GNOME
-        version in Live run. I was not much happy about this system. That time I decided myself:
-        enough for <ulink url="http://www.opensuse.org/en/"><emphasis role="bold"
-            >OpenSuSE</emphasis></ulink> until next release. I got lots of critic for that review.
-        In general, they all came to 2 main points:<itemizedlist>
-          <listitem>
-            <para>Live run is not decisive for system selection. I <ulink
-                url="http://linuxblog.darkduck.com/2011/06/why-do-i-do-live-system-reviews.html"
-                >wrote</ulink> about this point already, and won't repeat my reasons again.</para>
-          </listitem>
-          <listitem>
-            <para>GNOME implementation in <emphasis role="bold">SuSE</emphasis> s***cks and I should
-              try KDE version. Maybe, but... GNOME is still a version available for everyone, why
-              shouldn't I review it?</para>
-          </listitem>
-        </itemizedlist></para>
-      <para>If you read my blog from time to time, you should be aware that I also run site <ulink
-          url="http://buylinuxcds.co.uk/">buylinuxcds.co.uk</ulink>, which is commercial part of
-        this blog. You can <ulink url="http://buylinuxcds.co.uk/"><emphasis role="bold">order your
-            own CD with Linux</emphasis></ulink> there. But I also put <ulink
-          url="http://shop.ebay.co.uk/dmitry_kt1/m.html?_trksid=p4340.l2562">my items on
-          eBay</ulink> site sometimes. This time surprise came from that direction. A person bought
-        a CD on eBay asking me to ship <emphasis role="bold">OpenSuSE 11.4 with KDE</emphasis>
-        desktop environment. Could I miss such an opportunity to peek and create my own opinion? Of
-        course not! Moreover, I have to test the disk before handing it down to buyer.</para>
-      <!--($ ld: 20.8.11 sm $)-->
-    </blockquote>
   </sect2>
   <sect2>
     <title>Warning!</title>
