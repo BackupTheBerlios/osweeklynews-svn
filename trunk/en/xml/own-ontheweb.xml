@@ -42,32 +42,29 @@
       <para>We are pleased to announce the Desktop Summit social events, bringing even more excitement and fun to the Conference program. The social events vary from sports to parties, and will take place throughout the week in different locations in Berlin. They will provide opportunities for attendees to get together informally while enjoying foods and drinks provided by our sponsors—Intel, Collabora, SUSE, Igalia and corporate partner, c-base. (...)</para>
     </blockquote>
     </sect2>-->  
-  <!--
   <sect2>
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.itworld.com/mobile-wireless/191083/kde-50-roadmap-announced">ITworld/Brian Proffitt: KDE 5.0 roadmap announced</ulink>
+        <ulink url="http://progdan.cz/2011/08/akonadi-google-resource-complete-rewrite/">Dan Vratil:
+          Akonadi Google Resource: complete rewrite</ulink>
       </title>
-      <para>The KDE desktop is about to take a major step forward, with the announcement today of
-        the roadmap for KDE Frameworks 5.0.</para>
-      <para>Most eyes in the Linux desktop world are on the Berlin Desktop Summit this week, as
-        members of the GNOME and KDE camps come together for a joint technical conference running
-        from August 6-12 at Humboldt University in Berlin. Currently, KDE seems to be making the
-        most strides in the joint event, with the surprise announcement of the KDE 5.0 roadmap,
-        which was revealed by KDE developer Aaron Seigo in his blog Sunday.</para>
-      <para>According to Seigo, the new KDE Frameworks roadmap, which will encompass &quot;the next major
-        release of KDE&apos;s libraries and runtime requirements,&quot; will have an &quot;emphasis... on
-        modularity, dependency clarity/simplification and increasing quality to the next level.&quot;
-        (...)</para>
+      <para>today I finally pushed a completely new version of the Akonadi Google Resource. Since
+        last update cca 2 months ago I’ve completely rewritten the resources, moving most of the
+        functionality into libKGoogle . The library now provides access to Google services and can
+        be easily used by any other project. So what’s new? A lot of things changed for programmers.
+        I’ve begun to fulfill my threats about providing a C++/Qt library for accessing Google
+        Services. It’s not pure Qt, I’m using some KDE stuff in there, but that will change.</para>
+      <para>LibKGoogle now provides API similar to QNetworkAccessManager (KGoogleAccessManager)
+        through which you can send KGoogleRequest and if it works, you’ll receive a KGoogleReply.
+        Each Google Service is represented by a KGoogleService subclass, implementing XML and/or
+        JSON parser and serializer and providing informations about fetch/create/update URLs. Each
+        object (contact, event, calendar) is represented by KGoogleObject subclass. For now, Event
+        class is implements KCalCore::Event as well, ýthe Calendar and Contact classes provide their
+        own implementation of everything. Porting it to KABC/KCalCore is on TODO. (...)</para>
+      <!-- ($ Id: 21.8.11 sm $)-->
     </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/cisco-and-twitter-join-linux-patent-protection-pool/9372">ZDNet/Steven J. Vaughan-Nichols: Cisco and Twitter join Linux patent protection pool</ulink>
-      </title>
-      <para>In case you’ve been under a rock for the last decade, you might not know that today’s technology wars aren’t over who has the best prices, the most features, or the greatest quality. No, in 2011, instead of working on innovating, tech. giants like Apple, Microsoft, and Oracle, are now wasting their resources on intellectual property (IP) lawsuits. So, perhaps it should come as no surprise that networking powerhouse <ulink url="http://www.cisco.com/">Cisco</ulink> and social networking force <ulink url="http://www.twitter.com/">Twitter</ulink>, is joining the Linux patent protection group, the <ulink url="http://www.openinventionnetwork.com/">Open Invention Network (OIN)</ulink>. (...)</para>
-    </blockquote>
-  </sect2> -->
+  </sect2>
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
