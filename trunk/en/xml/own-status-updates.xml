@@ -44,34 +44,22 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink url="http://masterpatricko.blogspot.com/2011/08/redshift-and-backintime-in-factory.html">Tejas Guruswamy: redshift and backintime in Factory</ulink>
+        <ulink
+          url="http://jaegerandi.blogspot.com/2011/08/opensuse-factory-progress-2011-08-21.html"
+          >Andreas Jaeger: openSUSE Factory Progress 2011-08-21</ulink>
       </title>
-      <para>Well, it&apos;s been a long while since my last news ... but I&apos;ve got some nice news to
-        report - my submissions of redshift and backintime were accepted into openSUSE Factory. So
-        these useful programs will be part of the next openSUSE release, hooray!</para>
-      <para><ulink url="http://jonls.dk/redshift/">Redshift</ulink> is a little command-line (and
-        GTK) utility which reduces screen brightness at night (via colour temperature, so your
-        screen becomes more red). Given your location in the world, it automatically calculates
-        sunset and sunrise and gradually ramps up/down the brightness at the right times. I find it
-        makes working at night easier on the eyes, and wrote a little plasmoid to control it easily
-        from the desktop, which I will also release when I get some time. For previous openSUSE
-        versions one can download and install redshift from its OBS devel project, <ulink url="http://download.opensuse.org/repositories/X11:/Utilities">X11:Utilities</ulink>.</para>
-      <para><ulink url="http://backintime.le-web.org/">Backintime</ulink> is a backup program,
-        effectively a rsync frontend, with GUIs for KDE and GNOME. Once configured with which
-        folders you want to back up, and where you want to back up to, it can automatically take
-        backups based on a schedule. Also a very nice feature is that on filesystems that support it
-        (not FAT), it uses hardlinks to the previous backup, so each backup is a full backup but
-        only changed files take up space on the backup disk. Each backup is just a normal copy of
-        all the folders, so no special software is needed for recovery, but backintime offers a GUI
-        that allows you to easily navigate through all your backed up versions of a folder. IMO it&apos;s
-        the best userfriendly but complete backup software for Linux desktops. backintime used to be
-        packaged by packman and now lives on the OBS in <ulink url="http://download.opensuse.org/repositories/Archiving:/Backup/">Archiving:Backup</ulink>.</para>
-      <para><inlinegraphic fileref="http://3.bp.blogspot.com/-VuwTIKnMVSQ/TkZqVRBNHYI/AAAAAAAAAAg/uRLpcyZkU9U/s320/backintime.png"/></para>
-      <para>Enjoy! If you have other interesting programs that aren&apos;t in openSUSE remember that
-        anyone can contribute to Factory now, so if you are willing to maintain them, go ahead and
-        submit them on the OBS! My next target is byobu, a set of preconfigured GNU screen profiles
-        (I never figured out how to write hardstatus lines!) </para>
-<!-- ($ ld: 14.8.11 sm $)-->    </blockquote>
+      <para>August looks like a surprisingly busy month, we already have 709 package checkins and
+        thus I expect we'll beat the 926 from last month. Also, there's a lot to write about since
+        the last <ulink url="http://lizards.opensuse.org/2011/08/05/factory-progress-2011-08-05/"
+          >report</ulink>. </para>
+      <para>Note that the Milestone 4 was not really released since Coolo is on vacation and we
+        decided to make a soft release (just update via zypper dup) instead of a full release this
+        time. </para>
+      <para>A plea: Please help documenting major changes of factory in the <ulink
+          url="http://en.opensuse.org/openSUSE:Upcoming_features">openSUSE wiki</ulink> so that the
+        marketing team can start speaking about openSUSE 12.1 and does not miss important features!
+        (...)</para>
+<!-- ($ ld: 22.8.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://jaegerandi.blogspot.com/2011/08/updating-glibc-to-214-with-some.html">Andreas Jaeger: Updating glibc to 2.14 with some libtirpc fun</ulink>
