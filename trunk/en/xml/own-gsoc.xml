@@ -26,28 +26,26 @@
   <blockquote>
     <title>
       <ulink
-        url="http://alex.eftimie.ro/2011/08/13/packagekit-backend-for-software-center-week-11-status-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: week 11 status report</ulink>
+        url="http://alex.eftimie.ro/2011/08/22/packagekit-backend-for-software-center-pencils-down-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: pencils down report</ulink>
     </title>
-    <para>This week in three short achievements:<itemizedlist>
-        <listitem>
-          <para>personal <ulink url="https://features.opensuse.org/312728">OBS project</ulink>
-            (playing around, tutored by DimStar), work in progress</para>
-        </listitem>
-        <listitem>
-          <para>code tide-up, <ulink
-              url="https://code.launchpad.net/~alexeftimie/software-center/packagekit-backend/+merge/71446"
-              >ready for merging</ulink> into master</para>
-        </listitem>
-        <listitem>
-          <para>features, usage and testing <ulink
-              url="https://wiki.ubuntu.com/SoftwareCenter/PackagekitBackend">documentation</ulink>,
-            work in progress</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>I’m now focusing on the gtk3 part, and also documenting things around. Packaging has
-      decreased priority, waiting for the pygobject release. And done. </para>
-    <!-- ($ ld: 14.8.11 sm $)-->
+    <para><inlinegraphic fileref="http://swarm.cs.pub.ro/~alexef/gsoc/pk-suse/Workspace%201_006.png"
+        width="30%"/></para>
+    <para>Today the official coding period of GSoC 2011 ends. It’s been a four months journey, with
+      challenges, failures and achievements, but nevertheless fun :-) . </para>
+    <para>You may be wondering what is the status of my project; here it goes: current version of
+      Software Center can be tested in openSUSE Factory; it can populate its database with data from
+      an AppStream XML; it shows application information (fetched from the package manager); it
+      installs and removes software, in the same friendly manner the ubuntu does (showing progress,
+      handling dependencies). </para>
+    <para>Moreover, my patches to <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=652256"
+        >gobject-introspection</ulink>, <ulink
+        url="https://gitorious.org/packagekit/packagekit/commit/c2016d35d33a03c481fd0586af26426184dfd758"
+        >PackageKit</ulink> and obviously <ulink
+        url="http://bazaar.launchpad.net/~software-store-developers/software-center/trunk/revision/2146"
+        >software-center</ulink>, are all upstream and released; kudos to the project managers and
+      the community for helping me get them there.</para>
+    <!-- ($ ld: 23.8.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://sysbytes.wordpress.com/2011/08/17/sax3-touchpad-module/">Manu Gupta:
