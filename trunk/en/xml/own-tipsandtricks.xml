@@ -18,61 +18,51 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
-  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.makeuseof.com/tag/manage-twitter-identica-accounts-choqok-linux/">MakeUseOf/Danny Stieben: Manage Your Twitter &amp; Identi.ca Accounts With Choqok</ulink>
+        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/08/18/positioning-windows-automatically-in-gnome-3.aspx">Hubfolio/Matthew Casperson: Positioning windows automatically in Gnome 3</ulink>
       </title>
-      <para>For people who are really tweet-o-holics, constant access to <ulink url="http://www.makeuseof.com/tags/twitter">Twitter</ulink> (or <ulink url="http://www.identi.ca">Identi.ca</ulink>, an open source clone of Twitter) is as much
-        a necessity as food and water. At varying levels, this may also be true for those who are
-        fans of Twitter but not necessarily tweet-o-holics.</para>
-      <para>One possible choice is to have Twitter up and running in the browser most of the time.
-        While this is a feasible solution, you’ll start missing out when the browser is minimized.
-        Also, a browser isn’t exactly lightweight on system resources. Therefore, your best bet
-        would be to use a well-built Twitter desktop client.</para>
-      <para><emphasis role="bold">About Chokoq</emphasis></para>
-      <para><ulink url="http://choqok.gnufolks.org">Choqok</ulink> is a slim Twitter and Identi.ca
-        client made to integrate well with the <ulink url="http://www.makeuseof.com/tags/kde">KDE</ulink> desktop environment. As far as social media clients go, <ulink url="http://www.makeuseof.com/tag/gwibber-the-everything-client/">Gwibber</ulink> may be a
-        more well known piece of software, but it’s best suited to run under a <ulink url="http://www.makeuseof.com/tags/gnome">GNOME</ulink> desktop. You’re always welcome to
-        try Gwibber with KDE, but I’ve always preferred software native to the desktop environment
-        you’re using. With Choqok, you can quickly and easily reach your Twitter stream at any time
-        and get notifications that appear right on your desktop. (...)</para>
-    </blockquote>
-  </sect2> -->
-  <!--
+      <para>One of the best features of Gnome 3 are the dynamic workspaces. Using some simple <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/05/25/efficient-application-switching-with-gnome-3.aspx">keyboard shortcuts</ulink>, it is possible to assign an application to a workspace and quickly switch between them. If you run a standard set of applications, this process makes switching between them very efficient.</para>
+      <para>The problem with running applications in their own workspace is that you have to spend some time once Gnome 3 has booted moving the applications to their proper workspaces. However, using a tool called <ulink url="http://www.foosel.org/linux/devilspie">devilspie</ulink>, it is possible to setup a script that will automatically rearrange your windows for you. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: openSUSE users can install devilspie <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=devilspie">via OBS</ulink>.</para>
+<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.techdrivein.com/2011/08/10-good-inkscape-tutorials-for-vector.html">Tech Drive-in/Manuel Jose: 10 Good Inkscape Tutorials for Vector Graphic Designers</ulink>
+      </title>
+      <para>Inkscape is the premier open source vector graphics editor for Linux. Inkscape is cross platform and is available for Windows and Mac OS X for free download. We have dealt with a bunch of really good <ulink url="http://www.techdrivein.com/2010/10/13-beautiful-inkscape-tutorials-for.html">Inskcape tutorials</ulink> before, here are even more of those. Following is a collection of 10 of the very best and descriptive Inkscape tutorials from around the web. (...)</para>
+<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.anchor.com.au/blog/2011/08/awesome-but-often-unknown-linux-commands-and-tools/">Anchor/Keiran Holloway: Awesome but often unknown Linux commands and tools</ulink>
+        <ulink url="http://elevenislouder.blogspot.com/2011/08/introduction-to-find.html">Eleven is Louder: An Introduction to Find</ulink>
       </title>
-      <para>I’ve been working in this industry for a while now and naturally spend a lot of time using Linux on a daily basis. This gives lots of exposure to various Linux commands and tools. That said, I am sometimes surprised when I see, often very experienced system administrators, using somewhat convoluted commands to do something relatively simple using a different tool. (...)</para>
-    </blockquote>
-  </sect2> -->
-  <!--
+      <para>Learning find can seem daunting at first, but it is worth learning. There is no single more useful search tool for UNIX like systems. You could almost consider find a very primitive scripting language in itself as find can find the files you request and then perform tasks. (...)</para>
+<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/build-web-apps-like-a-pro-with-these-php-frameworks/">Wazi/Anatoliy A. Dimitrov: Build Web Apps Like a Pro with These PHP Frameworks</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/08/22/really-gui-more-on-buttons-images-and-handlers/">Python4Kids/Brendan Scott: Really GUI (more on Buttons, images and handlers)</ulink>
       </title>
-      <para>Nowadays, few enterprise websites run without <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink>, the dynamic scripting language that serves as the “P” in the <ulink url="http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29">LAMP</ulink> stack. Coding PHP applications is relatively easy thanks to the abundance of high-quality PHP frameworks available. Here’s a high-level overview of several of these open source frameworks, noting their scalability, maturity, licenses, and commercial support. While they may differ in many ways, they have one thing in common: they cost nothing to try and to use.</para>
-      <para>PHP frameworks not only make web development fast and easy but also standardize and streamline the whole development process. They are much more than just snippets of code or libraries you can reuse. They guide you through the whole development process, from laying out file structures to building data connectors and performing unit tests. All of these popular frameworks are object-oriented and follow the Model-View-Controller (<ulink url="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</ulink>) design philosophy. (...)</para>
-    </blockquote>
-  </sect2> -->
+      <para>In the last few tutorials we have been looking at various parts of what make up a graphical user interface.   We’ve created labels and buttons and have attached images to a label (and a button if you did the homework).  We have also associated an action with pressing a button.   In this tutorial we’re going to put these together to make a simple image viewer application.  As with the previous tutorials, this will only work with images which are saved as a “gif” format.  Also, a word of warning – you need to do pretty much all of the code before any of it will work.</para>
+      <para>Here are some images for you to use.  As with the earlier tutorial, you can either use ‘save as’ to download a copy, or you can use the Python code in the note below to download them (if you use Python you should be in your python4kids directory when you do the download otherwise the files will get saved somewhere else).  A gold star if you use Python for the download. (...)</para>
+<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.drbill.cc/2011/08/20/geek-software-of-the-week-clonezilla/">Dr. Bill:
-          Geek Software of the Week: Clonezilla! </ulink></title>
-      <para>This is <emphasis role="bold">AWESOME!</emphasis> Open Source, <emphasis role="bold"
-          >FREE</emphasis>, and it handles nearly everything that you need for disk imaging! Also,
+        <ulink url="http://www.drbill.cc/2011/08/20/geek-software-of-the-week-clonezilla/">Dr. Bill: Geek Software of the Week: Clonezilla! </ulink>
+      </title>
+      <para>This is <emphasis role="bold">AWESOME!</emphasis> Open Source, <emphasis role="bold">FREE</emphasis>, and it handles nearly everything that you need for disk imaging! Also,
         there is a FREE Server Version as well as the regular PC Client Version!</para>
-      <para><ulink url="http://clonezilla.org/">Clonezilla – The Free and Open Source Software for
-          Disk Imaging and Cloning</ulink></para>
+      <para><ulink url="http://clonezilla.org/">Clonezilla – The Free and Open Source Software for Disk Imaging and Cloning</ulink></para>
       <para>You’re probably familiar with the popular proprietary commercial package Norton Ghost.
         The problem with these kind of software packages is that it takes a lot of time to massively
         clone systems to many computers. You’ve probably also heard of Symantec’s solution to this
@@ -80,5 +70,24 @@
         OpenSource clone system (OCS) solution called Clonezilla with unicasting and multicasting!
         (...)</para>
 <!-- ($ Id: 21.8.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/configuring-the-dhcp-server">BeginLinux: Configuring the DHCP Server</ulink>
+      </title>
+      <para>What we will look at
+
+</para>
+      <orderedlist>
+        <listitem>
+          <para>Installing the DHCP Server on openSUSE</para>
+        </listitem>
+        <listitem>
+          <para>Configuring the Server with YaST</para>
+        </listitem>
+        <listitem>
+          <para>Configuring the Server from the command line (...)</para>
+        </listitem>
+      </orderedlist>
+<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
