@@ -60,7 +60,7 @@
         Each Google Service is represented by a KGoogleService subclass, implementing XML and/or
         JSON parser and serializer and providing informations about fetch/create/update URLs. Each
         object (contact, event, calendar) is represented by KGoogleObject subclass. For now, Event
-        class is implements KCalCore::Event as well, ýthe Calendar and Contact classes provide their
+        class is implements KCalCore::Event as well, the Calendar and Contact classes provide their
         own implementation of everything. Porting it to KABC/KCalCore is on TODO. (...)</para>
       <!-- ($ Id: 21.8.11 sm $)-->
     </blockquote>
@@ -69,11 +69,64 @@
     <title>Reviews and Essays</title>
     <blockquote>
       <title>
-        <ulink url="http://www.itworld.com/it-managementstrategy/194203/longterm-kernel-proposal-signals-ongoing-linux-growth">ITworld/Brian Proffitt: Longterm kernel proposal signals ongoing Linux growth</ulink>
+        <ulink
+          url="http://www.itworld.com/it-managementstrategy/194203/longterm-kernel-proposal-signals-ongoing-linux-growth"
+          >h-online/Dr. Oliver Diedrich: The history of Linux</ulink>
       </title>
-      <para>The Linux kernel development process may be getting a little tweaking if a proposal by -stable kernel maintainer Greg Kroah-Hartman is accepted; tweaking needed to meet growing commercial interest in Linux.</para>
-      <para>The proposal is simple, on the surface and all the way down: Currently, the 2.6.32 kernel is maintained as a -longterm kernel, a kernel release that is maintained as a stable release with bug fixes and patches for a relatively lengthy period of time. This is opposed to the official -stable release of the Linux kernel, which is the kernel release most suitable for general use, and is dropped when the next release is moved into the -stable category. (The current -stable release, for example, is the 3.0.1 kernel.) (...)</para>
-<!-- ($ ld: 19.8.11 sat $)-->    </blockquote>
+      <para><emphasis role="bold">When Linus Torvalds released Linux 0.01 on the internet 20 years
+          ago, his idea of a free Unix clone to which anyone could contribute touched a
+          creativenerve in people. Today, it would be impossible to imagine an IT world without
+          Linux.</emphasis></para>
+      <para>It has been twenty years since Linus Torvalds programmed the first few lines of what
+        would become the Linux kernel. An IT student at the time, Torvalds wasn't yet thinking of an
+        operating system, he just wanted to explore the capabilities of his PC's 386 processor.
+        Eventually, his memory management, process switching and I/O experiments developed into
+        something that resembled a rudimentary operating system kernel. (...)</para>
+<!-- ($ ld: 26.8.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://arstechnica.com/open-source/news/2011/08/march-of-the-penguin-ars-looks-back-at-20-years-of-linux.ars"
+          >arstechnica/Ryan Paul: March of the Penguin: Ars looks back at 20 years of
+        Linux</ulink></title>
+      <para>The Linux kernel was originally created by Linus Torvalds, a Finnish computer science
+        student, and first announced to the world on August 25, 1991—exactly 20 years ago today. At
+        the time, Torvalds described his work as a "hobby" and contended that it would not be "big
+        and professional" like the GNU project.</para>
+      <para>But the Linux kernel turned out to be one of the most significant pieces of open source
+        software ever developed. Over the past two decades, it has grown from a humble hobby project
+        into a global phenomenon that runs on everything from low-cost e-book readers to a majority
+        of the world's supercomputers. Here's how it grew.</para>
+      <!-- ($ ld: 26.8.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.makeuseof.com/tag/kmail-kind-email-client-kde-linux/"
+          >MakeUseOf/Danny Stieben: KMail – A Different Kind Of Email Client For KDE</ulink></title>
+      <para>If you’ve been following the pretty intense battles between the many different browsers,
+        as well as the subtle but still important operating system battles, you’ll know that people
+        are definitely scattered all over the place with their favorite choices. Email clients
+        aren’t any exception either, as you’ll find people use various tools to manage their email,
+        the two most popular being the<ulink url="http://www.makeuseof.com/tags/gmail/"
+          >Gmail</ulink> website and the<ulink url="http://www.makeuseof.com/tags/thunderbird/"
+          >Thunderbird</ulink>desktop app.</para>
+      <para>Today we’ll be looking at a top KDE choice that has plenty to offer for those of you who
+        crave some power and control over their applications.</para>
+      <!-- ($ ld: 26.8.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://server.ericsbinaryworld.com/blog/">It’s A Binary World 2.0/Eric
+          Mesa: Testing out Amarok 2.4.3′s Dynamic Playlists</ulink></title>
+      <para>I’ve spoken about Amarok’s Dynamic Playlists <ulink
+          url="http://server.ericsbinaryworld.com/blog/2010/11/26/amarok-and-my-stats-fail/"
+          >before</ulink>. Despite my best attempts, I couldn’t quite get it to work correctly.
+        However, Amarok 2.4.3 has revamped the dynamic playlists engine and interface, so I wanted
+        to check it out and see if it worked better as well as testing out some of the new features.
+        For one thing, they changed the interface to more closely match the interface for static
+        playlists. See:</para>
+      <para><inlinegraphic
+          fileref="http://server.ericsbinaryworld.com/blog/wp-content/uploads/2011/08/amarok-newdynamicinterface1-500x216.png"
+        /></para>
+      <!-- ($ ld: 26.8.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>Warning!</title>
