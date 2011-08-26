@@ -60,27 +60,6 @@
         marketing team can start speaking about openSUSE 12.1 and does not miss important features!
         (...)</para>
 <!-- ($ ld: 22.8.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://jaegerandi.blogspot.com/2011/08/updating-glibc-to-214-with-some.html">Andreas Jaeger: Updating glibc to 2.14 with some libtirpc fun</ulink>
-      </title>
-      <para>The GNU C Library (glibc) version 2.14 was released on the 31th of May but we haven&apos;t
-        switched to it for openSUSE yet since one of the major changes was the obsoletion of the
-        sunrpc code in glibc and that caused problems. The TI-RPC library (libtirpc) is the proposed
-        replacement of the sunrpc code. One benefit of the TI-RPC library is that it supports -
-        unlike the old sunrpc code in glibc - IPv6. libtirpc is used successfully already by a
-        couple of Open Source projects like autofs or nfs. Unfortunately some code in libtirpc seems
-        to be broken, like the NIS support. The package missed also some header files to make it a
-        full replacement but those can be easily copied over from glibc. So, building everything
-        with libtirpc instead of glibc&apos; sunrpc code was not possible, and the libtirpc developers
-        seemed not to be interested in helping here. </para>
-      <para>So, I&apos;ve took now the same route that Fedora did and reenabled the sunrpc code in glibc
-        again and thus everything works as before. I encourage everybody that has packages that work
-        with libtirpc to switch to it - and help changing apps and libtirpc itself as needed so that
-        eventually we really can obsolete glibc&apos;s sunrpc code. </para>
-      <para>Today, the updated glibc has been submitted and checked into openSUSE&apos;s Factory
-        distribution and thus will be in openSUSE 12.1. (...)</para>
-<!--($ ld: 19.8.11 sm $)-->    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -94,6 +73,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
+  <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -110,8 +90,8 @@
         need to go to the configuration tab of and click on the appliance icon. Then scroll down to
         the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
       <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
-<!-- ($ ld: 18.8.11 sm $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -224,7 +204,9 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> -->    <sect3 role="kdeteam">
+      </sect3> -->    
+    <!--
+    <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
@@ -265,88 +247,8 @@
           unlike openSUSE, focused on end-users and the user experience on consumer-level devices.
           Balsam Professional is based on openSUSE, so you might well be familiar with many of the
           tools already. (...)</para>
-<!--($ ld: 16.8.11 sm $)-->      </blockquote>
-      <blockquote>
-        <title><ulink url="http://vizzzion.org/blog/2011/08/kdeactivedevel-introduced/">Sebastian
-            Kügler: KDE:Active:Devel introduced</ulink></title>
-        <para>The past week, when working on the Mesa packages for <ulink
-            url="http://community.kde.org/Plasma/Active">Plasma Active</ulink>, I might have caused
-          some headache since I broke the compositor in Plasma Active with a few packages I uploaded
-          for easier deployment on test devices. It was not more than an annoyance, because kwin
-          gracefully falls back to non-composited mode in case of graphics problems. In order to get
-          a bit more stability into our deployment process, I’ve now set up a subproject called
-            <ulink url="https://build.opensuse.org/project/monitor?project=KDE:Active:Devel"
-            >KDE:Active:Devel</ulink> under the <ulink
-            url="https://build.opensuse.org/project/monitor?project=KDE%3AActive">KDE:Active</ulink>
-          project on the Open Build Service (OBS) which we use to build the Balsam packages. As
-          we’re moving, development-wise into the stabilization phase for Plasma Active One, this
-          makes testing new things a lot easier, just by switching to the same package from the
-          :Devel branch. Conversely, this means that if you install packages from the :Devel
-          subproject, you should really know what you’re doing. On the bright side, it’ll be easier
-          to keep regressions out of the packages that are deployed on most users’ machines. </para>
-        <para><inlinegraphic fileref="http://vizzzion.org/images/blog/contour-alpha-news_thumb.png"
-          /></para>
-        <para>Along with these changes, I’ve updated all the packages to the latest state of the
-          art, and worked a bit on our documentation, as we keep getting very good feedback about
-          this. Among the most wanted fixes we’ve introduced is a patch by Aaron that makes konsole
-          usable with the virtual keyboard, making another very powerful tool usable on Plasma
-          Active. I’ve also fixed up some default configuration options, polished up the contour
-          packages and made that used by default. (Those who have plasma-tablet-config on their
-          machine will have to replace it with “plasma-contour-config”, though.) This is another
-          pretty big move, as we now basically regard the contour shell stable enough to make it
-          into Plasma Active One. It’s also very, very shiny I must say, the usual disclaimer about
-          alpha software notwithstanding. </para>
-        <para>OBS makes it rather convenient merging changes back and forth between these branches.
-          In general, my impression is that OBS works very nicely as a collaboration tool, and
-          solves a very complex problem for us, the “how do we get our code onto the device”. As an
-          aside, it also makes it very easy to build packages locally, so for even shorter
-          development-deployment cycles, one can build locally and rsync packages onto the device.
-          With the right kind of script setup, that takes a lot of the pain away, that development
-          for mobile devices often brings with it. The KDE:Active:Devel repo can be used directly by
-          developers to upload their latest sources in order to deploy them to their testing
-          machines, and we can pull working versions in from there. Rocking. </para>
-        <!--($ ld: 20.8.11 sm $)-->
       </blockquote>
-      <blockquote>
-        <title><ulink url="http://vizzzion.org/blog/2011/08/plasma-active-on-opengl-es/">Sebastian
-            Kügler: Plasma Active on OpenGL ES</ulink></title>
-        <para>The past weeks, I’ve been working on getting Kwin, the window manager and compositor
-          in <ulink url="http://community.kde.org/Plasma/Active">Plasma Active</ulink> (and Plasma
-          Desktop ;) to work on top of OpenGL ES instead of OpenGL. After some updating of packages
-          lower in the stack, especially Mesa and parts of Xorg, we now have working OpenGL ES
-          support on our hardware. Today, I’ve finished packaging it as an option on top of our
-          Plasma Active packages. These packages in the :Devel subsection of the KDE:Active
-          repository in the OBS run on top of Balsam Professional and openSUSE 11.4. We will give
-          this some more testing and improve a few things, in order to move to GLES by default.
-          OpenGL ES is very interesting as this is an API often used on mobile devices, so I’m glad
-          that I can state that we’re ready for this. This of course needs proper support in the
-          drivers, something we can not always solve by ourselves. I have been running this
-          successfully on two Intel Atom-based tablets.</para>
-        <para>All the props of course to to our Akademy-award winning window management and
-          compositing hero, the one and only Martin Grýsslin. He’s been working on OpenGL ES support
-          (and a lot of other features to make kwin “ready for the future”) for quite some time
-          already. OpenGL ES support in kwin has been introduced in the recent <ulink
-            url="http://kde.org/announcements/4.7/plasma.php">Plasma Desktop 4.7</ulink> release, a
-          few weeks ago.</para>
-        <para><inlinegraphic fileref="http://vizzzion.org/images/blog/contour-froscon_thumb.png"
-          /></para>
-        <para>So, is it much different? Nope, it’s very much a thing of underlying technology.
-          There’s no noticable performance improvement, but it runs stable and well. Given that
-          OpenGL ES support has only very recently been introduced in kwin, it’s already
-          surprisingly good. There is probably still a lot of room for improvement, which is
-          something we can investigate now and easily test much better.</para>
-        <para><emphasis role="bold">Froscon</emphasis></para>
-        <para>In the screenshot of the <ulink
-            url="http://vizzzion.org/blog/2011/08/plasma-active-on-opengl-es/">Contour</ulink> shell
-          of Plasma Active, you can see that I’m all set up to go to <ulink
-            url="http://vizzzion.org/blog/2011/08/plasma-active-on-opengl-es/">FrOSCon</ulink>
-          tomorrow, where I’ll be presenting the ideas and demoing the prototypes, hoping to get
-          some feedback on concepts, and give some understanding of the challenges and opportunities
-          we face in this exciting endeavour. And of course show some serious bling. :) If you’re in
-          the area around Bonn, drop by.</para>
-        <!--($ ld: 20.8.11 sm $)-->
-      </blockquote>
-    </sect3>
+    </sect3> -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>

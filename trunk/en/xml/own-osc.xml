@@ -73,38 +73,5 @@
       </itemizedlist></para>
     <!-- ($ ld: 26.8.11 sm $)-->
   </blockquote>
-
-  <blockquote>
-    <title><ulink url="http://michal.hrusecky.net/2011/08/opensuse-conference-2011-sax3/">Michal
-        Hrušecký: openSUSE Conference 2011 – SaX3</ulink></title>
-    <para>Yet another advertisement for openSUSE Conference 2011. Something I’ll be participating in
-      as well. But this time, all the glory belongs to <ulink
-        url="http://news.opensuse.org/2011/07/05/people-of-opensuse-manu-gupta/">Manu Gupta</ulink>.
-      I’ll be just helping out. We will have together presentation about SaX3. Have you already
-      heard about SaX3? If not,continue reading.</para>
-    <para>SaX2 was X configuration tool. It was using xorg.conf file and it allowed people to set
-      various X properties in GUI. It was a user friendly way how to set up Xorg. But X developers
-      made automatic configuration much better and xorg.conf file obsolete. They replaced it with
-      something much better – configuration directory xorg.conf.d. You can place just snippets of
-      original xorg.conf file in there to override some properties. It’s much better,
-      butýunfortunatelyýit also made SaX2 obsolete. And even though automatic configuration is
-      great, there still people that want to tweak just a few details. These people missed SaX2. One
-      of the GSoC projects was to create SaX3 that will be aware of xorg.conf.d directory, respect
-      it and would create just the necessary snippets. So your X configuration will stay as simple
-      as possible, but you’ll also have possibility to configure it easily from GUI.</para>
-    <para>Manu started working on this project. He had to learn a lot of new things, but he put a
-      lot of effort into that and in the end, there is completely new SaX3. It uses <ulink
-        url="http://sourceforge.net/projects/libyui/">libyui</ulink>ýfor GUI toolkits abstraction.
-      It is able to run as Qt, GTK or even ncurses application. It uses <ulink
-        url="http://augeas.net/">Augeas</ulink> to parse xorg.conf.d files and during the summer
-      even the Augeas Xorg lens was improved to support things that were needed. During the SaX3
-      talk, you will learn, what SaX3 can do for you, how it works and also a little bit about
-      interesting technologies beneath.</para>
-    <para>If you are eager to see, what it already can do, you can check <ulink
-        url="http://sysbytes.wordpress.com/tag/sax/">Manu’s blog about SaX3</ulink> and especially
-        <ulink url="http://sysbytes.wordpress.com/2011/07/08/sax3-get-your-hands-dirt/">Get your
-        hand dirty post</ulink></para>
-    <!--($ ld: 19.8.11 sm $)-->
-  </blockquote>
   <!-- More entries here... -->
 </sect1>

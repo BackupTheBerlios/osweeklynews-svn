@@ -20,11 +20,9 @@
   <title>Security Updates</title>
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
-  <!--
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00004.html"
-        >openSUSE-SU-2011:0884-1: important: apache2-mod_fcgid: fixed possible stack overflow due to
-        wrong pointer arithmetic (CVE-2010-3872)</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00016.html"
+        >openSUSE-SU-2011:0935-1: important: mozilla-nss: Update to 3.12.11</ulink></title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
       <col width="1.1*"/>
@@ -39,37 +37,38 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">apache2-mod_fcgid</emphasis>
+            <emphasis role="bold"> mozilla-nss</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:0884-1</td>
+          <td> openSUSE-SU-2011:0935-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Wed, 10 Aug 2011 13:08:16 +0200 (CEST)</td>
+          <td>Tue, 23 Aug 2011 18:08:42 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.3</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>A possible stack overflow in apache2-mod_fcgid due to wrong pointer arithmetic has
-            been fixed. CVE-2010-3872 has been assigned to this issue.</td>
+          <td>The mozilla NSS libraries were updated to 3.12.11 to align with newer Mozilla
+            seamonkey and Firefox releases.</td>
         </tr>
       </tbody>
     </table>
 </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00008.html"
-        >openSUSE-SU-2011:0897-1: critical: flash-player</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00017.html"
+        >openSUSE-SU-2011:0941-1: important: xen: Fixed a security bug and various other
+        bugs</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
-      <col width="1.08*"/>
+      <col width="1.1*"/>
       <col width="1.0*"/>
       <thead>
         <tr>
@@ -81,16 +80,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">flash-player</emphasis>
+            <emphasis role="bold">xen</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:0897-1</td>
+          <td>openSUSE-SU-2011:0941-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Fri, 12 Aug 2011 05:08:25 +0200 (CEST)</td>
+          <td> Wed, 24 Aug 2011 21:08:18 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -98,17 +97,16 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>An update that fixes 13 vulnerabilities is now available. It includes one version
-            update.</td>
+          <td> CVE-2011-1898</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00012.html"
-        >openSUSE-SU-2011:0902-1: important: ecryptfs-utils: Update to fix various symlink race
-        attacks</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-08/msg00019.html"
+        >openSUSE-SU-2011:0943-1: important: libmodplug: Fixed multiple vulnerabilities reported in
+        &lt;= 0.8.8.3</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -124,16 +122,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">ecryptfs-utils</emphasis>
+            <emphasis role="bold"> libmodplug</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td> openSUSE-SU-2011:0902-1</td>
+          <td> openSUSE-SU-2011:0943-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Fri, 12 Aug 2011 21:08:14 +0200 (CEST)</td>
+          <td>Wed, 24 Aug 2011 21:08:24 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -141,9 +139,10 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>fixes several security problems</td>
+          <td>fixes several security problems: CVE-2011-1761 CVE-2011-2911 CVE-2011-2912
+            CVE-2011-2913 CVE-2011-2914 CVE-2011-2915</td>
         </tr>
       </tbody>
     </table>
-  </blockquote> -->
+  </blockquote>
 </sect1>

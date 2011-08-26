@@ -18,6 +18,7 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
+  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
@@ -38,34 +39,9 @@
         try Gwibber with KDE, but I’ve always preferred software native to the desktop environment
         you’re using. With Choqok, you can quickly and easily reach your Twitter stream at any time
         and get notifications that appear right on your desktop. (...)</para>
-<!-- ($ Id: 14.8.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linux.com/learn/tutorials/482178:weekend-project-turn-thunderbird-into-a-groupware-client-with-sogo-connector">Linux.com/Nathan Willis: Weekend Project: Turn Thunderbird into a Groupware Client with SOGo Connector</ulink>
-      </title>
-      <para>Mozilla <ulink url="http://www.mozilla.org/thunderbird/">Thunderbird</ulink> has earned its place as an email app on Linux desktops, and its cross-platform nature makes it a popular choice for Windows and OS X machines as well — particularly when you include the calendaring and task management power of the <ulink url="http://www.mozilla.org/projects/calendar/lightning/">Lightning</ulink> add-on. But uptake in corporate environments has never been its strong suit, largely because it does not include groupware features such as event invitations and shared address books. The <ulink url="http://www.sogo.nu/downloads/frontends.html#c1304">SOGo Connector</ulink> extension adds those features and more, turning Thunderbird into a proper groupware client suitable for business use. (...)</para>
-<!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://lamarque-lvs.blogspot.com/2011/08/wireless-sharing-with-plasma-nm-09.html">Lamarque: Wireless sharing with Plasma NM 0.9</ulink>
-      </title>
-      <para>During <ulink url="https://www.desktopsummit.org/welcome-second-desktop-summit">Desktop Summit</ulink> in Berlin some people asked me how to make wireless sharing work. Connection sharing allows to use a computer as gateway for other computers, NM does that by routing all IP packages from one network interface to the default route of your computer (yes, that is a Masquerate configuration). For example, you can configure your notebook to access Internet through ethernet cable and create a wifi shared connection to allow other computers to access Internet using your notebook&apos;s default route. Your notebook will act like an access point. (...)</para>
-<!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://maketecheasier.com/three-great-mindmapping-tools-for-the-linux-desktop/2011/08/19"
-          >MakeTechEasier/scottnesbitt: Three Great Mindmapping Tools for the Linux
-        Desktop</ulink></title>
-      <para>Sometimes, you run into a problem that you just can’t work through with mental brute
-        force alone. Brainstorming with others works, but that’s not always an option.</para>
-      <para>One popular and effective way of beating a problem or releasing your creativity is
-        mindmapping. While you can go old school and use pen and paper, there is quite a bit of
-        mindmapping software out there for the desktop and on the web.</para>
-      <para>There are a number of really solid mindmapping tools for the Linux desktop. Let’s take a
-        closer look at three of them. (...)</para>
-      <!-- ($ Id: 20.8.11 sm $)-->
     </blockquote>
-  </sect2>
+  </sect2> -->
+  <!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
@@ -73,8 +49,9 @@
         <ulink url="http://www.anchor.com.au/blog/2011/08/awesome-but-often-unknown-linux-commands-and-tools/">Anchor/Keiran Holloway: Awesome but often unknown Linux commands and tools</ulink>
       </title>
       <para>I’ve been working in this industry for a while now and naturally spend a lot of time using Linux on a daily basis. This gives lots of exposure to various Linux commands and tools. That said, I am sometimes surprised when I see, often very experienced system administrators, using somewhat convoluted commands to do something relatively simple using a different tool. (...)</para>
-<!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
+  <!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
@@ -83,22 +60,8 @@
       </title>
       <para>Nowadays, few enterprise websites run without <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink>, the dynamic scripting language that serves as the “P” in the <ulink url="http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29">LAMP</ulink> stack. Coding PHP applications is relatively easy thanks to the abundance of high-quality PHP frameworks available. Here’s a high-level overview of several of these open source frameworks, noting their scalability, maturity, licenses, and commercial support. While they may differ in many ways, they have one thing in common: they cost nothing to try and to use.</para>
       <para>PHP frameworks not only make web development fast and easy but also standardize and streamline the whole development process. They are much more than just snippets of code or libraries you can reuse. They guide you through the whole development process, from laying out file structures to building data connectors and performing unit tests. All of these popular frameworks are object-oriented and follow the Model-View-Controller (<ulink url="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</ulink>) design philosophy. (...)</para>
-<!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://psankar.blogspot.com/2011/08/introducing-find-many-strings-chrome.html">Sankar
-          P: Introducing Find Many Strings - A chrome extension</ulink></title>
-      <para>Of late, I have been reading a lot of code via browser. Sometimes, when evaluating a
-        patch or when reading through open source project sources, I find it very hard to track how
-        variables move across functions/loops. </para>
-      <para>If I am using VIM, I can happily use CTAGS for this. Chrome highlights all the
-        occurrences of the text that you searched for in yellow color. However when you search for
-        another string, the old highlights disappear. It would have been nicer if any new string
-        search starts highlighting in a different color. I could not find any plugin for achieving
-        this, So, I wrote my own Chrome extension for this. (...)</para>
-      <!--($ Id: 20.8.11 sm $)-->
     </blockquote>
-  </sect2>
+  </sect2> -->
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
@@ -117,50 +80,5 @@
         OpenSource clone system (OCS) solution called Clonezilla with unicasting and multicasting!
         (...)</para>
 <!-- ($ Id: 21.8.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://obsforandroid.wordpress.com/2011/08/16/live-upgrade-opensuse-11-3-to-11-4/">Justine Leng: Live Upgrade openSUSE 11.3 to 11.4 </ulink>
-      </title>
-      <para>Doing a live upgrade in openSUSE to the latest version has certain advantages:<itemizedlist>
-          <listitem>
-            <para>You only download the packages that need to be upgraded, saving a lot of
-              bandwidth.</para>
-          </listitem>
-          <listitem>
-            <para>During the upgrade you can still use your system (although this is not
-              recommended); the only downtime will be the reboot after the upgrade.</para>
-          </listitem>
-          <listitem>
-            <para>You do not have to write an ISO image to a DVD. You could also boot from 1) the
-              Internet; or 2) a USB key, and install the rest from the Internet (...)</para>
-          </listitem>
-        </itemizedlist></para>
-<!-- ($ Id: 18.8.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-4/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): Domain control</ulink>
-      </title>
-      <para>In SMB/CIFS parlance, a domain is similar to a workgroup: It&apos;s a collection of related computers, typically existing on a single local network. A domain, however, features a special computer known as a domain controller that manages logons for all the servers in the domain. It also provides a few additional services. Samba can function as a domain controller, but you need to set several Samba options for it to do so. (...)</para>
-<!-- ($ Id: 19.8.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://dkukawka.blogspot.com/2011/08/how-to-get-your-full-disc-space-back-on.html"
-          >Danny Kukawka: How to get your full disc space back on ext filesystems</ulink></title>
-      <para>You may have already wondered why you can't use the full disc space on an ext2/3/4
-        partition? You already seen something like this, where the used and available blocks don't
-        fit the number of blocks on the
-        device/partition:<screen>Filesystem                 1K-blocks   Used    Available Use%
-Mounted on /dev/sdc1       15391664    38184   14571608  1%
-/mnt</screen></para>
-      <para>The reason is: if you create an ext filesystem (no matter if with mkfs or YaST), 5 % of
-        the filesystem get reserved for the super-user to allow e.g. root daemons to continue to
-        write to the partition after unprivileged processes stopped because the partition is
-        full.While this perfectly make sense on system partitions as '/', it makes no sense on data
-        partitions or external media (in the most cases). By this you get e.g. on an external
-        2TB/1.8TiB drive 100GByte/~92GiB, which you can't use as normal user. But you can get this
-        space back. Either you set the number of reserved blocks to zero when you create the file
-        system: (...)</para>
-      <!--($ Id: 20.8.11 sm $)-->
-    </blockquote>
   </sect2>
 </sect1>
