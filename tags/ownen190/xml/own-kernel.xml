@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+  <!ENTITY % myentities SYSTEM "entities.ent">
+  %myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="kernel">
+  <title>Kernel Review</title>
+  <blockquote>
+    <title>
+      <ulink url="http://article.gmane.org/gmane.linux.kernel/1182531">Linus Torvalds: Linux 3.1-rc3</ulink>
+    </title>
+    <para>It&apos;s a day late - I was just too hungry tired after the DM class to
+release it yesterday. But there it is, all fresh and new.</para>
+    <para>And a few thank-yous are in order: things are looking good. The
+diffstat looks reasonable (the one big addition is in Documentation),
+and while I could have wished for even less churn, I&apos;m pretty happy.
+The rc2 to rc3 shortlog is appended, and I think it mostly looks
+pretty reasonable and short. Which is not to say that I&apos;m not hoping
+that things will calm down even further in the later rc&apos;s, but at
+least so far I don&apos;t think I&apos;ve had much reason to complain.</para>
+    <para>Another thank-you goes to Intel: this release has been full of travel
+(happily now all completed), first due to a week of vacation during
+the merge window, and then for my DM class weekends and LinuxCon. And
+the new laptop made it much less painful to do even &quot;allmodconfig&quot;
+builds while on the road.</para>
+    <para>So go out and test. (...)</para>
+<!-- ($ Id: 26.8.11 sat $)-->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://schaiba.wordpress.com/2011/08/27/kernel-weekly-news-27-08-2011/">Rares
+        Aioanei: kernel weekly news – 27.08.2011</ulink>
+    </title>
+    <para>Rares gives his weekly Kernel Review with openSUSE Flavor.</para>
+  </blockquote>
+</sect1>

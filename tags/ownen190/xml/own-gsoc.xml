@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata width="20%" align="center" fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title>
+      <ulink
+        url="http://alex.eftimie.ro/2011/08/22/packagekit-backend-for-software-center-pencils-down-report/"
+        >Alex Eftimie: PackageKit backend for Software Center: pencils down report</ulink>
+    </title>
+    <para><inlinegraphic fileref="http://swarm.cs.pub.ro/~alexef/gsoc/pk-suse/Workspace%201_006.png"
+        width="30%"/></para>
+    <para>Today the official coding period of GSoC 2011 ends. It’s been a four months journey, with
+      challenges, failures and achievements, but nevertheless fun :-) . </para>
+    <para>You may be wondering what is the status of my project; here it goes: current version of
+      Software Center can be tested in openSUSE Factory; it can populate its database with data from
+      an AppStream XML; it shows application information (fetched from the package manager); it
+      installs and removes software, in the same friendly manner the ubuntu does (showing progress,
+      handling dependencies). </para>
+    <para>Moreover, my patches to <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=652256"
+        >gobject-introspection</ulink>, <ulink
+        url="https://gitorious.org/packagekit/packagekit/commit/c2016d35d33a03c481fd0586af26426184dfd758"
+        >PackageKit</ulink> and obviously <ulink
+        url="http://bazaar.launchpad.net/~software-store-developers/software-center/trunk/revision/2146"
+        >software-center</ulink>, are all upstream and released; kudos to the project managers and
+      the community for helping me get them there.</para>
+    <!-- ($ ld: 23.8.11 sm $)-->
+  </blockquote>
+</sect1>
