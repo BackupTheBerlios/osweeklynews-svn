@@ -458,7 +458,9 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-    </sect3> -->    <sect3 role="testing">
+      </sect3> -->    
+    <!--
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
@@ -481,8 +483,8 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <para>Our next IRC meeting will be at 17:00 UTC, September 12 on Channel #opensuse-testing
           on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
           experiences with MS5. </para>
-<!--($ ld: 20.8.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
