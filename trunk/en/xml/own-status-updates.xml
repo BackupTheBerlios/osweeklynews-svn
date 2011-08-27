@@ -44,19 +44,15 @@
     <title>Distribution</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://jaegerandi.blogspot.com/2011/08/opensuse-factory-progress-2011-08-21.html"
-          >Andreas Jaeger: openSUSE Factory Progress 2011-08-21</ulink>
+        <ulink url="http://jaegerandi.blogspot.com/2011/08/opensuse-factory-progress-2011-08-21.html">Andreas Jaeger: openSUSE Factory Progress 2011-08-21</ulink>
       </title>
       <para>August looks like a surprisingly busy month, we already have 709 package checkins and
-        thus I expect we'll beat the 926 from last month. Also, there's a lot to write about since
-        the last <ulink url="http://lizards.opensuse.org/2011/08/05/factory-progress-2011-08-05/"
-          >report</ulink>. </para>
+        thus I expect we&apos;ll beat the 926 from last month. Also, there&apos;s a lot to write about since
+        the last <ulink url="http://lizards.opensuse.org/2011/08/05/factory-progress-2011-08-05/">report</ulink>. </para>
       <para>Note that the Milestone 4 was not really released since Coolo is on vacation and we
         decided to make a soft release (just update via zypper dup) instead of a full release this
         time. </para>
-      <para>A plea: Please help documenting major changes of factory in the <ulink
-          url="http://en.opensuse.org/openSUSE:Upcoming_features">openSUSE wiki</ulink> so that the
+      <para>A plea: Please help documenting major changes of factory in the <ulink url="http://en.opensuse.org/openSUSE:Upcoming_features">openSUSE wiki</ulink> so that the
         marketing team can start speaking about openSUSE 12.1 and does not miss important features!
         (...)</para>
 <!-- ($ ld: 22.8.11 sm $)-->    </blockquote>
@@ -73,7 +69,7 @@
       </listitem>
     </itemizedlist>
   </sect2>
-  <!--
+<!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -91,8 +87,7 @@
         the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
       <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
     </blockquote>
-  </sect2> -->
-  <sect2 role="teamreports">
+  </sect2> -->  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -204,8 +199,7 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -248,8 +242,7 @@
           Balsam Professional is based on openSUSE, so you might well be familiar with many of the
           tools already. (...)</para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -374,14 +367,14 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 360)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 362)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 187)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 188)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -393,13 +386,13 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 162)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 163)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 144)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 145)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -415,7 +408,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 107)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 108)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -428,56 +421,28 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 20.8.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 27.8.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312734">Button to create DHCP server configuration from zero</ulink>
+            <ulink url="https://features.opensuse.org/312756">Installing Opensuse Distro with YAST from source</ulink>
           </title>
-          <para>After manually configuring DHCP in expert mode, sometime I would like to remove all configuration and start from zero in guided mode.</para>
-          <para>Button in expert mode for removing configuration and starting &quot;de nouveau&quot; would benefit.</para>
+          <para>I would like to see a installation option in YAST that would allow me to install update a installed system from source. Maybe using the following steps:</para>
+          <para>1.) Do a normal install from the distribution DVD or a Network install and configure the system as required.</para>
+          <para>2.) Optionally download the sources for each library and application, compile with user specified complier flags, such as CFLAGS=&quot;-mtune=native -march=native -O3&quot;, MAKEOPTS=&quot;-j5&quot; etc.</para>
+          <para>3.) Replace the original vanilla libraries from the distribution DVD and their updates with the complied applications.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312744">Make live ISO of installed system with friendly GUI</ulink>
+            <ulink url="https://features.opensuse.org/312765">Blacklist the pcspkr module by default</ulink>
           </title>
-          <para>If someone wants to create a remaster of openSUSE, he can use SUSE Studio to create something new or kiwi. Kiwi is easy for advanced users.</para>
-          <para>A tool like remastersys (Ubuntu) or mylivecd (PCLinuxOS), are quite easy for a new user.</para>
+          <para>The pcspkr module is used to control the computer&apos;s internal speaker, which is very rarely used on the desktop. It isn&apos;t strong enough to serve as a passable replacement for real sound devices, and it hurts the user experience more than it helps.</para>
+          <para>I have openSUSE installed on two computers, my laptop and desktop (11.3 on the laptop, 11.4/Tumbleweed on the desktop), and on both computers I&apos;ve had to disable the PC speaker because otherwise it would beep very loudly every time I would shut down or restart. It seems to me that this behavior was intended more for server than desktop use.</para>
+          <para>Having to spend the time to learn what the speaker is, what drives it, and how to disable it is obviously not a great experience. I think it would be better for end users to have this module disabled by default, and if any seasoned admins really want it back, they know how to re-enable it.</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312747">Backport fix for Okular printing in KDE4 for KDE 4.7</ulink>
-          </title>
-          <para>Please include this patch <ulink url="http://commits.kde.org/okular/e001fbab55aceef62ad9ca2bb87a170dacfe3fdd">http://commits.kde.org/okular/e001fbab55aceef62ad9ca2bb87a170dacfe3fdd</ulink></para>
-          <para>Kevin Kofler 2011-07-27 23:50:46 wrote:
-I forgot to put in a FIXED-IN tag, so let&apos;s make it clear: This fix will be in
-4.8.0.
-4.7.0 has already been released, and the fix requires new APIs in the Okular
-core, so I&apos;m probably not supposed to backport it for 4.7.x.</para>
-          <para>See <ulink url="https://bugs.kde.org/show_bug.cgi?id=181290#c118">https://bugs.kde.org/show_bug.cgi?id=181290#c118</ulink> </para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312750">Make Yast2 stay open after installing packages</ulink>
-          </title>
-          <para>As we all know YaST2 is the best control center around and as title says, can we make it even better by keeping it open after one or more packages are installed? (just like Synaptic for e.g.).</para>
-          <para>I know this can be done adjusting some setting <ulink url="http://dl.dropbox.com/u/10573557/SUSE%20Misc/yast-at-close-action.jpeg">http://dl.dropbox.com/u/10573557/SUSE%20Misc/yast-at-close-action.jpeg</ulink> but i was thinking if it is possible to make it a default setting for versions to come.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312754">Let&apos;s kick SuSEGreeter, and create a shiny new website instead</ulink>
-          </title>
-          <para>See this discussion before reply:</para>
-          <para><ulink url="http://lists.opensuse.org/opensuse-marketing/2011-07/msg00039.html">http://lists.opensuse.org/opensuse-marketing/2011-07/msg00039.html</ulink>
-</para>
-          <para>========================================================
-
-</para>
-          <para>The goal is to create a start page for our delivered browser instead of SuSEGreeter.</para>
-        </blockquote>
-<!-- ($ ld: 20.8.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 27.8.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -497,23 +462,16 @@ core, so I&apos;m probably not supposed to backport it for 4.7.x.</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/archive/opensuse-testing/2011-08/msg00023.html"
-            >Larry Finger: Weekly News for August 20</ulink>
+          <ulink url="http://lists.opensuse.org/archive/opensuse-testing/2011-08/msg00023.html">Larry Finger: Weekly News for August 20</ulink>
         </title>
         <para>This is a reminder that the Testing Core Team will be holding our 3rd Open Bugs Day on
-          Sunday August 21, 2011 from 0:00 to 23:59 UTC, The web page describing the event is <ulink
-            url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
-            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. </para>
+          Sunday August 21, 2011 from 0:00 to 23:59 UTC, The web page describing the event is <ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. </para>
         <para>To ensure that all the testers are using the same code base, we are making Virtual
           Machines available on our server. For those people that wish to test on their own
-          hardware, there will be KDE and Gnome virtual images available at <ulink
-            url="http://www5.zq1.de/img/">http://www5.zq1.de/img/</ulink>, and distribution
-          snapshots available at <ulink url="http://mirror.zq1.de/opensuse/factory/iso/"
-            >http://mirror.zq1.de/opensuse/factory/iso/</ulink>. The virtual images have been
+          hardware, there will be KDE and Gnome virtual images available at <ulink url="http://www5.zq1.de/img/">http://www5.zq1.de/img/</ulink>, and distribution
+          snapshots available at <ulink url="http://mirror.zq1.de/opensuse/factory/iso/">http://mirror.zq1.de/opensuse/factory/iso/</ulink>. The virtual images have been
           prepared with KVM and tested with VirtualBox, and are compressed to a little over 900 MB.
-          Instructions for using them in a VirtualBox VM are posted at <ulink
-            url="http://en.opensuse.org/openSUSE:Open-Bugs-Day"
-            >http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. </para>
+          Instructions for using them in a VirtualBox VM are posted at <ulink url="http://en.opensuse.org/openSUSE:Open-Bugs-Day">http://en.opensuse.org/openSUSE:Open-Bugs-Day</ulink>. </para>
         <para>The purpose of this OBD is to test the open bugs reported for oS 11.4 to see which of
           them are still affecting 12.1. As there are over 1300 open bugs for 11.4, we have a major
           job to do. If you have any time available on August 21, please join us. Use Channel
