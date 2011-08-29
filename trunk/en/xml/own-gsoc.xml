@@ -25,26 +25,25 @@
   </mediaobject>
   <blockquote>
     <title>
-      <ulink
-        url="http://alex.eftimie.ro/2011/08/22/packagekit-backend-for-software-center-pencils-down-report/"
-        >Alex Eftimie: PackageKit backend for Software Center: pencils down report</ulink>
+      <ulink url="http://sysbytes.wordpress.com/2011/08/28/sax3-status/">Manu Gupta: SaX3 –
+        Status</ulink>
     </title>
-    <para><inlinegraphic fileref="http://swarm.cs.pub.ro/~alexef/gsoc/pk-suse/Workspace%201_006.png"
-        width="30%"/></para>
-    <para>Today the official coding period of GSoC 2011 ends. It’s been a four months journey, with
-      challenges, failures and achievements, but nevertheless fun :-) . </para>
-    <para>You may be wondering what is the status of my project; here it goes: current version of
-      Software Center can be tested in openSUSE Factory; it can populate its database with data from
-      an AppStream XML; it shows application information (fetched from the package manager); it
-      installs and removes software, in the same friendly manner the ubuntu does (showing progress,
-      handling dependencies). </para>
-    <para>Moreover, my patches to <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=652256"
-        >gobject-introspection</ulink>, <ulink
-        url="https://gitorious.org/packagekit/packagekit/commit/c2016d35d33a03c481fd0586af26426184dfd758"
-        >PackageKit</ulink> and obviously <ulink
-        url="http://bazaar.launchpad.net/~software-store-developers/software-center/trunk/revision/2146"
-        >software-center</ulink>, are all upstream and released; kudos to the project managers and
-      the community for helping me get them there.</para>
-    <!-- ($ ld: 23.8.11 sm $)-->
+    <para>The changes I have made in SaX3 in the following week<orderedlist>
+        <listitem>
+          <para>Fixed a few nasty bugs.</para>
+        </listitem>
+        <listitem>
+          <para>The monitor module does not work which works now ( I need to be more careful the
+            future)</para>
+        </listitem>
+        <listitem>
+          <para>Tried porting to openSUSE 11.3 ( Testers Required)</para>
+        </listitem>
+        <listitem>
+          <para>Pushed to factory, but it is hghly recommended to add X11:sax as your project
+            repository for sax until 12.1</para>
+        </listitem>
+      </orderedlist></para>
+    <!-- ($ ld: 29.8.11 sm $)-->
   </blockquote>
 </sect1>

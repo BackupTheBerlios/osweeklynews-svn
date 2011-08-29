@@ -19,13 +19,23 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://blog.crozat.net/2011/08/gnome-30-live-image-release-150.html">Frédéric
-        Crozat: GNOME 3.0 Live image release 1.5.0 available</ulink></title>
-    <para>I just push a new GNOME 3.0 live image labelled as 1.5.0 (yes, I forgot to push 1.4.0
-      after I built it, so we are at 1.5.0 now ;) No big changes, it is based on GNOME 3.0.2 + some
-      additional fixes. </para>
-    <para>As always, it can be downloaded from <ulink url="http://www.gnome.org/getting-gnome/ "
-        >http://www.gnome.org/getting-gnome/ </ulink> (...)</para>
-    <!--($ ld: 24.08.11 sm $)-->
+    <title><ulink url="http://emmes.livejournal.com/10062.html">Matthias Hopf: Network Image
+        Installer</ulink></title>
+    <para>During our work in our preload department at SuSE we have to install our current image on
+      several machines for each image version for smoke testing, which meant burning several DVDs
+      per iteration (and there is typically one iteration per week!).In order to ease this work flow
+      I created a <ulink url="http://kiwi.berlios.de/">kiwi</ulink> image for a CD or an USB stick
+      for installing the latest image via network - the <ulink
+        url="http://www.mshopf.de/proj/netimginst.html">Network Image Installer</ulink>. It's also
+      capable of installing arbitrary openSUSE / Fedora / Ubuntu versions, so you never have to burn
+      another DVD if you have a reasonably fast internet connection. Network detection is automatic,
+      wireless requires the SSID etc. changed in a config file beforehand.</para>
+    <para>Find the sources on <ulink url="http://gitorious.org/netimginst">gitorious</ulink>, I will
+      eventually try to understand the functionality in the openSUSE build service to create images
+      automatically, but for now you'll have to build the image yourself. I'll post when there is a
+      downloadable image available.</para>
+    <para>Now I'm off to <ulink url="http://www.fantasyfilmfest.com/">Fantasy Film Fest</ulink>
+      again.</para>
+    <!--($ ld: 29.08.11 sm $)-->
   </blockquote>
 </sect1>

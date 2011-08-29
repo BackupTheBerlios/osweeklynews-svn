@@ -24,25 +24,46 @@
 
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
     <title>
-            <ulink url="http://dkukawka.blogspot.com/2011/08/update-for-extundelete.html">Danny
-                Kukawka: Update for extundelete</ulink>
+            <ulink
+                url="http://dev-loki.blogspot.com/2011/08/oracle-related-packages-for-opensuse.html"
+                >Pascal Bleser: Oracle related packages for openSUSE</ulink>
         </title>
-        <para>Today I've submitted a new extundelete package to my <ulink
-                url="http://download.opensuse.org/repositories/home:/dkukawka/">repo</ulink> with
-            following fixes:<itemizedlist>
-                <listitem>
-                    <para>added man(8) page to the package</para>
-                </listitem>
-                <listitem>
-                    <para>fixed --help output to print also info about --restore-directory</para>
-                </listitem>
-                <listitem>
-                    <para>added --dump-names option to search for - and print the full name of -
-                        deleted and (potentially fully) recoverable files on a given
-                        partitioný</para>
-                </listitem>
-            </itemizedlist></para>
-        <para>Feel free to test and report problems back. The package is now also part of the
-            filesystems project.</para>
-<!-- ($ ld: 18.8.11 sm $)-->  </blockquote>
+        <para>Petr Vanek and I are maintaining some packages for openSUSE (and SLE) that build
+            against the Oracle Instant Client libraries (I mean Oracle the database). Now, those
+            libraries are not open source in any way, but are <ulink
+                url="http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html"
+                >available from the Oracle TechNet website</ulink>.</para>
+        <para>There are a few open source projects that are of interest, at least for people who
+            have to work with the Oracle database, and we do package a few of them and <ulink
+                url="http://download.yarpen.cz/">Petr makes them available</ulink> in his <ulink
+                url="http://download.yarpen.cz/">repository</ulink>.</para>
+        <para>As of now, they're all built against version 10.2 of Oracle Instant Client, for <ulink
+                url="http://download.yarpen.cz/openSUSE_11.3/">openSUSE 11.3</ulink>, <ulink
+                url="http://download.yarpen.cz/openSUSE_11.4/">openSUSE 11.4</ulink>, <ulink
+                url="http://download.yarpen.cz/openSUSE_Factory">Factory (snapshot)</ulink> and
+                <ulink url="http://download.yarpen.cz/SLE_11/">SLE 11</ulink>.</para>
+<!-- ($ ld: 29.8.11 sm $)-->  </blockquote>
+    <blockquote>
+        <title><ulink
+                url="http://saigkill.homelinux.net/entry/2011/08/28/new-packages-in-the-build-service"
+                >Sascha Manns: New Packages in the Build Service</ulink></title>
+        <para>The last Week was very busy. I filled the Wiki in <ulink url="http://wiki.open-slx.de"
+                >http://wiki.open-slx.de</ulink> with new Articles about Games. You can find it
+            (sadly just in german) there: <ulink url="http://wiki.open-slx.de/Spiele"
+                >http://wiki.open-slx.de/Spiele</ulink>. Now we have <emphasis role="bold">1774
+            </emphasis>Articles round about openSUSE.</para>
+        <para><emphasis role="bold">bleachbit-0.8.8-14.1</emphasis></para>
+        <para>Then i've got a Bugreport <ulink
+                url="https://bugzilla.novell.com/show_bug.cgi?id=712471">bnc#712471</ulink>. Then
+            i've made with help from <ulink url="https://connect.opensuse.org/pg/profile/lwfinger"
+                >Larry Finger</ulink> from the Testing Team a couple of patches. Now after some
+            tries we have now a final patch which we have committed to Factory and to the Upstream
+            Project. They answered and would like to include the Patch into the next Version 0.9.0.
+            This new Patch allows to run bleachbit under Kernel 3.x Series. You can update bleachbit
+            through the "<ulink
+                url="http://download.opensuse.org/repositories/utilities/openSUSE_11.4"
+                >utilities</ulink>" Repository or via <ulink url="http://bit.ly/qG1ps1"
+                >1-Klick</ulink>. (...)</para>
+        <!-- ($ ld: 29.8.11 sm $)-->
+    </blockquote>
 </sect1>
