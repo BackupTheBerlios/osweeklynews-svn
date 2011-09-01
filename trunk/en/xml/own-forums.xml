@@ -20,26 +20,26 @@
   <title>openSUSE Forums</title>
   <blockquote>
     <title>
-      <ulink url="http://forums.opensuse.org/english/get-technical-help-here/multimedia/463864-handbrake-how-do-i-rip-whole-dvd-notifier-quit-announcing-dvd-mounting-dvd.html">Handbrake How do I rip the whole DVD? Notifier quit announcing DVD/mounting DVD.</ulink>
+      <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/464731-gave-myself-shaft.html">Gave myself the shaft</ulink>
     </title>
     <para>
-      Handbrake is an extensive tool to rip DVD's to another file format, amongst other things it can do. The starter of this thread is looking for support in using it, embedding a problem he has with regard to mounting DVD's. A lot of members jump in with advice. A good read for those interested in the features and possibilities of this excellent tool. 
+      Here's what happened: user accepts a kernel update, afterwards needs to reinstall the driver for his NVIDIA graphics card, and to recompile the kernel module for VMware, a virtualization program. No way the system lets him do that. The compiler "gcc" segfaults in all attempts. Nasty, since the user depends on the machine for his work. Read how, in the end, the user himself finds the solution. 
     </para>
   </blockquote>
   <blockquote>
     <title>
-    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/464263-chromium-chrome-broken-packages-do-not-update.html">Chromium/Chrome: broken packages !! Do not update.</ulink>
+    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/pre-release-beta/464785-opensuse-12-1-milestone-5-post-your-experiences.html">openSUSE 12.1 Milestone 5: Post your experiences</ulink>
     </title>
     <para>
-      This is one of the threads in the forums on issues with the Chromium, Google's browser, packages. We decided to warn users not to upgrade, since the released versions (by Google) resulted in broken packages, i.e. software not working as it should. Thanks to the cooperation of some of our memnbers and the interaction with one of the packagers, this didn't last long. If you experience problems with Chromium read this thread, also search the forums for "Chromium" to find the other threads on this subject.
+      Today the official release of Milestone 5 on the road to openSUSE 12.1 was announced. Installation images are available for downloading. Like always we have a thread, still quite empty now, to share user experiences. Interested? Check the thread.
       </para>
   </blockquote>
   <blockquote>
     <title>
-    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/tumbleweed/464190-sound-mic-coming-through-speakers-headphones.html">Sound from mic coming through speakers/headphones</ulink>
+    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/464530-suse-demands-11-4-cd-while-installing-apps.html">Suse Demands 11.4 CD While installing apps</ulink>
     </title>
     <para>
-      This one opens rather funny, if you don't have the problem on your own hardware. Any keystroke of the poster's laptop is picked up by the microphone, and audible through the speakers. It ends with "Well done oldcpu. Bleeding edge but encouraging, and another satisfied user"...
+      This subject is one of the issues we see in the forums on a regular basis: when trying to install/update software, Yast's Software Management prompts the user to insert the install CD/DVD, or gives an error on not being able to read the contents of a repo. Cause: during install the CD/DVD entry in the repolist was not removed (as far as I know it should). Solution: start Yast - Software - Software repositories and remove the CD/DVD entry from the list. After doing so, Software Management will not try to refresh or check the contents of this "repo", and thus the errors will be gone. 
       </para>
   </blockquote>
   <blockquote>
@@ -58,5 +58,5 @@
 	<ulink url="http://forums.opensuse.org/portuguese/">Portuguese</ulink>
 	<ulink url="http://forums.opensuse.org/p-russian/">Pусский (Russian)</ulink>
       </para>
-<!-- ($ ld: 24.08.2011 gl $) -->  </blockquote>
+<!-- ($ ld: 01.09.2011 gl $) -->  </blockquote>
 </sect1>
