@@ -43,22 +43,34 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://progdan.cz/2011/08/akonadi-google-resource-complete-rewrite/">Dan Vratil: Akonadi Google Resource: complete rewrite</ulink>
+        <ulink
+          url="http://trueg.wordpress.com/2011/08/31/nepomuk-frameworks-kdelibs-5-0-what-to-do/"
+          >Nepomuk Frameworks – kdelibs 5.0: What To Do</ulink>
       </title>
-      <para>today I finally pushed a completely new version of the Akonadi Google Resource. Since
-        last update cca 2 months ago I’ve completely rewritten the resources, moving most of the
-        functionality into libKGoogle . The library now provides access to Google services and can
-        be easily used by any other project. So what’s new? A lot of things changed for programmers.
-        I’ve begun to fulfill my threats about providing a C++/Qt library for accessing Google
-        Services. It’s not pure Qt, I’m using some KDE stuff in there, but that will change.</para>
-      <para>LibKGoogle now provides API similar to QNetworkAccessManager (KGoogleAccessManager)
-        through which you can send KGoogleRequest and if it works, you’ll receive a KGoogleReply.
-        Each Google Service is represented by a KGoogleService subclass, implementing XML and/or
-        JSON parser and serializer and providing informations about fetch/create/update URLs. Each
-        object (contact, event, calendar) is represented by KGoogleObject subclass. For now, Event
-        class is implements KCalCore::Event as well, the Calendar and Contact classes provide their
-        own implementation of everything. Porting it to KABC/KCalCore is on TODO. (...)</para>
-<!-- ($ Id: 21.8.11 sm $)-->    </blockquote>
+      <para>Development of kdelibs 5.0 has begun in the <ulink
+          url="http://quickgit.kde.org/?p=kdelibs.git&amp;a=shortlog&amp;h=refs/heads/frameworks"
+          >framework</ulink> branch of its git repository. The main goal for kdelibs 5.0 is that
+        there will be no more kdelibs as it is now. kdelibs (and kde-runtime) will be split up into
+        smaller pieces to lower the barrier for non-KDE developers to use part of the power we as a
+        KDE development community provide. The rough idea is that there will be three groups of
+        libraries/frameworks:</para>
+      <orderedlist>
+        <listitem>
+          <para><emphasis role="italic">Tier 1</emphasis>: components which only depend on Qt and no
+            other lib/component from KDE.</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="italic">Tier 2</emphasis>: components which depend on Qt and other
+            libraries from Tier 1.</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="italic">Tier 3</emphasis>: components which depend on
+            anything.</para>
+        </listitem>
+      </orderedlist>
+      <para>This of course includes Nepomuk and is a great opportunity for us to reorganize code and
+        get rid of deprecated junk we needed to keep around for binary compatibility.</para>
+<!-- ($ Id: 1.9.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>

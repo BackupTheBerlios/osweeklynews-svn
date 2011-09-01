@@ -58,18 +58,28 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.drbill.cc/2011/08/20/geek-software-of-the-week-clonezilla/">Dr. Bill: Geek Software of the Week: Clonezilla! </ulink>
+        <ulink
+          url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-102-3/index.html?ca=drs-"
+          >ibm-developerworks/Ian Shields: Learn Linux, 101: Manage shared libraries</ulink>
       </title>
-      <para>This is <emphasis role="bold">AWESOME!</emphasis> Open Source, <emphasis role="bold">FREE</emphasis>, and it handles nearly everything that you need for disk imaging! Also,
-        there is a FREE Server Version as well as the regular PC Client Version!</para>
-      <para><ulink url="http://clonezilla.org/">Clonezilla – The Free and Open Source Software for Disk Imaging and Cloning</ulink></para>
-      <para>You’re probably familiar with the popular proprietary commercial package Norton Ghost.
-        The problem with these kind of software packages is that it takes a lot of time to massively
-        clone systems to many computers. You’ve probably also heard of Symantec’s solution to this
-        problem, Symantec Ghost Corporate Edition with multicasting. Well, now there is an
-        OpenSource clone system (OCS) solution called Clonezilla with unicasting and multicasting!
-        (...)</para>
-<!-- ($ Id: 21.8.11 sm $)-->    </blockquote>
+      <para><emphasis role="bold">Overview</emphasis></para>
+      <para>In this article, learn to find and load the shared libraries that your Linux programs
+        need. Learn to: </para>
+      <itemizedlist>
+        <listitem>
+          <para>Determine which libraries a program needs</para>
+        </listitem>
+        <listitem>
+          <para>Know how the system finds shared libraries</para>
+        </listitem>
+        <listitem>
+          <para>Load shared libraries</para>
+        </listitem>
+      </itemizedlist>
+      <para>This article helps you prepare for Objective 102.3 in Topic 102 of the Linux
+        Professional Institute's Junior Level Administration (LPIC-1) exam 101. The objective has a
+        weight of 1. (...)</para>
+<!-- ($ Id: 01.09.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://beginlinux.com/desktop/opensuse/configuring-the-dhcp-server">BeginLinux: Configuring the DHCP Server</ulink>
