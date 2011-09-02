@@ -386,13 +386,13 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 163)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 164)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 145)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 144)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -421,28 +421,26 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 27.8.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 3.9.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312756">Installing Opensuse Distro with YAST from source</ulink>
+            <ulink url="https://features.opensuse.org/312775">Add support of Atheros AR81Family NIC</ulink>
           </title>
-          <para>I would like to see a installation option in YAST that would allow me to install update a installed system from source. Maybe using the following steps:</para>
-          <para>1.) Do a normal install from the distribution DVD or a Network install and configure the system as required.</para>
-          <para>2.) Optionally download the sources for each library and application, compile with user specified complier flags, such as CFLAGS=&quot;-mtune=native -march=native -O3&quot;, MAKEOPTS=&quot;-j5&quot; etc.</para>
-          <para>3.) Replace the original vanilla libraries from the distribution DVD and their updates with the complied applications.</para>
+          <para>Please add support of Atheros AR81Family network cards into DVD. There is a existing kernel module for that (atl1e for Atheros AR8151), it can be found in file: AR81Family-Linux-v1.0.1.9.tar.gz (on first page when googled).
+I was a little stacked when i installed OpenSuSe 11.4 without network running. I encounter AR8151 NIC already on 2 newer devices so i think it will become really common. (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312765">Blacklist the pcspkr module by default</ulink>
+            <ulink url="https://features.opensuse.org/312776">Recent PHPUnit Test Ssuite</ulink>
           </title>
-          <para>The pcspkr module is used to control the computer&apos;s internal speaker, which is very rarely used on the desktop. It isn&apos;t strong enough to serve as a passable replacement for real sound devices, and it hurts the user experience more than it helps.</para>
-          <para>I have openSUSE installed on two computers, my laptop and desktop (11.3 on the laptop, 11.4/Tumbleweed on the desktop), and on both computers I&apos;ve had to disable the PC speaker because otherwise it would beep very loudly every time I would shut down or restart. It seems to me that this behavior was intended more for server than desktop use.</para>
-          <para>Having to spend the time to learn what the speaker is, what drives it, and how to disable it is obviously not a great experience. I think it would be better for end users to have this module disabled by default, and if any seasoned admins really want it back, they know how to re-enable it.</para>
+          <para>The currently available version of phpunit is old and essentially bitrot.
+The distribution model has changed to pear.</para>
+          <para>I am in the process of adding the current phpunit suite and its dependencies to factory.</para>
         </blockquote>
-<!-- ($ ld: 27.8.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 3.9.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -458,8 +456,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
@@ -484,8 +481,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
           experiences with MS5. </para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="translationteam">
+    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
