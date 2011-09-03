@@ -39,13 +39,14 @@
       </title>
       <para>We are pleased to announce the Desktop Summit social events, bringing even more excitement and fun to the Conference program. The social events vary from sports to parties, and will take place throughout the week in different locations in Berlin. They will provide opportunities for attendees to get together informally while enjoying foods and drinks provided by our sponsors—Intel, Collabora, SUSE, Igalia and corporate partner, c-base. (...)</para>
     </blockquote>
-    </sect2>-->  <sect2>
+    </sect2>-->  
+  <sect2>
     <title>Reports</title>
     <blockquote>
       <title>
         <ulink
           url="http://trueg.wordpress.com/2011/08/31/nepomuk-frameworks-kdelibs-5-0-what-to-do/"
-          >Nepomuk Frameworks – kdelibs 5.0: What To Do</ulink>
+          >Sebastian Trüg: Nepomuk Frameworks – kdelibs 5.0: What To Do</ulink>
       </title>
       <para>Development of kdelibs 5.0 has begun in the <ulink
           url="http://quickgit.kde.org/?p=kdelibs.git&amp;a=shortlog&amp;h=refs/heads/frameworks"
@@ -70,7 +71,8 @@
       </orderedlist>
       <para>This of course includes Nepomuk and is a great opportunity for us to reorganize code and
         get rid of deprecated junk we needed to keep around for binary compatibility.</para>
-<!-- ($ Id: 1.9.11 sm $)-->    </blockquote>
+      <!-- ($ Id: 1.9.11 sm $)-->    
+    </blockquote>
     <blockquote>
       <title><ulink url="http://www.layt.net/john/blog/odysseus/tablet_fun_and_games">odysseus
           blog/John Layt: Tablet Fun and Games</ulink></title>
@@ -89,6 +91,7 @@
       <!-- ($ Id: 3.9.11 sm $)-->
     </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
@@ -102,7 +105,7 @@
         operating system, he just wanted to explore the capabilities of his PC&apos;s 386 processor.
         Eventually, his memory management, process switching and I/O experiments developed into
         something that resembled a rudimentary operating system kernel. (...)</para>
-<!-- ($ ld: 26.8.11 sm $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://arstechnica.com/open-source/news/2011/08/march-of-the-penguin-ars-looks-back-at-20-years-of-linux.ars">arstechnica/Ryan Paul: March of the Penguin: Ars looks back at 20 years of Linux</ulink>
@@ -115,7 +118,7 @@
         software ever developed. Over the past two decades, it has grown from a humble hobby project
         into a global phenomenon that runs on everything from low-cost e-book readers to a majority
         of the world&apos;s supercomputers. Here&apos;s how it grew.</para>
-<!-- ($ ld: 26.8.11 sm $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.makeuseof.com/tag/kmail-kind-email-client-kde-linux/">MakeUseOf/Danny Stieben: KMail – A Different Kind Of Email Client For KDE</ulink>
@@ -127,7 +130,7 @@
         the two most popular being the<ulink url="http://www.makeuseof.com/tags/gmail/">Gmail</ulink> website and the<ulink url="http://www.makeuseof.com/tags/thunderbird/">Thunderbird</ulink>desktop app.</para>
       <para>Today we’ll be looking at a top KDE choice that has plenty to offer for those of you who
         crave some power and control over their applications.</para>
-<!-- ($ ld: 26.8.11 sm $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink
@@ -140,7 +143,7 @@
         For one thing, they changed the interface to more closely match the interface for static
         playlists. See:</para>
       <para><inlinegraphic fileref="http://server.ericsbinaryworld.com/blog/wp-content/uploads/2011/08/amarok-newdynamicinterface1-500x216.png"/></para>
-<!-- ($ ld: 26.8.11 sm $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://techcrunch.com/2011/08/21/linuxcon-open-source-is-an-ecosystem-not-a-zero-sum-game/">TechCrunch/Scott Merrill: LinuxCon: Open Source is an Ecosystem, not a Zero Sum Game</ulink>
@@ -148,7 +151,7 @@
       <para>Linux and open source development is not a zero sum game. This was the explicit message from Ubuntu Technical Architect Allison Randal’s keynote speech at LinuxCon, but the sentiment had been articulated in a number of ways all week long from everyone here. The processes by which a company makes great open source software improve the world for everyone.</para>
       <para>(...)</para>
       <para>There are many ways to thrive within the open source ecosystem. Whether its an unwavering dedication to kernel excellence (a la Linus Torvalds and Greg Kroah-Hartman) or a dedication to producing viable, usable tools for everyone to use to avoid reinventing the wheel. The <ulink url="http://www.yoctoproject.org/">Yocto project</ulink> is working on this for the embedded space, just as SUSE, under the fresh leadership of Attachmate, is making available their <ulink url="http://openbuildservice.org/">Open Build Service</ulink> to help people roll packages for multiple distributions. SUSE is also sharing their <ulink url="http://susestudio.com/">SUSE Studio</ulink> to allow ISVs and companies to develop and maintain their own Linux build for use in appliances and “golden master” images. You don’t have to be a SUSE customer to use these tools. (...)</para>
-<!-- ($ ld: 26.8.11 sat $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://www.fsf.org/news/android-termination-upgrade-gplv3">Free Software Foundation/Brett Smith: Android GPLv2 termination worries: one more reason to upgrade to GPLv3</ulink>
@@ -156,18 +159,18 @@
       <para><emphasis role="bold">Distributors lose their rights when they violate GPLv2, but the Free Software Foundation is more forgiving in its license enforcement to encourage continued participation in the free software community. GPLv3 has improved termination provisions to codify this approach, giving developers one more reason to upgrade.</emphasis></para>
       <para>Thanks to Android&apos;s commercial success, the kernel Linux, which is released under the GNU General Public License (GPL) version 2, is being distributed more than ever before. Whenever someone distributes GPL-covered software, they must follow a few conditions set forth in the license. These conditions try to give anyone who receives the software both the legal permission and the practical tools necessary to change and share the software themselves if they wish.</para>
       <para>Not all of the companies that distribute Android heed these conditions. We&apos;ve witnessed an uptick in GPL violation reports—some convincing, others incomplete or misinformed—against these vendors. We generally can&apos;t pursue these violations directly, because only copyright holders can enforce free software licenses in most countries, and few Android devices use FSF-copyrighted code. However, people still seek out our opinions about the relevant parts of the GPL, and that discussion has recently turned to GPLv2&apos;s termination provisions. Section 4 of the license says, “You may not copy, modify, sublicense, or distribute the Program except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense or distribute the Program is void, and will automatically terminate your rights under this License.” (...)</para>
-<!-- ($ ld: 26.8.11 sat $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://dasublogbyprashanth.blogspot.com/2011/08/revisited-opensuse-114-gnome.html">Das U-Blog/Prashanth Venkataram: Revisited: openSUSE 11.4 GNOME</ulink>
       </title>
       <para>If you guessed again that there isn&apos;t much else to write about, you&apos;d be right! That&apos;s why I&apos;m looking at openSUSE 11.4 GNOME today.</para>
       <para>A few months ago, I took a look at openSUSE 11.4 KDE. Before that, I had compared openSUSE 11.3 KDE to other distributions that primarily used KDE. I found that version 11.4 was a dramatic improvement over version 11.3, to the point where I heartily recommended it to anyone who wanted to try it. It was fairly fast, stable, looked great, and had or could easily get all the applications I wanted. But to call openSUSE a primarily KDE distribution is slightly misleading, because while openSUSE does indeed try to promote KDE a little more, it puts just as much effort into making the GNOME edition a unique experience as well. Plus, the developers that created openSUSE also created Mono, which is basically the C# programming language for Linux, and helped develop the applications written in it that are now popularly used in many GNOME distributions, such as the Evolution mail client (UPDATE: Evolution is not written in Mono, though it was developed by the same group/a group close to that one that developed openSUSE — thanks to an anonymous reader for the correction), Tomboy note-taking application, F-Spot photo manager, and GNOME-Do launcher. So I figured it&apos;s time to see what openSUSE GNOME is really like. (...)</para>
-<!-- ($ ld: 26.8.11 sat $)-->    </blockquote>
+   </blockquote>
     <blockquote>
       <title><ulink url="http://www.cnn.com/2011/TECH/gaming.gadgets/08/25/linux.20/index.html"
           >CNN/Mark Milian: At 20, Linux is invisible, ubiquitous</ulink></title>
-      <para><emphasis role="bold">San Francisco (CNN)</emphasis> -- Ross Turk would be happy to
+      <para><emphasis role="bold">San Francisco (CNN)</emphasis> Ross Turk would be happy to
         explain the tattoo on his arm.</para>
       <para>By now, he's used to the penguin being met with bewildered stares. It represents, as
         he'd tell you, the Linux computing software, not the slightly less obscure character from
@@ -175,9 +178,8 @@
       <para>"A lot of people see it and they think it's Chilly Willy or something," the West
         Hollywood, California, man lamented in a recent interview. "The Linux logo is still kind of
         grass-roots." (...)</para>
-      <!--($ ld: 26.8.11 sm $)-->
     </blockquote>
-  </sect2>
+  </sect2> -->
 <!--
   <sect2>
     <title>Warning!</title>
@@ -198,4 +200,5 @@
       </title>
       <para/>
   </blockquote>
-</sect2> --></sect1>
+  </sect2> -->
+</sect1>

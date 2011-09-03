@@ -78,4 +78,54 @@
       directly from Oracle.</para>
     <!--($ ld: 1.09.11 sm $)-->
   </blockquote>
+  <blockquote>
+    <title><ulink url="http://emmes.livejournal.com/10448.html">Matthias Hopf: Bye bye,
+      SUSE...</ulink></title>
+    <para>Yesterday was my last working day at <ulink url="http://www.suse.com/">SuSE Linux
+        Products</ulink>. After exactly 7 years of working for this <ulink
+        url="http://www.opensuse.org">awesome Linux distribution</ulink> there was an opportunity I
+      couldn't refuse. I made innumerable friends in this company (and it's the people that define a
+      company!), and there were many great moments that will stick in my memory forever <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://l-stat.livejournal.com/img/mood/ibrad/biggrin.gif"/>
+        </imageobject>
+      </mediaobject>.Now I'm moving (back) to academia, and will start teaching and researching at
+      the <ulink url="http://www.ohm-hochschule.de">Georg-Simon-Ohm University of Applied
+        Science</ulink>, as "Professor for Applied Computer Science" (which is the official job
+      title).Currently, it's the free period of the summer semester, and the University is almost
+      deserted. I'm currently only starting to get used to the new environment, prepare courses,
+      meet with other professors, etc.I'm pretty excited about the new opportunities in this
+      position, and will keep you posted how everything turns out!Now back to <ulink
+        url="http://www.fantasyfilmfest.com/">Fantasy Film Fest</ulink> again ;-)</para>
+    <!--($ ld: 3.9.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+      url="http://lslezak.blogspot.com/2011/09/improved-disk-usage-estimation-in-yast.html"
+      >Ladislav Slezak: Improved Disk Usage Estimation in YaST Installer</ulink></title>
+    <para><emphasis role="bold">Disk Usage</emphasis></para>
+    <para>YaST installer estimates used disk space in the final installed system. This is possible
+      thanks to the disk usage metadata in installation repository (located in file
+      suse/setup/descr/packages.DU.gz). </para>
+    <para>This file contains disk usage statistics for every package, so YaST needs just to sum them
+      for all selected packages. (Actually it's slightly more complicated, the disk usage is stored
+      per directory, so YaST/libzypp has to sum it up according to the proposed disk partitioning.
+      Imagine you have separate /usr or /boot partition...) (...)</para>
+    <!--($ ld: 3.9.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+      url="http://kobliha-suse.blogspot.com/2011/09/adding-several-repositories-with-single.html"
+      >Lukas Ocilka: Adding Several Repositories with a Single Installation URL</ulink></title>
+    <para>This is a simple but quite powerful feature of installation. By using a modified
+      installation repository you can add several other repositories automatically (or let user
+      decide which repositories to add). The only thing you need to do is to create an <emphasis
+        role="bold">add_on_products.xml</emphasis> file describing all the additional repositories
+      and add it either to root of the installation repository or root of the installation
+      system.</para>
+    <para>Installation repository can be easily modified just by adding the file there, installation
+      system (inst-sys) can be easily extended by Linuxrc <ulink
+        url="http://en.opensuse.org/SDB:Linuxrc#p_driverupdate">DriverUpdate</ulink>. (...)</para>
+    <!--($ ld: 3.9.11 sm $)-->
+  </blockquote>
 </sect1>

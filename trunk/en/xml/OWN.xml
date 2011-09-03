@@ -19,9 +19,10 @@
 <article class="journalarticle">
   <title>openSUSE Weekly News</title>
   <articleinfo>
-<!-- Maybe date and/or pubdate might be useful: -->    <date>2011-8-27</date>
-<!-- When it's published, date automatically inserted: -->    <pubdate>
-<?dbtimestamp format="Y-m-d" ?>    </pubdate>
+<!-- Maybe date and/or pubdate might be useful: -->    
+    <date>2011-8-27</date>
+<!-- When it's published, date automatically inserted: -->    
+    <pubdate><?dbtimestamp format="Y-m-d" ?></pubdate>
 <!-- When it's published -->    <edition>&edition;</edition>
     <authorgroup>
       <author>
@@ -48,12 +49,12 @@
     </legalnotice>
   </articleinfo>
   <abstract>
-    <para>We are pleased to announce our &edition;th issue of the openSUSE Weekly News.</para>
+    <para>We are pleased to announce our &edition; issue of the openSUSE Weekly News.</para>
     <para/>
     <para>You can also read this issue in other formats <ulink url="http://en.opensuse.org/Archive:Weekly_news_other_sources">here</ulink>.</para>
     <para>Enjoy reading :-)</para>
   </abstract>
-<!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-announcements.xml"/>  -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-announcements.xml"/>
   <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-belection.xml"/> -->  
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-osc.xml"/>
 <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-hackweek.xml"/> -->
@@ -62,10 +63,10 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-status-updates.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-community.xml"/>
 <!-- xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-updates.xml"/> -->  
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-games.xml"/>
+<!--<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-games.xml"/> -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-security.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-kernel.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-tipsandtricks.xml"/>
+<!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-tipsandtricks.xml"/> -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-planetsuse.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-forums.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="own-ontheweb.xml"/>
