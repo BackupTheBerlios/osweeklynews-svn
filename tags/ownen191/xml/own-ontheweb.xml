@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! --><!--
+  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.samba.org/samba/news/releases/3.6.0.html">Samba Team Releases Version 3.6</ulink>
+      </title>
+      <para>The Samba Team is proud to announce the release of Samba 3.6, a major new release of the award-winning Free Software file, print and authentication server suite for Microsoft Windows® clients.</para>
+      <para><emphasis role="bold">The First Free Software SMB2 Server</emphasis></para>
+      <para>Samba 3.6 includes the first Free Software implementation of Microsoft&apos;s new SMB2 file serving protocol. SMB2 within Samba is implemented with a brand new asynchronous server architecture, allowing Samba to display the performance enhancements SMB2 brings to Microsoft networking technology.</para>
+      <para>Samba&apos;s new SMB2 server has been tested by major vendors and has been able to double the performance of some network applications when run in conjunction with Microsoft Windows 7® clients. (...)</para>
+    </blockquote>
+  </sect2> --><!--
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://dot.kde.org/2011/07/23/social-events-desktop-summit">Social Events at the Desktop Summit</ulink>
+      </title>
+      <para>We are pleased to announce the Desktop Summit social events, bringing even more excitement and fun to the Conference program. The social events vary from sports to parties, and will take place throughout the week in different locations in Berlin. They will provide opportunities for attendees to get together informally while enjoying foods and drinks provided by our sponsors—Intel, Collabora, SUSE, Igalia and corporate partner, c-base. (...)</para>
+    </blockquote>
+    </sect2>-->  
+  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://trueg.wordpress.com/2011/08/31/nepomuk-frameworks-kdelibs-5-0-what-to-do/"
+          >Sebastian Trüg: Nepomuk Frameworks – kdelibs 5.0: What To Do</ulink>
+      </title>
+      <para>Development of kdelibs 5.0 has begun in the <ulink
+          url="http://quickgit.kde.org/?p=kdelibs.git&amp;a=shortlog&amp;h=refs/heads/frameworks"
+          >framework</ulink> branch of its git repository. The main goal for kdelibs 5.0 is that
+        there will be no more kdelibs as it is now. kdelibs (and kde-runtime) will be split up into
+        smaller pieces to lower the barrier for non-KDE developers to use part of the power we as a
+        KDE development community provide. The rough idea is that there will be three groups of
+        libraries/frameworks:</para>
+      <orderedlist>
+        <listitem>
+          <para><emphasis role="italic">Tier 1</emphasis>: components which only depend on Qt and no
+            other lib/component from KDE.</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="italic">Tier 2</emphasis>: components which depend on Qt and other
+            libraries from Tier 1.</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="italic">Tier 3</emphasis>: components which depend on
+            anything.</para>
+        </listitem>
+      </orderedlist>
+      <para>This of course includes Nepomuk and is a great opportunity for us to reorganize code and
+        get rid of deprecated junk we needed to keep around for binary compatibility.</para>
+      <!-- ($ Id: 1.9.11 sm $)-->    
+    </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.layt.net/john/blog/odysseus/tablet_fun_and_games">odysseus
+          blog/John Layt: Tablet Fun and Games</ulink></title>
+      <para>I've had a little time to play with my ExoPC tablet kindly provided by Intel, and after
+        a brief look at the MeeGo/Intel tablet UX decided that Plasma Active was the way to go
+        (sorry Intel!). The MeeGo UX is far from complete and the lack of applications made the
+        tablet next to useless for anything besides basic web-surfing. Plasma Active, on the other
+        hand, is a full openSuse and KDE install and so has many apps to play with. Plasma Active
+        itself is remarkably usable already and has some nice features that actually work the way I
+        expect a tablet to function. It's amazing how far the Active team has come in such a short
+        time and that's a tribute to both the Plasma architecture that Aaron put in place and the
+        flexibility of our Platform/Frameworks. If only Intel had approaced KDE first...
+        (...)</para>
+      <para><emphasis role="bold">Related Posts</emphasis>: <ulink
+          url="http://pusling.com/blog/?p=206">Plasma Active Experience</ulink></para>
+      <!-- ($ Id: 3.9.11 sm $)-->
+    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.h-online.com/open/features/The-history-of-Linux-1331088.html"
+          >h-online/Dr. Oliver Diedrich: The history of Linux</ulink>
+      </title>
+      <para><emphasis role="bold">When Linus Torvalds released Linux 0.01 on the internet 20 years ago, his idea of a free Unix clone to which anyone could contribute touched a creativenerve in people. Today, it would be impossible to imagine an IT world without Linux.</emphasis></para>
+      <para>It has been twenty years since Linus Torvalds programmed the first few lines of what
+        would become the Linux kernel. An IT student at the time, Torvalds wasn&apos;t yet thinking of an
+        operating system, he just wanted to explore the capabilities of his PC&apos;s 386 processor.
+        Eventually, his memory management, process switching and I/O experiments developed into
+        something that resembled a rudimentary operating system kernel. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://arstechnica.com/open-source/news/2011/08/march-of-the-penguin-ars-looks-back-at-20-years-of-linux.ars">arstechnica/Ryan Paul: March of the Penguin: Ars looks back at 20 years of Linux</ulink>
+      </title>
+      <para>The Linux kernel was originally created by Linus Torvalds, a Finnish computer science
+        student, and first announced to the world on August 25, 1991—exactly 20 years ago today. At
+        the time, Torvalds described his work as a &quot;hobby&quot; and contended that it would not be &quot;big
+        and professional&quot; like the GNU project.</para>
+      <para>But the Linux kernel turned out to be one of the most significant pieces of open source
+        software ever developed. Over the past two decades, it has grown from a humble hobby project
+        into a global phenomenon that runs on everything from low-cost e-book readers to a majority
+        of the world&apos;s supercomputers. Here&apos;s how it grew.</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.makeuseof.com/tag/kmail-kind-email-client-kde-linux/">MakeUseOf/Danny Stieben: KMail – A Different Kind Of Email Client For KDE</ulink>
+      </title>
+      <para>If you’ve been following the pretty intense battles between the many different browsers,
+        as well as the subtle but still important operating system battles, you’ll know that people
+        are definitely scattered all over the place with their favorite choices. Email clients
+        aren’t any exception either, as you’ll find people use various tools to manage their email,
+        the two most popular being the<ulink url="http://www.makeuseof.com/tags/gmail/">Gmail</ulink> website and the<ulink url="http://www.makeuseof.com/tags/thunderbird/">Thunderbird</ulink>desktop app.</para>
+      <para>Today we’ll be looking at a top KDE choice that has plenty to offer for those of you who
+        crave some power and control over their applications.</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://server.ericsbinaryworld.com/blog/2011/08/26/testing-out-amarok-2-4-3s-dynamic-playlists/"
+          >It’s A Binary World 2.0/Eric Mesa: Testing out Amarok 2.4.3′s Dynamic Playlists</ulink>
+      </title>
+      <para>I’ve spoken about Amarok’s Dynamic Playlists <ulink url="http://server.ericsbinaryworld.com/blog/2010/11/26/amarok-and-my-stats-fail/">before</ulink>. Despite my best attempts, I couldn’t quite get it to work correctly.
+        However, Amarok 2.4.3 has revamped the dynamic playlists engine and interface, so I wanted
+        to check it out and see if it worked better as well as testing out some of the new features.
+        For one thing, they changed the interface to more closely match the interface for static
+        playlists. See:</para>
+      <para><inlinegraphic fileref="http://server.ericsbinaryworld.com/blog/wp-content/uploads/2011/08/amarok-newdynamicinterface1-500x216.png"/></para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://techcrunch.com/2011/08/21/linuxcon-open-source-is-an-ecosystem-not-a-zero-sum-game/">TechCrunch/Scott Merrill: LinuxCon: Open Source is an Ecosystem, not a Zero Sum Game</ulink>
+      </title>
+      <para>Linux and open source development is not a zero sum game. This was the explicit message from Ubuntu Technical Architect Allison Randal’s keynote speech at LinuxCon, but the sentiment had been articulated in a number of ways all week long from everyone here. The processes by which a company makes great open source software improve the world for everyone.</para>
+      <para>(...)</para>
+      <para>There are many ways to thrive within the open source ecosystem. Whether its an unwavering dedication to kernel excellence (a la Linus Torvalds and Greg Kroah-Hartman) or a dedication to producing viable, usable tools for everyone to use to avoid reinventing the wheel. The <ulink url="http://www.yoctoproject.org/">Yocto project</ulink> is working on this for the embedded space, just as SUSE, under the fresh leadership of Attachmate, is making available their <ulink url="http://openbuildservice.org/">Open Build Service</ulink> to help people roll packages for multiple distributions. SUSE is also sharing their <ulink url="http://susestudio.com/">SUSE Studio</ulink> to allow ISVs and companies to develop and maintain their own Linux build for use in appliances and “golden master” images. You don’t have to be a SUSE customer to use these tools. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.fsf.org/news/android-termination-upgrade-gplv3">Free Software Foundation/Brett Smith: Android GPLv2 termination worries: one more reason to upgrade to GPLv3</ulink>
+      </title>
+      <para><emphasis role="bold">Distributors lose their rights when they violate GPLv2, but the Free Software Foundation is more forgiving in its license enforcement to encourage continued participation in the free software community. GPLv3 has improved termination provisions to codify this approach, giving developers one more reason to upgrade.</emphasis></para>
+      <para>Thanks to Android&apos;s commercial success, the kernel Linux, which is released under the GNU General Public License (GPL) version 2, is being distributed more than ever before. Whenever someone distributes GPL-covered software, they must follow a few conditions set forth in the license. These conditions try to give anyone who receives the software both the legal permission and the practical tools necessary to change and share the software themselves if they wish.</para>
+      <para>Not all of the companies that distribute Android heed these conditions. We&apos;ve witnessed an uptick in GPL violation reports—some convincing, others incomplete or misinformed—against these vendors. We generally can&apos;t pursue these violations directly, because only copyright holders can enforce free software licenses in most countries, and few Android devices use FSF-copyrighted code. However, people still seek out our opinions about the relevant parts of the GPL, and that discussion has recently turned to GPLv2&apos;s termination provisions. Section 4 of the license says, “You may not copy, modify, sublicense, or distribute the Program except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense or distribute the Program is void, and will automatically terminate your rights under this License.” (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://dasublogbyprashanth.blogspot.com/2011/08/revisited-opensuse-114-gnome.html">Das U-Blog/Prashanth Venkataram: Revisited: openSUSE 11.4 GNOME</ulink>
+      </title>
+      <para>If you guessed again that there isn&apos;t much else to write about, you&apos;d be right! That&apos;s why I&apos;m looking at openSUSE 11.4 GNOME today.</para>
+      <para>A few months ago, I took a look at openSUSE 11.4 KDE. Before that, I had compared openSUSE 11.3 KDE to other distributions that primarily used KDE. I found that version 11.4 was a dramatic improvement over version 11.3, to the point where I heartily recommended it to anyone who wanted to try it. It was fairly fast, stable, looked great, and had or could easily get all the applications I wanted. But to call openSUSE a primarily KDE distribution is slightly misleading, because while openSUSE does indeed try to promote KDE a little more, it puts just as much effort into making the GNOME edition a unique experience as well. Plus, the developers that created openSUSE also created Mono, which is basically the C# programming language for Linux, and helped develop the applications written in it that are now popularly used in many GNOME distributions, such as the Evolution mail client (UPDATE: Evolution is not written in Mono, though it was developed by the same group/a group close to that one that developed openSUSE — thanks to an anonymous reader for the correction), Tomboy note-taking application, F-Spot photo manager, and GNOME-Do launcher. So I figured it&apos;s time to see what openSUSE GNOME is really like. (...)</para>
+   </blockquote>
+    <blockquote>
+      <title><ulink url="http://www.cnn.com/2011/TECH/gaming.gadgets/08/25/linux.20/index.html"
+          >CNN/Mark Milian: At 20, Linux is invisible, ubiquitous</ulink></title>
+      <para><emphasis role="bold">San Francisco (CNN)</emphasis> Ross Turk would be happy to
+        explain the tattoo on his arm.</para>
+      <para>By now, he's used to the penguin being met with bewildered stares. It represents, as
+        he'd tell you, the Linux computing software, not the slightly less obscure character from
+        1950s cartoons.</para>
+      <para>"A lot of people see it and they think it's Chilly Willy or something," the West
+        Hollywood, California, man lamented in a recent interview. "The Linux logo is still kind of
+        grass-roots." (...)</para>
+    </blockquote>
+  </sect2> -->
+<!--
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.theregister.co.uk/2011/08/13/oscommerce_infection_threatens_web/">The Register/Dan Goodin: Attack on open-source web app keeps growing</ulink>
+      </title>
+      <para>An attack targeting sites running unpatched versions of the osCommerce web application kept growing virally this week, more than three weeks after a security firm warned it was being used to install malware on the computers of unsuspecting users.</para>
+      <para>When researchers from Armorize first spotted the exploit on July 24, they estimated it had injected malicious links into about 91,000 webpages. By early last week, The Reg reported it had <ulink url="http://www.theregister.co.uk/2011/08/02/mass_injection_attack_goes_viral/">taken hold of almost 5 million pages</ulink>. At time of writing, Google searches <ulink url="https://encrypted.google.com/#num=100&amp;hl=en&amp;safe=off&amp;q=%22http:%2F%2Fwillysy.com%2Fimages%2Fbanners%2F%22&amp;oq=%22http:%2F%2Fwillysy.com%2Fimages%2Fbanners%2F%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=3751l5401l10l6328l9l7l0l0l0l2l168l883l2.5l7l0&amp;fp=1&amp;biw=1365&amp;bih=913&amp;bav=on.2,or.r_gc.r_pw.&amp;cad=b">here</ulink> and <ulink url="https://encrypted.google.com/#hl=en&amp;source=hp&amp;q=%22http:%2F%2Fexero.eu%2Fcatalog%2Fjquery.js%22&amp;oq=%22http:%2F%2Fexero.eu%2Fcatalog%2Fjquery.js%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=13178l40428l0l40708l35l35l0l34l0l0l105l105l0.1l1l0&amp;fp=1&amp;biw=1365&amp;bih=913&amp;bav=on.2,or.r_gc.r_pw.&amp;cad=b">here</ulink> suggested that the number exceeded 8.3 million. (...)</para>
+    </blockquote>
+  </sect2> --><!--
+  <sect2>
+  <title>LOL</title>
+  <blockquote>
+    <title>
+        <ulink url="http://xkcd.com/874/">FOSS Force: Top 10 Things Linux Users Don't
+          Understand</ulink>
+      </title>
+      <para/>
+  </blockquote>
+  </sect2> -->
+</sect1>
