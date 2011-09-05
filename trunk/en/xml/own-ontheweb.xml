@@ -44,51 +44,35 @@
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://trueg.wordpress.com/2011/08/31/nepomuk-frameworks-kdelibs-5-0-what-to-do/"
-          >Sebastian Trüg: Nepomuk Frameworks – kdelibs 5.0: What To Do</ulink>
+        <ulink url="http://progdan.cz/2011/09/akonadi-google-resource-tasks-support">Dan Vratil:
+          Akonadi Google Resource: Tasks support</ulink>
       </title>
-      <para>Development of kdelibs 5.0 has begun in the <ulink
-          url="http://quickgit.kde.org/?p=kdelibs.git&amp;a=shortlog&amp;h=refs/heads/frameworks"
-          >framework</ulink> branch of its git repository. The main goal for kdelibs 5.0 is that
-        there will be no more kdelibs as it is now. kdelibs (and kde-runtime) will be split up into
-        smaller pieces to lower the barrier for non-KDE developers to use part of the power we as a
-        KDE development community provide. The rough idea is that there will be three groups of
-        libraries/frameworks:</para>
-      <orderedlist>
-        <listitem>
-          <para><emphasis role="italic">Tier 1</emphasis>: components which only depend on Qt and no
-            other lib/component from KDE.</para>
-        </listitem>
-        <listitem>
-          <para><emphasis role="italic">Tier 2</emphasis>: components which depend on Qt and other
-            libraries from Tier 1.</para>
-        </listitem>
-        <listitem>
-          <para><emphasis role="italic">Tier 3</emphasis>: components which depend on
-            anything.</para>
-        </listitem>
-      </orderedlist>
-      <para>This of course includes Nepomuk and is a great opportunity for us to reorganize code and
-        get rid of deprecated junk we needed to keep around for binary compatibility.</para>
-      <!-- ($ Id: 1.9.11 sm $)-->    
+      <para>As the title says, I just added support for Google Tasks by creating the Akonadi Google
+        Tasks Resource. The Tasks API provided by Google is really simple and does not support many
+        properties, only name, summary, due to date, completed date and status. You can’t set
+        progress percentage, start date, attendees nor reminders (this sucks!). Despite the fact,
+        that the API provides means for tree-like structure of tasks (tasks and subtasks), it does
+        not seem to work. So you can only have a linear list of tasks. A positive thing is, that due
+        to this limited functionality of Google Tasks the resource has a full support of this
+        API.</para>
+      <para>The reason for independent resource is that you can have multiple task lists in Google
+        Calendar, thus merging this functionality into Google Calendar Resource is not an option.
+        Unfortunately, you will now have the tasks resources displayed in the list of calendar
+        resources in KOrganizer. (...)</para>
+      <!-- ($ Id: 5.9.11 sm $)-->    
     </blockquote>
     <blockquote>
-      <title><ulink url="http://www.layt.net/john/blog/odysseus/tablet_fun_and_games">odysseus
-          blog/John Layt: Tablet Fun and Games</ulink></title>
-      <para>I've had a little time to play with my ExoPC tablet kindly provided by Intel, and after
-        a brief look at the MeeGo/Intel tablet UX decided that Plasma Active was the way to go
-        (sorry Intel!). The MeeGo UX is far from complete and the lack of applications made the
-        tablet next to useless for anything besides basic web-surfing. Plasma Active, on the other
-        hand, is a full openSuse and KDE install and so has many apps to play with. Plasma Active
-        itself is remarkably usable already and has some nice features that actually work the way I
-        expect a tablet to function. It's amazing how far the Active team has come in such a short
-        time and that's a tribute to both the Plasma architecture that Aaron put in place and the
-        flexibility of our Platform/Frameworks. If only Intel had approaced KDE first...
-        (...)</para>
-      <para><emphasis role="bold">Related Posts</emphasis>: <ulink
-          url="http://pusling.com/blog/?p=206">Plasma Active Experience</ulink></para>
-      <!-- ($ Id: 3.9.11 sm $)-->
+      <title><ulink url="http://www.notmart.org/index.php/Software/Share,_Like_and_Connect">Marco
+          Martin: Share, Like and Connect</ulink></title>
+      <para>An important part of the Plasma Active Contour user interface is the connection between
+        the objects that i can view with my tablet, like images, webpages, and documents with the
+        current activity, to help to organize your work and fun.</para>
+      <para>I already <ulink url="http://www.notmart.org/index.php/Software/Contouring_resources"
+          >wrote here</ulink> about the activity screen: the main Contour workspace will show
+        everything that is related to the activity and is the natural evolution of the Plasma
+        Desktop activities (that will evolve in this direction as well as the integration with
+        applications becomes deeper;) (...)</para>
+      <!-- ($ Id: 5.9.11 sm $)-->
     </blockquote>
   </sect2>
   <!--
