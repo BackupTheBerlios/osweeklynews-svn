@@ -205,50 +205,30 @@
         <para>It came to my knowledge through a comment on my blog about one interesting thing that poped out in the scene… For everyone complaining or seeking for extra usability on GNOME3, it seems that Canonical without even noticed brought the answer for this with Unity 2D…</para>
         <para>Here’s a tiny screenshot of GNOME3 running on openSUSE 11.4 with the Unity 2D Launcher being used as a dockbar, and trust me it owns… Though my work with Unity 2D is still somehow delayed for upcoming 12.1 and I have my hands filled with Mono, I’m soon make this option available to all users… (...)</para>
       </blockquote>
-      </sect3> --><!--
+      </sect3> -->
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/08/installing-plasma-active-on-the-exopc-wetab/">Sebastian Kügler: Installing Plasma Active on the ExoPC (“WeTab”)</ulink>
+          <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-entering-beta.html">Aaron
+            Seigo: Plasma Active entering beta</ulink>
         </title>
-        <para>If you own an ExoPC, and you’re eager to know how to get Plasma Active, our new
-          workspace and set of applications for consumer devices to run on it, this blog article
-          will help you get going. </para>
-        <para><emphasis role="bold">Note:</emphasis> Plasma Active is in alpha state right now, it
-          is basically usable, but you will find many rough edges. You should not try this unless
-          you consider yourself an early adopter, or if you mind fiddling with bits and pieces. We
-          are working towards an end-user ready product, but we’re not yet there.</para>
-        <para><emphasis role="bold">What to pick?</emphasis></para>
-        <para>There are a few different options to choose from, I’ll quickly explain which to choose
-          under which circumstances. <itemizedlist>
-            <listitem>
-              <para><emphasis role="bold">MeeGo:</emphasis> Works well overall, but is lacking in
-                key areas, for example we do not have a UI to connect to wireless networks yet, and
-                as the device doesn’t have Ethernet (and cables are lame on mobile devices anyway).
-                You can work around this with a <ulink url="http://www.notmart.org/index.php/BlaBla/Wireless_on_Plasma_Active_MeeGo_">trick</ulink> Marco explains. </para>
-              <para><emphasis role="italic">Choose this option if you want to run and develop for MeeGo</emphasis></para>
-            </listitem>
-            <listitem>
-              <para><emphasis role="bold">Balsam Professional</emphasis>: Download the Balsam
-                Professional live images from <ulink url="http://download.open-slx.com/iso/11.4/">open-slx</ulink>. This live image provides a fully functional live system without
-                too much hassle. </para>
-              <para><emphasis role="italic">Choose this option if you want to try Plasma Active</emphasis></para>
-            </listitem>
-            <listitem>
-              <para><emphasis role="bold">openSUSE</emphasis>: Install Plasma Active on top of
-                openSUSE 11.4, it uses the Active packages created by open-slx (me, my employer),
-                but is a bit more laborious to install. </para>
-              <para><emphasis role="italic">Choose this option if you want to run the full experience on your ExoPC, or track progress and hack on Plasma Active</emphasis></para>
-            </listitem>
-          </itemizedlist></para>
-        <para>I will explain here how you can get to a state-of-the-art Plasma Active, using what
-          will eventually become the Tablet Edition of Balsam Professional. Balsam Professional is,
-          unlike openSUSE, focused on end-users and the user experience on consumer-level devices.
-          Balsam Professional is based on openSUSE, so you might well be familiar with many of the
-          tools already. (...)</para>
+        <para>At the beginning of this year, the Plasma team was itching to extend Plasma's coverage
+          of the device spectrum. We already had Desktop and Netbook interfaces, and while
+          maintaining and incrementally improving those, we wanted to show case the possibilities of
+          Plasma by creating a full fledged touch interface for devices. </para>
+        <para>After being shown the concept of Activities, Eva, founder of Basyskom (who is now a
+          major supporter and investor in our efforts), had an epiphany as how they could be applied
+          to a touch based device like a tablet. She christened the concept "Contour". OpenSLX was
+          looking for a new halmark feature to help expand its appeal and so we found a home for
+          packaging efforts and OS. </para>
+        <para>We also wanted to start working with the newest QtQuick technologies without
+          disturbing the Desktop or Netbook interfaces with our experimentation. It all came
+          together at the right time and Plasma Active was born. (...)</para>
+        <!--($ Id: 8.9.11 sm $)-->
       </blockquote>
-    </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
