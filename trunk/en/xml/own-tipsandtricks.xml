@@ -48,19 +48,23 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/08/22/really-gui-more-on-buttons-images-and-handlers/">Python4Kids/Brendan Scott: Really GUI (more on Buttons, images and handlers)</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/08/29/side-track-global-and-local-variables/">Python4Kids/Brendan Scott: Side Track – Global and Local Variables</ulink>
       </title>
-      <para>In the last few tutorials we have been looking at various parts of what make up a graphical user interface.   We’ve created labels and buttons and have attached images to a label (and a button if you did the homework).  We have also associated an action with pressing a button.   In this tutorial we’re going to put these together to make a simple image viewer application.  As with the previous tutorials, this will only work with images which are saved as a “gif” format.  Also, a word of warning – you need to do pretty much all of the code before any of it will work.</para>
-      <para>Here are some images for you to use.  As with the earlier tutorial, you can either use ‘save as’ to download a copy, or you can use the Python code in the note below to download them (if you use Python you should be in your python4kids directory when you do the download otherwise the files will get saved somewhere else).  A gold star if you use Python for the download. (...)</para>
-<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
+      <para>In the previous tutorial, I used a strange and cumbersome approach to storing the data that I needed to keep track of the image files in the directory, the total number of images and what image we were up to.  Instead of just saving the current image number in a variable called currentImage I instead created a dictionary called indexes and a key called currentImage, then assigned the value to that key.  I did the same thing for totalImages as well.  You might, justifiably, be thinking – why didn’t we just use two variables called currentImage and totalImages?  This tutorial is going to try to explain that. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://linuxaria.com/howto/guide-regular-expressions-syntax?lang=en">Linuxaria: Guide to regular expressions with examples</ulink>
+      </title>
+      <para>The regular expression, or regexp, are the most powerful, versatile and hated tool used by programmers and system administrators.</para>
+      <para>They allow to express with a few characters search for strings, characters or words, and if done well can lead to good results, but if they are wrong they can not give you any useful result, and the worst thing is that often it is difficult to understand whether or not a regepx it is written with a correct syntax to cover all the possibility. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-102-3/index.html?ca=drs-"
-          >ibm-developerworks/Ian Shields: Learn Linux, 101: Manage shared libraries</ulink>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-102-3/index.html?ca=drs-">IBM developerWorks/Ian Shields: Learn Linux, 101: Manage shared libraries</ulink>
       </title>
       <para><emphasis role="bold">Overview</emphasis></para>
       <para>In this article, learn to find and load the shared libraries that your Linux programs
@@ -77,27 +81,32 @@
         </listitem>
       </itemizedlist>
       <para>This article helps you prepare for Objective 102.3 in Topic 102 of the Linux
-        Professional Institute's Junior Level Administration (LPIC-1) exam 101. The objective has a
+        Professional Institute&apos;s Junior Level Administration (LPIC-1) exam 101. The objective has a
         weight of 1. (...)</para>
 <!-- ($ Id: 01.09.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://beginlinux.com/desktop/opensuse/configuring-the-dhcp-server">BeginLinux: Configuring the DHCP Server</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/how-to-secure-your-apache-web-server/">Wazi/Anatoliy A. Dimitrov: How to Secure Your Apache Web Server</ulink>
+      </title>
+      <para>Installing and maintaining a secure web server on Linux can be a challenge. It requires in-depth knowledge of Linux, <ulink url="http://olex.openlogic.com/packages/apache">Apache</ulink>, and <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink> server-side options. One of the main problems is to find the balance between security and productivity and usability. The best solution depends on the specific project requirements, but all installations share certain common characteristics. Here are some best practices for securing a LAMP server, from the server configuration to fine-tuning PHP settings. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://frederikkonietzny.de/wp/2011/09/02/how-to-test-the-plain-and-encrypted-smtppop3imap-and-http-protocols/">Frederik Konietzny: how to test the plain and encrypted SMTP/POP3/IMAP and HTTP protocols</ulink>
+      </title>
+      <para>In this article I will describe how to test the plain and the encrypted SMTP/POP3/IMAP and HTTP protocols with <emphasis role="bold">telnet</emphasis> and the <emphasis role="bold">openssl s_client</emphasis> command. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/installing-apache-on-opensuse">BeginLinux: Installing Apache on OpenSUSE</ulink>
       </title>
       <para>What we will look at
 
 </para>
-      <orderedlist>
-        <listitem>
-          <para>Installing the DHCP Server on openSUSE</para>
-        </listitem>
-        <listitem>
-          <para>Configuring the Server with YaST</para>
-        </listitem>
-        <listitem>
-          <para>Configuring the Server from the command line (...)</para>
-        </listitem>
-      </orderedlist>
-<!-- ($ Id: 26.8.11 sat $)-->    </blockquote>
+      <para>1. Installing the Apache Web Server on openSUSE</para>
+      <para>2. Configuring Apache with a virtual directory alias</para>
+      <para>3. Testing an installation across the network</para>
+      <para>We can install the Apache Server by using the YaST Plugin, yast2-http-server. This is simple and installs the Server then takes us straight into the configuration. We would, though, have to install the plugin in the first place and then the configuration allows me only a fraction of what can be done from the command line. There is also a YaST module that will set up and installation server for you but you would not learn too much using it. So, for the benefit of learning and deeper understanding, we will take the manual approach and install and configure the server from the command line. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
