@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <!--
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/08/18/positioning-windows-automatically-in-gnome-3.aspx">Hubfolio/Matthew Casperson: Positioning windows automatically in Gnome 3</ulink>
+      </title>
+      <para>One of the best features of Gnome 3 are the dynamic workspaces. Using some simple <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/05/25/efficient-application-switching-with-gnome-3.aspx">keyboard shortcuts</ulink>, it is possible to assign an application to a workspace and quickly switch between them. If you run a standard set of applications, this process makes switching between them very efficient.</para>
+      <para>The problem with running applications in their own workspace is that you have to spend some time once Gnome 3 has booted moving the applications to their proper workspaces. However, using a tool called <ulink url="http://www.foosel.org/linux/devilspie">devilspie</ulink>, it is possible to setup a script that will automatically rearrange your windows for you. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: openSUSE users can install devilspie <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=devilspie">via OBS</ulink>.</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.techdrivein.com/2011/08/10-good-inkscape-tutorials-for-vector.html">Tech Drive-in/Manuel Jose: 10 Good Inkscape Tutorials for Vector Graphic Designers</ulink>
+      </title>
+      <para>Inkscape is the premier open source vector graphics editor for Linux. Inkscape is cross platform and is available for Windows and Mac OS X for free download. We have dealt with a bunch of really good <ulink url="http://www.techdrivein.com/2010/10/13-beautiful-inkscape-tutorials-for.html">Inskcape tutorials</ulink> before, here are even more of those. Following is a collection of 10 of the very best and descriptive Inkscape tutorials from around the web. (...)</para>
+    </blockquote>
+  </sect2> -->
+  <!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://elevenislouder.blogspot.com/2011/08/introduction-to-find.html">Eleven is Louder: An Introduction to Find</ulink>
+      </title>
+      <para>Learning find can seem daunting at first, but it is worth learning. There is no single more useful search tool for UNIX like systems. You could almost consider find a very primitive scripting language in itself as find can find the files you request and then perform tasks. (...)</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://python4kids.wordpress.com/2011/08/29/side-track-global-and-local-variables/">Python4Kids/Brendan Scott: Side Track – Global and Local Variables</ulink>
+      </title>
+      <para>In the previous tutorial, I used a strange and cumbersome approach to storing the data that I needed to keep track of the image files in the directory, the total number of images and what image we were up to.  Instead of just saving the current image number in a variable called currentImage I instead created a dictionary called indexes and a key called currentImage, then assigned the value to that key.  I did the same thing for totalImages as well.  You might, justifiably, be thinking – why didn’t we just use two variables called currentImage and totalImages?  This tutorial is going to try to explain that. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://linuxaria.com/howto/guide-regular-expressions-syntax?lang=en">Linuxaria: Guide to regular expressions with examples</ulink>
+      </title>
+      <para>The regular expression, or regexp, are the most powerful, versatile and hated tool used by programmers and system administrators.</para>
+      <para>They allow to express with a few characters search for strings, characters or words, and if done well can lead to good results, but if they are wrong they can not give you any useful result, and the worst thing is that often it is difficult to understand whether or not a regepx it is written with a correct syntax to cover all the possibility. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/how-to-secure-your-apache-web-server/">Wazi/Anatoliy A. Dimitrov: How to Secure Your Apache Web Server</ulink>
+      </title>
+      <para>Installing and maintaining a secure web server on Linux can be a challenge. It requires in-depth knowledge of Linux, <ulink url="http://olex.openlogic.com/packages/apache">Apache</ulink>, and <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink> server-side options. One of the main problems is to find the balance between security and productivity and usability. The best solution depends on the specific project requirements, but all installations share certain common characteristics. Here are some best practices for securing a LAMP server, from the server configuration to fine-tuning PHP settings. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://frederikkonietzny.de/wp/2011/09/02/how-to-test-the-plain-and-encrypted-smtppop3imap-and-http-protocols/">Frederik Konietzny: how to test the plain and encrypted SMTP/POP3/IMAP and HTTP protocols</ulink>
+      </title>
+      <para>In this article I will describe how to test the plain and the encrypted SMTP/POP3/IMAP and HTTP protocols with <emphasis role="bold">telnet</emphasis> and the <emphasis role="bold">openssl s_client</emphasis> command. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/installing-apache-on-opensuse">BeginLinux: Installing Apache on OpenSUSE</ulink>
+      </title>
+      <para>What we will look at
+
+</para>
+      <para>1. Installing the Apache Web Server on openSUSE</para>
+      <para>2. Configuring Apache with a virtual directory alias</para>
+      <para>3. Testing an installation across the network</para>
+      <para>We can install the Apache Server by using the YaST Plugin, yast2-http-server. This is simple and installs the Server then takes us straight into the configuration. We would, though, have to install the plugin in the first place and then the configuration allows me only a fraction of what can be done from the command line. There is also a YaST module that will set up and installation server for you but you would not learn too much using it. So, for the benefit of learning and deeper understanding, we will take the manual approach and install and configure the server from the command line. (...)</para>
+<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

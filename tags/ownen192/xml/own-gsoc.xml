@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="gsoc" role="gsoc">
+  <title>Google Summer of Code</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata width="20%" align="center" fileref="http://michal.hrusecky.net/wp-content/uploads/GSoC2011_300x200.png"/>
+    </imageobject>
+  </mediaobject>
+  <blockquote>
+    <title>
+      <ulink url="http://sysbytes.wordpress.com/2011/08/28/sax3-status/">Manu Gupta: SaX3 –
+        Status</ulink>
+    </title>
+    <para>The changes I have made in SaX3 in the following week<orderedlist>
+        <listitem>
+          <para>Fixed a few nasty bugs.</para>
+        </listitem>
+        <listitem>
+          <para>The monitor module does not work which works now ( I need to be more careful the
+            future)</para>
+        </listitem>
+        <listitem>
+          <para>Tried porting to openSUSE 11.3 ( Testers Required)</para>
+        </listitem>
+        <listitem>
+          <para>Pushed to factory, but it is hghly recommended to add X11:sax as your project
+            repository for sax until 12.1</para>
+        </listitem>
+      </orderedlist></para>
+    <!-- ($ ld: 29.8.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://cbounta.wordpress.com/2011/08/29/a-utility-for-merging-configuration-sysconfig-files-%E2%80%93-final-gsoc-report/"
+        >Christos Bountalis: A utility for merging configuration / sysconfig files – Final GSoC
+        Report</ulink></title>
+    <para>Last week was very busy for me and also very exciting. The end of Google Summer of Code
+      period overlapped the beginning of a new period of my life. During these days, i moved from
+      Salamis(Greece) to Amsterdam(Netherlands) where i am going to study towards a master degree in
+      Artificial Intelligence. As you may understand there were and still are many things for me to
+      arrange, as a person in a total new place/city/country.</para>
+    <para>So enough about me, what is up with the project? Well, i am very glad to say that the
+      project “ended” and reached a very satisfactory level, the merging functions are now working
+      and i can say that the application is now in an alpha testing phase. There are of course
+      things that always can be improved and a lot of testing to be done in order for this project
+      to take its place and be useful and ready for use in openSUSE. This is the last GSoC report
+      for this project. (...)</para>
+    <!--($ ld: 1.9.11 sm $)-->
+  </blockquote>
+</sect1>
