@@ -40,7 +40,9 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  <sect2 role="distribution">
+    </sect2> -->  
+  <!--
+  <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
       <title>
@@ -54,9 +56,9 @@
         which might end in Factory and LibreOffice 3.4 - with a large tarball instead of many
         smaller ones.ý LibreOffice has 110.000 files, so the legal review will take some time. Out
         of the 457 package checkins, I&apos;ll only highlight a few below. Quite a few package checkins
-        were to fix build failures from the --no-copy-dt-needed change and on improving systemd
+        were to fix build failures from the no-copy-dt-needed change and on improving systemd
         support in openSUSE. (...)</para>
-<!-- ($ ld: 03.09.11 sm $)-->    </blockquote>
+    </blockquote>
     <itemizedlist>
       <title>Important Links</title>
       <listitem>
@@ -69,7 +71,7 @@
         <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-  </sect2>
+  </sect2> -->
 <!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
@@ -88,7 +90,8 @@
         the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
       <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
     </blockquote>
-  </sect2> -->  <sect2 role="teamreports">
+    </sect2> -->  
+    <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -219,6 +222,20 @@
           disturbing the Desktop or Netbook interfaces with our experimentation. It all came
           together at the right time and Plasma Active was born. (...)</para>
 <!--($ Id: 8.9.11 sm $)-->      </blockquote>
+      <blockquote>
+        <title><ulink url="http://vizzzion.org/blog/2011/09/plasma-active-crunching-towards-one/"
+            >Sebastian Kügler: Plasma Active: Crunching towards One</ulink></title>
+        <para><emphasis role="italic">Plasma Active aims at creating a desirable user experience for
+            a spectrum of devices, based on a fully Free software stack, developed in the open. The
+            first release is planned for October. In the following article, you can read about the
+            latest status and recent improvements made.</emphasis></para>
+        <para>One our way to our first release (begin of October as it currently looks like), we’re
+          in serious make-it-work mode, crunching bugs left and right and filling in gaps of the
+          workflows we want to suppport in our first release of Plasma Active. As we’re a month away
+          from that, it’s a good point in time to give an update of our progress towards Plasma
+          Active One. So where do we stand today? What has been the progress lately? (...)</para>
+        <!--($ Id: 10.9.11 sm $)-->
+      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -454,23 +471,16 @@ pandoc seems important enough to fix it and get it out of its Haskgell ghetto in
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/archive/opensuse-testing/2011-09/msg00001.html">Larry Finger: Weekly News for September 03</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00010.html">Larry
+            Finger: Weekly News for September 10</ulink>
         </title>
-        <para>I was quite disappointed in the community participation in our Open Bugs Day. I cannot
-          believe that no one cares about the bugs! I guess everyone wants someone else to do the
-          work. I really thought this is to be a community distribution. </para>
-        <para>Despite the low turnout and the resulting poor coverage of hardware and software, we
-          were able to clear some of the 11.4 bugs, and demonstrate that others do not affect 12.1. </para>
-        <para>I certainly hope for more participation when we have the next open Bugs Day that will
-          have the goal of cleaning up 12.1 bugs before the final release. </para>
-        <para>With the release of 12.1 MS5, I am now running the new code on 3 of my 4 real machines
-          that were running 11.4. So far, the only problem has been with the plasmoid network
-          manager for KDE. On all of those machines, I have switched to NetworkManager-Gnome, also
-          known as nm-applet. It works OK, but will take a little fiddling before it works
-          seamlessly. </para>
-        <para>Our next IRC meeting will be at 17:00 UTC, September 12 on Channel #opensuse-testing
-          on the Freenode IRC Network. irc://irc.freenode.net/opensuse-testing. We will discuss our
-          experiences with MS5. </para>
+        <para>The next IRC meeting of the Testing Core Team will be at 17:00 UTC, September 12 on
+          Channel #opensuse-testing on the Freenode IRC Network.
+          irc://irc.freenode.net/opensuse-testing. We will discuss our experiences with MS5. </para>
+        <para>I have run MS5 exclusively since it was released on four different machines - 1 32-bit
+          virtual, 2 x86_64, and 1 32-bit x86. Everything that I normally use for testing has been
+          working except for the plasmoid network manager applet. Because of the trouble with the
+          KDE version, I have been using nm-applet, the Gnome version. </para>
       </blockquote>
     </sect3>
     <sect3 role="translationteam">
