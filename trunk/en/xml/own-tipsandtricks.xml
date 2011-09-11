@@ -18,16 +18,24 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
-  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/08/18/positioning-windows-automatically-in-gnome-3.aspx">Hubfolio/Matthew Casperson: Positioning windows automatically in Gnome 3</ulink>
+        <ulink url="http://www.dedoimedo.com/computers/opensuse-nvidia.html">Dedoimedo: How to
+          install the Nvidia proprietary driver in openSUSE</ulink>
       </title>
-      <para>One of the best features of Gnome 3 are the dynamic workspaces. Using some simple <ulink url="http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2011/05/25/efficient-application-switching-with-gnome-3.aspx">keyboard shortcuts</ulink>, it is possible to assign an application to a workspace and quickly switch between them. If you run a standard set of applications, this process makes switching between them very efficient.</para>
-      <para>The problem with running applications in their own workspace is that you have to spend some time once Gnome 3 has booted moving the applications to their proper workspaces. However, using a tool called <ulink url="http://www.foosel.org/linux/devilspie">devilspie</ulink>, it is possible to setup a script that will automatically rearrange your windows for you. (...)</para>
-      <para><emphasis role="bold">Editors Note</emphasis>: openSUSE users can install devilspie <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=devilspie">via OBS</ulink>.</para>
+      <para> This is not a new topic. We talked about it at least two or three times before, in my
+        original openSUSE 11 review and tutorial, then again in the <ulink
+          url="http://www.dedoimedo.com/computers/opensuse-11sp4-kde.html">openSUSE 11.X</ulink>
+        articles. Still, it was more sort of a reference rather than a proper step-by-step guide.
+        Indeed, the graphics driver installation,ýeven though it's fairly simple, is not trivial. To
+        remove all and any doubt, I decided to write this tutorial. </para>
+      <para> We will dabble in Yast, learn how to handle repositories, add the Nvidia source,
+        install the correct driver and test the installation. We'll also recall how the installation
+        used to be done in the past and what some other distributions offer. Follow me. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: This Howto doesn't work with the
+        Tumbleweed Kernel. In this case you must install the *.run File from the NVIDIA Page.</para>
     </blockquote>
     <blockquote>
       <title>
@@ -35,7 +43,7 @@
       </title>
       <para>Inkscape is the premier open source vector graphics editor for Linux. Inkscape is cross platform and is available for Windows and Mac OS X for free download. We have dealt with a bunch of really good <ulink url="http://www.techdrivein.com/2010/10/13-beautiful-inkscape-tutorials-for.html">Inskcape tutorials</ulink> before, here are even more of those. Following is a collection of 10 of the very best and descriptive Inkscape tutorials from around the web. (...)</para>
     </blockquote>
-  </sect2> -->
+  </sect2>
   <!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
