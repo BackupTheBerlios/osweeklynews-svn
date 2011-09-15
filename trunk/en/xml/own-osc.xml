@@ -23,38 +23,93 @@
   <title>openSUSE Conference 2011</title>
   <blockquote>
     <title><ulink
-        url="http://news.opensuse.org/2011/09/05/sponsors-present-at-opensuse-conference-2011/">Jos
-        Poortvlieet: Sponsors present at openSUSE Conference 2011</ulink></title>
-    <para>The <ulink url="http://conference.opensuse.org">openSUSE Conference 2011</ulink> team is
-      happy to announce the partners for this year’s conference. Aside from sponsoring, there are
-      contributions in terms of sessions, media coverage and network bandwidth. Let’s look at what
-      our sponsors contribute, what sessions they’ll present and thank them for their support!
-      (...)</para>
-    <!-- ($ ld: 6.09.11 sm $) -->
+        url="http://opensuseambassadors.blogspot.com/2011/09/opensuse-conference-day-2-conference.html"
+        >Greek openSUSE Ambassadors: openSUSE Conference: Day 2, The Conference
+      Begins</ulink></title>
+    <para>Awesome! The sun goes up in Nuremberg... The Greek team woke up early in the morning in
+      order to get ready for the first day of the conference... We had a good breakfast and we
+      started heading for the Zentrifuge in order to meet the other guyz and attend the Conference.
+      On our road to the openSUSE Conference we met the Chinese community and we both head to the
+      conference together. When we arrived people were awesome. Everyone was there... </para>
+    <para>The day's program was printed so we took a copy in order to see and decide which awesome
+      presentations we will attend! (...)</para>
+    <!-- ($ ld: 15.09.11 sm $) -->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://blog.jospoortvliet.com/2011/09/bretzn-at-osc.html">Jos Poortvlieet:
-        Bretzn at oSC </ulink></title>
-    <para>So there is the <ulink url="http://www.socialdesktop.org/bretzn/">cool Bretzn
-        project</ulink> which was about creating a plugin for IDE's to compile and publish code via
-      the <ulink url="http://openbuildservice.org">Open Build Service</ulink> and the <ulink
-        url="http://www.freedesktop.org/wiki/Specifications/open-collaboration-services">Open
-        Collaboration Services</ulink> and then letting the user install, rate and comment on apps
-      via a desktop client. (...)</para>
-    <!-- ($ ld: 06.09.11 sm $)-->
+    <title><ulink
+        url="http://opensuseambassadors.blogspot.com/2011/09/opensuse-conference-day-3-conference.html"
+        >Greek openSUSE Ambassadors: openSUSE Conference: Day 3, The conference continues, the
+        Greeks attack!</ulink></title>
+    <para>Greek team woke up in the cloudy morning in Nuremberg. We ate our breakfast at hotel and
+      we started heading to the openSUSE Conference.</para>
+    <para>We arrived a bit late but luckily they haven't started yet! There were again many
+      interesting presentations among about community, distribution and about technology.
+      Presentations that stood out where “openSUSE Tumbleweed” Mr. KH, Greg, “Ambassador Program:
+      Current status,potential changes and improvements” by Mr. KOUDARAS, Kostas (openSUSE), Mr.
+      GUPTA, Manu (openSUSE), “Our experience in organizing a local community: The Greek example” by
+      by Mr. KOUDARAS, Kostas (openSUSE) and “How to get more Women into openSUSE” by PINTSCHER,
+      Lydia (KDE). Do not forget the LPI exams we had at the conference. (...)</para>
+    <!-- ($ ld: 15.09.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://oyranos-cms.blogspot.com/2011/09/oyranos-rwx.html">Kai-Uwe Behrmann:
-        Oyranos @ rwx³</ulink></title>
-    <para>We will meet there and can discuss ICC colour management for the openSUSE distribution,
-      KDE and Qt. </para>
-    <para>Sebastian Oliva will be there too. I hope we can hack together a Oyranos connection to his
-      newly created ICC DB. The ICC DB project, done during GSoC 2011, shall be used to search for
-      ICC profiles by terms of colour device configurations. This means a printer can obtain a
-      fitting ICC profile for a special driver without the need to have all the canned profiles
-      packaged. Independent vendors can easily upload their ICC data and get their optimised profile
-      selected automatically - if all works. Sebastian and Joseph Simon have done fair bits to get
-      there in a clean way, without hacking the whole system. (...)</para>
-    <!-- ($ ld: 06.09.11 sm $)-->
+    <title><ulink url="http://oyranos-cms.blogspot.com/2011/09/taxi-rwx.html">Kai-Uwe Behrmann: Taxi
+        @ rwx³</ulink></title>
+    <para>Sebastian Oliva presented today at the <emphasis role="italic">openSUSE
+        conference</emphasis> the results of his<emphasis role="italic"> ICC Device Profile
+        Repository</emphasis> project to his mentoring organisation as participant of the <emphasis
+        role="italic">Google Summer of Code 2011</emphasis> program. As profile creation is
+      expensive to most users, he emphasised the importance to easily share ICC profiles among these
+      users. During the summer project, which is called now <ulink
+        url="http://openicc.git.sourceforge.net/git/gitweb.cgi?p=openicc/taxi;a=summary">taxi,
+      </ulink> he developed a <ulink
+        url="http://openicc.git.sourceforge.net/git/gitweb.cgi?p=openicc/taxi;a=blob;f=docs/api_doc.txt"
+        >generic API</ulink> to store and obtain ICC profiles through JSON requests.</para>
+    <!-- ($ ld: 15.09.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://oyranos-cms.blogspot.com/2011/09/dispcalgui-07-rwx.html">Kai-Uwe
+        Behrmann: dispcalGUI 0.7 @ rwx³</ulink></title>
+    <para>My yesterday held workshop for calibrating and profiling monitors using
+      dispcalGUI+ArgyllCMS in Nuremberg was a nice experience. Around ten people from the openSUSE
+      Conference gathered, all being eager to do something for their health of colour vision. We
+      wanted to create ICC device profiles and collect them for later publishing. Following is a
+      small report and review from the workshop. </para>
+    <para>We had available a i1display, a DTP94 and a i1pro as measurement devices, which no of the
+      attendees owned privately. Installation on openSUSE-11.4 went pretty smooth. ArgyllCMS is in
+      the multimedia:photo repository and dispcalGUI is in multimedia:color_management. Both are
+      easily searchable through the http://software.opensuse.org URL. One hacker had all packages
+      installed in advance and could start instantly with the i1display. With the default settings
+      in dispcalGUI appeared a small terminal and required to adjust native monitor settings or
+      continue with calibration. We pressed number 7 and continued with the calibration part. This
+      lasted relatively long. dispcalGUI and in the background ArgyllCMS took quite some work to
+      iterate over the calibration for four times with lots of "regression getting worse" style
+      messages. This indicated to us, that it reached an end for improvement or the application
+      where not satisfied according to each persons like. The profiling and installation finished
+      after quite some time and the new calibration and profile could be used in colour managed
+      applications. In Gimp the monitor profile was not used by default. The Colour Management tab
+      in Gimp's preferences needs to manually enable the system profile, which is a troublesome
+      exercise to figure out. Instead colour managed applications should look first at the system
+      profile. Overriding the system profile by default is dangerous for a good user
+      experience.</para>
+    <!-- ($ ld: 15.09.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://opensuseambassadors.blogspot.com/2011/09/opensuse-conference-day-4.html">Greek
+        openSUSE Ambassadors: openSUSE Conference: Day 4</ulink></title>
+    <para>The Greeks woke up early today. The cloudy weather of Nuremberg didn't stopped us from
+      taking the road to openSUSE Conference. We also had Lydia Pintschert of KDE keep us company
+      for the way to Zentrifuge.</para>
+    <para>Today there are many interesting presentations about community tools and about new
+      technologies in Linux. We started from Lydia's awesome presentation about “Social skills for
+      geeks”. After that we attended the presentation of Mr. Vogelsang, Hendrik about “How to
+      contribute to the openSUSE Wiki” which was very interesting and we all were there get informed
+      on our next community target ;). Also, we attended at the main hall the presentation of an
+      important member of SUSE and openSUSE Mr. Milller Michael who told us about his experience
+      with SUSE and openSUSE. After we ate, talked with people and rest ourselves we attended the
+      conversation about “Playing with Geeko: Contribution can be fun” by Koudaras, Kostas and
+      Gupta, Manu where they presented to the community why and how we can contribute at the
+      project.</para>
+    <!-- ($ ld: 15.09.11 sm $)-->
   </blockquote>
 </sect1>

@@ -19,17 +19,22 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://oyranos-cms.blogspot.com/2011/09/x-color-management-03-draft1.html"
-        >Kai-Uwe Behrmann: X Color Management 0.3 DRAFT1</ulink></title>
-    <para>The net-color spec from the libXcm repository is renamed. During a great conversation with
-      Martin Gräßlin from KWin at oSC rwx he pointed out, that the _NET_ prefix is reserved inside
-      the Xorg atom name space. So I decided to rename all atoms in the applications known to me,
-      which use the net-color spec. The renaming went on fast and all apps work again as expected in
-      git.</para>
-    <para><ulink url="http://oyranos.org/scm?p=xcolor.git;a=blob;f=docs/X_Color_Management.txt">The
-        new spec is called X Color Management</ulink>. It contains the color regions in Xorg
-      description and the used device profile for Linux desktop colour servers. Affected are libXcm,
-      Xcm, Oyranos, CompICC and CinePaint. </para>
-    <!--($ ld: 12.09.11 sm $)-->
+    <title><ulink url="http://emmes.livejournal.com/10733.html">Matthias Hopf: XDC: How to bring in
+        more contributors</ulink></title>
+    <para>In my talk (or rather: structured discussion) "<ulink
+        url="http://www.mshopf.de/pub/XDC_11_contributors.pdf">Methods of Attraction: How to bring
+        in new contributors</ulink>" on this year's <ulink
+        url="http://www.x.org/wiki/Events/XDC2011/Program">X.org Developer's Conference</ulink> I
+      brought up reasons why open source projects often fail to attract new contributors, and some
+      changes to help this.</para>
+    <para>During the discussion it turns out that for X.org the changes are either <emphasis
+        role="italic">very</emphasis> non-trivial, or (better) somewhat implemented already (like
+      the list of low hanging fruits, which basically boils down to our <ulink
+        url="http://wiki.x.org/wiki/ToDo">ToDo list</ulink> and the <ulink
+        url="http://wiki.x.org/wiki/Development/Janitor">Janitor subproject</ulink>).</para>
+    <para>I didn't really expect any direct outcome from this discussion (as it's more like a meta
+      discussion because we need to understand the real issues first), but I think it was fruitful
+      especially in keeping everybody aware of the situation. (...)</para>
+    <!--($ ld: 15.09.11 sm $)-->
   </blockquote>
 </sect1>
