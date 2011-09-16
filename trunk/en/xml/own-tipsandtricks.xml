@@ -22,19 +22,17 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.dedoimedo.com/computers/opensuse-nvidia.html">Dedoimedo: How to
-          install the Nvidia proprietary driver in openSUSE</ulink>
+        <ulink url="http://www.dedoimedo.com/computers/opensuse-nvidia.html">Dedoimedo: How to install the Nvidia proprietary driver in openSUSE</ulink>
       </title>
       <para> This is not a new topic. We talked about it at least two or three times before, in my
-        original openSUSE 11 review and tutorial, then again in the <ulink
-          url="http://www.dedoimedo.com/computers/opensuse-11sp4-kde.html">openSUSE 11.X</ulink>
+        original openSUSE 11 review and tutorial, then again in the <ulink url="http://www.dedoimedo.com/computers/opensuse-11sp4-kde.html">openSUSE 11.X</ulink>
         articles. Still, it was more sort of a reference rather than a proper step-by-step guide.
-        Indeed, the graphics driver installation,ýeven though it's fairly simple, is not trivial. To
+        Indeed, the graphics driver installation,ýeven though it&apos;s fairly simple, is not trivial. To
         remove all and any doubt, I decided to write this tutorial. </para>
       <para> We will dabble in Yast, learn how to handle repositories, add the Nvidia source,
-        install the correct driver and test the installation. We'll also recall how the installation
+        install the correct driver and test the installation. We&apos;ll also recall how the installation
         used to be done in the past and what some other distributions offer. Follow me. (...)</para>
-      <para><emphasis role="bold">Editors Note</emphasis>: This Howto doesn't work with the
+      <para><emphasis role="bold">Editors Note</emphasis>: This Howto doesn&apos;t work with the
         Tumbleweed Kernel. In this case you must install the *.run File from the NVIDIA Page.</para>
     </blockquote>
     <blockquote>
@@ -44,7 +42,7 @@
       <para>Inkscape is the premier open source vector graphics editor for Linux. Inkscape is cross platform and is available for Windows and Mac OS X for free download. We have dealt with a bunch of really good <ulink url="http://www.techdrivein.com/2010/10/13-beautiful-inkscape-tutorials-for.html">Inskcape tutorials</ulink> before, here are even more of those. Following is a collection of 10 of the very best and descriptive Inkscape tutorials from around the web. (...)</para>
     </blockquote>
   </sect2>
-  <!--
+<!--
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
@@ -53,22 +51,26 @@
       </title>
       <para>Learning find can seem daunting at first, but it is worth learning. There is no single more useful search tool for UNIX like systems. You could almost consider find a very primitive scripting language in itself as find can find the files you request and then perform tasks. (...)</para>
     </blockquote>
-  </sect2> -->
-  <sect2>
+  </sect2> -->  <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://python4kids.wordpress.com/2011/08/29/side-track-global-and-local-variables/">Python4Kids/Brendan Scott: Side Track – Global and Local Variables</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/create-your-own-syntax-highlighting-in-vim/">Wazi/Juliet Kemp: Create Your Own Syntax Highlighting in Vim</ulink>
       </title>
-      <para>In the previous tutorial, I used a strange and cumbersome approach to storing the data that I needed to keep track of the image files in the directory, the total number of images and what image we were up to.  Instead of just saving the current image number in a variable called currentImage I instead created a dictionary called indexes and a key called currentImage, then assigned the value to that key.  I did the same thing for totalImages as well.  You might, justifiably, be thinking – why didn’t we just use two variables called currentImage and totalImages?  This tutorial is going to try to explain that. (...)</para>
-<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+      <para>In text editors like <ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink>, syntax highlighting is the feature that shows defined components in different colors depending on their functions in the file. Vim has code syntax highlighting already available for a huge array of programming languages, including <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink>, <ulink url="http://olex.openlogic.com/packages/python">Python</ulink>, HTML, <ulink url="http://olex.openlogic.com/packages/ruby">Ruby</ulink>, JavaScript, and more, and most of them are installed by default in the $VIM/syntax/ directory, so in most cases you can just open up your source code files and see different parts appropriately color-coded. But what if you’re using a little-known language that doesn’t have a preinstalled syntax file? Or if you’re working with a different type of file altogether and want to create syntax highlighting from scratch? This tutorial shows how easy and even fun it is to write your own syntax highlighting rules for Vim. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://linuxaria.com/howto/guide-regular-expressions-syntax?lang=en">Linuxaria: Guide to regular expressions with examples</ulink>
+        <ulink url="http://bashshell.net/regular-expressions/string-matches-in-regular-expressions/">BashShell.net/Mike: String Matches in Regular Expressions</ulink>
       </title>
-      <para>The regular expression, or regexp, are the most powerful, versatile and hated tool used by programmers and system administrators.</para>
-      <para>They allow to express with a few characters search for strings, characters or words, and if done well can lead to good results, but if they are wrong they can not give you any useful result, and the worst thing is that often it is difficult to understand whether or not a regepx it is written with a correct syntax to cover all the possibility. (...)</para>
-<!-- ($ Id: 9.9.11 sat $)-->    </blockquote>
+      <para>The parentheses allows you to use regular expressions to perform string matches, or matches to actual words.   Thus you may write a search that is looking for “virtual” or “main” with (virtual|mail).  Note they are separated by a pipe.  These are string searches so you are looking for “virtual” not “v” or “i” or “r” etc. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/parallel-programming-crash-course">Linux Journal/Joey Bernard: Parallel Programming Crash Course</ulink>
+      </title>
+      <para>I&apos;ve been covering various scientific programs the past few months, but sometimes it&apos;s hard to find a package that does what you need. In those cases, you need to go ahead and write your own code. When you are involved with heavy-duty scientific computing, you usually need to go to parallel computing in order to get the runtimes down to something reasonable. This month, I give a crash course in parallel programming so you can get a feel for what is involved. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>

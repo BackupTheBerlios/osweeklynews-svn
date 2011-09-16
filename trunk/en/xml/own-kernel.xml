@@ -20,45 +20,26 @@
   <title>Kernel Review</title>
   <blockquote>
     <title>
-      <ulink url="https://lkml.org/lkml/2011/9/4/92">Linus Torvalds: Linux 3.1-rc5</ulink>
+      <ulink url="https://lkml.org/lkml/2011/9/14/33">Linus Torvalds: Linux 3.1-rc6</ulink>
     </title>
-    <para>
-Weblkml.org
-FromLinus Torvalds &lt;&gt;
-DateSun, 4 Sep 2011 16:27:25 -0700
-SubjectLinux 3.1-rc5
-
-
-So it&apos;s been another week, and it&apos;s time for another -rc.
-
-</para>
-    <para>However, master.kernel.org is still down, and there really hasn&apos;t been
-a ton of development going on, so I considered just skipping a week.
-But hey, the whole point (well, *one* of the points) of distributed
-development is that no single place is really any different from any
-other, so since I did a github account for my divelog thing, why not
-see how well it holds up to me just putting my whole kernel repo there
-too?</para>
-    <para>So while kernel.org is down for the count, let&apos;s just see how github does:
-
-   </para>
-    <para><ulink url="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</ulink></para>
-    <para>NOTE! One thing to look out for when you see a new random public
-hosting place usage like that is to verify that yes, it&apos;s really the
-person you think it is. So is it? (...)</para>
-<!-- ($ Id: 9.9.11 sat $)-->  </blockquote>
+    <para>[ Heh. Somewhat delayed, but I literally didn&apos;t notice that all my
+outgoing email bounced for the last couple of days, so here it is
+again. Originally *meant* to be sent on Monday, just apparently never
+got anywhere. So when it says &quot;I should have done this yesterday&quot;, it
+actually *means* Sunday ;^]</para>
+    <para>So I should have done this yesterday, but I was distracted. So here it
+is, a day late:</para>
+    <para>git://github.com/torvalds/linux.git</para>
+    <para>with just over a hundred commits. It&apos;s been fairly quiet.</para>
+    <para>Some arm and openrisc updates, various small driver fixes (the drm
+nvidia fixes might be the ones most noticeable to people), and some
+fuse, 9p and btrfs updates for filesystems.</para>
+    <para>Nothing really stands out. Have at it, and let us know of any
+outstanding regressions. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-1-Part-2-Storage-and-filesystems-1338160.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 3.1 (Part 2) - Storage and filesystems</ulink>
-    </title>
-    <para><emphasis role="bold">The software RAID code now supports bad block management and dm-crypt can notify SSDs about freed storage areas. The iSCSI target framework LIO has been updated to Version 4.1 and the default Ext3 settings make the filesystem more robust, but a bit slower.</emphasis></para>
-    <para>On Monday morning, Linus Torvalds <ulink url="http://thread.gmane.org/gmane.linux.kernel/1187888">released</ulink> the fifth pre-release version of Linux 3.1. It is currently only available from <ulink url="http://www.h-online.com/news/item/Linux-development-temporarily-moves-to-GitHub-1336692.html">GitHub</ulink>, with the kernel.org infrastructure still restricted following the <ulink url="http://www.h-online.com/news/item/Security-breach-at-kernel-org-1334642.html">recent hack</ulink>. In his release email, Torvalds notes that there is little to report on the development front. That is partly a result of the confusion caused by the kernel.org hack, which has affected the flow of patches.</para>
-    <para>In light of the ongoing development of Linux 3.1, the Kernel Log is continuing its &apos;Coming in 3.1&apos; series by describing new features relating to storage code and filesystems. The first of this series of articles looked at changes to <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-1-Part-1-Networking-1323463.html">network drivers and infrastructure</ulink>; articles on architecture code, infrastructure and drivers for other hardware will follow over the next few weeks. (...)</para>
-<!-- ($ Id: 9.9.11 sat $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://schaiba.wordpress.com/2011/09/10/kernel-weekly-news-10-09-2011/">Rares
-        Aioanei: kernel weekly news – 10.09.2011</ulink>
+      <ulink url="http://schaiba.wordpress.com/2011/09/10/kernel-weekly-news-10-09-2011/">Rares Aioanei: kernel weekly news – 10.09.2011</ulink>
     </title>
     <para>Rares gives his weekly Kernel Review with openSUSE Flavor.</para>
   </blockquote>

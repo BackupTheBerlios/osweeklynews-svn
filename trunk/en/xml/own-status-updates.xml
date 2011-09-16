@@ -40,8 +40,7 @@
         </listitem>
       </itemizedlist>
     </blockquote>
-    </sect2> -->  
-  <!--
+    </sect2> --><!--
   <sect2 role="distribution">
     <title>Distribution</title>
     <blockquote>
@@ -71,8 +70,7 @@
         <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-  </sect2> -->
-<!--
+  </sect2> --><!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -90,8 +88,7 @@
         the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
       <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
     </blockquote>
-    </sect2> -->  
-    <sect2 role="teamreports">
+    </sect2> -->  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -193,24 +190,19 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.marques.so/2011/07/gnome3-the-perfect-dock/">Nelson Marques:
-            GNOME:Ayatana – Looking for contributor…</ulink>
+          <ulink url="http://www.marques.so/2011/07/gnome3-the-perfect-dock/">Nelson Marques: GNOME:Ayatana – Looking for contributor…</ulink>
         </title>
         <para>I’m looking for a volunteer contributor to maintain the compiz 0.9.x stack on
-          GNOME:Ayatana. Anyone interested please contact me, my contacts are public on my <xref
-            linkend="ketheriel"/>openSUSE Connect profile or on my <ulink
-            url="http://en.opensuse.org/User:Ketheriel">wiki page</ulink>.</para>
+          GNOME:Ayatana. Anyone interested please contact me, my contacts are public on my <xref linkend="ketheriel"/>openSUSE Connect profile or on my <ulink url="http://en.opensuse.org/User:Ketheriel">wiki page</ulink>.</para>
         <para>The main reason behind this is quite simple, enable Unity. Feel free to contact me
           with any questions.</para>
-        <!--($ Id: 15.9.11 sm $)-->
-      </blockquote>
-    </sect3>  
-      <sect3 role="kdeteam">
+<!--($ Id: 15.9.11 sm $)-->      </blockquote>
+    </sect3>
+    <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
@@ -230,19 +222,16 @@
           together at the right time and Plasma Active was born. (...)</para>
 <!--($ Id: 8.9.11 sm $)-->      </blockquote>
       <blockquote>
-        <title><ulink url="http://vizzzion.org/blog/2011/09/plasma-active-crunching-towards-one/"
-            >Sebastian Kügler: Plasma Active: Crunching towards One</ulink></title>
-        <para><emphasis role="italic">Plasma Active aims at creating a desirable user experience for
-            a spectrum of devices, based on a fully Free software stack, developed in the open. The
-            first release is planned for October. In the following article, you can read about the
-            latest status and recent improvements made.</emphasis></para>
+        <title>
+          <ulink url="http://vizzzion.org/blog/2011/09/plasma-active-crunching-towards-one/">Sebastian Kügler: Plasma Active: Crunching towards One</ulink>
+        </title>
+        <para><emphasis role="italic">Plasma Active aims at creating a desirable user experience for a spectrum of devices, based on a fully Free software stack, developed in the open. The first release is planned for October. In the following article, you can read about the latest status and recent improvements made.</emphasis></para>
         <para>One our way to our first release (begin of October as it currently looks like), we’re
           in serious make-it-work mode, crunching bugs left and right and filling in gaps of the
           workflows we want to suppport in our first release of Plasma Active. As we’re a month away
           from that, it’s a good point in time to give an update of our progress towards Plasma
           Active One. So where do we stand today? What has been the progress lately? (...)</para>
-        <!--($ Id: 10.9.11 sm $)-->
-      </blockquote>
+<!--($ Id: 10.9.11 sm $)-->      </blockquote>
     </sect3>
 <!--
     <sect3 role="marketingteam">
@@ -394,7 +383,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 144)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 150)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -410,7 +399,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 109)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 111)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -423,42 +412,44 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 9.9.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 17.9.11 sm *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312777">Provide a working pandoc in OSS</ulink>
+            <ulink url="https://features.opensuse.org/312792">Volume Control</ulink>
           </title>
-          <para><ulink url="http://johnmacfarlane.net/pandoc/">pandoc</ulink> is a
-<ulink url="https://secure.wikimedia.org/wikipedia/en/wiki/Haskell_%28programming_language%29">Haskell</ulink> implementation of
-<ulink url="https://secure.wikimedia.org/wikipedia/en/wiki/Markdown">Markdown</ulink> with numerous extensions and additional output formats. There is a package in
-<ulink url="http://download.opensuse.org/repositories/devel:/languages:/haskell/openSUSE_Factory">devel:languages:haskell/openSUSE_Factory</ulink> , but that needs
-<ulink url="https://bugzilla.novell.com/show_bug.cgi?id=713301">much more love</ulink>.
+          <para>Volume Control:
 
-pandoc seems important enough to fix it and get it out of its Haskgell ghetto into OSS.</para>
+if possible, please make volume go up my 1&apos;s
+instead of in a random order. Music, sound, and
+sound effects are either to loud or to soft. </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312783">Display installation date and uptime time in the sysinfo:/ page</ulink>
+            <ulink url="https://features.opensuse.org/312794">Update libjingle to 0.5.9</ulink>
           </title>
-          <para>Display the installation date of the operating system and uptime in the sysinfo:/ page.</para>
+          <para>latest version in head is 0.3.12.
+0.3.x was released in 2006.
+latest version on the project page is 0.5.9</para>
+          <para><ulink url="http://code.google.com/p/libjingle/">http://code.google.com/p/libjingle/ </ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312784">Replace Amarok with Clementine</ulink>
+            <ulink url="https://features.opensuse.org/312796">opensuse 12.1 - integrate libKGoogle into opensuse to share google calendars etc</ulink>
           </title>
-          <para>Clementine is a Qt-only music player based of the old Amarok 1.4. Clementine boasts a more traditional interface. It also includes a robust visualizer implementation for those of us who enjoy them.</para>
+          <para>A project that ought to be integrated into opensuse 21.1 so that kontact can use it:</para>
+          <para><ulink url="http://progdan.cz/2011/08/akonadi-google-resource-complete-rewrite/">http://progdan.cz/2011/08/akonadi-google-resource-complete-rewrite/</ulink> </para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312791">Disk Formatting</ulink>
+            <ulink url="https://features.opensuse.org/312799">Safer distribution updates</ulink>
           </title>
-          <para>Should have a format disk option in the right click menu. Will be helpful in case of Removable Drives.</para>
-          <para>I would suggest that the sysinfo shown in My Computer currently be replaced with a filemanager that shows drives or filesystems like in windows(my computer).</para>
+          <para>Currently the documentation says that to do a distribution upgrade you should first update your software stack to the target distribution, then do a zypper dup. The software stack update can already kill your system.</para>
+          <para>zypper could allow an option that makes it first install a miniroot containing the update stack itself, then automatically switch over to the miniroot to do the &quot;zypper dup&quot;.</para>
         </blockquote>
-<!-- ($ ld: 9.9.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 17.9.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -478,8 +469,7 @@ pandoc seems important enough to fix it and get it out of its Haskgell ghetto in
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00010.html">Larry
-            Finger: Weekly News for September 10</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00010.html">Larry Finger: Weekly News for September 10</ulink>
         </title>
         <para>The next IRC meeting of the Testing Core Team will be at 17:00 UTC, September 12 on
           Channel #opensuse-testing on the Freenode IRC Network.
