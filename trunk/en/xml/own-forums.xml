@@ -20,26 +20,26 @@
   <title>openSUSE Forums</title>
   <blockquote>
     <title>
-      <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/464731-gave-myself-shaft.html">Gave myself the shaft</ulink>
+      <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/464824-how-prevent-system-over-writes-customized-etc-sysconfig-files.html">How to prevent system-(over)writes to customized /etc/sysconfig/* files?</ulink>
     </title>
     <para>
-      Here's what happened: user accepts a kernel update, afterwards needs to reinstall the driver for his NVIDIA graphics card, and to recompile the kernel module for VMware, a virtualization program. No way the system lets him do that. The compiler "gcc" segfaults in all attempts. Nasty, since the user depends on the machine for his work. Read how, in the end, the user himself finds the solution. 
+      The title is clear, this thread means to find a solution for overwriting of modified system config files during an update. Of course there are the dirty tricks, like making the files concerned read-only etc., but that's not the way it should be done; forget one, and you may find yourself in a mess. IMHO the best suggestion is not to change these files at all, but add new ones that already are called from the existing ones, Still a very interesting thread for those of us that use modified default configurations for system services like, for example, a webserver.
     </para>
   </blockquote>
   <blockquote>
     <title>
-    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/pre-release-beta/464785-opensuse-12-1-milestone-5-post-your-experiences.html">openSUSE 12.1 Milestone 5: Post your experiences</ulink>
+    <ulink url="http://forums.opensuse.org/english/other-forums/looking-something-other-than-support/465296-re-opensuse-corporate-server.html">openSUSE as a corporate server</ulink>
     </title>
     <para>
-      Today the official release of Milestone 5 on the road to openSUSE 12.1 was announced. Installation images are available for downloading. Like always we have a thread, still quite empty now, to share user experiences. Interested? Check the thread.
+      Question in this thread is whether this can be done: using openSUSE as a corporate server. Of course there's the suggestion to use SUSE Linux Enterprise Server, but personally I have no hesitations to reply with a full "yes' and add that openSUSE can be used for the desktops connecting to the server as well. Read on, if you're interested in moving to an openSUSE based network for your company or organization. 
       </para>
   </blockquote>
   <blockquote>
     <title>
-    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/applications/464530-suse-demands-11-4-cd-while-installing-apps.html">Suse Demands 11.4 CD While installing apps</ulink>
+    <ulink url="http://forums.opensuse.org/english/get-technical-help-here/hardware/465251-opensuse-11-4-njytouch-touch-screen-problems.html">openSUSE 11.4 and njytouch touch screen - Problems</ulink>
     </title>
     <para>
-      This subject is one of the issues we see in the forums on a regular basis: when trying to install/update software, Yast's Software Management prompts the user to insert the install CD/DVD, or gives an error on not being able to read the contents of a repo. Cause: during install the CD/DVD entry in the repolist was not removed (as far as I know it should). Solution: start Yast - Software - Software repositories and remove the CD/DVD entry from the list. After doing so, Software Management will not try to refresh or check the contents of this "repo", and thus the errors will be gone. 
+      Today's world of computing is changing. Not only do we interact with social networks from our desktops, the way we control our actions changes as well. A good example is the touch screen for desktops/laptops as an input method. Not new -they've been out there for a couple of years already-, but these screens used to be quite expensive. With that changing, touch screens will become more common. Do they work on linux? They should, but here's a thread where original poster has difficulties in getting it to work properly. 
       </para>
   </blockquote>
   <blockquote>
