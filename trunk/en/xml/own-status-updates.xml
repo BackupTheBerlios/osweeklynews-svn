@@ -202,6 +202,7 @@
           with any questions.</para>
 <!--($ Id: 15.9.11 sm $)-->      </blockquote>
     </sect3>
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -220,7 +221,7 @@
         <para>We also wanted to start working with the newest QtQuick technologies without
           disturbing the Desktop or Netbook interfaces with our experimentation. It all came
           together at the right time and Plasma Active was born. (...)</para>
-<!--($ Id: 8.9.11 sm $)-->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://vizzzion.org/blog/2011/09/plasma-active-crunching-towards-one/">Sebastian Kügler: Plasma Active: Crunching towards One</ulink>
@@ -231,8 +232,8 @@
           workflows we want to suppport in our first release of Plasma Active. As we’re a month away
           from that, it’s a good point in time to give an update of our progress towards Plasma
           Active One. So where do we stand today? What has been the progress lately? (...)</para>
-<!--($ Id: 10.9.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
@@ -469,15 +470,36 @@ latest version on the project page is 0.5.9</para>
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00010.html">Larry Finger: Weekly News for September 10</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00026.html">Larry
+            Finger: Weekly News for September 17</ulink>
         </title>
-        <para>The next IRC meeting of the Testing Core Team will be at 17:00 UTC, September 12 on
-          Channel #opensuse-testing on the Freenode IRC Network.
-          irc://irc.freenode.net/opensuse-testing. We will discuss our experiences with MS5. </para>
-        <para>I have run MS5 exclusively since it was released on four different machines - 1 32-bit
-          virtual, 2 x86_64, and 1 32-bit x86. Everything that I normally use for testing has been
-          working except for the plasmoid network manager applet. Because of the trouble with the
-          KDE version, I have been using nm-applet, the Gnome version. </para>
+        <para>The Testing Core Team met at 17:00 UTC, September 12. Our meeting was not too long as
+          most of the participants were at openSUSE Conference 2011. </para>
+        <para>We first discussed our experiences with 12.1 MS5. I reported that I was having
+          problems with the KDE plasmoid NetworkManager applet, and with systemd. As it turned out,
+          I was downloading a 1751-package upgrade during the meeting, and those upgrades fixed most
+          of the problems with NetworkManager. In addition, a subsequent upgrade has fixed my
+          systemd problems. </para>
+        <para>Our next topic of discussion was oSC 2011. There were back-to-back BoF sessions on
+          testing, one conducted by Bernhard Wiedermann of the TCT, and the second organized by Jiri
+          Slaby of SuSE. Bernhard also had a talk on "One Year of openqa.opensuse.org". The
+          conference also included a talk on kernel testing, more indication of the need for
+          automated testing of systems that get more and more complicated. </para>
+        <para>We next discussed Open Bugs Day No. 3. The possible explanations for the low
+          participation ranges from "looking at old bugs is not very exciting" to "it was a nice
+          summer day in Germany". Whatever the cause, I hope we get a better turnout when we have an
+          OBD for the bugs in 12.1. </para>
+        <para>We then discussed the areas in 12.1 that have the greatest likelihood of causing
+          problems for openSUSE users. As systemd will be the default in 12.1, it needs to be tested
+          on as many of our platforms as possible. We also expect further problems with the KMS
+          video drivers, particularly nouveau for the nVidia adapters. To help users, we proposed
+          that "nomodeset" be a standard feature of the installation media on the Factory ML. There
+          was some reluctance, but it is likely that a failsafe option will be added to the GRUB
+          menus on the media. </para>
+        <para>The next meeting of the Testing Core Team will be September 25, 2011 at 17:00 UTC on
+          Channel #opensuse-testing on the Freenode IRC Network
+          (irc://irc.freenode.net/opensuse-testing). Our preliminary agenda includes our experiences
+          with 12.1 Beta, and a discussion of the Beta Pizza Party. </para>
       </blockquote>
     </sect3>
     <sect3 role="translationteam">

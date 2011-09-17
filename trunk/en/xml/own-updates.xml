@@ -17,85 +17,34 @@
   
 -->
 <sect1 role="updates">
-  <title>New/Updated Applications @ openSUSE</title>
-<!--* Gnome
+    <title>New/Updated Applications @ openSUSE</title>
+    <!--* Gnome
 * KDE
 * XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
 
-Version should be available at packman or software.opensuse.org/search max. 4 posts. -->  <blockquote>
-    <title>
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+    <blockquote>
+        <title>
             <ulink
-                url="http://dev-loki.blogspot.com/2011/08/oracle-related-packages-for-opensuse.html"
-                >Pascal Bleser: Oracle related packages for openSUSE</ulink>
+                url="http://lizards.opensuse.org/2011/09/15/libreoffice-3-4-available-for-opensuse/"
+                >Petr Mladek: LibreOffice 3.4 available for openSUSE</ulink>
         </title>
-        <para>Petr Vanek and I are maintaining some packages for openSUSE (and SLE) that build
-            against the Oracle Instant Client libraries (I mean Oracle the database). Now, those
-            libraries are not open source in any way, but are <ulink
-                url="http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html"
-                >available from the Oracle TechNet website</ulink>.</para>
-        <para>There are a few open source projects that are of interest, at least for people who
-            have to work with the Oracle database, and we do package a few of them and <ulink
-                url="http://download.yarpen.cz/">Petr makes them available</ulink> in his <ulink
-                url="http://download.yarpen.cz/">repository</ulink>.</para>
-        <para>As of now, they're all built against version 10.2 of Oracle Instant Client, for <ulink
-                url="http://download.yarpen.cz/openSUSE_11.3/">openSUSE 11.3</ulink>, <ulink
-                url="http://download.yarpen.cz/openSUSE_11.4/">openSUSE 11.4</ulink>, <ulink
-                url="http://download.yarpen.cz/openSUSE_Factory">Factory (snapshot)</ulink> and
-                <ulink url="http://download.yarpen.cz/SLE_11/">SLE 11</ulink>.</para>
-<!-- ($ ld: 29.8.11 sm $)-->  </blockquote>
-    <blockquote>
-        <title><ulink
-                url="http://saigkill.homelinux.net/entry/2011/08/28/new-packages-in-the-build-service"
-                >Sascha Manns: New Packages in the Build Service</ulink></title>
-        <para>The last Week was very busy. I filled the Wiki in <ulink url="http://wiki.open-slx.de"
-                >http://wiki.open-slx.de</ulink> with new Articles about Games. You can find it
-            (sadly just in german) there: <ulink url="http://wiki.open-slx.de/Spiele"
-                >http://wiki.open-slx.de/Spiele</ulink>. Now we have <emphasis role="bold">1774
-            </emphasis>Articles round about openSUSE.</para>
-        <para><emphasis role="bold">bleachbit-0.8.8-14.1</emphasis></para>
-        <para>Then i've got a Bugreport <ulink
-                url="https://bugzilla.novell.com/show_bug.cgi?id=712471">bnc#712471</ulink>. Then
-            i've made with help from <ulink url="https://connect.opensuse.org/pg/profile/lwfinger"
-                >Larry Finger</ulink> from the Testing Team a couple of patches. Now after some
-            tries we have now a final patch which we have committed to Factory and to the Upstream
-            Project. They answered and would like to include the Patch into the next Version 0.9.0.
-            This new Patch allows to run bleachbit under Kernel 3.x Series. You can update bleachbit
-            through the "<ulink
-                url="http://download.opensuse.org/repositories/utilities/openSUSE_11.4"
-                >utilities</ulink>" Repository or via <ulink url="http://bit.ly/qG1ps1"
-                >1-Klick</ulink>. (...)</para>
-        <!-- ($ ld: 29.8.11 sm $)-->
-    </blockquote>
-    <blockquote>
-        <title><ulink url="http://www.marques.so/2011/08/banshee-2-1-3-on-opensuse/">Nelson Marques:
-                Banshee 2.1.3 on openSUSE!</ulink></title>
-        <para>A few days ago the Banshee developers have released another unstable release of
-            Banshee, 2.1.3. I’ve submitted this version already to the Banshee:Unstable repositories
-            and to GNOME:Apps for update in openSUSE Factory.</para>
-        <para>For all of those interested, here’s the <ulink
-                url="http://banshee.fm/download/archives/2.1.3/">Release Notes</ulink>…</para>
-        <!-- ($ ld: 1.9.11 sm $)-->
-    </blockquote>
-    <blockquote>
-        <title><ulink url="http://saigkill.homelinux.net/entry/2011/09/01/updated-packages-in-obs"
-                >Sascha Manns: Updated Packages in OBS</ulink></title>
-        <para>Announcement about updated packages: bleachbit 0.9.0, calibre 0.8.16, Texmacs 1.0.7.11
-            and KVirusTotal 0.21.0.</para>
-        <!--($ ld: 3.9.11 sm $)-->
-    </blockquote>
-    <blockquote>
-        <title><ulink
-                url="http://feedproxy.google.com/~r/homelinux/opensuse-blog/~3/tHRERHMWygM/today-updated-siga-system-information-gathering"
-                >Sascha Manns: Today updated: siga (System Information GAthering)</ulink></title>
-        <para>Just a little Post about todays update from siga package.</para>
-        <para>Today we've released the updated version of siga to <emphasis role="italic"
-                >12.100</emphasis> (the package will be shipped in the DVD).</para>
-        <para><emphasis role="bold">What is siga?</emphasis></para>
-        <para>SIGA stands for System Information GAthering and its originally written by Martin
-            Lasarsch. It collects various system information and outputs it in HTML or ASCII format.
-            Since it needs root permissions, you will be asked for the root password. It is very
-            handy as an information source during installation support emails &amp; phone calls and
-            for Bugreports in Bugzilla. (...)</para>
-        <!--($ ld: 3.9.11 sm $)-->
+        <para>I’m happy to announce LibreOffice <emphasis role="italic">3.4 </emphasis>packages for
+                <emphasis role="italic">openSUSE</emphasis>. They are available in the Build Service
+                <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
+                >LibreOffice:Stable</ulink> project.</para>
+        <para><emphasis role="italic">LibreOffice 3.4</emphasis> provides many interesting <ulink
+                url="http://www.libreoffice.org/download/3-4-new-features-and-fixes/">features and
+                fixes</ulink>. The <emphasis role="italic">openSUSE</emphasis> packages are based on
+            the <ulink url="http://www.libreoffice.org/download/release-notes/">LibreOffice 3.4.2
+                release</ulink> but they include all fixes from the last <emphasis role="italic"
+                >3.4.3</emphasis> bugfix release. Please, look for more details about the <emphasis
+                role="italic">openSUSE LibreOffice build</emphasis> on the <ulink
+                url="http://en.opensuse.org/LibreOffice">wiki page</ulink>.</para>
+        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any
+            software contains bugs and we kindly ask you to <ulink
+                url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help
+            us to fix them in the future releases. (...)</para>
+        <!-- ($ ld: 17.9.11 sm $)-->
     </blockquote>
 </sect1>
