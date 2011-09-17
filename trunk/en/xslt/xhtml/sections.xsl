@@ -109,7 +109,7 @@
   <xsl:if test="$prev">
     <span class="section-prev">
       <xsl:message>prev</xsl:message>
-      <a rel="next">
+      <a rel="prev">
         <xsl:attribute name="href">
           <xsl:call-template name="href.target">
             <xsl:with-param name="object" select="$prev"/>
