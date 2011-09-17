@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.dedoimedo.com/computers/opensuse-nvidia.html">Dedoimedo: How to install the Nvidia proprietary driver in openSUSE</ulink>
+      </title>
+      <para> This is not a new topic. We talked about it at least two or three times before, in my
+        original openSUSE 11 review and tutorial, then again in the <ulink url="http://www.dedoimedo.com/computers/opensuse-11sp4-kde.html">openSUSE 11.X</ulink>
+        articles. Still, it was more sort of a reference rather than a proper step-by-step guide.
+        Indeed, the graphics driver installation,ýeven though it&apos;s fairly simple, is not trivial. To
+        remove all and any doubt, I decided to write this tutorial. </para>
+      <para> We will dabble in Yast, learn how to handle repositories, add the Nvidia source,
+        install the correct driver and test the installation. We&apos;ll also recall how the installation
+        used to be done in the past and what some other distributions offer. Follow me. (...)</para>
+      <para><emphasis role="bold">Editors Note</emphasis>: This Howto doesn&apos;t work with the
+        Tumbleweed Kernel. In this case you must install the *.run File from the NVIDIA Page.</para>
+    </blockquote>
+  </sect2>
+<!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://elevenislouder.blogspot.com/2011/08/introduction-to-find.html">Eleven is Louder: An Introduction to Find</ulink>
+      </title>
+      <para>Learning find can seem daunting at first, but it is worth learning. There is no single more useful search tool for UNIX like systems. You could almost consider find a very primitive scripting language in itself as find can find the files you request and then perform tasks. (...)</para>
+    </blockquote>
+  </sect2> -->  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/create-your-own-syntax-highlighting-in-vim/">Wazi/Juliet Kemp: Create Your Own Syntax Highlighting in Vim</ulink>
+      </title>
+      <para>In text editors like <ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink>, syntax highlighting is the feature that shows defined components in different colors depending on their functions in the file. Vim has code syntax highlighting already available for a huge array of programming languages, including <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink>, <ulink url="http://olex.openlogic.com/packages/python">Python</ulink>, HTML, <ulink url="http://olex.openlogic.com/packages/ruby">Ruby</ulink>, JavaScript, and more, and most of them are installed by default in the $VIM/syntax/ directory, so in most cases you can just open up your source code files and see different parts appropriately color-coded. But what if you’re using a little-known language that doesn’t have a preinstalled syntax file? Or if you’re working with a different type of file altogether and want to create syntax highlighting from scratch? This tutorial shows how easy and even fun it is to write your own syntax highlighting rules for Vim. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/regular-expressions/string-matches-in-regular-expressions/">BashShell.net/Mike: String Matches in Regular Expressions</ulink>
+      </title>
+      <para>The parentheses allows you to use regular expressions to perform string matches, or matches to actual words.   Thus you may write a search that is looking for “virtual” or “main” with (virtual|mail).  Note they are separated by a pipe.  These are string searches so you are looking for “virtual” not “v” or “i” or “r” etc. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/parallel-programming-crash-course">Linux Journal/Joey Bernard: Parallel Programming Crash Course</ulink>
+      </title>
+      <para>I&apos;ve been covering various scientific programs the past few months, but sometimes it&apos;s hard to find a package that does what you need. In those cases, you need to go ahead and write your own code. When you are involved with heavy-duty scientific computing, you usually need to go to parallel computing in order to get the runtimes down to something reasonable. This month, I give a crash course in parallel programming so you can get a feel for what is involved. (...)</para>
+<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/how-to-secure-your-apache-web-server/">Wazi/Anatoliy A. Dimitrov: How to Secure Your Apache Web Server</ulink>
+      </title>
+      <para>Installing and maintaining a secure web server on Linux can be a challenge. It requires in-depth knowledge of Linux, <ulink url="http://olex.openlogic.com/packages/apache">Apache</ulink>, and <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink> server-side options. One of the main problems is to find the balance between security and productivity and usability. The best solution depends on the specific project requirements, but all installations share certain common characteristics. Here are some best practices for securing a LAMP server, from the server configuration to fine-tuning PHP settings. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://frederikkonietzny.de/wp/2011/09/02/how-to-test-the-plain-and-encrypted-smtppop3imap-and-http-protocols/">Frederik Konietzny: how to test the plain and encrypted SMTP/POP3/IMAP and HTTP protocols</ulink>
+      </title>
+      <para>In this article I will describe how to test the plain and the encrypted SMTP/POP3/IMAP and HTTP protocols with <emphasis role="bold">telnet</emphasis> and the <emphasis role="bold">openssl s_client</emphasis> command. (...)</para>
+    </blockquote>
+  </sect2> -->
+</sect1>

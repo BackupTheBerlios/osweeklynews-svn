@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="security">
+  <title>Security Updates</title>
+  <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
+    refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
+  <!--
+  <blockquote>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00012.html"
+        >openSUSE-SU-2011:1018-1: important: VUL-0: CVE-2011-3205: squid: buffer overflow in Gopher
+        reply parser</ulink></title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.1*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">squid</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:1018-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Wed, 7 Sep 2011 17:08:13 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>This update of squid3 fixes a buffer overflow vulnerability in the Gopher reply parser
+            code (CVE-2011-3205).</td>
+        </tr>
+      </tbody>
+    </table>
+</blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00014.html"
+        >openSUSE-SU-2011:1024-1: important: mozilla-nss: Update 3.12.11 update</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.1*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">mozilla-nss</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:1024-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Thu, 8 Sep 2011 14:08:32 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>It blacklists the lately compromised DigiNotar Certificate Authority.</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00017.html"
+        >openSUSE-SU-2011:1031-1: important: MozillaFirefox: 6.0.2</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold"> MozillaFirefox: 6.0.2</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:1031-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td> Fri, 9 Sep 2011 13:08:16 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>The purpose of this update is to blacklist the compromised DigiNotar Certificate
+            Authority.</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00018.html"
+        >openSUSE-SU-2011:1031-2: important: MozillaThunderbird: 3.1.13</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold"> MozillaThunderbird: 3.1.13</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:1031-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Fri, 9 Sep 2011 17:08:13 +0200 (CEST)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>The purpose of this update is to blacklist the compromised DigiNotar Certificate
+            Authority.</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote> -->
+</sect1>
