@@ -19,22 +19,18 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://emmes.livejournal.com/10733.html">Matthias Hopf: XDC: How to bring in
-        more contributors</ulink></title>
-    <para>In my talk (or rather: structured discussion) "<ulink
-        url="http://www.mshopf.de/pub/XDC_11_contributors.pdf">Methods of Attraction: How to bring
-        in new contributors</ulink>" on this year's <ulink
-        url="http://www.x.org/wiki/Events/XDC2011/Program">X.org Developer's Conference</ulink> I
-      brought up reasons why open source projects often fail to attract new contributors, and some
-      changes to help this.</para>
-    <para>During the discussion it turns out that for X.org the changes are either <emphasis
-        role="italic">very</emphasis> non-trivial, or (better) somewhat implemented already (like
-      the list of low hanging fruits, which basically boils down to our <ulink
-        url="http://wiki.x.org/wiki/ToDo">ToDo list</ulink> and the <ulink
-        url="http://wiki.x.org/wiki/Development/Janitor">Janitor subproject</ulink>).</para>
-    <para>I didn't really expect any direct outcome from this discussion (as it's more like a meta
-      discussion because we need to understand the real issues first), but I think it was fruitful
-      especially in keeping everybody aware of the situation. (...)</para>
-    <!--($ ld: 15.09.11 sm $)-->
+    <title><ulink
+        url="http://duncan.mac-vicar.com/2011/09/19/proprietary-drivers-broken-with-factory/">Duncan
+        Mac-Vicar Prett: proprietary drivers broken with Factory</ulink></title>
+    <para>ld.so.conf seems to have changed to include /etc/ld.so.conf.d/*.conf.</para>
+    <para>Unfortunately, proprietary drivers like the NVIDIA installed a file without the .conf
+      extension. Therefore XOrg did not find the custom openGL library included by the
+      driver.</para>
+    <para>Tracked as <ulink url="http://bugzilla.novell.com/718734">bug 718734</ulink>.</para>
+    <para><ulink
+        url="https://build.opensuse.org/project/show?project=home%3Admacvicar%3Abranches%3AX11%3ADrivers%3AVideo"
+        >home:dmacvicar:branches:X11:Drivers:Video</ulink> contains a fixed nvidia-gfxG02 (Also
+      updated to 280.13).</para>
+    <!--($ ld: 21.09.11 sm $)-->
   </blockquote>
 </sect1>

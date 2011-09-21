@@ -207,36 +207,95 @@
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.marques.so/2011/09/massive-updates-on-gnomeayatana/">Nelson
-            Marques: Massive updates on GNOME:Ayatana</ulink>
+          <ulink url="http://www.marques.so/2011/09/more-submissions-in-gnomeayatana/">Nelson
+            Marques: More submissions in GNOME:Ayatana</ulink>
         </title>
-        <para>I’ve made a lot of updates and fixes on GNOME:Ayatana repository, mainly on libraries
-          and build dependencies for the juicy stuff. I’m leaving the indicators for last. A
-          pleasant surprise which came with it was the drop of a significative number of patches,
-          many upstreamed in projects like GTK. The transition from GTK2 to GTK3 seems to be easy
-          enough… Lets see what is happening…</para>
-        <para>I’m still looking for a volunteer to maintain Compiz on GNOME:Ayatana!</para>
-<!--($ Id: 19.9.11 sm $)-->      </blockquote>
+        <para>A few more updates landed today and yesterday on GNOME:Ayatana, including a couple of
+          new packages, amongst them:<itemizedlist>
+            <listitem>
+              <para>unity – not yet ready for users to test, but it’s a first submission which aims
+                mainly to provide unity-core-4.0 dependency for other packages. It needs a bit of
+                work still, for example we’re missing the KDM and GDM session files to load the
+                Unity Desktop and there’s really no testing done at this stage.</para>
+            </listitem>
+            <listitem>
+              <para>unity-lens-applications</para>
+            </listitem>
+            <listitem>
+              <para>unity-lens-files</para>
+            </listitem>
+            <listitem>
+              <para>etc...</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>During the next days I’m uploading hopefully a fully working version of Unity 2D, I’m
+          just trying to fix some build errors on one of it’s dependencies, the Qt bindings for
+          dconf. Once this is done, I have strong reasons to believe that I’ll have a fully working
+          Unity 2D package.</para>
+        <para>I’ve also submitted gtk3-engines-unico (and submitted to GNOME:Apps) which provides
+          the GTK3 engine for Canonical’s Light Themes, this one is properly tested and works very
+          nice with GNOME3.</para>
+        <para>Hopefully more cool developments during the next days… And I’m still looking for a
+          volunteer contributor for Compiz…</para>
+<!--($ Id: 21.9.11 sm $)-->      </blockquote>
+      <blockquote>
+        <title><ulink url="http://www.marques.so/2011/09/banshee-repositories-maintenance/">Nelson
+            Marques: Banshee repositories maintenance…</ulink></title>
+        <para>The Banshee 2.2.0 sources were made available a few minutes ago. This is the perfect
+          time to perform some maintenance tasks on the openSUSE Banshee repositories. Since many of
+          the packages on this repositories are used in other projects (ex. Meego), I’m contacting
+          the maintainers and see how will approach the ‘nuking’ part. Some of the task to be performed:<itemizedlist>
+            <listitem>
+              <para>Package name change from banshee-1 to banshee, deprecating banshee-1;</para>
+            </listitem>
+            <listitem>
+              <para>Banshee for openSUSE is now maintained on GNOME:Apps project. Banshee:Unstable
+                will be served by a branch of the packages in the GNOME:Apps project (only banshee
+                and banshee-community-extensions);</para>
+            </listitem>
+            <listitem>
+              <para>Move from ndesk-* to dbus-sharp and dbus-sharp-glib (thus nuking ndesk
+                packages);</para>
+            </listitem>
+            <listitem>
+              <para>Nuke unwanted Mono packages so that the build links against the distribution
+                mono packages. This will clear a few problems that might happen, thus making this
+                repositories perfect to openSUSE users.</para>
+            </listitem>
+            <listitem>
+              <para>Anything I might have forgotten…</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>Banshee 2.2.0 will arrive within 24/48 hours to openSUSE users…</para>
+        <!--($ Id: 21.9.11 sm $)-->
+      </blockquote>
     </sect3>
-    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-entering-beta.html">Aaron Seigo: Plasma Active entering beta</ulink>
+          <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-entering-beta.html">plasma
+            active workshop: day 0</ulink>
         </title>
-        <para>At the beginning of this year, the Plasma team was itching to extend Plasma&apos;s coverage
-          of the device spectrum. We already had Desktop and Netbook interfaces, and while
-          maintaining and incrementally improving those, we wanted to show case the possibilities of
-          Plasma by creating a full fledged touch interface for devices. </para>
-        <para>After being shown the concept of Activities, Eva, founder of Basyskom (who is now a
-          major supporter and investor in our efforts), had an epiphany as how they could be applied
-          to a touch based device like a tablet. She christened the concept &quot;Contour&quot;. OpenSLX was
-          looking for a new halmark feature to help expand its appeal and so we found a home for
-          packaging efforts and OS. </para>
-        <para>We also wanted to start working with the newest QtQuick technologies without
-          disturbing the Desktop or Netbook interfaces with our experimentation. It all came
-          together at the right time and Plasma Active was born. (...)</para>
+        <para>The last couple of weeks have been ridiculously busy. Or, if you prefer (and I do):
+          ridicubusy. On the personal side of life, I managed to squeeze in a two day
+          paddle-and-camping trip the other weekend, played dinner host to Lawrence Krauss (made
+          some of my favourite dishes, and one new one (for me, anyways): egg yolk ravioli),
+          co-hosted a "Ready, Steady, Cook!" evening at the house along with S. All of that was
+          enjoyable, and great breaks between the long hours of working on Plasma and general KDE
+          "stuff".</para>
+        <para>A lot of what I've been working in the last two weeks has been involved writing source
+          code, but working on community, technology roadmap and business issues. I've managed to
+          get some good hacking hours in, too, but not as much as usual as I've been paying more
+          than the usual attention to these other, also-important areas.</para>
+        <para>Some of what I've been working on will (if all goes well) get to the next step this
+          week. A half dozen or so of us are congregating again in Darmstadt, Germany to collaborate
+          on Plasma Active issues. We'll be focussing on getting to a high quality Plasma Active
+          One, what we wish to do after that, our plans for libplasma2 and Frameworks 5, the next
+          iteration of UI implementation concepts as we fully realize the Contour concepts, hardware
+          related issues and the business case around it all. All in four days. I don't expect to
+          get much sleep.</para>
+        <!--($ Id: 21.9.11 sm $)-->
       </blockquote>
       <blockquote>
         <title>
@@ -249,7 +308,7 @@
           from that, it’s a good point in time to give an update of our progress towards Plasma
           Active One. So where do we stand today? What has been the progress lately? (...)</para>
       </blockquote>
-    </sect3> -->
+    </sect3>
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
@@ -530,61 +589,43 @@ latest version on the project page is 0.5.9</para>
         </listitem>
       </itemizedlist>
     </sect3>
-<!--
+
     <sect3 role="tumbleweed">
       <title>Tumbleweed Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.kroah.com/log/suse/tumbleweed-status-04-22-2011.html">Greg Kroah-Hartman: openSUSE Tumbleweed status for the week of April 22, 2011</ulink>
+          <ulink url="http://news.opensuse.org/2011/09/20/systemd-is-being-removed-from-tumbleweed/"
+            >Koudaras Konstantinos: Systemd is being removed from Tumbleweed</ulink>
         </title>
-        <para>Here&apos;s a short note as to the status of some recent activity in the
-          openSUSE:Tumbleweed repo:</para>
-        <itemizedlist>
-          <listitem>
-            <para>the kernel is at the 2.6.38 release level tracking the upstream stable 2.6.38
-              releases.</para>
-          </listitem>
-          <listitem>
-            <para>lxde (and its sub-packages) was added</para>
-          </listitem>
-          <listitem>
-            <para>calibre was added</para>
-          </listitem>
-          <listitem>
-            <para>other smaller packages were added</para>
-          </listitem>
-          <listitem>
-            <para>KDE update seems stable and working. It&apos;s in the openSUSE:Tumbleweed:KDE repo if
-              anyone wants to test it out now. I&apos;ll be working next few weeks to merge this into the
-              main openSUSE:Tumbleweed repo as my bandwidth allows.</para>
-          </listitem>
-          <listitem>
-            <para>There is a GNOME 3.0 Tumbleweed repo at openSUSE:Tumbleweed:GNOME. It&apos;s properly
-              building right now, but the same caveats remain for the main GNOME 3.0 repo (i.e.
-              network manager issues with KDE, and other minor stuff), so I can&apos;t merge it to the
-              main openSUSE:Tumbleweed repo just yet. I&apos;ll wait for these changes to settle down,
-              but if you want, feel free to try out the repo for your GNOME 3.0 systems running
-              Tumbleweed. I&apos;ll keep it up to date as the changes merge into the main GNOME 3.0
-              repo.</para>
-          </listitem>
-          <listitem>
-            <para>artwork questions were raised with one proposed logo already sent in. More to come
-              in this area hopefully soon.</para>
-          </listitem>
-          <listitem>
-            <para>There were a few &quot;version downgrades&quot; that happened as the upstream project
-              release number was changed to reflect the basesystem release number correctly. This
-              will probably continue to happen as this change is propagated throughout the openSUSE
-              build system to fix up these errors by the various developers. You can safely ignore
-              them when they happen.</para>
-          </listitem>
-        </itemizedlist>
-        <para>As always, if anyone knows of any packages they wish to see added to Tumbleweed,
-          please let me know.</para>
-        <para>Please read the <ulink url="http://en.opensuse.org/Tumbleweed">wiki page for Tumbleweed</ulink> if you have any basic questions about what it is or how to use it.
-          Any other questions, please ask them on the <ulink url="http://lists.opensuse.org/opensuse-factory/">opensuse-factory mailing list</ulink>.</para>
+        <para>Respecting users is a priority to the openSUSE Project so when something does not work
+          the way it should be, taking a step back is more preferable than delivering something that
+          is not ready yet. For that reason yesterday afternoon<ulink url="http://www.kroah.com/">
+            Greg K.H</ulink>. announced to the <ulink
+            url="http://lists.opensuse.org/opensuse-factory/">openSUSE-factory mailing list</ulink>
+          that systemd is being removed from <ulink url="http://en.opensuse.org/Portal:Tumbleweed"
+            >Tumbleweed</ulink> so that users won’t have a problem with it. That way it will allow
+          developers to spend more time on working on it in order to have systemd ready for the
+          upcoming 12.1 instead of chasing problems that are specific to Tumbleweed.</para>
+        <para>Here is the <ulink
+            url="http://lists.opensuse.org/opensuse-factory/2011-09/msg00877.html">e-mail</ulink>
+          from Greg K.H. announcing the removal of systemd from Tumbleweed:<blockquote>
+            <para>Due to a number of inter dependencies on packages that are not ready for
+              Tumbleweed, and other interactions with the system that are causing problems for some
+              users, I’m going to remove systemd from Tumbleweed today to allow the developers to
+              spend more time on getting it stable for Factory and 12.1 instead of having to chase
+              down problems that are specific to Tumbleweed only.</para>
+            <para>So if you have installed systemd in Tumbleweed, I suggest you now remove it with a
+              simple:</para>
+            <para>
+              <programlisting>zypper rm systemd</programlisting>
+            </para>
+            <para>thanks,</para>
+            <para>greg k-h</para>
+          </blockquote></para>
+        <!-- ($ ld: 21.9.11 sm $)-->
       </blockquote>
-    </sect3> --><!--
+    </sect3>
+    <!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
