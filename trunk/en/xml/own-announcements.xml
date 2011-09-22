@@ -25,21 +25,18 @@
     * carefully selected other sources-->
   <blockquote>
     <title>
-      <ulink url="http://news.opensuse.org/2011/09/01/and-the-milestones-keep-on-coming/">And the
-        Milestones Keep On Coming!</ulink>
+      <ulink url="http://news.opensuse.org/2011/09/21/opensuse-12-1-beta-delay/">openSUSE 12.1 Beta
+        taking more time to become good</ulink>
     </title>
-    <para>Fire up your virtual machines, get your test machines motoring, and start tweaking your
-      fingers. It’s testing time!</para>
-    <para>openSUSE 12.1′s next milestone 5 is now ready for download. Thanks to the men and women of
-      openSUSE Factory who kept their eye on the ball with all the wonderful flurry of activities
-      going on in our Project these days, they never lost sight and we’ll be sure to have an awesome
-      final release in November. </para>
-    <para>There’s a lot of interesting updates to the 12.1 release and some cool new technologies
-      including GNOME 3 and SystemD. You’ll definitely want to take this milestone for a spin and
-      see what you can expect in 12.1. And if you’ve never tested before, its easy if you follow
-        <ulink url="http://en.opensuse.org/VirtualBox">these instructions</ulink>. Being a tester is
-      one of the great ways of contributing to the free software movement, and there’s plenty of
-      room for testers in openSUSE Project. (...)</para>
-    <para><!-- ($ ld: 03.09.11 sm $)--></para>
+    <para>Last Friday Stephan Kulow, our openSUSE Release Manager, started a discussion on Factory
+      mailing list about show-stoppers for the 12.1-Beta release scheduled for 2011-09-22. It became
+      clear that Factory still needs some polishing to become a useful Beta for large numbers of
+      testers to try out..</para>
+    <para>Particularly, one of the reasons is the challenges relating to the switch to use systemd
+      by default, which means that it is also used during install and first boot (which has the
+      special configuration stuff).ý And between the timing of last week’s openSUSE Conference and
+      next week’s planned Hackweek, the Factory team agreed it is better to take the time to ensure
+      a release that meets the level of quality that our openSUSE Distro is known for (...).</para>
+    <para><!-- ($ ld: 22.09.11 sm $)--></para>
   </blockquote>
 </sect1>
