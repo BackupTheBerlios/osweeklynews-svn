@@ -19,6 +19,22 @@
 <sect1 role="hackweek" id="hackweek">
   <title>Hackweek VII</title>
   <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/09/22/suse-hackweek-7-next-week/">SUSE Hackweek
+        7 – Next Week</ulink></title>
+    <para>One of the ways SUSE and its developers contribute to openSUSE is through <ulink
+        url="http://hackweek.opensuse.org">Hackweek</ulink>: – a week long sprint permitting
+      developers to work on something entirely of their own design or wishes as long as it is
+      FOSS-related. Started in 2007, it has become a regular part of SUSE’s development. This is in
+      keeping in line with the openSUSE Project’s goal of being more than just an organization that
+      benefits itself. We believe in a project that benefits the greater good of free and open
+      software.</para>
+    <para>Some 150+ developers will have free reign to work on new applications or make improvements
+      to other software projects. Hackweek also permits developers to push away from the grind of
+      deadlines and “must fix” bug fixing (unless it’s a critical customer situation) which can be
+      at times stressful and tedious. (...)</para>
+    <!--($ ld: 23.9.11 sm $) -->
+  </blockquote>
+  <blockquote>
     <title><ulink url="http://michal.hrusecky.net/2011/09/hack-week/">Michal Hrušecký: Hack
         Week</ulink></title>
     <para>Next week is a Hack Week. Do you know, what Hack Week is? It’s week during which we at
@@ -47,35 +63,5 @@
       inspiration for others and if somebody would like to join me on either of these, don’t
       hesitate to leave a comment</para>
     <!-- ($ ld: 21.9.11 sm $) -->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://stick.gk2.sk/blog/2011/02/novell-hackweek-6-game-jam-prague-2011/"
-        >Pavol Rusnak: Novell Hackweek #6</ulink></title>
-    <figure id="fig.liveview">
-      <title>LiveView Device</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="http://stick.gk2.sk/blog/wp-content/uploads/2011/01/se-liveview-150x150.jpg"/>
-        </imageobject>        
-      </mediaobject>
-    </figure>    
-    <para>Last week we had a Hackweek at Novell. I decided to do something rather unusual for me –
-      to hack a device. I bought one of these nifty <ulink
-        url="http://www.sonyericsson.com/cws/products/accessories/overview/liveview"
-        >LiveView</ulink> <xref linkend="fig.liveview"/> devices made by Sony Ericsson, which are basically an intelligent watch
-      that can connect to your mobile phone using Bluetooth. Unfortunately, it turned out to be
-      rather unusable with Android devices (lots of Bluetooth disconnects), but supposedly a
-      firmware update is on its way. After I saw that, I was somehow disappointed but I thought
-      there must be a way how to reverse engineer a protocol and try to connect the device to my
-      computer. I started to look around on the Internet and found a great blog by <ulink
-        url="http://adq.livejournal.com/">Andrew de Quincey</ulink>. What was even more cool was
-      that Andrew already did most of the job and wrote some code in Python. All I had to do is to
-      wrap it into classes to make it more general and thus customizable. So what’s next? My dream
-      is to create a custom open-source firmware and flash the device. I hope I can achieve this
-      with help of hardware wizards from our <ulink url="http://brmlab.cz/project/liveview">Prague
-        hackerspace</ulink>. The source code is available from <ulink
-        url="http://gitorious.org/brmlab/liveview">gitorious</ulink> as usual. Do you think that
-        Hackweek lasted only until Friday for me? Well, not really, keep reading … :-)</para>
-    <!-- ($ ld: 4.2.11 sm $) -->
   </blockquote>
 </sect1>
