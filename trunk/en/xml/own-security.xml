@@ -20,11 +20,9 @@
   <title>Security Updates</title>
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
-  <!--
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00012.html"
-        >openSUSE-SU-2011:1018-1: important: VUL-0: CVE-2011-3205: squid: buffer overflow in Gopher
-        reply parser</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00024.html"
+        >openSUSE-SU-2011:1062-1: important: jakarta-commons-daemon</ulink></title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
       <col width="1.1*"/>
@@ -39,29 +37,30 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">squid</emphasis>
+            <emphasis role="bold">jakarta-commons-daemon</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1018-1</td>
+          <td>openSUSE-SU-2011:1062-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Wed, 7 Sep 2011 17:08:13 +0200 (CEST)</td>
+          <td> Fri, 23 Sep 2011 13:08:20 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.4 openSUSE 11.3</td>
+          <td>openSUSE 11.4</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>This update of squid3 fixes a buffer overflow vulnerability in the Gopher reply parser
-            code (CVE-2011-3205).</td>
+          <td>jsvc did not properly drop capabilities, therefore allowing applications to access
+            files owned by the super user (CVE-2011-2729).</td>
         </tr>
       </tbody>
     </table>
-</blockquote>
+  </blockquote>
+  <!--
   <blockquote>
     <title>
       <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00014.html"
