@@ -39,10 +39,10 @@
   </sect2> -->  <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://log.or.cz/?p=213">Petr Baudis: Realtime Signal Analysis in
-          Perl</ulink></title>
-      <para>About a month ago, we were working on <ulink url="http://brmlab.cz/project/fluffyball"
-          >the Fluffy Ball project</ulink> – a computer input device that can react to fondling and
+      <title>
+        <ulink url="http://log.or.cz/?p=213">Petr Baudis: Realtime Signal Analysis in Perl</ulink>
+      </title>
+      <para>About a month ago, we were working on <ulink url="http://brmlab.cz/project/fluffyball">the Fluffy Ball project</ulink> – a computer input device that can react to fondling and
         punching. Thanks to a nice idea on the brmlab mailing list, we use a microphone and process
         the noise coming from the ball’s scratchy stuffing and an embedded jingle. The sounds from
         the outside are almost entirely dampened by the stuffing and for a human, the noise of
@@ -51,11 +51,8 @@
         detection accuracy for a computer too (especially when the user is allowed to “train” her
         input based on feedback); I had big plans to use ANN and all the nifty things I have learned
         in our AI classes, but it turned out to be simply an overkill. The input signal is
-        transformed to a frequency spectrum (see box) using <ulink
-          url="http://en.wikipedia.org/wiki/Discrete_Fourier_transform">real discrete
-        FFT</ulink>.</para>
-      <!--($ Id: 24.9.11 sm $)-->
-    </blockquote>
+        transformed to a frequency spectrum (see box) using <ulink url="http://en.wikipedia.org/wiki/Discrete_Fourier_transform">real discrete FFT</ulink>. (...)</para>
+<!--($ Id: 24.9.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
