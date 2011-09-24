@@ -53,7 +53,7 @@
       <para>In the last two weeks 457 package checkins were done for openSUSE:Factory. The legal
         queue is very small and contains only 7 packages including two large packages: chromium
         which might end in Factory and LibreOffice 3.4 - with a large tarball instead of many
-        smaller ones.ý LibreOffice has 110.000 files, so the legal review will take some time. Out
+        smaller ones.  LibreOffice has 110.000 files, so the legal review will take some time. Out
         of the 457 package checkins, I&apos;ll only highlight a few below. Quite a few package checkins
         were to fix build failures from the no-copy-dt-needed change and on improving systemd
         support in openSUSE. (...)</para>
@@ -268,8 +268,10 @@
         <title>
           <ulink url="http://www.marques.so/2011/09/banshee-2-2-0-released-and-available-for-opensuse-users/">Nelson Marques: Banshee 2.2.0 released and available for openSUSE users!</ulink>
         </title>
-        <para>The first release ofý<ulink url="http://banshee.fm">Banshee</ulink>ý2.2 series has
-          just beený<ulink url="http://mail.gnome.org/archives/banshee-list/2011-September/msg00124.html">announced</ulink>ýand includes 108 notable bug fixes (since version 2.0.0) and delivers
+        <para>The first release of <ulink url="http://banshee.fm">Banshee</ulink> 2.2 series has
+          just been <ulink
+            url="http://mail.gnome.org/archives/banshee-list/2011-September/msg00124.html"
+            >announced</ulink> and includes 108 notable bug fixes (since version 2.0.0) and delivers
           some long waited new features:<itemizedlist>
             <listitem>
               <para>Support default internet radio stations;</para>
@@ -296,7 +298,8 @@
       <title>KDE Team</title>
       <blockquote>
         <title>
-          <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-entering-beta.html">plasma active workshop: day 0</ulink>
+          <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-entering-beta.html">Aaron
+            Seigo: plasma active workshop: day 0</ulink>
         </title>
         <para>The last couple of weeks have been ridiculously busy. Or, if you prefer (and I do):
           ridicubusy. On the personal side of life, I managed to squeeze in a two day
@@ -319,14 +322,25 @@
 <!--($ Id: 21.9.11 sm $)-->      </blockquote>
       <blockquote>
         <title>
-          <ulink url="http://vizzzion.org/blog/2011/09/plasma-active-crunching-towards-one/">Sebastian Kügler: Plasma Active: Crunching towards One</ulink>
+          <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-workshop-wrapup.html">Aaron
+            Seigo: plasma active workshop wrapup</ulink>
         </title>
-        <para><emphasis role="italic">Plasma Active aims at creating a desirable user experience for a spectrum of devices, based on a fully Free software stack, developed in the open. The first release is planned for October. In the following article, you can read about the latest status and recent improvements made.</emphasis></para>
-        <para>One our way to our first release (begin of October as it currently looks like), we’re
-          in serious make-it-work mode, crunching bugs left and right and filling in gaps of the
-          workflows we want to suppport in our first release of Plasma Active. As we’re a month away
-          from that, it’s a good point in time to give an update of our progress towards Plasma
-          Active One. So where do we stand today? What has been the progress lately? (...)</para>
+        <para>What can I say other than "that was a very, very fast four days in Darmstadt". I had
+          expected to have the time and energy to blog more during the event, but that was obviously
+          not to be. There were only three people working on the actual code there, but we managed
+          to make over 60 commits over the course of the event, not counting backports and similar
+          janitorial efforts. That isn't a huge rate of commits given the people who were there,
+          however, though it is certainly respectable. </para>
+        <para>So what else were we doing? The first thing we did was review all open bugs for Plasma
+          Active, turned our draft agenda into a kanban board on the wall and then torture tested
+          the user interface on both MeeGo and OpenSUSE to identify issues that need addressing. We
+          sorted and prioritized these items into the kanban and got to work on them. I will be
+          spending some time today creating new bugs.kde.org reoprts for the items that remained on
+          the wall at the end of the event. We focussed these efforts on the main part of the tablet
+          shell: activities, recommendations, the running-applications peak area and the application
+          launcher. We had an "other" category as well, and it become rather well populated, but we
+          want to make sure that the core components work very well in our first release. </para>
+        <!--($ Id: 24.9.11 sm $)-->
       </blockquote>
     </sect3>
 <!--
@@ -559,35 +573,27 @@ Main benefits: audio/video with XMPP Jingle on all platforms, thus improving int
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00026.html">Larry Finger: Weekly News for September 17</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00033.html">Larry
+            Finger: Weekly News for September 24</ulink>
         </title>
-        <para>The Testing Core Team met at 17:00 UTC, September 12. Our meeting was not too long as
-          most of the participants were at openSUSE Conference 2011. </para>
-        <para>We first discussed our experiences with 12.1 MS5. I reported that I was having
-          problems with the KDE plasmoid NetworkManager applet, and with systemd. As it turned out,
-          I was downloading a 1751-package upgrade during the meeting, and those upgrades fixed most
-          of the problems with NetworkManager. In addition, a subsequent upgrade has fixed my
-          systemd problems. </para>
-        <para>Our next topic of discussion was oSC 2011. There were back-to-back BoF sessions on
-          testing, one conducted by Bernhard Wiedermann of the TCT, and the second organized by Jiri
-          Slaby of SuSE. Bernhard also had a talk on &quot;One Year of openqa.opensuse.org&quot;. The
-          conference also included a talk on kernel testing, more indication of the need for
-          automated testing of systems that get more and more complicated. </para>
-        <para>We next discussed Open Bugs Day No. 3. The possible explanations for the low
-          participation ranges from &quot;looking at old bugs is not very exciting&quot; to &quot;it was a nice
-          summer day in Germany&quot;. Whatever the cause, I hope we get a better turnout when we have an
-          OBD for the bugs in 12.1. </para>
-        <para>We then discussed the areas in 12.1 that have the greatest likelihood of causing
-          problems for openSUSE users. As systemd will be the default in 12.1, it needs to be tested
-          on as many of our platforms as possible. We also expect further problems with the KMS
-          video drivers, particularly nouveau for the nVidia adapters. To help users, we proposed
-          that &quot;nomodeset&quot; be a standard feature of the installation media on the Factory ML. There
-          was some reluctance, but it is likely that a failsafe option will be added to the GRUB
-          menus on the media. </para>
         <para>The next meeting of the Testing Core Team will be September 25, 2011 at 17:00 UTC on
           Channel #opensuse-testing on the Freenode IRC Network
           (irc://irc.freenode.net/opensuse-testing). Our preliminary agenda includes our experiences
           with 12.1 Beta, and a discussion of the Beta Pizza Party. </para>
+        <para>As 12.1 is not yet in a condition deemed worthy of being called a Beta, it has not
+          been released; however, a rolling update from the Factory repos has my main system working
+          quite well. I no longer have any problems with systemd and the KDE plasmoid NetworkManager
+          applet is now working. It asks for authentication a bit too frequently - I do not think
+          the permissions are right yet, but the applet does not crash, and it is possible to
+          connect reliably to my wireless network. </para>
+        <para>Of great interest to kernel developers, the community has been able to keep working at
+          getting kernel 3.1 in condition for its release, and getting ready for the merge of 3.2,
+          even though kernel.org, the main site for development, has been down while the site
+          recovers from a penetration incident. If kernel development were not using git, a
+          distributed version control system, the impact would have been much worse. I am amazed
+          that when the main server went down for an extended period, the work barely paused. Kudos
+          to github.com and infradead.org for providing server space for the two repositories that I
+          use regularly. </para>
       </blockquote>
     </sect3>
     <sect3 role="translationteam">

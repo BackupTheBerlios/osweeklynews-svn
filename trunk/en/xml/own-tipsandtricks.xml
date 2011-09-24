@@ -39,23 +39,23 @@
   </sect2> -->  <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/create-your-own-syntax-highlighting-in-vim/">Wazi/Juliet Kemp: Create Your Own Syntax Highlighting in Vim</ulink>
-      </title>
-      <para>In text editors like <ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink>, syntax highlighting is the feature that shows defined components in different colors depending on their functions in the file. Vim has code syntax highlighting already available for a huge array of programming languages, including <ulink url="http://olex.openlogic.com/packages/php">PHP</ulink>, <ulink url="http://olex.openlogic.com/packages/python">Python</ulink>, HTML, <ulink url="http://olex.openlogic.com/packages/ruby">Ruby</ulink>, JavaScript, and more, and most of them are installed by default in the $VIM/syntax/ directory, so in most cases you can just open up your source code files and see different parts appropriately color-coded. But what if you’re using a little-known language that doesn’t have a preinstalled syntax file? Or if you’re working with a different type of file altogether and want to create syntax highlighting from scratch? This tutorial shows how easy and even fun it is to write your own syntax highlighting rules for Vim. (...)</para>
-<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://bashshell.net/regular-expressions/string-matches-in-regular-expressions/">BashShell.net/Mike: String Matches in Regular Expressions</ulink>
-      </title>
-      <para>The parentheses allows you to use regular expressions to perform string matches, or matches to actual words.   Thus you may write a search that is looking for “virtual” or “main” with (virtual|mail).  Note they are separated by a pipe.  These are string searches so you are looking for “virtual” not “v” or “i” or “r” etc. (...)</para>
-<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.linuxjournal.com/content/parallel-programming-crash-course">Linux Journal/Joey Bernard: Parallel Programming Crash Course</ulink>
-      </title>
-      <para>I&apos;ve been covering various scientific programs the past few months, but sometimes it&apos;s hard to find a package that does what you need. In those cases, you need to go ahead and write your own code. When you are involved with heavy-duty scientific computing, you usually need to go to parallel computing in order to get the runtimes down to something reasonable. This month, I give a crash course in parallel programming so you can get a feel for what is involved. (...)</para>
-<!-- ($ Id: 17.9.11 sat $)-->    </blockquote>
+      <title><ulink url="http://log.or.cz/?p=213">Petr Baudis: Realtime Signal Analysis in
+          Perl</ulink></title>
+      <para>About a month ago, we were working on <ulink url="http://brmlab.cz/project/fluffyball"
+          >the Fluffy Ball project</ulink> – a computer input device that can react to fondling and
+        punching. Thanks to a nice idea on the brmlab mailing list, we use a microphone and process
+        the noise coming from the ball’s scratchy stuffing and an embedded jingle. The sounds from
+        the outside are almost entirely dampened by the stuffing and for a human, the noise of
+        fondling and punching is easily distinguishable.</para>
+      <para>It turns out that trivial spectrum-based rules can be used to achieve reasonably high
+        detection accuracy for a computer too (especially when the user is allowed to “train” her
+        input based on feedback); I had big plans to use ANN and all the nifty things I have learned
+        in our AI classes, but it turned out to be simply an overkill. The input signal is
+        transformed to a frequency spectrum (see box) using <ulink
+          url="http://en.wikipedia.org/wiki/Discrete_Fourier_transform">real discrete
+        FFT</ulink>.</para>
+      <!--($ Id: 24.9.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
