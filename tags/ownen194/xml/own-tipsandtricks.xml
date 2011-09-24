@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/video/get-firefox-menu-button-linux">Linux Journal/Shawn Powers: Get Firefox Menu Button in Linux</ulink>
+      </title>
+      <para>The Windows version of Firefox comes with a fancy menu button in the title bar. Linux doesn&apos;t have that exact feature, but you can come close. Shawn Powers shows us how.</para>
+<!-- ($ Id: 23.9.11 sat $)-->    </blockquote>
+  </sect2>
+<!--
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://elevenislouder.blogspot.com/2011/08/introduction-to-find.html">Eleven is Louder: An Introduction to Find</ulink>
+      </title>
+      <para>Learning find can seem daunting at first, but it is worth learning. There is no single more useful search tool for UNIX like systems. You could almost consider find a very primitive scripting language in itself as find can find the files you request and then perform tasks. (...)</para>
+    </blockquote>
+  </sect2> -->  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://log.or.cz/?p=213">Petr Baudis: Realtime Signal Analysis in Perl</ulink>
+      </title>
+      <para>About a month ago, we were working on <ulink url="http://brmlab.cz/project/fluffyball">the Fluffy Ball project</ulink> – a computer input device that can react to fondling and
+        punching. Thanks to a nice idea on the brmlab mailing list, we use a microphone and process
+        the noise coming from the ball’s scratchy stuffing and an embedded jingle. The sounds from
+        the outside are almost entirely dampened by the stuffing and for a human, the noise of
+        fondling and punching is easily distinguishable.</para>
+      <para>It turns out that trivial spectrum-based rules can be used to achieve reasonably high
+        detection accuracy for a computer too (especially when the user is allowed to “train” her
+        input based on feedback); I had big plans to use ANN and all the nifty things I have learned
+        in our AI classes, but it turned out to be simply an overkill. The input signal is
+        transformed to a frequency spectrum (see box) using <ulink url="http://en.wikipedia.org/wiki/Discrete_Fourier_transform">real discrete FFT</ulink>. (...)</para>
+<!--($ Id: 24.9.11 sm $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-101-2/index.html?ca=drs-">IBM DeveloperWorks/Ian Shields: Learn Linux, 101: Boot the system</ulink>
+      </title>
+      <para><emphasis role="bold">Summary:</emphasis>ý Learn to guide your Linux system through the
+        boot process. You can use the material in this article to study for the LPI 101 exam for
+        Linux system administrator certification, or just to learn about the boot process.
+        (...)</para>
+<!--($ Id: 21.9.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://tychoish.com/rhizome/9-awesome-ssh-tricks/">Sam Kleinman: 9 Awesome SSH Tricks</ulink>
+      </title>
+      <para>Sorry for the lame title. I was thinking the other day, about how awesome SSH is, and how it&apos;s probably one of the most crucial pieces of technology that I use every single day. Here&apos;s a list of 10 things that I think are particularly awesome and perhaps a bit off the beaten path. (...)</para>
+<!-- ($ Id: 23.9.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

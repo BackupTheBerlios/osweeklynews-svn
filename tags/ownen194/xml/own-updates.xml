@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+    <title>New/Updated Applications @ openSUSE</title>
+    <!--* Gnome
+* KDE
+* XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+    <blockquote>
+        <title>
+            <ulink
+                url="http://lizards.opensuse.org/2011/09/15/libreoffice-3-4-available-for-opensuse/"
+                >Petr Mladek: LibreOffice 3.4 available for openSUSE</ulink>
+        </title>
+        <para>I’m happy to announce LibreOffice <emphasis role="italic">3.4 </emphasis>packages for
+                <emphasis role="italic">openSUSE</emphasis>. They are available in the Build Service
+                <ulink url="http://download.opensuse.org/repositories/LibreOffice:/Stable/"
+                >LibreOffice:Stable</ulink> project.</para>
+        <para><emphasis role="italic">LibreOffice 3.4</emphasis> provides many interesting <ulink
+                url="http://www.libreoffice.org/download/3-4-new-features-and-fixes/">features and
+                fixes</ulink>. The <emphasis role="italic">openSUSE</emphasis> packages are based on
+            the <ulink url="http://www.libreoffice.org/download/release-notes/">LibreOffice 3.4.2
+                release</ulink> but they include all fixes from the last <emphasis role="italic"
+                >3.4.3</emphasis> bugfix release. Please, look for more details about the <emphasis
+                role="italic">openSUSE LibreOffice build</emphasis> on the <ulink
+                url="http://en.opensuse.org/LibreOffice">wiki page</ulink>.</para>
+        <para>The openSUSE LO team hopes that you will be happy with this release. Though, any
+            software contains bugs and we kindly ask you to <ulink
+                url="http://en.opensuse.org/openSUSE:Bugreport_LO">report bugs</ulink>. It will help
+            us to fix them in the future releases. (...)</para>
+        <!-- ($ ld: 17.9.11 sm $)-->
+    </blockquote>
+</sect1>

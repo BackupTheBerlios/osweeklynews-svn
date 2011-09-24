@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="planetsuse">
+  <title>Planet SUSE</title>
+  <blockquote>
+    <title><ulink
+        url="http://duncan.mac-vicar.com/2011/09/19/proprietary-drivers-broken-with-factory/">Duncan
+        Mac-Vicar Prett: proprietary drivers broken with Factory</ulink></title>
+    <para>ld.so.conf seems to have changed to include /etc/ld.so.conf.d/*.conf.</para>
+    <para>Unfortunately, proprietary drivers like the NVIDIA installed a file without the .conf
+      extension. Therefore XOrg did not find the custom openGL library included by the
+      driver.</para>
+    <para>Tracked as <ulink url="http://bugzilla.novell.com/718734">bug 718734</ulink>.</para>
+    <para><ulink
+        url="https://build.opensuse.org/project/show?project=home%3Admacvicar%3Abranches%3AX11%3ADrivers%3AVideo"
+        >home:dmacvicar:branches:X11:Drivers:Video</ulink> contains a fixed nvidia-gfxG02 (Also
+      updated to 280.13).</para>
+    <!--($ ld: 21.09.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.cornelius-schumacher.de/2011/09/my-opensuse-conference.html"
+        >Cornelius Schumacher: My openSUSE conference </ulink></title>
+    <para>Last week was the <ulink url="http://conference.opensuse.org/">openSUSE conference</ulink>
+      in Nýrnberg. Here are some of my impressions. I loved the relaxed, crazy atmosphere, mixing so
+      many different people with so many different backgrounds, skills, interests, and fascinating
+      projects. This spans quite a broad range of topics, not only on the software side from kernel
+      to office suite, but also in other areas from cheese over quadrocopters to self-replicating
+      machines. This community is seriously rocking the boat. (...)</para>
+    <!--($ ld: 23.09.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/09/22/happy-pony-opensuse/">Susanne
+        Oberhauser: “Happy Pony” openSUSE?</ulink></title>
+    <para>At the openSUSE conference last week, Lydia Pintscher from the KDE Community Working Group
+      led a BoF on “women in openSUSE”. This is what we (Stella, Bruno, Lydia, Pascal, Susanne,
+      Greg) worked out:</para>
+    <para>There are very few women in openSUSE for a variety of reasons. In our perceiption, despite
+      the good efforts of moderators on IRC, forums and mailing-lists, some attitudes there still
+      persist, and we believe these are a key issue that keeps women away. To further address this
+      as a small group, we decided to start at just one place, opensuse-project@. Here’s why and
+      how:</para>
+    <para>There is quite some research on why there is so few “women in FLOSS” in general. One of
+      the recurring topics there, and one that we also quickly came to in the BoF, was the
+      ‘flaming’, or more generally, the negative possibilities of the direct, unfiltered yet
+      anonymous communication on IRC, forums and mail.</para>
+    <para>We all value the speed and positive directness of those forms of communication — however
+      it’s cutting off facial expression and physical reaction. So it’s very easy to miss the tone,
+      without even noticing. To more sensitive souls, this is creating a barrier of entry that
+      especially women do not want to cross, or if it hits you unprepared, will reject you, often
+      with no return. Nota bene: this effect is not limited to women! It just happens to reject
+      women more than men.(...)</para>
+    <!--($ ld: 23.09.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://www.wafaa.eu/entry/growing-some-opensuse-arms-1-69.html">Andrew Wafaa:
+        Growing some openSUSE ARMs</ulink></title>
+    <para>One of the things that came out of the recent <ulink url="http://conference.opensuse.org"
+        >Geeko Love-In</ulink> for me was a new project to immerse myself in within openSUSE. Yeah I
+      know, we have enough existing projects already so why create a new one? Simples! Believe it or
+      not but openSUSE is behind the curve in a specific segment, and that segment has yet to
+      explode to its full potential. That segment is ARM. (...)</para>
+    <!--($ ld: 23.09.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://lizards.opensuse.org/2011/09/19/osc11-slides-and-screen-cast-workshop-kvmlibvirtd/"
+        >Bruno Friedmann: osc11 slides and screen cast workshop kvm/libvirtd</ulink></title>
+    <para>Just a quick note, my slides and screen cast about my recent openSUSE conference workshop
+      about KVM/libvirtd are online at<ulink url="http://goo.gl/fQfql">http://goo.gl/fQfql</ulink>
+      Check at material subject</para>
+    <!--($ ld: 24.09.11 sm $)-->
+  </blockquote>
+</sect1>

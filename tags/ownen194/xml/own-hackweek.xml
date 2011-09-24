@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="hackweek" role="hackweek">
+  <title>Hackweek VII</title>
+  <blockquote>
+    <title>
+      <ulink url="http://news.opensuse.org/2011/09/22/suse-hackweek-7-next-week/">SUSE Hackweek 7 – Next Week</ulink>
+    </title>
+    <para>One of the ways SUSE and its developers contribute to openSUSE is through <ulink url="http://hackweek.opensuse.org">Hackweek</ulink>: – a week long sprint permitting
+      developers to work on something entirely of their own design or wishes as long as it is
+      FOSS-related. Started in 2007, it has become a regular part of SUSE’s development. This is in
+      keeping in line with the openSUSE Project’s goal of being more than just an organization that
+      benefits itself. We believe in a project that benefits the greater good of free and open
+      software.</para>
+    <para>Some 150+ developers will have free reign to work on new applications or make improvements
+      to other software projects. Hackweek also permits developers to push away from the grind of
+      deadlines and “must fix” bug fixing (unless it’s a critical customer situation) which can be
+      at times stressful and tedious. (...)</para>
+<!--($ ld: 23.9.11 sm $) -->  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://michal.hrusecky.net/2011/09/hack-week/">Michal Hrušecký: Hack Week</ulink>
+    </title>
+    <para>Next week is a Hack Week. Do you know, what Hack Week is? It’s week during which we at
+      SUSE come to work and work on anything we want. Anything? Well anything open source related.
+      So if you normally work as a designer, you can sit down and spend a whole week hacking Linux
+      kernel. Or on the other hand, as kernel developer, you can try to improve design of our web.
+      What are my plans for next week? I’m not sure yet. I still have some requests regarding <ulink url="http://michal.hrusecky.net/2011/02/opensuse-paste-after-the-sixth-hackweek/">openSUSE Paste</ulink>. But as week is a long time, I would like to try something else, requiring
+      more time.</para>
+    <para><emphasis role="bold">libguestfs</emphasis></para>
+    <para><ulink url="http://libguestfs.org/">libguestfs</ulink> is a set of tools for accessing and
+      modifying virtual machine disk images. And I would like to have it available somehow in
+      openSUSE as I use virtualization quite a lot. That can be interesting and useful project for
+      the next week and I think it may be useful not just for me.</para>
+    <para><emphasis role="bold">Karma in Connect</emphasis></para>
+    <para>Yes, here I go again. I already  <ulink url="http://michal.hrusecky.net/2010/08/ideas-about-karma-in-opensuse-connect/">wrote about it</ulink> <ulink url="http://michal.hrusecky.net/2011/03/gsoc-2011-ideas-karma-plugin-for-opensuse-connect/">several times</ulink> and it is still not implemented and although I think full
+      implementation would take quite some time, I could try to take a look at some simple way how
+      to provide something to start with.</para>
+    <para>So these are my two ideas what I may try to do next week. Not decided yet, so maybe I will
+      end up with something completely different. But in the meantime, this can serve as an
+      inspiration for others and if somebody would like to join me on either of these, don’t
+      hesitate to leave a comment</para>
+<!-- ($ ld: 21.9.11 sm $) -->  </blockquote>
+</sect1>
