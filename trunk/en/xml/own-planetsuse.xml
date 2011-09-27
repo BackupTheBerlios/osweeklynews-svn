@@ -19,53 +19,36 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink
-        url="http://duncan.mac-vicar.com/2011/09/19/proprietary-drivers-broken-with-factory/">Duncan
-        Mac-Vicar Prett: proprietary drivers broken with Factory</ulink></title>
-    <para>ld.so.conf seems to have changed to include /etc/ld.so.conf.d/*.conf.</para>
-    <para>Unfortunately, proprietary drivers like the NVIDIA installed a file without the .conf
-      extension. Therefore XOrg did not find the custom openGL library included by the
-      driver.</para>
-    <para>Tracked as <ulink url="http://bugzilla.novell.com/718734">bug 718734</ulink>.</para>
-    <para><ulink
-        url="https://build.opensuse.org/project/show?project=home%3Admacvicar%3Abranches%3AX11%3ADrivers%3AVideo"
-        >home:dmacvicar:branches:X11:Drivers:Video</ulink> contains a fixed nvidia-gfxG02 (Also
-      updated to 280.13).</para>
-    <!--($ ld: 21.09.11 sm $)-->
+    <title><ulink url="http://www.bryen.com/getting-articles-into-news-opensuse-org">Bryen Yunashko:
+        Getting Articles into News.openSUSE.org</ulink></title>
+    <para>At the recent 12.1 Marketing hackfest, we devised an editorial schedule and folks have
+      begun writing articles for promoting 12.1.ý However, some of these articles haven’t been
+      submitted yet.ý We suggest that in order to minimize confusion and reduce excessive pinging,
+      you create an <ulink url="http://ietherpad.com">ietherpad</ulink> with your article and link
+      to it in the editorial schedule at <ulink url="http://ietherpad.com/sked"
+        >http://ietherpad.com/sked</ulink> or send your article directly to news@opensuse.org.
+      (...)</para>
+    <!--($ ld: 27.09.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://blog.cornelius-schumacher.de/2011/09/my-opensuse-conference.html"
-        >Cornelius Schumacher: My openSUSE conference </ulink></title>
-    <para>Last week was the <ulink url="http://conference.opensuse.org/">openSUSE conference</ulink>
-      in Nýrnberg. Here are some of my impressions. I loved the relaxed, crazy atmosphere, mixing so
-      many different people with so many different backgrounds, skills, interests, and fascinating
-      projects. This spans quite a broad range of topics, not only on the software side from kernel
-      to office suite, but also in other areas from cheese over quadrocopters to self-replicating
-      machines. This community is seriously rocking the boat. (...)</para>
-    <!--($ ld: 23.09.11 sm $)-->
-  </blockquote>
-  <blockquote>
-    <title><ulink url="http://lizards.opensuse.org/2011/09/22/happy-pony-opensuse/">Susanne
-        Oberhauser: “Happy Pony” openSUSE?</ulink></title>
-    <para>At the openSUSE conference last week, Lydia Pintscher from the KDE Community Working Group
-      led a BoF on “women in openSUSE”. This is what we (Stella, Bruno, Lydia, Pascal, Susanne,
-      Greg) worked out:</para>
-    <para>There are very few women in openSUSE for a variety of reasons. In our perceiption, despite
-      the good efforts of moderators on IRC, forums and mailing-lists, some attitudes there still
-      persist, and we believe these are a key issue that keeps women away. To further address this
-      as a small group, we decided to start at just one place, opensuse-project@. Here’s why and
-      how:</para>
-    <para>There is quite some research on why there is so few “women in FLOSS” in general. One of
-      the recurring topics there, and one that we also quickly came to in the BoF, was the
-      ‘flaming’, or more generally, the negative possibilities of the direct, unfiltered yet
-      anonymous communication on IRC, forums and mail.</para>
-    <para>We all value the speed and positive directness of those forms of communication — however
-      it’s cutting off facial expression and physical reaction. So it’s very easy to miss the tone,
-      without even noticing. To more sensitive souls, this is creating a barrier of entry that
-      especially women do not want to cross, or if it hits you unprepared, will reject you, often
-      with no return. Nota bene: this effect is not limited to women! It just happens to reject
-      women more than men.(...)</para>
-    <!--($ ld: 23.09.11 sm $)-->
+    <title><ulink url="http://blog.cornelius-schumacher.de/2011/09/my-opensuse-conference.html">Raymond
+    Wooninck: Chromium browser got accepted into openSUSE:Factory</ulink></title>
+    <para>After maintaining the Chromium browser in the openSUSE Contrib repositories, the last few weeks things 
+      got accelerated and as of this moment the Chromium browser has become officially part
+      of openSUSE:Factory (the future 12.1).ý </para>
+    <para>The first step wa taken about 3 – 4 weeks ago
+    when a separate development project was created (network:chromium). From there onwards it was
+    just a matter of getting the package in the right shape for Factory and making sure that all
+    legal and security conditions were met. Those who are tracking the updates of Chromium in this
+    devel repo, might have noticed that a number of rebuilds were triggered for the 16.0.880 version
+    of Chromium. This all had to do to get a single spec-file that would satisfy both Factory
+    requirements but also would be able to build for the older distributions. At this moment this
+    special repository offers builds for 11.3, 11.4, Factory and also for Tumbleweed.ý</para>
+    <para>I am quite
+    proud on this fact and I hope that the openSUSE Chromium users will be happy with this fact.ýAt
+    the moment I am preparing an update to the 16.0.891 version and hopefully sometime beginning of
+    next week the new snapshot will become available.</para>
+    <!--($ ld: 27.09.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://www.wafaa.eu/entry/growing-some-opensuse-arms-1-69.html">Andrew Wafaa:
