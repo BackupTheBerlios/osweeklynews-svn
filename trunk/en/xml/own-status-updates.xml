@@ -183,8 +183,7 @@
       <title>Education Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lizards.opensuse.org/2011/09/18/education-at-osc/">Jigish Gohil:
-            Announcing openSUSE Education with KIWI-LTSP server Live DVD</ulink>
+          <ulink url="http://lizards.opensuse.org/2011/09/18/education-at-osc/">Jigish Gohil: Announcing openSUSE Education with KIWI-LTSP server Live DVD</ulink>
         </title>
         <para>Even if the <ulink url="http://news.opensuse.org/2011/08/15/opensuse-edu-li-f-e-11-4-update-release-announcement/">last news</ulink> from the Education project is just one month old, many people asked
           me during the openSUSE Conference why the Education project itself is currently so
@@ -461,30 +460,28 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
       </sect3> -->    <sect3 role="openfateteam">
       <title>openFATE Team</title>
       <blockquote>
-        <title><ulink url="http://lizards.opensuse.org/2011/09/21/openfate-news/">Thomas Schmidt:
-            openFATE News</ulink></title>
+        <title>
+          <ulink url="http://lizards.opensuse.org/2011/09/21/openfate-news/">Thomas Schmidt: openFATE News</ulink>
+        </title>
         <para>We just added 2 new goodies to our feature tracking tool openFATE:</para>
         <para>Print views:</para>
         <para>You can now get a decent view of a feature that is adapted for printing. Either click
           on “Print preview” in your browsers menu, or on “Print” in the feature export box on the
           right side of your feature. </para>
-        <para><inlinegraphic
-            fileref="http://lizards.opensuse.org/wp-content/uploads/2011/09/openfate-276x300.png"
-          /></para>
-        <!--($ ld: 24.9.11 sm $)-->
-      </blockquote>
+        <para><inlinegraphic fileref="http://lizards.opensuse.org/wp-content/uploads/2011/09/openfate-276x300.png"/></para>
+<!--($ ld: 24.9.11 sm $)-->      </blockquote>
       <sect4>
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 366)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 368)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 192)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 191)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -496,13 +493,13 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 164)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 165)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 151)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 153)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -531,38 +528,42 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 24.9.11 sm *updated* $) -->      </sect4>
+<!-- ($ ld: 1.10.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312806">Jitsi</ulink>
+            <ulink url="https://features.opensuse.org/312850">Opensuse 12.1 - integrate PulseAudio 1.0</ulink>
           </title>
-          <para>Provide Jitsi (formerly SIP Communicator), a cross-platform multiprotocol messaging and SIP client.
-Main benefits: audio/video with XMPP Jingle on all platforms, thus improving interoperability; out-of-the-box encryption for chats and calls.</para>
+          <para>Among the features of PulseAudio 1.0 is a D-Bus based control protocol, source output volumes, passthrough audio support, echo cancellation support, restored Windows support, and improved sample rate adaptation in the module-rtp-receive module.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312815">Opensuse 12.1 - Provide Rekonq rather than Konquerer</ulink>
+            <ulink url="https://features.opensuse.org/312853">make nfs-client setup in YaST to modify /etc/fstab</ulink>
           </title>
-          <para>Webkit seems to be coming along nicely, and Khtml is less and less able to keep up with some of the web features i try these days.</para>
-          <para><ulink url="http://adjamblog.wordpress.com/2011/09/20/rekonq-0-7-92-aka-0-8beta3/">http://adjamblog.wordpress.com/2011/09/20/rekonq-0-7-92-aka-0-8beta3/</ulink></para>
+          <para>when setting up a NFS-Client in YaST, it does not modify the /etc/fstab. So it always throws an error message &quot;shares cannot be mounted from /etc/fstab&quot; after one has finished the setup of the shared folders.</para>
+          <para>So in the current state, the user has to modify the /etc/fstab manually. But when you set up the nfs client in YaST, you already have provided all information to the system and it could easily put all this into the /etc/fstab file.</para>
+          <para>So if we had such a function, even if it just was a checkbox &quot;write to /etc/fstab&quot; so that experienced users or the ones who want to do something advanced, have the choice not to modify /etc/fstab, this would be great.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312817">advanced subpixel hinting in freetype2</ulink>
+            <ulink url="https://features.opensuse.org/312854">make nfs-server and nfs-client setup in YaST themselves deal with the Firewall</ulink>
           </title>
-          <para>Now that licensing issues seems to be solved (concerning patents expired) it would be really great if advanced subpixel hinting get enabled in forthcoming release 12.1.</para>
+          <para>when setting up a NFS Server or a NFS client, you can tick &quot;open firewall port&quot; That is really convinient. But there are also other services involved with NFS, which also require some modifications to the firewall.</para>
+          <para>As far as I understood (I do not have that much clue about all this), it is rpc.mountd and rpc.statd, which need to go through the firewall as well. So the normal user (like me) is not able to setup NFS at home, without switching off the firewall completely as it seems like that you can not force these two services to use ports, which you specify as open.
+Switching off the firewall completely is a workaround but it leaves a bitter taste, as it lowers the security.</para>
+          <para>So it would be cool, if YaST could take care of all services related to NFS in terms of firewall settings and also the settings coming from the NFS setup.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312820">VIPS (Image Library) Package</ulink>
+            <ulink url="https://features.opensuse.org/312858">Transion to MariaDB as the default SQL server</ulink>
           </title>
-          <para>It would be nice if vips (imageing library) and its python bindings are available in OpenSuSE.</para>
-          <para><ulink url="http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS ">http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS </ulink></para>
+          <para>Building on this feature from 11.3: Include MariaDB</para>
+          <para><ulink url="https://features.opensuse.org/308937">https://features.opensuse.org/308937</ulink></para>
+          <para>Given the Oracle ownership of MySQL and their move to an OpenCore development model it is time OpenSUSE transitions away from MySQL as the default database to the MariaDB.</para>
         </blockquote>
-<!-- ($ ld: 24.9.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 1.10.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -582,8 +583,7 @@ Main benefits: audio/video with XMPP Jingle on all platforms, thus improving int
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00036.html">Larry
-            Finger: Weekly News for September 24</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00036.html">Larry Finger: Weekly News for September 24</ulink>
         </title>
         <para>The next meeting of the Testing Core Team will be September 26, 2011 at 17:00 UTC on
           Channel #opensuse-testing on the Freenode IRC Network
@@ -669,27 +669,21 @@ Main benefits: audio/video with XMPP Jingle on all platforms, thus improving int
             </imageobject>
           </inlinemediaobject></para>
      </blockquote>
-    </sect3> -->
-    <sect3 role="wiki">
+    </sect3> -->    <sect3 role="wiki">
       <title>Wiki Team</title>
       <blockquote>
-        <title><ulink
-            url="http://rajkov-blog.blogspot.com/2011/09/discovering-connect-opensuse.html">Rajko
-            Matovic: Discovering Connect openSUSE</ulink></title>
-        <para>Today I created a group for <ulink
-            url="https://connect.opensuse.org/pg/groups/14751/wiki-maintainers/">wiki
-            maintainers</ulink> on <ulink url="https://connect.opensuse.org/">openSUSE
-            Connect</ulink> web page that I like to call Connect openSUSE.</para>
+        <title>
+          <ulink url="http://rajkov-blog.blogspot.com/2011/09/discovering-connect-opensuse.html">Rajko Matovic: Discovering Connect openSUSE</ulink>
+        </title>
+        <para>Today I created a group for <ulink url="https://connect.opensuse.org/pg/groups/14751/wiki-maintainers/">wiki maintainers</ulink> on <ulink url="https://connect.opensuse.org/">openSUSE Connect</ulink> web page that I like to call Connect openSUSE.</para>
         <para><ulink url="https://connect.opensuse.org/">Connect openSUSE</ulink> is a hub helping
           people with different interests within openSUSE to find each other and connect in interest
-          groups. There is relatively old <ulink url="http://en.opensuse.org/openSUSE:Connect">wiki
-            article about Connect</ulink> that was created in very early stages, and talks more
+          groups. There is relatively old <ulink url="http://en.opensuse.org/openSUSE:Connect">wiki article about Connect</ulink> that was created in very early stages, and talks more
           about technical aspects and some plans then social benefits that we can have from place
           like Connect. </para>
-        <!--($ ld: 27.9.11 sm $)-->
-      </blockquote>
-    </sect3> 
-    <!--
+<!--($ ld: 27.9.11 sm $)-->      </blockquote>
+    </sect3>
+<!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
