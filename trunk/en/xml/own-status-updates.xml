@@ -179,7 +179,9 @@
         <para>So if anyone out there has interest in helping maintaining 11.1 and/or 11.2 please
           contact us through our <ulink url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailinglist</ulink> or contact me directly.</para>
     </blockquote>
-    </sect3> -->    <sect3 role="education">
+    </sect3> -->    
+    <!--
+    <sect3 role="education">
       <title>Education Team</title>
       <blockquote>
         <title>
@@ -192,14 +194,16 @@
           specialists and many work is done behind the scenes without communication to “the
           outside”. So even if you did not hear from us for some weeks, we are still alive and
           coding! (...)</para>
-<!--($ Id: 19.9.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="forums">
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->    
+    <!--
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
@@ -232,7 +236,7 @@
           nice with GNOME3.</para>
         <para>Hopefully more cool developments during the next days… And I’m still looking for a
           volunteer contributor for Compiz…</para>
-<!--($ Id: 21.9.11 sm $)-->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://www.marques.so/2011/09/banshee-repositories-maintenance/">Nelson Marques: Banshee repositories maintenance…</ulink>
@@ -263,7 +267,7 @@
             </listitem>
           </itemizedlist></para>
         <para>Banshee 2.2.0 will arrive within 24/48 hours to openSUSE users…</para>
-<!--($ Id: 21.9.11 sm $)-->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://www.marques.so/2011/09/banshee-2-2-0-released-and-available-for-opensuse-users/">Nelson Marques: Banshee 2.2.0 released and available for openSUSE users!</ulink>
@@ -290,8 +294,9 @@
             </listitem>
           </itemizedlist></para>
         <para><inlinegraphic fileref="https://lh5.googleusercontent.com/-neYpAuvwAQQ/TniZPM97eMI/AAAAAAAAAU4/Fz7iBYX2YbI/s1024/NewBanshee.png" width="50%"/></para>
-<!--($ Id: 22.9.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+      </sect3> -->
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -316,7 +321,7 @@
           iteration of UI implementation concepts as we fully realize the Contour concepts, hardware
           related issues and the business case around it all. All in four days. I don&apos;t expect to
           get much sleep.</para>
-<!--($ Id: 21.9.11 sm $)-->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://aseigo.blogspot.com/2011/09/plasma-active-workshop-wrapup.html">Aaron Seigo: plasma active workshop wrapup</ulink>
@@ -336,8 +341,8 @@
           shell: activities, recommendations, the running-applications peak area and the application
           launcher. We had an &quot;other&quot; category as well, and it become rather well populated, but we
           want to make sure that the core components work very well in our first release. </para>
-<!--($ Id: 24.9.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
@@ -457,8 +462,10 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we
           now have a GIT core that can be easily updated and which is fully portable.(...)</para>
       </blockquote>
-      </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->    
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
+      <!--
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2011/09/21/openfate-news/">Thomas Schmidt: openFATE News</ulink>
@@ -469,7 +476,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           on “Print preview” in your browsers menu, or on “Print” in the feature export box on the
           right side of your feature. </para>
         <para><inlinegraphic fileref="http://lizards.opensuse.org/wp-content/uploads/2011/09/openfate-276x300.png"/></para>
-<!--($ ld: 24.9.11 sm $)-->      </blockquote>
+      </blockquote> -->
       <sect4>
         <title>Top voted Features</title>
         <blockquote>
@@ -579,7 +586,9 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> -->    <sect3 role="testing">
+      </sect3> -->    
+    <!--
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
@@ -604,7 +613,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
           to github.com and infradead.org for providing server space for the two repositories that I
           use regularly. </para>
       </blockquote>
-    </sect3>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
@@ -617,6 +626,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
         </listitem>
       </itemizedlist>
     </sect3>
+    <!--
     <sect3 role="tumbleweed">
       <title>Tumbleweed Team</title>
       <blockquote>
@@ -644,8 +654,8 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
             <para>thanks,</para>
             <para>greg k-h</para>
           </blockquote></para>
-<!-- ($ ld: 21.9.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
@@ -669,7 +679,9 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
             </imageobject>
           </inlinemediaobject></para>
      </blockquote>
-    </sect3> -->    <sect3 role="wiki">
+     </sect3> -->    
+    <!--
+    <sect3 role="wiki">
       <title>Wiki Team</title>
       <blockquote>
         <title>
@@ -681,8 +693,8 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
           groups. There is relatively old <ulink url="http://en.opensuse.org/openSUSE:Connect">wiki article about Connect</ulink> that was created in very early stages, and talks more
           about technical aspects and some plans then social benefits that we can have from place
           like Connect. </para>
-<!--($ ld: 27.9.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="yast">
       <title>YaST Team</title>

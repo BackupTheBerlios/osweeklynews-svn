@@ -21,8 +21,9 @@
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00024.html"
-        >openSUSE-SU-2011:1062-1: important: jakarta-commons-daemon</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00028.html">
+        openSUSE-SU-2011:1076-1: important: mozilla-xulrunner192: Update to Mozilla XULRunner
+        1.9.2.23</ulink></title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
       <col width="1.1*"/>
@@ -37,16 +38,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">jakarta-commons-daemon</emphasis>
+            <emphasis role="bold">mozilla-xulrunner192</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1062-1</td>
+          <td>openSUSE-SU-2011:1076-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td> Fri, 23 Sep 2011 13:08:20 +0200 (CEST)</td>
+          <td>Thu, 29 Sep 2011 14:08:20 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -54,22 +55,20 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>jsvc did not properly drop capabilities, therefore allowing applications to access
-            files owned by the super user (CVE-2011-2729).</td>
+          <td>fixing various bugs and security issues.</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
-  <!--
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00014.html"
-        >openSUSE-SU-2011:1024-1: important: mozilla-nss: Update 3.12.11 update</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00029.html">
+        openSUSE-SU-2011:1077-1: important: seamonkey: Update to Mozilla Seamonkey 2.4</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
-      <col width="1.1*"/>
-      <col width="1.0*"/>
+      <col width="1.14*"/>
+      <col width="1*"/>
       <thead>
         <tr>
           <th/>
@@ -80,16 +79,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">mozilla-nss</emphasis>
+            <emphasis role="bold">seamonkey</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1024-1</td>
+          <td>openSUSE-SU-2011:1077-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Thu, 8 Sep 2011 14:08:32 +0200 (CEST)</td>
+          <td>Thu, 29 Sep 2011 15:08:19 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -97,15 +96,16 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>It blacklists the lately compromised DigiNotar Certificate Authority.</td>
+          <td>CVE-2011-2372 CVE-2011-2995 CVE-2011-2997 CVE-2011-2999 CVE-2011-3000 CVE-2011-3001
+            CVE-2011-3002 CVE-2011-3003 CVE-2011-3004 CVE-2011-3005 CVE-2011-3232</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00017.html"
-        >openSUSE-SU-2011:1031-1: important: MozillaFirefox: 6.0.2</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00030.html">
+        openSUSE-SU-2011:1079-1: important: MozillaFirefox: Update to Firefox 3.6.23</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -121,29 +121,29 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold"> MozillaFirefox: 6.0.2</emphasis>
+            <emphasis role="bold"> MozillaFirefox</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1031-1</td>
+          <td>openSUSE-SU-2011:1079-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td> Fri, 9 Sep 2011 13:08:16 +0200 (CEST)</td>
+          <td>Thu, 29 Sep 2011 16:08:17 +0200 (CEST)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.4 openSUSE 11.3</td>
+          <td>openSUSE 11.3</td>
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>The purpose of this update is to blacklist the compromised DigiNotar Certificate
-            Authority.</td>
+          <td>CVE-2011-2372 CVE-2011-2995 CVE-2011-2996 CVE-2011-2999 CVE-2011-3000</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
+  <!--
   <blockquote>
     <title>
       <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00018.html"
