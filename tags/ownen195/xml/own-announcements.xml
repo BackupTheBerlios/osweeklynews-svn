@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="announcements">
+  <title>Announcements</title>
+  <!--Put a maximum of 5 announcements from the following sources here: 
+    * opensuse-announce mailinglist
+    * opensuse-project mailinglist
+    * news.opensuse.org
+    * carefully selected other sources-->
+  <blockquote>
+    <title>
+      <ulink url="http://news.opensuse.org/2011/09/27/get-your-package-in-factory-for-12-1/">Get
+        your package in Factory for 12.1!</ulink>
+    </title>
+    <para>The <ulink url="http://en.opensuse.org/Portal:12.1">upcoming openSUSE 12.1 release</ulink>
+      is being developed in <ulink url="http://en.opensuse.org/Portal:Factory">Factory</ulink>.
+      According to the <ulink url="http://www.suse.de/%7Ecoolo/opensuse_12.1/">release
+        schedule</ulink> the Toolchain and several other critical components are frozen, but there
+      is still time to get most package updates in! It’s not hard to do that, especially if you
+      build packages on <ulink url="http://openbuildservice.org">the Open Build Service</ulink>
+      anyway and you get your software to be part of openSUSE! Read on to learn more. (...)</para>
+    <para><!-- ($ ld: 28.09.11 sm $)--></para>
+  </blockquote>
+</sect1>

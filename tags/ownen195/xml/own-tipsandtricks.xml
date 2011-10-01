@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="tipsandtricks">
+  <title>Tips and Tricks</title>
+  <sect2>
+    <title>For Desktop Users</title>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/become-an-imagemagick-ninja-doing-things-in-batches/">Wazi/Carla Schroder: Become an ImageMagick Ninja: Doing Things in Batches</ulink>
+      </title>
+      <para>Last month we introduced <ulink url="http://olex.openlogic.com/packages/imagemagick">ImageMagick</ulink>, a software suite that lets you manipulate images in several interesting ways. In <ulink url="http://olex.openlogic.com/wazi/2011/become-an-imagemagick-ninja-resizing-and-converting-images/">that article</ulink> we learned a lot of ways to resize images, make thumbnails, and convert image file formats. Today we’re going to unleash more of the mighty ImageMagick power and learn to make drop shadows, raised buttons, and proof sheets, and generate different sizes of the same image.</para>
+      <para>As always, before you manipulate irreplaceable photos, back up your originals first! (...)</para>
+<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://scribblesandsnaps.wordpress.com/2011/09/26/five-quick-digikam-tricks/">Dmitri Popov: Open Source Photography Tools Five Quick digiKam Tricks</ulink>
+      </title>
+      <para>Tip #1</para>
+      <para>To quickly adjust thumbnail size in the Album view, press and hold the Ctrl key, then use the mouse scroll wheel to make the thumbnails larger or smaller.</para>
+      <para>Tip #2</para>
+      <para>With the Non-Destructive editing and Versioning feature enabled, digiKam automatically hides originals and displays the latest modified versions of the photos. For example, if you process a NEF file and save it in the JPEG format, digiKam hides the original RAW file and shows only the JPEG photo. To disable this feature, choose <emphasis role="bold">Settings</emphasis> → <emphasis role="bold">Configure digiKam</emphasis> → <emphasis role="bold">Editing Images</emphasis> and make sure that the <emphasis role="bold">Always show original images</emphasis> option in the In main view section is enabled. To keep things tidy, you can then group the original and all its versions. To do this, select the photos you want to group, right-click on the selection, and choose <emphasis role="bold">Group</emphasis> → <emphasis role="bold">Group Selected Here</emphasis>. (...)</para>
+<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Commandline/Script Newbies</title>
+    <blockquote>
+      <title>
+        <ulink url="http://linuxaria.com/article/pipes-linux?lang=en">Linuxaria: Pipes – what are they and Example of Use</ulink>
+      </title>
+      <para>Unix based operating systems like Linux offer a unique approach to join two commands on the terminal, with it you can take the output of the first command and use it as input of the second command, this is the concept of pipe or | . Pipes allow two separate process to communicate with each other also if they were not created to do it, so this open an infinite series of opportunity. (...)</para>
+<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.eracc.com/content/custom-weekly-backup-tar">Home ERA Computers &amp; Consulting: Custom Weekly Backup with tar</ulink>
+      </title>
+      <para>This page describes one method of backing up data from one&apos;s Linux or Unix based system to an external medium using a bash script and tar. Here is the script for the impatient ones who &quot;Just want some code!&quot;: (...)</para>
+<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For Developers and Programmers</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.misfitgeek.com/2011/09/avascript-developer-tools-for-linux-2/">Joe Stagner: Selecting and Installing JavaScript Developer Tools for Linux</ulink>
+      </title>
+      <para>Choosing an editor or IDE for development is a personal thing, like choosing a car. What is a perfect ride for one person offers no interest at all to another. Personally, I was never happy with only one car and usually want different ones in the garage so that I can choose the one that most closely matches my mood or the kind of driving that I need to do.</para>
+      <para>Some folks like the help and tooling of a fully integrated environment like Visual Studio. Others like the hardcore elitism of EMACS or Vi. I’m a pragmatist, I like tools that just help me get the job done. (...)</para>
+<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+  </sect2>
+  <sect2>
+    <title>For System Administrators</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linuxjournal.com/content/playterm-platform-gurus">LinuxJournal/Leon
+          van Kammen: Playterm, Platform of the Gurus</ulink>
+      </title>
+      <para>There are hundreds of command line tools in Linux. For a person who has just started
+        using Linux, learning the various commands could at times, be a chore. But not any more, if
+        you see what this website has achieved. </para>
+      <para>Playterm is a site which hosts videos of commands / tasks executed in the Linux
+        terminal. (...)</para>
+<!--($ Id: 27.9.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-5/index.html?ca=drs-">IBM Developer Works/Roderick W. Smith: Learn Linux, 302 (Mixed environments): SWAT configuration</ulink>
+      </title>
+      <para>The Samba Web Administration Tool (SWAT) is a web-based administration tool for Samba,
+        enabling GUI configuration from any computer with a web browser. SWAT is a server in its own
+        right, and like all servers, it requires at least minimal configuration. In this article,
+        learn how to install and configure SWAT itself and how to use SWAT to manage Samba.
+        (...)</para>
+<!-- ($ Id: 27.9.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/opensuse-pxe-boot">BeginLinux: OpenSUSE PXE Boot</ulink>
+      </title>
+      <para>What we will look at</para>
+      <orderedlist>
+        <listitem>
+          <para>What is PXELinux</para>
+        </listitem>
+        <listitem>
+          <para>DHCP Configuration</para>
+        </listitem>
+        <listitem>
+          <para>Confirm the Installation Server Source</para>
+        </listitem>
+        <listitem>
+          <para>Installing PXE and TFTP</para>
+        </listitem>
+        <listitem>
+          <para>Populate the TFTP Directory</para>
+        </listitem>
+        <listitem>
+          <para>Configure and Test PXE
+(...)</para>
+        </listitem>
+      </orderedlist>
+<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>
