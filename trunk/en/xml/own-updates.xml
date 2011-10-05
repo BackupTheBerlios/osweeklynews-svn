@@ -26,42 +26,23 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
     <blockquote>
         <title>
             <ulink
-                url="http://lizards.opensuse.org/2011/10/02/atiamd-fglrx-8-892-catalyst-11-9-available-for-opensuse-11-3-11-4-12-1-factory/"
-                >Bruno Friedmann: ATI/AMD fglrx 8.892 Catalyst 11.9 available for openSUSE 11.3,
-                11.4, 12.1 (Factory)</ulink>
+                url="http://dominique.leuenberger.net/blog/2011/10/videolan-repository-vlc-beta-1-2-changes/"
+                >Dominique Leuenberger: VideoLAN Repository / vlc-beta 1.2 changes</ulink>
         </title>
-        <para>I’ve rebuild and published the new rpms on October 1st<itemizedlist>
-                <listitem>
-                    <para>There’s no full changelog for Linux, but <ulink
-                            url="http://www2.ati.com/relnotes/Catalyst_11.9_Linux_Installer.pdf"
-                            >Catalyst 11.9 installer</ulink> (pdf). You can always look for
-                        supported chipset at <ulink
-                            url="http://support.amd.com/us/kbarticles/Pages/AMDCatalyst119ReleaseNotes.aspx"
-                            >11.9 Release Notes</ulink></para>
-                </listitem>
-                <listitem>
-                    <para>Get the cheat-sheet <ulink
-                            url="http://www.sebastian-siebert.de/downloads/ati-catalyst-11.9-cheat-sheet.pdf"
-                            >11.9 version</ulink></para>
-                </listitem>
-                <listitem>
-                    <para>Kernel supported up to 3.1x version</para>
-                </listitem>
-                <listitem>
-                    <para>Removed support of openSUSE 11.2, if you are still using it with Evergreen
-                        project, the repository still exist with older version</para>
-                </listitem>
-                <listitem>
-                    <para>Tested and working on stock 11.4 and kde 4.7.1</para>
-                </listitem>
-                <listitem>
-                    <para>Check that kernel module build correctly under factory</para>
-                </listitem>
-            </itemizedlist></para>
-        <para>Sebastian Siebert (freespacer) : <ulink
-                url="http://www.sebastian-siebert.de/2011/09/28/opensuse-proprietaeren-grafik-treiber-amd-catalyst-11-9-als-rpm-installieren/"
-                >11.9 article</ulink> (German).</para>
-        <!-- ($ ld: 03.10.11 sm $)-->
+        <para>The <ulink url="http://www.videolan.org/vlc/download-suse.html">VideoLAN
+                Repository</ulink> will get through some minor changes. Mainly affected are current
+            users of the vlc-beta packages, BUT there is important news for all of you:</para>
+        <para>The <ulink url="http://www.videolan.org/">VideoLAN Project</ulink> moved the VLC
+            Player sources into the future. For this reason, vlc-beta packages as of now will only
+            be built with full capabilities for openSUSE 11.4 and Factory (and future releases).
+            Currently, on 11.3 I had to drop v4l2 features, as the kernel is considered too old to
+            be supported by the latest VLC snapshots (See <ulink
+                url="http://mailman.videolan.org/pipermail/vlc-devel/2011-October/082321.html">this
+                mail thread</ulink>)</para>
+        <para>the existing 1.1.x packages are of course not affected, <emphasis role="bold">but
+                there are plans to have 1.2 tree to become the ‘main’ tree for VLC!</emphasis> This
+            would be some big news and changes coming down our way! Yay!</para>
+        <!-- ($ ld: 05.10.11 sm $)-->
     </blockquote>
     <blockquote>
         <title><ulink

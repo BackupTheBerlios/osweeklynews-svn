@@ -74,25 +74,36 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/playterm-platform-gurus">LinuxJournal/Leon
-          van Kammen: Playterm, Platform of the Gurus</ulink>
+        <ulink url="http://www.linuxjournal.com/content/playterm-platform-gurus">IBM Developer
+          Works/Tracy Bost: Learn Linux, 302 (Mixed environments): Internationalization</ulink>
       </title>
-      <para>There are hundreds of command line tools in Linux. For a person who has just started
-        using Linux, learning the various commands could at times, be a chore. But not any more, if
-        you see what this website has achieved. </para>
-      <para>Playterm is a site which hosts videos of commands / tasks executed in the Linux
-        terminal. (...)</para>
-<!--($ Id: 27.9.11 sm $)-->    </blockquote>
+      <para>If you work in a mixed environment in which non-English characters are used, you need to
+        understand character codes and code pages as they relate to your locale. You also need to
+        understand Linux and Windows environments differ when interpreting name spaces. Although
+        Samba supports internationalization, if you work with older Windows clients , Samba 2.x
+        versions, or otherwise need to use a specific character set other than Unicode, you'll need
+        to do a bit of configuration tuning. Depending upon the environment's locale in use,
+        building and patching conversion libraries may also be necessary. In this article, learn how
+        to handle internationalization in your Linux environment. (...)</para>
+<!--($ Id: 05.10.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-5/index.html?ca=drs-">IBM Developer Works/Roderick W. Smith: Learn Linux, 302 (Mixed environments): SWAT configuration</ulink>
+        <ulink
+          url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-5/index.html?ca=drs-"
+          >ZDNET/Steven J. Vaughan-Nichols: How to lock down Linux</ulink>
       </title>
-      <para>The Samba Web Administration Tool (SWAT) is a web-based administration tool for Samba,
-        enabling GUI configuration from any computer with a web browser. SWAT is a server in its own
-        right, and like all servers, it requires at least minimal configuration. In this article,
-        learn how to install and configure SWAT itself and how to use SWAT to manage Samba.
-        (...)</para>
-<!-- ($ Id: 27.9.11 sm $)-->    </blockquote>
+      <para>Linux is, by design, a very secure operating system, but so what? You can have the best
+        security system in the world on your house, but if you leave your front-door open anyone can
+        still walk in. Even people who know better, like Linux kernel developers, blow it sometimes.
+        That’s what happened to the <ulink url="http://www.linuxfoundation.org">Linux
+          Foundation</ulink>’s constellation of sites. <ulink
+          url="http://www.zdnet.com/blog/open-source/some-linux-foundation-crack-attack-details-emerge/9535"
+          >Multiple important Linux sites were down for weeks</ulink> and as of October 3rd, <ulink
+          url="http://http://kernel.org">kernel.org</ulink> is still down. This doesn’t have to
+        happen to you. Here are a few simple suggestions from me, and some more advanced ones from
+          <ulink url="http://www.kroah.com/log/">Greg Kroah-Hartman</ulink>, one of Linux’s lead
+        developers. (...)</para>
+<!-- ($ Id: 05.10.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://beginlinux.com/desktop/opensuse/opensuse-pxe-boot">BeginLinux: OpenSUSE PXE Boot</ulink>
