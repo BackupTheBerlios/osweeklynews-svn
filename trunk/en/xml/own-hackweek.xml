@@ -34,42 +34,51 @@
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://blog.cihar.com/archives/2011/09/26/gepes-another-hacweek-project/">Michal
-        Čihař: GePeS - another hacweek project</ulink>
+      <ulink url="http://tml-blog.blogspot.com/2011/10/hack-week-autumn-2011.html">Tor Lillqvist:
+        Hack Week, Autumn 2011</ulink>
     </title>
-    <para>With no clear plans for <ulink url="http://en.opensuse.org/Portal:Hackweek"
-        >Hackweek</ulink> this year, I decided to play even more with N950. As I quite lack some GPS
-      application I decided to write it :-). The feature set will be based on things I would use,
-      though I still think it will be useful for others:<itemizedlist>
-        <listitem>
-          <para>Display basic GPS info (coordinates, speed, etc.)</para>
-        </listitem>
-        <listitem>
-          <para>Compass</para>
-        </listitem>
-        <listitem>
-          <para>Moon and sun rise and set calculations for current location</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>I've named the application as GePeS and you can find sources on Gitorious: <ulink
-        url="https://gitorious.org/gepes">https://gitorious.org/gepes</ulink></para>
-    <para>During first day I've managed to implement basic things, check screenshots:</para>
-    <para><inlinegraphic
-        fileref="http://blog.cihar.com/images/blog/2011-09/2011-09-26_16-45-56-small.png"
-        /><inlinegraphic
-        fileref="http://blog.cihar.com/images/blog/2011-09/2011-09-26_16-45-42-small.png"
-        /><inlinegraphic
-        fileref="http://blog.cihar.com/images/blog/2011-09/2011-09-26_16-46-13-small.png"/></para>
-<!-- ($ ld: 27.9.11 sm $) -->  </blockquote>
+    <para>During this hack week I worked on making LibreOffice build also against the MacOSX 10.5,
+      10.6 and 10.7 SDKs. We had some support for that in the configure.in already, but it had
+      apparently never been tested what then happens if one actually tries something other than the
+      10.4 SDK.</para>
+    <para>Mostly, with some changes here and there, and except for 10.7, I got it to work, and also
+      the resulting LibreOffice built against the 10.6 SDK seemed to work.</para>
+    <para>Building against the 10.7 SDK fails because some APIs that were deprecated already in
+      10.4, but the Mac code in LibreOffice still uses, have now then finally been removed in the
+      10.7 SDK. This shows the sad state of our Mac code.</para>
+    <para>I also experimented with building against the 10.6 SDK but with MacOSX 10.4 as the target
+      OS API level. I didn't get such a build to finish yet, but I am continuing on it in the
+      background. The idea here is that if it would be possible to build LO to run fine on 10.4 even
+      if you build it using the 10.6 SDK, we could get rid of one requirement for our (at least
+      Intel) Mac build that is getting more and more silly: That you need to install the old Xcode 3
+      (with 10.4 and 10.5 SDKs) in addition to, or instead of, the current Xcode 4 (with 10.6 and
+      10.7 SDKs).</para>
+<!-- ($ ld: 08.10.11 sm $) -->  </blockquote>
   <blockquote>
-    <title><ulink url="http://thefreecountry.wordpress.com/2011/09/29/openhackweek-7/">Alexander
-        Naumov: openHackWeek 7</ulink></title>
-    <para>This week is special… and not for SUSE’s employees only, but also for the openSUSE
-      community. A lot of ideas from the <ulink url="https://features.opensuse.org/hackweek"
-        >openFATE</ulink> will be implemented on this week. What’s about myself? Well… as you know I
-      don’t work for SUSE anymore. Now I work for company in Göttingen, which use GNU/Linux and Free
-      Software in industry sector. <ulink url="http://xplace.de/">Xplace</ulink> provide open
-      solutions, for example, at POS terminals in almost all European countries. (...)</para>
-    <!--($ ld: 30.9.11 sm $) -->
+    <title><ulink url="http://noelpower.blogs.ie/2011/10/07/hackweek-7-oletoolpy/">Noel Power:
+        hackweek #7 oletool.py</ulink></title>
+    <para>Last year for some reason that I can’t recall I only managed to take 1 day of hackweek,
+      back then I started <ulink
+        url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/tree/src/oletool.py"
+        >oletool.py</ulink>. oletool.py is intended to be like a cheap &amp; nasty (zip/unzip)-like
+      command-line tool for OLE compound documents. I started this for 2 reasons<orderedlist>
+        <listitem>
+          <para>I often play with Libreoffice filters, many times I want to either extract some
+            stream or other from a document to examine it or maybe quickly modify a stream re-inject
+            it into the document to test some code or theory</para>
+        </listitem>
+        <listitem>
+          <para>Libreoffice has support for Python, I know nothing about Python and I wanted to
+            learn a new scripting language ( I know I could have used libgsf for this tool - maybe
+            something for some spare cycles )</para>
+        </listitem>
+      </orderedlist></para>
+    <para>So, has to be said I wasn’t starting completely from scratch, Kohei already created <ulink
+        url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/">mso-dumper</ulink> for
+      dumping the content of Excel documents in python. Last year I was happy with my one day’s
+      work, I managed using Kohei’s mso-dumper code to quickly cobble together a tool that allowed
+      the contents of the document to be displayed ( ala gsf list type format ) and also extract one
+      or more streams. (...)</para>
+    <!--($ ld: 08.10.11 sm $) -->
   </blockquote>
 </sect1>

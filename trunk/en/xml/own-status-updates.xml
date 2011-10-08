@@ -561,33 +561,23 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> --><!--
+      </sect3> -->
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-09/msg00036.html">Larry Finger: Weekly News for September 24</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-10/msg00000.html">Larry
+            Finger: Weekly News for October 08</ulink>
         </title>
-        <para>The next meeting of the Testing Core Team will be September 26, 2011 at 17:00 UTC on
+        <para>The next meeting of the Testing Core Team will be October 10, 2011 at 17:00 UTC on
           Channel #opensuse-testing on the Freenode IRC Network
           (irc://irc.freenode.net/opensuse-testing). Our preliminary agenda includes our experiences
           with 12.1 Beta, and a discussion of the Beta Pizza Party. </para>
-        <para>As 12.1 is not yet in a condition deemed worthy of being called a Beta, it has not
-          been released; however, a rolling update from the Factory repos has my main system working
-          quite well. I no longer have any problems with systemd and the KDE plasmoid NetworkManager
-          applet is now working. It asks for authentication a bit too frequently - I do not think
-          the permissions are right yet, but the applet does not crash, and it is possible to
-          connect reliably to my wireless network. </para>
-        <para>Of great interest to kernel developers, the community has been able to keep working at
-          getting kernel 3.1 in condition for its release, and getting ready for the merge of 3.2,
-          even though kernel.org, the main site for development, has been down while the site
-          recovers from a penetration incident. If kernel development were not using git, a
-          distributed version control system, the impact would have been much worse. I am amazed
-          that when the main server went down for an extended period, the work barely paused. Kudos
-          to github.com and infradead.org for providing server space for the two repositories that I
-          use regularly. </para>
+        <para>The Beta 1 release of 12.1 was released approximately one week ago and has been
+          getting quite a bit of testing. On my systems, I have been doing updates from the Factory
+          repos nearly every day. Most things are working without problems. </para>
       </blockquote>
-    </sect3> -->    <sect3 role="translationteam">
+    </sect3>     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
