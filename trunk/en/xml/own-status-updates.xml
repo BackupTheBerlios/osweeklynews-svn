@@ -179,8 +179,7 @@
         <para>So if anyone out there has interest in helping maintaining 11.1 and/or 11.2 please
           contact us through our <ulink url="http://lists.rosenauer.org/mailman/listinfo/evergreen">mailinglist</ulink> or contact me directly.</para>
     </blockquote>
-    </sect3> -->    
-    <!--
+    </sect3> --><!--
     <sect3 role="education">
       <title>Education Team</title>
       <blockquote>
@@ -195,14 +194,12 @@
           outside”. So even if you did not hear from us for some weeks, we are still alive and
           coding! (...)</para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="forums">
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
@@ -295,8 +292,7 @@
           </itemizedlist></para>
         <para><inlinegraphic fileref="https://lh5.googleusercontent.com/-neYpAuvwAQQ/TniZPM97eMI/AAAAAAAAAU4/Fz7iBYX2YbI/s1024/NewBanshee.png" width="50%"/></para>
       </blockquote>
-      </sect3> -->
-    <!--
+      </sect3> --><!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -342,8 +338,7 @@
           launcher. We had an &quot;other&quot; category as well, and it become rather well populated, but we
           want to make sure that the core components work very well in our first release. </para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -462,10 +457,9 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we
           now have a GIT core that can be easily updated and which is fully portable.(...)</para>
       </blockquote>
-      </sect3> -->    
-    <sect3 role="openfateteam">
+      </sect3> -->    <sect3 role="openfateteam">
       <title>openFATE Team</title>
-      <!--
+<!--
       <blockquote>
         <title>
           <ulink url="http://lizards.opensuse.org/2011/09/21/openfate-news/">Thomas Schmidt: openFATE News</ulink>
@@ -476,8 +470,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           on “Print preview” in your browsers menu, or on “Print” in the feature export box on the
           right side of your feature. </para>
         <para><inlinegraphic fileref="http://lizards.opensuse.org/wp-content/uploads/2011/09/openfate-276x300.png"/></para>
-      </blockquote> -->
-      <sect4>
+      </blockquote> -->      <sect4>
         <title>Top voted Features</title>
         <blockquote>
           <title>
@@ -488,7 +481,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 191)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 195)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -500,13 +493,13 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 165)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 167)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 153)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 157)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -522,7 +515,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 111)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 113)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -535,42 +528,24 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 1.10.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 8.10.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312850">Opensuse 12.1 - integrate PulseAudio 1.0</ulink>
+            <ulink url="https://features.opensuse.org/312871">Auto-lock with password when screen saver kicks in</ulink>
           </title>
-          <para>Among the features of PulseAudio 1.0 is a D-Bus based control protocol, source output volumes, passthrough audio support, echo cancellation support, restored Windows support, and improved sample rate adaptation in the module-rtp-receive module.</para>
+          <itemizedlist>
+            <listitem>
+              <para>Enable automatic screen-lock with password required. E.g. after 5mins and 10seconds respectively</para>
+            </listitem>
+            <listitem>
+              <para>add a default &quot;lock&quot; button to the GUI taskbar</para>
+            </listitem>
+          </itemizedlist>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312853">make nfs-client setup in YaST to modify /etc/fstab</ulink>
-          </title>
-          <para>when setting up a NFS-Client in YaST, it does not modify the /etc/fstab. So it always throws an error message &quot;shares cannot be mounted from /etc/fstab&quot; after one has finished the setup of the shared folders.</para>
-          <para>So in the current state, the user has to modify the /etc/fstab manually. But when you set up the nfs client in YaST, you already have provided all information to the system and it could easily put all this into the /etc/fstab file.</para>
-          <para>So if we had such a function, even if it just was a checkbox &quot;write to /etc/fstab&quot; so that experienced users or the ones who want to do something advanced, have the choice not to modify /etc/fstab, this would be great.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312854">make nfs-server and nfs-client setup in YaST themselves deal with the Firewall</ulink>
-          </title>
-          <para>when setting up a NFS Server or a NFS client, you can tick &quot;open firewall port&quot; That is really convinient. But there are also other services involved with NFS, which also require some modifications to the firewall.</para>
-          <para>As far as I understood (I do not have that much clue about all this), it is rpc.mountd and rpc.statd, which need to go through the firewall as well. So the normal user (like me) is not able to setup NFS at home, without switching off the firewall completely as it seems like that you can not force these two services to use ports, which you specify as open.
-Switching off the firewall completely is a workaround but it leaves a bitter taste, as it lowers the security.</para>
-          <para>So it would be cool, if YaST could take care of all services related to NFS in terms of firewall settings and also the settings coming from the NFS setup.</para>
-        </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312858">Transion to MariaDB as the default SQL server</ulink>
-          </title>
-          <para>Building on this feature from 11.3: Include MariaDB</para>
-          <para><ulink url="https://features.opensuse.org/308937">https://features.opensuse.org/308937</ulink></para>
-          <para>Given the Oracle ownership of MySQL and their move to an OpenCore development model it is time OpenSUSE transitions away from MySQL as the default database to the MariaDB.</para>
-        </blockquote>
-<!-- ($ ld: 1.10.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 8.10.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -586,8 +561,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
@@ -613,8 +587,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
           to github.com and infradead.org for providing server space for the two repositories that I
           use regularly. </para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="translationteam">
+    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
@@ -626,7 +599,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
         </listitem>
       </itemizedlist>
     </sect3>
-    <!--
+<!--
     <sect3 role="tumbleweed">
       <title>Tumbleweed Team</title>
       <blockquote>
@@ -655,8 +628,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
             <para>greg k-h</para>
           </blockquote></para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="weeklynews">
       <title>Weekly News Team</title>
       <blockquote>
@@ -679,8 +651,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
             </imageobject>
           </inlinemediaobject></para>
      </blockquote>
-     </sect3> -->    
-    <!--
+     </sect3> --><!--
     <sect3 role="wiki">
       <title>Wiki Team</title>
       <blockquote>
@@ -694,8 +665,7 @@ Switching off the firewall completely is a workaround but it leaves a bitter tas
           about technical aspects and some plans then social benefits that we can have from place
           like Connect. </para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="yast">
       <title>YaST Team</title>
 
