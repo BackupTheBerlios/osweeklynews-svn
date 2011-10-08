@@ -22,8 +22,7 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="nbprashanth.wordpress.com/2011/10/01/customizing-gnome3/">N.B.Prashanth:
-          Customizing GNOME3</ulink>
+        <ulink url="nbprashanth.wordpress.com/2011/10/01/customizing-gnome3/">N.B.Prashanth: Customizing GNOME3</ulink>
       </title>
       <para>GNOME3 and the GNOME Shell are no doubt, major improvements. They bring in usability and
         quite a bit of eye candy (in a different way compared to compiz) while at the same time, a
@@ -37,99 +36,59 @@
 <!-- ($ Id: 02.10.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://scribblesandsnaps.wordpress.com/2011/09/26/five-quick-digikam-tricks/">Dmitri Popov: Open Source Photography Tools Five Quick digiKam Tricks</ulink>
+        <ulink url="http://linuxaria.com/recensioni/4-programs-to-update-your-blog-from-linux?lang=en">Linuxaria: 4 programs to update your Blog from Linux</ulink>
       </title>
-      <para>Tip #1</para>
-      <para>To quickly adjust thumbnail size in the Album view, press and hold the Ctrl key, then use the mouse scroll wheel to make the thumbnails larger or smaller.</para>
-      <para>Tip #2</para>
-      <para>With the Non-Destructive editing and Versioning feature enabled, digiKam automatically hides originals and displays the latest modified versions of the photos. For example, if you process a NEF file and save it in the JPEG format, digiKam hides the original RAW file and shows only the JPEG photo. To disable this feature, choose <emphasis role="bold">Settings</emphasis> → <emphasis role="bold">Configure digiKam</emphasis> → <emphasis role="bold">Editing Images</emphasis> and make sure that the <emphasis role="bold">Always show original images</emphasis> option in the In main view section is enabled. To keep things tidy, you can then group the original and all its versions. To do this, select the photos you want to group, right-click on the selection, and choose <emphasis role="bold">Group</emphasis> → <emphasis role="bold">Group Selected Here</emphasis>. (...)</para>
-<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+      <para>Sometimes it’s useful to work offline, and once the article it’s finished publish it on your Blog.
+yes you can do it with an html editor, or also with a simple text editor like Vi or Emacs, but there are specialized programs that can ease your work of publishing and management of your online Blog.</para>
+      <para>So we’ll take a look at Scribefire, BloGTK, Blogilo and Qumana. (...)</para>
+<!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://linuxaria.com/article/pipes-linux?lang=en">Linuxaria: Pipes – what are they and Example of Use</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/how-to-find-anything-under-linux/">Wazi/Carla Schroder: How to Find Anything Under Linux</ulink>
       </title>
-      <para>Unix based operating systems like Linux offer a unique approach to join two commands on the terminal, with it you can take the output of the first command and use it as input of the second command, this is the concept of pipe or | . Pipes allow two separate process to communicate with each other also if they were not created to do it, so this open an infinite series of opportunity. (...)</para>
-<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.eracc.com/content/custom-weekly-backup-tar">Home ERA Computers &amp; Consulting: Custom Weekly Backup with tar</ulink>
-      </title>
-      <para>This page describes one method of backing up data from one&apos;s Linux or Unix based system to an external medium using a bash script and tar. Here is the script for the impatient ones who &quot;Just want some code!&quot;: (...)</para>
-<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
-  </sect2>
+      <para>The Linux find, grep, and awk commands are amazing power tools for fine-grained file searches, and for finding things inside files. With them you can find the largest and newest files on a system, fine-tune search parameters, search for text inside files, and perform some slick user management tricks. (...)</para>
+    </blockquote>
+<!-- ($ Id: 8.10.11 sat $)-->  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://www.misfitgeek.com/2011/09/avascript-developer-tools-for-linux-2/">Joe Stagner: Selecting and Installing JavaScript Developer Tools for Linux</ulink>
+        <ulink url="http://www.thegeekstuff.com/2011/10/c-program-to-an-executable/">The Geek Stuff/Himanshu Arora: Journey of a C Program to Linux Executable in 4 Stages</ulink>
       </title>
-      <para>Choosing an editor or IDE for development is a personal thing, like choosing a car. What is a perfect ride for one person offers no interest at all to another. Personally, I was never happy with only one car and usually want different ones in the garage so that I can choose the one that most closely matches my mood or the kind of driving that I need to do.</para>
-      <para>Some folks like the help and tooling of a fully integrated environment like Visual Studio. Others like the hardcore elitism of EMACS or Vi. I’m a pragmatist, I like tools that just help me get the job done. (...)</para>
-<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
+      <para>You write a C program, use gcc to compile it, and you get an executable. It is pretty simple. Right?</para>
+      <para>Have you ever wondered what happens during the compilation process and how the C program gets converted to an executable?</para>
+      <para>There are four main stages through which a source code passes in order to finally become an executable. (...)</para>
+<!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/playterm-platform-gurus">IBM Developer
-          Works/Tracy Bost: Learn Linux, 302 (Mixed environments): Internationalization</ulink>
+        <ulink url="http://www.linuxjournal.com/content/playterm-platform-gurus">IBM Developer Works/Tracy Bost: Learn Linux, 302 (Mixed environments): Internationalization</ulink>
       </title>
       <para>If you work in a mixed environment in which non-English characters are used, you need to
         understand character codes and code pages as they relate to your locale. You also need to
         understand Linux and Windows environments differ when interpreting name spaces. Although
         Samba supports internationalization, if you work with older Windows clients , Samba 2.x
-        versions, or otherwise need to use a specific character set other than Unicode, you'll need
-        to do a bit of configuration tuning. Depending upon the environment's locale in use,
+        versions, or otherwise need to use a specific character set other than Unicode, you&apos;ll need
+        to do a bit of configuration tuning. Depending upon the environment&apos;s locale in use,
         building and patching conversion libraries may also be necessary. In this article, learn how
         to handle internationalization in your Linux environment. (...)</para>
 <!--($ Id: 05.10.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-5/index.html?ca=drs-"
-          >ZDNET/Steven J. Vaughan-Nichols: How to lock down Linux</ulink>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-5/index.html?ca=drs-">ZDNET/Steven J. Vaughan-Nichols: How to lock down Linux</ulink>
       </title>
       <para>Linux is, by design, a very secure operating system, but so what? You can have the best
         security system in the world on your house, but if you leave your front-door open anyone can
         still walk in. Even people who know better, like Linux kernel developers, blow it sometimes.
-        That’s what happened to the <ulink url="http://www.linuxfoundation.org">Linux
-          Foundation</ulink>’s constellation of sites. <ulink
-          url="http://www.zdnet.com/blog/open-source/some-linux-foundation-crack-attack-details-emerge/9535"
-          >Multiple important Linux sites were down for weeks</ulink> and as of October 3rd, <ulink
-          url="http://http://kernel.org">kernel.org</ulink> is still down. This doesn’t have to
+        That’s what happened to the <ulink url="http://www.linuxfoundation.org">Linux Foundation</ulink>’s constellation of sites. <ulink url="http://www.zdnet.com/blog/open-source/some-linux-foundation-crack-attack-details-emerge/9535">Multiple important Linux sites were down for weeks</ulink> and as of October 3rd, <ulink url="http://http://kernel.org">kernel.org</ulink> is still down. This doesn’t have to
         happen to you. Here are a few simple suggestions from me, and some more advanced ones from
           <ulink url="http://www.kroah.com/log/">Greg Kroah-Hartman</ulink>, one of Linux’s lead
         developers. (...)</para>
 <!-- ($ Id: 05.10.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://beginlinux.com/desktop/opensuse/opensuse-pxe-boot">BeginLinux: OpenSUSE PXE Boot</ulink>
-      </title>
-      <para>What we will look at</para>
-      <orderedlist>
-        <listitem>
-          <para>What is PXELinux</para>
-        </listitem>
-        <listitem>
-          <para>DHCP Configuration</para>
-        </listitem>
-        <listitem>
-          <para>Confirm the Installation Server Source</para>
-        </listitem>
-        <listitem>
-          <para>Installing PXE and TFTP</para>
-        </listitem>
-        <listitem>
-          <para>Populate the TFTP Directory</para>
-        </listitem>
-        <listitem>
-          <para>Configure and Test PXE
-(...)</para>
-        </listitem>
-      </orderedlist>
-<!-- ($ Id: 30.9.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
