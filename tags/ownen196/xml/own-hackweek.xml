@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 id="hackweek" role="hackweek">
+  <title>Hackweek VII</title>
+  <blockquote>
+    <title><ulink url="http://psankar.blogspot.com/2011/10/telepathic-flirt-with-chromium.html"
+        >Sankar P: Telepathic Flirt With Chromium</ulink></title>
+    <para><emphasis role="bold">Hackweek</emphasis> is an event in SUSE where developers can work on
+      any pet project for a week (like Google's 20%) This year's edition<ulink
+        url="http://en.opensuse.org/Portal:Hackweek"> happened last week</ulink> in SUSE. Since I am
+      part of the openSUSE community, I too participated in the spirit of this event in my night
+      time. The project is codenamed Arattai.</para>
+    <para>I tried to bring a prototype to provide IM/Chat support built-in to the Chromium browser.
+      Watch the screencast below.<ulink url="http://www.youtube.com/watch?v=LakITrC5yNM"> Please
+        click here in case you do not see the embedded video</ulink>. Please see the video in
+        <emphasis role="bold">full screen HD</emphasis>.</para>
+    <!--($ ld: 05.10.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://tml-blog.blogspot.com/2011/10/hack-week-autumn-2011.html">Tor Lillqvist:
+        Hack Week, Autumn 2011</ulink>
+    </title>
+    <para>During this hack week I worked on making LibreOffice build also against the MacOSX 10.5,
+      10.6 and 10.7 SDKs. We had some support for that in the configure.in already, but it had
+      apparently never been tested what then happens if one actually tries something other than the
+      10.4 SDK.</para>
+    <para>Mostly, with some changes here and there, and except for 10.7, I got it to work, and also
+      the resulting LibreOffice built against the 10.6 SDK seemed to work.</para>
+    <para>Building against the 10.7 SDK fails because some APIs that were deprecated already in
+      10.4, but the Mac code in LibreOffice still uses, have now then finally been removed in the
+      10.7 SDK. This shows the sad state of our Mac code.</para>
+    <para>I also experimented with building against the 10.6 SDK but with MacOSX 10.4 as the target
+      OS API level. I didn't get such a build to finish yet, but I am continuing on it in the
+      background. The idea here is that if it would be possible to build LO to run fine on 10.4 even
+      if you build it using the 10.6 SDK, we could get rid of one requirement for our (at least
+      Intel) Mac build that is getting more and more silly: That you need to install the old Xcode 3
+      (with 10.4 and 10.5 SDKs) in addition to, or instead of, the current Xcode 4 (with 10.6 and
+      10.7 SDKs).</para>
+<!-- ($ ld: 08.10.11 sm $) -->  </blockquote>
+  <blockquote>
+    <title><ulink url="http://noelpower.blogs.ie/2011/10/07/hackweek-7-oletoolpy/">Noel Power:
+        hackweek #7 oletool.py</ulink></title>
+    <para>Last year for some reason that I can’t recall I only managed to take 1 day of hackweek,
+      back then I started <ulink
+        url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/tree/src/oletool.py"
+        >oletool.py</ulink>. oletool.py is intended to be like a cheap &amp; nasty (zip/unzip)-like
+      command-line tool for OLE compound documents. I started this for 2 reasons<orderedlist>
+        <listitem>
+          <para>I often play with Libreoffice filters, many times I want to either extract some
+            stream or other from a document to examine it or maybe quickly modify a stream re-inject
+            it into the document to test some code or theory</para>
+        </listitem>
+        <listitem>
+          <para>Libreoffice has support for Python, I know nothing about Python and I wanted to
+            learn a new scripting language ( I know I could have used libgsf for this tool - maybe
+            something for some spare cycles )</para>
+        </listitem>
+      </orderedlist></para>
+    <para>So, has to be said I wasn’t starting completely from scratch, Kohei already created <ulink
+        url="http://cgit.freedesktop.org/libreoffice/contrib/mso-dumper/">mso-dumper</ulink> for
+      dumping the content of Excel documents in python. Last year I was happy with my one day’s
+      work, I managed using Kohei’s mso-dumper code to quickly cobble together a tool that allowed
+      the contents of the document to be displayed ( ala gsf list type format ) and also extract one
+      or more streams. (...)</para>
+    <!--($ ld: 08.10.11 sm $) -->
+  </blockquote>
+</sect1>

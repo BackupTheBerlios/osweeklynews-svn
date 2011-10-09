@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="ontheweb">
+  <title>On the Web</title>
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! --><!--
+  <sect2>
+    <title>Announcements</title>
+    <blockquote>
+      <title>
+        <ulink url="http://blog.documentfoundation.org/2011/09/12/libreoffice-launches-extension-and-templates-repository-for-public-beta-test/">The Document Foundation Blog/Florian Effenberger: LibreOffice launches extension and templates repository for public beta test</ulink>
+      </title>
+      <para>Developers invited to contribute their add-ons</para>
+      <para>Community-based review process ensures quality and reliability</para>
+      <para>LibreOffice, the free office productivity suite, can be enhanced with hundreds of extensions and templates. Users can download these smart extras to improve the suite’s functionality to fit their job or hobby, and developers can easily write their own add-ons and share it with millions of users worldwide.</para>
+      <para>Since, at the moment, there is no reliable and stable source for downloading these handy add-ons, the LibreOffice community has put great efforts into launching a public repository. It does not only provide extensions and templates for LibreOffice, but also for OpenOffice.org and other compatible office suites. Users of these can benefit from the work and the commitment of our community, and are invited to have a look at recent versions of our product, which already has included has the most popular extensions, and comes with many new features.</para>
+      <para>The new site is now in public beta testing at</para>
+      <para><ulink url="http://extensions-test.libreoffice.org">http://extensions-test.libreoffice.org</ulink></para>
+      <para>and</para>
+      <para><ulink url="http://templates-test.libreoffice.org">http://templates-test.libreoffice.org</ulink></para>
+      <para>and has been created in cooperation with the Plone community, on whose technology it is based. To ensure the quality and reliability of the offered extensions, a community-based review process is currently set in place: Community volunteers test and review available extensions, and those meeting criteria of quality will be tagged accordingly. (...)</para>
+    </blockquote>
+    </sect2> -->  
+  <!--
+  <sect2>
+    <title>Call for participation</title>
+    <blockquote>
+      <title>
+        <ulink url="http://dev-loki.blogspot.com/2011/09/fosdem-2012-call-for-devrooms.html">Pascal Bleser: FOSDEM 2012: call for devrooms</ulink>
+      </title>
+      <para>So here we go again, <ulink url="http://fosdem.org">FOSDEM</ulink>, the largest and
+        coolest open source contributor event in Europe is prepping up for its 2012 edition.</para>
+      <para>I&apos;ve just opened the <ulink url="http://fosdem.org/2012/call_for_devrooms">Call for Developer Rooms</ulink>, the deadline for submissions is 2011-10-27.</para>
+      <para>Other call-for-stuffs will open very soon (lightning talks, stands, main tracks).</para>
+    </blockquote>
+  </sect2> -->
+  <sect2>
+    <title>Reports</title>
+    <blockquote>
+      <title>
+        <ulink
+          url="http://blog.documentfoundation.org/2011/10/05/the-document-foundation-publishes-details-of-libreoffice-3-4-3-security-fixes/"
+          >TDF Blog: The Document Foundation publishes details of LibreOffice 3.4.3 security
+          fixes</ulink>
+      </title>
+      <para>The Internet, October 4, 2011 – The Document Foundation (TDF) publishes some details of
+        the security fixes included with the recently released LibreOffice 3.4.3, and included in
+        the older 3.3.4 version. Following industry best practice, details of security fixes are
+        withheld until users have been given time to migrate to the new version.</para>
+      <para>RedHat security researcher Huzaifa Sidhpurwala identified a memory corruption
+        vulnerability in the code responsible for loading Microsoft Word documents in LibreOffice.
+        This flaw could have been used for nefarious purposes, such as installing viruses, through a
+        specially-crafted file. The corresponding vulnerability description is
+        CVE-2011-2713,”Out-of-bounds property read in binary .doc filter”. (...)</para>
+<!-- ($ Id: 06.10.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.theregister.co.uk/2011/10/04/linux_repository_res/">The Register/Dan Goodin: Check your machines for malware, Linux developers told</ulink>
+      </title>
+      <para>Following a series of embarrassing intrusions that hit the servers used to maintain and distribute the Linux operating system, project elders have advised all developers to check their Linux machines for signs of compromise.</para>
+      <para>Emails sent Friday by Linux kernel lead developers Greg Kroah-Hartman and H Peter Anvin arrived as volunteers with the open-source project worked to bring <ulink url="http://linuxfoundation.org/">LinuxFoundation.org</ulink>, <ulink url="http://linux.com/">Linux.com</ulink>, and <ulink url="http://kernel.org/">Kernel.org</ulink> back online following attacks that gained root access to the multiple servers that host the sites.</para>
+      <para>Among other things, project leaders are requiring all developers to regenerate the cryptographic keys used to upload source code to the site, and to ensure their systems are free of rootkits and other types of malware.
+(...)</para>
+<!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
+  </sect2>
+  <!--
+  <sect2>
+    <title>Reviews and Essays</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.linux-bg.org/docs/linus_torvalds_interview.html">Linux-BG: Linus Torvalds speaks about kernel fun, gadgets</ulink>
+      </title>
+      <para>LBG (Linux-BG): 20 ago when you started creating the Linux kernel was there another
+        project of yours that could jeopardize the Linux kernel success and make it obsolete? Like
+        for example trying to win the Pes pallo championship, trying to be the best sled dog racer
+        or ... create a clone of Mine Sweeper. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://h30565.www3.hp.com/t5/Feature-Articles/Linus-Torvalds-s-Lessons-on-Software-Development-Management/ba-p/440">Input Output/Steven J. Vaughan-Nichols: Linus Torvalds’s Lessons on Software Development Management</ulink>
+      </title>
+      <para>If anyone knows the joys and sorrows of managing software development projects, it would be Linus Torvalds, creator of the world&apos;s most popular open-source software program: the Linux operating system. For <ulink url="http://www.zdnet.com/blog/open-source/twenty-years-of-linux-according-to-linus-torvalds/8663">more than 20 years</ulink>, Torvalds has been directing thousands of developers <ulink url="http://www.zdnet.com/blog/open-source/twenty-years-of-linux-according-to-linus-torvalds/8663">to improve the open source OS</ulink>. He and I sat down to talk about effective techniques in running large-scale distributed programming teams – and the things that don’t work, too. (...)</para>
+    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.seopher.com/articles/100_awesome_free_and_open_source_applications">seopher.com100+ awesome free and open source applications</ulink>
+      </title>
+      <para><emphasis role="bold">It has always amazed me quite how many incredible, varied and useful applications are available for free on the Internet. Be it free, open source, web-based or merely passive trials - the number of top quality items on offer is huge.</emphasis>
+      </para>
+      <para>The purpose of this list is to help people realise that the free and open source
+        software communities are expansive and generous. In these tense economic times, raising
+        awareness of such projects is something I&apos;m more than happy to do. If you feel that I&apos;ve
+        missed something good off the list, please leave a comment at the bottom - I read absolutely
+        every one.(...)</para>
+    </blockquote>
+  </sect2> -->
+<!--
+  <sect2>
+    <title>Warning!</title>
+    <blockquote>
+      <title>
+        <ulink url="http://www.theregister.co.uk/2011/08/13/oscommerce_infection_threatens_web/">The Register/Dan Goodin: Attack on open-source web app keeps growing</ulink>
+      </title>
+      <para>An attack targeting sites running unpatched versions of the osCommerce web application kept growing virally this week, more than three weeks after a security firm warned it was being used to install malware on the computers of unsuspecting users.</para>
+      <para>When researchers from Armorize first spotted the exploit on July 24, they estimated it had injected malicious links into about 91,000 webpages. By early last week, The Reg reported it had <ulink url="http://www.theregister.co.uk/2011/08/02/mass_injection_attack_goes_viral/">taken hold of almost 5 million pages</ulink>. At time of writing, Google searches <ulink url="https://encrypted.google.com/#num=100&amp;hl=en&amp;safe=off&amp;q=%22http:%2F%2Fwillysy.com%2Fimages%2Fbanners%2F%22&amp;oq=%22http:%2F%2Fwillysy.com%2Fimages%2Fbanners%2F%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=3751l5401l10l6328l9l7l0l0l0l2l168l883l2.5l7l0&amp;fp=1&amp;biw=1365&amp;bih=913&amp;bav=on.2,or.r_gc.r_pw.&amp;cad=b">here</ulink> and <ulink url="https://encrypted.google.com/#hl=en&amp;source=hp&amp;q=%22http:%2F%2Fexero.eu%2Fcatalog%2Fjquery.js%22&amp;oq=%22http:%2F%2Fexero.eu%2Fcatalog%2Fjquery.js%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=13178l40428l0l40708l35l35l0l34l0l0l105l105l0.1l1l0&amp;fp=1&amp;biw=1365&amp;bih=913&amp;bav=on.2,or.r_gc.r_pw.&amp;cad=b">here</ulink> suggested that the number exceeded 8.3 million. (...)</para>
+    </blockquote>
+  </sect2> -->  <sect2>
+    <title>LOL</title>
+    <blockquote>
+      <title>
+        <ulink url="http://like-a-boss.org/2011/09/30/hacking-the-imperial-death-march/">like-a-boss.org: hacking the imperial death march</ulink>
+      </title>
+      <para>One of the great things about the original Star Wars trilogy, was the “lived in”, junky, hacked together aesthetic of the Star Wars universe. Everything was a bit trashed, as if real people actually lived there. Thankfully, that’s one of the things that George Lucas hasn’t tinkered with in his endless quest to ruin the childhood memories of a generation. So it’s heartening to see this tradition carried on with the playing of the imperial death march on miscellaneous hacked together hardware. Enjoy … (...)</para>
+<!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
+  </sect2>
+</sect1>

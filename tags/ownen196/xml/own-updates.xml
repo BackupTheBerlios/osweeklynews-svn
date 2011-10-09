@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % myentities SYSTEM "entities.ent">
+%myentities;
+]>
+<!--
+  
+  This work is licensed under the
+  Creative Commons Attribution-ShareAlike 3.0 Unported License
+  by Sascha Manns. To view a copy of this license, visit
+  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+  Creative Commons
+  171 Second Street
+  Suite 300
+  San Francisco California 94105
+  USA.
+  
+-->
+<sect1 role="updates">
+    <title>New/Updated Applications @ openSUSE</title>
+    <!--* Gnome
+* KDE
+* XYZ http://oyranos-cms.blogspot.com/2011/05/openicc-and-basiccolor-profile-packages.html
+
+Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
+    <blockquote>
+        <title>
+            <ulink
+                url="http://dominique.leuenberger.net/blog/2011/10/videolan-repository-vlc-beta-1-2-changes/"
+                >Dominique Leuenberger: VideoLAN Repository / vlc-beta 1.2 changes</ulink>
+        </title>
+        <para>The <ulink url="http://www.videolan.org/vlc/download-suse.html">VideoLAN
+                Repository</ulink> will get through some minor changes. Mainly affected are current
+            users of the vlc-beta packages, BUT there is important news for all of you:</para>
+        <para>The <ulink url="http://www.videolan.org/">VideoLAN Project</ulink> moved the VLC
+            Player sources into the future. For this reason, vlc-beta packages as of now will only
+            be built with full capabilities for openSUSE 11.4 and Factory (and future releases).
+            Currently, on 11.3 I had to drop v4l2 features, as the kernel is considered too old to
+            be supported by the latest VLC snapshots (See <ulink
+                url="http://mailman.videolan.org/pipermail/vlc-devel/2011-October/082321.html">this
+                mail thread</ulink>)</para>
+        <para>the existing 1.1.x packages are of course not affected, <emphasis role="bold">but
+                there are plans to have 1.2 tree to become the ‘main’ tree for VLC!</emphasis> This
+            would be some big news and changes coming down our way! Yay!</para>
+        <!-- ($ ld: 05.10.11 sm $)-->
+    </blockquote>
+    <blockquote>
+        <title><ulink
+                url="http://duncan.mac-vicar.com/2011/10/03/picasa-3-8-on-linux-and-fix-web-albums-login-on-the-way/"
+                >Duncan Mac-Vicar Prett: Picasa 3.8 on Linux (and fix web albums login on the
+                way)</ulink></title>
+        <para>Today I found myself with Picasa for Linux (3.0 beta) not allowing me to login to web
+            albums, even if I could login without problems from the web browser.</para>
+        <para>After googling a bit, it seems that Picasa 3.0 does not work anymore due to some
+            Google+ related changes. On the other hand it looks like Picasa on Linux is abandoned
+            ýie: 3.0 vs 3.8 on Windows. (...)</para>
+        <!-- ($ ld: 03.10.11 sm $)-->
+    </blockquote>
+</sect1>
