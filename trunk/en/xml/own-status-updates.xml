@@ -199,100 +199,38 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> --><!--
+      </sect3> -->
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
-        <title>
-          <ulink url="http://www.marques.so/2011/09/more-submissions-in-gnomeayatana/">Nelson Marques: More submissions in GNOME:Ayatana</ulink>
-        </title>
-        <para>A few more updates landed today and yesterday on GNOME:Ayatana, including a couple of
-          new packages, amongst them:<itemizedlist>
-            <listitem>
-              <para>unity – not yet ready for users to test, but it’s a first submission which aims
-                mainly to provide unity-core-4.0 dependency for other packages. It needs a bit of
-                work still, for example we’re missing the KDM and GDM session files to load the
-                Unity Desktop and there’s really no testing done at this stage.</para>
-            </listitem>
-            <listitem>
-              <para>unity-lens-applications</para>
-            </listitem>
-            <listitem>
-              <para>unity-lens-files</para>
-            </listitem>
-            <listitem>
-              <para>etc...</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>During the next days I’m uploading hopefully a fully working version of Unity 2D, I’m
-          just trying to fix some build errors on one of it’s dependencies, the Qt bindings for
-          dconf. Once this is done, I have strong reasons to believe that I’ll have a fully working
-          Unity 2D package.</para>
-        <para>I’ve also submitted gtk3-engines-unico (and submitted to GNOME:Apps) which provides
-          the GTK3 engine for Canonical’s Light Themes, this one is properly tested and works very
-          nice with GNOME3.</para>
-        <para>Hopefully more cool developments during the next days… And I’m still looking for a
-          volunteer contributor for Compiz…</para>
+        <title><ulink
+          url="http://www.marques.so/2011/10/opensuse-12-1-delivers-gtk-3-2-with-broadway-backend/"
+          >Nelson Marques: openSUSE 12.1 delivers GTK+ 3.2 with Broadway backend!</ulink></title>
+        <para>On the 25th of September 2001, <ulink url="http://fedoraproject.org/wiki/User:Mclasen"
+          >Mathias Clasen</ulink> announces the <ulink
+            url="http://mail.gnome.org/archives/gtk-devel-list/2011-September/msg00175.html">release of
+            GTK+ 3.2.0</ulink>. This release includes delivers:<itemizedlist>
+              <listitem>
+                <para>Many improvements to the CSS theming support;</para>
+              </listitem>
+              <listitem>
+                <para>Width-for-height support in many more widgets (ex: GtkPanel, GtkMenuBar,
+                  GtkNotebook, etc);</para>
+              </listitem>
+              <listitem>
+                <para>New experimental Wayland and <emphasis role="bold">HTML5 ‘Broadway’
+                  backeds</emphasis>;</para>
+              </listitem>
+              <listitem>
+                <para>GtkFileChooser and GtkAssistant received face-lifts;</para>
+              </listitem>
+              <listitem>
+                <para>New widgets (ex: GtkLockButton and GtkOverlay, etc);</para>
+              </listitem>
+            </itemizedlist></para>
+        <!--($ ld: 03.10.11 sm $)-->
       </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://www.marques.so/2011/09/banshee-repositories-maintenance/">Nelson Marques: Banshee repositories maintenance…</ulink>
-        </title>
-        <para>The Banshee 2.2.0 sources were made available a few minutes ago. This is the perfect
-          time to perform some maintenance tasks on the openSUSE Banshee repositories. Since many of
-          the packages on this repositories are used in other projects (ex. Meego), I’m contacting
-          the maintainers and see how will approach the ‘nuking’ part. Some of the task to be performed:<itemizedlist>
-            <listitem>
-              <para>Package name change from banshee-1 to banshee, deprecating banshee-1;</para>
-            </listitem>
-            <listitem>
-              <para>Banshee for openSUSE is now maintained on GNOME:Apps project. Banshee:Unstable
-                will be served by a branch of the packages in the GNOME:Apps project (only banshee
-                and banshee-community-extensions);</para>
-            </listitem>
-            <listitem>
-              <para>Move from ndesk-* to dbus-sharp and dbus-sharp-glib (thus nuking ndesk
-                packages);</para>
-            </listitem>
-            <listitem>
-              <para>Nuke unwanted Mono packages so that the build links against the distribution
-                mono packages. This will clear a few problems that might happen, thus making this
-                repositories perfect to openSUSE users.</para>
-            </listitem>
-            <listitem>
-              <para>Anything I might have forgotten…</para>
-            </listitem>
-          </itemizedlist></para>
-        <para>Banshee 2.2.0 will arrive within 24/48 hours to openSUSE users…</para>
-      </blockquote>
-      <blockquote>
-        <title>
-          <ulink url="http://www.marques.so/2011/09/banshee-2-2-0-released-and-available-for-opensuse-users/">Nelson Marques: Banshee 2.2.0 released and available for openSUSE users!</ulink>
-        </title>
-        <para>The first release of <ulink url="http://banshee.fm">Banshee</ulink> 2.2 series has
-          just been <ulink url="http://mail.gnome.org/archives/banshee-list/2011-September/msg00124.html">announced</ulink> and includes 108 notable bug fixes (since version 2.0.0) and delivers
-          some long waited new features:<itemizedlist>
-            <listitem>
-              <para>Support default internet radio stations;</para>
-            </listitem>
-            <listitem>
-              <para>New extension: Album Art Writer (banshee-extension-album-art);</para>
-            </listitem>
-            <listitem>
-              <para>New extension: Duplicate Song Detector (banshee-extension-dsd);</para>
-            </listitem>
-            <listitem>
-              <para>New custom support for the Barnes &amp; Noble Nook – transfer music between your
-                library and your Nook device, it just works;</para>
-            </listitem>
-            <listitem>
-              <para>eMusic Store – Browse, search, preview, buy and download music straight into
-                your Banshee library from the eMusic online store;</para>
-            </listitem>
-          </itemizedlist></para>
-        <para><inlinegraphic fileref="https://lh5.googleusercontent.com/-neYpAuvwAQQ/TniZPM97eMI/AAAAAAAAAU4/Fz7iBYX2YbI/s1024/NewBanshee.png" width="50%"/></para>
-      </blockquote>
-      </sect3> --><!--
+      </sect3> <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
