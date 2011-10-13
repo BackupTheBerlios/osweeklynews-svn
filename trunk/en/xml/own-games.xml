@@ -50,22 +50,77 @@
     <para></para>
   </blockquote> -->  <blockquote>
     <title>
-      <ulink url="http://www.tuxarena.com/2011/09/xonotic-0-5-free-shooter-based-off-nexuiz/">Tux
-        Arena/Craciun Dan: Xonotic - Free Shooter Based Off Nexuiz</ulink>
+      <ulink
+        url="http://www.marques.so/2011/10/unknown-horizons-2011-3-rc3-ready-for-testing-on-opensuse/"
+        >Nelson Marques: Unknown Horizons 2011.3 RC3 ready for testing on openSUSE!</ulink>
     </title>
-    <para><ulink url="http://www.xonotic.org/">Xonotic</ulink> is a free first-person shooter game
-      for Linux, Windows and Mac OS X. The Xonotic project started as a fork of Nexuiz, a game which
-      was popular for many years on Linux. The fork was created because Nexuiz was licensed to
-      IllFonic game studios, and it is to be used as a platform for developing a commercial game for
-      Steam, Xbox and PlayStation.</para>
+    <para>While the <ulink url="http://www.unknown-horizons.org">Unknown Horizons</ulink> developers
+      are working hard fixing bugs and preparing the new release, 2011.3, I’ve went ahead and
+      started to update all the dependencies to bring this wonderful game to <ulink
+        url="http://opensuse.org">openSUSE</ulink> users.</para>
+    <para>Here’s a few things that were changed to support this release:<itemizedlist>
+        <listitem>
+          <para>FIFE – Unknown Horizons now requires <ulink
+              url="http://fifengine.net/2011/10/07/0-3-3-has-arrived/">FIFE 0.3.3</ulink> (released
+            a few days ago). This was a bit of a pain-in-butt package, that started to build
+            properly after a SCons update (also forwarded to the openSUSE devel project in
+            devel:tools:builders).</para>
+        </listitem>
+        <listitem>
+          <para>Updated <ulink url="http://guichan.sourceforge.net/wiki/index.php/Main_Page"
+              >guichan</ulink> to the latest release (0.8.2) and backported a commit that enables
+            UTF-8;</para>
+        </listitem>
+        <listitem>
+          <para>Updated SCons to 2.1.0;</para>
+        </listitem>
+      <listitem>
+        <para>ENet was updated to latest version (1.3.3).</para>
+      </listitem>
+      </itemizedlist></para>
     <para><inlinegraphic
-        fileref="http://www.tuxarena.com/wp-content/uploads/2011/09/xonotic000007-640x480.jpg"
-        width="25%"/></para>
-    <para>Xonotic uses the Darkplaces game engine, an engine which started as a Quake modification,
-      but it was under heavy development and new improvements were made. Currently the developers of
-      Xonotic state that the game is “on the par with most commercial games from 2006-2007″. Which,
-      for the Linux platform is pretty important. (...)</para>
-    <!--($ ld: 03.10.11 sm $)-->
+        fileref="http://www.marques.so/wp-content/uploads/2011/10/Screenshot-at-2011-10-11-193815-1024x765.png"
+        width="30%"/></para>
+    <para>Regarding Unknown Horizons packaging, I’ve also fixed some pending issues:<itemizedlist>
+        <listitem>
+          <para>Added python-enet package: we now provide this so we can drop the binary blob
+            bundled with Unknown Horizons (depends on libenet &gt;= 1.3.3);</para>
+        </listitem>
+        <listitem>
+          <para>UH now requires FIFE &gt;= 0.3.3, which is no longer backward compatible;</para>
+        </listitem>
+        <listitem>
+          <para>Updated %post and %postun scriptlets.</para>
+        </listitem>
+        <listitem>
+          <para>Sources are a bit fatter now, using .xz now.</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>To install Unknown Horizons 2011.3rc3 please use one of the available 1-Click installers
+      for openSUSE:<itemizedlist>
+        <listitem>
+          <para>
+            <ulink
+              url="http://download.opensuse.org/repositories/games:/unknown-horizons/openSUSE_11.4/unknown-horizons.ymp"
+              >Install for openSUSE 11.4</ulink>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            <ulink
+              url="http://download.opensuse.org/repositories/games:/unknown-horizons/openSUSE_Tumbleweed/unknown-horizons.ymp"
+              >Install for openSUSE Tumbleweed</ulink>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            <ulink
+              url="http://download.opensuse.org/repositories/games:/unknown-horizons/openSUSE_Factory/unknown-horizons.ymp"
+              >Install for openSUSE Factory</ulink>
+          </para>
+        </listitem>
+      </itemizedlist></para>
+    <!--($ ld: 13.10.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://www.marques.so/2011/10/trine-2-coming-for-linux/">Nelson Marques:
