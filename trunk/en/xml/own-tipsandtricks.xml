@@ -22,8 +22,7 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://nbprashanth.wordpress.com/2011/10/01/customizing-gnome3/">N.B.Prashanth:
-          Customizing GNOME3</ulink>
+        <ulink url="http://nbprashanth.wordpress.com/2011/10/01/customizing-gnome3/">N.B.Prashanth: Customizing GNOME3</ulink>
       </title>
       <para>GNOME3 and the GNOME Shell are no doubt, major improvements. They bring in usability and
         quite a bit of eye candy (in a different way compared to compiz) while at the same time, a
@@ -48,11 +47,11 @@ yes you can do it with an html editor, or also with a simple text editor like Vi
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/how-to-find-anything-under-linux/">Wazi/Carla Schroder: How to Find Anything Under Linux</ulink>
+        <ulink url="http://www.linuxjournal.com/content/getting-help-linux-part-2-info">Linux Journal/Jayson Broughton: Getting Help From Linux - Part 2 Info</ulink>
       </title>
-      <para>The Linux find, grep, and awk commands are amazing power tools for fine-grained file searches, and for finding things inside files. With them you can find the largest and newest files on a system, fine-tune search parameters, search for text inside files, and perform some slick user management tricks. (...)</para>
-    </blockquote>
-<!-- ($ Id: 8.10.11 sat $)-->  </sect2>
+      <para>Well here we are again, at part two of the &apos;Getting Help from Linux&apos; series.  In this blog post I&apos;ll be talking about using Info to get help from Linux.  In <ulink url="http://www.linuxjournal.com/content/getting-help-linux-part-1-man-pages">my previous post</ulink> I spoke about how Info came about, but just in case you missed it I&apos;ll give you another quick lesson.  Gnu Info was created by the Free Software Foundation and in my experience is used by all of Gnu&apos;s software for their version of &apos;man&apos; pages.  Info may contain much more information than what you can find in Man pages, and sometimes contains much more than you ever really need.  The good thing about Info is that it is a hypertext markup utility.  This makes it much easier to navigate through via hyperlinks embedded in emacs, than simply using arrow keys to navigate through information.  While Man uses the Less utility to control the display, the info utility itself is designed to display Info pages.  For those of you familiar with emacs, it appears the layout may be the same, along with some of the basic navigation. But that&apos;s where the two applications can differ.  If you&apos;re using the Info application then your commands will be different than if you&apos;re viewing info files in Emacs.  This article is about reading Info pages inside of info. (...)</para>
+<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
@@ -68,31 +67,33 @@ yes you can do it with an html editor, or also with a simple text editor like Vi
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-312-6/index.html">IBM
-          Developer Works/Tracy Bost: Learn Linux, 302 (Mixed environments):
-          Internationalization</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/monitoring-and-dealing-with-snort-alerts/">Wazi/Juliet Kemp: Monitoring and Dealing With Snort Alerts</ulink>
       </title>
-      <para>If you work in a mixed environment in which non-English characters are used, you need to
-        understand character codes and code pages as they relate to your locale. You also need to
-        understand Linux and Windows environments differ when interpreting name spaces. Although
-        Samba supports internationalization, if you work with older Windows clients , Samba 2.x
-        versions, or otherwise need to use a specific character set other than Unicode, you&apos;ll need
-        to do a bit of configuration tuning. Depending upon the environment&apos;s locale in use,
-        building and patching conversion libraries may also be necessary. In this article, learn how
-        to handle internationalization in your Linux environment. (...)</para>
-<!--($ Id: 05.10.11 sm $)-->    </blockquote>
+      <para><ulink url="http://olex.openlogic.com/packages/snort">Snort</ulink>, the open source intrusion detection and prevention system, is immensely powerful, but to get the most out of it, you need to configure it correctly for your own setup. <ulink url="http://olex.openlogic.com/wazi/2011/use-profiling-to-improve-snort-performance/">My previous Snort article</ulink> looked at Snort’s own performance monitoring provision and how to use it to tune Snort to get the best throughput at the detection end. Here are some performance tips for dealing well with alerts, looking at alert monitoring, streamlining false positives and genuine but frequent real positives, and logical rule optimization.</para>
+      <para>The last article looked at monitoring rule performance – that is, how well the Snort detection engine deals with the traffic it sees. The next stage concerns what to do with traffic that Snort flags as suspicious: alerts of various sorts. I won’t go into detail about how to deal with specific alerts, but talk instead about some good Snort management practices. (...)</para>
+<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/how-to-lock-down-linux/9665">ZDNET/Steven
-          J. Vaughan-Nichols: How to lock down Linux</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/use-mysql-replication-like-an-expert-to-improve-performance-and-enhance-availability/">Wazi/Anatoliy A. Dimitrov: Use MySQL Replication Like an Expert to Improve Performance and Enhance Availability</ulink>
       </title>
-      <para>Linux is, by design, a very secure operating system, but so what? You can have the best
-        security system in the world on your house, but if you leave your front-door open anyone can
-        still walk in. Even people who know better, like Linux kernel developers, blow it sometimes.
-        That’s what happened to the <ulink url="http://www.linuxfoundation.org">Linux Foundation</ulink>’s constellation of sites. <ulink url="http://www.zdnet.com/blog/open-source/some-linux-foundation-crack-attack-details-emerge/9535">Multiple important Linux sites were down for weeks</ulink> and as of October 3rd, <ulink url="http://http://kernel.org">kernel.org</ulink> is still down. This doesn’t have to
-        happen to you. Here are a few simple suggestions from me, and some more advanced ones from
-          <ulink url="http://www.kroah.com/log/">Greg Kroah-Hartman</ulink>, one of Linux’s lead
-        developers. (...)</para>
-<!-- ($ Id: 05.10.11 sm $)-->    </blockquote>
+      <para>By using MySQL replication, you can distribute MySQL queries over multiple servers to improve application performance, provide high availability (HA), and distribute data across diverse physical locations. The process involves one or more master servers, which send databases or tables asynchronously to slave servers. For all of its potential benefits, MySQL replication can cause serious trouble, especially in complex environments. Follow the advice here to get off to a healthy start.</para>
+      <para>In MySQL replication each participating server may be a master, a slave, or both. Master servers handle database transactions and write them to a binary log (binlog). Slaves connect to masters and request copies of their binary logs. Servers can act both as master and slave thanks to features such as different auto increment, which sets the interval between successive column values. (...)</para>
+<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://linuxaria.com/article/how-to-convert-from-deb-to-rpm-and-viceversa?lang=en">Linuxaria: How to convert from .deb to .rpm and viceversa</ulink>
+      </title>
+      <para>As many of you know the most used packages on GNU/Linux are deb and rpm.</para>
+      <para><ulink url="http://en.wikipedia.org/wiki/Deb_(file_format)">deb</ulink> is the extension of the Debian software package format and the most often used name for such binary packages.</para>
+      <para>Debian packages are standard Unix ar archives that include two gzipped, bzipped or lzmaed tar archives: one that holds the control information and another that contains the data.
+The accepted program for handling these packages is dpkg, commonly used via other programs such as apt/aptitude or Gdebi.</para>
+      <para><ulink url="http://en.wikipedia.org/wiki/RPM_Package_Manager">RPM</ulink> Package Manager (RPM) is a package management system. The name RPM variously refers to the .rpm file format, files in this format, software packaged in such files, and the package manager itself. RPM was intended primarily for GNU/Linux distributions; the file format is the baseline package format of the Linux Standard Base. (...)</para>
+<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-313-2/index.html">IBM developerWorks/Sean A. Walberg: Learn Linux, 302 (Mixed environments): Authentication and authorization</ulink>
+      </title>
+      <para>In preparation for taking the Linux Professional Institute Certification exam LPI-302 for systems administrators, learn how to set up and store passwords, integrate Samba with LDAP, and use ACLs to protect your Linux installation. (...)</para>
+<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
