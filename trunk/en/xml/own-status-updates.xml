@@ -199,7 +199,9 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    <sect3 role="gnometeam">
+      </sect3> -->    
+    <!--
+    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
@@ -223,8 +225,9 @@
               <para>New widgets (ex: GtkLockButton and GtkOverlay, etc);</para>
             </listitem>
           </itemizedlist></para>
-<!--($ ld: 03.10.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -245,7 +248,7 @@
           installments, we will look at Plasma Active’s developer story, its user story, its ODM and
           hardware story, and possibly more. With each installment, I will update the list below as
           the articles go online. (...)</para>
-<!--($ ld: 11.10.11 sm $)-->      </blockquote>
+      </blockquote>
       <blockquote>
         <title>
           <ulink url="http://vizzzion.org/blog/2011/10/plasma-active-perspectives-the-app-story/">Sebastian Kügler: Plasma Active Perspectives: The App Story</ulink>
@@ -253,8 +256,8 @@
         <para>
           <emphasis role="italic">Plasma Active brings a flexible, elegant, activity-driven user experience to a spectrum of devices. This article is part of a series of articles about different <ulink url="http://vizzzion.org/blog/2011/10/plasma-active-perspectives/">perspectives on Plasma Active</ulink>. In the first installment, we look at a number of applications that come with Plasma Active. Kontact Touch, Calligra Active, Bangarang and a collection of Active Apps provide a stable and powerful set of functionality, making Plasma Active suitable for personal and professional use cases.</emphasis>
           (...)</para>
-<!--($ ld: 11.10.11 sm $)-->      </blockquote>
-    </sect3>
+      </blockquote>
+    </sect3> -->
 <!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
@@ -511,7 +514,9 @@ The screen-saver settings for time-out and &quot;require password&quot; are secu
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> -->    <sect3 role="testing">
+      </sect3> -->    
+    <!--
+    <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
@@ -525,7 +530,7 @@ The screen-saver settings for time-out and &quot;require password&quot; are secu
           getting quite a bit of testing. On my systems, I have been doing updates from the Factory
           repos nearly every day. Most things are working without problems. </para>
       </blockquote>
-    </sect3>
+    </sect3> -->
     <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>

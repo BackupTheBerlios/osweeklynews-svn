@@ -62,6 +62,27 @@ yes you can do it with an html editor, or also with a simple text editor like Vi
       <para>Have you ever wondered what happens during the compilation process and how the C program gets converted to an executable?</para>
       <para>There are four main stages through which a source code passes in order to finally become an executable. (...)</para>
 <!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://michal.hrusecky.net/2011/10/opensuse-asus-transformer/">Michal
+          Hrušecký: openSUSE @ ASUS Transformer</ulink></title>
+      <para>This is going to be just a brief blog post with one important image. You probably all
+        already know that there is bunch of people in openSUSE community who are working on <ulink
+          url="http://en.opensuse.org/Portal:ARM">getting ARM supported</ulink> by distribution. And
+        you probably already seen many blog posts about how great it is working. Well this is one of
+        them. I’m happy owner of ASUS Transformer machine. As a geek I have root on my android
+        machine. And since not long time ago, I also had a Debian chroot there to be able to run my
+        favorite applications. But not any more. I replaced my Debian chroot with openSUSE one and
+        now I can use zypper happily and forget everything about apt-get.</para>
+      <para><inlinegraphic
+          fileref="http://michal.hrusecky.net/wp-content/uploads/P20111013133027-150x150.png"
+          align="left"/></para>
+      <para>How did I did that? I started with a simple package in obs, changed BuildRequires to the
+        set of packages I wanted to have, run <command>osc build armv7l standard</command> and after
+        osc created chroot for me, I just took it away. And fixed few things after switching to it
+        on my Transformer. I’m still missing some packages, but hopefully they will be available
+        soon </para>
+      <!--($ Id: 15.10.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
@@ -95,5 +116,21 @@ The accepted program for handling these packages is dpkg, commonly used via othe
       </title>
       <para>In preparation for taking the Linux Professional Institute Certification exam LPI-302 for systems administrators, learn how to set up and store passwords, integrate Samba with LDAP, and use ACLs to protect your Linux installation. (...)</para>
 <!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://ironman.darthgibus.net/?p=136">Fred Blaise: Linux fstab: mount a
+          path containing spaces</ulink></title>
+      <para>Let’s say you want to CIFS mount a windows share — say “//server01/it stuff$”, but your
+        Windows admin put spaces in the path. Replace the spaces with <emphasis role="bold"
+          >\040</emphasis>.</para>
+      <para>So, in your /etc/fstab, the line would give:</para>
+      <para>
+        <screen>//server01/it\040stuff$ /home/fblaise/mnt/MyITDrive  cifs  \\
+username=fblaise,password=yoursinhere,uid=1000,gid=100,_netdev 0 0
+</screen>
+      </para>
+      <para>It will then work, and your linux apps which cannot see beyond your local filesystems
+        will have a new life.</para>
+      <!-- ($ Id: 15.10.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>
