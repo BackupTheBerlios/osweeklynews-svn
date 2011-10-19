@@ -18,6 +18,7 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
+  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
@@ -33,7 +34,7 @@
         as 2.x. A lot of people seem to think that they are “stuck” with the blue-black theme that
         comes by default. Ofcourse this is not the case. In this post, I ll explain a few ways in
         which we can customize GNOME3 and the GNOME Shell. (...)</para>
-<!-- ($ Id: 02.10.11 sat $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://linuxaria.com/recensioni/4-programs-to-update-your-blog-from-linux?lang=en">Linuxaria: 4 programs to update your Blog from Linux</ulink>
@@ -41,8 +42,9 @@
       <para>Sometimes it’s useful to work offline, and once the article it’s finished publish it on your Blog.
 yes you can do it with an html editor, or also with a simple text editor like Vi or Emacs, but there are specialized programs that can ease your work of publishing and management of your online Blog.</para>
       <para>So we’ll take a look at Scribefire, BloGTK, Blogilo and Qumana. (...)</para>
-<!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
+  <!--q-->
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
@@ -55,14 +57,6 @@ yes you can do it with an html editor, or also with a simple text editor like Vi
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title>
-        <ulink url="http://www.thegeekstuff.com/2011/10/c-program-to-an-executable/">The Geek Stuff/Himanshu Arora: Journey of a C Program to Linux Executable in 4 Stages</ulink>
-      </title>
-      <para>You write a C program, use gcc to compile it, and you get an executable. It is pretty simple. Right?</para>
-      <para>Have you ever wondered what happens during the compilation process and how the C program gets converted to an executable?</para>
-      <para>There are four main stages through which a source code passes in order to finally become an executable. (...)</para>
-<!-- ($ Id: 8.10.11 sat $)-->    </blockquote>
-    <blockquote>
       <title><ulink url="http://michal.hrusecky.net/2011/10/opensuse-asus-transformer/">Michal
           Hrušecký: openSUSE @ ASUS Transformer</ulink></title>
       <para>This is going to be just a brief blog post with one important image. You probably all
@@ -73,9 +67,6 @@ yes you can do it with an html editor, or also with a simple text editor like Vi
         machine. And since not long time ago, I also had a Debian chroot there to be able to run my
         favorite applications. But not any more. I replaced my Debian chroot with openSUSE one and
         now I can use zypper happily and forget everything about apt-get.</para>
-      <para><inlinegraphic
-          fileref="http://michal.hrusecky.net/wp-content/uploads/P20111013133027-150x150.png"
-          align="left"/></para>
       <para>How did I did that? I started with a simple package in obs, changed BuildRequires to the
         set of packages I wanted to have, run <command>osc build armv7l standard</command> and after
         osc created chroot for me, I just took it away. And fixed few things after switching to it

@@ -19,33 +19,31 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://www.wafaa.eu/entry/arming-opensuse---111011-1-72.html">Andrew Wafaa:
-        ARMing openSUSE - 111011</ulink></title>
-    <para>So HackWeek VII has been and gone, but work has not stopped in getting our beloved Geeko
-      some ARMs.</para>
-    <para>Now I'll be the first to admit, things have been a wee bit scrappy in places. This isn't
-      anyone's fault, it's just that we want to get things rolling ASAP. Thing is, we need more
-      haste less speed; we need to be somewhat more concerted with our efforts. So instead of trying
-      to get everything to build in one hit (would be great if that was possible), we are going to
-      target patterns of packages. (...)</para>
-    <!--($ ld: 13.10.11 sm $)-->
+    <title><ulink url="http://michal.hrusecky.net/2011/10/how-do-i-handle-all-those-mysqls/">Michal
+        Hrušecký: How do I handle all those MySQLs</ulink></title>
+    <para>In openSUSE we’ve got currently MySQL Community Server, MariaDB and MySQL Cluster. From
+      all of these we have even multiple versions. Although these packages are different, they are
+      quilte similar. So I’m handling them in a little bit special way. When I was adding MariaDB I
+      knew that packaging will be quite similar to the MySQL Community Server. So I took some parts
+      of .spec file away into separate files so I can sync them easily and left only package
+      dependent parts in .spec files. Later on, I created special git repository and few scripts to
+      handle patches and patch sharing among these variants. And lately I automatized tre rest of
+      the manual syncing I was diong. So today I want to present how do I do MySQL packaging today.
+      And that is also some tutorial on how you can modify these packages easily or even create
+      packages for other variants like Percona.</para>
+    <!--($ ld: 19.10.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://lslezak.blogspot.com/2011/10/opensuse-hackweek-vii-hacking-usb.html"
-        >Ladislav Slezak: OpenSUSE Hackweek VII - Hacking USB Joysticks in YaST</ulink></title>
-    <para>This <ulink url="http://en.opensuse.org/Portal:Hackweek">hackweek</ulink> I spent playing
-      with joysticks in <ulink url="http://en.opensuse.org/Portal:YaST">YaST</ulink> and hwinfo
-      (libhd). YaST already has a module for configuring joysticks, but I only supported <ulink
-        url="http://en.wikipedia.org/wiki/Gameport">Gameport</ulink> joysticks which are quite
-      obsoleted these days. </para>
-    <para>AFAIK all recent mainboards do not have gamport connectors (just a pin header) or the
-      gameport is completely missing. And if you want to buy a joystick you will find only USB
-      models anyway. </para>
-    <para>There was a note in the YaST module that it only supports Gameport joysticks but some
-      users find it confusing. </para>
-    <para>So I decided to change the situation and do something interesting during my Hackweek
-      project - to add USB joystick support to YaST. (...)</para>
-    <!--($ ld: 13.10.11 sm $)-->
+        >Jos Poortvliet: Almost too much going on...</ulink></title>
+    <para>Been a busy week, last week. There was <ulink
+        url="http://www.kde.org/announcements/plasma-active-one/">Plasma Active One</ulink>, <ulink
+        url="http://owncloud.org/announcement/">OwnCloud 2.0</ulink>, <ulink
+        url="http://news.opensuse.org/2011/10/11/opensuse-announces-first-public-release-of-openqa/"
+        >openQA 1.0</ulink> and <ulink url="http://dot.kde.org/2011/10/05/freedom-15-years-party"
+        >KDE's 15th birthday</ulink>. Each of them deserves a lot of attention, which they got. I'll
+      just add my thoughts! (...)</para>
+    <!--($ ld: 19.10.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://ungethym.blogspot.com/2011/10/2-days-to-go-and-kde-turns-15.html"
