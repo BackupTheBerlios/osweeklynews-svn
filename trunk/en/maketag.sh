@@ -12,7 +12,7 @@ fi
 
 echo "Create a tag for Issue $ISSUE ..."
 
-svn copy http://svn.berlios.de/svnroot/repos/osweeklynews/trunk/en \
-   http://svn.berlios.de/svnroot/repos/osweeklynews/tags/ownen$ISSUE \
+svn copy https://svn.code.sf.net/p/osweeklynews/code/trunk/en \
+   https://svn.code.sf.net/p/osweeklynews/code/tags/ownen$ISSUE \
 && echo "Tag correct set."
 
