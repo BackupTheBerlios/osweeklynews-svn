@@ -18,50 +18,32 @@
 -->
 <sect1 role="tipsandtricks">
   <title>Tips and Tricks</title>
-  <!--
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://nbprashanth.wordpress.com/2011/10/01/customizing-gnome3/">N.B.Prashanth: Customizing GNOME3</ulink>
+        <ulink url="http://scribblesandsnaps.wordpress.com/2011/10/17/create-slick-slideshows-with-digikam/">Dmitri Popov: Create Slick Slideshows with digiKam</ulink>
       </title>
-      <para>GNOME3 and the GNOME Shell are no doubt, major improvements. They bring in usability and
-        quite a bit of eye candy (in a different way compared to compiz) while at the same time, a
-        few features went missing in 3.0 release – like Emblems, for instance. Nevertheless, GNOME3
-        is a great release and has been extremely stable so far (Yes, i have been using it since
-        it’s release in April.). </para>
-      <para>One major complaint that I hear from people is that GNOME3 is not as easy to customize
-        as 2.x. A lot of people seem to think that they are “stuck” with the blue-black theme that
-        comes by default. Ofcourse this is not the case. In this post, I ll explain a few ways in
-        which we can customize GNOME3 and the GNOME Shell. (...)</para>
-    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://linuxaria.com/recensioni/4-programs-to-update-your-blog-from-linux?lang=en">Linuxaria: 4 programs to update your Blog from Linux</ulink>
-      </title>
-      <para>Sometimes it’s useful to work offline, and once the article it’s finished publish it on your Blog.
-yes you can do it with an html editor, or also with a simple text editor like Vi or Emacs, but there are specialized programs that can ease your work of publishing and management of your online Blog.</para>
-      <para>So we’ll take a look at Scribefire, BloGTK, Blogilo and Qumana. (...)</para>
-    </blockquote>
-  </sect2> -->
-  <!--q-->
+      <para>It’s easy to dismiss digiKam’s slideshow functionality as a feature of no particular use. After all, most photographers prefer to publish their photos using the photo sharing service of their choice. But the slideshow feature can come in handy when showcasing photos on your machine is the only option. Running a simple slideshow in digiKam is as easy as selecting the desired album or pictures and choosing <emphasis role="bold">View</emphasis> → <emphasis role="bold">Slideshow</emphasis> → <emphasis role="bold">All</emphasis> (or <emphasis role="bold">Selection</emphasis>). However, digiKam has something even better: using the <emphasis role="bold">View</emphasis> → <emphasis role="bold">Slideshow</emphasis> → <emphasis role="bold">Advanced Slideshow</emphasis> command, you can create rather impressive slideshows with smooth transitions and soundtracks. (...)</para>
+<!-- ($ Id: 21.10.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/getting-help-linux-part-2-info">Linux Journal/Jayson Broughton: Getting Help From Linux - Part 2 Info</ulink>
+        <ulink url="http://python4kids.wordpress.com/2011/10/17/classy-methods-a-sense-of-self-classes-part-2/">Python4Kids/Brendan Scott: Classy Methods, a Sense of Self (Classes Part 2)</ulink>
       </title>
-      <para>Well here we are again, at part two of the &apos;Getting Help from Linux&apos; series.  In this blog post I&apos;ll be talking about using Info to get help from Linux.  In <ulink url="http://www.linuxjournal.com/content/getting-help-linux-part-1-man-pages">my previous post</ulink> I spoke about how Info came about, but just in case you missed it I&apos;ll give you another quick lesson.  Gnu Info was created by the Free Software Foundation and in my experience is used by all of Gnu&apos;s software for their version of &apos;man&apos; pages.  Info may contain much more information than what you can find in Man pages, and sometimes contains much more than you ever really need.  The good thing about Info is that it is a hypertext markup utility.  This makes it much easier to navigate through via hyperlinks embedded in emacs, than simply using arrow keys to navigate through information.  While Man uses the Less utility to control the display, the info utility itself is designed to display Info pages.  For those of you familiar with emacs, it appears the layout may be the same, along with some of the basic navigation. But that&apos;s where the two applications can differ.  If you&apos;re using the Info application then your commands will be different than if you&apos;re viewing info files in Emacs.  This article is about reading Info pages inside of info. (...)</para>
-<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
+      <para>In our last tutorial we had our first look at classes and their attributes.  The attributes of a class are the data which are stored in the class.   The great thing about classes though is that we can use them to relate data to functions.  Just as the data of a class are called attributes, the functions of a class have a special name as well.  They are called “methods”. We have had a brief meeting with methods <ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/">earlier</ulink>. (...)</para>
+<!-- ($ Id: 21.10.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
-      <title><ulink url="http://michal.hrusecky.net/2011/10/opensuse-asus-transformer/">Michal
-          Hrušecký: openSUSE @ ASUS Transformer</ulink></title>
+      <title>
+        <ulink url="http://michal.hrusecky.net/2011/10/opensuse-asus-transformer/">Michal Hrušecký: openSUSE @ ASUS Transformer</ulink>
+      </title>
       <para>This is going to be just a brief blog post with one important image. You probably all
-        already know that there is bunch of people in openSUSE community who are working on <ulink
-          url="http://en.opensuse.org/Portal:ARM">getting ARM supported</ulink> by distribution. And
+        already know that there is bunch of people in openSUSE community who are working on <ulink url="http://en.opensuse.org/Portal:ARM">getting ARM supported</ulink> by distribution. And
         you probably already seen many blog posts about how great it is working. Well this is one of
         them. I’m happy owner of ASUS Transformer machine. As a geek I have root on my android
         machine. And since not long time ago, I also had a Debian chroot there to be able to run my
@@ -72,56 +54,15 @@ yes you can do it with an html editor, or also with a simple text editor like Vi
         osc created chroot for me, I just took it away. And fixed few things after switching to it
         on my Transformer. I’m still missing some packages, but hopefully they will be available
         soon </para>
-      <!--($ Id: 15.10.11 sm $)-->
-    </blockquote>
+<!--($ Id: 15.10.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/monitoring-and-dealing-with-snort-alerts/">Wazi/Juliet Kemp: Monitoring and Dealing With Snort Alerts</ulink>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-313-1/index.html">IBM developerWorks/Tracy Bost: Learn Linux, 302 (Mixed environments): Managing user accounts and groups</ulink>
       </title>
-      <para><ulink url="http://olex.openlogic.com/packages/snort">Snort</ulink>, the open source intrusion detection and prevention system, is immensely powerful, but to get the most out of it, you need to configure it correctly for your own setup. <ulink url="http://olex.openlogic.com/wazi/2011/use-profiling-to-improve-snort-performance/">My previous Snort article</ulink> looked at Snort’s own performance monitoring provision and how to use it to tune Snort to get the best throughput at the detection end. Here are some performance tips for dealing well with alerts, looking at alert monitoring, streamlining false positives and genuine but frequent real positives, and logical rule optimization.</para>
-      <para>The last article looked at monitoring rule performance – that is, how well the Snort detection engine deals with the traffic it sees. The next stage concerns what to do with traffic that Snort flags as suspicious: alerts of various sorts. I won’t go into detail about how to deal with specific alerts, but talk instead about some good Snort management practices. (...)</para>
-<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/use-mysql-replication-like-an-expert-to-improve-performance-and-enhance-availability/">Wazi/Anatoliy A. Dimitrov: Use MySQL Replication Like an Expert to Improve Performance and Enhance Availability</ulink>
-      </title>
-      <para>By using MySQL replication, you can distribute MySQL queries over multiple servers to improve application performance, provide high availability (HA), and distribute data across diverse physical locations. The process involves one or more master servers, which send databases or tables asynchronously to slave servers. For all of its potential benefits, MySQL replication can cause serious trouble, especially in complex environments. Follow the advice here to get off to a healthy start.</para>
-      <para>In MySQL replication each participating server may be a master, a slave, or both. Master servers handle database transactions and write them to a binary log (binlog). Slaves connect to masters and request copies of their binary logs. Servers can act both as master and slave thanks to features such as different auto increment, which sets the interval between successive column values. (...)</para>
-<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://linuxaria.com/article/how-to-convert-from-deb-to-rpm-and-viceversa?lang=en">Linuxaria: How to convert from .deb to .rpm and viceversa</ulink>
-      </title>
-      <para>As many of you know the most used packages on GNU/Linux are deb and rpm.</para>
-      <para><ulink url="http://en.wikipedia.org/wiki/Deb_(file_format)">deb</ulink> is the extension of the Debian software package format and the most often used name for such binary packages.</para>
-      <para>Debian packages are standard Unix ar archives that include two gzipped, bzipped or lzmaed tar archives: one that holds the control information and another that contains the data.
-The accepted program for handling these packages is dpkg, commonly used via other programs such as apt/aptitude or Gdebi.</para>
-      <para><ulink url="http://en.wikipedia.org/wiki/RPM_Package_Manager">RPM</ulink> Package Manager (RPM) is a package management system. The name RPM variously refers to the .rpm file format, files in this format, software packaged in such files, and the package manager itself. RPM was intended primarily for GNU/Linux distributions; the file format is the baseline package format of the Linux Standard Base. (...)</para>
-<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-313-2/index.html">IBM developerWorks/Sean A. Walberg: Learn Linux, 302 (Mixed environments): Authentication and authorization</ulink>
-      </title>
-      <para>In preparation for taking the Linux Professional Institute Certification exam LPI-302 for systems administrators, learn how to set up and store passwords, integrate Samba with LDAP, and use ACLs to protect your Linux installation. (...)</para>
-<!-- ($ Id: 14.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink url="http://ironman.darthgibus.net/?p=136">Fred Blaise: Linux fstab: mount a
-          path containing spaces</ulink></title>
-      <para>Let’s say you want to CIFS mount a windows share — say “//server01/it stuff$”, but your
-        Windows admin put spaces in the path. Replace the spaces with <emphasis role="bold"
-          >\040</emphasis>.</para>
-      <para>So, in your /etc/fstab, the line would give:</para>
-      <para>
-        <screen>//server01/it\040stuff$ /home/fblaise/mnt/MyITDrive  cifs  \\
-username=fblaise,password=yoursinhere,uid=1000,gid=100,_netdev 0 0
-</screen>
-      </para>
-      <para>It will then work, and your linux apps which cannot see beyond your local filesystems
-        will have a new life.</para>
-      <!-- ($ Id: 15.10.11 sm $)-->
-    </blockquote>
+      <para>If you manage user and group accounts, you may find that these accounts don&apos;t always work seamlessly for users in mixed environments—a common source of frustration for both users and systems administrators. Fortunately, the Samba suite provides tools to help you manage the process. In this article, learn how to manage user and group accounts in your mixed environment. (...)</para>
+<!-- ($ Id: 21.10.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
