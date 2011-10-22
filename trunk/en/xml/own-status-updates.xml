@@ -88,7 +88,8 @@
         the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
       <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
     </blockquote>
-    </sect2> -->  <sect2 role="teamreports">
+    </sect2> -->  
+  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -131,7 +132,8 @@
           contributions and vote on your request. Once your request gets more then four positive
           votes, you’re a Member. If you get four negative votes you get rejected. (...)</para>
       </blockquote>
-    </sect3> -->    <sect3 role="buildserviceteam">
+      </sect3> -->    
+    <sect3 role="buildserviceteam">
       <title>Build Service Team</title>
 <!--
       <blockquote>
@@ -142,7 +144,8 @@
             the&#160;<ulink url="http://openbuildservice.org/">Open Build Service</ulink>. I wanted to
           sort them alphabetically but at the same time the newest ones at the top. I ended up with
           the following code: (...)</para>
-      </blockquote> -->      <formalpara>
+          </blockquote> -->      
+      <formalpara>
         <title>Build Service Statistics</title>
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
@@ -374,7 +377,8 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           core for the GIT add-in. It hasn&apos;t been easy to make this port fully operational, but we
           now have a GIT core that can be easily updated and which is fully portable.(...)</para>
       </blockquote>
-      </sect3> -->    <sect3 role="openfateteam">
+      </sect3> -->    
+    <sect3 role="openfateteam">
       <title>openFATE Team</title>
 <!--
       <blockquote>
@@ -387,19 +391,16 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           on “Print preview” in your browsers menu, or on “Print” in the feature export box on the
           right side of your feature. </para>
         <para><inlinegraphic fileref="http://lizards.opensuse.org/wp-content/uploads/2011/09/openfate-276x300.png"/></para>
-      </blockquote> -->      <sect4>
+        </blockquote> -->      
+      <sect4>
         <title>Top voted Features</title>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 372)</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 372)</ulink></title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 197)</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 197)</ulink></title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
             http://fedoramagazine.wordpress.com/2008/10/21/interview-fedora-10s-better-startup/
@@ -415,9 +416,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 160)</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 160)</ulink></title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
             the distribution community to switching boot loaders, but this stalemate isn&apos;t
@@ -431,9 +430,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
             (...)</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 114)</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 114)</ulink></title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
           </para>
@@ -445,14 +442,13 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 22.10.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 22.10.11 sat *updated* $) -->      
+      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312890">Opensuse 12.1 - provide Blender 2.6 as default install</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312890">Opensuse 12.1 - provide Blender 2.6 as default install</ulink></title>
           <para>Blender 2.6 finally here on Sunday the 16th of October.
 A huge milestone for Blender, and the best opensource 3D modelling/rendering/animation/editing package available, on linux or otherwise.</para>
           <para><ulink url="http://www.blendernation.com/2011/10/14/blender-2-60-rc2-available/">http://www.blendernation.com/2011/10/14/blender-2-60-rc2-available/</ulink></para>
@@ -460,36 +456,26 @@ A huge milestone for Blender, and the best opensource 3D modelling/rendering/ani
           <para>Please!</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312892">Update boost to 1.47.0</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312892">Update boost to 1.47.0</ulink></title>
           <para>Boost 1.47.0 is out and it contains (apart from updates and fixes) new libraries (especially I&apos;m interested in Geometry).</para>
           <para><ulink url="http://www.boost.org/users/history/version_1_47_0.html">http://www.boost.org/users/history/version_1_47_0.html</ulink></para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312893">Get 1-click installs to work in Rekonq &amp; Konqueror</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312893">Get 1-click installs to work in Rekonq &amp; Konqueror</ulink></title>
           <para>I have been using openSUSE since openSUSE 11.1. I really like Rekonq and like to use it from time-to-time. However, on openSUSE it is not a good choice because 1-click installs don&apos;t work from Rekonq, it just show a script or text in the browser. This is a HUGE lack of polish in openSUSE.</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312894">Adopt Kaptan Desktop Greeter in openSUSE</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312894">Adopt Kaptan Desktop Greeter in openSUSE</ulink></title>
           <para>Pardus is a great KDE distro and has one of the best &quot;Desktop Greeter&quot; of any KDE distro I have ever used, Kaptan.</para>
           <para>&quot;Kaptan is a wizard that helps user to customize desktop enviroment after installing Pardus. While Kaptan is giving some information about Pardus, it also sets basic configures such as internet connection, wall paper and so on.&quot;</para>
           <para><ulink url="http://developer.pardus.org.tr/projects/kaptan/">http://developer.pardus.org.tr/projects/kaptan/</ulink></para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312895">Install Kate by default on KDE based installations</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312895">Install Kate by default on KDE based installations</ulink></title>
           <para>The default text editor installed in a KDE based install of OpenSUSE is Kwrite. I propose installing Kate along side or instead of Kwrite as it is more powerful. It&apos;s not too hard to install Kate via Zypper, but having it available &quot;out of the box&quot; would make OpenSUSE a better KDE distro.</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312901">Add bumblebee for NVidia Optimus graphics support</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312901">Add bumblebee for NVidia Optimus graphics support</ulink></title>
           <para><ulink url="https://github.com/Bumblebee-Project/Bumblebee">https://github.com/Bumblebee-Project/Bumblebee</ulink></para>
           <para>About Bumblebee</para>
           <para>Bumblebee aims to provide support for nVidia Optimus laptops for GNU/Linux
@@ -497,32 +483,27 @@ distributions. Using Bumblebee, you can use your nVidia card for rendering
 graphics which will be displayed using the Intel card. (...)</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312910">rename priority of repository to rank</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312910">rename priority of repository to rank</ulink></title>
           <para>People coming from Debian worlds (Ubuntu,Mint) are familiar using pin-priority to qualify priorities of repositories. But openSUSE is the other way round: Lower numbers are preferred.
 Instead of &apos;priority&apos; allow the wording in /etc/zypp/repos.d:
 rank - ranking</para>
           <para>this would ease support in the forums especially for Tumbleweed users.</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312911">Add option of UDF format to Yast partition manager</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312911">Add option of UDF format to Yast partition manager</ulink></title>
           <para>UDF is an universal disk format file system, which can be used on optical rewritable and non-rewritable media, USB flash drives and hard drives.</para>
           <para>The file system is supported by all modern operating systems, including Windows, BSD, MacOS X, Solaris, OS/2|eComStation, BeOS|Haiku as well as Linux kernel, making it one of the best choices to use when transferring data between platforms.</para>
           <para>UDF also has optional built-in ability to minimize wearing-off of rewritable media with limited rewrite cycles such as flash, CD-RW and DVD-RAM by evenly distributing load over the media, including access to the allocation table.</para>
           <para>Despite this Yast2 partition manager does not suggest option to format a volume into UDF, thus forcing to use a mkudffs command line tool.</para>
         </blockquote>
         <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312913">Support of Creative EMU-0204 USB-soundcard</ulink>
-          </title>
+          <title><ulink url="https://features.opensuse.org/312913">Support of Creative EMU-0204 USB-soundcard</ulink></title>
           <para>Support of this device already in repositories of ALSA, but not released in some reason.</para>
           <para>BTW, patch that enabling 0204 support was back-ported in Ubuntu so it support sound card very well.</para>
           <para><ulink url="http://www.head-fi.org/t/553693/e-mu-0204-on-linux-working">E-MU 0204 on Linux: working!</ulink></para>
         </blockquote>
-<!-- ($ ld: 22.10.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 22.10.11 sat *replaced with latest ones* $) -->     
+      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -553,7 +534,8 @@ rank - ranking</para>
           getting quite a bit of testing. On my systems, I have been doing updates from the Factory
           repos nearly every day. Most things are working without problems. </para>
       </blockquote>
-    </sect3> -->    <sect3 role="translationteam">
+      </sect3> -->    
+    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
@@ -636,5 +618,6 @@ rank - ranking</para>
       <title>YaST Team</title>
 
       <para>...</para>
-      </sect3> -->  </sect2>
+      </sect3> -->  
+  </sect2>
 </sect1>
