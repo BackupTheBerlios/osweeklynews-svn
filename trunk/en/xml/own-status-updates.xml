@@ -199,8 +199,7 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
@@ -226,8 +225,7 @@
             </listitem>
           </itemizedlist></para>
       </blockquote>
-    </sect3> -->
-    <!--
+    </sect3> --><!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -257,8 +255,7 @@
           <emphasis role="italic">Plasma Active brings a flexible, elegant, activity-driven user experience to a spectrum of devices. This article is part of a series of articles about different <ulink url="http://vizzzion.org/blog/2011/10/plasma-active-perspectives/">perspectives on Plasma Active</ulink>. In the first installment, we look at a number of applications that come with Plasma Active. Kontact Touch, Calligra Active, Bangarang and a collection of Active Apps provide a stable and powerful set of functionality, making Plasma Active suitable for personal and professional use cases.</emphasis>
           (...)</para>
       </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="marketingteam">
       <title>Marketing Team</title>
       <blockquote>
@@ -394,14 +391,14 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 369)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 372)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 196)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 197)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -419,7 +416,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 156)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 160)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -435,7 +432,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 113)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 114)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -448,57 +445,84 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 14.10.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 22.10.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312873">Login screen after lock screen</ulink>
+            <ulink url="https://features.opensuse.org/312890">Opensuse 12.1 - provide Blender 2.6 as default install</ulink>
           </title>
-          <para>Why does not require a password to unlock the screen with the same login screen of KDM or GDM, instead of a dialog box? Such as Windows XP.</para>
+          <para>Blender 2.6 finally here on Sunday the 16th of October.
+A huge milestone for Blender, and the best opensource 3D modelling/rendering/animation/editing package available, on linux or otherwise.</para>
+          <para><ulink url="http://www.blendernation.com/2011/10/14/blender-2-60-rc2-available/">http://www.blendernation.com/2011/10/14/blender-2-60-rc2-available/</ulink></para>
+          <para>This really should be included on the 12.1 dvd .iso</para>
+          <para>Please!</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312874">Need libcue</ulink>
+            <ulink url="https://features.opensuse.org/312892">Update boost to 1.47.0</ulink>
           </title>
-          <para>This is a dependency for tracker (and possibly gstreamer).</para>
-          <para>Libcue is intended to parse a so called cue sheet from a char string or a file pointer. For handling of the parsed data a convenient API is available. This project is meant as a fork of cuetools by Svend Sorensen which saw it last release in 02/2006.</para>
-          <para><ulink url="http://sourceforge.net/projects/libcue/">http://sourceforge.net/projects/libcue/</ulink></para>
+          <para>Boost 1.47.0 is out and it contains (apart from updates and fixes) new libraries (especially I&apos;m interested in Geometry).</para>
+          <para><ulink url="http://www.boost.org/users/history/version_1_47_0.html">http://www.boost.org/users/history/version_1_47_0.html</ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312876">Deny individual users&apos; access to screen-saver settings</ulink>
+            <ulink url="https://features.opensuse.org/312893">Get 1-click installs to work in Rekonq &amp; Konqueror</ulink>
           </title>
-          <para>This is an extension of Feature #<ulink url="https://features.opensuse.org/312871">312871</ulink>, but because it&apos;s a little more involved than changing a simple default, I thought it would be better to have a separate feature request.
-The screen-saver settings for time-out and &quot;require password&quot; are security settings that really should not be freely available to the individual user. I propose that we</para>
-          <para>1) set a reasonable default (60sec, 15sec, always require passwd) (see Feature #<ulink url="https://features.opensuse.org/312871">312871</ulink>) and</para>
-          <para>2) only let these settings be modified by someone with root-access.</para>
-          <para>To a regular user, the timeout and &quot;require password&quot; settings should appear &quot;greyed out&quot;, clearly indicating &quot;not available&quot;.</para>
+          <para>I have been using openSUSE since openSUSE 11.1. I really like Rekonq and like to use it from time-to-time. However, on openSUSE it is not a good choice because 1-click installs don&apos;t work from Rekonq, it just show a script or text in the browser. This is a HUGE lack of polish in openSUSE.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312880">change QCAD to LibreCAD</ulink>
+            <ulink url="https://features.opensuse.org/312894">Adopt Kaptan Desktop Greeter in openSUSE</ulink>
           </title>
-          <para>Remove the very old unmantained QCAD (it requires QT3!!!) and add LibreCAD a mantained port to QT4</para>
-          <para><ulink url="http://librecad.org">http://librecad.org</ulink></para>
+          <para>Pardus is a great KDE distro and has one of the best &quot;Desktop Greeter&quot; of any KDE distro I have ever used, Kaptan.</para>
+          <para>&quot;Kaptan is a wizard that helps user to customize desktop enviroment after installing Pardus. While Kaptan is giving some information about Pardus, it also sets basic configures such as internet connection, wall paper and so on.&quot;</para>
+          <para><ulink url="http://developer.pardus.org.tr/projects/kaptan/">http://developer.pardus.org.tr/projects/kaptan/</ulink></para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312883">64-bit Flash 11 in OpenSuse 12.1</ulink>
+            <ulink url="https://features.opensuse.org/312895">Install Kate by default on KDE based installations</ulink>
           </title>
-          <para>Adobe just released Flash 11 which has a native 64-bit version for Linux, OS X and Windows. It should be included with OpenSuse 12.1 in the same way that Flash 10.x is included in 11.4. I know it&apos;s very new but I think the removal of the nsplugginwrapper requirement on 64-bit makes it worthwhile. Flash is also know to have many security bugs, so keeping 12.1 at 10.3 for it&apos;s entire lifecycle would be more dangerous than including 11.0.</para>
+          <para>The default text editor installed in a KDE based install of OpenSUSE is Kwrite. I propose installing Kate along side or instead of Kwrite as it is more powerful. It&apos;s not too hard to install Kate via Zypper, but having it available &quot;out of the box&quot; would make OpenSUSE a better KDE distro.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312886">Kernel updates removes user choices from /boot/grub/menu.lst</ulink>
+            <ulink url="https://features.opensuse.org/312901">Add bumblebee for NVidia Optimus graphics support</ulink>
           </title>
-          <para>When doing a kernel patch or update (as in eg zypper dup), the upgrade process re-writes the menu.lst entries for the kernel parameters with the default string from /etc/sysconfig/boot-something.conf</para>
-          <para>Not a lot of end-users are aware of that file (in my case it took 5 years to realise what was happening), and are instead constantly having to re-write missing kernel paraemters into the menu.lst file.</para>
-          <para>For instance, most sane folks would use splash=verbose as opposed to splash=silent, and for anyone using console=, brokendriver=, etc this is quite disasterous in the case of remote systems that suddenly become unreponsive / unreachable as a result of the kernel upgrade changing very important parameters.</para>
-          <para>Instead of taking the default from an obscure config file that no other distro even uses, I&apos;d suggest that the kernel param line is taken as-is from the menu.lst / elilo.conf files, not set to some static value.</para>
+          <para><ulink url="https://github.com/Bumblebee-Project/Bumblebee">https://github.com/Bumblebee-Project/Bumblebee</ulink></para>
+          <para>About Bumblebee</para>
+          <para>Bumblebee aims to provide support for nVidia Optimus laptops for GNU/Linux
+distributions. Using Bumblebee, you can use your nVidia card for rendering
+graphics which will be displayed using the Intel card. (...)</para>
         </blockquote>
-<!-- ($ ld: 14.10.11 sat *replaced with latest ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312910">rename priority of repository to rank</ulink>
+          </title>
+          <para>People coming from Debian worlds (Ubuntu,Mint) are familiar using pin-priority to qualify priorities of repositories. But openSUSE is the other way round: Lower numbers are preferred.
+Instead of &apos;priority&apos; allow the wording in /etc/zypp/repos.d:
+rank - ranking</para>
+          <para>this would ease support in the forums especially for Tumbleweed users.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312911">Add option of UDF format to Yast partition manager</ulink>
+          </title>
+          <para>UDF is an universal disk format file system, which can be used on optical rewritable and non-rewritable media, USB flash drives and hard drives.</para>
+          <para>The file system is supported by all modern operating systems, including Windows, BSD, MacOS X, Solaris, OS/2|eComStation, BeOS|Haiku as well as Linux kernel, making it one of the best choices to use when transferring data between platforms.</para>
+          <para>UDF also has optional built-in ability to minimize wearing-off of rewritable media with limited rewrite cycles such as flash, CD-RW and DVD-RAM by evenly distributing load over the media, including access to the allocation table.</para>
+          <para>Despite this Yast2 partition manager does not suggest option to format a volume into UDF, thus forcing to use a mkudffs command line tool.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/312913">Support of Creative EMU-0204 USB-soundcard</ulink>
+          </title>
+          <para>Support of this device already in repositories of ALSA, but not released in some reason.</para>
+          <para>BTW, patch that enabling 0204 support was back-ported in Ubuntu so it support sound card very well.</para>
+          <para><ulink url="http://www.head-fi.org/t/553693/e-mu-0204-on-linux-working">E-MU 0204 on Linux: working!</ulink></para>
+        </blockquote>
+<!-- ($ ld: 22.10.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -514,8 +538,7 @@ The screen-saver settings for time-out and &quot;require password&quot; are secu
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
@@ -530,8 +553,7 @@ The screen-saver settings for time-out and &quot;require password&quot; are secu
           getting quite a bit of testing. On my systems, I have been doing updates from the Factory
           repos nearly every day. Most things are working without problems. </para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="translationteam">
+    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
