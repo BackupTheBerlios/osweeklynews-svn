@@ -70,25 +70,24 @@
         <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-  </sect2> --><!--
+  </sect2> -->
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.susestudio.com/2011/08/one-click-webyast-12-in-studio.html">SUSE Studio: One-click WebYaST 1.2 in Studio</ulink>
+        <ulink
+          url="http:http://blog.susestudio.com/2011/10/ace-editor-for-scripts-editing-in-suse.html"
+          >SUSE Studio: ACE editor for scripts editing in SUSE Studio </ulink>
       </title>
-      <para>Some days ago SUSE released a new version of WebYaST, <ulink url="http://www.suse.com/products/susestudio/features/webyast-remote-application-management.html">WebYaST 1.2</ulink>. It provides better performance, a polished layout and new role
-        management. </para>
-      <para>For those of you who are not familiar with WebYaST. It is an easy-to-use, web-based
-        configuration and administration tool. That means that you can configure hardware, network,
-        services, security, and many more in a browser. </para>
-      <para>Since we offer a one-click configuration for WebYaST <ulink url="http://blog.susestudio.com/2010/09/one-click-webyast.html">for a while</ulink> we
-        decided to upgrade it to 1.2. If you want to add WebYaST 1.2 to your appliance, you just
-        need to go to the configuration tab of and click on the appliance icon. Then scroll down to
-        the &apos;Additional options&apos; and check the &apos;Enable WebYaST&apos; checkbox. </para>
-      <para><inlinegraphic fileref="http://3.bp.blogspot.com/-kxRWlXO0y1w/TihHeTdbYWI/AAAAAAAAABQ/GgbW8pxbIXI/s320/webyast_options.png"/></para>
+      <para>Ajax.org Cloud9 Editor (ACE) is a standalone code editor written in JavaScript. It is
+        written for <ulink url="http://c9.io/">Cloud9 IDE</ulink> and is used in a number of other
+        projects, including <ulink url="https://github.com/blog/905-edit-like-an-ace"
+        >GitHub</ulink>. Over here, at SUSE Studio, we integrated ACE editor into our scripts
+        editing section, which allow you to edit boot, build scripts and AutoYaST configuration XML.
+        (...)</para>
+      <!-- ($ ld: 25.10.11 sm $)-->
     </blockquote>
-    </sect2> -->  
+    </sect2> 
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--

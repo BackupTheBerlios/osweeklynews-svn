@@ -19,19 +19,32 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://michal.hrusecky.net/2011/10/how-do-i-handle-all-those-mysqls/">Michal
-        Hrušecký: How do I handle all those MySQLs</ulink></title>
-    <para>In openSUSE we’ve got currently MySQL Community Server, MariaDB and MySQL Cluster. From
-      all of these we have even multiple versions. Although these packages are different, they are
-      quilte similar. So I’m handling them in a little bit special way. When I was adding MariaDB I
-      knew that packaging will be quite similar to the MySQL Community Server. So I took some parts
-      of .spec file away into separate files so I can sync them easily and left only package
-      dependent parts in .spec files. Later on, I created special git repository and few scripts to
-      handle patches and patch sharing among these variants. And lately I automatized tre rest of
-      the manual syncing I was diong. So today I want to present how do I do MySQL packaging today.
-      And that is also some tutorial on how you can modify these packages easily or even create
-      packages for other variants like Percona.</para>
-    <!--($ ld: 19.10.11 sm $)-->
+    <title><ulink
+        url="https://jfehlig.wordpress.com/2011/10/25/updated-libvirt-for-opensuse12-1-rc1/">Jim
+        Fehlig: Updated libvirt for openSUSE12.1 RC1</ulink></title>
+    <para>Last week I updated the libvirt package for openSUSE12.1 RC1 / Factory to version 0.9.6.
+      The package was also submitted for SLE11 SP2 Beta8. Changes since last update include
+      backporting of AHCI controller patch for qemu driver. With this patch it is possible to use
+      SATA drives with qemu instances. The following controller device XML is used to specify an
+      AHCI controller
+      <programlisting>&lt;controller type='sata' index='0'&gt;
+  &lt;address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0'/&gt;
+&lt;/controller</programlisting>The
+      libvirt qemu driver supports many AHCI controllers, each with one bus and 6 units. To attach a
+      SATA disk to a unit on an AHCI controller, use the following disk device XML
+      <programlisting> &lt;disk type='file' device='disk'>
+  &lt;driver name='qemu' type='raw'/>
+  &lt;source file='/var/lib/libvirt/images/test/disk0.raw'/>
+  &lt;target dev='sda' bus='sata'/>
+  &lt;address type='drive' controller='0' bus='0' unit='0'/>
+&lt;/disk </programlisting></para>
+    <para>Also new to this libvirt update is opt-in for Apparmor confinement of qemu instances.
+      /etc/libvirt/qemu.conf has been patched to explicitly set the security driver to ‘none’. If
+      Apparmor is enabled on the host, libvirtd is generously confined since it needs access to many
+      utilities and libraries, but users must opt-in to also have qemu instances launched by
+      libvirtd confined. Simply edit /etc/libvirt/qemu.conf and change security_driver to
+      ‘apparmor’. Of course, selinux is also available if users prefer it over Apparmor.</para>
+    <!--($ ld: 26.10.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink url="http://blog.jospoortvliet.com/2011/10/almost-too-much-going-on.html">Jos Poortvliet: Almost too much going on...</ulink></title>
