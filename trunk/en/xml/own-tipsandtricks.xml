@@ -21,46 +21,45 @@
   <sect2>
     <title>For Desktop Users</title>
     <blockquote>
-      <title><ulink url="http://scribblesandsnaps.wordpress.com/2011/10/17/create-slick-slideshows-with-digikam/">Dmitri Popov: Create Slick Slideshows with digiKam</ulink></title>
+      <title>
+        <ulink url="http://scribblesandsnaps.wordpress.com/2011/10/17/create-slick-slideshows-with-digikam/">Dmitri Popov: Create Slick Slideshows with digiKam</ulink>
+      </title>
       <para>It’s easy to dismiss digiKam’s slideshow functionality as a feature of no particular use. After all, most photographers prefer to publish their photos using the photo sharing service of their choice. But the slideshow feature can come in handy when showcasing photos on your machine is the only option. Running a simple slideshow in digiKam is as easy as selecting the desired album or pictures and choosing <emphasis role="bold">View</emphasis> → <emphasis role="bold">Slideshow</emphasis> → <emphasis role="bold">All</emphasis> (or <emphasis role="bold">Selection</emphasis>). However, digiKam has something even better: using the <emphasis role="bold">View</emphasis> → <emphasis role="bold">Slideshow</emphasis> → <emphasis role="bold">Advanced Slideshow</emphasis> command, you can create rather impressive slideshows with smooth transitions and soundtracks. (...)</para>
-    <!-- ($ Id: 21.10.11 sat $)-->    
-    </blockquote>
+<!-- ($ Id: 21.10.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
-      <title><ulink url="http://python4kids.wordpress.com/2011/10/17/classy-methods-a-sense-of-self-classes-part-2/">Python4Kids/Brendan Scott: Classy Methods, a Sense of Self (Classes Part 2)</ulink></title>
-      <para>In our last tutorial we had our first look at classes and their attributes.  The attributes of a class are the data which are stored in the class.   The great thing about classes though is that we can use them to relate data to functions.  Just as the data of a class are called attributes, the functions of a class have a special name as well.  They are called “methods”. We have had a brief meeting with methods <ulink url="http://python4kids.wordpress.com/2011/03/07/time-for-some-introspection/">earlier</ulink>. (...)</para>
-<!-- ($ Id: 21.10.11 sat $)-->    
-    </blockquote>
+      <title>
+        <ulink url="http://flossstuff.wordpress.com/2011/10/25/search-wikipedia-through-cli-shell-in-linux/">Ankur Aggarwal: Search Wikipedia Through CLI (Shell) In Linux</ulink>
+      </title>
+      <para>Wikipedia : One of the most important web portal in  geek’s life. Whenever I need to search anything I use two things. First open up the <ulink url="http://www.google.com/">Google</ulink> and then search for the related  <ulink url="http://www.wikipedia.org/">wikipedia</ulink> page. Exploring wikipedia page using shell is possible. Interested fact is that we can do it without even opening the cli browser. We can make wikipedia text query over dns for an ip address. I learned this trick from Ajay Sharma (ajayctk@gmail.com). Thanks to him for teaching me this wonderful trick. Let’s explore how to do it :) (...)</para>
+<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
   </sect2>
-  <!--
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://michal.hrusecky.net/2011/10/opensuse-asus-transformer/">Michal Hrušecký: openSUSE @ ASUS Transformer</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/git-tutorial-branching-and-merging/">Wazi/Juliet Kemp: Git Tutorial: Branching and Merging</ulink>
       </title>
-      <para>This is going to be just a brief blog post with one important image. You probably all
-        already know that there is bunch of people in openSUSE community who are working on <ulink url="http://en.opensuse.org/Portal:ARM">getting ARM supported</ulink> by distribution. And
-        you probably already seen many blog posts about how great it is working. Well this is one of
-        them. I’m happy owner of ASUS Transformer machine. As a geek I have root on my android
-        machine. And since not long time ago, I also had a Debian chroot there to be able to run my
-        favorite applications. But not any more. I replaced my Debian chroot with openSUSE one and
-        now I can use zypper happily and forget everything about apt-get.</para>
-      <para>How did I did that? I started with a simple package in obs, changed BuildRequires to the
-        set of packages I wanted to have, run <command>osc build armv7l standard</command> and after
-        osc created chroot for me, I just took it away. And fixed few things after switching to it
-        on my Transformer. I’m still missing some packages, but hopefully they will be available
-        soon </para>
-    </blockquote>
-  </sect2> -->
+      <para>One of the most compelling features of the <ulink url="http://olex.openlogic.com/packages/git">Git</ulink> version control system (VCS) is its ability to create highly usable and lightweight branches, and the ease of merging those branches later. Branching creates multiple “copies” of the same repository and allows you to separate out a set of changes while you experiment with them, or to create different versions of a project, without affecting the main tree. It’s a feature that developers sometimes don’t make the most of, simply because branching is so much more costly in other VCSes that they’re not used to it, or they’re not aware of the many branch commands and tricks available in Git. Here’s a host of useful tips to get your Git branching and merging skills up to expert level in no time. (...)</para>
+<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+  </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
-      <title><ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-313-1/index.html">IBM developerWorks/Tracy Bost: Learn Linux, 302 (Mixed environments): Managing user accounts and groups</ulink></title>
-      <para>If you manage user and group accounts, you may find that these accounts don&apos;t always work seamlessly for users in mixed environments—a common source of frustration for both users and systems administrators. Fortunately, the Samba suite provides tools to help you manage the process. In this article, learn how to manage user and group accounts in your mixed environment. (...)</para>
-<!-- ($ Id: 21.10.11 sat $)-->    
-    </blockquote>
+      <title>
+        <ulink url="http://how-to.linuxcareer.com/how-to-make-a-basic-intrusion-detection-system-with-bash">LinuxCareer/Jonathan Cox: How to Make a Basic Intrusion Detection System with Bash</ulink>
+      </title>
+      <para><emphasis role="bold">1. Introduction</emphasis></para>
+      <para>For most of us WEP encryption has become a joke.  WPA is quickly going the same way thanks to many tools such as Aircrack-ng. On top of this, wired networks are no strangers to unwanted guests as well.  Anyone serious about security should have a good Intrusion Detection system in their toolbox.</para>
+      <para>There are already some very good IDS&apos;s (Intrusion Detection Systems) available.  Why would anyone want to re-invent the wheel in Bash???  There are a couple of reasons for this.  Obviously Bash scripts can be very light weight.  Especially compared to some of the GUI programs that are out there.  While programs like Etherape suck us in with pretty colors, they require constant monitoring to know when the network has changed.  If you are like most of us, you only use the computer for two things, work and play.  By using the system bell to alert for new clients online you can leave this script running and not have to have a constant watch. If you do decide you want to inspect what a suspicious client is doing more closely, you can always open up etherape, wireshark, or your tool of choice.  But until you have a problem you can play or work on other things. (...)</para>
+<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-314-1/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): CIFS integration</ulink>
+      </title>
+      <para>In addition to or instead of functioning as a server on a Windows network, a Linux® computer can function as a client. You can use an ftp-like program to transfer files and modify a server, or you can mount a share from a Samba or Windows® Server machine on your Linux computer, giving normal programs the ability to access files directly on the server. When doing so, though, keep in mind the characteristics of the original SMB protocol and its newer CIFS variant, particularly when accessing a Windows Server machine: You may not have access to all the file system features that a Linux computer supports. (...)</para>
+<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
