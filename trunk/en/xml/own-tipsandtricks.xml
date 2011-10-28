@@ -49,6 +49,16 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
+        <ulink url="http://dev-loki.blogspot.com/2011/10/loop-mount-iso-files-without-being-root.html">Pascal Bleser: Loop mount iso files without being root</ulink>
+      </title>
+      <para>There is a rather convenient way to mount ISO files (CD/DVD images) onto a directory on Linux, which goes as follows:
+mount -o loop,ro /path/to/image.iso /path/to/mountpoint
+(where the mountpoint is a directory).</para>
+      <para>This method works very well, but has one essential drawback: you must be root in order to do that. So how do I get to do so as a regular user ?</para>
+      <para>A barely known alternative lies in <ulink url="http://freshmeat.net/projects/fuseiso">fuseiso</ulink>, which uses the <ulink url="http://fuse.sourceforge.net/">FUSE</ulink> filesystem in user-space layer to accomplish that. (...)</para>
+<!-- ($ Id: 28.10.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
         <ulink url="http://how-to.linuxcareer.com/how-to-make-a-basic-intrusion-detection-system-with-bash">LinuxCareer/Jonathan Cox: How to Make a Basic Intrusion Detection System with Bash</ulink>
       </title>
       <para><emphasis role="bold">1. Introduction</emphasis></para>
