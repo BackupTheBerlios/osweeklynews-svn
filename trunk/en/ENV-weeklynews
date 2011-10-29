@@ -1,0 +1,23 @@
+# environment file for book/article MAIN-plasma.xml
+#
+# see /etc/daps/config for documentation of the settings below
+#
+# These settings are settings for the document defined by MAIN-plasma.xml
+# only. Please do not add additional settings here - if you need to
+# customize other settings from /etc/daps/config, do so in
+# ~/.daps/config
+
+MAIN="OWN.xml"
+# ROOTID=""
+# PROFOS="plasmaactive"
+# PROFARCH="x86;amd64;em64t"
+DISTVER=""
+PRODUCTNAME="&opensuse;"
+PRODUCTNAMEREG="&opensusereg;"
+HTMLROOT="opensuse121"
+
+
+# if you want to be able to source this file, so you do not have
+# to specify the -e/--envfile option with daps, uncomment the
+# following line
+export DAPS_ENV_NAME=$(basename $BASH_SOURCE)
