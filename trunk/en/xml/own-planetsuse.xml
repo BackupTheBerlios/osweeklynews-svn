@@ -20,31 +20,26 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title><ulink
-        url="https://jfehlig.wordpress.com/2011/10/25/updated-libvirt-for-opensuse12-1-rc1/">Jim
-        Fehlig: Updated libvirt for openSUSE12.1 RC1</ulink></title>
-    <para>Last week I updated the libvirt package for openSUSE12.1 RC1 / Factory to version 0.9.6.
-      The package was also submitted for SLE11 SP2 Beta8. Changes since last update include
-      backporting of AHCI controller patch for qemu driver. With this patch it is possible to use
-      SATA drives with qemu instances. The following controller device XML is used to specify an
-      AHCI controller
-      <programlisting>&lt;controller type='sata' index='0'&gt;
-  &lt;address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0'/&gt;
-&lt;/controller</programlisting>The
-      libvirt qemu driver supports many AHCI controllers, each with one bus and 6 units. To attach a
-      SATA disk to a unit on an AHCI controller, use the following disk device XML
-      <programlisting> &lt;disk type='file' device='disk'>
-  &lt;driver name='qemu' type='raw'/>
-  &lt;source file='/var/lib/libvirt/images/test/disk0.raw'/>
-  &lt;target dev='sda' bus='sata'/>
-  &lt;address type='drive' controller='0' bus='0' unit='0'/>
-&lt;/disk </programlisting></para>
-    <para>Also new to this libvirt update is opt-in for Apparmor confinement of qemu instances.
-      /etc/libvirt/qemu.conf has been patched to explicitly set the security driver to ‘none’. If
-      Apparmor is enabled on the host, libvirtd is generously confined since it needs access to many
-      utilities and libraries, but users must opt-in to also have qemu instances launched by
-      libvirtd confined. Simply edit /etc/libvirt/qemu.conf and change security_driver to
-      ‘apparmor’. Of course, selinux is also available if users prefer it over Apparmor.</para>
-    <!--($ ld: 26.10.11 sm $)-->
+        url="http://holger123.wordpress.com/2011/10/30/teradata-partners-conference-novell-brainshare-smb-traffic-analyzer-development-status/"
+        >Holger Hetterich: Teradata Partners Conference / Novell Brainshare / SMB Traffic Analyzer /
+        Development status</ulink></title>
+    <para>Well last weeks have been pretty busy. With a 10 hours flight, we arrived at <ulink
+        url="http://en.wikipedia.org/wiki/San_Francisco">San Francisco</ulink> to get to <ulink
+        url="http://en.wikipedia.org/wiki/San_Diego">San Diego</ulink> to visit the <ulink
+        url="http://www.teradata-partners.com/Conference">Teradata Partners conference</ulink>, an
+      excellent event that included good discussions and lots of acceptance and recognition for
+        <ulink url="http://www.suse.com">SUSE Linux</ulink>. I liked the way talks have been
+      organized, or to say it in other words it was a matter of downloading an Android app to always
+      have the overview.</para>
+    <para>We served the SUSE booth at the conference, got involved into lots of discussions about
+      the OS, and I was even happier in the moments when people asked questions on <ulink
+        url="http://www.opensuse.org">openSUSE</ulink> – <emphasis role="italic"><emphasis
+          role="bold">this is showing clearly that the project is well known!
+      </emphasis></emphasis>To leave some words on San Diego is very simple:<ulink
+        url="http://en.wikipedia.org/wiki/Gaslamp_Quarter,_San_Diego,_California"> Gaslamp
+        Quarter</ulink>, I’ll be back<emphasis role="bold">, </emphasis>and have a few more beers
+        at<ulink url="http://www.rockbottom.com/"> Rock Bottom!</ulink></para>
+    <!--($ ld: 02.11.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink
@@ -60,5 +55,32 @@
         fileref="http://3.bp.blogspot.com/-OlDauS1xh-o/TqlYqnvZHRI/AAAAAAAAAT0/W9OY3LLS3o0/s1600/inqlude-home.png"
         width="20%"/></para>
     <!--($ ld: 28.10.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/10/26/coffee-talk-with-michael-miller/">Coffee
+      talk with Michael Miller</ulink></title>
+    <para>Friday 16.09, while working on the <ulink url="http://en.opensuse.org/Portal:12.1"
+      >openSUSE 12.1</ulink> marketing actions during the <ulink
+        url="http://en.opensuse.org/openSUSE:12.1_Marketing_Hackfest">Marketing Hackfest</ulink>,
+      two of us had the spontaneous idea to suggest an interview to Michael Miller(<ulink
+        url="http://www.suse.com/company/executive-management/">Vice President of Global Alliances
+        &amp; Marketing for SUSE</ulink>), asking him a few questions we could have in the openSUSE
+      community. We did not have the time to go around, to find the FAQ or to choose the “best
+      questions”. It was kind of “shall we do that, around a cup of coffee ? Why not ?”. And Michael
+      Miller accepted our proposition, without any objection or any “joker’s need”. (...)</para>
+    <!-- ($ ld: 26.10.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://news.opensuse.org/2011/10/25/internet-at-opensuse-conference-2011/"
+        >Internet at openSUSE Conference 2011</ulink></title>
+    <para>At the openSUSE conference 2011, there was especially one area that caused us the previous
+      years some trouble and this year nobody spoke about since it just worked fine: Wireless
+      internet access.</para>
+    <para>So, what have we done right this year? It was basically wiring internet ourselves to the
+      location and setting up the wifi controllers sponsored by Aeroaccess.</para>
+    <para>We were lucky that SUSE’s internet provider M-Net had a fibre channel cable in the cellar
+      of the building and negotiated a special short-term package with 100 MBit/s for the
+      conference. (...)</para>
+    <!-- ($ ld: 29.10.11 sm $)-->
   </blockquote>
 </sect1>
