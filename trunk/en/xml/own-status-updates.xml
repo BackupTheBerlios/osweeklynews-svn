@@ -74,8 +74,7 @@
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.susestudio.com/2011/10/ace-editor-for-scripts-editing-in-suse.html"
-          >SUSE Studio: ACE editor for scripts editing in SUSE Studio </ulink>
+        <ulink url="http://blog.susestudio.com/2011/10/ace-editor-for-scripts-editing-in-suse.html">SUSE Studio: ACE editor for scripts editing in SUSE Studio </ulink>
       </title>
       <para>Ajax.org Cloud9 Editor (ACE) is a standalone code editor written in JavaScript. It is
         written for <ulink url="http://c9.io/">Cloud9 IDE</ulink> and is used in a number of other
@@ -387,14 +386,14 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 374)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 375)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 201)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 203)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -406,13 +405,13 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 171)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 173)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 161)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 166)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -428,7 +427,7 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 114)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 117)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -441,26 +440,18 @@ Milestone 5&#160;: Setting the release dates for the new release of the distro (
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 28.10.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 5.11.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312919">Provide a package for Desura in non-OSS</ulink>
+            <ulink url="https://features.opensuse.org/312927">Use AppArmor or SELinux for every (suse) package</ulink>
           </title>
-          <para>Desura is a video game store, competitor of Steam, which provides many Indie games for Linux and Windows. See www.desura.com</para>
-          <para>They released recently a client for Linux (both 32bits and 64bits), and it could be added to the non-OSS repository.</para>
+          <para>It would be nice to add apparmor or selinux profiles to every rpm package and , of course, use them! It would let suse become one of the most secure linux systems out there. And the best: the user just installs a package and hasen&apos;t to care about anything ;)</para>
+          <para>But it would also need a secure (GUI) &quot;Permission Asker&quot;, like windows and of course an easy to use frontend for editing profiles (just easier than the current yast one)</para>
         </blockquote>
-        <blockquote>
-          <title>
-            <ulink url="https://features.opensuse.org/312921">Install extra packages from customizable list during setup</ulink>
-          </title>
-          <para>I am not the person who does distro upgrades because I like to have a fresh system when a new version is out. I have a seperate home partition, so I only have to install the system and mount my home.</para>
-          <para>After setup there is always the same procedure: I have to reinstall all the software which I use at my daily work and which not has been installed during setup. So I have a txt-file with a list and install every package manually. This is stupid work and often I forget something and notice is later. That is annoying.</para>
-          <para>It would be very comfortable to have a list of package that will be available after setup. Regardles if the package is installed by default or not the installer takes a look at this list and installs every package which is not installed. (...)</para>
-        </blockquote>
-<!-- ($ ld: 28.10.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 5.11.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
