@@ -22,62 +22,43 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://nbprashanth.wordpress.com/2011/11/03/gnome-shell-themes/">N.B.Prashanth:
-          GNOME Shell Themes</ulink>
+        <ulink url="http://nbprashanth.wordpress.com/2011/11/03/gnome-shell-themes/">N.B.Prashanth: GNOME Shell Themes</ulink>
       </title>
       <para>As a follow up to my previous post about customizing your GNOME Shell, here are a few
-        themes I had recently come across. <ulink
-          url="http://www.omgubuntu.co.uk/2011/10/five-pretty-awesome-gnome-shell-themes/"
-          >http://www.omgubuntu.co.uk/2011/10/five-pretty-awesome-gnome-shell-themes/</ulink> (opens
+        themes I had recently come across. <ulink url="http://www.omgubuntu.co.uk/2011/10/five-pretty-awesome-gnome-shell-themes/">http://www.omgubuntu.co.uk/2011/10/five-pretty-awesome-gnome-shell-themes/</ulink> (opens
         in a new window). Other than smooth inset, which has been doing the rounds on the internet
         since GNOME 3 first arrived, the other themes look pretty new to me. </para>
       <para>Have fun customizing!</para>
-      <!-- ($ Id: 04.11.11 sm $)-->
-    </blockquote> 
+<!-- ($ Id: 04.11.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://flossstuff.wordpress.com/2011/10/25/search-wikipedia-through-cli-shell-in-linux/">Ankur Aggarwal: Search Wikipedia Through CLI (Shell) In Linux</ulink>
+        <ulink url="http://bashshell.net/commands/understanding-the-cat-command/">BashShell.net/Mike: Understanding the cat Command</ulink>
       </title>
-      <para>Wikipedia : One of the most important web portal in  geek’s life. Whenever I need to search anything I use two things. First open up the <ulink url="http://www.google.com/">Google</ulink> and then search for the related  <ulink url="http://www.wikipedia.org/">wikipedia</ulink> page. Exploring wikipedia page using shell is possible. Interested fact is that we can do it without even opening the cli browser. We can make wikipedia text query over dns for an ip address. I learned this trick from Ajay Sharma (ajayctk@gmail.com). Thanks to him for teaching me this wonderful trick. Let’s explore how to do it :) (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+      <para><emphasis role="bold">cat</emphasis></para>
+      <para>Cat is  used to either view, create, or join multiple text files together.  (In fact, the term “cat” is short for catenate, which is a fancy way of saying “to join two things together, end-to-end”.)</para>
+      <para>By default, stdin for cat is the keyboard, and stdout is the computer screen.  If you just type “cat” at the command prompt, you’ll be able to type in text, and make it echo back to you as soon as you hit Enter.  It will keep doing this until you press Ctrl-d to end it. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/git-tutorial-branching-and-merging/">Wazi/Juliet Kemp: Git Tutorial: Branching and Merging</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/jquery-and-ajax-error-detection-and-handling/">Wazi/W. Jason Gilmore: jQuery and Ajax Error Detection and Handling</ulink>
       </title>
-      <para>One of the most compelling features of the <ulink url="http://olex.openlogic.com/packages/git">Git</ulink> version control system (VCS) is its ability to create highly usable and lightweight branches, and the ease of merging those branches later. Branching creates multiple “copies” of the same repository and allows you to separate out a set of changes while you experiment with them, or to create different versions of a project, without affecting the main tree. It’s a feature that developers sometimes don’t make the most of, simply because branching is so much more costly in other VCSes that they’re not used to it, or they’re not aware of the many branch commands and tricks available in Git. Here’s a host of useful tips to get your Git branching and merging skills up to expert level in no time. (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+      <para>Website development duties were once assigned to different individuals with two distinct roles: A designer focused on the all matters related to the front-end HTML and CSS, and a developer was responsible for the server-side code. JavaScript’s meteoric rise to first-class citizen status has blurred these traditional lines, forcing developers into what was once considered taboo territory. The results have been spectacular, with frameworks such as <ulink url="http://olex.openlogic.com/packages/jquery">jQuery</ulink> significantly streamlining JavaScript’s often unwieldy native syntax, and programming techniques such as <ulink url="http://en.wikipedia.org/wiki/Ajax_%28programming%29">Ajax</ulink> bringing highly responsive user interfaces to the browser. The marrying of jQuery and Ajax has been particularly impactful, providing developers with a powerful solution to the problem of asynchronously interacting with and updating parts of a web page. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://dev-loki.blogspot.com/2011/10/loop-mount-iso-files-without-being-root.html">Pascal Bleser: Loop mount iso files without being root</ulink>
+        <ulink url="http://linuxaria.com/recensioni/protect-your-server-with-sshguard?lang=en">Linuxaria: Protect your server with SSHGuard</ulink>
       </title>
-      <para>There is a rather convenient way to mount ISO files (CD/DVD images) onto a directory on Linux, which goes as follows:
-mount -o loop,ro /path/to/image.iso /path/to/mountpoint
-(where the mountpoint is a directory).</para>
-      <para>This method works very well, but has one essential drawback: you must be root in order to do that. So how do I get to do so as a regular user ?</para>
-      <para>A barely known alternative lies in <ulink url="http://freshmeat.net/projects/fuseiso">fuseiso</ulink>, which uses the <ulink url="http://fuse.sourceforge.net/">FUSE</ulink> filesystem in user-space layer to accomplish that. (...)</para>
-<!-- ($ Id: 28.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://how-to.linuxcareer.com/how-to-make-a-basic-intrusion-detection-system-with-bash">LinuxCareer/Jonathan Cox: How to Make a Basic Intrusion Detection System with Bash</ulink>
-      </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>For most of us WEP encryption has become a joke.  WPA is quickly going the same way thanks to many tools such as Aircrack-ng. On top of this, wired networks are no strangers to unwanted guests as well.  Anyone serious about security should have a good Intrusion Detection system in their toolbox.</para>
-      <para>There are already some very good IDS&apos;s (Intrusion Detection Systems) available.  Why would anyone want to re-invent the wheel in Bash???  There are a couple of reasons for this.  Obviously Bash scripts can be very light weight.  Especially compared to some of the GUI programs that are out there.  While programs like Etherape suck us in with pretty colors, they require constant monitoring to know when the network has changed.  If you are like most of us, you only use the computer for two things, work and play.  By using the system bell to alert for new clients online you can leave this script running and not have to have a constant watch. If you do decide you want to inspect what a suspicious client is doing more closely, you can always open up etherape, wireshark, or your tool of choice.  But until you have a problem you can play or work on other things. (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-314-1/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): CIFS integration</ulink>
-      </title>
-      <para>In addition to or instead of functioning as a server on a Windows network, a Linux® computer can function as a client. You can use an ftp-like program to transfer files and modify a server, or you can mount a share from a Samba or Windows® Server machine on your Linux computer, giving normal programs the ability to access files directly on the server. When doing so, though, keep in mind the characteristics of the original SMB protocol and its newer CIFS variant, particularly when accessing a Windows Server machine: You may not have access to all the file system features that a Linux computer supports. (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+      <para>I’ve already talked about <ulink url="http://linuxaria.com/howto/fail2ban-brute-force-attacks">fail2ban</ulink> and <ulink url="http://linuxaria.com/pills/logcheck-scan-your-logs-and-warns-you">logcheck</ulink>, 2 tools that can scan your logs and do actions, based on rules that you can give/modify, usually modify your <ulink url="http://linuxaria.com/tag/iptables">iptables</ulink> rules to stop active attacks against your server or simply send you a warning if some thing is found in the logs.</para>
+      <para>Today we’ll see a similar tool, <ulink url="http://www.sshguard.net/">sshguard</ulink>, it is different from the other two in that it is written in C, so it’s uses less memory and CPU while running, but still achiving the same results. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>

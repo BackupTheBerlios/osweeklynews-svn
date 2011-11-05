@@ -45,44 +45,31 @@ With this in mind, the SCALE team announces a contest to select the artwork for 
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.internetnews.com/blog/skerner/suse-builds-openstack-diablo-appliances.html">InternetNews.com/Sean Michael Kerner: SUSE Builds OpenStack Diablo Appliances</ulink>
+        <ulink url="http://www.zdnet.com/blog/open-source/linux-foundation-proposes-to-use-uefi-to-make-pcs-secure-and-free/9827">ZDNet/Steven J. Vaughan-Nichols: Linux Foundation proposes to use UEFI to make PCs secure and free</ulink>
       </title>
-      <para>From the &apos;Cloud Rules&apos; files:</para>
-      <para>You can add SUSE to the long list of vendors that with OpenStack solution.</para>
-      <para>OpenStack is the open source cloud platform that now has well over 80 member companies participating. What SUSE is doing is interesting, in that they&apos;re making an OpenStack distribution available.</para>
-      <para>So instead of just &apos;pledging&apos; to work with OpenStack and have some kind of OpenStack based solution, SUSE is actually providing OpenStack, running on SUSE Enterprise Linux. (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+      <para>Microsoft’s proposed use of <ulink url="http://www.uefi.org/home/">Unfied Extensible Firmware Interface (UEFI)</ulink> in Windows 8 could be used to <ulink url="http://www.zdnet.com/blog/open-source/microsoft-to-stop-linux-older-windows-from-running-on-windows-8-pcs/9589">block all other operating systems from Windows 8 systems</ulink>. <ulink url="http://www.linuxfoundation.org/">The Linux Foundation</ulink> and partners have a better idea: Secure computers with UEFI and give users freedom of operating system choice.</para>
+      <para>In the Linux Foundation document, <ulink url="http://www.linuxfoundation.org/publications/making-uefi-secure-boot-work-with-open-platforms">Making UEFI Secure Boot Work With Open Platforms</ulink> (PDF Link), James Bottomley, CTO of Server Virtualization at <ulink url="http://www.parallels.com/">Parallels</ulink> and Linux Foundation Technical Advisory Board Chair Jonathan Corbet, Editor at <ulink url="http://lwn.net/">LWN.net</ulink> and fellow Linux Foundation Technical Advisory Board Member, after consulting with other Linux leaders, explain how “Linux and other open operating systems will be able to take advantage of secure boot if it is implemented properly in the hardware.” (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/consumer-electronics-linux-initiative-starts/9820">ZDNet/Steven J. Vaughan-Nichols: Consumer Electronics Linux Initiative Starts</ulink>
+        <ulink url="http://www.h-online.com/open/news/item/Ruby-1-9-3-arrives-with-licence-change-1368959.html">h-online/Chris von Eitzen: Ruby 1.9.3 arrives with licence change</ulink>
       </title>
-      <para>Many people use Linux every day and never know it. Indeed, they’re often using Linux without even knowing they’re using a computing device. For years now, Linux has been the operating system of choice for Digital Video Recorders (DVR)s, DVD players, Smart TVs, Wi-Fi access points, GPS devices, and on and on. But, there’s never been a Linux kernel just for consumer electronics… until now.</para>
-      <para>At <ulink url="https://events.linuxfoundation.org/events/linuxcon-europe">LinuxCon Europe</ulink> in Prague, Czech Republic, The <ulink url="http://www.linuxfoundation.org/">Linux Foundation</ulink>, the non-profit organization dedicated to promoting Linux, announced that it was hosting a new project created by its Consumer Electronics (CE) workgroup: the <ulink url="http://www.linuxfoundation.org/collaborate/workgroups/celf">Long Term Support Initiative (LTSI)</ulink>. (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+      <para>The <ulink url="http://www.ruby-lang.org/en/">Ruby</ulink> development team <ulink url="http://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/">announced</ulink> the release of version 1.9.3 of its open source programming language. <ulink url="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/40527">Described as</ulink> basically being &quot;an implementation-improved version of Ruby 1.9.2&quot;, the first release of the new stable series of Ruby improves library loading performance and brings changes to the Ruby licence.</para>
+      <para>Ruby 1.9.3 p0 source code is made available under a 2-clause BSD Licence and the<ulink url="http://www.ruby-lang.org/en/LICENSE.txt"> Ruby Licence</ulink>; previous versions of Ruby were released under the GPLv2 and Ruby Licence. Other changes include improved locking in multi-threaded programs, regular expression support for Unicode 6.0 and a new library io/console for simple portable access to the console. Also among the modifications are changes to Random.rand and extra String methods such as prepend and byteslice, though generally, the developers say you should be able to safely switch to Ruby 1.93 from 1.9.2. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.readwriteweb.com/cloud/2011/10/red-vs-green-suse-backs-openst.php">ReadWriteCloud/Joe Brockmeier: Red Vs. Green: SUSE Backs OpenStack, Red Hat Stands Alone</ulink>
+        <ulink url="http://www.zdnet.com/blog/open-source/microsoft-contributes-open-source-code-to-samba/9860">ZDNet/Steven J. Vaughan-Nichols: Microsoft contributes open-source code to Samba</ulink>
       </title>
-      <para>This week, SUSE <ulink url="http://www.suse.com/blogs/suse-joins-openstack/">announced that it had joined OpenStack</ulink> and today the company announced <ulink url="http://susegallery.com/a/vszMWq/suse-cloud-powered-by-openstacktm">a development preview of SUSE Cloud</ulink> which is powered by OpenStack. With the green team at SUSE behind OpenStack, along with Canonical, does that make OpenStack the de facto open source cloud? Not so fast – I wouldn&apos;t count Red Hat out just yet.</para>
-      <para><ulink url="http://www.openstack.org/">OpenStack</ulink>, the open source cloud infrastructure being developed by more than 125 organizations, should need no introduction. Red Hat is going its own way in the clouds, with <ulink url="http://www.redhat.com/solutions/cloud/cloudforms/">CloudForms</ulink> for its Infrastructure-as-a-Service (Iaas) offering, and <ulink url="http://www.redhat.com/solutions/cloud/openshift/">OpenShift</ulink> for its Platform-as-a-Service (PaaS) offering. (...)</para>
-      <para><emphasis role="bold">Related Articles</emphasis>: <ulink url="http://www.h-online.com/open/news/item/SUSE-announces-OpenStack-based-cloud-solution-1367235.html">http://www.h-online.com/open/news/item/SUSE-announces-OpenStack-based-cloud-solution-1367235.html</ulink></para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTAwNjY">Phoronix/Michael Larabel: Skype Publishes New Linux APIs w/ Video Support</ulink>
-      </title>
-      <para>Skype, now <ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;px=OTQyNw">under the control of Microsoft</ulink>, has announced a new developer preview of SkypeKit. It surprisingly brings good news for Linux users.</para>
-      <para>SkypeKit allows desktop applications to integrate Skype functionality into partner applications while the Skype desktop API allows developers to extend the functionality of the Skype client.</para>
-      <para><ulink url="SkypeKit was originally rolled out in June">SkypeKit was originally rolled out in June</ulink> to help Skype in the consumer electronics industry. Skype developers have been working to improve SkypeKit since and today released a developer preview of SkypeKit 4.02. This new version does bring video APIs to &quot;SkypeKit for Desktop&quot;, so that developers can build in native Skype functionality into their own applications for handling video calls. There&apos;s also a new &quot;Skype App Directory&quot; that&apos;s being rolled out too.</para>
-      <para>SkypeKit is available for Linux, Mac OS X, and Windows operating systems. (...)</para>
-<!-- ($ Id: 28.10.11 sat $)-->    </blockquote>
+      <para>Freak snowstorm reported in hell. Tea party agrees Obama is the best candidate for 2012 presidential election. Microsoft submits open-source code under the GPLv3 to Samba. Those are all pretty unlikely, but <ulink url="http://samba.org/samba/news/developers/ms-patch.html">Microsoft really did submit code to the Samba</ulink> file server open-source project.</para>
+      <para>This might not strike you as too amazing. After all, Microsoft has supported some open-source projects at <ulink url="http://www.codeplex.com/">CodePlex</ulink> for some time now and they will work with some other projects such as the <ulink url="http://www.zdnet.com/blog/microsoft/microsoft-rolls-out-open-source-python-extension-for-visual-studio/10478">Python</ulink> and <ulink url="http://www.zdnet.com/blog/open-source/microsoft-makes-pledges-to-support-apache-php-ruby/2704">PHP</ulink> languages and the <ulink url="http://www.microsoft.com/en-us/openness/story/plays-well-with-others/microsoft-plus-drupal.aspx">Drupal content management system (CMS)</ulink>. But, Samba, Samba is different. They’re an old Microsoft enemy. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/four-hidden-tools-scribus">Linux
-          Journal/Bruce Byfield: Four Hidden Tools in Scribus</ulink>
+        <ulink url="http://www.linuxjournal.com/content/four-hidden-tools-scribus">Linux Journal/Bruce Byfield: Four Hidden Tools in Scribus</ulink>
       </title>
       <para>Scribus is a powerful tool, but its menus are poorly laid-out. While you can usually
         find the features you most frequently use without any trouble, others may be hidden almost
@@ -90,15 +77,15 @@ With this in mind, the SCALE team announces a contest to select the artwork for 
         features can be positioned almost anywhere, with only the most token regard for logic. </para>
       <para>The tools described here are ones that took some time for me to discover in Scribus.
         None are worth more than a few hundred words of description, but I mention them here because
-        all of them can be useful to know. </para>
+        all of them can be useful to know. (...)</para>
 <!-- ($ Id: 03.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://how-to.linuxcareer.com/how-can-you-help-the-linux-community">LinuxCareer/Reres Aioanei: How can you help the Linux community</ulink>
+        <ulink url="http://www.junauza.com/2011/10/how-to-convince-your-friends-into-using.html">Jun Auza: How to Convince Your Friends to Use Linux Without Being a Jerk</ulink>
       </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>The whole Linux community is based on the concept of community and collaboration. Without it, Linus Torvalds&apos; e-mail sent out 20 years ago would have been forgotten and none of us would have known about Linux. As time went by, it became easier and easier for users, regardless of experience and knowledge, to contribute to his/her favorite distribution. While we&apos;re at it, it&apos;s a common misconception that you have to be a programmer in order to help the Linux community. Well, nothing could be further from the truth.  Anyone can help, provided he or she has Internet access, and, more importantly, the will to help. You are not expected to have any particular knowledge, just to have a few hours/week available for this. This article will not be specific to a distribution or another, because there are hundreds of them and anyway, the general concepts are the same. (...)</para>
-<!-- ($ Id: 27.10.11 sat $)-->    </blockquote>
+      <para>Linux is one of the most secure and stable operating systems around, and yet, its user base hasn’t really grown as everyone expected it to. There are many reasons for this, and we won’t go into those right now. However, if you, like any other Linux user, are disappointed by the current market share stats, we can tell you some simple tips that will help you convince your Windows or Mac-crazy friends into using Linux.</para>
+      <para>Now, many Linux users have already tried to coax their friends and family members to try out this popular and newbie-friendly distro called Ubuntu. A select few have succeeded and many have failed. So here, we will give you some important tips to help you spread the word about Linux without sounding like that arrogant nerd who has nothing but contempt for Windows or Mac. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>Warning!</title>
