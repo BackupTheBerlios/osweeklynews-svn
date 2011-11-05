@@ -41,6 +41,13 @@
       <para>Cat is  used to either view, create, or join multiple text files together.  (In fact, the term “cat” is short for catenate, which is a fancy way of saying “to join two things together, end-to-end”.)</para>
       <para>By default, stdin for cat is the keyboard, and stdout is the computer screen.  If you just type “cat” at the command prompt, you’ll be able to type in text, and make it echo back to you as soon as you hit Enter.  It will keep doing this until you press Ctrl-d to end it. (...)</para>
 <!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://bashshell.net/shell-scripts/exit-status-with-test/">BashShell.net/Mike: Testing the Exit Status of a Command</ulink>
+      </title>
+      <para><emphasis role="bold">test</emphasis></para>
+      <para>The test command is used to determine exit status on numerous tests that can be performed in scripts. The test command does not produce any output it simply is checking for the exit status.  Note if you use variables with test be sure to enclose them in double quotes so the test receives an argument. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
@@ -49,6 +56,19 @@
         <ulink url="http://olex.openlogic.com/wazi/2011/jquery-and-ajax-error-detection-and-handling/">Wazi/W. Jason Gilmore: jQuery and Ajax Error Detection and Handling</ulink>
       </title>
       <para>Website development duties were once assigned to different individuals with two distinct roles: A designer focused on the all matters related to the front-end HTML and CSS, and a developer was responsible for the server-side code. JavaScript’s meteoric rise to first-class citizen status has blurred these traditional lines, forcing developers into what was once considered taboo territory. The results have been spectacular, with frameworks such as <ulink url="http://olex.openlogic.com/packages/jquery">jQuery</ulink> significantly streamlining JavaScript’s often unwieldy native syntax, and programming techniques such as <ulink url="http://en.wikipedia.org/wiki/Ajax_%28programming%29">Ajax</ulink> bringing highly responsive user interfaces to the browser. The marrying of jQuery and Ajax has been particularly impactful, providing developers with a powerful solution to the problem of asynchronously interacting with and updating parts of a web page. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://how-to.linuxcareer.com/writing-manual-pages-on-linux">linuxcareer.com/Writing manual pages on Linux</ulink>
+      </title>
+      <para><emphasis role="bold">1. Introduction</emphasis></para>
+      <para>It&apos;s a very common fact that nobody likes to write documentation. Heck, nobody likes to read it either. But there are times when we have to read it in order to, say, finish the project on time, or, especially when working in software development, even write it. If you only have to read it, we always encouraged you to do so, but if you&apos;ll have to write the manual pages and need a kickstart, here&apos;s the article for you. If you worked previously with HTML your life will be easier, but if not it&apos;s alright. Writing manual pages for Linux is not that hard, despite the look of the pages when read in plain-text. So basically you&apos;ll need some Linux knowledge and the ability to use a text editor. You will learn (with examples, of course) the main concepts in text formatting as applied to man pages and how to write a simple manual page. Since we used yest as an example for our <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-introduction">C development tutorial</ulink>, we will use snippets from its manual page to illustrate our point during this article. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">net.tutsplus.com/Jeffrey Way: Quick Tip: How to Work with GitHub and Multiple Accounts</ulink>
+      </title>
+      <para>So you have a personal <ulink url="http://github.com/">GitHub</ulink> account; everything is working perfectly. But then, you get a new job, and now need to have the ability to push and pull to multiple accounts. How do you do that? I’ll show you how! (...)</para>
 <!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
@@ -59,6 +79,12 @@
       </title>
       <para>I’ve already talked about <ulink url="http://linuxaria.com/howto/fail2ban-brute-force-attacks">fail2ban</ulink> and <ulink url="http://linuxaria.com/pills/logcheck-scan-your-logs-and-warns-you">logcheck</ulink>, 2 tools that can scan your logs and do actions, based on rules that you can give/modify, usually modify your <ulink url="http://linuxaria.com/tag/iptables">iptables</ulink> rules to stop active attacks against your server or simply send you a warning if some thing is found in the logs.</para>
       <para>Today we’ll see a similar tool, <ulink url="http://www.sshguard.net/">sshguard</ulink>, it is different from the other two in that it is written in C, so it’s uses less memory and CPU while running, but still achiving the same results. (...)</para>
+<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-314-2/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): NetBIOS and WINS</ulink>
+      </title>
+      <para>Naming is unusual in SMB/CIFS networks. Although modern clients can use Internet domain names to refer to each other, older clients relied on a Microsoft-specific system known as the Windows Internet Name Service (WINS) server, or the NetBIOS Name Server (NBNS); the two terms are synonymous. Configuring Samba properly for name resolution is therefore important. So is configuring browsing, which is the mechanism by which servers learn what shares are available on specific servers. (...)</para>
 <!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
