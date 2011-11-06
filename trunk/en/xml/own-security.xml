@@ -21,10 +21,10 @@
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-10/msg00009.html"
-      >openSUSE-SU-2011:1169-1: important: krb5: fixed kdc remote denial of service ( CVE-2011-1528, CVE-2011-1529) and unauthorized file access (CVE-2011-1526)</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00000.html">
+        openSUSE-SU-2011:1203-1: important: rpm (CVE-2011-3378) </ulink></title>
     <table frame="void">
-      <caption>SUSE Security Announcement</caption>
+      <caption>openSUSE Security Announcement</caption>
       <col width="1.1*"/>
       <col width="1.0*"/>
       <thead>
@@ -37,16 +37,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">krb5</emphasis>
+            <emphasis role="bold">rpm</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1169-1</td>
+          <td>openSUSE-SU-2011:1203-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Mon, 24 Oct 2011 14:08:23 +0200 (CEST)</td>
+          <td>Wed, 2 Nov 2011 20:08:26 +0100 (CET)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -54,18 +54,18 @@
         </tr>
         <tr>
           <td>Description: </td>
-          <td>remote denial of service, unauthorized file acess</td>
+          <td>memory corruptionin rpm when verifying signatures </td>
         </tr>
       </tbody>
     </table>
-    <!--($ ld: 29.10.11 sm $)-->
+    <!--($ ld: 06.11.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-10/msg00011.html"
-        >openSUSE-SU-2011:1172-1: important: opera: Release 11.52 to fix memory corruption via SVG
-        content</ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00001.html"
+        >openSUSE-SU-2011:1204-1: important: pam: fixing stack overflow (CVE-2011-3148) and DoS
+        (CVE-2011-3149)</ulink></title>
     <table frame="void">
-      <caption>SUSE Security Announcement</caption>
+      <caption>openSUSE Security Announcement</caption>
       <col width="1.14*"/>
       <col width="1*"/>
       <thead>
@@ -78,37 +78,37 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">opera</emphasis>
+            <emphasis role="bold">pam</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1172-1</td>
+          <td>openSUSE-SU-2011:1204-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Thu, 20 Oct 2011 17:08:22 +0200 (CEST)</td>
+          <td>Wed, 2 Nov 2011 22:08:18 +0100 (CET) </td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.4 openSUSE 11.3</td>
+          <td>openSUSE 11.4</td>
         </tr>
         <tr>
           <td>Description: </td>
-          <td>memory corruption via SVG</td>
+          <td>stack overflow(CVE-2011-3148) and a DoS condition (CVE-2011-3149) </td>
         </tr>
       </tbody>
     </table>
-    <!--($ ld: 29.10.11 sm $)-->
+    <!--($ ld: 06.11.11 sm $)-->
   </blockquote>
-  <!--
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00030.html">
-        openSUSE-SU-2011:1079-1: important: MozillaFirefox: Update to Firefox 3.6.23</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00005.html"
+        >openSUSE-SU-2011:1208-1: important: pam: fixing stack overflow (CVE-2011-3148), a local DoS
+        (CVE-2011-3149) and CVE-2010-3316</ulink>
     </title>
     <table frame="void">
-      <caption>SUSE Security Announcement</caption>
+      <caption>openSUSE Security Announcement</caption>
       <col width="1.08*"/>
       <col width="1.0*"/>
       <thead>
@@ -121,16 +121,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold"> MozillaFirefox</emphasis>
+            <emphasis role="bold">pam</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1079-1</td>
+          <td>openSUSE-SU-2011:1208-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Thu, 29 Sep 2011 16:08:17 +0200 (CEST)</td>
+          <td>Thu, 3 Nov 2011 00:08:35 +0100 (CET) </td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -138,17 +138,15 @@
         </tr>
         <tr>
           <td>Description: </td>
-          <td>Mozilla Firefox was updated to version 3.6.23, fixing various bugs and security
-            issues.</td>
+          <td>stack overflow and DoS condition</td>
         </tr>
       </tbody>
     </table>
-  </blockquote> -->
-  <!--
+  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-09/msg00018.html"
-        >openSUSE-SU-2011:1031-2: important: MozillaThunderbird: 3.1.13</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00009.html"
+        >openSUSE-SU-2011:1217-1: important: apache2: Fixed several security issues</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -164,16 +162,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold"> MozillaThunderbird: 3.1.13</emphasis>
+            <emphasis role="bold">apache2</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1031-1</td>
+          <td>openSUSE-SU-2011:1217-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Fri, 9 Sep 2011 17:08:13 +0200 (CEST)</td>
+          <td>Fri, 4 Nov 2011 09:08:34 +0100 (CET) </td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -181,10 +179,9 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>The purpose of this update is to blacklist the compromised DigiNotar Certificate
-            Authority.</td>
+          <td>two security fixes</td>
         </tr>
       </tbody>
     </table>
-  </blockquote> -->
+  </blockquote>
 </sect1>
