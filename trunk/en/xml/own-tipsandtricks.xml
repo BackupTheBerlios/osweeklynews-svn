@@ -90,16 +90,37 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://linuxaria.com/recensioni/protect-your-server-with-sshguard?lang=en">Linuxaria: Protect your server with SSHGuard</ulink>
+        <ulink
+          url="http://sellingfreesoftwareforaliving.blogspot.com/2011/11/install-and-configure-tftp-server-for.html"
+          >Han Wen Kam: Install and configure TFTP server for PXE boot environment</ulink>
       </title>
-      <para>I’ve already talked about <ulink url="http://linuxaria.com/howto/fail2ban-brute-force-attacks">fail2ban</ulink> and <ulink url="http://linuxaria.com/pills/logcheck-scan-your-logs-and-warns-you">logcheck</ulink>, 2 tools that can scan your logs and do actions, based on rules that you can give/modify, usually modify your <ulink url="http://linuxaria.com/tag/iptables">iptables</ulink> rules to stop active attacks against your server or simply send you a warning if some thing is found in the logs.</para>
-      <para>Today we’ll see a similar tool, <ulink url="http://www.sshguard.net/">sshguard</ulink>, it is different from the other two in that it is written in C, so it’s uses less memory and CPU while running, but still achiving the same results. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>This blog entry describes how you would install and configure the TFTP (Trivial File
+        Transfer Protocol) server for the purpose of building a PXE boot environment. The tftp
+        server would transfer the syslinux binaries to boot up your physical machine. It will also
+        present a text-based menu for the user to select what operating system to install.
+        (...)</para>
+<!-- ($ Id: 10.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-314-2/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): NetBIOS and WINS</ulink>
+        <ulink
+          url="http://stick.gk2.sk/blog/2011/11/getting-ssh-fingerprints-for-machines-in-your-network/"
+          >Pavol Rusnak: Getting SSH fingerprints for machines in your network</ulink>
       </title>
-      <para>Naming is unusual in SMB/CIFS networks. Although modern clients can use Internet domain names to refer to each other, older clients relied on a Microsoft-specific system known as the Windows Internet Name Service (WINS) server, or the NetBIOS Name Server (NBNS); the two terms are synonymous. Configuring Samba properly for name resolution is therefore important. So is configuring browsing, which is the mechanism by which servers learn what shares are available on specific servers. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>Some time ago we were trying to get SSH fingerprints for all machines in our local
+        network. Solution is not that straightforward, but it’s not a rocket science either:
+        <programlisting>#!/bin/bash
+tmpfile=$(mktemp)
+for i in $(seq 2 254); do
+    ssh-keyscan -t rsa,dsa,ecdsa 192.168.1.$i &gt;&gt; $tmpfile
+done
+ssh-keygen -l -f $tmpfile
+rm -f $tmpfile</programlisting></para>
+      <para>First, we retrieve the keys using ssh-keyscan, store them into temporary file and
+        compute fingerprints afterwards using ssh-keygen. Or is there a less complex and more
+        elegant solution?</para>
+      <para>PS: Thanks <ulink
+          url="http://administratosphere.wordpress.com/2011/05/28/getting-and-verifying-ssh-fingerprints/"
+          >David</ulink> for kicking in the right direction.</para>
+<!-- ($ Id: 10.11.11 sm $)-->    </blockquote>
   </sect2>
 </sect1>

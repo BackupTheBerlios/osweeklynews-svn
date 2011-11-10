@@ -19,46 +19,54 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink
-        url="http://holger123.wordpress.com/2011/10/30/teradata-partners-conference-novell-brainshare-smb-traffic-analyzer-development-status/"
-        >Holger Hetterich: Teradata Partners Conference / Novell Brainshare / SMB Traffic Analyzer /
-        Development status</ulink></title>
-    <para>Well last weeks have been pretty busy. With a 10 hours flight, we arrived at <ulink
-        url="http://en.wikipedia.org/wiki/San_Francisco">San Francisco</ulink> to get to <ulink
-        url="http://en.wikipedia.org/wiki/San_Diego">San Diego</ulink> to visit the <ulink
-        url="http://www.teradata-partners.com/Conference">Teradata Partners conference</ulink>, an
-      excellent event that included good discussions and lots of acceptance and recognition for
-        <ulink url="http://www.suse.com">SUSE Linux</ulink>. I liked the way talks have been
-      organized, or to say it in other words it was a matter of downloading an Android app to always
-      have the overview.</para>
-    <para>We served the SUSE booth at the conference, got involved into lots of discussions about
-      the OS, and I was even happier in the moments when people asked questions on <ulink
-        url="http://www.opensuse.org">openSUSE</ulink> – <emphasis role="italic"><emphasis
-          role="bold">this is showing clearly that the project is well known!
-      </emphasis></emphasis>To leave some words on San Diego is very simple:<ulink
-        url="http://en.wikipedia.org/wiki/Gaslamp_Quarter,_San_Diego,_California"> Gaslamp
-        Quarter</ulink>, I’ll be back<emphasis role="bold">, </emphasis>and have a few more beers
-        at<ulink url="http://www.rockbottom.com/"> Rock Bottom!</ulink></para>
-    <!--($ ld: 02.11.11 sm $)-->
+    <title><ulink url="http://www.oyranos.org/2011/11/colour-management-in-opensuse-12-1/">Kai-Uwe
+        Behrmann: Colour Management in openSUSE-12.1</ulink></title>
+    <para>The <ulink url="http://www.oyranos.org/">Oyranos Colour Management System</ulink> will be
+      in the upcoming <ulink url="http://www.opensuse.org/">openSUSE</ulink>-12.1 release. With the
+      new library users can configure their ICC profiles and settings in one central place. It
+      brings as well a set of command line tools like <emphasis role="italic"
+        >oyranos-policy</emphasis> for handling policy configuration files and <emphasis
+        role="italic">oyranos-profiles</emphasis> for installation of ICC profiles. KDE users can
+      install the <emphasis role="italic">KolorManager</emphasis> package. This Oyranos front end
+      adds a system settings control panel for individual settings adaption. But most systems will
+      run fine with Oyranos defaults. (...)</para>
+    <para><inlinegraphic fileref="http://www.oyranos.org/images/KolorManager-oS12.1_arrow.png"
+        width="40%"/></para>
+    <!--($ ld: 10.11.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://www.marques.so/2011/11/atiamd-catalyst-11-10-still-broken/">Nelson
-        Marques: ATI/AMD Catalyst 11.10 still broken…</ulink></title>
-    <para><ulink url="http://ati.cchtml.com/show_bug.cgi?id=99">AMD</ulink> has released <ulink
-        url="http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx">Catalyst
-        11.10</ulink> driver for Linux! For quite some time that a large group of users from the
-      community follow Catalyst releases hopping that some <ulink
-        url="http://ati.cchtml.com/show_bug.cgi?id=99">problematic issues are fixed</ulink>,
-      unfortunatly <ulink url="http://www.gnome3.org">GNOME3</ulink>, the latest Desktop experience
-      from the <ulink url="http://www.gnome.org">GNOME Project</ulink>, continues to display serious
-      glitches when using this proprietary driver blob.</para>
-    <para>For GNOME3 users, this driver isn’t recommended at all, and people should stick with the
-      default radeon open source driver provided by the community which has awesome support for r300
-      and r600 chipsets (and improving every day).</para>
-    <para>The previous release, 11.9 has fixed one of the issues with GNOME3 (the rainbow activity
-      bar), but showed regressions in many other fields, including on <ulink
-        url="http://www.kde.org">KDE</ulink> (including also on Windows). All ATI/AMD users live to
-      see better days in the future!</para>
-    <!--($ ld: 02.11.11 sm $)-->
+    <title><ulink
+        url="http://jaegerandi.blogspot.com/2011/11/opensuse-121-on-road-to-goldmaster-and.html"
+        >Andreas Jaeger: openSUSE 12.1 on the road to Goldmaster - and one bug more
+      fixed</ulink></title>
+    <para>Several people have reported in the past that during installation the system hangs
+      "forever" (see bug bnc#722858) starting udev. The problem was that this did not appear
+      reproduceable. It appeared once on my machine and when I brought the machine to Steffen to
+      help debugging, I couldn't reproduce it. After some more tries, it was reproduceable but not
+      everytime. Steffen initially thought it was a kernel race with module loading and thus we
+      added "maxcpus=1" to the kernel command line. This made the bug less likely but it still
+      happened. But now Christian, Coolo and myself had each a machine for reproduction and figured
+      out that udevadm was waiting for some events and timing out after 10 minutes as that was the
+      timeout in the installation system. So, one idea was to use the normal 30s as timeout so that
+      fewer people noticed. In the end Coolo found the culprit: A bug in udev that got fixed in
+      upstream udev a month ago that we got with a udev update a couple of months ago. Coolo fixed
+      this with a new udev package that has been updated for 12.1 now. So, these hangs might have
+      not only happened during installation but also at normal booting and I'm glad that Coolo
+      decided to hunt down this bug. (...)</para>
+    <!--($ ld: 10.11.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.jospoortvliet.com/2011/11/121-closing-in.html">Jos Poortvliet:
+        12.1 closing in!</ulink></title>
+    <para>We're about to put the finishing touches on openSUSE 12.1 and the amount of activity in
+      the <ulink url="http://blog.jospoortvliet.com/2011/11/en.opensuse.org/openSUSE:IRC_list"
+        >openSUSE IRC channels</ulink> is impressive. I see people working 12-14-16 hours a day,
+      fixing the last issues, writing release notes, and in short getting this release ready for our
+      users. Respect! I myself have upgraded my laptop to openSUSE 12.1 RC2 now and I got to see the
+      new Plasma Desktop. Overall, the difference between Tumbleweed and 12.1 are minimal. As
+      expected, considering <ulink url="http://opensuse.org/Tumbleweed">Tumbleweed</ulink>
+      (openSUSE's cool rolling release repository) was a hair away from 12.1, the biggest
+      differences are probably artwork and of course Plasma 4.7 instead of 4.6...</para>
+    <!--($ ld: 10.11.11 sm $)-->
   </blockquote>
 </sect1>

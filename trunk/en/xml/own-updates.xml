@@ -117,6 +117,50 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
         <!-- ($ ld: 09.11.11 sm $)-->
     </blockquote>
     <blockquote>
-        <title>Nelson Marques: Unknown Horizons – 2011.3 RC4 @ games:unknown-horizons</title>
+        <title><ulink
+                url="http://www.marques.so/2011/11/unknown-horizons-2011-3-rc4-gamesunknown-horizons/"
+                >Nelson Marques: Unknown Horizons – 2011.3 RC4 @
+            games:unknown-horizons</ulink></title>
+        <para>The development around <ulink url="http://www.unknown-horizons.org">Unknown
+                Horizons</ulink> and <ulink url="http://www.fifengine.de">FIFE</ulink> has been
+            intensified in the last months, and a few days ago FIFE has released a maintenance
+            version (FIFE 0.3.3r2) aimed to correct a few bugs and help the deployment of Unknown
+            Horizons.</para>
+        <para>The development repository of Unknown Horizons for <ulink
+                url="http://www.opensuse.org">openSUSE</ulink> is made on games:unknown-horizons
+            repository (courtesy of the games maintainers), and it currently provides the latest
+            Release Candidate (RC4) of the upcoming version 2011.3 to be released during the next
+            weekend. (...)</para>
+        <!--($ ld: 10.11.11 sm $)-->
+    </blockquote>
+    <blockquote>
+        <title><ulink url="http://dev-loki.blogspot.com/2011/11/gpodder-2-vs-3-in-packman.html"
+                >Pascal Bleser: gpodder 2 vs 3 in Packman</ulink></title>
+        <para>The <ulink url="http://gpodder.berlios.de">gpodder</ulink> project <ulink
+                url="http://blog.gpodder.org/2011/11/gpodder-300-397d-released.html">introduced its
+                new major release 3.0.0 today</ulink> and, unfortunately, it seems like I didn't pay
+            attention to the complete change announcement, as I just bumped the <ulink
+                url="http://packman.links2linux.org/package/gpodder">gpodder package in
+                Packman</ulink> to 3.0.0 (from 2.18).</para>
+        <para>Now, gpodder 3.0.0 does introduce a lot of changes, notably in the UI but also
+            regarding its database format and requires migrating the database from 2 to 3. It
+            doesn't seem to have all of the features of 2.20 either. So what happens is that when
+            you just upgrade the gpodder package, you end up with something you don't necessarily
+            want to use. At least as of now. (...)</para>
+        <!--($ ld: 10.11.11 sm $)-->
+    </blockquote>
+    <blockquote>
+        <title><ulink url="http://kfreitag.tumblr.com/post/12527150375/kraft045">Klaas Freitag:
+                Kraft 0.45 released</ulink></title>
+        <para>A couple of days after the <ulink
+                url="http://kfreitag.tumblr.com/post/12463194435/kraft044">release of Kraft
+                0.44</ulink> with new features I had to prepare a bugfix release. It’s labeled 0.45
+            and was released today. It fixes a bug that prints wrong decimal places on the PDF
+            documents which results in wrong calculations on the document.ý</para>
+        <para>That is a very severe and not acceptable bug, as the wrong documents could make it to
+            a customer of a Kraft user and as a result harm the business. I apologize for any
+            inconvenience.</para>
+        <para>Please skip Kraft 0.44 and use version 0.45 instead.</para>
+        <!--($ ld: 10.11.11 sm $)-->
     </blockquote>
 </sect1>
