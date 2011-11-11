@@ -22,77 +22,45 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.omgubuntu.co.uk/2011/10/five-pretty-awesome-gnome-shell-themes/">OMG!
-          Ubuntu!/Joey Sneddon: Five Pretty Awesome GNOME Shell Themes</ulink>
+        <ulink url="http://www.makeuseof.com/tag/give-computer-voice-espeak-windows-linux/">MakeUseOf/Justin Pot: Give Your Computer A Voice With eSpeak [Windows &amp; Linux]</ulink>
       </title>
-      <para><emphasis role="bold">One of the great things about GNOME Shell is that it’s
-          comprehensibly themeable – from the top panel and applet menus to the awesome
-          on-screenkeyboard.</emphasis></para>
-      <para>Below are five are five of my top GNOME Shell theme picks from those we’ve featured or
-        been ‘tipped’ about recently. Don’t know how to install GNOME Shell themes? <ulink
-          url="http://www.omgubuntu.co.uk/2011/10/how-to-install-gnome-shell-themes-in-ubuntu-11-10/"
-          >We’ve got that covered.</ulink></para>
-<!-- ($ Id: 06.11.11 sm $)-->    </blockquote>
+      <para>Let your computer do the talking. Install eSpeak and you can make your computer say anything, in a wide variety of languages.</para>
+      <para>Looking for a lightweight <ulink url="http://www.makeuseof.com/dir/tag/text-to-speech/">text to speech</ulink> program? Whether you want to listen to your favorite blog while doing the dishes, or just make your computer say naughty words to your friends so you can giggle like schoolchildren, <ulink url="http://espeak.sourceforge.net/">eSpeak</ulink> is a great tool for the job. It’s “a compact open source software speech synthesizer for English and other languages” according to its website. You can use official versions of eSpeak on <ulink url="apt:espeak-gui">Linux</ulink> (Editors Note: the link is just for Debian/Ubuntu users) and <ulink url="http://espeak.sourceforge.net/download.html">Windows</ulink>. (...)</para>
+      <para>Editors Note: eSpeak packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=espeak">available via OBS</ulink>.</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxjournal.com/content/four-hidden-tools-scribus">Linux Journal/Bruce Byfield: Four Hidden Tools in Scribus</ulink>
+        <ulink url="http://linuxaria.com/article/gedit-an-easy-to-use-text-editor-with-many-advanced-features?lang=en">Linuxaria/Frank Harris-Smith: gEdit, an easy to use text editor with many advanced features</ulink>
       </title>
-      <para>Scribus is a powerful tool, but its menus are poorly laid-out. While you can usually
-        find the features you most frequently use without any trouble, others may be hidden almost
-        anywhere. From the Extras, Script, and Windows menus to the Document Setup dialog, useful
-        features can be positioned almost anywhere, with only the most token regard for logic. </para>
-      <para>The tools described here are ones that took some time for me to discover in Scribus.
-        None are worth more than a few hundred words of description, but I mention them here because
-        all of them can be useful to know. (...)</para>
-      <!-- ($ Id: 03.11.11 sm $)-->    </blockquote>
+      <para><ulink url="http://www.gnome.org/projects/gedit/">gEdit</ulink> is a serious text editor in the tradition of many editors that the programmer or code jockey will appreciate – syntax highlighting in many source codes, script formats, markup formats, and even some Scientific formats.</para>
+      <para>I write a lot of HTML code and I find the multiple undo/redo, find, search &amp; replace, and the built-in code-aware spelling checker essential on a daily basis.</para>
+      <para>But that’s me. I’m writing about what I use on a daily basis and gEdit is always open on my PC of the moment. I do HTML coding for my personal website, keep lists of “To-Do” items, use it as a scratch pad to paste whatever nuggets of wisdom I find on the Internet and generally use it for quickly jotting down whatever I need to note. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/commands/understanding-the-cat-command/">BashShell.net/Mike: Understanding the cat Command</ulink>
+        <ulink url="http://technonstop.com/fun-with-unix-linux-find-command">TechNonStop/Abdullah Chougle: Fun with the Unix/Linux find command!</ulink>
       </title>
-      <para><emphasis role="bold">cat</emphasis></para>
-      <para>Cat is  used to either view, create, or join multiple text files together.  (In fact, the term “cat” is short for catenate, which is a fancy way of saying “to join two things together, end-to-end”.)</para>
-      <para>By default, stdin for cat is the keyboard, and stdout is the computer screen.  If you just type “cat” at the command prompt, you’ll be able to type in text, and make it echo back to you as soon as you hit Enter.  It will keep doing this until you press Ctrl-d to end it. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://bashshell.net/shell-scripts/exit-status-with-test/">BashShell.net/Mike: Testing the Exit Status of a Command</ulink>
-      </title>
-      <para><emphasis role="bold">test</emphasis></para>
-      <para>The test command is used to determine exit status on numerous tests that can be performed in scripts. The test command does not produce any output it simply is checking for the exit status.  Note if you use variables with test be sure to enclose them in double quotes so the test receives an argument. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>This article lists some of the more useful ways of utilizing the find command.</para>
+      <para>These commands will work on most Linux distributions, and have been tested on recent versions of Ubuntu and SUSE. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/jquery-and-ajax-error-detection-and-handling/">Wazi/W. Jason Gilmore: jQuery and Ajax Error Detection and Handling</ulink>
+        <ulink url="http://www.linuxjournal.com/content/man-make-primer-make-utility">Linux Journal/Adrian Hannah: man make: a Primer on the Make Utility</ulink>
       </title>
-      <para>Website development duties were once assigned to different individuals with two distinct roles: A designer focused on the all matters related to the front-end HTML and CSS, and a developer was responsible for the server-side code. JavaScript’s meteoric rise to first-class citizen status has blurred these traditional lines, forcing developers into what was once considered taboo territory. The results have been spectacular, with frameworks such as <ulink url="http://olex.openlogic.com/packages/jquery">jQuery</ulink> significantly streamlining JavaScript’s often unwieldy native syntax, and programming techniques such as <ulink url="http://en.wikipedia.org/wiki/Ajax_%28programming%29">Ajax</ulink> bringing highly responsive user interfaces to the browser. The marrying of jQuery and Ajax has been particularly impactful, providing developers with a powerful solution to the problem of asynchronously interacting with and updating parts of a web page. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://how-to.linuxcareer.com/writing-manual-pages-on-linux">linuxcareer.com/Writing manual pages on Linux</ulink>
-      </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>It&apos;s a very common fact that nobody likes to write documentation. Heck, nobody likes to read it either. But there are times when we have to read it in order to, say, finish the project on time, or, especially when working in software development, even write it. If you only have to read it, we always encouraged you to do so, but if you&apos;ll have to write the manual pages and need a kickstart, here&apos;s the article for you. If you worked previously with HTML your life will be easier, but if not it&apos;s alright. Writing manual pages for Linux is not that hard, despite the look of the pages when read in plain-text. So basically you&apos;ll need some Linux knowledge and the ability to use a text editor. You will learn (with examples, of course) the main concepts in text formatting as applied to man pages and how to write a simple manual page. Since we used yest as an example for our <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-introduction">C development tutorial</ulink>, we will use snippets from its manual page to illustrate our point during this article. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">net.tutsplus.com/Jeffrey Way: Quick Tip: How to Work with GitHub and Multiple Accounts</ulink>
-      </title>
-      <para>So you have a personal <ulink url="http://github.com/">GitHub</ulink> account; everything is working perfectly. But then, you get a new job, and now need to have the ability to push and pull to multiple accounts. How do you do that? I’ll show you how! (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>In a compiled language, the makefile is arguably the most important part of any programming project. To compile your project, you first have to compile each source file into an object file, which in turn needs to be linked with system libraries into the final executable file. Each command can have a considerable number of arguments added in. That&apos;s a lot of typing and a lot of potential for mistakes. The more source files you have, the more complex the compilation process becomes, unless you use makefiles. Most Linux users have at least a cursory knowledge of make and makefiles (because that&apos;s how we build software packages for our systems), but not much more than that. Most developers probably don&apos;t have too much in-depth experience with makefiles, because most Integrated Development Environments (IDEs) have the capability of managing makefiles for them. Although this is convenient most of the time, knowing more about how make works and what goes into makefiles can help you troubleshoot compilation errors down the road. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://sellingfreesoftwareforaliving.blogspot.com/2011/11/install-and-configure-tftp-server-for.html"
-          >Han Wen Kam: Install and configure TFTP server for PXE boot environment</ulink>
+        <ulink url="http://sellingfreesoftwareforaliving.blogspot.com/2011/11/install-and-configure-tftp-server-for.html">Han Wen Kam: Install and configure TFTP server for PXE boot environment</ulink>
       </title>
       <para>This blog entry describes how you would install and configure the TFTP (Trivial File
         Transfer Protocol) server for the purpose of building a PXE boot environment. The tftp
@@ -102,9 +70,7 @@
 <!-- ($ Id: 10.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink
-          url="http://stick.gk2.sk/blog/2011/11/getting-ssh-fingerprints-for-machines-in-your-network/"
-          >Pavol Rusnak: Getting SSH fingerprints for machines in your network</ulink>
+        <ulink url="http://stick.gk2.sk/blog/2011/11/getting-ssh-fingerprints-for-machines-in-your-network/">Pavol Rusnak: Getting SSH fingerprints for machines in your network</ulink>
       </title>
       <para>Some time ago we were trying to get SSH fingerprints for all machines in our local
         network. Solution is not that straightforward, but it’s not a rocket science either:
@@ -118,9 +84,22 @@ rm -f $tmpfile</programlisting></para>
       <para>First, we retrieve the keys using ssh-keyscan, store them into temporary file and
         compute fingerprints afterwards using ssh-keygen. Or is there a less complex and more
         elegant solution?</para>
-      <para>PS: Thanks <ulink
-          url="http://administratosphere.wordpress.com/2011/05/28/getting-and-verifying-ssh-fingerprints/"
-          >David</ulink> for kicking in the right direction.</para>
+      <para>PS: Thanks <ulink url="http://administratosphere.wordpress.com/2011/05/28/getting-and-verifying-ssh-fingerprints/">David</ulink> for kicking in the right direction.</para>
 <!-- ($ Id: 10.11.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://olex.openlogic.com/wazi/2011/openssl-expert-tips-and-tricks-test-and-benchmark-servers/">Wazi/Carla Schroder: OpenSSL Expert Tips and Tricks: Test and Benchmark Servers</ulink>
+      </title>
+      <para><ulink url="http://olex.openlogic.com/packages/openssl">OpenSSL</ulink>, the open source toolkit for implementing the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, is an everyday essential for most Linux admins responsible for secure networking. But OpenSSL includes a wealth of features that even grizzled veterans may not be familiar with. You can use OpenSSL to test POP and IMAP servers, and test server connection speeds, among other interesting tricks. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://jeffhoogland.blogspot.com/2011/11/ncdu-answer-to-question.html">Jeff Hoogland: NCDU - The Answer to a Question</ulink>
+      </title>
+      <para>The question is:</para>
+      <para>Where did all my disc space go?</para>
+      <para>The answer? An ncurses based application called NCDU. NCDU is a simple, light-weight disc-usage analyzer. I like NCDU because of it&apos;s few dependencies, in fact installing in on my system took less than 1mb worth of additional space. It is fast, because like all good applications it is written entirely in C. (...)</para>
+      <para>Editors Note: ncdu packages for openSUSE can be found in <ulink url="http://download.opensuse.org/repositories/utilities/">utilities repo</ulink>.</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>

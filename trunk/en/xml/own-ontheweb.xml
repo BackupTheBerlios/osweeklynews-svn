@@ -18,8 +18,7 @@
 -->
 <sect1 role="ontheweb">
   <title>On the Web</title>
-<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! -->  
-  <!--
+<!-- Announcements, Call for participation, Reports, Reviews and Essays, Warning! --><!--
   <sect2>
     <title>Announcements</title>
     <blockquote>
@@ -29,8 +28,7 @@
       <para>I’m happy to announce that the Qt Project officially went live today. Starting today, development of Qt will be governed as a true open source project.</para>
       <para>We now have <ulink url="http://qt-project.org/">qt-project.org</ulink> – a website where all development of Qt will be centered, providing the same infrastructure and processes for everybody that wants to contribute to Qt. (...)</para>
     </blockquote>
-  </sect2> -->
-<!--
+  </sect2> --><!--
   <sect2>
     <title>Call for participation</title>
     <blockquote>
@@ -47,37 +45,59 @@ With this in mind, the SCALE team announces a contest to select the artwork for 
     <title>Reports</title>
     <blockquote>
       <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/linux-foundation-proposes-to-use-uefi-to-make-pcs-secure-and-free/9827">ZDNet/Steven J. Vaughan-Nichols: Linux Foundation proposes to use UEFI to make PCs secure and free</ulink>
+        <ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTAxMjI">Phoronix/Michael Larabel: GNOME Shell Works Without GPU Driver Support</ulink>
       </title>
-      <para>Microsoft’s proposed use of <ulink url="http://www.uefi.org/home/">Unfied Extensible Firmware Interface (UEFI)</ulink> in Windows 8 could be used to <ulink url="http://www.zdnet.com/blog/open-source/microsoft-to-stop-linux-older-windows-from-running-on-windows-8-pcs/9589">block all other operating systems from Windows 8 systems</ulink>. <ulink url="http://www.linuxfoundation.org/">The Linux Foundation</ulink> and partners have a better idea: Secure computers with UEFI and give users freedom of operating system choice.</para>
-      <para>In the Linux Foundation document, <ulink url="http://www.linuxfoundation.org/publications/making-uefi-secure-boot-work-with-open-platforms">Making UEFI Secure Boot Work With Open Platforms</ulink> (PDF Link), James Bottomley, CTO of Server Virtualization at <ulink url="http://www.parallels.com/">Parallels</ulink> and Linux Foundation Technical Advisory Board Chair Jonathan Corbet, Editor at <ulink url="http://lwn.net/">LWN.net</ulink> and fellow Linux Foundation Technical Advisory Board Member, after consulting with other Linux leaders, explain how “Linux and other open operating systems will be able to take advantage of secure boot if it is implemented properly in the hardware.” (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>As reported on Thursday, <ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTAxMTI">GNOME Shell / Mutter no longer requires OpenGL-accelerated hardware drivers</ulink>. It&apos;s possible to run this GNOME3 desktop with a software back-end via Gallium3D&apos;s <ulink url="http://www.phoronix.com/scan.php?page=search&amp;q=LLVMpipe">LLVMpipe</ulink>.</para>
+      <para>Reaching this milestone can be attributed to Red Hat, Google&apos;s Chrome/Chromium OS developers, and others working on the Mesa / Gallium3D software stack. Just recently <ulink url="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTAwNTg">LLVMpipe gained support for GLX_EXT_texture_from_pixmap</ulink>, the GLX extension that&apos;s required by many Linux compositing window managers. These improvements allow the desktop effects to all be done on the CPU without any dependence on any GPU hardware driver. GNOME Shell on the VESA driver or within a KVM/QEMU guest is fair game. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.h-online.com/open/news/item/Ruby-1-9-3-arrives-with-licence-change-1368959.html">h-online/Chris von Eitzen: Ruby 1.9.3 arrives with licence change</ulink>
+        <ulink url="http://www.datamation.com/security/firefox-8-locks-down-plug-ins.html">Datamation/Sean Michael Kerner: Firefox 8 Locks Down Plug-ins</ulink>
       </title>
-      <para>The <ulink url="http://www.ruby-lang.org/en/">Ruby</ulink> development team <ulink url="http://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/">announced</ulink> the release of version 1.9.3 of its open source programming language. <ulink url="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/40527">Described as</ulink> basically being &quot;an implementation-improved version of Ruby 1.9.2&quot;, the first release of the new stable series of Ruby improves library loading performance and brings changes to the Ruby licence.</para>
-      <para>Ruby 1.9.3 p0 source code is made available under a 2-clause BSD Licence and the<ulink url="http://www.ruby-lang.org/en/LICENSE.txt"> Ruby Licence</ulink>; previous versions of Ruby were released under the GPLv2 and Ruby Licence. Other changes include improved locking in multi-threaded programs, regular expression support for Unicode 6.0 and a new library io/console for simple portable access to the console. Also among the modifications are changes to Random.rand and extra String methods such as prepend and byteslice, though generally, the developers say you should be able to safely switch to Ruby 1.93 from 1.9.2. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>Mozilla&apos;s rapid release train has pulled into the station on time, with the fifth major Firefox browser release of 2011. Firefox 8 is being released today, providing developers with new capabilities and offering users more security via a new add-ons policy.</para>
+      <para>&quot;We&apos;re proud of the way Firefox continues to move the web forward in this release,&quot; Gavin Sharp, Firefox engineer and the Firefox module owner told <emphasis role="italic">InternetNews.com</emphasis>. &quot;Our support for Cross-Origin Resource Sharing (CORS) in WebGL lets developers build incredible 3D experiences on the Web in a secure way.&quot;</para>
+      <para>Sharp noted that Firefox 8 also introduces a simpler way for HTML5 applications to provide a right-click menu, to provide a more complete experience. He explained that this release of Firefox introduces better support for Web applications, allowing them to provide context menu options without requiring complicated custom code. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
     <blockquote>
-      <title>
-        <ulink url="http://www.zdnet.com/blog/open-source/microsoft-contributes-open-source-code-to-samba/9860">ZDNet/Steven J. Vaughan-Nichols: Microsoft contributes open-source code to Samba</ulink>
-      </title>
-      <para>Freak snowstorm reported in hell. Tea party agrees Obama is the best candidate for 2012 presidential election. Microsoft submits open-source code under the GPLv3 to Samba. Those are all pretty unlikely, but <ulink url="http://samba.org/samba/news/developers/ms-patch.html">Microsoft really did submit code to the Samba</ulink> file server open-source project.</para>
-      <para>This might not strike you as too amazing. After all, Microsoft has supported some open-source projects at <ulink url="http://www.codeplex.com/">CodePlex</ulink> for some time now and they will work with some other projects such as the <ulink url="http://www.zdnet.com/blog/microsoft/microsoft-rolls-out-open-source-python-extension-for-visual-studio/10478">Python</ulink> and <ulink url="http://www.zdnet.com/blog/open-source/microsoft-makes-pledges-to-support-apache-php-ruby/2704">PHP</ulink> languages and the <ulink url="http://www.microsoft.com/en-us/openness/story/plays-well-with-others/microsoft-plus-drupal.aspx">Drupal content management system (CMS)</ulink>. But, Samba, Samba is different. They’re an old Microsoft enemy. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <title><ulink url="http://www.zdnet.com/blog/perlow/exclusive-adobe-ceases-development-on-mobile-browser-flash-refocuses-efforts-on-html5-updated/19226">ZDNet/Jason Perlow: Exclusive: Adobe ceases development on mobile browser Flash, refocuses efforts on HTML5 (UPDATED</ulink>)</title>
+      <para>Sources close to Adobe that have been briefed on the company’s future development plans have revealed this forthcoming announcement to ZDNet:</para>
+      <para>Our future work with Flash on mobile devices will be focused on enabling Flash developers to package native apps with Adobe AIR for all the major app stores. We will no longer adapt Flash Player for mobile devices to new browser, OS version or device configurations. Some of our source code licensees may opt to continue working on and releasing their own implementations. We will continue to support the current Android and PlayBook configurations with critical bug fixes and security updates.</para>
+      <para>Additionally, the e-mail briefing to Adobe’s partners has been summed up as follows:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Adobe is <emphasis role="bold">Stopping development on Flash Player for browsers on mobile</emphasis>.</para>
+        </listitem>
+      </itemizedlist>
+      <para>(...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>Reviews and Essays</title>
     <blockquote>
       <title>
-        <ulink url="http://www.junauza.com/2011/10/how-to-convince-your-friends-into-using.html">Jun Auza: How to Convince Your Friends to Use Linux Without Being a Jerk</ulink>
+        <ulink url="http://www.itworld.com/software/221653/4-strange-places-find-open-source">ITworld/Carla Schroder: 4 strange places to find open source</ulink>
       </title>
-      <para>Linux is one of the most secure and stable operating systems around, and yet, its user base hasn’t really grown as everyone expected it to. There are many reasons for this, and we won’t go into those right now. However, if you, like any other Linux user, are disappointed by the current market share stats, we can tell you some simple tips that will help you convince your Windows or Mac-crazy friends into using Linux.</para>
-      <para>Now, many Linux users have already tried to coax their friends and family members to try out this popular and newbie-friendly distro called Ubuntu. A select few have succeeded and many have failed. So here, we will give you some important tips to help you spread the word about Linux without sounding like that arrogant nerd who has nothing but contempt for Windows or Mac. (...)</para>
-<!-- ($ Id: 5.11.11 sat $)-->    </blockquote>
+      <para>Open source is about more than code: it&apos;s about unlocking all possibilities. Here are four unusual projects made possible by open source.</para>
+      <para><emphasis role="bold">Prosthetics</emphasis></para>
+      <para>Years ago I hung out with a friend who had a prosthetic hand. It was a stiff plastic hand, like a store mannequin hand, that could open and close in a simple grip. It didn&apos;t have much functionality, but it had a bit of fun factor -- my friend liked to remove it to scratch his back. In public, of course, with a freaked-out audience. Americans seem to have a hard time looking at these sorts of things. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.techdirt.com/articles/20111104/08151716637/free-as-freedom-whose-freedom.shtml">Techdirt/Glyn Moody: Free As In Freedom: But <emphasis role="italic">Whose</emphasis> Freedom?</ulink>
+      </title>
+      <para>It would be hard to overstate the contribution of <ulink url="http://www.stallman.org/">Richard Stallman</ulink> to the digital world. The founding of the <ulink url="http://www.gnu.org/">GNU project</ulink> and the creation of the <ulink url="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</ulink> laid the foundations for a wide range of free software that permeates computing from smartphones to supercomputers. Free software has also directly inspired like-minded movements based around sharing, such as open access and open content (Wikipedia, notably).</para>
+      <para>At the heart of everything Stallman does lies a desire to promote freedom, specifically the freedom of the software user, by constraining the freedom of the developer in the way the code is distributed. That&apos;s in contrast to <ulink url="http://www.linfo.org/bsdlicense.html">BSD-style licenses</ulink>, say, where the developer is free to place additional restrictions on the code, thus reducing the freedom of the user. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="https://www.linux.com/learn/tutorials/507223-what-employers-want-from-linux-job-seekers">Linux.com/Rikki Endsley: What Employers Want from Linux Job Seekers</ulink>
+      </title>
+      <para>Job seekers with Linux smarts have the upper hand in the Linux job market right now, but the right combination of technical and people skills are still required.</para>
+      <para>&quot;When we look to hire Linux system administrators, there are a few key aspects that get our attention,&quot; says Peter Baer Galvin, Chief Technologist for Corporate Technologies. &quot;Natural curiosity is one. Is the candidate interested in technology, finding solutions to problems, inventing new solutions, and experimenting? We find those attributes to be a good indicator of whether the admin will be able to improvise, learn, and determine the best course of action.&quot;</para>
+      <para>Obviously, no Linux admin can have all the skills every employer will want. But as Galvin says, natural curiosity can help make you stand out as a job candidate. (...)</para>
+<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
   </sect2>
-  <!--
+<!--
   <sect2>
     <title>Warning!</title>
     <blockquote>
