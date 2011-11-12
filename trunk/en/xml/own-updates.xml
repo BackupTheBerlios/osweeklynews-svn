@@ -39,7 +39,7 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
             and PIM libraries and Akonadi and Nepomuk setups. Not always the stack was transparent
             to me nor the integration of the various parts perfect. But we’re KDE with our welknown
             community, and so I finally had the pleasure to go through my and other code and fix it
-            togehter with Kevin and Tobias on Desktop Summit this summer. That brought backý
+            togehter with Kevin and Tobias on Desktop Summit this summer. That brought back
             motivation, thanks :-)</para>
         <para>So now one of the strengthes of the KDE platform from the application developers POV,
             which is the availability of powerful software building blocks such as an easy
@@ -58,6 +58,20 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
                 url="http://volle-kraft-voraus.de/Main/Contribution">Contribution Page</ulink> on
             the project website for details.</para>
         <!-- ($ ld: 09.11.11 sm $)-->
+    </blockquote>
+    <blockquote>
+        <title><ulink url="http://kfreitag.tumblr.com/post/12527150375/kraft045">Klaas Freitag:
+            Kraft 0.45 released</ulink></title>
+        <para>A couple of days after the <ulink
+            url="http://kfreitag.tumblr.com/post/12463194435/kraft044">release of Kraft
+            0.44</ulink> with new features I had to prepare a bugfix release. It’s labeled 0.45
+            and was released today. It fixes a bug that prints wrong decimal places on the PDF
+            documents which results in wrong calculations on the document.ý</para>
+        <para>That is a very severe and not acceptable bug, as the wrong documents could make it to
+            a customer of a Kraft user and as a result harm the business. I apologize for any
+            inconvenience.</para>
+        <para>Please skip Kraft 0.44 and use version 0.45 instead.</para>
+        <!--($ ld: 10.11.11 sm $)-->
     </blockquote>
     <blockquote>
         <title><ulink url="http://lizards.opensuse.org/2011/11/07/webyast-0-3-is-out/">Stefan
@@ -117,23 +131,6 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
         <!-- ($ ld: 09.11.11 sm $)-->
     </blockquote>
     <blockquote>
-        <title><ulink
-                url="http://www.marques.so/2011/11/unknown-horizons-2011-3-rc4-gamesunknown-horizons/"
-                >Nelson Marques: Unknown Horizons – 2011.3 RC4 @
-            games:unknown-horizons</ulink></title>
-        <para>The development around <ulink url="http://www.unknown-horizons.org">Unknown
-                Horizons</ulink> and <ulink url="http://www.fifengine.de">FIFE</ulink> has been
-            intensified in the last months, and a few days ago FIFE has released a maintenance
-            version (FIFE 0.3.3r2) aimed to correct a few bugs and help the deployment of Unknown
-            Horizons.</para>
-        <para>The development repository of Unknown Horizons for <ulink
-                url="http://www.opensuse.org">openSUSE</ulink> is made on games:unknown-horizons
-            repository (courtesy of the games maintainers), and it currently provides the latest
-            Release Candidate (RC4) of the upcoming version 2011.3 to be released during the next
-            weekend. (...)</para>
-        <!--($ ld: 10.11.11 sm $)-->
-    </blockquote>
-    <blockquote>
         <title><ulink url="http://dev-loki.blogspot.com/2011/11/gpodder-2-vs-3-in-packman.html"
                 >Pascal Bleser: gpodder 2 vs 3 in Packman</ulink></title>
         <para>The <ulink url="http://gpodder.berlios.de">gpodder</ulink> project <ulink
@@ -147,20 +144,6 @@ Version should be available at packman or software.opensuse.org/search max. 4 po
             doesn't seem to have all of the features of 2.20 either. So what happens is that when
             you just upgrade the gpodder package, you end up with something you don't necessarily
             want to use. At least as of now. (...)</para>
-        <!--($ ld: 10.11.11 sm $)-->
-    </blockquote>
-    <blockquote>
-        <title><ulink url="http://kfreitag.tumblr.com/post/12527150375/kraft045">Klaas Freitag:
-                Kraft 0.45 released</ulink></title>
-        <para>A couple of days after the <ulink
-                url="http://kfreitag.tumblr.com/post/12463194435/kraft044">release of Kraft
-                0.44</ulink> with new features I had to prepare a bugfix release. It’s labeled 0.45
-            and was released today. It fixes a bug that prints wrong decimal places on the PDF
-            documents which results in wrong calculations on the document.ý</para>
-        <para>That is a very severe and not acceptable bug, as the wrong documents could make it to
-            a customer of a Kraft user and as a result harm the business. I apologize for any
-            inconvenience.</para>
-        <para>Please skip Kraft 0.44 and use version 0.45 instead.</para>
         <!--($ ld: 10.11.11 sm $)-->
     </blockquote>
 </sect1>

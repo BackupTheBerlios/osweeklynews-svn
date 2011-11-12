@@ -48,78 +48,22 @@
       </table>   
     </para>
     <para></para>
-  </blockquote> -->  <blockquote>
-    <title>
-      <ulink
-        url="http://www.marques.so/2011/10/unknown-horizons-2011-3-rc3-ready-for-testing-on-opensuse/"
-        >Nelson Marques: Unknown Horizons 2011.3 RC3 ready for testing on openSUSE!</ulink>
-    </title>
-    <para>While the <ulink url="http://www.unknown-horizons.org">Unknown Horizons</ulink> developers
-      are working hard fixing bugs and preparing the new release, 2011.3, I’ve went ahead and
-      started to update all the dependencies to bring this wonderful game to <ulink
-        url="http://opensuse.org">openSUSE</ulink> users.</para>
-    <para>Here’s a few things that were changed to support this release:<itemizedlist>
-        <listitem>
-          <para>FIFE – Unknown Horizons now requires <ulink
-              url="http://fifengine.net/2011/10/07/0-3-3-has-arrived/">FIFE 0.3.3</ulink> (released
-            a few days ago). This was a bit of a pain-in-butt package, that started to build
-            properly after a SCons update (also forwarded to the openSUSE devel project in
-            devel:tools:builders).</para>
-        </listitem>
-        <listitem>
-          <para>Updated <ulink url="http://guichan.sourceforge.net/wiki/index.php/Main_Page"
-              >guichan</ulink> to the latest release (0.8.2) and backported a commit that enables
-            UTF-8;</para>
-        </listitem>
-        <listitem>
-          <para>Updated SCons to 2.1.0;</para>
-        </listitem>
-      <listitem>
-        <para>ENet was updated to latest version (1.3.3).</para>
-      </listitem>
-      </itemizedlist></para>
-    <para><inlinegraphic
-        fileref="http://www.marques.so/wp-content/uploads/2011/10/Screenshot-at-2011-10-11-193815-1024x765.png"
-        width="30%"/></para>
-    <para>Regarding Unknown Horizons packaging, I’ve also fixed some pending issues:<itemizedlist>
-        <listitem>
-          <para>Added python-enet package: we now provide this so we can drop the binary blob
-            bundled with Unknown Horizons (depends on libenet &gt;= 1.3.3);</para>
-        </listitem>
-        <listitem>
-          <para>UH now requires FIFE &gt;= 0.3.3, which is no longer backward compatible;</para>
-        </listitem>
-        <listitem>
-          <para>Updated %post and %postun scriptlets.</para>
-        </listitem>
-        <listitem>
-          <para>Sources are a bit fatter now, using .xz now.</para>
-        </listitem>
-      </itemizedlist></para>
-    <para>To install Unknown Horizons 2011.3rc3 please use one of the available 1-Click installers
-      for openSUSE:<itemizedlist>
-        <listitem>
-          <para>
-            <ulink
-              url="http://download.opensuse.org/repositories/games:/unknown-horizons/openSUSE_11.4/unknown-horizons.ymp"
-              >Install for openSUSE 11.4</ulink>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            <ulink
-              url="http://download.opensuse.org/repositories/games:/unknown-horizons/openSUSE_Tumbleweed/unknown-horizons.ymp"
-              >Install for openSUSE Tumbleweed</ulink>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            <ulink
-              url="http://download.opensuse.org/repositories/games:/unknown-horizons/openSUSE_Factory/unknown-horizons.ymp"
-              >Install for openSUSE Factory</ulink>
-          </para>
-        </listitem>
-      </itemizedlist></para>
-    <!--($ ld: 13.10.11 sm $)-->
+    </blockquote> -->  
+  <blockquote>
+    <title><ulink
+      url="http://www.marques.so/2011/11/unknown-horizons-2011-3-rc4-gamesunknown-horizons/"
+      >Nelson Marques: Unknown Horizons – 2011.3 RC4 @
+      games:unknown-horizons</ulink></title>
+    <para>The development around <ulink url="http://www.unknown-horizons.org">Unknown
+      Horizons</ulink> and <ulink url="http://www.fifengine.de">FIFE</ulink> has been
+      intensified in the last months, and a few days ago FIFE has released a maintenance
+      version (FIFE 0.3.3r2) aimed to correct a few bugs and help the deployment of Unknown
+      Horizons.</para>
+    <para>The development repository of Unknown Horizons for <ulink
+      url="http://www.opensuse.org">openSUSE</ulink> is made on games:unknown-horizons
+      repository (courtesy of the games maintainers), and it currently provides the latest
+      Release Candidate (RC4) of the upcoming version 2011.3 to be released during the next
+      weekend. (...)</para>
+    <!--($ ld: 10.11.11 sm $)-->
   </blockquote>
 </sect1>

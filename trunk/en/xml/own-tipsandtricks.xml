@@ -68,24 +68,28 @@
         present a text-based menu for the user to select what operating system to install.
         (...)</para>
 <!-- ($ Id: 10.11.11 sm $)-->    </blockquote>
+    <!--
     <blockquote>
       <title>
         <ulink url="http://stick.gk2.sk/blog/2011/11/getting-ssh-fingerprints-for-machines-in-your-network/">Pavol Rusnak: Getting SSH fingerprints for machines in your network</ulink>
       </title>
       <para>Some time ago we were trying to get SSH fingerprints for all machines in our local
         network. Solution is not that straightforward, but it’s not a rocket science either:
-        <programlisting>#!/bin/bash
+        <programlisting>
+#!/bin/bash
 tmpfile=$(mktemp)
 for i in $(seq 2 254); do
-    ssh-keyscan -t rsa,dsa,ecdsa 192.168.1.$i &gt;&gt; $tmpfile
-done
+    ssh-keyscan -t rsa,dsa,ecdsa 192.168.1.$i &gt; &gt; $tmpfile
+    done
 ssh-keygen -l -f $tmpfile
-rm -f $tmpfile</programlisting></para>
+rm -f $tmpfile
+        </programlisting>
+      </para>
       <para>First, we retrieve the keys using ssh-keyscan, store them into temporary file and
         compute fingerprints afterwards using ssh-keygen. Or is there a less complex and more
         elegant solution?</para>
       <para>PS: Thanks <ulink url="http://administratosphere.wordpress.com/2011/05/28/getting-and-verifying-ssh-fingerprints/">David</ulink> for kicking in the right direction.</para>
-<!-- ($ Id: 10.11.11 sm $)-->    </blockquote>
+    </blockquote> -->
     <blockquote>
       <title>
         <ulink url="http://olex.openlogic.com/wazi/2011/openssl-expert-tips-and-tricks-test-and-benchmark-servers/">Wazi/Carla Schroder: OpenSSL Expert Tips and Tricks: Test and Benchmark Servers</ulink>
