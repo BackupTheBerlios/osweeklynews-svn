@@ -22,12 +22,27 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.makeuseof.com/tag/give-computer-voice-espeak-windows-linux/">MakeUseOf/Justin Pot: Give Your Computer A Voice With eSpeak [Windows &amp; Linux]</ulink>
+        <ulink
+          url="http://opensuseadventures.blogspot.com/2011/11/gobi-loader-and-mobile-broadband.html"
+          >Roger Luedecke: Gobi loader and mobile broadband providers</ulink>
       </title>
-      <para>Let your computer do the talking. Install eSpeak and you can make your computer say anything, in a wide variety of languages.</para>
-      <para>Looking for a lightweight <ulink url="http://www.makeuseof.com/dir/tag/text-to-speech/">text to speech</ulink> program? Whether you want to listen to your favorite blog while doing the dishes, or just make your computer say naughty words to your friends so you can giggle like schoolchildren, <ulink url="http://espeak.sourceforge.net/">eSpeak</ulink> is a great tool for the job. It’s “a compact open source software speech synthesizer for English and other languages” according to its website. You can use official versions of eSpeak on <ulink url="apt:espeak-gui">Linux</ulink> (Editors Note: the link is just for Debian/Ubuntu users) and <ulink url="http://espeak.sourceforge.net/download.html">Windows</ulink>. (...)</para>
-      <para>Editors Note: eSpeak packages for openSUSE are <ulink url="http://software.opensuse.org/search?p=1&amp;baseproject=ALL&amp;q=espeak">available via OBS</ulink>.</para>
-<!-- ($ Id: 11.11.11 sat $)-->    </blockquote>
+      <para>I don't know how many of you have 3G hardware built into your netbooks, but as you can
+        probably guess its not always straightforward. Frankly, it took me months to figure out what
+        I was doing and get it working consistently. Then while I was running 11.4 I decided to give
+        Mandriva a try (which had some critical flaws) and so I reinstalled openSUSE. Now all of a
+        sudden the process I had figured out so well, didn't work as it should have. I was tired of
+        reinstalling and trying to figure it out, so I figured I would just wait until 12.1 came out
+        and pray that the fresh install of it would fix my problem. </para>
+      <para>So now I have installed 12.1RC2. And at first it looked encouraging, though the hardware
+        wasn't accesible quite I could however go into the NetworkManager Mobile Broadband tab to
+        set up a connection and it would show me Verizon as selectable. That is what the crucial
+        problem I have been having is about; Verizon is not selectable for some odd reason. Maybe,
+        just maybe I somehow did get the firware mixed up but I severely doubt it since I remember
+        having to go through this process a few times.</para>
+      <para><inlinegraphic
+          fileref="http://4.bp.blogspot.com/-wcHIM8JzaeI/TsCNhUw6VyI/AAAAAAAAAKY/ZmmWUIKDcVs/s640/whereisverizon.png"
+          width="40%"/></para>
+<!-- ($ Id: 15.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://linuxaria.com/article/gedit-an-easy-to-use-text-editor-with-many-advanced-features?lang=en">Linuxaria/Frank Harris-Smith: gEdit, an easy to use text editor with many advanced features</ulink>

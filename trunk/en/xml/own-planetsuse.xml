@@ -19,54 +19,68 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://www.oyranos.org/2011/11/colour-management-in-opensuse-12-1/">Kai-Uwe
-        Behrmann: Colour Management in openSUSE-12.1</ulink></title>
-    <para>The <ulink url="http://www.oyranos.org/">Oyranos Colour Management System</ulink> will be
-      in the upcoming <ulink url="http://www.opensuse.org/">openSUSE</ulink>-12.1 release. With the
-      new library users can configure their ICC profiles and settings in one central place. It
-      brings as well a set of command line tools like <emphasis role="italic"
-        >oyranos-policy</emphasis> for handling policy configuration files and <emphasis
-        role="italic">oyranos-profiles</emphasis> for installation of ICC profiles. KDE users can
-      install the <emphasis role="italic">KolorManager</emphasis> package. This Oyranos front end
-      adds a system settings control panel for individual settings adaption. But most systems will
-      run fine with Oyranos defaults. (...)</para>
-    <para><inlinegraphic fileref="http://www.oyranos.org/images/KolorManager-oS12.1_arrow.png"
-        width="40%"/></para>
-    <!--($ ld: 10.11.11 sm $)-->
+    <title><ulink url="http://www.oyranos.org/2011/11/colour-management-in-opensuse-12-1/">Sascha
+        Manns: Plasma Activities in Balsam Professional</ulink></title>
+    <para><inlinegraphic fileref="http://saigkill.homelinux.net/images/preferences-activities.png"/>
+      Maybe you've noticed this Icon in your Taskbar? But what should you do with this? This i would
+      like to tell you in this Blog. </para>
+    <para>The Name of this Icon is "Activity Manager" and its job is to organize a "Activity". But
+      whats that? We have this Tool per default in KDE 4.7. But sadly some of us not knowing exactly
+      what to to with this. </para>
+    <para>The first time who uses a Project this Activities in a constant way, this was the Plasma
+      Active Project. </para>
+    <para>The Idea is to collect Programs, Documents, Contacts, Pictures, Movies and
+      Internet-Bookmarks in a human understandable way. In the real life we're collecting similar
+      things in similar "Mind-Boxes". The Activities using the same Scheme. </para>
+    <para>Let's guessing we are organizing a Birthday-Party for our Grandma. We need for that Task
+      some special Contacts, maybe some Websites with Party-Accesoires, maybe some nice little
+      Movies from Grandmas golden times and a Textwriter Program who you can prepare Invitements for
+      the Party. </para>
+    <para>The Activities can help you know. Creating an new Activity presents a blank Screen. If
+      you're starting an Application like the Writer you can use the share-like-connect Combo to
+      make the App available in the present Activity. You can use it to many interesting things.
+      (...)</para>
+    <!--($ ld: 15.11.11 sm $)-->
   </blockquote>
   <blockquote>
     <title><ulink
-        url="http://jaegerandi.blogspot.com/2011/11/opensuse-121-on-road-to-goldmaster-and.html"
-        >Andreas Jaeger: openSUSE 12.1 on the road to Goldmaster - and one bug more
-      fixed</ulink></title>
-    <para>Several people have reported in the past that during installation the system hangs
-      "forever" (see bug bnc#722858) starting udev. The problem was that this did not appear
-      reproduceable. It appeared once on my machine and when I brought the machine to Steffen to
-      help debugging, I couldn't reproduce it. After some more tries, it was reproduceable but not
-      everytime. Steffen initially thought it was a kernel race with module loading and thus we
-      added "maxcpus=1" to the kernel command line. This made the bug less likely but it still
-      happened. But now Christian, Coolo and myself had each a machine for reproduction and figured
-      out that udevadm was waiting for some events and timing out after 10 minutes as that was the
-      timeout in the installation system. So, one idea was to use the normal 30s as timeout so that
-      fewer people noticed. In the end Coolo found the culprit: A bug in udev that got fixed in
-      upstream udev a month ago that we got with a udev update a couple of months ago. Coolo fixed
-      this with a new udev package that has been updated for 12.1 now. So, these hangs might have
-      not only happened during installation but also at normal booting and I'm glad that Coolo
-      decided to hunt down this bug. (...)</para>
-    <!--($ ld: 10.11.11 sm $)-->
+        url="http://jaegerandi.blogspot.com/2011/11/just-three-more-days-until-release-of.html"
+        >Andreas Jaeger: What has changed since RC2 in openSUSE 12.1?</ulink></title>
+    <para>Just three more days until the release of openSUSE 12.1. Last Friday, 11th of November,
+      Coolo declared 12.1 as golden and the openSUSE community is now busy pushing out everything to
+      the mirros and reworking the openSUSE web pages for the launch. If you like more information
+      about openSUSE 12.1, check the <ulink url="http://en.opensuse.org/Portal:12.1">openSUSE 12.1
+        Portal</ulink>. Since the release of RC2 quite a number of bugs have been fixed. During the
+      RC phase and especially after the last RC, Coolo pushes for bugs that cannot be fixed with an
+      online update, thus bugs that break initial installation, installed defaults and the update
+      applets. (...)</para>
+    <!--($ ld: 15.11.11 sm $)-->
   </blockquote>
   <blockquote>
-    <title><ulink url="http://blog.jospoortvliet.com/2011/11/121-closing-in.html">Jos Poortvliet:
-        12.1 closing in!</ulink></title>
-    <para>We're about to put the finishing touches on openSUSE 12.1 and the amount of activity in
-      the <ulink url="http://blog.jospoortvliet.com/2011/11/en.opensuse.org/openSUSE:IRC_list"
-        >openSUSE IRC channels</ulink> is impressive. I see people working 12-14-16 hours a day,
-      fixing the last issues, writing release notes, and in short getting this release ready for our
-      users. Respect! I myself have upgraded my laptop to openSUSE 12.1 RC2 now and I got to see the
-      new Plasma Desktop. Overall, the difference between Tumbleweed and 12.1 are minimal. As
-      expected, considering <ulink url="http://opensuse.org/Tumbleweed">Tumbleweed</ulink>
-      (openSUSE's cool rolling release repository) was a hair away from 12.1, the biggest
-      differences are probably artwork and of course Plasma 4.7 instead of 4.6...</para>
-    <!--($ ld: 10.11.11 sm $)-->
+    <title><ulink url="http://suseserver.de/?p=56">Jörg Stephan: The Packman Repo (cause of
+        sox)</ulink></title>
+    <para>This post does not target any server specific issue. But aims on showing you another repo
+      wich is not already placed in the official OpenSuse repository. This is called Packman <ulink
+        url="http://packman.links2linux.de/">http://packman.links2linux.de/</ulink> In this repo you
+      can find many software pakets which you maybe need. I found the repo while trying to convert
+      some of my .ogg files to .mp3. A forum just told me that i could do it just with sox file.ogg
+      file.mp3 (...)</para>
+    <!--($ ld: 15.11.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink
+        url="http://fridrich.blogspot.com/2011/11/it-has-been-long-time-since-i-last-time.html"
+        >Fridrich Strba: LibreOffice Visio Import filter: the goodness soon on your
+      desktop</ulink></title>
+    <para>It has been a long time since I last time blogged about the LibreOffice Visio import
+      filter. My silence did not prevent a pretty cool code from falling gradually into our git
+      repository. To the point where now we are working on the last 5% of features that normally
+      take the 95% of development time. But, let us see what happened since my July blog: First of
+      all, Eilidh was busy as a bee and, in the second half of the Google Summer of Code,
+      implemented support of stylesheets, stencils and basic text. She also debugged and fixed quite
+      a number of imperfections that Valek found. Frankly speaking, this Google Summer of Code was
+      by far the best from my point of view. We managed to achieve a very good fidelity of import
+      only in about 3 and half months. Impressive.</para>
+    <!--($ ld: 15.11.11 sm $)-->
   </blockquote>
 </sect1>
