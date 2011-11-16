@@ -34,18 +34,30 @@ everybody will be relieved to have it out, and ready to open the merge
 window. (...)</para>  
   </blockquote> -->  <blockquote>
     <title>
-      <ulink url="http://thread.gmane.org/gmane.linux.kernel/1212384">Linus Torvalds: Linux 3.2-rc1</ulink>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-1-Networking-1379085.html"
+        >Kernel Log: Coming in 3.2 (Part 1) - Networking</ulink>
     </title>
-    <para>So it&apos;s been two weeks since 3.1, and you know how it works by now.</para>
-    <para>I have to say, this wasn&apos;t my favorite merge window ever. I really
-wanted to take only things that had been in -next, but verifying it
-was fairly painful, since a lot of the trees had been rebased, and the
-ones that hadn&apos;t been rebased often had some extra patches that still
-showed up when I did my &quot;git log linux-next..FETCH_HEAD&quot; thing.</para>
-    <para>On the whole, most of it was all good, and I didn&apos;t really end up
-complaining to people. I&apos;m pretty sure that there were trees I
-shouldn&apos;t have let through, but the majority really had been in -next. (...)</para>
-<!-- ($ ld: 11.11.11 sat $)-->  </blockquote>
+    <para><emphasis role="bold">The TCP stack is now faster at adapting the data transmission rate
+        to the available line capacity. The drivers for Wi-Fi components by Atheros and Broadcom
+        have matured considerably; other drivers will support more LAN and Wi-Fi hardware in 3.2
+        than they did before.</emphasis></para>
+    <para>No major changes have been integrated into the main development branch of Linux since the
+        <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Linux-3-2-main-development-phase-complete-1375016.html"
+        >first release candidate</ulink> of Linuxý3.2 became available, closing this version's merge
+      window. Linus Torvalds will probably soon release the second RC of this kernel version, the
+      final release of which is expected to become available in mid to late January; until then,
+      Torvalds will mainly incorporate fixes and small, harmless improvements as he has done in the
+      past few days.</para>
+    <para>The Kernel Log is now in a position to provide a comprehensive overview of the most
+      important new features of Linux 3.2. As usual, this information will be presented within the
+      "Coming in 3.2" series of articles that will gradually cover the kernel's various functional
+      areas. Partý1 of the series is below and describes the most important changes to the network
+      stack, and the related LAN and Wi-Fi hardware drivers. Over the coming weeks, further articles
+      will discuss the kernel's storage support, filesystems, architecture code, infrastructure, and
+      other hardware drivers.</para>
+<!-- ($ ld: 16.11.11 sat $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://schaiba.wordpress.com/2011/11/12/kernel-weekly-news-12-11-2011/">Rares
