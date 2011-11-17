@@ -25,39 +25,15 @@
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
     <blockquote>
         <title>
-            <ulink url="http://kfreitag.tumblr.com/post/12463194435">Klaas Freitag: Kraft 0.44
-                released</ulink>
+            <ulink url="http://lizards.opensuse.org/2011/11/16/webyast-terminal-plugin/">Stefan
+                Schubert: WebYaST Terminal Plugin</ulink>
         </title>
-        <para>around fife month after the last release I am happy to annouce <ulink
-                url="http://volle-kraft-voraus.de/Main/Releases">version 0.44</ulink> of <ulink
-                url="http://volle-kraft-voraus.de/">Kraft</ulink>, the <ulink
-                url="http://www.kde.org">KDE</ulink> software to manage business documents like
-            offers and invoices in the small enterprise.</para>
-        <para>This development cycle was very much affected by work around the integration of the
-                <ulink url="http://userbase.kde.org/Akonadi">Akonadi</ulink> based address book. I
-            have gone through a lot of cycles of tries and tests, with various combinations of KDE-
-            and PIM libraries and Akonadi and Nepomuk setups. Not always the stack was transparent
-            to me nor the integration of the various parts perfect. But we’re KDE with our welknown
-            community, and so I finally had the pleasure to go through my and other code and fix it
-            togehter with Kevin and Tobias on Desktop Summit this summer. That brought back
-            motivation, thanks :-)</para>
-        <para>So now one of the strengthes of the KDE platform from the application developers POV,
-            which is the availability of powerful software building blocks such as an easy
-            integratable address book, is now back to Kraft and users can again fully benefit from
-            it.</para>
-        <para>Apart from that I did a lot of small and larger bugfixes, for example 0.44 contains a
-            full rewrite of the text template management for head- and footer texts. It contains a
-            more clear UI and context sensitive help now for the users benefit.</para>
-        <para>Kraft now also comes with localized PDF templates for documents. It was possible to
-            use custom templates before and there were localized ones around, but it was an
-            administrative task to use them. Now Kraft picks automatically the right one depending
-            on the language settings which should be a nice improvement for new users evaluating
-            Kraft.</para>
-        <para>As usual I am happy to get feedback. Kraft is also very open to contributions, as in
-            code, documentation, marketing bug reporting and such. Please check the <ulink
-                url="http://volle-kraft-voraus.de/Main/Contribution">Contribution Page</ulink> on
-            the project website for details.</para>
-        <!-- ($ ld: 09.11.11 sm $)-->
+        <para>During the <ulink url="http://en.opensuse.org/Portal:Hackweek">SUSE Hackweek</ulink>
+            Vladislav Lewin (member of the YaST team) has had the nice idea writing a WebYaST plugin
+            which provides a console terminal witch which the user has the opportunity to login on a
+            console on the target machine. He sould be able to start any console based application
+            there ( of course even YaST) (...)</para>
+        <!-- ($ ld: 17.11.11 sm $)-->
     </blockquote>
     <blockquote>
         <title><ulink url="http://kfreitag.tumblr.com/post/12527150375/kraft045">Klaas Freitag:
