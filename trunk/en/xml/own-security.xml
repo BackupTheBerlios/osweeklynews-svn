@@ -20,10 +20,9 @@
   <title>Security Updates</title>
   <para>To view the security announcements in full, or to receive them as soon as they&apos;re released,
     refer to the <ulink url="http://lists.opensuse.org/opensuse-security-announce/">openSUSE Security Announce</ulink> mailing list.</para>
-  <!--
   <blockquote>
-    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00000.html">
-        openSUSE-SU-2011:1203-1: important: rpm (CVE-2011-3378) </ulink></title>
+    <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00012.html"
+        >openSUSE-SU-2011:1238-1: critical: acroread </ulink></title>
     <table frame="void">
       <caption>openSUSE Security Announcement</caption>
       <col width="1.1*"/>
@@ -38,16 +37,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">rpm</emphasis>
+            <emphasis role="bold">acroread</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1203-1</td>
+          <td>openSUSE-SU-2011:1238-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Wed, 2 Nov 2011 20:08:26 +0100 (CET)</td>
+          <td>Mon, 14 Nov 2011 22:08:22 +0100 (CET)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -55,15 +54,15 @@
         </tr>
         <tr>
           <td>Description: </td>
-          <td>memory corruptionin rpm when verifying signatures </td>
+          <td>fixes 13 vulnerabilities</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
   <blockquote>
     <title><ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00001.html"
-        >openSUSE-SU-2011:1204-1: important: pam: fixing stack overflow (CVE-2011-3148) and DoS
-        (CVE-2011-3149)</ulink></title>
+        >openSUSE-SU-2011:1240-1: critical: VUL-0: flash-player: sec. update to version
+        11.1.102.55</ulink></title>
     <table frame="void">
       <caption>openSUSE Security Announcement</caption>
       <col width="1.14*"/>
@@ -78,38 +77,37 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">pam</emphasis>
+            <emphasis role="bold">flash-player</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1204-1</td>
+          <td>openSUSE-SU-2011:1240-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Wed, 2 Nov 2011 22:08:18 +0100 (CET) </td>
+          <td> Tue, 15 Nov 2011 14:08:24 +0100 (CET)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
-          <td>openSUSE 11.4</td>
+          <td>openSUSE 11.4 openSUSE 11.3</td>
         </tr>
         <tr>
           <td>Description: </td>
-          <td>stack overflow(CVE-2011-3148) and a DoS condition (CVE-2011-3149) </td>
+          <td>fixes 12 vulnerabilities</td>
         </tr>
       </tbody>
     </table>
   </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00005.html"
-        >openSUSE-SU-2011:1208-1: important: pam: fixing stack overflow (CVE-2011-3148), a local DoS
-        (CVE-2011-3149) and CVE-2010-3316</ulink>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00005.html">
+        openSUSE-SU-2011:1242-1: critical: MozillaFirefox</ulink>
     </title>
     <table frame="void">
       <caption>openSUSE Security Announcement</caption>
-      <col width="1.08*"/>
-      <col width="1.0*"/>
+      <col width="1.1*"/>
+      <col width="1*"/>
       <thead>
         <tr>
           <th/>
@@ -120,16 +118,16 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">pam</emphasis>
+            <emphasis role="bold">Mozilla Firefox</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1208-1</td>
+          <td>openSUSE-SU-2011:1242-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Thu, 3 Nov 2011 00:08:35 +0100 (CET) </td>
+          <td>Tue, 15 Nov 2011 15:08:31 +0100 (CET)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -137,7 +135,7 @@
         </tr>
         <tr>
           <td>Description: </td>
-          <td>stack overflow and DoS condition</td>
+          <td>fixes three vulnerabilities</td>
         </tr>
       </tbody>
     </table>
@@ -145,7 +143,7 @@
   <blockquote>
     <title>
       <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00009.html"
-        >openSUSE-SU-2011:1217-1: important: apache2: Fixed several security issues</ulink>
+        >openSUSE-SU-2011:1243-1: critical: MozillaFirefox secuirty update</ulink>
     </title>
     <table frame="void">
       <caption>SUSE Security Announcement</caption>
@@ -161,16 +159,100 @@
         <tr>
           <td>Package:</td>
           <td>
-            <emphasis role="bold">apache2</emphasis>
+            <emphasis role="bold">Motilla Firefox</emphasis>
           </td>
         </tr>
         <tr>
           <td>Announcement ID:</td>
-          <td>openSUSE-SU-2011:1217-1</td>
+          <td>openSUSE-SU-2011:1243-1</td>
         </tr>
         <tr>
           <td>Date:</td>
-          <td>Fri, 4 Nov 2011 09:08:34 +0100 (CET) </td>
+          <td>Tue, 15 Nov 2011 15:08:39 +0100 (CET)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td>fixes 6 vulnerabilities</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00009.html"
+        >openSUSE-SU-2011:1240-2: critical: VUL-0: flash-player: sec. update to version
+        11.1.102.55</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">flash-player</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:1240-2</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Wed, 16 Nov 2011 17:08:30 +0100 (CET)</td>
+        </tr>
+        <tr>
+          <td>Affected Products:</td>
+          <td>openSUSE 11.4</td>
+        </tr>
+        <tr>
+          <td>Vulnerability Type: </td>
+          <td> fixes 12 vulnerabilities is now available. It includes one version update.</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <blockquote>
+    <title>
+      <ulink url="http://lists.opensuse.org/opensuse-security-announce/2011-11/msg00009.html"
+        >openSUSE-SU-2011:1263-1: important: VUL-1: wireshark: new updates fix two DoS
+        issues</ulink>
+    </title>
+    <table frame="void">
+      <caption>SUSE Security Announcement</caption>
+      <col width="1.08*"/>
+      <col width="1.0*"/>
+      <thead>
+        <tr>
+          <th/>
+          <th/>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Package:</td>
+          <td>
+            <emphasis role="bold">wireshark</emphasis>
+          </td>
+        </tr>
+        <tr>
+          <td>Announcement ID:</td>
+          <td>openSUSE-SU-2011:1263-1</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>Fri, 18 Nov 2011 20:08:31 +0100 (CET)</td>
         </tr>
         <tr>
           <td>Affected Products:</td>
@@ -178,9 +260,9 @@
         </tr>
         <tr>
           <td>Vulnerability Type: </td>
-          <td>two security fixes</td>
+          <td>fixes two vulnerabilities is now available. It includes one version update.</td>
         </tr>
       </tbody>
     </table>
-  </blockquote> -->
+  </blockquote>
 </sect1>
