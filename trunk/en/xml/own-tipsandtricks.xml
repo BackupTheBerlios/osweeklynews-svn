@@ -22,23 +22,20 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://opensuseadventures.blogspot.com/2011/11/gobi-loader-and-mobile-broadband.html">Roger Luedecke: Gobi loader and mobile broadband providers</ulink>
+        <ulink
+          url="http://metaverse.wordpress.com/2011/11/20/preparing-to-install-opensuse-12-1-from-scratch/"
+          >Mike McCallister: Preparing to Install openSUSE 12.1 from Scratch</ulink>
       </title>
-      <para>I don&apos;t know how many of you have 3G hardware built into your netbooks, but as you can
-        probably guess its not always straightforward. Frankly, it took me months to figure out what
-        I was doing and get it working consistently. Then while I was running 11.4 I decided to give
-        Mandriva a try (which had some critical flaws) and so I reinstalled openSUSE. Now all of a
-        sudden the process I had figured out so well, didn&apos;t work as it should have. I was tired of
-        reinstalling and trying to figure it out, so I figured I would just wait until 12.1 came out
-        and pray that the fresh install of it would fix my problem. </para>
-      <para>So now I have installed 12.1RC2. And at first it looked encouraging, though the hardware
-        wasn&apos;t accesible quite I could however go into the NetworkManager Mobile Broadband tab to
-        set up a connection and it would show me Verizon as selectable. That is what the crucial
-        problem I have been having is about; Verizon is not selectable for some odd reason. Maybe,
-        just maybe I somehow did get the firware mixed up but I severely doubt it since I remember
-        having to go through this process a few times.</para>
-      <para><inlinegraphic fileref="http://4.bp.blogspot.com/-wcHIM8JzaeI/TsCNhUw6VyI/AAAAAAAAAKY/ZmmWUIKDcVs/s640/whereisverizon.png" width="40%"/></para>
-<!-- ($ Id: 15.11.11 sm $)-->    </blockquote>
+      <para>You may already know, but <ulink url="http://www.opensuse.org">openSUSE</ulink> released
+        v12.1 of the community distribution this week. With a new number before the decimal point, I
+        thought it would be a good time for a fresh, clean install on my aging laptop. I could just
+        upgrade my existing v11.4 installation, but I like to see what the new install looks like
+        from time to time. Doing a clean install also means I can share the process with you
+        too.</para>
+      <para>Clean installs do require a bit of preparation, though. You will be wiping your
+        partitions, so you want to preserve your existing data, and a bit of your configurations
+        before embarking on a new install. In this post, I’ll share what I did.(...)</para>
+<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -73,38 +70,37 @@
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/serving-cgi-scripts-with-nginx-on-opensuse-11.4">HowtoForge/Falko Timme: Serving CGI Scripts With Nginx On OpenSUSE 11.4</ulink>
+        <ulink
+          url="http://www.howtoforge.com/perfect-server-opensuse-12.1-x86_64-with-apache2-ispconfig-3"
+          >HowtoForge/Falko Timme:  The Perfect Server - OpenSUSE 12.1 x86_64 With Apache2
+          [ISPConfig 3]</ulink>
       </title>
-      <para>This tutorial shows how you can serve CGI scripts (Perl scripts) with nginx on OpenSUSE 11.4. While nginx itself does not serve CGI, there are several ways to work around this. I will outline two solutions: the first is to proxy requests for CGI scripts to Thttpd, a small web server that has CGI support, while the second solution uses a CGI wrapper to serve CGI scripts.
-
-(...)</para>
-<!-- ($ Id: 17.11.11 sat $)-->    </blockquote>
+      <para>This is a detailed description about how to set up an <emphasis role="bold">OpenSUSE
+          12.1 64bit (x86_64) </emphasis> server that offers all services needed by ISPs and
+        hosters: Apache web server (SSL-capable) with PHP, CGI and SSI support, Postfix mail server
+        with SMTP-AUTH, TLS and virtual mail users, BIND DNS server, Pureftpd FTP server, MySQL
+        server, Dovecot POP3/IMAP, Quota, Firewall, Mailman, etc. Since version 3.0.4, ISPConfig
+        comes with full support for the nginx web server in addition to Apache; this tutorial covers
+        the setup of a server that uses Apache, not nginx. (...)</para>
+<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.ibm.com/developerworks/linux/library/l-lpic3-313-3/index.html">IBM developerWorks/Roderick W. Smith: Learn Linux, 302 (Mixed environments): Winbind</ulink>
+        <ulink url="http://suseserver.de/?p=66">Jörg Stephan: openSUSE 12.1 – installation and
+          features</ulink>
       </title>
-      <para>If your network includes a domain controller (either a Windows computer or a Samba server), you can use its user database instead of or in addition to maintaining local login users in a Linux computer&apos;s local account database. Doing so requires using a set of tools known as Winbind. This toolset can be handy even for Linux computers that don&apos;t run Samba to share files or printers; users with Windows domain accounts can log in at the console or use SSH to access Linux-only features, use POP or IMAP mail servers with Windows domain authentication, and so on. (...)</para>
-<!-- ($ Id: 17.11.11 sat $)-->    </blockquote>
-<!--
-    <blockquote>
-      <title>
-        <ulink url="http://stick.gk2.sk/blog/2011/11/getting-ssh-fingerprints-for-machines-in-your-network/">Pavol Rusnak: Getting SSH fingerprints for machines in your network</ulink>
-      </title>
-      <para>Some time ago we were trying to get SSH fingerprints for all machines in our local
-        network. Solution is not that straightforward, but it’s not a rocket science either:
-        <programlisting>
-#!/bin/bash
-tmpfile=$(mktemp)
-for i in $(seq 2 254); do
-    ssh-keyscan -t rsa,dsa,ecdsa 192.168.1.$i &gt; &gt; $tmpfile
-    done
-ssh-keygen -l -f $tmpfile
-rm -f $tmpfile
-        </programlisting>
-      </para>
-      <para>First, we retrieve the keys using ssh-keyscan, store them into temporary file and
-        compute fingerprints afterwards using ssh-keygen. Or is there a less complex and more
-        elegant solution?</para>
-      <para>PS: Thanks <ulink url="http://administratosphere.wordpress.com/2011/05/28/getting-and-verifying-ssh-fingerprints/">David</ulink> for kicking in the right direction.</para>
-    </blockquote> -->  </sect2>
+      <para>openSUSE 12.1 is just released, to have some of the very nice features i need to setup a
+        complete new system. So what features are the one you want to have:<itemizedlist>
+          <listitem>
+            <para>Btrfs – Btrfs is a new filesystem which make usage of B-trees so take a look at
+                <ulink url="http://en.wikipedia.org/wiki/Btrfs"
+                >http://en.wikipedia.org/wiki/Btrfs</ulink> with this FS we can have a very great
+              feature</para>
+          </listitem>
+          <listitem>
+            <para>snapper – snapper is a new system which comes around with openSUSE 12.1 it can
+              handle Btrfs snapshots and gives new features to openSUSE such as restoring config
+              files after a failure or restore failed upgrades. (...)</para>
+          </listitem>
+        </itemizedlist></para>
+<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>  </sect2>
 </sect1>
