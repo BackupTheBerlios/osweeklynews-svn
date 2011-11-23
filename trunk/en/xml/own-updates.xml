@@ -25,14 +25,33 @@
 Version should be available at packman or software.opensuse.org/search max. 4 posts. -->
     <blockquote>
         <title>
-            <ulink url="http://lizards.opensuse.org/2011/11/16/webyast-terminal-plugin/">Stefan
-                Schubert: WebYaST Terminal Plugin</ulink>
+            <ulink
+                url="http://lizards.opensuse.org/2011/11/21/atiamd-fglrx-8-911-catalyst-11-11-rpm-available-for-opensuse-11-3-11-4-12-1/"
+                >Bruno Friedmann: ATI/AMD fglrx 8.911 Catalyst 11.11 rpm available for openSUSE
+                11.3, 11.4, 12.1</ulink>
         </title>
-        <para>During the <ulink url="http://en.opensuse.org/Portal:Hackweek">SUSE Hackweek</ulink>
-            Vladislav Lewin (member of the YaST team) has had the nice idea writing a WebYaST plugin
-            which provides a console terminal witch which the user has the opportunity to login on a
-            console on the target machine. He sould be able to start any console based application
-            there ( of course even YaST) (...)</para>
-        <!-- ($ ld: 17.11.11 sm $)-->
+        <para>Several of you has all kind of non feature (mostly called bugs) with Gnome3.2 and kde4
+            etc…</para>
+        <para>I will just copy/google translate/paste here the comment made by Sebastian Siebert on
+            his blog</para>
+        <para> Okay, now that was a long night for me was. ﷽ I’ve researched intensively since
+            yesterday evening after the problem of GNOME 3.2 and the XvBA hardware acceleration on
+            openSUSE 12.1. Here, a blog reader has pointed out that the direct installation of the
+            AMD Catalyst could solve the problem. However, I think the direct installation of
+            anything since like AMD will move the existing files, and thus endangering the integrity
+            of files. But I had to start somewhere and so did the RPM package and direct install AMD
+            compared. I could detect no difference in principle, except that some files were
+            installed in a different directory, where they had really nothing to be related. I could
+            at first make any sense why the RPM installation failed. To me a very banal story is
+            remembered. A specific search path ld.so.conf could possibly be kicked out in openSUSE
+            12.1. I have my current openSUSE 11.4 /etc/ld.so.conf compared with that of openSUSE
+            12.1 and lo and behold some search paths were removed. I have the necessary path to
+            /usr/X11R6/lib/ or created and /usr/X11R6/lib64 in /etc/ld.so.conf.d/fglrx.conf for the
+            fglrx driver, and lo and behold “vainfo” tells me that everything is in order. Now comes
+            the interesting question: Is the problem fixed with GNOME 3.2 now? The answer: YES! ﷽
+            So, dear people, you invite the makerpm-ati-down script with the updated packaging
+            script installs the driver as usual and have fun with the new openSUSE 12.1 and the AMD
+            Catalyst driver. (...)</para>
+        <!-- ($ ld: 22.11.11 sm $)-->
     </blockquote>
 </sect1>

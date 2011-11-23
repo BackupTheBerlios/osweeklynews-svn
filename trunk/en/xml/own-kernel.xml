@@ -56,23 +56,32 @@ updates&quot;.</para>
 <!-- ($ ld: 17.11.11 sat $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-1-Networking-1379085.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 3.2 (Part 1) - Networking</ulink>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-real-time-kernel-goes-Linux-3-0-1382791.html"
+        >h-online/Thorsten Leemhuis: Kernel Log: real-time kernel goes Linux 3.0</ulink>
     </title>
-    <para><emphasis role="bold">The TCP stack is now faster at adapting the data transmission rate to the available line capacity. The drivers for Wi-Fi components by Atheros and Broadcom have matured considerably; other drivers will support more LAN and Wi-Fi hardware in 3.2 than they did before.</emphasis></para>
-    <para>No major changes have been integrated into the main development branch of Linux since the
-        <ulink url="http://www.h-online.com/open/features/Kernel-Log-Linux-3-2-main-development-phase-complete-1375016.html">first release candidate</ulink> of Linuxý3.2 became available, closing this version&apos;s merge
-      window. Linus Torvalds will probably soon release the second RC of this kernel version, the
-      final release of which is expected to become available in mid to late January; until then,
-      Torvalds will mainly incorporate fixes and small, harmless improvements as he has done in the
-      past few days.</para>
-    <para>The Kernel Log is now in a position to provide a comprehensive overview of the most
-      important new features of Linux 3.2. As usual, this information will be presented within the
-      &quot;Coming in 3.2&quot; series of articles that will gradually cover the kernel&apos;s various functional
-      areas. Partý1 of the series is below and describes the most important changes to the network
-      stack, and the related LAN and Wi-Fi hardware drivers. Over the coming weeks, further articles
-      will discuss the kernel&apos;s storage support, filesystems, architecture code, infrastructure, and
-      other hardware drivers.</para>
-<!-- ($ ld: 16.11.11 sm $)-->  </blockquote>
+    <para><emphasis role="bold">The patches for real-time support are now based on a much more
+        recent kernel version. Torvalds has revoked a change merged into 3.2 which had come under
+        widespread criticism from developers. AMD and Intel have released new graphics
+        drivers.</emphasis></para>
+    <para>With the release of real-time (RT) kernel <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1214898">3.0.9-rt25</ulink>, Thomas Gleixner
+      has declared that the <ulink
+        url="http://www.h-online.com/open/features/What-s-new-in-Linux-3-0-1279552.html">Linux
+        3.0</ulink>-based RT tree is now ready for use in live systems. He noted that this new
+      version series represents a major leap forward and that development has run pretty smoothly,
+      despite major revisions to many of the core techniques.</para>
+    <para>Gleixner has now handed over responsibility for maintaining RT patches for Linux 3.0 to
+      Steven Rostedt, who recently released a <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1217680">pre-release version of Linux
+        3.0.9-rt26</ulink> for evaluation. Gleixner has ported the changes aimed at improving
+      real-time properties to pre-release versions of Linux 3.2 (<ulink
+        url="http://thread.gmane.org/gmane.linux.rt.user/7445">1</ulink>, <ulink
+        url="http://thread.gmane.org/gmane.linux.rt.user/7462">2</ulink>, <ulink
+        url="http://thread.gmane.org/gmane.linux.rt.user/7499">3</ulink>). The RT patch has shrunk
+      substantially in the process, as some of the changes have now been incorporated into the main
+      development tree.</para>
+<!-- ($ ld: 23.11.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://schaiba.wordpress.com/2011/11/19/kernel-weekly-news-19-11-2011/">Rares
