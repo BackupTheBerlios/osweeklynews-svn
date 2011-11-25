@@ -22,9 +22,7 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://metaverse.wordpress.com/2011/11/20/preparing-to-install-opensuse-12-1-from-scratch/"
-          >Mike McCallister: Preparing to Install openSUSE 12.1 from Scratch</ulink>
+        <ulink url="http://metaverse.wordpress.com/2011/11/20/preparing-to-install-opensuse-12-1-from-scratch/">Mike McCallister: Preparing to Install openSUSE 12.1 from Scratch</ulink>
       </title>
       <para>You may already know, but <ulink url="http://www.opensuse.org">openSUSE</ulink> released
         v12.1 of the community distribution this week. With a new number before the decimal point, I
@@ -58,25 +56,18 @@
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-types-variables-operators">LinuxCareer.com/Rares Aioanei: C development on Linux - Types, variables, operators - III.</ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/more-fun-with-vimscript/">Wazi/Juliet Kemp: More Fun with Vimscript</ulink>
       </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>As <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-comparison-between-c-and-other-programming-languages">promised</ulink>, starting with this part of our C development article, we will get started with learning, without further introduction. I couldn&apos;t find no better way to start other than this, because types, operators and variables are an essential part of C and you will use them all the time when writing your own programs. For example, you can write a simple C program without defining your own functions, but it&apos;s harder to do that without some variables, unless you wanna stick to &quot;Hello, world!&quot;. A variable is nothing more than a location in memory holding a value that can be altered (hence the name). But before you declare a variable you must know what kind of value you want it to hold, and here you will use types. And in order to <emphasis role="bold">
-          <emphasis role="italic">operate</emphasis>
-        </emphasis> on those variables, you&apos;ll need...operators, of course. I intend to make this course as concise as possible, so I recommend attention and as usual, practice. Any questions can be addressed on our <ulink url="http://forum.linuxcareer.com/">forums</ulink>, and we will do our best to answer them. (...)</para>
-<!-- ($ Id: 17.11.11 sat $)-->    </blockquote>
+      <para>In my <ulink url="http://olex.openlogic.com/wazi/2011/extending-vim-with-scripting/">last article</ulink>, I looked at some of the ways in which you can use <ulink url="http://olex.openlogic.com/packages/vimscript">Vimscript</ulink>, <ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink>‘s built-in scripting language, to set up that text editor to do exactly what you want it to. Apparently you liked what you saw and asked for more, so here are some additional tips and tricks to help you get Vim to jump through the hoops of your choice, including techniques for specifying ranges to work on, accepting user input, and debugging. (...)</para>
+<!-- ($ Id: 25.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink
-          url="http://www.howtoforge.com/perfect-server-opensuse-12.1-x86_64-with-apache2-ispconfig-3"
-          >HowtoForge/Falko Timme:  The Perfect Server - OpenSUSE 12.1 x86_64 With Apache2
-          [ISPConfig 3]</ulink>
+        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-12.1-x86_64-with-apache2-ispconfig-3">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 12.1 x86_64 With Apache2 [ISPConfig 3]</ulink>
       </title>
-      <para>This is a detailed description about how to set up an <emphasis role="bold">OpenSUSE
-          12.1 64bit (x86_64) </emphasis> server that offers all services needed by ISPs and
+      <para>This is a detailed description about how to set up an <emphasis role="bold">OpenSUSE 12.1 64bit (x86_64) </emphasis> server that offers all services needed by ISPs and
         hosters: Apache web server (SSL-capable) with PHP, CGI and SSI support, Postfix mail server
         with SMTP-AUTH, TLS and virtual mail users, BIND DNS server, Pureftpd FTP server, MySQL
         server, Dovecot POP3/IMAP, Quota, Firewall, Mailman, etc. Since version 3.0.4, ISPConfig
@@ -85,15 +76,13 @@
 <!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://suseserver.de/?p=66">Jörg Stephan: openSUSE 12.1 – installation and
-          features</ulink>
+        <ulink url="http://suseserver.de/?p=66">Jörg Stephan: openSUSE 12.1 – installation and features</ulink>
       </title>
       <para>openSUSE 12.1 is just released, to have some of the very nice features i need to setup a
         complete new system. So what features are the one you want to have:<itemizedlist>
           <listitem>
             <para>Btrfs – Btrfs is a new filesystem which make usage of B-trees so take a look at
-                <ulink url="http://en.wikipedia.org/wiki/Btrfs"
-                >http://en.wikipedia.org/wiki/Btrfs</ulink> with this FS we can have a very great
+                <ulink url="http://en.wikipedia.org/wiki/Btrfs">http://en.wikipedia.org/wiki/Btrfs</ulink> with this FS we can have a very great
               feature</para>
           </listitem>
           <listitem>
@@ -102,5 +91,12 @@
               files after a failure or restore failed upgrades. (...)</para>
           </listitem>
         </itemizedlist></para>
-<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>  </sect2>
+<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html">nixCraft/Vivek Gite: Linux: 25 PHP Security Best Practices For Sys Admins</ulink>
+      </title>
+      <para>PHP is an open-source server-side scripting language and it is a widely used. The Apache web server provides access to files and content via the HTTP OR HTTPS protocol. A misconfigured server-side scripting language can create all sorts of problems. So, PHP should be used with caution. Here are twenty-five php security best practices for sysadmins for configuring PHP securely. (...)</para>
+<!-- ($ Id: 25.11.11 sat $)-->    </blockquote>
+  </sect2>
 </sect1>
