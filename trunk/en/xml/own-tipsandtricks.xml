@@ -39,18 +39,19 @@
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://www.linuxforum.com/content.php/131-Screen-The-Path-For-Beginners">LinuxForum.com/steelmanronald06: Screen - The Path For Beginners</ulink>
-      </title>
-      <para><emphasis role="bold">Overview &amp; Uses</emphasis></para>
-      <para>Screen is a great tool, and highly recommended, tool for any Linux user. It provides a Terminal environment that can withstand network disconnects, random computer restarts, power outages at home and more. With screen you can be assured that if PuTTY, or whatever SSH Client you use, closes you will almost never lose your work. Sadly this is not true for a server restart, as far as I&apos;m aware, but it still provides amazing possibilities. In this wiki you&apos;ll find instructions for installation and customization that will not only enhance screen for the best, but will also make it more enjoyable to use. If you&apos;re like me, once you start to use screen you&apos;ll never go back to mundane old terminal. Please note that all of these steps were done on my system, which I will provide screenshots for, but this is not the only way to set your screen environment up. To add to that, there are also numerous other alterations you may make to your screen environment. Feel free to play around with it and see what you come up with. (...)</para>
-<!-- ($ Id: 17.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://how-to.linuxcareer.com/learning-linux-commands-dd">LinuxCareer.com/Rares Aioanei: Learning Linux commands: dd</ulink>
+        <ulink url="http://how-to.linuxcareer.com/learning-linux-commands-sed">LinuxCareer.com/Rares Aioanei: Learning Linux Commands: sed</ulink>
       </title>
       <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>What you&apos;re reading is only the first of the many articles from the &quot;Learning Linux commands&quot; series. Why would we want to do such a thing? Because it&apos;s useful to you to have every option and possible use of a widely used command all in one place. You will find some options or even some commands that you didn&apos;t even knew existed, and your life as a Linux user / admin will become easier. If you&apos;re not afraid of opening a terminal and know the basics of using a Linux system, this article is for you. If you seek further help or information consult manual pages or visit our new <ulink url="http://forum.linuxcareer.com/">Linux forum</ulink>. (...)</para>
-<!-- ($ Id: 18.11.11 sat $)-->    </blockquote>
+      <para>
+Welcome to the second part of our series, a part that will focus on sed, the GNU version. As you will see, there are several variants of sed, which is available for quite a few platforms, but we will focus on GNU sed versions 4.x. Many of you have already heard about sed and already used it, mainly as a substitution tool. But that is just a segment of what sed can do, and we will do our best to show you as much as possible of what you can do with it. The name stands for Stream EDitor, and here &quot;stream&quot; can be a file, a pipe or simply stdin. We expect you to have basic Linux knowledge and if you already worked with regular expressions or at least know what a regexp is, the better. We don&apos;t have the space for a full tutorial on regular expressions, so instead we will only give you a basic idea and lots of sed examples. There are lots of documents that deal with the subject, and we&apos;ll even have some recommendations, as you will see in a minute. If you require futher assistance please visit our <ulink url="http://forum.linuxcareer.com/">Linux Forum</ulink>. (...)</para>
+<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://how-to.linuxcareer.com/learning-linux-commands-awk">LinuxCareer.com/Rares Aioanei: Learning Linux Commands: awk</ulink>
+      </title>
+      <para><emphasis role="bold">1. Introduction</emphasis></para>
+      <para>In this case, the title might be a little misleading. And that is because awk is more than a command, it&apos;s a programming language in its own right. You can write awk scripts for complex operations or you can use awk from the command line. The name stands for Aho, Weinberger and Kernighan (yes, Brian Kernighan), the authors of the language, which was started in 1977, hence it shares the same Unix spirit as the other classic *nix utilities. If you&apos;re getting used to <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-introduction">C programming</ulink> or know it already, you will see some familiar concepts in awk, especially since the &apos;k&apos; in awk stands for the same person as the &apos;k&apos; in K&amp;R, the C programming bible. You will need some command-line knowledge in Linux and possibly some scripting basics, but the last part is optional, as we will try to offer something for everybody. Many thanks to Arnold Robbins for all his work involved in awk. (...)</para>
+<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
@@ -76,6 +77,12 @@
 <!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
     <blockquote>
       <title>
+        <ulink url="http://www.howtoforge.com/how-to-upgrade-opensuse-11.4-to-12.1-desktop-and-server">HowtoForge/Falko Timme: How To Upgrade OpenSUSE 11.4 To 12.1 (Desktop &amp; Server)</ulink>
+      </title>
+      <para>This guide shows how you can upgrade your OpenSUSE 11.4 desktop and server installations to OpenSUSE 12.1. (...)</para>
+<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
         <ulink url="http://suseserver.de/?p=66">Jörg Stephan: openSUSE 12.1 – installation and features</ulink>
       </title>
       <para>openSUSE 12.1 is just released, to have some of the very nice features i need to setup a
@@ -98,5 +105,13 @@
       </title>
       <para>PHP is an open-source server-side scripting language and it is a widely used. The Apache web server provides access to files and content via the HTTP OR HTTPS protocol. A misconfigured server-side scripting language can create all sorts of problems. So, PHP should be used with caution. Here are twenty-five php security best practices for sysadmins for configuring PHP securely. (...)</para>
 <!-- ($ Id: 25.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://linuxaria.com/howto/permanent-ssh-tunnels-with-autossh?lang=en">Linuxaria/Truelite.it: Permanent SSH Tunnels with autossh</ulink>
+      </title>
+      <para>There are many occasions where you need to create connections to machines and services that are protected by firewalls because it is appropriate to adequately protect them, but for which the creation of a VPN becomes an excessive burden.</para>
+      <para>
+For this reason, the ability to port forwarding via <ulink url="http://linuxaria.com/tag/ssh">SSH</ulink> is very useful for creating an encrypted tunnel from one machine to another, allowing you to enable only local access (such as a MySQL only listens locally) safely, with the only the problem that in case of problems, the SSH connection (and its tunnels) could fall.</para>
+<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>

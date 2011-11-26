@@ -281,8 +281,7 @@
         <para>To do so, <ulink url="https://features.opensuse.org/311039">just click here</ulink>,
           log in with your openSUSE account, and give us constructive feedback. Thanks !</para>
     </blockquote>
-    </sect3> -->    
-    <!--
+    </sect3> --><!--
     <sect3 role="medical">
       <title>Medical Team</title>
       <blockquote>
@@ -303,8 +302,7 @@
         <para>I would like to say that i give up from the project but i will try to contribute in
           translation and maybe in packaging. Thanks a lot guys!</para>
       </blockquote> 
-      </sect3> -->
-<!--
+      </sect3> --><!--
     <sect3 role="monoteam">
       <title>Mono Team</title>
       <blockquote>
@@ -355,13 +353,13 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 174)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 175)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 172)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 171)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -377,7 +375,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 124)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 126)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -390,35 +388,56 @@
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 19.11.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 26.11.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312970">Use YaST Theme</ulink>
+            <ulink url="https://features.opensuse.org/312996">KDE window frame (the top bar) coloured</ulink>
           </title>
-          <para>The theme used in YaST with the buttons and background is quite aesthetically pleasing for configuration and installation. However, the upstream Oxygen theme doesn&apos;t look really pleasing (in fact I personally believe it resembles KDE 2&apos;s theme more than anything). The YaST theme should be expanded to work in KDE and to replace Oxygen (though Oxygen can remain an option)</para>
+          <para>I&apos;d suggest making the window frame (the top bar) in a different colour, maybe green, if the window is active.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312972">zypper update license handling</ulink>
+            <ulink url="https://features.opensuse.org/312997">Port MGSE (Mint Gnome Shell Extensions) from Linux Mint</ulink>
           </title>
-          <para>With every flashplayer or java update &quot;zypper up&quot; asks to confirm the license agreement over and over again. It would be nice if the license needs confirmation ONLY if it has changed since the last &quot;Agreed&quot; action. Making the &quot;-l&quot; option default is not a very good idea since sometimes the license may change in an unpredictable way, but if it&apos;s unchanged it gets really annoying.</para>
+          <para>MGSE (Mint Gnome Shell Extensions) make Gnome Shell to look somewhat familiar to Gnome 2 users, by returning classical DE elements such as taskbar, desktop, main menu and multi-window workflow.
+The extentions can be optionally enabled and disabled.</para>
+          <para>Some screenshots are here:</para>
+          <para>http://www.linuxmint.com/tmp/blog/1851/linuxmint12-preview.png
+http://itbuben.org/blog/Unix-way/1903.html</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312974">Add Ext4 LVM snapshot support to Snapper</ulink>
+            <ulink url="https://features.opensuse.org/312999">Some easy way (one click) to switch off Akonadi + Nepomuk + Strigi</ulink>
           </title>
-          <para>Very simple. The way Snapper can work on Btrfs, enable it to work that way with the backup snapshots of Ext4 filesystems using Logical Volume Management.</para>
+          <para>Please help us - the users, who decide to use in the real business the Linux PIM management.
+Please make possible for us to choose - will we use the Semantic Desktop or just would like to switch it off for some reason.</para>
+          <para>Since years the idea of so called Semantic Desktop is taking huge time and efforts but results still are unappealing.</para>
+          <para>I admit the work of the developers and any one should be thankful for their efforts in making KDE the best free desktop ever. But... please give some chance to users to choose what they need and prefer.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312993">Install kernel-desktop from Live CD (GNOME and KDE)</ulink>
+            <ulink url="https://features.opensuse.org/313001">Update crystal kwin deco to 2.1</ulink>
           </title>
-          <para>Hello, actually OpenSUSE 11.4, and 12.1 install kernel-desktop from the standard DVD installer, at least if user choose to install a graphical desktop environment such KDE or GNOME. But I have found that Live CDs (GNOME and KDE) install kernel-default, this haven&apos;t got much sense for me. I think Live GNOME and Live KDE mediums should also install kernel-desktop by default instead of kernel-default.</para>
+          <para><ulink url="http://kde-look.org/content/show.php?content=75140">Crystal kwin decoration</ulink> is now at version 2.1 but kde-extra repo for openSUSE 12.1 still shows 2.0.5 </para>
         </blockquote>
-<!-- ($ ld: 19.11.11 sat *replaced with latest ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/313002">KDE4: widget for battery shows remaining time in popup</ulink>
+          </title>
+          <para>Since KDE 4.3 the battery widget does neither provide the remaining time nor a GUI way to change it.
+openSUSE follows upstream while other distributions patch this.</para>
+          <para>It is only shown in the popup, after you click on the widget. It is not shown directly and not shown mouse-over.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/313003">Installer: ability to choose encryption type / strength</ulink>
+          </title>
+          <para>I would like to request that a feature be added that allows a user to specify the encryption strength for their encrypted LVM. Previously on 11.4, the installer would accept the unlock key and then format the LUKS container to its own default (at the time I think 256bit aes-xts-something), which is overkill for a netbook, and may not be user-desirable. OpenSuSE 12.1 doesn&apos;t do this, honoring the LUKS setup that already exists, but nevertheless, being able to choose the bit strength and encryption type (such as aes-cbc-essiv, etc) would be nice. I would be willing to provide any help documentation for a &quot;help&quot; or &quot;what is this?&quot; button on this section (and it could be made part of the &quot;custom (for experts)&quot; section of disk partitioning.</para>
+        </blockquote>
+<!-- ($ ld: 26.11.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
@@ -434,8 +453,7 @@
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
@@ -453,8 +471,7 @@
           good installation. Three of my machines have been updated to 12.1 GM, and all are working
           quite well. </para>
       </blockquote>
-    </sect3> -->
-    <sect3 role="translationteam">
+    </sect3> -->    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
