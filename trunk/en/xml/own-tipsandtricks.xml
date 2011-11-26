@@ -113,5 +113,20 @@ Welcome to the second part of our series, a part that will focus on sed, the GNU
       <para>
 For this reason, the ability to port forwarding via <ulink url="http://linuxaria.com/tag/ssh">SSH</ulink> is very useful for creating an encrypted tunnel from one machine to another, allowing you to enable only local access (such as a MySQL only listens locally) safely, with the only the problem that in case of problems, the SSH connection (and its tunnels) could fall.</para>
 <!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://feedproxy.google.com/~r/cgoncalves/~3/Zc0xPQ8pcHc/socks-proxy-over-ssh.html"
+          >Carlos Gonçalves: SOCKS proxy over SSH</ulink></title>
+      <para>Here goes a quick and valuable tip people don't usually know, or at least a couple of
+        friends of mine were not aware of. The two keywords will be SOCKS and SSH. </para>
+      <para>Connecting over to a remote server, one can bypass unauthorized access blocked by
+        usually our network firewall. The most common examples given are restricted access to
+        Facebook, MSN or torrents. We can also have unlimited access to all kinds of contents thanks
+        to the nice sysadmin managing the network who puts no barriers whatsoever, but we may not
+        trust him or the network users to permit unencrypted data flowing openly. Having some way to
+        establish an encrypted connection to a known network who we trust, or distrust less, and
+        tunneling over it would be safer. This is where SOCKS and SSH can be much of helpful!</para>
+      <!-- ($ Id: 26.11.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>

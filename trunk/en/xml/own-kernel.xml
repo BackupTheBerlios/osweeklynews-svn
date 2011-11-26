@@ -32,28 +32,7 @@ discussion about a couple of minor things we would like to get
 resolved, but on the whole 3.1 is long over-due and by the KS I think
 everybody will be relieved to have it out, and ready to open the merge
 window. (...)</para>  
-  </blockquote> -->  <blockquote>
-    <title>
-      <ulink url="http://article.gmane.org/gmane.linux.kernel/1215747">Linus Torvalds: Linux 3.2-rc2</ulink>
-    </title>
-    <para>Linux 3.2-rc2 is out there now. Well, the git trees are there
-(kernel.org and github), and the tar-file should be all done, but the
-patch is still uploading.</para>
-    <para>One thng worth noting: I got the new release scripts right, so now the
--rc2 files are found in their proper location under &quot;v3.x/testing&quot;,
-unlike -rc1 that got put directly in &quot;v3.x&quot;. I&apos;ll fix the -rc1
-location when I&apos;m somewhere with better network.</para>
-    <para>And for being an -rc2 release of a pretty large merge-window, it seems
-to be quite reasonably sized. In fact, despite this having been the
-largest linux-next in a release in our linux-next history (I think),
-rc2 has the exact same number of commits since rc1 as we had during
-the 3.1 release.</para>
-    <para>About half the changes are architecture fixups (m68k and arm, with
-some powerpc and a smattering of others) Of the rest, about half is
-drivers (much of it drm), and the rest is &quot;filesystems and sundry
-updates&quot;.</para>
-    <para>The shortlog is appended for people who enjoy that level of detail. (...)</para>
-<!-- ($ ld: 17.11.11 sat $)-->  </blockquote>
+  </blockquote> -->
   <blockquote>
     <title>
       <ulink
@@ -84,8 +63,8 @@ updates&quot;.</para>
 <!-- ($ ld: 23.11.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://schaiba.wordpress.com/2011/11/19/kernel-weekly-news-19-11-2011/">Rares
-        Aioanei: kernel weekly news – 19.11.2011</ulink>
+      <ulink url="http://schaiba.wordpress.com/2011/11/26/kernel-weekly-news-26-11-2011/">Rares
+        Aioanei: kernel weekly news – 26.11.2011</ulink>
     </title>
     <para>Rares gives his weekly Kernel Review with openSUSE Flavor.</para>
   </blockquote>

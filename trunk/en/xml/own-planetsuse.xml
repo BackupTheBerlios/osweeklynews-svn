@@ -28,41 +28,45 @@
 <!--($ ld: 24.11.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://suseserver.de/?p=56">Jörg Stephan: The Packman Repo (cause of sox)</ulink>
+      <ulink url="http://www.oyranos.org/2011/11/quality-of-default-icc-profiles/">Kai-Uwe Behrmann:
+        Quality of Default ICC Profiles</ulink>
     </title>
-    <para>This post does not target any server specific issue. But aims on showing you another repo
-      wich is not already placed in the official OpenSuse repository.</para>
-    <para>This is called Packman <ulink url="http://packman.links2linux.de/">http://packman.links2linux.de/</ulink></para>
-    <para>In this repo you
-      can find many software pakets which you maybe need. I found the repo while trying to convert
-      some of my .ogg files to .mp3. A forum just told me that i could do it just with</para>
-    <para>sox file.ogg
-      file.mp3 (...)</para>
-<!--($ ld: 15.11.11 sm $)-->  </blockquote>
+    <para>On the internet are many places to download ICC profiles, which promise to implement
+      standards. But how reliable are these profiles and why should users and distributors care
+      about their quality? </para>
+    <para>Why quality counts? For many users is real value in reliable colour space definitions.
+      Most professionals and advanced amateurs know that wrongly implemented colorimetry can cause
+      them unwanted modifications and will sum up over repeated conversions and colour space
+      assignments until the error has rendered the colour material useless. But profile conformance
+      to the standard, which these profiles claim to represent, is not so obvious. A profile checker
+      can only detect conformance to the ICC standard itself, which is about the file format, but
+      not about the quality of the encoded data. </para>
+    <para>The preferred solution for professionals is to download ICC profiles only from trusted
+      vendors. Unfortunately for the open source community, most ICC profiles for common standards
+      are restrictively licensed and allow no modifications. However these licenses are a reaction
+      to people, who want to push stuff at whim and fake profile names. After all spreading low
+      quality fakes will mostly harm users. Such faked profile made it in many open source packages.
+      It would help the open source community, if vendors license their ICC profiles for standard
+      conditions after the new non restrictive ICC profile license. Then faking profiles, by the
+      reasoning of providing them under a free license, would not be needed any more. (...)</para>
+<!--($ ld: 26.11.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://fridrich.blogspot.com/2011/11/it-has-been-long-time-since-i-last-time.html">Fridrich Strba: LibreOffice Visio Import filter: the goodness soon on your desktop</ulink>
+      <ulink
+        url="http://sellingfreesoftwareforaliving.blogspot.com/2011/11/my-opensuse-12-journal-3-lotus-notes.html"
+        >Han Wen Kam: My openSUSE 12 Journal - 3: Lotus Notes 8.5.3</ulink>
     </title>
-    <para>It has been a long time since I last time blogged about the LibreOffice Visio import
-      filter. My silence did not prevent a pretty cool code from falling gradually into our <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">git repository</ulink>. To the point where now we are working on the last 5% of features that normally
-      take the 95% of development time. But, let us see what happened since my <ulink url="http://fridrich.blogspot.com/2011/07/libreoffice-visio-import-filter-round.html">July blog</ulink>:</para>
-    <para>First of
-      all, <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> was busy as a bee and, in the second half of the Google Summer of Code,
-      implemented support of stylesheets, stencils and basic text. She also debugged and fixed quite
-      a number of imperfections that <ulink url="http://bugware.livejournal.com/">Valek</ulink> found. Frankly speaking, this Google Summer of Code was
-      by far the best from my point of view. We managed to achieve a very good fidelity of import
-      only in about 3 and half months. Impressive. (...)</para>
-<!--($ ld: 15.11.11 sm $)-->  </blockquote>
-  <blockquote>
-    <title>
-      <ulink url="http://www.oyranos.org/2011/11/scarse-profile-library-warning/">Oyranos: Scarse Profile Library Warning</ulink>
-    </title>
-    <para>Scarse is a project for profiling scanners under GPL based on Argyll code. It started in
-      the old century and became pretty silent, with <ulink url="http://www.oyranos.org/2005/11/scarse-0-4-alpha-released/">the last news dating from 2005</ulink>. The project provides a nice collection of ICC profiles in the <ulink url="http://www.scarse.org/goodies/profiles/">Scarse Profile Library</ulink>, which is now
-      used by some open source graphics packages. ICC profiles referring to standards are used to
-      describe the exact colorimetry of a colour space. The ICC profiles are used to convert to and
-      from other colour spaces in order to exchange with applications, services and customers. It is
-      therefore crucial to meet these standards otherwise results will be incorrect right from the
-      beginning and might render further colour work damaged. (...)</para>
-<!--($ ld: 17.11.11 sm $)-->  </blockquote>
+    <para><ulink url="http://www-01.ibm.com/software/lotus/products/notes/">Lotus Notes</ulink> is
+      what I use at work and the latest v8.5.3 works well on openSUSE 11.4. Although it installed
+      without a hitch on 12.1, things goes awry when I start using it. Here are my observations and
+      how I managed to get it working again. :) </para>
+    <para>For starters, Lotus Notes 8.5.3 only managed to render about half of its interface. For
+      example, I could see my inbox but email preview pane is blank. Integrated <ulink
+        url="http://www-01.ibm.com/software/lotus/sametime/">SameTime</ulink> worked but workspaces
+      and replication tabs were blank too. I suspect it could be some incompatibility or confusion
+      with the GTK libs and I was right... Google is my friend and I discovered a brilliant soul who
+      had the same challenge, created a <ulink
+        url="http://lists.opensuse.org/opensuse-bugs/2011-11/msg03695.html">bug report</ulink>
+      against openSUSE and even created a workaround/fix.</para>
+<!--($ ld: 26.11.11 sm $)-->  </blockquote>
 </sect1>
