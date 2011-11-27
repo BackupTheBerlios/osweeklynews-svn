@@ -181,33 +181,52 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> --><!--
+      </sect3> -->
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.marques.so/2011/10/opensuse-12-1-delivers-gtk-3-2-with-broadway-backend/">Nelson Marques: openSUSE 12.1 delivers GTK+ 3.2 with Broadway backend!</ulink>
+          <ulink url="http://www.marques.so/2011/11/gnomeayatana12-1/">Nelson Marques:
+            GNOME:Ayatana:12.1</ulink>
         </title>
-        <para>On the 25th of September 2001, <ulink url="http://fedoraproject.org/wiki/User:Mclasen">Mathias Clasen</ulink> announces the <ulink url="http://mail.gnome.org/archives/gtk-devel-list/2011-September/msg00175.html">release of GTK+ 3.2.0</ulink>. This release includes delivers:<itemizedlist>
+        <para>Here’s what <ulink
+            url="http://download.opensuse.org/repositories/GNOME:/Ayatana:/12.1/openSUSE_12.1/"
+            >GNOME:Ayatana:12.1</ulink>ýdeliversýfor <ulink url="http://opensuse.org/Portal:12.1"
+            >openSUSE 12.1</ulink>:<itemizedlist>
             <listitem>
-              <para>Many improvements to the CSS theming support;</para>
+              <para><emphasis role="bold"><ulink url="http://launchpad.net/ubuntu-font-family"
+                    >ubuntu-font-family</ulink></emphasis> – the well designed Ubuntu fonts. This is
+                something most people shouldn’t miss, as I see it, no other package offers a better
+                option.</para>
             </listitem>
             <listitem>
-              <para>Width-for-height support in many more widgets (ex: GtkPanel, GtkMenuBar,
-                  GtkNotebook, etc);</para>
+              <para><emphasis role="bold"><ulink url="http://launchpad.net/light-themes"
+                    >gtk3-metatheme-ambiance</ulink></emphasis> – Ambiance GTK+3.0 metatheme
+                (requires mutter-ubuntu.</para>
             </listitem>
             <listitem>
-              <para>New experimental Wayland and <emphasis role="bold">HTML5 ‘Broadway’ backeds</emphasis>;</para>
+              <para><emphasis role="bold"><ulink url="http://launchpad.net/light-themes"
+                    >gtk3-metatheme-radiance</ulink></emphasis> – Radiance GTK+3.0 metatheme
+                (requires mutter-ubuntu.</para>
             </listitem>
             <listitem>
-              <para>GtkFileChooser and GtkAssistant received face-lifts;</para>
+              <para><emphasis role="bold"><emphasis role="bold">mutter</emphasis> – Mutter was
+                  hatched with “04_ignore_shadow_and_padding.patch” which makes it ignore the
+                  “shadow” and “padding” features used on Ubuntu’s Light themes.mutter</emphasis> –
+                Mutter was hatched with “04_ignore_shadow_and_padding.patch” which makes it ignore
+                the “shadow” and “padding” features used on Ubuntu’s Light themes.</para>
             </listitem>
             <listitem>
-              <para>New widgets (ex: GtkLockButton and GtkOverlay, etc);</para>
+              <para><emphasis role="bold"><ulink
+                    url="http://tiheum.deviantart.com/art/Faience-icon-theme-255099649"
+                    >icon-theme-faience</ulink></emphasis> – I’ve also added the beautiful Faience
+                Icon Theme for GNOME3, it comes in several flavors: (...)</para>
             </listitem>
           </itemizedlist></para>
+        <!--($ ld: 27.11.11 sm $)-->
       </blockquote>
-    </sect3> --><!--
+    </sect3> 
+    <!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
