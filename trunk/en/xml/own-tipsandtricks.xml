@@ -22,111 +22,63 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://metaverse.wordpress.com/2011/11/20/preparing-to-install-opensuse-12-1-from-scratch/">Mike McCallister: Preparing to Install openSUSE 12.1 from Scratch</ulink>
+        <ulink url="http://www.muktware.com/articles/3038">Muktware/Swapnil Bhartiya: How To Install Restricted Drivers, Formats In openSUSE 12.1</ulink>
       </title>
-      <para>You may already know, but <ulink url="http://www.opensuse.org">openSUSE</ulink> released
-        v12.1 of the community distribution this week. With a new number before the decimal point, I
-        thought it would be a good time for a fresh, clean install on my aging laptop. I could just
-        upgrade my existing v11.4 installation, but I like to see what the new install looks like
-        from time to time. Doing a clean install also means I can share the process with you
-        too.</para>
-      <para>Clean installs do require a bit of preparation, though. You will be wiping your
-        partitions, so you want to preserve your existing data, and a bit of your configurations
-        before embarking on a new install. In this post, I’ll share what I did.(...)</para>
-<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
+      <para>OpeSUSE, like Fedora, doesn&apos;t support non-free/proprietary formats in the community version. So, if you want to use proprietary or restricted codecs you will have to install restricted formats. It&apos;s extremely easy using openSUSE KDE.
+
+Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.1">page</ulink> and select the easier <ulink url="http://opensuse-community.org/codecs-kde.ymp">1-click</ulink> installation. (...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.muktware.com/articles/3037">Muktware/Swapnil Bhartiya: How To Set Up Printers In openSUSE</ulink>
+      </title>
+      <para>I had to struggled a bit to connect my HP Photosmart Prem c410 printer on openSUSE. Coming from Ubuntu, I was used to &apos;add printer&apos; button and just follow the click-next procedure.</para>
+      <para>Under openSUSE it&apos;s a bit different. openSUSE 12.1 comes with HPLIP Tool which makes it easier to install and configure HP printers. If your printer is connected through the wireless (as was mine), you can set it up using this tool.</para>
+      <para>HPLIP wants the user to be added to several groups (I learned that after 3 failed attempts, so I am saving your time). Before firing the HP Tool, go to YaST and click on &apos;User and Group Management Accounts&apos;. (...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.muktware.com/articles/3039">Muktware/Swapnil Bhartiya: How To Setup Networking In openSUSE 12.1 KDE</ulink>
+      </title>
+      <para>There is a very tiny (extremely tiny, as tiny as a microbe) price you have to pay when you use a highly customizable desktop environment like KDE. I had issues with networking (which was more to do with my ignorance than KDE) under openSUSE KDE 12.1.</para>
+      <para>While the live version showed the network icon in the tray, once I installed it on my desktop it was gone. There was no Internet.  I noticed this behavior only on the desktop, everything was fine on my laptop.</para>
+      <para>The reason being KDE defaults to YaST&apos;s Network setting if it detects that you are running a desktop. (...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://how-to.linuxcareer.com/learning-linux-commands-sed">LinuxCareer.com/Rares Aioanei: Learning Linux Commands: sed</ulink>
+        <ulink url="http://bashshell.net/exercises/exercise-test-multiple-aspects/">BashShell.net/Mike: Exercise: Test Multiple Aspects</ulink>
       </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>
-Welcome to the second part of our series, a part that will focus on sed, the GNU version. As you will see, there are several variants of sed, which is available for quite a few platforms, but we will focus on GNU sed versions 4.x. Many of you have already heard about sed and already used it, mainly as a substitution tool. But that is just a segment of what sed can do, and we will do our best to show you as much as possible of what you can do with it. The name stands for Stream EDitor, and here &quot;stream&quot; can be a file, a pipe or simply stdin. We expect you to have basic Linux knowledge and if you already worked with regular expressions or at least know what a regexp is, the better. We don&apos;t have the space for a full tutorial on regular expressions, so instead we will only give you a basic idea and lots of sed examples. There are lots of documents that deal with the subject, and we&apos;ll even have some recommendations, as you will see in a minute. If you require futher assistance please visit our <ulink url="http://forum.linuxcareer.com/">Linux Forum</ulink>. (...)</para>
-<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://how-to.linuxcareer.com/learning-linux-commands-awk">LinuxCareer.com/Rares Aioanei: Learning Linux Commands: awk</ulink>
-      </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>In this case, the title might be a little misleading. And that is because awk is more than a command, it&apos;s a programming language in its own right. You can write awk scripts for complex operations or you can use awk from the command line. The name stands for Aho, Weinberger and Kernighan (yes, Brian Kernighan), the authors of the language, which was started in 1977, hence it shares the same Unix spirit as the other classic *nix utilities. If you&apos;re getting used to <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-introduction">C programming</ulink> or know it already, you will see some familiar concepts in awk, especially since the &apos;k&apos; in awk stands for the same person as the &apos;k&apos; in K&amp;R, the C programming bible. You will need some command-line knowledge in Linux and possibly some scripting basics, but the last part is optional, as we will try to offer something for everybody. Many thanks to Arnold Robbins for all his work involved in awk. (...)</para>
-<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
+      <para>In many situations you will want to test for multiples aspects of the file or directory.    There are also a number of ways that you can set up these multiple tests.  This example looks for a file that exists and is writable. (...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
     <blockquote>
       <title>
-        <ulink url="http://olex.openlogic.com/wazi/2011/more-fun-with-vimscript/">Wazi/Juliet Kemp: More Fun with Vimscript</ulink>
+        <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-flow-control-iv">LinuxCareer.com/Rares Aioanei: C development on Linux - Flow Control - IV</ulink>
       </title>
-      <para>In my <ulink url="http://olex.openlogic.com/wazi/2011/extending-vim-with-scripting/">last article</ulink>, I looked at some of the ways in which you can use <ulink url="http://olex.openlogic.com/packages/vimscript">Vimscript</ulink>, <ulink url="http://olex.openlogic.com/packages/vim">Vim</ulink>‘s built-in scripting language, to set up that text editor to do exactly what you want it to. Apparently you liked what you saw and asked for more, so here are some additional tips and tricks to help you get Vim to jump through the hoops of your choice, including techniques for specifying ranges to work on, accepting user input, and debugging. (...)</para>
-<!-- ($ Id: 25.11.11 sat $)-->    </blockquote>
+      <para><emphasis role="bold">1. Introduction</emphasis></para>
+      <para>You have already been exposed to a small part of what flow control is in our <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-types-variables-operators">previous part</ulink>, namely the section about relational operators. As you start writing more complex programs, you will feel the need to control the order in which your program executes various parts. Flow control is present in most programming languages in one form or another, and what you&apos;re about to read here is essential to writing C programs.Everything you might want to ask or discuss you can take to our new <ulink url="http://forum.linuxcareer.com/">forums</ulink>, as before. (...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-12.1-x86_64-with-apache2-ispconfig-3">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 12.1 x86_64 With Apache2 [ISPConfig 3]</ulink>
+        <ulink url="http://blog.adityapatawari.com/2011/11/using-twitter-to-monitor-your-linux.html">Aditya Patawari: Using Twitter To Monitor Your Linux Server! </ulink>
       </title>
-      <para>This is a detailed description about how to set up an <emphasis role="bold">OpenSUSE 12.1 64bit (x86_64) </emphasis> server that offers all services needed by ISPs and
-        hosters: Apache web server (SSL-capable) with PHP, CGI and SSI support, Postfix mail server
-        with SMTP-AUTH, TLS and virtual mail users, BIND DNS server, Pureftpd FTP server, MySQL
-        server, Dovecot POP3/IMAP, Quota, Firewall, Mailman, etc. Since version 3.0.4, ISPConfig
-        comes with full support for the nginx web server in addition to Apache; this tutorial covers
-        the setup of a server that uses Apache, not nginx. (...)</para>
-<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
+      <para>Yes, you can use Twitter for monitoring your server. I won&apos;t say that it is a complete monitoring solution nor I will ask you to throw away your existing monitoring mechanisms. In fact the script I am talking about, <ulink url="http://myst.adityapatawari.com/">MYST</ulink> (AGPLv3), was not created for this purpose. It was created so that I could tweet without using browser with inspiration from Hiemanshu, a Fedora contributor, using <ulink url="http://code.google.com/p/python-twitter/">python-twitter</ulink> api.
+(...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/how-to-upgrade-opensuse-11.4-to-12.1-desktop-and-server">HowtoForge/Falko Timme: How To Upgrade OpenSUSE 11.4 To 12.1 (Desktop &amp; Server)</ulink>
+        <ulink url="http://how-to.linuxcareer.com/guide-to-rsnapshot-and-incremental-backups-on-linux">LinuxCareer.com/Javier L. Velasquez: Guide to rsnapshot and incremental backups on Linux</ulink>
       </title>
-      <para>This guide shows how you can upgrade your OpenSUSE 11.4 desktop and server installations to OpenSUSE 12.1. (...)</para>
-<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://suseserver.de/?p=66">Jörg Stephan: openSUSE 12.1 – installation and features</ulink>
-      </title>
-      <para>openSUSE 12.1 is just released, to have some of the very nice features i need to setup a
-        complete new system. So what features are the one you want to have:<itemizedlist>
-          <listitem>
-            <para>Btrfs – Btrfs is a new filesystem which make usage of B-trees so take a look at
-                <ulink url="http://en.wikipedia.org/wiki/Btrfs">http://en.wikipedia.org/wiki/Btrfs</ulink> with this FS we can have a very great
-              feature</para>
-          </listitem>
-          <listitem>
-            <para>snapper – snapper is a new system which comes around with openSUSE 12.1 it can
-              handle Btrfs snapshots and gives new features to openSUSE such as restoring config
-              files after a failure or restore failed upgrades. (...)</para>
-          </listitem>
-        </itemizedlist></para>
-<!-- ($ Id: 21.11.11 sm $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html">nixCraft/Vivek Gite: Linux: 25 PHP Security Best Practices For Sys Admins</ulink>
-      </title>
-      <para>PHP is an open-source server-side scripting language and it is a widely used. The Apache web server provides access to files and content via the HTTP OR HTTPS protocol. A misconfigured server-side scripting language can create all sorts of problems. So, PHP should be used with caution. Here are twenty-five php security best practices for sysadmins for configuring PHP securely. (...)</para>
-<!-- ($ Id: 25.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://linuxaria.com/howto/permanent-ssh-tunnels-with-autossh?lang=en">Linuxaria/Truelite.it: Permanent SSH Tunnels with autossh</ulink>
-      </title>
-      <para>There are many occasions where you need to create connections to machines and services that are protected by firewalls because it is appropriate to adequately protect them, but for which the creation of a VPN becomes an excessive burden.</para>
-      <para>
-For this reason, the ability to port forwarding via <ulink url="http://linuxaria.com/tag/ssh">SSH</ulink> is very useful for creating an encrypted tunnel from one machine to another, allowing you to enable only local access (such as a MySQL only listens locally) safely, with the only the problem that in case of problems, the SSH connection (and its tunnels) could fall.</para>
-<!-- ($ Id: 26.11.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://feedproxy.google.com/~r/cgoncalves/~3/Zc0xPQ8pcHc/socks-proxy-over-ssh.html"
-          >Carlos Gonçalves: SOCKS proxy over SSH</ulink></title>
-      <para>Here goes a quick and valuable tip people don't usually know, or at least a couple of
-        friends of mine were not aware of. The two keywords will be SOCKS and SSH. </para>
-      <para>Connecting over to a remote server, one can bypass unauthorized access blocked by
-        usually our network firewall. The most common examples given are restricted access to
-        Facebook, MSN or torrents. We can also have unlimited access to all kinds of contents thanks
-        to the nice sysadmin managing the network who puts no barriers whatsoever, but we may not
-        trust him or the network users to permit unencrypted data flowing openly. Having some way to
-        establish an encrypted connection to a known network who we trust, or distrust less, and
-        tunneling over it would be safer. This is where SOCKS and SSH can be much of helpful!</para>
-      <!-- ($ Id: 26.11.11 sm $)-->
-    </blockquote>
+      <para><emphasis role="bold">1. Introduction</emphasis></para>
+      <para>rsnapshot is a backup tool written in Perl that utilizes rsync as its back-end. rsnapshot allows users to create customized incremental backup solutions. This article will discuss the following: the benefits of an incremental backup solution, rsnapshot&apos;s installation, its configuration, and usage examples. (...)</para>
+<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
