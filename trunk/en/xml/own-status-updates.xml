@@ -70,8 +70,7 @@
         <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-    </sect2> -->  
-  <!--
+    </sect2> --><!--
   <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
@@ -81,8 +80,7 @@
       <para>openSUSE 12.1 is <ulink url="http://news.opensuse.org/2011/11/16/opensuse-12-1-all-green/">officially released today</ulink>. This is a major milestone both for its users and developers, mainly because
         of new GNOME 3.2, systemd integration, and many otherý<ulink url="http://en.opensuse.org/12.1">exciting features</ulink>. (...)</para>
     </blockquote>
-  </sect2>-->
-  <sect2 role="teamreports">
+  </sect2>-->  <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
     <sect3 role="artteam">
@@ -141,7 +139,7 @@
         <para>Statistics can found at <ulink url="http://build.opensuse.org">Buildservice</ulink></para>
       </formalpara>
     </sect3>
-    <!--
+<!--
     <sect3 role="evergreen">
       <title>Evergreen</title>
       <blockquote>
@@ -160,8 +158,7 @@
           to somehow maintain a distributioný with very few manpower. (...)</para>
       </blockquote>
     </sect3>
-    -->
-<!--
+    --><!--
     <sect3 role="education">
       <title>Education Team</title>
       <blockquote>
@@ -181,52 +178,47 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->
-    <sect3 role="gnometeam">
+      </sect3> -->    <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
         <title>
-          <ulink url="http://www.marques.so/2011/11/gnomeayatana12-1/">Nelson Marques:
-            GNOME:Ayatana:12.1</ulink>
+          <ulink url="http://www.marques.so/2011/11/gnomeayatana12-1/">Nelson Marques: GNOME:Ayatana:12.1</ulink>
         </title>
-        <para>Here’s what <ulink
-            url="http://download.opensuse.org/repositories/GNOME:/Ayatana:/12.1/openSUSE_12.1/"
-            >GNOME:Ayatana:12.1</ulink>ýdeliversýfor <ulink url="http://opensuse.org/Portal:12.1"
-            >openSUSE 12.1</ulink>:<itemizedlist>
+        <para>Here’s what <ulink url="http://download.opensuse.org/repositories/GNOME:/Ayatana:/12.1/openSUSE_12.1/">GNOME:Ayatana:12.1</ulink>ýdeliversýfor <ulink url="http://opensuse.org/Portal:12.1">openSUSE 12.1</ulink>:<itemizedlist>
             <listitem>
-              <para><emphasis role="bold"><ulink url="http://launchpad.net/ubuntu-font-family"
-                    >ubuntu-font-family</ulink></emphasis> – the well designed Ubuntu fonts. This is
+              <para><emphasis role="bold">
+                  <ulink url="http://launchpad.net/ubuntu-font-family">ubuntu-font-family</ulink>
+                </emphasis> – the well designed Ubuntu fonts. This is
                 something most people shouldn’t miss, as I see it, no other package offers a better
                 option.</para>
             </listitem>
             <listitem>
-              <para><emphasis role="bold"><ulink url="http://launchpad.net/light-themes"
-                    >gtk3-metatheme-ambiance</ulink></emphasis> – Ambiance GTK+3.0 metatheme
+              <para><emphasis role="bold">
+                  <ulink url="http://launchpad.net/light-themes">gtk3-metatheme-ambiance</ulink>
+                </emphasis> – Ambiance GTK+3.0 metatheme
                 (requires mutter-ubuntu.</para>
             </listitem>
             <listitem>
-              <para><emphasis role="bold"><ulink url="http://launchpad.net/light-themes"
-                    >gtk3-metatheme-radiance</ulink></emphasis> – Radiance GTK+3.0 metatheme
+              <para><emphasis role="bold">
+                  <ulink url="http://launchpad.net/light-themes">gtk3-metatheme-radiance</ulink>
+                </emphasis> – Radiance GTK+3.0 metatheme
                 (requires mutter-ubuntu.</para>
             </listitem>
             <listitem>
-              <para><emphasis role="bold"><emphasis role="bold">mutter</emphasis> – Mutter was
-                  hatched with “04_ignore_shadow_and_padding.patch” which makes it ignore the
-                  “shadow” and “padding” features used on Ubuntu’s Light themes.mutter</emphasis> –
+              <para><emphasis role="bold"><emphasis role="bold">mutter</emphasis> – Mutter was hatched with “04_ignore_shadow_and_padding.patch” which makes it ignore the “shadow” and “padding” features used on Ubuntu’s Light themes.mutter</emphasis> –
                 Mutter was hatched with “04_ignore_shadow_and_padding.patch” which makes it ignore
                 the “shadow” and “padding” features used on Ubuntu’s Light themes.</para>
             </listitem>
             <listitem>
-              <para><emphasis role="bold"><ulink
-                    url="http://tiheum.deviantart.com/art/Faience-icon-theme-255099649"
-                    >icon-theme-faience</ulink></emphasis> – I’ve also added the beautiful Faience
+              <para><emphasis role="bold">
+                  <ulink url="http://tiheum.deviantart.com/art/Faience-icon-theme-255099649">icon-theme-faience</ulink>
+                </emphasis> – I’ve also added the beautiful Faience
                 Icon Theme for GNOME3, it comes in several flavors: (...)</para>
             </listitem>
           </itemizedlist></para>
-        <!--($ ld: 27.11.11 sm $)-->
-      </blockquote>
-    </sect3> 
-    <!--
+<!--($ ld: 27.11.11 sm $)-->      </blockquote>
+    </sect3>
+<!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -357,14 +349,14 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 378)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 379)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 211)</ulink>
+            <ulink url="https://features.opensuse.org/305493">Look at plymouth for splash during boot (Score: 210)</ulink>
           </title>
           <para>I wanted to open a fate feature about this when I first heard of plymouth, but
             reading
@@ -382,7 +374,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 171)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 172)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -411,56 +403,75 @@
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 26.11.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 02.12.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312996">KDE window frame (the top bar) coloured</ulink>
+            <ulink url="https://features.opensuse.org/313026">Do not enable Kwin blur effect by default</ulink>
           </title>
-          <para>I&apos;d suggest making the window frame (the top bar) in a different colour, maybe green, if the window is active.</para>
+          <para>By default, if Kwin compositing is enabled / supported on openSUSE KDE (even 12.1), the
+blur effect is enabled by default. This is a notorious option for KDE&apos;s desktop effects that is usually the culprit for why the user&apos;s effects run choppy or sluggish, especially if they do not have fairly modern hardware. It happens on any distro.</para>
+          <para><emphasis role="bold">This effect should not be enabled by default. Aesthetically, it does not bring much to the table; however, performance wise, it can create a poor first impression.</emphasis></para>
+          <para>When browsing different forums, it is one the first questions asked when a user complains about poor Kwin performance: &quot;Do you have blur enabled?&quot;</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312997">Port MGSE (Mint Gnome Shell Extensions) from Linux Mint</ulink>
+            <ulink url="https://features.opensuse.org/313027">Yast partitioner should detect encrypted partitions and prompt for password</ulink>
           </title>
-          <para>MGSE (Mint Gnome Shell Extensions) make Gnome Shell to look somewhat familiar to Gnome 2 users, by returning classical DE elements such as taskbar, desktop, main menu and multi-window workflow.
-The extentions can be optionally enabled and disabled.</para>
-          <para>Some screenshots are here:</para>
-          <para>http://www.linuxmint.com/tmp/blog/1851/linuxmint12-preview.png
-http://itbuben.org/blog/Unix-way/1903.html</para>
+          <para>Currently if starting the YAST partitioner on a system where the encrypted partitions were not unlocked at boot there is no way in the partition to unlock them (ie. entering the password).</para>
+          <para>This can be easily seen by booting the Opensuse 12.1 KDE LiveCD image on a machine that has an encrypted partition. You need to manually unlock the partition using either Dolphin or the command line. YAST partitioner detects the encrypted partition but provides no way to unlock it.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/312999">Some easy way (one click) to switch off Akonadi + Nepomuk + Strigi</ulink>
+            <ulink url="https://features.opensuse.org/313028">Yast partitioner should show de-activated VGs/LVs and allow them to be activated</ulink>
           </title>
-          <para>Please help us - the users, who decide to use in the real business the Linux PIM management.
-Please make possible for us to choose - will we use the Semantic Desktop or just would like to switch it off for some reason.</para>
-          <para>Since years the idea of so called Semantic Desktop is taking huge time and efforts but results still are unappealing.</para>
-          <para>I admit the work of the developers and any one should be thankful for their efforts in making KDE the best free desktop ever. But... please give some chance to users to choose what they need and prefer.</para>
+          <para>Sometimes LVs (LVM Logical Volumes) won&apos;t come up in status &apos;Active&apos;. This happens often for example if you boot the Opensuse 12.1 LiveCD on a machine which uses LVM partitioning. You have to manually follow this procedure to get the VGs and LVs to show up:</para>
+          <para>pvscan # find all Physical Volumes</para>
+          <para>vgscan # find all Volume Groups</para>
+          <para>lvscan # find all Logical Volumes</para>
+          <para>lvchange -ay /dev/TestingVG/home # activate a Logical Volume that&apos;s not activated by default</para>
+          <para>
+The YAST partitioner should automatically find all Physical Volumes and Volume Groups and show the deactivated Logical Volumes, with an option of course to activate these. The YAST Partitioner is the most logical place for this functionality in a GUI program.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313001">Update crystal kwin deco to 2.1</ulink>
+            <ulink url="https://features.opensuse.org/313029">Update option in Apper Software Management</ulink>
           </title>
-          <para><ulink url="http://kde-look.org/content/show.php?content=75140">Crystal kwin decoration</ulink> is now at version 2.1 but kde-extra repo for openSUSE 12.1 still shows 2.0.5 </para>
+          <para>Hi， I think with these features Apper will be better.</para>
+          <para>1. Update option</para>
+          <para>Nowadays Apper only ship with install and remove option. it&apos;s hardwork if you update.</para>
+          <para>2. Aggregation of packages</para>
+          <para>if you search an application, it gives you tens of packages with the same name, if you enabled many different repo. even within the same repo, it will give you different versions. it is confusing.</para>
+          <para>3. Stick Applications you installed to the roof and Applications you installed and updatable to the roof of roof by default. in YaST, you can do it by click Name tab, but Apper ships with no such method.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313002">KDE4: widget for battery shows remaining time in popup</ulink>
+            <ulink url="https://features.opensuse.org/313030">AppSet instead of Apper</ulink>
           </title>
-          <para>Since KDE 4.3 the battery widget does neither provide the remaining time nor a GUI way to change it.
-openSUSE follows upstream while other distributions patch this.</para>
-          <para>It is only shown in the popup, after you click on the widget. It is not shown directly and not shown mouse-over.</para>
+          <para>AppSet <ulink url="http://appset.altervista.org/joomla/en">http://appset.altervista.org/joomla/en</ulink> can be the default package manager on openSUSE cause, is written in QT and other distribution such Archlinux and Chakra Linux (know for his addiction with KDE desktop). (...)</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313003">Installer: ability to choose encryption type / strength</ulink>
+            <ulink url="https://features.opensuse.org/313035">Invent Consistent Font Naming Schema</ulink>
           </title>
-          <para>I would like to request that a feature be added that allows a user to specify the encryption strength for their encrypted LVM. Previously on 11.4, the installer would accept the unlock key and then format the LUKS container to its own default (at the time I think 256bit aes-xts-something), which is overkill for a netbook, and may not be user-desirable. OpenSuSE 12.1 doesn&apos;t do this, honoring the LUKS setup that already exists, but nevertheless, being able to choose the bit strength and encryption type (such as aes-cbc-essiv, etc) would be nice. I would be willing to provide any help documentation for a &quot;help&quot; or &quot;what is this?&quot; button on this section (and it could be made part of the &quot;custom (for experts)&quot; section of disk partitioning.</para>
+          <para>Currently, our package names for fonts are suboptimal. Here are some examples:</para>
+          <para>farsifonts</para>
+          <para>fonts-arabic</para>
+          <para>freefont</para>
+          <para>gnu-unifont</para>
+          <para>indic-fonts</para>
+          <para>intlfonts-ttf</para>
+          <para>xorg-x11-fonts</para>
+          <para>From a usability perspective, it would be better to make a consistent naming schema for font packages. Naming schemas from other distributions:</para>
+          <para>* Ubuntu: prefix with &quot;ttf-&quot;</para>
+          <para>*   Fedora: suffix with &quot;-fonts&quot;</para>
+          <para>With the above inconcistency, popular fonts like LinuxLibertine or dejavu cannot be found.
+
+Please document any decisions in the Package Guidelines regarding how to name our fonts correctly and consistently.</para>
         </blockquote>
-<!-- ($ ld: 26.11.11 sat *replaced with latest ones* $) -->      </sect4>
+<!-- ($ ld: 02.12.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
