@@ -68,6 +68,13 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
     <title>For System Administrators</title>
     <blockquote>
       <title>
+        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-12.1-x86_64-with-nginx-ispconfig-3">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 12.1 x86_64 With Nginx [ISPConfig 3]</ulink>
+      </title>
+      <para>This tutorial shows how to prepare an <emphasis role="bold">OpenSUSE 12.1 64bit (x86_64)</emphasis> server with nginx for the installation of <ulink url="http://www.ispconfig.org/">ISPConfig 3</ulink>, and how to install ISPConfig 3. Since version 3.0.4, ISPConfig comes with full support for the nginx web server in addition to Apache, and this tutorial covers the setup of a server that uses nginx instead of Apache. ISPConfig 3 is a webhosting control panel that allows you to configure the following services through a web browser: nginx and Apache web server, Postfix mail server, MySQL, Dovecot POP3/IMAP, BIND or MyDNS nameserver, PureFTPd, SpamAssassin, ClamAV, and many more.</para>
+      <para>If you want to use nginx instead of Apache with ISPConfig, please note that your nginx version must be at least 0.8.21, and you must install PHP-FPM as well. For CGI/Perl support, you must use fcgiwrap. This is all covered by this tutorial. (...)</para>
+<!-- ($ Id: 02.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
         <ulink url="http://blog.adityapatawari.com/2011/11/using-twitter-to-monitor-your-linux.html">Aditya Patawari: Using Twitter To Monitor Your Linux Server! </ulink>
       </title>
       <para>Yes, you can use Twitter for monitoring your server. I won&apos;t say that it is a complete monitoring solution nor I will ask you to throw away your existing monitoring mechanisms. In fact the script I am talking about, <ulink url="http://myst.adityapatawari.com/">MYST</ulink> (AGPLv3), was not created for this purpose. It was created so that I could tweet without using browser with inspiration from Hiemanshu, a Fedora contributor, using <ulink url="http://code.google.com/p/python-twitter/">python-twitter</ulink> api.
