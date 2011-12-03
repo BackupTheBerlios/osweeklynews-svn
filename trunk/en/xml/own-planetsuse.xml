@@ -20,55 +20,67 @@
 <sect1 role="planetsuse">
   <title>Planet SUSE</title>
   <blockquote>
-    <title><ulink url="http://suseserver.de/?p=99">Jörg Stephan: [Quick view:] btrfs &amp;
-        snapper</ulink></title>
-    <para>The real great feature in openSUSE 12.1 for me (as I am a server administrator) is btrfs
-      &amp; snapper. After installing the new server environment i guess its time to talk about this
-      feature a bit in detail. (...)</para>
-<!--($ ld: 24.11.11 sm $)-->  </blockquote>
+    <title><ulink
+        url="http://vavai.net/2011/11/suse-linux-enterprise-server-11-sp1-minimal-server-appliance/"
+        >Masim Sugianto: SUSE Linux Enterprise Server 11 SP1 Minimal Server
+      Appliance</ulink></title>
+    <para>I’m currently working as an IT system integrator on a <ulink
+        url="http://www.excellent.co.id">small company</ulink> based on Bekasi, a small town near
+      Jakarta Indonesia. The company founded by me and my young brother and covering on various jobs
+      regarding server setting, implementation, maintenance and workshop/training.</para>
+    <para>At first, installing server is an interesting jobs but after similar works on some client,
+      I feel bored with the process, ie :<orderedlist>
+        <listitem>
+          <para>Virtualization Server (VMWare, KVM, OpenVZ, Xen, etc) Installation</para>
+        </listitem>
+        <listitem>
+          <para>Server OS installation</para>
+        </listitem>
+        <listitem>
+          <para>Application Installation</para>
+        </listitem>
+        <listitem>
+          <para>Customizing the configuration</para>
+        </listitem>
+      </orderedlist></para>
+    <para>I think I could reduce the time for processing the above task by making an appliance using
+      SUSE Studio. An appliance will contains my default server setup and all of packages required
+      by application. The results are <ulink
+        url="http://susestudio.com/a/veav1Y/minimal-server-appliance"><emphasis role="bold">Minimal
+          Server Appliance</emphasis></ulink>. (...)</para>
+<!--($ ld: 3.12.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink url="http://www.oyranos.org/2011/11/quality-of-default-icc-profiles/">Kai-Uwe Behrmann:
-        Quality of Default ICC Profiles</ulink>
+      <ulink url="http://kohei.us/2011/11/30/performance-improvement-in-opening-ods/">Kohei Yoshida:
+        Performance improvement in opening ODS documents</ulink>
     </title>
-    <para>On the internet are many places to download ICC profiles, which promise to implement
-      standards. But how reliable are these profiles and why should users and distributors care
-      about their quality? </para>
-    <para>Why quality counts? For many users is real value in reliable colour space definitions.
-      Most professionals and advanced amateurs know that wrongly implemented colorimetry can cause
-      them unwanted modifications and will sum up over repeated conversions and colour space
-      assignments until the error has rendered the colour material useless. But profile conformance
-      to the standard, which these profiles claim to represent, is not so obvious. A profile checker
-      can only detect conformance to the ICC standard itself, which is about the file format, but
-      not about the quality of the encoded data. </para>
-    <para>The preferred solution for professionals is to download ICC profiles only from trusted
-      vendors. Unfortunately for the open source community, most ICC profiles for common standards
-      are restrictively licensed and allow no modifications. However these licenses are a reaction
-      to people, who want to push stuff at whim and fake profile names. After all spreading low
-      quality fakes will mostly harm users. Such faked profile made it in many open source packages.
-      It would help the open source community, if vendors license their ICC profiles for standard
-      conditions after the new non restrictive ICC profile license. Then faking profiles, by the
-      reasoning of providing them under a free license, would not be needed any more. (...)</para>
-<!--($ ld: 26.11.11 sm $)-->  </blockquote>
+    <para>I have great news to share with you. Calc’s ODS import filter in 3.5 should be
+      substantially faster when you have documents with a large number of named ranges. Read on if
+      you want to know more details.</para>
+    <para><emphasis role="bold">What happened?</emphasis></para>
+    <para>Laurent Godard, Markus Mohrhard, and myself have been working pretty hard in the past
+      month to bring the performance of ODS import filter to a reasonable level, especially with
+      documents containing a large number of named ranges.Here is the background. Laurent uses
+      LibreOffice as a platform for his professional extension, which makes heavy use of named
+      ranges. It programmatically generates ODS documents and inserts hundred’s or thousand’s of
+      named ranges as intermediary storage to further process the data. The problem was, however,
+      our import performance with that kind of documents was so suboptimal that this process was
+      taking a prohibitively long time. In order for his extension to perform optimally, our ODS
+      import filter needed to be optimized, and optimized heavily. (...)</para>
+<!--($ ld: 03.12.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
-      <ulink
-        url="http://sellingfreesoftwareforaliving.blogspot.com/2011/11/my-opensuse-12-journal-3-lotus-notes.html"
-        >Han Wen Kam: My openSUSE 12 Journal - 3: Lotus Notes 8.5.3</ulink>
+      <ulink url="http://e-tote-kala.blogspot.com/2011/12/dot-in-map.html">Kostas Koudaras: A dot in
+        the map</ulink>
     </title>
-    <para><ulink url="http://www-01.ibm.com/software/lotus/products/notes/">Lotus Notes</ulink> is
-      what I use at work and the latest v8.5.3 works well on openSUSE 11.4. Although it installed
-      without a hitch on 12.1, things goes awry when I start using it. Here are my observations and
-      how I managed to get it working again. :) </para>
-    <para>For starters, Lotus Notes 8.5.3 only managed to render about half of its interface. For
-      example, I could see my inbox but email preview pane is blank. Integrated <ulink
-        url="http://www-01.ibm.com/software/lotus/sametime/">SameTime</ulink> worked but workspaces
-      and replication tabs were blank too. I suspect it could be some incompatibility or confusion
-      with the GTK libs and I was right... Google is my friend and I discovered a brilliant soul who
-      had the same challenge, created a <ulink
-        url="http://lists.opensuse.org/opensuse-bugs/2011-11/msg03695.html">bug report</ulink>
-      against openSUSE and even created a workaround/fix.</para>
-<!--($ ld: 26.11.11 sm $)-->  </blockquote>
+    <para>I don't ever remembering suggesting a site but to be honest I rarely fall into sites that
+      not many people know and worth mentioning, also most of the times I do, I am a bit bored on
+      blog about it so I eventually never do ;-) Today though it's different, I am taking a break
+      from a presentation it was supposed to be ready...Well...Yesterday, but I am still looking for
+      the right kittens photos to complete this presentation(...don't ask...). Anyway normally I
+      would just watch a movie or something but I am a bit in a mood to blog and latelly I had too
+      much on my plate and had no time to do it, so here I am. (...)</para>
+<!--($ ld: 03.12.11 sm $)-->  </blockquote>
   <blockquote>
     <title><ulink url="http://kohei.us/2011/11/21/redesigned-autofilter-popup/">Kohei Yoshida:
         Redesigned autofilter popup</ulink></title>

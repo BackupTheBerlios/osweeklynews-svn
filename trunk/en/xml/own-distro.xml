@@ -26,20 +26,43 @@
     <title>Community Articles</title>
     <blockquote>
       <title>
-        <ulink url="http://sellingfreesoftwareforaliving.blogspot.com/2011/11/opensuse-121-gets-positive-review-on.html">Han Wen Kam: openSUSE 12.1 gets positive review on LAS</ulink>
+        <ulink url="http://opensuseadventures.blogspot.com/2011/11/impressions-of-121.html">Roger
+          Luedecke: Impressions of 12.1</ulink>
       </title>
-      <para>Nice and positive review of openSUSE 12.1 on the Linux Action Show on 20th Nov 2011. The
-        YouTube video is embedded below... you may fast-forward to 30:10 where they finally got down
-        to the review of openSUSE 12.1. </para>
-      <para>Most interesting (the best) comment on that YouTube page was from Jos Poortvliet (our
-        openSUSE Community Manager), &quot;VERY nice review guys! Fun to see how opinions on openSUSE﻿
-        have changed in the last year - from &apos;meh, yeah, is that distro still alive?&apos; to the
-        awesomeness now :D If you ever wanna talk about it with me - I&apos;d be happy to be on the
-        show...&quot; </para>
-      <para>As with most things in life, its all about perception and goodwill. openSUSE 12.1 is
-        polished and enjoyable but a number of the great features mentioned, including <ulink url="http://susestudio.com/">SUSE Studio</ulink> and <ulink url="https://build.opensuse.org/">openSUSE Build Service</ulink>, have been around for a
-        while... anyway, I&apos;m just happy &amp; enjoying the goodwill towards openSUSE. :)</para>
-<!--($ ld: 26.11.11 sm $)-->    </blockquote>
+      <para>First, I must reiterate that this blog in no way is intended to be explicitly technical
+        or even well organized. Rather, it is meant to be more conversational. So in this posting
+        I'll be stating my impressions now of the recently released 12.1 and some notes to new
+        users. </para>
+      <para>Honestly I have very mixed feelings about this release. But when you consider the
+        complexity of all the things a Linux distribution entails, with all of its technologies and
+        software this should ultimately be no surprise. Likewise with bugs; considering the
+        complexity there will of course be bugs. 12.1 offers a lot of new technologies, very little
+        of which I actually care about or find personally useful. Bugs... it seems like this release
+        is especially buggy. However I don't think that is actually the case, but rather that some
+        of the bugs that have cropped up are just a bit more "in your face" than some other bugs
+        that have cropped up. Some of these I ran into myself, but I certainly can't ignore the many
+        many improvements to the core technologies and software. (...)</para>
+<!--($ ld: 03.12.11 sm $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://sellingfreesoftwareforaliving.blogspot.com/2011/12/my-opensuse-12-journal-4-minor.html"
+          >Han Wen Kam: My openSUSE 12 Journal - 4: Minor Frustrations</ulink></title>
+      <para>This is my fourth journal entry for openSUSE 12.1 and it has been two weeks of
+        operational use on both my Thinkpad and home PC.ý Here are some additional minor
+        frustrations and some workarounds... and yes, I have posted on the openSUSE forums (just in
+        case you'd ask). </para>
+      <para><emphasis role="bold">Boot 12.1 using the old System V init</emphasis>
+      </para>
+      <para>In my first journal entry, I complained the lack of "chattiness" during boot since the
+        adoption of Systemd.ý You can easily switch to the old System V init on boot.ý At the grub
+        boot loader screen (usual 8 seconds delay) and <emphasis role="underline"><emphasis
+            role="bold">before</emphasis> you hit Enter</emphasis> to boot, press the <emphasis
+          role="bold">F5</emphasis> button to <emphasis role="underline">switch from default to
+          System V</emphasis>.ý Now, press <emphasis role="bold">Enter</emphasis> to boot and press
+        the <emphasis role="bold">Esc</emphasis> key during the splash screen to see the familiar
+        System V init messages.</para>
+      <!--($ ld: 03.12.11 sm $)-->
+    </blockquote>
   </sect2>
   <sect2 id="distro-press" role="distro-press">
     <title>In the Press</title>

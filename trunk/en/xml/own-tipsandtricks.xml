@@ -109,5 +109,68 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
       <para><emphasis role="bold">1. Introduction</emphasis></para>
       <para>rsnapshot is a backup tool written in Perl that utilizes rsync as its back-end. rsnapshot allows users to create customized incremental backup solutions. This article will discuss the following: the benefits of an incremental backup solution, rsnapshot&apos;s installation, its configuration, and usage examples. (...)</para>
 <!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://vavai.net/2011/11/installing-rapidssl-certificate-on-zimbra-mail-server/"
+          >Masim Sugianto: Installing RapidSSL Certificate on Zimbra Mail Server</ulink></title>
+      <para>By default, Zimbra <emphasis role="italic">c</emphasis>reate and installing<emphasis
+          role="italic"> Self-Signed Certificate</emphasis> on installation process for https
+        transport protocol. Self-signed certificate used for Apache jetty web server (both Zimbra
+        webmail and Administration console), POP3 SSL, SMTP SSL and IMAP SSL. Self-Signed
+        certificate doesn’t automatically trusted because the certificate was not issued &amp;
+        certify by authorized SSL certificate provider such as Verisign, Cybertrust, Godaddy,
+        RapidSSL, etc.</para>
+      <para><inlinegraphic
+          fileref="http://vavai.com/wp-content/uploads/2011/11/certificate-untrusted11.png"
+          width="30%"/></para>
+      <para>Below are step-by-step how to install RapidSSL certificate on Zimbra Mail Server.
+        (...)</para>
+      <!-- ($ Id: 03.12.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://vavai.net/2011/12/installing-opensuse-12-1-from-existing-opensusesles-without-cddvd/"
+          >Masim Sugianto: Installing openSUSE 12.1 from Existing openSUSE/SLES Without
+          CD/DVD</ulink></title>
+      <para>openSUSE 12.1 (and also prior version) can be installed without using a cd or dvd. This
+        is the most efficient way if we have running system and do not want to waste a cd/dvd. This
+        also the most efficient way ifý we have prior versionýand want to upgrade or clean install
+        running system directly through the network. We can use a brilliant script called <ulink
+          url="http://www.suse.de/%7Elnussel/setupgrubfornfsinstall.html"
+          >setupgrubfornfsinstall</ulink>.</para>
+      <para>How to use this small script to fit with our requirement ? (...)</para>
+      <!-- ($ Id: 03.12.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://vavai.net/2011/12/installing-virtualbox-vboxheadless-phpvirtualbox-on-opensuse-12-1-minimalis/"
+          >Masim Sugianto: Installing VirtualBox VBoxHeadless</ulink></title>
+      <para>VirtualBox is one of the tools that are used for Desktop Virtualization : running an OS
+        within the OS. VirtualBox usually installed on the operating system that already has the
+        VirtualBox GUI to manage it. But, how to manage VirtualBox without VirtualBox GUI?
+        VBoxHeadless is the answer if we want to install VirtualBox on minimal Linux server and
+        manage it via Browser.</para>
+      <para>I’m using openSUSE 12.1 64 bit on this tutorial but the steps can also be applied to
+        earlier versions (11.x) as well as on SLES 11 SP1. I also use VirtualBox for All
+        distributions binary package, although for openSUSE we can also use an RPM-binary package.
+        (...)</para>
+      <!--($ Id: 03.12.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://sellingfreesoftwareforaliving.blogspot.com/2011/12/air-video-server-on-opensuse-121.html"
+          >Han Wen Kam: Air Video Server on openSUSE 12.1</ulink></title>
+      <para>In short, <ulink url="http://www.inmethod.com/air-video/index.html">Air Video</ulink> is
+        a client-server product that streams, via live conversion, videos of many formats to any iOS
+        device (eg iPhone, iPad etc).ý The server software is free-of-charge but only runs on Mac
+        OSX and Windows.ý The client is also free-of-charge for iOS devices but "crippled".ý If you
+        like the solution, you pay for the client. </para>
+      <para>Since the Air Video Server is written in Java and uses a customized version of FFMPEG,
+        it would be possible to run it on Linux.ý The folks behind Air Video though supportive but
+        are NOT offering official support for Linux. </para>
+      <para>I have been successful in making Air Video Server (AVS) work on openSUSE 11.3, 11.4 and
+        12.1. Here are the steps: (...)</para>
+      <!--($ Id: 03.12.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>
