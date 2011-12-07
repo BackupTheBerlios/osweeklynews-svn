@@ -34,12 +34,28 @@ everybody will be relieved to have it out, and ready to open the merge
 window. (...)</para>  
   </blockquote> -->  <blockquote>
     <title>
-      <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-2-Filesystems-1387311.html">h-online/Thorsten Leemhuis: Kernel Log: Coming in 3.2 (Part 2) - Filesystems</ulink>
+      <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-3-Architecture-1390730.html"
+        >h-online/Thorsten Leemhuis:  Kernel Log: Coming in 3.2 (Part 3) - Architecture</ulink>
     </title>
-    <para><emphasis role="bold">A number of changes to Btrfs mean that filesystem structures will not be as prone to corruption in case of system crashes. By bundling blocks into clusters, Ext4 should be a lot faster in some scenarios. CIFS also promises speed gains.</emphasis></para>
-    <para>Last week, just in time for the US Thanksgiving holiday, Linus Torvalds <ulink url="http://thread.gmane.org/gmane.linux.kernel/1220028">released</ulink> the third pre-release version of Linux 3.2. The commits since RC2 have, according to Torvalds, been mostly small and reasonable, though there is &quot;certainly more churn&quot; than he would have liked.</para>
-    <para>Torvalds is likely to release the fourth pre-release version at the end of this week or the start of next, with the final release expected in early to mid-January. In light of the ongoing development of Linux 3.2, the Kernel Log is continuing its &quot;Coming in 3.2&quot; series by describing new features in the area of filesystems. The first article in the series looked at changes to <ulink url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-1-Networking-1379085.html">network drivers and network infrastructure</ulink>; articles on architecture code, infrastructure and drivers for other hardware will follow over the next few weeks. (...)</para>
-<!-- ($ ld: 02.12.11 sat $)-->  </blockquote>
+    <para><emphasis role="bold">Optimised assembler code paths accelerate SHA1 and speed up the
+        Blowfish and Twofish encryption algorithms. The next scheduled Linux kernel release avoids a
+        cache problem found in AMD's latest processors and includes new and extended drivers for
+        Intel CPUs.</emphasis></para>
+    <para>In keeping with the usual weekly release rhythm, Linus Torvalds <ulink
+        url="http://thread.gmane.org/gmane.linux.kernel/1223327">issued</ulink> the fourth release
+      candidate of Linux 3.2 last Friday. It contains fewer changes than the two previous RCs, and
+      Torvalds said that "things really are calming down pretty nicely", adding that it is even
+      "suspiciously quiet." With the development of Linux 3.2 in progress, the Kernel Log is
+      continuing its "Coming in 3.2" mini series. After describing the advancements in the kernel's
+        <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-1-Networking-1379085.html"
+        >network driver and infrastructure</ulink> areas and those relating to <ulink
+        url="http://www.h-online.com/open/features/Kernel-Log-Coming-in-3-2-Part-2-Filesystems-1387311.html"
+        >filesystems</ulink>, we will now cover the changes relating to the kernel's architecture
+      and processor support; in the coming weeks, further articles will discuss the kernel's
+      infrastructure and drivers.</para>
+<!-- ($ ld: 07.12.11 sm $)-->  </blockquote>
   <blockquote>
     <title>
       <ulink url="http://schaiba.wordpress.com/2011/12/03/kernel-weekly-news-03-12-2011/">Rares
