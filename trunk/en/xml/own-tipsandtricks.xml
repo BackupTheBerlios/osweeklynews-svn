@@ -64,10 +64,9 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
       <para>You have already been exposed to a small part of what flow control is in our <ulink url="http://how-to.linuxcareer.com/c-development-on-linux-types-variables-operators">previous part</ulink>, namely the section about relational operators. As you start writing more complex programs, you will feel the need to control the order in which your program executes various parts. Flow control is present in most programming languages in one form or another, and what you&apos;re about to read here is essential to writing C programs.Everything you might want to ask or discuss you can take to our new <ulink url="http://forum.linuxcareer.com/">forums</ulink>, as before. (...)</para>
 <!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
     <blockquote>
-      <title><ulink
-          url="http://zoumpis.wordpress.com/2011/11/28/how-to-install-eclipse-3-7-indigo-sr1-in-opensuse-12-1-kde-only-within-10-steps/"
-          >Rousinopoulos Athanasios-Ilias: How-to Install Eclipse 3.7 (Indigo SR1) in openSUSE 12.1
-          (KDE) only within 10 Steps</ulink></title>
+      <title>
+        <ulink url="http://zoumpis.wordpress.com/2011/11/28/how-to-install-eclipse-3-7-indigo-sr1-in-opensuse-12-1-kde-only-within-10-steps/">Rousinopoulos Athanasios-Ilias: How-to Install Eclipse 3.7 (Indigo SR1) in openSUSE 12.1 (KDE) only within 10 Steps</ulink>
+      </title>
       <para>This is my first blog post for the assignment “Development Tools” , so i could say that
         i am very happy with this matter!</para>
       <para>Well i use openSUSE Linux 12.1 and i am very proud of that! Sometimes i face problems
@@ -78,99 +77,32 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
         It is a truth that i searched a lot in order to find a package or a “one-click install” file
         but the result was an installation of 3.6.2 version. As we all know in FLOSS always there is
         a way to overcome problems and also fix them. Furthermore as a developer i have to use the
-          “<ulink
-          url="http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/indigor"
-          >Eclipse IDE for Java EE Developers</ulink>“. Here are the instructions on how-to install
+          “<ulink url="http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/indigor">Eclipse IDE for Java EE Developers</ulink>“. Here are the instructions on how-to install
         (via terminal) this edition of Eclipse. (Some images are in greek language , due to the fact
         that i use the greek language as System language) (...)</para>
-      <!--($ Id: 02.12.11 sm $)-->
-    </blockquote>
+<!--($ Id: 02.12.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For System Administrators</title>
     <blockquote>
       <title>
-        <ulink url="http://www.howtoforge.com/perfect-server-opensuse-12.1-x86_64-with-nginx-ispconfig-3">HowtoForge/Falko Timme: The Perfect Server - OpenSUSE 12.1 x86_64 With Nginx [ISPConfig 3]</ulink>
+        <ulink url="http://blog.adityapatawari.com/2011/12/controlling-your-linux-server-using.html">Aditya Patawari: Controlling Your Linux Server Using Twitter</ulink>
       </title>
-      <para>This tutorial shows how to prepare an <emphasis role="bold">OpenSUSE 12.1 64bit (x86_64)</emphasis> server with nginx for the installation of <ulink url="http://www.ispconfig.org/">ISPConfig 3</ulink>, and how to install ISPConfig 3. Since version 3.0.4, ISPConfig comes with full support for the nginx web server in addition to Apache, and this tutorial covers the setup of a server that uses nginx instead of Apache. ISPConfig 3 is a webhosting control panel that allows you to configure the following services through a web browser: nginx and Apache web server, Postfix mail server, MySQL, Dovecot POP3/IMAP, BIND or MyDNS nameserver, PureFTPd, SpamAssassin, ClamAV, and many more.</para>
-      <para>If you want to use nginx instead of Apache with ISPConfig, please note that your nginx version must be at least 0.8.21, and you must install PHP-FPM as well. For CGI/Perl support, you must use fcgiwrap. This is all covered by this tutorial. (...)</para>
-<!-- ($ Id: 02.12.11 sat $)-->    </blockquote>
+      <para>Last weekend I wrote about &quot;<ulink url="http://blog.adityapatawari.com/2011/11/using-twitter-to-monitor-your-linux.html">Using Twitter To Monitor Your Linux Server</ulink>&quot; using a command line client &quot;<ulink url="http://myst.adityapatawari.com/">MYST</ulink>&quot;. I have added a new feature to MYST using which you can tell your server to execute commands by using DMs. Let us start configuration for the same. (...)</para>
+<!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://blog.adityapatawari.com/2011/11/using-twitter-to-monitor-your-linux.html">Aditya Patawari: Using Twitter To Monitor Your Linux Server! </ulink>
+        <ulink url="http://olex.openlogic.com/wazi/2011/shh-openssh-secrets-here/">Wazi/Carla Schroder: Shh! OpenSSH Secrets Here</ulink>
       </title>
-      <para>Yes, you can use Twitter for monitoring your server. I won&apos;t say that it is a complete monitoring solution nor I will ask you to throw away your existing monitoring mechanisms. In fact the script I am talking about, <ulink url="http://myst.adityapatawari.com/">MYST</ulink> (AGPLv3), was not created for this purpose. It was created so that I could tweet without using browser with inspiration from Hiemanshu, a Fedora contributor, using <ulink url="http://code.google.com/p/python-twitter/">python-twitter</ulink> api.
-(...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
+      <para>If you routinely use multiple computers, it can be a challenge to keep your data files organized and to manage multiple login IDs. <ulink url="http://olex.openlogic.com/packages/openssh">OpenSSH</ulink> can help you with those tasks. It’s a powerful, secure tool that lets you share files without having to set up a file server, run applications remotely, and perform remote administration chores quickly and securely. You probably already know how to <ulink url="http://olex.openlogic.com/wazi/2011/stop-using-ftp-how-to-transfer-files-securely/">use OpenSSH for file transfers</ulink>. Here we’ll uncover some less well-known OpenSSH tricks that can make life easier for roaming computer users.</para>
+      <para>To use the software, you should have the OpenSSH server and client installed and working on all the computers you need to access. In this article I use local for the computer we’re launching an OpenSSH session from, and remote to refer to the computer we’re logging into. (...)</para>
+<!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
     <blockquote>
       <title>
-        <ulink url="http://how-to.linuxcareer.com/guide-to-rsnapshot-and-incremental-backups-on-linux">LinuxCareer.com/Javier L. Velasquez: Guide to rsnapshot and incremental backups on Linux</ulink>
+        <ulink url="https://www.linux.com/learn/tutorials/519933-embiggen-your-kvm-virtual-machines">Linux.com/Carla Schroder: Embiggen Your KVM Virtual Machines</ulink>
       </title>
-      <para><emphasis role="bold">1. Introduction</emphasis></para>
-      <para>rsnapshot is a backup tool written in Perl that utilizes rsync as its back-end. rsnapshot allows users to create customized incremental backup solutions. This article will discuss the following: the benefits of an incremental backup solution, rsnapshot&apos;s installation, its configuration, and usage examples. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://vavai.net/2011/11/installing-rapidssl-certificate-on-zimbra-mail-server/"
-          >Masim Sugianto: Installing RapidSSL Certificate on Zimbra Mail Server</ulink></title>
-      <para>By default, Zimbra <emphasis role="italic">c</emphasis>reate and installing<emphasis
-          role="italic"> Self-Signed Certificate</emphasis> on installation process for https
-        transport protocol. Self-signed certificate used for Apache jetty web server (both Zimbra
-        webmail and Administration console), POP3 SSL, SMTP SSL and IMAP SSL. Self-Signed
-        certificate doesn’t automatically trusted because the certificate was not issued &amp;
-        certify by authorized SSL certificate provider such as Verisign, Cybertrust, Godaddy,
-        RapidSSL, etc.</para>
-      <para><inlinegraphic
-          fileref="http://vavai.com/wp-content/uploads/2011/11/certificate-untrusted11.png"
-          width="30%"/></para>
-      <para>Below are step-by-step how to install RapidSSL certificate on Zimbra Mail Server.
-        (...)</para>
-      <!-- ($ Id: 03.12.11 sm $)-->
-    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://vavai.net/2011/12/installing-opensuse-12-1-from-existing-opensusesles-without-cddvd/"
-          >Masim Sugianto: Installing openSUSE 12.1 from Existing openSUSE/SLES Without
-          CD/DVD</ulink></title>
-      <para>openSUSE 12.1 (and also prior version) can be installed without using a cd or dvd. This
-        is the most efficient way if we have running system and do not want to waste a cd/dvd. This
-        also the most efficient way ifý we have prior versionýand want to upgrade or clean install
-        running system directly through the network. We can use a brilliant script called <ulink
-          url="http://www.suse.de/%7Elnussel/setupgrubfornfsinstall.html"
-          >setupgrubfornfsinstall</ulink>.</para>
-      <para>How to use this small script to fit with our requirement ? (...)</para>
-      <!-- ($ Id: 03.12.11 sm $)-->
-    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://vavai.net/2011/12/installing-virtualbox-vboxheadless-phpvirtualbox-on-opensuse-12-1-minimalis/"
-          >Masim Sugianto: Installing VirtualBox VBoxHeadless</ulink></title>
-      <para>VirtualBox is one of the tools that are used for Desktop Virtualization : running an OS
-        within the OS. VirtualBox usually installed on the operating system that already has the
-        VirtualBox GUI to manage it. But, how to manage VirtualBox without VirtualBox GUI?
-        VBoxHeadless is the answer if we want to install VirtualBox on minimal Linux server and
-        manage it via Browser.</para>
-      <para>I’m using openSUSE 12.1 64 bit on this tutorial but the steps can also be applied to
-        earlier versions (11.x) as well as on SLES 11 SP1. I also use VirtualBox for All
-        distributions binary package, although for openSUSE we can also use an RPM-binary package.
-        (...)</para>
-      <!--($ Id: 03.12.11 sm $)-->
-    </blockquote>
-    <blockquote>
-      <title><ulink
-          url="http://sellingfreesoftwareforaliving.blogspot.com/2011/12/air-video-server-on-opensuse-121.html"
-          >Han Wen Kam: Air Video Server on openSUSE 12.1</ulink></title>
-      <para>In short, <ulink url="http://www.inmethod.com/air-video/index.html">Air Video</ulink> is
-        a client-server product that streams, via live conversion, videos of many formats to any iOS
-        device (eg iPhone, iPad etc).ý The server software is free-of-charge but only runs on Mac
-        OSX and Windows.ý The client is also free-of-charge for iOS devices but "crippled".ý If you
-        like the solution, you pay for the client. </para>
-      <para>Since the Air Video Server is written in Java and uses a customized version of FFMPEG,
-        it would be possible to run it on Linux.ý The folks behind Air Video though supportive but
-        are NOT offering official support for Linux. </para>
-      <para>I have been successful in making Air Video Server (AVS) work on openSUSE 11.3, 11.4 and
-        12.1. Here are the steps: (...)</para>
-      <!--($ Id: 03.12.11 sm $)-->
-    </blockquote>
+      <para>When you provision virtual machines, you try to ensure that they have the storage that they need. But as we all know, storage needs tend to change over time. If you have KVM machines that need more space, we can up their storage with tools you already have handy.</para>
+      <para>In <ulink url="https://www.linux.com/learn/tutorials/510124-managing-live-and-offline-migrations-with-linuxs-kvm">Managing Live and Offline Migrations with Linux&apos;s KVM</ulink> we learned how to migrate virtual machines, and how to manage disk storage. Today we&apos;ll learn how resize VMs and add storage space. (...)</para>
+<!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
