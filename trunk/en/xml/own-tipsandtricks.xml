@@ -49,10 +49,10 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
     <title>For Commandline/Script Newbies</title>
     <blockquote>
       <title>
-        <ulink url="http://bashshell.net/exercises/exercise-test-multiple-aspects/">BashShell.net/Mike: Exercise: Test Multiple Aspects</ulink>
+        <ulink url="http://bashshell.net/script-of-the-week/using-diff-to-compare-directories/">BashShell.net/Mike: Using diff to Compare Directories</ulink>
       </title>
-      <para>In many situations you will want to test for multiples aspects of the file or directory.    There are also a number of ways that you can set up these multiple tests.  This example looks for a file that exists and is writable. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
+      <para>The diff command compares two files or directories and returns the differences.  This provides you a way to monitor changes in an important directory like /etc which houses most configuration files on a Linux system.  In order for this to work properly you will need to create a file that lists the content of the /etc directory so that you can make a comparison. (...)</para>
+<!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Developers and Programmers</title>
@@ -86,6 +86,13 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
     <title>For System Administrators</title>
     <blockquote>
       <title>
+        <ulink url="http://beginlinux.com/desktop/opensuse/automate-install-with-autoyast-answer-files">BeginLinux.com: Automate Install With AutoYaST Answer Files</ulink>
+      </title>
+      <para>This is the final article on installing opensuse. To recap we&apos;ve covered <ulink url="http://beginlinux.com/desktop/opensuse/configuring-the-dhcp-server">Configuring the DHCP Server</ulink>, <ulink url="http://beginlinux.com/desktop/opensuse/installing-apache-on-opensuse">Installing Apache on OpenSUSE</ulink>, <ulink url="http://beginlinux.com/desktop/opensuse/opensuse-pxe-boot">OpenSUSE PXE Boot</ulink> and today we&apos;ll be tackling how to automate an install with AutoYaST answer files.</para>
+      <para>The final part of our installation jigsaw puzzle is to create the answer file, in SUSE this is known as AutoYaST. If we were only ever to install one server or one desktop then maybe we could do without answer files; however where we need to install a few or many then AutoYaST provides us with an unattended installation:- a build script to create consistency and compliance we regulatory bodies governing security. In short we need answer files. (...)</para>
+<!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
         <ulink url="http://blog.adityapatawari.com/2011/12/controlling-your-linux-server-using.html">Aditya Patawari: Controlling Your Linux Server Using Twitter</ulink>
       </title>
       <para>Last weekend I wrote about &quot;<ulink url="http://blog.adityapatawari.com/2011/11/using-twitter-to-monitor-your-linux.html">Using Twitter To Monitor Your Linux Server</ulink>&quot; using a command line client &quot;<ulink url="http://myst.adityapatawari.com/">MYST</ulink>&quot;. I have added a new feature to MYST using which you can tell your server to execute commands by using DMs. Let us start configuration for the same. (...)</para>
@@ -103,6 +110,14 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
       </title>
       <para>When you provision virtual machines, you try to ensure that they have the storage that they need. But as we all know, storage needs tend to change over time. If you have KVM machines that need more space, we can up their storage with tools you already have handy.</para>
       <para>In <ulink url="https://www.linux.com/learn/tutorials/510124-managing-live-and-offline-migrations-with-linuxs-kvm">Managing Live and Offline Migrations with Linux&apos;s KVM</ulink> we learned how to migrate virtual machines, and how to manage disk storage. Today we&apos;ll learn how resize VMs and add storage space. (...)</para>
+<!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title>
+        <ulink url="http://www.ibm.com/developerworks/linux/library/os-python-kvm-scripting1/index.html">IBM developerWorks/Paul Ferrill: Scripting KVM with Python, Part 1: libvirt</ulink>
+      </title>
+      <para>Virtualization is standard equipment with most server operating systems on the market today. In the Linux® world, there are two primary choices for server virtualization: the Kernel-based Virtual Machine (KVM) and Xen. KVM is the primary technology that Red Hat and others use. Although Citrix owns Xen, much of the core functionality remains in the public domain.</para>
+      <para>The Virtual Machine Manager (VMM, or virt-manager) project provides a tool for managing the creation and running of both KVM and Xen virtual machine (VM) instances. VMM is written in Python using the GTK+ library for graphical user interface construction. The real work is done through the libvirt library, which is what you&apos;ll be using for this article series. Although libvirt is a Red Hat-sponsored effort, it remains an open source project available under the GNU Lesser General Public License.</para>
+      <para>libvirt is made up of several different pieces, including the application programming interface (API) library, a daemon (libvirtd), and a default command-line utility (virsh). For the purposes of this article, all testing is done using Ubuntu Server version 11.04. The Installation and setup section covers everything I did to configure my server for developing the scripts presented here. Part 1 covers the basics of libvirt and Kernel-based Virtual Machine (KVM) virtualization along with a few command-line scripts to whet your appetite. Part 2 will dive deeper and show you how you can build your own virtualization management tools using libvirt, Python, and wxPython. (...)</para>
 <!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
   </sect2>
 </sect1>
