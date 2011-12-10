@@ -21,64 +21,79 @@
   <title>Planet SUSE</title>
   <blockquote>
     <title><ulink
-        url="http://vavai.net/2011/11/suse-linux-enterprise-server-11-sp1-minimal-server-appliance/"
-        >Masim Sugianto: SUSE Linux Enterprise Server 11 SP1 Minimal Server
-      Appliance</ulink></title>
-    <para>I’m currently working as an IT system integrator on a <ulink
-        url="http://www.excellent.co.id">small company</ulink> based on Bekasi, a small town near
-      Jakarta Indonesia. The company founded by me and my young brother and covering on various jobs
-      regarding server setting, implementation, maintenance and workshop/training.</para>
-    <para>At first, installing server is an interesting jobs but after similar works on some client,
-      I feel bored with the process, ie :<orderedlist>
-        <listitem>
-          <para>Virtualization Server (VMWare, KVM, OpenVZ, Xen, etc) Installation</para>
-        </listitem>
-        <listitem>
-          <para>Server OS installation</para>
-        </listitem>
-        <listitem>
-          <para>Application Installation</para>
-        </listitem>
-        <listitem>
-          <para>Customizing the configuration</para>
-        </listitem>
-      </orderedlist></para>
-    <para>I think I could reduce the time for processing the above task by making an appliance using
-      SUSE Studio. An appliance will contains my default server setup and all of packages required
-      by application. The results are <ulink
-        url="http://susestudio.com/a/veav1Y/minimal-server-appliance"><emphasis role="bold">Minimal
-          Server Appliance</emphasis></ulink>. (...)</para>
-<!--($ ld: 3.12.11 sm $)-->  </blockquote>
+        url="http://dominique.leuenberger.net/blog/2011/12/enhanced-typelib-based-dep-generation/"
+        >Dominique Leuenberger: Enhanced typelib based dep generation</ulink></title>
+    <para>A long time ago I <ulink
+        url="http://dominique.leuenberger.net/blog/2011/06/gobject-introspection-based-typelib-provides-and-requires/"
+        >posted</ulink> about our inclusion of an automatic dependency generator for typelib() style
+      provides and requires. The main goal there was to have the various seed and python based
+      programs depending on gobject-introspection based bindings properly require the bindings,
+      which also dragged in the libraries needed.</para>
+    <para>For the openSUSE 12.2 release cycle we have to push this a little further: As the typelib
+      namespace and version does not grow linear together with the shared library name, we have to
+      split the *.typelib files out of the shared library package.</para>
+    <para>An example why the typelib files need to be split out from the libraries:</para>
+    <para> Clutter: the library was renamed from libclutter-glx-1.0.so.0 to libclutter-1.0.so.0, the
+      typelib remained Clutter-1.0.typelib. The upgrade process is slightly ‘messy’ in this case and
+      a bunch of problems could be avoided by splitting the typelib files out. (...)</para>
+    <!--($ ld: 10.12.11 sm $)-->
+  </blockquote>
   <blockquote>
-    <title>
-      <ulink url="http://kohei.us/2011/11/30/performance-improvement-in-opening-ods/">Kohei Yoshida:
-        Performance improvement in opening ODS documents</ulink>
-    </title>
-    <para>I have great news to share with you. Calc’s ODS import filter in 3.5 should be
-      substantially faster when you have documents with a large number of named ranges. Read on if
-      you want to know more details.</para>
-    <para><emphasis role="bold">What happened?</emphasis></para>
-    <para>Laurent Godard, Markus Mohrhard, and myself have been working pretty hard in the past
-      month to bring the performance of ODS import filter to a reasonable level, especially with
-      documents containing a large number of named ranges.Here is the background. Laurent uses
-      LibreOffice as a platform for his professional extension, which makes heavy use of named
-      ranges. It programmatically generates ODS documents and inserts hundred’s or thousand’s of
-      named ranges as intermediary storage to further process the data. The problem was, however,
-      our import performance with that kind of documents was so suboptimal that this process was
-      taking a prohibitively long time. In order for his extension to perform optimally, our ODS
-      import filter needed to be optimized, and optimized heavily. (...)</para>
-<!--($ ld: 03.12.11 sm $)-->  </blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/12/07/cooking-with-docbook/">Thomas
+        Schraitle: Cooking with DocBook</ulink></title>
+    <para>Hi DocBook lovers, browsed through a book, used your favorite search engine, or posted on
+      LinkedIn, Xing, or the DocBook mailinglist to hunt for answers to your problems?</para>
+    <para>As an additional alternative, I’m happy to announce my latest project:</para>
+    <para><quote><ulink url="http://doccookbook.sf.net">The DoCookBook Project</ulink> (released
+        under Creative Commons License)</quote></para>
+    <para>The tongue-twisting name is a word play and picks up the two central topic about DocBook
+      and cookbook. (...)</para>
+    <!--($ ld: 10.12.11 sm $)-->
+  </blockquote>
   <blockquote>
-    <title>
-      <ulink url="http://e-tote-kala.blogspot.com/2011/12/dot-in-map.html">Kostas Koudaras: A dot in
-        the map</ulink>
-    </title>
-    <para>I don't ever remembering suggesting a site but to be honest I rarely fall into sites that
-      not many people know and worth mentioning, also most of the times I do, I am a bit bored on
-      blog about it so I eventually never do ;-) Today though it's different, I am taking a break
-      from a presentation it was supposed to be ready...Well...Yesterday, but I am still looking for
-      the right kittens photos to complete this presentation(...don't ask...). Anyway normally I
-      would just watch a movie or something but I am a bit in a mood to blog and latelly I had too
-      much on my plate and had no time to do it, so here I am. (...)</para>
-<!--($ ld: 03.12.11 sm $)-->  </blockquote>
+    <title><ulink
+        url="http://vavai.net/2011/12/how-to-check-test-validate-dkim-records-setting-for-mail-server/"
+        >Masim Sugianto: How to Check, Test and Validate DKIM Records in DNS is Correct and
+        Valid</ulink></title>
+    <para>As I’ve wrote in the article: “<ulink
+        url="http://vavai.net/2011/12/2011/11/10-tips-for-auditing-improving-mail-server-performance/"
+        >10 Tips for Auditing &amp; Improving Mail Server Performance</ulink>“, Dkim or Domainkeys
+      is one feature that can be used to increase the acceptance rate (eligibility) of email on the
+      destination mail server.</para>
+    <para>DomainKeys or DKIM signature basically allowing good senders to “sign” a message to prove
+      that it really did come from them. This process is obtained by signing the outgoing mail with
+      a specific code corresponding domain name and identity of the mail server so it is considered
+      valid and convincing as an authorized sender.</para>
+    <!--($ ld: 10.12.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://lizards.opensuse.org/2011/12/08/the-exo-typeface-family/">Thomas
+        Schraitle: The Exo Typeface Family</ulink></title>
+    <para>Some week ago, I’ve stumbled upon a very promising font project. It’s called the <ulink
+        url="http://kck.st/tivQep">Exo Typeface Family</ulink> and I think this could be a valuable
+      addition to our distribution:</para>
+    <para>The sans serif font is beautifully crafted and contains 9(!) different width as you can
+      see in the following graphic: (...)</para>
+    <!--($ ld: 10.12.11 sm $)-->
+  </blockquote>
+  <blockquote>
+    <title><ulink url="http://blog.jospoortvliet.com/2011/12/calligra.html">Jos Poortvliet:
+        Calligra...</ulink></title>
+    <para>While <ulink url="http://www.calligra.org/">Calligra 2.4</ulink> did not make it as part
+      of openSUSE 12.1, its <ulink
+        url="http://www.calligra.org/news/announcements/calligra-2-4-beta-4/">latest beta</ulink> is
+      available in the <ulink
+        url="http://en.opensuse.org/KDE_repositories#Updated_applications_only"
+        >KDE:UpdatedApps</ulink> repository and I hope Tumbleweed will pick it up too. I'm quite
+      excited about this release and I'd like to share why!</para>
+    <para><emphasis role="bold">Little intro</emphasis></para>
+    <para>As you might or might not know, Calligra is the result of a split of the KWord maintainer
+      with the rest of the KOffice team. The ODF based Suite has a wide range of applications. From
+      Krita, the most versatile and usable sketching and painting application on Linux (click for an
+      experts opinion), and Kexi, the most powerful and complete database tool available as Free
+      Software - to Words, Karbon and Stage. These last, as well as all the other applications in
+      Calligra, are far less mature than Krita and Kexi. The team has been limiting their scope,
+      focusing on getting them stable and usable while skipping on features.</para>
+    <!--($ ld: 10.12.11 sm $)-->
+  </blockquote>
 </sect1>

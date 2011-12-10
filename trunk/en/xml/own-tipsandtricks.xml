@@ -22,28 +22,13 @@
     <title>For Desktop Users</title>
     <blockquote>
       <title>
-        <ulink url="http://www.muktware.com/articles/3038">Muktware/Swapnil Bhartiya: How To Install Restricted Drivers, Formats In openSUSE 12.1</ulink>
+        <ulink url="http://ironman.darthgibus.net/?p=148">Fred Blaise: Talend Studio on Linux:
+          making it look nicer</ulink>
       </title>
-      <para>OpeSUSE, like Fedora, doesn&apos;t support non-free/proprietary formats in the community version. So, if you want to use proprietary or restricted codecs you will have to install restricted formats. It&apos;s extremely easy using openSUSE KDE.
-
-Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.1">page</ulink> and select the easier <ulink url="http://opensuse-community.org/codecs-kde.ymp">1-click</ulink> installation. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.muktware.com/articles/3037">Muktware/Swapnil Bhartiya: How To Set Up Printers In openSUSE</ulink>
-      </title>
-      <para>I had to struggled a bit to connect my HP Photosmart Prem c410 printer on openSUSE. Coming from Ubuntu, I was used to &apos;add printer&apos; button and just follow the click-next procedure.</para>
-      <para>Under openSUSE it&apos;s a bit different. openSUSE 12.1 comes with HPLIP Tool which makes it easier to install and configure HP printers. If your printer is connected through the wireless (as was mine), you can set it up using this tool.</para>
-      <para>HPLIP wants the user to be added to several groups (I learned that after 3 failed attempts, so I am saving your time). Before firing the HP Tool, go to YaST and click on &apos;User and Group Management Accounts&apos;. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
-    <blockquote>
-      <title>
-        <ulink url="http://www.muktware.com/articles/3039">Muktware/Swapnil Bhartiya: How To Setup Networking In openSUSE 12.1 KDE</ulink>
-      </title>
-      <para>There is a very tiny (extremely tiny, as tiny as a microbe) price you have to pay when you use a highly customizable desktop environment like KDE. I had issues with networking (which was more to do with my ignorance than KDE) under openSUSE KDE 12.1.</para>
-      <para>While the live version showed the network icon in the tray, once I installed it on my desktop it was gone. There was no Internet.  I noticed this behavior only on the desktop, everything was fine on my laptop.</para>
-      <para>The reason being KDE defaults to YaST&apos;s Network setting if it detects that you are running a desktop. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
+      <para>Doesn’t look like on Mac on Win32, does it? You can find several howto around, the GTK+
+        reference here, a GTK+ theme how to. Create a .gtkrc-eclipse in your home directory, with
+        the following inside: (...)</para>
+<!-- ($ Id: 10.12.11 sm $)-->    </blockquote>
   </sect2>
   <sect2>
     <title>For Commandline/Script Newbies</title>
@@ -101,5 +86,71 @@ Just visit this <ulink url="http://opensuse-community.org/Restricted_formats/12.
       <para>The Virtual Machine Manager (VMM, or virt-manager) project provides a tool for managing the creation and running of both KVM and Xen virtual machine (VM) instances. VMM is written in Python using the GTK+ library for graphical user interface construction. The real work is done through the libvirt library, which is what you&apos;ll be using for this article series. Although libvirt is a Red Hat-sponsored effort, it remains an open source project available under the GNU Lesser General Public License.</para>
       <para>libvirt is made up of several different pieces, including the application programming interface (API) library, a daemon (libvirtd), and a default command-line utility (virsh). For the purposes of this article, all testing is done using Ubuntu Server version 11.04. The Installation and setup section covers everything I did to configure my server for developing the scripts presented here. Part 1 covers the basics of libvirt and Kernel-based Virtual Machine (KVM) virtualization along with a few command-line scripts to whet your appetite. Part 2 will dive deeper and show you how you can build your own virtualization management tools using libvirt, Python, and wxPython. (...)</para>
 <!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink url="http://xadmin.info/?p=120">Jörg Stephan: [UPDATE] Strange, someone has an
+          idea?</ulink></title>
+      <para>Thanks a lot to <ulink url="http://forums.opensuse.org"
+        >forums.opensuse.org</ulink></para>
+      <para>As we now found out the boot/shutdown problems where just caused by <emphasis
+          role="bold">systemd</emphasis>ýso, while booting (on the grub menu) you can switch to
+          <emphasis role="bold">systemV</emphasis> via <emphasis role="bold">F5 </emphasis>and that
+        just worked.</para>
+      <para>So now we must talk about making systemV ýdefault again, so just look what SUSEhelp post
+        us via IRC</para>
+      <para><quote>
+          <emphasis role="italic"><emphasis role="bold">&lt;SUSEhelp&gt; By default, openSUSE now
+              boots using systemd. In case of trouble, you can switch back to the old way using
+              sysvinit by pressing the F5 key on the boot. If you want to switch to sysvinit
+              permanently, install the sysvinit-init package. To switch back to systemd, reinstall
+              the systemd-sysvinit package.</emphasis></emphasis>
+        </quote></para>
+      <para>So as easy as it is
+        told:<programlisting>zypper in sysvinit-init
+
+Problem: sysvinit-init-2.88+-66.58.2.x86_64 conflicts with namespace:otherproviders(sbin_init) provided by systemd-sysvinit-37-3.4.1.x86_64
+Solution 1: deinstallation of systemd-sysvinit-37-3.4.1.x86_64
+Solution 2: do not install sysvinit-init-2.88+-66.58.2.x86_64
+
+Choose from above solutions by number or cancel [1/2/c] (c):</programlisting></para>
+      <para>Now take solution 1, it will replace systemd.</para>
+      <!--($ Id: 10.12.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://vavai.net/2011/12/installing-zimbra-mail-server-on-sles-11-sp1-64-bit-in-less-than-30-minutes-part-1/"
+          >Masim Sugianto: Installing Zimbra Mail Server on SLES 11 SP1 64 bit in less than 30
+          Minutes-Part 1</ulink></title>
+      <para>The following article will explain about the quick and easy tutorial : how to installing
+        Zimbra Mail Server on SUSE Linux Enterprise Server 11 SP1 64 bit.ýI will use the <ulink
+          url="http://vavai.net/2011/11/suse-linux-enterprise-server-11-sp1-minimal-server-appliance/"
+          >Minimal Server Appliance</ulink> in this tutorial to simplify the installation
+        process.ýHere are some notes related to the server setting :<itemizedlist>
+          <listitem>
+            <para>WARNING : This guide using Preload ISO and will erase the entire contents of hard
+              disk! ýIf you do not want to delete your existing data, consider using Virtualization
+              server or use ISO-LiveCD.</para>
+          </listitem>
+          <listitem>
+            <para>Zimbra server will be using a private IP which will be translated into public IP
+              using NAT</para>
+          </listitem>
+          <listitem>
+            <para>Zimbra will be setting up using Split-DNS concept. This means that in the internal
+              network, mail server will be recognized based on a private IP network, while from the
+              outside will be recognized based on the public IP. For this purpose, the internal DNS
+              will be set up in Zimbra Mail Server</para>
+          </listitem>
+          <listitem>
+            <para>Zimbra Fully Qualified Domain Name : mail.vavai.net, private IP : 192.168.1.254
+              (...)</para>
+          </listitem>
+        </itemizedlist></para>
+      <para><ulink
+          url="http://vavai.net/2011/12/installing-zimbra-mail-server-on-sles-11-sp1-64-bit-in-less-than-30-minutes-part-2/"
+          >Part2</ulink>, <ulink
+          url="http://vavai.net/2011/12/installing-zimbra-mail-server-on-sles-11-sp1-64-bit-in-less-than-30-minutes-part-3/"
+          >Part3</ulink></para>
+      <!--($ Id: 10.12.11 sm $)-->
+    </blockquote>
   </sect2>
 </sect1>

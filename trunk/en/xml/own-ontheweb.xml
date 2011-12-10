@@ -28,15 +28,17 @@
       <para>I’m happy to announce that the Qt Project officially went live today. Starting today, development of Qt will be governed as a true open source project.</para>
       <para>We now have <ulink url="http://qt-project.org/">qt-project.org</ulink> – a website where all development of Qt will be centered, providing the same infrastructure and processes for everybody that wants to contribute to Qt. (...)</para>
     </blockquote>
-  </sect2> -->  <sect2>
+    </sect2> -->  
+  <!--
+  <sect2>
     <title>Call for participation</title>
     <blockquote>
       <title>
         <ulink url="http://www.socallinuxexpo.org/blog/scale-next-generation-invitation-participation">SCALE: The Next Generation - Invitation for Participation</ulink>
       </title>
       <para>The Southern California Linux Expo is proud to announce a conference for the next generation of free and open source community enthusiasts. “SCALE: The Next Generation” — lets the FOSS community leaders of tomorrow spotlight their talents and ideas today. Open to kids 10 and older, the goal of conference is to be as “kid driven” as possible, offering a unique opportunity to see and experience the inner workings of planning a conference. Kids will be able to determine the content and help steer the direction that this mini-conference will take. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2>
     <title>Reports</title>
     <blockquote>
@@ -79,7 +81,37 @@
       <para>My first experience with a modern shell came in the 1980s, when I was developing software on SunOS. Once I learned the capability to apply output from one program as input to another (even doing this multiple times in a chain), I had a simple and efficient way to create filters and transformations. The core idea provided a way to build simple tools that were flexible enough to be applied with other tools in useful combinations. In this way, shells provided not only a way to interact with the kernel and devices but also integrated services (such as pipes and filters) that are now common design patterns in software development.</para>
       <para>Let&apos;s begin with a short history of modern shells, and then explore some of the useful and exotic shells available for Linux today. (...)</para>
 <!-- ($ Id: 09.12.11 sat $)-->    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.itwire.com/opinion-and-analysis/open-sauce/51659-a-tale-of-two-distros-opensuse-and-linux-mint"
+          >ITWire/Sam Varghese: A tale of two distros: openSUSE and Linux Mint</ulink></title>
+      <para>For as long back as I can remember, GNU/Linux distributions have resembled Windows in
+        one respect - that start menu at the bottom of the left side of the screen. </para>
+      <para>This is not surprising, considering that most people who move to GNU/Linux are Windows
+        refugees. And one needs some points of similarity in order to ease the transition.</para>
+      <para>Even when Ubuntu came along in 2004, though the menu was located at the top of the
+        screen, it was child's play to move it to the bottom. Ubuntu was tracking the development of
+        GNOME, keeping in sync with the six-monthly release schedule of the latter. (...)</para>
+      <!--($ Id: 10.12.11 sm $)-->
+    </blockquote>
+    <blockquote>
+      <title><ulink
+          url="http://www.itworld.com/software/231515/usenix-dartmouth-expanding-diff-grep-unix-tools"
+          >ITWorld/Joab Jackson: Usenix: Dartmouth expanding diff, grep Unix tools</ulink></title>
+      <para>With some funding from <ulink url="http://www.itworld.com/google">Google</ulink> and the
+        U.S. Energy Department, a pair of computer scientists at Dartmouth University are updating
+        the venerable grep and diff Unix command line utilities to handle more complex types of
+        data.</para>
+      <para>Such updates are needed because "we now tend to have more model-based configuration
+        languages that have meaningful constructs spanning more than one line," said Gabriel Weaver,
+        a Dartmouth graduate student who, along with Dartmouth computer science professor Sean
+        Smith, is creating the variants of grep and diff. Weaver presented the new utilities at a
+        poster session at the Usenix Large Installation System Administration (LISA) conference,
+        being held this week in Boston. (...)</para>
+      <!--($ Id: 10.12.11 sm $)-->
+    </blockquote>
   </sect2>
+  <!--
   <sect2>
     <title>Warning!</title>
     <blockquote>
@@ -88,8 +120,8 @@
       </title>
       <para>The open source Apache HTTP Web Server is at risk from a reverse proxy flaw that is currently unpatched. The flaw was disclosed Qualys security researcher Purtha Parikh late last week and is related to a flaw that Apache first attempted to fix in October.</para>
       <para>&quot;While reviewing the patch for the older issue CVE-2011-3368, it appeared that it was still possible to make use of a crafted request that could exploit a fully patched Apache Web Server (Apache 2.2.21 with CVE-2011-3368 patch applied) to allow access to internal systems if the reverse proxy rules are configured incorrectly, Parikh <ulink url="https://community.qualys.com/blogs/securitylabs/2011/11/23/apache-reverse-proxy-bypass-issue">reported</ulink>. (...)</para>
-<!-- ($ Id: 01.12.11 sat $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
 <!--<sect2>
   <title>LOL</title>
   <blockquote>

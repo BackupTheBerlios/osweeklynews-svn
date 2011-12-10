@@ -70,7 +70,9 @@
         <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-    </sect2> -->  <sect2 role="susestudio">
+    </sect2> -->  
+  <!--
+  <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
       <title>
@@ -91,7 +93,7 @@
         in the future.</para>
       <para>If you are not satisfied with the upgrade, you can always revert to original version by
         clicking the <emphasis role="bold">Undo upgrade</emphasis> link.</para>
-<!--($ ld: 03.12.11 sm $)-->    </blockquote>
+    </blockquote>
     <blockquote>
       <title>
         <ulink url="http://blog.susestudio.com/2011/11/managed-clouds.html">SUSE Studio/Robert Schweikert: Managed Clouds with RightScale</ulink>
@@ -107,8 +109,8 @@
         (eg. a web server), which is easy with <ulink url="http://susestudio.com/">SUSE Studio</ulink> and <ulink url="http://opensuse.github.com/kiwi/">KIWI</ulink>. If you have
         multiple functions that needs to be distributed between multiple instances, you can build
         one image each and then launch them in the cloud. (...)</para>
-<!--($ ld: 03.12.11 sm $)-->    </blockquote>
-  </sect2>
+    </blockquote>
+  </sect2> -->
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -520,25 +522,23 @@ Most users intend to use their computer as easy as possible. Therefore less ques
         <para>Some might be wondering why the Visio import filter project is so quiet. But the answer is easy: we were busy as bees adding new features.</para>
         <para>You might remember <ulink url="http://fridrich.blogspot.com/2011/06/bounding-box-of-svg-elliptical-arc.html">my blog about the bounding box of an elliptical arc</ulink>. It is because <ulink url="http://www.derivativezero.com/blog/">Eilidh</ulink> added the support of elliptical arcs into <ulink url="http://cgit.freedesktop.org/libreoffice/contrib/libvisio/">libvisio</ulink>. And then we discovered that <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> did not support elliptical arcs in the path at all, just ignored them. Fortunately, there was <ulink url="http://cgit.freedesktop.org/libreoffice/libs-gui/commit/?id=246168e94709a5ea7f34914d8e246af0985a9c81">this patch</ulink> of a hacker extraordinaire, <ulink url="http://blog.thebehrens.net/">Thorsten</ulink> that was used to teach <ulink url="http://www.libreoffice.org/">LibreOffice</ulink> some sane behaviour. (...)</para>
       </blockquote>
-      </sect3> --><!--
+      </sect3> -->
     <sect3 role="testing">
       <title>Testing Team</title>
       <blockquote>
         <title>
-          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-11/msg00030.html">Larry Finger: Weekly News for November 12</ulink>
+          <ulink url="http://lists.opensuse.org/opensuse-testing/2011-11/msg00030.html">Larry
+            Finger: Weekly News for December 10</ulink>
         </title>
-        <para>The next meeting of the Testing Core Team will be November 28, 2011 at 18:00 UTC on
-          Channel #opensuse-testing on the Freenode IRC Network
-          (irc://irc.freenode.net/opensuse-testing). Our preliminary agenda includes an analysis of
-          the 12.1 testing cycle. We hope to answer questions such as &quot;What worked?&quot;, &quot;What did
-          not?&quot;, and &quot;How can we improve for 12.2?&quot;. </para>
-        <para>In our last meeting help on November 7, we discussed our experiences with 12.1 RC2,
-          and what bugs we had encountered. The full meeting log is available at <ulink url="http://community.opensuse.org/meetings/opensuse-testing/2011/opensuse-testing.2011-11-07-18.00.log.html">http://community.opensuse.org/meetings/opensuse-testing/2011/opensuse-testing.2011-11-07-18.00.log.html</ulink>. </para>
-        <para>As oppenSUSE 12.1 will be released before my next communication, I wish everyone a
-          good installation. Three of my machines have been updated to 12.1 GM, and all are working
-          quite well. </para>
+        <para>The next meeting of the Testing Core Team will be Monday, December 12, 2011 at 18:00
+          UTC on Channel #opensuse-testing on the Freenode IRC Network
+          (irc://irc.freenode.net/opensuse-testing). </para>
+        <para>At this meeting, we will be discussing the openSUSE 12.1 release cycle and analyzing
+          what went well, what could have been improved, etc. If you have any thing to contribute to
+          this discussion, please join us. Remember, this is a community distro. </para>
       </blockquote>
-    </sect3> -->    <sect3 role="translationteam">
+    </sect3>    
+    <sect3 role="translationteam">
       <title>Translation Team</title>
       <itemizedlist>
         <listitem>
