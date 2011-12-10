@@ -70,58 +70,45 @@
         <para><ulink url="http://en.opensuse.org/openSUSE:Bug_reporting_FAQ">Bug Reporting FAQ</ulink></para>
       </listitem>
     </itemizedlist>
-    </sect2> -->
-  <sect2 role="susestudio">
+    </sect2> -->  <sect2 role="susestudio">
     <title>SUSE Studio</title>
     <blockquote>
       <title>
-        <ulink url="http://blog.susestudio.com/2011/11/upgrade-your-appliances-to-opensuse-121.html"
-          >SUSE Studio/David Majda: Upgrade your appliances to openSUSE 12.1 </ulink>
+        <ulink url="http://blog.susestudio.com/2011/11/upgrade-your-appliances-to-opensuse-121.html">SUSE Studio/David Majda: Upgrade your appliances to openSUSE 12.1 </ulink>
       </title>
-      <para>Last week we enabled one-click upgrade of old openSUSE appliances to<ulink
-          url="http://blog.susestudio.com/2011/11/opensuse-121-in-suse-studio.html">just
-          released</ulink> openSUSE 12.1. The upgrade works the same way <ulink
-          url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html">as with
-          previous versions</ulink>. Just open your old 11.4 (or even 11.3 or 11.2) appliance, go to
+      <para>Last week we enabled one-click upgrade of old openSUSE appliances to<ulink url="http://blog.susestudio.com/2011/11/opensuse-121-in-suse-studio.html">just released</ulink> openSUSE 12.1. The upgrade works the same way <ulink url="http://blog.susestudio.com/2011/03/upgrade-your-older-appliances-to.html">as with previous versions</ulink>. Just open your old 11.4 (or even 11.3 or 11.2) appliance, go to
         the Start tab and click on the <emphasis role="bold">Upgrade</emphasis> button in the bar at
         the top. </para>
-      <para><inlinegraphic
-          fileref="http://1.bp.blogspot.com/-8NJlWgTSjtk/TtOVW0bFSxI/AAAAAAAACd4/jvWckP4nQs0/s320/upgrade1.png"
-        /></para>
+      <para><inlinegraphic fileref="http://1.bp.blogspot.com/-8NJlWgTSjtk/TtOVW0bFSxI/AAAAAAAACd4/jvWckP4nQs0/s320/upgrade1.png"/></para>
       <para>How does the upgrade magic work? Generally Studio tries to change repositories to their
         12.1 equivalents and sometimes adds or removes few packages to ensure everything works
         smoothly. You can see what exactly was done in the log accessible from the bar at the bottom
         of the Start tab.</para>
-      <para><inlinegraphic
-          fileref="http://4.bp.blogspot.com/-8f-J3LNCZes/TtOVaokAYGI/AAAAAAAACeA/kqJutCl6uq4/s320/upgrade2.png"
-        /></para>
+      <para><inlinegraphic fileref="http://4.bp.blogspot.com/-8f-J3LNCZes/TtOVaokAYGI/AAAAAAAACeA/kqJutCl6uq4/s320/upgrade2.png"/></para>
       <para>Sometimes the upgraded appliance will need few tweaks to work. Just inspect the log, see
         what was changed, and apply any additional adjustments. Let us know what you had to do on
         our <ulink url="http://susestudio.com/forum/">forum</ulink> or <email>studio-users@suse.de</email> mailing list so we can improve the upgrade
         in the future.</para>
       <para>If you are not satisfied with the upgrade, you can always revert to original version by
         clicking the <emphasis role="bold">Undo upgrade</emphasis> link.</para>
-      <!--($ ld: 03.12.11 sm $)-->
-    </blockquote>
+<!--($ ld: 03.12.11 sm $)-->    </blockquote>
     <blockquote>
-      <title><ulink url="http://blog.susestudio.com/2011/11/managed-clouds.html">SUSE Studio/Robert
-          Schweikert: Managed Clouds with RightScale</ulink></title>
+      <title>
+        <ulink url="http://blog.susestudio.com/2011/11/managed-clouds.html">SUSE Studio/Robert Schweikert: Managed Clouds with RightScale</ulink>
+      </title>
       <para>Having your head in the clouds and managing virtual machines (VMs) which run there is
         one thing, really getting there is another. An often neglected step in cloud discussions is
-        the cloud on-ramp, or <emphasis role="italic">How does the VM providing the needed
-          functionality get there in the first place</emphasis>? Also frequently ignored is the
-        question of <emphasis role="italic">What's inside the VM</emphasis>? Maybe these questions
-        are "ignored" as they are inconvenient and not necessarily easy to answer. Similar to
+        the cloud on-ramp, or <emphasis role="italic">How does the VM providing the needed functionality get there in the first place</emphasis>? Also frequently ignored is the
+        question of <emphasis role="italic">What&apos;s inside the VM</emphasis>? Maybe these questions
+        are &quot;ignored&quot; as they are inconvenient and not necessarily easy to answer. Similar to
         driving a car on the highway - once on the highway going along with the flow of traffic is
         easy, but navigating the on-ramp poses a set of challenges that make many uncomfortable. </para>
       <para>The on-ramp to the cloud can take various shapes. One is to pre-build task specific VMs
-        (eg. a web server), which is easy with <ulink url="http://susestudio.com/">SUSE
-          Studio</ulink> and <ulink url="http://opensuse.github.com/kiwi/">KIWI</ulink>. If you have
+        (eg. a web server), which is easy with <ulink url="http://susestudio.com/">SUSE Studio</ulink> and <ulink url="http://opensuse.github.com/kiwi/">KIWI</ulink>. If you have
         multiple functions that needs to be distributed between multiple instances, you can build
         one image each and then launch them in the cloud. (...)</para>
-      <!--($ ld: 03.12.11 sm $)-->
-    </blockquote>
-  </sect2> 
+<!--($ ld: 03.12.11 sm $)-->    </blockquote>
+  </sect2>
   <sect2 role="teamreports">
     <title>Team Reports</title>
 <!--
@@ -220,8 +207,7 @@
       <title>Forums Team</title>
 
       <para>...</para>
-      </sect3> -->    
-    <!--
+      </sect3> --><!--
     <sect3 role="gnometeam">
       <title>GNOME Team</title>
       <blockquote>
@@ -261,8 +247,7 @@
             </listitem>
           </itemizedlist></para>            
           </blockquote>
-    </sect3> -->
-<!--
+    </sect3> --><!--
     <sect3 role="kdeteam">
       <title>KDE Team</title>
       <blockquote>
@@ -393,7 +378,7 @@
         <title>Top voted Features</title>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 379)</ulink>
+            <ulink url="https://features.opensuse.org/120340">decouple download and installation (Score: 380)</ulink>
           </title>
           <para>Network installation could be improved by running package download and package
             installation in parallel.</para>
@@ -412,13 +397,13 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 175)</ulink>
+            <ulink url="https://features.opensuse.org/305305">1-click uninstall (Score: 177)</ulink>
           </title>
           <para>An easy way to remove Software! For example: you installed an application with &quot;1-click install&quot; (which will install all the packages that you need), there should be an easy way (also with 1 click) to remove what you have installed with that 1-click operation... in another words: an &quot;1-click Uninstall&quot; to remove installed software (dependencies and packages included).</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 172)</ulink>
+            <ulink url="https://features.opensuse.org/308497">Update to GRUB v2 (Score: 174)</ulink>
           </title>
           <para>Every single bug or feature that anyone has developed for GRUB 0.97 has been
             rejected by the upstream project in favor of using GRUB 2. There has been resisitence in
@@ -434,7 +419,7 @@
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 126)</ulink>
+            <ulink url="https://features.opensuse.org/305877">Popularity contest (Score: 128)</ulink>
           </title>
           <para>We need a feedback about packages that are preferred by users and actively used. Debian already has a tool named Popularity contest (popcon)
             
@@ -447,75 +432,79 @@
           </para>
           <para>* we need a server infrastructure on opensuse.org. (There are certain privacy issues, see Debian FAQ for details)</para>
         </blockquote>
-<!-- ($ ld: 02.12.11 sat *updated* $) -->      </sect4>
+<!-- ($ ld: 10.12.11 sat *updated* $) -->      </sect4>
       <sect4>
         <title>Recently requested features</title>
         <para><emphasis role="bold">Features newly requested last week. Please vote and/or comment if you get interested.</emphasis></para>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313026">Do not enable Kwin blur effect by default</ulink>
+            <ulink url="https://features.opensuse.org/313038">Remove &quot;tracker&quot; from lxde</ulink>
           </title>
-          <para>By default, if Kwin compositing is enabled / supported on openSUSE KDE (even 12.1), the
-blur effect is enabled by default. This is a notorious option for KDE&apos;s desktop effects that is usually the culprit for why the user&apos;s effects run choppy or sluggish, especially if they do not have fairly modern hardware. It happens on any distro.</para>
-          <para><emphasis role="bold">This effect should not be enabled by default. Aesthetically, it does not bring much to the table; however, performance wise, it can create a poor first impression.</emphasis></para>
-          <para>When browsing different forums, it is one the first questions asked when a user complains about poor Kwin performance: &quot;Do you have blur enabled?&quot;</para>
+          <para>As LXDE is intended to provide a LIGHTWEIGHT desktop environment, unnecessary bloats like tracker should not be provided with it.</para>
+          <para>Unfortunately the openSUSE pattern for LXDE contains Brasero, which automatically brings tracker as a dependency.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313027">Yast partitioner should detect encrypted partitions and prompt for password</ulink>
+            <ulink url="https://features.opensuse.org/313039">openSUSE Kids Edition/Mode</ulink>
           </title>
-          <para>Currently if starting the YAST partitioner on a system where the encrypted partitions were not unlocked at boot there is no way in the partition to unlock them (ie. entering the password).</para>
-          <para>This can be easily seen by booting the Opensuse 12.1 KDE LiveCD image on a machine that has an encrypted partition. You need to manually unlock the partition using either Dolphin or the command line. YAST partitioner detects the encrypted partition but provides no way to unlock it.</para>
+          <para>OpenSUSE kids edition is an idea of creating a distribution or mode for kids. This should include (but not limit to):-</para>
+          <itemizedlist>
+            <listitem>
+              <para>Wallpapers, Icons, themes... that would appeal to kids.</para>
+            </listitem>
+            <listitem>
+              <para>an internet or programs filter to block harmful things</para>
+            </listitem>
+            <listitem>
+              <para>games, programs related to education and fun(programs like tuxpaint, google chrome, and many games).</para>
+            </listitem>
+          </itemizedlist>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313028">Yast partitioner should show de-activated VGs/LVs and allow them to be activated</ulink>
+            <ulink url="https://features.opensuse.org/313040">Prettier boot process</ulink>
           </title>
-          <para>Sometimes LVs (LVM Logical Volumes) won&apos;t come up in status &apos;Active&apos;. This happens often for example if you boot the Opensuse 12.1 LiveCD on a machine which uses LVM partitioning. You have to manually follow this procedure to get the VGs and LVs to show up:</para>
-          <para>pvscan # find all Physical Volumes</para>
-          <para>vgscan # find all Volume Groups</para>
-          <para>lvscan # find all Logical Volumes</para>
-          <para>lvchange -ay /dev/TestingVG/home # activate a Logical Volume that&apos;s not activated by default</para>
-          <para>
-The YAST partitioner should automatically find all Physical Volumes and Volume Groups and show the deactivated Logical Volumes, with an option of course to activate these. The YAST Partitioner is the most logical place for this functionality in a GUI program.</para>
+          <para>Right now, the boot process looks kinda ugly. systemd makes a jumble of codes and the splash screen is boring. For 12.2, the pretty green dones and the red faileds should be brought back to the boot process and the geeko logo should do more than roll it s eye a little. Have it do something, like shift color sort of like a progress bar or walk around as the machine boots up.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313029">Update option in Apper Software Management</ulink>
+            <ulink url="https://features.opensuse.org/313047">Show screenshots to help user choose which desktop to install</ulink>
           </title>
-          <para>Hi， I think with these features Apper will be better.</para>
-          <para>1. Update option</para>
-          <para>Nowadays Apper only ship with install and remove option. it&apos;s hardwork if you update.</para>
-          <para>2. Aggregation of packages</para>
-          <para>if you search an application, it gives you tens of packages with the same name, if you enabled many different repo. even within the same repo, it will give you different versions. it is confusing.</para>
-          <para>3. Stick Applications you installed to the roof and Applications you installed and updatable to the roof of roof by default. in YaST, you can do it by click Name tab, but Apper ships with no such method.</para>
+          <para>Currently, when the user chooses the type of Desktop they want to install they are presented with a rather &apos;boring&apos; menu with lots of text, describing a little about GNOME, KDE, and how they get to choose.</para>
+          <para>I would like to see screenshots, possibly even a slideshow, of at least GNOME and KDE if not XFCE &amp; LXDE for users to see and help them make their choice about which desktop environment they wish to install.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313030">AppSet instead of Apper</ulink>
+            <ulink url="https://features.opensuse.org/313049">Include openSUSE manuals in default install</ulink>
           </title>
-          <para>AppSet <ulink url="http://appset.altervista.org/joomla/en">http://appset.altervista.org/joomla/en</ulink> can be the default package manager on openSUSE cause, is written in QT and other distribution such Archlinux and Chakra Linux (know for his addiction with KDE desktop). (...)</para>
+          <para>Include the official openSUSE manuals in the default install. Either add them into each user directory, or symlink from /usr/share.</para>
         </blockquote>
         <blockquote>
           <title>
-            <ulink url="https://features.opensuse.org/313035">Invent Consistent Font Naming Schema</ulink>
+            <ulink url="https://features.opensuse.org/313050">Add link to opensuse-guide.org to the greeter, and link on desktop</ulink>
           </title>
-          <para>Currently, our package names for fonts are suboptimal. Here are some examples:</para>
-          <para>farsifonts</para>
-          <para>fonts-arabic</para>
-          <para>freefont</para>
-          <para>gnu-unifont</para>
-          <para>indic-fonts</para>
-          <para>intlfonts-ttf</para>
-          <para>xorg-x11-fonts</para>
-          <para>From a usability perspective, it would be better to make a consistent naming schema for font packages. Naming schemas from other distributions:</para>
-          <para>* Ubuntu: prefix with &quot;ttf-&quot;</para>
-          <para>*   Fedora: suffix with &quot;-fonts&quot;</para>
-          <para>With the above inconcistency, popular fonts like LinuxLibertine or dejavu cannot be found.
-
-Please document any decisions in the Package Guidelines regarding how to name our fonts correctly and consistently.</para>
+          <para>The Unofficial openSUSE Guide is one of the greatest resources to new users. By making it front and center, it will help new users not be so frustrated, and help us whom support them not be so frustrated.</para>
+          <para>Frankly, I wish I had known about the Guide when I first started using openSUSE... it would have saved me some headaches.</para>
         </blockquote>
-<!-- ($ ld: 02.12.11 sat *replaced with latest ones* $) -->      </sect4>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/313053">Integrate PulseAudio with Jack</ulink>
+          </title>
+          <para><ulink url="http://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Musicians_Guide/sect-Musicians_Guide-Integrating_PulseAudio_with_JACK.html">http://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Musicians_Guide/sect-Musicians_Guide-Integrating_PulseAudio_with_JACK.html</ulink></para>
+          <para>Create a pre-configured Jack designed to route through PulseAudio for simpler working of Jack, and transparent treatment of audio.</para>
+        </blockquote>
+        <blockquote>
+          <title>
+            <ulink url="https://features.opensuse.org/313062">Simplified install workflow</ulink>
+          </title>
+          <para>The install work flow should be as simple as possible. Therefore it should consider the view of a non IT person and only ask real key questions.
+Why are we asking a user about which desktop environment they like to use? A Linux beginner doesn&apos;t care about KDE or Gnome.</para>
+          <para>Even the summary before the installation should be as comprehensive as possible in the default mode.
+Network configuration isn&apos;t required in 80, 90 or more % of the use cases. If there we get an IP address offered by DHCP don&apos;t bother the user even with a summary.
+Most users intend to use their computer as easy as possible. Therefore less questions asked will result in a smoother experience.</para>
+          <para>This issue had been initially discussed as part of this thread <ulink url="http://lists.opensuse.org/opensuse/2011-12/msg00382.html">http://lists.opensuse.org/opensuse/2011-12/msg00382.html</ulink></para>
+        </blockquote>
+<!-- ($ ld: 10.12.11 sat *replaced with latest ones* $) -->      </sect4>
       <sect4>
         <title>Feature Statistics</title>
         <para>Statistics for openSUSE distribution <ulink url="https://features.opensuse.org/statistic/product/opensuse_dist">in openFATE</ulink></para>
