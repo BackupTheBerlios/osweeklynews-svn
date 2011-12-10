@@ -92,10 +92,10 @@
       <para>Thanks a lot to <ulink url="http://forums.opensuse.org"
         >forums.opensuse.org</ulink></para>
       <para>As we now found out the boot/shutdown problems where just caused by <emphasis
-          role="bold">systemd</emphasis>ýso, while booting (on the grub menu) you can switch to
+          role="bold">systemd</emphasis>so, while booting (on the grub menu) you can switch to
           <emphasis role="bold">systemV</emphasis> via <emphasis role="bold">F5 </emphasis>and that
         just worked.</para>
-      <para>So now we must talk about making systemV ýdefault again, so just look what SUSEhelp post
+      <para>So now we must talk about making systemV default again, so just look what SUSEhelp post
         us via IRC</para>
       <para><quote>
           <emphasis role="italic"><emphasis role="bold">&lt;SUSEhelp&gt; By default, openSUSE now
@@ -104,15 +104,7 @@
               permanently, install the sysvinit-init package. To switch back to systemd, reinstall
               the systemd-sysvinit package.</emphasis></emphasis>
         </quote></para>
-      <para>So as easy as it is
-        told:<programlisting>zypper in sysvinit-init
-
-Problem: sysvinit-init-2.88+-66.58.2.x86_64 conflicts with namespace:otherproviders(sbin_init) provided by systemd-sysvinit-37-3.4.1.x86_64
-Solution 1: deinstallation of systemd-sysvinit-37-3.4.1.x86_64
-Solution 2: do not install sysvinit-init-2.88+-66.58.2.x86_64
-
-Choose from above solutions by number or cancel [1/2/c] (c):</programlisting></para>
-      <para>Now take solution 1, it will replace systemd.</para>
+      <para>So as easy as it is told: (...)</para>
       <!--($ Id: 10.12.11 sm $)-->
     </blockquote>
     <blockquote>
@@ -121,13 +113,13 @@ Choose from above solutions by number or cancel [1/2/c] (c):</programlisting></p
           >Masim Sugianto: Installing Zimbra Mail Server on SLES 11 SP1 64 bit in less than 30
           Minutes-Part 1</ulink></title>
       <para>The following article will explain about the quick and easy tutorial : how to installing
-        Zimbra Mail Server on SUSE Linux Enterprise Server 11 SP1 64 bit.ýI will use the <ulink
+        Zimbra Mail Server on SUSE Linux Enterprise Server 11 SP1 64 bit.I will use the <ulink
           url="http://vavai.net/2011/11/suse-linux-enterprise-server-11-sp1-minimal-server-appliance/"
           >Minimal Server Appliance</ulink> in this tutorial to simplify the installation
-        process.ýHere are some notes related to the server setting :<itemizedlist>
+        process.Here are some notes related to the server setting :<itemizedlist>
           <listitem>
             <para>WARNING : This guide using Preload ISO and will erase the entire contents of hard
-              disk! ýIf you do not want to delete your existing data, consider using Virtualization
+              disk! If you do not want to delete your existing data, consider using Virtualization
               server or use ISO-LiveCD.</para>
           </listitem>
           <listitem>
