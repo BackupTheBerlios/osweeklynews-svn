@@ -21,7 +21,7 @@
 <xsl:template name="article.titlepage.before.recto">
   <xsl:param name="filename">Opensuse_weekly_news_banner.png</xsl:param>
   <fo:block space-after="2em">
-    <fo:external-graphic width="100px">
+    <fo:external-graphic content-width="100px">
         <xsl:attribute name="src">
           <xsl:call-template name="fo-external-image">
             <xsl:with-param name="filename">
